@@ -13,8 +13,8 @@
  function sources(p:any){return [...(p.sources||[]),...(p.blocks||[]).flatMap((b:any)=>b.sources||[])].filter((s:any)=>s.label)}
  function blocks(p:any){return p.blocks?.length?p.blocks:(p.paragraphs||[]).map((x:any)=>({type:'paragraph',...x}))}
  function image(b:any){return images.find(i=>i.id===b.imageId)}
- function save(p:any=current){try{localStorage.setItem('nzgis-progress',JSON.stringify({articleId:article.id,passageId:p.id,url:article.url+'#'+p.slug,mode:complete?'chapter':'page'}))}catch{}}
- function go(i:number,update=true){if(i<0||i>=passages.length)return;page=i;complete=false;selected=null;if(update)history.pushState(null,'',article.url+'?mode=page#'+current.slug);save();requestAnimationFrame(()=>{document.querySelector<HTMLElement>('.page h2')?.focus();document.querySelector('.page')?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})})}
+ function save(p:any=current){try{localStorage.setItem('nzgis-progress',JSON.stringify({articleId:article.id,passageId:p.id,url:article.url+(complete?'':'?mode=page')+'#'+p.slug,mode:complete?'chapter':'page'}))}catch{}}
+ function go(i:number,update=true){if(i<0||i>=passages.length)return;page=i;complete=false;selected=null;if(update)history.pushState(null,'',article.url+'?mode=page#'+passages[i].slug);save(passages[i]);requestAnimationFrame(()=>{document.querySelector<HTMLElement>('.page h2')?.focus();document.querySelector('.page')?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})})}
  function chapter(){complete=true;history.pushState(null,'',article.url+'#'+current.slug);save();requestAnimationFrame(()=>document.getElementById(current.slug)?.scrollIntoView())}
  function fromURL(){const id=decodeURIComponent(location.hash.slice(1));const i=passages.findIndex(p=>p.slug===id||p.legacyAnchor===id||p.id===id);if(i>=0)page=i;complete=new URLSearchParams(location.search).get('mode')!=='page'}
  function selectEvent(e:any){const i=passages.findIndex(p=>e.passageIds?.includes(p.id));if(i>=0)go(i)}
@@ -42,10 +42,11 @@
  {#if events.length}<Timeline {events} compact={true} onSelect={selectEvent}/>{/if}
  <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Related entries · {relevant.length}</button></div>
  <div class="reading-grid"><aside class:open={contentsOpen} class="contents" aria-label="Chapter contents"><p class="eyebrow">In this chapter</p>{#each passages as p,i}<a href={article.url+'?mode=page#'+p.slug} class:active={page===i} on:click={(e)=>{e.preventDefault();go(i);contentsOpen=false}}>{p.title}</a>{/each}<a href="/read/">All chapters →</a></aside>
- <article class="page" aria-label="Chapter text" data-pagefind-body>
+ <article class="page" aria-label="Chapter text" data-pagefind-body data-pagefind-filter="type:Chapter">
  <div class="toolbar"><div class="actions"><button aria-pressed={!complete} on:click={()=>go(page)}>Page by page</button><button aria-pressed={complete} on:click={chapter}>Complete chapter</button></div><div class="actions"><button aria-label="Decrease text size" on:click={()=>textSize(-1)}>A−</button><button aria-label="Increase text size" on:click={()=>textSize(1)}>A+</button><button on:click={()=>{save();status='Reading position saved on this device.'}}>Bookmark</button></div></div>
  <p class="sr-only" aria-live="polite">{status}</p>
  <div class="narrative">
+ {#each currentThemes as t}<span class="sr-only" data-pagefind-filter="theme">{t.title}</span>{/each}
  {#each visible as p (p.id)}
  <section id={p.slug} data-passage={p.id} in:fade={{duration:motion?160:0}}>
  {#if p.legacyAnchor}<span id={p.legacyAnchor} class="legacy-anchor"></span>{/if}<h2 tabindex="-1">{p.title}</h2>

@@ -1,0 +1,58 @@
+{
+  "files": 6645,
+  "largestAsset": 4714911,
+  "javascript": [
+    {
+      "path": "dist/_astro/Browse.CJ7jdOX_.js",
+      "gzip": 1548
+    },
+    {
+      "path": "dist/_astro/Reader.dM3OxNuU.js",
+      "gzip": 5402
+    },
+    {
+      "path": "dist/_astro/Reader.yliWDBni.js",
+      "gzip": 5426
+    },
+    {
+      "path": "dist/_astro/Timeline.BXpfYqiD.js",
+      "gzip": 69
+    },
+    {
+      "path": "dist/_astro/Timeline.BgdWO9vC.js",
+      "gzip": 10140
+    },
+    {
+      "path": "dist/_astro/client.svelte.9ARsDENb.js",
+      "gzip": 499
+    },
+    {
+      "path": "dist/_astro/client.uqpR4vuT.js",
+      "gzip": 17352
+    },
+    {
+      "path": "dist/_astro/events.mTVV8OWN.js",
+      "gzip": 2258
+    },
+    {
+      "path": "dist/_astro/graphology.B2WzTXYs.js",
+      "gzip": 11348
+    },
+    {
+      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.8Fq12YMs.js",
+      "gzip": 2088
+    },
+    {
+      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.BcfUhtUR.js",
+      "gzip": 2108
+    },
+    {
+      "path": "dist/_astro/legacy.DH9LWkCN.js",
+      "gzip": 125
+    },
+    {
+      "path": "dist/_astro/sigma.esm.D9knFWKW.js",
+      "gzip": 94544
+    }
+  ]
+}

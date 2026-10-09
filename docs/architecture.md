@@ -1,0 +1,9 @@
+# Architecture and operation
+
+Astro renders all public content as complete HTML. A Svelte reader owns page selection, local progress, timeline and contextual panels. It receives only its chapter and associated records/events. The source collections preserve the predecessor IDs and URLs, with original section-anchor aliases. Relationship evidence is independent of visual rendering. Sigma 4.0.0 is loaded dynamically on the optional network page, with built-in drag enabled and a text evidence list.
+
+GitHub is the rebuild source, with Cloudflare Pages building checked commits at gishistory26.pages.dev. The existing domains are unchanged. The accepted baseline is canonical-000001/editorial-000007. Pending research packages remain outside the public repository. All 4,102 baseline collection files are checksum-protected. Editing the manifest is a reviewed release action, never an automatic bypass of preservation.
+
+ChatGPT uses the configured GitHub connector to read current state, prepare a branch, validate a sourced change and publish an authorised checked candidate. `node scripts/editorial.mjs state` obtains a revision. `prepare` and `validate` reject stale revisions, duplicate IDs, route changes without migration, unsupported removals and unapproved paragraph changes. Git commits and Cloudflare deployments supply the release audit. A custom write MCP and browser editor need authentication integration; do not advertise them as operational until round-trip tests succeed.
+
+Recovery: identify the last verified content commit and corresponding Cloudflare deployment, restore both, then verify release.json, chapter/entry deep links and search. Retain newer accepted edits for reconciliation. Do not reset forcefully over subsequent work. Launch requires the unresolved migration/QA items to be closed and an exact domain cutover target established.

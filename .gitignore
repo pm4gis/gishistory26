@@ -3,3 +3,5 @@ dist/
 .astro/
 .env*
 !.env.example
+public/api/
+docs/migration-ledger.json
