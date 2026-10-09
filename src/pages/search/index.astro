@@ -1,0 +1,4 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title="Search · NZ GIS History"><div class="wrap search-wrap"><p class="eyebrow">Find a passage</p><h1>Search the history.</h1><div id="search"></div><noscript><p>Search requires JavaScript. <a href="/read/">Browse all chapters</a> or <a href="/browse/">browse entries</a>.</p></noscript></div><link rel="stylesheet" href="/pagefind/pagefind-ui.css"/><script is:inline src="/pagefind/pagefind-ui.js"></script><script is:inline>window.addEventListener('DOMContentLoaded',()=>{if(window.PagefindUI)new PagefindUI({element:'#search',showSubResults:true,showImages:false});});</script></Layout>

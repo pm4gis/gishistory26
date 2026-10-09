@@ -1,0 +1,2594 @@
+[
+  {
+    "old": "/book/chapter/1/what-the-computer-inherited/",
+    "new": "/stories/what-the-computer-inherited/",
+    "anchors": [
+      {
+        "old": "a-country-already-filed-by-location",
+        "new": "existing-map-records-0170b9d0d6"
+      },
+      {
+        "old": "the-parcel-record",
+        "new": "the-parcel-record-67bf38bca3"
+      },
+      {
+        "old": "coordinates-before-computers",
+        "new": "coordinates-before-computers-6c2c3ccbe6"
+      },
+      {
+        "old": "national-sheets",
+        "new": "national-sheets-80f8ea6518"
+      },
+      {
+        "old": "counting-by-place",
+        "new": "counting-by-place-e557a7129d"
+      },
+      {
+        "old": "the-country-from-the-air",
+        "new": "the-country-from-the-air-db246fba61"
+      },
+      {
+        "old": "thematic-geography",
+        "new": "thematic-geography-899fa91ade"
+      },
+      {
+        "old": "the-people-behind-the-sheets",
+        "new": "the-people-behind-the-sheets-a364eef899"
+      },
+      {
+        "old": "what-the-machine-received",
+        "new": "the-mapping-inheritance-17cfc8bb49"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/2/coordinates-enter-the-computer/",
+    "new": "/stories/coordinates-enter-the-computer/",
+    "anchors": [
+      {
+        "old": "the-arithmetic-arrives-first",
+        "new": "electronic-calculation-a1c7942438"
+      },
+      {
+        "old": "the-first-government-machines",
+        "new": "the-first-government-machines-57e353c855"
+      },
+      {
+        "old": "cards-and-coordinate-lists",
+        "new": "cards-and-coordinate-lists-0b893079e1"
+      },
+      {
+        "old": "geodetic-adjustment",
+        "new": "geodetic-adjustment-d29b3d5200"
+      },
+      {
+        "old": "engineering-by-batch",
+        "new": "engineering-by-batch-e0a704a66a"
+      },
+      {
+        "old": "surveying-and-mapping-by-1966",
+        "new": "surveying-and-mapping-by-1966-8de87e20d6"
+      },
+      {
+        "old": "transforming-one-coordinate-world-into-another",
+        "new": "transforming-one-coordinate-world-into-another-2ab91fbc4f"
+      },
+      {
+        "old": "storage-without-geography",
+        "new": "storage-without-geography-49fd748adc"
+      },
+      {
+        "old": "people-between-the-field-book-and-the-machine",
+        "new": "people-between-the-field-book-and-the-machine-0c07b0b289"
+      },
+      {
+        "old": "the-map-is-still-outside",
+        "new": "maps-and-calculation-ac4187e878"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/3/drawing-maps-by-machine/",
+    "new": "/stories/drawing-maps-by-machine/",
+    "anchors": [
+      {
+        "old": "the-sheet-on-the-table",
+        "new": "digitising-map-sheets-5966de2c1f"
+      },
+      {
+        "old": "metric-conversion",
+        "new": "metric-conversion-92c45d797e"
+      },
+      {
+        "old": "inside-mappak",
+        "new": "inside-mappak-b7f1ee3026"
+      },
+      {
+        "old": "stored-geometry",
+        "new": "stored-geometry-746e5f4bfc"
+      },
+      {
+        "old": "routes-and-terrain",
+        "new": "routes-and-terrain-761de75cc2"
+      },
+      {
+        "old": "orthophoto-production",
+        "new": "orthophoto-production-160846e07d"
+      },
+      {
+        "old": "analytical-photogrammetry",
+        "new": "analytical-photogrammetry-712fd9e97d"
+      },
+      {
+        "old": "several-separate-systems",
+        "new": "several-separate-systems-4a3e345ab0"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/4/turning-the-landscape-into-numbers/",
+    "new": "/stories/turning-the-landscape-into-numbers/",
+    "anchors": [
+      {
+        "old": "landsat-arrives",
+        "new": "landsat-arrives-e9b8032a50"
+      },
+      {
+        "old": "processing-the-tapes",
+        "new": "processing-the-tapes-db2cb9d359"
+      },
+      {
+        "old": "rectification-and-registration",
+        "new": "rectification-and-registration-6c9f096c05"
+      },
+      {
+        "old": "rilis",
+        "new": "rilis-191c7a5478"
+      },
+      {
+        "old": "darfield-and-ground-truth",
+        "new": "darfield-and-ground-truth-d5be6e1983"
+      },
+      {
+        "old": "classification",
+        "new": "classification-9f0c8aa526"
+      },
+      {
+        "old": "snow-forests-and-large-areas",
+        "new": "snow-forests-and-large-areas-0f88b9975a"
+      },
+      {
+        "old": "from-imagery-to-mapped-data",
+        "new": "from-imagery-to-mapped-data-0c61026266"
+      },
+      {
+        "old": "raster-work-before-commercial-gis",
+        "new": "raster-work-before-commercial-gis-6d293d43f3"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/5/from-map-sheets-to-spatial-data/",
+    "new": "/stories/from-map-sheets-to-spatial-data/",
+    "anchors": [
+      {
+        "old": "a-national-land-inventory",
+        "new": "a-national-land-inventory-a0b07eb248"
+      },
+      {
+        "old": "from-coloured-units-to-polygons",
+        "new": "from-coloured-units-to-polygons-e9abb2d6e6"
+      },
+      {
+        "old": "ladeda",
+        "new": "ladeda-bd520402bb"
+      },
+      {
+        "old": "the-mainframe-database",
+        "new": "the-mainframe-database-8870229b0c"
+      },
+      {
+        "old": "querying-the-inventory",
+        "new": "querying-the-inventory-704e1b2aa3"
+      },
+      {
+        "old": "not-cadastral-boundaries",
+        "new": "inventory-boundaries-d481958571"
+      },
+      {
+        "old": "converting-the-national-series",
+        "new": "converting-the-national-series-092f0c23d6"
+      },
+      {
+        "old": "working-with-a-maintained-database",
+        "new": "working-with-a-maintained-database-88a9400584"
+      },
+      {
+        "old": "a-gis-written-for-the-job",
+        "new": "custom-gis-development-5a3f0674fb"
+      },
+      {
+        "old": "from-in-house-to-commercial-gis",
+        "new": "from-in-house-to-commercial-gis-b2bdbbfa73"
+      },
+      {
+        "old": "data-before-the-software-market",
+        "new": "early-spatial-datasets-7d651ec112"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/6/when-gis-became-gis/",
+    "new": "/stories/when-gis-became-gis/",
+    "anchors": [
+      {
+        "old": "a-shared-name",
+        "new": "a-shared-name-bc94bd66ec"
+      },
+      {
+        "old": "north-taranaki-1986",
+        "new": "north-taranaki-1986-864f71f48e"
+      },
+      {
+        "old": "commercial-workstations",
+        "new": "commercial-workstations-b5f009e26c"
+      },
+      {
+        "old": "overseas-software-new-zealand-data",
+        "new": "overseas-software-and-new-zealand-data-839733b44b"
+      },
+      {
+        "old": "from-ladeda-to-arc-info",
+        "new": "from-ladeda-to-arc-info-215b00c649"
+      },
+      {
+        "old": "a-local-market",
+        "new": "a-local-market-0cce6a3869"
+      },
+      {
+        "old": "teaching-gis",
+        "new": "teaching-gis-e04c029193"
+      },
+      {
+        "old": "a-field-described-from-new-zealand",
+        "new": "a-field-described-from-new-zealand-9266bbf08f"
+      },
+      {
+        "old": "data-conversion-as-ordinary-work",
+        "new": "data-conversion-as-ordinary-work-b64cb933b0"
+      },
+      {
+        "old": "specialist-hardware",
+        "new": "specialist-hardware-1b035688c6"
+      },
+      {
+        "old": "software-support-and-dependence",
+        "new": "software-support-and-dependence-4fce4c5f6d"
+      },
+      {
+        "old": "the-consulting-strand",
+        "new": "the-consulting-strand-1d1245dd9d"
+      },
+      {
+        "old": "a-profession-before-mass-adoption",
+        "new": "early-gis-practitioners-5387d7b4de"
+      },
+      {
+        "old": "what-counted-as-gis",
+        "new": "defining-gis-73fe4882ef"
+      },
+      {
+        "old": "by-the-end-of-the-1980s",
+        "new": "by-the-end-of-the-1980s-222fc62c3a"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/7/mapping-land-as-data/",
+    "new": "/stories/mapping-land-as-data/",
+    "anchors": [
+      {
+        "old": "reading-the-land",
+        "new": "reading-the-land-2b878e178f"
+      },
+      {
+        "old": "inventory-and-judgement",
+        "new": "inventory-and-judgement-dbfff42fef"
+      },
+      {
+        "old": "field-mapping",
+        "new": "field-mapping-2177212399"
+      },
+      {
+        "old": "erosion-on-the-map",
+        "new": "erosion-on-the-map-df68c9ed13"
+      },
+      {
+        "old": "a-national-language-for-land",
+        "new": "a-national-language-for-land-95e54ded0c"
+      },
+      {
+        "old": "paper-still-carried-the-system",
+        "new": "paper-still-carried-the-system-3380695a6a"
+      },
+      {
+        "old": "from-map-to-farm-plan",
+        "new": "from-map-to-farm-plan-6b5f5a778a"
+      },
+      {
+        "old": "urban-land-capability",
+        "new": "urban-land-capability-6c61371599"
+      },
+      {
+        "old": "the-gis-version",
+        "new": "the-gis-version-b2151b9956"
+      },
+      {
+        "old": "changing-the-base-map",
+        "new": "changing-the-base-map-6ccf3b9838"
+      },
+      {
+        "old": "a-database-can-age",
+        "new": "a-database-can-age-007da9644e"
+      },
+      {
+        "old": "what-the-line-means",
+        "new": "what-the-line-means-421e06a7e8"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/8/forestry-finds-gis/",
+    "new": "/stories/forestry-finds-gis/",
+    "anchors": [
+      {
+        "old": "a-forest-changes",
+        "new": "mapping-forest-change-1b6d74c5d5"
+      },
+      {
+        "old": "inventory-becomes-data",
+        "new": "forest-inventory-data-f44e7f6f2c"
+      },
+      {
+        "old": "a-pc-gis-in-1989",
+        "new": "a-pc-gis-in-1989-518a61ae87"
+      },
+      {
+        "old": "stands-and-roads",
+        "new": "stands-and-roads-deed76e801"
+      },
+      {
+        "old": "photographs-into-forest-data",
+        "new": "photographs-into-forest-data-5f74d8d0d8"
+      },
+      {
+        "old": "the-forest-service-disappears",
+        "new": "the-forest-service-disappears-c1774fb8be"
+      },
+      {
+        "old": "mapinfo-on-the-east-coast",
+        "new": "mapinfo-on-the-east-coast-6000d187f1"
+      },
+      {
+        "old": "growth-models-meet-maps",
+        "new": "growth-models-and-gis-2d7398153c"
+      },
+      {
+        "old": "keeping-the-map-current",
+        "new": "keeping-the-map-current-2911dbd2b5"
+      },
+      {
+        "old": "from-specialist-tool-to-normal-practice",
+        "new": "routine-forestry-use-87633bc2db"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/9/science-goes-spatial/",
+    "new": "/stories/science-goes-spatial/",
+    "anchors": [
+      {
+        "old": "science-already-had-maps",
+        "new": "scientific-map-records-7021842bb3"
+      },
+      {
+        "old": "ecology-becomes-a-database-problem",
+        "new": "ecological-databases-68517bbc35"
+      },
+      {
+        "old": "mackenzie-ecological-gis-1989",
+        "new": "mackenzie-ecological-gis-1989-9e3246d100"
+      },
+      {
+        "old": "the-1992-break",
+        "new": "the-cri-reorganisation-f5818ca326"
+      },
+      {
+        "old": "rebuilding-the-geological-map",
+        "new": "rebuilding-the-geological-map-94bf81a964"
+      },
+      {
+        "old": "field-geology-into-digital-production",
+        "new": "field-geology-into-digital-production-f9f05acb91"
+      },
+      {
+        "old": "across-the-sheet-edge",
+        "new": "across-the-sheet-edge-142ed9a70b"
+      },
+      {
+        "old": "a-map-that-can-be-queried-again",
+        "new": "a-map-that-can-be-queried-again-e3288ddbcd"
+      },
+      {
+        "old": "hazards-on-the-same-map",
+        "new": "hazards-on-the-same-map-6f573a5416"
+      },
+      {
+        "old": "catchments-acquire-time",
+        "new": "catchment-monitoring-7b174cd504"
+      },
+      {
+        "old": "classifying-landscapes-by-computer",
+        "new": "classifying-landscapes-by-computer-a97d1cda42"
+      },
+      {
+        "old": "science-data-survive-the-map",
+        "new": "maintaining-scientific-data-35e889d6d2"
+      },
+      {
+        "old": "different-sciences-common-infrastructure",
+        "new": "shared-scientific-infrastructure-5cfbbbf632"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/10/gis-inside-government/",
+    "new": "/stories/gis-inside-government/",
+    "anchors": [
+      {
+        "old": "from-projects-to-departments",
+        "new": "from-projects-to-departments-54f7941b19"
+      },
+      {
+        "old": "a-national-conversion-job",
+        "new": "a-national-conversion-job-7ee8b0bc4d"
+      },
+      {
+        "old": "more-than-the-cadastre",
+        "new": "other-government-datasets-e81c2fea9a"
+      },
+      {
+        "old": "topography-becomes-a-database",
+        "new": "topographic-databases-d4532463e0"
+      },
+      {
+        "old": "government-gis-was-distributed",
+        "new": "government-gis-was-distributed-69b7186ba7"
+      },
+      {
+        "old": "conservation-databases-1990",
+        "new": "conservation-databases-1990-3248d864d9"
+      },
+      {
+        "old": "planning-departmental-gis",
+        "new": "planning-departmental-gis-7666f816ad"
+      },
+      {
+        "old": "land-information-becomes-policy",
+        "new": "land-information-becomes-policy-3d743f9d24"
+      },
+      {
+        "old": "access-before-open-data",
+        "new": "access-before-open-data-799acfb39b"
+      },
+      {
+        "old": "inside-the-machinery",
+        "new": "government-operations-843f9eb18b"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/11/universities-build-a-field/",
+    "new": "/stories/universities-build-a-field/",
+    "anchors": [
+      {
+        "old": "teaching-a-moving-target",
+        "new": "teaching-a-moving-target-88b95dd914"
+      },
+      {
+        "old": "teaching-with-scarce-access",
+        "new": "teaching-with-scarce-access-31e0ae06aa"
+      },
+      {
+        "old": "building-a-workstation-laboratory",
+        "new": "building-a-workstation-laboratory-1e2dba36e8"
+      },
+      {
+        "old": "from-software-to-spatial-information",
+        "new": "from-software-to-spatial-information-eb5bf2ea49"
+      },
+      {
+        "old": "a-recurring-research-forum",
+        "new": "a-recurring-research-forum-6b17dc2b4d"
+      },
+      {
+        "old": "maori-land-values-1995-1996",
+        "new": "maori-land-values-1995-1996-79631e4212"
+      },
+      {
+        "old": "publishing-a-new-field",
+        "new": "publishing-a-new-field-e05808ff57"
+      },
+      {
+        "old": "surveying-and-the-spatial-disciplines",
+        "new": "surveying-and-the-spatial-disciplines-3d20aefbb6"
+      },
+      {
+        "old": "researching-adoption",
+        "new": "researching-adoption-3f3b5beb1c"
+      },
+      {
+        "old": "postgraduates-build-the-record",
+        "new": "postgraduate-research-02df025000"
+      },
+      {
+        "old": "hendriksen-cyclone-bola-1995",
+        "new": "cyclone-bola-erosion-research-1995-224cf9ea6b"
+      },
+      {
+        "old": "a-field-rather-than-a-package",
+        "new": "a-field-rather-than-a-package-f6fb77d9bb"
+      },
+      {
+        "old": "linz-capability-11-2026",
+        "new": "from-individual-papers-to-a-national-pathway-a8f3c41256"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/12/an-industry-and-community-form/",
+    "new": "/stories/an-industry-and-community-form/",
+    "anchors": [
+      {
+        "old": "buying-was-the-easy-part",
+        "new": "buying-and-implementing-gis-a7de508d68"
+      },
+      {
+        "old": "local-channels",
+        "new": "local-channels-6f2ca241b9"
+      },
+      {
+        "old": "a-consultancy-appears",
+        "new": "a-consultancy-appears-b51b8936ec"
+      },
+      {
+        "old": "the-desktop-market-widens",
+        "new": "the-desktop-market-widens-b4162ebd37"
+      },
+      {
+        "old": "a-gis-was-assembled",
+        "new": "assembling-a-gis-44546cee53"
+      },
+      {
+        "old": "support-after-the-sale",
+        "new": "support-after-the-sale-b25d40d4e0"
+      },
+      {
+        "old": "a-mixed-software-market",
+        "new": "a-mixed-software-market-75032ec60f"
+      },
+      {
+        "old": "esri-and-eagle-in-new-zealand",
+        "new": "esri-and-eagle-in-new-zealand-eb1fae3cf8"
+      },
+      {
+        "old": "users-organise-themselves",
+        "new": "users-organise-themselves-db33362cb9"
+      },
+      {
+        "old": "a-conference-becomes-infrastructure",
+        "new": "recurring-conferences-5a9922acb6"
+      },
+      {
+        "old": "what-conferences-supplied",
+        "new": "conferences-and-meetings-b0f15360d7"
+      },
+      {
+        "old": "the-people-behind-the-logos",
+        "new": "company-staff-0a270cec64"
+      },
+      {
+        "old": "from-purchase-to-dependence",
+        "new": "from-purchase-to-dependence-41d4f44fce"
+      },
+      {
+        "old": "linz-capability-12-2026",
+        "new": "gis-reaches-the-school-classroom-609636e9aa"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/13/the-cadastre-becomes-data/",
+    "new": "/stories/the-cadastre-becomes-data/",
+    "anchors": [
+      {
+        "old": "a-clean-line-on-screen",
+        "new": "cadastral-linework-573557de34"
+      },
+      {
+        "old": "records-made-for-different-jobs",
+        "new": "records-made-for-different-jobs-93cccd5754"
+      },
+      {
+        "old": "a-national-conversion-job",
+        "new": "a-national-conversion-job-7ee8b0bc4d"
+      },
+      {
+        "old": "keeping-a-moving-target-current",
+        "new": "keeping-a-moving-target-current-38a2be5c38"
+      },
+      {
+        "old": "inside-the-database",
+        "new": "inside-the-database-32b81a061e"
+      },
+      {
+        "old": "seamless-was-not-survey-accurate",
+        "new": "accuracy-and-continuity-31b499bdf2"
+      },
+      {
+        "old": "precision-on-the-screen",
+        "new": "precision-on-the-screen-0e2b6831a0"
+      },
+      {
+        "old": "the-parcel-layer-escapes-the-survey-office",
+        "new": "wider-use-of-parcels-41ad15f707"
+      },
+      {
+        "old": "a-base-layer-becomes-infrastructure",
+        "new": "the-cadastral-base-6f9e9f8266"
+      },
+      {
+        "old": "a-department-is-split",
+        "new": "a-department-is-split-52e69de113"
+      },
+      {
+        "old": "putting-survey-evidence-back-into-the-coordinates",
+        "new": "survey-conversion-a2546c4b1a"
+      },
+      {
+        "old": "more-than-a-new-parcel-database",
+        "new": "cadastral-services-ce22b12589"
+      },
+      {
+        "old": "the-handover-happens-district-by-district",
+        "new": "the-handover-happens-district-by-district-1bfde7f4ed"
+      },
+      {
+        "old": "the-database-underneath-everything",
+        "new": "uses-of-cadastral-data-197b3f6ce4"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/14/landonline/",
+    "new": "/stories/landonline/",
+    "anchors": [
+      {
+        "old": "from-register-to-transaction-system",
+        "new": "from-register-to-transaction-system-60c6ff7b97"
+      },
+      {
+        "old": "stage-one",
+        "new": "stage-one-07493706d7"
+      },
+      {
+        "old": "converting-the-archive",
+        "new": "converting-the-archive-58cb45d19f"
+      },
+      {
+        "old": "a-contract-goes-wrong",
+        "new": "a-contract-goes-wrong-279983c56b"
+      },
+      {
+        "old": "changing-the-law",
+        "new": "changing-the-law-0aee31f3d5"
+      },
+      {
+        "old": "the-survey-becomes-data",
+        "new": "the-survey-becomes-data-67de02c526"
+      },
+      {
+        "old": "the-dealing-becomes-data",
+        "new": "the-dealing-becomes-data-fc41c0f055"
+      },
+      {
+        "old": "from-optional-to-normal",
+        "new": "from-optional-to-normal-757438b7f9"
+      },
+      {
+        "old": "a-national-utility",
+        "new": "a-national-utility-226b4cfcfc"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/15/topography-goes-digital/",
+    "new": "/stories/topography-goes-digital/",
+    "anchors": [
+      {
+        "old": "the-sheet-stops-being-the-master",
+        "new": "maintaining-topographic-data-e05655154a"
+      },
+      {
+        "old": "a-small-scale-database-first",
+        "new": "a-small-scale-database-first-f5ce4f99a7"
+      },
+      {
+        "old": "converting-the-detailed-map",
+        "new": "converting-the-detailed-map-a898c7b19e"
+      },
+      {
+        "old": "data-is-not-the-map",
+        "new": "data-and-cartography-c5de79514a"
+      },
+      {
+        "old": "people-behind-the-database",
+        "new": "people-behind-the-database-5ff77a83ad"
+      },
+      {
+        "old": "a-purchaser-and-a-provider",
+        "new": "a-purchaser-and-a-provider-5980b53c2f"
+      },
+      {
+        "old": "the-map-reaches-the-browser",
+        "new": "the-map-reaches-the-browser-aebbc3dbf8"
+      },
+      {
+        "old": "a-new-grid-for-a-new-series",
+        "new": "a-new-grid-for-a-new-series-db99d477e1"
+      },
+      {
+        "old": "451-sheets-at-once",
+        "new": "the-topo50-release-6ca71b18e1"
+      },
+      {
+        "old": "from-map-series-to-spatial-infrastructure",
+        "new": "from-map-series-to-spatial-infrastructure-acc4b871ab"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/16/census-geography/",
+    "new": "/stories/census-geography/",
+    "anchors": [
+      {
+        "old": "lines-made-for-counting",
+        "new": "census-boundaries-374f9056b5"
+      },
+      {
+        "old": "the-census-office-goes-to-war",
+        "new": "the-census-office-goes-to-war-6017b61846"
+      },
+      {
+        "old": "geography-before-databases",
+        "new": "early-census-geography-bdb6c3e775"
+      },
+      {
+        "old": "when-census-day-moved",
+        "new": "when-census-day-moved-6b7e3b863c"
+      },
+      {
+        "old": "population-mesh-blocks",
+        "new": "population-meshblocks-0e5532e401"
+      },
+      {
+        "old": "the-national-system",
+        "new": "national-census-geography-43ba45c83b"
+      },
+      {
+        "old": "digitising-the-pattern",
+        "new": "digitising-boundaries-1a92db9d49"
+      },
+      {
+        "old": "maintaining-the-classification",
+        "new": "maintaining-classifications-59c7cc223c"
+      },
+      {
+        "old": "a-geography-for-linking",
+        "new": "linking-census-records-54247bd790"
+      },
+      {
+        "old": "the-census-that-moved-two-years",
+        "new": "the-census-that-moved-two-years-ad5140789b"
+      },
+      {
+        "old": "boundaries-that-move",
+        "new": "boundary-changes-dfe56f74a1"
+      },
+      {
+        "old": "people-behind-the-geography",
+        "new": "census-geography-staff-3b501947a5"
+      },
+      {
+        "old": "a-database-is-not-access",
+        "new": "access-to-census-data-df6f81dcf0"
+      },
+      {
+        "old": "access-becomes-a-data-workflow",
+        "new": "using-census-data-f2e8d11365"
+      },
+      {
+        "old": "files-other-gis-could-use",
+        "new": "interoperable-census-files-11e24f30e5"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/17/roads-addresses-and-property/",
+    "new": "/stories/roads-addresses-and-property/",
+    "anchors": [
+      {
+        "old": "finding-the-right-place",
+        "new": "locating-addresses-f246831d93"
+      },
+      {
+        "old": "a-road-is-not-an-address",
+        "new": "roads-and-addresses-a972171969"
+      },
+      {
+        "old": "local-records-national-need",
+        "new": "local-records-national-need-4062a38f8b"
+      },
+      {
+        "old": "the-emergency-problem",
+        "new": "the-emergency-problem-2f6d44e0ff"
+      },
+      {
+        "old": "roads-for-response",
+        "new": "roads-for-response-309bcb1392"
+      },
+      {
+        "old": "rural-distance-becomes-an-address",
+        "new": "rural-distance-becomes-an-address-b9920fb018"
+      },
+      {
+        "old": "standardising-an-address",
+        "new": "address-standards-df40b06f16"
+      },
+      {
+        "old": "property-is-another-geography",
+        "new": "property-is-another-geography-3112258710"
+      },
+      {
+        "old": "from-street-list-to-geocoding",
+        "new": "from-street-list-to-geocoding-a3670e1c5c"
+      },
+      {
+        "old": "maintaining-one-national-record",
+        "new": "maintaining-one-national-record-79bb9d218b"
+      },
+      {
+        "old": "a-public-dataset-becomes-infrastructure",
+        "new": "public-address-data-78d25a532d"
+      },
+      {
+        "old": "the-people-maintaining-place",
+        "new": "the-people-maintaining-place-4b7e92a74e"
+      },
+      {
+        "old": "coordinates-at-the-edge",
+        "new": "coordinate-limitations-dcb49d0b98"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/18/gps-changes-where-here-is/",
+    "new": "/stories/gps-changes-where-here-is/",
+    "anchors": [
+      {
+        "old": "a-receiver-on-the-trig",
+        "new": "a-receiver-on-the-trig-6482c1e00e"
+      },
+      {
+        "old": "before-gps",
+        "new": "before-gps-65d86e5082"
+      },
+      {
+        "old": "measuring-instead-of-deriving",
+        "new": "measuring-instead-of-deriving-7d6deadf62"
+      },
+      {
+        "old": "accuracy-had-a-price",
+        "new": "accuracy-had-a-price-97d1feb386"
+      },
+      {
+        "old": "corrections-are-infrastructure",
+        "new": "corrections-are-infrastructure-a77896ba7d"
+      },
+      {
+        "old": "the-signal-gets-better",
+        "new": "the-signal-gets-better-35ef672bb3"
+      },
+      {
+        "old": "the-coordinate-joins-the-record",
+        "new": "the-coordinate-joins-the-record-af4c925404"
+      },
+      {
+        "old": "gis-goes-into-the-field",
+        "new": "gis-goes-into-the-field-c4ce579f27"
+      },
+      {
+        "old": "different-jobs-different-tolerances",
+        "new": "different-jobs-different-tolerances-37e3a41544"
+      },
+      {
+        "old": "people-between-antenna-and-database",
+        "new": "people-between-antenna-and-database-9fee6450bc"
+      },
+      {
+        "old": "from-gps-to-gnss",
+        "new": "from-gps-to-gnss-872dcda4e5"
+      },
+      {
+        "old": "what-the-receiver-does-not-know",
+        "new": "position-and-interpretation-1e243f0680"
+      },
+      {
+        "old": "a-global-coordinate-meets-a-moving-country",
+        "new": "a-global-coordinate-meets-a-moving-country-22db061c83"
+      },
+      {
+        "old": "linz-capability-18-2026",
+        "new": "positioning-becomes-school-material-5e0e90ca0c"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/19/rebuilding-the-coordinate-framework/",
+    "new": "/stories/rebuilding-the-coordinate-framework/",
+    "anchors": [
+      {
+        "old": "a-global-position-in-a-local-system",
+        "new": "a-global-position-in-a-local-system-e2551fe26f"
+      },
+      {
+        "old": "the-repeat-gps-network",
+        "new": "the-repeat-gps-network-e05eda5fc5"
+      },
+      {
+        "old": "designing-nzgd2000",
+        "new": "designing-nzgd2000-d8aa821386"
+      },
+      {
+        "old": "the-deformation-model",
+        "new": "the-deformation-model-9eaa271fec"
+      },
+      {
+        "old": "datum-and-projection",
+        "new": "datum-and-projection-efe15c6958"
+      },
+      {
+        "old": "moving-the-data",
+        "new": "moving-the-data-2f1debe20c"
+      },
+      {
+        "old": "from-marks-to-active-control",
+        "new": "from-marks-to-active-control-1a47aa28cd"
+      },
+      {
+        "old": "real-time",
+        "new": "real-time-7ec6ff6340"
+      },
+      {
+        "old": "patches-rather-than-replacement",
+        "new": "patches-rather-than-replacement-0f82155d83"
+      },
+      {
+        "old": "kaikoura-moves-the-control",
+        "new": "kaikoura-moves-the-control-3d87afac04"
+      },
+      {
+        "old": "january-2018",
+        "new": "january-2018-6818fb7e0a"
+      },
+      {
+        "old": "further-refinement",
+        "new": "further-refinement-b8214adc9c"
+      },
+      {
+        "old": "a-maintained-national-framework",
+        "new": "a-maintained-national-framework-83b2fecb78"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/20/imagery-becomes-infrastructure/",
+    "new": "/stories/imagery-becomes-infrastructure/",
+    "anchors": [
+      {
+        "old": "a-photograph-you-can-measure",
+        "new": "a-photograph-you-can-measure-72c979d587"
+      },
+      {
+        "old": "from-project-image-to-gis-layer",
+        "new": "from-project-image-to-gis-layer-bfa2694dc2"
+      },
+      {
+        "old": "the-mosaic",
+        "new": "the-mosaic-7cd1eb2e36"
+      },
+      {
+        "old": "auckland-works-together",
+        "new": "auckland-works-together-44f14362be"
+      },
+      {
+        "old": "south-island-orthophoto-2004",
+        "new": "a-shared-south-island-image-base-804f2b19d0"
+      },
+      {
+        "old": "the-image-under-everything",
+        "new": "imagery-as-a-base-layer-0efc7747ca"
+      },
+      {
+        "old": "resolution-and-fitness-for-use",
+        "new": "resolution-and-fitness-for-use-65feb1032e"
+      },
+      {
+        "old": "from-regional-to-national-coordination",
+        "new": "from-regional-to-national-coordination-2fc460d5cc"
+      },
+      {
+        "old": "delivery-becomes-part-of-the-product",
+        "new": "delivery-becomes-part-of-the-product-fb98b2a50d"
+      },
+      {
+        "old": "an-archive-becomes-digital",
+        "new": "an-archive-becomes-digital-e8db92ea8d"
+      },
+      {
+        "old": "what-the-image-records",
+        "new": "interpreting-imagery-f4863ce856"
+      },
+      {
+        "old": "a-maintained-background",
+        "new": "maintaining-imagery-4e853e3f0f"
+      },
+      {
+        "old": "linz-capability-20-2026",
+        "new": "historical-imagery-returns-as-a-community-tool-5cf3bc2665"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/21/the-spatial-infrastructure-idea/",
+    "new": "/stories/the-spatial-infrastructure-idea/",
+    "anchors": [
+      {
+        "old": "different-systems-same-country",
+        "new": "different-systems-same-country-9d58529552"
+      },
+      {
+        "old": "early-coordination",
+        "new": "early-coordination-d9cf5661aa"
+      },
+      {
+        "old": "the-exchange-problem",
+        "new": "the-exchange-problem-360e89fffc"
+      },
+      {
+        "old": "from-discussion-to-strategy",
+        "new": "from-discussion-to-strategy-5ee12aa3cc"
+      },
+      {
+        "old": "not-one-national-database",
+        "new": "distributed-datasets-2e312a8bcc"
+      },
+      {
+        "old": "metadata-travels-with-the-data",
+        "new": "metadata-travels-with-the-data-ee30d4b7c3"
+      },
+      {
+        "old": "standards-without-a-standards-empire",
+        "new": "practical-standards-60a9e07f1c"
+      },
+      {
+        "old": "richard-murcott-geospatial-standards",
+        "new": "richard-murcott-s-standards-work-9694177344"
+      },
+      {
+        "old": "new-zealand-dggs-development",
+        "new": "discrete-global-grids-594efcfa4a"
+      },
+      {
+        "old": "ogc-palmerston-north-2017",
+        "new": "ogc-in-palmerston-north-71400a2800"
+      },
+      {
+        "old": "from-coordination-to-sdi",
+        "new": "from-coordination-to-sdi-bfb7b389e7"
+      },
+      {
+        "old": "fundamental-data",
+        "new": "fundamental-data-40741ff283"
+      },
+      {
+        "old": "a-national-system-checks-itself",
+        "new": "a-national-system-checks-itself-1ed6dcfdbb"
+      },
+      {
+        "old": "infrastructure-without-completion",
+        "new": "continuing-development-ff23faebb8"
+      },
+      {
+        "old": "what-became-ordinary",
+        "new": "routine-data-exchange-6d5fdad9a2"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/22/gis-comes-to-the-desktop/",
+    "new": "/stories/gis-comes-to-the-desktop/",
+    "anchors": [
+      {
+        "old": "the-gis-room",
+        "new": "the-gis-room-ac7aab1bb3"
+      },
+      {
+        "old": "a-smaller-machine-a-different-user",
+        "new": "a-smaller-machine-a-different-user-8f0792952a"
+      },
+      {
+        "old": "mapinfo-in-gisborne",
+        "new": "mapinfo-in-gisborne-0a91fb37f4"
+      },
+      {
+        "old": "not-a-replacement-cycle",
+        "new": "parallel-software-systems-958a169409"
+      },
+      {
+        "old": "census-data-on-an-analysts-desk",
+        "new": "census-data-on-an-analyst-s-desk-5fd83bd561"
+      },
+      {
+        "old": "quickmap",
+        "new": "quickmap-72c3b55191"
+      },
+      {
+        "old": "the-copy-problem",
+        "new": "the-copy-problem-a8adb73340"
+      },
+      {
+        "old": "cheaper-did-not-mean-cheap",
+        "new": "desktop-costs-38b6be3006"
+      },
+      {
+        "old": "formats-become-everyday-infrastructure",
+        "new": "formats-become-everyday-infrastructure-29f24fa21a"
+      },
+      {
+        "old": "what-the-pc-still-could-not-do",
+        "new": "desktop-limitations-d000c583b1"
+      },
+      {
+        "old": "the-gis-job-changes",
+        "new": "the-gis-job-changes-2c9e7b5db0"
+      },
+      {
+        "old": "from-desktop-to-corporate-system",
+        "new": "from-desktop-to-corporate-system-bdb78737ed"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/23/councils-build-corporate-gis/",
+    "new": "/stories/councils-build-corporate-gis/",
+    "anchors": [
+      {
+        "old": "a-new-local-government",
+        "new": "a-new-local-government-461687bcb1"
+      },
+      {
+        "old": "adoption-accelerates",
+        "new": "adoption-accelerates-2085360bd2"
+      },
+      {
+        "old": "regional-land-resource-data-1993-1994",
+        "new": "regional-land-resource-data-1993-1994-e6274a0794"
+      },
+      {
+        "old": "the-parcel-becomes-a-key",
+        "new": "the-parcel-becomes-a-key-bef81bd90d"
+      },
+      {
+        "old": "networks-meet-the-ledger",
+        "new": "networks-meet-the-ledger-5cf46cdf27"
+      },
+      {
+        "old": "wellington-hazard-data-1996",
+        "new": "wellington-hazard-data-1996-896825b241"
+      },
+      {
+        "old": "a-corporate-system",
+        "new": "a-corporate-system-8cc0b38217"
+      },
+      {
+        "old": "planning-as-data",
+        "new": "planning-as-data-043968e0e8"
+      },
+      {
+        "old": "the-people-behind-the-database",
+        "new": "the-people-behind-the-database-0ac104674a"
+      },
+      {
+        "old": "auckland-works-across-boundaries",
+        "new": "auckland-works-across-boundaries-359577828b"
+      },
+      {
+        "old": "maps-from-all-over-council",
+        "new": "maps-from-all-over-council-9ef0acf90d"
+      },
+      {
+        "old": "napier-mapit",
+        "new": "napier-develops-mapit-3756b33c09"
+      },
+      {
+        "old": "upper-hutt-opens-the-door",
+        "new": "upper-hutt-puts-property-online-c108b6d8a2"
+      },
+      {
+        "old": "tauranga-internal-viewers",
+        "new": "tauranga-expands-internal-mapping-9e1d355230"
+      },
+      {
+        "old": "tasman-explore-tasman",
+        "new": "tasman-shares-council-gis-adbd4f0f56"
+      },
+      {
+        "old": "control-and-responsibility",
+        "new": "control-and-responsibility-50c82671fb"
+      },
+      {
+        "old": "corporate-not-complete",
+        "new": "continuing-council-development-a81f59d2fe"
+      },
+      {
+        "old": "linz-capability-23-2026",
+        "new": "council-maps-become-a-public-data-source-43f9920eb4"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/24/government-goes-spatial/",
+    "new": "/stories/government-goes-spatial/",
+    "anchors": [
+      {
+        "old": "ordinary-government-work",
+        "new": "government-applications-3510b72bef"
+      },
+      {
+        "old": "treasury-maps-the-economy",
+        "new": "treasury-maps-the-economy-c1d6a6cda1"
+      },
+      {
+        "old": "a-mite-changes-the-map",
+        "new": "the-varroa-response-8f6edc1487"
+      },
+      {
+        "old": "later-technical-reconstruction-by-veterinary-epidemiologist-robert-sanson-shows-how-far-the-spatial-work-developed-after-those-first-weeks-varroa-sim-was-programmed-in-arcview-using-avenue-and-treated-9-229-registered-north-island-apiaries-with-valid-map-grid-coordinates-as-the-population-at-risk-the-stochastic-model-represented-local-spread-movement-within-a-beekeeper-s-operation-and-the-seasonal-concentration-of-hives-for-pollination-while-eradication-assumptions-could-be-changed-through-menus-in-the-map-interface-the-work-also-exposed-a-quieter-data-problem-apiary-map-sheet-references-were-subsequently-converted-automatically-to-full-new-zealand-map-grid-coordinates-and-validation-was-added-to-stop-impossible-locations-entering-the-database-gis-was-therefore-doing-two-jobs-modelling-where-infestation-might-move-and-forcing-the-underlying-location-records-to-become-more-dependable",
+        "new": "modelling-varroa-spread-a6684b8874"
+      },
+      {
+        "old": "fisheries-builds-a-spatial-service",
+        "new": "fisheries-builds-a-spatial-service-52ac4c0640"
+      },
+      {
+        "old": "regulation-is-geometry",
+        "new": "regulation-is-geometry-5f49908484"
+      },
+      {
+        "old": "different-agencies-common-practice",
+        "new": "different-agencies-common-practice-6e7bae235e"
+      },
+      {
+        "old": "the-ordinary-user",
+        "new": "the-ordinary-user-4bacf0bd7f"
+      },
+      {
+        "old": "government-goes-spatial",
+        "new": "routine-government-use-981b72aea2"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/25/mapping-the-networks/",
+    "new": "/stories/mapping-the-networks/",
+    "anchors": [
+      {
+        "old": "a-network-is-not-a-line",
+        "new": "network-connections-aa605f56a3"
+      },
+      {
+        "old": "paper-plans-become-a-register",
+        "new": "paper-plans-become-a-register-0cb18819c8"
+      },
+      {
+        "old": "lifelines-studies-1989-1996",
+        "new": "shared-utility-studies-1989-1996-329014cdad"
+      },
+      {
+        "old": "auckland-lifelines-established-1996",
+        "new": "auckland-lifelines-established-in-1996-ff9371440e"
+      },
+      {
+        "old": "wairarapa-lifelines-established-1996",
+        "new": "wairarapa-lifelines-established-in-1996-ab139e9991"
+      },
+      {
+        "old": "smallworld-at-vector",
+        "new": "smallworld-at-vector-b61cdf1186"
+      },
+      {
+        "old": "what-is-connected-to-what",
+        "new": "network-topology-and-tracing-310848c3b6"
+      },
+      {
+        "old": "one-asset-several-systems",
+        "new": "one-asset-several-systems-b239127218"
+      },
+      {
+        "old": "wellington-electricity-rebuilds-the-links",
+        "new": "wellington-electricity-rebuilds-the-links-0dd79fa71a"
+      },
+      {
+        "old": "watercare-joins-map-and-maintenance",
+        "new": "watercare-joins-map-and-maintenance-a9c43e94e1"
+      },
+      {
+        "old": "telecommunications-at-national-scale",
+        "new": "telecommunications-at-national-scale-d304b58b74"
+      },
+      {
+        "old": "the-field-moves-closer",
+        "new": "the-field-moves-closer-ce54959f64"
+      },
+      {
+        "old": "gas-and-the-layered-network-stack",
+        "new": "gas-and-the-layered-network-stack-5218b2d89e"
+      },
+      {
+        "old": "keeping-the-model-current",
+        "new": "keeping-the-model-current-53e024cd7b"
+      },
+      {
+        "old": "the-network-as-operational-data",
+        "new": "the-network-as-operational-data-0901ada806"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/26/conservation-and-environment/",
+    "new": "/stories/conservation-and-environment/",
+    "anchors": [
+      {
+        "old": "from-ecological-maps-to-managed-data",
+        "new": "from-ecological-maps-to-managed-data-f9ce793ad8"
+      },
+      {
+        "old": "species-records-1987-1993",
+        "new": "species-records-1987-1993-0a1a08e6d9"
+      },
+      {
+        "old": "a-department-spread-across-the-country",
+        "new": "a-department-spread-across-the-country-e03e0ab2de"
+      },
+      {
+        "old": "building-a-biodiversity-platform",
+        "new": "building-a-biodiversity-platform-f257b0d00d"
+      },
+      {
+        "old": "docgis-becomes-a-national-system",
+        "new": "docgis-becomes-a-national-system-ec8abf5e30"
+      },
+      {
+        "old": "the-browser-reaches-the-field-office",
+        "new": "the-browser-reaches-the-field-office-f5e29d7033"
+      },
+      {
+        "old": "docgis-after-the-2003-releases",
+        "new": "docgis-after-the-2003-releases-70d5c1dde2"
+      },
+      {
+        "old": "maintaining-conservation-information",
+        "new": "maintaining-conservation-information-be7df4d5ec"
+      },
+      {
+        "old": "a-national-picture-of-land-cover",
+        "new": "a-national-picture-of-land-cover-3065a3f775"
+      },
+      {
+        "old": "from-image-to-environmental-record",
+        "new": "from-image-to-environmental-record-bf899cfe67"
+      },
+      {
+        "old": "a-plan-for-each-farm",
+        "new": "a-plan-for-each-farm-12070ee487"
+      },
+      {
+        "old": "environmental-gis-at-property-scale",
+        "new": "environmental-gis-at-property-scale-33980460b0"
+      },
+      {
+        "old": "data-that-should-not-all-be-public",
+        "new": "sensitive-conservation-data-ffa86e9260"
+      },
+      {
+        "old": "conservation-gis-beyond-government",
+        "new": "conservation-gis-beyond-government-611e7efe0e"
+      },
+      {
+        "old": "environmental-information-as-infrastructure",
+        "new": "environmental-information-as-infrastructure-50c5425ebf"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/27/health-population-and-place/",
+    "new": "/stories/health-population-and-place/",
+    "anchors": [
+      {
+        "old": "a-case-needs-a-denominator",
+        "new": "cases-and-population-29839cfc31"
+      },
+      {
+        "old": "waikato-builds-a-routine-map",
+        "new": "waikato-builds-a-routine-map-4b1fb43cf4"
+      },
+      {
+        "old": "one-dataset-several-patterns",
+        "new": "one-dataset-several-patterns-29e12cb275"
+      },
+      {
+        "old": "a-national-surveillance-environment",
+        "new": "a-national-surveillance-environment-492f2312f2"
+      },
+      {
+        "old": "phew-puts-surveillance-in-a-browser",
+        "new": "phew-puts-surveillance-in-a-browser-5d6825d623"
+      },
+      {
+        "old": "when-an-address-is-not-a-location",
+        "new": "geocoding-uncertainty-c0ce78eba9"
+      },
+      {
+        "old": "getting-to-a-hospital",
+        "new": "getting-to-a-hospital-73a6354dbb"
+      },
+      {
+        "old": "census-data-becomes-free",
+        "new": "census-data-becomes-free-6789139440"
+      },
+      {
+        "old": "the-public-health-observatory",
+        "new": "the-public-health-observatory-4d08555077"
+      },
+      {
+        "old": "a-health-geoinformatics-community",
+        "new": "a-health-geoinformatics-community-3a9d0a44c2"
+      },
+      {
+        "old": "from-public-maps-to-controlled-operational-data",
+        "new": "from-public-maps-to-controlled-operational-data-4122c498e8"
+      },
+      {
+        "old": "manaaki",
+        "new": "manaaki-1962327508"
+      },
+      {
+        "old": "hauora-manaaki",
+        "new": "hauora-manaaki-45e8f5300c"
+      },
+      {
+        "old": "population-and-place",
+        "new": "population-and-place-80407e80cf"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/28/safety-policing-and-emergency-gis/",
+    "new": "/stories/safety-policing-and-emergency-gis/",
+    "anchors": [
+      {
+        "old": "crime-enters-the-records-system",
+        "new": "crime-enters-the-records-system-828e75ea07"
+      },
+      {
+        "old": "nineteen-analyst-sites",
+        "new": "nineteen-analyst-sites-1b98d5c32a"
+      },
+      {
+        "old": "maps-in-wellington",
+        "new": "maps-in-wellington-7b9af32627"
+      },
+      {
+        "old": "searching-around-the-burglary",
+        "new": "searching-around-the-burglary-07730a870f"
+      },
+      {
+        "old": "place-time-and-repeat-victimisation",
+        "new": "place-time-and-repeat-victimisation-7fcb4d2517"
+      },
+      {
+        "old": "from-specialist-client-to-web-access",
+        "new": "from-specialist-client-to-web-access-06bcc56807"
+      },
+      {
+        "old": "incident-geography-and-emergency-response",
+        "new": "incident-geography-and-emergency-response-a74e7647c8"
+      },
+      {
+        "old": "five-minutes-from-the-station",
+        "new": "five-minutes-from-the-station-d2141c3d3a"
+      },
+      {
+        "old": "from-hot-spots-to-priority-locations",
+        "new": "from-hot-spots-to-priority-locations-46b1a61852"
+      },
+      {
+        "old": "crime-count-harm-and-vulnerability",
+        "new": "crime-count-harm-and-vulnerability-f7e6282567"
+      },
+      {
+        "old": "police-data-goes-public",
+        "new": "police-data-goes-public-87d97a67ca"
+      },
+      {
+        "old": "operational-geography-before-the-major-disasters",
+        "new": "operational-geography-before-the-major-disasters-4c81da5a4c"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/29/becoming-a-gis-professional/",
+    "new": "/stories/becoming-a-gis-professional/",
+    "anchors": [
+      {
+        "old": "before-gis-was-a-job-title",
+        "new": "before-gis-was-a-job-title-60ff00896e"
+      },
+      {
+        "old": "recurring-forums",
+        "new": "recurring-forums-aa58591027"
+      },
+      {
+        "old": "user-groups-become-infrastructure",
+        "new": "user-groups-become-infrastructure-18b0a31a28"
+      },
+      {
+        "old": "local-government-and-specialist-communities",
+        "new": "local-government-and-specialist-communities-349d9512f7"
+      },
+      {
+        "old": "from-analyst-to-developer",
+        "new": "from-analyst-to-developer-4f60b43ad7"
+      },
+      {
+        "old": "the-skills-shortage-becomes-visible",
+        "new": "the-skills-shortage-becomes-visible-9cd7ad9755"
+      },
+      {
+        "old": "new-professional-networks",
+        "new": "new-professional-networks-71ae35ecbd"
+      },
+      {
+        "old": "a-profession-broader-than-one-platform",
+        "new": "a-profession-broader-than-one-platform-99e14779ee"
+      },
+      {
+        "old": "what-counted-as-gis",
+        "new": "defining-gis-73fe4882ef"
+      },
+      {
+        "old": "linz-capability-29-2026",
+        "new": "geospatial-capability-becomes-a-programme-0e41912671"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/30/the-first-web-maps/",
+    "new": "/stories/the-first-web-maps/",
+    "anchors": [
+      {
+        "old": "gis-reaches-the-browser",
+        "new": "gis-reaches-the-browser-78faf09cfe"
+      },
+      {
+        "old": "guild-on-the-web-1996",
+        "new": "guild-on-the-web-1996-1ac44c5733"
+      },
+      {
+        "old": "phew-in-1999",
+        "new": "phew-in-1999-dbe9d50e38"
+      },
+      {
+        "old": "a-map-without-gis-software",
+        "new": "a-map-without-gis-software-b284cddde9"
+      },
+      {
+        "old": "police-moves-to-thin-client",
+        "new": "police-moves-to-thin-client-0f7b6d4f36"
+      },
+      {
+        "old": "census-geography-on-the-web",
+        "new": "census-geography-on-the-web-50ae27dc46"
+      },
+      {
+        "old": "public-access-without-open-data",
+        "new": "public-access-without-open-data-01d6cbfd7e"
+      },
+      {
+        "old": "the-map-leaves-the-counter",
+        "new": "the-map-leaves-the-counter-b0e252e929"
+      },
+      {
+        "old": "webmap-inside-the-council",
+        "new": "webmap-inside-the-council-46e20e67ed"
+      },
+      {
+        "old": "arcims-inside-government",
+        "new": "arcims-inside-government-77a201a83c"
+      },
+      {
+        "old": "dunedin-webmap",
+        "new": "dunedin-webmap-e8a4aa6754"
+      },
+      {
+        "old": "what-the-browser-could-not-do",
+        "new": "browser-limitations-b4e8371569"
+      },
+      {
+        "old": "a-service-not-a-map",
+        "new": "mapping-services-c43cdc353a"
+      },
+      {
+        "old": "keeping-it-current",
+        "new": "keeping-it-current-8bba770b5e"
+      },
+      {
+        "old": "digital-evidence-disappears",
+        "new": "digital-evidence-disappears-dfe555c2d4"
+      },
+      {
+        "old": "the-audience-is-about-to-change",
+        "new": "the-audience-is-about-to-change-aba6ea67c2"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/31/google-changes-the-audience/",
+    "new": "/stories/google-changes-the-audience/",
+    "anchors": [
+      {
+        "old": "the-browser-was-already-here",
+        "new": "existing-web-mapping-4631ec16bb"
+      },
+      {
+        "old": "a-globe-on-the-desktop",
+        "new": "a-globe-on-the-desktop-fe3c526a67"
+      },
+      {
+        "old": "new-zealand-in-a-google-layer",
+        "new": "new-zealand-in-a-google-layer-c2e3d42633"
+      },
+      {
+        "old": "addresses-become-an-api",
+        "new": "addresses-become-an-api-8b47da046b"
+      },
+      {
+        "old": "the-map-starts-to-move",
+        "new": "interactive-google-maps-6b7760f041"
+      },
+      {
+        "old": "google-maps-lands-in-new-zealand",
+        "new": "google-maps-lands-in-new-zealand-5a0505090d"
+      },
+      {
+        "old": "search-becomes-ordinary",
+        "new": "search-becomes-ordinary-4bd5014c9e"
+      },
+      {
+        "old": "imagery-becomes-ordinary",
+        "new": "imagery-becomes-ordinary-336d16e715"
+      },
+      {
+        "old": "directions-without-a-gis",
+        "new": "directions-without-a-gis-c0892c5a78"
+      },
+      {
+        "old": "kml-as-a-bridge",
+        "new": "kml-as-a-bridge-efe6519f22"
+      },
+      {
+        "old": "maps-inside-other-websites",
+        "new": "maps-inside-other-websites-934c71685f"
+      },
+      {
+        "old": "the-map-becomes-a-component",
+        "new": "the-map-becomes-a-component-88e0e55999"
+      },
+      {
+        "old": "what-google-did-not-replace",
+        "new": "specialist-gis-alongside-google-84a5547d6f"
+      },
+      {
+        "old": "a-wider-mapping-public",
+        "new": "a-wider-mapping-public-54386442a8"
+      },
+      {
+        "old": "the-public-now-expects-a-map",
+        "new": "public-expectations-05b7134f93"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/32/open-source-changes-the-tools/",
+    "new": "/stories/open-source-changes-the-tools/",
+    "anchors": [
+      {
+        "old": "open-source-underneath-the-map",
+        "new": "open-source-underneath-the-map-069a12d50e"
+      },
+      {
+        "old": "the-database-arrives-quietly",
+        "new": "the-database-arrives-quietly-3460d584f6"
+      },
+      {
+        "old": "web-maps-without-a-single-vendor",
+        "new": "web-maps-without-a-single-vendor-55defdf0d2"
+      },
+      {
+        "old": "qgis-comes-into-view",
+        "new": "qgis-comes-into-view-91d01fe961"
+      },
+      {
+        "old": "code-goes-both-ways",
+        "new": "code-goes-both-ways-f0e3d559ab"
+      },
+      {
+        "old": "the-real-cost-of-free",
+        "new": "the-real-cost-of-free-88a94fa5e3"
+      },
+      {
+        "old": "a-mixed-toolkit",
+        "new": "a-mixed-toolkit-33ae40ee2c"
+      },
+      {
+        "old": "the-national-map-adopts-open-tools",
+        "new": "the-national-map-adopts-open-tools-ce97893059"
+      },
+      {
+        "old": "a-community-large-enough-to-host-the-world",
+        "new": "a-community-large-enough-to-host-the-world-aa98df6e0c"
+      },
+      {
+        "old": "many-tools-one-practice",
+        "new": "many-tools-one-practice-8b534cc5d2"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/33/open-data-changes-access/",
+    "new": "/stories/open-data-changes-access/",
+    "anchors": [
+      {
+        "old": "viewing-is-not-reuse",
+        "new": "viewing-and-reuse-8d2a393282"
+      },
+      {
+        "old": "the-price-of-geography",
+        "new": "the-price-of-geography-d828a876b3"
+      },
+      {
+        "old": "census-access-changes",
+        "new": "census-access-changes-e28084f316"
+      },
+      {
+        "old": "permission-to-derive",
+        "new": "permission-to-derive-bfd635c66e"
+      },
+      {
+        "old": "national-topography-becomes-downloadable",
+        "new": "national-topography-becomes-downloadable-c8fefdff5a"
+      },
+      {
+        "old": "land-resource-data-opens",
+        "new": "land-resource-data-opens-58d0d98adf"
+      },
+      {
+        "old": "a-licence-for-reuse",
+        "new": "a-licence-for-reuse-8efa04925a"
+      },
+      {
+        "old": "the-linz-data-service",
+        "new": "the-linz-data-service-51393f242c"
+      },
+      {
+        "old": "commercial-value-moves",
+        "new": "commercial-value-moves-1d3598d97b"
+      },
+      {
+        "old": "open-is-not-costless",
+        "new": "maintaining-open-data-8eeb99d6c9"
+      },
+      {
+        "old": "not-everything-should-be-open",
+        "new": "controlled-information-bce15db842"
+      },
+      {
+        "old": "from-product-to-shared-foundation",
+        "new": "from-product-to-shared-foundation-5abb4ca0a7"
+      },
+      {
+        "old": "linz-capability-33-2026",
+        "new": "teaching-people-to-use-the-open-data-environment-8f9efcc241"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/34/mapping-leaves-the-office/",
+    "new": "/stories/mapping-leaves-the-office/",
+    "anchors": [
+      {
+        "old": "the-map-leaves-the-desk",
+        "new": "taking-gis-into-the-field-be5de9df71"
+      },
+      {
+        "old": "forty-ipaqs-and-six-toughbooks",
+        "new": "forty-ipaqs-and-six-toughbooks-e0abd14e18"
+      },
+      {
+        "old": "what-fitted-in-the-hand",
+        "new": "handheld-equipment-a9e1eadb15"
+      },
+      {
+        "old": "a-national-system-meets-field-reality",
+        "new": "a-national-system-meets-field-reality-379d4ca04d"
+      },
+      {
+        "old": "taking-the-model-into-the-street",
+        "new": "taking-the-model-into-the-street-5f1abc2b2f"
+      },
+      {
+        "old": "working-without-a-signal",
+        "new": "working-without-a-signal-d1bd509df3"
+      },
+      {
+        "old": "forms-replace-notebooks",
+        "new": "forms-replace-notebooks-57d2e0dc40"
+      },
+      {
+        "old": "the-camera-joins-the-record",
+        "new": "the-camera-joins-the-record-ae96aa10db"
+      },
+      {
+        "old": "synchronising-back-to-the-office",
+        "new": "synchronising-back-to-the-office-446cff88e4"
+      },
+      {
+        "old": "who-owns-the-edit",
+        "new": "responsibility-for-field-edits-c12236e936"
+      },
+      {
+        "old": "the-phone-becomes-field-equipment",
+        "new": "the-phone-becomes-field-equipment-d77bfeff5e"
+      },
+      {
+        "old": "more-people-collect-structured-data",
+        "new": "more-people-collect-structured-data-a648f49e33"
+      },
+      {
+        "old": "field-reality-corrects-the-database",
+        "new": "field-reality-corrects-the-database-55a033c645"
+      },
+      {
+        "old": "from-mobile-gis-to-field-application",
+        "new": "from-mobile-gis-to-field-application-16676655da"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/35/the-map-becomes-an-application/",
+    "new": "/stories/the-map-becomes-an-application/",
+    "anchors": [
+      {
+        "old": "the-gis-behind-the-button",
+        "new": "the-gis-behind-the-button-409b125751"
+      },
+      {
+        "old": "from-viewer-to-task",
+        "new": "from-viewer-to-task-5ab89427eb"
+      },
+      {
+        "old": "a-portal-for-a-subject",
+        "new": "a-portal-for-a-subject-34be47f403"
+      },
+      {
+        "old": "s-map-and-our-environment-2011",
+        "new": "s-map-and-our-environment-fabb1c89cf"
+      },
+      {
+        "old": "maps-beside-numbers",
+        "new": "maps-beside-numbers-9652c96e6c"
+      },
+      {
+        "old": "the-form-becomes-the-interface",
+        "new": "the-form-becomes-the-interface-adca84c920"
+      },
+      {
+        "old": "one-system-several-interfaces",
+        "new": "one-system-several-interfaces-2111aa07df"
+      },
+      {
+        "old": "a-story-instead-of-a-toolbar",
+        "new": "storymaps-999bb8d90f"
+      },
+      {
+        "old": "public-applications",
+        "new": "public-applications-8ab5f7559c"
+      },
+      {
+        "old": "applications-for-staff",
+        "new": "applications-for-staff-a527809038"
+      },
+      {
+        "old": "the-hidden-spatial-infrastructure",
+        "new": "the-hidden-spatial-infrastructure-f3b44e2a2e"
+      },
+      {
+        "old": "simple-to-use-complicated-to-keep",
+        "new": "maintaining-applications-430efce6bf"
+      },
+      {
+        "old": "the-specialist-moves-behind-the-interface",
+        "new": "the-specialist-moves-behind-the-interface-0a7b1101bd"
+      },
+      {
+        "old": "the-map-becomes-an-application",
+        "new": "the-map-becomes-an-application-71de0c0d83"
+      },
+      {
+        "old": "linz-capability-35-2026",
+        "new": "practical-maori-web-mapping-23fcc809db"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/36/earth-observation-becomes-routine/",
+    "new": "/stories/earth-observation-becomes-routine/",
+    "anchors": [
+      {
+        "old": "the-satellite-comes-back",
+        "new": "repeated-satellite-coverage-e6f8bc631d"
+      },
+      {
+        "old": "from-experiment-to-working-method",
+        "new": "from-experiment-to-working-method-a1ca3ceb6c"
+      },
+      {
+        "old": "land-cover-through-time",
+        "new": "land-cover-through-time-b4b26dba97"
+      },
+      {
+        "old": "observation-becomes-reporting",
+        "new": "observation-becomes-reporting-1507e4f510"
+      },
+      {
+        "old": "a-maintained-map-changes-the-method",
+        "new": "a-maintained-map-changes-the-method-b7eb249f1e"
+      },
+      {
+        "old": "the-archive-opens",
+        "new": "the-archive-opens-f5baa93ce2"
+      },
+      {
+        "old": "sentinel-changes-the-rhythm",
+        "new": "sentinel-changes-the-rhythm-f75e5d686d"
+      },
+      {
+        "old": "finding-the-usable-observation",
+        "new": "finding-the-usable-observation-d9d482336e"
+      },
+      {
+        "old": "pixels-become-data",
+        "new": "pixels-become-data-0cf3a2b449"
+      },
+      {
+        "old": "a-national-satellite-layer",
+        "new": "a-national-satellite-layer-f54cc1855b"
+      },
+      {
+        "old": "seeing-through-cloud",
+        "new": "seeing-through-cloud-b7e270eebf"
+      },
+      {
+        "old": "from-fields-to-management-zones",
+        "new": "from-fields-to-management-zones-dd9700de63"
+      },
+      {
+        "old": "a-national-archive-takes-shape",
+        "new": "a-national-archive-takes-shape-ba865dc619"
+      },
+      {
+        "old": "repeated-observation-becomes-ordinary",
+        "new": "repeated-observation-becomes-ordinary-7ff6d0e295"
+      },
+      {
+        "old": "the-specialist-does-not-disappear",
+        "new": "specialist-interpretation-59ed049ff8"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/37/lidar-remakes-the-landscape/",
+    "new": "/stories/lidar-remakes-the-landscape/",
+    "anchors": [
+      {
+        "old": "christchurch-july-2003",
+        "new": "christchurch-july-2003-a6aa735b22"
+      },
+      {
+        "old": "from-contours-to-dense-measurements",
+        "new": "from-contours-to-dense-measurements-5d16441131"
+      },
+      {
+        "old": "waimakariri-and-regional-reuse",
+        "new": "waimakariri-and-regional-reuse-e7aa561e08"
+      },
+      {
+        "old": "water-finds-the-low-places",
+        "new": "water-finds-the-low-places-d3f659379a"
+      },
+      {
+        "old": "the-point-cloud-becomes-a-dataset",
+        "new": "the-point-cloud-becomes-a-dataset-8577c437a3"
+      },
+      {
+        "old": "measuring-change-in-canterbury",
+        "new": "measuring-change-in-canterbury-79d396dcaa"
+      },
+      {
+        "old": "seeing-the-ground-beneath-vegetation",
+        "new": "seeing-the-ground-beneath-vegetation-ad0a73fedd"
+      },
+      {
+        "old": "terrain-becomes-a-shared-input",
+        "new": "terrain-becomes-a-shared-input-38a0d9301b"
+      },
+      {
+        "old": "from-local-contracts-to-national-coordination",
+        "new": "from-local-contracts-to-national-coordination-fe483d07d2"
+      },
+      {
+        "old": "a-specification-for-a-country",
+        "new": "a-specification-for-a-country-f8590f0696"
+      },
+      {
+        "old": "open-elevation",
+        "new": "open-elevation-997878372e"
+      },
+      {
+        "old": "what-lidar-does-not-tell-you",
+        "new": "lidar-limitations-24688de27b"
+      },
+      {
+        "old": "a-national-terrain-foundation",
+        "new": "a-national-terrain-foundation-1ebfdc3774"
+      },
+      {
+        "old": "linz-capability-37-2026",
+        "new": "lidar-becomes-practitioner-training-0ae1ad6a4d"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/38/mapping-from-a-drone/",
+    "new": "/stories/mapping-from-a-drone/",
+    "anchors": [
+      {
+        "old": "a-crater-field-above-tongariro",
+        "new": "a-crater-field-above-tongariro-7683399e76"
+      },
+      {
+        "old": "a-survey-aircraft-in-a-case",
+        "new": "a-survey-aircraft-in-a-case-bf70a91d7c"
+      },
+      {
+        "old": "from-photographs-to-geometry",
+        "new": "from-photographs-to-geometry-87961ebf58"
+      },
+      {
+        "old": "point-clouds-without-a-laser",
+        "new": "point-clouds-without-a-laser-dbf10a4da4"
+      },
+      {
+        "old": "control-on-the-ground",
+        "new": "control-on-the-ground-fb6060a98b"
+      },
+      {
+        "old": "mapping-unstable-ground",
+        "new": "mapping-unstable-ground-56d5b073bb"
+      },
+      {
+        "old": "wetlands-from-low-altitude",
+        "new": "wetlands-from-low-altitude-15f5186a6e"
+      },
+      {
+        "old": "surveying-from-above",
+        "new": "surveying-from-above-c796922a65"
+      },
+      {
+        "old": "repeatability-is-harder-than-repetition",
+        "new": "repeatability-is-harder-than-repetition-aeb867879d"
+      },
+      {
+        "old": "centimetres-on-the-screen",
+        "new": "centimetres-on-the-screen-a19d06fd5c"
+      },
+      {
+        "old": "from-capture-to-archive",
+        "new": "from-capture-to-archive-3af7719683"
+      },
+      {
+        "old": "the-rules-catch-up",
+        "new": "the-rules-catch-up-4ff3c3bb10"
+      },
+      {
+        "old": "from-experiment-to-working-method",
+        "new": "from-experiment-to-working-method-a1ca3ceb6c"
+      },
+      {
+        "old": "the-map-after-the-flight",
+        "new": "processing-drone-surveys-aecd6f33d3"
+      },
+      {
+        "old": "not-a-replacement-technology",
+        "new": "drones-and-other-platforms-b21dfac3b6"
+      },
+      {
+        "old": "a-bridge-into-3d",
+        "new": "a-bridge-into-3d-2679557b1c"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/39/from-flat-maps-to-3d/",
+    "new": "/stories/from-flat-maps-to-3d/",
+    "anchors": [
+      {
+        "old": "when-the-map-acquires-height",
+        "new": "three-dimensional-mapping-0d16451ce2"
+      },
+      {
+        "old": "seeing-is-not-modelling",
+        "new": "visualisation-and-modelling-f305bc5792"
+      },
+      {
+        "old": "terrain-becomes-data",
+        "new": "terrain-becomes-data-44fef5297f"
+      },
+      {
+        "old": "point-clouds-become-normal",
+        "new": "point-clouds-become-normal-ca1f5dae42"
+      },
+      {
+        "old": "a-cadastre-with-volume",
+        "new": "a-cadastre-with-volume-d9599a550d"
+      },
+      {
+        "old": "infrastructure-in-three-dimensions",
+        "new": "infrastructure-in-three-dimensions-55f120350b"
+      },
+      {
+        "old": "when-height-changes-the-answer",
+        "new": "when-height-changes-the-answer-901da3e653"
+      },
+      {
+        "old": "a-third-coordinate-needs-discipline",
+        "new": "a-third-coordinate-needs-discipline-ab8b750767"
+      },
+      {
+        "old": "digital-auckland",
+        "new": "digital-auckland-31427c7f72"
+      },
+      {
+        "old": "buildings-meet-geography",
+        "new": "buildings-meet-geography-2289da86de"
+      },
+      {
+        "old": "from-model-to-digital-twin",
+        "new": "from-model-to-digital-twin-eb1e128f0a"
+      },
+      {
+        "old": "sharing-3d",
+        "new": "sharing-3d-85e350af10"
+      },
+      {
+        "old": "the-cost-of-the-third-dimension",
+        "new": "the-cost-of-the-third-dimension-046b164bc4"
+      },
+      {
+        "old": "working-across-professions",
+        "new": "working-across-professions-d0fd378a7d"
+      },
+      {
+        "old": "not-everything-needs-to-be-3d",
+        "new": "choosing-a-dimensional-model-7e74899263"
+      },
+      {
+        "old": "linz-capability-39-2026",
+        "new": "3d-storytelling-for-whenua-dd9961d631"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/40/enterprise-gis/",
+    "new": "/stories/enterprise-gis/",
+    "anchors": [
+      {
+        "old": "when-one-gis-is-not-enough",
+        "new": "shared-organisational-systems-fa8b4c43f6"
+      },
+      {
+        "old": "what-enterprise-gis-includes",
+        "new": "what-enterprise-gis-includes-607a7bde5d"
+      },
+      {
+        "old": "from-files-to-shared-data",
+        "new": "from-files-to-shared-data-6cefa96e49"
+      },
+      {
+        "old": "linz-builds-a-spatial-database",
+        "new": "linz-builds-a-spatial-database-f3b06480da"
+      },
+      {
+        "old": "many-users-one-record",
+        "new": "many-users-one-record-28a769445a"
+      },
+      {
+        "old": "christchurch-spreads-gis-through-the-organisation",
+        "new": "christchurch-spreads-gis-through-the-organisatio-f6e457bf58"
+      },
+      {
+        "old": "doc-builds-a-national-platform",
+        "new": "doc-builds-a-national-platform-3782b862a2"
+      },
+      {
+        "old": "location-joins-the-business-systems",
+        "new": "location-joins-the-business-systems-170f4bb82f"
+      },
+      {
+        "old": "niwa-takes-another-route",
+        "new": "niwa-takes-another-route-5f67e3b666"
+      },
+      {
+        "old": "one-service-many-applications",
+        "new": "one-service-many-applications-a616353d0b"
+      },
+      {
+        "old": "the-platform-team",
+        "new": "the-platform-team-4580a42438"
+      },
+      {
+        "old": "when-the-gis-goes-down",
+        "new": "when-the-gis-goes-down-aacad209de"
+      },
+      {
+        "old": "centralise-or-federate",
+        "new": "centralise-or-federate-3b2f15aae8"
+      },
+      {
+        "old": "downer-grail",
+        "new": "downer-grail-6605699f23"
+      },
+      {
+        "old": "governance-catches-up",
+        "new": "governance-catches-up-e89d1f3499"
+      },
+      {
+        "old": "auckland-council-gfmo",
+        "new": "auckland-council-gfmo-b5104d43cf"
+      },
+      {
+        "old": "upgrades-become-organisational-events",
+        "new": "upgrades-become-organisational-events-048819695d"
+      },
+      {
+        "old": "nzta-moves-to-kubernetes",
+        "new": "nzta-moves-to-kubernetes-2ad50c26cf"
+      },
+      {
+        "old": "standards-become-operational",
+        "new": "standards-become-operational-c7180f7625"
+      },
+      {
+        "old": "the-metadata-standard-problem",
+        "new": "the-metadata-standard-problem-20048f3f19"
+      },
+      {
+        "old": "the-invisible-gis",
+        "new": "the-invisible-gis-b79eaf5f11"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/41/cloud-services-and-apis/",
+    "new": "/stories/cloud-services-and-apis/",
+    "anchors": [
+      {
+        "old": "beyond-the-server-room",
+        "new": "beyond-the-server-room-6e2233d30a"
+      },
+      {
+        "old": "a-new-zealand-spatial-marketplace",
+        "new": "a-new-zealand-spatial-marketplace-1aee9b50bf"
+      },
+      {
+        "old": "lris-and-lds",
+        "new": "lris-and-lds-bb38207cbc"
+      },
+      {
+        "old": "the-service-moves-to-the-cloud",
+        "new": "the-service-moves-to-the-cloud-fbd36de1bc"
+      },
+      {
+        "old": "from-sdi-blueprint-to-service-ecosystem",
+        "new": "from-sdi-blueprint-to-service-ecosystem-9f30dd2b7c"
+      },
+      {
+        "old": "applications-call-geography",
+        "new": "applications-call-geography-dff8af74a4"
+      },
+      {
+        "old": "the-map-becomes-optional",
+        "new": "data-services-3fe0167d81"
+      },
+      {
+        "old": "services-are-not-all-the-same",
+        "new": "types-of-service-d251b21eed"
+      },
+      {
+        "old": "from-wfs-to-application-apis",
+        "new": "from-wfs-to-application-apis-ef94c5a949"
+      },
+      {
+        "old": "standards-meet-local-incentives",
+        "new": "standards-meet-local-incentives-c5ee4518cc"
+      },
+      {
+        "old": "from-standards-to-adapters",
+        "new": "from-standards-to-adapters-90b4e0e58a"
+      },
+      {
+        "old": "hosted-gis-becomes-a-platform",
+        "new": "hosted-gis-becomes-a-platform-71aa1fa592"
+      },
+      {
+        "old": "a-maintained-endpoint",
+        "new": "a-maintained-endpoint-c171f6118a"
+      },
+      {
+        "old": "access-crosses-the-boundary",
+        "new": "access-crosses-the-boundary-937c6b94a6"
+      },
+      {
+        "old": "who-runs-the-infrastructure-now",
+        "new": "operating-spatial-services-be5139d2df"
+      },
+      {
+        "old": "dependencies-become-visible",
+        "new": "dependencies-become-visible-31c00f15f6"
+      },
+      {
+        "old": "geography-between-machines",
+        "new": "geography-between-machines-9b5a821419"
+      },
+      {
+        "old": "cloud-without-the-hype",
+        "new": "cloud-operations-ff98c700f7"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/42/the-real-time-map/",
+    "new": "/stories/the-real-time-map/",
+    "anchors": [
+      {
+        "old": "when-the-map-starts-moving",
+        "new": "when-the-map-starts-moving-c6096c1cb2"
+      },
+      {
+        "old": "geonet-normalises-the-live-map",
+        "new": "geonet-normalises-the-live-map-1f0c613fc3"
+      },
+      {
+        "old": "a-common-picture-is-harder",
+        "new": "a-common-picture-is-harder-1763ac09cc"
+      },
+      {
+        "old": "canterbury-exposes-the-gaps",
+        "new": "canterbury-exposes-the-gaps-617f32c44a"
+      },
+      {
+        "old": "canterbury-common-operating-picture-2010",
+        "new": "canterbury-common-operating-picture-2010-26067d18a1"
+      },
+      {
+        "old": "one-event-several-systems",
+        "new": "one-event-several-systems-fddca95d35"
+      },
+      {
+        "old": "imagery-after-the-ground-changes",
+        "new": "imagery-after-the-ground-changes-3eae32241d"
+      },
+      {
+        "old": "kaikoura-moves-the-map-again",
+        "new": "kaikoura-moves-the-map-again-e2a0d99be5"
+      },
+      {
+        "old": "fast-is-not-the-same-as-verified",
+        "new": "checking-rapid-updates-e8cf001506"
+      },
+      {
+        "old": "the-network-can-fail-too",
+        "new": "the-network-can-fail-too-e15c27b984"
+      },
+      {
+        "old": "cyclone-gabrielle",
+        "new": "cyclone-gabrielle-b274c9f004"
+      },
+      {
+        "old": "nzta-during-cyclone-gabrielle",
+        "new": "nzta-during-cyclone-gabrielle-c58a7ffce6"
+      },
+      {
+        "old": "a-geospatial-surge",
+        "new": "a-geospatial-surge-f46a66f084"
+      },
+      {
+        "old": "more-than-one-common-picture",
+        "new": "shared-operational-maps-42415b8257"
+      },
+      {
+        "old": "field-capture-becomes-operational-data",
+        "new": "field-capture-becomes-operational-data-476ff871a9"
+      },
+      {
+        "old": "more-than-100-products",
+        "new": "emergency-mapping-products-0573ede669"
+      },
+      {
+        "old": "paper-still-works",
+        "new": "paper-still-works-074b2d23dc"
+      },
+      {
+        "old": "how-real-is-real-time",
+        "new": "update-intervals-98b901ca62"
+      },
+      {
+        "old": "linz-capability-42-2026",
+        "new": "resilience-as-a-geospatial-capability-programme-ef1ce37f8e"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/43/automating-the-gis-work/",
+    "new": "/stories/automating-the-gis-work/",
+    "anchors": [
+      {
+        "old": "the-repetitive-job",
+        "new": "the-repetitive-job-3a10af3db4"
+      },
+      {
+        "old": "teaching-the-desktop-the-sequence",
+        "new": "teaching-the-desktop-the-sequence-94f9a79d1f"
+      },
+      {
+        "old": "models-without-typing-everything",
+        "new": "models-without-typing-everything-deb256c7e5"
+      },
+      {
+        "old": "python-enters-the-server",
+        "new": "python-enters-the-server-66aa2e3a19"
+      },
+      {
+        "old": "the-database-does-some-of-the-work",
+        "new": "the-database-does-some-of-the-work-6f0663d09c"
+      },
+      {
+        "old": "moving-data-automatically",
+        "new": "moving-data-automatically-28c71931a5"
+      },
+      {
+        "old": "one-process-several-systems",
+        "new": "one-process-several-systems-a81d7c1e2d"
+      },
+      {
+        "old": "run-it-again-tomorrow",
+        "new": "run-it-again-tomorrow-fc191bdd9b"
+      },
+      {
+        "old": "maps-become-builds",
+        "new": "maps-become-builds-57333fc6ed"
+      },
+      {
+        "old": "reproducibility-becomes-part-of-the-job",
+        "new": "reproducibility-becomes-part-of-the-job-790ba2bf79"
+      },
+      {
+        "old": "automation-reaches-imagery",
+        "new": "automation-reaches-imagery-6fd3556448"
+      },
+      {
+        "old": "errors-at-scale",
+        "new": "errors-at-scale-33c7f593fd"
+      },
+      {
+        "old": "maintaining-somebody-elses-clever-idea",
+        "new": "maintaining-automation-32dfcb95bc"
+      },
+      {
+        "old": "the-last-manual-click",
+        "new": "oversight-of-automated-work-e694e8604c"
+      }
+    ]
+  },
+  {
+    "old": "/book/chapter/44/gis-at-the-end-of-2025/",
+    "new": "/stories/gis-at-the-end-of-2025/",
+    "anchors": [
+      {
+        "old": "the-gis-is-already-elsewhere",
+        "new": "embedded-spatial-systems-fc971b58aa"
+      },
+      {
+        "old": "ai-before-the-boom",
+        "new": "ai-before-the-boom-84462ade72"
+      },
+      {
+        "old": "learning-from-examples",
+        "new": "learning-from-examples-bc3f33378c"
+      },
+      {
+        "old": "maps-become-machine-readable-evidence",
+        "new": "reading-maps-with-ai-ebb70c2c9a"
+      },
+      {
+        "old": "a-model-reads-the-map",
+        "new": "a-model-reads-the-map-ce9de66e2a"
+      },
+      {
+        "old": "natural-language-returns",
+        "new": "natural-language-returns-9989c07d1e"
+      },
+      {
+        "old": "ai-enters-practice",
+        "new": "ai-enters-practice-77e4d81263"
+      },
+      {
+        "old": "research-is-not-infrastructure",
+        "new": "research-and-production-8b4cf52f29"
+      },
+      {
+        "old": "governance-does-not-disappear",
+        "new": "ai-governance-9d4100aa44"
+      },
+      {
+        "old": "the-specialist-at-the-endpoint",
+        "new": "the-specialist-at-the-endpoint-07cb21dd5b"
+      },
+      {
+        "old": "31-december-2025",
+        "new": "31-december-2025-0c663d2b52"
+      }
+    ]
+  }
+]

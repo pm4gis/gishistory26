@@ -1,0 +1,5 @@
+---
+const {sources=[],title='Sources'}=Astro.props;
+const clean=sources.filter((s:any)=>s.label);const safe=(u:string)=>u?.startsWith('/')||/^https?:\/\//.test(u);
+---
+{clean.length>0&&<details class="sources"><summary>{title} · {clean.length}</summary><ol>{clean.map((s:any)=><li>{safe(s.url)?<a href={s.url}>{s.label}</a>:s.label}</li>)}</ol></details>}

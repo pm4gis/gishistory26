@@ -1,0 +1,4 @@
+---
+import Layout from '../../layouts/Layout.astro';import {dataset} from '../../lib/data';const d=await dataset();
+---
+<Layout title="Themes · NZ GIS History"><div class="wrap"><p class="eyebrow">Reading collections</p><h1>Explore a theme.</h1><div class="cards">{d.themes.map((t:any)=><article class="card"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></article>)}</div></div></Layout>
