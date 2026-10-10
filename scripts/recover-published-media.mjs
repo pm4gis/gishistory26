@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import sharp from 'sharp';
 const origin='https://history.pm4gis.nz';
 const response=await fetch(origin+'/data.json?v=20261005-network-release',{signal:AbortSignal.timeout(45000)});
-if(!response.ok)throw Error('Published export unavailable: '+response.status);
+if(!response.ok){const message=(await response.text()).replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').slice(0,400);throw Error('Published export unavailable: '+response.status+' '+message)}
 const raw=await response.json();
 if(!Array.isArray(raw.records)||!raw.headerImages)throw Error('Unexpected publication export');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));

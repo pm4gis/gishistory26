@@ -27,6 +27,11 @@ for(const file of files){
   }
  }
 }
+const articles=new Map(fs.readdirSync('src/content/articles').filter(f=>f.endsWith('.json')).map(f=>{const a=JSON.parse(fs.readFileSync('src/content/articles/'+f));return [a.id,a]}));
+for(const f of fs.readdirSync('src/content/passages').filter(f=>f.endsWith('.json'))){
+ const p=JSON.parse(fs.readFileSync('src/content/passages/'+f));const a=articles.get(p.articleId);const file=path.join(root,a.url,'index.html');const ids=new Set([...html(file).matchAll(/\\bid=["']([^"']+)["']/g)].map(m=>m[1]));
+ for(const id of [p.slug,p.legacyAnchor,...(p.blocks||[]).map(b=>b.id)].filter(Boolean))if(!ids.has(id))issues.push({route:a.url,value:'#'+id,reason:'Original content anchor missing'});
+}
 fs.mkdirSync('docs/verification',{recursive:true});fs.writeFileSync('docs/verification/links.json',JSON.stringify({htmlPages:files.length,checked,issues},null,2)+'\n');
 if(issues.length)throw Error('Internal link verification failed: '+JSON.stringify(issues.slice(0,30)));
 console.log('Internal links passed: '+checked+' links across '+files.length+' pages');

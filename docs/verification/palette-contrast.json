@@ -1,0 +1,29 @@
+{
+  "method": "WCAG relative luminance formula applied to semantic CSS colours; static calculation, not a full accessibility audit",
+  "results": [
+    {
+      "theme": "night",
+      "body": 13.890415887492733,
+      "muted": 8.181980598905806,
+      "primary": 11.340107288790788
+    },
+    {
+      "theme": "forest",
+      "body": 13.024110306445097,
+      "muted": 8.36393431484877,
+      "primary": 11.679769548422696
+    },
+    {
+      "theme": "paper",
+      "body": 14.071714131827841,
+      "muted": 6.300808672015095,
+      "primary": 6.177254458010148
+    },
+    {
+      "theme": "mist",
+      "body": 14.163761449661761,
+      "muted": 6.477384117364823,
+      "primary": 6.352081518492807
+    }
+  ]
+}
