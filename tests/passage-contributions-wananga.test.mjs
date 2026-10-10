@@ -53,6 +53,8 @@ test('Archive sources have unique valid IDs, evidence, speaker uncertainty and c
   assert.ok(v.evidence.length>0);
   assert.ok(passageIds.has(v.passageId),v.id+' missing passage '+v.passageId);
   for(const r of v.recordIds)assert.ok(recordIds.has(r),v.id+' missing record '+r);
+  const eventIds=new Set(readdirSync('src/content/events').filter(p=>p.endsWith('.json')).map(p=>JSON.parse(readFileSync('src/content/events/'+p,'utf8')).id));
+  for(const e of v.eventIds||[])assert.ok(eventIds.has(e),v.id+' missing timeline event '+e);
   assert.ok(videosForPassage(v.passageId).some(x=>x.id===v.id));
   if(v.presenters.length===0)assert.match(v.attribution,/(not established|unconfirmed)/i);
  }
@@ -74,7 +76,7 @@ test('Videos render inline within passage blocks in both reader modes, not after
  assert.ok(reader.includes('<WanangaClip video={clip}/>'));
  assert.ok(!reader.includes('<WanangaVideos/>'));
  const page=readFileSync('src/pages/nga-poutama-videos/index.astro','utf8');
- assert.ok(page.includes('<WanangaVideos archive client:load {readingLinks}/>'));
+ assert.ok(page.includes('<WanangaVideos archive client:load {readingLinks} {recordLinks}/>'));
  const profile=readFileSync('src/pages/[...path].astro','utf8');
  assert.ok(profile.includes("r.kind==='Person'?null:pickRecordImage"));
 });
