@@ -46,12 +46,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/assets/historical/ src/content/images/ src/content/passages/ content/preservation-manifest.json docs/releases/ docs/media/story-image-download-wave2.json docs/media/story-image-expansion-wave2.md docs/verification/
+          git add -A
           git diff --cached --check
           if ! git diff --cached --quiet; then
             git commit -m "Add licensed images within additional GIS history stories"
-            git fetch origin research/story-image-expansion-20261010
-            git rebase origin/research/story-image-expansion-20261010
             git push origin HEAD:research/story-image-expansion-20261010
           fi
       - uses: actions/upload-artifact@v4
