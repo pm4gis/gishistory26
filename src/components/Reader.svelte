@@ -2,7 +2,7 @@
  import {onMount,tick} from 'svelte';
  import {fade} from 'svelte/transition';
  import Timeline from './Timeline.svelte';
- export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;
+ export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';
  let suppressPreview=false;let relatedAll=false;let relatedKind='All';let previewTrigger:HTMLElement|null=null;let previewTimer:ReturnType<typeof setTimeout>|undefined;let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
  $: current=passages[page];
  $: visible=complete?passages:[current].filter(Boolean);
@@ -46,7 +46,7 @@
 </script>
 <svelte:window on:keydown={(e)=>{if(e.key==='Escape'&&selected){e.preventDefault();close(true)}}}/>
 <div class="reading-shell" style={`--reading-size:${size}px`}>
- <header class="reading-heading"><a class="breadcrumb" href="/read/">Book contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p><div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
+ <header class="reading-heading"><a class="breadcrumb" href="/read/">Book contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p>{#if decorSrc}<div class="reading-banner" aria-hidden="true"><img src={decorSrc} alt="" width="1600" height="900" loading="lazy" decoding="async"/></div>{/if}<div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
  {#if events.length}<Timeline {events} compact={true} onSelect={selectEvent}/>{/if}
  <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Related entries · {relevant.length}</button></div>
  <div class="reading-grid"><aside class:open={contentsOpen} class="contents" aria-label="Chapter contents"><p class="eyebrow">In this chapter</p>{#each passages as p,i}<a href={article.url+'?mode=page#'+p.slug} class:active={page===i} on:click={(e)=>{e.preventDefault();go(i);contentsOpen=false}}>{p.title}</a>{/each}<a href="/read/">All chapters →</a></aside>
