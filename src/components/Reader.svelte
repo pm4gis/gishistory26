@@ -2,6 +2,8 @@
  import {onMount,tick} from 'svelte';
  import {fade} from 'svelte/transition';
  import Timeline from './Timeline.svelte';
+ import WanangaVideos from './WanangaVideos.svelte';
+ import {passageContributionMailto} from '../lib/passage-contributions.mjs';
  export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';
  let suppressPreview=false;let relatedAll=false;let relatedKind='All';let previewTrigger:HTMLElement|null=null;let previewTimer:ReturnType<typeof setTimeout>|undefined;let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
  $: current=passages[page];
@@ -64,9 +66,12 @@
  {#if b.type==='figure'}<figure id={b.id}>{#if image(b)}<a href={'/images/'+image(b).slug+'/'}><img src={image(b).assetPath} alt={b.alt||image(b).altText} loading="lazy"/></a>{/if}<figcaption>{b.caption} {b.credit||b.source||''}{#if image(b)} <a href={'/images/'+image(b).slug+'/'}>Image details</a>{/if}</figcaption></figure>
  {:else}<p id={b.id}>{#each parts(b.text||'',p) as part}{#if part.record}<button class="inline-record" aria-haspopup="dialog" aria-expanded={selected?.id===part.record.id} on:mouseenter={(e)=>hover(part.record,e.currentTarget)} on:mouseleave={leavePreview} on:focus={(e)=>{if(!suppressPreview)open(part.record,e.currentTarget)}} on:click={(e)=>open(part.record,e.currentTarget,true)}>{part.text}</button>{:else}{part.text}{/if}{/each}</p>{/if}
  {/each}
- <div class="actions"><a href={article.url+'#'+p.slug}>Link to passage</a><button on:click={()=>copy(p)}>Copy link</button></div>
+ <div class="actions passage-actions"><a href={article.url+'#'+p.slug}>Link to passage</a><button on:click={()=>copy(p)}>Copy link</button><a class="button passage-contribute" aria-label={"Contribute information about "+p.title} href={passageContributionMailto(article,p)}>Contribute</a></div>
  {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(s.url)}<a href={s.url}>{s.label}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
  </section>{/each}
+  {#if ['becoming-a-gis-professional','the-map-becomes-an-application'].includes(article.slug)&&complete}
+ <WanangaVideos/>
+ {/if}
  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
  {#if complete&&documentaryImages.length}<section class="documentary-gallery" aria-label="Historical images associated with this chapter"><h2>Historical images</h2><div class="image-index-grid">{#each documentaryImages as document}<a class="image-index-card" href={'/images/'+document.slug+'/'}><img src={document.thumbnailPath||document.assetPath} alt={document.altText} loading="lazy" decoding="async"/><span><strong>{document.title}</strong><small>{document.dateDisplay||''} · Source, caption and original image →</small></span></a>{/each}</div></section>{/if}
  </div>
