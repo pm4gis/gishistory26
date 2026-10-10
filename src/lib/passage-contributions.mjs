@@ -1,21 +1,25 @@
 /**
- * Direct Gmail compose links. No forms, local storage or mail-client setup.
- * Opening a draft never sends an email.
+ * Provider-neutral contribution drafts and links. The site never sends email,
+ * assumes a Gmail account, or requires a configured desktop mail application.
  */
 export const contributionRecipient='pm4gis@gmail.com';
 export const productionOrigin='https://history.pm4gis.nz';
+export const contributionPagePath='/contribute/';
 
 export function passagePermanentUrl(article,passage){
  const path=String(article?.url||'');
  const slug=String(passage?.slug||'');
- if(!/^\/stories\/[a-z0-9-]+\/$/.test(path)||! /^[a-z0-9-]+$/.test(slug)){
+ if(!/^\/stories\/[a-z0-9-]+\/$/.test(path)|| !/^[a-z0-9-]+$/.test(slug)){
   throw new Error('A published chapter path and passage slug are required');
  }
  return productionOrigin+path+'#'+slug;
 }
 
-export function contributionDraft({chapter='',passage='',reference=''}={}){
+export function contributionDraft({
+ chapter='',passage='',reference='',contribution='',whoWhen='',sources='',credit=''
+}={}){
  const subject='NZ GIS History Contributions and Corrections'+(passage?' — '+passage:'');
+ const answer=(question,value)=>question+'\n'+String(value||'').trim();
  const body=[
   'Kia ora,',
   '',
@@ -23,41 +27,42 @@ export function contributionDraft({chapter='',passage='',reference=''}={}){
   ...(passage?['Passage: '+passage]:[]),
   ...(reference?['Link to passage: '+reference]:[]),
   '',
-  'What would you like to correct, add or clarify?',
+  answer('What would you like to correct, add or clarify?',contribution),
   '',
-  'Who or what is involved, and when did it happen?',
+  answer('Who or what is involved, and when did it happen?',whoWhen),
   '',
-  'What sources, photographs, links or documents can you share?',
+  answer('What sources, photographs, links or documents can you share?',sources),
   '',
-  'How would you like to be credited?',
+  answer('How would you like to be credited?',credit),
   '',
   'Ngā mihi'
  ].join('\n');
  return {subject,body};
 }
 
-export function contributionGmailUrl(subject,body){
+/** Mailto works with the visitor's chosen email application, not one provider. */
+export function contributionMailtoUrl(subject,body){
+ return 'mailto:'+contributionRecipient+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+}
+
+export function contributionText({subject,body}){
+ return 'To: '+contributionRecipient+'\nSubject: '+subject+'\n\n'+body;
+}
+
+export function siteContributionPageUrl(){
+ return contributionPagePath;
+}
+
+export function passageContributionPageUrl(article,passage){
  const params=new URLSearchParams({
-  view:'cm',fs:'1',to:contributionRecipient,su:subject,body
- });
- return 'https://mail.google.com/mail/?'+params.toString();
-}
-
-export function siteContributionGmailUrl(){
- const draft=contributionDraft();
- return contributionGmailUrl(draft.subject,draft.body);
-}
-
-export function passageContributionGmailUrl(article,passage){
- const draft=contributionDraft({
   chapter:String(article?.title||''),
   passage:String(passage?.title||''),
-  reference:passagePermanentUrl(article,passage)
+  ref:passagePermanentUrl(article,passage)
  });
- return contributionGmailUrl(draft.subject,draft.body);
+ return contributionPagePath+'?'+params.toString();
 }
 
-/** Retains deep links already issued to the old /contribute/ route. */
+/** Retains deep links already issued to the /contribute/ route. */
 export function contributionContextFromSearch(search){
  const params=new URLSearchParams(search);
  const chapter=String(params.get('chapter')||'').slice(0,180);
