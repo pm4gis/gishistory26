@@ -1,0 +1,36 @@
+{
+  "id": "image:kapiti-island-lidar-2024",
+  "slug": "kapiti-island-lidar-2024",
+  "title": "Kāpiti Island terrain depicted with LINZ LiDAR, 2024",
+  "assetPath": "/assets/historical/web/kapiti-island-lidar-2024.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapiti.png",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Vallee (creator), using LiDAR supplied by LINZ, map labels from Topomap and QGIS/aerialOD cartography. Display derivative resized to WebP; original preserved.",
+  "licence": "CC BY-SA 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Kapiti.png",
+  "altText": "LiDAR-derived relief map of Kāpiti Island showing terrain, vegetation-shaped relief and mapped place names.",
+  "caption": "Detailed shaded-relief map of Kāpiti Island produced in 2024 by Vallee using publicly available LINZ LiDAR data, QGIS, and aerialOD shading.",
+  "themeIds": [],
+  "articleSlug": "lidar-remakes-the-landscape",
+  "chapterNumber": 37,
+  "dateDisplay": "11 January 2024 (revised 12 January 2024)",
+  "context": "This map is a modern, real LiDAR-derived terrain product. It shows terrain detail possible using high-density elevation measurements; it is not a scan of an early New Zealand LiDAR flight.",
+  "originalAssetPath": "/assets/historical/original/kapiti-island-lidar-2024.png",
+  "thumbnailPath": "/assets/historical/card/kapiti-island-lidar-2024.webp",
+  "originalSha256": "0e679a36ad153f5e4814b85191d25a9790c1f9b262568eca33b2106354551551",
+  "webSha256": "3a46ca941521744e2a930af454c79bacf8c890ec3a8b1ca381f953acab8d116f",
+  "originalWidth": 4320,
+  "originalHeight": 4320,
+  "sourceFileTitle": "File:Kapiti.png",
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kapiti.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "headerCandidate": true,
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Elevation source"
+    }
+  ],
+  "derivativesNote": "Local original stored unchanged; WebP display width up to 1600 pixels and thumbnail width up to 720 pixels, resized without cropping."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "image:linz-wmts-qgis-connection",
+  "slug": "linz-wmts-qgis-connection",
+  "title": "LINZ Data Service WMTS connection configured in QGIS",
+  "assetPath": "/assets/historical/web/linz-wmts-qgis-connection.webp",
+  "sourceUrl": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/map-tile-services/using-lds-wmts-qgis",
+  "sourceName": "Toitū Te Whenua Land Information New Zealand",
+  "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+  "altText": "QGIS WMTS client or connection panel in a LINZ Data Service tutorial.",
+  "caption": "A LINZ-published QGIS interface used to connect to its Web Map Tile Service (WMTS), an example of spatial information shared as a standardised network service.",
+  "themeIds": [],
+  "articleSlug": "the-spatial-infrastructure-idea",
+  "chapterNumber": 21,
+  "dateDisplay": "Date of original screenshot not independently established; LINZ guide current by 2026",
+  "context": "Original software screenshot from LINZ's instructions for consuming nationally available tile services in GIS. The image illustrates standards and interoperable infrastructure, not a historical screen from 1990s SDI planning.",
+  "originalAssetPath": "/assets/historical/original/linz-wmts-qgis-connection.png",
+  "thumbnailPath": "/assets/historical/card/linz-wmts-qgis-connection.webp",
+  "originalSha256": "c94e4aba4bd984852e70781ffe7b978d096c2fbb356db047336a2997856ee668",
+  "webSha256": "2a26d428150409a33b05a61d99c618a0c14a5d21da2aec8ad1e420d8db1eae57",
+  "originalWidth": 715,
+  "originalHeight": 689,
+  "sourceFileTitle": "lds_wmts-qgis_screenshot-5.png",
+  "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-5.png",
+  "headerCandidate": true,
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Source organisation and publisher"
+    }
+  ],
+  "derivativesNote": "Local original stored unchanged; WebP display width up to 1600 pixels and thumbnail width up to 720 pixels, resized without cropping."
+}
