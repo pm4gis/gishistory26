@@ -23,6 +23,9 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageId": "passage:chapter-39-dd9961d631",
     "recordIds": [
       "entity:nga-poutama-matawhenua"
+    ],
+    "eventIds": [
+      "linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga"
     ]
   },
   {
@@ -46,7 +49,8 @@ export const ngaPoutamaVideos=Object.freeze([
     "recordIds": [
       "entity:nga-poutama-matawhenua",
       "person:duane-wilkins"
-    ]
+    ],
+    "eventIds": []
   },
   {
     "id": "2-9BW5GtZdg",
@@ -69,6 +73,9 @@ export const ngaPoutamaVideos=Object.freeze([
     "recordIds": [
       "entity:nga-poutama-matawhenua",
       "person:jonathan-hanson"
+    ],
+    "eventIds": [
+      "linzcap-2026-05-17-nga-poutama-earthquake-and-earth-science-data-session"
     ]
   },
   {
@@ -92,6 +99,9 @@ export const ngaPoutamaVideos=Object.freeze([
     "recordIds": [
       "entity:nga-poutama-matawhenua",
       "entity:bay-of-plenty-regional-council"
+    ],
+    "eventIds": [
+      "linzcap-2026-nga-poutama-uses-baymaps-as-a-council-gis-case-study"
     ]
   },
   {
@@ -116,6 +126,9 @@ export const ngaPoutamaVideos=Object.freeze([
     "recordIds": [
       "entity:nga-poutama-matawhenua",
       "person:duane-wilkins"
+    ],
+    "eventIds": [
+      "linzcap-2026-03-22-nga-poutama-covers-southern-institute-of-technology-gis-micro-credential"
     ]
   },
   {
@@ -137,7 +150,8 @@ export const ngaPoutamaVideos=Object.freeze([
     "recordIds": [
       "entity:nga-poutama-matawhenua",
       "entity:department-of-conservation"
-    ]
+    ],
+    "eventIds": []
   },
   {
     "id": "pNAlOWMLsVY",
@@ -157,7 +171,8 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageId": "passage:chapter-35-23fcc809db",
     "recordIds": [
       "entity:nga-poutama-matawhenua"
-    ]
+    ],
+    "eventIds": []
   },
   {
     "id": "CNEjUUkYNQQ",
@@ -177,7 +192,8 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageId": "passage:chapter-35-23fcc809db",
     "recordIds": [
       "entity:nga-poutama-matawhenua"
-    ]
+    ],
+    "eventIds": []
   },
   {
     "id": "Fqq3Fzi5djc",
@@ -200,6 +216,9 @@ export const ngaPoutamaVideos=Object.freeze([
     "recordIds": [
       "entity:nga-poutama-matawhenua",
       "person:keith-holswich"
+    ],
+    "eventIds": [
+      "linzcap-2025-06-13-keith-holswich-presents-he-kete-matauranga"
     ]
   },
   {
@@ -225,6 +244,9 @@ export const ngaPoutamaVideos=Object.freeze([
       "entity:nga-poutama-matawhenua",
       "person:karl-majorhazi",
       "person:tania-te-hira"
+    ],
+    "eventIds": [
+      "linzcap-2025-05-16-nga-poutama-explores-korero-takutai"
     ]
   },
   {
@@ -248,6 +270,9 @@ export const ngaPoutamaVideos=Object.freeze([
     "recordIds": [
       "entity:nga-poutama-matawhenua",
       "person:duane-wilkins"
+    ],
+    "eventIds": [
+      "linzcap-2025-05-05-nga-poutama-historical-aerial-imagery-session-published"
     ]
   },
   {
@@ -273,6 +298,9 @@ export const ngaPoutamaVideos=Object.freeze([
       "entity:nga-poutama-matawhenua",
       "person:holden-hohaia",
       "person:tania-te-hira"
+    ],
+    "eventIds": [
+      "linzcap-2025-03-14-holden-hohaia-presents-maori-gis-mapping-projects-with-qgis"
     ]
   },
   {
@@ -293,7 +321,8 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageId": "passage:chapter-39-dd9961d631",
     "recordIds": [
       "entity:nga-poutama-matawhenua"
-    ]
+    ],
+    "eventIds": []
   },
   {
     "id": "hCAVoBwRJwE",
@@ -313,7 +342,8 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageId": "passage:research-20261010-ch33-public-data-and-iwi-controlled-information",
     "recordIds": [
       "entity:nga-poutama-matawhenua"
-    ]
+    ],
+    "eventIds": []
   },
   {
     "id": "yCBeRHA2Jnk",
@@ -340,7 +370,8 @@ export const ngaPoutamaVideos=Object.freeze([
       "person:duane-wilkins",
       "person:roland-pomana",
       "person:matt-grose"
-    ]
+    ],
+    "eventIds": []
   },
   {
     "id": "KYEVxcBEVQ8",
@@ -361,7 +392,8 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageId": "passage:research-20261010-ch26-iwi-led-motueka-information-system",
     "recordIds": [
       "entity:nga-poutama-matawhenua"
-    ]
+    ],
+    "eventIds": []
   }
 ]);
 export function ngaPoutamaThumbnail(id){if(!/^[A-Za-z0-9_-]{11}$/.test(id))throw new Error('Invalid YouTube video ID');return 'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'}
@@ -380,3 +412,6 @@ export function ngaPoutamaReadingLinks(passages,articles){
  }
  return result;
 }
+
+/** Public routes for historical entities already present in the published catalogue. */
+export function ngaPoutamaRecordLinks(records){const ids=new Set(ngaPoutamaVideos.flatMap(v=>v.recordIds));return Object.fromEntries(records.filter(r=>ids.has(r.id)&&r.kind!=='Story').map(r=>[r.id,{name:r.name,url:r.url}]));}
