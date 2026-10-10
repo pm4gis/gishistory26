@@ -11,6 +11,8 @@
  $: filteredRelated=relevant.filter(r=>relatedKind==='All'||r.kind===relatedKind).sort((a,b)=>a.name.localeCompare(b.name,'en-NZ'));
  $: currentEvents=events.filter(e=>complete||e.passageIds?.includes(current?.id));
  $: currentThemes=themes.filter(t=>[...(article.themeIds||[]),...(current?.themeIds||[])].includes(t.id));
+ $: documentaryImages=images.filter(i=>i.articleSlug===article.slug);
+ $: primaryImage=documentaryImages.find(i=>i.headerCandidate)||null;
  function safe(u:string){return u?.startsWith('/')||/^https?:\/\//.test(u)}
  function sources(p:any){return [...(p.sources||[]),...(p.blocks||[]).flatMap((b:any)=>b.sources||[])].filter((s:any)=>s.label)}
  function blocks(p:any){return p.blocks?.length?p.blocks:(p.paragraphs||[]).map((x:any)=>({type:'paragraph',...x}))}
@@ -46,7 +48,7 @@
 </script>
 <svelte:window on:keydown={(e)=>{if(e.key==='Escape'&&selected){e.preventDefault();close(true)}}}/>
 <div class="reading-shell" style={`--reading-size:${size}px`}>
- <header class="reading-heading"><a class="breadcrumb" href="/read/">Book contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p>{#if decorSrc}<div class="reading-banner" aria-hidden="true"><img src={decorSrc} alt="" width="1600" height="900" loading="lazy" decoding="async"/></div>{/if}<div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
+ <header class="reading-heading"><a class="breadcrumb" href="/read/">Book contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p>{#if primaryImage}<figure class="reading-documentary"><a href={'/images/'+primaryImage.slug+'/'}><img src={primaryImage.assetPath} alt={primaryImage.altText} loading="lazy" decoding="async"/></a><figcaption>{primaryImage.caption} <a href={'/images/'+primaryImage.slug+'/'}>Image details and original copy</a></figcaption></figure>{:else if decorSrc}<div class="reading-banner" aria-hidden="true"><img src={decorSrc} alt="" width="1600" height="900" loading="lazy" decoding="async"/></div>{/if}<div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
  {#if events.length}<Timeline {events} compact={true} onSelect={selectEvent}/>{/if}
  <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Related entries · {relevant.length}</button></div>
  <div class="reading-grid"><aside class:open={contentsOpen} class="contents" aria-label="Chapter contents"><p class="eyebrow">In this chapter</p>{#each passages as p,i}<a href={article.url+'?mode=page#'+p.slug} class:active={page===i} on:click={(e)=>{e.preventDefault();go(i);contentsOpen=false}}>{p.title}</a>{/each}<a href="/read/">All chapters →</a></aside>
@@ -66,6 +68,7 @@
  {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(s.url)}<a href={s.url}>{s.label}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
  </section>{/each}
  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
+ {#if complete&&documentaryImages.length}<section class="documentary-gallery" aria-label="Historical images associated with this chapter"><h2>Historical images</h2><div class="image-index-grid">{#each documentaryImages as document}<a class="image-index-card" href={'/images/'+document.slug+'/'}><img src={document.thumbnailPath||document.assetPath} alt={document.altText} loading="lazy" decoding="async"/><span><strong>{document.title}</strong><small>{document.dateDisplay||''} · Source, caption and original image →</small></span></a>{/each}</div></section>{/if}
  </div>
  <nav class="page-nav" aria-label="Reading navigation">{#if !complete&&page>0}<button on:click={()=>go(page-1)}>← Previous</button>{:else if previous}<a class="button" href={previous.url}>← Previous chapter</a>{:else}<a href="/read/">Contents</a>{/if}<span>{complete?'Complete chapter':`${page+1} of ${passages.length}`}</span>{#if !complete&&page<passages.length-1}<button on:click={()=>go(page+1)}>Next →</button>{:else if next}<a class="button primary" href={next.url}>Next chapter →</a>{:else}<a href="/read/">Back to contents</a>{/if}</nav>
  </article>

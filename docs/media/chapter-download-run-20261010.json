@@ -1,0 +1,320 @@
+{
+  "checkedAt": "2026-10-10T08:12:30.955Z",
+  "items": [
+    {
+      "slug": "tuki-map-1793-1798",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand-Map-by-Tuki-1798.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/tuki-map-1793-1798.jpg",
+      "web": "/assets/historical/web/tuki-map-1793-1798.webp",
+      "thumbnail": "/assets/historical/card/tuki-map-1793-1798.webp",
+      "sha256": "7b7804024e498a49d2f516f49a947a0e40f1ee161e210e670ee5477c479bebd7",
+      "bytes": 494229,
+      "dimensions": [
+        2413,
+        3217
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand-Map-by-Tuki-1798.jpg",
+      "licence": "Public domain",
+      "credit": "Tuki Te Terenui Whare Pirau; Alexander Turnbull Library, MapColl-CHA-2/1/9-Acc.36440"
+    },
+    {
+      "slug": "waikaka-cadastre-1888",
+      "source": "https://commons.wikimedia.org/wiki/File:Waikaka_Survey_District.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/waikaka-cadastre-1888.jpg",
+      "web": "/assets/historical/web/waikaka-cadastre-1888.webp",
+      "thumbnail": "/assets/historical/card/waikaka-cadastre-1888.webp",
+      "sha256": "44660f4ffda6193635c99e75147ba8fd51076ab5aed6f8b7a96a1880e2110582",
+      "bytes": 3693360,
+      "dimensions": [
+        3714,
+        3777
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waikaka_Survey_District.jpg",
+      "licence": "CC BY 2.0",
+      "credit": "Drawn by J. M. Kemp; Archives New Zealand, DABB D101 423/IN 3939 (R6617915)"
+    },
+    {
+      "slug": "wrights-hill-1945",
+      "source": "https://commons.wikimedia.org/wiki/File:Wright_Hill_Fortress_aerial_photo_1945.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/wrights-hill-1945.jpg",
+      "web": "/assets/historical/web/wrights-hill-1945.webp",
+      "thumbnail": "/assets/historical/card/wrights-hill-1945.webp",
+      "sha256": "42ad1acaff990d76b063e47d8d25ea45d2900547cde496db5ccf7f6a3b0e8057",
+      "bytes": 1311046,
+      "dimensions": [
+        2163,
+        2233
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wright_Hill_Fortress_aerial_photo_1945.jpg",
+      "licence": "CC BY 3.0",
+      "credit": "Retrolens / New Zealand historic aerial survey SN373, Run B, Photo 15; original photographer unidentified"
+    },
+    {
+      "slug": "victoria-square-aerial-1955",
+      "source": "https://commons.wikimedia.org/wiki/File:VicSq-Aerial-1955.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/victoria-square-aerial-1955.jpg",
+      "web": "/assets/historical/web/victoria-square-aerial-1955.webp",
+      "thumbnail": "/assets/historical/card/victoria-square-aerial-1955.webp",
+      "sha256": "290fcd447fb91ed2fbafc7507fa49f9204e91b693a8cb49f8e995e4f312c55a0",
+      "bytes": 547192,
+      "dimensions": [
+        2001,
+        2001
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VicSq-Aerial-1955.jpg",
+      "licence": "CC BY 3.0",
+      "credit": "LINZ; New Zealand Aerial Mapping; New Zealand Aerial Surveys; RNZAF; Canterbury Maps"
+    },
+    {
+      "slug": "qmap-christchurch-2008",
+      "source": "https://commons.wikimedia.org/wiki/File:QChristchurch_map.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/qmap-christchurch-2008.jpg",
+      "web": "/assets/historical/web/qmap-christchurch-2008.webp",
+      "thumbnail": "/assets/historical/card/qmap-christchurch-2008.webp",
+      "sha256": "09d088539849d6957746858e0d7605b2b765ea574c7e63217424eda1e6657095",
+      "bytes": 8776729,
+      "dimensions": [
+        14659,
+        10345
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:QChristchurch_map.jpg",
+      "licence": "CC BY 4.0",
+      "credit": "P. J. Forsyth, D. J. A. Barrell and R. Jongens (compilers); GNS Science"
+    },
+    {
+      "slug": "landsat-christchurch-2001",
+      "source": "https://commons.wikimedia.org/wiki/File:Christchurch_and_Banks_Peninsula_from_space%2C_2001%2C_Landsat_7_ETM.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/landsat-christchurch-2001.jpg",
+      "web": "/assets/historical/web/landsat-christchurch-2001.webp",
+      "thumbnail": "/assets/historical/card/landsat-christchurch-2001.webp",
+      "sha256": "1499ceda9deb043d88c98c698deb49bb58d860aba1dad32109c5219b968032f0",
+      "bytes": 1218253,
+      "dimensions": [
+        2808,
+        2808
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch_and_Banks_Peninsula_from_space%2C_2001%2C_Landsat_7_ETM.jpg",
+      "licence": "Public domain (NASA)",
+      "credit": "NASA Earth Observatory, Jesse Allen; Landsat 7 Science Team"
+    },
+    {
+      "slug": "christchurch-quake-shaking-2011",
+      "source": "https://commons.wikimedia.org/wiki/File:Christchurch_from_space%2C_4_March_2011%2C_showing_quake_shaking_strength%2C_with_key.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/christchurch-quake-shaking-2011.png",
+      "web": "/assets/historical/web/christchurch-quake-shaking-2011.webp",
+      "thumbnail": "/assets/historical/card/christchurch-quake-shaking-2011.webp",
+      "sha256": "8969427165821527c534dabf9a3f443aa959277c2068742537c1a03cb42b3b50",
+      "bytes": 845699,
+      "dimensions": [
+        720,
+        530
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch_from_space%2C_4_March_2011%2C_showing_quake_shaking_strength%2C_with_key.png",
+      "licence": "Public domain (NASA and derivative)",
+      "credit": "NASA Earth Observatory, Robert Simmon; EO-1 ALI data and USGS Earthquake Hazard Program; legend adapted by Wikimedia contributor Avenue"
+    },
+    {
+      "slug": "ruapehu-3d-2002",
+      "source": "https://commons.wikimedia.org/wiki/File:MtRuapehu_23oct2002.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/ruapehu-3d-2002.jpg",
+      "web": "/assets/historical/web/ruapehu-3d-2002.webp",
+      "thumbnail": "/assets/historical/card/ruapehu-3d-2002.webp",
+      "sha256": "b286a47d09deff7f77ce1de5dc4d7db26e1e21fc59f2d50d1fbad665e7114592",
+      "bytes": 3351538,
+      "dimensions": [
+        4500,
+        3375
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MtRuapehu_23oct2002.jpg",
+      "licence": "Public domain (NASA)",
+      "credit": "NASA Earth Observatory; Landsat processing Laura Rocchio; Shuttle Radar Topography Mission team / NASA/JPL/NIMA"
+    },
+    {
+      "slug": "auckland-osm-colour-2018",
+      "source": "https://commons.wikimedia.org/wiki/File:Auckland_CBD_Map_Colour.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/auckland-osm-colour-2018.png",
+      "web": "/assets/historical/web/auckland-osm-colour-2018.webp",
+      "thumbnail": "/assets/historical/card/auckland-osm-colour-2018.webp",
+      "sha256": "6f8219f60fe4be59e3684b552d6afb61171123f9c620840bc7d77e8720ba02ea",
+      "bytes": 621518,
+      "dimensions": [
+        1258,
+        856
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_CBD_Map_Colour.png",
+      "licence": "CC BY-SA 2.0 (map); ODbL (underlying data)",
+      "credit": "© OpenStreetMap contributors; cartographic file via Wikimedia Commons"
+    },
+    {
+      "slug": "auckland-osm-bw-2018",
+      "source": "https://commons.wikimedia.org/wiki/File:Auckland_CBD_Map_BW.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/auckland-osm-bw-2018.png",
+      "web": "/assets/historical/web/auckland-osm-bw-2018.webp",
+      "thumbnail": "/assets/historical/card/auckland-osm-bw-2018.webp",
+      "sha256": "34f8aa6c917dd44d0df4ca8900d8ce264b849c2dd57c41556fccfe7ddaf3deab",
+      "bytes": 629964,
+      "dimensions": [
+        1258,
+        856
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_CBD_Map_BW.png",
+      "licence": "CC BY-SA 2.0 (map); ODbL (underlying data)",
+      "credit": "© OpenStreetMap contributors; cartographic file via Wikimedia Commons"
+    },
+    {
+      "slug": "kaikoura-shakemap-2016",
+      "source": "https://commons.wikimedia.org/wiki/File:2016_Kaikoura_Earthquake_ShakeMap.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/kaikoura-shakemap-2016.jpg",
+      "web": "/assets/historical/web/kaikoura-shakemap-2016.webp",
+      "thumbnail": "/assets/historical/card/kaikoura-shakemap-2016.webp",
+      "sha256": "23ec44fe95b72f2bb7115791479a2b59ad091ad5836f51cbc2539b0eedfa2fa8",
+      "bytes": 527948,
+      "dimensions": [
+        750,
+        950
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Kaikoura_Earthquake_ShakeMap.jpg",
+      "licence": "Public domain (USGS)",
+      "credit": "United States Geological Survey"
+    },
+    {
+      "slug": "kaikoura-radar-deformation-2016",
+      "source": "https://commons.wikimedia.org/wiki/File:PIA21210_-_Satellite_Radar_Show_Complex_Set_of_Faults_Moved_in_2016_New_Zealand_Earthquake.jpg",
+      "status": "held",
+      "reason": "Source-specific rights review"
+    },
+    {
+      "slug": "hector-geological-map-1884",
+      "source": "https://commons.wikimedia.org/wiki/File:EB1911_New_Zealand_-_geological_map.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/hector-geological-map-1884.jpg",
+      "web": "/assets/historical/web/hector-geological-map-1884.webp",
+      "thumbnail": "/assets/historical/card/hector-geological-map-1884.webp",
+      "sha256": "a08463225150b092b3cfbec107222305ab249efaee36125331195762612b9f9f",
+      "bytes": 215416,
+      "dimensions": [
+        864,
+        1250
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:EB1911_New_Zealand_-_geological_map.jpg",
+      "licence": "Public domain",
+      "credit": "James Hector; engraved by Emery Walker; Encyclopaedia Britannica, 11th edition, volume 19, p. 625"
+    },
+    {
+      "slug": "nz-geology-lange-2012",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_New_Zealand_Geology.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nz-geology-lange-2012.jpg",
+      "web": "/assets/historical/web/nz-geology-lange-2012.webp",
+      "thumbnail": "/assets/historical/card/nz-geology-lange-2012.webp",
+      "sha256": "b91d23863279814613821827dda007846f78a7ffc95d0398258b9ea1ed8ada08",
+      "bytes": 1273249,
+      "dimensions": [
+        2255,
+        2800
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_New_Zealand_Geology.jpg",
+      "licence": "CC BY-SA 3.0",
+      "credit": "Ulrich Lange; based on GNS Science geological resource material"
+    },
+    {
+      "slug": "rotoiti-bathymetry-2021",
+      "source": "https://commons.wikimedia.org/wiki/File:Rotoiti_Bathymetry.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/rotoiti-bathymetry-2021.png",
+      "web": "/assets/historical/web/rotoiti-bathymetry-2021.webp",
+      "thumbnail": "/assets/historical/card/rotoiti-bathymetry-2021.webp",
+      "sha256": "538deba06c5449d7ab9129e1f7e511e39fe73d73aa7f6c09578c0163eacbf957",
+      "bytes": 3739976,
+      "dimensions": [
+        2278,
+        885
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rotoiti_Bathymetry.png",
+      "licence": "CC BY-SA 3.0",
+      "credit": "C. E. J. de Ronde, F. Caratori Tontini and J. Black; GNS Science; DOI 10.21420/8123-EA25"
+    },
+    {
+      "slug": "nz-dem-arcgis-2006",
+      "source": "https://commons.wikimedia.org/wiki/File:DEM_NewZealand.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nz-dem-arcgis-2006.png",
+      "web": "/assets/historical/web/nz-dem-arcgis-2006.webp",
+      "thumbnail": "/assets/historical/card/nz-dem-arcgis-2006.webp",
+      "sha256": "5d6b824922440fe3e328bbde7ebeb2bbbbaffaac027f62412c80cd4fadb10eec",
+      "bytes": 2389939,
+      "dimensions": [
+        3120,
+        2462
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DEM_NewZealand.png",
+      "licence": "CC BY-SA 2.5",
+      "credit": "Wikimedia contributor Jide; based on GLOBE topography and ETOPO2 bathymetry"
+    },
+    {
+      "slug": "nz-census-density-2023",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nz-census-density-2023.png",
+      "web": "/assets/historical/web/nz-census-density-2023.webp",
+      "thumbnail": "/assets/historical/card/nz-census-density-2023.webp",
+      "sha256": "05fd358870d8f4a7a1927b0d663318eff9d748194ba35a2093395ac65be23a28",
+      "bytes": 2480241,
+      "dimensions": [
+        5870,
+        8400
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density.png",
+      "licence": "CC BY 4.0",
+      "credit": "Vardion; Stats NZ 2023 Census and SA2 geographic data; prepared using QGIS"
+    },
+    {
+      "slug": "geonet-kaikoura-felt-2016",
+      "source": "https://commons.wikimedia.org/wiki/File:GeoNet_felt_reports_2016_Kaik%C5%8Dura_earthquake.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/geonet-kaikoura-felt-2016.png",
+      "web": "/assets/historical/web/geonet-kaikoura-felt-2016.webp",
+      "thumbnail": "/assets/historical/card/geonet-kaikoura-felt-2016.webp",
+      "sha256": "7a1c7c5ae7de12ee58a5220de97c146d067aea63ea4e79e32ec4fed4f23f4253",
+      "bytes": 225125,
+      "dimensions": [
+        791,
+        791
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:GeoNet_felt_reports_2016_Kaik%C5%8Dura_earthquake.png",
+      "licence": "CC BY 3.0 New Zealand",
+      "credit": "GeoNet and OpenStreetMap contributors"
+    },
+    {
+      "slug": "ecoregions-qgis-2025",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_Subrealm.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/ecoregions-qgis-2025.png",
+      "web": "/assets/historical/web/ecoregions-qgis-2025.webp",
+      "thumbnail": "/assets/historical/card/ecoregions-qgis-2025.webp",
+      "sha256": "1e45ae593e4e3d72e0ba1a5f81457fb24c768f2b799c057301d184799203d70f",
+      "bytes": 6081342,
+      "dimensions": [
+        2482,
+        1529
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Subrealm.png",
+      "licence": "CC BY-SA 4.0",
+      "credit": "Wikimedia contributor Z3lvs; Natural Earth and Resolve Ecoregions 2017 source data"
+    }
+  ],
+  "success": 18,
+  "failed": 0,
+  "held": 1
+}
