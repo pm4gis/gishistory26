@@ -38,6 +38,18 @@ export const subjectMedia = Object.freeze({
       slug: 'linz-landonline-survey-work-2025',
       relation: 'Landonline Web Search produced by LINZ in 2025; an example of one LINZ service, not its 1996 launch.'
     },
+    'stats-nz': {
+      slug: 'nz-census-density-2023',
+      relation: 'A population-density map based on Stats NZ 2023 Census information, produced by an independent cartographer using QGIS.'
+    },
+    'nz-transport-agency-waka-kotahi': {
+      slug: 'auckland-region-transport-2014',
+      relation: 'A map of road hierarchy across Auckland, illustrating the transport networks analysed with GIS. It is not an NZ Transport Agency product.'
+    },
+    'bay-of-plenty-regional-council': {
+      slug: 'rotoiti-bathymetry-2021',
+      relation: 'GNS Science bathymetry of Lake Rotoiti in the Bay of Plenty. It illustrates regional scientific spatial data, not a Bay of Plenty Regional Council project.'
+    },
     'department-of-conservation': {
       slug: 'ecoregions-qgis-2025',
       relation: 'A QGIS map of ecological regions. It illustrates the type of geographic information used in conservation, but is not a DOC system screenshot.'
