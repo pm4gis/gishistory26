@@ -127,6 +127,8 @@ const image = z.object({
   dateDisplay: z.string().optional(),
   context: z.string().optional(),
   originalAssetPath: z.string().startsWith("/").optional(),
+  archiveOriginalPath: z.string().startsWith("docs/media/originals/").optional(),
+  archiveOriginalUrl: z.url().optional(),
   thumbnailPath: z.string().startsWith("/").optional(),
   originalSha256: z.string().optional(),
   webSha256: z.string().optional(),

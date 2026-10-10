@@ -1,0 +1,62 @@
+name: Acquire NZ GIS History documentary images wave 6
+on:
+  push:
+    branches: [feature/timeline-documentary-wave6-20261010]
+    paths:
+      - .github/workflows/acquire-timeline-images-wave6.yml
+      - docs/media/curated-sources-timeline-wave6.json
+      - docs/media/timeline-source-decisions-wave6.md
+      - scripts/download-timeline-images-wave6.mjs
+      - scripts/audit-timeline-image-coverage-wave6.mjs
+      - src/lib/timeline-media.mjs
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: acquire-timeline-wave6
+  cancel-in-progress: true
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/feature/timeline-documentary-wave6-20261010' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: feature/timeline-documentary-wave6-20261010}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0', cache: npm}
+      - run: npm ci
+      - name: Acquire source originals and create WebP derivatives
+        id: acquire
+        continue-on-error: true
+        run: node scripts/download-timeline-images-wave6.mjs
+      - name: Require all verified source originals
+        run: |
+          node -e "const q=require('./docs/media/curated-sources-timeline-wave6.json');const d=require('./docs/media/timeline-download-run-wave6.json');if(d.success!==q.items.length||d.failed!==0)throw Error('Wave 6 requires '+q.items.length+' successful originals; obtained '+d.success+' and failed '+d.failed)"
+      - name: Validate source integrity, content, links, image pages and build
+        run: |
+          npm test
+          npm run build
+      - name: Generate the complete event coverage CSV and gap report
+        run: node scripts/audit-timeline-image-coverage-wave6.mjs
+      - name: Commit originals, derivatives, image records and full register
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical docs/media/originals/wave6 src/content/images docs/media/timeline-download-run-wave6.json docs/media/timeline-event-image-coverage-wave6.csv docs/media/timeline-event-image-coverage-wave6.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive verified documentary timeline image originals wave 6"
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin feature/timeline-documentary-wave6-20261010
+            git rebase origin/feature/timeline-documentary-wave6-20261010
+            git push origin HEAD:feature/timeline-documentary-wave6-20261010
+          fi
+      - name: Preserve acquisition and source-audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: timeline-documentary-wave6-audit
+          path: |
+            docs/media/timeline-download-run-wave6.json
+            docs/media/timeline-event-image-coverage-wave6.md
+          retention-days: 30
