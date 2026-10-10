@@ -1,0 +1,893 @@
+{
+  "patch": {
+    "schemaVersion": 1,
+    "baseRevision": "1a19feed078a850e2fd3e6fd2658c581d9be90d34693a3090dc9c01003d804dc",
+    "operations": [
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:levin-topographic-map-1973",
+          "slug": "levin-topographic-map-1973",
+          "title": "Levin topographic map sheet, 1973",
+          "assetPath": "/assets/historical/web/levin-topographic-map-1973.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1973_map_of_Levin.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "Land Information New Zealand (LINZ), via Mapspast and Wikimedia Commons.",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3A1973_map_of_Levin.jpg",
+          "altText": "A 1973 topographic map of Levin, showing the town and two railway stations.",
+          "caption": "A 1:63,360 NZMS 1 sheet for Levin, printed in 1973.",
+          "themeIds": [],
+          "articleSlug": "from-map-sheets-to-spatial-data",
+          "chapterNumber": 5,
+          "dateDisplay": "1973",
+          "context": "This is a contemporary example of New Zealand paper topographic mapping. It is not an NZLRI worksheet and does not show the inventory land units described in this chapter.",
+          "originalAssetPath": "/assets/historical/original/levin-topographic-map-1973.jpg",
+          "thumbnailPath": "/assets/historical/card/levin-topographic-map-1973.webp",
+          "originalSha256": "31dbef2a8819fbe26b7b12d69b4c5ec7cf91fdbbc8eb3cbd3362123a7b1d50eb",
+          "webSha256": "cd493450a85721f5bc370e060b1a39dfc7f036072bdd7a4638a99836fabc1025",
+          "originalWidth": 1324,
+          "originalHeight": 1100,
+          "sourceFileTitle": "File:1973 map of Levin.jpg",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/1973_map_of_Levin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+          "relatedRecords": []
+        }
+      },
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:intergraph-clix-workstation",
+          "slug": "intergraph-clix-workstation",
+          "title": "Intergraph CLIX workstation, late 1980s",
+          "assetPath": "/assets/historical/web/intergraph-clix-workstation.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AIntergraph_CLIX_workstation.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "Gigs, Wikimedia Commons contributor; released into the public domain.",
+          "licence": "Public domain",
+          "licenceUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3AIntergraph_CLIX_workstation.jpg",
+          "altText": "An Intergraph CLIX workstation with a monitor, keyboard and console.",
+          "caption": "An Intergraph CLIX workstation from the late 1980s, photographed when it was decommissioned in the late 1990s.",
+          "themeIds": [
+            "profession",
+            "local-government",
+            "women-in-gis",
+            "technology-stack"
+          ],
+          "articleSlug": "when-gis-became-gis",
+          "chapterNumber": 6,
+          "dateDisplay": "Late 1980s; photographed in the late 1990s",
+          "context": "The photographer identifies this as a late-1980s workstation and says it was photographed during decommissioning in the late 1990s. Its location and use are not identified, so it is included as representative period equipment and not as a New Zealand GIS installation.",
+          "originalAssetPath": "/assets/historical/original/intergraph-clix-workstation.jpg",
+          "thumbnailPath": "/assets/historical/card/intergraph-clix-workstation.webp",
+          "originalSha256": "af7f222baf61ed4f818b29ff8b24495ba7394297bc853fdebec444b6756bc796",
+          "webSha256": "5159dda74bf8bb2b708a463fde4bd11b86d7a2215ee49a0248ffc275389217af",
+          "originalWidth": 495,
+          "originalHeight": 363,
+          "sourceFileTitle": "File:Intergraph CLIX workstation.jpg",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Intergraph_CLIX_workstation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+          "relatedRecords": []
+        }
+      },
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:te-kuiti-land-development-office",
+          "slug": "te-kuiti-land-development-office",
+          "title": "Te Kuiti Land Development Office, 1974–1984",
+          "assetPath": "/assets/historical/web/te-kuiti-land-development-office.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATe_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "Archives New Zealand; photograph by an unidentified photographer; via Wikimedia Commons.",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3ATe_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg",
+          "altText": "The Te Kuiti Land Development Office building used by the Lands and Survey Department during 1974–1984.",
+          "caption": "The Te Kuiti Land Development Office building, used by the Lands and Survey Department during 1974–1984. Photograph date not recorded.",
+          "themeIds": [
+            "women-in-gis"
+          ],
+          "articleSlug": "gis-inside-government",
+          "chapterNumber": 10,
+          "dateDisplay": "Building occupied 1974–1984; photograph date unknown",
+          "context": "The Archives New Zealand description identifies this as the building occupied by the Te Kuiti Land Development Office during 1974–1984; the photograph date is not specified. It shows a provincial land-administration office, not the national cadastral database team or a GIS workplace.",
+          "originalAssetPath": "/assets/historical/original/te-kuiti-land-development-office.jpg",
+          "thumbnailPath": "/assets/historical/card/te-kuiti-land-development-office.webp",
+          "originalSha256": "104fa3898340949a166e4ae8f3fab9311dbcc4dbd8a3b6811214965259327827",
+          "webSha256": "4de0fe0621b1377f57076d693a3b3b253e36aa88ec34598a14b8523c510c36ab",
+          "originalWidth": 1930,
+          "originalHeight": 1275,
+          "sourceFileTitle": "File:Te Kuiti Land Development Office, 1974 - 1984 (28795220472).jpg",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Te_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+          "relatedRecords": []
+        }
+      },
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:dhb-boundaries-2001-2010",
+          "slug": "dhb-boundaries-2001-2010",
+          "title": "New Zealand District Health Board boundaries, 2001–2010",
+          "assetPath": "/assets/historical/web/dhb-boundaries-2001-2010.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANew_Zealand_District_Health_Board_Map_2001%E2%80%9310_%28Blank%29.svg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "Stats NZ; compiled and edited by Air55; based in part on 2006 District Health Board data from the Ministry of Health; via Wikimedia Commons.",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3ANew_Zealand_District_Health_Board_Map_2001%E2%80%9310_%28Blank%29.svg",
+          "altText": "An outline map of New Zealand divided into District Health Board boundaries.",
+          "caption": "District Health Board boundaries in force from 2001 until the Otago–Southland merger in 2010.",
+          "themeIds": [],
+          "articleSlug": "health-population-and-place",
+          "chapterNumber": 27,
+          "dateDisplay": "2001–2010",
+          "context": "This map shows later District Health Board geography, not the census-area denominator used in the 1990s public-health analysis discussed here. It is included to show the administrative health regions that followed.",
+          "originalAssetPath": "/assets/historical/original/dhb-boundaries-2001-2010.svg",
+          "thumbnailPath": "/assets/historical/card/dhb-boundaries-2001-2010.webp",
+          "originalSha256": "4ef99b82022fbad157f68ecb8276f59001d5e41a7c2b6e6dedc71f095e4075d2",
+          "webSha256": "168600df51cdba451ba333930e3041f5739849fe39140ada2d012652f50ca697",
+          "originalWidth": 750,
+          "originalHeight": 846,
+          "sourceFileTitle": "File:New Zealand District Health Board Map 2001–10 (Blank).svg",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/New_Zealand_District_Health_Board_Map_2001%E2%80%9310_%28Blank%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+          "relatedRecords": []
+        }
+      },
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:mow-field-trip-gisborne-1971",
+          "slug": "mow-field-trip-gisborne-1971",
+          "title": "Ministry of Works field trip, Gisborne, 1971",
+          "assetPath": "/assets/historical/web/mow-field-trip-gisborne-1971.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "W. Neill; Archives New Zealand, reference R24802259 / AAQT 6539 W3537 113 / A97130; via Wikimedia Commons.",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg",
+          "altText": "Ministry of Works staff prepare for a field trip beside a Land Rover in Gisborne.",
+          "caption": "Ministry of Works staff prepare a field trip in Gisborne, March 1971.",
+          "themeIds": [
+            "technology-stack"
+          ],
+          "articleSlug": "mapping-leaves-the-office",
+          "chapterNumber": 34,
+          "dateDisplay": "March 1971",
+          "context": "This Archives New Zealand photograph shows Ministry of Works staff preparing a Gisborne field trip in March 1971. It illustrates a government fieldwork setting before mobile GIS; it is not evidence of a GIS-based field workflow.",
+          "originalAssetPath": "/assets/historical/original/mow-field-trip-gisborne-1971.jpg",
+          "thumbnailPath": "/assets/historical/card/mow-field-trip-gisborne-1971.webp",
+          "originalSha256": "9a7167b5b409486cf1ec92e79b4473f381ce2ff56031c73db00ce2674571cbe1",
+          "webSha256": "ebcaefbeba714222cffbce4390f2a1d3d8f40ec019e797057a624e9ff8c26f19",
+          "originalWidth": 900,
+          "originalHeight": 684,
+          "sourceFileTitle": "File:Government Buildings, Lowe Street with M. O. W. Staff preparing a field trip with a Land Rover, Gisborne, (28445301672).jpg",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Government_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+          "relatedRecords": []
+        }
+      },
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:victoria-square-aerial-1975",
+          "slug": "victoria-square-aerial-1975",
+          "title": "Victoria Square aerial image, Christchurch, 1975",
+          "assetPath": "/assets/historical/web/victoria-square-aerial-1975.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AVicSq-Aerial-1975.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "Land Information New Zealand, New Zealand Aerial Mapping, New Zealand Aerial Surveys and the Royal New Zealand Air Force; via Wikimedia Commons.",
+          "licence": "CC BY 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3AVicSq-Aerial-1975.jpg",
+          "altText": "An aerial image of Victoria Square in Christchurch, circa 1975.",
+          "caption": "Victoria Square, Christchurch, in an aerial image from 1975.",
+          "themeIds": [
+            "imagery"
+          ],
+          "articleSlug": "mapping-from-a-drone",
+          "chapterNumber": 38,
+          "dateDisplay": "1975",
+          "context": "This 1975 aerial image predates the Te Maari eruption and was not part of the 2012 UAV survey described here. It provides an earlier aerial-imaging comparison; it does not depict the Tongariro survey site.",
+          "originalAssetPath": "/assets/historical/original/victoria-square-aerial-1975.jpg",
+          "thumbnailPath": "/assets/historical/card/victoria-square-aerial-1975.webp",
+          "originalSha256": "c1541fc6f450fe8d628b903fd25c2a17c0e014d7be3085874d6e2258f040561c",
+          "webSha256": "45cf9f297b8aff5ef5af161a935989152bbaa6d088a80eacb91a3855fad8512b",
+          "originalWidth": 2001,
+          "originalHeight": 2001,
+          "sourceFileTitle": "File:VicSq-Aerial-1975.jpg",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/VicSq-Aerial-1975.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+          "relatedRecords": []
+        }
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-5-a0b07eb248",
+          "slug": "a-national-land-inventory-a0b07eb248",
+          "articleId": "article:chapter-5",
+          "title": "A national land inventory",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:5",
+            "entity:ministry-of-works-and-development",
+            "entity:vector"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "In 1973 the Ministry of Works and Development began the first edition of the New Zealand Land Resource Inventory, usually shortened to NZLRI. The programme brought together several kinds of physical land information and mapped them across the country as land-resource units. Each mapped unit represented a particular combination of characteristics rather than a legal parcel or administrative area. The inventory recorded geology, soil, slope, erosion and vegetation, and those descriptions supported the associated land-use-capability classification used for planning and land-management work.",
+              "markdown": "In 1973 the Ministry of Works and Development began the first edition of the New Zealand Land Resource Inventory, usually shortened to NZLRI. The programme brought together several kinds of physical land information and mapped them across the country as land-resource units. Each mapped unit represented a particular combination of characteristics rather than a legal parcel or administrative area. The inventory recorded geology, soil, slope, erosion and vegetation, and those descriptions supported the associated land-use-capability classification used for planning and land-management work.",
+              "sources": [],
+              "id": "ch05-s01-p01"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source material was analogue. Staff worked from aerial photographs, existing geological and soil mapping, topographic information and field observations, then drew boundaries around areas judged to have sufficiently consistent combinations of physical characteristics. A boundary on an NZLRI sheet therefore represented interpretation. It did not claim the legal certainty of a cadastral boundary or the measurement precision of a survey control point. Two neighbouring polygons might differ because the soil, slope, erosion pattern or vegetation changed enough to justify a different inventory code.",
+              "markdown": "The source material was analogue. Staff worked from aerial photographs, existing geological and soil mapping, topographic information and field observations, then drew boundaries around areas judged to have sufficiently consistent combinations of physical characteristics. A boundary on an NZLRI sheet therefore represented interpretation. It did not claim the legal certainty of a cadastral boundary or the measurement precision of a survey control point. Two neighbouring polygons might differ because the soil, slope, erosion pattern or vegetation changed enough to justify a different inventory code.",
+              "sources": [],
+              "id": "ch05-s01-p02"
+            },
+            {
+              "id": "ch05-figure-levin-topographic-map-1973",
+              "type": "figure",
+              "imageId": "image:levin-topographic-map-1973",
+              "alt": "A 1973 topographic map of Levin, showing the town and two railway stations.",
+              "caption": "A 1:63,360 NZMS 1 sheet for Levin, printed in 1973.",
+              "credit": "Land Information New Zealand (LINZ), via Mapspast and Wikimedia Commons.",
+              "sources": [
+                {
+                  "label": "Wikimedia Commons",
+                  "url": "https://commons.wikimedia.org/wiki/File%3A1973_map_of_Levin.jpg"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "National first-edition mapping was completed in 1979. By then the programme had produced a large collection of sheets and coded land-resource descriptions covering New Zealand. The paper map remained the normal way most users encountered the inventory, but the production team had already begun converting the mapped units into computer-readable form. Manaaki Whenua’s later institutional history dates digitisation of the first-edition NZLRI database to 1977–1980.",
+              "markdown": "National first-edition mapping was completed in 1979. By then the programme had produced a large collection of sheets and coded land-resource descriptions covering New Zealand. The paper map remained the normal way most users encountered the inventory, but the production team had already begun converting the mapped units into computer-readable form. Manaaki Whenua’s later institutional history dates digitisation of the first-edition NZLRI database to 1977–1980.",
+              "sources": [],
+              "id": "ch05-s01-p03"
+            },
+            {
+              "type": "paragraph",
+              "text": "That placed the NZLRI alongside the other digital mapping lineages developing during the same period. Lands and Survey was working on MAPPAK and computer-assisted cadastral compilation. DSIR’s Physics and Engineering Laboratory was processing Landsat data as digital rasters. The NZLRI team was converting thematic land-resource units into vector polygons with descriptive codes attached to them. The systems were built for different organisations and different jobs, but all were shifting geographic work away from a final paper product as the only durable form of the information.",
+              "markdown": "That placed the NZLRI alongside the other digital mapping lineages developing during the same period. Lands and Survey was working on MAPPAK and computer-assisted cadastral compilation. DSIR’s Physics and Engineering Laboratory was processing Landsat data as digital rasters. The NZLRI team was converting thematic land-resource units into vector polygons with descriptive codes attached to them. The systems were built for different organisations and different jobs, but all were shifting geographic work away from a final paper product as the only durable form of the information.",
+              "sources": [],
+              "id": "ch05-s01-p04"
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "a-national-land-inventory"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-6-bc94bd66ec",
+          "slug": "a-shared-name-bc94bd66ec",
+          "articleId": "article:chapter-6",
+          "title": "A shared name",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [
+            "profession"
+          ],
+          "recordIds": [
+            "chapter:6",
+            "entity:university-of-auckland",
+            "person:p-r-van-berkel",
+            "person:r-d-williams",
+            "person:clive-elliott",
+            "person:john-dymond",
+            "person:m-r-jessen",
+            "person:p-g-luckman",
+            "person:p-r-stephens",
+            "person:r-g-gibb"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "On 26 June 1989 a national conference opened in Wellington under the title Getting it all together with GIS. The published proceedings described it as the First National Multi-Disciplinary GIS Conference and ran to 116 pages. The title had a useful honesty: by then there was already plenty to get together. New Zealand organisations had spent more than a decade digitising maps, processing satellite imagery, storing land-resource polygons, calculating terrain and building computer-assisted mapping systems. What had changed during the 1980s was the growing use of one term for work that had previously belonged to separate technical communities.",
+              "markdown": "On 26 June 1989 a national conference opened in Wellington under the title Getting it all together with GIS. The published proceedings described it as the First National Multi-Disciplinary GIS Conference and ran to 116 pages. The title had a useful honesty: by then there was already plenty to get together. New Zealand organisations had spent more than a decade digitising maps, processing satellite imagery, storing land-resource polygons, calculating terrain and building computer-assisted mapping systems. What had changed during the 1980s was the growing use of one term for work that had previously belonged to separate technical communities.",
+              "sources": [],
+              "id": "ch06-s01-p01"
+            },
+            {
+              "type": "paragraph",
+              "text": "Conference proceedings showed GIS appearing in several fields. P. R. Stephens, R. G. Gibb and J. R. Dymond wrote on integrating remote sensing and GIS for natural-resource management. P. G. Luckman, R. G. Gibb and M. R. Jessen wrote on combining expert systems and GIS for land classification. Clive Elliott wrote on copyright and intellectual property. Science, image processing, computational classification and information law were appearing at the same meetings under one emerging field name.",
+              "markdown": "Conference proceedings showed GIS appearing in several fields. P. R. Stephens, R. G. Gibb and J. R. Dymond wrote on integrating remote sensing and GIS for natural-resource management. P. G. Luckman, R. G. Gibb and M. R. Jessen wrote on combining expert systems and GIS for land classification. Clive Elliott wrote on copyright and intellectual property. Science, image processing, computational classification and information law were appearing at the same meetings under one emerging field name.",
+              "sources": [],
+              "id": "ch06-s01-p02"
+            },
+            {
+              "type": "paragraph",
+              "text": "Digital geography was already being developed in New Zealand when the conference took place. MAPPAK had been used for cadastral compilation by 1979. DSIR researchers had been processing Landsat data since the mid-1970s. The NZLRI had been digitised from 1977 to 1980 and processed through LADEDA. The change visible in the 1980s was that these kinds of systems were no longer isolated examples that later historians needed to group together retrospectively. Contemporary practitioners were increasingly using the GIS label themselves.",
+              "markdown": "Digital geography was already being developed in New Zealand when the conference took place. MAPPAK had been used for cadastral compilation by 1979. DSIR researchers had been processing Landsat data since the mid-1970s. The NZLRI had been digitised from 1977 to 1980 and processed through LADEDA. The change visible in the 1980s was that these kinds of systems were no longer isolated examples that later historians needed to group together retrospectively. Contemporary practitioners were increasingly using the GIS label themselves.",
+              "sources": [],
+              "id": "ch06-s01-p03"
+            },
+            {
+              "id": "ch06-figure-intergraph-clix-workstation",
+              "type": "figure",
+              "imageId": "image:intergraph-clix-workstation",
+              "alt": "An Intergraph CLIX workstation with a monitor, keyboard and console.",
+              "caption": "An Intergraph CLIX workstation from the late 1980s, photographed when it was decommissioned in the late 1990s.",
+              "credit": "Gigs, Wikimedia Commons contributor; released into the public domain.",
+              "sources": [
+                {
+                  "label": "Wikimedia Commons",
+                  "url": "https://commons.wikimedia.org/wiki/File%3AIntergraph_CLIX_workstation.jpg"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "That shift can be seen clearly in 1985. P. R. van Berkel and R. D. Williams published “Introduction to LADEDA: a Geographic Information System” in the New Zealand Geographer. The title did not need a later historian to promote LADEDA into GIS after the event. The people documenting the system were already using the term. In the same year the University of Auckland Geography Department was teaching a senior undergraduate GIS course, while DSIR’s Science Mapping Unit was beginning to use an Intergraph GIS. The term was starting to describe a field rather than one particular machine.",
+              "markdown": "That shift can be seen clearly in 1985. P. R. van Berkel and R. D. Williams published “Introduction to LADEDA: a Geographic Information System” in the New Zealand Geographer. The title did not need a later historian to promote LADEDA into GIS after the event. The people documenting the system were already using the term. In the same year the University of Auckland Geography Department was teaching a senior undergraduate GIS course, while DSIR’s Science Mapping Unit was beginning to use an Intergraph GIS. The term was starting to describe a field rather than one particular machine.",
+              "sources": [],
+              "id": "ch06-s01-p04"
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "a-shared-name"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-10-54f7941b19",
+          "slug": "from-projects-to-departments-54f7941b19",
+          "articleId": "article:chapter-10",
+          "title": "From projects to departments",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:10",
+            "entity:department-of-lands-and-survey",
+            "entity:department-of-survey-and-land-information-dosli",
+            "entity:ministry-of-works-and-development"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "By the middle of the 1980s, geographic computing inside the New Zealand state was no longer confined to one experimental programme or one specialist scientific group. The Ministry of Works and Development had been maintaining and analysing land-resource information through the NZLRI and LADEDA lineage. Lands and Survey had experience with computer-assisted cadastral mapping, photogrammetry and automated cartographic work. DSIR units were processing satellite imagery and beginning to use commercial GIS. These systems had different purposes, data models and technical histories, but they had created a pool of staff who understood that maps could be maintained as digital information rather than produced only as finished sheets.",
+              "markdown": "By the middle of the 1980s, geographic computing inside the New Zealand state was no longer confined to one experimental programme or one specialist scientific group. The Ministry of Works and Development had been maintaining and analysing land-resource information through the NZLRI and LADEDA lineage. Lands and Survey had experience with computer-assisted cadastral mapping, photogrammetry and automated cartographic work. DSIR units were processing satellite imagery and beginning to use commercial GIS. These systems had different purposes, data models and technical histories, but they had created a pool of staff who understood that maps could be maintained as digital information rather than produced only as finished sheets.",
+              "sources": [],
+              "id": "ch10-s01-p01"
+            },
+            {
+              "type": "paragraph",
+              "text": "Departmental use created a different set of requirements. A system had to survive beyond the project that created it, accept new data, support corrections, produce dependable output and fit within government computing arrangements. It needed operators as well as designers, maintenance budgets as well as purchase budgets, and rules for what counted as an acceptable record. By the end of the decade, some government spatial systems were becoming national production environments with continuing obligations. The work remained specialised and expensive, but it was becoming routine departmental production.",
+              "markdown": "Departmental use created a different set of requirements. A system had to survive beyond the project that created it, accept new data, support corrections, produce dependable output and fit within government computing arrangements. It needed operators as well as designers, maintenance budgets as well as purchase budgets, and rules for what counted as an acceptable record. By the end of the decade, some government spatial systems were becoming national production environments with continuing obligations. The work remained specialised and expensive, but it was becoming routine departmental production.",
+              "sources": [],
+              "id": "ch10-s01-p02"
+            },
+            {
+              "type": "paragraph",
+              "text": "Lands and Survey sat near the centre of that transition because it was responsible for national cadastral and topographic mapping and held large analogue record collections that required conversion and integration alongside any software purchase. In 1987 the Department of Lands and Survey became the Department of Survey and Land Information, or DOSLI. The change of name coincided with a period in which digital land information was becoming a larger part of the department's production work. New GIS systems were introduced alongside earlier mapping systems. DOSLI was operating several digital production lines at once, each developed around a particular body of records and a particular government requirement.",
+              "markdown": "Lands and Survey sat near the centre of that transition because it was responsible for national cadastral and topographic mapping and held large analogue record collections that required conversion and integration alongside any software purchase. In 1987 the Department of Lands and Survey became the Department of Survey and Land Information, or DOSLI. The change of name coincided with a period in which digital land information was becoming a larger part of the department's production work. New GIS systems were introduced alongside earlier mapping systems. DOSLI was operating several digital production lines at once, each developed around a particular body of records and a particular government requirement.",
+              "sources": [],
+              "id": "ch10-p-f2800ed17165"
+            },
+            {
+              "id": "ch10-figure-te-kuiti-land-development-office",
+              "type": "figure",
+              "imageId": "image:te-kuiti-land-development-office",
+              "alt": "The Te Kuiti Land Development Office building used by the Lands and Survey Department during 1974–1984.",
+              "caption": "The Te Kuiti Land Development Office building, used by the Lands and Survey Department during 1974–1984. Photograph date not recorded.",
+              "credit": "Archives New Zealand; photograph by an unidentified photographer; via Wikimedia Commons.",
+              "sources": [
+                {
+                  "label": "Wikimedia Commons",
+                  "url": "https://commons.wikimedia.org/wiki/File%3ATe_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg"
+                }
+              ]
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "from-projects-to-departments"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-27-29839cfc31",
+          "slug": "cases-and-population-29839cfc31",
+          "articleId": "article:chapter-27",
+          "title": "Cases and population",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:27"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A disease case can be put on a map as soon as it has a usable location, yet a case count alone is only a partial measure of disease. Ten cases in a suburb of 2,000 people mean something different from ten cases in a city of 100,000, so public-health mapping has to combine events with the population from which they arose. In New Zealand that brought notified-disease records into contact with addresses, Census geography, population tables and the awkward question of how much geographic detail could be shown without identifying a person.",
+              "markdown": "A disease case can be put on a map as soon as it has a usable location, yet a case count alone is only a partial measure of disease. Ten cases in a suburb of 2,000 people mean something different from ten cases in a city of 100,000, so public-health mapping has to combine events with the population from which they arose. In New Zealand that brought notified-disease records into contact with addresses, Census geography, population tables and the awkward question of how much geographic detail could be shown without identifying a person.",
+              "sources": [],
+              "id": "ch27-p-e8843a223bbd"
+            },
+            {
+              "type": "paragraph",
+              "text": "The denominator created a second problem. Population data were organised into statistical areas whose boundaries had been designed for census collection and reporting, not for the natural geography of infection. A disease cluster could sit across a meshblock or area-unit boundary, while two nearby households could end up in different statistical units. Rates also became unstable when very small populations were divided into a small number of cases. The map could be numerically correct and still give a strong visual impression that depended heavily on the geography chosen for the calculation.",
+              "markdown": "The denominator created a second problem. Population data were organised into statistical areas whose boundaries had been designed for census collection and reporting, not for the natural geography of infection. A disease cluster could sit across a meshblock or area-unit boundary, while two nearby households could end up in different statistical units. Rates also became unstable when very small populations were divided into a small number of cases. The map could be numerically correct and still give a strong visual impression that depended heavily on the geography chosen for the calculation.",
+              "sources": [],
+              "id": "ch27-s01-p02"
+            },
+            {
+              "id": "ch27-figure-dhb-boundaries-2001-2010",
+              "type": "figure",
+              "imageId": "image:dhb-boundaries-2001-2010",
+              "alt": "An outline map of New Zealand divided into District Health Board boundaries.",
+              "caption": "District Health Board boundaries in force from 2001 until the Otago–Southland merger in 2010.",
+              "credit": "Stats NZ; compiled and edited by Air55; based in part on 2006 District Health Board data from the Ministry of Health; via Wikimedia Commons.",
+              "sources": [
+                {
+                  "label": "Wikimedia Commons",
+                  "url": "https://commons.wikimedia.org/wiki/File%3ANew_Zealand_District_Health_Board_Map_2001%E2%80%9310_%28Blank%29.svg"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "By the 1990s New Zealand public-health organisations had enough digital information for these problems to become routine rather than theoretical. Health Waikato had been collecting digital notified-disease data from general practitioners from 1993 under the Health Act framework. The records included geographic location, disease type and basic patient demographics. Public-health officers wanted to use the accumulated data to find areas with unusually high incidence, investigate possible causes and decide where to direct resources. They needed to turn the growing surveillance database into information they could use quickly and repeatedly.",
+              "markdown": "By the 1990s New Zealand public-health organisations had enough digital information for these problems to become routine rather than theoretical. Health Waikato had been collecting digital notified-disease data from general practitioners from 1993 under the Health Act framework. The records included geographic location, disease type and basic patient demographics. Public-health officers wanted to use the accumulated data to find areas with unusually high incidence, investigate possible causes and decide where to direct resources. They needed to turn the growing surveillance database into information they could use quickly and repeatedly.",
+              "sources": [],
+              "id": "ch27-s01-p03"
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "a-case-needs-a-denominator"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-34-be5de9df71",
+          "slug": "taking-gis-into-the-field-be5de9df71",
+          "articleId": "article:chapter-34",
+          "title": "Taking GIS into the field",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:34"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "For most of the history of GIS, the computer stayed inside. The field worker went outside. That division shaped how information moved. Someone might leave the office with a paper map, printed aerial photograph, notebook, inspection form and, by the 1990s, a separate GPS receiver. Observations made at a stream, pole, track, culvert or property then had to be matched back to the right feature and entered into the organisation’s database later. Good field teams developed disciplined ways to do this, but the separation between observation and database maintenance was built into the workflow.",
+              "markdown": "For most of the history of GIS, the computer stayed inside. The field worker went outside. That division shaped how information moved. Someone might leave the office with a paper map, printed aerial photograph, notebook, inspection form and, by the 1990s, a separate GPS receiver. Observations made at a stream, pole, track, culvert or property then had to be matched back to the right feature and entered into the organisation’s database later. Good field teams developed disciplined ways to do this, but the separation between observation and database maintenance was built into the workflow.",
+              "sources": [],
+              "id": "ch34-s01-p01"
+            },
+            {
+              "id": "ch34-figure-mow-field-trip-gisborne-1971",
+              "type": "figure",
+              "imageId": "image:mow-field-trip-gisborne-1971",
+              "alt": "Ministry of Works staff prepare for a field trip beside a Land Rover in Gisborne.",
+              "caption": "Ministry of Works staff prepare a field trip in Gisborne, March 1971.",
+              "credit": "W. Neill; Archives New Zealand, reference R24802259 / AAQT 6539 W3537 113 / A97130; via Wikimedia Commons.",
+              "sources": [
+                {
+                  "label": "Wikimedia Commons",
+                  "url": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Portable computing began to narrow that separation. The change combined portable computing with positioning, structured data capture and synchronisation. A useful mobile GIS had to take enough of the organisation’s map and data into the field, let a worker find or update the right feature, preserve the result, and return it to the central system without creating a second uncontrolled version of reality. The technology was only one part of that. Data had to be simplified, forms had to be designed, identifiers had to remain stable, positions had to be interpreted correctly, and field staff had to know which edits they were authorised to make.",
+              "markdown": "Portable computing began to narrow that separation. The change combined portable computing with positioning, structured data capture and synchronisation. A useful mobile GIS had to take enough of the organisation’s map and data into the field, let a worker find or update the right feature, preserve the result, and return it to the central system without creating a second uncontrolled version of reality. The technology was only one part of that. Data had to be simplified, forms had to be designed, identifiers had to remain stable, positions had to be interpreted correctly, and field staff had to know which edits they were authorised to make.",
+              "sources": [],
+              "id": "ch34-p-1a4714d22be2"
+            },
+            {
+              "type": "paragraph",
+              "text": "New Zealand was a particularly good test of the idea because the places where GIS was useful were often the places where communications were least convenient. Utility corridors, conservation land, farms, mountains, rivers, coastlines and rural roads did not offer reliable network coverage simply because a project had bought handheld computers. Early mobile systems therefore developed with an assumption that disconnection was normal. Maps and data might be loaded before leaving the office, edits stored locally, and changes reconciled later. Even after mobile networks improved, that basic requirement did not disappear.",
+              "markdown": "New Zealand was a particularly good test of the idea because the places where GIS was useful were often the places where communications were least convenient. Utility corridors, conservation land, farms, mountains, rivers, coastlines and rural roads did not offer reliable network coverage simply because a project had bought handheld computers. Early mobile systems therefore developed with an assumption that disconnection was normal. Maps and data might be loaded before leaving the office, edits stored locally, and changes reconciled later. Even after mobile networks improved, that basic requirement did not disappear.",
+              "sources": [],
+              "id": "ch34-s01-p03"
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "the-map-leaves-the-desk"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-38-7683399e76",
+          "slug": "a-crater-field-above-tongariro-7683399e76",
+          "articleId": "article:chapter-38",
+          "title": "A crater field above Tongariro",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:38",
+            "entity:new-zealand-aerial-mapping",
+            "entity:university-of-canterbury",
+            "person:ravitej-pitchika"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The August 2012 Te Maari eruption left hundreds of ballistic impact craters across part of the Tongariro landscape. New Zealand Aerial Mapping flew LiDAR and aerial imagery over the area in November that year, producing a broad record of the disturbed surface. Several years later, University of Canterbury research returned to a much smaller crater field with a very different acquisition system. A Draganfly X4P unmanned aircraft carried a digital camera above the site while ground survey points provided positional control. The images were processed in Agisoft PhotoScan Pro to reconstruct the surface in three dimensions.",
+              "markdown": "The August 2012 Te Maari eruption left hundreds of ballistic impact craters across part of the Tongariro landscape. New Zealand Aerial Mapping flew LiDAR and aerial imagery over the area in November that year, producing a broad record of the disturbed surface. Several years later, University of Canterbury research returned to a much smaller crater field with a very different acquisition system. A Draganfly X4P unmanned aircraft carried a digital camera above the site while ground survey points provided positional control. The images were processed in Agisoft PhotoScan Pro to reconstruct the surface in three dimensions.",
+              "sources": [],
+              "id": "ch38-s01-p01"
+            },
+            {
+              "type": "paragraph",
+              "text": "The 2012 eruption and the later UAV survey were separate events. Ravitej Pitchika’s 2017 MGIS thesis describes field work conducted roughly four years after the eruption. Remembering it as a 2012 drone survey would collapse the event and the later research into one date. Early UAV mapping in New Zealand also appeared through several routes, including research, surveying, engineering and environmental projects that gradually showed what small aircraft and digital photogrammetry could do.",
+              "markdown": "The 2012 eruption and the later UAV survey were separate events. Ravitej Pitchika’s 2017 MGIS thesis describes field work conducted roughly four years after the eruption. Remembering it as a 2012 drone survey would collapse the event and the later research into one date. Early UAV mapping in New Zealand also appeared through several routes, including research, surveying, engineering and environmental projects that gradually showed what small aircraft and digital photogrammetry could do.",
+              "sources": [],
+              "id": "ch38-p-44aea69bcc3c"
+            },
+            {
+              "type": "paragraph",
+              "text": "Pitchika's project focused on a site only about 100 square metres in area. The Draganfly was flown at different heights and the photographs were combined with ground-truth survey points. The resulting digital elevation models were used to identify volcanic craters and test how image resolution and flight altitude affected what could be detected. At a 40 metre flight height the model identified 135 craters within the selected site. The thesis compared those results with the much larger LiDAR and orthophoto survey undertaken soon after the eruption and concluded that the UAV approach was feasible and relatively economical for tightly localised work.",
+              "markdown": "Pitchika's project focused on a site only about 100 square metres in area. The Draganfly was flown at different heights and the photographs were combined with ground-truth survey points. The resulting digital elevation models were used to identify volcanic craters and test how image resolution and flight altitude affected what could be detected. At a 40 metre flight height the model identified 135 craters within the selected site. The thesis compared those results with the much larger LiDAR and orthophoto survey undertaken soon after the eruption and concluded that the UAV approach was feasible and relatively economical for tightly localised work.",
+              "sources": [],
+              "id": "ch38-s01-p03"
+            },
+            {
+              "type": "paragraph",
+              "text": "The surveys differed in their coverage, flight arrangements and measurement density. A conventional aircraft carrying a specialist mapping sensor could cover large areas efficiently. A small remotely piloted aircraft could be taken to one slope, one beach, one farm block or one construction site and flown when a particular project required it. The drone did not replace the larger system. It filled a different part of the acquisition spectrum.",
+              "markdown": "The surveys differed in their coverage, flight arrangements and measurement density. A conventional aircraft carrying a specialist mapping sensor could cover large areas efficiently. A small remotely piloted aircraft could be taken to one slope, one beach, one farm block or one construction site and flown when a particular project required it. The drone did not replace the larger system. It filled a different part of the acquisition spectrum.",
+              "sources": [],
+              "id": "ch38-s01-p04"
+            },
+            {
+              "id": "ch38-figure-victoria-square-aerial-1975",
+              "type": "figure",
+              "imageId": "image:victoria-square-aerial-1975",
+              "alt": "An aerial image of Victoria Square in Christchurch, circa 1975.",
+              "caption": "Victoria Square, Christchurch, in an aerial image from 1975.",
+              "credit": "Land Information New Zealand, New Zealand Aerial Mapping, New Zealand Aerial Surveys and the Royal New Zealand Air Force; via Wikimedia Commons.",
+              "sources": [
+                {
+                  "label": "Wikimedia Commons",
+                  "url": "https://commons.wikimedia.org/wiki/File%3AVicSq-Aerial-1975.jpg"
+                }
+              ]
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "a-crater-field-above-tongariro"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "articles",
+        "action": "replace",
+        "value": {
+          "id": "article:chapter-5",
+          "slug": "from-map-sheets-to-spatial-data",
+          "title": "Digital land inventories",
+          "url": "/stories/from-map-sheets-to-spatial-data/",
+          "summary": "In 1973 the Ministry of Works and Development began the first edition of the New Zealand Land Resource Inventory, usually shortened to NZLRI. The programme brought together several kinds of physical land information and mapped the",
+          "status": "published",
+          "updatedAt": "2026-10-10",
+          "readingOrder": 5,
+          "themeIds": [],
+          "featured": false,
+          "sourceNotes": [
+            {
+              "id": "ch05-note-01",
+              "text": "1. The New Zealand Land Resource Inventory chronology is supported by official Water and Soil/NZLRI histories and later Manaaki Whenua documentation. The chapter uses 1973 for the beginning of the national NZLRI programme, 1977 to 1980 for first-edition digitisation and approximately 85,000 mapped units for the first-edition national dataset where the existing source trail supports those figures."
+            },
+            {
+              "id": "ch05-note-02",
+              "text": "2. R. D. Williams, LADEDA Plotting Handbook, Hydrology Centre Publication No. 1, May 1982, is bibliographically secure even though the full handbook scan remains a physical/repository retrieval object. Commands and screens remain unverified while the handbook is unavailable."
+            },
+            {
+              "id": "ch05-note-03",
+              "text": "3. P. R. van Berkel and R. D. Williams, \"Introduction to LADEDA: a Geographic Information System\", New Zealand Geographer, 1985, provides direct contemporary evidence that LADEDA was being called a geographic information system by its own practitioners."
+            },
+            {
+              "id": "ch05-note-04",
+              "text": "4. Department of Conservation Science and Research Internal Report 88, together with the NZLRI section and later institutional histories, supports the historical description of NZLRI coding, LADEDA and the late-1980s move into commercial GIS. The manuscript uses 1988 cautiously for that migration and does not invent an exact cutover project where the evidence is thinner."
+            },
+            {
+              "id": "ch05-note-05",
+              "text": "5. The 1987 to 1990 conversion from the one-inch mapping framework to 1:50,000 and subsequent second-edition work is supported by NZLRI institutional documentation. Chapter 7 uses the resulting data and classification system but does not retell this conversion history."
+            }
+          ]
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "articles",
+        "action": "replace",
+        "value": {
+          "id": "article:chapter-6",
+          "slug": "when-gis-became-gis",
+          "title": "Early GIS systems",
+          "url": "/stories/when-gis-became-gis/",
+          "summary": "On 26 June 1989 a national conference opened in Wellington under the title Getting it all together with GIS. The published proceedings described it as the First National Multi-Disciplinary GIS Conference and ran to 116 pages. The ",
+          "status": "published",
+          "updatedAt": "2026-10-10",
+          "readingOrder": 6,
+          "themeIds": [
+            "profession",
+            "local-government",
+            "women-in-gis",
+            "technology-stack"
+          ],
+          "featured": false,
+          "sourceNotes": [
+            {
+              "id": "ch06-note-01",
+              "text": "1. Getting it all together with GIS: first National Multi-Disciplinary GIS Conference, Wellington, 26 to 28 June 1989, edited by T. Jackman and published by ERA Group, is the principal endpoint source. Surviving proceedings records identify papers by P. R. Stephens, R. G. Gibb and J. R. Dymond; P. G. Luckman, R. G. Gibb and M. R. Jessen; and Clive Elliott. The proceedings establish a national multidisciplinary GIS forum, not the origin of digital geography in New Zealand."
+            },
+            {
+              "id": "ch06-note-02",
+              "text": "2. Van Berkel and Williams' 1985 LADEDA paper and the University of Auckland 1985/1986 teaching evidence show that the GIS label was already in contemporary New Zealand use before the 1989 conference."
+            },
+            {
+              "id": "ch06-note-03",
+              "text": "3. W. Mary McEwen's Department of Conservation Science and Research Internal Report 80 preserves the Biological Resources Centre and 1986 North Taranaki mock-up evidence. The report explicitly allows the chapter to describe an early commercial-GIS experiment while keeping the detailed scientific application in Chapter 9 and avoiding an unsupported national-first claim."
+            },
+            {
+              "id": "ch06-note-04",
+              "text": "4. The University of Canterbury Chronicle dated 25 August 1987 names Intergraph Corporation (NZ) Ltd in a CAD/CIM agreement. It proves New Zealand corporate presence by that date but does not prove the first Intergraph GIS installation."
+            },
+            {
+              "id": "ch06-note-05",
+              "text": "5. Keith Carr, \"The Implementation of GIS in New Zealand\", in the 1988 ESCAP regional GIS workshop proceedings, printed p.71/digital PDF p.74, provides a contemporary national checkpoint. The proceedings note that Carr's original presentation relied heavily on slides that were not reproduced, so the missing slides remain unavailable."
+            },
+            {
+              "id": "ch06-note-06",
+              "text": "6. Explorer Graphics and early distributor material is supported by retrospective company histories. Chapter 12 discusses the fuller commercial and community history."
+            },
+            {
+              "id": "ch06-note-overseas-software-new-zealand-data",
+              "text": "Sources: Esri, History of GIS: ARC/INFO release, 1982 (https://www.esri.com/en-us/what-is-gis/history-of-gis); MapInfo Corporate History: company established in Troy, New York, 1986 (https://ssl.japan.mapinfo.com/location/company/history.php)."
+            }
+          ]
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "articles",
+        "action": "replace",
+        "value": {
+          "id": "article:chapter-10",
+          "slug": "gis-inside-government",
+          "title": "Government GIS",
+          "url": "/stories/gis-inside-government/",
+          "summary": "By the middle of the 1980s, geographic computing inside the New Zealand state was no longer confined to one experimental programme or one specialist scientific group. The Ministry of Works and Development had been maintaining and ",
+          "status": "published",
+          "updatedAt": "2026-10-10",
+          "readingOrder": 10,
+          "themeIds": [
+            "women-in-gis"
+          ],
+          "featured": false,
+          "sourceNotes": [
+            {
+              "id": "ch10-note-01",
+              "text": "1. The 1991 United Nations regional cartographic/country material is the principal cross-departmental checkpoint. It supports the 1986 DCDB conversion date, 1.066 million captured parcel polygons by December 1990, approximately 42 per cent of an estimated 2.5 million parcels, partial 100-metre DTM coverage, computerisation of the aerial-photo index, photogrammetric work with stereoscopic SPOT imagery and the digital aeronautical information-bank account."
+            },
+            {
+              "id": "ch10-note-02",
+              "text": "2. LINZ's historical DCDB Data Characteristics documentation supports the Sun Microsystems, Unix, VISION* and Oracle description and the distinction between digitising, survey entry, maintenance, enquiry and output. The sources describe the staffing, maintenance and production arrangements for the national spatial database. Chapter 13 discusses the detailed DCDB history and inherited cadastral-accuracy problem."
+            },
+            {
+              "id": "ch10-note-03",
+              "text": "3. Geoff Howard, Geoff O'Malley and Robin Pickering, \"New Zealand's Topographic Database - Where To Next?\", AURISA 1991, and Chris Hoogsteden and Derry Gordon's 1991 national mapping-agency paper support the short topographic-database section. Chapter 15 discusses the detailed topographic production history."
+            },
+            {
+              "id": "ch10-note-04",
+              "text": "4. McEwen's 1989-90 Department of Conservation GIS reports support the discussion of objectives, pilots, staffing, costs, maintenance and organisational responsibility. They document planning and assessment, not the later mature DOC enterprise GIS covered elsewhere."
+            },
+            {
+              "id": "ch10-note-05",
+              "text": "5. AURISA 1991 material, including Brian McLay and the Walsh/McQuoid land-information work, supports the policy and standards discussion. The late-1980s \"LINZ\" advisory usage is distinct from Land Information New Zealand, the statutory department created in 1996."
+            },
+            {
+              "id": "ch10-note-06",
+              "text": "6. Historical DCDB distribution documentation supports the pre-open-data discussion of licensing and charging. Chapter 33 discusses later shift to open distribution."
+            },
+            {
+              "id": "ch10-note-conservation-databases-1990",
+              "text": "Sources: Helen M. Adcock and W. Mary McEwen, DOC National Database Workshop report, October 1990, printed pp.27–28 (https://www.doc.govt.nz/globalassets/documents/science-and-technical/SRIR88.pdf)."
+            }
+          ]
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "articles",
+        "action": "replace",
+        "value": {
+          "id": "article:chapter-27",
+          "slug": "health-population-and-place",
+          "title": "Health population and place",
+          "url": "/stories/health-population-and-place/",
+          "summary": "A disease case can be put on a map as soon as it has a usable location, yet a case count alone is only a partial measure of disease. Ten cases in a suburb of 2,000 people mean something different from ten cases in a city of 100,00",
+          "status": "published",
+          "updatedAt": "2026-10-10",
+          "readingOrder": 27,
+          "themeIds": [],
+          "featured": false,
+          "sourceNotes": [
+            {
+              "id": "ch27-note-01",
+              "text": "1. The 2001 Waikato notified-disease study discussed in the chapter documents digital disease information collected from general practitioners from 1993, geographic location and demographic fields, ArcView Avenue automation, sub-minute map production at the most detailed regional scale, historical geocoding quality, privacy displacement and differences between vector and raster representations. The reported results are kept specific to that study."
+            },
+            {
+              "id": "ch27-note-02",
+              "text": "2. The same peer-reviewed source supports the distinction between older automatic geocoding and later GeoStan-assisted entry, including 11,564 historical Waikato records, 4,015 below 60 per cent certainty excluded from later analysis, and the later assisted matching result reported by the authors."
+            },
+            {
+              "id": "ch27-note-03",
+              "text": "3. Contemporary CDC professional material and the Waikato paper support EpiSurv having been distributed to all Public Health Units by January 2001, including address geocoding, alongside state-financed desktop GIS software and digitised topographic maps. The source does not establish identical use or capability in every PHU."
+            },
+            {
+              "id": "ch27-note-04",
+              "text": "4. Ministry of Health launch history supports PHEW! beginning in 1999 as a GIS/Internet communicable-disease service and the broader Public Health Observatory launching on 29 May 2002, with PHEW! described as its forerunner. The Ministry’s description of PHEW! as a world first is retained only as an attributed contemporary government claim."
+            },
+            {
+              "id": "ch27-note-05",
+              "text": "5. Skelly and collaborators’ 2002 rural geocoding work supports the campylobacteriosis uncertainty example. Brabyn and Skelly’s 2002 public-hospital accessibility paper supports the national cost-path analysis from about 38,000 Census meshblock centroids to 63 public hospitals and explicitly records the author contributions. These papers also anchor Chris Skelly’s documented Public Health Intelligence/health-geoinformatics role."
+            },
+            {
+              "id": "ch27-note-06",
+              "text": "6. Government releases of 9 and 29 May 2002 support the Supermap subscription figures, free Census-access transition, Public Health Observatory collaborators and the relationship between population/boundary access and public-health information services. The general open-data history remains in Chapter 33."
+            },
+            {
+              "id": "ch27-note-07",
+              "text": "7. The official account of Duane Wilkins’s COVID-19 secondment supports his work on the Manaaki support website and map-based tools. It does not establish sole ownership of the broader Caring for Communities programme."
+            },
+            {
+              "id": "ch27-note-08",
+              "text": "8. The connected May 2020 Manaaki technical record supports Survey123 Connect data entry, ArcGIS Online feature layers, user-specific visibility, daily extract/backup, web maps, applications and dashboards."
+            },
+            {
+              "id": "ch27-note-09",
+              "text": "9. The connected 2021 Hauora-Manaaki governance material supports its pro-equity vaccination-monitoring purpose and the controls around Māori Data Sovereignty, iwi-level data, confidentiality, aggregation/anonymisation, exclusion of personal identifiable information, two-factor authentication and ArcGIS Online hosting. Original internal material requires privacy and publication-rights review before reproduction."
+            }
+          ]
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "articles",
+        "action": "replace",
+        "value": {
+          "id": "article:chapter-34",
+          "slug": "mapping-leaves-the-office",
+          "title": "GIS in the field",
+          "url": "/stories/mapping-leaves-the-office/",
+          "summary": "For most of the history of GIS, the computer stayed inside. The field worker went outside. That division shaped how information moved. Someone might leave the office with a paper map, printed aerial photograph, notebook, inspectio",
+          "status": "published",
+          "updatedAt": "2026-10-10",
+          "readingOrder": 34,
+          "themeIds": [
+            "technology-stack"
+          ],
+          "featured": false,
+          "sourceNotes": [
+            {
+              "id": "ch34-note-01",
+              "text": "1. Earlier utility field-computing evidence from Chapter 25 provides the pre-smartphone operational baseline. Vector's 2002 project used Compaq iPAQs with Esri ArcPad and Panasonic Toughbooks with Smallworld, with project-specific reported cost and savings. Chapter 34 uses it as evidence of mobile GIS practice, not as a national first."
+            },
+            {
+              "id": "ch34-note-02",
+              "text": "2. LINZ Survey Quarterly and annual-report material support the modern real-time positioning environment: streaming PositioNZ trials from 2006 and the real-time network upgrade completed in February 2011. These sources support mobile positioning infrastructure, while the original GPS/GNSS adoption history remains in Chapter 18."
+            },
+            {
+              "id": "ch34-note-03",
+              "text": "3. Eagle Technology's 2019 New Zealand Esri User Conference programme records Katie Milne, Department of Conservation, presenting Helicopter Boarding Pass – Survey123 for safety in the field. The cited material supports the rapid Survey123 checklist design, location/user/date metadata and operational field-safety purpose."
+            },
+            {
+              "id": "ch34-note-04",
+              "text": "4. Department of Conservation Annual Report 2020 supports Helicopter Boarding Pass as a compulsory paperless pre-flight checklist and final critical-control check, with contemporary smartphone screenshots. The evidence supports operational status but does not justify attributing the project to national GIS management or any unrecorded individual."
+            },
+            {
+              "id": "ch34-note-05",
+              "text": "5. The chapter distinguishes dedicated GPS receivers, rugged mobile computers, PDAs, smartphones and tablets rather than treating them as one device lineage. It also distinguishes positioning from a mobile GIS workflow that captures, validates and synchronises structured spatial information."
+            }
+          ]
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "articles",
+        "action": "replace",
+        "value": {
+          "id": "article:chapter-38",
+          "slug": "mapping-from-a-drone",
+          "title": "Drone mapping",
+          "url": "/stories/mapping-from-a-drone/",
+          "summary": "The August 2012 Te Maari eruption left hundreds of ballistic impact craters across part of the Tongariro landscape. New Zealand Aerial Mapping flew LiDAR and aerial imagery over the area in November that year, producing a broad re",
+          "status": "published",
+          "updatedAt": "2026-10-10",
+          "readingOrder": 38,
+          "themeIds": [
+            "imagery"
+          ],
+          "featured": false,
+          "sourceNotes": [
+            {
+              "id": "ch38-note-01",
+              "text": "1. Civil Aviation Authority archived Parts 101 and 102, Master Research Register P9C-S22, support the modern RPAS regulatory milestone: Part 101 amendment 6 and the original Part 102 took effect on 1 August 2015. This is a regulatory date, not evidence of the first New Zealand drone-mapping operation."
+            },
+            {
+              "id": "ch38-note-02",
+              "text": "2. University of Canterbury research around Te Maari provides a strongly evidenced early scientific UAV/structure-from-motion case in the project corpus. The field UAV work occurred roughly four years after the 2012 eruption, with the thesis completed in 2017. It must not be rewritten as a 2012 drone survey merely because the landscape event occurred then."
+            },
+            {
+              "id": "ch38-note-03",
+              "text": "3. The chapter distinguishes image capture from photogrammetric reconstruction. A UAV may collect photographs; structure-from-motion and photogrammetric processing derive camera geometry, dense point clouds, orthomosaics and surface models. Those outputs can resemble LiDAR products while being measured differently."
+            },
+            {
+              "id": "ch38-note-04",
+              "text": "4. Drone-borne visible imagery, multispectral sensors and LiDAR are not interchangeable. A drone platform may carry different sensors, but the chapter must identify the actual sensor and processing method used by a cited project."
+            },
+            {
+              "id": "ch38-note-05",
+              "text": "5. Regulatory change, falling hardware costs, better cameras, GNSS, improved photogrammetry and computing all contributed to professional uptake. No single factor is treated as the date on which drone mapping became ordinary across New Zealand."
+            },
+            {
+              "id": "ch38-note-06",
+              "text": "6. Disaster use may be mentioned as a technical application, but major emergency and recovery narratives remain in Chapter 42."
+            }
+          ]
+        },
+        "acceptedEditorialChange": true
+      }
+    ],
+    "candidateHash": "d47ae765a77ab9274ed8071f3053cd3926b0ecc70101f2875b2d073d7face024"
+  },
+  "expectedGitHead": "af01594b06bf720ed9b2d2413531a6356ef16067",
+  "counts": {
+    "articles": 45,
+    "passages": 594,
+    "records": 840,
+    "events": 189,
+    "relationships": 2593,
+    "themes": 7,
+    "images": 58
+  },
+  "appliedAt": "2026-10-10T10:28:03.073Z",
+  "status": "local-candidate-not-published"
+}
