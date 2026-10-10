@@ -24,6 +24,8 @@ test('unverified imagery and incorrect hashes cannot enter a build', async () =>
     image.rightsStatus='approved';
     assert.deepEqual(await inspectLandscapeRegistry({version:1,images:[image]},root),[]);
     image.variants.hero={...v,sha256:'f'.repeat(64)};
-    assert.ok(inspectLandscapeRegistry({version:1,images:[image]},root).some(x=>x.includes('checksum mismatch')));
+    assert.ok((await inspectLandscapeRegistry({version:1,images:[image]},root)).some(x=>x.includes('checksum mismatch')));
+    image.variants.hero={...v,width:65};
+    assert.ok((await inspectLandscapeRegistry({version:1,images:[image]},root)).some(x=>x.includes('decoded dimensions mismatch')));
   } finally {rmSync(root,{recursive:true,force:true});}
 });
