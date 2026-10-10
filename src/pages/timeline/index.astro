@@ -1,4 +1,17 @@
 ---
-import Layout from '../../layouts/Layout.astro';import Timeline from '../../components/Timeline.svelte';import {dataset} from '../../lib/data';const d=await dataset();
+import Layout from '../../layouts/Layout.astro';
+import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
+import Timeline from '../../components/Timeline.svelte';
+import {dataset} from '../../lib/data';
+const d=await dataset();
 ---
-<Layout title="Timeline · NZ GIS History"><div class="wrap"><p class="eyebrow">Chronology</p><h1>Explore the timeline.</h1><p class="intro">Select a period or event, then follow its account and sources. Approximate dates and ranges retain their original precision.</p><Timeline client:load events={d.events}/><details><summary>All events as a chronological list</summary><ol class="list">{[...d.events].sort((a:any,b:any)=>(a.year??9999)-(b.year??9999)).map((e:any)=><li id={e.id}><a href={e.url||'/timeline/?event='+encodeURIComponent(e.id)}>{e.dateDisplay} · {e.label}</a><p>{e.summary}</p><small>{e.datePrecision} precision</small></li>)}</ol></details></div></Layout>
+<Layout title="Timeline · NZ GIS History">
+ <div class="wrap">
+  <div class="visual-page-heading">
+   <div><p class="eyebrow">Chronology</p><h1>Explore the timeline.</h1><p class="intro">Select a period or event, then follow its account and sources. Approximate dates and ranges retain their original precision.</p></div>
+   <DecorativeLandscape id="north2024-atene1" variant="banner" priority/>
+  </div>
+  <Timeline client:load events={d.events}/>
+  <details><summary>All events as a chronological list</summary><ol class="list">{[...d.events].sort((a:any,b:any)=>(a.year??9999)-(b.year??9999)).map((e:any)=><li id={e.id}><a href={e.url||'/timeline/?event='+encodeURIComponent(e.id)}>{e.dateDisplay} · {e.label}</a><p>{e.summary}</p><small>{e.datePrecision} precision</small></li>)}</ol></details>
+ </div>
+</Layout>
