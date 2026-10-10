@@ -4,6 +4,8 @@ on:
     branches: [feature/timeline-media-coverage-wave4-20261010]
     paths:
       - scripts/download-timeline-images-wave4.mjs
+      - scripts/audit-timeline-image-coverage.mjs
+      - src/lib/timeline-media.mjs
       - docs/media/curated-sources-timeline-wave4.json
       - .github/workflows/acquire-timeline-images-wave4.yml
   workflow_dispatch:
@@ -30,11 +32,13 @@ jobs:
         run: |
           npm test
           npm run build
+      - name: Generate full 189-event source and coverage register
+        run: node scripts/audit-timeline-image-coverage.mjs
       - name: Preserve acquired media and report in the research branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/assets/historical/ src/content/images/ docs/media/timeline-download-run-wave4.json
+          git add public/assets/historical/ src/content/images/ docs/media/timeline-download-run-wave4.json docs/media/timeline-event-image-coverage-wave4.csv docs/media/timeline-event-image-coverage-wave4.md
           if ! git diff --cached --quiet; then
             git commit -m "Archive timeline wave 4 satellite originals and derivatives"
             git reset --hard HEAD
