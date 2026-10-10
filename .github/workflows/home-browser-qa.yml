@@ -7,7 +7,6 @@ on:
       - 'src/pages/about/**'
       - 'src/pages/contribute/**'
       - 'src/layouts/Layout.astro'
-      - 'src/components/ContributeForm.svelte'
       - 'src/components/Reader.svelte'
       - 'src/lib/home-highlights.mjs'
       - 'src/lib/passage-contributions.mjs'
@@ -20,7 +19,6 @@ on:
       - 'src/pages/index.astro'
       - 'src/pages/contribute/**'
       - 'src/layouts/Layout.astro'
-      - 'src/components/ContributeForm.svelte'
       - 'src/styles/site.css'
       - 'scripts/home-browser-qa.mjs'
   workflow_dispatch:

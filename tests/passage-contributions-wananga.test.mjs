@@ -2,36 +2,27 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import fs from 'node:fs';
-import {passageContributionMailto,passagePermanentUrl,passageContributionPageUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
+import {passageContributionGmailUrl,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
 import {ngaPoutamaVideos,ngaPoutamaPlaylist,ngaPoutamaThumbnail,ngaPoutamaForPassage,ngaPoutamaForEvent,ngaPoutamaRecordLinks} from '../src/lib/nga-poutama-videos.mjs';
 
 const article={title:'Coordinates enter the computer',url:'/stories/coordinates-enter-the-computer/'};
 const passage={title:'Transforming one coordinate world into another',slug:'transforming-one-coordinate-world-into-another-2ab91fbc4f'};
 
-test('passage contribution opens user email client with exact canonical deep link, questions, and source request',()=>{
+test('passage button opens a pre-addressed Gmail draft with its permanent link',()=>{
  const url=passagePermanentUrl(article,passage);
  assert.equal(url,'https://history.pm4gis.nz/stories/coordinates-enter-the-computer/#transforming-one-coordinate-world-into-another-2ab91fbc4f');
- const mailto=passageContributionMailto(article,passage);
- const parsed=new URL(mailto);
- assert.equal(parsed.protocol,'mailto:');
- assert.equal(parsed.pathname,contributionRecipient);
- assert.equal(contributionRecipient,'pm4gis@gmail.com');
- assert.ok(parsed.searchParams.get('subject')?.startsWith('NZ GIS History Contributions and Corrections'));
- assert.ok(parsed.searchParams.get('subject')?.includes(passage.title));
+ const parsed=new URL(passageContributionGmailUrl(article,passage));
+ assert.equal(parsed.hostname,'mail.google.com');
+ assert.equal(parsed.searchParams.get('to'),contributionRecipient);
+ assert.ok(parsed.searchParams.get('su').includes(passage.title));
  const body=parsed.searchParams.get('body')||'';
- assert.ok(body.includes('Link to passage: '+url));
- for(const field of ['Chapter: '+article.title,'Passage: '+passage.title,'correct, add or clarify','dates, sources, links or documents','credit your name','permission to share']){
-  assert.ok(body.includes(field),'Missing contribution prompt: '+field);
- }
- assert.ok(!mailto.includes('\n'),'Must encode line breaks in URL');
+ for(const field of ['Chapter: '+article.title,'Passage: '+passage.title,'Link to passage: '+url,'correct, add or clarify','sources, photographs','credited'])assert.ok(body.includes(field),field);
 });
-
-test('email links independently identify all chapters and passages without losing location',()=>{
- const one=passageContributionMailto(article,passage);
- const two=passageContributionMailto(article,{title:'A second subsection',slug:'second-test-subsection'});
+test('passages produce distinct direct Gmail drafts',()=>{
+ const one=passageContributionGmailUrl(article,passage);
+ const two=passageContributionGmailUrl(article,{title:'A second subsection',slug:'second-test-subsection'});
  assert.notEqual(one,two);
- const body=new URL(two).searchParams.get('body')||'';
- assert.ok(body.includes('/stories/coordinates-enter-the-computer/#second-test-subsection'));
+ assert.ok(new URL(two).searchParams.get('body').includes('#second-test-subsection'));
 });
 
 test('invalid non-passage URLs cannot create misleading contribution references',()=>{
@@ -64,8 +55,9 @@ test('Ngā Poutama recordings are verified direct video links with external thum
 test('new reader contribution is beside Copy link and person profiles stay image-free',()=>{
  const reader=readFileSync('src/components/Reader.svelte','utf8');
  assert.ok(reader.includes('Copy link</button><a class="button passage-contribute"'));
- assert.ok(reader.includes('passageContributionPageUrl(article,p)'));
- const next=passageContributionPageUrl(article,passage);const query=new URL(next,'https://history.pm4gis.nz');assert.equal(query.pathname,'/contribute/');assert.ok(query.searchParams.get('ref')?.includes('#'+passage.slug));
+ assert.ok(reader.includes('passageContributionGmailUrl(article,p)'));
+ assert.ok(reader.includes('target="_blank" rel="noopener noreferrer"'));
+ const next=passageContributionGmailUrl(article,passage);assert.equal(new URL(next).hostname,'mail.google.com');
  const profile=readFileSync('src/pages/[...path].astro','utf8');
  assert.ok(profile.includes("r.kind==='Person'?null:pickRecordImage"));
  assert.ok(profile.includes("r.slug==='nga-poutama-matawhenua'"));

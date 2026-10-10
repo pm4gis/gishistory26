@@ -1,13 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import ContributeForm from '../../components/ContributeForm.svelte';
+import {siteContributionGmailUrl} from '../../lib/passage-contributions.mjs';
+const gmail=siteContributionGmailUrl();
 ---
-<Layout title="Contribute or correct · NZ GIS History" description="Contribute evidence, memories, documents or corrections to A History of GIS in New Zealand, using an editable email draft.">
+<Layout title="Contribute · NZ GIS History" description="Open a pre-addressed Gmail draft to contribute to NZ GIS History.">
  <div class="wrap narrative">
-  <p class="eyebrow">Contributions and corrections</p>
   <h1>Contribute to NZ GIS History</h1>
-  <p>Have a correction, an account of an early GIS project, a name we have missed, or a map or photograph that belongs in the history? Prepare a message below. When you come here from a chapter, its passage link is included automatically.</p>
-  <ContributeForm client:load/>
-  <p><a href="/about/">About the project and its sources →</a></p>
+  <p><a id="gmail-draft" class="button primary" href={gmail}>Open Gmail draft →</a></p>
+  <p>Gmail opens in your browser. Review your message and choose Send when you're ready.</p>
  </div>
+ <script>
+  import {contributionContextFromSearch,contributionDraft,contributionGmailUrl} from '../../lib/passage-contributions.mjs';
+  const draft=contributionDraft(contributionContextFromSearch(window.location.search));
+  const url=contributionGmailUrl(draft.subject,draft.body);
+  const link=document.querySelector<HTMLAnchorElement>('#gmail-draft');
+  if(link)link.href=url;
+  window.location.replace(url);
+ </script>
 </Layout>

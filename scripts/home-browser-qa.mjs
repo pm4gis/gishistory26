@@ -48,7 +48,7 @@ try{
     await summary.click();
     assert.notEqual(await mobileMenu.getAttribute('open'),null);
     assert.equal(await page.locator('.nav--mobile a[href="/about/"]').isVisible(),true);
-    assert.equal(await page.locator('.nav--mobile a[href="/contribute/"]').isVisible(),true);
+    assert.equal(await page.locator('.nav--mobile .nav-contribute').isVisible(),true);
     await summary.focus();
     await page.keyboard.press('Escape');
     assert.equal(await mobileMenu.getAttribute('open'),null);
@@ -61,7 +61,7 @@ try{
     assert.equal(await desktop.isVisible(),true);
     assert.equal(await summary.isVisible(),false);
     assert.equal(await desktop.locator('a[href="/about/"]').count(),1);
-    assert.equal(await desktop.locator('a[href="/contribute/"]').count(),1);
+    assert.equal(await desktop.locator('.nav-contribute').count(),1);
    }
    await dimensions(page,viewport.name+' header');
   });
@@ -101,44 +101,22 @@ try{
    const themeHref=await page.locator('#themes article.art-card .title').first().getAttribute('href');
    assert.ok(themeHref.startsWith('/themes/'));
   });
-  await check(viewport.name+' browser contribution draft and valid passage reference',async()=>{
-   const reference='https://history.pm4gis.nz/stories/landonline/#from-register-to-transaction-system-60c6ff7b97';
-   const url=new URL(base+'/contribute/');
-   url.searchParams.set('chapter','Landonline');
-   url.searchParams.set('passage','From register to transaction system');
-   url.searchParams.set('ref',reference);
-   await page.goto(url.href,{waitUntil:'domcontentloaded'});
-   await page.locator('#contribution-message').waitFor();
-   await page.waitForFunction(()=>document.querySelector('#contribution-message')?.value.includes('Link to passage: https://history.pm4gis.nz/stories/landonline/'));
-   const message=await page.locator('#contribution-message').inputValue();
-   assert.ok(message.includes(reference));
-   assert.ok(!message.includes('Do not send restricted iwi'));
-   await page.locator('#contribution-subject').fill('NZ GIS History Contributions and Corrections test');
-   await page.locator('#contribution-message').fill(message+'\nBrowser test contribution');
-   const gmail=new URL(await page.locator('#gmail-compose').getAttribute('href'));
-   assert.equal(gmail.hostname,'mail.google.com');
-   assert.equal(gmail.searchParams.get('to'),'pm4gis@gmail.com');
-   assert.ok(gmail.searchParams.get('su').includes('test'));
-   assert.ok(gmail.searchParams.get('body').includes('Browser test contribution'));
-   await dimensions(page,viewport.name+' contribution');
+  await check(viewport.name+' one-click Gmail contribution',async()=>{
+   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+   const links=page.locator('.nav-contribute');
+   assert.equal(await links.count(),2);
+   for(const link of await links.all()){
+    const url=new URL(await link.getAttribute('href'));
+    assert.equal(url.hostname,'mail.google.com');
+    assert.equal(url.searchParams.get('to'),'pm4gis@gmail.com');
+    assert.equal(url.searchParams.get('su'),'NZ GIS History Contributions and Corrections');
+    assert.ok(url.searchParams.get('body').includes('correct, add or clarify'));
+    assert.equal(await link.getAttribute('target'),'_blank');
+   }
+   await dimensions(page,viewport.name+' Gmail navigation');
   });
   await context.close();
  }
- const context=await browser.newContext({permissions:['clipboard-read','clipboard-write']});
- const page=await context.newPage();
- await check('copy contribution works in browser without a mail client',async()=>{
-  await page.goto(base+'/contribute/',{waitUntil:'domcontentloaded'});
-  await page.locator('#contribution-message').waitFor();
-  await page.locator('#contribution-subject').fill('Test copied subject');
-  await page.locator('#contribution-message').fill('Test copied body');
-  await page.locator('#copy-contribution').click();
-  assert.ok((await page.getByRole('status').innerText()).includes('copied'));
-  const clipboard=await page.evaluate(()=>navigator.clipboard.readText());
-  assert.ok(clipboard.includes('To: pm4gis@gmail.com'));
-  assert.ok(clipboard.includes('Subject: Test copied subject'));
-  assert.ok(clipboard.includes('Test copied body'));
- });
- await context.close();
 }finally{
  await browser.close();
  console.log(JSON.stringify({passed:cases.filter(c=>c.passed).length,failed:cases.filter(c=>!c.passed).length,results:cases},null,2));
