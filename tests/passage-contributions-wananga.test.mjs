@@ -42,7 +42,7 @@ test('invalid non-passage URLs cannot create misleading contribution references'
 
 test('Ngā Poutama recordings are verified direct video links with external thumbnail attribution',()=>{
  assert.equal(ngaPoutamaVideos.length,15);
- assert.equal(new Set(ngaPoutamaVideos.map(v=>v.id)).size,4);
+ assert.equal(new Set(ngaPoutamaVideos.map(v=>v.id)).size,15);
  assert.match(ngaPoutamaPlaylist,/^https:\/\/www\.youtube\.com\/playlist\?list=/);
  for(const video of ngaPoutamaVideos){
   assert.match(video.id,/^[\w-]{11}$/);
