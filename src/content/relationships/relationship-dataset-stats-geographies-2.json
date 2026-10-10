@@ -1,0 +1,14 @@
+{
+  "id": "relationship:dataset-stats-geographies-2",
+  "a": "dataset:stats-geographies",
+  "b": "chapter:25",
+  "label": "Discussed in census geography history",
+  "basis": "The existing census geography chapter traces this development.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Stats NZ, Statistical standard for geographic areas 2023 (updated December 2023)",
+      "url": "https://www.stats.govt.nz/methods/statistical-standard-for-geographic-areas-2023/"
+    }
+  ]
+}
