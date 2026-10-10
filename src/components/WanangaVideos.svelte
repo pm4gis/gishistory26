@@ -3,8 +3,11 @@
   export let videos:any[]=ngaPoutamaVideos;
   export let compact=false;
   export let inline=false;
+  export let archive=false;
+  export let readingLinks:Record<string,string>={};
+  let query='';
   let topic='all';
-  $: listed=topic==='all'?videos:videos.filter((v:any)=>v.topics?.includes(topic));
+  $: listed=(topic==='all'?videos:videos.filter((v:any)=>v.topics?.includes(topic))).filter((v:any)=>(v.title+' '+v.description+' '+v.attribution).toLowerCase().includes(query.trim().toLowerCase()));
   $: topics=ngaPoutamaTopics.filter(([id]:any)=>id==='all'||videos.some((v:any)=>v.topics.includes(id)));
 </script>
 <section class:wananga-videos--inline={inline} class="wananga-videos" aria-label={inline?'Related Māori GIS video recordings':'Ngā Poutama Matawhenua recordings'}>
@@ -17,12 +20,13 @@
     <div class="wananga-videos-heading">
       <div>
         <p class="eyebrow">Documentary video archive</p>
-        <h2>Ngā Poutama Matawhenua recordings</h2>
+        <h2>Ngā Poutama Matawhenua {archive?'recordings archive':'recordings'}</h2>
         <p>{videos.length} individually identified recordings and conversations, with publication dates and presenter names where the published sources establish them. This curated catalogue is not claimed to contain every older video in the YouTube playlist. Duane Wilkins is a documented facilitator of the series; other presenters are credited to their particular recording.</p>
       </div>
       <a class="button" href={ngaPoutamaPlaylist} target="_blank" rel="noopener noreferrer">Official LINZ playlist ↗</a>
     </div>
   {/if}
+  {#if archive}<p class="wananga-archive-note">These sixteen identified recordings include fourteen retrieved from the official LINZ playlist feed and two separately verified links. Older videos could not be exhaustively enumerated; consult the official playlist for additional material.</p><label class="wananga-search-label" for="wananga-video-query">Search recordings</label><input id="wananga-video-query" class="wananga-video-query" type="search" bind:value={query} placeholder="Presenter, subject, tool or dataset" autocomplete="off"/><p class="wananga-video-count" aria-live="polite">{listed.length} matching recordings</p>{/if}
   {#if !inline&&videos.length>6}
     <div class="wananga-video-filters" role="group" aria-label="Filter Ngā Poutama recordings by kaupapa">
       {#each topics as pair (pair[0])}
@@ -43,6 +47,8 @@
           <small>{video.date}</small>
           <p>{video.description}</p>
           <small>{video.attribution}</small>
+          {#if readingLinks[video.passageIds[0]]}<p class="wananga-video-evidence"><a href={readingLinks[video.passageIds[0]]}>Read the related history passage →</a></p>{/if}
+          {#if video.eventIds?.length}<p class="wananga-video-evidence"><a href={'/timeline/?event='+encodeURIComponent(video.eventIds[0])}>Related timeline entry →</a></p>{/if}
           {#if ngaPoutamaRelatedRecords(video.id).length}
             <p class="wananga-video-people">Connected entries:
               {#each ngaPoutamaRelatedRecords(video.id) as related (related.url)}
@@ -54,6 +60,7 @@
       </article>
     {/each}
   </div>
+  {#if !inline&&!archive}<p><a class="button" href="/nga-poutama-videos/">Browse all sixteen verified recordings →</a></p>{/if}
   {#if !inline}
     <p class="wananga-video-note">Thumbnails are loaded from YouTube, not downloaded or republished as project assets. YouTube retains the original recordings. See <a href="https://www.linz.govt.nz/our-work/location-information/geospatial-capability/nga-poutama-matawhenua-practical-maori-gis-mapping-wananga" target="_blank" rel="noopener noreferrer">LINZ’s programme information ↗</a>.</p>
   {/if}

@@ -1,0 +1,43 @@
+name: Reader and audiovisual browser QA
+on:
+  pull_request:
+    paths:
+      - 'src/components/Reader.svelte'
+      - 'src/components/WanangaVideos.svelte'
+      - 'src/components/WanangaClip.svelte'
+      - 'src/pages/nga-poutama-videos/**'
+      - 'src/lib/nga-poutama-videos.mjs'
+      - 'src/lib/passage-contributions.mjs'
+      - 'src/styles/site.css'
+      - 'scripts/reader-video-browser-qa.mjs'
+      - '.github/workflows/reader-video-browser-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm install --no-save --ignore-scripts playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - name: Inspect real desktop and mobile reader in Chromium
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist > /tmp/nzgis-preview.log 2>&1 &
+          PREVIEW_PID=$!
+          trap 'kill "$PREVIEW_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 40); do
+            if curl -fsS -o /dev/null http://127.0.0.1:4321/; then break; fi
+            sleep 1
+          done
+          if ! curl -fsS -o /dev/null http://127.0.0.1:4321/; then cat /tmp/nzgis-preview.log; echo 'Static preview failed to start'; exit 1; fi
+          node scripts/reader-video-browser-qa.mjs

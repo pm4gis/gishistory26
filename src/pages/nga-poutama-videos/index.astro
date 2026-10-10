@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import WanangaVideos from '../../components/WanangaVideos.svelte';
+import {ngaPoutamaReadingLinks} from '../../lib/nga-poutama-videos.mjs';
+import {dataset} from '../../lib/data';
+const d=await dataset();
+const readingLinks=ngaPoutamaReadingLinks(d.passages,d.articles) as Record<string,string>;
+---
+<Layout title="Ngā Poutama Matawhenua recordings · NZ GIS History" description="Publicly verifiable Māori GIS videos, presenter credits, tools, datasets and linked passages.">
+ <div class="wrap">
+  <p class="eyebrow">Māori GIS · Documentary recordings</p>
+  <h1>Ngā Poutama Matawhenua audiovisual archive</h1>
+  <p class="intro">Explore public recorded wānanga by topic or search. Each entry links to its original recording and related historical account; any presenter not independently identified remains unattributed.</p>
+  <div class="actions"><a class="button" href="/themes/maori-gis/">Māori GIS history →</a><a class="button" href="/entities/nga-poutama-matawhenua/">Ngā Poutama programme →</a></div>
+  <WanangaVideos archive client:load {readingLinks}/>
+ </div>
+</Layout>
