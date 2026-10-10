@@ -4,7 +4,7 @@
   "articleId": "article:chapter-34",
   "title": "Taking GIS into the field",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [],
   "recordIds": [
     "chapter:34"
@@ -16,6 +16,20 @@
       "markdown": "For most of the history of GIS, the computer stayed inside. The field worker went outside. That division shaped how information moved. Someone might leave the office with a paper map, printed aerial photograph, notebook, inspection form and, by the 1990s, a separate GPS receiver. Observations made at a stream, pole, track, culvert or property then had to be matched back to the right feature and entered into the organisation’s database later. Good field teams developed disciplined ways to do this, but the separation between observation and database maintenance was built into the workflow.",
       "sources": [],
       "id": "ch34-s01-p01"
+    },
+    {
+      "id": "ch34-figure-mow-field-trip-gisborne-1971",
+      "type": "figure",
+      "imageId": "image:mow-field-trip-gisborne-1971",
+      "alt": "Ministry of Works staff prepare for a field trip beside a Land Rover in Gisborne.",
+      "caption": "Ministry of Works staff prepare a field trip in Gisborne, March 1971.",
+      "credit": "W. Neill; Archives New Zealand, reference R24802259 / AAQT 6539 W3537 113 / A97130; via Wikimedia Commons.",
+      "sources": [
+        {
+          "label": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg"
+        }
+      ]
     },
     {
       "type": "paragraph",

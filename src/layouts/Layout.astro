@@ -1,6 +1,142 @@
 ---
 import '../styles/site.css';
-const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
-const canonical=new URL(Astro.url.pathname,Astro.site);
+
+interface Props {
+  title?: string;
+  description?: string;
+  robots?: string;
+  pageType?: 'website' | 'article';
+  schema?: Record<string, unknown>;
+  socialImage?: string;
+  socialImageAlt?: string;
+}
+
+const {
+  title = 'A History of GIS in New Zealand | NZ GIS History',
+  description = 'Explore the history of geographic information systems (GIS) in New Zealand through chapters, historical maps, people, organisations, projects, events and sources.',
+  robots = 'index,follow,max-image-preview:large',
+  pageType = 'website',
+  schema,
+  socialImage,
+  socialImageAlt,
+} = Astro.props;
+
+const site = Astro.site ?? new URL('https://history.pm4gis.nz');
+const canonical = new URL(Astro.url.pathname, site);
+const absoluteSocialImage = socialImage ? new URL(socialImage, site).href : undefined;
+const defaultSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: canonical.href,
+  inLanguage: 'en-NZ',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'A History of GIS in New Zealand',
+    url: site.href,
+  },
+};
+const jsonLd = JSON.stringify(schema ?? defaultSchema).replace(/</g, '\\u003c');
+
+const contributionSubject = 'NZ GIS History Contributions and Corrections';
+const contributionBody = [
+  'Hello NZ GIS History,',
+  '',
+  'I would like to suggest a contribution or correction.',
+  '',
+  '1. What page, chapter, passage, person, organisation, project or event is this about?',
+  '2. Is this a correction, new information, a source suggestion, or an image contribution?',
+  '3. What information should be corrected or added? Please suggest wording if you can.',
+  '4. What sources support the suggestion? Include links, publication details, page numbers or archive references.',
+  '5. For an image, what does it show, when and where was it made, who created it, and what are its reuse terms?',
+  '6. Is there any relevant context or uncertainty we should preserve?',
+  '7. May we contact you to clarify details? If so, how would you like us to reply?',
+  '8. How would you like to be credited? (Optional)',
+  '',
+  `Page I was viewing: ${canonical.href}`,
+  '',
+  'Thank you,',
+];
+const contributionHref = `mailto:pm4gis@gmail.com?subject=${encodeURIComponent(contributionSubject)}&body=${encodeURIComponent(contributionBody.join('\n'))}`;
 ---
-<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{title}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><script is:inline>try{const old=JSON.parse(localStorage.getItem('nzgis-colour-palette-v1')||'null');const t=localStorage.getItem('nzgis-theme')||({'dark-night':'night','dark-forest':'forest','light-paper':'paper','light-mist':'mist'}[old]);if(['night','forest','paper','mist'].includes(t))document.documentElement.dataset.theme=t}catch{}</script></head><body><a class="skip" href="#main">Skip to content</a><header class="topbar"><a class="brand" href="/"><small>NEW ZEALAND</small>GIS History</a><nav class="nav" aria-label="Main navigation"><a href="/read/">Read</a><a href="/timeline/">Timeline</a><a href="/browse/">People & organisations</a><a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a><button id="palette" aria-label="Change colour theme">◐ <span>Night</span></button></nav></header><main id="main"><slot/></main><footer class="footer"><span>A History of GIS in New Zealand</span><div class="actions"><a href="/about/">About & sources</a><a href="/network/">Connections</a><a href="/release.json">Publication revision</a></div></footer><script>const names=['night','forest','paper','mist'];const b=document.getElementById('palette');function label(){const t=document.documentElement.dataset.theme||'night';const s=b?.querySelector('span');if(s)s.textContent=t[0].toUpperCase()+t.slice(1)}label();b?.addEventListener('click',()=>{const t=names[(names.indexOf(document.documentElement.dataset.theme||'night')+1)%4];document.documentElement.dataset.theme=t;try{localStorage.setItem('nzgis-theme',t)}catch{}label()});</script></body></html>
+
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <meta name="googlebot" content={robots} />
+    <meta name="theme-color" content="#111a22" />
+    <link rel="canonical" href={canonical.href} />
+    <meta property="og:site_name" content="A History of GIS in New Zealand" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={pageType} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:locale" content="en_NZ" />
+    {absoluteSocialImage && <meta property="og:image" content={absoluteSocialImage} />}
+    {socialImageAlt && <meta property="og:image:alt" content={socialImageAlt} />}
+    <meta name="twitter:card" content={absoluteSocialImage ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {absoluteSocialImage && <meta name="twitter:image" content={absoluteSocialImage} />}
+    <script type="application/ld+json" set:html={jsonLd} />
+    <script is:inline>
+      try {
+        const old = JSON.parse(localStorage.getItem('nzgis-colour-palette-v1') || 'null');
+        const theme = localStorage.getItem('nzgis-theme') || ({
+          'dark-night': 'night',
+          'dark-forest': 'forest',
+          'light-paper': 'paper',
+          'light-mist': 'mist',
+        }[old]);
+        if (['night', 'forest', 'paper', 'mist'].includes(theme)) document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="NZ GIS History home"><small>NEW ZEALAND</small>GIS History</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/read/">Read</a>
+        <a href="/timeline/">Timeline</a>
+        <a href="/browse/">People & organisations</a>
+        <a href="/datasets/">Datasets</a>
+        <a href="/themes/">Themes</a>
+        <a href="/search/">Search</a>
+        <button id="palette" aria-label="Change colour theme">◐ <span>Night</span></button>
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="footer">
+      <span>A History of GIS in New Zealand</span>
+      <nav class="actions" aria-label="Publication links">
+        <a class="button primary" href={contributionHref}>Contributions and corrections</a>
+        <a href="/about/">About & sources</a>
+        <a href="/network/">Connections</a>
+        <a href="/release.json">Publication revision</a>
+      </nav>
+    </footer>
+    <script>
+      const names = ['night', 'forest', 'paper', 'mist'];
+      const button = document.getElementById('palette');
+      function label() {
+        const theme = document.documentElement.dataset.theme || 'night';
+        const text = button?.querySelector('span');
+        if (text) text.textContent = theme[0].toUpperCase() + theme.slice(1);
+      }
+      label();
+      button?.addEventListener('click', () => {
+        const theme = names[(names.indexOf(document.documentElement.dataset.theme || 'night') + 1) % names.length];
+        document.documentElement.dataset.theme = theme;
+        try { localStorage.setItem('nzgis-theme', theme); } catch {}
+        label();
+      });
+    </script>
+  </body>
+</html>

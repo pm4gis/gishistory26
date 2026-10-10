@@ -4,7 +4,7 @@
   "articleId": "article:chapter-23",
   "title": "A new local government",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [],
   "recordIds": [
     "chapter:23",
@@ -28,6 +28,15 @@
       "markdown": "On 1 November 1989 New Zealand’s local-government map changed abruptly. Hundreds of local bodies, including cities, boroughs, counties, catchment boards and other authorities, were reorganised into 86 regional and territorial authorities. The new councils inherited staff, maps, rating systems, engineering plans, property records, drainage information, environmental files and the unfinished business of their predecessors. They also inherited the practical problem that many of those records described the same places in different ways.",
       "sources": [],
       "id": "ch23-s01-p01"
+    },
+    {
+      "type": "figure",
+      "id": "ch23-s01-figure-counties-map-1981",
+      "after": "ch23-s01-p01",
+      "alt": "1981 map of North Island counties and districts before the local-government reforms.",
+      "caption": "North Island counties and districts in 1981, published by the Department of Lands and Survey before the 1989 local-government reforms. This is an administrative map, not a GIS screen.",
+      "credit": "Department of Lands and Survey New Zealand / National Library of New Zealand, via Wikimedia Commons, CC BY-SA 4.0.",
+      "imageId": "image:north-island-counties-districts-1981"
     },
     {
       "type": "paragraph",

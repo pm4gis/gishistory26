@@ -2,5 +2,34 @@
 import Layout from '../../layouts/Layout.astro';import Reader from '../../components/Reader.svelte';import {dataset} from '../../lib/data';import {decorFor,decorUrl} from '../../lib/decor';
 export async function getStaticPaths(){const d=await dataset();return d.articles.filter((a:any)=>a.status==='published').map((a:any)=>({params:{slug:a.slug},props:{id:a.id}}))}
 const d=await dataset();const a=d.articles.find((a:any)=>a.id===(Astro.props as {id:string}).id);const passages=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order);const ids=new Set(passages.flatMap((p:any)=>p.recordIds));const related=d.records.filter((r:any)=>ids.has(r.id)&&r.kind!=='Story');const events=d.events.filter((e:any)=>e.passageIds.some((id:string)=>passages.some((p:any)=>p.id===id)));const edges=d.relationships.filter((e:any)=>ids.has(e.a)&&ids.has(e.b));const index=d.articles.findIndex((x:any)=>x.id===a.id);const decorSrc=decorUrl(decorFor(index+3));
+const socialImage=d.images.find((image:any)=>image.articleSlug===a.slug);
+const canonical='https://history.pm4gis.nz'+a.url;
+const schema={
+  '@context':'https://schema.org',
+  '@graph':[
+    {
+      '@type':'Article',
+      '@id':canonical+'#article',
+      headline:a.title,
+      description:a.summary,
+      url:canonical,
+      inLanguage:'en-NZ',
+      articleSection:a.slug==='preface'?'Preface':`Chapter ${a.readingOrder}`,
+      dateModified:a.updatedAt,
+      isPartOf:{'@id':'https://history.pm4gis.nz/#book'},
+      mainEntityOfPage:{'@type':'WebPage','@id':canonical},
+      publisher:{'@type':'Organization',name:'NZ GIS History',url:'https://history.pm4gis.nz/'},
+      ...(socialImage?{image:'https://history.pm4gis.nz'+socialImage.assetPath}:{}),
+    },
+    {
+      '@type':'BreadcrumbList',
+      itemListElement:[
+        {'@type':'ListItem',position:1,name:'Home',item:'https://history.pm4gis.nz/'},
+        {'@type':'ListItem',position:2,name:'Read',item:'https://history.pm4gis.nz/read/'},
+        {'@type':'ListItem',position:3,name:a.title,item:canonical},
+      ],
+    },
+  ],
+};
 ---
-<Layout title={a.title+' · NZ GIS History'} description={a.summary}><Reader client:load article={a} passages={passages} records={related} events={events} relationships={edges} decorSrc={decorSrc} images={d.images} themes={d.themes} previous={d.articles[index-1]} next={d.articles[index+1]}/></Layout>
+<Layout title={a.title+' · NZ GIS History'} description={a.summary} pageType="article" schema={schema} socialImage={socialImage?.assetPath} socialImageAlt={socialImage?.altText}><Reader client:load article={a} passages={passages} records={related} events={events} relationships={edges} decorSrc={decorSrc} images={d.images} themes={d.themes} previous={d.articles[index-1]} next={d.articles[index+1]}/></Layout>

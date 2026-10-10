@@ -4,7 +4,7 @@
   "articleId": "article:chapter-27",
   "title": "Cases and population",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [],
   "recordIds": [
     "chapter:27"
@@ -23,6 +23,20 @@
       "markdown": "The denominator created a second problem. Population data were organised into statistical areas whose boundaries had been designed for census collection and reporting, not for the natural geography of infection. A disease cluster could sit across a meshblock or area-unit boundary, while two nearby households could end up in different statistical units. Rates also became unstable when very small populations were divided into a small number of cases. The map could be numerically correct and still give a strong visual impression that depended heavily on the geography chosen for the calculation.",
       "sources": [],
       "id": "ch27-s01-p02"
+    },
+    {
+      "id": "ch27-figure-dhb-boundaries-2001-2010",
+      "type": "figure",
+      "imageId": "image:dhb-boundaries-2001-2010",
+      "alt": "An outline map of New Zealand divided into District Health Board boundaries.",
+      "caption": "District Health Board boundaries in force from 2001 until the Otago–Southland merger in 2010.",
+      "credit": "Stats NZ; compiled and edited by Air55; based in part on 2006 District Health Board data from the Ministry of Health; via Wikimedia Commons.",
+      "sources": [
+        {
+          "label": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File%3ANew_Zealand_District_Health_Board_Map_2001%E2%80%9310_%28Blank%29.svg"
+        }
+      ]
     },
     {
       "type": "paragraph",

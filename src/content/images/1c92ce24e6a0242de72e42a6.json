@@ -1,0 +1,32 @@
+{
+  "id": "image:te-kuiti-land-development-office",
+  "slug": "te-kuiti-land-development-office",
+  "title": "Te Kuiti Land Development Office, 1974–1984",
+  "assetPath": "/assets/historical/web/te-kuiti-land-development-office.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATe_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Archives New Zealand; photograph by an unidentified photographer; via Wikimedia Commons.",
+  "licence": "CC BY-SA 2.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3ATe_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg",
+  "altText": "The Te Kuiti Land Development Office building used by the Lands and Survey Department during 1974–1984.",
+  "caption": "The Te Kuiti Land Development Office building, used by the Lands and Survey Department during 1974–1984. Photograph date not recorded.",
+  "themeIds": [
+    "women-in-gis"
+  ],
+  "articleSlug": "gis-inside-government",
+  "chapterNumber": 10,
+  "dateDisplay": "Building occupied 1974–1984; photograph date unknown",
+  "context": "The Archives New Zealand description identifies this as the building occupied by the Te Kuiti Land Development Office during 1974–1984; the photograph date is not specified. It shows a provincial land-administration office, not the national cadastral database team or a GIS workplace.",
+  "originalAssetPath": "/assets/historical/original/te-kuiti-land-development-office.jpg",
+  "thumbnailPath": "/assets/historical/card/te-kuiti-land-development-office.webp",
+  "originalSha256": "104fa3898340949a166e4ae8f3fab9311dbcc4dbd8a3b6811214965259327827",
+  "webSha256": "4de0fe0621b1377f57076d693a3b3b253e36aa88ec34598a14b8523c510c36ab",
+  "originalWidth": 1930,
+  "originalHeight": 1275,
+  "sourceFileTitle": "File:Te Kuiti Land Development Office, 1974 - 1984 (28795220472).jpg",
+  "headerCandidate": false,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Te_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+  "relatedRecords": []
+}

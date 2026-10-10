@@ -4,7 +4,7 @@
   "articleId": "article:chapter-6",
   "title": "A shared name",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [
     "profession"
   ],
@@ -41,6 +41,20 @@
       "markdown": "Digital geography was already being developed in New Zealand when the conference took place. MAPPAK had been used for cadastral compilation by 1979. DSIR researchers had been processing Landsat data since the mid-1970s. The NZLRI had been digitised from 1977 to 1980 and processed through LADEDA. The change visible in the 1980s was that these kinds of systems were no longer isolated examples that later historians needed to group together retrospectively. Contemporary practitioners were increasingly using the GIS label themselves.",
       "sources": [],
       "id": "ch06-s01-p03"
+    },
+    {
+      "id": "ch06-figure-intergraph-clix-workstation",
+      "type": "figure",
+      "imageId": "image:intergraph-clix-workstation",
+      "alt": "An Intergraph CLIX workstation with a monitor, keyboard and console.",
+      "caption": "An Intergraph CLIX workstation from the late 1980s, photographed when it was decommissioned in the late 1990s.",
+      "credit": "Gigs, Wikimedia Commons contributor; released into the public domain.",
+      "sources": [
+        {
+          "label": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File%3AIntergraph_CLIX_workstation.jpg"
+        }
+      ]
     },
     {
       "type": "paragraph",

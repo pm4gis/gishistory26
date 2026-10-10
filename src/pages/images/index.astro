@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 const images = (await getCollection("images")).map((entry) => entry.data).sort((a, b) => a.title.localeCompare(b.title));
 ---
-<Layout title="Image archive — A History of GIS in New Zealand" description="Images with their source, credit and reuse details.">
+<Layout title="Image archive — A History of GIS in New Zealand" description="Browse historical maps, aerial photographs and other images used in New Zealand GIS history stories, with source, credit and licence details.">
   <section class="image-index page-wrap">
     <p class="eyebrow">Image archive</p><h1 class="page-title">Images and their stories</h1>
     <p class="page-intro">Each image has a separate page with its original source, credit and licence details.</p>

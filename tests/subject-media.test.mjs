@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import path from 'node:path';
-import {subjectMedia,pickThemeImage,pickRecordImage} from '../src/lib/subject-media.mjs';
+import {subjectMedia,pickThemeImage,pickThemeImages,pickRecordImage} from '../src/lib/subject-media.mjs';
 import {timelineMedia} from '../src/lib/timeline-media.mjs';
 
 const dir=path.resolve('src/content/images');
@@ -27,6 +27,17 @@ test('all seven themes have either a contextual image or an explicit visual gap'
   const picture=pickThemeImage(slug,images);
   assert.ok(picture||slug==='women-in-gis','theme needs a reliable image: '+slug);
  }
+});
+test('new story images are surfaced under their curated themes and agency',()=>{
+ const cadastre=pickThemeImages('cadastre',images);
+ const imagery=pickThemeImages('imagery',images);
+ const localGovernment=pickThemeImages('local-government',images);
+ assert.ok(cadastre.some(image=>image.slug==='silverpeak-survey-district-1956'));
+ assert.ok(imagery.some(image=>image.slug==='wiri-north-quarry-1982'));
+ assert.ok(localGovernment.some(image=>image.slug==='north-island-counties-districts-1981'));
+ const department=pickRecordImage({kind:'Agency',slug:'department-of-lands-and-survey'},images);
+ assert.equal(department?.image.slug,'north-island-counties-districts-1981');
+ assert.match(department?.relation||'',/administrative map, not a GIS screen/);
 });
 test('no new profile imagery is generated for any person',()=>{
  for(const slug of ['auckland-council','gns-science','aerial-surveys','person-profile']){

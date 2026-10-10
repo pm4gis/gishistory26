@@ -1,0 +1,32 @@
+{
+  "id": "image:mow-field-trip-gisborne-1971",
+  "slug": "mow-field-trip-gisborne-1971",
+  "title": "Ministry of Works field trip, Gisborne, 1971",
+  "assetPath": "/assets/historical/web/mow-field-trip-gisborne-1971.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "W. Neill; Archives New Zealand, reference R24802259 / AAQT 6539 W3537 113 / A97130; via Wikimedia Commons.",
+  "licence": "CC BY-SA 2.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg",
+  "altText": "Ministry of Works staff prepare for a field trip beside a Land Rover in Gisborne.",
+  "caption": "Ministry of Works staff prepare a field trip in Gisborne, March 1971.",
+  "themeIds": [
+    "technology-stack"
+  ],
+  "articleSlug": "mapping-leaves-the-office",
+  "chapterNumber": 34,
+  "dateDisplay": "March 1971",
+  "context": "This Archives New Zealand photograph shows Ministry of Works staff preparing a Gisborne field trip in March 1971. It illustrates a government fieldwork setting before mobile GIS; it is not evidence of a GIS-based field workflow.",
+  "originalAssetPath": "/assets/historical/original/mow-field-trip-gisborne-1971.jpg",
+  "thumbnailPath": "/assets/historical/card/mow-field-trip-gisborne-1971.webp",
+  "originalSha256": "9a7167b5b409486cf1ec92e79b4473f381ce2ff56031c73db00ce2674571cbe1",
+  "webSha256": "ebcaefbeba714222cffbce4390f2a1d3d8f40ec019e797057a624e9ff8c26f19",
+  "originalWidth": 900,
+  "originalHeight": 684,
+  "sourceFileTitle": "File:Government Buildings, Lowe Street with M. O. W. Staff preparing a field trip with a Land Rover, Gisborne, (28445301672).jpg",
+  "headerCandidate": false,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Government_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+  "relatedRecords": []
+}

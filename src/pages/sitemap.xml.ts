@@ -10,6 +10,7 @@ export async function GET() {
     ...d.articles.map((a: any) => a.url),
     ...d.records.filter((r: any) => r.kind !== 'Story').map((r: any) => r.url),
     ...d.themes.map((t: any) => '/themes/' + t.slug + '/'),
+    ...d.images.map((image: any) => '/images/' + image.slug + '/'),
   ];
   const locations = [...new Set(paths)]
     .filter((path) => path.startsWith('/'))

@@ -4,7 +4,7 @@
   "articleId": "article:chapter-38",
   "title": "A crater field above Tongariro",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [],
   "recordIds": [
     "chapter:38",
@@ -40,6 +40,20 @@
       "markdown": "The surveys differed in their coverage, flight arrangements and measurement density. A conventional aircraft carrying a specialist mapping sensor could cover large areas efficiently. A small remotely piloted aircraft could be taken to one slope, one beach, one farm block or one construction site and flown when a particular project required it. The drone did not replace the larger system. It filled a different part of the acquisition spectrum.",
       "sources": [],
       "id": "ch38-s01-p04"
+    },
+    {
+      "id": "ch38-figure-victoria-square-aerial-1975",
+      "type": "figure",
+      "imageId": "image:victoria-square-aerial-1975",
+      "alt": "An aerial image of Victoria Square in Christchurch, circa 1975.",
+      "caption": "Victoria Square, Christchurch, in an aerial image from 1975.",
+      "credit": "Land Information New Zealand, New Zealand Aerial Mapping, New Zealand Aerial Surveys and the Royal New Zealand Air Force; via Wikimedia Commons.",
+      "sources": [
+        {
+          "label": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File%3AVicSq-Aerial-1975.jpg"
+        }
+      ]
     }
   ],
   "sources": [],

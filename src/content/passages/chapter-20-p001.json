@@ -4,7 +4,7 @@
   "articleId": "article:chapter-20",
   "title": "A photograph you can measure",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [],
   "recordIds": [
     "chapter:20",
@@ -25,6 +25,15 @@
       "markdown": "Orthophotography dealt with that geometric problem. Using survey control, camera information and terrain data, the photograph could be corrected so that its pixels related consistently to map coordinates. The result retained the visual information of photography while behaving much more like a map. A user could place vector boundaries, roads or other features over the image and expect corresponding locations to line up within the accuracy of the source and processing.",
       "sources": [],
       "id": "ch20-s01-p02"
+    },
+    {
+      "type": "figure",
+      "id": "ch20-s01-figure-wiri-orthophoto-1982",
+      "after": "ch20-s01-p02",
+      "alt": "1982 orthophotograph of Wiri railway station and north quarry.",
+      "caption": "Wiri railway station and north quarry, aerial orthophotograph, 7 February 1982. This later example does not depict the 1977 Clutha–Alexandra production system.",
+      "credit": "LINZ, via Retrolens and Wikimedia Commons, CC BY 3.0.",
+      "imageId": "image:wiri-north-quarry-1982"
     },
     {
       "type": "paragraph",
