@@ -30,7 +30,8 @@
       {/each}
     </div>
   {/if}
-  <div class:compact class:wananga-video-grid--inline={inline} class="wananga-video-grid">
+  {#if inline&&videos.length>1}<p class="wananga-video-note">Scroll sideways through the related recordings, or use Tab to open any video.</p>{/if}
+  <div class:compact class:wananga-video-grid--inline={inline} class="wananga-video-grid" tabindex={inline&&videos.length>1?0:undefined} role={inline&&videos.length>1?'region':undefined} aria-label={inline&&videos.length>1?'Horizontally scrollable related wānanga recordings':undefined}>
     {#each listed as video (video.id)}
       <article class="wananga-video-card">
         <a class="wananga-video-thumbnail" href={video.source} target="_blank" rel="noopener noreferrer" aria-label={"Watch "+video.title+" on YouTube"}>
