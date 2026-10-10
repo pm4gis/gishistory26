@@ -307,3 +307,17 @@ export function ngaPoutamaForPassage(id){
 export function ngaPoutamaForEvent(id){
  return ngaPoutamaVideos.filter(v=>v.eventIds.includes(id));
 }
+
+/** Names below are already published site records, linked only when explicitly
+ * supported by the individual recording description. They add NO portraits.
+ */
+export const ngaPoutamaRecordLinks=Object.freeze({
+ 'nbMkx7TcmtU':[{name:'Duane Wilkins',url:'/people/duane-wilkins/'}],
+ 'yZcwtxGsZIE':[{name:'Duane Wilkins',url:'/people/duane-wilkins/'}],
+ '2-9BW5GtZdg':[{name:'Jonathan Hanson',url:'/people/jonathan-hanson/'}],
+ '62vhPhpnfUo':[{name:'Bay of Plenty Regional Council',url:'/entities/bay-of-plenty-regional-council/'}],
+ 'Fqq3Fzi5djc':[{name:'Keith Holswich',url:'/people/keith-holswich/'}],
+ 'ZCb9zLz12O4':[{name:'Holden Hohaia',url:'/people/holden-hohaia/'},{name:'Tania Te Hira',url:'/people/tania-te-hira/'}],
+ 'yCBeRHA2Jnk':[{name:'Duane Wilkins',url:'/people/duane-wilkins/'},{name:'Roland Pomana',url:'/people/roland-pomana/'},{name:'Matt Grose',url:'/people/matt-grose/'}]
+});
+export function ngaPoutamaRelatedRecords(id){return ngaPoutamaRecordLinks[id]||[]}
