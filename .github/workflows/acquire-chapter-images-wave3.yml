@@ -37,6 +37,8 @@ jobs:
           git add public/assets/historical/ src/content/images/ docs/media/chapter-download-run-wave3.json
           if ! git diff --cached --quiet; then
             git commit -m "Archive wave 3 source originals and local web derivatives"
+            git reset --hard HEAD
+            git clean -fd
             git fetch origin research/chapter-documentary-imagery-wave3-20261010
             git rebase origin/research/chapter-documentary-imagery-wave3-20261010
             git push origin HEAD:research/chapter-documentary-imagery-wave3-20261010
