@@ -103,6 +103,21 @@
 @media(max-width:600px){.reading-documentary img{max-height:280px}.documentary-gallery .image-index-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.documentary-gallery .image-index-card img{height:120px}}
 
 
+/* Image detail pages: fit landscape maps and tall scans within both reading margins
+   and the viewport. A full-resolution original remains available via its link. */
+.image-detail{min-width:0}
+.image-detail>figure{width:100%;max-width:100%;margin:clamp(20px,3vw,34px) 0;min-width:0}
+.image-detail>figure img{display:block;width:auto;height:auto;max-width:100%;max-height:min(74dvh,760px);object-fit:contain;object-position:center;margin-inline:auto;border-radius:9px}
+.image-detail>figure figcaption{max-width:75ch;margin:14px auto 0;overflow-wrap:anywhere}
+.image-detail .image-source-card{min-width:0;max-width:100%}
+.image-detail .image-source-card dl{min-width:0}
+.image-detail .image-source-card dd,.image-detail .image-source-card code{overflow-wrap:anywhere;word-break:break-word}
+@media(max-width:600px){
+ .image-detail{padding-inline:16px}
+ .image-detail>figure img{max-height:min(62dvh,580px)}
+ .image-detail h1{overflow-wrap:anywhere}
+}
+
 /* Documentary illustrations on the chronological event rail. Attribution remains on image detail pages. */
 .timeline-rail{gap:14px;scroll-padding-inline:12px;padding:12px 4px 20px}
 .timeline-event{position:relative;isolation:isolate;display:block;flex:0 0 284px;min-width:284px;max-width:284px;min-height:218px;padding:0;text-align:left;overflow:hidden;border-radius:15px;background:var(--raised);box-shadow:0 6px 16px #0002;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}

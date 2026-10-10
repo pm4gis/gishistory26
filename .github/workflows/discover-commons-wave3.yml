@@ -1,0 +1,27 @@
+name: Discover documentary images wave 3
+on:
+  push:
+    branches: [research/chapter-documentary-imagery-wave3-20261010]
+    paths:
+      - scripts/discover-commons-wave3.mjs
+      - .github/workflows/discover-commons-wave3.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/research/chapter-documentary-imagery-wave3-20261010'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/chapter-documentary-imagery-wave3-20261010}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0'}
+      - run: node scripts/discover-commons-wave3.mjs
+      - name: Commit file-level source discoveries
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/media/commons-discovery-wave3.json
+          git commit -m "Document sources for unillustrated chapter images"
+          git push origin HEAD:research/chapter-documentary-imagery-wave3-20261010

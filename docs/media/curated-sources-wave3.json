@@ -1,0 +1,222 @@
+{
+  "prepared": "2026-10-10",
+  "purpose": "Third sourced documentary image batch, original binaries to be held within repo. Excludes legacy decorative assets and restricted National Library images.",
+  "items": [
+    {
+      "id": "image:linz-positionz-2018",
+      "slug": "linz-positionz-2018",
+      "sourceType": "linz",
+      "sourceName": "Toitū Te Whenua Land Information New Zealand",
+      "sourceUrl": "https://www.linz.govt.nz/products-services/geodetic/positionz",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/positionz_2018.png",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+      "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Source organisation and publisher"
+        }
+      ],
+      "chapter": 18,
+      "articleSlug": "gps-changes-where-here-is",
+      "title": "LINZ PositioNZ active GNSS reference network, 2018 illustration",
+      "dateDisplay": "2018 illustration; current network changes over time",
+      "caption": "LINZ PositioNZ active control network illustration (2018), showing national infrastructure for positioning corrections and continuous satellite-based observations.",
+      "context": "An actual LINZ GNSS network product. It illustrates practical survey positioning services in New Zealand, not the first introduction of handheld GPS.",
+      "altText": "Map or network illustration from LINZ PositioNZ about GPS/GNSS stations in New Zealand.",
+      "headerCandidate": true
+    },
+    {
+      "id": "image:linz-landonline-survey-work-2025",
+      "slug": "linz-landonline-survey-work-2025",
+      "sourceType": "linz",
+      "sourceName": "Toitū Te Whenua Land Information New Zealand",
+      "sourceUrl": "https://www.linz.govt.nz/guidance/landonline-support/web-search-support/display-survey-work",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/display%20survey%20work%201%20-%20displayed%20work.png",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+      "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Source organisation and publisher"
+        }
+      ],
+      "chapter": 14,
+      "articleSlug": "landonline",
+      "title": "Landonline Web Search displaying survey work, 2025",
+      "dateDisplay": "June 2025 demonstration",
+      "caption": "LINZ Web Search showing cadastral survey work as parcels, marks and survey vectors, with dimensions and relationships visible in a spatial display.",
+      "context": "An authentic screen from the 2025 web version of Landonline, documented by LINZ. It is not an image of the original 2000s launch interface.",
+      "altText": "Landonline Web Search spatial map showing survey vectors, survey marks and parcel information.",
+      "headerCandidate": true
+    },
+    {
+      "id": "image:linz-arcmap-property-relationships-2016",
+      "slug": "linz-arcmap-property-relationships-2016",
+      "sourceType": "linz",
+      "sourceName": "Toitū Te Whenua Land Information New Zealand",
+      "sourceUrl": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/data-and-schemas/building-relationships-esri-file-geodatabase",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/owner_and_stat_action.png",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+      "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Source organisation and publisher"
+        }
+      ],
+      "chapter": 22,
+      "articleSlug": "gis-comes-to-the-desktop",
+      "title": "ArcMap Identify panel with related New Zealand parcel records",
+      "dateDisplay": "Published by LINZ by 2022; example files dated 2016",
+      "caption": "LINZ's ArcMap example showing property records linked through an Esri file geodatabase, including parcels, survey plans, title estates and statutory actions.",
+      "context": "A genuine New Zealand desktop GIS screenshot preserved in a LINZ guide explaining file-geodatabase table relationships. The capture date is not independently confirmed, and it does not purport to show the first desktop GIS rollout.",
+      "altText": "ArcMap desktop geographic information system showing an identified parcel and linked property tables.",
+      "headerCandidate": true
+    },
+    {
+      "id": "image:linz-wmts-qgis-connection",
+      "slug": "linz-wmts-qgis-connection",
+      "sourceType": "linz",
+      "sourceName": "Toitū Te Whenua Land Information New Zealand",
+      "sourceUrl": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/map-tile-services/using-lds-wmts-qgis",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-5.png",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+      "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Source organisation and publisher"
+        }
+      ],
+      "chapter": 21,
+      "articleSlug": "the-spatial-infrastructure-idea",
+      "title": "LINZ Data Service WMTS connection configured in QGIS",
+      "dateDisplay": "Date of original screenshot not independently established; LINZ guide current by 2026",
+      "caption": "A LINZ-published QGIS interface used to connect to its Web Map Tile Service (WMTS), an example of spatial information shared as a standardised network service.",
+      "context": "Original software screenshot from LINZ's instructions for consuming nationally available tile services in GIS. The image illustrates standards and interoperable infrastructure, not a historical screen from 1990s SDI planning.",
+      "altText": "QGIS WMTS client or connection panel in a LINZ Data Service tutorial.",
+      "headerCandidate": true
+    },
+    {
+      "id": "image:linz-landonline-territorial-authority-2025",
+      "slug": "linz-landonline-territorial-authority-2025",
+      "sourceType": "linz",
+      "sourceName": "Toitū Te Whenua Land Information New Zealand",
+      "sourceUrl": "https://www.linz.govt.nz/guidance/landonline-support/known-issues-and-new-releases/whats-new-landonline-applications/whats-new-web-search",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/TA%20layer.png",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+      "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Source organisation and publisher"
+        }
+      ],
+      "chapter": 24,
+      "articleSlug": "government-goes-spatial",
+      "title": "Territorial authority boundaries in Landonline Web Search, 2025",
+      "dateDisplay": "2025 service update",
+      "caption": "Territorial authority boundaries displayed in LINZ Web Search as an additional governmental spatial layer, published in its service release notes.",
+      "context": "A real government spatial data display demonstrating integration of cadastral and territorial-authority boundaries. The screenshot belongs to a 2025 release and should not be used to represent earlier government GIS software.",
+      "altText": "New Zealand territorial authority boundaries overlaid in LINZ Web Search mapping.",
+      "headerCandidate": true
+    },
+    {
+      "id": "image:linz-wmts-qgis-data-view",
+      "slug": "linz-wmts-qgis-data-view",
+      "sourceType": "linz",
+      "sourceName": "Toitū Te Whenua Land Information New Zealand",
+      "sourceUrl": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/map-tile-services/using-lds-wmts-qgis",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-12.png",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+      "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Source organisation and publisher"
+        }
+      ],
+      "chapter": 33,
+      "articleSlug": "open-data-changes-access",
+      "title": "LINZ Data Service imagery accessed through QGIS WMTS",
+      "dateDisplay": "LINZ user-guide screenshot; precise capture date not established",
+      "caption": "QGIS used with the LINZ Data Service WMTS connection, showing the workflow through which downloadable public geospatial information can be served as map layers.",
+      "context": "A screenshot from LINZ's public WMTS guidance. It documents software access to open spatial data and is not an image of the earliest version of the LINZ Data Service.",
+      "altText": "QGIS with a connected LINZ map-tile service in a public-data tutorial.",
+      "headerCandidate": true
+    },
+    {
+      "id": "image:linz-wfs-attribute-service-2023",
+      "slug": "linz-wfs-attribute-service-2023",
+      "sourceType": "linz",
+      "sourceName": "Toitū Te Whenua Land Information New Zealand",
+      "sourceUrl": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/web-services/wfs-filtering-attribute-or-feature",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/2023-06/wfs_filtering_1.png",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+      "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Source organisation and publisher"
+        }
+      ],
+      "chapter": 41,
+      "articleSlug": "cloud-services-and-apis",
+      "title": "LINZ Web Feature Service attribute filtering, 2023",
+      "dateDisplay": "LINZ screenshot stored under a June 2023 media path; capture date unverified",
+      "caption": "A LINZ Data Service WFS example showing request structures and feature-type attribute information used to access geospatial records programmatically.",
+      "context": "Original LINZ tutorial screenshot of a live spatial-service interface or response. It illustrates interoperable APIs and is not the first appearance of web geospatial services in New Zealand.",
+      "altText": "LINZ Web Feature Service filtering or data response example from its developer guidance.",
+      "headerCandidate": true
+    },
+    {
+      "id": "image:kapiti-island-lidar-2024",
+      "slug": "kapiti-island-lidar-2024",
+      "sourceType": "commons",
+      "commonsTitle": "File:Kapiti.png",
+      "sourceName": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapiti.png",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Kapiti.png",
+      "credit": "Vallee (creator), using LiDAR supplied by LINZ, map labels from Topomap and QGIS/aerialOD cartography. Display derivative resized to WebP; original preserved.",
+      "articleSlug": "lidar-remakes-the-landscape",
+      "chapter": 37,
+      "title": "Kāpiti Island terrain depicted with LINZ LiDAR, 2024",
+      "dateDisplay": "11 January 2024 (revised 12 January 2024)",
+      "caption": "Detailed shaded-relief map of Kāpiti Island produced in 2024 by Vallee using publicly available LINZ LiDAR data, QGIS, and aerialOD shading.",
+      "context": "This map is a modern, real LiDAR-derived terrain product. It shows terrain detail possible using high-density elevation measurements; it is not a scan of an early New Zealand LiDAR flight.",
+      "altText": "LiDAR-derived relief map of Kāpiti Island showing terrain, vegetation-shaped relief and mapped place names.",
+      "headerCandidate": true,
+      "relatedRecords": [
+        {
+          "name": "Land Information New Zealand (LINZ)",
+          "url": "/entities/land-information-new-zealand-linz/",
+          "role": "Elevation source"
+        }
+      ]
+    }
+  ]
+}

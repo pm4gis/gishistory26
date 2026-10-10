@@ -1,0 +1,1731 @@
+{
+  "searchedAt": "2026-10-10T08:44:51.125Z",
+  "queryCount": 58,
+  "resultCount": 147,
+  "queries": [
+    {
+      "query": "Landonline",
+      "results": []
+    },
+    {
+      "query": "Landonline New Zealand",
+      "results": []
+    },
+    {
+      "query": "NZ land resource inventory",
+      "results": []
+    },
+    {
+      "query": "land classification map NZ",
+      "results": [
+        {
+          "title": "File:Index map of Waitemata County, Sheet 2 (1906).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Index_map_of_Waitemata_County,_Sheet_2_(1906).jpg",
+          "width": 1999,
+          "height": 1541,
+          "bytes": 598797,
+          "license": "Public domain",
+          "artist": "Survey Office, Auckland",
+          "description": "Map Number\t\n Map 4788\nDate\t\n1906\nDecade\t\n1890-1899\nDescription\t\nA cadastral map of the southern part of Waitemata County. Includes Takapuna, Paremoremo and West Auckland.\nSubjects\t\nLand subdivision - Waitemata County; Election districts - Waitemata County; Cadastral maps;\nScale\t\n1:63360\nDimensions\t\n75 x 98 cm\nPlace of Publication\t\nAuckland\nPublisher\t\nSurvey Office\nContributors\t"
+        }
+      ]
+    },
+    {
+      "query": "NZ land use capability",
+      "results": [
+        {
+          "title": "File:1972 Trekka Utility Vehicle (32311650557).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:1972_Trekka_Utility_Vehicle_(32311650557).jpg",
+          "width": 5184,
+          "height": 3456,
+          "bytes": 2947835,
+          "license": "CC BY 2.0",
+          "artist": "Sicnag",
+          "description": " The Trekka was a light utility vehicle built from 1966-73 in New Zealand. It is the only vehicle designed and manufactured in New Zealand to have entered commercial production for an extended period. At that in time New Zealand, agricultural vehicles attracted no tariffs  and there was no limit on the number of such vehicles that could be sold. \nThe Trekka superficially resemb"
+        },
+        {
+          "title": "File:MoU between Lincoln University and the University of Tasmania.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:MoU_between_Lincoln_University_and_the_University_of_Tasmania.jpg",
+          "width": 1172,
+          "height": 781,
+          "bytes": 346002,
+          "license": "CC BY 3.0",
+          "artist": "not stated",
+          "description": "The agriculture and food sectors of Tasmania and New Zealand, which have much in common, are set to benefit from the signing of a memorandum of understanding (MoU) between Lincoln University and the University of Tasmania. The MoU was signed as part of a three day Tasmanian Government-led delegation visit to Lincoln University.\n   \n  The MoU formalises current research collabor"
+        }
+      ]
+    },
+    {
+      "query": "land use capability New Zealand",
+      "results": []
+    },
+    {
+      "query": "land suitability map new zealand",
+      "results": []
+    },
+    {
+      "query": "New Zealand desktop GIS",
+      "results": []
+    },
+    {
+      "query": "ArcView GIS",
+      "results": [
+        {
+          "title": "File:C.2007. Ground checking aerially collected Forest Health GIS data with a laptop, Arcview, and a truck. (39073902565).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:C.2007._Ground_checking_aerially_collected_Forest_Health_GIS_data_with_a_laptop,_Arcview,_and_a_truck._(39073902565).jpg",
+          "width": 2272,
+          "height": 1704,
+          "bytes": 909204,
+          "license": "Public domain",
+          "artist": "R6, State &amp; Private Forestry, Forest Health Protection",
+          "description": " This image or file is a work of a  United States Department of Agriculture  employee, taken or made as part of that person's official duties. As a  work  of the  U.S. federal government , the image is in the   public domain  . "
+        },
+        {
+          "title": "File:Lake Estancia and Lake Willard.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Estancia_and_Lake_Willard.png",
+          "width": 2000,
+          "height": 2500,
+          "bytes": 4246657,
+          "license": "Public domain",
+          "artist": "\nTom Fish · geo.fish · Fish Eye",
+          "description": "Three stages of  Lake Estancia . Bachhuber (1989, p. 1549) states that the water level was at 1,939 meters above sea level in the Early Estancia Lake period, and it dropped to 1,897 meters (p. 1550) and 1,870 meters (p. 1550) in the Late Estancia Lake and the Lake Willard periods, repectively. The three rings -- purple (Willard), yellow (Late), and green (Early) -- match these "
+        },
+        {
+          "title": "File:Esquema conceptual en Interamnio con TIG.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Esquema_conceptual_en_Interamnio_con_TIG.jpg",
+          "width": 1350,
+          "height": 835,
+          "bytes": 79463,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Conceptual scheme in Interamnio with TIG"
+        },
+        {
+          "title": "File:Bergido e Iter per loca maritima.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bergido_e_Iter_per_loca_maritima.jpg",
+          "width": 1189,
+          "height": 781,
+          "bytes": 386460,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Bergido, Castro Ventosa and Iter per loca maritima in Interamnio with GIT"
+        },
+        {
+          "title": "File:Cabecera de Interamnio con TIG.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabecera_de_Interamnio_con_TIG.jpg",
+          "width": 1867,
+          "height": 851,
+          "bytes": 881100,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Header of \"Interamnio with TIG\""
+        },
+        {
+          "title": "File:Suplemento hasta Bergidum.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suplemento_hasta_Bergidum.jpg",
+          "width": 1003,
+          "height": 158,
+          "bytes": 40750,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Supplement from road crossing to Bergidum according to Interamnio with GIT"
+        },
+        {
+          "title": "File:Perfil longitudinal.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perfil_longitudinal.jpg",
+          "width": 1243,
+          "height": 394,
+          "bytes": 55764,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Asturica-Interamnio 3D profile graph in Interamnio with GIT"
+        },
+        {
+          "title": "File:Vías según Itiner-e.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C3%ADas_seg%C3%BAn_Itiner-e.jpg",
+          "width": 1350,
+          "height": 835,
+          "bytes": 90137,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Routes according to Itiner-e in Interamnio with TIG"
+        },
+        {
+          "title": "File:Conceptual outline in Interamnio with TIG.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conceptual_outline_in_Interamnio_with_TIG.jpg",
+          "width": 1350,
+          "height": 835,
+          "bytes": 116042,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Conceptual scheme with map in Interamnio with TIG"
+        },
+        {
+          "title": "File:Bergido and Iter per loca maritima.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bergido_and_Iter_per_loca_maritima.jpg",
+          "width": 1189,
+          "height": 781,
+          "bytes": 148226,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Bergido, Castro Ventosa and Iter per loca maritima in Interamnio with GIT"
+        },
+        {
+          "title": "File:Antonine roads northwest iberian.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonine_roads_northwest_iberian.jpg",
+          "width": 1362,
+          "height": 954,
+          "bytes": 385040,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Chronology of Antonine roads in the northwest of the Iberian Peninsula in Interamnio con TIG"
+        },
+        {
+          "title": "File:Interamnio on DTM.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interamnio_on_DTM.jpg",
+          "width": 1169,
+          "height": 826,
+          "bytes": 196734,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Interamnio on Digital Terrain Model (DTM) PNOA 2010. Resolution 5 m. Figure 1 of publication Bembibre Castro-Castellum-Villa"
+        },
+        {
+          "title": "File:Access to Interamnio from Vias Antoninas.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Access_to_Interamnio_from_Vias_Antoninas.jpg",
+          "width": 1403,
+          "height": 992,
+          "bytes": 192486,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Interamnio Flavio and Vías Antoninas. Figure 3 of publication Bembibre Castro-Castellum-Villa."
+        },
+        {
+          "title": "File:Longitudinal profile in Manzanal Pass.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Longitudinal_profile_in_Manzanal_Pass.jpg",
+          "width": 1243,
+          "height": 394,
+          "bytes": 55098,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Asturica-Interamnio 3D profile graph in Interamnio with GIT"
+        },
+        {
+          "title": "File:Routes according to Itiner-e.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Routes_according_to_Itiner-e.jpg",
+          "width": 1350,
+          "height": 835,
+          "bytes": 90645,
+          "license": "CC BY-SA 4.0",
+          "artist": "GALoPaX",
+          "description": "Routes according to Itiner-e in Interamnio with TIG"
+        }
+      ]
+    },
+    {
+      "query": "ARC INFO software",
+      "results": [
+        {
+          "title": "File:Arc de Triomphe mg 6858.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6858.jpg",
+          "width": 4368,
+          "height": 2912,
+          "bytes": 2604155,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama",
+          "description": "Details of the  Arc de Triomphe "
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6859.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6859.jpg",
+          "width": 4368,
+          "height": 2912,
+          "bytes": 2305312,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama",
+          "description": "Details of the  Arc de Triomphe "
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6865.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6865.jpg",
+          "width": 4368,
+          "height": 2912,
+          "bytes": 3104101,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "details of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6866.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6866.jpg",
+          "width": 2912,
+          "height": 4368,
+          "bytes": 2155602,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "details of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6820.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6820.jpg",
+          "width": 2912,
+          "height": 4368,
+          "bytes": 4119786,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama",
+          "description": "Details of the  Arc de Triomphe . Northern pillar,  Columns  6–10"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6825.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6825.jpg",
+          "width": 4368,
+          "height": 2912,
+          "bytes": 3955530,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6831.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6831.jpg",
+          "width": 4368,
+          "height": 2912,
+          "bytes": 4452367,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6832.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6832.jpg",
+          "width": 2912,
+          "height": 4368,
+          "bytes": 4422721,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6834.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6834.jpg",
+          "width": 2912,
+          "height": 4368,
+          "bytes": 4172146,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6836.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6836.jpg",
+          "width": 4368,
+          "height": 2912,
+          "bytes": 4847424,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6845.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6845.jpg",
+          "width": 2912,
+          "height": 4368,
+          "bytes": 3989990,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6852.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6852.jpg",
+          "width": 2912,
+          "height": 4368,
+          "bytes": 3372117,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Arc de Triomphe mg 6867.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_mg_6867.jpg",
+          "width": 4368,
+          "height": 2912,
+          "bytes": 4742107,
+          "license": "CC BY-SA 2.0 fr",
+          "artist": "Rama  More information on how to use my images",
+          "description": "Inscriptions of the Arc de Triomphe"
+        },
+        {
+          "title": "File:Circumzenithal arc and sundog over Cirrus clouds.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circumzenithal_arc_and_sundog_over_Cirrus_clouds.jpg",
+          "width": 3000,
+          "height": 4777,
+          "bytes": 3681956,
+          "license": "CC BY-SA 3.0",
+          "artist": "Brocken Inaglory",
+          "description": "Circumzenithal arc and sundog over Cirrus clouds"
+        },
+        {
+          "title": "File:Arc de Triomphe de l'Étoile in July 2011.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_de_l%27%C3%89toile_in_July_2011.jpg",
+          "width": 5584,
+          "height": 5266,
+          "bytes": 19344630,
+          "license": "CC BY-SA 3.0",
+          "artist": "Alvesgaspar",
+          "description": "Arc de Triomphe de l'Étoile, Paris"
+        },
+        {
+          "title": "File:Arc de Triomf Barcelona 2013.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomf_Barcelona_2013.jpg",
+          "width": 2385,
+          "height": 2500,
+          "bytes": 4609234,
+          "license": "CC BY 3.0",
+          "artist": "Felix König",
+          "description": "The   Arc de Triomf  , a triumphal arch in Barcelona."
+        },
+        {
+          "title": "File:Artikel Arcinfo 08.01.2020.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artikel_Arcinfo_08.01.2020.jpg",
+          "width": 1987,
+          "height": 1000,
+          "bytes": 604071,
+          "license": "CC0",
+          "artist": "Kerstin Sonnekalb",
+          "description": "Article in Arcinfo about historic aerial photos in Wikimedia Commons"
+        }
+      ]
+    },
+    {
+      "query": "MAPPACK mapping",
+      "results": []
+    },
+    {
+      "query": "New Zealand geographical information systems",
+      "results": []
+    },
+    {
+      "query": "New Zealand GIS conference",
+      "results": []
+    },
+    {
+      "query": "land information New Zealand map",
+      "results": [
+        {
+          "title": "File:Photograph of J S Polack’s 1838 map of New Zealand (25918375021).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photograph_of_J_S_Polack%E2%80%99s_1838_map_of_New_Zealand_(25918375021).jpg",
+          "width": 1657,
+          "height": 2444,
+          "bytes": 705253,
+          "license": "CC BY-SA 2.0",
+          "artist": "Archives New Zealand from New Zealand",
+          "description": " Trader, land speculator, writer and artist Joel Samuel Polack was born in London on 28 March 1807. He arrived in New Zealand in 1831 and lived in Hokianga for one year before moving to the Bay of Islands. Polack purchased several pieces of land from Māori and built a substantial house and several other buildings, including the country's first brewery in 1835. He was a successf"
+        },
+        {
+          "title": "File:New Zealand Company plan of the Town of Wellington, Port Nicholson, 1840 (15975386086).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Company_plan_of_the_Town_of_Wellington,_Port_Nicholson,_1840_(15975386086).jpg",
+          "width": 9434,
+          "height": 6819,
+          "bytes": 22033374,
+          "license": "CC BY-SA 2.0",
+          "artist": "Archives New Zealand from New Zealand",
+          "description": " On 22 January 1840, the first of the New Zealand Company’s fleet of six immigrant ships, the  Aurora , arrived in Pito-one (Petone), marking the founding of the settlement that would become known as Wellington. They had bet William Hobson to Aotearoa New Zealand by seven days; their efforts of self-government would become the cause of some concern to Hobson as he gathered sign"
+        },
+        {
+          "title": "File:New Zealand Company plan of Port Nicholson, 1840 (15991853901).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Company_plan_of_Port_Nicholson,_1840_(15991853901).jpg",
+          "width": 6731,
+          "height": 8950,
+          "bytes": 13306445,
+          "license": "CC BY-SA 2.0",
+          "artist": "Archives New Zealand from New Zealand",
+          "description": " On 3 January 1840, surveyors arrived in Te Whanganui a Tara (Port Nicholson) to lay out the proposed New Zealand Company settlement of Britannia at Pito-one (Petone). When this site proved unsuitable, the town was relocated across the harbour. It would be called Wellington in honour of the victor in the Battle of Waterloo.\n  As New Zealand History notes, “the New Zealand Compa"
+        },
+        {
+          "title": "File:View of the deck of a destroyer waiting to land New Zealand troops at ANZAC Cove, Gallipoli, Turkey, 1915 (3465992313).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_deck_of_a_destroyer_waiting_to_land_New_Zealand_troops_at_ANZAC_Cove,_Gallipoli,_Turkey,_1915_(3465992313).jpg",
+          "width": 3132,
+          "height": 3108,
+          "bytes": 2653273,
+          "license": "No restrictions",
+          "artist": "National Library NZ on The Commons",
+          "description": "Unidentified photographer \n View of the deck of a destroyer, Gallipoli, Turkey, 1915 \nReference Number: PA1-o-573-23-4 \nSilver gelatin print \nPhotographic Archive, Alexander Turnbull Library \n \n http://natlib.govt.nz/records/23071523  from the  http://natlib.govt.nz "
+        },
+        {
+          "title": "File:Troops preparing to disembark waiting to land New Zealand troops at ANZAC Cove, Gallipoli, Turkey, 1915 (3465992155).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Troops_preparing_to_disembark_waiting_to_land_New_Zealand_troops_at_ANZAC_Cove,_Gallipoli,_Turkey,_1915_(3465992155).jpg",
+          "width": 3128,
+          "height": 3088,
+          "bytes": 2696122,
+          "license": "No restrictions",
+          "artist": "National Library NZ on The Commons",
+          "description": "Unidentified photographer \n Troops preparing to disembark, Gallipoli, Turkey, 1915 \nReference Number: PA1-o-573-23-1 \nSilver gelatin print \nPhotographic Archive, Alexander Turnbull Library \n \n http://natlib.govt.nz/records/22810384  from the  http://natlib.govt.nz "
+        },
+        {
+          "title": "File:(Australia & New Zealand) 663 (ca. 1672).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Australia_%26_New_Zealand)_663_(ca._1672).jpg",
+          "width": 1600,
+          "height": 1136,
+          "bytes": 1571689,
+          "license": "Public domain",
+          "artist": "Varius geographers",
+          "description": "The First Map of Australia and New Zealand--Rare Second State!  Detailed map of the coastline of Australia and New Zealand, showing the voyage and discoveries of Abel Tasman. It was published by the travel collection compiler Melchisédech Thévenot in his famous Relations de divers Voyages. This is an example of the second state of the map and it is particularly rare.   Thévenot"
+        },
+        {
+          "title": "File:Map of mangrove distribution in New Zealand.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_mangrove_distribution_in_New_Zealand.png",
+          "width": 2854,
+          "height": 2338,
+          "bytes": 985601,
+          "license": "CC BY-SA 4.0",
+          "artist": "Amrit Melissa Dencer-Brown, Andrea C. Alfaro, Simon Milne and John Perrott",
+          "description": "Map of mangrove distribution in New Zealand \n (Southerly limits below Tauranga). \n  Adapted from:\n \n  Vectors New Zealand. Available online:  https://vectors.co.nz/wpcontent/uploads/Blank_Map_Of_New_Zealand.png  (accessed on 4 May 2017). \n Land Information New Zealand (LINZ). Available online:  https://data.linz.govt.nz/layer/88131-northland-04m-rural-aerial-photos-2014-16/  (a"
+        }
+      ]
+    },
+    {
+      "query": "LINZ spatial data",
+      "results": []
+    },
+    {
+      "query": "DOC New Zealand map",
+      "results": [
+        {
+          "title": "File:Warner's Hotel - Souvenir of New Zealand Cup.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warner%27s_Hotel_-_Souvenir_of_New_Zealand_Cup.jpg",
+          "width": 3672,
+          "height": 5254,
+          "bytes": 6984199,
+          "license": "Public domain",
+          "artist": "Artist unknown",
+          "description": "Warner's Hotel (Christchurch) :Souvenir of New Zealand Cup, November 2nd, 1912. Menu. Christchurch Press Company Limited, Printers.\n1 colour photo-mechanical print(s).; Lithograph, embossed, on cover of folded menu card, 165 x 115 m.m.; Vertical image.; Ephemera."
+        },
+        {
+          "title": "File:George Fisher (New Zealand).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Fisher_(New_Zealand).jpg",
+          "width": 2161,
+          "height": 2681,
+          "bytes": 1194417,
+          "license": "Public domain",
+          "artist": "Photographer unidentified",
+          "description": "Head and shoulders portrait of George Fisher."
+        },
+        {
+          "title": "File:Map of New Zealand, Christchurch Botanical Gardens.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_New_Zealand,_Christchurch_Botanical_Gardens.jpg",
+          "width": 4222,
+          "height": 3188,
+          "bytes": 3313688,
+          "license": "Public domain",
+          "artist": "Frank James Denton",
+          "description": "Map of New Zealand 'island' in a pond at tthe Avon Gardens, Christchurch Botanical Gardens, taken by Frank James Denton, possibly during the 1930s."
+        },
+        {
+          "title": "File:New Zealand Labour Party election candidates, 1922.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Labour_Party_election_candidates,_1922.jpg",
+          "width": 4278,
+          "height": 5482,
+          "bytes": 8432514,
+          "license": "Public domain",
+          "artist": "John Glover for \"The Maoriland Worker\" Printing and Publishing Company Ltd",
+          "description": "Shows a central group portrait of the members of the Parliamentary Labour Party: E J Howard (Christchurch South), W E Parry (Auckland Central), J H Munro (Dunedin North), D G Sullivan (Avon), M J Savage (Auckland West), J McCombs (Lyttelton), H E Holland (Buller), P Fraser (Wellington Central), F Bartram (Grey Lynn).\n Around this are arranged head and shoulder portraits of othe"
+        },
+        {
+          "title": "File:Members of the New Zealand Legislative Council, 1894.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Members_of_the_New_Zealand_Legislative_Council,_1894.jpg",
+          "width": 3045,
+          "height": 4058,
+          "bytes": 2642953,
+          "license": "Public domain",
+          "artist": "William Kinsey (1860–1931)",
+          "description": "Photographic montage by William Kinsey, depicting members of the Legislative Council of New Zealand in 1894. \n Centre: Speaker Henry Miller\n  Top row (from left): William Downie Stewart, Edward Cephas John Stevens, Daniel Pollen, Joseph Shephard, John Davies Ormond, Charles Bowen, William Thomas Jennings\n  Second row: Charles John Johnston, John Rigg, Patrick Dignan, W. D. H. B"
+        },
+        {
+          "title": "File:Fig 10 Plate XXXI The butterflies & moths of New Zealand (cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig_10_Plate_XXXI_The_butterflies_%26_moths_of_New_Zealand_(cropped).jpg",
+          "width": 198,
+          "height": 138,
+          "bytes": 6939,
+          "license": "Public domain",
+          "artist": "George Vernon Hudson",
+          "description": "Plate XXXI The butterflies &amp; moths of New Zealand  \nFig 10.  Trachypepla euryleucota  (male)"
+        },
+        {
+          "title": "File:Fig 1. Plate XV The butterflies & moths of New Zealand (cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig_1._Plate_XV_The_butterflies_%26_moths_of_New_Zealand_(cropped).jpg",
+          "width": 136,
+          "height": 108,
+          "bytes": 4011,
+          "license": "Public domain",
+          "artist": "George Vernon Hudson",
+          "description": "Fig 1. Plate XV The butterflies &amp; moths of New Zealand ♀︎  Notoreas isoleuca  Meyrick, 1897"
+        },
+        {
+          "title": "File:Top of Liburne Hill, Puketeraki Forest Conservation Area, Canterbury, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Liburne_Hill,_Puketeraki_Forest_Conservation_Area,_Canterbury,_New_Zealand.jpg",
+          "width": 5230,
+          "height": 3503,
+          "bytes": 12427456,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "DOC sign on the top of Liburne Hill, Puketeraki Forest Conservation Area, Canterbury, New Zealand"
+        },
+        {
+          "title": "File:Fig 44 Plate XI The butterflies & moths of New Zealand (cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig_44_Plate_XI_The_butterflies_%26_moths_of_New_Zealand_(cropped).jpg",
+          "width": 176,
+          "height": 120,
+          "bytes": 5739,
+          "license": "Public domain",
+          "artist": "George Vernon Hudson",
+          "description": "Plate XI The butterflies &amp; moths of New Zealand \nFig. 44 Asaphodes cinnabari"
+        },
+        {
+          "title": "File:DOC sign not far from Harman Hut, photo taken from Three Passes Track, New Zealand 24.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:DOC_sign_not_far_from_Harman_Hut,_photo_taken_from_Three_Passes_Track,_New_Zealand_24.jpg",
+          "width": 5472,
+          "height": 3648,
+          "bytes": 28317252,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "DOC sign not far from Harman Hut, photo taken from Three Passes Track, New Zealand"
+        },
+        {
+          "title": "File:Fig 7 & 8 Fontispiece The butterflies & moths of New Zealand (cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig_7_%26_8_Fontispiece_The_butterflies_%26_moths_of_New_Zealand_(cropped).jpg",
+          "width": 363,
+          "height": 140,
+          "bytes": 11780,
+          "license": "Public domain",
+          "artist": "George Vernon Hudson",
+          "description": "Fontispiece The butterflies &amp; moths of New Zealand by George Vernon Hudson\nFig 7 &amp; 8 showing the egg of  Melanchra insignis , now known as  Ichneutica insignis ."
+        },
+        {
+          "title": "File:Fig 5 Fontispiece The butterflies & moths of New Zealand (cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig_5_Fontispiece_The_butterflies_%26_moths_of_New_Zealand_(cropped).jpg",
+          "width": 140,
+          "height": 121,
+          "bytes": 4198,
+          "license": "Public domain",
+          "artist": "George Vernon Hudson",
+          "description": "Fontispiece The butterflies &amp; moths of New Zealand by George Vernon Hudson\n \n    Fig.  \n  Name in text  \n  Accepted name   \n  5 \n  Melanchra lignana  \n  Ichneutica lignana   \n  "
+        },
+        {
+          "title": "File:DOC marker - orange triangle - New Zealand trail marker (Paratu Stream, West Coast, New Zealand).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:DOC_marker_-_orange_triangle_-_New_Zealand_trail_marker_(Paratu_Stream,_West_Coast,_New_Zealand).jpg",
+          "width": 5472,
+          "height": 3648,
+          "bytes": 16521364,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "DOC marker - orange triangle - New Zealand trail marker on a track to Pfeifer Biv. Paratu Stream, West Coast, New Zealand"
+        },
+        {
+          "title": "File:A DOC orange haging marker, photo taken from Jollie Brook Circuit, Canterbury, New Zealand 08.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_DOC_orange_haging_marker,_photo_taken_from_Jollie_Brook_Circuit,_Canterbury,_New_Zealand_08.jpg",
+          "width": 3060,
+          "height": 4080,
+          "bytes": 3379090,
+          "license": "CC BY 4.0",
+          "artist": "Michal Klajban",
+          "description": "A DOC orange haging marker, photo taken from Jollie Brook Circuit, Canterbury, New Zealand"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand Department of Conservation map",
+      "results": [
+        {
+          "title": "File:Between Back Ridge Hut and Kiwi Mouth Hut, Kawekas, New Zealand 04.JPG",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Between_Back_Ridge_Hut_and_Kiwi_Mouth_Hut,_Kawekas,_New_Zealand_04.JPG",
+          "width": 3212,
+          "height": 4636,
+          "bytes": 4133195,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Sign to local plot. Installed by members of Department of Conservation. Taken from the Back Ridge which goes between Back Ridge Hut and Kiwi Mouth Hut. Kawekas, New Zealand"
+        },
+        {
+          "title": "File:A section of the Port Craig tramway during use (NZ Forest Service photograph collection, copies held by Department of Conservation).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_section_of_the_Port_Craig_tramway_during_use_(NZ_Forest_Service_photograph_collection,_copies_held_by_Department_of_Conservation).jpg",
+          "width": 271,
+          "height": 186,
+          "bytes": 13257,
+          "license": "Public domain",
+          "artist": "Unknown photographer",
+          "description": "A section of the Port Craig tramway during use (NZ Forest Service photograph collection, copies held by Department of Conservation)"
+        },
+        {
+          "title": "File:Wasp bait station with Vespex, Mount Thomas Forest Conservation Area, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wasp_bait_station_with_Vespex,_Mount_Thomas_Forest_Conservation_Area,_New_Zealand.jpg",
+          "width": 4890,
+          "height": 3017,
+          "bytes": 7997847,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Wasp bait station with Vespex, Mount Thomas Forest Conservation Area, New Zealand"
+        },
+        {
+          "title": "File:Wasp bait station using Vespex, Mount Thomas Forest Conservation Area, New Zealand 02.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wasp_bait_station_using_Vespex,_Mount_Thomas_Forest_Conservation_Area,_New_Zealand_02.jpg",
+          "width": 3694,
+          "height": 3648,
+          "bytes": 6548376,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Wasp bait station using Vespex, Mount Thomas Forest Conservation Area, New Zealand"
+        },
+        {
+          "title": "File:Puketeraki Forest Conservation Area sign, Canterbury, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puketeraki_Forest_Conservation_Area_sign,_Canterbury,_New_Zealand.jpg",
+          "width": 5472,
+          "height": 3648,
+          "bytes": 13808388,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Puketeraki Forest Conservation Area sign, Canterbury, New Zealand"
+        },
+        {
+          "title": "File:Crossroad between Tarn Hut track and Youngman Stream Track, Puketeraki Forest Conservation Area, Canterbury, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crossroad_between_Tarn_Hut_track_and_Youngman_Stream_Track,_Puketeraki_Forest_Conservation_Area,_Canterbury,_New_Zealand.jpg",
+          "width": 5472,
+          "height": 3648,
+          "bytes": 19073098,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Crossroad between Tarn Hut track and Youngman Stream Track, Puketeraki Forest Conservation Area, Canterbury, New Zealand"
+        },
+        {
+          "title": "File:Top of Liburne Hill, Puketeraki Forest Conservation Area, Canterbury, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Liburne_Hill,_Puketeraki_Forest_Conservation_Area,_Canterbury,_New_Zealand.jpg",
+          "width": 5230,
+          "height": 3503,
+          "bytes": 12427456,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "DOC sign on the top of Liburne Hill, Puketeraki Forest Conservation Area, Canterbury, New Zealand"
+        },
+        {
+          "title": "File:Chummies track sign, Kahurangi, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chummies_track_sign,_Kahurangi,_New_Zealand.jpg",
+          "width": 5149,
+          "height": 3648,
+          "bytes": 22699975,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Chummies track sign, Kahurangi, New Zealand"
+        },
+        {
+          "title": "File:Wangapeka Saddle sign, Wangapeka Track, Kahurangi National Park, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wangapeka_Saddle_sign,_Wangapeka_Track,_Kahurangi_National_Park,_New_Zealand.jpg",
+          "width": 5191,
+          "height": 3358,
+          "bytes": 12914085,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Wangapeka Saddle sign, Wangapeka Track, Kahurangi National Park, New Zealand"
+        },
+        {
+          "title": "File:Biggs Tops Route sign at Wangapeka Saddle, Wangapeka Track, Kahurangi National Park, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biggs_Tops_Route_sign_at_Wangapeka_Saddle,_Wangapeka_Track,_Kahurangi_National_Park,_New_Zealand.jpg",
+          "width": 5163,
+          "height": 3442,
+          "bytes": 13345349,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Biggs Tops Route sign at Wangapeka Saddle, Wangapeka Track, Kahurangi National Park, New Zealand"
+        },
+        {
+          "title": "File:Start of hiking trails in Castle Hill Village, Canterbury, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Start_of_hiking_trails_in_Castle_Hill_Village,_Canterbury,_New_Zealand.jpg",
+          "width": 5165,
+          "height": 3454,
+          "bytes": 14445410,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Start of hiking trails in Castle Hill Village, Canterbury, New Zealand"
+        },
+        {
+          "title": "File:Toilet sign by Cedar Flat hut, West Coast, New Zealand 03.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toilet_sign_by_Cedar_Flat_hut,_West_Coast,_New_Zealand_03.jpg",
+          "width": 5472,
+          "height": 3648,
+          "bytes": 18297234,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Toilet sign by Cedar Flat hut, West Coast, New Zealand"
+        },
+        {
+          "title": "File:Hurunui Coastal Track in Manuka Bay, Hurunui District, Canterbury, New Zealand 02.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hurunui_Coastal_Track_in_Manuka_Bay,_Hurunui_District,_Canterbury,_New_Zealand_02.jpg",
+          "width": 5472,
+          "height": 3648,
+          "bytes": 16815618,
+          "license": "CC BY-SA 4.0",
+          "artist": "Michal Klajban",
+          "description": "Hurunui Coastal Track in Manuka Bay, Hurunui District, Canterbury, New Zealand"
+        },
+        {
+          "title": "File:Kapitia skink processing MRD 04.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapitia_skink_processing_MRD_04.jpg",
+          "width": 2644,
+          "height": 3822,
+          "bytes": 2140051,
+          "license": "CC BY 4.0",
+          "artist": "Mike Dickison",
+          "description": "Skink tail tips in alcohol, from reptile specialists from the Department of Conservation processing and photographing Kapitia skinks ( Oligosoma salmo ), Hokitika, West Coast, New Zealand. The Kapitia or Chesterfield skink is a critically endangered lizard (numbering just a few hundred individuals) found along a narrow 1 km stretch of coastal vegetation north of Hokitika. DOC b"
+        },
+        {
+          "title": "File:Kapitia skink processing MRD 07.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapitia_skink_processing_MRD_07.jpg",
+          "width": 3003,
+          "height": 2794,
+          "bytes": 2192927,
+          "license": "CC BY 4.0",
+          "artist": "Mike Dickison",
+          "description": "Individual skink mugshots used by reptile specialists from the Department of Conservation processing and photographing Kapitia skinks ( Oligosoma salmo ), Hokitika, West Coast, New Zealand. The Kapitia or Chesterfield skink is a critically endangered lizard (numbering just a few hundred individuals) found along a narrow 1 km stretch of coastal vegetation north of Hokitika. DOC "
+        },
+        {
+          "title": "File:Kapitia skink processing MRD 09.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapitia_skink_processing_MRD_09.jpg",
+          "width": 2470,
+          "height": 3137,
+          "bytes": 1013152,
+          "license": "CC BY 4.0",
+          "artist": "Mike Dickison",
+          "description": "University of Otago student Jade Christiansen processing and photographing Kapitia skinks ( Oligosoma salmo ), Hokitika, West Coast, New Zealand. The Kapitia or Chesterfield skink is a critically endangered lizard (numbering just a few hundred individuals) found along a narrow 1 km stretch of coastal vegetation north of Hokitika. DOC biodiversity officers regularly catch skinks"
+        },
+        {
+          "title": "File:Kapitia skink processing MRD 11.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapitia_skink_processing_MRD_11.jpg",
+          "width": 2689,
+          "height": 3456,
+          "bytes": 1906725,
+          "license": "CC BY 4.0",
+          "artist": "Mike Dickison",
+          "description": "Lynn Adams, reptile specialist from the Department of Conservation, photographing a Kapitia skink ( Oligosoma salmo ), Hokitika, West Coast, New Zealand. The Kapitia or Chesterfield skink is a critically endangered lizard (numbering just a few hundred individuals) found along a narrow 1 km stretch of coastal vegetation north of Hokitika. DOC biodiversity officers regularly catc"
+        }
+      ]
+    },
+    {
+      "query": "University of Otago cartography",
+      "results": []
+    },
+    {
+      "query": "New Zealand geography lab",
+      "results": []
+    },
+    {
+      "query": "University of Canterbury GIS",
+      "results": []
+    },
+    {
+      "query": "New Zealand GIS research",
+      "results": [
+        {
+          "title": "File:Nz south island map2.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nz_south_island_map2.png",
+          "width": 1500,
+          "height": 1554,
+          "bytes": 1351650,
+          "license": "CC BY-SA 3.0",
+          "artist": "Shaundd",
+          "description": "English Wikivoyage-style map of the travel regions in New Zealand's South Island"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand GPS surveying",
+      "results": [
+        {
+          "title": "File:Agathinus tridens.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agathinus_tridens.jpg",
+          "width": 826,
+          "height": 1085,
+          "bytes": 83064,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult  Agathinus tridens "
+        },
+        {
+          "title": "File:Philpottia levinotis.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philpottia_levinotis.jpg",
+          "width": 846,
+          "height": 1017,
+          "bytes": 89082,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult  Philpottia levinotis "
+        },
+        {
+          "title": "File:Cyphon huttoni aedeagus.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyphon_huttoni_aedeagus.jpg",
+          "width": 1111,
+          "height": 935,
+          "bytes": 230363,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "aedeagus of  Cyphon huttoni , lateral view of penis inset, see fig. 7(G-I) in  .mw-parser-output .smallcaps{font-variant:small-caps}  Nyholm  (2000)"
+        },
+        {
+          "title": "File:Anagotus helmsi.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anagotus_helmsi.jpg",
+          "width": 696,
+          "height": 1523,
+          "bytes": 120235,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult  Anagotus helmsi , length about 16.5 mm (excluding rostrum). Mokihinui River, Mokihinui Hydro Project Survey, GPS site: Mok01, method: pitfall trap, Nelson Region, New Zealand, 13 Feb 2011, R J Toft &amp; M. Atkinson"
+        },
+        {
+          "title": "File:Chelagyrtodes davidi female.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chelagyrtodes_davidi_female.jpg",
+          "width": 604,
+          "height": 923,
+          "bytes": 101834,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult female  Chelagyrtodes  n.sp. \" davidi \", length about 1.9 mm. New Zealand, Nelson, Mokihinui River, Mokihinui Hydro Project Survey, GPS site: Mok06, Method: pitfall trap. 13 Feb 2011, RJ Toft &amp; M Atkinson"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand GPS surveyors",
+      "results": []
+    },
+    {
+      "query": "GPS survey New Zealand",
+      "results": [
+        {
+          "title": "File:Agathinus tridens.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agathinus_tridens.jpg",
+          "width": 826,
+          "height": 1085,
+          "bytes": 83064,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult  Agathinus tridens "
+        },
+        {
+          "title": "File:Philpottia levinotis.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philpottia_levinotis.jpg",
+          "width": 846,
+          "height": 1017,
+          "bytes": 89082,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult  Philpottia levinotis "
+        },
+        {
+          "title": "File:Cyphon huttoni aedeagus.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyphon_huttoni_aedeagus.jpg",
+          "width": 1111,
+          "height": 935,
+          "bytes": 230363,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "aedeagus of  Cyphon huttoni , lateral view of penis inset, see fig. 7(G-I) in  .mw-parser-output .smallcaps{font-variant:small-caps}  Nyholm  (2000)"
+        },
+        {
+          "title": "File:Anagotus helmsi.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anagotus_helmsi.jpg",
+          "width": 696,
+          "height": 1523,
+          "bytes": 120235,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult  Anagotus helmsi , length about 16.5 mm (excluding rostrum). Mokihinui River, Mokihinui Hydro Project Survey, GPS site: Mok01, method: pitfall trap, Nelson Region, New Zealand, 13 Feb 2011, R J Toft &amp; M. Atkinson"
+        },
+        {
+          "title": "File:Chelagyrtodes davidi female.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chelagyrtodes_davidi_female.jpg",
+          "width": 604,
+          "height": 923,
+          "bytes": 101834,
+          "license": "CC0",
+          "artist": "S.E. Thorpe",
+          "description": "adult female  Chelagyrtodes  n.sp. \" davidi \", length about 1.9 mm. New Zealand, Nelson, Mokihinui River, Mokihinui Hydro Project Survey, GPS site: Mok06, Method: pitfall trap. 13 Feb 2011, RJ Toft &amp; M Atkinson"
+        }
+      ]
+    },
+    {
+      "query": "GNSS geodetic New Zealand",
+      "results": []
+    },
+    {
+      "query": "New Zealand digital mapping screenshot",
+      "results": []
+    },
+    {
+      "query": "Google Earth New Zealand screenshot",
+      "results": []
+    },
+    {
+      "query": "Google Maps New Zealand",
+      "results": [
+        {
+          "title": "File:George Chance - Mount Egmont - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Chance_-_Mount_Egmont_-_Google_Art_Project.jpg",
+          "width": 4905,
+          "height": 3901,
+          "bytes": 7073509,
+          "license": "Public domain",
+          "artist": "\nGeorge Chance (1885 - 1963) – photographer (New Zealander) Born in Liverpool. Died in Dunedin. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Arthur James Iles - Maori woman, Thames, New Zealand - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_James_Iles_-_Maori_woman,_Thames,_New_Zealand_-_Google_Art_Project.jpg",
+          "width": 3643,
+          "height": 5100,
+          "bytes": 5458119,
+          "license": "Public domain",
+          "artist": "\nArthur James Iles (1870 - 1943) – Photographer (New Zealander) Born in Oamaru, New Zealand. Died in Rotorua, New Zealand. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Arthur James Iles - Maori woman, Rotorua, New Zealand - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_James_Iles_-_Maori_woman,_Rotorua,_New_Zealand_-_Google_Art_Project.jpg",
+          "width": 3753,
+          "height": 5320,
+          "bytes": 5381105,
+          "license": "Public domain",
+          "artist": "\nArthur James Iles (1870 - 1943) – Photographer (New Zealander) Born in Oamaru, New Zealand. Died in Rotorua, New Zealand. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Arthur James Iles - Tuterei Karewa of the Ngatimaru tribe, North Island, New Zealand - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_James_Iles_-_Tuterei_Karewa_of_the_Ngatimaru_tribe,_North_Island,_New_Zealand_-_Google_Art_Project.jpg",
+          "width": 3703,
+          "height": 5363,
+          "bytes": 5830874,
+          "license": "Public domain",
+          "artist": "\nArthur James Iles (1870 - 1943) – Photographer (New Zealander) Born in Oamaru, New Zealand. Died in Rotorua, New Zealand. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Arthur James Iles - Maori women, New Zealand - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_James_Iles_-_Maori_women,_New_Zealand_-_Google_Art_Project.jpg",
+          "width": 3696,
+          "height": 5321,
+          "bytes": 7701665,
+          "license": "Public domain",
+          "artist": "\nArthur James Iles (1870 - 1943) – Photographer (New Zealander) Born in Oamaru, New Zealand. Died in Rotorua, New Zealand. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Arthur James Iles - Maori women, New Zealand - Google Art Project (431444).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_James_Iles_-_Maori_women,_New_Zealand_-_Google_Art_Project_(431444).jpg",
+          "width": 3713,
+          "height": 5346,
+          "bytes": 3984703,
+          "license": "Public domain",
+          "artist": "\nArthur James Iles (1870 - 1943) – Photographer (New Zealander) Born in Oamaru, New Zealand. Died in Rotorua, New Zealand. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Arthur James Iles - Maori woman, Rotorua, New Zealand - Google Art Project (432338).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_James_Iles_-_Maori_woman,_Rotorua,_New_Zealand_-_Google_Art_Project_(432338).jpg",
+          "width": 3665,
+          "height": 5354,
+          "bytes": 6854883,
+          "license": "Public domain",
+          "artist": "\nArthur James Iles (1870 - 1943) – Photographer (New Zealander) Born in Oamaru, New Zealand. Died in Rotorua, New Zealand. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Frances Hodgkins - The Piano Lesson - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frances_Hodgkins_-_The_Piano_Lesson_-_Google_Art_Project.jpg",
+          "width": 6225,
+          "height": 5316,
+          "bytes": 9036623,
+          "license": "Public domain",
+          "artist": "\nFrances Hodgkins (1869 - 1947) – Creator (New Zealand; Great Britain) Born in Dunedin, New Zealand. Died in Dorset, England. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Elioth Gruner - Weetangera, Canberra - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elioth_Gruner_-_Weetangera,_Canberra_-_Google_Art_Project.jpg",
+          "width": 5001,
+          "height": 4193,
+          "bytes": 4546184,
+          "license": "Public domain",
+          "artist": "Elioth Gruner",
+          "description": ""
+        },
+        {
+          "title": "File:PIA21210 - Satellite Radar Show Complex Set of Faults Moved in 2016 New Zealand Earthquake.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA21210_-_Satellite_Radar_Show_Complex_Set_of_Faults_Moved_in_2016_New_Zealand_Earthquake.jpg",
+          "width": 4481,
+          "height": 2682,
+          "bytes": 1209049,
+          "license": "Public domain",
+          "artist": "NASA/JPL-Caltech/JAXA/Google Earth",
+          "description": "NASA and its partners are contributing important observations and expertise to the ongoing response to the Nov. 14, 2016, magnitude 7.8 Kaikoura earthquake in New Zealand. This shallow earthquake was so complex and unusual, it is likely to change how scientists think about earthquake hazards in plate boundary zones around the world.\n Scientists with the Advanced Rapid Imaging a"
+        },
+        {
+          "title": "File:United and Air New Zealand at SFO (47961182712).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:United_and_Air_New_Zealand_at_SFO_(47961182712).jpg",
+          "width": 3024,
+          "height": 4032,
+          "bytes": 3613653,
+          "license": "CC BY-SA 2.0",
+          "artist": "elisfkc from Orlando, FL, United States",
+          "description": "United and Air New Zealand at SFO"
+        },
+        {
+          "title": "File:Leslie Adkin - The order of the bath - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leslie_Adkin_-_The_order_of_the_bath_-_Google_Art_Project.jpg",
+          "width": 4453,
+          "height": 3225,
+          "bytes": 1872325,
+          "license": "Public domain",
+          "artist": "Leslie Adkin",
+          "description": "Leslie Adkin - The order of the bath - Google Art Project      "
+        },
+        {
+          "title": "File:FLII NewZealand.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:FLII_NewZealand.png",
+          "width": 795,
+          "height": 860,
+          "bytes": 190204,
+          "license": "CC BY-SA 4.0",
+          "artist": "PhnomPencil",
+          "description": "Forest Landscape Integrity Index 2019 map of New Zealand. Forest condition measured by degree of anthropogenic modification. 0 = Most modification; 10= Least. Created in Google Earth Engine. National boundaries = LSIB 2017: Large Scale International Boundary Polygons, Detailed, US Officer of the Geographer"
+        },
+        {
+          "title": "File:Edward Friström - Pohutukawa - Google Art Project.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edward_Fristr%C3%B6m_-_Pohutukawa_-_Google_Art_Project.jpg",
+          "width": 5001,
+          "height": 3487,
+          "bytes": 5059576,
+          "license": "Public domain",
+          "artist": "\nEdward Friström (1864 - 1950) – Creator (Sweden; Australia; New Zealand; American) Born in Sweden. Details on Google Art Project",
+          "description": ""
+        },
+        {
+          "title": "File:Google Eng Accent v2.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Eng_Accent_v2.png",
+          "width": 1480,
+          "height": 632,
+          "bytes": 37575,
+          "license": "CC BY-SA 4.0",
+          "artist": "PorazonyCreeper",
+          "description": "Based on       by  User:Earth_Resident , a map of Google Translate's choice of English TTS voice by region (country).\n Green (Europe, Central Asia, Africa w/o Nigeria; Iran, South Asia w/o India; Malaysia, Brunei, Hong Kong, Guyana) - British accent\nPink (Americas w/o Guyana; Middle East w/o Iran; Caucasus states, East Asia w/o HK, Brunei or Malaysia; Oceania w/o Australia or N"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand location analysis GIS",
+      "results": []
+    },
+    {
+      "query": "New Zealand public health map",
+      "results": [
+        {
+          "title": "File:NewZealand-Stamp-1933-Health.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NewZealand-Stamp-1933-Health.jpg",
+          "width": 288,
+          "height": 467,
+          "bytes": 85904,
+          "license": "Public domain",
+          "artist": "SteveStrummer",
+          "description": "New Zealand postage stamp, 1933: Public health."
+        },
+        {
+          "title": "File:Path through native bush, including nikau palms at the New Zealand Government's Health Resort, adjoining the hot springs at Morere, 1927 ATLIB 302672.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Path_through_native_bush,_including_nikau_palms_at_the_New_Zealand_Government%27s_Health_Resort,_adjoining_the_hot_springs_at_Morere,_1927_ATLIB_302672.png",
+          "width": 3743,
+          "height": 5092,
+          "bytes": 18981998,
+          "license": "Public domain",
+          "artist": "Godber, Albert Percy, 1875-1949",
+          "description": "View of a path through native bush including nikau palms at the New Zealand Government's Health Resort adjoining the hot springs at Morere, with the photographer standing on the left.  Photograph taken by Albert Percy Godber in 1927."
+        },
+        {
+          "title": "File:Advertisement in Mineral Waters and Health Resort of New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Advertisement_in_Mineral_Waters_and_Health_Resort_of_New_Zealand.jpg",
+          "width": 681,
+          "height": 937,
+          "bytes": 498948,
+          "license": "Public domain",
+          "artist": "Unknown authorUnknown author",
+          "description": "Firdt page government advetisement"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand health deprivation map",
+      "results": []
+    },
+    {
+      "query": "New Zealand Landcover database",
+      "results": []
+    },
+    {
+      "query": "Land Cover Database NZ",
+      "results": []
+    },
+    {
+      "query": "New Zealand openstreetmap tracing",
+      "results": []
+    },
+    {
+      "query": "New Zealand API geospatial map",
+      "results": []
+    },
+    {
+      "query": "QGIS New Zealand screenshot",
+      "results": []
+    },
+    {
+      "query": "NZ digital elevation lidar",
+      "results": []
+    },
+    {
+      "query": "LiDAR Waitakere",
+      "results": []
+    },
+    {
+      "query": "LiDAR Wellington",
+      "results": [
+        {
+          "title": "File:Marie Wilkins (d. 1883) (70) in \"Miss Multon\" Union Square Theatre - DPLA - 22c485a4bee56431d4a7945252fb8349 (page 2).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marie_Wilkins_(d._1883)_(70)_in_%22Miss_Multon%22_Union_Square_Theatre_-_DPLA_-_22c485a4bee56431d4a7945252fb8349_(page_2).jpg",
+          "width": 522,
+          "height": 800,
+          "bytes": 61855,
+          "license": "Public domain",
+          "artist": "Sarony, Napoleon, 1821-1896",
+          "description": " \nTitle from item or material accompanying item.; Sarony, 37 Union Sqr. N. Y.; Date supplied by cataloger.; Marie Wilkins played Arabella in performances of \"Miss Multon\" at the Union Square Theatre in New York in 1876. "
+        }
+      ]
+    },
+    {
+      "query": "Kapiti LiDAR",
+      "results": [
+        {
+          "title": "File:Kapiti.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapiti.png",
+          "width": 4320,
+          "height": 4320,
+          "bytes": 17260630,
+          "license": "CC BY-SA 4.0",
+          "artist": "Vallee",
+          "description": "Map of Kapiti island"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand LiDAR map",
+      "results": [
+        {
+          "title": "File:Kapiti.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapiti.png",
+          "width": 4320,
+          "height": 4320,
+          "bytes": 17260630,
+          "license": "CC BY-SA 4.0",
+          "artist": "Vallee",
+          "description": "Map of Kapiti island"
+        },
+        {
+          "title": "File:Matui.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matui.png",
+          "width": 4320,
+          "height": 4320,
+          "bytes": 5127295,
+          "license": "CC BY-SA 4.0",
+          "artist": "Vallee",
+          "description": "Carte topographique de Matui Island"
+        }
+      ]
+    },
+    {
+      "query": "lidar survey New Zealand",
+      "results": []
+    },
+    {
+      "query": "New Zealand drone orthophoto",
+      "results": []
+    },
+    {
+      "query": "New Zealand UAV survey",
+      "results": []
+    },
+    {
+      "query": "drone aerial survey NZ",
+      "results": []
+    },
+    {
+      "query": "New Zealand 3d building GIS",
+      "results": []
+    },
+    {
+      "query": "Wellington city model",
+      "results": [
+        {
+          "title": "File:Gibraltar Model 1865 (5).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gibraltar_Model_1865_(5).jpg",
+          "width": 800,
+          "height": 572,
+          "bytes": 182730,
+          "license": "CC BY-SA 3.0",
+          "artist": "Jim Crone",
+          "description": "The coastal defences are comprehensive with the large Kings Bastion at centre and South Bastion at the lower right in the photograph. \t\tCity Hall, House of Assembly and the piazza are close to Kings Bastion and still exist today as does the Governors residence (The Convent) situated behind Wellington Front with its distinctive right and left bastions. Views from a model of Gibr"
+        },
+        {
+          "title": "File:Atomic Bombing of Wellington City (9447363540).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atomic_Bombing_of_Wellington_City_(9447363540).jpg",
+          "width": 5316,
+          "height": 7200,
+          "bytes": 3635428,
+          "license": "CC BY-SA 2.0",
+          "artist": "Archives New Zealand from New Zealand",
+          "description": " Hiroshima Day remembers the day an atomic bomb was dropped on the Japanese city of Hiroshima, followed a few days later by the Nagasaki bombing. These effectively ended World War II but at a terrible price - the two cities were destroyed and casualties, mostly civilians, were estimated at around 200,000, with many more people dying later from injuries and illness. Hiroshima Da"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-1).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-1).jpg",
+          "width": 1024,
+          "height": 819,
+          "bytes": 367631,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-3).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-3).jpg",
+          "width": 2784,
+          "height": 2086,
+          "bytes": 618797,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-5).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-5).jpg",
+          "width": 640,
+          "height": 480,
+          "bytes": 39292,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-2).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-2).jpg",
+          "width": 3008,
+          "height": 2000,
+          "bytes": 1710603,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-6).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-6).jpg",
+          "width": 3678,
+          "height": 2870,
+          "bytes": 4127379,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-4).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-4).jpg",
+          "width": 4032,
+          "height": 2984,
+          "bytes": 3538962,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-9).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-9).jpg",
+          "width": 3008,
+          "height": 2000,
+          "bytes": 1569619,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Whaleboat, model (AM 1947.11-10).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whaleboat,_model_(AM_1947.11-10).jpg",
+          "width": 3008,
+          "height": 2000,
+          "bytes": 1888971,
+          "license": "CC BY 4.0",
+          "artist": "\nReuben Watts",
+          "description": "Whaleboat, model of, made by Reuben Watt in Auckland as a rowing trophy offered for competition by the donors father in sterling silver on glass topped ebonised wood base silver model of a whaling boat, W Reuben Watts William Reuben Watts (b 1869, Manchester, England – d 1940, Auckland, New Zealand) Auckland, New Zealand, 1920s sterling silver, electroplated copper, glass, ebon"
+        },
+        {
+          "title": "File:Pou whenua (Austronesian Totem pole) - Thorndon Quay (Wellington) - August, 2018 (Indexed greyscale).png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pou_whenua_(Austronesian_Totem_pole)_-_Thorndon_Quay_(Wellington)_-_August,_2018_(Indexed_greyscale).png",
+          "width": 1017,
+          "height": 1234,
+          "bytes": 255779,
+          "license": "CC0",
+          "artist": "Text mdnp ( ~ \"Um Vs Camera\")",
+          "description": "Pou whenua (Austronesian Totem pole) - Thorndon Quay (Wellington) - August, 2018 (Fujifilm-A170 - Indexed greyscale)"
+        },
+        {
+          "title": "File:Wikimedians walking across City to Sea Bridge, May 2026.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wikimedians_walking_across_City_to_Sea_Bridge,_May_2026.jpg",
+          "width": 4096,
+          "height": 3072,
+          "bytes": 3343018,
+          "license": "CC BY 4.0",
+          "artist": "Jakob (TheLoyalOrder)",
+          "description": "Wikimedians walking across City to Sea Bridge, May 2026"
+        }
+      ]
+    },
+    {
+      "query": "NZ geological survey geological map",
+      "results": [
+        {
+          "title": "File:NZ transform (deutsch).JPG",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NZ_transform_(deutsch).JPG",
+          "width": 370,
+          "height": 443,
+          "bytes": 99786,
+          "license": "Public domain",
+          "artist": "USGS, USGS Earthquake Seismicity webpage, noncommercial use with acknowledgment; User:2000",
+          "description": "New Zealand tectonics map in German based on  Image:NZ transform.jpg "
+        },
+        {
+          "title": "File:NZ transform (belarusian).png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NZ_transform_(belarusian).png",
+          "width": 370,
+          "height": 443,
+          "bytes": 109500,
+          "license": "Public domain",
+          "artist": "USGS, USGS Earthquake Seismicity webpage, noncommercial use with acknowledgment; User:2000",
+          "description": "New Zealand tectonics map in Belarusian based on  NZ_transform_(deutsch).JPG  from German Wikipedia"
+        },
+        {
+          "title": "File:Glen Massey extract from 1925 Geological map of Newcastle survey district.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Massey_extract_from_1925_Geological_map_of_Newcastle_survey_district.jpg",
+          "width": 1008,
+          "height": 1213,
+          "bytes": 340161,
+          "license": "CC BY-SA 3.0",
+          "artist": "G.E. Harris",
+          "description": "CM coal measures, K Te Kuiti beds, L lower Jurassic, T upper Jurassic, WH Whaingaroa beds"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand climate change map",
+      "results": [
+        {
+          "title": "File:2009 Dust Storm - Australia and New Zealand Map.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Dust_Storm_-_Australia_and_New_Zealand_Map.png",
+          "width": 1535,
+          "height": 1065,
+          "bytes": 555075,
+          "license": "CC BY-SA 3.0",
+          "artist": "Advanstra",
+          "description": "2009 Australia Dust Storm - Map of Australia and New Zealand - showing movement of dust plume and dust affected areas"
+        },
+        {
+          "title": "File:New Zealand Marine Weather Regions Map.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Marine_Weather_Regions_Map.png",
+          "width": 2575,
+          "height": 2998,
+          "bytes": 835152,
+          "license": "CC BY-SA 3.0",
+          "artist": "(WT-shared) Shaund",
+          "description": "Map showing the New Zealand coastal and offshore weather regions"
+        },
+        {
+          "title": "File:New Zealand Climate Zones.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Climate_Zones.jpg",
+          "width": 475,
+          "height": 599,
+          "bytes": 216583,
+          "license": "CC BY-SA 3.0",
+          "artist": "Ulrich Lange, Bochum, Germany",
+          "description": "Neuseelandkarte mit Klimazonen und Positionsnummer der Orte"
+        },
+        {
+          "title": "File:Tsunami forecast map New Zealand 5 March 2021.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsunami_forecast_map_New_Zealand_5_March_2021.jpg",
+          "width": 2000,
+          "height": 1500,
+          "bytes": 216349,
+          "license": "CC BY 4.0",
+          "artist": "National Emergency Management Agency (New Zealand)",
+          "description": "Forecast of tsunamis in New Zealand following an earthquake of the coast of the Kernadec Islands."
+        }
+      ]
+    },
+    {
+      "query": "Sea level rise map New Zealand",
+      "results": [
+        {
+          "title": "File:Banks Peninsula (9407687532).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banks_Peninsula_(9407687532).jpg",
+          "width": 2400,
+          "height": 1606,
+          "bytes": 1749850,
+          "license": "CC0",
+          "artist": "Bernard Spragg. NZ from Christchurch, New Zealand",
+          "description": "View from Scarborough, looking across to Godley Head, with Banks Peninsula in the distance. Banks Peninsula is situated in about the middle of the east coast of the South Island on the margin of the Canterbury Plains. It is approximately 450 sq. miles in area and its highest point is Herbert Peak, 3,014 ft. It comprises two extinct volcanoes which were active less than half a m"
+        }
+      ]
+    },
+    {
+      "query": "New Zealand electoral map",
+      "results": [
+        {
+          "title": "File:New Zealand MMP voting paper.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_MMP_voting_paper.jpg",
+          "width": 420,
+          "height": 628,
+          "bytes": 63300,
+          "license": "Public domain",
+          "artist": "New Zealand Parliament",
+          "description": "The prescribed voting form for mixed-member proportional representation general elections in New Zealand."
+        },
+        {
+          "title": "File:Sandra Grey presenting to VUW's Post-Election and Electoral Referendum Conference in Parliament (6887688689).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandra_Grey_presenting_to_VUW%27s_Post-Election_and_Electoral_Referendum_Conference_in_Parliament_(6887688689).jpg",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 1409820,
+          "license": "CC BY-SA 2.0",
+          "artist": "New Zealand Tertiary Education Union from New Zealand",
+          "description": " Posted via email   from  TEU "
+        },
+        {
+          "title": "File:New Zealand Electorates 1938.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Electorates_1938.png",
+          "width": 596,
+          "height": 604,
+          "bytes": 26862,
+          "license": "CC BY-SA 3.0",
+          "artist": "Kiwichris",
+          "description": "Electoral map of New Zealand's 1938 general election."
+        }
+      ]
+    },
+    {
+      "query": "NZ Department of Statistics thematic map",
+      "results": []
+    },
+    {
+      "query": "New Zealand GIS professionals",
+      "results": []
+    },
+    {
+      "query": "New Zealand geospatial conference",
+      "results": []
+    },
+    {
+      "query": "geospatial software New Zealand",
+      "results": []
+    },
+    {
+      "query": "Waikato GIS",
+      "results": []
+    },
+    {
+      "query": "Dunedin geography department",
+      "results": [
+        {
+          "title": "File:1950 Census Enumeration District Maps - Florida (FL) - Pinellas County - Dunedin - ED 52-37 to 41 - NARA - 12007948.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:1950_Census_Enumeration_District_Maps_-_Florida_(FL)_-_Pinellas_County_-_Dunedin_-_ED_52-37_to_41_-_NARA_-_12007948.jpg",
+          "width": 9874,
+          "height": 5926,
+          "bytes": 7277723,
+          "license": "Public domain",
+          "artist": "\nUnknown authorUnknown author or not provided",
+          "description": ""
+        },
+        {
+          "title": "File:Florida -Hamilton County - Sarasota County (part)- - NARA - 17474775 (page 1303).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Florida_-Hamilton_County_-_Sarasota_County_(part)-_-_NARA_-_17474775_(page_1303).jpg",
+          "width": 1512,
+          "height": 1944,
+          "bytes": 415563,
+          "license": "Public domain",
+          "artist": "\nUnknown authorUnknown author or not provided",
+          "description": ""
+        },
+        {
+          "title": "File:Florida -Hamilton County - Sarasota County (part)- - NARA - 17474775 (page 1305).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Florida_-Hamilton_County_-_Sarasota_County_(part)-_-_NARA_-_17474775_(page_1305).jpg",
+          "width": 4424,
+          "height": 3528,
+          "bytes": 1691053,
+          "license": "Public domain",
+          "artist": "\nUnknown authorUnknown author or not provided",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "query": "New Zealand geology survey map",
+      "results": [
+        {
+          "title": "File:New Zealand earthquake 2007.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_earthquake_2007.png",
+          "width": 418,
+          "height": 512,
+          "bytes": 171073,
+          "license": "Public domain",
+          "artist": "U.S. Geological Survey, National Earthquake Information Center, World Data Center for Seismology, Denver",
+          "description": "Map of location of earthquake off New Zealand on 20 December 2007"
+        },
+        {
+          "title": "File:2009 New Zealand Earthquake.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_New_Zealand_Earthquake.jpg",
+          "width": 417,
+          "height": 610,
+          "bytes": 73970,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "2009 New Zealand Eartquake location"
+        },
+        {
+          "title": "File:Transactions of the Royal Society of New Zealand (1920) (14578410949).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transactions_of_the_Royal_Society_of_New_Zealand_(1920)_(14578410949).jpg",
+          "width": 2428,
+          "height": 3236,
+          "bytes": 867940,
+          "license": "No restrictions",
+          "artist": "Royal Society of New Zealand",
+          "description": " \n  Identifier : transactionsofro19200roya ( find matches ) \n Title :  Transactions of the Royal Society of New Zealand  \n Year :  1920  ( 1920s ) \n Authors :   Royal Society of New Zealand  \n Subjects :   Science  \n Publisher :   Wellington, N.Z. : The Society  \n Contributing Library :   Brigham Young University Hawaii, Joseph F. Smith Library  \n Digitizing Sponsor :   Consort"
+        },
+        {
+          "title": "File:2018-10-30 Waitara, New Zealand M6.1 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018-10-30_Waitara,_New_Zealand_M6.1_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 89615,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.1, maximum  intensity  5.5 earthquake (64km ESE of  Waitara ,  New Zealand ), 227.28 km  depth ."
+        },
+        {
+          "title": "File:2019-09-27 Raoul Island, New Zealand M6 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019-09-27_Raoul_Island,_New_Zealand_M6_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 63585,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.0, maximum  intensity  4.1 earthquake (96km S of  en:Raoul Island ,  New Zealand ), 35 km  depth ."
+        },
+        {
+          "title": "File:2020-03-14 Raoul Island, New Zealand M6.3 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020-03-14_Raoul_Island,_New_Zealand_M6.3_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 61253,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.3, maximum  intensity  2.4 earthquake with tsunami (298km NE of  en:Raoul Island ,  New Zealand ), 10 km  depth ."
+        },
+        {
+          "title": "File:2020-04-14 Raoul Island, New Zealand M6 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020-04-14_Raoul_Island,_New_Zealand_M6_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 61257,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.0, maximum  intensity  1.0 earthquake (196km SE of  en:Raoul Island ,  New Zealand ), 10 km  depth ."
+        },
+        {
+          "title": "File:2021-01-08 Kermadec Islands, New Zealand M6.3 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-01-08_Kermadec_Islands,_New_Zealand_M6.3_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 70321,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.3, maximum  intensity  4.4 earthquake ( en:Kermadec Islands ,  New Zealand ), 224 km  depth ."
+        },
+        {
+          "title": "File:2021-03-04 Gisborne, New Zealand M6.9 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-03-04_Gisborne,_New_Zealand_M6.9_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 95127,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.9, maximum  intensity  7.3 earthquake with tsunami (178 km NE of  en:Gisborne ,  New Zealand ), 10 km  depth ."
+        },
+        {
+          "title": "File:2021-03-04 Gisborne, New Zealand M7.3 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-03-04_Gisborne,_New_Zealand_M7.3_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 97416,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  7.3, maximum  intensity  7.3 earthquake with tsunami (174 km NE of  en:Gisborne ,  New Zealand ), 20.78 km  depth ."
+        },
+        {
+          "title": "File:2021-03-06 Gisborne, New Zealand M6.3 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-03-06_Gisborne,_New_Zealand_M6.3_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 88424,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.3, maximum  intensity  5.8 earthquake (182 km NE of  en:Gisborne ,  New Zealand ), 11.57 km  depth ."
+        },
+        {
+          "title": "File:2021-03-05 Kermadec Islands, New Zealand M7.4 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-03-05_Kermadec_Islands,_New_Zealand_M7.4_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 67305,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  7.4, maximum  intensity  2.0 earthquake with tsunami ( en:Kermadec Islands ,  New Zealand ), 43 km  depth ."
+        },
+        {
+          "title": "File:2021-04-05 Gisborne, New Zealand M6 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-04-05_Gisborne,_New_Zealand_M6_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 87388,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.0, maximum  intensity  4.3 earthquake (193 km NE of  en:Gisborne ,  New Zealand ), 10 km  depth ."
+        },
+        {
+          "title": "File:2021-06-20 Kermadec Islands, New Zealand M6.3 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-06-20_Kermadec_Islands,_New_Zealand_M6.3_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 65869,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.3, maximum  intensity  1 earthquake with tsunami ( en:Kermadec Islands ,  New Zealand ), 10 km  depth ."
+        },
+        {
+          "title": "File:2021-08-31 Kermadec Islands, New Zealand M6.3 earthquake intensity map (USGS).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-08-31_Kermadec_Islands,_New_Zealand_M6.3_earthquake_intensity_map_(USGS).jpg",
+          "width": 612,
+          "height": 684,
+          "bytes": 64226,
+          "license": "Public domain",
+          "artist": "United States Geological Survey",
+          "description": "Intensity map from USGS for the  magnitude  6.3, maximum  intensity  1 earthquake with tsunami ( en:Kermadec Islands ,  New Zealand ), 10 km  depth ."
+        }
+      ]
+    }
+  ]
+}

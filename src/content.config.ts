@@ -134,6 +134,10 @@ const image = z.object({
   originalHeight: z.number().int().optional(),
   sourceFileTitle: z.string().optional(),
   headerCandidate: z.boolean().optional(),
+  licenceEvidenceUrl: z.url().optional(),
+  sourceOriginalUrl: z.url().optional(),
+  derivativesNote: z.string().optional(),
+  relatedRecords: z.array(z.object({ name: z.string().min(1), url: z.string().startsWith('/'), role: z.string().optional() })).optional(),
 }).loose();
 
 export const collections = {

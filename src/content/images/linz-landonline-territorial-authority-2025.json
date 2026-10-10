@@ -1,0 +1,36 @@
+{
+  "id": "image:linz-landonline-territorial-authority-2025",
+  "slug": "linz-landonline-territorial-authority-2025",
+  "title": "Territorial authority boundaries in Landonline Web Search, 2025",
+  "assetPath": "/assets/historical/web/linz-landonline-territorial-authority-2025.webp",
+  "sourceUrl": "https://www.linz.govt.nz/guidance/landonline-support/known-issues-and-new-releases/whats-new-landonline-applications/whats-new-web-search",
+  "sourceName": "Toitū Te Whenua Land Information New Zealand",
+  "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+  "altText": "New Zealand territorial authority boundaries overlaid in LINZ Web Search mapping.",
+  "caption": "Territorial authority boundaries displayed in LINZ Web Search as an additional governmental spatial layer, published in its service release notes.",
+  "themeIds": [],
+  "articleSlug": "government-goes-spatial",
+  "chapterNumber": 24,
+  "dateDisplay": "2025 service update",
+  "context": "A real government spatial data display demonstrating integration of cadastral and territorial-authority boundaries. The screenshot belongs to a 2025 release and should not be used to represent earlier government GIS software.",
+  "originalAssetPath": "/assets/historical/original/linz-landonline-territorial-authority-2025.png",
+  "thumbnailPath": "/assets/historical/card/linz-landonline-territorial-authority-2025.webp",
+  "originalSha256": "71cb27838e1524686aba80a1413863b693b5f70f1fe8c7b63a7dc8b420e60808",
+  "webSha256": "721790fd6543a663c5901e07ae398616ac544a25c311e3f17ec81891add8fa8a",
+  "originalWidth": 1286,
+  "originalHeight": 653,
+  "sourceFileTitle": "TA layer.png",
+  "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/TA%20layer.png",
+  "headerCandidate": true,
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Source organisation and publisher"
+    }
+  ],
+  "derivativesNote": "Local original stored unchanged; WebP display width up to 1600 pixels and thumbnail width up to 720 pixels, resized without cropping."
+}

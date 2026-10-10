@@ -1,0 +1,36 @@
+{
+  "id": "image:linz-arcmap-property-relationships-2016",
+  "slug": "linz-arcmap-property-relationships-2016",
+  "title": "ArcMap Identify panel with related New Zealand parcel records",
+  "assetPath": "/assets/historical/web/linz-arcmap-property-relationships-2016.webp",
+  "sourceUrl": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/data-and-schemas/building-relationships-esri-file-geodatabase",
+  "sourceName": "Toitū Te Whenua Land Information New Zealand",
+  "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+  "altText": "ArcMap desktop geographic information system showing an identified parcel and linked property tables.",
+  "caption": "LINZ's ArcMap example showing property records linked through an Esri file geodatabase, including parcels, survey plans, title estates and statutory actions.",
+  "themeIds": [],
+  "articleSlug": "gis-comes-to-the-desktop",
+  "chapterNumber": 22,
+  "dateDisplay": "Published by LINZ by 2022; example files dated 2016",
+  "context": "A genuine New Zealand desktop GIS screenshot preserved in a LINZ guide explaining file-geodatabase table relationships. The capture date is not independently confirmed, and it does not purport to show the first desktop GIS rollout.",
+  "originalAssetPath": "/assets/historical/original/linz-arcmap-property-relationships-2016.png",
+  "thumbnailPath": "/assets/historical/card/linz-arcmap-property-relationships-2016.webp",
+  "originalSha256": "9616ddc44af005e1054933834370b297d03cd615677fa6f3e3b3d7cf07be52ca",
+  "webSha256": "16c639366ae699deed7e49f49f4793d2c236b0570ada6687d324b078f81dca13",
+  "originalWidth": 477,
+  "originalHeight": 693,
+  "sourceFileTitle": "owner_and_stat_action.png",
+  "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/owner_and_stat_action.png",
+  "headerCandidate": true,
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Source organisation and publisher"
+    }
+  ],
+  "derivativesNote": "Local original stored unchanged; WebP display width up to 1600 pixels and thumbnail width up to 720 pixels, resized without cropping."
+}
