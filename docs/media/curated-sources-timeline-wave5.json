@@ -61,6 +61,26 @@
       "caption": "New Zealand Aerial Mapping orthophotography of the Cashmere High School area, captured 24 February 2011 for the Christchurch Response Centre, with earthquake-related liquefaction visible on the school playing fields.",
       "context": "Genuine disaster-response orthophotography captured two days after the 22 February 2011 Christchurch earthquake. It is an operational imagery product, not a screenshot from the Common Operating Picture.",
       "headerCandidate": true
+    },
+    {
+      "id": "image:nasa-world-wind-napier-2006",
+      "slug": "nasa-world-wind-napier-2006",
+      "sourceType": "commons",
+      "commonsTitle": "File:Napier06.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Napier06.jpg",
+      "sourceName": "Wikimedia Commons / NASA World Wind",
+      "title": "NASA World Wind view of Napier and Hastings, New Zealand, 2006",
+      "dateDisplay": "18 March 2006 upload; underlying layer acquisition date not verified",
+      "credit": "NASA World Wind public-domain imagery, composite uploaded by Wikimedia contributor 2000 in March 2006; source-layer creation date unspecified.",
+      "licence": "Public domain",
+      "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Napier06.jpg",
+      "articleSlug": "google-changes-the-audience",
+      "chapter": 31,
+      "altText": "NASA World Wind satellite-globe view of Napier, Hastings and Cape Kidnappers, New Zealand.",
+      "caption": "NASA World Wind publicly available satellite-globe view showing the Napier and Hastings region, uploaded in March 2006. This illustrates a contemporaneous online globe, not Google Maps, Google Earth or the 2007 localised New Zealand Google Maps interface.",
+      "context": "Period-specific view from NASA's World Wind software, a different mapping application. No evidence establishes this as part of the localised Google Maps product described in the associated 2007 timeline event.",
+      "headerCandidate": false
     }
   ]
 }
