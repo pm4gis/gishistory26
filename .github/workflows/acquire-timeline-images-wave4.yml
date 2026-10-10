@@ -1,0 +1,51 @@
+name: Acquire verified timeline satellite originals wave 4
+on:
+  push:
+    branches: [feature/timeline-media-coverage-wave4-20261010]
+    paths:
+      - scripts/download-timeline-images-wave4.mjs
+      - docs/media/curated-sources-timeline-wave4.json
+      - .github/workflows/acquire-timeline-images-wave4.yml
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: timeline-originals-wave4
+  cancel-in-progress: true
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/feature/timeline-media-coverage-wave4-20261010'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: feature/timeline-media-coverage-wave4-20261010}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Acquire originals, verify licences, and create web derivatives
+        run: node scripts/download-timeline-images-wave4.mjs || true
+      - name: Verify full project with acquired sources
+        run: |
+          npm test
+          npm run build
+      - name: Preserve acquired media and report in the research branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/ src/content/images/ docs/media/timeline-download-run-wave4.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive timeline wave 4 satellite originals and derivatives"
+            git fetch origin feature/timeline-media-coverage-wave4-20261010
+            git rebase origin/feature/timeline-media-coverage-wave4-20261010
+            git push origin HEAD:feature/timeline-media-coverage-wave4-20261010
+          fi
+      - name: Require every original downloaded and rights checked
+        run: node -e "const d=require('./docs/media/timeline-download-run-wave4.json'); if(d.failed || d.success!==2)throw Error(d.failed+' failures and '+d.success+' successes')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: timeline-satellite-originals-wave4
+          path: docs/media/timeline-download-run-wave4.json
+          retention-days: 30
