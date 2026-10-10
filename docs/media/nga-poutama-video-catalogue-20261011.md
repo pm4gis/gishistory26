@@ -36,7 +36,7 @@ Descriptions establish the roles of **Duane Wilkins** as presenter for the histo
 
 - `src/lib/nga-poutama-videos.mjs`: source-backed video IDs, titles, upload dates, topic tags, descriptions, speaker credits, per-passage IDs, relevant existing events and presenter/entity links.
 - `src/components/WanangaVideos.svelte`: full 15-video catalogue with contextual kaupapa filters on the Māori GIS theme and Ngā Poutama organisation page. It provides linked YouTube thumbnails and direct watch URLs, not copyrighted downloads.
-- `src/components/Reader.svelte`: inserts only applicable video cards **between the paragraphs** of relevant passages, both in complete-chapter and page-by-page mode. The previous duplicated end-of-chapter gallery has been removed, preventing 15 records being dumped onto unrelated chapters.
+- `src/components/Reader.svelte`: inserts only applicable video cards **between the paragraphs** of relevant passages, both in complete-chapter and page-by-page mode. The previous duplicated end-of-chapter gallery has been removed, preventing 15 records being dumped onto unrelated chapters. The in-passage cards occupy a labelled horizontal scroller (with keyboard focus and reduced-motion support), so seven relevant sessions cannot produce several screens of uninterrupted video cards on a phone.
 - `src/components/Timeline.svelte`: the selected event displays a direct source-video link where the corresponding public milestone is supported by the catalogue. The historical date, summary and canonical event source remain unchanged.
 - Direct links to relevant **existing** people/organisation profiles are added only where the publisher identifies the participant. These links never assign an image to a Person profile.
 
