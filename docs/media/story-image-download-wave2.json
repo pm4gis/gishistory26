@@ -1,10 +1,142 @@
 {
   "checkedAt": "2026-10-10T10:33:10.571Z",
-  "success": 0,
+  "success": 6,
   "existing": 0,
   "failed": 0,
   "held": 1,
   "items": [
+    {
+      "slug": "levin-topographic-map-1973",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3A1973_map_of_Levin.jpg",
+      "status": "downloaded",
+      "sourceLicenceVerified": "CC BY-SA 3.0",
+      "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/1973_map_of_Levin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original": "/assets/historical/original/levin-topographic-map-1973.jpg",
+      "display": "/assets/historical/web/levin-topographic-map-1973.webp",
+      "card": "/assets/historical/card/levin-topographic-map-1973.webp",
+      "sourceBytes": 556747,
+      "localBytes": 556747,
+      "dimensions": [
+        1324,
+        1100
+      ],
+      "localDimensions": [
+        1324,
+        1100
+      ],
+      "originalSha256": "31dbef2a8819fbe26b7b12d69b4c5ec7cf91fdbbc8eb3cbd3362123a7b1d50eb",
+      "displaySha256": "cd493450a85721f5bc370e060b1a39dfc7f036072bdd7a4638a99836fabc1025"
+    },
+    {
+      "slug": "intergraph-clix-workstation",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AIntergraph_CLIX_workstation.jpg",
+      "status": "downloaded",
+      "sourceLicenceVerified": "Public domain",
+      "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Intergraph_CLIX_workstation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original": "/assets/historical/original/intergraph-clix-workstation.jpg",
+      "display": "/assets/historical/web/intergraph-clix-workstation.webp",
+      "card": "/assets/historical/card/intergraph-clix-workstation.webp",
+      "sourceBytes": 34605,
+      "localBytes": 34605,
+      "dimensions": [
+        495,
+        363
+      ],
+      "localDimensions": [
+        495,
+        363
+      ],
+      "originalSha256": "af7f222baf61ed4f818b29ff8b24495ba7394297bc853fdebec444b6756bc796",
+      "displaySha256": "5159dda74bf8bb2b708a463fde4bd11b86d7a2215ee49a0248ffc275389217af"
+    },
+    {
+      "slug": "te-kuiti-land-development-office",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3ATe_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg",
+      "status": "downloaded",
+      "sourceLicenceVerified": "CC BY-SA 2.0",
+      "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Te_Kuiti_Land_Development_Office%2C_1974_-_1984_%2828795220472%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original": "/assets/historical/original/te-kuiti-land-development-office.jpg",
+      "display": "/assets/historical/web/te-kuiti-land-development-office.webp",
+      "card": "/assets/historical/card/te-kuiti-land-development-office.webp",
+      "sourceBytes": 257330,
+      "localBytes": 257330,
+      "dimensions": [
+        1930,
+        1275
+      ],
+      "localDimensions": [
+        1930,
+        1275
+      ],
+      "originalSha256": "104fa3898340949a166e4ae8f3fab9311dbcc4dbd8a3b6811214965259327827",
+      "displaySha256": "4de0fe0621b1377f57076d693a3b3b253e36aa88ec34598a14b8523c510c36ab"
+    },
+    {
+      "slug": "dhb-boundaries-2001-2010",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3ANew_Zealand_District_Health_Board_Map_2001%E2%80%9310_%28Blank%29.svg",
+      "status": "downloaded",
+      "sourceLicenceVerified": "CC BY 4.0",
+      "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/New_Zealand_District_Health_Board_Map_2001%E2%80%9310_%28Blank%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original": "/assets/historical/original/dhb-boundaries-2001-2010.svg",
+      "display": "/assets/historical/web/dhb-boundaries-2001-2010.webp",
+      "card": "/assets/historical/card/dhb-boundaries-2001-2010.webp",
+      "sourceBytes": 143799,
+      "localBytes": 143799,
+      "dimensions": [
+        750,
+        846
+      ],
+      "localDimensions": [
+        750,
+        846
+      ],
+      "originalSha256": "4ef99b82022fbad157f68ecb8276f59001d5e41a7c2b6e6dedc71f095e4075d2",
+      "displaySha256": "168600df51cdba451ba333930e3041f5739849fe39140ada2d012652f50ca697"
+    },
+    {
+      "slug": "mow-field-trip-gisborne-1971",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg",
+      "status": "downloaded",
+      "sourceLicenceVerified": "CC BY-SA 2.0",
+      "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Government_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original": "/assets/historical/original/mow-field-trip-gisborne-1971.jpg",
+      "display": "/assets/historical/web/mow-field-trip-gisborne-1971.webp",
+      "card": "/assets/historical/card/mow-field-trip-gisborne-1971.webp",
+      "sourceBytes": 208362,
+      "localBytes": 208362,
+      "dimensions": [
+        900,
+        684
+      ],
+      "localDimensions": [
+        900,
+        684
+      ],
+      "originalSha256": "9a7167b5b409486cf1ec92e79b4473f381ce2ff56031c73db00ce2674571cbe1",
+      "displaySha256": "ebcaefbeba714222cffbce4390f2a1d3d8f40ec019e797057a624e9ff8c26f19"
+    },
+    {
+      "slug": "victoria-square-aerial-1975",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File%3AVicSq-Aerial-1975.jpg",
+      "status": "downloaded",
+      "sourceLicenceVerified": "CC BY 3.0",
+      "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/VicSq-Aerial-1975.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original": "/assets/historical/original/victoria-square-aerial-1975.jpg",
+      "display": "/assets/historical/web/victoria-square-aerial-1975.webp",
+      "card": "/assets/historical/card/victoria-square-aerial-1975.webp",
+      "sourceBytes": 672783,
+      "localBytes": 672783,
+      "dimensions": [
+        2001,
+        2001
+      ],
+      "localDimensions": [
+        2001,
+        2001
+      ],
+      "originalSha256": "c1541fc6f450fe8d628b903fd25c2a17c0e014d7be3085874d6e2258f040561c",
+      "displaySha256": "45cf9f297b8aff5ef5af161a935989152bbaa6d088a80eacb91a3855fad8512b"
+    },
     {
       "slug": "gisborne-east-coast-luc-map-1967",
       "sourcePage": "https://natlib.govt.nz/records/37100560",
