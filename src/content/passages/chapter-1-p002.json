@@ -4,7 +4,7 @@
   "articleId": "article:chapter-1",
   "title": "The parcel record",
   "order": 1,
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-11",
   "themeIds": [
     "cadastre"
   ],
@@ -16,15 +16,15 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "A cadastral boundary linked a plan to field observations, title records and later surveys. In the nineteenth century, new grants, roads, reserves and subdivisions had to fit into an office record that staff could search and update. A plan was only one part of that chain: its number, annotations and index helped the next surveyor find the evidence behind the line.",
-      "markdown": "A cadastral boundary linked a plan to field observations, title records and later surveys. In the nineteenth century, new grants, roads, reserves and subdivisions had to fit into an office record that staff could search and update. A plan was only one part of that chain: its number, annotations and index helped the next surveyor find the evidence behind the line.",
+      "text": "Cadastral records were maintained over many generations. By the nineteenth century, field survey observations were being turned into plans, grants, titles, road records, reserves and office mapping that allowed later survey and land administration to refer back to earlier work. A cadastral boundary linked a drawing with survey observations and legal records. Its practical value depended on those relationships surviving through filing, indexing and repeated office use. The digital cadastre inherited this system of survey plans, titles and indexes.",
+      "markdown": "Cadastral records were maintained over many generations. By the nineteenth century, field survey observations were being turned into plans, grants, titles, road records, reserves and office mapping that allowed later survey and land administration to refer back to earlier work. A cadastral boundary linked a drawing with survey observations and legal records. Its practical value depended on those relationships surviving through filing, indexing and repeated office use. The digital cadastre inherited this system of survey plans, titles and indexes.",
       "sources": [],
       "id": "ch01-p-242c96db76e3"
     },
     {
       "type": "paragraph",
-      "text": "The Department of Lands and Survey’s 1884–85 report lists 1,470 ten-chain sheets, 155 record maps and large-scale standard-survey sheets carrying Land Transfer surveys. These were working records. When a new survey altered a parcel, staff had to place it against the existing sheet, find its supporting plans and update the office copy.",
-      "markdown": "The Department of Lands and Survey’s 1884–85 report lists 1,470 ten-chain sheets, 155 record maps and large-scale standard-survey sheets carrying Land Transfer surveys. These were working records. When a new survey altered a parcel, staff had to place it against the existing sheet, find its supporting plans and update the office copy.",
+      "text": "By 1884-85 the General Survey Office reported maintaining 1,470 ten-chain block sheets, 155 record maps and large-scale standard-survey sheets on which Land Transfer surveys were recorded. Those categories changed over time, but their operating purpose is familiar. New survey and title information had to be fitted into an existing spatial framework rather than treated as a separate drawing every time. Sheets, registers and indexes together allowed staff to find the current representation of a place, trace the surveys behind it and update the office record when something changed.",
+      "markdown": "By 1884-85 the General Survey Office reported maintaining 1,470 ten-chain block sheets, 155 record maps and large-scale standard-survey sheets on which Land Transfer surveys were recorded. Those categories changed over time, but their operating purpose is familiar. New survey and title information had to be fitted into an existing spatial framework rather than treated as a separate drawing every time. Sheets, registers and indexes together allowed staff to find the current representation of a place, trace the surveys behind it and update the office record when something changed.",
       "sources": [
         {
           "label": "Department of Lands and Survey, report for 1884–85",
@@ -35,8 +35,8 @@
     },
     {
       "type": "paragraph",
-      "text": "There was no single database or query language. Plan numbers, annotations, registers and indexes connected the records, alongside staff knowledge of which sheet or book answered a particular question. Later cadastral systems inherited both the data and these habits of retrieval and correction.",
-      "markdown": "There was no single database or query language. Plan numbers, annotations, registers and indexes connected the records, alongside staff knowledge of which sheet or book answered a particular question. Later cadastral systems inherited both the data and these habits of retrieval and correction.",
+      "text": "There was no query language, topology engine or single schema controlling the whole system. Staff linked records through plan numbers, annotations and indexes, supported by their knowledge of which book or sheet answered a particular question. Later cadastral computing inherited these methods of finding, connecting and maintaining information.",
+      "markdown": "There was no query language, topology engine or single schema controlling the whole system. Staff linked records through plan numbers, annotations and indexes, supported by their knowledge of which book or sheet answered a particular question. Later cadastral computing inherited these methods of finding, connecting and maintaining information.",
       "sources": [
         {
           "label": "Department of Lands and Survey, report for 1884–85",
@@ -47,8 +47,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The records varied in date, scale and survey quality. A line copied neatly onto a maintained sheet could still rest on older or less precise observations than its neighbour. Digital coordinates can make such a line easier to store and reproduce; they cannot add evidence that the original survey never collected.",
-      "markdown": "The records varied in date, scale and survey quality. A line copied neatly onto a maintained sheet could still rest on older or less precise observations than its neighbour. Digital coordinates can make such a line easier to store and reproduce; they cannot add evidence that the original survey never collected.",
+      "text": "Accuracy also varied. Dense urban mapping could be based on large-scale surveys while remote areas might be represented much more generally, and office record maps accumulated information of different dates and quality. A clean line on a maintained sheet therefore did not guarantee that the geometry could support every later purpose. This would become a recurring digital problem: the computer could preserve a line more neatly than the original map, but it could not manufacture accuracy that had never been observed.",
+      "markdown": "Accuracy also varied. Dense urban mapping could be based on large-scale surveys while remote areas might be represented much more generally, and office record maps accumulated information of different dates and quality. A clean line on a maintained sheet therefore did not guarantee that the geometry could support every later purpose. This would become a recurring digital problem: the computer could preserve a line more neatly than the original map, but it could not manufacture accuracy that had never been observed.",
       "sources": [
         {
           "label": "Department of Lands and Survey, report for 1884–85",
@@ -59,14 +59,14 @@
     },
     {
       "type": "paragraph",
-      "text": "Survey made boundaries reproducible, but a plan alone cannot explain the circumstances in which a boundary was created or whether the record captured Māori understandings of place and authority. Later systems could connect title, survey and Māori land records in a query. That technical link did not settle questions of provenance, control or appropriate use.",
-      "markdown": "Survey made boundaries reproducible, but a plan alone cannot explain the circumstances in which a boundary was created or whether the record captured Māori understandings of place and authority. Later systems could connect title, survey and Māori land records in a query. That technical link did not settle questions of provenance, control or appropriate use.",
+      "text": "The cadastral system also carried questions of authority into the digital age. Survey precision could make a boundary reproducible without settling every historical question about how the boundary had been created or whose interests had been recognised. Later digital systems would make Crown land, title, cadastral and Māori land information easier for government agencies and other users to connect. The ability to link records technically did not itself decide who should control the information or what uses were appropriate.",
+      "markdown": "The cadastral system also carried questions of authority into the digital age. Survey precision could make a boundary reproducible without settling every historical question about how the boundary had been created or whose interests had been recognised. Later digital systems would make Crown land, title, cadastral and Māori land information easier for government agencies and other users to connect. The ability to link records technically did not itself decide who should control the information or what uses were appropriate.",
       "sources": [],
       "id": "ch01-s02-p05"
     },
     {
       "type": "paragraph",
-      "text": "In 1848, Te Wharekorari shared knowledge of rivers, lakes, routes and place names with Walter Mantell during Crown land-acquisition work in the South Island. Associated sketches and purchase maps preserve some of that knowledge. Naming Te Wharekorari matters: the official who held or published a map can otherwise receive the credit while the person who supplied its geography disappears.",
+      "text": "Te Wharekorari supplied geographic knowledge to Walter Mantell in 1848 during Crown land-acquisition work in the South Island. Rivers, lakes, routes and place names entered sketches and purchase mapping through encounters of this kind. The mapmaking occurred alongside negotiations over land and the recording of reserves and settlement interests. Naming the knowledge holder identifies a contribution otherwise easily absorbed into the credit given to the official who kept or published the paper record.",
       "sources": [
         {
           "label": "National Library of New Zealand, Te Wharekorari and associated Mantell maps",
@@ -74,7 +74,7 @@
         }
       ],
       "id": "research-te-wharekorari",
-      "markdown": "In 1848, Te Wharekorari shared knowledge of rivers, lakes, routes and place names with Walter Mantell during Crown land-acquisition work in the South Island. Associated sketches and purchase maps preserve some of that knowledge. Naming Te Wharekorari matters: the official who held or published a map can otherwise receive the credit while the person who supplied its geography disappears."
+      "markdown": "Te Wharekorari supplied geographic knowledge to Walter Mantell in 1848 during Crown land-acquisition work in the South Island. Rivers, lakes, routes and place names entered sketches and purchase mapping through encounters of this kind. The mapmaking occurred alongside negotiations over land and the recording of reserves and settlement interests. Naming the knowledge holder identifies a contribution otherwise easily absorbed into the credit given to the official who kept or published the paper record."
     }
   ],
   "sources": [

@@ -4,7 +4,7 @@
   "articleId": "article:chapter-1",
   "title": "The people behind the sheets",
   "order": 7,
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-11",
   "themeIds": [
     "women-in-gis"
   ],
@@ -21,8 +21,8 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "A finished map concealed a long production line. Surveyors and field assistants observed boundaries and control; human computers reduced measurements; draughtspeople compiled the sheet; lithographic and photographic staff reproduced it; clerks indexed plans and prints. The Department of Lands and Survey relied on these skills in district and head offices alike.",
-      "markdown": "A finished map concealed a long production line. Surveyors and field assistants observed boundaries and control; human computers reduced measurements; draughtspeople compiled the sheet; lithographic and photographic staff reproduced it; clerks indexed plans and prints. The Department of Lands and Survey relied on these skills in district and head offices alike.",
+      "text": "The inherited system depended on a technical workforce that is easy to hide behind institutional names. Surveyors and field assistants established control and boundaries. Human computers reduced observations. Draughtspeople compiled plans and maps. Lithographic and photographic staff reproduced them. Clerks indexed records, photogrammetrists measured through stereo imagery, and staff in district offices knew how the pieces fitted together.",
+      "markdown": "The inherited system depended on a technical workforce that is easy to hide behind institutional names. Surveyors and field assistants established control and boundaries. Human computers reduced observations. Draughtspeople compiled plans and maps. Lithographic and photographic staff reproduced them. Clerks indexed records, photogrammetrists measured through stereo imagery, and staff in district offices knew how the pieces fitted together.",
       "sources": [
         {
           "label": "Department of Lands and Survey, report for 1884–85",
@@ -33,8 +33,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The print run was substantial. In 1884–85, the Survey Department reported 603,341 lithographic impressions. That figure shows the scale of its map production, while the report’s separate sheet, record-map and plan counts show how many distinct records staff had to maintain.",
-      "markdown": "The print run was substantial. In 1884–85, the Survey Department reported 603,341 lithographic impressions. That figure shows the scale of its map production, while the report’s separate sheet, record-map and plan counts show how many distinct records staff had to maintain.",
+      "text": "The work could reach industrial scale. By the 1890s Lands and Survey was producing more than a million lithographic impressions in a year for land administration and other government purposes. By the twentieth century the same broad production culture supported topographic series, census mapping, aerial photography, geological and soil mapping and specialised agency work. Standard symbols, sheet numbering, coordinate frameworks and record identifiers provided a form of interoperability before the word was common in information technology.",
+      "markdown": "The work could reach industrial scale. By the 1890s Lands and Survey was producing more than a million lithographic impressions in a year for land administration and other government purposes. By the twentieth century the same broad production culture supported topographic series, census mapping, aerial photography, geological and soil mapping and specialised agency work. Standard symbols, sheet numbering, coordinate frameworks and record identifiers provided a form of interoperability before the word was common in information technology.",
       "sources": [
         {
           "label": "Department of Lands and Survey, report for 1884–85",
@@ -45,8 +45,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Rachel Gillanders appears in government records first as a Computer and later as a Draughtswoman and Computer. Madge Pirrit’s initials appear on maps of Papakura and Wharekawa; a 1926 Gazette transfer entry gives the name behind those credits. Their work joined calculation, drawing and map production long before digital editing tools.",
-      "markdown": "Rachel Gillanders appears in government records first as a Computer and later as a Draughtswoman and Computer. Madge Pirrit’s initials appear on maps of Papakura and Wharekawa; a 1926 Gazette transfer entry gives the name behind those credits. Their work joined calculation, drawing and map production long before digital editing tools.",
+      "text": "Rachel Gillanders and draughtswoman Madge Pirrit worked within this broader production system. Pirrit’s credited maps span town and cadastral compilation from the 1920s through aerial-photo-supported wartime topography and later work into 1949. Their names sit alongside a much larger workforce whose observations, calculations and linework accumulated in departmental records. Later digitisation inherited that work, including its strengths, omissions and uncertain boundaries.",
+      "markdown": "Rachel Gillanders and draughtswoman Madge Pirrit worked within this broader production system. Pirrit’s credited maps span town and cadastral compilation from the 1920s through aerial-photo-supported wartime topography and later work into 1949. Their names sit alongside a much larger workforce whose observations, calculations and linework accumulated in departmental records. Later digitisation inherited that work, including its strengths, omissions and uncertain boundaries.",
       "sources": [
         {
           "label": "New Zealand Gazette, 1921 staff record for R. Gillanders",
@@ -69,7 +69,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Mary Sutherland carried out technical calculations and laboratory work as a qualified forester while accommodation rules restricted her field deployment. Mary Mulcahy selected ballot cards and processed military-service records. M. Dovey and M. Freeman appear in soil-survey records among the draughting staff turning field and laboratory classifications into maps. These records name work that a finished sheet does not show.",
+      "text": "Mary Sutherland, a professionally qualified forester, undertook technical calculation and laboratory work during 1923–32 while accommodation rules limited her field deployment. M. Dovey and M. Freeman appear among the draughting staff converting soil-survey and laboratory classification into thematic maps in 1946–50. Mary Mulcahy selected ballot cards and processed military-service records in 1917–18, within a system organised through mapped recruiting districts. These were different jobs, each contributing to the records that linked people, resources and administrative decisions with place.",
       "sources": [
         {
           "label": "Te Ara, Mary Sutherland",
@@ -85,7 +85,7 @@
         }
       ],
       "id": "research-women-technical-records",
-      "markdown": "Mary Sutherland carried out technical calculations and laboratory work as a qualified forester while accommodation rules restricted her field deployment. Mary Mulcahy selected ballot cards and processed military-service records. M. Dovey and M. Freeman appear in soil-survey records among the draughting staff turning field and laboratory classifications into maps. These records name work that a finished sheet does not show."
+      "markdown": "Mary Sutherland, a professionally qualified forester, undertook technical calculation and laboratory work during 1923–32 while accommodation rules limited her field deployment. M. Dovey and M. Freeman appear among the draughting staff converting soil-survey and laboratory classification into thematic maps in 1946–50. Mary Mulcahy selected ballot cards and processed military-service records in 1917–18, within a system organised through mapped recruiting districts. These were different jobs, each contributing to the records that linked people, resources and administrative decisions with place."
     }
   ],
   "sources": [
