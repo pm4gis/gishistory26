@@ -41,3 +41,7 @@ Potential editorial issue: some existing 2020/22 Māori GIS events carry Women i
 ## QA and release
 
 Check all content preservation manifests, theme membership and anchor links, file SHA-256, published image-detail links and alt text, desktop/mobile rendering, independent credits and People image exclusion. Record exact GitHub PR head and Cloudflare production SHA. Production must not be described as updated until a successful exact-SHA deployment is verified.
+
+## Acquisition result
+
+The eight individual Wikimedia Commons originals were retrieved and checked by the Wave 4 acquisition workflow. Eight WebP display images and eight card derivatives were committed directly to this PR branch with corresponding source/licence JSON. GitHub Actions artifact `NZ_GIS_History_Maori_GIS_Media_Wave4_2026-10-10`, acquisition run `38044752753`, preserves all eight originals and per-file SHA-256 values. A separate permanent ZIP copy is stored in Library → NZ GIS History → Research Packages. Four still-unresolved organisational image gaps remain research candidates; they were not substituted with an inaccurate map.
