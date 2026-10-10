@@ -2,6 +2,7 @@
   import {ngaPoutamaPlaylist,ngaPoutamaVideos,ngaPoutamaThumbnail} from '../lib/nga-poutama-videos.mjs';
   export let compact=false;
   export let archive=false;
+  export let readingLinks:Record<string,string>={};
   let topic='All';
   let query='';
   const featured=new Set(['yCBeRHA2Jnk','Fqq3Fzi5djc','KYEVxcBEVQ8','hCAVoBwRJwE']);
@@ -40,6 +41,7 @@
           <small>{video.date}</small>
           <p>{video.description}</p>
           <small>{video.attribution}</small>
+          {#if readingLinks[video.passageId]}<p class="wananga-related-reading"><a href={readingLinks[video.passageId]}>Read the related NZ GIS history passage →</a></p>{/if}
         </div>
       </article>
     {/each}
