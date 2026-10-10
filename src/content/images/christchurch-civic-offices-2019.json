@@ -1,0 +1,34 @@
+{
+  "id": "image:christchurch-civic-offices-2019",
+  "slug": "christchurch-civic-offices-2019",
+  "title": "Christchurch City Council civic offices on Hereford Street, 2019",
+  "assetPath": "/assets/historical/web/christchurch-civic-offices-2019.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch_City_Council,_53_Hereford_St,_21_January_2019.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Roger 8 Roger",
+  "licence": "CC BY-SA 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch_City_Council,_53_Hereford_St,_21_January_2019.jpg",
+  "altText": "Hereford Street entrance to the Christchurch City Council office complex, formerly the mail sorting centre and occupied by the council since 2010.",
+  "caption": "Hereford Street entrance to the Christchurch City Council office complex, formerly the mail sorting centre and occupied by the council since 2010.",
+  "themeIds": [],
+  "dateDisplay": "21 January 2019",
+  "context": "Council office exterior photographed in 2019, not an illustration of the council's early geospatial technology.",
+  "thumbnailPath": "/assets/historical/card/christchurch-civic-offices-2019.webp",
+  "originalSha256": "042cb30ddf8711d74c92a7634fbc6dd8765ba0650617d6c18592b051d29d3725",
+  "webSha256": "ca3c7762f0cb002c803ccb0dc78d1adc2f213eda1cd0d5bcbecfe16160b3d9cf",
+  "thumbnailSha256": "37f2b68edb90498268acd77d264ded6e22befcea554e3dbc5c5d868f691d872c",
+  "originalWidth": 3072,
+  "originalHeight": 2304,
+  "sourceFileTitle": "File:Christchurch City Council, 53 Hereford St, 21 January 2019.jpg",
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Christchurch_City_Council%2C_53_Hereford_St%2C_21_January_2019.jpg",
+  "derivativesNote": "Original unchanged JPEG preserved in NZ GIS History Research Packages / Wave 3 archive; the website serves uncropped 1600px and 720px WebP derivatives.",
+  "headerCandidate": false,
+  "relatedRecords": [
+    {
+      "name": "Christchurch City Council",
+      "url": "/entities/christchurch-city-council/",
+      "role": "Photographed institution"
+    }
+  ]
+}
