@@ -1,0 +1,144 @@
+{
+  "batch": "nzgis-subject-media-wave3-20261010",
+  "created": "2026-10-10",
+  "status": "prepared-for-binary-acquisition; not published",
+  "baseRepository": "pm4gis/gishistory26",
+  "source": "Wikimedia Commons file pages reviewed 10 October 2026",
+  "noPeopleImages": true,
+  "publish": false,
+  "images": [
+    {
+      "id": "arc-pitt-street-2007",
+      "title": "Auckland Regional Council offices on Pitt Street, 2007",
+      "filename": "Auckland_Regional_Council.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Auckland_Regional_Council.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Auckland_Regional_Council.jpg",
+      "creator": "Ingolfson",
+      "captured": "January 2007",
+      "licence": "Public domain (photographer dedication)",
+      "licenceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Regional_Council.jpg",
+      "description": "The former Auckland Regional Council building on Pitt Street, photographed from Nelson Street.",
+      "association": {
+        "type": "record",
+        "slug": "auckland-regional-council",
+        "relationship": "This photograph shows the former Auckland Regional Council offices in 2007; it does not depict the council's GIS software or operations."
+      },
+      "expectedWidth": 1600,
+      "expectedHeight": 1200
+    },
+    {
+      "id": "upper-hutt-civic-centre-2005",
+      "title": "Upper Hutt Civic Centre administration building and council chambers, 2005",
+      "filename": "Upper_Hutt_Civic_Centre.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Upper_Hutt_Civic_Centre.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Upper_Hutt_Civic_Centre.jpg",
+      "creator": "Michael Dudding (Allthenamesaretaken)",
+      "captured": "29 April 2005",
+      "licence": "Public domain (photographer dedication)",
+      "licenceUrl": "https://commons.wikimedia.org/wiki/File:Upper_Hutt_Civic_Centre.jpg",
+      "description": "Upper Hutt civic administration building and council chambers, photographed in 2005.",
+      "association": {
+        "type": "record",
+        "slug": "upper-hutt-city-council",
+        "relationship": "A photograph of the council's civic facilities in 2005, after the first XPLORER mapping service; it is not an image of XPLORER."
+      },
+      "expectedWidth": 1522,
+      "expectedHeight": 988
+    },
+    {
+      "id": "lower-hutt-civic-centre-2021",
+      "title": "Lower Hutt Town Hall and council administration building, 2021",
+      "filename": "Lower_Hutt_Town_Hall_and_Council_building_2021-09-25_2.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Lower_Hutt_Town_Hall_and_Council_building_2021-09-25_2.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lower_Hutt_Town_Hall_and_Council_building_2021-09-25_2.jpg",
+      "creator": "Tom Ackroyd (Quilt Phase)",
+      "captured": "25 September 2021",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "Lower Hutt Town Hall, clock tower and council administration building.",
+      "association": {
+        "type": "record",
+        "slug": "hutt-city-council",
+        "relationship": "The council's civic buildings photographed in 2021; not a historical map or GIS service screen."
+      },
+      "expectedWidth": 4032,
+      "expectedHeight": 3024
+    },
+    {
+      "id": "christchurch-civic-offices-2019",
+      "title": "Christchurch City Council civic offices on Hereford Street, 2019",
+      "filename": "Christchurch_City_Council,_53_Hereford_St,_21_January_2019.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Christchurch_City_Council%2C_53_Hereford_St%2C_21_January_2019.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Christchurch_City_Council,_53_Hereford_St,_21_January_2019.jpg",
+      "creator": "Roger 8 Roger",
+      "captured": "21 January 2019",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "Hereford Street entrance to the Christchurch City Council office complex, formerly the mail sorting centre and occupied by the council since 2010.",
+      "association": {
+        "type": "record",
+        "slug": "christchurch-city-council",
+        "relationship": "Council office exterior photographed in 2019, not an illustration of the council's early geospatial technology."
+      },
+      "expectedWidth": 3072,
+      "expectedHeight": 2304
+    },
+    {
+      "id": "christchurch-orion-quake-2011",
+      "title": "Royal New Zealand Air Force aerial reconnaissance of Christchurch earthquake damage, 2011",
+      "filename": "Christchurch_-_2011_earthquake_damage_001.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Christchurch_-_2011_earthquake_damage_001.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Christchurch_-_2011_earthquake_damage_001.jpg",
+      "creator": "New Zealand Defence Force / RNZAF",
+      "captured": "22 February 2011",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "description": "Aerial reconnaissance image taken by an RNZAF P-3K Orion showing earthquake damage near New Brighton Road, Pages Road, Hawke Street and Owles Terrace, Christchurch.",
+      "association": {
+        "type": "event",
+        "id": "2011-christchurch-earthquake",
+        "relationship": "Contemporary NZDF aerial surveillance of the Christchurch earthquake damage on 22 February 2011; documents response imagery, not the subsequent web mapping application."
+      },
+      "expectedWidth": 1024,
+      "expectedHeight": 677
+    },
+    {
+      "id": "gabrielle-napier-sentinel-2023",
+      "title": "Copernicus Sentinel image of Cyclone Gabrielle flooding near Napier, 2023",
+      "filename": "Flooding_caused_by_Cyclone_Gabrielle_near_Napier,_New_Zealand_-_14_February_2023_(52690129056).jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flooding_caused_by_Cyclone_Gabrielle_near_Napier%2C_New_Zealand_-_14_February_2023_%2852690129056%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Flooding_caused_by_Cyclone_Gabrielle_near_Napier,_New_Zealand_-_14_February_2023_(52690129056).jpg",
+      "creator": "Pierre Markuse; contains modified Copernicus Sentinel data [2023]",
+      "captured": "14–15 February 2023 (scene labelled 14 February; Commons records upload-source timestamp 15 February)",
+      "licence": "CC BY 2.0 with required Copernicus Sentinel attribution",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "description": "Satellite-derived depiction of flooding near Napier after Cyclone Gabrielle, approximately 25 km across. Attribution: Contains modified Copernicus Sentinel data [2023], processed by Pierre Markuse.",
+      "association": {
+        "type": "candidate-event",
+        "id": null,
+        "relationship": "Appropriate only once a distinct, evidence-backed Cyclone Gabrielle mapping event is identified or created in the historical dataset; do not assign to the 2011 Christchurch event."
+      },
+      "expectedWidth": 9930,
+      "expectedHeight": 5190
+    },
+    {
+      "id": "auckland-city-civic-building-2007",
+      "title": "Former Auckland City Council civic administration building, 2007",
+      "filename": "Auckland_City_Council_Main_Building.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Auckland_City_Council_Main_Building.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Auckland_City_Council_Main_Building.jpg",
+      "creator": "Ingolfson",
+      "captured": "2007",
+      "licence": "Public domain (photographer dedication)",
+      "licenceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_City_Council_Main_Building.jpg",
+      "description": "Former Auckland City Council Civic Building close to Aotea Square, shown in 2007; predecessor to the post-2010 unitary council.",
+      "association": {
+        "type": "candidate-record",
+        "slug": "auckland-city-council",
+        "relationship": "The former Auckland City Council offices, not current Auckland Council headquarters. Confirm the exact historical record before association."
+      },
+      "expectedWidth": 1200,
+      "expectedHeight": 1600
+    }
+  ]
+}
