@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-10T08:51:20.353Z",
+  "success": 8,
+  "failed": 0,
+  "held": 0,
+  "items": [
+    {
+      "slug": "linz-positionz-2018",
+      "sourcePage": "https://www.linz.govt.nz/products-services/geodetic/positionz",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/positionz_2018.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/linz-positionz-2018.png",
+      "web": "/assets/historical/web/linz-positionz-2018.webp",
+      "thumb": "/assets/historical/card/linz-positionz-2018.webp",
+      "sha256": "aed567a6168efa1a9c893611424ea935f6f97b24940e96d3d8e26a63ed48869f",
+      "originalBytes": 77588,
+      "dimensions": [
+        1153,
+        1043
+      ],
+      "licenceVerified": "CC BY 4.0",
+      "finalSourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/positionz_2018.png"
+    },
+    {
+      "slug": "linz-landonline-survey-work-2025",
+      "sourcePage": "https://www.linz.govt.nz/guidance/landonline-support/web-search-support/display-survey-work",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/display%20survey%20work%201%20-%20displayed%20work.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/linz-landonline-survey-work-2025.png",
+      "web": "/assets/historical/web/linz-landonline-survey-work-2025.webp",
+      "thumb": "/assets/historical/card/linz-landonline-survey-work-2025.webp",
+      "sha256": "d29476e4ae01c4bf32d7e0ae1a1d6838c0020ebb841bb522194ae17adb195c88",
+      "originalBytes": 427642,
+      "dimensions": [
+        1288,
+        785
+      ],
+      "licenceVerified": "CC BY 4.0",
+      "finalSourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/display%20survey%20work%201%20-%20displayed%20work.png"
+    },
+    {
+      "slug": "linz-arcmap-property-relationships-2016",
+      "sourcePage": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/data-and-schemas/building-relationships-esri-file-geodatabase",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/owner_and_stat_action.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/linz-arcmap-property-relationships-2016.png",
+      "web": "/assets/historical/web/linz-arcmap-property-relationships-2016.webp",
+      "thumb": "/assets/historical/card/linz-arcmap-property-relationships-2016.webp",
+      "sha256": "9616ddc44af005e1054933834370b297d03cd615677fa6f3e3b3d7cf07be52ca",
+      "originalBytes": 138238,
+      "dimensions": [
+        477,
+        693
+      ],
+      "licenceVerified": "CC BY 4.0",
+      "finalSourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/owner_and_stat_action.png"
+    },
+    {
+      "slug": "linz-wmts-qgis-connection",
+      "sourcePage": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/map-tile-services/using-lds-wmts-qgis",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-5.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/linz-wmts-qgis-connection.png",
+      "web": "/assets/historical/web/linz-wmts-qgis-connection.webp",
+      "thumb": "/assets/historical/card/linz-wmts-qgis-connection.webp",
+      "sha256": "c94e4aba4bd984852e70781ffe7b978d096c2fbb356db047336a2997856ee668",
+      "originalBytes": 51597,
+      "dimensions": [
+        715,
+        689
+      ],
+      "licenceVerified": "CC BY 4.0",
+      "finalSourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-5.png"
+    },
+    {
+      "slug": "linz-landonline-territorial-authority-2025",
+      "sourcePage": "https://www.linz.govt.nz/guidance/landonline-support/known-issues-and-new-releases/whats-new-landonline-applications/whats-new-web-search",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/TA%20layer.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/linz-landonline-territorial-authority-2025.png",
+      "web": "/assets/historical/web/linz-landonline-territorial-authority-2025.webp",
+      "thumb": "/assets/historical/card/linz-landonline-territorial-authority-2025.webp",
+      "sha256": "71cb27838e1524686aba80a1413863b693b5f70f1fe8c7b63a7dc8b420e60808",
+      "originalBytes": 621745,
+      "dimensions": [
+        1286,
+        653
+      ],
+      "licenceVerified": "CC BY 4.0",
+      "finalSourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/TA%20layer.png"
+    },
+    {
+      "slug": "linz-wmts-qgis-data-view",
+      "sourcePage": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/map-tile-services/using-lds-wmts-qgis",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-12.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/linz-wmts-qgis-data-view.png",
+      "web": "/assets/historical/web/linz-wmts-qgis-data-view.webp",
+      "thumb": "/assets/historical/card/linz-wmts-qgis-data-view.webp",
+      "sha256": "adcd54ab4a001c0e417d68f22641f25704ee2e6d662b42195411a6330477f4d3",
+      "originalBytes": 943705,
+      "dimensions": [
+        1269,
+        1039
+      ],
+      "licenceVerified": "CC BY 4.0",
+      "finalSourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-12.png"
+    },
+    {
+      "slug": "linz-wfs-attribute-service-2023",
+      "sourcePage": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/web-services/wfs-filtering-attribute-or-feature",
+      "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/2023-06/wfs_filtering_1.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/linz-wfs-attribute-service-2023.png",
+      "web": "/assets/historical/web/linz-wfs-attribute-service-2023.webp",
+      "thumb": "/assets/historical/card/linz-wfs-attribute-service-2023.webp",
+      "sha256": "2684305ebcfdb370891781043c2969dec1ac1bb8a89279bc8fe8ff6627bbaa26",
+      "originalBytes": 43468,
+      "dimensions": [
+        496,
+        324
+      ],
+      "licenceVerified": "CC BY 4.0",
+      "finalSourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/2023-06/wfs_filtering_1.png"
+    },
+    {
+      "slug": "kapiti-island-lidar-2024",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kapiti.png",
+      "sourceOriginalUrl": "File:Kapiti.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/kapiti-island-lidar-2024.png",
+      "web": "/assets/historical/web/kapiti-island-lidar-2024.webp",
+      "thumb": "/assets/historical/card/kapiti-island-lidar-2024.webp",
+      "sha256": "0e679a36ad153f5e4814b85191d25a9790c1f9b262568eca33b2106354551551",
+      "originalBytes": 17260630,
+      "dimensions": [
+        4320,
+        4320
+      ],
+      "licenceVerified": "CC BY-SA 4.0",
+      "finalSourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kapiti.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    }
+  ]
+}

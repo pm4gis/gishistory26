@@ -1,0 +1,36 @@
+{
+  "id": "image:linz-positionz-2018",
+  "slug": "linz-positionz-2018",
+  "title": "LINZ PositioNZ active GNSS reference network, 2018 illustration",
+  "assetPath": "/assets/historical/web/linz-positionz-2018.webp",
+  "sourceUrl": "https://www.linz.govt.nz/products-services/geodetic/positionz",
+  "sourceName": "Toitū Te Whenua Land Information New Zealand",
+  "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+  "altText": "Map or network illustration from LINZ PositioNZ about GPS/GNSS stations in New Zealand.",
+  "caption": "LINZ PositioNZ active control network illustration (2018), showing national infrastructure for positioning corrections and continuous satellite-based observations.",
+  "themeIds": [],
+  "articleSlug": "gps-changes-where-here-is",
+  "chapterNumber": 18,
+  "dateDisplay": "2018 illustration; current network changes over time",
+  "context": "An actual LINZ GNSS network product. It illustrates practical survey positioning services in New Zealand, not the first introduction of handheld GPS.",
+  "originalAssetPath": "/assets/historical/original/linz-positionz-2018.png",
+  "thumbnailPath": "/assets/historical/card/linz-positionz-2018.webp",
+  "originalSha256": "aed567a6168efa1a9c893611424ea935f6f97b24940e96d3d8e26a63ed48869f",
+  "webSha256": "30aa88b9306d89d6c59534c3370c75fe1764f3ff658847586d000f884365a488",
+  "originalWidth": 1153,
+  "originalHeight": 1043,
+  "sourceFileTitle": "positionz_2018.png",
+  "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/positionz_2018.png",
+  "headerCandidate": true,
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Source organisation and publisher"
+    }
+  ],
+  "derivativesNote": "Local original stored unchanged; WebP display width up to 1600 pixels and thumbnail width up to 720 pixels, resized without cropping."
+}

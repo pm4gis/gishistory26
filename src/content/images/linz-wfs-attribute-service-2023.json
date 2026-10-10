@@ -1,0 +1,36 @@
+{
+  "id": "image:linz-wfs-attribute-service-2023",
+  "slug": "linz-wfs-attribute-service-2023",
+  "title": "LINZ Web Feature Service attribute filtering, 2023",
+  "assetPath": "/assets/historical/web/linz-wfs-attribute-service-2023.webp",
+  "sourceUrl": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/web-services/wfs-filtering-attribute-or-feature",
+  "sourceName": "Toitū Te Whenua Land Information New Zealand",
+  "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+  "altText": "LINZ Web Feature Service filtering or data response example from its developer guidance.",
+  "caption": "A LINZ Data Service WFS example showing request structures and feature-type attribute information used to access geospatial records programmatically.",
+  "themeIds": [],
+  "articleSlug": "cloud-services-and-apis",
+  "chapterNumber": 41,
+  "dateDisplay": "LINZ screenshot stored under a June 2023 media path; capture date unverified",
+  "context": "Original LINZ tutorial screenshot of a live spatial-service interface or response. It illustrates interoperable APIs and is not the first appearance of web geospatial services in New Zealand.",
+  "originalAssetPath": "/assets/historical/original/linz-wfs-attribute-service-2023.png",
+  "thumbnailPath": "/assets/historical/card/linz-wfs-attribute-service-2023.webp",
+  "originalSha256": "2684305ebcfdb370891781043c2969dec1ac1bb8a89279bc8fe8ff6627bbaa26",
+  "webSha256": "ba2fe2e7443c3a59b5ffcb6b76cdee62f2ddb46df9770eea2e30dffbd5fb0656",
+  "originalWidth": 496,
+  "originalHeight": 324,
+  "sourceFileTitle": "wfs_filtering_1.png",
+  "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/2023-06/wfs_filtering_1.png",
+  "headerCandidate": true,
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Source organisation and publisher"
+    }
+  ],
+  "derivativesNote": "Local original stored unchanged; WebP display width up to 1600 pixels and thumbnail width up to 720 pixels, resized without cropping."
+}
