@@ -1,0 +1,40 @@
+{
+  "id": "person:huru",
+  "slug": "huru",
+  "name": "Huru",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/huru/",
+  "story": [
+    "The National Library’s explanatory account names Huru as the Māori man taken with Tuki from near the Cavalli Islands to Norfolk Island in 1793. Its catalogue entry for Tuki’s map uses the spelling Huku. This record keeps both spellings as source variants and adds no further biographical detail."
+  ],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, Polynesian navigation and Tuki’s map",
+      "url": "https://natlib.govt.nz/visiting/wellington/unfolding-the-map/polynesian-navigation-and-tukis-map"
+    },
+    {
+      "label": "National Library of New Zealand, Tuki’s map catalogue record",
+      "url": "https://natlib.govt.nz/records/22687375"
+    }
+  ],
+  "aliases": [
+    "Huru",
+    "Huku"
+  ],
+  "themeIds": [],
+  "status": "Account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "National Library of New Zealand, Polynesian navigation and Tuki’s map",
+        "url": "https://natlib.govt.nz/visiting/wellington/unfolding-the-map/polynesian-navigation-and-tukis-map"
+      },
+      {
+        "label": "National Library of New Zealand, Tuki’s map catalogue record",
+        "url": "https://natlib.govt.nz/records/22687375"
+      }
+    ]
+  ]
+}
