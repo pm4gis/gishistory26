@@ -1,6 +1,6 @@
 # NZ GIS History
 
-Text-first reader built with Astro, Svelte and TypeScript. GitHub is the rebuild source; Cloudflare serves the preview at https://gishistory26.pages.dev. Existing production domains remain unchanged.
+Active production: https://history.pm4gis.nz. This Astro/Svelte/TypeScript site is built from this repository's main branch on Cloudflare Pages project gishistory26. The platform alias https://gishistory26.pages.dev serves the same build. A Cloudflare routing Worker keeps the canonical /data.json and MCP integration available while sending reader pages to the new application. The older nzgis-history-stage Pages project has been deleted; gishistory.pm4gis.nz permanently redirects here.
 
 The accepted baseline contains 45 articles including the preface, 583 passages, 796 records including 531 people, 167 events, 2502 relationships and seven themes. All 4102 baseline collection files are checksum-protected. Pending research is retained separately.
 
@@ -12,6 +12,6 @@ Read AGENTS.md, docs/delivery-plan.md, docs/architecture.md, docs/migration-stat
 
 ## Delivery status
 
-The full text is available in the preview. Reader controls, horizontal chronology, contextual entries, search, four palettes and an optional network are implemented. Read-only MCP is at /mcp; /editor/ prepares local drafts. Direct authenticated publishing and write MCP are not operational.
+The new reader is live at history.pm4gis.nz. Reader controls, horizontal chronology, contextual entries, search, four palettes and an optional network are implemented. Read-only MCP is at /mcp; /editor/ prepares local drafts. Direct authenticated publishing and write MCP are not operational.
 
-Media reconciliation, pending research decisions, real-device/accessibility checks, an editorial release/recovery rehearsal and final domain cutover remain open. The migration archive was saved, including 360 recovered published images. The original site challenges GitHub's downloader, so automatic recovery is disabled. See docs/media/unresolved.md and docs/verification/ for exact evidence. Do not describe the entire delivery plan as complete.
+Media reconciliation, pending research decisions, real-device/accessibility checks and an editorial release/recovery rehearsal remain open. The migration archive was saved, including 360 recovered published images. The original site challenges GitHub's downloader, so automatic recovery is disabled. See docs/media/unresolved.md and docs/verification/ for exact evidence. Do not describe the entire delivery plan as complete.
