@@ -1,0 +1,49 @@
+name: Download chapter documentary images
+on:
+  push:
+    branches:
+      - research/chapter-specific-imagery-20261010
+    paths:
+      - .github/workflows/download-chapter-images.yml
+      - scripts/download-chapter-images.mjs
+      - docs/media/curated-commons-queue-20261010.json
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  download:
+    if: github.ref == 'refs/heads/research/chapter-specific-imagery-20261010'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/chapter-specific-imagery-20261010
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Download original images and generate local web derivatives
+        run: node scripts/download-chapter-images.mjs
+        continue-on-error: true
+      - name: Verify content and site build
+        run: |
+          npm test
+          npm run build
+      - name: Commit original copies, derivatives and source records to research branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/ src/content/images/ docs/media/chapter-download-run-20261010.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Store downloaded documentary images with captions, source credits and derivatives"
+            git push origin HEAD:research/chapter-specific-imagery-20261010
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: historical-image-download-report
+          path: docs/media/chapter-download-run-20261010.json
+          retention-days: 30
