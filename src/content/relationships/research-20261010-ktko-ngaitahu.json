@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-ktko-ngaitahu",
+  "a": "entity:kai-tahu-ki-otago-ltd",
+  "b": "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+  "label": "Local place-name pilot contributed to wider project",
+  "basis": "Ngāi Tahu project account records 2005 KTKO pilot integrated into Kā Huru Manu",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "sources": [
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    }
+  ]
+}

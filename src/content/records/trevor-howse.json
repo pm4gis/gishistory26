@@ -7,7 +7,8 @@
   "url": "/people/trevor-howse/",
   "story": [
     "Trevor Howse was a lead researcher for the Ngāi Tahu claim, gathering and interpreting the documentary record of land transactions and tribal history. Ngāi Tahu’s published account describes his persistence in locating files. He also contributed to the early Kā Huru Manu paepae.",
-    "Kā Huru Manu’s early paepae included Trevor Howse, Kelly Davis, Matapura Ellison, Jimmy Russell and David Higgins, while Muriel Johnstone contributed knowledge of the Ōraka Aparima takiwā."
+    "Kā Huru Manu’s early paepae included Trevor Howse, Kelly Davis, Matapura Ellison, Jimmy Russell and David Higgins, while Muriel Johnstone contributed knowledge of the Ōraka Aparima takiwā.",
+    "Kā Huru Manu built on the documentary material and historical research gathered through the Ngāi Tahu Claim, including Trevor Howse's work with land records and place names. He was among the initial four kaumātua paepae named in the iwi project's account. Subsequent mapping hui involved whānau checking locations and contextual knowledge against archives and map sheets, rather than relying on mapped labels alone."
   ],
   "sources": [
     {
@@ -21,6 +22,10 @@
     {
       "label": "Chapter 35 · Public applications",
       "url": "/stories/the-map-becomes-an-application/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
     }
   ],
   "aliases": [
@@ -44,6 +49,16 @@
       {
         "label": "Chapter 35 · Public applications",
         "url": "/stories/the-map-becomes-an-application/"
+      }
+    ],
+    [
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+      },
+      {
+        "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+        "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
       }
     ]
   ]

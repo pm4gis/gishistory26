@@ -1,0 +1,45 @@
+{
+  "id": "entity:nv-interactive",
+  "slug": "nv-interactive",
+  "name": "NV Interactive",
+  "kind": "Business",
+  "category": "Business",
+  "url": "/entities/nv-interactive/",
+  "story": [
+    "NV Interactive provided website design, development and project delivery for the public Kā Huru Manu cultural mapping atlas. Its published project account distinguishes the visitor-facing website from Ngāi Tahu's GIS system and cultural research. The public atlas launched in November 2017, with Ngāi Tahu and Papatipu Rūnaka retaining authority over the information selected for publication."
+  ],
+  "sources": [
+    {
+      "label": "NV Interactive, Kā Huru Manu project account",
+      "url": "https://nvinteractive.com/work/ka-huru-manu-ngai-tahu-cultural-mapping-project/"
+    },
+    {
+      "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+      "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    },
+    {
+      "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+      "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "NV Interactive, Kā Huru Manu project account",
+        "url": "https://nvinteractive.com/work/ka-huru-manu-ngai-tahu-cultural-mapping-project/"
+      },
+      {
+        "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+        "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+      },
+      {
+        "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+        "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+      }
+    ]
+  ],
+  "biographyParagraphSources": []
+}

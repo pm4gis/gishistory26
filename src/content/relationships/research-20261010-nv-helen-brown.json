@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-nv-helen-brown",
+  "a": "entity:nv-interactive",
+  "b": "person:helen-brown",
+  "label": "Creative-director award credit for Kā Huru Manu",
+  "basis": "Award-listed work on the same Kā Huru Manu public application, not evidence of her employment by NV Interactive",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "sources": [
+    {
+      "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+      "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+    }
+  ]
+}

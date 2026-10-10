@@ -8,7 +8,8 @@
   "story": [
     "Matapura Ellison's community work began with Puketeraki marae and the Huirapa Māori Committee, to which he was elected in 1973. He represented Kāti Huirapa Rūnaka ki Puketeraki on Te Rūnanga o Ngāi Tahu. His twenty years with DOC included Kaupapa Atawhai and Pou Kura Taiao work in Otago. During high-country tenure review he helped initiate cultural mapping so rūnaka representatives could use historical and cultural information when assessing the landscape.",
     "Matapura Ellison helped initiate Ngāi Tahu’s Cultural Mapping Project while working alongside David Higgins in DOC’s Kaupapa Atawhai work. His Kā Huru Manu profile connects his contribution with local history and knowledge entrusted to him by relatives at Karitāne and Puketeraki. He described the mapping project as a resource through which later generations could understand the landscape.",
-    "Kā Huru Manu’s early paepae included Trevor Howse, Kelly Davis, Matapura Ellison, Jimmy Russell and David Higgins, while Muriel Johnstone contributed knowledge of the Ōraka Aparima takiwā."
+    "Kā Huru Manu’s early paepae included Trevor Howse, Kelly Davis, Matapura Ellison, Jimmy Russell and David Higgins, while Muriel Johnstone contributed knowledge of the Ōraka Aparima takiwā.",
+    "Kā Huru Manu's published project history describes a 2005 Kāi Tahu ki Otago Ltd place-name mapping pilot in the Kāti Huirapa ki Puketeraki takiwā, later incorporated into the wider Ngāi Tahu Cultural Mapping Project. Matapura Ellison's early work with David Higgins arose from the Department of Conservation's Kaupapa Atawhai programme and concern for cultural information during high-country tenure review. The sources establish his community and paepae contributions but do not assign him responsibility for coding the pilot database."
   ],
   "sources": [
     {
@@ -22,6 +23,14 @@
     {
       "label": "Chapter 35 · Public applications",
       "url": "/stories/the-map-becomes-an-application/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
     }
   ],
   "aliases": [
@@ -47,6 +56,16 @@
       {
         "label": "Chapter 35 · Public applications",
         "url": "/stories/the-map-becomes-an-application/"
+      }
+    ],
+    [
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+      },
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
       }
     ]
   ]

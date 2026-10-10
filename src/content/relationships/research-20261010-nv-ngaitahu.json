@@ -1,0 +1,20 @@
+{
+  "id": "relationship:research-20261010-nv-ngaitahu",
+  "a": "entity:nv-interactive",
+  "b": "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+  "label": "Public atlas website delivery",
+  "basis": "Supplier account distinguishes public website delivery from iwi GIS and content ownership",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "sources": [
+    {
+      "label": "NV Interactive, Kā Huru Manu project account",
+      "url": "https://nvinteractive.com/work/ka-huru-manu-ngai-tahu-cultural-mapping-project/"
+    },
+    {
+      "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+      "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    }
+  ]
+}

@@ -7,7 +7,8 @@
   "url": "/people/richard-pascoe/",
   "story": [
     "In 1990 Richard Pascoe and John Penny published work on the interchange of data between geographic information systems and on constructing interfaces for geographic-data exchange.",
-    "In 2001 Bryan Clarke represented Christchurch as the local-government Data Modeller on the Crown emergency-services core-data project, working with University of Canterbury’s Richard Pascoe, who advised on UML and ISO/TC211 standards."
+    "In 2001 Bryan Clarke represented Christchurch as the local-government Data Modeller on the Crown emergency-services core-data project, working with University of Canterbury’s Richard Pascoe, who advised on UML and ISO/TC211 standards.",
+    "Pascoe's 1989 University of Canterbury MSc thesis, Translating Data Between Geographic Information Systems, studied conversion between otherwise incompatible GIS data formats. It proposed a decoder, a relational intermediate representation and an encoder to support transfer. This documents a New Zealand academic contribution to geospatial data interchange before routine adoption of later open standards; the thesis alone does not establish subsequent commercial deployment."
   ],
   "sources": [
     {
@@ -17,6 +18,10 @@
     {
       "label": "Chapter 23 · The parcel becomes a key",
       "url": "/stories/councils-build-corporate-gis/"
+    },
+    {
+      "label": "Richard T. Pascoe, Translating Data Between Geographic Information Systems, MSc thesis, Canterbury, 1989",
+      "url": "https://hdl.handle.net/10092/8408"
     }
   ],
   "aliases": [
@@ -36,6 +41,12 @@
       {
         "label": "Chapter 23 · The parcel becomes a key",
         "url": "/stories/councils-build-corporate-gis/"
+      }
+    ],
+    [
+      {
+        "label": "Richard T. Pascoe, Translating Data Between Geographic Information Systems, MSc thesis, Canterbury, 1989",
+        "url": "https://hdl.handle.net/10092/8408"
       }
     ]
   ]

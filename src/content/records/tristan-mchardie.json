@@ -6,12 +6,17 @@
   "category": "People",
   "url": "/people/tristan-mchardie/",
   "story": [
-    "A LINZ geospatial student or graduate profile records Tristan McHardie: GIS Administrator, Waikato Regional Council; University of Waikato thesis on internet mapping of demographic diversity."
+    "A LINZ geospatial student or graduate profile records Tristan McHardie: GIS Administrator, Waikato Regional Council; University of Waikato thesis on internet mapping of demographic diversity.",
+    "His 2016 University of Waikato master's thesis evaluated web mapping applications used to visualise demographic diversity. It treated the way population information was represented and explored through web interfaces as a subject for GIS research. A separate LINZ graduate profile later named him as GIS Administrator at Waikato Regional Council; these sources describe specific periods, without assuming his current employment."
   ],
   "sources": [
     {
       "label": "LINZ, GIS student and graduate profiles",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/studying-gis/gis-student-and-graduate-profiles"
+    },
+    {
+      "label": "Tristan McHardie, Evaluating web mapping applications, University of Waikato, 2016",
+      "url": "https://hdl.handle.net/10289/10802"
     }
   ],
   "aliases": [
@@ -25,6 +30,12 @@
       {
         "label": "LINZ, GIS student and graduate profiles",
         "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/studying-gis/gis-student-and-graduate-profiles"
+      }
+    ],
+    [
+      {
+        "label": "Tristan McHardie, Evaluating web mapping applications, University of Waikato, 2016",
+        "url": "https://hdl.handle.net/10289/10802"
       }
     ]
   ]

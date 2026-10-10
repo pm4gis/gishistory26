@@ -7,7 +7,8 @@
   "url": "/people/iain-gover/",
   "story": [
     "Ngāi Tahu’s 2018 Kā Huru Manu account credits Iain Gover with connecting a Māori place-names database to GIS, allowing locations to be mapped and corrected directly during marae hui.",
-    "Iain Gover helped develop a place-name database linked to the mapping system, allowing information to be entered and corrected directly during mapping sessions on marae. The public atlas, launched in November 2017, presented selected information approved by Papatipu Rūnaka from a larger body of collected material."
+    "Iain Gover helped develop a place-name database linked to the mapping system, allowing information to be entered and corrected directly during mapping sessions on marae. The public atlas, launched in November 2017, presented selected information approved by Papatipu Rūnaka from a larger body of collected material.",
+    "Ngāi Tahu's project history describes the Ingoa Wāhi database, built in Microsoft Dynamics CRM and linked with ArcGIS and the Ngāi Tahu Heritage Viewer. It recorded research progress and the accuracy and reliability of place-name information, with records editable during hui on marae. Norton's 2018 account credits Gover with a transition to a database directly connected to the mapping work. Neither source establishes that he independently specified or programmed every part of this architecture."
   ],
   "sources": [
     {
@@ -17,6 +18,10 @@
     {
       "label": "Chapter 35 · Public applications",
       "url": "/stories/the-map-becomes-an-application/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
     }
   ],
   "aliases": [
@@ -36,6 +41,16 @@
       {
         "label": "Chapter 35 · Public applications",
         "url": "/stories/the-map-becomes-an-application/"
+      }
+    ],
+    [
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+      },
+      {
+        "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+        "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
       }
     ]
   ]
