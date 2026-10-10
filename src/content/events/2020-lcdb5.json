@@ -9,7 +9,7 @@
   "recordIds": [
     "dataset:lcdb",
     "entity:manaaki-whenua-landcare-research",
-    "entity:ministry-for-the-environment",
+    "agency:ministry-for-the-environment",
     "entity:ministry-for-primary-industries",
     "entity:department-of-conservation"
   ],
