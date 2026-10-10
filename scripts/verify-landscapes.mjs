@@ -2,12 +2,13 @@ import {existsSync, readFileSync, readdirSync, statSync} from 'node:fs';
 import {join, resolve, sep} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
+import sharp from 'sharp';
 
 const required = ['id','placement','rightsStatus','verifiedBy','verifiedOn','sourceLayerUrl','licensor','licenceUrl','attribution','altText','evidenceUrl','sourceImageSha256'];
 const variants = ['card','feature','hero'];
 const safeUrl = u => typeof u === 'string' && /^https:\/\/[^\s]+$/i.test(u);
 const validPath = p => typeof p === 'string' && p.startsWith('/landscapes/') && !p.includes('..') && !p.includes('\\');
-export function inspectLandscapeRegistry(registry, publicDir) {
+export async function inspectLandscapeRegistry(registry, publicDir) {
   const errors = [], seen = new Set(), paths = new Set();
   if (registry.version !== 1 || !Array.isArray(registry.images)) return ['Expected version 1 and an images array'];
   for (const image of registry.images) {
@@ -31,7 +32,8 @@ export function inspectLandscapeRegistry(registry, publicDir) {
       const hash = createHash('sha256').update(bytes).digest('hex');
       if (hash !== v.sha256) errors.push(image.id + ': checksum mismatch ' + v.path);
       if (v.bytes !== bytes.length) errors.push(image.id + ': byte mismatch ' + v.path);
-      if (bytes.toString('ascii',0,4) !== 'RIFF' || bytes.toString('ascii',8,12) !== 'WEBP') errors.push(image.id + ': not a WebP ' + v.path);
+      if (bytes.toString('ascii',0,4) !== 'RIFF' || bytes.toString('ascii',8,12) !== 'WEBP') {errors.push(image.id + ': not a WebP ' + v.path);continue;}
+      try {const m=await sharp(bytes).metadata();if(m.format!=='webp'||m.width!==v.width||m.height!==v.height) errors.push(image.id + ': decoded dimensions mismatch ' + v.path);} catch {errors.push(image.id + ': corrupt image ' + v.path);}
     }
   }
   const dir = join(publicDir,'landscapes');
@@ -42,7 +44,7 @@ export function inspectLandscapeRegistry(registry, publicDir) {
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const root = resolve(import.meta.dirname,'..');
   const registry = JSON.parse(readFileSync(join(root,'src/data/landscape-images.json'),'utf8'));
-  const errors = inspectLandscapeRegistry(registry,join(root,'public'));
+  const errors = await inspectLandscapeRegistry(registry,join(root,'public'));
   if(errors.length) { for (const message of errors) console.error(message); process.exitCode=1; }
   else console.log('Landscape publication gate passed: '+registry.images.length+' approved placements');
 }
