@@ -2,7 +2,8 @@
  import {onMount,tick} from 'svelte';
  import {fade} from 'svelte/transition';
  import Timeline from './Timeline.svelte';
- import WanangaVideos from './WanangaVideos.svelte';
+ import WanangaClip from './WanangaClip.svelte';
+ import {videosForPassage} from '../lib/nga-poutama-videos.mjs';
  import {passageContributionMailto} from '../lib/passage-contributions.mjs';
  export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';
  let suppressPreview=false;let relatedAll=false;let relatedKind='All';let previewTrigger:HTMLElement|null=null;let previewTimer:ReturnType<typeof setTimeout>|undefined;let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
@@ -19,6 +20,7 @@
  function sources(p:any){return [...(p.sources||[]),...(p.blocks||[]).flatMap((b:any)=>b.sources||[])].filter((s:any)=>s.label)}
  function blocks(p:any){return p.blocks?.length?p.blocks:(p.paragraphs||[]).map((x:any)=>({type:'paragraph',...x}))}
  function image(b:any){return images.find(i=>i.id===b.imageId)}
+ function clipsAfter(p:any,blockIndex:number){const list=videosForPassage(p.id);const count=blocks(p).length;return list.filter((v:any,i:number)=>Math.max(0,Math.min(count-1,Math.round((i+1)*count/(list.length+1))-1))===blockIndex)}
  function save(p:any=current){try{localStorage.setItem('nzgis-progress',JSON.stringify({articleId:article.id,passageId:p.id,url:article.url+(complete?'':'?mode=page')+'#'+p.slug,mode:complete?'chapter':'page'}))}catch{}}
  async function go(i:number,update=true){if(i<0||i>=passages.length)return;page=i;complete=false;selected=null;relatedAll=false;relatedKind='All';if(update)history.pushState(null,'',article.url+'?mode=page#'+passages[i].slug);save(passages[i]);await tick();requestAnimationFrame(()=>{document.querySelector<HTMLElement>('.page h2')?.focus();document.querySelector('.page')?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})})}
  async function chapter(){complete=true;history.pushState(null,'',article.url+'#'+current.slug);save();await tick();document.getElementById(current.slug)?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})}
@@ -62,17 +64,15 @@
  {#each visible as p (p.id)}
  <section id={p.slug} data-passage={p.id} in:fade={{duration:motion?160:0}}>
  {#if p.legacyAnchor}<span id={p.legacyAnchor} class="legacy-anchor"></span>{/if}<h2 tabindex="-1">{p.title}</h2>
- {#each blocks(p) as b}
+ {#each blocks(p) as b,blockIndex}
  {#if b.type==='figure'}<figure id={b.id}>{#if image(b)}<a href={'/images/'+image(b).slug+'/'}><img src={image(b).assetPath} alt={b.alt||image(b).altText} loading="lazy"/></a>{/if}<figcaption>{b.caption} {b.credit||b.source||''}{#if image(b)} <a href={'/images/'+image(b).slug+'/'}>Image details</a>{/if}</figcaption></figure>
  {:else}<p id={b.id}>{#each parts(b.text||'',p) as part}{#if part.record}<button class="inline-record" aria-haspopup="dialog" aria-expanded={selected?.id===part.record.id} on:mouseenter={(e)=>hover(part.record,e.currentTarget)} on:mouseleave={leavePreview} on:focus={(e)=>{if(!suppressPreview)open(part.record,e.currentTarget)}} on:click={(e)=>open(part.record,e.currentTarget,true)}>{part.text}</button>{:else}{part.text}{/if}{/each}</p>{/if}
+ {#each clipsAfter(p,blockIndex) as clip (clip.id)}<WanangaClip video={clip}/>{/each}
  {/each}
  <div class="actions passage-actions"><a href={article.url+'#'+p.slug}>Link to passage</a><button on:click={()=>copy(p)}>Copy link</button><a class="button passage-contribute" aria-label={"Contribute information about "+p.title} href={passageContributionMailto(article,p)}>Contribute</a></div>
  {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(s.url)}<a href={s.url}>{s.label}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
  </section>{/each}
-  {#if ['becoming-a-gis-professional','the-map-becomes-an-application'].includes(article.slug)&&complete}
- <WanangaVideos/>
- {/if}
- {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
+  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
  {#if complete&&documentaryImages.length}<section class="documentary-gallery" aria-label="Historical images associated with this chapter"><h2>Historical images</h2><div class="image-index-grid">{#each documentaryImages as document}<a class="image-index-card" href={'/images/'+document.slug+'/'}><img src={document.thumbnailPath||document.assetPath} alt={document.altText} loading="lazy" decoding="async"/><span><strong>{document.title}</strong><small>{document.dateDisplay||''} · Source, caption and original image →</small></span></a>{/each}</div></section>{/if}
  </div>
  <nav class="page-nav" aria-label="Reading navigation">{#if !complete&&page>0}<button on:click={()=>go(page-1)}>← Previous</button>{:else if previous}<a class="button" href={previous.url}>← Previous chapter</a>{:else}<a href="/read/">Contents</a>{/if}<span>{complete?'Complete chapter':`${page+1} of ${passages.length}`}</span>{#if !complete&&page<passages.length-1}<button on:click={()=>go(page+1)}>Next →</button>{:else if next}<a class="button primary" href={next.url}>Next chapter →</a>{:else}<a href="/read/">Back to contents</a>{/if}</nav>
