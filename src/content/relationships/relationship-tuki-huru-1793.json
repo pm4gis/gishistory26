@@ -1,0 +1,20 @@
+{
+  "id": "relationship:tuki-huru-1793",
+  "a": "person:tuki-te-terenui-whare-pirau",
+  "b": "person:huru",
+  "label": "Taken together to Norfolk Island in 1793",
+  "basis": "The National Library’s account names Tuki and Huru as companions taken from near the Cavalli Islands to Norfolk Island in 1793; catalogue spelling varies between Huru and Huku.",
+  "passageIds": [
+    "passage:chapter-1-0170b9d0d6"
+  ],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, Polynesian navigation and Tuki’s map",
+      "url": "https://natlib.govt.nz/visiting/wellington/unfolding-the-map/polynesian-navigation-and-tukis-map"
+    },
+    {
+      "label": "National Library of New Zealand, Tuki’s map catalogue record",
+      "url": "https://natlib.govt.nz/records/22687375"
+    }
+  ]
+}
