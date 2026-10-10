@@ -1,0 +1,144 @@
+import assert from 'node:assert/strict';
+import {chromium} from 'playwright';
+const base=process.env.QA_BASE_URL||'http://127.0.0.1:4321';
+const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+const cases=[];
+async function check(name,run){
+ try{await run();cases.push({name,passed:true});console.log('PASS '+name);}
+ catch(error){cases.push({name,passed:false,reason:String(error)});console.error('FAIL '+name+' '+String(error));process.exitCode=1;}
+}
+async function dimensions(page,label){
+ const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:window.innerWidth}));
+ assert.ok(size.scroll<=size.width+2,label+' overflow: '+JSON.stringify(size));
+}
+const colors=['night','forest','paper','mist'];
+try{
+ for(const viewport of [
+  {name:'wide desktop',width:1440,height:900,mobile:false},
+  {name:'tablet landscape',width:1024,height:768,mobile:true},
+  {name:'tablet portrait',width:768,height:1024,mobile:true},
+  {name:'mobile',width:390,height:844,mobile:true},
+  {name:'narrow mobile',width:320,height:720,mobile:true}
+ ]){
+  const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height},reducedMotion:'reduce'});
+  const page=await context.newPage();
+  await check(viewport.name+' homepage complete and correctly ordered',async()=>{
+   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+   await page.locator('#highlighted-stories .highlight-card:visible').first().waitFor();
+   assert.equal(await page.locator('#chapters .chapter-card').count(),44);
+   assert.equal(await page.locator('#chapters .chapter-index a').count(),44);
+   assert.equal(await page.locator('#themes article.art-card').count(),8);
+   assert.equal(await page.locator('#highlighted-stories .highlight-card:visible').count(),5);
+   assert.equal(await page.locator('#highlighted-stories .highlight-card .read-link[href*="/stories/"]').count(),28);
+   const order=await page.evaluate(()=>['highlighted-stories','chapters','themes'].map(id=>document.getElementById(id)?.getBoundingClientRect().top+window.scrollY));
+   assert.ok(order[0]<order[1]&&order[1]<order[2],'homepage sections out of order');
+   const numbers=await page.locator('#chapters .chapter-card .eyebrow').allTextContents();
+   assert.deepEqual(numbers.map(x=>Number(x.trim().replace('Chapter ',''))),Array.from({length:44},(_,i)=>i+1));
+   await dimensions(page,viewport.name+' homepage');
+  });
+  await check(viewport.name+' navigation, contribution action and menu',async()=>{
+   const desktop=page.locator('.nav--desktop');
+   const summary=page.locator('.mobile-menu summary');
+   const mobileMenu=page.locator('.mobile-menu');
+   if(viewport.mobile){
+    assert.equal(await desktop.isVisible(),false);
+    assert.equal(await summary.isVisible(),true);
+    assert.equal(await mobileMenu.getAttribute('open'),null);
+    await summary.click();
+    assert.notEqual(await mobileMenu.getAttribute('open'),null);
+    assert.equal(await page.locator('.nav--mobile a[href="/about/"]').isVisible(),true);
+    assert.equal(await page.locator('.nav--mobile a[href="/contribute/"]').isVisible(),true);
+    await summary.focus();
+    await page.keyboard.press('Escape');
+    assert.equal(await mobileMenu.getAttribute('open'),null);
+    await summary.focus();
+    await page.keyboard.press('Enter');
+    assert.notEqual(await mobileMenu.getAttribute('open'),null);
+    await page.locator('main h1').click();
+    assert.equal(await mobileMenu.getAttribute('open'),null);
+   }else{
+    assert.equal(await desktop.isVisible(),true);
+    assert.equal(await summary.isVisible(),false);
+    assert.equal(await desktop.locator('a[href="/about/"]').count(),1);
+    assert.equal(await desktop.locator('a[href="/contribute/"]').count(),1);
+   }
+   await dimensions(page,viewport.name+' header');
+  });
+  await check(viewport.name+' story rotation and documentary image attribution',async()=>{
+   const selections=async()=>await page.locator('#highlighted-stories .highlight-card:visible').evaluateAll(els=>els.map(el=>el.dataset.highlight));
+   const first=await selections();
+   assert.equal(new Set(first).size,5);
+   await page.reload({waitUntil:'domcontentloaded'});
+   const second=await selections();
+   assert.equal(second.length,5);
+   assert.equal(second.filter(x=>first.includes(x)).length,0,'repeat visit should avoid previous five');
+   const linked=page.locator('#highlighted-stories .highlight-card:visible .subject-media');
+   for(let j=0;j<await linked.count();j++){
+    const image=linked.nth(j);
+    assert.ok((await image.locator('img').getAttribute('alt'))?.length>10);
+    const credit=image.locator('a[href^="/images/"]');
+    assert.ok(await credit.count()>=1);
+    assert.ok((await image.locator('figcaption').innerText()).length>8);
+   }
+   await dimensions(page,viewport.name+' rotated highlights');
+  });
+  await check(viewport.name+' themes and colour palettes',async()=>{
+   const selector=page.locator('#palette');
+   for(const expected of ['forest','paper','mist','night']){
+    await selector.click();
+    assert.equal(await page.locator('html').getAttribute('data-theme'),expected);
+    const contrast=await page.evaluate(()=>{
+      const element=document.querySelector('.nav--desktop .nav-contribute');
+      const style=getComputedStyle(element);
+      function rgb(s){return [...s.matchAll(/[\d.]+/g)].slice(0,3).map(x=>Number(x[0])/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);}
+      const lum=([r,g,b])=>.2126*r+.7152*g+.0722*b;
+      const a=lum(rgb(style.color)),b=lum(rgb(style.backgroundColor));
+      return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+    });
+    assert.ok(contrast>=4.5,'contribute button contrast '+expected+' '+contrast);
+   }
+   const themeHref=await page.locator('#themes article.art-card .title').first().getAttribute('href');
+   assert.ok(themeHref.startsWith('/themes/'));
+  });
+  await check(viewport.name+' browser contribution draft and valid passage reference',async()=>{
+   const reference='https://history.pm4gis.nz/stories/landonline/#from-register-to-transaction-system-60c6ff7b97';
+   const url=new URL(base+'/contribute/');
+   url.searchParams.set('chapter','Landonline');
+   url.searchParams.set('passage','From register to transaction system');
+   url.searchParams.set('ref',reference);
+   await page.goto(url.href,{waitUntil:'domcontentloaded'});
+   await page.locator('#contribution-message').waitFor();
+   await page.waitForFunction(()=>document.querySelector('#contribution-message')?.value.includes('Link to passage: https://history.pm4gis.nz/stories/landonline/'));
+   const message=await page.locator('#contribution-message').inputValue();
+   assert.ok(message.includes(reference));
+   assert.ok(!message.includes('Do not send restricted iwi'));
+   await page.locator('#contribution-subject').fill('NZ GIS History Contributions and Corrections test');
+   await page.locator('#contribution-message').fill(message+'\nBrowser test contribution');
+   const gmail=new URL(await page.locator('#gmail-compose').getAttribute('href'));
+   assert.equal(gmail.hostname,'mail.google.com');
+   assert.equal(gmail.searchParams.get('to'),'pm4gis@gmail.com');
+   assert.ok(gmail.searchParams.get('su').includes('test'));
+   assert.ok(gmail.searchParams.get('body').includes('Browser test contribution'));
+   await dimensions(page,viewport.name+' contribution');
+  });
+  await context.close();
+ }
+ const context=await browser.newContext({permissions:['clipboard-read','clipboard-write']});
+ const page=await context.newPage();
+ await check('copy contribution works in browser without a mail client',async()=>{
+  await page.goto(base+'/contribute/',{waitUntil:'domcontentloaded'});
+  await page.locator('#contribution-message').waitFor();
+  await page.locator('#contribution-subject').fill('Test copied subject');
+  await page.locator('#contribution-message').fill('Test copied body');
+  await page.locator('#copy-contribution').click();
+  assert.ok((await page.getByRole('status').innerText()).includes('copied'));
+  const clipboard=await page.evaluate(()=>navigator.clipboard.readText());
+  assert.ok(clipboard.includes('To: pm4gis@gmail.com'));
+  assert.ok(clipboard.includes('Subject: Test copied subject'));
+  assert.ok(clipboard.includes('Test copied body'));
+ });
+ await context.close();
+}finally{
+ await browser.close();
+ console.log(JSON.stringify({passed:cases.filter(c=>c.passed).length,failed:cases.filter(c=>!c.passed).length,results:cases},null,2));
+}
