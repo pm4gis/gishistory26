@@ -31,3 +31,9 @@
 .timeline-rail{scroll-snap-type:x proximity;scroll-padding-inline:8px}
 .timeline-event{scroll-snap-align:start}
 @media(max-width:850px){.period-choice{flex-basis:110px}.period-head{display:block}.period-head p{margin:8px 0}.timeline-controls>*{flex:1 1 150px}}
+
+/* Compact, explicit filters for the chapter's contextual people and organisations. */
+.related-filters{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 8px}
+.related-filters button{font-size:12px;padding:6px 9px;min-height:36px;border-radius:8px}
+.related-item{overflow-wrap:anywhere}
+@media(max-width:850px){.related-filters button{min-height:44px}}
