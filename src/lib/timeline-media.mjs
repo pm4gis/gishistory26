@@ -28,7 +28,7 @@ export const timelineMedia = Object.freeze({
   '2011-christchurch-earthquake': {slug:'christchurch-quake-shaking-2011',relation:'A documentary map of shaking associated with the 2011 Christchurch earthquake.'},
   '2011-linz-data-service': {slug:'linz-wmts-qgis-data-view',relation:'LINZ Data Service imagery accessed through QGIS WMTS in a later official guide. This is not the 2011 launch interface.'},
   '2014-quantum-map-qgis': {slug:'linz-wmts-qgis-connection',relation:'LINZ guidance illustrating a QGIS WMTS connection. The screenshot date is not established and it is not the original 2014 application.'},
-  '2014-qmap-national-dataset': {slug:'qmap-christchurch-2008',relation:'A genuine GNS Science QMAP sheet of the Christchurch area from 2008, predating the consolidated national dataset.'},
+  'event:2014-qmap-national-dataset': {slug:'qmap-christchurch-2008',relation:'A genuine GNS Science QMAP sheet of the Christchurch area from 2008, predating the consolidated national dataset.'},
   '2014-aerial-film-digitisation': {slug:'victoria-square-aerial-1955',relation:'1955 aerial imagery illustrating the historical material digitised for modern mapping portals.'},
   '2016-kaikoura-earthquake': {slug:'kaikoura-shakemap-2016',relation:'A map of the 2016 Kaikōura earthquake and its observed shaking, directly related to the event.'},
   '2018-linz-qgis-importer': {slug:'linz-wmts-qgis-connection',relation:'An actual LINZ QGIS network-service connection screen, illustrating related software integration. This is not the 2018 importer.'},
