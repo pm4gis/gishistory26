@@ -188,3 +188,11 @@
  .subject-media--feature img{max-height:260px}
  .subject-media figcaption{font-size:12px}
 }
+
+/* Related documentary views appear only in the expanded event detail. */
+.event-companion-images{margin:26px 0 4px;padding-top:12px;border-top:1px solid var(--line)}
+.event-companion-images-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:15px}
+.event-companion-images-grid a{display:flex;flex-direction:column;gap:10px;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--raised);text-decoration:none;font-size:13px;line-height:1.5}
+.event-companion-images-grid a:hover,.event-companion-images-grid a:focus-visible{border-color:var(--accent)}
+.event-companion-images-grid img{width:100%;height:165px;object-fit:cover;display:block}
+.event-companion-images-grid span{padding:0 12px 14px}

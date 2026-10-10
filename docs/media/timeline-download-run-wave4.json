@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-10T09:20:25.463Z",
+  "success": 2,
+  "failed": 0,
+  "held": 0,
+  "items": [
+    {
+      "slug": "gabrielle-sentinel-flooding-napier-2023",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Flooding_caused_by_Cyclone_Gabrielle_near_Napier,_New_Zealand_-_14_February_2023_(52690129056).jpg",
+      "sourceOriginalUrl": "File:Flooding caused by Cyclone Gabrielle near Napier, New Zealand - 14 February 2023 (52690129056).jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/gabrielle-sentinel-flooding-napier-2023.jpg",
+      "web": "/assets/historical/web/gabrielle-sentinel-flooding-napier-2023.webp",
+      "thumb": "/assets/historical/card/gabrielle-sentinel-flooding-napier-2023.webp",
+      "sha256": "026936cc5c2c050fe69d61fee4426d2b26c772f437e61fb8e57cfba77e2433b8",
+      "originalBytes": 24883682,
+      "dimensions": [
+        9930,
+        5190
+      ],
+      "licenceVerified": "CC BY 2.0",
+      "finalSourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flooding_caused_by_Cyclone_Gabrielle_near_Napier%2C_New_Zealand_-_14_February_2023_%2852690129056%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "slug": "gabrielle-nasa-modis-2023",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gabrielle_2023-02-13_0230Z.jpg",
+      "sourceOriginalUrl": "File:Gabrielle 2023-02-13 0230Z.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/gabrielle-nasa-modis-2023.jpg",
+      "web": "/assets/historical/web/gabrielle-nasa-modis-2023.webp",
+      "thumb": "/assets/historical/card/gabrielle-nasa-modis-2023.webp",
+      "sha256": "ac30e0c531cb6ce191d9319d5974d102a82bb6c5243641ea43dfcc6e631f0f99",
+      "originalBytes": 22178020,
+      "dimensions": [
+        6600,
+        8600
+      ],
+      "licenceVerified": "Public domain",
+      "finalSourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Gabrielle_2023-02-13_0230Z.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    }
+  ]
+}

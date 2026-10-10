@@ -1,13 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {existsSync,readFileSync} from 'node:fs';
+import {existsSync,readFileSync,readdirSync} from 'node:fs';
 import {join} from 'node:path';
 import {timelineMedia,decorateTimelineEvents} from '../src/lib/timeline-media.mjs';
 
 test('curated event illustrations refer to local, attributed image records',()=>{
-  assert.ok(Object.keys(timelineMedia).length>=25);
+  assert.ok(Object.keys(timelineMedia).length>=50);
+  const eventIds=new Set(readdirSync('src/content/events').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync(join('src/content/events',n),'utf8')).id));
   for(const [eventId,ref] of Object.entries(timelineMedia)){
-    assert.ok(existsSync(join('src/content/events',eventId+'.json')),eventId+' event is missing');
+    assert.ok(eventIds.has(eventId),eventId+' event is missing');
     const recordPath=join('src/content/images',ref.slug+'.json');
     assert.ok(existsSync(recordPath),ref.slug+' image record is missing');
     const img=JSON.parse(readFileSync(recordPath,'utf8'));
@@ -15,6 +16,13 @@ test('curated event illustrations refer to local, attributed image records',()=>
     assert.ok(existsSync(join('public',img.assetPath)),ref.slug+' display asset missing');
     assert.ok(img.sourceUrl&&img.credit&&img.licenceUrl,ref.slug+' image source incomplete');
     assert.ok(ref.relation&&ref.relation.length>30,eventId+' needs an accurate contextual caption');
+    for(const slug of ref.additionalSlugs||[]){
+      const secondary=join('src/content/images',slug+'.json');
+      assert.ok(existsSync(secondary),slug+' supplementary image is not registered');
+      const record=JSON.parse(readFileSync(secondary,'utf8'));
+      assert.ok(existsSync(join('public',record.assetPath)),slug+' supplementary web asset missing');
+      assert.ok(record.credit&&record.licenceUrl&&record.sourceUrl,slug+' supplementary source missing');
+    }
   }
 });
 test('event presentation includes existing source narrative and archival image details',()=>{

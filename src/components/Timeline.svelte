@@ -61,6 +61,16 @@
    </figure>
    {/if}
   </div>
+  {#if selected.additionalImages?.length}
+   <section class="event-companion-images" aria-label="Related documentary images">
+    <h4>Additional documentary images</h4>
+    <div class="event-companion-images-grid">
+     {#each selected.additionalImages as image (image.slug)}
+      <a href={'/images/'+image.slug+'/'}><img src={image.assetPath} alt={image.altText} loading="lazy" decoding="async"/><span>{image.title} · View source and attribution →</span></a>
+     {/each}
+    </div>
+   </section>
+  {/if}
   {#if selected.imageSourceLink}<p class="event-primary-source"><a href={selected.imageSourceLink} target="_blank" rel="noopener noreferrer">{selected.imageSourceLabel||'See the archival source'} ↗</a></p>{/if}
   {#if selected.relatedRecords?.length}<div class="event-related"><h4>Related people and organisations</h4><div class="event-related-links">{#each selected.relatedRecords as r}<a href={r.url}>{r.name}</a>{/each}</div></div>{/if}
   {#if selected.contextualSources?.length}<details class="sources"><summary>Sources and further reading · {selected.contextualSources.length}</summary><ul>{#each selected.contextualSources as source}<li>{#if source.url&&(/^https?:\/\//.test(source.url)||source.url.startsWith('/'))}<a href={source.url}>{source.label}</a>{:else}{source.label}{/if}</li>{/each}</ul></details>{/if}
