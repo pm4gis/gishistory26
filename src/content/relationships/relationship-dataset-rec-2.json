@@ -1,7 +1,7 @@
 {
   "id": "relationship:dataset-rec-2",
   "a": "dataset:rec",
-  "b": "entity:ministry-for-the-environment",
+  "b": "agency:ministry-for-the-environment",
   "label": "Commissioned and launched by",
   "basis": "The Ministry commissioned NIWA and launched the REC in March 2004.",
   "passageIds": [],
