@@ -1,7 +1,7 @@
 {
   "id": "relationship:lcdb-2",
   "a": "dataset:lcdb",
-  "b": "entity:ministry-for-the-environment",
+  "b": "agency:ministry-for-the-environment",
   "label": "Funded by",
   "basis": "MfE was a funder of LCDB version 5.",
   "sources": [
