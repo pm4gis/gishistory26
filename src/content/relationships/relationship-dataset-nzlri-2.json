@@ -1,0 +1,14 @@
+{
+  "id": "relationship:dataset-nzlri-2",
+  "a": "dataset:nzlri",
+  "b": "chapter:9",
+  "label": "Discussed in scientific GIS history",
+  "basis": "Land and soil resource databases form part of the history of spatial science in New Zealand.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua Landcare Research, NZLRI land-use capability surveys and mapping editions",
+      "url": "https://lrp.landcareresearch.co.nz/topics/luc-surveys"
+    }
+  ]
+}
