@@ -34,7 +34,7 @@ async function retrieve(url,tries=3){
 function commonsOriginal(title){
  if(!title.startsWith('File:'))throw new Error('Not a Commons file title');
  const name=title.slice(5).replaceAll(' ','_').normalize('NFC');
- if(!/^[\w(),.\-]+\.(jpe?g|png)$/i.test(name))throw new Error('Unsupported Commons filename');
+ if(!/^[\p{L}\p{N}_(),.\-]+\.(jpe?g|png)$/iu.test(name))throw new Error('Unsupported Commons filename');
  const h=crypto.createHash('md5').update(name).digest('hex');
  return 'https://upload.wikimedia.org/wikipedia/commons/'+h[0]+'/'+h.slice(0,2)+'/'+encodeURIComponent(name);
 }
