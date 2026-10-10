@@ -364,6 +364,6 @@ export const ngaPoutamaVideos=Object.freeze([
     ]
   }
 ]);
-export function ngaPoutamaThumbnail(id){if(!/^[\\w-]{11}$/.test(id))throw new Error('Invalid YouTube video ID');return 'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'}
+export function ngaPoutamaThumbnail(id){if(!/^[A-Za-z0-9_-]{11}$/.test(id))throw new Error('Invalid YouTube video ID');return 'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'}
 export function videosForPassage(id){return ngaPoutamaVideos.filter(v=>v.passageId===id)}
 export function videosForRecord(id){return ngaPoutamaVideos.filter(v=>v.recordIds.includes(id))}
