@@ -42,6 +42,9 @@ jobs:
           git add public/assets/historical/ src/content/images/ docs/media/chapter-download-run-20261010.json
           if ! git diff --cached --quiet; then
             git commit -m "Store downloaded documentary images with captions, source credits and derivatives"
+            # Drop only uncommitted build outputs after the image commit.
+            git reset --hard HEAD
+            git clean -fd
             git fetch origin research/chapter-specific-imagery-20261010
             git rebase origin/research/chapter-specific-imagery-20261010
             git push origin HEAD:research/chapter-specific-imagery-20261010
