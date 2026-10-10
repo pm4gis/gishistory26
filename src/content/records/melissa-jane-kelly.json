@@ -1,0 +1,36 @@
+{
+  "id": "person:melissa-jane-kelly",
+  "slug": "melissa-jane-kelly",
+  "name": "Melissa Jane Kelly",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/melissa-jane-kelly/",
+  "description": "Researcher whose 2013 master's work concerned coastal change; historical imagery; GIS.",
+  "story": [
+    "In 2013, Melissa Jane Kelly completed Master of Science research at University of Otago titled “Decadal shoreline change on the New Zealand coast”. Kelly combined historical aerial photographs, GIS orthorectification and GPS observations to assess shoreline change at Mason Bay, Kaitorete Barrier, Big Bay and Tahakopa Bay."
+  ],
+  "sources": [
+    {
+      "label": "Melissa Jane Kelly, Decadal shoreline change on the New Zealand coast, University of Otago, 2013",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Decadal-shoreline-change-on-the-New/9926480079401891"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Melissa Jane Kelly, Decadal shoreline change on the New Zealand coast, University of Otago, 2013",
+        "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Decadal-shoreline-change-on-the-New/9926480079401891"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/conservation-and-environment/"
+    }
+  ]
+}

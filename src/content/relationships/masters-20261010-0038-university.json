@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0038-university",
+  "a": "person:aidan-wackrow",
+  "b": "entity:university-of-waikato",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch26"
+  ],
+  "sources": [
+    {
+      "label": "Aidan Wackrow, A Study of Green Space Access in the Waikato Region, University of Waikato, 2016",
+      "url": "https://researchcommons.waikato.ac.nz/items/c5b1212e-b0aa-4ca5-b61d-08288a57ea75"
+    }
+  ]
+}

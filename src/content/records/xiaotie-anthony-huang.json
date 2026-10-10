@@ -1,0 +1,36 @@
+{
+  "id": "person:xiaotie-anthony-huang",
+  "slug": "xiaotie-anthony-huang",
+  "name": "Xiaotie (Anthony) Huang",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/xiaotie-anthony-huang/",
+  "description": "Researcher whose 2007 master's work concerned web GIS.",
+  "story": [
+    "In 2007, Xiaotie (Anthony) Huang completed MSc research at University of Waikato titled “Development of a map service”. The Waikato study developed a personalised travel-planning map application using destination data and user preferences, with spatial information served through a tourist-information system."
+  ],
+  "sources": [
+    {
+      "label": "Xiaotie (Anthony) Huang, Development of a map service, University of Waikato, 2007",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/ba6aacd2-46d6-46a1-b179-1d8a5380f6e1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Xiaotie (Anthony) Huang, Development of a map service, University of Waikato, 2007",
+        "url": "https://researchcommons.waikato.ac.nz/entities/publication/ba6aacd2-46d6-46a1-b179-1d8a5380f6e1"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/the-first-web-maps/"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "person:sumedha-kusum-amarasena-pathayala-ralalage",
+  "slug": "sumedha-kusum-amarasena-pathayala-ralalage",
+  "name": "Sumedha Kusum Amarasena Pathayala Ralalage",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/sumedha-kusum-amarasena-pathayala-ralalage/",
+  "description": "Researcher whose 2021 master's work concerned wetlands; spatial classification; Earth Engine; remote sensing.",
+  "story": [
+    "In 2021, Sumedha Kusum Amarasena Pathayala Ralalage completed Master of Social Sciences (MSocSc) research at University of Waikato titled “Remote sensing of wetlands in the Lake Whangape catchment, Waikato, New Zealand.”. The Waikato work used optical and radar satellite data, elevation information and geospatial classification to map wetlands near Lake Whangape. The repository displays the researcher’s name in surname-first order as Pathayala Ralalage, Sumedha Kusum Amarasena."
+  ],
+  "sources": [
+    {
+      "label": "Sumedha Kusum Amarasena Pathayala Ralalage, Remote sensing of wetlands in the Lake Whangape catchment, Waikato, New Zealand., University of Waikato, 2021",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/c58bbe97-8be6-4086-a153-9f0af678904b"
+    }
+  ],
+  "aliases": [
+    "Pathayala Ralalage, Sumedha Kusum Amarasena"
+  ],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Sumedha Kusum Amarasena Pathayala Ralalage, Remote sensing of wetlands in the Lake Whangape catchment, Waikato, New Zealand., University of Waikato, 2021",
+        "url": "https://researchcommons.waikato.ac.nz/entities/publication/c58bbe97-8be6-4086-a153-9f0af678904b"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/conservation-and-environment/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0082-university",
+  "a": "person:sumedha-kusum-amarasena-pathayala-ralalage",
+  "b": "entity:university-of-waikato",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch26"
+  ],
+  "sources": [
+    {
+      "label": "Sumedha Kusum Amarasena Pathayala Ralalage, Remote sensing of wetlands in the Lake Whangape catchment, Waikato, New Zealand., University of Waikato, 2021",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/c58bbe97-8be6-4086-a153-9f0af678904b"
+    }
+  ]
+}

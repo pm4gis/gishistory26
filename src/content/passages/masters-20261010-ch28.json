@@ -1,0 +1,85 @@
+{
+  "id": "passage:masters-20261010-ch28",
+  "slug": "masters-research-applications-28-20261010",
+  "articleId": "article:chapter-28",
+  "title": "GIS, hazards and public-safety research",
+  "order": 12,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:28",
+    "person:john-stanley-bircham",
+    "person:megan-leigh-fowler",
+    "person:renee-deborah-schicker",
+    "person:geoffrey-hughes",
+    "person:kevin-england",
+    "person:william-gorrie-tate",
+    "person:emir-hartato",
+    "person:andrew-cunningham",
+    "person:akuhata-patrick-stephen-bailey-winiata"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Master’s theses developed GIS methods for analysing natural hazards and public safety. John Stanley Bircham studied avalanche forecasting at Mount Hutt in 1995. Megan Leigh Fowler’s 2007 Canterbury transport-engineering work measured road-network curvature around crash and comparison sites. Renée Deborah Schicker’s 2010 Waikato research compared statistical models of landslide susceptibility using terrain, soil, rainfall and other geographic predictors. Kevin England’s 2011 Canterbury thesis developed a GIS approach to landslide hazard assessment on the West Coast.",
+      "markdown": "Master’s theses developed GIS methods for analysing natural hazards and public safety. John Stanley Bircham studied avalanche forecasting at Mount Hutt in 1995. Megan Leigh Fowler’s 2007 Canterbury transport-engineering work measured road-network curvature around crash and comparison sites. Renée Deborah Schicker’s 2010 Waikato research compared statistical models of landslide susceptibility using terrain, soil, rainfall and other geographic predictors. Kevin England’s 2011 Canterbury thesis developed a GIS approach to landslide hazard assessment on the West Coast.",
+      "sources": [
+        {
+          "label": "John Stanley Bircham, Avalanche hazard forecasting at Mount Hutt, University of Canterbury, 1995",
+          "url": "https://ir.canterbury.ac.nz/items/53c772c8-a35a-4d3d-90dc-f11f810c6bdf"
+        },
+        {
+          "label": "Megan Leigh Fowler, The Effect of Road Network Bendiness on Traffic Crash Occurrence in New Zealand, University of Canterbury, 2007",
+          "url": "https://ir.canterbury.ac.nz/items/c709a9aa-8c91-4c13-badc-6103c0de6d3c"
+        },
+        {
+          "label": "Renée Deborah Schicker, Quantitative landslide susceptibility assessment of the Waikato region using GIS, University of Waikato, 2010",
+          "url": "https://researchcommons.waikato.ac.nz/entities/publication/4447be26-ff82-4bd5-b07e-0a4d11b34651"
+        },
+        {
+          "label": "Kevin England, A GIS approach to landslide hazard management for the West Coast region, New Zealand, University of Canterbury, 2011",
+          "url": "https://ir.canterbury.ac.nz/items/61976ffe-cfe4-43e2-8e72-f0e3d767c8f5"
+        }
+      ],
+      "id": "masters-ch28-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "GIS also offered ways to examine social and coastal risks. Geoffrey Hughes’s 2011 Waikato Master of Social Sciences used spatial density, clustering, distance and geographically weighted regression to examine assaults in entertainment areas. William Gorrie Tate’s 2013 Massey research investigated possible effects of higher mean sea levels on the New Plymouth coastline. These were specific research assessments. Their results should not be substituted for current operational crime statistics or hazard forecasts.",
+      "markdown": "GIS also offered ways to examine social and coastal risks. Geoffrey Hughes’s 2011 Waikato Master of Social Sciences used spatial density, clustering, distance and geographically weighted regression to examine assaults in entertainment areas. William Gorrie Tate’s 2013 Massey research investigated possible effects of higher mean sea levels on the New Plymouth coastline. These were specific research assessments. Their results should not be substituted for current operational crime statistics or hazard forecasts.",
+      "sources": [
+        {
+          "label": "Geoffrey Hughes, A Spatial Analysis Of Assault Patterns In Entertainment Areas Throughout the Waikato using Geographic Information Systems, University of Waikato, 2011",
+          "url": "https://researchcommons.waikato.ac.nz/entities/publication/16b0ae7a-24b6-4088-b129-ad78f19956d5"
+        },
+        {
+          "label": "William Gorrie Tate, The effect of a rise in mean sea level on the New Plymouth coastline: a GIS investigation, Massey University, 2013",
+          "url": "https://mro.massey.ac.nz/items/e132bd40-738c-4816-a8c1-051997cc1564"
+        }
+      ],
+      "id": "masters-ch28-p02"
+    },
+    {
+      "type": "paragraph",
+      "text": "International disaster cases appeared alongside New Zealand-focused research. Emir Hartato’s 2017 Canterbury thesis investigated volunteered geographic information for flooding in Jakarta. Andrew Cunningham’s 2018 Canterbury MSc assessed crowdsourced geographic information for disaster response in New Zealand and proposed a citizen response network. Akuhata Patrick Stephen Bailey-Winiata’s 2021 Waikato research used spatial analysis and coastal geomorphology to investigate possible exposure of coastal marae and urupā to sea-level rise. Its public historical description preserves the general research findings without reproducing culturally sensitive locations or underlying knowledge.",
+      "markdown": "International disaster cases appeared alongside New Zealand-focused research. Emir Hartato’s 2017 Canterbury thesis investigated volunteered geographic information for flooding in Jakarta. Andrew Cunningham’s 2018 Canterbury MSc assessed crowdsourced geographic information for disaster response in New Zealand and proposed a citizen response network. Akuhata Patrick Stephen Bailey-Winiata’s 2021 Waikato research used spatial analysis and coastal geomorphology to investigate possible exposure of coastal marae and urupā to sea-level rise. Its public historical description preserves the general research findings without reproducing culturally sensitive locations or underlying knowledge.",
+      "sources": [
+        {
+          "label": "Emir Hartato, Volunteered geographic information (VGI) for disaster management : a case study for floods in Jakarta, University of Canterbury, 2017",
+          "url": "https://ir.canterbury.ac.nz/items/cf250824-3908-4fbc-8e60-ca4d3ce3b9d1"
+        },
+        {
+          "label": "Andrew Cunningham, Utilisation of crowdsourced geographic information for benefitting disaster response in New Zealand, University of Canterbury, 2018",
+          "url": "https://ir.canterbury.ac.nz/items/bfeeb9c3-dcfb-4436-9d46-4d17b97bd12f"
+        },
+        {
+          "label": "Akuhata Patrick Stephen Bailey-Winiata, Understanding the potential exposure of coastal marae and urupā in Aotearoa New Zealand to sea level rise, University of Waikato, 2021",
+          "url": "https://researchcommons.waikato.ac.nz/entities/publication/a54bd062-6227-4e02-8efb-bf13ecf55df2"
+        }
+      ],
+      "id": "masters-ch28-p03"
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "masters-research-applications-28"
+}

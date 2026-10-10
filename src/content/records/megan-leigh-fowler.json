@@ -1,0 +1,36 @@
+{
+  "id": "person:megan-leigh-fowler",
+  "slug": "megan-leigh-fowler",
+  "name": "Megan Leigh Fowler",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/megan-leigh-fowler/",
+  "description": "Researcher whose 2007 master's work concerned transport safety; spatial network analysis.",
+  "story": [
+    "In 2007, Megan Leigh Fowler completed Master of Engineering in Transportation research at University of Canterbury titled “The Effect of Road Network Bendiness on Traffic Crash Occurrence in New Zealand”. The study used GIS-derived road-curvature measurements around fatal-crash and comparison sites, then tested associations with traffic crashes and road design consistency."
+  ],
+  "sources": [
+    {
+      "label": "Megan Leigh Fowler, The Effect of Road Network Bendiness on Traffic Crash Occurrence in New Zealand, University of Canterbury, 2007",
+      "url": "https://ir.canterbury.ac.nz/items/c709a9aa-8c91-4c13-badc-6103c0de6d3c"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Megan Leigh Fowler, The Effect of Road Network Bendiness on Traffic Crash Occurrence in New Zealand, University of Canterbury, 2007",
+        "url": "https://ir.canterbury.ac.nz/items/c709a9aa-8c91-4c13-badc-6103c0de6d3c"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

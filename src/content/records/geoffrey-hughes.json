@@ -1,0 +1,36 @@
+{
+  "id": "person:geoffrey-hughes",
+  "slug": "geoffrey-hughes",
+  "name": "Geoffrey Hughes",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/geoffrey-hughes/",
+  "description": "Researcher whose 2011 master's work concerned crime analysis.",
+  "story": [
+    "In 2011, Geoffrey Hughes completed Master of Social Sciences research at University of Waikato titled “A Spatial Analysis Of Assault Patterns In Entertainment Areas Throughout the Waikato using Geographic Information Systems”. The research used density, distance, clustering and geographically weighted regression to examine assault patterns and the position of licensed premises in Waikato entertainment areas."
+  ],
+  "sources": [
+    {
+      "label": "Geoffrey Hughes, A Spatial Analysis Of Assault Patterns In Entertainment Areas Throughout the Waikato using Geographic Information Systems, University of Waikato, 2011",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/16b0ae7a-24b6-4088-b129-ad78f19956d5"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Geoffrey Hughes, A Spatial Analysis Of Assault Patterns In Entertainment Areas Throughout the Waikato using Geographic Information Systems, University of Waikato, 2011",
+        "url": "https://researchcommons.waikato.ac.nz/entities/publication/16b0ae7a-24b6-4088-b129-ad78f19956d5"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

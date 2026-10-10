@@ -1,0 +1,47 @@
+{
+  "id": "passage:masters-20261010-ch11",
+  "slug": "masters-research-applications-11-20261010",
+  "articleId": "article:chapter-11",
+  "title": "Master’s research and GIS information systems",
+  "order": 14,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:11",
+    "person:ciaran-keogh",
+    "person:erzsebet-bekesi",
+    "person:adrienne-kim-bonnington"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Master’s research in the 1990s brought GIS into planning and information-system design. Ciaran Keogh’s 1994 Otago study examined how visual amenity could be given a spatial extent for planning under the Resource Management Act. At Massey that year, Erzsebet Bekesi investigated a regional-council groundwater database and conceptual information models adapted to geographic data. Her application of a spatially extended entity–relationship model linked GIS design to ordinary local-government information requirements.",
+      "markdown": "Master’s research in the 1990s brought GIS into planning and information-system design. Ciaran Keogh’s 1994 Otago study examined how visual amenity could be given a spatial extent for planning under the Resource Management Act. At Massey that year, Erzsebet Bekesi investigated a regional-council groundwater database and conceptual information models adapted to geographic data. Her application of a spatially extended entity–relationship model linked GIS design to ordinary local-government information requirements.",
+      "sources": [
+        {
+          "label": "Ciaran Keogh, Defining the Spatial Extent of Visual Amenity Values under the RMA, University of Otago, 1994",
+          "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Defining-the-Spatial-Extent-of-Visual/9926480242101891"
+        },
+        {
+          "label": "Erzsebet Bekesi, Conceptual data modelling for geographical information systems, Massey University, 1994",
+          "url": "https://mro.massey.ac.nz/items/afddf720-02d9-49dc-a99d-bc6405668fef"
+        }
+      ],
+      "id": "masters-ch11-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "By 2002, Adrienne Kim Bonnington at Massey was examining how to gather user requirements and select commercial GIS software. Her thesis investigated how requirements-engineering techniques and off-the-shelf software selection practices might improve GIS projects. These studies show postgraduate researchers addressing GIS as an organisational information system. Their documented degrees and proposed approaches do not establish how widely the methods were subsequently implemented.",
+      "markdown": "By 2002, Adrienne Kim Bonnington at Massey was examining how to gather user requirements and select commercial GIS software. Her thesis investigated how requirements-engineering techniques and off-the-shelf software selection practices might improve GIS projects. These studies show postgraduate researchers addressing GIS as an organisational information system. Their documented degrees and proposed approaches do not establish how widely the methods were subsequently implemented.",
+      "sources": [
+        {
+          "label": "Adrienne Kim Bonnington, A requirements engineering framework for developing COTS GIS applications, Massey University, 2002",
+          "url": "https://mro.massey.ac.nz/items/a942e7bb-65c3-4971-873c-6d340b9ae9b2"
+        }
+      ],
+      "id": "masters-ch11-p02"
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "masters-research-applications-11"
+}

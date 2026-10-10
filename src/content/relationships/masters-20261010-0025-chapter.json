@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0025-chapter",
+  "a": "person:renee-deborah-schicker",
+  "b": "chapter:28",
+  "label": "Research discussed in chapter",
+  "basis": "This thesis is linked to the cited thematic chapter passage",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "Renée Deborah Schicker, Quantitative landslide susceptibility assessment of the Waikato region using GIS, University of Waikato, 2010",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/4447be26-ff82-4bd5-b07e-0a4d11b34651"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "person:esther-christiane-rind",
+  "slug": "esther-christiane-rind",
+  "name": "Esther Christiane Rind",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/esther-christiane-rind/",
+  "description": "Researcher whose 2007 master's work concerned public health GIS.",
+  "story": [
+    "In 2007, Esther Christiane Rind completed MSc research at University of Canterbury titled “Investigating the spatial distribution of campylobacteriosis in New Zealand”. The 2007 Canterbury research used GIS and hierarchical statistical analysis to investigate the distribution of notified campylobacteriosis and geographic variation in environmental and socioeconomic conditions."
+  ],
+  "sources": [
+    {
+      "label": "Esther Christiane Rind, Investigating the spatial distribution of campylobacteriosis in New Zealand, University of Canterbury, 2007",
+      "url": "https://ir.canterbury.ac.nz/items/f12a97ff-3848-4ae2-8708-c729f6c6791d"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Esther Christiane Rind, Investigating the spatial distribution of campylobacteriosis in New Zealand, University of Canterbury, 2007",
+        "url": "https://ir.canterbury.ac.nz/items/f12a97ff-3848-4ae2-8708-c729f6c6791d"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/health-population-and-place/"
+    }
+  ]
+}

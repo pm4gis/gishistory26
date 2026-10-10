@@ -1,0 +1,36 @@
+{
+  "id": "person:erzsebet-bekesi",
+  "slug": "erzsebet-bekesi",
+  "name": "Erzsebet Bekesi",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/erzsebet-bekesi/",
+  "description": "Researcher whose 1994 master's work concerned spatial database.",
+  "story": [
+    "In 1994, Erzsebet Bekesi completed Master of Arts (Information Systems) research at Massey University titled “Conceptual data modelling for geographical information systems”. The thesis investigated conceptual GIS database design through a groundwater-information problem for Manawatū–Whanganui Regional Council. It considered spatially extended entity–relationship modelling as a way to address geographic data requirements."
+  ],
+  "sources": [
+    {
+      "label": "Erzsebet Bekesi, Conceptual data modelling for geographical information systems, Massey University, 1994",
+      "url": "https://mro.massey.ac.nz/items/afddf720-02d9-49dc-a99d-bc6405668fef"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Erzsebet Bekesi, Conceptual data modelling for geographical information systems, Massey University, 1994",
+        "url": "https://mro.massey.ac.nz/items/afddf720-02d9-49dc-a99d-bc6405668fef"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/universities-build-a-field/"
+    }
+  ]
+}

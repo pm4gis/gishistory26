@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0027-university",
+  "a": "person:hussam-al-mahoozi",
+  "b": "entity:university-of-otago",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch35"
+  ],
+  "sources": [
+    {
+      "label": "Hussam Al-Mahoozi, Improving GIS use in City Retail Planning: A Look at the Dunedin City Council's Geographic Information System, University of Otago, 2011",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Improving-GIS-use-in-City-Retail/9926479300701891"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0019-university",
+  "a": "person:esther-christiane-rind",
+  "b": "entity:university-of-canterbury",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch27"
+  ],
+  "sources": [
+    {
+      "label": "Esther Christiane Rind, Investigating the spatial distribution of campylobacteriosis in New Zealand, University of Canterbury, 2007",
+      "url": "https://ir.canterbury.ac.nz/items/f12a97ff-3848-4ae2-8708-c729f6c6791d"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0020-university",
+  "a": "person:xiaotie-anthony-huang",
+  "b": "entity:university-of-waikato",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch30"
+  ],
+  "sources": [
+    {
+      "label": "Xiaotie (Anthony) Huang, Development of a map service, University of Waikato, 2007",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/ba6aacd2-46d6-46a1-b179-1d8a5380f6e1"
+    }
+  ]
+}
