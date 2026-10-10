@@ -61,8 +61,8 @@ test('contribution action opens email client with questions and no automatic sen
  assert.equal(url.searchParams.get('subject'),'NZ GIS History Contributions and Corrections');
  const body=url.searchParams.get('body')||'';
  for(const part of ['chapter, story','correct, add or clarify','dates, sources, links or documents','credit your name','permission to share'])assert.ok(body.includes(part));
- assert.match(about,/contribute\\//);
- assert.match(layout,/contributionHref='\\/contribute\\/'/);
+ assert.ok(about.includes("const contributionHref='/contribute/'"));
+ assert.ok(layout.includes("const contributionHref='/contribute/'"));
 });
 
 test('obsolete book labels are removed from reading navigation',()=>{
