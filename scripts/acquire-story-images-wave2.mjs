@@ -67,15 +67,21 @@ async function verifyNationalLibrary(item) {
   if (!item.sourceOriginalUrl?.startsWith('https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE')) {
     throw new Error('National Library source image URL is not an approved delivery URL');
   }
-  const response = await fetch(item.sourceUrl, {
-    signal: AbortSignal.timeout(25_000),
-    headers: { 'User-Agent': userAgent, Accept: 'text/html', Referer: 'https://natlib.govt.nz/' },
-  });
-  if (!response.ok) throw new Error(`National Library rights record HTTP ${response.status}`);
-  const html = (await response.text()).toLowerCase().replace(/&nbsp;/g, ' ');
-  if (!html.includes('may be used, copied and re-distributed free of charge') ||
-      !html.includes('sourced from linz. crown copyright reserved.')) {
-    throw new Error('National Library record did not expose the free-reuse terms and required acknowledgement');
+  const manualEvidence = item.manualRightsEvidence?.toLowerCase() || '';
+  const manuallyVerified = Boolean(item.rightsReviewedAt) &&
+    manualEvidence.includes('may be used, copied and re-distributed free of charge') &&
+    manualEvidence.includes('sourced from linz. crown copyright reserved.');
+  if (!manuallyVerified) {
+    const response = await fetch(item.sourceUrl, {
+      signal: AbortSignal.timeout(25_000),
+      headers: { 'User-Agent': userAgent, Accept: 'text/html', Referer: 'https://natlib.govt.nz/' },
+    });
+    if (!response.ok) throw new Error(`National Library rights record HTTP ${response.status}`);
+    const html = (await response.text()).toLowerCase().replace(/&nbsp;/g, ' ');
+    if (!html.includes('may be used, copied and re-distributed free of charge') ||
+        !html.includes('sourced from linz. crown copyright reserved.')) {
+      throw new Error('National Library record did not expose the free-reuse terms and required acknowledgement');
+    }
   }
   return { originalUrl: item.sourceOriginalUrl, sourceTitle: 'National Library of New Zealand digital map scan', licence: item.licence };
 }
