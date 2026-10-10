@@ -22,6 +22,7 @@ try{
  ]){
   const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height},reducedMotion:'reduce'});
   const page=await context.newPage();
+  page.setDefaultTimeout(12000);
   await check(viewport.name+' homepage complete and correctly ordered',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    await page.locator('#highlighted-stories .highlight-card:visible').first().waitFor();
@@ -54,7 +55,7 @@ try{
     await summary.focus();
     await page.keyboard.press('Enter');
     assert.notEqual(await mobileMenu.getAttribute('open'),null);
-    await page.locator('main h1').click();
+    await page.mouse.click(5,viewport.height-6);
     assert.equal(await mobileMenu.getAttribute('open'),null);
    }else{
     assert.equal(await desktop.isVisible(),true);
