@@ -217,7 +217,7 @@
 /* Wider desktop reading canvas, preserving navigation and comfortable line lengths. */
 @media (min-width:1400px) {
   .reading-shell{max-width:1920px;padding-inline:clamp(24px,2.2vw,44px)}
-  .reading-grid{grid-template-columns:minmax(165px,215px) minmax(0,1100px) minmax(190px,255px);gap:clamp(18px,1.8vw,32px)}
+  .reading-grid{grid-template-columns:minmax(165px,215px) minmax(0,1fr) minmax(190px,255px);gap:clamp(18px,1.8vw,32px)}
   .reading-heading{max-width:1100px}
   .reading-grid .narrative{max-width:94ch}
 }
