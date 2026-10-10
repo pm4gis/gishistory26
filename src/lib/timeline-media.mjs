@@ -60,6 +60,7 @@ export const timelineMedia = Object.freeze({
   "linzcap-2025-05-05-nga-poutama-historical-aerial-imagery-session-published": {slug:"wrights-hill-1945",relation:"A historic 1945 aerial survey frame from Wellington demonstrating the kind of archival material covered by the Ngā Poutama session; not a webinar screenshot."},
   "linzcap-2026-05-17-nga-poutama-earthquake-and-earth-science-data-session": {slug:"geonet-kaikoura-felt-2016",relation:"An actual GeoNet public earthquake-reporting map for the 2016 Kaikōura event, illustrating an earth-science data source discussed in the 2026 session."},
   "linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga": {slug:"ruapehu-3d-2002",relation:"An authentic 2002 digital elevation-based 3D terrain representation of Ruapehu, illustrating three-dimensional mapped geography rather than the 2026 StoryMaps session."},
+  '2023-nzta-gabrielle': {slug:'gabrielle-sentinel-flooding-napier-2023',additionalSlugs:['gabrielle-nasa-modis-2023'],relation:'Sentinel satellite evidence of Cyclone Gabrielle flooding near Napier in February 2023, contemporaneous with the emergency response. It is not a screenshot of the NZTA ArcGIS platform.'},
 });
 
 /** Enrich the presentation model without changing source event records or chronology. */
@@ -79,6 +80,7 @@ export function decorateTimelineEvents(events, passages, records, images) {
     const contextualSources=sourceList.filter(s=>{const key=s.url||s.label;if(!key||seen.has(key))return false;seen.add(key);return true}).slice(0,10);
     return {...event,
       featuredImage:image?{slug:image.slug,cardPath:image.thumbnailPath||image.assetPath,assetPath:image.assetPath,altText:image.altText,title:image.title,caption:image.caption||image.title,relation:attachment.relation,dateDisplay:image.dateDisplay||''}:null,
+      additionalImages:(attachment?.additionalSlugs||[]).map(slug=>imageBySlug.get(slug)).filter(Boolean).map(i=>({slug:i.slug,title:i.title,assetPath:i.assetPath,altText:i.altText,caption:i.caption||i.title})),
       imageSourceLink:attachment?.sourceLink||null,
       imageSourceLabel:attachment?.sourceLabel||null,
       contextTitle:firstPassage?.title||null,
