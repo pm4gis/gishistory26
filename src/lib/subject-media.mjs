@@ -67,17 +67,25 @@ export const subjectMedia = Object.freeze({
       relation: 'A genuine historic New Zealand aerial photograph. It illustrates aerial survey inputs rather than documenting an Aerial Surveys project.'
     },
     // Local government: prefer an image of the authority's geography or mapping.
+    'auckland-regional-council': {
+      slug: 'arc-pitt-street-2007',
+      relation: 'The former Auckland Regional Council offices on Pitt Street, photographed in January 2007; not an image of a council GIS application.'
+    },
+    'upper-hutt-city-council': {
+      slug: 'upper-hutt-civic-centre-2005',
+      relation: 'Upper Hutt City Council administration building and council chambers in 2005, two years after XPLORER launched; not a screenshot of that service.'
+    },
     'auckland-council': {
       slug: 'auckland-osm-colour-2018',
       relation: 'An independently produced map of Auckland. It provides geographic context but is not an Auckland Council GeoMaps or GFMO screenshot.'
     },
     'christchurch-city-council': {
-      slug: 'victoria-square-aerial-1955',
-      relation: 'Historical aerial imagery of central Christchurch later made available through council mapping services. It does not depict the council GIS team.'
+      slug: 'christchurch-civic-offices-2019',
+      relation: 'Photograph of Christchurch City Council offices in 2019, after the city had adopted GIS and following the earthquakes; the photograph does not depict software.'
     },
     'hutt-city-council': {
-      slug: 'petone-lower-hutt-survey-1909',
-      relation: 'A 1909 survey map covering Petone and Lower Hutt, the geographic area administered by Hutt City Council today; predates council GIS.'
+      slug: 'lower-hutt-civic-centre-2021',
+      relation: 'The Lower Hutt Town Hall and council administration building in September 2021; this is an institutional portrait, not a council GIS map.'
     },
     'wellington-city-council': {
       slug: 'wrights-hill-1945',

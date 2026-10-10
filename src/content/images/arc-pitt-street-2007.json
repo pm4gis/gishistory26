@@ -1,0 +1,34 @@
+{
+  "id": "image:arc-pitt-street-2007",
+  "slug": "arc-pitt-street-2007",
+  "title": "Auckland Regional Council offices on Pitt Street, 2007",
+  "assetPath": "/assets/historical/web/arc-pitt-street-2007.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Regional_Council.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Ingolfson",
+  "licence": "Public domain (photographer dedication)",
+  "licenceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Regional_Council.jpg",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Regional_Council.jpg",
+  "altText": "The former Auckland Regional Council building on Pitt Street, photographed from Nelson Street.",
+  "caption": "The former Auckland Regional Council building on Pitt Street, photographed from Nelson Street.",
+  "themeIds": [],
+  "dateDisplay": "January 2007",
+  "context": "This photograph shows the former Auckland Regional Council offices in 2007; it does not depict the council's GIS software or operations.",
+  "thumbnailPath": "/assets/historical/card/arc-pitt-street-2007.webp",
+  "originalSha256": "a3dbc8a6b88ad4145e5d0ba6cbfef0cb1ca3048fc53b454d838313af240dc374",
+  "webSha256": "e30cd5382a3a55b8420f3c27d4e522225236bc116b1d84668508ddc802e912a5",
+  "thumbnailSha256": "400568382ffb195e587a8d8216691bd333da061f8a3fdd47366f614cd9aae5e2",
+  "originalWidth": 1600,
+  "originalHeight": 1200,
+  "sourceFileTitle": "File:Auckland Regional Council.jpg",
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Auckland_Regional_Council.jpg",
+  "derivativesNote": "Original unchanged JPEG preserved in NZ GIS History Research Packages / Wave 3 archive; the website serves uncropped 1600px and 720px WebP derivatives.",
+  "headerCandidate": false,
+  "relatedRecords": [
+    {
+      "name": "Auckland Regional Council",
+      "url": "/entities/auckland-regional-council/",
+      "role": "Photographed institution"
+    }
+  ]
+}
