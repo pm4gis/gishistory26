@@ -1,4 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';import {dataset} from '../../lib/data';const d=await dataset();
+import Layout from '../../layouts/Layout.astro';
+import DecorativeLandscape from '../../components/DecorativeLandscape.astro';import {dataset} from '../../lib/data';const d=await dataset();
 ---
-<Layout title="Book contents · NZ GIS History"><div class="wrap"><p class="eyebrow">The book</p><h1>Choose a chapter.</h1><p class="intro">Read in sequence or start with a topic. Each chapter links to its people, organisations and events.</p><ol class="list">{d.articles.map((a:any)=><li><a href={a.url}>{a.slug==='preface'?'Preface':`Chapter ${a.readingOrder}`} · {a.title}</a><small>{a.summary}</small></li>)}</ol></div></Layout>
+<Layout title="Book contents · NZ GIS History"><div class="wrap"><div class="visual-page-heading"><div><p class="eyebrow">The book</p><h1>Choose a chapter.</h1><p class="intro">Read in sequence or start with a topic. Each chapter links to its people, organisations and events.</p></div><DecorativeLandscape id="otago-8" variant="banner" priority/></div><ol class="list">{d.articles.map((a:any)=><li><a href={a.url}>{a.slug==='preface'?'Preface':`Chapter ${a.readingOrder}`} · {a.title}</a><small>{a.summary}</small></li>)}</ol></div></Layout>

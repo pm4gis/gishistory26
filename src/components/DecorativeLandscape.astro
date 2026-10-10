@@ -1,0 +1,21 @@
+---
+import {decorIds, decorFor, decorUrl, type DecorId} from '../lib/decor';
+interface Props {
+  id?: DecorId;
+  index?: number;
+  variant?: 'hero'|'banner'|'card'|'strip';
+  priority?: boolean;
+  className?: string;
+}
+const { id, index=0, variant='banner', priority=false, className='' } = Astro.props;
+const chosen = id && decorIds.includes(id) ? id : decorFor(index);
+const card = variant === 'card';
+const full = decorUrl(chosen, 'background');
+const small = decorUrl(chosen, 'card');
+---
+<div class:list={['decorative-landscape','decorative-landscape--'+variant,className]} aria-hidden="true">
+  <picture>
+    {!card && <source media="(max-width: 650px)" srcset={small} />}
+    <img src={card ? small : full} alt="" width={card ? 768 : 1600} height={card ? 432 : 900} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async"/>
+  </picture>
+</div>

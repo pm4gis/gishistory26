@@ -37,3 +37,51 @@
 .related-filters button{font-size:12px;padding:6px 9px;min-height:36px;border-radius:8px}
 .related-item{overflow-wrap:anywhere}
 @media(max-width:850px){.related-filters button{min-height:44px}}
+
+
+/* 2026 photographic design: lightweight aerial textures, not historic document figures. */
+.decorative-landscape{position:relative;isolation:isolate;overflow:hidden;border-radius:15px;background:var(--raised)}
+.decorative-landscape picture,.decorative-landscape img{display:block;width:100%;height:100%}
+.decorative-landscape img{object-fit:cover;object-position:center;transition:transform .5s ease;filter:saturate(.87) contrast(1.07)}
+.hero--visual{position:relative;max-width:none;min-height:490px;border:1px solid var(--line);border-radius:26px;margin:10px 0 52px;padding:clamp(32px,5vw,68px);background:var(--surface);overflow:hidden;isolation:isolate;display:flex;align-items:center}
+.hero--visual .decorative-landscape--hero{position:absolute;inset:0 0 0 40%;border-radius:0;z-index:-1}
+.hero--visual .decorative-landscape--hero img{object-position:center}
+.hero--visual::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--surface) 0%,var(--surface) 35%,color-mix(in srgb,var(--surface) 92%,transparent) 49%,color-mix(in srgb,var(--surface) 28%,transparent) 83%,transparent 100%);z-index:0;pointer-events:none}
+.hero--visual .hero-copy{z-index:1;width:min(68%,700px);position:relative}
+.hero--visual h1{font-size:clamp(43px,5.5vw,77px);text-wrap:balance}
+.hero--visual .intro{max-width:45ch;color:var(--text)}
+.hero--visual .stats{margin-top:38px;max-width:630px}
+.hero--visual .stats strong{font-size:20px}
+.home-layout .section-head{margin:55px 0 18px}
+.home-layout .section-head a{text-decoration:none}
+.cards--visual{grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:20px}
+.art-card{padding:0;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:box-shadow .2s,border-color .2s,transform .2s}
+.art-card .decorative-landscape--card{height:auto;aspect-ratio:16/9;border-radius:0;border-bottom:1px solid var(--line)}
+.art-card .art-card-body{padding:21px 24px 24px;flex:1}
+.art-card .art-card-body .title{font-size:21px;line-height:1.35;margin:8px 0}
+.art-card .art-card-body p{font-size:15px;line-height:1.65;margin-bottom:0}
+.art-card:hover,.art-card:focus-within{border-color:var(--accent);box-shadow:var(--shade)}
+.art-card:hover img,.art-card:focus-within img{transform:scale(1.04)}
+.art-card .eyebrow{display:block;margin-top:0}
+.preface-link{margin:35px 0 10px}
+.visual-page-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);align-items:center;gap:clamp(25px,4vw,60px);margin:6px 0 40px;padding-bottom:30px;border-bottom:1px solid var(--line)}
+.visual-page-heading h1{margin-bottom:20px;text-wrap:balance}
+.visual-page-heading .intro{max-width:58ch}
+.visual-page-heading .decorative-landscape--banner{height:clamp(185px,25vw,285px);border:1px solid var(--line);box-shadow:var(--shade)}
+.visual-page-heading .decorative-landscape img{filter:saturate(.8) contrast(1.05)}
+.reading-banner{height:125px;margin:24px 0 28px;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:var(--raised)}
+.reading-banner img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.08)}
+@media(max-width:850px){
+ .hero--visual{min-height:0;display:flex;flex-direction:column-reverse;align-items:stretch;gap:18px;padding:20px;border-radius:18px;margin:0 0 36px}
+ .hero--visual::before{display:none}
+ .hero--visual .hero-copy{width:100%;padding:12px 6px}
+ .hero--visual .decorative-landscape--hero{position:relative;inset:auto;height:210px;border-radius:12px;z-index:0;flex:none}
+ .hero--visual h1{font-size:clamp(35px,8vw,54px)}
+ .hero--visual .intro{font-size:18px}
+ .hero--visual .stats{gap:12px 20px;margin-top:24px}
+ .visual-page-heading{grid-template-columns:1fr;gap:18px}
+ .visual-page-heading .decorative-landscape--banner{height:195px}
+ .reading-banner{height:110px}
+ .home-layout .section-head{margin:38px 0 16px}
+}
+@media(prefers-reduced-motion:reduce){.decorative-landscape img,.art-card{transition:none!important}.art-card:hover img,.art-card:focus-within img{transform:none}}

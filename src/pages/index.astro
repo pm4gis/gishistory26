@@ -1,4 +1,49 @@
 ---
-import Layout from '../layouts/Layout.astro';import {dataset} from '../lib/data';const d=await dataset();const chapters=d.articles.filter((a:any)=>a.slug!=='preface');
+import Layout from '../layouts/Layout.astro';
+import DecorativeLandscape from '../components/DecorativeLandscape.astro';
+import {decorFor} from '../lib/decor';
+import {dataset} from '../lib/data';
+const d=await dataset();
+const chapters=d.articles.filter((a:any)=>a.slug!=='preface');
 ---
-<Layout><div class="wrap"><section class="hero"><p class="eyebrow">Maps · people · technology</p><h1>A history of GIS<br/>in New Zealand.</h1><p class="intro">Read the chapters in sequence, explore a period, or follow the people and organisations behind the work.</p><div class="actions"><a class="button primary" href={chapters[0]?.url||'/read/'}>Start reading →</a><a class="button" href="/timeline/">Explore the timeline</a><a class="button" id="continue" href="/read/" hidden>Continue reading</a></div><div class="stats"><span><strong>{chapters.length}</strong> chapters</span><span><strong>{d.records.filter((x:any)=>x.kind==='Person').length}</strong> people</span><span><strong>{d.events.length}</strong> events</span></div></section><div class="section-head"><h2>Explore by theme</h2><a href="/themes/">All themes →</a></div><div class="chips">{d.themes.map((t:any)=><a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>)}</div><div class="section-head"><h2>Begin the book</h2><a href="/read/">Contents →</a></div><div class="cards">{chapters.slice(0,6).map((a:any)=><article class="card"><span class="eyebrow">Chapter {a.readingOrder}</span><a class="title" href={a.url}>{a.title}</a><p>{a.summary}</p><a href={a.url}>Read chapter →</a></article>)}</div><p><a href="/stories/preface/">Read the author's preface</a></p></div><script>try{const p=JSON.parse(localStorage.getItem('nzgis-progress')||'null');const a=document.querySelector<HTMLAnchorElement>('#continue');if(a&&p?.url?.startsWith('/stories/')){a.href=p.url;a.hidden=false}}catch{}</script></Layout>
+<Layout>
+  <div class="wrap home-layout">
+    <section class="hero hero--visual">
+      <DecorativeLandscape id="north2024-raglan1" variant="hero" priority/>
+      <div class="hero-copy">
+        <p class="eyebrow">Maps · people · technology</p>
+        <h1>A history of GIS<br/>in New Zealand.</h1>
+        <p class="intro">Read the chapters in sequence, explore a period, or follow the people and organisations behind the work.</p>
+        <div class="actions">
+          <a class="button primary" href={chapters[0]?.url||'/read/'}>Start reading →</a>
+          <a class="button" href="/timeline/">Explore the timeline</a>
+          <a class="button" id="continue" href="/read/" hidden>Continue reading</a>
+        </div>
+        <div class="stats">
+          <span><strong>{chapters.length}</strong> chapters</span>
+          <span><strong>{d.records.filter((x:any)=>x.kind==='Person').length}</strong> people</span>
+          <span><strong>{d.events.length}</strong> events</span>
+        </div>
+      </div>
+    </section>
+    <div class="section-head"><h2>Explore by theme</h2><a href="/themes/">All themes →</a></div>
+    <div class="cards cards--visual">
+      {d.themes.map((t:any,i:number)=><article class="card art-card">
+        <DecorativeLandscape id={decorFor(i+2)} variant="card"/>
+        <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></div>
+      </article>)}
+    </div>
+    <div class="section-head"><h2>Begin the book</h2><a href="/read/">Contents →</a></div>
+    <div class="cards cards--visual">
+      {chapters.slice(0,6).map((a:any,i:number)=><article class="card art-card">
+        <DecorativeLandscape id={decorFor(i+7)} variant="card"/>
+        <div class="art-card-body">
+          <span class="eyebrow">Chapter {a.readingOrder}</span>
+          <a class="title" href={a.url}>{a.title}</a><p>{a.summary}</p><a href={a.url}>Read chapter →</a>
+        </div>
+      </article>)}
+    </div>
+    <p class="preface-link"><a href="/stories/preface/">Read the author's preface</a></p>
+  </div>
+  <script>try{const p=JSON.parse(localStorage.getItem('nzgis-progress')||'null');const a=document.querySelector<HTMLAnchorElement>('#continue');if(a&&p?.url?.startsWith('/stories/')){a.href=p.url;a.hidden=false}}catch{}</script>
+</Layout>
