@@ -44,3 +44,11 @@ Start with original institutions and creators and archived publications. Request
 
 ## Publication status
 This document and the accompanying CSV are research deliverables. They have not published images or altered chapter prose. The current production repository remains unchanged.
+## Downloaded and locally archived (10 October 2026)
+The authorised GitHub Actions download task finished successfully. `docs/media/chapter-download-run-20261010.json` records 18 successfully downloaded, zero failed and one held. All 18 original binaries are now stored under `public/assets/historical/original/`; an additional 18 display-sized WebP files and 18 card-sized WebP files are committed under the sibling `web/` and `card/` directories. The total source-original input is 38,422,764 bytes (approximately 36.6 MiB). Each original was decoded and checksummed; the source records include the SHA-256, pixel dimensions, attributed source and specific chapter relationship. Two previously registered local site images remain unchanged, giving 20 registered images overall.
+
+New content spans 13 different chapters: 1, 9, 13, 16, 20, 23, 26, 28, 32, 35, 36, 39 and 42. Some chapters have multiple documentary illustrations. Remaining chapters do not yet have period-correct, locally stored image candidates. Use the 44-row register for targeted further acquisition, rather than using generic replacements.
+
+The chapter reader now presents local documentary header images where specifically suitable and has an additional chapter-linked image gallery. The separate image-detail pages show captions, date, source, creator/credit, context, local-original download link, dimensions, checksum and the associated chapter. The two legacy registered images are left intact. The Kaikōura satellite-radar image with JAXA/Google Earth credited source material is deliberately held, un-downloaded and unlisted pending its rights check.
+
+This work is held in a review branch until publication checks are accepted; an Actions build passed with all 18 image files, and the main production branch was not changed when this note was prepared.
