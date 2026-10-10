@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0071-university",
+  "a": "person:gregory-m-lauer",
+  "b": "entity:university-of-canterbury",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch27"
+  ],
+  "sources": [
+    {
+      "label": "Gregory M. Lauer, Poverty and hospital admissions in Christchurch, 1988–1998, University of Canterbury, 1999",
+      "url": "https://ir.canterbury.ac.nz/bitstream/handle/10092/6856/lauer_thesis.pdf?sequence=1&isAllowed=y"
+    }
+  ]
+}

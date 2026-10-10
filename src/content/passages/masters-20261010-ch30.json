@@ -1,0 +1,42 @@
+{
+  "id": "passage:masters-20261010-ch30",
+  "slug": "masters-research-applications-30-20261010",
+  "articleId": "article:chapter-30",
+  "title": "Waikato’s early web GIS prototypes",
+  "order": 16,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:30",
+    "person:xiaotie-anthony-huang",
+    "person:zhennan-shi"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "University of Waikato computer-science research supplies two documented examples of web GIS development in 2007. Xiaotie (Anthony) Huang’s master’s thesis, Development of a map service, implemented a personalised travel-planning application using geographic information and user preferences. Its client-side service worked with spatial information made available through a tourist-information system. This was a research implementation, and there is no evidence here that it became a national commercial service.",
+      "markdown": "University of Waikato computer-science research supplies two documented examples of web GIS development in 2007. Xiaotie (Anthony) Huang’s master’s thesis, Development of a map service, implemented a personalised travel-planning application using geographic information and user preferences. Its client-side service worked with spatial information made available through a tourist-information system. This was a research implementation, and there is no evidence here that it became a national commercial service.",
+      "sources": [
+        {
+          "label": "Xiaotie (Anthony) Huang, Development of a map service, University of Waikato, 2007",
+          "url": "https://researchcommons.waikato.ac.nz/entities/publication/ba6aacd2-46d6-46a1-b179-1d8a5380f6e1"
+        }
+      ],
+      "id": "masters-ch30-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zhennan Shi’s 2007 MSc, A Web-based Geographical Information System for Low Bandwidth Access, adapted the Google Maps API and web-server infrastructure to display agricultural information. The work examined access under limited-bandwidth conditions at a time when browser mapping was becoming more common. Both theses show students using geographic web services to build applications for particular information tasks. They also illustrate the technical constraints that were less visible in later high-bandwidth mapping environments.",
+      "markdown": "Zhennan Shi’s 2007 MSc, A Web-based Geographical Information System for Low Bandwidth Access, adapted the Google Maps API and web-server infrastructure to display agricultural information. The work examined access under limited-bandwidth conditions at a time when browser mapping was becoming more common. Both theses show students using geographic web services to build applications for particular information tasks. They also illustrate the technical constraints that were less visible in later high-bandwidth mapping environments.",
+      "sources": [
+        {
+          "label": "Zhennan Shi, A Web-based Geographical Information System for Low Bandwidth Access, University of Waikato, 2007",
+          "url": "https://researchcommons.waikato.ac.nz/entities/publication/d024fb18-6ece-4d34-acfb-442b56e65de0"
+        }
+      ],
+      "id": "masters-ch30-p02"
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "masters-research-applications-30"
+}

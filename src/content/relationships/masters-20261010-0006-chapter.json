@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0006-chapter",
+  "a": "person:john-stanley-bircham",
+  "b": "chapter:28",
+  "label": "Research discussed in chapter",
+  "basis": "This thesis is linked to the cited thematic chapter passage",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "John Stanley Bircham, Avalanche hazard forecasting at Mount Hutt, University of Canterbury, 1995",
+      "url": "https://ir.canterbury.ac.nz/items/53c772c8-a35a-4d3d-90dc-f11f810c6bdf"
+    }
+  ]
+}

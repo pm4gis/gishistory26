@@ -1,0 +1,36 @@
+{
+  "id": "person:robert-arthur-poynter",
+  "slug": "robert-arthur-poynter",
+  "name": "Robert Arthur Poynter",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/robert-arthur-poynter/",
+  "description": "Researcher whose 2016 master's work concerned public health GIS.",
+  "story": [
+    "In 2016, Robert Arthur Poynter completed Master of Geographic Information Science research at University of Canterbury titled “Assessing the influence of environment and socio-economics on spatial and temporal patterns of COPD hospitalisation in Christchurch : a GIS approach”. The Canterbury Master of Geographic Information Science examined spatial and temporal patterns in COPD hospitalisation across Christchurch in relation to environmental and socioeconomic conditions."
+  ],
+  "sources": [
+    {
+      "label": "Robert Arthur Poynter, Assessing the influence of environment and socio-economics on spatial and temporal patterns of COPD hospitalisation in Christchurch : a GIS approach, University of Canterbury, 2016",
+      "url": "https://ir.canterbury.ac.nz/items/ca33a224-2d02-4815-bbe5-8acfb06b78c9"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Robert Arthur Poynter, Assessing the influence of environment and socio-economics on spatial and temporal patterns of COPD hospitalisation in Christchurch : a GIS approach, University of Canterbury, 2016",
+        "url": "https://ir.canterbury.ac.nz/items/ca33a224-2d02-4815-bbe5-8acfb06b78c9"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/health-population-and-place/"
+    }
+  ]
+}

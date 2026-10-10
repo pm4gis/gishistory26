@@ -1,0 +1,38 @@
+{
+  "id": "person:gregory-m-lauer",
+  "slug": "gregory-m-lauer",
+  "name": "Gregory M. Lauer",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/gregory-m-lauer/",
+  "description": "Researcher whose 1999 master's work concerned GIS health geography; geocoded hospital admissions.",
+  "story": [
+    "In 1999, Gregory M. Lauer completed research in geography at University of Canterbury titled “Poverty and hospital admissions in Christchurch, 1988–1998”. The degree designation differs between later published citations. The work investigated spatial associations between deprivation and hospital admissions in Christchurch. A subsequent peer-reviewed paper with Ross Barnett analysed geocoded admissions and deprivation indices. That article cites the thesis as MSc but also labels Lauer MA; the degree designation remains unresolved."
+  ],
+  "sources": [
+    {
+      "label": "Gregory M. Lauer, Poverty and hospital admissions in Christchurch, 1988–1998, University of Canterbury, 1999",
+      "url": "https://ir.canterbury.ac.nz/bitstream/handle/10092/6856/lauer_thesis.pdf?sequence=1&isAllowed=y"
+    }
+  ],
+  "aliases": [
+    "Greg Lauer"
+  ],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Gregory M. Lauer, Poverty and hospital admissions in Christchurch, 1988–1998, University of Canterbury, 1999",
+        "url": "https://ir.canterbury.ac.nz/bitstream/handle/10092/6856/lauer_thesis.pdf?sequence=1&isAllowed=y"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/health-population-and-place/"
+    }
+  ]
+}

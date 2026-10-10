@@ -1,0 +1,36 @@
+{
+  "id": "person:daniel-gerard-odonohue",
+  "slug": "daniel-gerard-odonohue",
+  "name": "Daniel Gerard O'Donohue",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/daniel-gerard-odonohue/",
+  "description": "Researcher whose 2010 master's work concerned geospatial data integration.",
+  "story": [
+    "In 2010, Daniel Gerard O'Donohue completed MSc research at University of Canterbury titled “Matching of image features and vector objects to automatically correct spatial misalignment between image and vector data sets”. The study matched aerial thermal-image features to building-footprint vector geometry to correct spatial misalignment after direct image georeferencing."
+  ],
+  "sources": [
+    {
+      "label": "Daniel Gerard O'Donohue, Matching of image features and vector objects to automatically correct spatial misalignment between image and vector data sets, University of Canterbury, 2010",
+      "url": "https://ir.canterbury.ac.nz/items/3f5334ee-88d1-40c5-a4b8-68e31ea92bab"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Daniel Gerard O'Donohue, Matching of image features and vector objects to automatically correct spatial misalignment between image and vector data sets, University of Canterbury, 2010",
+        "url": "https://ir.canterbury.ac.nz/items/3f5334ee-88d1-40c5-a4b8-68e31ea92bab"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/the-map-becomes-an-application/"
+    }
+  ]
+}

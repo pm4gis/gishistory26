@@ -1,0 +1,36 @@
+{
+  "id": "person:andrew-cunningham",
+  "slug": "andrew-cunningham",
+  "name": "Andrew Cunningham",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/andrew-cunningham/",
+  "description": "Researcher whose 2018 master's work concerned VGI and emergency management.",
+  "story": [
+    "In 2018, Andrew Cunningham completed MSc research at University of Canterbury titled “Utilisation of crowdsourced geographic information for benefitting disaster response in New Zealand”. The Canterbury research evaluated crowdsourced geographic information for disaster response in New Zealand and proposed a citizen response network framework based on community engagement and information reliability."
+  ],
+  "sources": [
+    {
+      "label": "Andrew Cunningham, Utilisation of crowdsourced geographic information for benefitting disaster response in New Zealand, University of Canterbury, 2018",
+      "url": "https://ir.canterbury.ac.nz/items/bfeeb9c3-dcfb-4436-9d46-4d17b97bd12f"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Andrew Cunningham, Utilisation of crowdsourced geographic information for benefitting disaster response in New Zealand, University of Canterbury, 2018",
+        "url": "https://ir.canterbury.ac.nz/items/bfeeb9c3-dcfb-4436-9d46-4d17b97bd12f"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

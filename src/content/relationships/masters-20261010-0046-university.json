@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0046-university",
+  "a": "person:andrew-cunningham",
+  "b": "entity:university-of-canterbury",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "Andrew Cunningham, Utilisation of crowdsourced geographic information for benefitting disaster response in New Zealand, University of Canterbury, 2018",
+      "url": "https://ir.canterbury.ac.nz/items/bfeeb9c3-dcfb-4436-9d46-4d17b97bd12f"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0039-university",
+  "a": "person:robert-arthur-poynter",
+  "b": "entity:university-of-canterbury",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch27"
+  ],
+  "sources": [
+    {
+      "label": "Robert Arthur Poynter, Assessing the influence of environment and socio-economics on spatial and temporal patterns of COPD hospitalisation in Christchurch : a GIS approach, University of Canterbury, 2016",
+      "url": "https://ir.canterbury.ac.nz/items/ca33a224-2d02-4815-bbe5-8acfb06b78c9"
+    }
+  ]
+}

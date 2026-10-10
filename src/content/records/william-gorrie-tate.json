@@ -1,0 +1,36 @@
+{
+  "id": "person:william-gorrie-tate",
+  "slug": "william-gorrie-tate",
+  "name": "William Gorrie Tate",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/william-gorrie-tate/",
+  "description": "Researcher whose 2013 master's work concerned sea level rise.",
+  "story": [
+    "In 2013, William Gorrie Tate completed Master of Philosophy Geographic Information Systems research at Massey University titled “The effect of a rise in mean sea level on the New Plymouth coastline: a GIS investigation”. The Massey research investigated possible effects of higher mean sea levels along the New Plymouth coastline through geographic analysis."
+  ],
+  "sources": [
+    {
+      "label": "William Gorrie Tate, The effect of a rise in mean sea level on the New Plymouth coastline: a GIS investigation, Massey University, 2013",
+      "url": "https://mro.massey.ac.nz/items/e132bd40-738c-4816-a8c1-051997cc1564"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "William Gorrie Tate, The effect of a rise in mean sea level on the New Plymouth coastline: a GIS investigation, Massey University, 2013",
+        "url": "https://mro.massey.ac.nz/items/e132bd40-738c-4816-a8c1-051997cc1564"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

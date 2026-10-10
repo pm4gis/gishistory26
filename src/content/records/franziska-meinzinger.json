@@ -1,0 +1,36 @@
+{
+  "id": "person:franziska-meinzinger",
+  "slug": "franziska-meinzinger",
+  "name": "Franziska Meinzinger",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/franziska-meinzinger/",
+  "description": "Researcher whose 2003 master's work concerned wastewater planning.",
+  "story": [
+    "In 2003, Franziska Meinzinger completed Master of Applied Science research at Lincoln University titled “GIS-based site identification for the land application of wastewater, Christchurch City, New Zealand”. The GIS suitability analysis combined slope, soil characteristics, land use and distances to water and dwellings to identify candidate areas for beneficial land application of Christchurch wastewater."
+  ],
+  "sources": [
+    {
+      "label": "Franziska Meinzinger, GIS-based site identification for the land application of wastewater, Christchurch City, New Zealand, Lincoln University, 2003",
+      "url": "https://hdl.handle.net/10182/1147"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Franziska Meinzinger, GIS-based site identification for the land application of wastewater, Christchurch City, New Zealand, Lincoln University, 2003",
+        "url": "https://hdl.handle.net/10182/1147"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/conservation-and-environment/"
+    }
+  ]
+}

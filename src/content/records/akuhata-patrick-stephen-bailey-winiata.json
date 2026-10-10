@@ -1,0 +1,36 @@
+{
+  "id": "person:akuhata-patrick-stephen-bailey-winiata",
+  "slug": "akuhata-patrick-stephen-bailey-winiata",
+  "name": "Akuhata Patrick Stephen Bailey-Winiata",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/akuhata-patrick-stephen-bailey-winiata/",
+  "description": "Researcher whose 2021 master's work concerned Māori GIS; coastal hazards; sea-level rise.",
+  "story": [
+    "In 2021, Akuhata Patrick Stephen Bailey-Winiata completed Master of Science (Research) research at University of Waikato titled “Understanding the potential exposure of coastal marae and urupā in Aotearoa New Zealand to sea level rise”. The study examined potential sea-level-rise exposure for coastal marae and urupā, including a Bay of Plenty case study, and discussed local geomorphology and cultural responsibilities. No location-level sensitive information is reproduced here."
+  ],
+  "sources": [
+    {
+      "label": "Akuhata Patrick Stephen Bailey-Winiata, Understanding the potential exposure of coastal marae and urupā in Aotearoa New Zealand to sea level rise, University of Waikato, 2021",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/a54bd062-6227-4e02-8efb-bf13ecf55df2"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Akuhata Patrick Stephen Bailey-Winiata, Understanding the potential exposure of coastal marae and urupā in Aotearoa New Zealand to sea level rise, University of Waikato, 2021",
+        "url": "https://researchcommons.waikato.ac.nz/entities/publication/a54bd062-6227-4e02-8efb-bf13ecf55df2"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

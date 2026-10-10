@@ -1,0 +1,26 @@
+{
+  "id": "masters-20261010-0005",
+  "dateDisplay": "1994",
+  "startDate": "1994",
+  "datePrecision": "year",
+  "year": 1994,
+  "label": "Erzsebet Bekesi: master’s research involving GIS",
+  "summary": "Conceptual data modelling for geographical information systems, Massey University, 1994.",
+  "url": "/stories/universities-build-a-field/",
+  "passageIds": [
+    "passage:masters-20261010-ch11"
+  ],
+  "recordIds": [
+    "person:erzsebet-bekesi"
+  ],
+  "themeIds": [],
+  "categories": [
+    "university-research"
+  ],
+  "sources": [
+    {
+      "label": "Erzsebet Bekesi, Conceptual data modelling for geographical information systems, Massey University, 1994",
+      "url": "https://mro.massey.ac.nz/items/afddf720-02d9-49dc-a99d-bc6405668fef"
+    }
+  ]
+}

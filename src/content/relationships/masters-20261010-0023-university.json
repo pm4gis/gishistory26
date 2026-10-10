@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0023-university",
+  "a": "person:daniel-gerard-odonohue",
+  "b": "entity:university-of-canterbury",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch35"
+  ],
+  "sources": [
+    {
+      "label": "Daniel Gerard O'Donohue, Matching of image features and vector objects to automatically correct spatial misalignment between image and vector data sets, University of Canterbury, 2010",
+      "url": "https://ir.canterbury.ac.nz/items/3f5334ee-88d1-40c5-a4b8-68e31ea92bab"
+    }
+  ]
+}

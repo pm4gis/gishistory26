@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0063-university",
+  "a": "person:megan-leigh-fowler",
+  "b": "entity:university-of-canterbury",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "Megan Leigh Fowler, The Effect of Road Network Bendiness on Traffic Crash Occurrence in New Zealand, University of Canterbury, 2007",
+      "url": "https://ir.canterbury.ac.nz/items/c709a9aa-8c91-4c13-badc-6103c0de6d3c"
+    }
+  ]
+}

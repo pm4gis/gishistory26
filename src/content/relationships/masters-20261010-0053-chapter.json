@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0053-chapter",
+  "a": "person:rowan-thom",
+  "b": "chapter:27",
+  "label": "Research discussed in chapter",
+  "basis": "This thesis is linked to the cited thematic chapter passage",
+  "passageIds": [
+    "passage:masters-20261010-ch27"
+  ],
+  "sources": [
+    {
+      "label": "Rowan Thom, Land Loss, Historic Trauma and the Intergenerational Transmission of Wellbeing: The Experience of Iwi in Aotearoa New Zealand, Victoria University of Wellington, 2021",
+      "url": "https://openaccess.wgtn.ac.nz/articles/thesis/Land_Loss_Historic_Trauma_and_the_Intergenerational_Transmission_of_Wellbeing_The_Experience_of_Iwi_in_Aotearoa_New_Zealand/14420591"
+    }
+  ]
+}

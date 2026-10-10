@@ -1,0 +1,57 @@
+{
+  "id": "passage:masters-20261010-ch26",
+  "slug": "masters-research-applications-26-20261010",
+  "articleId": "article:chapter-26",
+  "title": "Graduate research in environmental GIS",
+  "order": 16,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:26",
+    "person:franziska-meinzinger",
+    "person:hamish-lough",
+    "person:melissa-jane-kelly",
+    "person:aidan-wackrow",
+    "person:sumedha-kusum-amarasena-pathayala-ralalage"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Environmental master’s research applied spatial modelling to local land-management questions. Franziska Meinzinger’s 2003 Lincoln study combined soil, terrain, land use, waterway and dwelling information to identify candidate areas for applying Christchurch wastewater to land. Hamish Lough’s 2006 Canterbury research explored GIS prediction of stoats, ship rats and weasels in beech forest. In 2016, Aidan Wackrow at Waikato studied geographic access to green space in the region. The projects addressed different practical decisions and could not be treated as a single environmental dataset.",
+      "markdown": "Environmental master’s research applied spatial modelling to local land-management questions. Franziska Meinzinger’s 2003 Lincoln study combined soil, terrain, land use, waterway and dwelling information to identify candidate areas for applying Christchurch wastewater to land. Hamish Lough’s 2006 Canterbury research explored GIS prediction of stoats, ship rats and weasels in beech forest. In 2016, Aidan Wackrow at Waikato studied geographic access to green space in the region. The projects addressed different practical decisions and could not be treated as a single environmental dataset.",
+      "sources": [
+        {
+          "label": "Franziska Meinzinger, GIS-based site identification for the land application of wastewater, Christchurch City, New Zealand, Lincoln University, 2003",
+          "url": "https://hdl.handle.net/10182/1147"
+        },
+        {
+          "label": "Hamish Lough, Predicting the spatial distribution of stoats, ship rats and weasels in a beech forest setting using GIS, University of Canterbury, 2006",
+          "url": "https://ir.canterbury.ac.nz/items/adcc9494-784a-40ee-968a-af763adada25"
+        },
+        {
+          "label": "Aidan Wackrow, A Study of Green Space Access in the Waikato Region, University of Waikato, 2016",
+          "url": "https://researchcommons.waikato.ac.nz/items/c5b1212e-b0aa-4ca5-b61d-08288a57ea75"
+        }
+      ],
+      "id": "masters-ch26-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Coastal and wetland mapping required different sources of geographic evidence. Melissa Jane Kelly’s 2013 Otago study combined historical aerial photography, GIS orthorectification and GPS surveys to examine shoreline change at Mason Bay, Kaitorete Barrier, Big Bay and Tahakopa Bay. In 2021, Sumedha Kusum Amarasena Pathayala Ralalage at Waikato used remotely sensed imagery and elevation information to classify wetlands around Lake Whangape. These studies document techniques and observations for their particular research periods, rather than the current condition of every place studied.",
+      "markdown": "Coastal and wetland mapping required different sources of geographic evidence. Melissa Jane Kelly’s 2013 Otago study combined historical aerial photography, GIS orthorectification and GPS surveys to examine shoreline change at Mason Bay, Kaitorete Barrier, Big Bay and Tahakopa Bay. In 2021, Sumedha Kusum Amarasena Pathayala Ralalage at Waikato used remotely sensed imagery and elevation information to classify wetlands around Lake Whangape. These studies document techniques and observations for their particular research periods, rather than the current condition of every place studied.",
+      "sources": [
+        {
+          "label": "Melissa Jane Kelly, Decadal shoreline change on the New Zealand coast, University of Otago, 2013",
+          "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Decadal-shoreline-change-on-the-New/9926480079401891"
+        },
+        {
+          "label": "Sumedha Kusum Amarasena Pathayala Ralalage, Remote sensing of wetlands in the Lake Whangape catchment, Waikato, New Zealand., University of Waikato, 2021",
+          "url": "https://researchcommons.waikato.ac.nz/entities/publication/c58bbe97-8be6-4086-a153-9f0af678904b"
+        }
+      ],
+      "id": "masters-ch26-p02"
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "masters-research-applications-26"
+}

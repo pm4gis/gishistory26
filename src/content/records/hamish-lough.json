@@ -1,0 +1,36 @@
+{
+  "id": "person:hamish-lough",
+  "slug": "hamish-lough",
+  "name": "Hamish Lough",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/hamish-lough/",
+  "description": "Researcher whose 2006 master's work concerned conservation ecology.",
+  "story": [
+    "In 2006, Hamish Lough completed MSc research at University of Canterbury titled “Predicting the spatial distribution of stoats, ship rats and weasels in a beech forest setting using GIS”. The research examined GIS-based prediction of the distribution of stoats, ship rats and weasels in beech forest. Its contribution belongs to spatial conservation ecology."
+  ],
+  "sources": [
+    {
+      "label": "Hamish Lough, Predicting the spatial distribution of stoats, ship rats and weasels in a beech forest setting using GIS, University of Canterbury, 2006",
+      "url": "https://ir.canterbury.ac.nz/items/adcc9494-784a-40ee-968a-af763adada25"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Hamish Lough, Predicting the spatial distribution of stoats, ship rats and weasels in a beech forest setting using GIS, University of Canterbury, 2006",
+        "url": "https://ir.canterbury.ac.nz/items/adcc9494-784a-40ee-968a-af763adada25"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/conservation-and-environment/"
+    }
+  ]
+}
