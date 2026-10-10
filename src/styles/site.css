@@ -291,3 +291,13 @@
   .wananga-video-grid--inline{grid-template-columns:none;grid-auto-columns:minmax(245px,85%)}
 }
 @media(prefers-reduced-motion:reduce){.wananga-video-grid--inline{scroll-behavior:auto}}
+
+
+/* Searchable source-backed Ngā Poutama catalogue extension. */
+.wananga-archive-note{max-width:88ch;font-size:14px;line-height:1.7;color:var(--muted)}
+.wananga-search-label{display:block;font-size:14px;font-weight:650;margin:18px 0 7px}
+.wananga-video-query{display:block;width:min(100%,660px);font-size:16px;padding:12px 14px}
+.wananga-video-count{font-size:13px;color:var(--muted);margin:8px 0 14px}
+.wananga-video-evidence{font-size:13px;margin:9px 0 2px}
+.wananga-video-evidence a{overflow-wrap:anywhere}
+@media(max-width:600px){.wananga-video-query{width:100%}.wananga-archive-note{font-size:13px}}
