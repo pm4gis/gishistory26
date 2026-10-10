@@ -17,6 +17,7 @@ const https = v => typeof v === 'string' && /^https:\/\/[^\s]+$/.test(v);
 const seen = new Set(), staged = [], images = [];
 for (const approval of selections.images) {
   const id = approval.sourceId;
+  if (typeof id !== 'string' || !/^[a-z0-9][a-z0-9-]*$/.test(id)) throw Error('Unsafe source ID');
   if (approval.rightsStatus !== 'approved' || required.some(k => !approval[k] || typeof approval[k] !== 'string')) throw Error(id+': missing signed-off permission or attribution evidence');
   if (!https(approval.evidenceUrl) || !https(approval.licenceUrl) || !https(approval.sourceLayerUrl)) throw Error(id+': verified HTTPS evidence links required');
   if (!/^\d{4}-\d{2}-\d{2}$/.test(approval.verifiedOn)) throw Error(id+': review date must be YYYY-MM-DD');
@@ -40,7 +41,7 @@ for (const approval of selections.images) {
     id, placement:approval.placement, rightsStatus:'approved',
     licensor:approval.licensor, licenceUrl:approval.licenceUrl, sourceLayerUrl:approval.sourceLayerUrl,
     attribution:approval.attribution, altText:approval.altText, verifiedBy:approval.verifiedBy, verifiedOn:approval.verifiedOn,
-    evidenceUrl:approval.evidenceUrl, variants
+    evidenceUrl:approval.evidenceUrl, sourceImageSha256:original.original_sha256, variants
   });
 }
 const root = resolve(import.meta.dirname,'..');
