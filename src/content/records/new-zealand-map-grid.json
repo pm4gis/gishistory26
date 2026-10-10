@@ -1,0 +1,40 @@
+{
+  "id": "entity:new-zealand-map-grid",
+  "slug": "new-zealand-map-grid",
+  "name": "New Zealand Map Grid (NZMG)",
+  "kind": "Map projection",
+  "category": "Coordinate systems",
+  "url": "/entities/new-zealand-map-grid/",
+  "website": null,
+  "story": [
+    "W. I. Reilly published the New Zealand Map Grid design in 1973. NZMG used a polynomial expression tailored to reduce scale distortion over New Zealand and was used with NZGD49 for the NZMS260 topographic series.",
+    "NZMG’s specialised mathematics later proved difficult to support in some international software. LINZ replaced it with a newer official grid in 2001; historic coordinates still need their original grid and a documented transformation."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, New Zealand Map Grid",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+    }
+  ],
+  "aliases": [
+    "NZMG",
+    "New Zealand Map Grid"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "LINZ, New Zealand Map Grid",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, New Zealand Map Grid",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+      }
+    ]
+  ]
+}

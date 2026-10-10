@@ -1,0 +1,16 @@
+{
+  "id": "relationship:chapter-2-treasury-ibm-650",
+  "a": "entity:new-zealand-treasury",
+  "b": "entity:ibm",
+  "label": "Installed the IBM 650 for public-service computing",
+  "basis": "A. C. Shailes’s account records Treasury’s IBM 650 installation in 1960 and its payroll role.",
+  "passageIds": [
+    "passage:chapter-2-57e353c855"
+  ],
+  "sources": [
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "relationship:chapter-2-ibm650-ibm",
+  "a": "entity:ibm-650",
+  "b": "entity:ibm",
+  "label": "Manufactured by IBM",
+  "basis": "The Treasury installation is described as an IBM 650 data-processing system.",
+  "passageIds": [
+    "passage:chapter-2-57e353c855"
+  ],
+  "sources": [
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    },
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "relationship:chapter-2-nzmg-nzgd49",
+  "a": "entity:new-zealand-map-grid",
+  "b": "entity:new-zealand-geodetic-datum-1949",
+  "label": "NZMG projection used with NZGD49 datum",
+  "basis": "LINZ identifies NZMG as based on NZGD1949.",
+  "passageIds": [
+    "passage:chapter-2-2ab91fbc4f"
+  ],
+  "sources": [
+    {
+      "label": "LINZ, New Zealand Map Grid",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+    },
+    {
+      "label": "LINZ, New Zealand Geodetic Datum 1949",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-1949-nzgd1949"
+    }
+  ]
+}

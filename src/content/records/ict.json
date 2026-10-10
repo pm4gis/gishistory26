@@ -1,0 +1,33 @@
+{
+  "id": "entity:ict",
+  "slug": "ict",
+  "name": "International Computers and Tabulators (ICT)",
+  "kind": "Business",
+  "category": "Computing companies",
+  "url": "/entities/ict/",
+  "website": null,
+  "story": [
+    "A later study of New Zealand computing argues that an ICT 1201 was installed for the Department of Education before the Treasury IBM 650 and was processing teachers’ pay by August or September 1960. The chronology is a credible alternative, although its surviving evidence is less complete than the Treasury record."
+  ],
+  "sources": [
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ],
+  "aliases": [
+    "ICT",
+    "International Computers and Tabulators"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+        "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+      }
+    ]
+  ]
+}

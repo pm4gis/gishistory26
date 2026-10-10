@@ -4,41 +4,78 @@
   "articleId": "article:chapter-2",
   "title": "Geodetic adjustment",
   "order": 3,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
-    "chapter:2"
+    "chapter:2",
+    "entity:new-zealand-geodetic-datum-1949",
+    "entity:department-of-lands-and-survey",
+    "entity:land-information-new-zealand-linz",
+    "entity:new-zealand-map-grid"
   ],
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Geodesy was particularly well suited to electronic computation because its workflows were already mathematical and highly structured. A national control network combined many observations whose small inconsistencies had to be reconciled through adjustment. The work could involve large systems of equations, repeated iteration and careful propagation of corrections. Human computers and mechanical calculators could do it, but the workload increased rapidly as networks became larger and expectations of consistency increased.",
-      "markdown": "Geodesy was particularly well suited to electronic computation because its workflows were already mathematical and highly structured. A national control network combined many observations whose small inconsistencies had to be reconciled through adjustment. The work could involve large systems of equations, repeated iteration and careful propagation of corrections. Human computers and mechanical calculators could do it, but the workload increased rapidly as networks became larger and expectations of consistency increased.",
-      "sources": [],
+      "text": "New Zealand’s 1949 geodetic datum was built by surveyors, not by an electronic computer. The first-order triangulation was completed in 1942; astronomical observations established the datum in 1949. LINZ records 284 first-order stations in the original adjustment. Those observations and network adjustments supplied a national control framework before electronic computing became routine.",
+      "markdown": "New Zealand’s 1949 geodetic datum was built by surveyors, not by an electronic computer. The first-order triangulation was completed in 1942; astronomical observations established the datum in 1949. LINZ records 284 first-order stations in the original adjustment. Those observations and network adjustments supplied a national control framework before electronic computing became routine.",
+      "sources": [
+        {
+          "label": "LINZ, New Zealand Geodetic Datum 1949",
+          "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-1949-nzgd1949"
+        },
+        {
+          "label": "LINZ, “A Proposal for a Dynamic National Geodetic Datum for New Zealand”",
+          "url": "https://www.linz.govt.nz/sites/default/files/cust/dynamic-national-geodeticdatum.pdf"
+        }
+      ],
       "id": "ch02-s04-p01"
     },
     {
       "type": "paragraph",
-      "text": "NZGD49 had been completed using predominantly pre-electronic methods. Electronic computing later made it practical to maintain, recompute and transform coordinates on a larger scale. Existing trig coordinates could be loaded as data and new observations compared against the established network. Programs could repeat the mathematical operations consistently, provided the code and input were correct.",
-      "markdown": "NZGD49 had been completed using predominantly pre-electronic methods. Electronic computing later made it practical to maintain, recompute and transform coordinates on a larger scale. Existing trig coordinates could be loaded as data and new observations compared against the established network. Programs could repeat the mathematical operations consistently, provided the code and input were correct.",
-      "sources": [],
+      "text": "NZGD49 was static: the coordinates of its defining stations remained fixed. LINZ notes distortions of up to five metres in parts of the network. A later programme could return a consistent answer and still inherit the limitations of the observations and adjustments it started from.",
+      "markdown": "NZGD49 was static: the coordinates of its defining stations remained fixed. LINZ notes distortions of up to five metres in parts of the network. A later programme could return a consistent answer and still inherit the limitations of the observations and adjustments it started from.",
+      "sources": [
+        {
+          "label": "LINZ, New Zealand Geodetic Datum 1949",
+          "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-1949-nzgd1949"
+        }
+      ],
       "id": "ch02-s04-p02"
     },
     {
       "type": "paragraph",
-      "text": "That last condition never went away. An electronic result could be wrong because the observation was wrong, the card was wrong, the program was wrong or the assumptions were wrong. The machine was fast enough to produce a large wrong answer without becoming embarrassed. Survey practice therefore retained independent checks, known control and professional judgement even as more arithmetic moved into computing.",
-      "markdown": "That last condition never went away. An electronic result could be wrong because the observation was wrong, the card was wrong, the program was wrong or the assumptions were wrong. The machine was fast enough to produce a large wrong answer without becoming embarrassed. Survey practice therefore retained independent checks, known control and professional judgement even as more arithmetic moved into computing.",
-      "sources": [],
+      "text": "Electronic computers made it practical to repeat coordinate reductions and transformations across an established network. They helped surveyors compare new observations with known control and process more points consistently, while decisions about the reference and adjustment remained part of the survey work.",
+      "markdown": "Electronic computers made it practical to repeat coordinate reductions and transformations across an established network. They helped surveyors compare new observations with known control and process more points consistently, while decisions about the reference and adjustment remained part of the survey work.",
+      "sources": [
+        {
+          "label": "LINZ, “A Proposal for a Dynamic National Geodetic Datum for New Zealand”",
+          "url": "https://www.linz.govt.nz/sites/default/files/cust/dynamic-national-geodeticdatum.pdf"
+        }
+      ],
       "id": "ch02-s04-p03"
     },
     {
       "type": "paragraph",
-      "text": "The national coordinate framework also made computer use more useful outside geodesy. Engineering, hydrography and mapping could exchange positions because they referred to compatible control rather than entirely local numerical worlds. A coordinate became more valuable when another organisation could understand it. Long before digital files moved easily between systems, standard reference frameworks were already doing part of the interoperability work.",
-      "markdown": "The national coordinate framework also made computer use more useful outside geodesy. Engineering, hydrography and mapping could exchange positions because they referred to compatible control rather than entirely local numerical worlds. A coordinate became more valuable when another organisation could understand it. Long before digital files moved easily between systems, standard reference frameworks were already doing part of the interoperability work.",
-      "sources": [],
+      "text": "For GIS work, keep datum and projection separate. NZGD49 defines the geodetic reference; NZMG converts positions to a map grid. A wrong transformation can shift otherwise precise coordinates, so preserve the source reference and check known control before treating a recalculated layer as aligned.",
+      "markdown": "For GIS work, keep datum and projection separate. NZGD49 defines the geodetic reference; NZMG converts positions to a map grid. A wrong transformation can shift otherwise precise coordinates, so preserve the source reference and check known control before treating a recalculated layer as aligned.",
+      "sources": [
+        {
+          "label": "LINZ, New Zealand Geodetic Datum 1949",
+          "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-1949-nzgd1949"
+        },
+        {
+          "label": "LINZ, New Zealand Map Grid",
+          "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+        }
+      ],
       "id": "ch02-s04-p04"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    }
+  ],
   "legacyAnchor": "geodetic-adjustment"
 }

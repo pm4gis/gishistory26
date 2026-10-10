@@ -4,7 +4,7 @@
   "articleId": "article:chapter-2",
   "title": "Cards and coordinate lists",
   "order": 2,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
     "chapter:2"
@@ -12,26 +12,50 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Punched cards made that preparation visible. Each card stored a limited set of characters or numbers through holes in fixed positions. A stack could represent observations, coordinates, identifiers or program instructions, provided everybody agreed what each field meant and kept the cards in the right order. Damaged, missing or mis-sorted cards could stop a job or quietly corrupt its results.",
-      "markdown": "Punched cards made that preparation visible. Each card stored a limited set of characters or numbers through holes in fixed positions. A stack could represent observations, coordinates, identifiers or program instructions, provided everybody agreed what each field meant and kept the cards in the right order. Damaged, missing or mis-sorted cards could stop a job or quietly corrupt its results.",
-      "sources": [],
+      "text": "A punched-card deck made a survey calculation portable between a data-preparation room and a computer. Each card held a fixed set of characters or numbers. A run of cards could encode observation values, point identifiers and instructions, so long as the fields and order were agreed in advance.",
+      "markdown": "A punched-card deck made a survey calculation portable between a data-preparation room and a computer. Each card held a fixed set of characters or numbers. A run of cards could encode observation values, point identifiers and instructions, so long as the fields and order were agreed in advance.",
+      "sources": [
+        {
+          "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+          "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+        },
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s03-p01"
     },
     {
       "type": "paragraph",
-      "text": "For survey work, the attraction was straightforward. Observations that had once been copied into calculation books could be encoded, processed and checked through repeatable routines. Coordinate values could be output in consistent formats and reused in later calculations. The process was still labour intensive, because cards had to be punched and verified, programs had to be prepared, and suspicious results had to be traced back through the input. Automation reduced one kind of manual effort while creating a new need for disciplined data preparation.",
-      "markdown": "For survey work, the attraction was straightforward. Observations that had once been copied into calculation books could be encoded, processed and checked through repeatable routines. Coordinate values could be output in consistent formats and reused in later calculations. The process was still labour intensive, because cards had to be punched and verified, programs had to be prepared, and suspicious results had to be traced back through the input. Automation reduced one kind of manual effort while creating a new need for disciplined data preparation.",
-      "sources": [],
+      "text": "For a survey office, repeatability was the gain: prepare observations once, run a calculation, correct the programme or inputs, and run it again. Card punching and checking took time, and a missing or mis-sorted card could send staff back to the source book to find where the sequence broke.",
+      "markdown": "For a survey office, repeatability was the gain: prepare observations once, run a calculation, correct the programme or inputs, and run it again. Card punching and checking took time, and a missing or mis-sorted card could send staff back to the source book to find where the sequence broke.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s03-p02"
     },
     {
       "type": "paragraph",
-      "text": "The coordinate list is an important transitional object. It is digital geography in a narrow sense because positions are represented numerically and can be stored or processed electronically. It is not yet a spatial database. The computer does not necessarily know which coordinate belongs to a road, which points form a parcel, which lines touch, or which descriptive record should be linked to which geometry. Later spatial databases stored these relationships explicitly.",
-      "markdown": "The coordinate list is an important transitional object. It is digital geography in a narrow sense because positions are represented numerically and can be stored or processed electronically. It is not yet a spatial database. The computer does not necessarily know which coordinate belongs to a road, which points form a parcel, which lines touch, or which descriptive record should be linked to which geometry. Later spatial databases stored these relationships explicitly.",
-      "sources": [],
+      "text": "The computer might return a coordinate list, but a list of positions is not automatically a map database. Unless the data also identified which points formed a boundary, which line continued across a sheet edge, or which record described each feature, the machine had no usable feature model to preserve. Chapter 3 follows the point where New Zealand systems began capturing and editing that linework itself.",
+      "markdown": "The computer might return a coordinate list, but a list of positions is not automatically a map database. Unless the data also identified which points formed a boundary, which line continued across a sheet edge, or which record described each feature, the machine had no usable feature model to preserve. Chapter 3 follows the point where New Zealand systems began capturing and editing that linework itself.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s03-p03"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    }
+  ],
   "legacyAnchor": "cards-and-coordinate-lists"
 }

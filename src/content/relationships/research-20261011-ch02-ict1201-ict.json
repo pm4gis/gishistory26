@@ -1,0 +1,16 @@
+{
+  "id": "relationship:chapter-2-ict1201-ict",
+  "a": "entity:ict-1201",
+  "b": "entity:ict",
+  "label": "Supplied by ICT",
+  "basis": "The candidate computer is identified in the historical study as an ICT 1201.",
+  "passageIds": [
+    "passage:chapter-2-57e353c855"
+  ],
+  "sources": [
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ]
+}

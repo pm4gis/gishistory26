@@ -7,7 +7,8 @@
   "url": "/entities/ministry-of-works-and-development/",
   "website": null,
   "story": [
-    "Resource and infrastructure work at the Ministry of Works and Development helped establish early computer-based geographic information. The New Zealand Land Resource Inventory brought mapped information about land into a form that could be stored and analysed. Mainframe computing, resource classification and the requirements of government programmes shaped the work."
+    "Resource and infrastructure work at the Ministry of Works and Development helped establish early computer-based geographic information. The New Zealand Land Resource Inventory brought mapped information about land into a form that could be stored and analysed. Mainframe computing, resource classification and the requirements of government programmes shaped the work.",
+    "The Ministry also developed specialist computer capacity for engineering work. A. C. Shailes’s 1980 account traces its Computer Services Section to 1966 and describes the Vogel Computer Centre as a service for engineering and scientific calculations. Ministry engineers used the system to compare route and terrain alternatives for projects including the Clutha Valley and Mangaweka."
   ],
   "sources": [
     {
@@ -17,13 +18,31 @@
     {
       "label": "ESCAP GIS workshop report, Keith Carr contribution on New Zealand land/resource information and NZLRI",
       "url": "https://repository.unescap.org/"
+    },
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
     }
   ],
   "aliases": [
-    "Ministry of Works and Development"
+    "Ministry of Works and Development",
+    "Ministry of Works"
   ],
   "themeIds": [],
   "status": "GIS account available",
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "DSIR Physics and Engineering Laboratory, Final Report: Landsat II Investigation Programme No. 28230, Report No. 587",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ],
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      }
+    ]
+  ]
 }
