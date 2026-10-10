@@ -38,6 +38,10 @@ export const subjectMedia = Object.freeze({
       slug: 'linz-landonline-survey-work-2025',
       relation: 'Landonline Web Search produced by LINZ in 2025; an example of one LINZ service, not its 1996 launch.'
     },
+    'department-of-lands-and-survey': {
+      slug: 'north-island-counties-districts-1981',
+      relation: 'A Department of Lands and Survey map published in 1981, before the 1989 local-government reforms. It is an administrative map, not a GIS screen.'
+    },
     'stats-nz': {
       slug: 'nz-census-density-2023',
       relation: 'A population-density map based on Stats NZ 2023 Census information, produced by an independent cartographer using QGIS.'
@@ -94,6 +98,9 @@ export function pickThemeImage(slug,images) {
   if(!binding)return null;
   const image=images.find(image=>image.slug===binding.slug);
   return image?{image,relation:binding.relation}:null;
+}
+export function pickThemeImages(themeId,images) {
+  return images.filter(image=>image.themeIds?.includes(themeId));
 }
 export function pickRecordImage(record,images) {
   if(!record || record.kind==='Person' || record.kind==='Story')return null;

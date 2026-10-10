@@ -1,0 +1,369 @@
+{
+  "patch": {
+    "schemaVersion": 1,
+    "baseRevision": "d12de016045084083410f0973be050f28799545235adaefb3784afa7b8105292",
+    "operations": [
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:silverpeak-survey-district-1956",
+          "slug": "silverpeak-survey-district-1956",
+          "title": "Silverpeak survey district map, 1956",
+          "assetPath": "/assets/historical/web/silverpeak-survey-district-1956.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Silverpeak_Survey_District_(1956).jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "New Zealand Railways Corporation, District Engineer’s Office, Dunedin; Archives New Zealand, ref. DABB D101 409/23 (R6619107); via Wikimedia Commons.",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Silverpeak_Survey_District_(1956).jpg",
+          "altText": "1956 NZMS 13 cadastral survey-district map sheet for Silverpeak, Otago, with parcel boundaries and printed labels.",
+          "caption": "NZMS 13 cadastral survey-district sheet 122, Silverpeak, Otago, third edition, 1956.",
+          "themeIds": [
+            "cadastre"
+          ],
+          "articleSlug": "the-cadastre-becomes-data",
+          "chapterNumber": 13,
+          "dateDisplay": "1956",
+          "context": "This printed cadastral survey-district sheet is an example of the paper record maps used before a national digital cadastral database. Its lines and labels served an administrative map purpose; the image should not be read as a modern GIS screen or as proof that every drawn boundary had survey-grade coordinates.",
+          "originalAssetPath": "/assets/historical/original/silverpeak-survey-district-1956.jpg",
+          "thumbnailPath": "/assets/historical/card/silverpeak-survey-district-1956.webp",
+          "originalSha256": "a4751e4adc7059d2ad0a1ca5faf57663d07ed12871ef6d1679c701be8a0ad972",
+          "webSha256": "ea2d137eb3e819b40bb94dde041b5af02c895d09b83ad6614670b7f433481607",
+          "originalWidth": 5782,
+          "originalHeight": 8645,
+          "sourceFileTitle": "File:Map of Silverpeak Survey District (1956).jpg",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Map_of_Silverpeak_Survey_District_%281956%29.jpg",
+          "relatedRecords": [
+            {
+              "name": "Department of Lands and Survey",
+              "url": "/entities/department-of-lands-and-survey/",
+              "role": "published the cadastral map series"
+            }
+          ],
+          "derivativesNote": "Local JPEG source copy stored unchanged; WebP display width up to 1600 pixels and card width up to 720 pixels, resized without cropping."
+        }
+      },
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:wiri-north-quarry-1982",
+          "slug": "wiri-north-quarry-1982",
+          "title": "Wiri north quarry orthophotograph, 1982",
+          "assetPath": "/assets/historical/web/wiri-north-quarry-1982.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wiri_north_quarry_1982.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "Land Information New Zealand (LINZ), via Retrolens and Wikimedia Commons.",
+          "licence": "CC BY 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Wiri_north_quarry_1982.jpg",
+          "altText": "1982 aerial orthophotograph showing Wiri railway station and the north quarry in Auckland.",
+          "caption": "Aerial orthophotograph of Wiri railway station and quarry, 7 February 1982.",
+          "themeIds": [
+            "imagery"
+          ],
+          "articleSlug": "imagery-becomes-infrastructure",
+          "chapterNumber": 20,
+          "dateDisplay": "7 February 1982",
+          "context": "LINZ orthophotograph sourced from Retrolens. It provides a later example of corrected aerial imagery and illustrates the chapter’s discussion of orthophotography; it does not depict the earlier 1977 Clutha–Alexandra production work.",
+          "originalAssetPath": "/assets/historical/original/wiri-north-quarry-1982.jpg",
+          "thumbnailPath": "/assets/historical/card/wiri-north-quarry-1982.webp",
+          "originalSha256": "e575ef30182fe8d3dde64cfc536028c3086e911beffe9f5bf8fbd977df296837",
+          "webSha256": "1262a73f593fbd7376a9424704b4ba1c7353fecc00751fa6d376c24ded0501cf",
+          "originalWidth": 3840,
+          "originalHeight": 3745,
+          "sourceFileTitle": "File:Wiri north quarry 1982.jpg (3840 × 3745 Wikimedia Commons rendition)",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Wiri_north_quarry_1982.jpg/3840px-Wiri_north_quarry_1982.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "relatedRecords": [
+            {
+              "name": "Land Information New Zealand (LINZ)",
+              "url": "/entities/land-information-new-zealand-linz/",
+              "role": "source agency through Retrolens"
+            }
+          ],
+          "derivativesNote": "The locally archived JPEG is the 3840 × 3745 Wikimedia Commons rendition. The 6760 × 6593 full-resolution master is linked above. This JPEG is stored unchanged; WebP display and card variants were resized without cropping.",
+          "sourceMasterUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Wiri_north_quarry_1982.jpg"
+        }
+      },
+      {
+        "collection": "images",
+        "action": "add",
+        "value": {
+          "id": "image:north-island-counties-districts-1981",
+          "slug": "north-island-counties-districts-1981",
+          "title": "North Island counties and districts map, 1981",
+          "assetPath": "/assets/historical/web/north-island-counties-districts-1981.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "Department of Lands and Survey New Zealand; National Library of New Zealand, sourced from LINZ; via Wikimedia Commons.",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg",
+          "altText": "1981 map of North Island counties and districts with administrative boundaries and place labels.",
+          "caption": "North Island counties and districts in 1981, published by the Department of Lands and Survey before the 1989 local-government reforms.",
+          "themeIds": [
+            "local-government"
+          ],
+          "articleSlug": "councils-build-corporate-gis",
+          "chapterNumber": 23,
+          "dateDisplay": "1981",
+          "context": "This administrative map predates the 1989 local-government reforms. It helps orient the reader to the county and district system before the reform; it is an historical map, not a GIS interface or a representation of the new authorities.",
+          "originalAssetPath": "/assets/historical/original/north-island-counties-districts-1981.jpg",
+          "thumbnailPath": "/assets/historical/card/north-island-counties-districts-1981.webp",
+          "originalSha256": "ef609eab2fa08dbcdcebe0697c09ceba97615500252c4da0accf646fa0316805",
+          "webSha256": "70d19e9ff31ab428dc54e1227437d438a5c3edf6937348cb4f01bc2cf74b5a8d",
+          "originalWidth": 1920,
+          "originalHeight": 2317,
+          "sourceFileTitle": "File:New Zealand North Island Counties and Districts Map 1981.jpg; locally stored 1920 × 2317 rendition",
+          "headerCandidate": false,
+          "sourceOriginalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg/1920px-New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceMasterUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg",
+          "relatedRecords": [
+            {
+              "name": "Department of Lands and Survey",
+              "url": "/entities/department-of-lands-and-survey/",
+              "role": "published the map"
+            }
+          ],
+          "derivativesNote": "The locally stored JPEG is a 1920 × 2317 Wikimedia Commons rendition. The 8192 × 9884 full-resolution master is 93.66 MB and remains linked above because it exceeds the site’s 25 MiB per-file asset limit. The rendition is stored unchanged; WebP display and card variants were resized without cropping."
+        }
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-13-93cccd5754",
+          "slug": "records-made-for-different-jobs-93cccd5754",
+          "articleId": "article:chapter-13",
+          "title": "Records made for different jobs",
+          "order": 1,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:13"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Before a national digital database, cadastral information already existed in several forms because it had several jobs to do. Survey plans recorded measurements, marks, bearings, distances and the surveyor’s definition of parcel geometry. Cadastral record maps compiled parcels across an area so staff could find and administer them. Title records dealt with ownership and registered interests. Registers, indexes and plan references connected one set of records to another. None of those objects on its own was the cadastre, and their different purposes became important when officials tried to convert them into one electronic environment.",
+              "markdown": "Before a national digital database, cadastral information already existed in several forms because it had several jobs to do. Survey plans recorded measurements, marks, bearings, distances and the surveyor’s definition of parcel geometry. Cadastral record maps compiled parcels across an area so staff could find and administer them. Title records dealt with ownership and registered interests. Registers, indexes and plan references connected one set of records to another. None of those objects on its own was the cadastre, and their different purposes became important when officials tried to convert them into one electronic environment.",
+              "sources": [],
+              "id": "ch13-s02-p01"
+            },
+            {
+              "type": "paragraph",
+              "text": "The record map was especially useful for finding where a parcel sat in relation to its neighbours. It was not necessarily constructed to preserve survey-grade coordinates for every boundary corner. In dense areas it could be compiled at a large scale and show considerable detail; in remote areas a much smaller-scale sheet might be sufficient for administration. The map was an index and working record created under the constraints of its time. DCDB inherited that role first, which explains both why it became so useful to GIS users and why later survey conversion had to return to the underlying plans and measurements.",
+              "markdown": "The record map was especially useful for finding where a parcel sat in relation to its neighbours. It was not necessarily constructed to preserve survey-grade coordinates for every boundary corner. In dense areas it could be compiled at a large scale and show considerable detail; in remote areas a much smaller-scale sheet might be sufficient for administration. The map was an index and working record created under the constraints of its time. DCDB inherited that role first, which explains both why it became so useful to GIS users and why later survey conversion had to return to the underlying plans and measurements.",
+              "sources": [],
+              "id": "ch13-s02-p02"
+            },
+            {
+              "type": "figure",
+              "id": "ch13-s02-figure-silverpeak-1956",
+              "after": "ch13-s02-p02",
+              "alt": "1956 cadastral map of Silverpeak Survey District in Otago.",
+              "caption": "A 1956 NZMS 13 cadastral record map for Silverpeak Survey District, illustrating the paper maps used to locate parcels before the national digital cadastral database.",
+              "credit": "New Zealand Railways Corporation / Archives New Zealand, DABB D101 409/23 (R6619107), via Wikimedia Commons, CC BY 2.0.",
+              "imageId": "image:silverpeak-survey-district-1956"
+            },
+            {
+              "type": "paragraph",
+              "text": "The transition therefore involved more than changing media. Paper records distributed meaning across separate objects and office practices. Staff knew which plan to retrieve, which register to consult and when a line on the record map was only approximate. A database had to make more of those relationships explicit. Identifiers, references and topology had to carry part of the institutional knowledge that previously sat in filing systems and in the heads of experienced survey and cadastral staff.",
+              "markdown": "The transition therefore involved more than changing media. Paper records distributed meaning across separate objects and office practices. Staff knew which plan to retrieve, which register to consult and when a line on the record map was only approximate. A database had to make more of those relationships explicit. Identifiers, references and topology had to carry part of the institutional knowledge that previously sat in filing systems and in the heads of experienced survey and cadastral staff.",
+              "sources": [],
+              "id": "ch13-s02-p03"
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "records-made-for-different-jobs"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-20-72c979d587",
+          "slug": "a-photograph-you-can-measure-72c979d587",
+          "articleId": "article:chapter-20",
+          "title": "A photograph you can measure",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:20",
+            "entity:new-zealand-aerial-mapping",
+            "entity:vector"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Aerial photographs had been used in New Zealand mapping for decades before GIS became common. They helped photogrammetrists compile topographic maps, foresters interpret stands, engineers inspect routes and land-resource staff read terrain and vegetation. The photograph itself was a perspective view, however. Camera geometry, the angle of view and the relief of the ground displaced features from the positions they would occupy on a map. A river, road or building could be clearly visible without the image being suitable for direct measurement against cadastral or topographic coordinates.",
+              "markdown": "Aerial photographs had been used in New Zealand mapping for decades before GIS became common. They helped photogrammetrists compile topographic maps, foresters interpret stands, engineers inspect routes and land-resource staff read terrain and vegetation. The photograph itself was a perspective view, however. Camera geometry, the angle of view and the relief of the ground displaced features from the positions they would occupy on a map. A river, road or building could be clearly visible without the image being suitable for direct measurement against cadastral or topographic coordinates.",
+              "sources": [],
+              "id": "ch20-s01-p01"
+            },
+            {
+              "type": "paragraph",
+              "text": "Orthophotography dealt with that geometric problem. Using survey control, camera information and terrain data, the photograph could be corrected so that its pixels related consistently to map coordinates. The result retained the visual information of photography while behaving much more like a map. A user could place vector boundaries, roads or other features over the image and expect corresponding locations to line up within the accuracy of the source and processing.",
+              "markdown": "Orthophotography dealt with that geometric problem. Using survey control, camera information and terrain data, the photograph could be corrected so that its pixels related consistently to map coordinates. The result retained the visual information of photography while behaving much more like a map. A user could place vector boundaries, roads or other features over the image and expect corresponding locations to line up within the accuracy of the source and processing.",
+              "sources": [],
+              "id": "ch20-s01-p02"
+            },
+            {
+              "type": "figure",
+              "id": "ch20-s01-figure-wiri-orthophoto-1982",
+              "after": "ch20-s01-p02",
+              "alt": "1982 orthophotograph of Wiri railway station and north quarry.",
+              "caption": "Wiri railway station and north quarry, aerial orthophotograph, 7 February 1982. This later example does not depict the 1977 Clutha–Alexandra production system.",
+              "credit": "LINZ, via Retrolens and Wikimedia Commons, CC BY 3.0.",
+              "imageId": "image:wiri-north-quarry-1982"
+            },
+            {
+              "type": "paragraph",
+              "text": "New Zealand organisations were already experimenting with computer-assisted orthophoto production in the 1970s. Lands and Survey bought a computer system for orthophoto production in 1977, and orthophoto mapping of the Clutha–Alexandra area followed in 1978 and 1979 for Ministry of Works hydro-development planning. Computer-assisted orthophoto production preceded widespread GIS adoption.",
+              "markdown": "New Zealand organisations were already experimenting with computer-assisted orthophoto production in the 1970s. Lands and Survey bought a computer system for orthophoto production in 1977, and orthophoto mapping of the Clutha–Alexandra area followed in 1978 and 1979 for Ministry of Works hydro-development planning. Computer-assisted orthophoto production preceded widespread GIS adoption.",
+              "sources": [],
+              "id": "ch20-s01-p03"
+            },
+            {
+              "type": "paragraph",
+              "text": "During the 1980s, analytical and digital photogrammetry shortened the path from aerial photography to computer-held spatial information. New Zealand Aerial Mapping acquired a Wild BC1 analytical stereoplotter in 1984 and fitted seven analogue stereoplotters with GeoVision equipment in 1988. Chapter 3 follows that equipment transition in detail. By the following decade, the operational question was increasingly what organisations could do once corrected imagery arrived as digital data rather than how the photogrammetric instrument itself worked.",
+              "markdown": "During the 1980s, analytical and digital photogrammetry shortened the path from aerial photography to computer-held spatial information. New Zealand Aerial Mapping acquired a Wild BC1 analytical stereoplotter in 1984 and fitted seven analogue stereoplotters with GeoVision equipment in 1988. Chapter 3 follows that equipment transition in detail. By the following decade, the operational question was increasingly what organisations could do once corrected imagery arrived as digital data rather than how the photogrammetric instrument itself worked.",
+              "sources": [],
+              "id": "ch20-s01-p04"
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "a-photograph-you-can-measure"
+        },
+        "acceptedEditorialChange": true
+      },
+      {
+        "collection": "passages",
+        "action": "replace",
+        "value": {
+          "id": "passage:chapter-23-461687bcb1",
+          "slug": "a-new-local-government-461687bcb1",
+          "articleId": "article:chapter-23",
+          "title": "A new local government",
+          "order": 0,
+          "updatedAt": "2026-10-10",
+          "themeIds": [],
+          "recordIds": [
+            "chapter:23",
+            "entity:environment-southland-southland-regional-council",
+            "entity:integrated-mapping",
+            "entity:marlborough-district-council",
+            "entity:otago-regional-council",
+            "entity:university-of-otago",
+            "person:bill-risk",
+            "person:gary-hutchinson",
+            "person:katrina-richards",
+            "person:ian-sutherland",
+            "person:ian-mccahon",
+            "person:ian-lynn",
+            "person:sam-carrick"
+          ],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "On 1 November 1989 New Zealand’s local-government map changed abruptly. Hundreds of local bodies, including cities, boroughs, counties, catchment boards and other authorities, were reorganised into 86 regional and territorial authorities. The new councils inherited staff, maps, rating systems, engineering plans, property records, drainage information, environmental files and the unfinished business of their predecessors. They also inherited the practical problem that many of those records described the same places in different ways.",
+              "markdown": "On 1 November 1989 New Zealand’s local-government map changed abruptly. Hundreds of local bodies, including cities, boroughs, counties, catchment boards and other authorities, were reorganised into 86 regional and territorial authorities. The new councils inherited staff, maps, rating systems, engineering plans, property records, drainage information, environmental files and the unfinished business of their predecessors. They also inherited the practical problem that many of those records described the same places in different ways.",
+              "sources": [],
+              "id": "ch23-s01-p01"
+            },
+            {
+              "type": "figure",
+              "id": "ch23-s01-figure-counties-map-1981",
+              "after": "ch23-s01-p01",
+              "alt": "1981 map of North Island counties and districts before the local-government reforms.",
+              "caption": "North Island counties and districts in 1981, published by the Department of Lands and Survey before the 1989 local-government reforms. This is an administrative map, not a GIS screen.",
+              "credit": "Department of Lands and Survey New Zealand / National Library of New Zealand, via Wikimedia Commons, CC BY-SA 4.0.",
+              "imageId": "image:north-island-counties-districts-1981"
+            },
+            {
+              "type": "paragraph",
+              "text": "Council GIS work had begun before the reorganisation. Some local authorities had already been using computer mapping, and later surveys recorded implementations dating from before 1988. The new structure did, however, concentrate a wider range of functions inside larger organisations at the same time that digital mapping was becoming easier to buy and run. Property, planning, engineering and environmental information that had previously sat in separate agencies or departments increasingly had to be managed together.",
+              "markdown": "Council GIS work had begun before the reorganisation. Some local authorities had already been using computer mapping, and later surveys recorded implementations dating from before 1988. The new structure did, however, concentrate a wider range of functions inside larger organisations at the same time that digital mapping was becoming easier to buy and run. Property, planning, engineering and environmental information that had previously sat in separate agencies or departments increasingly had to be managed together.",
+              "sources": [],
+              "id": "ch23-s01-p02"
+            },
+            {
+              "type": "paragraph",
+              "text": "The Resource Management Act 1991 added another spatial workload when it came into force on 1 October that year. Territorial authorities needed land-use and district-planning information, while regional councils worked across water, air, coast, catchments and other environmental functions. Many of the records involved boundaries, networks, sites or monitoring locations. A council could continue to produce paper maps for those functions, but the underlying information was becoming more useful when it could be maintained once and reused across several jobs.",
+              "markdown": "The Resource Management Act 1991 added another spatial workload when it came into force on 1 October that year. Territorial authorities needed land-use and district-planning information, while regional councils worked across water, air, coast, catchments and other environmental functions. Many of the records involved boundaries, networks, sites or monitoring locations. A council could continue to produce paper maps for those functions, but the underlying information was becoming more useful when it could be maintained once and reused across several jobs.",
+              "sources": [],
+              "id": "ch23-s01-p03"
+            },
+            {
+              "type": "paragraph",
+              "text": "The same reuse could begin with material that was barely digital at all. In May 2006 Ian McCahon of Geotech Consulting sent Marlborough District Council two hand-drawn sheets of possible fault traces around Renwick. The traces had been interpreted from old RNZAF aerial photographs, newer council aerials and field observations, and were intended to be digitised into the council GIS. The consultant offered either to redraw them in CorelDraw and supply DWF files for transfer, or to let council staff digitise the sheets in-house. He also insisted that the approximate locations and interpretive nature of the traces be carried into the final output. The correspondence says the work had been requested by council officer Ian Sutherland. It is a small but revealing handoff: field interpretation became pencil lines, pencil lines became digital geometry, and the uncertainty could not sensibly be cleaned away by the software.",
+              "markdown": "The same reuse could begin with material that was barely digital at all. In May 2006 Ian McCahon of Geotech Consulting sent Marlborough District Council two hand-drawn sheets of possible fault traces around Renwick. The traces had been interpreted from old RNZAF aerial photographs, newer council aerials and field observations, and were intended to be digitised into the council GIS. The consultant offered either to redraw them in CorelDraw and supply DWF files for transfer, or to let council staff digitise the sheets in-house. He also insisted that the approximate locations and interpretive nature of the traces be carried into the final output. The correspondence says the work had been requested by council officer Ian Sutherland. It is a small but revealing handoff: field interpretation became pencil lines, pencil lines became digital geometry, and the uncertainty could not sensibly be cleaned away by the software.",
+              "sources": [],
+              "id": "ch23-s01-p04"
+            },
+            {
+              "type": "paragraph",
+              "text": "The early 1990s were therefore less a story of councils discovering maps than of councils reorganising information that was already geographic. Rates referred to properties. Consents referred to sites. Roads, water pipes and drains formed networks. District plans divided land into zones. Rivers and catchments crossed property and council boundaries. GIS arrived in local government at a point when the organisation itself was being asked to behave more like an integrated information system.",
+              "markdown": "The early 1990s were therefore less a story of councils discovering maps than of councils reorganising information that was already geographic. Rates referred to properties. Consents referred to sites. Roads, water pipes and drains formed networks. District plans divided land into zones. Rivers and catchments crossed property and council boundaries. GIS arrived in local government at a point when the organisation itself was being asked to behave more like an integrated information system.",
+              "sources": [],
+              "id": "ch23-s01-p05"
+            },
+            {
+              "type": "paragraph",
+              "text": "Topoclimate South assembled soil and climate information across roughly 800,000 hectares of Southland and South Otago between 1998 and 2001. About 900 automated dataloggers measured local conditions for mapping at 1:50,000, including accumulated heat expressed as growing-degree days. Gary Hutchinson and Bill Risk, affiliated with the Topoclimate South Project, and Katrina Richards from University of Otago Geography co-authored a contemporary account of the work in 2000. Manaaki Whenua’s later history identifies Hutchinson as the project lead. Southland Regional Council worked with southern district and city councils, community partners and researchers to give landowners information for decisions about crops and land-use diversification. Soil and climate map series were distributed in 2002. The project helped stimulate growOTAGO, which extended a similar regional approach into Otago.",
+              "sources": [
+                {
+                  "label": "Hutchinson, Richards and Risk, Aspects of accumulated heat patterns (growing-degree days) and pasture growth in Southland",
+                  "url": "https://www.nzgajournal.org.nz/index.php/ProNZGA/article/view/2396"
+                },
+                {
+                  "label": "Manaaki Whenua, A history of New Zealand soil survey, 1990s restructuring and Topoclimate South/growOTAGO sections",
+                  "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+                }
+              ],
+              "id": "research-topoclimate-south",
+              "markdown": "Topoclimate South assembled soil and climate information across roughly 800,000 hectares of Southland and South Otago between 1998 and 2001. About 900 automated dataloggers measured local conditions for mapping at 1:50,000, including accumulated heat expressed as growing-degree days. Gary Hutchinson and Bill Risk, affiliated with the Topoclimate South Project, and Katrina Richards from University of Otago Geography co-authored a contemporary account of the work in 2000. Manaaki Whenua’s later history identifies Hutchinson as the project lead. Southland Regional Council worked with southern district and city councils, community partners and researchers to give landowners information for decisions about crops and land-use diversification. Soil and climate map series were distributed in 2002. The project helped stimulate growOTAGO, which extended a similar regional approach into Otago."
+            },
+            {
+              "type": "paragraph",
+              "text": "Otago Regional Council published growOTAGO in 2004 with NIWA, AgResearch, Manaaki Whenua, universities and other partners. The product included 92 climate maps, soil mapping and topographic and aerial context, distributed on four CDs and later through an online map service. Ian Lynn and Sam Carrick are among the research contributors identified in the technical histories. Integrated Mapping developed the website and CD presentation. The combination made regional land-resource information usable beyond the offices that had assembled it: farmers and advisers could compare soil and climate conditions when considering an existing activity or a possible new one.",
+              "sources": [
+                {
+                  "label": "National Library of New Zealand catalogue record, GrowOtago: climate and soil maps",
+                  "url": "https://natlib.govt.nz/records/20595857"
+                },
+                {
+                  "label": "Otago Regional Council GrowOtago map-service metadata",
+                  "url": "https://maps.orc.govt.nz/arcgis/rest/services/GrowOtago/MapServer"
+                }
+              ],
+              "id": "research-growotago-distribution",
+              "markdown": "Otago Regional Council published growOTAGO in 2004 with NIWA, AgResearch, Manaaki Whenua, universities and other partners. The product included 92 climate maps, soil mapping and topographic and aerial context, distributed on four CDs and later through an online map service. Ian Lynn and Sam Carrick are among the research contributors identified in the technical histories. Integrated Mapping developed the website and CD presentation. The combination made regional land-resource information usable beyond the offices that had assembled it: farmers and advisers could compare soil and climate conditions when considering an existing activity or a possible new one."
+            }
+          ],
+          "sources": [],
+          "legacyAnchor": "a-new-local-government"
+        },
+        "acceptedEditorialChange": true
+      }
+    ],
+    "candidateHash": "b27172a0fea34c22252e3e6cf6ee72e976285f816a5893d563556d48009e3429"
+  },
+  "expectedGitHead": "34a107575e47ac5da31d75a406fda766e6ed09a2",
+  "counts": {
+    "articles": 45,
+    "passages": 594,
+    "records": 840,
+    "events": 189,
+    "relationships": 2593,
+    "themes": 7,
+    "images": 52
+  },
+  "appliedAt": "2026-10-10T09:59:14.477Z",
+  "status": "local-candidate-not-published"
+}

@@ -4,7 +4,7 @@
   "articleId": "article:chapter-13",
   "title": "Records made for different jobs",
   "order": 1,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [],
   "recordIds": [
     "chapter:13"
@@ -23,6 +23,15 @@
       "markdown": "The record map was especially useful for finding where a parcel sat in relation to its neighbours. It was not necessarily constructed to preserve survey-grade coordinates for every boundary corner. In dense areas it could be compiled at a large scale and show considerable detail; in remote areas a much smaller-scale sheet might be sufficient for administration. The map was an index and working record created under the constraints of its time. DCDB inherited that role first, which explains both why it became so useful to GIS users and why later survey conversion had to return to the underlying plans and measurements.",
       "sources": [],
       "id": "ch13-s02-p02"
+    },
+    {
+      "type": "figure",
+      "id": "ch13-s02-figure-silverpeak-1956",
+      "after": "ch13-s02-p02",
+      "alt": "1956 cadastral map of Silverpeak Survey District in Otago.",
+      "caption": "A 1956 NZMS 13 cadastral record map for Silverpeak Survey District, illustrating the paper maps used to locate parcels before the national digital cadastral database.",
+      "credit": "New Zealand Railways Corporation / Archives New Zealand, DABB D101 409/23 (R6619107), via Wikimedia Commons, CC BY 2.0.",
+      "imageId": "image:silverpeak-survey-district-1956"
     },
     {
       "type": "paragraph",

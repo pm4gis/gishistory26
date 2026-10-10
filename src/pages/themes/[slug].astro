@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
 import SubjectImage from '../../components/SubjectImage.astro';
-import {pickThemeImage,pickRecordImage} from '../../lib/subject-media.mjs';
+import {pickThemeImage,pickThemeImages,pickRecordImage} from '../../lib/subject-media.mjs';
 import {dataset,passageUrl} from '../../lib/data';
 export async function getStaticPaths(){const d=await dataset();return d.themes.map((t:any)=>({params:{slug:t.slug},props:{id:t.id}}))}
 const d=await dataset();
@@ -11,6 +11,7 @@ const passages=d.passages.filter((p:any)=>p.themeIds.includes(t.id)||t.passageId
 const records=d.records.filter((r:any)=>r.themeIds.includes(t.id)&&r.kind!=='Story');
 const artIndex=d.themes.findIndex((x:any)=>x.id===t.id);
 const featured=pickThemeImage(t.slug,d.images);
+const documentaryImages=pickThemeImages(t.id,d.images).filter((image:any)=>image.slug!==featured?.image.slug);
 const recordCards=records.map((r:any)=>({...r,subject:pickRecordImage(r,d.images)}));
 ---
 <Layout title={t.title+' · NZ GIS History'}>
@@ -21,6 +22,7 @@ const recordCards=records.map((r:any)=>({...r,subject:pickRecordImage(r,d.images
   </div>
   <h2>Read the accounts</h2>
   <ul class="list">{passages.map((p:any)=><li><a href={passageUrl(p,d.articles)}>{p.title}</a><small>{d.articles.find((a:any)=>a.id===p.articleId)?.title}</small></li>)}</ul>
+  {documentaryImages.length>0&&<section class="documentary-gallery" aria-labelledby="theme-image-heading"><h2 id="theme-image-heading">More documentary images</h2><div class="cards">{documentaryImages.map((image:any)=><article class="card subject-entry-card"><SubjectImage image={image} relation={image.context||'Documentary image associated with this theme.'} variant="card"/></article>)}</div></section>}
   {t.stops?.length>0&&<details><summary>Suggested reading sequence</summary><ol>{t.stops.map((s:any)=><li><a href={s.url}>{s.title}</a></li>)}</ol></details>}
   <h2>Related entries</h2><div class="cards">{recordCards.map((r:any)=><article class="card subject-entry-card">{r.subject&&<SubjectImage image={r.subject.image} relation={r.subject.relation} variant="card"/>}<small>{r.kind}</small><a class="title" href={r.url}>{r.name}</a></article>)}</div>
  </div>
