@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {passageContributionMailto,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
-import {ngaPoutamaVideos,ngaPoutamaPlaylist,ngaPoutamaFeedEvidence,ngaPoutamaThumbnail,videosForPassage} from '../src/lib/nga-poutama-videos.mjs';
+import {ngaPoutamaVideos,ngaPoutamaPlaylist,ngaPoutamaFeedEvidence,ngaPoutamaThumbnail,videosForPassage,ngaPoutamaReadingLinks} from '../src/lib/nga-poutama-videos.mjs';
 
 const article={title:'Survey calculations',url:'/stories/coordinates-enter-the-computer/'};
 const passage={title:'Transforming one coordinate world into another',slug:'transforming-one-coordinate-world-into-another-2ab91fbc4f'};
@@ -60,6 +60,11 @@ test('Archive sources have unique valid IDs, evidence, speaker uncertainty and c
  assert.equal(ngaPoutamaVideos.find(x=>x.id==='nbMkx7TcmtU').presenters[0],'Duane Wilkins');
  assert.ok(ngaPoutamaVideos.find(x=>x.id==='gZdhElp_GrI').presenters.includes('Tania Te Hira'));
  assert.throws(()=>ngaPoutamaThumbnail('../bad'));
+ const passages=readdirSync('src/content/passages').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(readFileSync('src/content/passages/'+x,'utf8')));
+ const articles=readdirSync('src/content/articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(readFileSync('src/content/articles/'+x,'utf8')));
+ const readingLinks=ngaPoutamaReadingLinks(passages,articles);
+ assert.equal(Object.keys(readingLinks).length,new Set(ngaPoutamaVideos.map(x=>x.passageId)).size);
+ assert.ok(Object.values(readingLinks).every(x=>x.startsWith('/stories/')&&x.includes('#')));
 });
 test('Videos render inline within passage blocks in both reader modes, not after the whole chapter',()=>{
  const reader=readFileSync('src/components/Reader.svelte','utf8');
@@ -69,7 +74,7 @@ test('Videos render inline within passage blocks in both reader modes, not after
  assert.ok(reader.includes('<WanangaClip video={clip}/>'));
  assert.ok(!reader.includes('<WanangaVideos/>'));
  const page=readFileSync('src/pages/nga-poutama-videos/index.astro','utf8');
- assert.ok(page.includes('<WanangaVideos archive client:load/>'));
+ assert.ok(page.includes('<WanangaVideos archive client:load {readingLinks}/>'));
  const profile=readFileSync('src/pages/[...path].astro','utf8');
  assert.ok(profile.includes("r.kind==='Person'?null:pickRecordImage"));
 });
