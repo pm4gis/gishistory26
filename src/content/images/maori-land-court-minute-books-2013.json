@@ -1,0 +1,33 @@
+{
+  "id": "image:maori-land-court-minute-books-2013",
+  "slug": "maori-land-court-minute-books-2013",
+  "title": "Māori Land Court minute books photographed in 2013",
+  "assetPath": "/assets/historical/web/maori-land-court-minute-books-2013.webp",
+  "thumbnailPath": "/assets/historical/card/maori-land-court-minute-books-2013.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maori_Land_Court_Minute_Books_(10429925655).jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Archives New Zealand",
+  "licence": "CC BY-SA 2.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Maori_Land_Court_Minute_Books_(10429925655).jpg",
+  "altText": "Photographic record of Māori Land Court minute books, providing evidence of original paper records; this is not a 2002 or 2011 GIS screenshot.",
+  "caption": "Photographic record of Māori Land Court minute books, providing evidence of original paper records; this is not a 2002 or 2011 GIS screenshot.",
+  "context": "Photographic record of Māori Land Court minute books, providing evidence of original paper records; this is not a 2002 or 2011 GIS screenshot.",
+  "themeIds": [],
+  "dateDisplay": "30 September 2013 (photograph); historic court record",
+  "originalSha256": "34a03dde901e97a614f878b61cc8506126262887d86e37640469a87c1d9dba2e",
+  "webSha256": "73ed26202765de92b620eab355c8fd665427a65b68ed80daab7589b14ee36fd3",
+  "thumbnailSha256": "aba25c711001cc3cd5335983b608479eb4faa19feea28b60b0f180cf8f9b28bf",
+  "originalWidth": 3152,
+  "originalHeight": 1100,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Maori_Land_Court_Minute_Books_%2810429925655%29.jpg",
+  "sourceFileTitle": "File:File:Maori Land Court Minute Books (10429925655).jpg",
+  "derivativesNote": "Original unchanged JPEG archived in the Wave 4 research package; the website uses uncropped WebP display and card derivatives. Original and crop licensing per Commons file page; no cropping performed.",
+  "relatedRecords": [
+    {
+      "name": "maori land court",
+      "url": "/entities/maori-land-court/",
+      "role": "Image subject or related institution; see context for limitations"
+    }
+  ]
+}

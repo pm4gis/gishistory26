@@ -1,0 +1,33 @@
+{
+  "id": "image:otago-registry-2009",
+  "slug": "otago-registry-2009",
+  "title": "University of Otago Registry Building in 2009",
+  "assetPath": "/assets/historical/web/otago-registry-2009.webp",
+  "thumbnailPath": "/assets/historical/card/otago-registry-2009.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Otago_Registry_Building.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Benchill",
+  "licence": "CC BY-SA 3.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Otago_Registry_Building.jpg",
+  "altText": "University of Otago Registry Building, institutional context for the university's GIS education and conferences; not a GIS classroom photograph.",
+  "caption": "University of Otago Registry Building, institutional context for the university's GIS education and conferences; not a GIS classroom photograph.",
+  "context": "University of Otago Registry Building, institutional context for the university's GIS education and conferences; not a GIS classroom photograph.",
+  "themeIds": [],
+  "dateDisplay": "26 April 2009",
+  "originalSha256": "e79c7e8b985f23c481e018f182a17d3b62befc774b3fbb9374a9751e2924da03",
+  "webSha256": "f9bca5846a823eacd46da11f513f077572eaad056689111fc0753bebc9981dbc",
+  "thumbnailSha256": "3bea9ab38ce58f08436bd26033fb8590a295788f65e948e8735be5e079059299",
+  "originalWidth": 1536,
+  "originalHeight": 2048,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/University_of_Otago_Registry_Building.jpg",
+  "sourceFileTitle": "File:File:University of Otago Registry Building.jpg",
+  "derivativesNote": "Original unchanged JPEG archived in the Wave 4 research package; the website uses uncropped WebP display and card derivatives. Original and crop licensing per Commons file page; no cropping performed.",
+  "relatedRecords": [
+    {
+      "name": "university of otago",
+      "url": "/entities/university-of-otago/",
+      "role": "Image subject or related institution; see context for limitations"
+    }
+  ]
+}

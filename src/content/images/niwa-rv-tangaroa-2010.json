@@ -1,0 +1,33 @@
+{
+  "id": "image:niwa-rv-tangaroa-2010",
+  "slug": "niwa-rv-tangaroa-2010",
+  "title": "NIWA research vessel Tangaroa",
+  "assetPath": "/assets/historical/web/niwa-rv-tangaroa-2010.webp",
+  "thumbnailPath": "/assets/historical/card/niwa-rv-tangaroa-2010.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:RV_Tangaroa.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Dave Allen / National Institute of Water and Atmospheric Research",
+  "licence": "CC BY 3.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:RV_Tangaroa.jpg",
+  "altText": "NIWA research vessel Tangaroa. Direct institutional image; not an image of NIWA's GIS systems or geospatial data.",
+  "caption": "NIWA research vessel Tangaroa. Direct institutional image; not an image of NIWA's GIS systems or geospatial data.",
+  "context": "NIWA research vessel Tangaroa. Direct institutional image; not an image of NIWA's GIS systems or geospatial data.",
+  "themeIds": [],
+  "dateDisplay": "Published December 2010; vessel photographed before or by that date",
+  "originalSha256": "735fae214f29e74a88232f9871cd59fc0ab2543f99917bdb189c6c62e87b095f",
+  "webSha256": "a000caf656c7cb4a2d538131a619dcf0141fa041fd256067ed75336dcf49e1f2",
+  "thumbnailSha256": "1f1e21a973f85c31d873cd136d140900d736d92a19009d82aef81547392db5a0",
+  "originalWidth": 3425,
+  "originalHeight": 2772,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/RV_Tangaroa.jpg",
+  "sourceFileTitle": "File:File:RV Tangaroa.jpg",
+  "derivativesNote": "Original unchanged JPEG archived in the Wave 4 research package; the website uses uncropped WebP display and card derivatives. Original and crop licensing per Commons file page; no cropping performed.",
+  "relatedRecords": [
+    {
+      "name": "niwa",
+      "url": "/entities/niwa/",
+      "role": "Image subject or related institution; see context for limitations"
+    }
+  ]
+}

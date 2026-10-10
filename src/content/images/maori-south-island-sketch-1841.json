@@ -1,0 +1,33 @@
+{
+  "id": "image:maori-south-island-sketch-1841",
+  "slug": "maori-south-island-sketch-1841",
+  "title": "Māori-sourced map of the South Island and Rakiura, c.1841",
+  "assetPath": "/assets/historical/web/maori-south-island-sketch-1841.webp",
+  "thumbnailPath": "/assets/historical/card/maori-south-island-sketch-1841.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:M%C4%81ori_map_of_the_Middle_(South)_Island_and_Stewart_Island,_c.1841_(19532914794).jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Unidentified Ngāi Tahu/Kāi Tahu source of original sketch; Edmund Halswell (c.1841 transcription); Lands and Survey (later lithography); image published by Archives New Zealand",
+  "licence": "CC BY-SA 2.0 (digital photograph)",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:M%C4%81ori_map_of_the_Middle_(South)_Island_and_Stewart_Island,_c.1841_(19532914794).jpg",
+  "altText": "A historical map derived from an unidentified Māori/Kāi Tahu sketch and colonial transcription, evidence of place knowledge and its representation. This predates GIS and is not the Kā Huru Manu atlas.",
+  "caption": "A historical map derived from an unidentified Māori/Kāi Tahu sketch and colonial transcription, evidence of place knowledge and its representation. This predates GIS and is not the Kā Huru Manu atlas.",
+  "context": "A historical map derived from an unidentified Māori/Kāi Tahu sketch and colonial transcription, evidence of place knowledge and its representation. This predates GIS and is not the Kā Huru Manu atlas.",
+  "themeIds": [],
+  "dateDisplay": "c.1841 map; 2015 Commons publication",
+  "originalSha256": "f62199553c0b003f121f1514ec2698eb9e6f09ce54fb6c1c4270e2a0e41fe685",
+  "webSha256": "6149ffe46e27350fbf1a8134e07eb9f36cc87b9479e8e34ff6e9c7aead619be7",
+  "thumbnailSha256": "4b7f32858769a43f9d6dcdc2bccbf182cd0f74ce95346004512ebdc95cc3dbec",
+  "originalWidth": 3038,
+  "originalHeight": 4609,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/M%C4%81ori_map_of_the_Middle_%28South%29_Island_and_Stewart_Island%2C_c.1841_%2819532914794%29.jpg",
+  "sourceFileTitle": "File:File:Māori map of the Middle (South) Island and Stewart Island, c.1841 (19532914794).jpg",
+  "derivativesNote": "Original unchanged JPEG archived in the Wave 4 research package; the website uses uncropped WebP display and card derivatives. Original and crop licensing per Commons file page; no cropping performed.",
+  "relatedRecords": [
+    {
+      "name": "te runanga o ngai tahu ngai tahu archive",
+      "url": "/entities/te-runanga-o-ngai-tahu-ngai-tahu-archive/",
+      "role": "Image subject or related institution; see context for limitations"
+    }
+  ]
+}

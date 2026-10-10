@@ -1,0 +1,28 @@
+{
+  "id": "image:ngai-tahu-takiwa-map-2010",
+  "slug": "ngai-tahu-takiwa-map-2010",
+  "title": "Ngāi Tahu takiwā mapped with GIS, 2010",
+  "assetPath": "/assets/historical/web/ngai-tahu-takiwa-map-2010.webp",
+  "thumbnailPath": "/assets/historical/card/ngai-tahu-takiwa-map-2010.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ng%C4%81i_Tahu_Takiwa.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Igover",
+  "licence": "CC BY-SA 3.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Ng%C4%81i_Tahu_Takiwa.jpg",
+  "altText": "A 2010 contributor-created GIS map of the land recognised as Ngāi Tahu takiwā under the Ngāi Tahu Claims Settlement Act 1998. Not the Kā Huru Manu atlas; no assertion of legal boundary precision.",
+  "caption": "A 2010 contributor-created GIS map of the land recognised as Ngāi Tahu takiwā under the Ngāi Tahu Claims Settlement Act 1998. Not the Kā Huru Manu atlas; no assertion of legal boundary precision.",
+  "context": "A 2010 contributor-created GIS map of the land recognised as Ngāi Tahu takiwā under the Ngāi Tahu Claims Settlement Act 1998. Not the Kā Huru Manu atlas; no assertion of legal boundary precision.",
+  "themeIds": [
+    "maori-gis"
+  ],
+  "dateDisplay": "15 February 2010",
+  "originalSha256": "ab6646683bfb188f988ad0684606662af62b9cbe37dd920a44936d91fa953701",
+  "webSha256": "077a48dfad02280b10bb1cc633870ad41170ed0ade8a4d6414e4a18f60debc35",
+  "thumbnailSha256": "dd2434847b94487b52b6b3be6e03259169e9619d81f2bff7ba38a61eb67016a9",
+  "originalWidth": 599,
+  "originalHeight": 807,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Ng%C4%81i_Tahu_Takiwa.jpg",
+  "sourceFileTitle": "File:File:Ngāi Tahu Takiwa.jpg",
+  "derivativesNote": "Original unchanged JPEG archived in the Wave 4 research package; the website uses uncropped WebP display and card derivatives. Original and crop licensing per Commons file page; no cropping performed."
+}
