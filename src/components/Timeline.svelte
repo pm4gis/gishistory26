@@ -57,7 +57,7 @@
    {#if selected.featuredImage}
    <figure class="event-illustration">
     <a href={'/images/'+selected.featuredImage.slug+'/'} aria-label={'View source and details for '+selected.featuredImage.title}><img src={selected.featuredImage.assetPath} alt={selected.featuredImage.altText} loading="lazy" decoding="async"/></a>
-    <figcaption><strong>{selected.featuredImage.title}</strong><span>{selected.featuredImage.relation}</span><a href={'/images/'+selected.featuredImage.slug+'/'}>View image, source and attribution →</a></figcaption>
+    <figcaption><strong>{selected.featuredImage.title}</strong>{#if selected.featuredImage.dateDisplay}<span>Image date: {selected.featuredImage.dateDisplay}</span>{/if}<span>{selected.featuredImage.relation}</span><a href={'/images/'+selected.featuredImage.slug+'/'}>View image, source and attribution →</a></figcaption>
    </figure>
    {/if}
   </div>
@@ -66,12 +66,13 @@
     <h4>Additional documentary images</h4>
     <div class="event-companion-images-grid">
      {#each selected.additionalImages as image (image.slug)}
-      <a href={'/images/'+image.slug+'/'}><img src={image.assetPath} alt={image.altText} loading="lazy" decoding="async"/><span>{image.title} · View source and attribution →</span></a>
+      <a href={'/images/'+image.slug+'/'}><img src={image.assetPath} alt={image.altText} loading="lazy" decoding="async"/><span>{image.title} · View source, date and attribution →</span></a>
      {/each}
     </div>
    </section>
   {/if}
   {#if selected.imageSourceLink}<p class="event-primary-source"><a href={selected.imageSourceLink} target="_blank" rel="noopener noreferrer">{selected.imageSourceLabel||'See the archival source'} ↗</a></p>{/if}
+  {#if selected.additionalArchivalSources?.length}<div class="event-extra-sources"><h4>Original archive references</h4><ul>{#each selected.additionalArchivalSources as source}<li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a></li>{/each}</ul></div>{/if}
   {#if selected.relatedRecords?.length}<div class="event-related"><h4>Related people and organisations</h4><div class="event-related-links">{#each selected.relatedRecords as r}<a href={r.url}>{r.name}</a>{/each}</div></div>{/if}
   {#if selected.contextualSources?.length}<details class="sources"><summary>Sources and further reading · {selected.contextualSources.length}</summary><ul>{#each selected.contextualSources as source}<li>{#if source.url&&(/^https?:\/\//.test(source.url)||source.url.startsWith('/'))}<a href={source.url}>{source.label}</a>{:else}{source.label}{/if}</li>{/each}</ul></details>{/if}
  </section>
