@@ -1,5 +1,6 @@
 <script lang="ts">
  import {scaleLinear} from 'd3-scale';
+ import {ngaPoutamaForEvent} from '../lib/nga-poutama-videos.mjs';
  export let events:any[]=[];export let compact=false;export let onSelect:(e:any)=>void=()=>{};
  let from='';let to='';let term='';let selected:any=null;let includeUndated=true;
  const year=(e:any)=>e.datePrecision==='unknown'?null:(e.year??(e.startDate?.match(/^\d{4}/)?Number(e.startDate.slice(0,4)):null));
@@ -53,6 +54,13 @@
      </div>
     {/if}
     {#if selected.url}<p><a href={selected.url}>Read the linked account →</a></p>{/if}
+    {#if ngaPoutamaForEvent(selected.id).length}
+      <div class="event-wananga-links"><h4>Related published recording</h4>
+        {#each ngaPoutamaForEvent(selected.id) as video (video.id)}
+          <p><a href={video.source} target="_blank" rel="noopener noreferrer">{video.title} ↗</a> <small>{video.date}. {video.attribution}</small></p>
+        {/each}
+      </div>
+    {/if}
    </div>
    {#if selected.featuredImage}
    <figure class="event-illustration">
