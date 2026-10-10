@@ -3,7 +3,7 @@ import {join, resolve, sep} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 
-const required = ['id','placement','rightsStatus','verifiedBy','verifiedOn','sourceLayerUrl','licensor','licenceUrl','attribution','altText'];
+const required = ['id','placement','rightsStatus','verifiedBy','verifiedOn','sourceLayerUrl','licensor','licenceUrl','attribution','altText','evidenceUrl','sourceImageSha256'];
 const variants = ['card','feature','hero'];
 const safeUrl = u => typeof u === 'string' && /^https:\/\/[^\s]+$/i.test(u);
 const validPath = p => typeof p === 'string' && p.startsWith('/landscapes/') && !p.includes('..') && !p.includes('\\');
@@ -13,7 +13,9 @@ export function inspectLandscapeRegistry(registry, publicDir) {
   for (const image of registry.images) {
     for (const field of required) if (typeof image[field] !== 'string' || !image[field].trim()) errors.push((image.id || 'unnamed') + ': missing ' + field);
     if (image.rightsStatus !== 'approved') errors.push(image.id + ': only explicitly approved images belong in the public registry');
-    if (!safeUrl(image.sourceLayerUrl) || !safeUrl(image.licenceUrl)) errors.push(image.id + ': missing verifiable HTTPS provenance/licence');
+    if (!safeUrl(image.sourceLayerUrl) || !safeUrl(image.licenceUrl) || !safeUrl(image.evidenceUrl)) errors.push(image.id + ': missing verifiable HTTPS provenance/licence');
+    if (!/^[a-z0-9][a-z0-9-]*$/.test(image.id) || !/^[a-f0-9]{64}$/.test(image.sourceImageSha256 || '')) errors.push((image.id || 'unnamed') + ': invalid source ID or original checksum');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(image.verifiedOn || '')) errors.push(image.id + ': invalid verification date');
     if (seen.has(image.placement)) errors.push(image.id + ': duplicate placement ' + image.placement);
     seen.add(image.placement);
     if (!image.variants || !variants.every(k => image.variants[k])) { errors.push(image.id + ': card/feature/hero variants required'); continue; }
