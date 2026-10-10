@@ -255,3 +255,39 @@
   .wananga-video-grid{grid-template-columns:1fr}
   .wananga-videos-heading>.button{align-self:flex-start}
 }
+
+
+/* Topic-filtered Ngā Poutama catalogue; contextual cards sit between passage paragraphs. */
+.wananga-video-filters{display:flex;flex-wrap:wrap;gap:7px;margin:19px 0 4px}
+.wananga-video-filters button{padding:7px 12px;font-size:13px;min-height:38px}
+.wananga-videos--inline{margin:24px 0 30px;padding:18px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.wananga-videos-inline-head h3{font-size:clamp(18px,2vw,21px);margin:0 0 5px}
+.wananga-videos-inline-head p{color:var(--muted);font-size:13px;line-height:1.55;margin:0 0 12px}
+.wananga-video-grid--inline{grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:12px;margin-top:12px}
+.wananga-videos--inline .wananga-video-copy{padding:12px}
+.wananga-videos--inline .wananga-video-copy h3{font-size:15px}
+.wananga-videos--inline .wananga-video-copy p{font-size:13px}
+.wananga-videos--inline .wananga-play{padding:7px 10px}
+.event-wananga-links{margin-top:15px;padding:12px 16px;border-left:3px solid var(--accent);background:var(--raised);border-radius:4px}
+.event-wananga-links h4{margin:0 0 8px;font-size:15px}
+.event-wananga-links p{margin:8px 0}
+.event-wananga-links small{display:block;margin-top:4px;font-size:12px;color:var(--muted)}
+@media(min-width:1400px){.reading-grid .narrative .wananga-video-grid--inline{max-width:100%;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}}
+@media(max-width:600px){.wananga-video-grid--inline{grid-template-columns:1fr}.wananga-video-filters{gap:6px}.wananga-video-filters button{font-size:12px}}
+
+
+/* Several supplementary recordings at one passage become a swipeable,
+   keyboard-scrollable row instead of interrupting the chapter with 7 tall cards. */
+.wananga-video-grid--inline{
+  display:grid;grid-template-columns:none;grid-auto-flow:column;
+  grid-auto-columns:minmax(220px,calc((100% - 24px)/3));
+  overflow-x:auto;overscroll-behavior-inline:contain;
+  scroll-snap-type:x proximity;scrollbar-width:thin;scroll-padding-inline:4px;
+  padding:3px 2px 13px;
+}
+.wananga-video-grid--inline .wananga-video-card{scroll-snap-align:start}
+.wananga-video-people a{display:inline-block;margin:4px 7px 0 0;font-size:12px}
+@media(max-width:700px){
+  .wananga-video-grid--inline{grid-template-columns:none;grid-auto-columns:minmax(245px,85%)}
+}
+@media(prefers-reduced-motion:reduce){.wananga-video-grid--inline{scroll-behavior:auto}}

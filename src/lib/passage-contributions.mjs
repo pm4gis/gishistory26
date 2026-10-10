@@ -2,10 +2,10 @@
  * Mailto contribution hand-off. This opens the reader's own email client; it
  * never sends, submits or stores correspondence through NZ GIS History.
  *
- * Recipient: public geospatial programme contact, also named by LINZ.
+ * Recipient: NZ GIS History contributions address specified by the project owner.
  * Keep the clicked passage's permanent production URL in the email body.
  */
-export const contributionRecipient='duane.wilkins@gmail.com';
+export const contributionRecipient='pm4gis@gmail.com';
 export const productionOrigin='https://history.pm4gis.nz';
 
 export function passagePermanentUrl(article,passage,origin=productionOrigin){
@@ -21,7 +21,7 @@ export function passageContributionMailto(article,passage){
   const url=passagePermanentUrl(article,passage);
   const title=String(passage.title||'Untitled passage').trim();
   const chapter=String(article.title||'NZ GIS History').trim();
-  const subject='NZ GIS History contribution: '+title;
+  const subject='NZ GIS History Contributions and Corrections — '+title;
   const body=[
     'Kia ora,',
     '',
