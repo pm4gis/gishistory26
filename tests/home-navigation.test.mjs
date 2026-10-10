@@ -42,7 +42,7 @@ test('highlight pool contains unique, published stories with real passages',()=>
 
 test('desktop and mobile menus provide About and Contribute, with accessible native disclosure',()=>{
  assert.match(layout,/<details class="mobile-menu">/);
- assert.match(layout,/<summary\\b/);
+ assert.ok(layout.includes('<summary aria-label="Open navigation menu"'));
  assert.match(layout,/aria-label="Mobile navigation"/);
  assert.match(layout,/aria-label="Main navigation"/);
  assert.equal((layout.match(/href="\/about\/"/g)||[]).length,3);
