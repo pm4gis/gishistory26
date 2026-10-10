@@ -55,3 +55,13 @@ Ensure `npm test`, `npm run build`, baseline file preservation, internal links a
 ## Highest-value remaining research gap
 
 Acquire a complete dated export of the official LINZ playlist (subject to normal access and permissions), including pre-2024 videos that are not exposed by the feed, then reconcile all newly surfaced sessions without duplicating the existing 15 records. Collect speaker credits solely from published video descriptions or authoritative LINZ programme records.
+
+## Reconciled archive extension, 11 October 2026
+
+This update retains the main-branch 15-video catalogue and its integrated swipeable reader and timeline presentation. A further independently evidenced official LINZ playlist recording is added: **Discover Kōrero Takutai – A kete of coastal data for Takutai Moana applications**, video [gZdhElp_GrI](https://www.youtube.com/watch?v=gZdhElp_GrI), published **11 June 2025** following the **16 May 2025** wānanga. Its source description identifies **Karl Majorhazi** and **Tania Te Hira**. It links to existing published event `linzcap-2025-05-16-nga-poutama-explores-korero-takutai`, existing source passage `passage:research-20261010-ch33-public-data-and-iwi-controlled-information`, and their existing people profiles. The external YouTube thumbnail is not copied or stored.
+
+The official [LINZ playlist Atom feed](https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk) exposed **14** recent records from November 2024 to June 2026. Two other recordings were verified independently, for **16 total curated entries**, without claiming historical playlist completeness. A live browser scrolling inventory was prevented by the browser service's depleted wallet; no unverifiable older entries were fabricated.
+
+The new indexed route `/nga-poutama-videos/` offers accessible text search and topic filters as well as direct original-video, published event and source passage links. Existing contextual videos within chapters, the independent timeline, Māori GIS theme and Ngā Poutama programme profile remain intact. The reader's agreed contribution recipient is `pm4gis@gmail.com`; the subject retains the passage title after the approved `NZ GIS History Contributions and Corrections` prefix and the body retains its exact permalink and questions. This avoids overriding the parallel publication's accepted improvements.
+
+A Chromium-based regression workflow verifies both passage-reader modes and contribution drafts, actual laptop/mobile widths, the contextual inline videos, archive filtering, related links and lack of person portraits. Standard tests, preservation and build must pass before deploying this branch.
