@@ -1,0 +1,14 @@
+{
+  "id": "relationship:qmap-03",
+  "a": "dataset:qmap-250k",
+  "b": "person:jane-forsyth",
+  "label": "Geological compilation contributor",
+  "basis": "Official GNS 1:1 million map service identifies Jane Forsyth among QMAP compilers.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science national geological map service, contributor credits",
+      "url": "https://gis.gns.cri.nz/server/rest/services/Geological_Map_of_New_Zealand_1_Million/NZL_GNS_1M_geology_FeatureService/FeatureServer"
+    }
+  ]
+}
