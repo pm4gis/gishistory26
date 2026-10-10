@@ -14,3 +14,13 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - run: node scripts/editorial.mjs state > docs/verification/editorial-state.json
+      - run: node scripts/simulated-review.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: publication-verification
+          path: |
+            docs/verification/
+            docs/reviews/
+          retention-days: 30
