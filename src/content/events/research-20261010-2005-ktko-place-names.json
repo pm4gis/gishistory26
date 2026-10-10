@@ -1,0 +1,27 @@
+{
+  "id": "research-20261010-2005-ktko-place-names",
+  "dateDisplay": "2005",
+  "startDate": "2005",
+  "datePrecision": "year",
+  "year": 2005,
+  "label": "Kāi Tahu ki Otago place-name GIS pilot",
+  "summary": "A KTKO Ltd GIS pilot maps Māori place names in the Kāti Huirapa ki Puketeraki takiwā.",
+  "url": "/stories/the-map-becomes-an-application/",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "recordIds": [
+    "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+    "person:matapura-ellison"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Ngāi Tahu, The Ngāi Tahu Atlas: Ingoa Wāhi system and 2005 KTKO pilot",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    }
+  ]
+}

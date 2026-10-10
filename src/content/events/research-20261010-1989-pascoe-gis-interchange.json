@@ -1,0 +1,26 @@
+{
+  "id": "research-20261010-1989-pascoe-gis-interchange",
+  "dateDisplay": "1989",
+  "startDate": "1989",
+  "datePrecision": "year",
+  "year": 1989,
+  "label": "Pascoe's GIS data-interchange MSc",
+  "summary": "Richard T. Pascoe's University of Canterbury MSc examines conversion between incompatible geographic information systems.",
+  "url": "/stories/universities-build-a-field/",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "recordIds": [
+    "person:richard-pascoe"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Richard T. Pascoe, Translating Data Between Geographic Information Systems, MSc thesis, Canterbury, 1989",
+      "url": "https://hdl.handle.net/10092/8408"
+    }
+  ]
+}

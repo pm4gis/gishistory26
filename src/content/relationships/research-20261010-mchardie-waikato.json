@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-mchardie-waikato",
+  "a": "person:tristan-mchardie",
+  "b": "entity:university-of-waikato",
+  "label": "2016 web-mapping master's research",
+  "basis": "University repository thesis",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, Tristan McHardie, Evaluating web mapping applications, 2016",
+      "url": "https://hdl.handle.net/10289/10802"
+    }
+  ]
+}

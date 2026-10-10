@@ -1,0 +1,36 @@
+{
+  "id": "person:jonathan-procter",
+  "slug": "jonathan-procter",
+  "name": "Jonathan Procter",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/jonathan-procter/",
+  "story": [
+    "Massey University's research record names Jonathan Procter as a co-author of Towards developing and applying an Iwi/Hapū based GIS system, presented at the Māori GIS Conference in Christchurch in May 2009. Other credited authors include Garth Harmsworth and additional collaborators. The record establishes a research and conference contribution, but does not by itself allocate specific software development or conference organising roles to Procter."
+  ],
+  "sources": [
+    {
+      "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
+      "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
+        "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
+        "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+      }
+    ]
+  ]
+}

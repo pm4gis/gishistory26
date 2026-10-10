@@ -1,0 +1,52 @@
+{
+  "id": "passage:research-20261010-ch29-maori-gis-practitioner-conferences",
+  "slug": "maori-gis-practitioner-conferences",
+  "articleId": "article:chapter-29",
+  "title": "Māori GIS practitioner conferences",
+  "order": 10,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:29",
+    "person:huia-pacey",
+    "person:garth-harmsworth",
+    "person:jonathan-procter",
+    "person:simon-bickler",
+    "entity:te-kahui-manu-hokai-maori-gis-association",
+    "entity:nga-poutama-matawhenua"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "A Māori GIS Conference was held in Christchurch on 13–15 May 2009. Massey University's research record identifies a presentation that May titled Towards developing and applying an Iwi/Hapū based GIS system, with Jonathan Procter, Garth Harmsworth and collaborators among its authors. This is direct evidence of a practitioner forum and a specific technical contribution. Contemporary documents are still needed to settle the conference's complete organising committee and programme.",
+      "markdown": "A Māori GIS Conference was held in Christchurch on 13–15 May 2009. Massey University's research record identifies a presentation that May titled Towards developing and applying an Iwi/Hapū based GIS system, with Jonathan Procter, Garth Harmsworth and collaborators among its authors. This is direct evidence of a practitioner forum and a specific technical contribution. Contemporary documents are still needed to settle the conference's complete organising committee and programme.",
+      "sources": [
+        {
+          "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
+          "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A further Māori GIS conference took place in Lower Hutt in October 2010. Archaeologist Simon Bickler's CV records his presentation on the New Zealand Archaeological Association's ArchSite GIS database, and a University of Otago planning document independently records student attendance at a Wellington-region Māori GIS conference in 2010. Te Kāhui Manu Hōkai subsequently provided an association for Māori GIS practitioners, although sources differ over its establishment and inaugural-meeting dates. By October 2020 it was working with LINZ and GIS Journey Limited on practical Ngā Poutama Matawhenua mapping wānanga. The dates, organisations and individual responsibilities should be kept distinct.",
+      "markdown": "A further Māori GIS conference took place in Lower Hutt in October 2010. Archaeologist Simon Bickler's CV records his presentation on the New Zealand Archaeological Association's ArchSite GIS database, and a University of Otago planning document independently records student attendance at a Wellington-region Māori GIS conference in 2010. Te Kāhui Manu Hōkai subsequently provided an association for Māori GIS practitioners, although sources differ over its establishment and inaugural-meeting dates. By October 2020 it was working with LINZ and GIS Journey Limited on practical Ngā Poutama Matawhenua mapping wānanga. The dates, organisations and individual responsibilities should be kept distinct.",
+      "sources": [
+        {
+          "label": "Simon Bickler, archaeology CV documenting October 2010 Māori GIS conference presentation",
+          "url": "https://trobriandsindepth.com/htdocs/Trobriand%20CVs/Simon%20Bickler%20Archaeology%20CV%202012%20for%20DEPTH.pdf"
+        },
+        {
+          "label": "University of Otago, School of Surveying Māori strategic framework, 2010",
+          "url": "https://www.otago.ac.nz/__data/assets/pdf_file/0028/318394/school-of-surveying-maori-strategic-framework-685227.pdf"
+        },
+        {
+          "label": "LINZ, Ngā Poutama Matawhenua and geospatial capability, annual report 2020/21",
+          "url": "https://www.linz.govt.nz/sites/default/files/corp/toitu-te-whenua_annual-report-20-21-a11y-web_20211201.pdf"
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "maori-gis-practitioner-conferences"
+}

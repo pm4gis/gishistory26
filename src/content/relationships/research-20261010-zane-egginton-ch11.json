@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-zane-egginton-ch11",
+  "a": "person:zane-egginton",
+  "b": "chapter:11",
+  "label": "2025 hazard resilience design master's research",
+  "basis": "University of Auckland institutional record",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "sources": [
+    {
+      "label": "University of Auckland, Zane Egginton, Weaving Tikanga and Technology, 2025",
+      "url": "https://researchspace.auckland.ac.nz/items/e6c7fcde-0627-4345-919f-0f794a33281a"
+    }
+  ]
+}

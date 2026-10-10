@@ -1,0 +1,79 @@
+{
+  "id": "passage:research-20261010-ch11-masters-research-record-1979-2025",
+  "slug": "masters-research-record-1979-2025",
+  "articleId": "article:chapter-11",
+  "title": "Master's research and practical GIS systems",
+  "order": 13,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:11",
+    "person:m-s-colley",
+    "person:richard-pascoe",
+    "person:john-penny",
+    "person:tristan-mchardie",
+    "person:ana-krpo",
+    "person:xiao-mark-xu",
+    "person:david-ronald-henderson",
+    "person:glen-stichbury",
+    "person:zane-egginton",
+    "entity:university-of-waikato"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "New Zealand master's research documents the practical problems of building geographic information systems. At Canterbury, M. S. Colley's 1979 computer-science thesis examined automated cadastral mapping and the change to metric mapping grids. Richard T. Pascoe's 1989 Canterbury MSc addressed interchange between incompatible GIS formats, proposing a decoder, relational intermediate representation and encoder. The latter work preceded today's routine use of standardised spatial interchange formats. These theses describe particular research systems; the records do not establish how widely each implementation was subsequently deployed.",
+      "markdown": "New Zealand master's research documents the practical problems of building geographic information systems. At Canterbury, M. S. Colley's 1979 computer-science thesis examined automated cadastral mapping and the change to metric mapping grids. Richard T. Pascoe's 1989 Canterbury MSc addressed interchange between incompatible GIS formats, proposing a decoder, relational intermediate representation and encoder. The latter work preceded today's routine use of standardised spatial interchange formats. These theses describe particular research systems; the records do not establish how widely each implementation was subsequently deployed.",
+      "sources": [
+        {
+          "label": "M. S. Colley, A computer system for a cadastral mapping application, University of Canterbury, 1979",
+          "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+        },
+        {
+          "label": "Richard T. Pascoe, Translating Data Between Geographic Information Systems, MSc thesis, Canterbury, 1989",
+          "url": "https://hdl.handle.net/10092/8408"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "University of Waikato master's work shows the spread of applied geographic analysis into environmental and planning questions. Xiao Mark Xu's 2007 thesis used GIS to assess potential wind-farm locations. David Ronald Henderson's 2008 thesis modelled locally generated tsunami inundation at Poverty Bay. Glen Stichbury's 2009 research combined GIS and remote sensing to investigate water availability in the Antarctic Dry Valleys. The repository records establish the theses and their subjects; individual techniques and subsequent deployments should be described only where supported by the full work.",
+      "markdown": "University of Waikato master's work shows the spread of applied geographic analysis into environmental and planning questions. Xiao Mark Xu's 2007 thesis used GIS to assess potential wind-farm locations. David Ronald Henderson's 2008 thesis modelled locally generated tsunami inundation at Poverty Bay. Glen Stichbury's 2009 research combined GIS and remote sensing to investigate water availability in the Antarctic Dry Valleys. The repository records establish the theses and their subjects; individual techniques and subsequent deployments should be described only where supported by the full work.",
+      "sources": [
+        {
+          "label": "University of Waikato, Xiao Mark Xu, GIS wind-farm decision-support thesis, 2007",
+          "url": "https://hdl.handle.net/10289/2348"
+        },
+        {
+          "label": "University of Waikato, David Ronald Henderson, Poverty Bay tsunami inundation thesis, 2008",
+          "url": "https://hdl.handle.net/10289/2302"
+        },
+        {
+          "label": "University of Waikato, Glen Stichbury, Antarctic GIS and remote sensing thesis, 2009",
+          "url": "https://hdl.handle.net/10289/3945"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The growth of web GIS also became a research subject. Tristan McHardie's University of Waikato master's thesis in 2016 evaluated web mapping applications for visualising demographic diversity, linking geographic information, population representation and interface design. Other master's projects used GIS for environmental modelling, including Ana Krpo's 2004 Puhinui catchment research at Auckland University of Technology. More recently, Zane Egginton's 2025 University of Auckland Master of Design research examined tikanga, technology and natural-hazard resilience. These projects have different disciplinary aims, and a master's degree does not by itself establish the author's later job or role.",
+      "markdown": "The growth of web GIS also became a research subject. Tristan McHardie's University of Waikato master's thesis in 2016 evaluated web mapping applications for visualising demographic diversity, linking geographic information, population representation and interface design. Other master's projects used GIS for environmental modelling, including Ana Krpo's 2004 Puhinui catchment research at Auckland University of Technology. More recently, Zane Egginton's 2025 University of Auckland Master of Design research examined tikanga, technology and natural-hazard resilience. These projects have different disciplinary aims, and a master's degree does not by itself establish the author's later job or role.",
+      "sources": [
+        {
+          "label": "University of Waikato, Tristan McHardie, Evaluating web mapping applications, 2016",
+          "url": "https://hdl.handle.net/10289/10802"
+        },
+        {
+          "label": "Auckland University of Technology, Ana Krpo, Puhinui catchment GIS thesis, 2004",
+          "url": "https://openrepository.aut.ac.nz/bitstreams/b0229713-4214-4747-ae07-dd48bfcb4f56/download"
+        },
+        {
+          "label": "University of Auckland, Zane Egginton, Weaving Tikanga and Technology, 2025",
+          "url": "https://researchspace.auckland.ac.nz/items/e6c7fcde-0627-4345-919f-0f794a33281a"
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "masters-research-record-1979-2025"
+}

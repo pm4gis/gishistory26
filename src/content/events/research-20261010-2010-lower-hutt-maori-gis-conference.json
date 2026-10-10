@@ -1,0 +1,31 @@
+{
+  "id": "research-20261010-2010-lower-hutt-maori-gis-conference",
+  "dateDisplay": "October 2010",
+  "startDate": "2010-10",
+  "datePrecision": "month",
+  "year": 2010,
+  "label": "Māori GIS Conference in Lower Hutt",
+  "summary": "A Māori GIS conference includes Simon Bickler's paper about the ArchSite GIS database.",
+  "url": "/stories/becoming-a-gis-professional/",
+  "passageIds": [
+    "passage:research-20261010-ch29-maori-gis-practitioner-conferences"
+  ],
+  "recordIds": [
+    "person:simon-bickler",
+    "entity:te-kahui-manu-hokai-maori-gis-association"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Simon Bickler, archaeology CV documenting October 2010 Māori GIS conference presentation",
+      "url": "https://trobriandsindepth.com/htdocs/Trobriand%20CVs/Simon%20Bickler%20Archaeology%20CV%202012%20for%20DEPTH.pdf"
+    },
+    {
+      "label": "University of Otago, School of Surveying Māori strategic framework, 2010",
+      "url": "https://www.otago.ac.nz/__data/assets/pdf_file/0028/318394/school-of-surveying-maori-strategic-framework-685227.pdf"
+    }
+  ]
+}

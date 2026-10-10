@@ -1,0 +1,20 @@
+{
+  "id": "relationship:research-20261010-sean-bragg-kahurumanu",
+  "a": "person:sean-bragg",
+  "b": "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+  "label": "GIS intern and assistant on cultural mapping",
+  "basis": "Contemporary first-person career statement and 2018 project credits",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "sources": [
+    {
+      "label": "Geospatial Research Institute, Ngāi Tahu geospatial seminar, February 2019",
+      "url": "https://geospatial.ac.nz/griss-feb2019/"
+    },
+    {
+      "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+      "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+    }
+  ]
+}

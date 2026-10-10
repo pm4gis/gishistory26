@@ -1,0 +1,28 @@
+{
+  "id": "research-20261010-2009-christchurch-maori-gis-conference",
+  "dateDisplay": "13–15 May 2009",
+  "startDate": "2009-05-13",
+  "datePrecision": "day-range",
+  "year": 2009,
+  "label": "Māori GIS Conference in Christchurch",
+  "summary": "Practitioners and researchers exchange iwi/hapū GIS work in Christchurch; a Massey research record documents a paper.",
+  "url": "/stories/becoming-a-gis-professional/",
+  "passageIds": [
+    "passage:research-20261010-ch29-maori-gis-practitioner-conferences"
+  ],
+  "recordIds": [
+    "person:jonathan-procter",
+    "person:garth-harmsworth"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
+      "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+    }
+  ],
+  "endDate": "2009-05-15"
+}

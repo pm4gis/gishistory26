@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-xiao-xu-waikato",
+  "a": "person:xiao-mark-xu",
+  "b": "entity:university-of-waikato",
+  "label": "2007 master's GIS decision-support research",
+  "basis": "University repository degree record",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, Xiao Mark Xu, GIS wind-farm decision-support thesis, 2007",
+      "url": "https://hdl.handle.net/10289/2348"
+    }
+  ]
+}

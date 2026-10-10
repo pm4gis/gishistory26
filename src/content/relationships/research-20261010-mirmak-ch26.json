@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-mirmak-ch26",
+  "a": "entity:mirmak-te-tau-ihu-iwi-gis-collaboration",
+  "b": "chapter:26",
+  "label": "Iwi-led catchment GIS 2003–05",
+  "basis": "Contemporary project report",
+  "passageIds": [
+    "passage:research-20261010-ch26-iwi-led-motueka-information-system"
+  ],
+  "sources": [
+    {
+      "label": "Harmsworth, Park and Walker, Development and use of GIS for iwi and hapū: Motueka case study, 2005",
+      "url": "https://icm.landcareresearch.co.nz/knowledgebase/publications/documents/FinalMay2005ICMMaoriGISreport.pdf"
+    }
+  ]
+}

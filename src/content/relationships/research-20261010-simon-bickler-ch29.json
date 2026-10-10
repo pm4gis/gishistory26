@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-simon-bickler-ch29",
+  "a": "person:simon-bickler",
+  "b": "chapter:29",
+  "label": "Presented at 2010 Māori GIS conference",
+  "basis": "Dated CV presentation record",
+  "passageIds": [
+    "passage:research-20261010-ch29-maori-gis-practitioner-conferences"
+  ],
+  "sources": [
+    {
+      "label": "Simon Bickler, archaeology CV documenting October 2010 Māori GIS conference presentation",
+      "url": "https://trobriandsindepth.com/htdocs/Trobriand%20CVs/Simon%20Bickler%20Archaeology%20CV%202012%20for%20DEPTH.pdf"
+    }
+  ]
+}

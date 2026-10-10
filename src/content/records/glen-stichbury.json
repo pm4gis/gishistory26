@@ -1,0 +1,36 @@
+{
+  "id": "person:glen-stichbury",
+  "slug": "glen-stichbury",
+  "name": "Glen Stichbury",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/glen-stichbury/",
+  "story": [
+    "Glen Stichbury completed a University of Waikato Master of Social Sciences thesis in 2009 titled Predicting Water Availability in the Antarctic Dry Valleys using Geographic Information Systems and Remote Sensing. The thesis documents the use of spatial analysis and imagery in Antarctic environmental research. His career after the degree is unconfirmed in the current research register."
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, Glen Stichbury, Antarctic GIS and remote sensing thesis, 2009",
+      "url": "https://hdl.handle.net/10289/3945"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Waikato, Glen Stichbury, Antarctic GIS and remote sensing thesis, 2009",
+        "url": "https://hdl.handle.net/10289/3945"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "University of Waikato, Glen Stichbury, Antarctic GIS and remote sensing thesis, 2009",
+        "url": "https://hdl.handle.net/10289/3945"
+      }
+    ]
+  ]
+}
