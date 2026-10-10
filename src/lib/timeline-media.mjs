@@ -33,7 +33,7 @@ export const timelineMedia = Object.freeze({
   '2016-kaikoura-earthquake': {slug:'kaikoura-shakemap-2016',relation:'A map of the 2016 Kaikōura earthquake and its observed shaking, directly related to the event.'},
   '2018-linz-qgis-importer': {slug:'linz-wmts-qgis-connection',relation:'An actual LINZ QGIS network-service connection screen, illustrating related software integration. This is not the 2018 importer.'},
   '2024-future-topo-maps': {slug:'ongaonga-linz-topo50-2020',relation:'A 2020 Topo50 sheet illustrating the national cartographic products being renewed.'},
-  '2025-giscience-historical-maps': {slug:'hector-geological-map-1884',relation:'An authentic nineteenth-century geological map, representing the historic documents studied with digital methods.'}
+  '2025-giscience-historical-maps': {slug:'hector-geological-map-1884',relation:'An authentic nineteenth-century geological map, representing the historic documents studied with digital methods.'},
   "1973-nzmg": {slug:"ongaonga-linz-topo50-2020",relation:"A later LINZ Topo50 product in NZTM2000. It illustrates subsequent national mapping after the 1973 New Zealand Map Grid, not NZMG cartography."},
   "1977-orthophoto-computer": {slug:"southland-aerial-verdon-1988",relation:"A genuine Southland aerial-survey image from 1988, showing the photographic source material behind orthophoto production. This is not the 1977 computer system."},
   "1985-dcdb": {slug:"waikaka-cadastre-1888",relation:"An 1888 cadastral survey map showing the paper parcel records subsequently converted into digital cadastral datasets. It is not a DCDB software screenshot."},
