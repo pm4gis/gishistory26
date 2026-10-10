@@ -1,6 +1,47 @@
 ---
 import '../styles/site.css';
+import {siteContributionMailto} from '../lib/passage-contributions.mjs';
 const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
+const contributionHref=siteContributionMailto();
 ---
-<!doctype html><html lang="en-NZ"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{title}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><script is:inline>try{const old=JSON.parse(localStorage.getItem('nzgis-colour-palette-v1')||'null');const t=localStorage.getItem('nzgis-theme')||({'dark-night':'night','dark-forest':'forest','light-paper':'paper','light-mist':'mist'}[old]);if(['night','forest','paper','mist'].includes(t))document.documentElement.dataset.theme=t}catch{}</script></head><body><a class="skip" href="#main">Skip to content</a><header class="topbar"><a class="brand" href="/"><small>NEW ZEALAND</small>GIS History</a><nav class="nav" aria-label="Main navigation"><a href="/read/">Read</a><a href="/timeline/">Timeline</a><a href="/browse/">People & organisations</a><a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a><button id="palette" aria-label="Change colour theme">◐ <span>Night</span></button></nav></header><main id="main"><slot/></main><footer class="footer"><span>A History of GIS in New Zealand</span><div class="actions"><a href="/about/">About & sources</a><a href="/network/">Connections</a><a href="/release.json">Publication revision</a></div></footer><script>const names=['night','forest','paper','mist'];const b=document.getElementById('palette');function label(){const t=document.documentElement.dataset.theme||'night';const s=b?.querySelector('span');if(s)s.textContent=t[0].toUpperCase()+t.slice(1)}label();b?.addEventListener('click',()=>{const t=names[(names.indexOf(document.documentElement.dataset.theme||'night')+1)%4];document.documentElement.dataset.theme=t;try{localStorage.setItem('nzgis-theme',t)}catch{}label()});</script></body></html>
+<!doctype html>
+<html lang="en-NZ">
+<head>
+ <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+ <title>{title}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/>
+ <meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/>
+ <script is:inline>try{const old=JSON.parse(localStorage.getItem('nzgis-colour-palette-v1')||'null');const t=localStorage.getItem('nzgis-theme')||({'dark-night':'night','dark-forest':'forest','light-paper':'paper','light-mist':'mist'}[old]);if(['night','forest','paper','mist'].includes(t))document.documentElement.dataset.theme=t}catch{}</script>
+</head>
+<body>
+ <a class="skip" href="#main">Skip to content</a>
+ <header class="topbar">
+  <a class="brand" href="/"><small>NEW ZEALAND</small>GIS History</a>
+  <nav class="nav nav--desktop" aria-label="Main navigation">
+   <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
+   <a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a>
+   <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+  </nav>
+  <div class="topbar-tools">
+   <button id="palette" type="button" aria-label="Change colour theme">◐ <span>Night</span></button>
+   <details class="mobile-menu">
+    <summary><span class="hamburger-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
+    <nav class="nav nav--mobile" aria-label="Mobile navigation">
+     <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
+     <a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a>
+     <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+    </nav>
+   </details>
+  </div>
+ </header>
+ <main id="main"><slot/></main>
+ <footer class="footer"><span>A History of GIS in New Zealand</span><div class="actions"><a href="/about/">About &amp; sources</a><a href="/network/">Connections</a><a href="/release.json">Publication revision</a></div></footer>
+ <script>
+  const names=['night','forest','paper','mist'];
+  const b=document.getElementById('palette');
+  function label(){const t=document.documentElement.dataset.theme||'night';const s=b?.querySelector('span');if(s)s.textContent=t[0].toUpperCase()+t.slice(1);}
+  label();
+  b?.addEventListener('click',()=>{const t=names[(names.indexOf(document.documentElement.dataset.theme||'night')+1)%4];document.documentElement.dataset.theme=t;try{localStorage.setItem('nzgis-theme',t)}catch{}label();});
+ </script>
+</body>
+</html>

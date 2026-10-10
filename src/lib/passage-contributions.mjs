@@ -50,3 +50,34 @@ export function passageContributionMailto(article,passage){
   ].join('\n');
   return 'mailto:'+contributionRecipient+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
 }
+
+
+export function siteContributionMailto(){
+  const subject='NZ GIS History Contributions and Corrections';
+  const body=[
+    'Kia ora,',
+    '',
+    'I would like to contribute to A History of GIS in New Zealand.',
+    '',
+    'Which chapter, story, person, organisation or event does this concern? Please include a link where possible.',
+    '',
+    '',
+    'What would you like to correct, add or clarify?',
+    '',
+    '',
+    'What is your connection to the events, project, organisation or people described?',
+    '',
+    '',
+    'What dates, sources, links or documents support this contribution?',
+    '',
+    '',
+    'Can we credit your name, or would you prefer not to be named?',
+    '',
+    '',
+    'Do you have permission to share any attached photographs, maps or other material? Please avoid sending restricted iwi, hapū or personal information.',
+    '',
+    '',
+    'Ngā mihi,'
+  ].join('\n');
+  return 'mailto:'+contributionRecipient+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+}
