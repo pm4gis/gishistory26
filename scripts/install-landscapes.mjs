@@ -58,7 +58,7 @@ if (flag === '--apply') {
     mkdirSync(dirname(output),{recursive:true});
     copyFileSync(from,output);
   }
-  const errors = inspectLandscapeRegistry(proposed,publicDir);
+  const errors = await inspectLandscapeRegistry(proposed,publicDir);
   if (errors.length) throw Error('Publication gate failed: '+errors.join('; '));
   writeFileSync(target,JSON.stringify(proposed,null,2)+'\n');
   console.log('Assets copied and approved registry updated. Run npm test and npm run build before commit.');
