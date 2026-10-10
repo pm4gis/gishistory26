@@ -1,0 +1,10 @@
+---
+import Sources from './Sources.astro';
+const {edge,focusId,records}=Astro.props;
+const other=records.find((r:any)=>r.id===(edge.a===focusId?edge.b:edge.a));
+---
+<li>
+ <small>{edge.label}</small>
+ <a href={other?.url||'/browse/'}>{other?.name||'Related entry'}</a>
+ <details><summary>Connection basis</summary><p>{edge.basis}</p><Sources sources={edge.sources}/></details>
+</li>

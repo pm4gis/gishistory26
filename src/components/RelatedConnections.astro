@@ -1,0 +1,12 @@
+---
+import RelationshipItem from './RelationshipItem.astro';
+const {edges,focusId,records}=Astro.props;
+const first=edges.slice(0,12);
+const remaining=edges.slice(12);
+---
+{edges.length>0&&<section class="record-connections">
+ <h2>Connections</h2>
+ <p class="muted">{edges.length} documented {edges.length===1?'relationship':'relationships'}. Select a connection to read its basis and sources.</p>
+ <ul class="list">{first.map((edge:any)=><RelationshipItem {edge} {focusId} {records}/>)}</ul>
+ {remaining.length>0&&<details class="extra-connections"><summary>View {remaining.length} more connections</summary><ul class="list">{remaining.map((edge:any)=><RelationshipItem {edge} {focusId} {records}/>)}</ul></details>}
+</section>}
