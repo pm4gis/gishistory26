@@ -37,3 +37,9 @@
 .related-filters button{font-size:12px;padding:6px 9px;min-height:36px;border-radius:8px}
 .related-item{overflow-wrap:anywhere}
 @media(max-width:850px){.related-filters button{min-height:44px}}
+
+/* Rights-verified landscape photography. Existing pages stay text-first when no image is approved. */
+.landscape-photo{width:100%;margin:28px 0 38px}
+.landscape-photo img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.landscape-photo figcaption{margin-top:10px;font-size:12px;line-height:1.6;color:var(--muted)}
+.landscape-photo figcaption a{color:var(--link)}
