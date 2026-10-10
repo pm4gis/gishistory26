@@ -255,3 +255,23 @@
   .wananga-video-grid{grid-template-columns:1fr}
   .wananga-videos-heading>.button{align-self:flex-start}
 }
+
+
+/* Ngā Poutama audiovisual evidence is placed between chapter paragraphs. */
+.wananga-inline{display:grid;grid-template-columns:minmax(160px,240px) minmax(0,1fr);gap:18px;align-items:start;margin:18px 0 30px;padding:16px;border:1px solid var(--line);border-radius:15px;background:var(--raised);font-size:14px;line-height:1.55;max-width:100%;min-width:0}
+.wananga-inline-image{position:relative;display:block;min-width:0;aspect-ratio:16/9;background:var(--surface);overflow:hidden;border-radius:9px}
+.wananga-inline-image img{display:block;width:100%;height:100%;object-fit:contain}
+.wananga-inline-copy{min-width:0}
+.wananga-inline-copy .eyebrow{font-size:11px;margin:0 0 8px}
+.wananga-inline-copy h3{font-size:17px;line-height:1.4;margin:0 0 9px}
+.wananga-inline-copy h3 a{color:var(--text);text-decoration:none}
+.wananga-inline-copy p:not(.eyebrow){font-size:14px;line-height:1.55;margin:0 0 8px}
+.wananga-inline-copy small{display:block;color:var(--muted);font-size:12px;line-height:1.55}
+.wananga-archive-note{max-width:86ch;color:var(--muted)}
+.wananga-filterbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0 10px}
+.wananga-filterbar label{font-size:14px;font-weight:600}
+.wananga-filterbar input{flex:2 1 220px;min-width:0}
+.wananga-filterbar select{flex:1 1 190px;max-width:360px}
+.wananga-filterbar span{font-size:13px;color:var(--muted)}
+.wananga-video-topic{display:inline-block;color:var(--accent);font-weight:700;margin-bottom:6px}
+@media(max-width:600px){.wananga-inline{grid-template-columns:1fr;padding:12px;gap:12px}.wananga-inline-image{max-width:100%}.wananga-filterbar{display:grid;grid-template-columns:1fr}.wananga-filterbar select,.wananga-filterbar input{width:100%;max-width:none}}
