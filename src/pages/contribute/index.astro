@@ -28,8 +28,8 @@ const defaultDraft=contributionDraft();
 
    <p class="contribution-recipient">Send to <a href={"mailto:"+contributionRecipient}>{contributionRecipient}</a></p>
    <div class="actions contribution-buttons">
-    <a id="contribution-mailto" class="button primary" href={contributionMailtoUrl(defaultDraft.subject,defaultDraft.body)}>Open email app →</a>
-    <button id="contribution-copy" class="button" type="button">Copy complete message</button>
+    <a id="contribution-mailto" class="button" href={contributionMailtoUrl(defaultDraft.subject,defaultDraft.body)}>Open email app →</a>
+    <button id="contribution-copy" class="button primary" type="button">Copy complete message</button>
     <button id="contribution-copy-address" class="button" type="button">Copy email address</button>
    </div>
    <p id="contribution-status" class="contribution-status" role="status" aria-live="polite">Nothing is sent from this page. You choose when to send the email.</p>
@@ -73,6 +73,7 @@ const defaultDraft=contributionDraft();
    if(preview)preview.value=contributionText(current);
   }
   form?.addEventListener('input',render);
+  form?.addEventListener('submit',(event)=>event.preventDefault());
   render();
   async function copy(text:string,success:string){
    try{
@@ -90,7 +91,8 @@ const defaultDraft=contributionDraft();
     document.body.append(fallback);
     fallback.focus();
     fallback.select();
-    const copied=document.execCommand('copy');
+    let copied=false;
+    try{copied=document.execCommand('copy')}catch{}
     fallback.remove();
     if(copied){if(status)status.textContent=success;return;}
     if(preview){
