@@ -7,6 +7,7 @@
  */
 export const subjectMedia = Object.freeze({
   themes: {
+    'maori-gis': {slug:'ngai-tahu-takiwa-map-2010',relation:'A real GIS-produced map of the territory recognised as Ngāi Tahu takiwā, created in 2010 by Commons contributor Igover. The map is not the later Kā Huru Manu atlas or an iwi-endorsed boundary determination.'},
     'cadastre': {
       slug: 'new-river-cadastre-1898',
       relation: 'Historic cadastral survey records are the starting point of this theme. This sheet is not an early Landonline screenshot.'
@@ -33,6 +34,12 @@ export const subjectMedia = Object.freeze({
     }
   },
   records: {
+    'maori-land-court': {slug:'maori-land-court-minute-books-2013',relation:'Māori Land Court minute books documented by Archives New Zealand in 2013, illustrating the historical records that underpin later digitisation and land information services; not a GIS application screen.'},
+    'te-runanga-o-ngai-tahu-ngai-tahu-archive': {slug:'maori-south-island-sketch-1841',relation:'An early nineteenth-century map based on an unidentified Ngāi Tahu/Kāi Tahu sketch, transcribed through colonial mapping. Historical context, not a Kā Huru Manu GIS map or an image produced by the contemporary Ngāi Tahu Archive.'},
+    'niwa': {slug:'niwa-rv-tangaroa-2010',relation:'NIWA research vessel Tangaroa photographed for NIWA by Dave Allen, an institutional research platform; not a screenshot of NIWA GIS, bathymetry or DASmap.'},
+    'university-of-otago': {slug:'otago-registry-2009',relation:'The University of Otago Registry Building in 2009, institutional context for GIS teaching and research rather than a photograph of a GIS laboratory.'},
+    'university-of-auckland': {slug:'auckland-university-clocktower-2004',relation:'University of Auckland Clock Tower in December 2004, institutional context rather than a photograph of an early GIS teaching workstation.'},
+    'victoria-university-of-wellington': {slug:'victoria-rutherford-2025',relation:'Te Herenga Waka—Victoria University of Wellington bilingual signage on Rutherford House, photographed in 2025; not an image of its GIS teaching facilities.'},
     // Central government, research, companies.
     'land-information-new-zealand-linz': {
       slug: 'linz-landonline-survey-work-2025',
