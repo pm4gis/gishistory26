@@ -1,0 +1,62 @@
+name: Acquire and place licensed story images wave 2
+on:
+  push:
+    branches: [research/story-image-expansion-20261010]
+    paths:
+      - .github/workflows/acquire-story-images-wave2.yml
+      - docs/media/curated-sources-story-wave2.json
+      - scripts/acquire-story-images-wave2.mjs
+      - scripts/editorial.mjs
+      - src/lib/editorial.mjs
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: acquire-story-images-wave2
+  cancel-in-progress: true
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/research/story-image-expansion-20261010'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/story-image-expansion-20261010
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Acquire verified originals and place figures beside relevant paragraphs
+        run: node scripts/acquire-story-images-wave2.mjs
+      - name: Prepare and apply reviewed editorial patch
+        run: |
+          if [ -f docs/media/story-image-operations-wave2.json ]; then
+            node scripts/editorial.mjs prepare docs/media/story-image-operations-wave2.json /tmp/story-image-candidate.json
+            node scripts/editorial.mjs validate /tmp/story-image-candidate.json
+            node scripts/editorial.mjs apply /tmp/story-image-candidate.json
+            rm docs/media/story-image-operations-wave2.json
+          fi
+      - name: Run tests and full production build
+        run: |
+          npm test
+          npm run build
+      - name: Commit local copies, attribution records and inline placements
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/ src/content/images/ src/content/passages/ content/preservation-manifest.json docs/releases/ docs/media/story-image-download-wave2.json docs/media/story-image-expansion-wave2.md docs/verification/
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m "Add licensed images within additional GIS history stories"
+            git fetch origin research/story-image-expansion-20261010
+            git rebase origin/research/story-image-expansion-20261010
+            git push origin HEAD:research/story-image-expansion-20261010
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: story-image-acquisition-wave2-report
+          path: docs/media/story-image-download-wave2.json
+          retention-days: 30

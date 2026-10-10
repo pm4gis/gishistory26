@@ -8,7 +8,7 @@ import {dataset} from '../../lib/data';
 const d=await dataset();
 const thematic=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images)}));
 ---
-<Layout title="Themes · NZ GIS History">
+<Layout title="Themes in New Zealand GIS history · NZ GIS History" description="Explore thematic reading paths through the people, projects, technology, datasets and events that shaped GIS in New Zealand.">
  <div class="wrap">
   <div class="visual-page-heading">
     <div><p class="eyebrow">Reading collections</p><h1>Explore a theme.</h1><p class="intro">Follow a subject through the people, organisations, technology and accounts of New Zealand's GIS history.</p></div>

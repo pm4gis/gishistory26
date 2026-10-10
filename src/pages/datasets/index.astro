@@ -5,7 +5,7 @@ const d = await dataset();
 const records = d.records.filter((r:any) => r.kind === 'Dataset').sort((a:any,b:any) => a.name.localeCompare(b.name,'en-NZ'));
 const groups = [...new Set(records.map((r:any)=>r.category||'Other datasets'))].sort();
 ---
-<Layout title="Datasets · NZ GIS History" description="Explore the history of New Zealand spatial datasets, their custodians, contributors and relationships.">
+<Layout title="Datasets · NZ GIS History" description="Explore New Zealand spatial data history, including cadastral, topographic, land-resource, census, elevation and environmental datasets and their custodians.">
   <div class="wrap">
     <p class="eyebrow">Explore the evidence</p>
     <h1>New Zealand GIS datasets</h1>

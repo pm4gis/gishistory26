@@ -10,8 +10,23 @@ const { imageId } = Astro.props;
 const entries = await getCollection("images");
 const image = entries.find((entry) => entry.data.id === imageId)?.data;
 const relatedChapter = image?.articleSlug ? (await getCollection("articles")).find((entry) => entry.data.slug === image.articleSlug)?.data : null;
+const imagePageUrl = image ? `https://history.pm4gis.nz/images/${image.slug}/` : undefined;
+const imageSchema = image ? {
+  '@context': 'https://schema.org',
+  '@type': 'ImageObject',
+  '@id': imagePageUrl + '#image',
+  name: image.title,
+  description: (image.context || image.caption || image.altText).slice(0, 300),
+  caption: image.caption || image.title,
+  contentUrl: 'https://history.pm4gis.nz' + image.assetPath,
+  url: imagePageUrl,
+  license: image.licenceUrl,
+  acquireLicensePage: image.sourceUrl,
+  creditText: image.credit,
+  representativeOfPage: true,
+} : undefined;
 ---
-{image ? <Layout title={`${image.title} — Image details`} description={`${image.title}. ${image.credit}. Source and licence details.`}>
+{image ? <Layout title={`${image.title} · Historical map and image details · NZ GIS History`} description={`${image.title}. ${image.context || image.caption || "Historical image"} Source: ${image.sourceName}. Credit and ${image.licence} reuse details.`} schema={imageSchema} socialImage={image.assetPath} socialImageAlt={image.altText}>
   <article class="image-detail page-wrap">
     <p class="eyebrow">Image archive <span aria-hidden="true">/</span> Image details</p>
     <h1 class="page-title">{image.title}</h1>
@@ -26,13 +41,13 @@ const relatedChapter = image?.articleSlug ? (await getCollection("articles")).fi
         <div><dt>Credit</dt><dd>{image.credit}</dd></div>
         {image.dateDisplay && <div><dt>Image date</dt><dd>{image.dateDisplay}</dd></div>}
         {image.sourceOriginalUrl && <div><dt>Source image</dt><dd><a href={image.sourceOriginalUrl} target="_blank" rel="noopener noreferrer">View the sourced image copy <span aria-hidden="true">↗</span></a></dd></div>}
-        {image.sourceMasterUrl && <div><dt>Full-resolution source master</dt><dd><a href={image.sourceMasterUrl} target="_blank" rel="noopener noreferrer">View the full-resolution image at Wikimedia Commons <span aria-hidden="true">↗</span></a></dd></div>}
+        {image.sourceMasterUrl && image.sourceMasterUrl !== image.sourceOriginalUrl && <div><dt>Full-resolution source master</dt><dd><a href={image.sourceMasterUrl} target="_blank" rel="noopener noreferrer">View the full-resolution image from {image.sourceName} <span aria-hidden="true">↗</span></a></dd></div>}
         {image.sourceFileTitle && <div><dt>Original source filename</dt><dd>{image.sourceFileTitle}</dd></div>}
         {image.originalWidth && image.originalHeight && <div><dt>Locally stored source dimensions</dt><dd>{image.originalWidth} × {image.originalHeight} pixels</dd></div>}
         {image.originalSha256 && <div><dt>Original SHA-256</dt><dd><code>{image.originalSha256}</code></dd></div>}
         <div><dt>Licence</dt><dd><a href={image.licenceUrl} target="_blank" rel="noopener noreferrer">{image.licence} <span aria-hidden="true">↗</span></a></dd></div>
         {image.licenceEvidenceUrl && <div><dt>Reuse conditions</dt><dd><a href={image.licenceEvidenceUrl} target="_blank" rel="noopener noreferrer">Publisher's licence statement <span aria-hidden="true">↗</span></a></dd></div>}
-        {image.derivativesNote && <div><dt>Display preparation</dt><dd>{image.derivativesNote}</dd></div>}
+        {image.derivativesNote && <div><dt>Display preparation and reuse</dt><dd>{image.derivativesNote} Locally prepared display and card derivatives follow the source licence; share-alike terms apply where required.</dd></div>}
         <div><dt>Local copy</dt><dd>The reader displays a local copy so the image remains available if the original page changes.</dd></div>
       </dl>
     </section>

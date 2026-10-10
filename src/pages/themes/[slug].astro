@@ -14,7 +14,7 @@ const featured=pickThemeImage(t.slug,d.images);
 const documentaryImages=pickThemeImages(t.id,d.images).filter((image:any)=>image.slug!==featured?.image.slug);
 const recordCards=records.map((r:any)=>({...r,subject:pickRecordImage(r,d.images)}));
 ---
-<Layout title={t.title+' · NZ GIS History'}>
+<Layout title={t.title+' · NZ GIS History'} description={t.description}>
  <div class="wrap">
   <div class="visual-page-heading">
    <div><p class="eyebrow">Theme</p><h1>{t.title}</h1><p class="intro">{t.description}</p></div>
