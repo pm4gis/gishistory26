@@ -1,0 +1,14 @@
+{
+  "id": "relationship:qmap-04",
+  "a": "dataset:qmap-250k",
+  "b": "person:david-heron",
+  "label": "Digital cartography and GIS contributor",
+  "basis": "Official GNS map service credits David Heron with digital cartography and GIS development for the derived 1:1 million geological map.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science national geological map service, contributor credits",
+      "url": "https://gis.gns.cri.nz/server/rest/services/Geological_Map_of_New_Zealand_1_Million/NZL_GNS_1M_geology_FeatureService/FeatureServer"
+    }
+  ]
+}
