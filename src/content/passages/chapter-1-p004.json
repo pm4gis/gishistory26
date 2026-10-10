@@ -4,41 +4,75 @@
   "articleId": "article:chapter-1",
   "title": "National sheets",
   "order": 3,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "themeIds": [],
   "recordIds": [
-    "chapter:1"
+    "chapter:1",
+    "entity:department-of-lands-and-survey"
   ],
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Topographic mapping supplied another major inheritance. New Zealand had topographic maps long before the national NZMS1 series, but the series created a more systematic one-mile-to-the-inch framework for national coverage. The first NZMS1 sheet, Napier and Hastings N134, was published in March 1939.",
-      "markdown": "Topographic mapping supplied another major inheritance. New Zealand had topographic maps long before the national NZMS1 series, but the series created a more systematic one-mile-to-the-inch framework for national coverage. The first NZMS1 sheet, Napier and Hastings N134, was published in March 1939.",
-      "sources": [],
+      "text": "The first sheet of the national NZMS1 series, Napier and Hastings N134, appeared in March 1939. At one inch to one mile, it brought a consistent sheet layout and standard of national coverage. Its contours and features were compiled from survey information and aerial photographs.",
+      "markdown": "The first sheet of the national NZMS1 series, Napier and Hastings N134, appeared in March 1939. At one inch to one mile, it brought a consistent sheet layout and standard of national coverage. Its contours and features were compiled from survey information and aerial photographs.",
+      "sources": [
+        {
+          "label": "National Library of New Zealand, topographical mapping",
+          "url": "https://natlib.govt.nz/exhibitions/unfolding-the-map/topographical-mapping"
+        },
+        {
+          "label": "National Library of New Zealand, Napier and Hastings N134 map record",
+          "url": "https://natlib.govt.nz/records/23363272"
+        }
+      ],
       "id": "ch01-s04-p01"
     },
     {
       "type": "paragraph",
-      "text": "The Second World War interrupted ordinary production and redirected mapping capacity towards defence. Detailed fortress-area maps, aerial photography, field survey and existing control were combined under practical time pressure. Lands and Survey used whatever production methods were available, including plane-table work, vertical photography and stereoscopic instruments when planned equipment could not be obtained. The wartime system was a hybrid production sequence in which older survey and draughting methods were combined with newer imagery.",
-      "markdown": "The Second World War interrupted ordinary production and redirected mapping capacity towards defence. Detailed fortress-area maps, aerial photography, field survey and existing control were combined under practical time pressure. Lands and Survey used whatever production methods were available, including plane-table work, vertical photography and stereoscopic instruments when planned equipment could not be obtained. The wartime system was a hybrid production sequence in which older survey and draughting methods were combined with newer imagery.",
-      "sources": [],
+      "text": "The Second World War redirected much survey and mapping effort to defence. Field observations, existing control and aerial photographs fed into tactical and fortress-area mapping. Aerial photography helped mapmakers compile broad areas, while surveyors and draughtspeople still supplied control, interpretation and finished sheets.",
+      "markdown": "The Second World War redirected much survey and mapping effort to defence. Field observations, existing control and aerial photographs fed into tactical and fortress-area mapping. Aerial photography helped mapmakers compile broad areas, while surveyors and draughtspeople still supplied control, interpretation and finished sheets.",
+      "sources": [
+        {
+          "label": "National Library of New Zealand, topographical mapping",
+          "url": "https://natlib.govt.nz/exhibitions/unfolding-the-map/topographical-mapping"
+        },
+        {
+          "label": "MOTAT, Plotting Aotearoa New Zealand: how we made our maps",
+          "url": "https://www.motat.nz/explore/stories/plotting-aotearoa-new-zealand-how-we-made-our-maps/"
+        }
+      ],
       "id": "ch01-s04-p02"
     },
     {
       "type": "paragraph",
-      "text": "After the war, national topographic coverage became an increasingly standard reference for other work. Roads, rivers, settlements, contours, coastlines and named features supplied a common geographic backdrop to engineering, science, planning and administration. Place-name work helped regularise the labels carried by those maps, while survey control supported the geometry underneath them. When later digital mapping systems needed national base information, much of the content had already been selected, generalised and maintained through this paper-series tradition.",
-      "markdown": "After the war, national topographic coverage became an increasingly standard reference for other work. Roads, rivers, settlements, contours, coastlines and named features supplied a common geographic backdrop to engineering, science, planning and administration. Place-name work helped regularise the labels carried by those maps, while survey control supported the geometry underneath them. When later digital mapping systems needed national base information, much of the content had already been selected, generalised and maintained through this paper-series tradition.",
-      "sources": [],
+      "text": "After the war, the national topographic sheet became a base for engineering, science and administration. Roads, rivers, settlements, contours and named features were selected and generalised for the series’ scale. Consistent sheet numbers and place-name decisions helped users compare editions and locate the same area across the country.",
+      "markdown": "After the war, the national topographic sheet became a base for engineering, science and administration. Roads, rivers, settlements, contours and named features were selected and generalised for the series’ scale. Consistent sheet numbers and place-name decisions helped users compare editions and locate the same area across the country.",
+      "sources": [
+        {
+          "label": "National Library of New Zealand, topographical mapping",
+          "url": "https://natlib.govt.nz/exhibitions/unfolding-the-map/topographical-mapping"
+        }
+      ],
       "id": "ch01-s04-p03"
     },
     {
       "type": "paragraph",
-      "text": "The sheets also carried the limitations of their scale and purpose. A road centreline suitable for a national topographic map was not a cadastral boundary, and a contour was an interpreted representation of terrain rather than a directly surveyed line at every point. Displaying different sources together required users to understand their scale, purpose and accuracy. Similar-looking lines could represent very different evidence.",
-      "markdown": "The sheets also carried the limitations of their scale and purpose. A road centreline suitable for a national topographic map was not a cadastral boundary, and a contour was an interpreted representation of terrain rather than a directly surveyed line at every point. Displaying different sources together required users to understand their scale, purpose and accuracy. Similar-looking lines could represent very different evidence.",
-      "sources": [],
+      "text": "Scale and purpose matter when layers are overlaid. A road shown on a national sheet is not a cadastral boundary; a contour is an interpreted line, not a surveyed point at every location. Similar-looking geometry can carry different evidence, accuracy and intended use.",
+      "markdown": "Scale and purpose matter when layers are overlaid. A road shown on a national sheet is not a cadastral boundary; a contour is an interpreted line, not a surveyed point at every location. Similar-looking geometry can carry different evidence, accuracy and intended use.",
+      "sources": [
+        {
+          "label": "National Library of New Zealand, topographical mapping",
+          "url": "https://natlib.govt.nz/exhibitions/unfolding-the-map/topographical-mapping"
+        }
+      ],
       "id": "ch01-s04-p04"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 15 · Digital topography",
+      "url": "/stories/topography-goes-digital/"
+    }
+  ],
   "legacyAnchor": "national-sheets"
 }

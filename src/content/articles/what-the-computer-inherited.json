@@ -3,9 +3,9 @@
   "slug": "what-the-computer-inherited",
   "title": "Maps before computers",
   "url": "/stories/what-the-computer-inherited/",
-  "summary": "When electronic computers entered New Zealand government offices around the turn of the 1960s, they encountered extensive survey, mapping and land records. This large, untidy and highly organised inheritance consisted of survey pl",
+  "summary": "Before computer mapping, New Zealand’s survey offices had built and maintained a dense record of parcels, control, topographic sheets, census districts, aerial photographs and resource maps. This chapter follows how plans, indexes, triangulation, analogue mapping and statistical geography became source material for digital systems, while carrying each record’s purpose and limitations with it.",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-10",
   "readingOrder": 1,
   "themeIds": [
     "cadastre",
@@ -37,6 +37,14 @@
     {
       "id": "ch01-note-06",
       "text": "6. Madge Pirrit and other named draughting work is supported by map credits, Gazette and repository records identified in the Master Research Register. Rachel Gillanders' later \"Draughtswoman and Computer\" material is useful retrospective context for changing technical work, and the named roles are documented in the cited records."
+    },
+    {
+      "id": "ch01-note-07",
+      "text": "The National Library’s explanatory account spells Tuki’s companion Huru, while its catalogue record uses Huku. This chapter preserves both catalogue spellings and does not infer a fuller identity. The relationship record links Huru to Tuki only for their documented shared removal to Norfolk Island in 1793."
+    },
+    {
+      "id": "ch01-note-08",
+      "text": "The report for 1884–85 records 603,341 lithographic impressions. The chapter uses that annual figure in place of the earlier unsourced claim of more than one million impressions in a year."
     }
   ]
 }
