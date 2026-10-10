@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-10T08:06:38.804Z",
+  "checkedAt": "2026-10-10T08:12:30.955Z",
   "items": [
     {
       "slug": "tuki-map-1793-1798",
@@ -193,9 +193,128 @@
       "source": "https://commons.wikimedia.org/wiki/File:PIA21210_-_Satellite_Radar_Show_Complex_Set_of_Faults_Moved_in_2016_New_Zealand_Earthquake.jpg",
       "status": "held",
       "reason": "Source-specific rights review"
+    },
+    {
+      "slug": "hector-geological-map-1884",
+      "source": "https://commons.wikimedia.org/wiki/File:EB1911_New_Zealand_-_geological_map.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/hector-geological-map-1884.jpg",
+      "web": "/assets/historical/web/hector-geological-map-1884.webp",
+      "thumbnail": "/assets/historical/card/hector-geological-map-1884.webp",
+      "sha256": "a08463225150b092b3cfbec107222305ab249efaee36125331195762612b9f9f",
+      "bytes": 215416,
+      "dimensions": [
+        864,
+        1250
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:EB1911_New_Zealand_-_geological_map.jpg",
+      "licence": "Public domain",
+      "credit": "James Hector; engraved by Emery Walker; Encyclopaedia Britannica, 11th edition, volume 19, p. 625"
+    },
+    {
+      "slug": "nz-geology-lange-2012",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_New_Zealand_Geology.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nz-geology-lange-2012.jpg",
+      "web": "/assets/historical/web/nz-geology-lange-2012.webp",
+      "thumbnail": "/assets/historical/card/nz-geology-lange-2012.webp",
+      "sha256": "b91d23863279814613821827dda007846f78a7ffc95d0398258b9ea1ed8ada08",
+      "bytes": 1273249,
+      "dimensions": [
+        2255,
+        2800
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_New_Zealand_Geology.jpg",
+      "licence": "CC BY-SA 3.0",
+      "credit": "Ulrich Lange; based on GNS Science geological resource material"
+    },
+    {
+      "slug": "rotoiti-bathymetry-2021",
+      "source": "https://commons.wikimedia.org/wiki/File:Rotoiti_Bathymetry.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/rotoiti-bathymetry-2021.png",
+      "web": "/assets/historical/web/rotoiti-bathymetry-2021.webp",
+      "thumbnail": "/assets/historical/card/rotoiti-bathymetry-2021.webp",
+      "sha256": "538deba06c5449d7ab9129e1f7e511e39fe73d73aa7f6c09578c0163eacbf957",
+      "bytes": 3739976,
+      "dimensions": [
+        2278,
+        885
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rotoiti_Bathymetry.png",
+      "licence": "CC BY-SA 3.0",
+      "credit": "C. E. J. de Ronde, F. Caratori Tontini and J. Black; GNS Science; DOI 10.21420/8123-EA25"
+    },
+    {
+      "slug": "nz-dem-arcgis-2006",
+      "source": "https://commons.wikimedia.org/wiki/File:DEM_NewZealand.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nz-dem-arcgis-2006.png",
+      "web": "/assets/historical/web/nz-dem-arcgis-2006.webp",
+      "thumbnail": "/assets/historical/card/nz-dem-arcgis-2006.webp",
+      "sha256": "5d6b824922440fe3e328bbde7ebeb2bbbbaffaac027f62412c80cd4fadb10eec",
+      "bytes": 2389939,
+      "dimensions": [
+        3120,
+        2462
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DEM_NewZealand.png",
+      "licence": "CC BY-SA 2.5",
+      "credit": "Wikimedia contributor Jide; based on GLOBE topography and ETOPO2 bathymetry"
+    },
+    {
+      "slug": "nz-census-density-2023",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nz-census-density-2023.png",
+      "web": "/assets/historical/web/nz-census-density-2023.webp",
+      "thumbnail": "/assets/historical/card/nz-census-density-2023.webp",
+      "sha256": "05fd358870d8f4a7a1927b0d663318eff9d748194ba35a2093395ac65be23a28",
+      "bytes": 2480241,
+      "dimensions": [
+        5870,
+        8400
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density.png",
+      "licence": "CC BY 4.0",
+      "credit": "Vardion; Stats NZ 2023 Census and SA2 geographic data; prepared using QGIS"
+    },
+    {
+      "slug": "geonet-kaikoura-felt-2016",
+      "source": "https://commons.wikimedia.org/wiki/File:GeoNet_felt_reports_2016_Kaik%C5%8Dura_earthquake.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/geonet-kaikoura-felt-2016.png",
+      "web": "/assets/historical/web/geonet-kaikoura-felt-2016.webp",
+      "thumbnail": "/assets/historical/card/geonet-kaikoura-felt-2016.webp",
+      "sha256": "7a1c7c5ae7de12ee58a5220de97c146d067aea63ea4e79e32ec4fed4f23f4253",
+      "bytes": 225125,
+      "dimensions": [
+        791,
+        791
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:GeoNet_felt_reports_2016_Kaik%C5%8Dura_earthquake.png",
+      "licence": "CC BY 3.0 New Zealand",
+      "credit": "GeoNet and OpenStreetMap contributors"
+    },
+    {
+      "slug": "ecoregions-qgis-2025",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_Subrealm.png",
+      "status": "downloaded",
+      "original": "/assets/historical/original/ecoregions-qgis-2025.png",
+      "web": "/assets/historical/web/ecoregions-qgis-2025.webp",
+      "thumbnail": "/assets/historical/card/ecoregions-qgis-2025.webp",
+      "sha256": "1e45ae593e4e3d72e0ba1a5f81457fb24c768f2b799c057301d184799203d70f",
+      "bytes": 6081342,
+      "dimensions": [
+        2482,
+        1529
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Subrealm.png",
+      "licence": "CC BY-SA 4.0",
+      "credit": "Wikimedia contributor Z3lvs; Natural Earth and Resolve Ecoregions 2017 source data"
     }
   ],
-  "success": 11,
+  "success": 18,
   "failed": 0,
   "held": 1
 }
