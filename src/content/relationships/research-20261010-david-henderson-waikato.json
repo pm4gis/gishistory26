@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-david-henderson-waikato",
+  "a": "person:david-ronald-henderson",
+  "b": "entity:university-of-waikato",
+  "label": "2008 coastal-hazard modelling master's research",
+  "basis": "University repository degree record",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, David Ronald Henderson, Poverty Bay tsunami inundation thesis, 2008",
+      "url": "https://hdl.handle.net/10289/2302"
+    }
+  ]
+}

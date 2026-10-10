@@ -1,0 +1,48 @@
+{
+  "id": "person:helen-brown",
+  "slug": "helen-brown",
+  "name": "Helen Brown",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/helen-brown/",
+  "story": [
+    "Helen Brown was credited with Takerei Norton as a creative director of Kā Huru Manu in the 2018 Designers Institute of New Zealand Best Design Awards. The Ngāi Tahu project records also place her at a cultural mapping hui with Te Rūnanga o Moeraki in 2015. These sources document creative direction and participation, without identifying her as the developer of the GIS or the Ingoa Wāhi database."
+  ],
+  "sources": [
+    {
+      "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+      "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+    },
+    {
+      "label": "Ngāi Tahu, Cultural Mapping Project begins",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+        "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+      },
+      {
+        "label": "Ngāi Tahu, Cultural Mapping Project begins",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+        "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+      },
+      {
+        "label": "Ngāi Tahu, Cultural Mapping Project begins",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+      }
+    ]
+  ]
+}

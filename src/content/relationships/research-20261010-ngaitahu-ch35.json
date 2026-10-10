@@ -1,0 +1,20 @@
+{
+  "id": "relationship:research-20261010-ngaitahu-ch35",
+  "a": "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+  "b": "chapter:35",
+  "label": "Developed iwi cultural GIS and public atlas",
+  "basis": "Ngāi Tahu cultural mapping records",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "sources": [
+    {
+      "label": "Ngāi Tahu, The Ngāi Tahu Atlas: Ingoa Wāhi system and 2005 KTKO pilot",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    },
+    {
+      "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+      "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    }
+  ]
+}

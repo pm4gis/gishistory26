@@ -1,0 +1,31 @@
+{
+  "id": "research-20261010-2017-kahurumanu-atlas-launch",
+  "dateDisplay": "November 2017",
+  "startDate": "2017-11",
+  "datePrecision": "month",
+  "year": 2017,
+  "label": "Kā Huru Manu public atlas launches",
+  "summary": "Ngāi Tahu publishes a Papatipu Rūnaka-approved selection of cultural mapping material in a public digital atlas.",
+  "url": "/stories/the-map-becomes-an-application/",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "recordIds": [
+    "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+    "person:takerei-norton"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+      "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    },
+    {
+      "label": "Ngāi Tahu, The Ngāi Tahu Atlas: Ingoa Wāhi system and 2005 KTKO pilot",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    }
+  ]
+}

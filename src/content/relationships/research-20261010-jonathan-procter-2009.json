@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-jonathan-procter-2009",
+  "a": "person:jonathan-procter",
+  "b": "person:garth-harmsworth",
+  "label": "Co-authors on 2009 iwi/hapū GIS paper",
+  "basis": "Named co-authors, not evidence of a continuing organisational role",
+  "passageIds": [
+    "passage:research-20261010-ch29-maori-gis-practitioner-conferences"
+  ],
+  "sources": [
+    {
+      "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
+      "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+    }
+  ]
+}

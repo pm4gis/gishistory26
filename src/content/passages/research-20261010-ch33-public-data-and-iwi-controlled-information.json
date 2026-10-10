@@ -1,0 +1,52 @@
+{
+  "id": "passage:research-20261010-ch33-public-data-and-iwi-controlled-information",
+  "slug": "public-data-and-iwi-controlled-information",
+  "articleId": "article:chapter-33",
+  "title": "Public geographic data and iwi-controlled knowledge",
+  "order": 13,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:33",
+    "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+    "entity:mirmak-te-tau-ihu-iwi-gis-collaboration"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "More accessible public geographic data supported iwi environmental planning and cultural mapping. Iwi knowledge systems, however, could contain records that had not been approved for public release. The Motueka iwi GIS case study described different permissions for public environmental information and confidential cultural material. Kā Huru Manu similarly presents a Papatipu Rūnaka-approved selection of the wider Ngāi Tahu Cultural Mapping Project's knowledge and research through a public atlas.",
+      "markdown": "More accessible public geographic data supported iwi environmental planning and cultural mapping. Iwi knowledge systems, however, could contain records that had not been approved for public release. The Motueka iwi GIS case study described different permissions for public environmental information and confidential cultural material. Kā Huru Manu similarly presents a Papatipu Rūnaka-approved selection of the wider Ngāi Tahu Cultural Mapping Project's knowledge and research through a public atlas.",
+      "sources": [
+        {
+          "label": "Harmsworth, Park and Walker, Development and use of GIS for iwi and hapū: Motueka case study, 2005",
+          "url": "https://icm.landcareresearch.co.nz/knowledgebase/publications/documents/FinalMay2005ICMMaoriGISreport.pdf"
+        },
+        {
+          "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+          "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+        },
+        {
+          "label": "Ngāi Tahu, Cultural Mapping Project begins",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The New Zealand Geographic Board's Gazetteer is an official geographic-names register with statutory functions and mapped locations. Iwi mapping collections can include histories, alternative names, uncertain locations and restricted knowledge beyond the Gazetteer's scope. Properly authorised research may inform official naming and public maps, but the Gazetteer and iwi-governed information systems have separate responsibilities. Public availability of the digital atlas does not imply general reuse permission for underlying whānau records or culturally sensitive coordinates.",
+      "markdown": "The New Zealand Geographic Board's Gazetteer is an official geographic-names register with statutory functions and mapped locations. Iwi mapping collections can include histories, alternative names, uncertain locations and restricted knowledge beyond the Gazetteer's scope. Properly authorised research may inform official naming and public maps, but the Gazetteer and iwi-governed information systems have separate responsibilities. Public availability of the digital atlas does not imply general reuse permission for underlying whānau records or culturally sensitive coordinates.",
+      "sources": [
+        {
+          "label": "LINZ, How to use the New Zealand Gazetteer",
+          "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
+        },
+        {
+          "label": "Ngāi Tahu, The Ngāi Tahu Atlas: Ingoa Wāhi system and 2005 KTKO pilot",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "public-data-and-iwi-controlled-information"
+}

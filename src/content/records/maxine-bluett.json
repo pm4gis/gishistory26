@@ -1,0 +1,48 @@
+{
+  "id": "person:maxine-bluett",
+  "slug": "maxine-bluett",
+  "name": "Maxine Bluett",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/maxine-bluett/",
+  "story": [
+    "Maxine Bluett wrote Hutt River Te Awa Kairangi for the April 2011 issue of Tū Mai (no. 117, pages 40–41). The National Library catalogue records the article, which addressed the river's Māori history and geographic naming. A professional profile also associates Bluett with advice to the New Zealand Geographic Board. No specific GIS programming responsibility is established by these sources."
+  ],
+  "sources": [
+    {
+      "label": "National Library, Maxine Bluett, Hutt River Te Awa Kairangi, Tū Mai 117, April 2011",
+      "url": "https://natlib.govt.nz/records/30233416"
+    },
+    {
+      "label": "Maxine Bluett, professional profile",
+      "url": "https://nz.linkedin.com/in/maxine-bluett-4a963a1a"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "National Library, Maxine Bluett, Hutt River Te Awa Kairangi, Tū Mai 117, April 2011",
+        "url": "https://natlib.govt.nz/records/30233416"
+      },
+      {
+        "label": "Maxine Bluett, professional profile",
+        "url": "https://nz.linkedin.com/in/maxine-bluett-4a963a1a"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "National Library, Maxine Bluett, Hutt River Te Awa Kairangi, Tū Mai 117, April 2011",
+        "url": "https://natlib.govt.nz/records/30233416"
+      },
+      {
+        "label": "Maxine Bluett, professional profile",
+        "url": "https://nz.linkedin.com/in/maxine-bluett-4a963a1a"
+      }
+    ]
+  ]
+}

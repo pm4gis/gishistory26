@@ -1,0 +1,42 @@
+{
+  "id": "passage:research-20261010-ch26-iwi-led-motueka-information-system",
+  "slug": "iwi-led-motueka-information-system",
+  "articleId": "article:chapter-26",
+  "title": "An iwi-led information system in Motueka",
+  "order": 15,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:26",
+    "entity:mirmak-te-tau-ihu-iwi-gis-collaboration",
+    "person:garth-harmsworth",
+    "person:mick-park",
+    "person:dean-walker"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "In November 2003 the Motueka Iwi Resource Management Advisory Komiti (MIRMAK) began work towards a geographic information system supporting iwi resource management in Te Tau Ihu. The project was led and managed by MIRMAK, with Manaaki Whenua participating through the Motueka integrated catchment management programme. Garth Harmsworth, Mick Park and Dean Walker's report of 30 May 2005 describes participation by representatives of Ngāti Rarua, Te Ātiawa and Ngāti Tama. The intended uses included environmental records, resource-consent assessment, cultural information and local planning.",
+      "markdown": "In November 2003 the Motueka Iwi Resource Management Advisory Komiti (MIRMAK) began work towards a geographic information system supporting iwi resource management in Te Tau Ihu. The project was led and managed by MIRMAK, with Manaaki Whenua participating through the Motueka integrated catchment management programme. Garth Harmsworth, Mick Park and Dean Walker's report of 30 May 2005 describes participation by representatives of Ngāti Rarua, Te Ātiawa and Ngāti Tama. The intended uses included environmental records, resource-consent assessment, cultural information and local planning.",
+      "sources": [
+        {
+          "label": "Harmsworth, Park and Walker, Development and use of GIS for iwi and hapū: Motueka case study, 2005",
+          "url": "https://icm.landcareresearch.co.nz/knowledgebase/publications/documents/FinalMay2005ICMMaoriGISreport.pdf"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The project addressed issues that were technical and organisational. Its authors considered data preparation, training, long-term maintenance, the ownership of knowledge and permission to disclose it. Public-domain geographic information could be combined with iwi-held material without making confidential cultural information generally accessible. Existing council viewers offered some mapping capability, but limited remote access, querying and printing restricted their use for this work. The case provides a documented early example of iwi-led GIS decisions, rather than a general account of every Māori mapping system.",
+      "markdown": "The project addressed issues that were technical and organisational. Its authors considered data preparation, training, long-term maintenance, the ownership of knowledge and permission to disclose it. Public-domain geographic information could be combined with iwi-held material without making confidential cultural information generally accessible. Existing council viewers offered some mapping capability, but limited remote access, querying and printing restricted their use for this work. The case provides a documented early example of iwi-led GIS decisions, rather than a general account of every Māori mapping system.",
+      "sources": [
+        {
+          "label": "Harmsworth, Park and Walker, Development and use of GIS for iwi and hapū: Motueka case study, 2005",
+          "url": "https://icm.landcareresearch.co.nz/knowledgebase/publications/documents/FinalMay2005ICMMaoriGISreport.pdf"
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "iwi-led-motueka-information-system"
+}

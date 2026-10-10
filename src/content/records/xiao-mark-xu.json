@@ -1,0 +1,36 @@
+{
+  "id": "person:xiao-mark-xu",
+  "slug": "xiao-mark-xu",
+  "name": "Xiao Mark Xu",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/xiao-mark-xu/",
+  "story": [
+    "Xiao Mark Xu completed a University of Waikato Master of Social Sciences thesis in 2007 titled Developing a GIS-Based Decision Support Tool For Evaluating Potential Wind Farm Sites. It applied mapped geographic information to wind-farm siting questions. The university's repository confirms the research; later employment and any operational deployment of the tool have not been verified."
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, Xiao Mark Xu, GIS wind-farm decision-support thesis, 2007",
+      "url": "https://hdl.handle.net/10289/2348"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Waikato, Xiao Mark Xu, GIS wind-farm decision-support thesis, 2007",
+        "url": "https://hdl.handle.net/10289/2348"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "University of Waikato, Xiao Mark Xu, GIS wind-farm decision-support thesis, 2007",
+        "url": "https://hdl.handle.net/10289/2348"
+      }
+    ]
+  ]
+}

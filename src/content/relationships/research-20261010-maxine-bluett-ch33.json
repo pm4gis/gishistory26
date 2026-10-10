@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-maxine-bluett-ch33",
+  "a": "person:maxine-bluett",
+  "b": "chapter:33",
+  "label": "Documented Māori geographic-name research",
+  "basis": "National Library record of 2011 article",
+  "passageIds": [
+    "passage:research-20261010-ch33-public-data-and-iwi-controlled-information"
+  ],
+  "sources": [
+    {
+      "label": "National Library, Maxine Bluett, Hutt River Te Awa Kairangi, Tū Mai 117, April 2011",
+      "url": "https://natlib.govt.nz/records/30233416"
+    }
+  ]
+}

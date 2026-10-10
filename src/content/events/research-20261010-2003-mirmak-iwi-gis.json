@@ -1,0 +1,27 @@
+{
+  "id": "research-20261010-2003-mirmak-iwi-gis",
+  "dateDisplay": "November 2003",
+  "startDate": "2003-11",
+  "datePrecision": "month",
+  "year": 2003,
+  "label": "MIRMAK iwi GIS project begins",
+  "summary": "MIRMAK initiates iwi-led geographic-information work in the Motueka catchment.",
+  "url": "/stories/conservation-and-environment/",
+  "passageIds": [
+    "passage:research-20261010-ch26-iwi-led-motueka-information-system"
+  ],
+  "recordIds": [
+    "entity:mirmak-te-tau-ihu-iwi-gis-collaboration",
+    "person:garth-harmsworth"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Harmsworth, Park and Walker, Development and use of GIS for iwi and hapū: Motueka case study, 2005",
+      "url": "https://icm.landcareresearch.co.nz/knowledgebase/publications/documents/FinalMay2005ICMMaoriGISreport.pdf"
+    }
+  ]
+}

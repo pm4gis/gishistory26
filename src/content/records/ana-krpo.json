@@ -1,0 +1,36 @@
+{
+  "id": "person:ana-krpo",
+  "slug": "ana-krpo",
+  "name": "Ana Krpo",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/ana-krpo/",
+  "story": [
+    "Ana Krpo's 2004 Auckland University of Technology master's research developed a GIS model for runoff and contaminant loads in the Puhinui catchment, Manukau. The research used mapped catchment conditions and land-use scenarios to examine stormwater-management questions. The degree and research topic are documented in the thesis source; her subsequent career is not established."
+  ],
+  "sources": [
+    {
+      "label": "Auckland University of Technology, Ana Krpo, Puhinui catchment GIS thesis, 2004",
+      "url": "https://openrepository.aut.ac.nz/bitstreams/b0229713-4214-4747-ae07-dd48bfcb4f56/download"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "Auckland University of Technology, Ana Krpo, Puhinui catchment GIS thesis, 2004",
+        "url": "https://openrepository.aut.ac.nz/bitstreams/b0229713-4214-4747-ae07-dd48bfcb4f56/download"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Auckland University of Technology, Ana Krpo, Puhinui catchment GIS thesis, 2004",
+        "url": "https://openrepository.aut.ac.nz/bitstreams/b0229713-4214-4747-ae07-dd48bfcb4f56/download"
+      }
+    ]
+  ]
+}

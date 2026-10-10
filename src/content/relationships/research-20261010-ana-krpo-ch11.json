@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-ana-krpo-ch11",
+  "a": "person:ana-krpo",
+  "b": "chapter:11",
+  "label": "Master's research applying GIS to stormwater",
+  "basis": "AUT thesis source",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "sources": [
+    {
+      "label": "Auckland University of Technology, Ana Krpo, Puhinui catchment GIS thesis, 2004",
+      "url": "https://openrepository.aut.ac.nz/bitstreams/b0229713-4214-4747-ae07-dd48bfcb4f56/download"
+    }
+  ]
+}

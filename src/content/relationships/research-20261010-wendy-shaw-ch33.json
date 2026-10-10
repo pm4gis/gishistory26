@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-wendy-shaw-ch33",
+  "a": "person:wendy-shaw",
+  "b": "chapter:33",
+  "label": "Geographic-names administration",
+  "basis": "2017 New Zealand report to UN names conference",
+  "passageIds": [
+    "passage:research-20261010-ch33-public-data-and-iwi-controlled-information"
+  ],
+  "sources": [
+    {
+      "label": "Wendy Shaw, New Zealand report to the 11th UN Conference on Geographical Names, 2017",
+      "url": "https://digitallibrary.un.org/record/4019949/files/E_CONF.105_37_CRP.37-EN.pdf"
+    }
+  ]
+}

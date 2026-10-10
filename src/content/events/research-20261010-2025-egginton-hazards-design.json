@@ -1,0 +1,26 @@
+{
+  "id": "research-20261010-2025-egginton-hazards-design",
+  "dateDisplay": "2025",
+  "startDate": "2025",
+  "datePrecision": "year",
+  "year": 2025,
+  "label": "Egginton's tikanga and hazard resilience master's work",
+  "summary": "Zane Egginton's Master of Design research addresses tikanga, technology and natural-hazard resilience.",
+  "url": "/stories/universities-build-a-field/",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "recordIds": [
+    "person:zane-egginton"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "University of Auckland, Zane Egginton, Weaving Tikanga and Technology, 2025",
+      "url": "https://researchspace.auckland.ac.nz/items/e6c7fcde-0627-4345-919f-0f794a33281a"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "research-20261010-2016-mchardie-web-maps-thesis",
+  "dateDisplay": "2016",
+  "startDate": "2016",
+  "datePrecision": "year",
+  "year": 2016,
+  "label": "McHardie evaluates demographic web maps",
+  "summary": "Tristan McHardie's master's thesis examines web mapping applications for visualising demographic diversity.",
+  "url": "/stories/universities-build-a-field/",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "recordIds": [
+    "person:tristan-mchardie",
+    "entity:university-of-waikato"
+  ],
+  "themeIds": [],
+  "categories": [
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, Tristan McHardie, Evaluating web mapping applications, 2016",
+      "url": "https://hdl.handle.net/10289/10802"
+    }
+  ]
+}

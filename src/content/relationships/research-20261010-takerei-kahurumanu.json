@@ -1,0 +1,20 @@
+{
+  "id": "relationship:research-20261010-takerei-kahurumanu",
+  "a": "person:takerei-norton",
+  "b": "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+  "label": "Cultural mapping project management",
+  "basis": "Ngāi Tahu project history and contemporary account",
+  "passageIds": [
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history"
+  ],
+  "sources": [
+    {
+      "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+      "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    },
+    {
+      "label": "Ngāi Tahu, Cultural Mapping Project begins",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-glen-stichbury-waikato",
+  "a": "person:glen-stichbury",
+  "b": "entity:university-of-waikato",
+  "label": "2009 GIS and remote-sensing master's research",
+  "basis": "University repository degree record",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, Glen Stichbury, Antarctic GIS and remote sensing thesis, 2009",
+      "url": "https://hdl.handle.net/10289/3945"
+    }
+  ]
+}

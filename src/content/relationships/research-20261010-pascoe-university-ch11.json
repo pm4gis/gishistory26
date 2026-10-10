@@ -1,0 +1,16 @@
+{
+  "id": "relationship:research-20261010-pascoe-university-ch11",
+  "a": "person:richard-pascoe",
+  "b": "chapter:11",
+  "label": "1989 GIS interchange MSc",
+  "basis": "Original thesis repository",
+  "passageIds": [
+    "passage:research-20261010-ch11-masters-research-record-1979-2025"
+  ],
+  "sources": [
+    {
+      "label": "Richard T. Pascoe, Translating Data Between Geographic Information Systems, MSc thesis, Canterbury, 1989",
+      "url": "https://hdl.handle.net/10092/8408"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "person:david-ronald-henderson",
+  "slug": "david-ronald-henderson",
+  "name": "David Ronald Henderson",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/david-ronald-henderson/",
+  "story": [
+    "David Ronald Henderson completed a 2008 Master of Science thesis at the University of Waikato titled Local Source Tsunami Inundation Modelling for Poverty Bay, Gisborne. The study addressed a coastal hazard through spatial modelling. Its relationship to subsequent operational tsunami planning is not established by the thesis metadata alone."
+  ],
+  "sources": [
+    {
+      "label": "University of Waikato, David Ronald Henderson, Poverty Bay tsunami inundation thesis, 2008",
+      "url": "https://hdl.handle.net/10289/2302"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Waikato, David Ronald Henderson, Poverty Bay tsunami inundation thesis, 2008",
+        "url": "https://hdl.handle.net/10289/2302"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "University of Waikato, David Ronald Henderson, Poverty Bay tsunami inundation thesis, 2008",
+        "url": "https://hdl.handle.net/10289/2302"
+      }
+    ]
+  ]
+}

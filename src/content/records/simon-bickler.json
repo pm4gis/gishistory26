@@ -1,0 +1,48 @@
+{
+  "id": "person:simon-bickler",
+  "slug": "simon-bickler",
+  "name": "Simon Bickler",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/simon-bickler/",
+  "story": [
+    "Archaeologist Simon Bickler's professional CV records a presentation at the Māori GIS Conference in Lower Hutt in October 2010. Its title was 60,000 Records and Counting: The Creation of the New Zealand Archaeological Association's ArchSite GIS Database. This confirms his presentation on archaeological GIS infrastructure, without establishing that he alone designed ArchSite or organised the conference."
+  ],
+  "sources": [
+    {
+      "label": "Simon Bickler, archaeology CV documenting October 2010 Māori GIS conference presentation",
+      "url": "https://trobriandsindepth.com/htdocs/Trobriand%20CVs/Simon%20Bickler%20Archaeology%20CV%202012%20for%20DEPTH.pdf"
+    },
+    {
+      "label": "University of Otago, School of Surveying Māori strategic framework, 2010",
+      "url": "https://www.otago.ac.nz/__data/assets/pdf_file/0028/318394/school-of-surveying-maori-strategic-framework-685227.pdf"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "Simon Bickler, archaeology CV documenting October 2010 Māori GIS conference presentation",
+        "url": "https://trobriandsindepth.com/htdocs/Trobriand%20CVs/Simon%20Bickler%20Archaeology%20CV%202012%20for%20DEPTH.pdf"
+      },
+      {
+        "label": "University of Otago, School of Surveying Māori strategic framework, 2010",
+        "url": "https://www.otago.ac.nz/__data/assets/pdf_file/0028/318394/school-of-surveying-maori-strategic-framework-685227.pdf"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Simon Bickler, archaeology CV documenting October 2010 Māori GIS conference presentation",
+        "url": "https://trobriandsindepth.com/htdocs/Trobriand%20CVs/Simon%20Bickler%20Archaeology%20CV%202012%20for%20DEPTH.pdf"
+      },
+      {
+        "label": "University of Otago, School of Surveying Māori strategic framework, 2010",
+        "url": "https://www.otago.ac.nz/__data/assets/pdf_file/0028/318394/school-of-surveying-maori-strategic-framework-685227.pdf"
+      }
+    ]
+  ]
+}

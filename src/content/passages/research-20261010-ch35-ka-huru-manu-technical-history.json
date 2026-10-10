@@ -1,0 +1,93 @@
+{
+  "id": "passage:research-20261010-ch35-ka-huru-manu-technical-history",
+  "slug": "ka-huru-manu-technical-history",
+  "articleId": "article:chapter-35",
+  "title": "Kā Huru Manu: the research behind the atlas",
+  "order": 15,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:35",
+    "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+    "person:takerei-norton",
+    "person:iain-gover",
+    "person:matapura-ellison",
+    "person:david-higgins",
+    "person:trevor-howse",
+    "person:sean-bragg",
+    "person:adrian-patchett",
+    "person:helen-brown"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Kā Huru Manu's development began in work to document and protect Ngāi Tahu cultural knowledge during South Island high-country pastoral tenure review. The first kaumātua paepae named in the iwi project's own history comprised Trevor Howse, Kelly Davis, Matapura Ellison and David Higgins; a 2018 Te Karaka account also names Jimmy Russell among the early contributors. Kāi Tahu ki Otago Ltd had undertaken a local place-name GIS pilot in the Kāti Huirapa ki Puketeraki takiwā in 2005, and its material later informed the wider project. The first broader mapping hui took place in March 2007. Maps at 1:50,000 scale, spreadsheets, archival sources and field checks initially supported the research.",
+      "markdown": "Kā Huru Manu's development began in work to document and protect Ngāi Tahu cultural knowledge during South Island high-country pastoral tenure review. The first kaumātua paepae named in the iwi project's own history comprised Trevor Howse, Kelly Davis, Matapura Ellison and David Higgins; a 2018 Te Karaka account also names Jimmy Russell among the early contributors. Kāi Tahu ki Otago Ltd had undertaken a local place-name GIS pilot in the Kāti Huirapa ki Puketeraki takiwā in 2005, and its material later informed the wider project. The first broader mapping hui took place in March 2007. Maps at 1:50,000 scale, spreadsheets, archival sources and field checks initially supported the research.",
+      "sources": [
+        {
+          "label": "Ngāi Tahu, Cultural Mapping Project begins",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+        },
+        {
+          "label": "Ngāi Tahu, The Ngāi Tahu Atlas: Ingoa Wāhi system and 2005 KTKO pilot",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+        },
+        {
+          "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+          "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "As the work expanded across the rohe, Ngāi Tahu developed an Ingoa Wāhi place-name database in Microsoft Dynamics CRM, linked to ArcGIS and the Ngāi Tahu Heritage Viewer. Its structure recorded research status, reliability and accuracy. Changes could be entered and viewed at mapping hui held on marae. Takerei Norton's published account credits Iain Gover with helping bring a linked place-name database into the mapping work, without attributing the entire technical architecture to one individual. The underlying system remained a Ngāi Tahu capability, controlled with Papatipu Rūnaka.",
+      "markdown": "As the work expanded across the rohe, Ngāi Tahu developed an Ingoa Wāhi place-name database in Microsoft Dynamics CRM, linked to ArcGIS and the Ngāi Tahu Heritage Viewer. Its structure recorded research status, reliability and accuracy. Changes could be entered and viewed at mapping hui held on marae. Takerei Norton's published account credits Iain Gover with helping bring a linked place-name database into the mapping work, without attributing the entire technical architecture to one individual. The underlying system remained a Ngāi Tahu capability, controlled with Papatipu Rūnaka.",
+      "sources": [
+        {
+          "label": "Ngāi Tahu, The Ngāi Tahu Atlas: Ingoa Wāhi system and 2005 KTKO pilot",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+        },
+        {
+          "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+          "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The 2012 Ngāi Tahu Cultural Summit prompted a public digital atlas drawing on selected approved material. The contemporary 2018 Te Karaka account dates its launch to November 2017. NV Interactive says it designed and built the public website infrastructure and managed website delivery, while Ngāi Tahu developed its GIS and provided the content. The supplier's more-than-1,500 mapped names and the iwi publication's more-than-1,000 public names are differently described measures, not interchangeable totals.",
+      "markdown": "The 2012 Ngāi Tahu Cultural Summit prompted a public digital atlas drawing on selected approved material. The contemporary 2018 Te Karaka account dates its launch to November 2017. NV Interactive says it designed and built the public website infrastructure and managed website delivery, while Ngāi Tahu developed its GIS and provided the content. The supplier's more-than-1,500 mapped names and the iwi publication's more-than-1,000 public names are differently described measures, not interchangeable totals.",
+      "sources": [
+        {
+          "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+          "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+        },
+        {
+          "label": "NV Interactive, Kā Huru Manu: project delivery responsibilities",
+          "url": "https://nvinteractive.com/work/ka-huru-manu-ngai-tahu-cultural-mapping-project/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Project credits identify contributions beyond the original paepae. Helen Brown and Takerei Norton were credited as creative directors in the 2018 Best Design Awards entry. Sean Bragg recorded working as a Ngāi Tahu GIS intern from June 2015 and as a GIS Assistant from July 2017, including georeferencing nineteenth-century survey maps and helping prepare the public atlas. A February 2019 Geospatial Research Institute seminar named Bragg and Adrian Patchett as presenters on applied Ngāi Tahu geospatial work. Project credits do not, by themselves, establish every named person's individual software-development duties.",
+      "markdown": "Project credits identify contributions beyond the original paepae. Helen Brown and Takerei Norton were credited as creative directors in the 2018 Best Design Awards entry. Sean Bragg recorded working as a Ngāi Tahu GIS intern from June 2015 and as a GIS Assistant from July 2017, including georeferencing nineteenth-century survey maps and helping prepare the public atlas. A February 2019 Geospatial Research Institute seminar named Bragg and Adrian Patchett as presenters on applied Ngāi Tahu geospatial work. Project credits do not, by themselves, establish every named person's individual software-development duties.",
+      "sources": [
+        {
+          "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+          "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+        },
+        {
+          "label": "Geospatial Research Institute, Ngāi Tahu geospatial seminar, February 2019",
+          "url": "https://geospatial.ac.nz/griss-feb2019/"
+        },
+        {
+          "label": "Alice Dimond, Kā Huru Manu, Te Karaka, 25 March 2018",
+          "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "ka-huru-manu-technical-history"
+}
