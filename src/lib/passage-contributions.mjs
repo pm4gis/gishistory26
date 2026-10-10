@@ -1,9 +1,7 @@
 /**
- * Mailto contribution hand-off. This opens the reader's own email client; it
- * never sends, submits or stores correspondence through NZ GIS History.
- *
- * Recipient: NZ GIS History contributions address specified by the project owner.
- * Keep the clicked passage's permanent production URL in the email body.
+ * Contribution links and editable browser drafts. Historical mailto helpers
+ * remain for compatibility; all visible contribution controls use /contribute/.
+ * Nothing is sent automatically by the website.
  */
 export const contributionRecipient='pm4gis@gmail.com';
 export const productionOrigin='https://history.pm4gis.nz';
@@ -43,7 +41,7 @@ export function passageContributionMailto(article,passage){
     'Can we credit your name, or would you prefer not to be named?',
     '',
     '',
-    'Do you have permission to share any attached photographs, maps or other material? ',
+    'Do you have permission to share any attached photographs, maps or other material?',
     '',
     '',
     'Ngā mihi,',
@@ -74,7 +72,7 @@ export function siteContributionMailto(){
     'Can we credit your name, or would you prefer not to be named?',
     '',
     '',
-    'Do you have permission to share any attached photographs, maps or other material? Please avoid sending restricted iwi, hapū or personal information.',
+    'Do you have permission to share any attached photographs, maps or other material?',
     '',
     '',
     'Ngā mihi,'
