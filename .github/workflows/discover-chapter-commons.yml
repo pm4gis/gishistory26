@@ -1,0 +1,27 @@
+name: Discover historical chapter images
+on:
+  push:
+    branches: [research/historical-documentary-images-wave2-20261010]
+    paths:
+      - scripts/discover-chapter-commons.mjs
+      - .github/workflows/discover-chapter-commons.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  discover:
+    if: github.ref == 'refs/heads/research/historical-documentary-images-wave2-20261010'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/historical-documentary-images-wave2-20261010}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0'}
+      - run: node scripts/discover-chapter-commons.mjs
+      - name: Commit sourced discovery index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/media/commons-discovery-wave2.json
+          git commit -m "Record Commons historical image discovery evidence"
+          git push origin HEAD:research/historical-documentary-images-wave2-20261010

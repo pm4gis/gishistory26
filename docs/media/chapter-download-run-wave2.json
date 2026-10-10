@@ -1,0 +1,278 @@
+{
+  "checkedAt": "2026-10-10T08:26:04.481Z",
+  "items": [
+    {
+      "slug": "brees-surveyors-porirua-1840s",
+      "source": "https://commons.wikimedia.org/wiki/File:Pictorial_Illustrations_of_New_Zealand.jpg",
+      "verifiedLicence": "Public domain",
+      "status": "downloaded",
+      "original": "/assets/historical/original/brees-surveyors-porirua-1840s.jpg",
+      "web": "/assets/historical/web/brees-surveyors-porirua-1840s.webp",
+      "thumbnail": "/assets/historical/card/brees-surveyors-porirua-1840s.webp",
+      "sha256": "787aa1484b0ab2deb5369459ee7acfc120d14d93869b30ecbe37a1c38fe48921",
+      "bytes": 2544018,
+      "dimensions": [
+        2017,
+        3081
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pictorial_Illustrations_of_New_Zealand.jpg",
+      "licence": "Public domain",
+      "credit": "Samuel Charles Brees (1810–1865); Alexander Turnbull Library historical image"
+    },
+    {
+      "slug": "tripp-station-theodolite-surveyors",
+      "source": "https://commons.wikimedia.org/wiki/File:Surveyors_and_theodolite_on_Tripp_Station.jpg",
+      "verifiedLicence": "CC BY 2.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/tripp-station-theodolite-surveyors.jpg",
+      "web": "/assets/historical/web/tripp-station-theodolite-surveyors.webp",
+      "thumbnail": "/assets/historical/card/tripp-station-theodolite-surveyors.webp",
+      "sha256": "5e8f631aa4887e2996c02b3da6643d4ccf30e80c06c55350d67f304027fbd9d8",
+      "bytes": 345057,
+      "dimensions": [
+        900,
+        1219
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Surveyors_and_theodolite_on_Tripp_Station.jpg",
+      "licence": "CC BY 2.0",
+      "credit": "Archives New Zealand, R21011360, AAQT 6539 W3537 28/A47; photographer unidentified"
+    },
+    {
+      "slug": "petone-lower-hutt-survey-1909",
+      "source": "https://commons.wikimedia.org/wiki/File:1909_Map_of_Petone_and_Lower_Hutt_NZMS013_WN82.jpg",
+      "verifiedLicence": "CC0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/petone-lower-hutt-survey-1909.jpg",
+      "web": "/assets/historical/web/petone-lower-hutt-survey-1909.webp",
+      "thumbnail": "/assets/historical/card/petone-lower-hutt-survey-1909.webp",
+      "sha256": "9aad480062b5c23b699d4577de8edf50ce9d6344d61489eca0d89a23f5968df9",
+      "bytes": 22883772,
+      "dimensions": [
+        5075,
+        4876
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1909_Map_of_Petone_and_Lower_Hutt_NZMS013_WN82.jpg",
+      "licence": "CC0",
+      "credit": "J. W. Davis, Chief Draughtsman, New Zealand Department of Lands and Survey"
+    },
+    {
+      "slug": "clutha-molyneux-nzms13-1955",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Survey_Districts_Clutha_and_South_Molyneux_(1955).jpg",
+      "verifiedLicence": "CC BY 2.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/clutha-molyneux-nzms13-1955.jpg",
+      "web": "/assets/historical/web/clutha-molyneux-nzms13-1955.webp",
+      "thumbnail": "/assets/historical/card/clutha-molyneux-nzms13-1955.webp",
+      "sha256": "00b1c53501e3f2f2b489bb9fd1748df0ddc8e624daf01890ca630a908dad572f",
+      "bytes": 5922914,
+      "dimensions": [
+        8375,
+        8798
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Survey_Districts_Clutha_and_South_Molyneux_(1955).jpg",
+      "licence": "CC BY 2.0",
+      "credit": "Department of Lands and Survey; Archives New Zealand DABB D101 409/16 (R6619077)"
+    },
+    {
+      "slug": "southland-aerial-verdon-1988",
+      "source": "https://commons.wikimedia.org/wiki/File:1988_aerial_image_of_Verdon_College_site.jpg",
+      "verifiedLicence": "CC BY 4.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/southland-aerial-verdon-1988.jpg",
+      "web": "/assets/historical/web/southland-aerial-verdon-1988.webp",
+      "thumbnail": "/assets/historical/card/southland-aerial-verdon-1988.webp",
+      "sha256": "1c8e5adb35349b568c4af55edd9f3a3f687a0ceca3dd4c22808dca1f55a5d2f5",
+      "bytes": 352354,
+      "dimensions": [
+        1229,
+        895
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1988_aerial_image_of_Verdon_College_site.jpg",
+      "licence": "CC BY 4.0",
+      "credit": "Southland Regional Council; sourced from LINZ Data Service"
+    },
+    {
+      "slug": "canterbury-wilding-pines",
+      "source": "https://commons.wikimedia.org/wiki/File:Wilding_pines%2C_Canterbury%2C_New_Zealand.jpg",
+      "verifiedLicence": "Public domain",
+      "status": "downloaded",
+      "original": "/assets/historical/original/canterbury-wilding-pines.jpg",
+      "web": "/assets/historical/web/canterbury-wilding-pines.webp",
+      "thumbnail": "/assets/historical/card/canterbury-wilding-pines.webp",
+      "sha256": "974a04a5cd6de0a0900483de0d9703228c9163158a00dc053b34158d38861237",
+      "bytes": 1533202,
+      "dimensions": [
+        2592,
+        1944
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wilding_pines%2C_Canterbury%2C_New_Zealand.jpg",
+      "licence": "Public domain",
+      "credit": "Alan Liefting"
+    },
+    {
+      "slug": "ruapehu-theodolite-1988",
+      "source": "https://commons.wikimedia.org/wiki/File:Theodolite_measurement_on_Ruapehu_volcano.jpg",
+      "verifiedLicence": "Public domain",
+      "status": "downloaded",
+      "original": "/assets/historical/original/ruapehu-theodolite-1988.jpg",
+      "web": "/assets/historical/web/ruapehu-theodolite-1988.webp",
+      "thumbnail": "/assets/historical/card/ruapehu-theodolite-1988.webp",
+      "sha256": "928f15f7557ccfe5299ebd5dd2b881f750c3a020c8bc8ec2e6f475e7b9b4bc54",
+      "bytes": 44674,
+      "dimensions": [
+        640,
+        423
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theodolite_measurement_on_Ruapehu_volcano.jpg",
+      "licence": "Public domain (USGS)",
+      "credit": "Don Swanson, United States Geological Survey; subject Brad Scott, New Zealand Geological Survey"
+    },
+    {
+      "slug": "ongaonga-linz-topo50-2020",
+      "source": "https://commons.wikimedia.org/wiki/File:Ongaonga_map.png",
+      "verifiedLicence": "CC BY 4.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/ongaonga-linz-topo50-2020.png",
+      "web": "/assets/historical/web/ongaonga-linz-topo50-2020.webp",
+      "thumbnail": "/assets/historical/card/ongaonga-linz-topo50-2020.webp",
+      "sha256": "fcf681c706a06f0482c640b06f360b74032a5b542f70160ee00fd7efd725f855",
+      "bytes": 162289,
+      "dimensions": [
+        710,
+        710
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ongaonga_map.png",
+      "licence": "CC BY 4.0",
+      "credit": "Land Information New Zealand; Topo50 sheet BL37 Ongaonga"
+    },
+    {
+      "slug": "auckland-region-transport-2014",
+      "source": "https://commons.wikimedia.org/wiki/File:Auckland_Region_map_EN.png",
+      "verifiedLicence": "CC BY-SA 4.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/auckland-region-transport-2014.png",
+      "web": "/assets/historical/web/auckland-region-transport-2014.webp",
+      "thumbnail": "/assets/historical/card/auckland-region-transport-2014.webp",
+      "sha256": "f44481ed0d8cff23636f64aba5b3cd5f4fd910517859df92ca7360270199267d",
+      "bytes": 1178819,
+      "dimensions": [
+        2100,
+        2424
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Region_map_EN.png",
+      "licence": "CC BY-SA 4.0",
+      "credit": "Shaundd; OpenStreetMap-derived mapping with LINZ base information where attributed on Commons"
+    },
+    {
+      "slug": "riverhead-geodetic-mark-2025",
+      "source": "https://commons.wikimedia.org/wiki/File:Geodetic_survey_mark%2C_The_Riverhead.jpg",
+      "verifiedLicence": "CC BY 4.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/riverhead-geodetic-mark-2025.jpg",
+      "web": "/assets/historical/web/riverhead-geodetic-mark-2025.webp",
+      "thumbnail": "/assets/historical/card/riverhead-geodetic-mark-2025.webp",
+      "sha256": "46e8d4e02606c35cc90cb9fad1ac0f37f0ca398fe4fcc1f6704816a0d3c03819",
+      "bytes": 20166997,
+      "dimensions": [
+        6000,
+        4000
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geodetic_survey_mark%2C_The_Riverhead.jpg",
+      "licence": "CC BY 4.0",
+      "credit": "Bojan Jankuloski (Bjankuloski06)"
+    },
+    {
+      "slug": "kiwirail-passenger-network-map",
+      "source": "https://commons.wikimedia.org/wiki/File:KiwiRail_passenger_train_map.png",
+      "verifiedLicence": "CC BY-SA 3.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/kiwirail-passenger-network-map.png",
+      "web": "/assets/historical/web/kiwirail-passenger-network-map.webp",
+      "thumbnail": "/assets/historical/card/kiwirail-passenger-network-map.webp",
+      "sha256": "cd52db85f1724e6c9cbc923773a96d113bec2f7c7e437f3ce8758272136bc2b0",
+      "bytes": 322575,
+      "dimensions": [
+        645,
+        778
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KiwiRail_passenger_train_map.png",
+      "licence": "CC BY-SA 3.0",
+      "credit": "Jkan997; KiwiRail service information on a CC BY-SA map"
+    },
+    {
+      "slug": "nema-tsunami-forecast-2021",
+      "source": "https://commons.wikimedia.org/wiki/File:Tsunami_forecast_map_New_Zealand_5_March_2021.jpg",
+      "verifiedLicence": "CC BY 4.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nema-tsunami-forecast-2021.jpg",
+      "web": "/assets/historical/web/nema-tsunami-forecast-2021.webp",
+      "thumbnail": "/assets/historical/card/nema-tsunami-forecast-2021.webp",
+      "sha256": "1458dfbdc85b32754dc155c3163604334b7e872aa5e937f0d82fc4e9ce12a18d",
+      "bytes": 216349,
+      "dimensions": [
+        2000,
+        1500
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsunami_forecast_map_New_Zealand_5_March_2021.jpg",
+      "licence": "CC BY 4.0",
+      "credit": "National Emergency Management Agency (New Zealand)"
+    },
+    {
+      "slug": "masterton-earthquake-fault-map-1942",
+      "source": "https://commons.wikimedia.org/wiki/File:Survey_of_Earthquake_Fault_Trace_map_-_Masterton_Earthquake_(June_24_1942)_(18749413649).jpg",
+      "verifiedLicence": "CC BY-SA 2.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/masterton-earthquake-fault-map-1942.jpg",
+      "web": "/assets/historical/web/masterton-earthquake-fault-map-1942.webp",
+      "thumbnail": "/assets/historical/card/masterton-earthquake-fault-map-1942.webp",
+      "sha256": "e1c0202674d4a39914b13a0700a6dd7cadbffacbbf4771fe53dd169db69f7d08",
+      "bytes": 3950103,
+      "dimensions": [
+        5301,
+        8987
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Survey_of_Earthquake_Fault_Trace_map_-_Masterton_Earthquake_(June_24_1942)_(18749413649).jpg",
+      "licence": "CC BY-SA 2.0",
+      "credit": "Archives New Zealand; original surveyor not identified"
+    },
+    {
+      "slug": "new-river-cadastre-1898",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_New_River_Hundred.jpg",
+      "verifiedLicence": "CC BY 2.0",
+      "status": "downloaded",
+      "original": "/assets/historical/original/new-river-cadastre-1898.jpg",
+      "web": "/assets/historical/web/new-river-cadastre-1898.webp",
+      "thumbnail": "/assets/historical/card/new-river-cadastre-1898.webp",
+      "sha256": "c196a8e483896f544838bccdb0d43580bc733ad3a687accb92dcb6a9a90142a5",
+      "bytes": 7255966,
+      "dimensions": [
+        4770,
+        3907
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_New_River_Hundred.jpg",
+      "licence": "CC BY 2.0",
+      "credit": "W. Deverell; Department of Lands and Survey; Archives New Zealand DABB D101 423/IN 38 (R6617598)"
+    },
+    {
+      "slug": "fiordland-nasa-earthquake-2009",
+      "source": "https://commons.wikimedia.org/wiki/File:NASA_fiordland_2009_earthquake.png",
+      "verifiedLicence": "Public domain",
+      "status": "downloaded",
+      "original": "/assets/historical/original/fiordland-nasa-earthquake-2009.png",
+      "web": "/assets/historical/web/fiordland-nasa-earthquake-2009.webp",
+      "thumbnail": "/assets/historical/card/fiordland-nasa-earthquake-2009.webp",
+      "sha256": "f0f5c2681c6406e5dfd83697f076c64720a8992540f7305cba632096ed89db40",
+      "bytes": 371431,
+      "dimensions": [
+        720,
+        480
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NASA_fiordland_2009_earthquake.png",
+      "licence": "Public domain (NASA)",
+      "credit": "NASA Earth Observatory, Jesse Allen; USGS seismic data; SRTM elevation and ocean-bathymetry sources"
+    }
+  ],
+  "success": 15,
+  "failed": 0,
+  "held": 0
+}
