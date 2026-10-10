@@ -3,6 +3,7 @@
   export let compact=false;
   export let archive=false;
   export let readingLinks:Record<string,string>={};
+  export let recordLinks:Record<string,{name:string,url:string}>={};
   let topic='All';
   let query='';
   const featured=new Set(['yCBeRHA2Jnk','Fqq3Fzi5djc','KYEVxcBEVQ8','hCAVoBwRJwE']);
@@ -42,6 +43,8 @@
           <p>{video.description}</p>
           <small>{video.attribution}</small>
           {#if readingLinks[video.passageId]}<p class="wananga-related-reading"><a href={readingLinks[video.passageId]}>Read the related NZ GIS history passage →</a></p>{/if}
+          {#if video.eventIds?.length}<p class="wananga-related-reading"><a href={'/timeline/?event='+encodeURIComponent(video.eventIds[0])}>Related historical timeline event →</a></p>{/if}
+          {#if video.recordIds?.some(id=>id!=='entity:nga-poutama-matawhenua'&&recordLinks[id])}<p class="wananga-record-links">Connected entries: {#each video.recordIds.filter(id=>id!=='entity:nga-poutama-matawhenua'&&recordLinks[id]) as id,i (id)}{#if i>0} · {/if}<a href={recordLinks[id].url}>{recordLinks[id].name}</a>{/each}</p>{/if}
         </div>
       </article>
     {/each}
