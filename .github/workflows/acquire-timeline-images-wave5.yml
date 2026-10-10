@@ -1,0 +1,57 @@
+name: Acquire event-specific documentary images wave 5
+on:
+  push:
+    branches: [feature/timeline-documentary-wave5-20261010]
+    paths:
+      - .github/workflows/acquire-timeline-images-wave5.yml
+      - docs/media/curated-sources-timeline-wave5.json
+      - scripts/download-timeline-images-wave5.mjs
+      - scripts/audit-timeline-image-coverage-wave5.mjs
+      - src/lib/timeline-media.mjs
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: acquire-timeline-wave5
+  cancel-in-progress: true
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/feature/timeline-documentary-wave5-20261010'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: feature/timeline-documentary-wave5-20261010}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0', cache: npm}
+      - run: npm ci
+      - name: Acquire and verify each Commons original and create attributed WebP assets
+        run: node scripts/download-timeline-images-wave5.mjs || true
+      - name: Require four verified original acquisitions
+        run: node -e "const d=require('./docs/media/timeline-download-run-wave5.json');if(d.failed||d.success!==4)throw Error('Original acquisition incomplete: '+d.success+' downloaded and '+d.failed+' failed')"
+      - name: Validate all original files, source licences and production integrity
+        run: |
+          npm test
+          npm run build
+      - name: Generate authoritative all-event image audit and gap register
+        run: node scripts/audit-timeline-image-coverage-wave5.mjs
+      - name: Commit acquired originals, derivatives and versioned audit to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical src/content/images docs/media/timeline-download-run-wave5.json docs/media/timeline-event-image-coverage-wave5.csv docs/media/timeline-event-image-coverage-wave5.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive verified documentary timeline image originals wave 5"
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin feature/timeline-documentary-wave5-20261010
+            git rebase origin/feature/timeline-documentary-wave5-20261010
+            git push origin HEAD:feature/timeline-documentary-wave5-20261010
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: timeline-documentary-wave5-audit
+          path: |
+            docs/media/timeline-download-run-wave5.json
+            docs/media/timeline-event-image-coverage-wave5.md
+          retention-days: 30
