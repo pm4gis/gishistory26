@@ -1,9 +1,9 @@
 <script lang="ts">
- import {onMount} from 'svelte';
+ import {onMount,tick} from 'svelte';
  import {fade} from 'svelte/transition';
  import Timeline from './Timeline.svelte';
  export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;
- let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
+ let suppressPreview=false;let relatedAll=false;let previewTrigger:HTMLElement|null=null;let previewTimer:ReturnType<typeof setTimeout>|undefined;let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
  $: current=passages[page];
  $: visible=complete?passages:[current].filter(Boolean);
  $: relevant=records.filter(r=>r.kind!=='Chapter'&&r.kind!=='Story'&&(complete||current?.recordIds?.includes(r.id)));
@@ -14,12 +14,16 @@
  function blocks(p:any){return p.blocks?.length?p.blocks:(p.paragraphs||[]).map((x:any)=>({type:'paragraph',...x}))}
  function image(b:any){return images.find(i=>i.id===b.imageId)}
  function save(p:any=current){try{localStorage.setItem('nzgis-progress',JSON.stringify({articleId:article.id,passageId:p.id,url:article.url+(complete?'':'?mode=page')+'#'+p.slug,mode:complete?'chapter':'page'}))}catch{}}
- function go(i:number,update=true){if(i<0||i>=passages.length)return;page=i;complete=false;selected=null;if(update)history.pushState(null,'',article.url+'?mode=page#'+passages[i].slug);save(passages[i]);requestAnimationFrame(()=>{document.querySelector<HTMLElement>('.page h2')?.focus();document.querySelector('.page')?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})})}
+ async function go(i:number,update=true){if(i<0||i>=passages.length)return;page=i;complete=false;selected=null;relatedAll=false;if(update)history.pushState(null,'',article.url+'?mode=page#'+passages[i].slug);save(passages[i]);await tick();requestAnimationFrame(()=>{document.querySelector<HTMLElement>('.page h2')?.focus();document.querySelector('.page')?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})})}
  function chapter(){complete=true;history.pushState(null,'',article.url+'#'+current.slug);save();requestAnimationFrame(()=>document.getElementById(current.slug)?.scrollIntoView())}
- function fromURL(){const id=decodeURIComponent(location.hash.slice(1));const i=passages.findIndex(p=>p.slug===id||p.legacyAnchor===id||p.id===id);if(i>=0)page=i;complete=new URLSearchParams(location.search).get('mode')!=='page'}
+ function fromURL(){const id=decodeURIComponent(location.hash.slice(1));const i=passages.findIndex(p=>p.slug===id||p.legacyAnchor===id||p.id===id||p.blocks?.some((b:any)=>b.id===id));if(i>=0)page=i;complete=new URLSearchParams(location.search).get('mode')!=='page'}
  function selectEvent(e:any){const i=passages.findIndex(p=>e.passageIds?.includes(p.id));if(i>=0)go(i)}
- function open(r:any){selected=r}
- function close(){selected=null}
+ function cancelPreview(){if(previewTimer)clearTimeout(previewTimer)}
+ function hover(r:any,trigger:HTMLElement){cancelPreview();previewTimer=setTimeout(()=>{previewTrigger=trigger;selected=r},300)}
+ function leavePreview(){cancelPreview();previewTimer=setTimeout(()=>close(false),300)}
+ async function open(r:any,trigger:HTMLElement,focus=false){cancelPreview();previewTrigger=trigger;selected=r;if(focus){await tick();document.querySelector<HTMLElement>('.reader-popover a')?.focus()}}
+ function close(restore=false){cancelPreview();selected=null;if(restore){suppressPreview=true;previewTrigger?.focus();queueMicrotask(()=>suppressPreview=false)}}
+
  function relatedClick(){save()}
  function parts(text:string,p:any):any[]{
   const allowed=records.filter(r=>p.recordIds?.includes(r.id)&&r.kind!=='Chapter'&&r.kind!=='Story');
@@ -36,13 +40,13 @@
  function textSize(delta:number){size=Math.min(25,Math.max(17,size+delta));try{localStorage.setItem('nzgis-text-size',String(size))}catch{}}
  async function copy(p:any){try{await navigator.clipboard.writeText(new URL(article.url+'#'+p.slug,location.origin).href);status='Passage link copied.'}catch{status='Copy the passage address from your browser.'}}
 </script>
-<svelte:window on:keydown={(e)=>{if(e.key==='Escape')close()}}/>
+<svelte:window on:keydown={(e)=>{if(e.key==='Escape'&&selected){e.preventDefault();close(true)}}}/>
 <div class="reading-shell" style={`--reading-size:${size}px`}>
  <header class="reading-heading"><a class="breadcrumb" href="/read/">Book contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p><div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
  {#if events.length}<Timeline {events} compact={true} onSelect={selectEvent}/>{/if}
  <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Related entries · {relevant.length}</button></div>
  <div class="reading-grid"><aside class:open={contentsOpen} class="contents" aria-label="Chapter contents"><p class="eyebrow">In this chapter</p>{#each passages as p,i}<a href={article.url+'?mode=page#'+p.slug} class:active={page===i} on:click={(e)=>{e.preventDefault();go(i);contentsOpen=false}}>{p.title}</a>{/each}<a href="/read/">All chapters →</a></aside>
- <article class="page" aria-label="Chapter text" data-pagefind-body data-pagefind-filter="type:Chapter">
+ <article class="page" aria-label="Chapter text" data-pagefind-body ><span class="sr-only" data-pagefind-filter="type">Chapter</span>
  <div class="toolbar"><div class="actions"><button aria-pressed={!complete} on:click={()=>go(page)}>Page by page</button><button aria-pressed={complete} on:click={chapter}>Complete chapter</button></div><div class="actions"><button aria-label="Decrease text size" on:click={()=>textSize(-1)}>A−</button><button aria-label="Increase text size" on:click={()=>textSize(1)}>A+</button><button on:click={()=>{save();status='Reading position saved on this device.'}}>Bookmark</button></div></div>
  <p class="sr-only" aria-live="polite">{status}</p>
  <div class="narrative">
@@ -51,8 +55,8 @@
  <section id={p.slug} data-passage={p.id} in:fade={{duration:motion?160:0}}>
  {#if p.legacyAnchor}<span id={p.legacyAnchor} class="legacy-anchor"></span>{/if}<h2 tabindex="-1">{p.title}</h2>
  {#each blocks(p) as b}
- {#if b.type==='figure'}<figure>{#if image(b)}<a href={'/images/'+image(b).slug+'/'}><img src={image(b).assetPath} alt={b.alt||image(b).altText} loading="lazy"/></a>{/if}<figcaption>{b.caption} {b.credit||b.source||''}{#if image(b)} <a href={'/images/'+image(b).slug+'/'}>Image details</a>{/if}</figcaption></figure>
- {:else}<p>{#each parts(b.text||'',p) as part}{#if part.record}<button class="inline-record" on:click={()=>open(part.record)}>{part.text}</button>{:else}{part.text}{/if}{/each}</p>{/if}
+ {#if b.type==='figure'}<figure id={b.id}>{#if image(b)}<a href={'/images/'+image(b).slug+'/'}><img src={image(b).assetPath} alt={b.alt||image(b).altText} loading="lazy"/></a>{/if}<figcaption>{b.caption} {b.credit||b.source||''}{#if image(b)} <a href={'/images/'+image(b).slug+'/'}>Image details</a>{/if}</figcaption></figure>
+ {:else}<p id={b.id}>{#each parts(b.text||'',p) as part}{#if part.record}<button class="inline-record" aria-haspopup="dialog" aria-expanded={selected?.id===part.record.id} on:mouseenter={(e)=>hover(part.record,e.currentTarget)} on:mouseleave={leavePreview} on:focus={(e)=>{if(!suppressPreview)open(part.record,e.currentTarget)}} on:click={(e)=>open(part.record,e.currentTarget,true)}>{part.text}</button>{:else}{part.text}{/if}{/each}</p>{/if}
  {/each}
  <div class="actions"><a href={article.url+'#'+p.slug}>Link to passage</a><button on:click={()=>copy(p)}>Copy link</button></div>
  {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(s.url)}<a href={s.url}>{s.label}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
@@ -61,8 +65,8 @@
  </div>
  <nav class="page-nav" aria-label="Reading navigation">{#if !complete&&page>0}<button on:click={()=>go(page-1)}>← Previous</button>{:else if previous}<a class="button" href={previous.url}>← Previous chapter</a>{:else}<a href="/read/">Contents</a>{/if}<span>{complete?'Complete chapter':`${page+1} of ${passages.length}`}</span>{#if !complete&&page<passages.length-1}<button on:click={()=>go(page+1)}>Next →</button>{:else if next}<a class="button primary" href={next.url}>Next chapter →</a>{:else}<a href="/read/">Back to contents</a>{/if}</nav>
  </article>
- <aside class:open={relatedOpen} class="related" aria-label="Related material"><p class="eyebrow">Follow a connection</p><h3>Related entries</h3><div class="related-list">{#each relevant as r}<a class="related-item" href={r.url} on:click={relatedClick}>{r.name}<span>{r.kind} · mentioned in {complete?'this chapter':'this passage'}</span></a>{/each}</div>{#if !relevant.length}<p class="muted">No named records are indexed for this passage.</p>{/if}
+ <aside class:open={relatedOpen} class="related" aria-label="Related material"><p class="eyebrow">Follow a connection</p><h3>Related entries</h3><div class="related-list">{#each (relatedAll?relevant:relevant.slice(0,8)) as r}<a class="related-item" href={r.url} on:click={relatedClick}>{r.name}<span>{r.kind} · indexed with {complete?'this chapter':'this passage'}</span></a>{/each}</div>{#if relevant.length>8}<button aria-expanded={relatedAll} on:click={()=>relatedAll=!relatedAll}>{relatedAll?'Show fewer entries':`View all ${relevant.length} entries`}</button>{/if}{#if !relevant.length}<p class="muted">No named records are indexed for this passage.</p>{/if}
  {#if currentEvents.length}<details><summary>Linked events · {currentEvents.length}</summary>{#each currentEvents as e}<button on:click={()=>selectEvent(e)}>{e.dateDisplay} · {e.label}</button>{/each}</details>{/if}
  {#if relationships.length}<details><summary>Relationship evidence</summary>{#each relationships as edge}<p><a href={records.find(r=>r.id===edge.a)?.url||'/browse/'}>{records.find(r=>r.id===edge.a)?.name||edge.a}</a> · {edge.label} · <a href={records.find(r=>r.id===edge.b)?.url||'/browse/'}>{records.find(r=>r.id===edge.b)?.name||edge.b}</a></p><p class="muted">{edge.basis}</p>{#each edge.sources||[] as s}{#if safe(s.url)}<a href={s.url}>{s.label}</a>{/if}{/each}{/each}</details>{/if}<p><a href={'/network/?focus='+encodeURIComponent(relevant[0]?.id||article.id)}>Optional network view →</a></p></aside></div>
 </div>
-{#if selected}<aside class="reader-popover" aria-label={'Preview of '+selected.name} transition:fade={{duration:motion?180:0}}><h3>{selected.name}</h3><small>{selected.kind}</small><p>{selected.description||selected.story?.[0]||'Open the complete entry for the available account and sources.'}</p><div class="actions"><a class="button primary" href={selected.url} on:click={relatedClick}>Open full entry →</a><button on:click={close}>Close</button></div></aside>{/if}
+{#if selected}<aside role="dialog" aria-modal="false" on:mouseenter={cancelPreview} on:mouseleave={leavePreview} class="reader-popover" aria-label={'Preview of '+selected.name} transition:fade={{duration:motion?180:0}}><h3>{selected.name}</h3><small>{selected.kind}</small><p>{selected.description||selected.story?.[0]||'Open the complete entry for the available account and sources.'}</p><div class="actions"><a class="button primary" href={selected.url} on:click={relatedClick}>Open full entry →</a><button on:click={()=>close(true)}>Close</button></div></aside>{/if}

@@ -1,5 +1,9 @@
 name: Verify publication
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -9,8 +13,18 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.16.0'
+          node-version: '22.19.0'
           cache: npm
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - run: node scripts/editorial.mjs state > docs/verification/editorial-state.json
+      - run: node scripts/simulated-review.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: publication-verification
+          path: |
+            docs/verification/
+            docs/reviews/
+          retention-days: 30
