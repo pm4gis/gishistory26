@@ -27,7 +27,8 @@ jobs:
       - name: Acquire and verify each Commons original and create attributed WebP assets
         run: node scripts/download-timeline-images-wave5.mjs || true
       - name: Require four verified original acquisitions
-        run: node -e "const d=require('./docs/media/timeline-download-run-wave5.json');if(d.failed||d.success!==4)throw Error('Original acquisition incomplete: '+d.success+' downloaded and '+d.failed+' failed')"
+        run: |
+          node -e "const d=require('./docs/media/timeline-download-run-wave5.json');if(d.failed||d.success!==4)throw Error('Original acquisition incomplete: '+d.success+' downloaded and '+d.failed+' failed')"
       - name: Validate all original files, source licences and production integrity
         run: |
           npm test
