@@ -356,3 +356,23 @@
  .chapter-index a{min-width:38px;min-height:42px}
  .home-layout .section-head{align-items:flex-start;flex-direction:column;gap:2px}
 }
+
+/* Browser contribution form and narrow-screen header fixes. */
+.contribution-form{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:clamp(18px,4vw,30px);max-width:900px}
+.contribution-recipient{margin:0 0 18px;font-size:16px}
+.contribution-form label{display:block;font-size:15px;font-weight:700;margin:20px 0 7px}
+.contribution-form input,.contribution-form textarea{width:100%;max-width:100%;font-size:16px}
+.contribution-form textarea{resize:vertical;line-height:1.55;min-height:300px;padding:14px;border:1px solid var(--line);border-radius:10px;color:var(--text);background:var(--bg);font:inherit}
+.contribution-form textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.contribution-actions{margin-top:20px;gap:12px}
+.contribution-help{font-size:14px;color:var(--muted);line-height:1.65;margin:20px 0 0}
+.contribution-status{font-size:14px;color:var(--text);padding:10px;border-left:3px solid var(--accent);background:var(--raised)}
+@media(max-width:520px){
+ .topbar .brand{font-size:18px;line-height:1.1}
+ .topbar .brand small{font-size:9px}
+ .topbar-tools #palette span{display:none}
+ .topbar-tools #palette{min-width:42px;padding:8px 9px}
+ .mobile-menu summary{width:44px;justify-content:center;padding:8px}
+ .mobile-menu summary span:last-child{display:none}
+ .contribution-actions>*{width:100%}
+}

@@ -3,7 +3,7 @@
  import {fade} from 'svelte/transition';
  import Timeline from './Timeline.svelte';
  import WanangaVideos from './WanangaVideos.svelte';
- import {passageContributionMailto} from '../lib/passage-contributions.mjs';
+ import {passageContributionPageUrl} from '../lib/passage-contributions.mjs';
  import {ngaPoutamaForPassage} from '../lib/nga-poutama-videos.mjs';
  export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';
  let suppressPreview=false;let relatedAll=false;let relatedKind='All';let previewTrigger:HTMLElement|null=null;let previewTimer:ReturnType<typeof setTimeout>|undefined;let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
@@ -70,7 +70,7 @@
    <WanangaVideos inline={true} compact={true} videos={ngaPoutamaForPassage(p.id)}/>
  {/if}
  {/each}
- <div class="actions passage-actions"><a href={article.url+'#'+p.slug}>Link to passage</a><button on:click={()=>copy(p)}>Copy link</button><a class="button passage-contribute" aria-label={"Contribute information about "+p.title} href={passageContributionMailto(article,p)}>Contribute</a></div>
+ <div class="actions passage-actions"><a href={article.url+'#'+p.slug}>Link to passage</a><button on:click={()=>copy(p)}>Copy link</button><a class="button passage-contribute" aria-label={"Contribute information about "+p.title} href={passageContributionPageUrl(article,p)}>Contribute</a></div>
  {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(s.url)}<a href={s.url}>{s.label}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
  </section>{/each}
  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}

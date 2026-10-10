@@ -1,9 +1,8 @@
 ---
 import '../styles/site.css';
-import {siteContributionMailto} from '../lib/passage-contributions.mjs';
 const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
-const contributionHref=siteContributionMailto();
+const contributionHref='/contribute/';
 ---
 <!doctype html>
 <html lang="en-NZ">
@@ -25,7 +24,7 @@ const contributionHref=siteContributionMailto();
   <div class="topbar-tools">
    <button id="palette" type="button" aria-label="Change colour theme">◐ <span>Night</span></button>
    <details class="mobile-menu">
-    <summary><span class="hamburger-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
+    <summary aria-label="Open navigation menu"><span class="hamburger-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
     <nav class="nav nav--mobile" aria-label="Mobile navigation">
      <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
      <a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a>
@@ -42,6 +41,10 @@ const contributionHref=siteContributionMailto();
   function label(){const t=document.documentElement.dataset.theme||'night';const s=b?.querySelector('span');if(s)s.textContent=t[0].toUpperCase()+t.slice(1);}
   label();
   b?.addEventListener('click',()=>{const t=names[(names.indexOf(document.documentElement.dataset.theme||'night')+1)%4];document.documentElement.dataset.theme=t;try{localStorage.setItem('nzgis-theme',t)}catch{}label();});
+  const mobileMenu=document.querySelector<HTMLDetailsElement>('.mobile-menu');
+  mobileMenu?.addEventListener('keydown',(event)=>{if(event.key==='Escape'){mobileMenu.open=false;mobileMenu.querySelector('summary')?.focus();}});
+  mobileMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.open=false;}));
+  document.addEventListener('pointerdown',(event)=>{if(mobileMenu?.open&&!mobileMenu.contains(event.target as Node))mobileMenu.open=false;});
  </script>
 </body>
 </html>

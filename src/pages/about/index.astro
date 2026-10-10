@@ -1,8 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
-import {siteContributionMailto} from '../../lib/passage-contributions.mjs';
-const contributionHref=siteContributionMailto();
+const contributionHref='/contribute/';
 ---
 <Layout title="About the project · NZ GIS History" description="About A History of GIS in New Zealand: its editor, scope, evidence, sources and how to contribute.">
  <div class="wrap narrative">
@@ -20,7 +19,7 @@ const contributionHref=siteContributionMailto();
   <p>Historical maps, photographs and application screenshots are used where they can be identified and their reuse conditions permit publication. Each documentary image has a detail page recording its source, date or date range, context, attribution and licence. Some chapters also use decorative New Zealand landscape imagery. Those images provide visual design and are not presented as evidence of the events described.</p>
   <p>Browse the <a href="/images/">image register</a>, explore the <a href="/timeline/">timeline</a>, or inspect the <a href="https://github.com/pm4gis/gishistory26">source repository</a> and <a href="/release.json">publication revision</a>.</p>
   <h2>Contributions and corrections</h2>
-  <p>If you worked on a GIS project, have photographs or documents, recognise an error, or can add detail about a person or organisation, please contribute. Include the relevant chapter or passage link, your connection to the subject, and any sources that help establish the account. Please identify the creator and reuse conditions for photographs, maps and screenshots. Do not send restricted iwi or hapū information, confidential material or another person's private details without permission.</p>
+  <p>If you worked on a GIS project, have photographs or documents, recognise an error, or can add detail about a person or organisation, please contribute. Include the relevant chapter or passage link, your connection to the subject, and any sources that help establish the account. Please identify the creator and source of photographs, maps and screenshots.</p>
   <p><a class="button primary" href={contributionHref}>Contribute or suggest a correction →</a></p>
  </div>
 </Layout>
