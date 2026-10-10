@@ -6,10 +6,10 @@ import WanangaVideos from '../../components/WanangaVideos.svelte';
 import {ngaPoutamaReadingLinks,ngaPoutamaRecordLinks} from '../../lib/nga-poutama-videos.mjs';
 import {pickThemeImage,pickRecordImage} from '../../lib/subject-media.mjs';
 import {dataset,passageUrl} from '../../lib/data';
-export async function getStaticPaths(){const d=await dataset();
-const readingLinks=ngaPoutamaReadingLinks(d.passages,d.articles);
-const recordLinks=ngaPoutamaRecordLinks(d.records);return d.themes.map((t:any)=>({params:{slug:t.slug},props:{id:t.id}}))}
+export async function getStaticPaths(){const d=await dataset();return d.themes.map((t:any)=>({params:{slug:t.slug},props:{id:t.id}}))}
 const d=await dataset();
+const readingLinks=ngaPoutamaReadingLinks(d.passages,d.articles) as Record<string,string>;
+const recordLinks=ngaPoutamaRecordLinks(d.records);
 const t=d.themes.find((t:any)=>t.id===(Astro.props as {id:string}).id);
 const passages=d.passages.filter((p:any)=>p.themeIds.includes(t.id)||t.passageIds?.includes(p.id));
 const records=d.records.filter((r:any)=>r.themeIds.includes(t.id)&&r.kind!=='Story');
