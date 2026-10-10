@@ -1,0 +1,14 @@
+{
+  "id": "relationship:nztopo50-linz",
+  "a": "dataset:nztopo50",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Published and maintained by",
+  "basis": "LINZ publishes the NZTopo50 map series and the digital GIS map sheet layer.",
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Topo50 Maps layer 50767 and version history",
+      "url": "https://data.linz.govt.nz/layer/50767-nz-topo50-maps/"
+    }
+  ],
+  "passageIds": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:dataset-nzlri-1",
+  "a": "dataset:nzlri",
+  "b": "entity:manaaki-whenua-landcare-research",
+  "label": "Current data custodian",
+  "basis": "Manaaki Whenua maintains the land resources portal and describes NZLRI data and history.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua Landcare Research, NZLRI land-use capability surveys and mapping editions",
+      "url": "https://lrp.landcareresearch.co.nz/topics/luc-surveys"
+    }
+  ]
+}

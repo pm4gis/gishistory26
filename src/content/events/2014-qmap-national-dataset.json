@@ -1,0 +1,25 @@
+{
+  "id": "event:2014-qmap-national-dataset",
+  "dateDisplay": "2014",
+  "startDate": "2014",
+  "datePrecision": "year",
+  "year": 2014,
+  "label": "QMAP regional layers combined into a national geological GIS dataset",
+  "summary": "GNS Science combined 21 regional QMAP datasets into a seamless 1:250,000 geological dataset.",
+  "recordIds": [
+    "dataset:qmap-250k",
+    "entity:gns-science"
+  ],
+  "passageIds": [],
+  "themeIds": [],
+  "categories": [
+    "Datasets",
+    "Science"
+  ],
+  "sources": [
+    {
+      "label": "GNS Science / Earth Sciences NZ, 1:250 000 Geological Map: QMAP programme and editions",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ]
+}

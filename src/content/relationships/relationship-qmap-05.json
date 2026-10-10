@@ -1,0 +1,14 @@
+{
+  "id": "relationship:qmap-05",
+  "a": "dataset:qmap-250k",
+  "b": "chapter:9",
+  "label": "Discussed in chapter",
+  "basis": "The existing science chapter covers QMAP and geological mapping.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science / Earth Sciences NZ, 1:250 000 Geological Map: QMAP programme and editions",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ]
+}

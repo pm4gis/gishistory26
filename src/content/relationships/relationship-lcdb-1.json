@@ -1,0 +1,14 @@
+{
+  "id": "relationship:lcdb-1",
+  "a": "dataset:lcdb",
+  "b": "entity:manaaki-whenua-landcare-research",
+  "label": "Developed and maintained by",
+  "basis": "Manaaki Whenua produced later LCDB versions and released LCDB v5 in 2020.",
+  "sources": [
+    {
+      "label": "Manaaki Whenua, How is New Zealand's landscape changing? (4 February 2020)",
+      "url": "https://www.landcareresearch.co.nz/news/how-is-new-zealands-landscape-changing"
+    }
+  ],
+  "passageIds": []
+}

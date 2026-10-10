@@ -1,0 +1,56 @@
+{
+  "id": "dataset:nztopo50",
+  "slug": "nztopo50",
+  "name": "NZTopo50 topographic maps and digital map sheets",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo50/",
+  "aliases": [
+    "Topo50",
+    "NZ Topo50",
+    "NZTopo50"
+  ],
+  "description": "The national 1:50,000 topographic map series and georeferenced digital map sheets supplied by LINZ.",
+  "story": [
+    "NZTopo50 is LINZ's topographic map series at 1:50,000 scale. Its sheets cover mainland New Zealand and offshore islands, giving the country a consistent reference for terrain, tracks, roads, water features, place names and other topographic information. The series replaced earlier sheet-based mapping as New Zealand adopted modern national geodetic and topographic production systems.",
+    "The LINZ Data Service entry for NZTopo50 Maps records a raster layer added on 21 May 2011. The service distributes georeferenced 300 dpi raster map sheets in NZGD2000 / New Zealand Transverse Mercator 2000 (EPSG:2193), enabling the sheets to align in GIS software. That 2011 online layer date must not be mistaken for the original map series release.",
+    "Topographic map sheet images, the vector datasets from which maps are compiled and the online basemap products are distinct forms of geographic information. Their individual update histories, licences and application capabilities should be recorded separately when tracing topographic data's development."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Topo50 Maps layer 50767 and version history",
+      "url": "https://data.linz.govt.nz/layer/50767-nz-topo50-maps/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Topo50 Maps layer 50767 and version history",
+        "url": "https://data.linz.govt.nz/layer/50767-nz-topo50-maps/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Topo50 Maps layer 50767 and version history",
+        "url": "https://data.linz.govt.nz/layer/50767-nz-topo50-maps/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Topo50 Maps layer 50767 and version history",
+        "url": "https://data.linz.govt.nz/layer/50767-nz-topo50-maps/"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Read digital topography history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ Topo50 published data",
+      "url": "https://data.linz.govt.nz/layer/50767-nz-topo50-maps/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

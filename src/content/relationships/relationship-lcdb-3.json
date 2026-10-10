@@ -1,0 +1,14 @@
+{
+  "id": "relationship:lcdb-3",
+  "a": "dataset:lcdb",
+  "b": "entity:ministry-for-primary-industries",
+  "label": "Funded by",
+  "basis": "Te Uru Rākau within MPI co-funded LCDB version 5.",
+  "sources": [
+    {
+      "label": "Manaaki Whenua, How is New Zealand's landscape changing? (4 February 2020)",
+      "url": "https://www.landcareresearch.co.nz/news/how-is-new-zealands-landscape-changing"
+    }
+  ],
+  "passageIds": []
+}

@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { dataset } from '../../lib/data';
+const d = await dataset();
+const records = d.records.filter((r:any) => r.kind === 'Dataset').sort((a:any,b:any) => a.name.localeCompare(b.name,'en-NZ'));
+const groups = [...new Set(records.map((r:any)=>r.category||'Other datasets'))].sort();
+---
+<Layout title="Datasets · NZ GIS History" description="Explore the history of New Zealand spatial datasets, their custodians, contributors and relationships.">
+  <div class="wrap">
+    <p class="eyebrow">Explore the evidence</p>
+    <h1>New Zealand GIS datasets</h1>
+    <p class="intro">Follow the datasets behind New Zealand GIS, from early digital surveys and scientific mapping to modern geographic information. Each entry links to source documents, responsible organisations, relevant people and other historical accounts.</p>
+    <p><a href="/browse/?kind=Dataset">Search and filter dataset entries</a> · <a href="/network/">Explore their connections</a> · <a href="/timeline/">Explore the timeline</a></p>
+    {groups.map((group:any)=><section><h2>{group}</h2><div class="cards">{records.filter((r:any)=>(r.category||'Other datasets')===group).map((r:any)=><article class="card"><small>Dataset</small><a class="title" href={r.url}>{r.name}</a><p>{r.description||r.story?.[0]}</p><p><a href={'/network/?focus='+encodeURIComponent(r.id)}>Related people and organisations →</a></p></article>)}</div></section>)}
+  </div>
+</Layout>

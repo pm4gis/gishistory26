@@ -1,0 +1,56 @@
+{
+  "id": "dataset:qmap-250k",
+  "slug": "qmap-250k",
+  "name": "QMAP geological map of New Zealand 1:250,000",
+  "kind": "Dataset",
+  "category": "Geological datasets",
+  "url": "/datasets/qmap-250k/",
+  "description": "The national quarter-million-scale digital geological mapping programme and its later seamless GIS dataset.",
+  "aliases": [
+    "QMAP",
+    "Quarter Million Map Project",
+    "Geological Map of New Zealand 1:250 000"
+  ],
+  "story": [
+    "The QMAP programme revised New Zealand's 1:250,000 geological mapping using compiled published and unpublished maps, targeted fieldwork and GIS. GNS Science documents 21 regional map sheets produced through the 1995–2012 project, with explanatory geological texts and digital geological information. The predecessor map series was published between 1959 and 1973.",
+    "In 2014 GNS Science combined the regional digital QMAP datasets into a seamless national GIS dataset. The second edition, released in 2018, adopted GeoSciML-Lite structure and controlled geoscience vocabularies. A third edition followed in 2020 with additional regional mapping. These dates refer to the integrated editions, rather than the first capture of the geological observations.",
+    "The published national dataset represents geological units and boundaries alongside faults, folds, structural measurements and other mapped geological features. Its named contributors and institutional history are linked below. Readers can follow the associated accounts of GNS Science, the geological mapping team and the wider development of science-based GIS in New Zealand."
+  ],
+  "sources": [
+    {
+      "label": "GNS Science / Earth Sciences NZ, 1:250 000 Geological Map: QMAP programme and editions",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "GNS Science / Earth Sciences NZ, 1:250 000 Geological Map: QMAP programme and editions",
+        "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+      }
+    ],
+    [
+      {
+        "label": "GNS Science / Earth Sciences NZ, 1:250 000 Geological Map: QMAP programme and editions",
+        "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+      }
+    ],
+    [
+      {
+        "label": "GNS Science / Earth Sciences NZ, 1:250 000 Geological Map: QMAP programme and editions",
+        "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "GNS Science geological mapping catalogue",
+      "url": "https://www.gns.cri.nz/data-and-resources/geological-map-of-new-zealand/"
+    },
+    {
+      "label": "NZ GIS History: Science goes spatial",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

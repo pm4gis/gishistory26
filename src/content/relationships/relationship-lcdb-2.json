@@ -1,0 +1,14 @@
+{
+  "id": "relationship:lcdb-2",
+  "a": "dataset:lcdb",
+  "b": "agency:ministry-for-the-environment",
+  "label": "Funded by",
+  "basis": "MfE was a funder of LCDB version 5.",
+  "sources": [
+    {
+      "label": "Manaaki Whenua, How is New Zealand's landscape changing? (4 February 2020)",
+      "url": "https://www.landcareresearch.co.nz/news/how-is-new-zealands-landscape-changing"
+    }
+  ],
+  "passageIds": []
+}

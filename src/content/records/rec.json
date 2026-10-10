@@ -1,0 +1,51 @@
+{
+  "id": "dataset:rec",
+  "slug": "rec",
+  "name": "New Zealand River Environment Classification",
+  "kind": "Dataset",
+  "category": "Freshwater and environmental datasets",
+  "url": "/datasets/rec/",
+  "aliases": [
+    "REC",
+    "River Environment Classification"
+  ],
+  "description": "NIWA developed the River Environment Classification for the Ministry for the Environment. The Ministry launched it in Wellington on 22 March 2004, after NIWA completed th",
+  "story": [
+    "NIWA developed the River Environment Classification for the Ministry for the Environment. The Ministry launched it in Wellington on 22 March 2004, after NIWA completed the national classification programme.",
+    "The classification groups reaches of rivers and streams using environmental characteristics of upstream catchments and valleys, including climate, topography, geology and land cover. Geographic datasets and modelling provided the information needed to classify river reaches consistently across catchments.",
+    "REC became a spatial framework for freshwater studies and environmental planning. Its history links the work of NIWA and the Ministry for the Environment to land-cover, geological, topographic and hydrological information held by other agencies."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, development and March 2004 launch of the River Environment Classification",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no06-2004/niwa-completes-development-new-zealand-river-environment-classification"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, development and March 2004 launch of the River Environment Classification",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no06-2004/niwa-completes-development-new-zealand-river-environment-classification"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, development and March 2004 launch of the River Environment Classification",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no06-2004/niwa-completes-development-new-zealand-river-environment-classification"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, development and March 2004 launch of the River Environment Classification",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no06-2004/niwa-completes-development-new-zealand-river-environment-classification"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "NIWA, development and March 2004 launch of the River Environment Classification",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no06-2004/niwa-completes-development-new-zealand-river-environment-classification"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

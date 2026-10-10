@@ -1,0 +1,14 @@
+{
+  "id": "relationship:dataset-rec-3",
+  "a": "dataset:rec",
+  "b": "chapter:9",
+  "label": "Related science GIS history",
+  "basis": "The classification combines multiple scientific spatial data sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "NIWA, development and March 2004 launch of the River Environment Classification",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no06-2004/niwa-completes-development-new-zealand-river-environment-classification"
+    }
+  ]
+}

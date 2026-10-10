@@ -1,0 +1,14 @@
+{
+  "id": "relationship:lcdb-6",
+  "a": "dataset:lcdb",
+  "b": "dataset:nzlri",
+  "label": "Related environmental mapping",
+  "basis": "LCDB records observed land cover; NZLRI records biophysical land-resource characteristics. They are distinct complementary data series.",
+  "sources": [
+    {
+      "label": "Manaaki Whenua, How is New Zealand's landscape changing? (4 February 2020)",
+      "url": "https://www.landcareresearch.co.nz/news/how-is-new-zealands-landscape-changing"
+    }
+  ],
+  "passageIds": []
+}

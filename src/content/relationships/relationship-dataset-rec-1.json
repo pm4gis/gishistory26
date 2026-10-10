@@ -1,0 +1,14 @@
+{
+  "id": "relationship:dataset-rec-1",
+  "a": "dataset:rec",
+  "b": "entity:niwa",
+  "label": "Developed by",
+  "basis": "NIWA developed the classification.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "NIWA, development and March 2004 launch of the River Environment Classification",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no06-2004/niwa-completes-development-new-zealand-river-environment-classification"
+    }
+  ]
+}

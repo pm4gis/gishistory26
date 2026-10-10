@@ -1,0 +1,14 @@
+{
+  "id": "relationship:lcdb-5",
+  "a": "dataset:lcdb",
+  "b": "entity:terralink",
+  "label": "Produced historical versions",
+  "basis": "Terralink is named in the historical documentation for early LCDB mapping.",
+  "sources": [
+    {
+      "label": "Landcare Research, historical LCDB 1 and 2 classification and release evidence",
+      "url": "https://www.landcareresearch.co.nz/assets/Tools-And-Resources/Maps/Threatened-Environment-Classification/NZ_remaining_indigenous_cover.pdf"
+    }
+  ],
+  "passageIds": []
+}

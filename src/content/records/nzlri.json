@@ -1,0 +1,51 @@
+{
+  "id": "dataset:nzlri",
+  "slug": "nzlri",
+  "name": "New Zealand Land Resource Inventory",
+  "kind": "Dataset",
+  "category": "Land and environmental datasets",
+  "url": "/datasets/nzlri/",
+  "aliases": [
+    "NZLRI",
+    "New Zealand Land Resource Inventory"
+  ],
+  "description": "The New Zealand Land Resource Inventory assembled observations of rock, soil, slope, erosion and vegetation into mapped land-resource units. The first national survey use",
+  "story": [
+    "The New Zealand Land Resource Inventory assembled observations of rock, soil, slope, erosion and vegetation into mapped land-resource units. The first national survey used aerial photograph interpretation, existing soil and land-resource maps, and fieldwork to describe the physical characteristics that influence land-use capability.",
+    "The first edition was mapped during the 1970s at 1:63,360. Manaaki Whenua records digitisation of the original map information between 1977 and 1980, creating about 85,000 mapped units. Distribution continued to rely heavily on paper worksheets and extended legends even after the GIS database existed.",
+    "Later editions revised selected regions and restructured digital attributes. The Land Resource Information System (LRIS) made related land information available for modern GIS analysis. The NZLRI is a useful example of a national spatial dataset whose earliest digital form predates widespread internet delivery."
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua Landcare Research, NZLRI land-use capability surveys and mapping editions",
+      "url": "https://lrp.landcareresearch.co.nz/topics/luc-surveys"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Manaaki Whenua Landcare Research, NZLRI land-use capability surveys and mapping editions",
+        "url": "https://lrp.landcareresearch.co.nz/topics/luc-surveys"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua Landcare Research, NZLRI land-use capability surveys and mapping editions",
+        "url": "https://lrp.landcareresearch.co.nz/topics/luc-surveys"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua Landcare Research, NZLRI land-use capability surveys and mapping editions",
+        "url": "https://lrp.landcareresearch.co.nz/topics/luc-surveys"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Manaaki Whenua Landcare Research, NZLRI land-use capability surveys and mapping editions",
+      "url": "https://lrp.landcareresearch.co.nz/topics/luc-surveys"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}
