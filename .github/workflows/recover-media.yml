@@ -1,8 +1,5 @@
 name: Recover existing published media
 on:
-  push:
-    branches: [delivery-review-20261010]
-    paths: [scripts/recover-published-media.mjs, .github/workflows/recover-media.yml]
   workflow_dispatch:
 permissions:
   contents: read

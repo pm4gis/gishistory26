@@ -1,6 +1,6 @@
 # NZ GIS History complete delivery plan
 
-Prepared 10 October 2026, New Zealand time. Target repository: https://github.com/pm4gis/gishistory26. Status: planning completed; implementation, migration, deployment and reader testing have not been performed by this plan.
+Prepared 10 October 2026, New Zealand time. Target repository: https://github.com/pm4gis/gishistory26. Status: implementation in progress. The original plan below remains the delivery specification; README.md and docs/verification/ record the current implementation and remaining gates.
 
 ## Agreed direction
 
