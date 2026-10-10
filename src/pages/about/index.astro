@@ -1,5 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
+import {siteContributionMailto} from '../../lib/passage-contributions.mjs';
+const contributionHref=siteContributionMailto();
 ---
-<Layout title="About · NZ GIS History"><div class="wrap narrative"><div class="visual-page-heading"><div><p class="eyebrow">About the publication</p><h1>A History of GIS in New Zealand</h1></div><DecorativeLandscape id="north2024-taranaki1" variant="banner" priority/></div><p>This publication brings together historical accounts, people, organisations, projects, events and sources. Its connected entries provide routes through the material alongside sequential reading.</p><p>Dates retain their recorded precision. Links identify mentions, thematic associations or documented relationships according to their evidence. A linked event does not automatically establish a date in a person's biography.</p><p><a href="/stories/preface/">Read the author's preface</a> for the background to the project.</p><h2>Sources and images</h2><p>The landscape photographs decorating this website are aerial-image patterns supplied by the editor from a collection prepared using LINZ data. They are design elements, not photographs of a specific historic event or organisation. Source layer details remain recorded separately from the publication’s historical figure register.</p><p>Sources appear beside passages, entries and events. Image details retain attribution and licence information. Historical images are used where the available permissions allow reproduction.</p><p><a href="/images/">Image register</a> · <a href="/release.json">Publication revision</a> · <a href="https://github.com/pm4gis/gishistory26">Project repository</a></p></div></Layout>
+<Layout title="About the project · NZ GIS History" description="About A History of GIS in New Zealand: its editor, scope, evidence, sources and how to contribute.">
+ <div class="wrap narrative">
+  <div class="visual-page-heading">
+   <div><p class="eyebrow">About this project</p><h1>A History of GIS in New Zealand</h1><p class="intro">An account of how geographic information systems developed and came to be used across New Zealand.</p></div>
+   <DecorativeLandscape id="north2024-taranaki1" variant="banner" priority/>
+  </div>
+  <h2>About the history</h2>
+  <p>This website follows the people, organisations, projects, data and technology involved in the development of GIS in New Zealand. You can read the chapters in order, follow a particular theme, or move between connected people, institutions, events and stories. The chapters bring together accounts of the practical work: building spatial datasets, adopting new tools, improving mapping services and applying GIS in different fields.</p>
+  <p>The history is compiled and edited by Duane Wilkins, a New Zealand GIS practitioner who began working with GIS at the University of Waikato in 1997 and later worked in public health, conservation, policing and other government and geospatial roles. The <a href="/stories/preface/">author's preface</a> provides his account of how the project began and the experience behind it.</p>
+  <h2>Scope and evidence</h2>
+  <p>The chapters cover the predecessors of digital GIS, its development in New Zealand and subsequent use through 2025. The timeline, people and organisation entries, datasets and themes offer other ways to explore the same material. Relationships are linked where there is evidence for them; an association between two entries does not, by itself, establish who worked on a project or when an event took place. Dates retain the precision supported by their sources.</p>
+  <p>Sources are provided alongside chapters, entries and events wherever available. This is an ongoing historical account, and some early projects remain poorly documented. Recollections are useful, particularly for software and local projects that left little published record, but names, dates and claims should be supported or attributed wherever practical. Corrections and additional evidence are welcome.</p>
+  <h2>Images and sources</h2>
+  <p>Historical maps, photographs and application screenshots are used where they can be identified and their reuse conditions permit publication. Each documentary image has a detail page recording its source, date or date range, context, attribution and licence. Some chapters also use decorative New Zealand landscape imagery. Those images provide visual design and are not presented as evidence of the events described.</p>
+  <p>Browse the <a href="/images/">image register</a>, explore the <a href="/timeline/">timeline</a>, or inspect the <a href="https://github.com/pm4gis/gishistory26">source repository</a> and <a href="/release.json">publication revision</a>.</p>
+  <h2>Contributions and corrections</h2>
+  <p>If you worked on a GIS project, have photographs or documents, recognise an error, or can add detail about a person or organisation, please contribute. Include the relevant chapter or passage link, your connection to the subject, and any sources that help establish the account. Please identify the creator and reuse conditions for photographs, maps and screenshots. Do not send restricted iwi or hapū information, confidential material or another person's private details without permission.</p>
+  <p><a class="button primary" href={contributionHref}>Contribute or suggest a correction →</a></p>
+ </div>
+</Layout>

@@ -301,3 +301,58 @@
 .wananga-video-evidence{font-size:13px;margin:9px 0 2px}
 .wananga-video-evidence a{overflow-wrap:anywhere}
 @media(max-width:600px){.wananga-video-query{width:100%}.wananga-archive-note{font-size:13px}}
+
+/* Publication navigation, chapter catalogue and rotating featured stories. */
+.topbar{position:relative;flex-wrap:nowrap;gap:20px}
+.nav--desktop{gap:clamp(9px,1.15vw,20px);flex-wrap:nowrap;margin-left:auto}
+.nav--desktop a{white-space:nowrap;font-size:clamp(12px,1.06vw,15px)}
+.nav .nav-contribute{background:var(--accent);border:1px solid var(--accent);color:var(--bg);font-weight:700;padding:8px 14px}
+.nav .nav-contribute:hover{background:var(--raised);color:var(--text)}
+.topbar-tools{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.topbar-tools #palette{white-space:nowrap}
+.mobile-menu{display:none}
+.mobile-menu summary{list-style:none;display:flex;align-items:center;gap:9px;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;cursor:pointer;background:var(--raised);color:var(--text);font-size:15px}
+.mobile-menu summary::-webkit-details-marker{display:none}
+.mobile-menu summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.mobile-menu[open] summary{border-color:var(--accent)}
+.hamburger-icon{font-size:24px;line-height:1}
+.nav--mobile{display:flex;position:absolute;z-index:50;top:calc(100% - 1px);right:clamp(14px,4vw,70px);width:min(360px,calc(100vw - 28px));flex-direction:column;align-items:stretch;gap:0;padding:10px;border:1px solid var(--line);border-radius:0 0 15px 15px;background:var(--surface);box-shadow:var(--shade)}
+.nav--mobile a{padding:13px 14px;border-radius:8px;font-size:16px;text-decoration:none}
+.nav--mobile a:not(.button):hover,.nav--mobile a:not(.button):focus-visible{background:var(--raised)}
+.nav--mobile .nav-contribute{justify-content:center;margin-top:8px}
+.section-head h2{margin:4px 0}
+.section-head .eyebrow{margin:0}
+.section-intro{margin:4px 0 22px;color:var(--muted);max-width:74ch}
+.highlight-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,208px),1fr));gap:17px}
+.highlight-card .art-card-body{padding:18px 19px 20px;display:flex;flex-direction:column}
+.highlight-card .art-card-body .title{font-size:19px;line-height:1.35}
+.highlight-card .art-card-body .eyebrow{font-size:11px;line-height:1.5}
+.highlight-card .art-card-body p{font-size:14px;line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+.highlight-card .read-link{margin-top:auto;padding-top:18px;font-size:14px}
+.chapter-index{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 25px}
+.chapter-index a{display:flex;align-items:center;justify-content:center;min-width:40px;min-height:40px;padding:6px 9px;border:1px solid var(--line);border-radius:8px;text-decoration:none;background:var(--surface);font-size:13px}
+.chapter-index a:hover,.chapter-index a:focus-visible{border-color:var(--accent);background:var(--raised)}
+.chapter-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px}
+.chapter-card{scroll-margin-top:20px;display:flex;flex-direction:column;padding:22px}
+.chapter-card h3{font-size:19px;line-height:1.35;margin:9px 0 6px}
+.chapter-card h3 a{text-decoration:none;color:var(--text)}
+.chapter-card h3 a:hover{color:var(--link)}
+.chapter-card p{color:var(--muted);font-size:14px;line-height:1.55;margin:6px 0 14px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+.chapter-card .read-link{font-size:14px;margin-top:auto;padding-top:6px}
+#themes{padding-bottom:32px}
+@media(max-width:1180px){
+ .nav--desktop{display:none}
+ .mobile-menu{display:block}
+ .topbar{flex-wrap:nowrap}
+ .topbar-tools{margin-left:auto}
+}
+@media(max-width:600px){
+ .topbar{padding:12px 14px;gap:8px}
+ .topbar-tools{gap:6px}
+ .topbar-tools #palette{padding:8px 10px;font-size:13px}
+ .mobile-menu summary{padding:8px 10px}
+ .highlight-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr))}
+ .chapter-grid{grid-template-columns:1fr}
+ .chapter-index a{min-width:38px;min-height:42px}
+ .home-layout .section-head{align-items:flex-start;flex-direction:column;gap:2px}
+}
