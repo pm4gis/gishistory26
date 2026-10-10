@@ -32,11 +32,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          npm run preview -- --host 127.0.0.1 --port 4321 > /tmp/nzgis-preview.log 2>&1 &
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist > /tmp/nzgis-preview.log 2>&1 &
           PREVIEW_PID=$!
           trap 'kill "$PREVIEW_PID" 2>/dev/null || true' EXIT
           for i in $(seq 1 40); do
             if curl -fsS -o /dev/null http://127.0.0.1:4321/; then break; fi
             sleep 1
           done
+          if ! curl -fsS -o /dev/null http://127.0.0.1:4321/; then cat /tmp/nzgis-preview.log; echo 'Static preview failed to start'; exit 1; fi
           node scripts/reader-video-browser-qa.mjs
