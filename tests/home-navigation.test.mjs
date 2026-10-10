@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {homeHighlightSlugs} from '../src/lib/home-highlights.mjs';
-import {siteContributionMailto,contributionRecipient} from '../src/lib/passage-contributions.mjs';
+import {siteContributionMailto,contributionRecipient,contributionDraft,contributionGmailUrl,contributionContextFromSearch,passageContributionPageUrl} from '../src/lib/passage-contributions.mjs';
 
 const home=readFileSync('src/pages/index.astro','utf8');
 const layout=readFileSync('src/layouts/Layout.astro','utf8');
@@ -42,7 +42,7 @@ test('highlight pool contains unique, published stories with real passages',()=>
 
 test('desktop and mobile menus provide About and Contribute, with accessible native disclosure',()=>{
  assert.match(layout,/<details class="mobile-menu">/);
- assert.match(layout,/<summary>/);
+ assert.ok(layout.includes('<summary aria-label="Open navigation menu"'));
  assert.match(layout,/aria-label="Mobile navigation"/);
  assert.match(layout,/aria-label="Main navigation"/);
  assert.equal((layout.match(/href="\/about\/"/g)||[]).length,3);
@@ -61,11 +61,38 @@ test('contribution action opens email client with questions and no automatic sen
  assert.equal(url.searchParams.get('subject'),'NZ GIS History Contributions and Corrections');
  const body=url.searchParams.get('body')||'';
  for(const part of ['chapter, story','correct, add or clarify','dates, sources, links or documents','credit your name','permission to share'])assert.ok(body.includes(part));
- assert.match(about,/siteContributionMailto/);
+ assert.ok(about.includes("const contributionHref='/contribute/'"));
+ assert.ok(layout.includes("const contributionHref='/contribute/'"));
 });
 
 test('obsolete book labels are removed from reading navigation',()=>{
  for(const content of [home,layout,reader,about]){
   assert.doesNotMatch(content,/Begin the book|Book contents|The book/);
+ }
+});
+
+test('browser contribution page and Gmail drafting work without Windows mailto',()=>{
+ const page=readFileSync('src/pages/contribute/index.astro','utf8');
+ const form=readFileSync('src/components/ContributeForm.svelte','utf8');
+ assert.match(page,/ContributeForm client:load/);
+ assert.match(form,/navigator.clipboard.writeText/);
+ assert.match(form,/Open draft in Gmail/);
+ assert.match(form,/id="contribution-subject"/);
+ assert.match(form,/id="contribution-message"/);
+ const article={title:'Landonline',url:'/stories/landonline/'};
+ const passage={title:'From register to transaction system',slug:'from-register-to-transaction-system-60c6ff7b97'};
+ const contributionUrl=passageContributionPageUrl(article,passage);
+ const context=contributionContextFromSearch(new URL(contributionUrl,'https://history.pm4gis.nz').search);
+ const draft=contributionDraft(context);
+ assert.ok(draft.body.includes('Link to passage: https://history.pm4gis.nz/stories/landonline/#'+passage.slug));
+ const gmail=new URL(contributionGmailUrl(draft.subject,draft.body));
+ assert.equal(gmail.origin,'https://mail.google.com');
+ assert.equal(gmail.searchParams.get('to'),'pm4gis@gmail.com');
+ assert.equal(gmail.searchParams.get('su'),draft.subject);
+ assert.ok(gmail.searchParams.get('body').includes(passage.slug));
+ assert.equal(contributionContextFromSearch('?ref=https://evil.example/').reference,'');
+ for(const text of [page,form,readFileSync('src/pages/about/index.astro','utf8'),readFileSync('src/lib/passage-contributions.mjs','utf8')]){
+  assert.doesNotMatch(text,/Do not send restricted iwi or hapū information/);
+  assert.doesNotMatch(text,/Please avoid sending restricted iwi/);
  }
 });

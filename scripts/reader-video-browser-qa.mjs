@@ -18,18 +18,27 @@ try{
   await check(view.name+' full chapter contribution',async()=>{
    await page.goto(base+'/stories/coordinates-enter-the-computer/#'+target,{waitUntil:'domcontentloaded'});
    const btn=page.locator(selector+' .passage-contribute');await btn.waitFor({timeout:25000});
-   const href=await btn.getAttribute('href');assert.ok(href?.startsWith('mailto:pm4gis@gmail.com'));
-   const mail=new URL(href);assert.ok(mail.searchParams.get('subject')?.startsWith('NZ GIS History Contributions and Corrections'));
-   assert.ok(mail.searchParams.get('subject')?.includes('Transforming one coordinate world into another'))
-   const body=mail.searchParams.get('body')||'';
-   for(const field of ['Link to passage: '+link,'Chapter: Survey calculations','Passage: Transforming one coordinate world into another','What dates, sources','credit your name','permission to share'])assert.ok(body.includes(field),field);
+   const href=await btn.getAttribute('href');
+   assert.ok(href?.startsWith('/contribute/?'));
+   const draftLink=new URL(href,base);
+   assert.equal(draftLink.searchParams.get('chapter'),'Survey calculations');
+   assert.equal(draftLink.searchParams.get('passage'),'Transforming one coordinate world into another');
+   assert.equal(draftLink.searchParams.get('ref'),link);
    await noHorizontalOverflow(page,view.name+' reader');
+   await page.goto(draftLink.href,{waitUntil:'domcontentloaded'});
+   await page.waitForFunction(()=>document.querySelector('#contribution-message')?.value.includes('Link to passage:'));
+   const message=await page.locator('#contribution-message').inputValue();
+   for(const field of ['Link to passage: '+link,'Chapter: Survey calculations','Passage: Transforming one coordinate world into another','What dates, sources','credit your name'])assert.ok(message.includes(field),field);
+   const gmail=new URL(await page.locator('#gmail-compose').getAttribute('href'));
+   assert.equal(gmail.searchParams.get('to'),'pm4gis@gmail.com');
+   assert.ok(gmail.searchParams.get('body')?.includes(link));
   });
   await check(view.name+' page-by-page contribution',async()=>{
    await page.goto(base+'/stories/coordinates-enter-the-computer/?mode=page#'+target,{waitUntil:'domcontentloaded'});
    await page.locator(selector+' .passage-contribute').waitFor({timeout:25000});
    const href=await page.locator(selector+' .passage-contribute').getAttribute('href');
-   assert.ok(new URL(href).searchParams.get('body')?.includes(link));
+   assert.ok(href?.startsWith('/contribute/?'));
+   assert.equal(new URL(href,base).searchParams.get('ref'),link);
    await noHorizontalOverflow(page,view.name+' page mode');
   });
   await check(view.name+' inline video and wider reader',async()=>{

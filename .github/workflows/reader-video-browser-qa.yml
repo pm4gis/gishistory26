@@ -8,6 +8,8 @@ on:
       - 'src/pages/nga-poutama-videos/**'
       - 'src/lib/nga-poutama-videos.mjs'
       - 'src/lib/passage-contributions.mjs'
+      - 'src/components/ContributeForm.svelte'
+      - 'src/pages/contribute/**'
       - 'src/styles/site.css'
       - 'scripts/reader-video-browser-qa.mjs'
       - '.github/workflows/reader-video-browser-qa.yml'

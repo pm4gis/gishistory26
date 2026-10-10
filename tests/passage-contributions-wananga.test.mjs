@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import fs from 'node:fs';
-import {passageContributionMailto,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
+import {passageContributionMailto,passagePermanentUrl,passageContributionPageUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
 import {ngaPoutamaVideos,ngaPoutamaPlaylist,ngaPoutamaThumbnail,ngaPoutamaForPassage,ngaPoutamaForEvent,ngaPoutamaRecordLinks} from '../src/lib/nga-poutama-videos.mjs';
 
 const article={title:'Coordinates enter the computer',url:'/stories/coordinates-enter-the-computer/'};
@@ -64,7 +64,8 @@ test('Ngā Poutama recordings are verified direct video links with external thum
 test('new reader contribution is beside Copy link and person profiles stay image-free',()=>{
  const reader=readFileSync('src/components/Reader.svelte','utf8');
  assert.ok(reader.includes('Copy link</button><a class="button passage-contribute"'));
- assert.ok(reader.includes('passageContributionMailto(article,p)'));
+ assert.ok(reader.includes('passageContributionPageUrl(article,p)'));
+ const next=passageContributionPageUrl(article,passage);const query=new URL(next,'https://history.pm4gis.nz');assert.equal(query.pathname,'/contribute/');assert.ok(query.searchParams.get('ref')?.includes('#'+passage.slug));
  const profile=readFileSync('src/pages/[...path].astro','utf8');
  assert.ok(profile.includes("r.kind==='Person'?null:pickRecordImage"));
  assert.ok(profile.includes("r.slug==='nga-poutama-matawhenua'"));
