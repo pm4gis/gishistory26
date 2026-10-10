@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "checkedAt": "2026-10-10",
   "scope": "The 448 distinct image paths in the predecessor publication audit. Integrity verification does not itself approve a crop or clear rights for republication.",
   "counts": {
@@ -22,22 +22,38 @@
       "figure": 17,
       "heading": 16,
       "linz": 55
-    }
+    },
+    "sourcesWithExplicitDecision": 20,
+    "assetPathsWithExplicitDecision": 448,
+    "assetPathsPendingRights": 448,
+    "assetPathsHeldFromPublication": 448,
+    "assetPathsWithRejectedCrop": 1,
+    "assetPathsWithVisuallyReviewedCropDisposition": 3,
+    "assetPathsWithPendingCropReview": 358,
+    "newDerivativesPrepared": 0,
+    "derivativesClearedForRecovery": 0,
+    "privateSourceFilesAddedToRepository": 0,
+    "assetPathsNotAssessableForCrop": 87
   },
   "rightsReview": {
-    "status": "pending-layer-attribution-review",
+    "status": "pending-exact-layer-and-licensor-match",
     "recordedClaim": "Imagery CC4.0 LINZ 2021",
+    "claimDisposition": "Unverified archive claim; it does not identify the imagery collection, its capture date or licensor.",
     "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
     "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
     "linzAerialImageryGuidanceUrl": "https://www.linz.govt.nz/products-services/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
-    "pendingReason": "The archive records the licence claim and source-image mapping but does not identify each LINZ imagery layer and its licensor. LINZ guidance says aerial imagery may need a different attribution. Keep new imports pending until the applicable layer attribution is confirmed.",
+    "pendingReason": "The 20 source screenshots show generic LINZ attribution and map locations but no exact imagery collection/layer identifier or acquisition date. LINZ survey records expose licensor and capture information per collection; a coordinate or regional label alone does not establish which image was used. Keep every mapped asset on hold until the source collection and its licensor are documented.",
     "explicitAuthorMetadataPaths": 431,
     "creditTextOnlyPaths": 17
   },
   "reviewFlags": [
     {
       "asset": "/assets/images/linz-6ae974ac4846.jpg",
-      "issue": "The inspected 1800×520 derivative clips a coordinate annotation at its top edge. Hash integrity is not crop approval; visually review each candidate before reuse."
+      "issue": "Rejected: the inspected 1800x520 derivative clips a coordinate annotation at the top edge. Rights are also pending; this crop must not be reused."
+    },
+    {
+      "asset": "20 mapped source images / 448 legacy paths",
+      "issue": "Every source and asset has an explicit hold decision. Exact survey collection and licensor remain unestablished; 358 crop decisions remain pending path-level review, 87 missing-derivative paths cannot be assessed, one candidate crop is rejected, and two existing images have limited crop dispositions only. No additional derivatives were prepared."
     }
   ],
   "sources": [
@@ -51,7 +67,13 @@
       "dimensions": [
         3840,
         2166
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-02",
@@ -63,7 +85,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-03",
@@ -75,7 +103,13 @@
       "dimensions": [
         10667,
         6000
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "one-existing-full-frame-variant-reviewed; other-paths-pending"
+      }
     },
     {
       "sourceKey": "linz-source-04",
@@ -87,7 +121,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "one-existing-crop-reviewed; other-paths-pending"
+      }
     },
     {
       "sourceKey": "linz-source-05",
@@ -99,7 +139,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-06",
@@ -111,7 +157,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-07",
@@ -123,7 +175,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-08",
@@ -135,7 +193,13 @@
       "dimensions": [
         3840,
         2166
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-09",
@@ -147,7 +211,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-10",
@@ -159,7 +229,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-11",
@@ -171,7 +247,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-12",
@@ -183,7 +265,13 @@
       "dimensions": [
         10667,
         6000
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-13",
@@ -195,7 +283,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-14",
@@ -207,7 +301,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-15",
@@ -219,7 +319,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-16",
@@ -231,7 +337,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-17",
@@ -243,7 +355,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-18",
@@ -255,7 +373,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-19",
@@ -267,7 +391,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "pending-path-level-review"
+      }
     },
     {
       "sourceKey": "linz-source-20",
@@ -279,7 +409,13 @@
       "dimensions": [
         3840,
         2160
-      ]
+      ],
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "collectionMatch": "not-established",
+        "cropReview": "one-rejected-crop; other-paths-pending"
+      }
     }
   ],
   "items": [
@@ -291,6 +427,11 @@
       "recordedTitle": "LINZ imagery: Waitangi",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -301,6 +442,11 @@
       "recordedTitle": "LINZ imagery: Whangarei",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -311,6 +457,11 @@
       "recordedTitle": "LINZ imagery: Rangitoto",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -321,6 +472,11 @@
       "recordedTitle": "LINZ imagery: Raglan",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -331,6 +487,11 @@
       "recordedTitle": "LINZ imagery: Waikato",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -341,6 +502,11 @@
       "recordedTitle": "LINZ imagery: Tongariro River",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -351,6 +517,11 @@
       "recordedTitle": "LINZ imagery: Taranaki",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -361,6 +532,11 @@
       "recordedTitle": "LINZ imagery: Hawke’s Bay",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -371,6 +547,11 @@
       "recordedTitle": "LINZ imagery: Wairarapa",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -381,6 +562,11 @@
       "recordedTitle": "LINZ imagery: Ruatoria",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -391,6 +577,11 @@
       "recordedTitle": "LINZ imagery: Te Awarua-o-Porirua",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -401,6 +592,11 @@
       "recordedTitle": "LINZ imagery: Pauatahanui",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -411,6 +607,11 @@
       "recordedTitle": "LINZ imagery: Porirua coast",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -421,6 +622,11 @@
       "recordedTitle": "LINZ imagery: Tasman",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -431,6 +637,11 @@
       "recordedTitle": "LINZ imagery: Tasman",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -441,6 +652,11 @@
       "recordedTitle": "LINZ imagery: Otago",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -463,6 +679,11 @@
           "matchesArchivedDerivative": null,
           "sourceMatchEvidence": "The source-index figure record maps this path to its source; a grayscale image comparison also matched the current 1800×1013 JPEG to that 16:9 source."
         }
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "reviewed-existing-full-frame-no-crop"
       }
     },
     {
@@ -474,6 +695,11 @@
       "preparedCropAssetPath": "/assets/images/heading-051.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -492,6 +718,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -510,6 +741,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -528,6 +764,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -546,6 +787,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -564,6 +810,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -582,6 +833,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -600,6 +856,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -618,6 +879,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -636,6 +902,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -654,6 +925,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -672,6 +948,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -690,6 +971,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -708,6 +994,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -726,6 +1017,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -744,6 +1040,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -762,6 +1063,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -780,6 +1086,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -798,6 +1109,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -816,6 +1132,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -834,6 +1155,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -852,6 +1178,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -870,6 +1201,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -888,6 +1224,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -906,6 +1247,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -924,6 +1270,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -942,6 +1293,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -960,6 +1316,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -978,6 +1339,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -996,6 +1362,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1014,6 +1385,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1032,6 +1408,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1050,6 +1431,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1079,6 +1465,11 @@
           "path": "/assets/images/heading-034.jpg",
           "matchesArchivedDerivative": true
         }
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "reviewed-acceptable-existing-banner"
       }
     },
     {
@@ -1097,6 +1488,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1115,6 +1511,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1133,6 +1534,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1151,6 +1557,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1169,6 +1580,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1187,6 +1603,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1205,6 +1626,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1223,6 +1649,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1241,6 +1672,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1259,6 +1695,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1277,6 +1718,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1288,6 +1734,11 @@
       "preparedCropAssetPath": "/assets/images/heading-046.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1299,6 +1750,11 @@
       "preparedCropAssetPath": "/assets/images/heading-047.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1310,6 +1766,11 @@
       "preparedCropAssetPath": "/assets/images/heading-048.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1321,6 +1782,11 @@
       "preparedCropAssetPath": "/assets/images/heading-049.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1332,6 +1798,11 @@
       "preparedCropAssetPath": "/assets/images/heading-051.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1343,6 +1814,11 @@
       "preparedCropAssetPath": "/assets/images/heading-051.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1361,6 +1837,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1372,6 +1853,11 @@
       "preparedCropAssetPath": "/assets/images/heading-051.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1390,6 +1876,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1408,6 +1899,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1419,6 +1915,11 @@
       "preparedCropAssetPath": "/assets/images/heading-051.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1437,6 +1938,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1455,6 +1961,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1473,6 +1984,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1491,6 +2007,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1502,6 +2023,11 @@
       "preparedCropAssetPath": "/assets/images/heading-063.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1513,6 +2039,11 @@
       "preparedCropAssetPath": "/assets/images/heading-064.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1524,6 +2055,11 @@
       "preparedCropAssetPath": "/assets/images/heading-065.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1535,6 +2071,11 @@
       "preparedCropAssetPath": "/assets/images/heading-067.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1546,6 +2087,11 @@
       "preparedCropAssetPath": "/assets/images/heading-051.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1557,6 +2103,11 @@
       "preparedCropAssetPath": "/assets/images/heading-070.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1568,6 +2119,11 @@
       "preparedCropAssetPath": "/assets/images/heading-071.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1586,6 +2142,11 @@
           1120
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1604,6 +2165,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1622,6 +2188,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1640,6 +2211,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1658,6 +2234,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1669,6 +2250,11 @@
       "preparedCropAssetPath": "/assets/images/heading-033.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1687,6 +2273,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1705,6 +2296,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1723,6 +2319,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1741,6 +2342,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1759,6 +2365,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1777,6 +2388,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1795,6 +2411,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1813,6 +2434,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1831,6 +2457,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1849,6 +2480,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1860,6 +2496,11 @@
       "preparedCropAssetPath": "/assets/images/linz-6f79e78063c5.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1878,6 +2519,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1896,6 +2542,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1907,6 +2558,11 @@
       "preparedCropAssetPath": "/assets/images/linz-97d65fac0028.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1918,6 +2574,11 @@
       "preparedCropAssetPath": "/assets/images/linz-ddf18a29d578.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -1936,6 +2597,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1954,6 +2620,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1972,6 +2643,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -1983,6 +2659,11 @@
       "preparedCropAssetPath": "/assets/images/linz-336f74a3cd01.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2001,6 +2682,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2019,6 +2705,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2037,6 +2728,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2055,6 +2751,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2066,6 +2767,11 @@
       "preparedCropAssetPath": "/assets/images/linz-5f024f8da68a.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2077,6 +2783,11 @@
       "preparedCropAssetPath": "/assets/images/linz-a70ec3db7d2b.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2095,6 +2806,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2113,6 +2829,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2124,6 +2845,11 @@
       "preparedCropAssetPath": "/assets/images/linz-8bba48241a1b.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2142,6 +2868,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2160,6 +2891,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2171,6 +2907,11 @@
       "preparedCropAssetPath": "/assets/images/linz-346ab98d284d.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2189,6 +2930,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2207,6 +2953,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2225,6 +2976,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2243,6 +2999,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2261,6 +3022,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2272,6 +3038,11 @@
       "preparedCropAssetPath": "/assets/images/linz-027f7c2846b5.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2290,6 +3061,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2308,6 +3084,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2326,6 +3107,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2344,6 +3130,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2362,6 +3153,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2373,6 +3169,11 @@
       "preparedCropAssetPath": "/assets/images/linz-abe286b3163f.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2391,6 +3192,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2409,6 +3215,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2427,6 +3238,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2445,6 +3261,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2463,6 +3284,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2474,6 +3300,11 @@
       "preparedCropAssetPath": "/assets/images/heading-005.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2492,6 +3323,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2510,6 +3346,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2528,6 +3369,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2546,6 +3392,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2557,6 +3408,11 @@
       "preparedCropAssetPath": "/assets/images/heading-037.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2568,6 +3424,11 @@
       "preparedCropAssetPath": "/assets/images/heading-047.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2586,6 +3447,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2604,6 +3470,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2622,6 +3493,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2640,6 +3516,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2658,6 +3539,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2676,6 +3562,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2694,6 +3585,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2712,6 +3608,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2730,6 +3631,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2741,6 +3647,11 @@
       "preparedCropAssetPath": "/assets/images/linz-28ef353417dc.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2752,6 +3663,11 @@
       "preparedCropAssetPath": "/assets/images/linz-cf5854e4e112.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2763,6 +3679,11 @@
       "preparedCropAssetPath": "/assets/images/linz-ddf18a29d578.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2781,6 +3702,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2792,6 +3718,11 @@
       "preparedCropAssetPath": "/assets/images/heading-005.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -2810,6 +3741,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2828,6 +3764,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2846,6 +3787,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2864,6 +3810,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2882,6 +3833,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2900,6 +3856,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2918,6 +3879,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2936,6 +3902,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2954,6 +3925,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2972,6 +3948,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -2990,6 +3971,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3008,6 +3994,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3026,6 +4017,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3044,6 +4040,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3062,6 +4063,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3080,6 +4086,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3098,6 +4109,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3116,6 +4132,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3134,6 +4155,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3152,6 +4178,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3170,6 +4201,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3188,6 +4224,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3206,6 +4247,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3224,6 +4270,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3242,6 +4293,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3260,6 +4316,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3278,6 +4339,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3296,6 +4362,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3307,6 +4378,11 @@
       "preparedCropAssetPath": "/assets/images/linz-0f377aace344.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3325,6 +4401,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3343,6 +4424,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3354,6 +4440,11 @@
       "preparedCropAssetPath": "/assets/images/linz-0d4cb35188d5.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3372,6 +4463,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3390,6 +4486,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3401,6 +4502,11 @@
       "preparedCropAssetPath": "/assets/images/linz-9d051409b05b.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3412,6 +4518,11 @@
       "preparedCropAssetPath": "/assets/images/linz-e592df0b21e3.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3430,6 +4541,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3448,6 +4564,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3466,6 +4587,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3484,6 +4610,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3502,6 +4633,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3520,6 +4656,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3538,6 +4679,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3556,6 +4702,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3574,6 +4725,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3592,6 +4748,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3610,6 +4771,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3628,6 +4794,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3639,6 +4810,11 @@
       "preparedCropAssetPath": "/assets/images/linz-42cb7d5684ee.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3650,6 +4826,11 @@
       "preparedCropAssetPath": "/assets/images/linz-9d051409b05b.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3668,6 +4849,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3686,6 +4872,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3704,6 +4895,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3722,6 +4918,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3740,6 +4941,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3758,6 +4964,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3769,6 +4980,11 @@
       "preparedCropAssetPath": "/assets/images/linz-e1e59e7863b2.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3787,6 +5003,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3805,6 +5026,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3823,6 +5049,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3841,6 +5072,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3859,6 +5095,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3877,6 +5118,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3895,6 +5141,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3913,6 +5164,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3924,6 +5180,11 @@
       "preparedCropAssetPath": "/assets/images/heading-020.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -3942,6 +5203,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3960,6 +5226,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -3978,6 +5249,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "rejected-clipped-coordinate-annotation"
       }
     },
     {
@@ -3996,6 +5272,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4014,6 +5295,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4032,6 +5318,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4050,6 +5341,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4068,6 +5364,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4086,6 +5387,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4097,6 +5403,11 @@
       "preparedCropAssetPath": "/assets/images/linz-47b6bc9764a7.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -4115,6 +5426,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4133,6 +5449,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4151,6 +5472,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4169,6 +5495,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4187,6 +5518,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4205,6 +5541,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4223,6 +5564,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4241,6 +5587,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4259,6 +5610,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4277,6 +5633,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4288,6 +5649,11 @@
       "preparedCropAssetPath": "/assets/images/heading-028.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -4306,6 +5672,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4324,6 +5695,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4342,6 +5718,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4360,6 +5741,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4378,6 +5764,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4396,6 +5787,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4414,6 +5810,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4425,6 +5826,11 @@
       "preparedCropAssetPath": "/assets/images/linz-4347b58e8534.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -4436,6 +5842,11 @@
       "preparedCropAssetPath": "/assets/images/linz-8aaf0e6694aa.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -4454,6 +5865,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4472,6 +5888,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4490,6 +5911,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4508,6 +5934,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4526,6 +5957,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4537,6 +5973,11 @@
       "preparedCropAssetPath": "/assets/images/linz-5a60a910b005.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -4555,6 +5996,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4573,6 +6019,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4591,6 +6042,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4609,6 +6065,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4627,6 +6088,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4645,6 +6111,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4663,6 +6134,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4681,6 +6157,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4699,6 +6180,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4717,6 +6203,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4735,6 +6226,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4746,6 +6242,11 @@
       "preparedCropAssetPath": "/assets/images/linz-e34a1e986929.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -4764,6 +6265,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4775,6 +6281,11 @@
       "preparedCropAssetPath": "/assets/images/linz-cea99ebd9008.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -4793,6 +6304,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4811,6 +6327,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4829,6 +6350,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4847,6 +6373,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4865,6 +6396,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4883,6 +6419,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4901,6 +6442,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4919,6 +6465,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4937,6 +6488,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4955,6 +6511,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4973,6 +6534,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -4984,6 +6550,11 @@
       "preparedCropAssetPath": "/assets/images/linz-08a9d10af7c5.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5002,6 +6573,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5020,6 +6596,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5038,6 +6619,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5056,6 +6642,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5067,6 +6658,11 @@
       "preparedCropAssetPath": "/assets/images/heading-043.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5085,6 +6681,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5103,6 +6704,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5114,6 +6720,11 @@
       "preparedCropAssetPath": "/assets/images/linz-925d9f09698d.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5132,6 +6743,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5150,6 +6766,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5168,6 +6789,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5186,6 +6812,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5204,6 +6835,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5215,6 +6851,11 @@
       "preparedCropAssetPath": "/assets/images/heading-050.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5233,6 +6874,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5251,6 +6897,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5269,6 +6920,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5287,6 +6943,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5305,6 +6966,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5323,6 +6989,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5341,6 +7012,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5352,6 +7028,11 @@
       "preparedCropAssetPath": "/assets/images/linz-6ae974ac4846.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5370,6 +7051,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5388,6 +7074,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5406,6 +7097,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5424,6 +7120,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5442,6 +7143,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5460,6 +7166,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5478,6 +7189,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5496,6 +7212,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5514,6 +7235,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5532,6 +7258,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5550,6 +7281,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5568,6 +7304,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5586,6 +7327,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5604,6 +7350,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5622,6 +7373,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5640,6 +7396,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5658,6 +7419,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5669,6 +7435,11 @@
       "preparedCropAssetPath": "/assets/images/linz-087e1a37f793.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5687,6 +7458,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5705,6 +7481,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5723,6 +7504,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5734,6 +7520,11 @@
       "preparedCropAssetPath": "/assets/images/linz-40ffaf3e543e.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5752,6 +7543,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5763,6 +7559,11 @@
       "preparedCropAssetPath": "/assets/images/heading-031.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5781,6 +7582,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5799,6 +7605,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5817,6 +7628,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5835,6 +7651,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5853,6 +7674,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5871,6 +7697,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5882,6 +7713,11 @@
       "preparedCropAssetPath": "/assets/images/linz-b089a30fdaa7.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -5900,6 +7736,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5918,6 +7759,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5936,6 +7782,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5954,6 +7805,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5972,6 +7828,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -5990,6 +7851,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6008,6 +7874,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6026,6 +7897,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6044,6 +7920,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6062,6 +7943,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6080,6 +7966,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6098,6 +7989,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6116,6 +8012,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6134,6 +8035,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6152,6 +8058,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6170,6 +8081,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6188,6 +8104,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6199,6 +8120,11 @@
       "preparedCropAssetPath": "/assets/images/linz-28ef353417dc.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -6217,6 +8143,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6235,6 +8166,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6253,6 +8189,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6271,6 +8212,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6289,6 +8235,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6307,6 +8258,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6318,6 +8274,11 @@
       "preparedCropAssetPath": "/assets/images/linz-900ad5d05910.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -6336,6 +8297,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6354,6 +8320,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6372,6 +8343,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6390,6 +8366,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6401,6 +8382,11 @@
       "preparedCropAssetPath": "/assets/images/linz-3ee860186c31.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -6419,6 +8405,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6437,6 +8428,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6455,6 +8451,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6473,6 +8474,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6491,6 +8497,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6502,6 +8513,11 @@
       "preparedCropAssetPath": "/assets/images/linz-d7c30cc54107.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -6520,6 +8536,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6538,6 +8559,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6556,6 +8582,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6574,6 +8605,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6592,6 +8628,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6610,6 +8651,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6628,6 +8674,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6646,6 +8697,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6664,6 +8720,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6682,6 +8743,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6693,6 +8759,11 @@
       "preparedCropAssetPath": "/assets/images/linz-2e940dbc04f8.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -6711,6 +8782,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6722,6 +8798,11 @@
       "preparedCropAssetPath": "/assets/images/linz-7bd0b59aad78.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -6740,6 +8821,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6758,6 +8844,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6776,6 +8867,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6794,6 +8890,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6812,6 +8913,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6830,6 +8936,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6841,6 +8952,11 @@
       "preparedCropAssetPath": "/assets/images/heading-059.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -6859,6 +8975,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6877,6 +8998,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6895,6 +9021,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6913,6 +9044,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6931,6 +9067,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6949,6 +9090,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6967,6 +9113,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -6985,6 +9136,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7003,6 +9159,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7021,6 +9182,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7039,6 +9205,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7057,6 +9228,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7075,6 +9251,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7093,6 +9274,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7111,6 +9297,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7122,6 +9313,11 @@
       "preparedCropAssetPath": "/assets/images/linz-6eeae0d327f7.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -7140,6 +9336,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7158,6 +9359,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7169,6 +9375,11 @@
       "preparedCropAssetPath": "/assets/images/heading-038.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -7187,6 +9398,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7198,6 +9414,11 @@
       "preparedCropAssetPath": "/assets/images/linz-fd00df2c1837.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -7216,6 +9437,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7234,6 +9460,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7252,6 +9483,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7270,6 +9506,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7288,6 +9529,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7306,6 +9552,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7324,6 +9575,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7342,6 +9598,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7360,6 +9621,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7378,6 +9644,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7396,6 +9667,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7414,6 +9690,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7432,6 +9713,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7450,6 +9736,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7468,6 +9759,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7479,6 +9775,11 @@
       "preparedCropAssetPath": "/assets/images/heading-058.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -7490,6 +9791,11 @@
       "preparedCropAssetPath": "/assets/images/linz-75d02ebe33fd.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -7508,6 +9814,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7526,6 +9837,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7544,6 +9860,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7562,6 +9883,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7573,6 +9899,11 @@
       "preparedCropAssetPath": "/assets/images/linz-443aea94c401.jpg",
       "derivative": {
         "status": "missing-from-first-recovery-archive"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "not-assessable-missing-derivative"
       }
     },
     {
@@ -7591,6 +9922,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7609,6 +9945,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7627,6 +9968,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7645,6 +9991,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7663,6 +10014,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7681,6 +10037,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7699,6 +10060,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7717,6 +10083,11 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     },
     {
@@ -7735,7 +10106,95 @@
           520
         ],
         "format": "jpeg"
+      },
+      "decision": {
+        "publication": "hold",
+        "rights": "pending-exact-layer-and-licensor",
+        "crop": "pending-path-level-visual-review"
       }
     }
-  ]
+  ],
+  "authoritativeLayerReview": {
+    "status": "reviewed-no-exact-source-collection-established",
+    "checkedAt": "2026-10-10",
+    "sources": [
+      {
+        "name": "NZ Imagery Survey Index",
+        "layerId": 95677,
+        "url": "https://data.linz.govt.nz/layer/95677-nz-imagery-survey-index/",
+        "relevantFields": [
+          "name",
+          "imagery_id",
+          "index_id",
+          "supplier",
+          "licensor",
+          "flown_from",
+          "flown_to"
+        ]
+      },
+      {
+        "name": "LINZ-managed NZ Imagery STAC catalogue",
+        "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/catalog.json",
+        "collectionCount": 840,
+        "collectionMetadata": [
+          "spatial extent",
+          "capture interval",
+          "licence",
+          "provider roles including licensor"
+        ]
+      }
+    ],
+    "method": "Reviewed the 20 mapped source screenshots and the available image-source records against authoritative survey-index and collection metadata. Visible source credits are generic; the available screenshots and mapping records contain no collection ID or imagery capture date. Spatial matches are candidates only and cannot prove which collection supplied the displayed imagery.",
+    "result": "No exact survey collection or licensor can be assigned from the evidence available for any of the 20 source images. All 20 source decisions and all 448 mapped asset decisions remain hold-pending; no additional derivative is cleared or prepared.",
+    "spatialCandidateExample": {
+      "sourceKey": "linz-source-07",
+      "sourceLabel": "Porirua coast",
+      "status": "spatial-candidates-only-not-an-attribution",
+      "collectionRecords": [
+        {
+          "title": "Porirua 0.075m Urban Aerial Photos (2016)",
+          "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/wellington/porirua_2016_0.075m/rgb/2193/collection.json",
+          "captureInterval": [
+            "2016-01-31T11:00:00Z",
+            "2016-03-05T11:00:00Z"
+          ],
+          "licensor": "Porirua City Council",
+          "licence": "CC-BY-4.0"
+        },
+        {
+          "title": "Porirua 0.1m Urban Aerial Photos (2020)",
+          "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/wellington/porirua_2020_0.1m/rgb/2193/collection.json",
+          "captureInterval": [
+            "2020-02-24T11:00:00Z",
+            "2020-02-24T11:00:00Z"
+          ],
+          "licensor": "Porirua City Council",
+          "licence": "CC-BY-4.0"
+        },
+        {
+          "title": "Porirua 0.1m Urban Aerial Photos (2024)",
+          "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/wellington/porirua_2024_0.1m/rgb/2193/collection.json",
+          "captureInterval": [
+            "2024-01-06T11:00:00Z",
+            "2024-01-07T11:00:00Z"
+          ],
+          "licensor": "Porirua City Council",
+          "licence": "CC-BY-4.0"
+        }
+      ],
+      "note": "The screenshot coordinate intersects collections from different capture periods. These are location candidates, not proof that the screenshot uses any one listed collection."
+    }
+  },
+  "cropReview": {
+    "status": "partial; remaining paths pending",
+    "verifiedArchiveHashesAreCropApproval": false,
+    "decisionsByPath": {
+      "/assets/images/linz-6ae974ac4846.jpg": "rejected-clipped-coordinate-annotation",
+      "/assets/images/heading-034.jpg": "reviewed-acceptable-existing-banner; rights pending",
+      "/assets/images/figure-20.jpg": "reviewed-existing-full-frame-no-crop; rights pending"
+    },
+    "pendingPathLevelVisualReviews": 358,
+    "missingDerivativePathsNotAssessable": 87,
+    "newDerivativesPrepared": 0
+  }
 }
