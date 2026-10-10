@@ -1,1 +1,22 @@
-import {dataset} from '../lib/data';export async function GET(){const d=await dataset();const urls=['/','/read/','/timeline/','/browse/','/themes/','/search/','/about/',...d.articles.map((a:any)=>a.url),...d.records.filter((r:any)=>r.kind!=='Story').map((r:any)=>r.url),...d.themes.map((t:any)=>'/themes/'+t.slug+'/')];return new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+[...new Set(urls)].map(u=>'<url><loc>https://gishistory26.pages.dev'+u+'</loc></url>').join('')+'</urlset>',{headers:{'Content-Type':'application/xml'}})}
+import { dataset } from '../lib/data';
+
+const canonicalOrigin = 'https://history.pm4gis.nz';
+
+export async function GET() {
+  const d = await dataset();
+  const paths = [
+    '/', '/read/', '/timeline/', '/browse/', '/datasets/', '/network/',
+    '/themes/', '/search/', '/images/', '/about/',
+    ...d.articles.map((a: any) => a.url),
+    ...d.records.filter((r: any) => r.kind !== 'Story').map((r: any) => r.url),
+    ...d.themes.map((t: any) => '/themes/' + t.slug + '/'),
+  ];
+  const locations = [...new Set(paths)]
+    .filter((path) => path.startsWith('/'))
+    .map((path) => '<url><loc>' + (canonicalOrigin + path).replace(/&/g, '&amp;') + '</loc></url>')
+    .join('');
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>' +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' +
+    locations + '</urlset>';
+  return new Response(xml, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
+}
