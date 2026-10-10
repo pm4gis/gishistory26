@@ -21,6 +21,7 @@ try{
   {name:'narrow mobile',width:320,height:720,mobile:true}
  ]){
   const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height},reducedMotion:'reduce'});
+  await context.grantPermissions(['clipboard-read','clipboard-write'],{origin:base});
   const page=await context.newPage();
   page.setDefaultTimeout(12000);
   await check(viewport.name+' homepage complete and correctly ordered',async()=>{
@@ -144,6 +145,7 @@ try{
    assert.equal(decodeURIComponent(email.pathname),'pm4gis@gmail.com');
    assert.ok(email.searchParams.get('body').includes('The map was published in 1998'));
    await page.locator('#contribution-copy').click();
+   await page.waitForFunction(()=>/copied|Copy the email address/i.test(document.getElementById('contribution-status')?.textContent||''));
    const message=await page.locator('#contribution-status').innerText();
    assert.ok(message.includes('copied')||message.includes('Copy the email address'),message);
    await dimensions(page,viewport.name+' contribution page');
