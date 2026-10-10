@@ -2,27 +2,42 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import fs from 'node:fs';
-import {passageContributionGmailUrl,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
+import {passageContributionPageUrl,siteContributionPageUrl,contributionDraft,contributionMailtoUrl,contributionText,contributionContextFromSearch,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
 import {ngaPoutamaVideos,ngaPoutamaPlaylist,ngaPoutamaThumbnail,ngaPoutamaForPassage,ngaPoutamaForEvent,ngaPoutamaRecordLinks} from '../src/lib/nga-poutama-videos.mjs';
 
 const article={title:'Coordinates enter the computer',url:'/stories/coordinates-enter-the-computer/'};
 const passage={title:'Transforming one coordinate world into another',slug:'transforming-one-coordinate-world-into-another-2ab91fbc4f'};
 
-test('passage button opens a pre-addressed Gmail draft with its permanent link',()=>{
+test('passage contribution opens on the site and retains the permanent link',()=>{
  const url=passagePermanentUrl(article,passage);
- assert.equal(url,'https://history.pm4gis.nz/stories/coordinates-enter-the-computer/#transforming-one-coordinate-world-into-another-2ab91fbc4f');
- const parsed=new URL(passageContributionGmailUrl(article,passage));
- assert.equal(parsed.hostname,'mail.google.com');
- assert.equal(parsed.searchParams.get('to'),contributionRecipient);
- assert.ok(parsed.searchParams.get('su').includes(passage.title));
- const body=parsed.searchParams.get('body')||'';
- for(const field of ['Chapter: '+article.title,'Passage: '+passage.title,'Link to passage: '+url,'correct, add or clarify','sources, photographs','credited'])assert.ok(body.includes(field),field);
+ const parsed=new URL(passageContributionPageUrl(article,passage),'https://history.pm4gis.nz');
+ assert.equal(parsed.pathname,'/contribute/');
+ assert.equal(parsed.searchParams.get('chapter'),article.title);
+ assert.equal(parsed.searchParams.get('passage'),passage.title);
+ assert.equal(parsed.searchParams.get('ref'),url);
+ assert.equal(siteContributionPageUrl(),'/contribute/');
+ const draft=contributionDraft(contributionContextFromSearch(parsed.search));
+ for(const field of ['Chapter: '+article.title,'Passage: '+passage.title,'Link to passage: '+url,'correct, add or clarify','sources, photographs','credited'])assert.ok(draft.body.includes(field),field);
+ const mail=new URL(contributionMailtoUrl(draft.subject,draft.body));
+ assert.equal(mail.protocol,'mailto:');
+ assert.equal(decodeURIComponent(mail.pathname),contributionRecipient);
+ assert.equal(mail.searchParams.get('subject'),draft.subject);
+ assert.equal(mail.searchParams.get('body'),draft.body);
+ assert.ok(contributionText(draft).startsWith('To: '+contributionRecipient+'\nSubject: '));
 });
-test('passages produce distinct direct Gmail drafts',()=>{
- const one=passageContributionGmailUrl(article,passage);
- const two=passageContributionGmailUrl(article,{title:'A second subsection',slug:'second-test-subsection'});
+test('different passages get different on-site contribution links',()=>{
+ const one=passageContributionPageUrl(article,passage);
+ const two=passageContributionPageUrl(article,{title:'Second subsection',slug:'second-test-subsection'});
  assert.notEqual(one,two);
- assert.ok(new URL(two).searchParams.get('body').includes('#second-test-subsection'));
+ assert.ok(new URL(two,'https://history.pm4gis.nz').searchParams.get('ref').includes('#second-test-subsection'));
+});
+test('contribution answers are included in the prepared text',()=>{
+ const draft=contributionDraft({contribution:'Fix the date',whoWhen:'Map team in 1998',sources:'https://example.org/source',credit:'Use my name'});
+ for(const value of ['Fix the date','Map team in 1998','https://example.org/source','Use my name'])assert.ok(draft.body.includes(value));
+});
+test('contribution context rejects external passage links',()=>{
+ assert.equal(contributionContextFromSearch('?ref='+encodeURIComponent('https://evil.example/stories/a/#b')).reference,'');
+ assert.equal(contributionContextFromSearch('?ref='+encodeURIComponent(passagePermanentUrl(article,passage))).reference,passagePermanentUrl(article,passage));
 });
 
 test('invalid non-passage URLs cannot create misleading contribution references',()=>{
@@ -52,17 +67,20 @@ test('Ngā Poutama recordings are verified direct video links with external thum
  assert.throws(()=>ngaPoutamaThumbnail('../bad'));
 });
 
-test('new reader contribution is beside Copy link and person profiles stay image-free',()=>{
+test('reader, about and navigation use the provider-neutral contribution page',()=>{
  const reader=readFileSync('src/components/Reader.svelte','utf8');
  assert.ok(reader.includes('Copy link</button><a class="button passage-contribute"'));
- assert.ok(reader.includes('passageContributionGmailUrl(article,p)'));
- assert.ok(reader.includes('target="_blank" rel="noopener noreferrer"'));
- const next=passageContributionGmailUrl(article,passage);assert.equal(new URL(next).hostname,'mail.google.com');
+ assert.ok(reader.includes('passageContributionPageUrl(article,p)'));
+ assert.ok(readFileSync('src/layouts/Layout.astro','utf8').includes('siteContributionPageUrl()'));
+ assert.ok(readFileSync('src/pages/about/index.astro','utf8').includes('siteContributionPageUrl()'));
+ const page=readFileSync('src/pages/contribute/index.astro','utf8');
+ for(const item of ['contributionContextFromSearch(window.location.search)','Copy complete message','Copy email address','Open email app','contributionMailtoUrl','contributionText(draft())','id="contribution-reference"'])assert.ok(page.includes(item),item);
+ assert.ok(!page.includes('window.location.replace'));
+ assert.ok(!page.includes('mail.google.com'));
  const profile=readFileSync('src/pages/[...path].astro','utf8');
  assert.ok(profile.includes("r.kind==='Person'?null:pickRecordImage"));
  assert.ok(profile.includes("r.slug==='nga-poutama-matawhenua'"));
 });
-
 
 test('curated video associations point to published passages, events and people entries',()=>{
  function collectionIds(collection){return new Set(fs.readdirSync('src/content/'+collection).filter(p=>p.endsWith('.json')).map(p=>JSON.parse(fs.readFileSync('src/content/'+collection+'/'+p,'utf8')).id))}
