@@ -7,7 +7,7 @@ interface Props {
   className?: string;
 }
 const {placement, priority = false, className = ''} = Astro.props;
-const image = library.images.find((item: any) => item.placement === placement && item.rightsStatus === 'approved');
+const image = (library.images as any[]).find((item: any) => item.placement === placement && item.rightsStatus === 'approved');
 const sources = image?.variants;
 const width = sources?.hero?.width ?? sources?.feature?.width;
 const height = sources?.hero?.height ?? sources?.feature?.height;
