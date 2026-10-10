@@ -4,7 +4,7 @@ import WanangaVideos from '../../components/WanangaVideos.svelte';
 import {ngaPoutamaReadingLinks,ngaPoutamaRecordLinks} from '../../lib/nga-poutama-videos.mjs';
 import {dataset} from '../../lib/data';
 const d=await dataset();
-const readingLinks=ngaPoutamaReadingLinks(d.passages,d.articles);
+const readingLinks=ngaPoutamaReadingLinks(d.passages,d.articles) as Record<string,string>;
 const recordLinks=ngaPoutamaRecordLinks(d.records);
 ---
 <Layout title="Ngā Poutama Matawhenua recordings · NZ GIS History" description="Verified public recordings documenting practical Māori GIS mapping, data services, historical imagery, iwi-led GIS, StoryMaps and Māori data sovereignty.">
