@@ -1,21 +1,40 @@
 <script lang="ts">
-  import {ngaPoutamaPlaylist,ngaPoutamaVideos,ngaPoutamaThumbnail} from '../lib/nga-poutama-videos.mjs';
+  import {ngaPoutamaPlaylist,ngaPoutamaVideos,ngaPoutamaThumbnail,ngaPoutamaTopics} from '../lib/nga-poutama-videos.mjs';
+  export let videos:any[]=ngaPoutamaVideos;
   export let compact=false;
+  export let inline=false;
+  let topic='all';
+  $: listed=topic==='all'?videos:videos.filter((v:any)=>v.topics?.includes(topic));
+  $: topics=ngaPoutamaTopics.filter(([id]:any)=>id==='all'||videos.some((v:any)=>v.topics.includes(id)));
 </script>
-<section class="wananga-videos" aria-label="Ngā Poutama Matawhenua recordings">
-  <div class="wananga-videos-heading">
-    <div>
-      <p class="eyebrow">Recorded wānanga</p>
-      <h2>Ngā Poutama Matawhenua videos</h2>
-      <p>Watch public GIS demonstrations and conversations from the practical Māori mapping programme. Duane Wilkins is identified by LINZ as a facilitator of the series; individual session presenters are credited separately.</p>
+<section class:wananga-videos--inline={inline} class="wananga-videos" aria-label={inline?'Related Māori GIS video recordings':'Ngā Poutama Matawhenua recordings'}>
+  {#if inline}
+    <div class="wananga-videos-inline-head">
+      <h3>{videos.length===1?'Related recorded wānanga':'Related recorded wānanga and demonstrations'}</h3>
+      <p>Later recordings are supplementary resources, not evidence that their tools existed at the time of the historical account.</p>
     </div>
-    <a class="button" href={ngaPoutamaPlaylist} target="_blank" rel="noopener noreferrer">All recordings on YouTube ↗</a>
-  </div>
-  <div class:compact class="wananga-video-grid">
-    {#each ngaPoutamaVideos as video (video.id)}
+  {:else}
+    <div class="wananga-videos-heading">
+      <div>
+        <p class="eyebrow">Documentary video archive</p>
+        <h2>Ngā Poutama Matawhenua recordings</h2>
+        <p>{videos.length} individually identified recordings and conversations, with publication dates and presenter names where the published sources establish them. This curated catalogue is not claimed to contain every older video in the YouTube playlist. Duane Wilkins is a documented facilitator of the series; other presenters are credited to their particular recording.</p>
+      </div>
+      <a class="button" href={ngaPoutamaPlaylist} target="_blank" rel="noopener noreferrer">Official LINZ playlist ↗</a>
+    </div>
+  {/if}
+  {#if !inline&&videos.length>6}
+    <div class="wananga-video-filters" role="group" aria-label="Filter Ngā Poutama recordings by kaupapa">
+      {#each topics as pair (pair[0])}
+        <button aria-pressed={topic===pair[0]} on:click={()=>topic=pair[0]}>{pair[1]}</button>
+      {/each}
+    </div>
+  {/if}
+  <div class:compact class:wananga-video-grid--inline={inline} class="wananga-video-grid">
+    {#each listed as video (video.id)}
       <article class="wananga-video-card">
         <a class="wananga-video-thumbnail" href={video.source} target="_blank" rel="noopener noreferrer" aria-label={"Watch "+video.title+" on YouTube"}>
-          <img src={ngaPoutamaThumbnail(video.id)} alt={"YouTube preview thumbnail for "+video.title} loading="lazy" decoding="async" referrerpolicy="no-referrer" width="480" height="360"/>
+          <img src={ngaPoutamaThumbnail(video.id)} alt={"YouTube-hosted video thumbnail: "+video.title} loading="lazy" decoding="async" referrerpolicy="no-referrer" width="480" height="360"/>
           <span aria-hidden="true" class="wananga-play">▶</span>
         </a>
         <div class="wananga-video-copy">
@@ -27,5 +46,7 @@
       </article>
     {/each}
   </div>
-  <p class="wananga-video-note">Thumbnails are displayed directly from YouTube and are not reproduced as project-owned assets. The full videos remain hosted by their publishers. See <a href="https://www.linz.govt.nz/our-work/location-information/geospatial-capability/nga-poutama-matawhenua-practical-maori-gis-mapping-wananga" target="_blank" rel="noopener noreferrer">LINZ’s programme information ↗</a>.</p>
+  {#if !inline}
+    <p class="wananga-video-note">Thumbnails are loaded from YouTube, not downloaded or republished as project assets. YouTube retains the original recordings. See <a href="https://www.linz.govt.nz/our-work/location-information/geospatial-capability/nga-poutama-matawhenua-practical-maori-gis-mapping-wananga" target="_blank" rel="noopener noreferrer">LINZ’s programme information ↗</a>.</p>
+  {/if}
 </section>
