@@ -6,12 +6,21 @@
   "category": "People",
   "url": "/people/takerei-norton/",
   "story": [
-    "Takerei Norton’s 2018 Kā Huru Manu account describes the mapping wānanga, archival research and field trips, including the change from printed labels on topographic maps to direct digital mapping."
+    "Takerei Norton’s 2018 Kā Huru Manu account describes the mapping wānanga, archival research and field trips, including the change from printed labels on topographic maps to direct digital mapping.",
+    "The Ngāi Tahu Cultural Mapping Project grew from work to make reliable cultural and historical information available to Papatipu Rūnaka during high-country pastoral tenure review. Takerei Norton managed the project through the Ngāi Tahu Archive team, combining marae hui, archives and field verification with progressively more capable GIS and a linked place-name database. A request for a public atlas followed the 2012 Ngāi Tahu Cultural Summit; its approved material was published as Kā Huru Manu in November 2017."
   ],
   "sources": [
     {
       "label": "Te Rūnanga o Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
       "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
     }
   ],
   "aliases": [
@@ -25,6 +34,20 @@
       {
         "label": "Te Rūnanga o Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
         "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+      }
+    ],
+    [
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+      },
+      {
+        "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+        "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+      },
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
       }
     ]
   ]

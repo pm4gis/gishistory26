@@ -7,7 +7,8 @@
   "url": "/people/adrian-patchett/",
   "story": [
     "Adrian Patchett’s geospatial record spans iwi cultural mapping and later statistical geography. A 2019 Geospatial Research Institute seminar named Patchett and Sean Bragg presenting Ngāi Tahu’s use of geospatial technology and Kā Huru Manu in planning, cultural-values protection and place-name work. LINZ later lists him as the Stats NZ member of the Geospatial Capability Committee.",
-    "LINZ’s 2026 Geospatial Capability Committee material lists Adrian Patchett in Stats NZ; Geospatial Capability Committee.."
+    "LINZ’s 2026 Geospatial Capability Committee material lists Adrian Patchett in Stats NZ; Geospatial Capability Committee..",
+    "The 2018 Best Design Awards entry also credits Adrian Patchett among the wider Kā Huru Manu project team. A February 2019 seminar paired him with Sean Bragg to present Ngāi Tahu applications of geospatial technology to statutory planning, cultural-values protection and traditional place names. These credits demonstrate his project association and professional contribution without establishing which components he personally developed."
   ],
   "sources": [
     {
@@ -17,6 +18,10 @@
     {
       "label": "LINZ, Geospatial Capability Committee",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-capability-committee"
+    },
+    {
+      "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+      "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
     }
   ],
   "aliases": [
@@ -40,6 +45,16 @@
       {
         "label": "LINZ, Geospatial Capability Committee",
         "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-capability-committee"
+      }
+    ],
+    [
+      {
+        "label": "Designers Institute of New Zealand, Kā Huru Manu project credits, 2018",
+        "url": "https://bestawards.co.nz/toitanga/toitanga/nv-interactive-1/ka-huru-manu-the-ngai-tahu-cultural-mapping/"
+      },
+      {
+        "label": "Geospatial Research Institute, Ngāi Tahu geospatial seminar, 22 February 2019",
+        "url": "https://geospatial.ac.nz/griss-feb2019/"
       }
     ]
   ]

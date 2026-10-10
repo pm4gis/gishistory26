@@ -7,12 +7,29 @@
   "url": "/entities/te-runanga-o-ngai-tahu-ngai-tahu-archive/",
   "website": null,
   "story": [
-    "Kā Huru Manu connected the Ngāi Tahu Archive’s records with tribal place names and geographic knowledge. Takerei Norton and earlier archive contributors worked with people and information accumulated over many years. The web atlas made selected material accessible while remaining part of an iwi-led archival and cultural mapping programme."
+    "Kā Huru Manu connected the Ngāi Tahu Archive’s records with tribal place names and geographic knowledge. Takerei Norton and earlier archive contributors worked with people and information accumulated over many years. The web atlas made selected material accessible while remaining part of an iwi-led archival and cultural mapping programme.",
+    "A 2005 Kāi Tahu ki Otago Ltd place-name GIS pilot in the Kāti Huirapa ki Puketeraki takiwā contributed to the later iwi-wide cultural mapping programme. From the first wider mapping hui in March 2007, archival work, whānau accounts, topographic maps and field checking fed the programme. Ngāi Tahu subsequently linked an Ingoa Wāhi Microsoft Dynamics CRM database to ArcGIS and the Ngāi Tahu Heritage Viewer. A public atlas requested at the 2012 Ngāi Tahu Cultural Summit was launched in November 2017, presenting selected material approved by Papatipu Rūnaka. NV Interactive's delivery of the public website is distinct from Ngāi Tahu's GIS development and authority over content."
   ],
   "sources": [
     {
       "label": "Ngāi Tahu, Kā Huru Manu cultural mapping project",
       "url": "https://www.kahurumanu.co.nz/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    },
+    {
+      "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+      "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    },
+    {
+      "label": "NV Interactive, Kā Huru Manu project account",
+      "url": "https://nvinteractive.com/work/ka-huru-manu-ngai-tahu-cultural-mapping-project/"
     }
   ],
   "aliases": [

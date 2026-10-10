@@ -7,12 +7,17 @@
   "url": "/entities/mirmak-te-tau-ihu-iwi-gis-collaboration/",
   "website": null,
   "story": [
-    "The 2003–05 Te Tau Ihu project documented iwi use of GIS for cultural information and environmental planning. Garth Harmsworth, Mick Park and Dean Walker appear in the project record. Public and restricted information were managed separately, providing an early operational example of geographic data governance within an iwi collaboration."
+    "The 2003–05 Te Tau Ihu project documented iwi use of GIS for cultural information and environmental planning. Garth Harmsworth, Mick Park and Dean Walker appear in the project record. Public and restricted information were managed separately, providing an early operational example of geographic data governance within an iwi collaboration.",
+    "Beginning in November 2003, the Motueka Iwi Resource Management Advisory Komiti (MIRMAK) led and managed work towards a Te Tau Ihu iwi information system, collaborating with Manaaki Whenua's Motueka integrated catchment management programme. The 2005 report by Garth Harmsworth, Mick Park and Dean Walker describes environmental information, planning and resource consents alongside local training, ownership, maintenance and access controls. It distinguishes publicly shareable records from confidential iwi knowledge."
   ],
   "sources": [
     {
       "label": "G. Harmsworth, M. Park, D. Walker, Māori GIS/iwi information report",
       "url": "https://www.landcareresearch.co.nz/assets/researchpubs/harmsworth_gis_iwi.pdf"
+    },
+    {
+      "label": "Garth Harmsworth, Mick Park and Dean Walker, Motueka iwi GIS case study, 30 May 2005",
+      "url": "https://icm.landcareresearch.co.nz/knowledgebase/publications/documents/FinalMay2005ICMMaoriGISreport.pdf"
     }
   ],
   "aliases": [

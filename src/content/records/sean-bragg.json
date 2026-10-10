@@ -6,12 +6,21 @@
   "category": "People",
   "url": "/people/sean-bragg/",
   "story": [
-    "LINZ and the Geospatial Capability Committee included Sean Bragg in the Leaving School geospatial career-profile series: Geospatial Analyst, Ngāi Tahu Holdings Ltd, October 2022."
+    "LINZ and the Geospatial Capability Committee included Sean Bragg in the Leaving School geospatial career-profile series: Geospatial Analyst, Ngāi Tahu Holdings Ltd, October 2022.",
+    "Sean Bragg joined Te Rūnanga o Ngāi Tahu as a GIS intern in June 2015 and became a GIS Assistant in July 2017. In a May 2018 first-person professional account he described georeferencing nineteenth-century survey maps, digitising historical forest information, preparing maps for environmental and heritage work, building an internal taonga tūturu mapping viewer and database, and helping prepare the 2017 Kā Huru Manu public atlas. His work formed part of the wider iwi-led cultural mapping programme."
   ],
   "sources": [
     {
       "label": "LINZ, Geospatial for schools",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools"
+    },
+    {
+      "label": "Sean Bragg, New Zealand, Esri Conservation GIS, 15 May 2018",
+      "url": "https://community.esri.com/t5/conservation-gis/sean-bragg-new-zealand/ta-p/904827"
+    },
+    {
+      "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+      "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
     }
   ],
   "aliases": [
@@ -25,6 +34,16 @@
       {
         "label": "LINZ, Geospatial for schools",
         "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools"
+      }
+    ],
+    [
+      {
+        "label": "Sean Bragg, New Zealand, Esri Conservation GIS, 15 May 2018",
+        "url": "https://community.esri.com/t5/conservation-gis/sean-bragg-new-zealand/ta-p/904827"
+      },
+      {
+        "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+        "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
       }
     ]
   ]

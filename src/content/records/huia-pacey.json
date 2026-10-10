@@ -7,7 +7,8 @@
   "url": "/people/huia-pacey/",
   "story": [
     "Huia Pacey’s 2005 Lincoln thesis, The Benefits and Barriers to GIS for Māori, investigated GIS adoption using a Kaupapa Māori research framework.",
-    "Huia Pacey’s 2005 Lincoln University thesis, The Benefits and Barriers to GIS for Māori, examined adoption through a Kaupapa Māori research framework. It considered the circumstances in which the technology could support Māori development and the difficulties communities encountered in gaining that capability. The thesis provides a contemporary account alongside later cultural mapping projects."
+    "Huia Pacey’s 2005 Lincoln University thesis, The Benefits and Barriers to GIS for Māori, examined adoption through a Kaupapa Māori research framework. It considered the circumstances in which the technology could support Māori development and the difficulties communities encountered in gaining that capability. The thesis provides a contemporary account alongside later cultural mapping projects.",
+    "Her 2005 research considered the costs of acquiring and maintaining GIS, access to technical skills, community control of information, and whether the technology supported Māori organisations' own purposes. The Kaupapa Māori study included material from Awarua Rūnanga and Te Rūnanga o Te Whānau-a-Apanui and practical GIS guidance for tangata whenua. Later accounts connect her with Māori GIS practitioner networks, but the available conference records do not conclusively establish a specific organising office."
   ],
   "sources": [
     {
@@ -42,6 +43,12 @@
       {
         "label": "Chapter 35 · The map becomes an application",
         "url": "/stories/the-map-becomes-an-application/"
+      }
+    ],
+    [
+      {
+        "label": "Huia Pacey, The Benefits and Barriers to GIS for Māori, Lincoln University, 2005",
+        "url": "https://hdl.handle.net/10182/655"
       }
     ]
   ]

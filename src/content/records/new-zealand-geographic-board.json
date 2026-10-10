@@ -1,0 +1,37 @@
+{
+  "id": "entity:new-zealand-geographic-board",
+  "slug": "new-zealand-geographic-board",
+  "name": "New Zealand Geographic Board Ngā Pou Taunaha o Aotearoa",
+  "kind": "Agency",
+  "category": "Agency",
+  "url": "/entities/new-zealand-geographic-board/",
+  "story": [
+    "The New Zealand Geographic Board Ngā Pou Taunaha o Aotearoa administers New Zealand's official geographic naming framework. Its Gazetteer makes recorded and official place names and their mapped positions available to users. The Board's statutory naming functions and public Gazetteer are distinct from iwi-governed collections of place names, histories and culturally restricted information. Official place-name research may draw on iwi knowledge through authorised processes."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, How to use the New Zealand Gazetteer",
+      "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, How to use the New Zealand Gazetteer",
+        "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
+      },
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+      }
+    ]
+  ],
+  "biographyParagraphSources": []
+}

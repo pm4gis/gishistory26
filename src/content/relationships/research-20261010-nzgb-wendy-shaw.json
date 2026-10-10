@@ -1,0 +1,20 @@
+{
+  "id": "relationship:research-20261010-nzgb-wendy-shaw",
+  "a": "entity:new-zealand-geographic-board",
+  "b": "person:wendy-shaw",
+  "label": "Secretary of the New Zealand Geographic Board",
+  "basis": "New Zealand national report to UN names conference in 2017",
+  "passageIds": [
+    "passage:research-20261010-ch33-public-data-and-iwi-controlled-information"
+  ],
+  "sources": [
+    {
+      "label": "LINZ, How to use the New Zealand Gazetteer",
+      "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
+    },
+    {
+      "label": "Wendy Shaw, national report, 2017",
+      "url": "https://digitallibrary.un.org/record/4019949/files/E_CONF.105_37_CRP.37-EN.pdf"
+    }
+  ]
+}

@@ -7,7 +7,8 @@
   "url": "/people/david-higgins/",
   "story": [
     "David Higgins helped locate traditional place names as a member of Kā Huru Manu’s early paepae, documented in Ngāi Tahu’s 2018 project account.",
-    "Kā Huru Manu’s early paepae included Trevor Howse, Kelly Davis, Matapura Ellison, Jimmy Russell and David Higgins, while Muriel Johnstone contributed knowledge of the Ōraka Aparima takiwā."
+    "Kā Huru Manu’s early paepae included Trevor Howse, Kelly Davis, Matapura Ellison, Jimmy Russell and David Higgins, while Muriel Johnstone contributed knowledge of the Ōraka Aparima takiwā.",
+    "His early work with Matapura Ellison in DOC's Kaupapa Atawhai programme helped explain the need to document historical and cultural information when Papatipu Rūnaka considered South Island high-country pastoral leases. Higgins was one of the first kaumātua paepae guiding the mapping work, which combined archival evidence, iwi-held knowledge and visits to the landscape. The project initially used large topographic map sheets and spreadsheets before adopting connected digital systems."
   ],
   "sources": [
     {
@@ -17,6 +18,10 @@
     {
       "label": "Chapter 35 · Public applications",
       "url": "/stories/the-map-becomes-an-application/"
+    },
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
     }
   ],
   "aliases": [
@@ -36,6 +41,16 @@
       {
         "label": "Chapter 35 · Public applications",
         "url": "/stories/the-map-becomes-an-application/"
+      }
+    ],
+    [
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, Cultural Mapping Project begins",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+      },
+      {
+        "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
+        "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
       }
     ]
   ]

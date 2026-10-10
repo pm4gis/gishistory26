@@ -1,0 +1,29 @@
+{
+  "id": "entity:kai-tahu-ki-otago-ltd",
+  "slug": "kai-tahu-ki-otago-ltd",
+  "name": "Kāi Tahu ki Otago (KTKO) Ltd",
+  "kind": "Organisation",
+  "category": "Organisation",
+  "url": "/entities/kai-tahu-ki-otago-ltd/",
+  "story": [
+    "Kāi Tahu ki Otago Ltd undertook a place-name GIS pilot in 2005 in the takiwā of Kāti Huirapa ki Puketeraki. The Ngāi Tahu cultural mapping project history records that this local research and mapping were incorporated into the later wider Kā Huru Manu system. The available source does not identify individual programmers or the initial pilot's complete technical specifications."
+  ],
+  "sources": [
+    {
+      "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+      "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [
+    [
+      {
+        "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
+        "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+      }
+    ]
+  ],
+  "biographyParagraphSources": []
+}
