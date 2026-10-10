@@ -41,8 +41,8 @@ test('invalid non-passage URLs cannot create misleading contribution references'
 });
 
 test('Ngā Poutama recordings are verified direct video links with external thumbnail attribution',()=>{
- assert.equal(ngaPoutamaVideos.length,15);
- assert.equal(new Set(ngaPoutamaVideos.map(v=>v.id)).size,15);
+ assert.equal(ngaPoutamaVideos.length,16);
+ assert.equal(new Set(ngaPoutamaVideos.map(v=>v.id)).size,16);
  assert.match(ngaPoutamaPlaylist,/^https:\/\/www\.youtube\.com\/playlist\?list=/);
  for(const video of ngaPoutamaVideos){
   assert.match(video.id,/^[\w-]{11}$/);
@@ -55,6 +55,7 @@ test('Ngā Poutama recordings are verified direct video links with external thum
  assert.equal(ngaPoutamaVideos.filter(v=>v.publishedOn).length,14);
  assert.equal(ngaPoutamaForPassage('passage:chapter-20-5cf3bc2665')[0].id,'yZcwtxGsZIE');
  assert.equal(ngaPoutamaForEvent('linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga')[0].id,'uDBBtaO5k5Q');
+ assert.equal(ngaPoutamaForEvent('linzcap-2025-05-16-nga-poutama-explores-korero-takutai')[0].id,'gZdhElp_GrI');
  assert.ok(ngaPoutamaRecordLinks['ZCb9zLz12O4'].some(x=>x.url==='/people/holden-hohaia/'));
  assert.ok(ngaPoutamaVideos.every(v=>v.evidenceUrl?.startsWith('https://')));
  assert.throws(()=>ngaPoutamaThumbnail('../bad'));
@@ -86,4 +87,16 @@ test('curated video associations point to published passages, events and people 
  assert.ok(!reader.includes('complete&&article.slug===\'the-map-becomes-an-application\''),'end-of-chapter gallery should be replaced with passage inserts');
  const timeline=readFileSync('src/components/Timeline.svelte','utf8');
  assert.ok(timeline.includes('ngaPoutamaForEvent(selected.id)'));
+});
+
+
+test('new audiovisual archive preserves original filtered gallery and historical passage linking',()=>{
+ const archive=readFileSync('src/pages/nga-poutama-videos/index.astro','utf8');
+ const gallery=readFileSync('src/components/WanangaVideos.svelte','utf8');
+ assert.ok(archive.includes('WanangaVideos archive client:load'));
+ assert.ok(gallery.includes('bind:value={query}'));
+ assert.ok(gallery.includes('readingLinks[video.passageIds[0]]'));
+ assert.ok(gallery.includes('ngaPoutamaRelatedRecords(video.id)'));
+ assert.ok(gallery.includes('video.eventIds?.length'));
+ assert.ok(ngaPoutamaRecordLinks['gZdhElp_GrI'].some(r=>r.url==='/people/tania-te-hira/'));
 });
