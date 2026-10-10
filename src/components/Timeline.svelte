@@ -7,6 +7,7 @@
     filterTimelineEvents,
     readTimelineState,
     timelineSearchParams,
+    timelineDecadeGroups,
   } from '../lib/timeline.mjs';
 
   export let events: any[] = [];
@@ -25,9 +26,7 @@
   $: scale = scaleLinear().domain([min, max]).range([25, 975]);
   $: filtered = filterTimelineEvents(events, { from, to, term, includeUndated });
   $: ticks = scale.ticks(8);
-  $: periodGroups = [...new Set(dated.map((event) => Math.floor((eventYear(event) ?? 0) / 10) * 10))]
-    .sort((a, b) => a - b)
-    .map((year) => ({ year, count: dated.filter((event) => Math.floor((eventYear(event) ?? 0) / 10) * 10 === year).length }));
+  $: periodGroups = timelineDecadeGroups(events);
   $: densityMax = Math.max(1, ...periodGroups.map((group) => group.count));
   $: selectedPeriod = from && to && Number(to) === Number(from) + 9 ? Number(from) : null;
 

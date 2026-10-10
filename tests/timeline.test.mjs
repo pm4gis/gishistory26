@@ -6,6 +6,7 @@ import {
   filterTimelineEvents,
   readTimelineState,
   timelineSearchParams,
+  timelineDecadeGroups,
 } from '../src/lib/timeline.mjs';
 
 const events = [
@@ -18,6 +19,15 @@ test('range events remain visible when any part overlaps the selected period', (
   assert.deepEqual(filterTimelineEvents(events, { from: '1983', to: '1983' }).map((event) => event.id), ['range', 'unknown']);
   assert.equal(eventMatchesTimeline(events[0], { from: '1983', to: '1983' }), true);
   assert.equal(eventMatchesTimeline(events[0], { from: '1985', to: '1990' }), false);
+});
+
+test('decade counts include events that overlap each decade in a range', () => {
+  const groups = timelineDecadeGroups([
+    { id: 'range', year: 1977, endDate: '1980', datePrecision: 'year-range' },
+    { id: 'point', year: 1984, datePrecision: 'year' },
+    { id: 'unknown', year: null, datePrecision: 'unknown' },
+  ]);
+  assert.deepEqual(groups, [{ year: 1970, count: 1 }, { year: 1980, count: 2 }]);
 });
 
 test('undated visibility is a distinct, shareable timeline setting', () => {

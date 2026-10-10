@@ -36,6 +36,28 @@ function timelineSearchMatches(event, term = '') {
     .some((value) => String(value || '').toLocaleLowerCase('en-NZ').includes(query));
 }
 
+export function timelineDecadeGroups(events) {
+  const dated = events.filter((event) => eventYear(event) !== null);
+  const decades = new Set();
+
+  for (const event of dated) {
+    const startYear = eventYear(event);
+    const endYear = Math.max(startYear, eventEndYear(event, startYear));
+    const firstDecade = Math.floor(startYear / 10) * 10;
+    const lastDecade = Math.floor(endYear / 10) * 10;
+    for (let decade = firstDecade; decade <= lastDecade; decade += 10) decades.add(decade);
+  }
+
+  return [...decades].sort((a, b) => a - b).map((decade) => ({
+    year: decade,
+    count: dated.filter((event) => {
+      const startYear = eventYear(event);
+      const endYear = Math.max(startYear, eventEndYear(event, startYear));
+      return endYear >= decade && startYear <= decade + 9;
+    }).length,
+  }));
+}
+
 export function filterTimelineEvents(events, filters = {}) {
   return events
     .filter((event) => eventMatchesTimeline(event, filters))
