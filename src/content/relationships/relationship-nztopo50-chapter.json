@@ -1,0 +1,14 @@
+{
+  "id": "relationship:nztopo50-chapter",
+  "a": "dataset:nztopo50",
+  "b": "chapter:15",
+  "label": "Described in digital topography history",
+  "basis": "The digital topography chapter documents the national map-sheet production and transition to digital topographic datasets.",
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Topo50 Maps layer 50767 and version history",
+      "url": "https://data.linz.govt.nz/layer/50767-nz-topo50-maps/"
+    }
+  ],
+  "passageIds": []
+}
