@@ -46,7 +46,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    <div class="cards highlight-grid">
     {highlights.map((a:any,i:number)=><article class="card art-card highlight-card" data-highlight={a.slug} hidden={i>=5}>
      {a.image?
-      <SubjectImage image={a.image} relation={'Documentary image associated with '+a.title} variant="card"/>:
+      <SubjectImage image={a.image} relation={'Documentary image associated with '+a.title} variant="card" showCaption={false}/>:
       <DecorativeLandscape id={decorFor(i+9)} variant="card"/>}
      <div class="art-card-body">
       <span class="eyebrow">Chapter {a.readingOrder} · {a.title}</span>
