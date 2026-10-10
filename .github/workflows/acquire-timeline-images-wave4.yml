@@ -37,6 +37,8 @@ jobs:
           git add public/assets/historical/ src/content/images/ docs/media/timeline-download-run-wave4.json
           if ! git diff --cached --quiet; then
             git commit -m "Archive timeline wave 4 satellite originals and derivatives"
+            git reset --hard HEAD
+            git clean -fd
             git fetch origin feature/timeline-media-coverage-wave4-20261010
             git rebase origin/feature/timeline-media-coverage-wave4-20261010
             git push origin HEAD:feature/timeline-media-coverage-wave4-20261010
