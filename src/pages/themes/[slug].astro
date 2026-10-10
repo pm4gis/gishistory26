@@ -9,6 +9,7 @@ const d=await dataset();
 const t=d.themes.find((t:any)=>t.id===(Astro.props as {id:string}).id);
 const passages=d.passages.filter((p:any)=>p.themeIds.includes(t.id)||t.passageIds?.includes(p.id));
 const records=d.records.filter((r:any)=>r.themeIds.includes(t.id)&&r.kind!=='Story');
+const events=d.events.filter((e:any)=>e.themeIds.includes(t.id)).sort((a:any,b:any)=>(a.startDate||'').localeCompare(b.startDate||'')||a.id.localeCompare(b.id));
 const artIndex=d.themes.findIndex((x:any)=>x.id===t.id);
 const featured=pickThemeImage(t.slug,d.images);
 const recordCards=records.map((r:any)=>({...r,subject:pickRecordImage(r,d.images)}));
@@ -19,9 +20,11 @@ const recordCards=records.map((r:any)=>({...r,subject:pickRecordImage(r,d.images
    <div><p class="eyebrow">Theme</p><h1>{t.title}</h1><p class="intro">{t.description}</p></div>
    {featured?<SubjectImage image={featured.image} relation={featured.relation} variant="banner" priority/>:<DecorativeLandscape index={artIndex+2} variant="banner" priority/>}
   </div>
+  {t.sections?.length>0&&<section class="theme-editorial" aria-label={t.title+' history'}><p class="eyebrow">The historical account</p>{t.sections.map((section:any,i:number)=><section class="theme-editorial-section"><h2>{section.title}</h2>{section.paragraphs?.map((paragraph:string)=><p>{paragraph}</p>)}{section.sources?.length>0&&<details class="theme-editorial-sources"><summary>Sources and evidence</summary><ul>{section.sources.map((source:any)=><li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a></li>)}</ul></details>}</section>)}</section>}
   <h2>Read the accounts</h2>
   <ul class="list">{passages.map((p:any)=><li><a href={passageUrl(p,d.articles)}>{p.title}</a><small>{d.articles.find((a:any)=>a.id===p.articleId)?.title}</small></li>)}</ul>
   {t.stops?.length>0&&<details><summary>Suggested reading sequence</summary><ol>{t.stops.map((s:any)=><li><a href={s.url}>{s.title}</a></li>)}</ol></details>}
+  {events.length>0&&<section class="theme-chronology" aria-label={t.title+' timeline events'}><h2>Milestones and events</h2><p class="muted">Dates follow published source records. Select an event to see the complete timeline account and its evidence.</p><ol class="theme-event-list">{events.map((e:any)=><li><span class="theme-event-year">{e.dateDisplay}</span><div><a href={'/timeline/?event='+encodeURIComponent(e.id)}>{e.label}</a><p>{e.summary}</p></div></li>)}</ol></section>}
   <h2>Related entries</h2><div class="cards">{recordCards.map((r:any)=><article class="card subject-entry-card">{r.subject&&<SubjectImage image={r.subject.image} relation={r.subject.relation} variant="card"/>}<small>{r.kind}</small><a class="title" href={r.url}>{r.name}</a></article>)}</div>
  </div>
 </Layout>

@@ -1,0 +1,33 @@
+{
+  "id": "image:auckland-university-clocktower-2004",
+  "slug": "auckland-university-clocktower-2004",
+  "title": "University of Auckland Clock Tower, 2004",
+  "assetPath": "/assets/historical/web/auckland-university-clocktower-2004.webp",
+  "thumbnailPath": "/assets/historical/card/auckland-university-clocktower-2004.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:UoA-ClockTower.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Gadfium",
+  "licence": "Public domain (creator dedication)",
+  "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:UoA-ClockTower.jpg",
+  "altText": "University of Auckland Clock Tower, institutional context for GIS teaching; not a picture of the university's 1985 GIS software.",
+  "caption": "University of Auckland Clock Tower, institutional context for GIS teaching; not a picture of the university's 1985 GIS software.",
+  "context": "University of Auckland Clock Tower, institutional context for GIS teaching; not a picture of the university's 1985 GIS software.",
+  "themeIds": [],
+  "dateDisplay": "20 December 2004",
+  "originalSha256": "392e0d1da1be72342977d19a91a6a8b2a8c6f72c3b7b534cf40aaa90839f905d",
+  "webSha256": "a35d04612b18103409c643f253f24cb4e761cf7df4716c53ad01906a7ba0ad53",
+  "thumbnailSha256": "f30800a9d75e18df5266ec38076f6236d069c5bcaae8b049758df9316faf50c6",
+  "originalWidth": 1024,
+  "originalHeight": 975,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/UoA-ClockTower.jpg",
+  "sourceFileTitle": "File:File:UoA-ClockTower.jpg",
+  "derivativesNote": "Original unchanged JPEG archived in the Wave 4 research package; the website uses uncropped WebP display and card derivatives. Original and crop licensing per Commons file page; no cropping performed.",
+  "relatedRecords": [
+    {
+      "name": "university of auckland",
+      "url": "/entities/university-of-auckland/",
+      "role": "Image subject or related institution; see context for limitations"
+    }
+  ]
+}

@@ -196,3 +196,19 @@
 .event-companion-images-grid a:hover,.event-companion-images-grid a:focus-visible{border-color:var(--accent)}
 .event-companion-images-grid img{width:100%;height:165px;object-fit:cover;display:block}
 .event-companion-images-grid span{padding:0 12px 14px}
+
+
+/* Māori GIS theme: evidence-led reading, not portrait or decorative media. */
+.theme-editorial{max-width:980px;margin:32px 0 42px}
+.theme-editorial-section{padding:22px 0 16px;border-top:1px solid var(--line)}
+.theme-editorial-section h2{margin:0 0 15px}
+.theme-editorial-section p{max-width:82ch;line-height:1.78;margin:0 0 15px}
+.theme-editorial-sources{margin:10px 0 4px;font-size:.9rem;color:var(--muted)}
+.theme-editorial-sources ul{padding:8px 0 0 20px}
+.theme-editorial-sources li{margin:8px 0;overflow-wrap:anywhere}
+.theme-chronology{margin:40px 0}
+.theme-event-list{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:0;max-width:1000px}
+.theme-event-list li{display:grid;grid-template-columns:minmax(100px,165px) minmax(0,1fr);gap:16px;border-top:1px solid var(--line);padding:14px 0}
+.theme-event-year{font-size:.83rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.theme-event-list p{margin:5px 0 0;line-height:1.52;color:var(--muted)}
+@media(max-width:600px){.theme-event-list li{grid-template-columns:1fr;gap:5px}.theme-editorial-section{padding:17px 0 10px}}
