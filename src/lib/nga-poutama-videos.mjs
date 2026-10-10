@@ -100,7 +100,7 @@ export const ngaPoutamaVideos=Object.freeze([
       "passage:chapter-29-71ae35ecbd"
     ],
     "eventIds": [
-      "linzcap-2026-03-22-nga-poutama-covers-southern-institute-of-technology-g"
+      "linzcap-2026-03-22-nga-poutama-covers-southern-institute-of-technology-gis-micro-credential"
     ],
     "source": "https://www.youtube.com/watch?v=LVmcrd1i6Y4",
     "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
@@ -214,7 +214,7 @@ export const ngaPoutamaVideos=Object.freeze([
       "passage:chapter-35-23fcc809db"
     ],
     "eventIds": [
-      "linzcap-2025-03-14-holden-hohaia-presents-maori-gis-mapping-projects-with"
+      "linzcap-2025-03-14-holden-hohaia-presents-maori-gis-mapping-projects-with-qgis"
     ],
     "source": "https://www.youtube.com/watch?v=ZCb9zLz12O4",
     "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
