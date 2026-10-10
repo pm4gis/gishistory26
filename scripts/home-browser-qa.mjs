@@ -65,7 +65,7 @@ try{
    }
    await dimensions(page,viewport.name+' header');
   });
-  await check(viewport.name+' story rotation and documentary image attribution',async()=>{
+  await check(viewport.name+' story rotation, uniform image frames and image-page attribution',async()=>{
    const selections=async()=>await page.locator('#highlighted-stories .highlight-card:visible').evaluateAll(els=>els.map(el=>el.dataset.highlight));
    const first=await selections();
    assert.equal(new Set(first).size,5);
@@ -73,13 +73,29 @@ try{
    const second=await selections();
    assert.equal(second.length,5);
    assert.equal(second.filter(x=>first.includes(x)).length,0,'repeat visit should avoid previous five');
+   const ratios=await page.locator('#highlighted-stories .highlight-card:visible').evaluateAll(cards=>cards.map(card=>{
+    const media=card.querySelector('.subject-media--card,.decorative-landscape--card');
+    if(!media)return null;
+    const rect=media.getBoundingClientRect();
+    return rect.height?rect.width/rect.height:null;
+   }));
+   assert.equal(ratios.length,5);
+   for(const ratio of ratios)assert.ok(ratio!==null&&Math.abs(ratio-16/9)<0.03,'highlight image frame should be 16:9: '+ratio);
    const linked=page.locator('#highlighted-stories .highlight-card:visible .subject-media');
    for(let j=0;j<await linked.count();j++){
     const image=linked.nth(j);
     assert.ok((await image.locator('img').getAttribute('alt'))?.length>10);
-    const credit=image.locator('a[href^="/images/"]');
-    assert.ok(await credit.count()>=1);
-    assert.ok((await image.locator('figcaption').innerText()).length>8);
+    assert.equal(await image.locator('figcaption').count(),0,'highlight cards should not show image attribution');
+    const href=await image.locator('a.subject-media-link').getAttribute('href');
+    assert.ok(href?.startsWith('/images/'),'documentary image should link to its detail page');
+    const detailPage=await context.newPage();
+    await detailPage.goto(new URL(href,base).href,{waitUntil:'domcontentloaded'});
+    const attribution=detailPage.locator('.image-source-card');
+    await attribution.waitFor();
+    const details=await attribution.innerText();
+    assert.match(details,/Credit/);
+    assert.match(details,/Licence/);
+    await detailPage.close();
    }
    await dimensions(page,viewport.name+' rotated highlights');
   });

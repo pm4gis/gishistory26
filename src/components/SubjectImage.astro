@@ -9,8 +9,9 @@ interface Props {
  relation:string;
  variant?:'banner'|'card'|'feature';
  priority?:boolean;
+ showCaption?:boolean;
 }
-const {image,relation,variant='feature',priority=false}=Astro.props;
+const {image,relation,variant='feature',priority=false,showCaption=true}=Astro.props;
 const url='/images/'+encodeURIComponent(image.slug)+'/';
 ---
 {image&&
@@ -20,9 +21,9 @@ const url='/images/'+encodeURIComponent(image.slug)+'/';
     alt={image.altText}
     loading={priority?'eager':'lazy'} decoding="async" fetchpriority={priority?'high':'auto'}/>
   </a>
-  <figcaption>
+  {showCaption&&<figcaption>
    <strong>{image.title}</strong>
    {variant!=='card'&&<span>{relation}</span>}
    <a href={url}>Image source, credit and licence →</a>
-  </figcaption>
+  </figcaption>}
 </figure>}

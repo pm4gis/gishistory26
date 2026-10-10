@@ -9,6 +9,8 @@ const layout=readFileSync('src/layouts/Layout.astro','utf8');
 const reader=readFileSync('src/pages/read/index.astro','utf8');
 const about=readFileSync('src/pages/about/index.astro','utf8');
 const css=readFileSync('src/styles/site.css','utf8');
+const subjectImage=readFileSync('src/components/SubjectImage.astro','utf8');
+const imageDetail=readFileSync('src/pages/images/[slug].astro','utf8');
 
 test('every published chapter remains eligible for both the homepage and chapter catalogue',()=>{
  const articles=readdirSync('src/content/articles').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/articles/'+n,'utf8')));
@@ -38,6 +40,15 @@ test('highlight pool contains unique, published stories with real passages',()=>
  assert.match(home,/choices\.slice\(0,5\)/);
  assert.match(home,/hidden=\{i>=5\}/);
  assert.match(home,/img\.articleSlug===a\.slug/);
+});
+
+test('homepage highlights use equal image frames and keep image credits on detail pages',()=>{
+ assert.match(home,/variant="card" showCaption=\{false\}/);
+ assert.match(subjectImage,/showCaption\?:boolean/);
+ assert.match(subjectImage,/\{showCaption&&<figcaption>/);
+ assert.match(css,/\.highlight-card > \.subject-media--card,[\s\S]*?aspect-ratio:16\/9/);
+ assert.match(imageDetail,/Credit: \{image\.credit\}/);
+ assert.match(imageDetail,/<dt>Licence<\/dt>/);
 });
 
 test('desktop and mobile menus provide About and Contribute, with accessible native disclosure',()=>{
