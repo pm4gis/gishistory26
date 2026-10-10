@@ -1,0 +1,55 @@
+{
+  "id": "dataset:stats-geographies",
+  "slug": "stats-geographies",
+  "name": "Stats NZ statistical geographies",
+  "kind": "Dataset",
+  "category": "Population and statistical datasets",
+  "url": "/datasets/stats-geographies/",
+  "aliases": [
+    "Meshblocks",
+    "Statistical areas",
+    "SA1",
+    "SA2",
+    "SA3",
+    "Statistical standard for geographic areas"
+  ],
+  "description": "Stats NZ maintains a hierarchy of statistical geographies used for census enumeration, statistical reporting and geographic analysis. Meshblocks provide the smallest geog",
+  "story": [
+    "Stats NZ maintains a hierarchy of statistical geographies used for census enumeration, statistical reporting and geographic analysis. Meshblocks provide the smallest geographic building blocks. Statistical areas and other geographic classifications group them for reporting at different scales.",
+    "The 2023 statistical geographic standard, updated in December 2023, replaced the 2018 standard. It specifies geographic classifications and how boundaries are established and maintained. Meshblock boundaries may be changed to reflect administrative, population, census and other geographic requirements.",
+    "Statistical geography versions must be identified when comparing data through time. Boundaries and statistical classifications change, so a modern geographic layer cannot automatically be used as if it described the boundaries at an earlier census."
+  ],
+  "sources": [
+    {
+      "label": "Stats NZ, Statistical standard for geographic areas 2023 (updated December 2023)",
+      "url": "https://www.stats.govt.nz/methods/statistical-standard-for-geographic-areas-2023/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Stats NZ, Statistical standard for geographic areas 2023 (updated December 2023)",
+        "url": "https://www.stats.govt.nz/methods/statistical-standard-for-geographic-areas-2023/"
+      }
+    ],
+    [
+      {
+        "label": "Stats NZ, Statistical standard for geographic areas 2023 (updated December 2023)",
+        "url": "https://www.stats.govt.nz/methods/statistical-standard-for-geographic-areas-2023/"
+      }
+    ],
+    [
+      {
+        "label": "Stats NZ, Statistical standard for geographic areas 2023 (updated December 2023)",
+        "url": "https://www.stats.govt.nz/methods/statistical-standard-for-geographic-areas-2023/"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Stats NZ, Statistical standard for geographic areas 2023 (updated December 2023)",
+      "url": "https://www.stats.govt.nz/methods/statistical-standard-for-geographic-areas-2023/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}
