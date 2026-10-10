@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import WanangaVideos from '../../components/WanangaVideos.svelte';
+---
+<Layout title="Ngā Poutama Matawhenua recordings · NZ GIS History" description="Verified public recordings documenting practical Māori GIS mapping, data services, historical imagery, iwi-led GIS, StoryMaps and Māori data sovereignty.">
+ <div class="wrap">
+  <p class="eyebrow">Māori GIS · Recorded sources</p>
+  <h1>Ngā Poutama Matawhenua recordings</h1>
+  <p class="intro">A research index of publicly documented wānanga and presentations, with direct YouTube links, verified presenter credits and related historical reading. Recordings are not proof of earlier events and are hosted by their original publishers.</p>
+  <div class="actions">
+   <a class="button" href="/themes/maori-gis/">Read the Māori GIS history →</a>
+   <a class="button" href="/entities/nga-poutama-matawhenua/">Ngā Poutama programme →</a>
+  </div>
+  <WanangaVideos archive client:load/>
+ </div>
+</Layout>
