@@ -122,6 +122,18 @@ const image = z.object({
   altText: z.string().min(1),
   themeIds: z.array(z.string()).default([]),
   caption: z.string().optional(),
+  articleSlug: z.string().optional(),
+  chapterNumber: z.number().int().optional(),
+  dateDisplay: z.string().optional(),
+  context: z.string().optional(),
+  originalAssetPath: z.string().startsWith("/").optional(),
+  thumbnailPath: z.string().startsWith("/").optional(),
+  originalSha256: z.string().optional(),
+  webSha256: z.string().optional(),
+  originalWidth: z.number().int().optional(),
+  originalHeight: z.number().int().optional(),
+  sourceFileTitle: z.string().optional(),
+  headerCandidate: z.boolean().optional(),
 }).loose();
 
 export const collections = {
