@@ -30,7 +30,7 @@
 
  <div class="timeline-rail" tabindex="0" aria-label="Chronological event buttons">
  {#each filtered as e (e.id)}
- <button class={'timeline-event'+(e.featuredImage?' timeline-event--photo':'')} aria-pressed={selected?.id===e.id} aria-label={e.dateDisplay+': '+e.label} on:click={()=>{pick(e);if(!compact){const u=new URL(location.href);u.searchParams.set('event',e.id);history.replaceState(null,'',u)}}>
+ <button class={'timeline-event'+(e.featuredImage?' timeline-event--photo':'')} aria-pressed={selected?.id===e.id} aria-label={e.dateDisplay+': '+e.label} on:click={()=>{pick(e);if(!compact){const u=new URL(location.href);u.searchParams.set('event',e.id);history.replaceState(null,'',u)}}}>
  {#if e.featuredImage}<img class="timeline-event-photo" src={e.featuredImage.cardPath} alt="" loading="lazy" decoding="async"/>{/if}
  <span class="timeline-event-body"><small>{e.dateDisplay} · {e.datePrecision}</small><span class="timeline-event-title">{e.label}</span>{#if !compact}<span class="timeline-event-teaser">{e.summary}</span>{/if}</span>
  </button>
