@@ -81,17 +81,24 @@ const defaultDraft=contributionDraft();
     if(status)status.textContent=success;
     return;
    }catch{
-    // Some browsers deny clipboard access; keep the text available for manual copying.
+    // Some browsers deny clipboard access; try a local selection-based copy.
+    const fallback=document.createElement('textarea');
+    fallback.value=text;
+    fallback.setAttribute('readonly','');
+    fallback.style.position='fixed';
+    fallback.style.opacity='0';
+    document.body.append(fallback);
+    fallback.focus();
+    fallback.select();
+    const copied=document.execCommand('copy');
+    fallback.remove();
+    if(copied){if(status)status.textContent=success;return;}
     if(preview){
      preview.closest('details')!.open=true;
      preview.focus();
      preview.select();
-     if(document.execCommand('copy')){
-      if(status)status.textContent=success;
-      return;
-     }
     }
-    if(status)status.textContent='Select the text in the message preview and press Ctrl+C (or Copy on mobile).';
+    if(status)status.textContent='Copy the email address or select the text in the message preview and press Ctrl+C (or Copy on mobile).';
    }
   }
   document.getElementById('contribution-copy')?.addEventListener('click',()=>copy(contributionText(draft()),'Complete message copied. Paste it into your email service.'));
