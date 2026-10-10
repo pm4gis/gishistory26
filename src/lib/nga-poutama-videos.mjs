@@ -1,5 +1,5 @@
 /** Directly evidenced Ngā Poutama recordings. Original media remains with YouTube. 
- * The public official playlist feed exposes 13 recent entries, not an exhaustive
+ * The public official playlist feed exposes 14 recent entries, not an exhaustive
  * historical export. Two additional recordings were verified individually.
  * Dates are YouTube publication dates, not necessarily wānanga delivery dates.
  * The 2026 entries are subsequent resources, NOT evidence of pre-2026 events.
@@ -180,6 +180,26 @@ export const ngaPoutamaVideos=Object.freeze([
     "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
   },
   {
+    "id": "gZdhElp_GrI",
+    "title": "Discover Kōrero Takutai – A kete of coastal data for Takutai Moana applications",
+    "date": "11 June 2025 (published; wānanga 16 May 2025)",
+    "publishedOn": "2025-06-11",
+    "description": "Karl Majorhazi demonstrates Kōrero Takutai data for Takutai Moana applications and Tania Te Hira discusses practical mapping support.",
+    "attribution": "LINZ published video description names Karl Majorhazi and Tania Te Hira; this is not footage of an earlier coastal mapping event.",
+    "topics": [
+      "coastal-data",
+      "heritage"
+    ],
+    "passageIds": [
+      "passage:research-20261010-ch33-public-data-and-iwi-controlled-information"
+    ],
+    "eventIds": [
+      "linzcap-2025-05-16-nga-poutama-explores-korero-takutai"
+    ],
+    "source": "https://www.youtube.com/watch?v=gZdhElp_GrI",
+    "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
+  },
+  {
     "id": "yZcwtxGsZIE",
     "title": "Revealing whakapapa of the whenua: historical aerial imagery",
     "date": "5 May 2025 (published)",
@@ -293,7 +313,7 @@ export const ngaPoutamaVideos=Object.freeze([
   }
 ]);
 export const ngaPoutamaTopics=Object.freeze([
- ['all','All recordings'],['hapū-gis','Hapū GIS'],['heritage','Whenua and heritage'],
+ ['all','All recordings'],['coastal-data','Coastal and marine data'],['hapū-gis','Hapū GIS'],['heritage','Whenua and heritage'],
  ['imagery','Historical imagery'],['councils','Council data'],['hazards','Hazards and resilience'],
  ['storymaps','StoryMaps and 3D'],['education','Training'],['data-sovereignty','Data stewardship']
 ]);
@@ -318,6 +338,19 @@ export const ngaPoutamaRecordLinks=Object.freeze({
  '62vhPhpnfUo':[{name:'Bay of Plenty Regional Council',url:'/entities/bay-of-plenty-regional-council/'}],
  'Fqq3Fzi5djc':[{name:'Keith Holswich',url:'/people/keith-holswich/'}],
  'ZCb9zLz12O4':[{name:'Holden Hohaia',url:'/people/holden-hohaia/'},{name:'Tania Te Hira',url:'/people/tania-te-hira/'}],
+ 'gZdhElp_GrI':[{name:'Karl Majorhazi',url:'/people/karl-majorhazi/'},{name:'Tania Te Hira',url:'/people/tania-te-hira/'}],
  'yCBeRHA2Jnk':[{name:'Duane Wilkins',url:'/people/duane-wilkins/'},{name:'Roland Pomana',url:'/people/roland-pomana/'},{name:'Matt Grose',url:'/people/matt-grose/'}]
 });
 export function ngaPoutamaRelatedRecords(id){return ngaPoutamaRecordLinks[id]||[]}
+
+/** Resolve recording contextual links from published passage and article routes. */
+export function ngaPoutamaReadingLinks(passages,articles){
+ const byPassage=new Map(passages.map(p=>[p.id,p]));
+ const byArticle=new Map(articles.map(a=>[a.id,a.url]));
+ const out={};
+ for(const v of ngaPoutamaVideos)for(const id of v.passageIds){
+  const passage=byPassage.get(id),base=passage&&byArticle.get(passage.articleId);
+  if(base)out[id]=base+'#'+passage.slug;
+ }
+ return out;
+}
