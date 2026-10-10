@@ -73,7 +73,7 @@ export const subjectMedia = Object.freeze({
     },
     'canterbury-regional-council-environment-canterbury': {
       slug: 'canterbury-wilding-pines',
-      relation: 'A Canterbury environmental map illustrating regional land-management analysis. The image is not represented as a council-produced system.'
+      relation: 'A photograph of wilding pines in Canterbury, illustrating a regional land-management challenge. It is not a council GIS map or software screen.'
     }
   }
 });
