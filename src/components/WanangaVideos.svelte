@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {ngaPoutamaPlaylist,ngaPoutamaVideos,ngaPoutamaThumbnail,ngaPoutamaTopics} from '../lib/nga-poutama-videos.mjs';
+  import {ngaPoutamaPlaylist,ngaPoutamaVideos,ngaPoutamaThumbnail,ngaPoutamaTopics,ngaPoutamaRelatedRecords} from '../lib/nga-poutama-videos.mjs';
   export let videos:any[]=ngaPoutamaVideos;
   export let compact=false;
   export let inline=false;
@@ -42,6 +42,13 @@
           <small>{video.date}</small>
           <p>{video.description}</p>
           <small>{video.attribution}</small>
+          {#if ngaPoutamaRelatedRecords(video.id).length}
+            <p class="wananga-video-people">Connected entries:
+              {#each ngaPoutamaRelatedRecords(video.id) as related (related.url)}
+                <a href={related.url}>{related.name}</a>
+              {/each}
+            </p>
+          {/if}
         </div>
       </article>
     {/each}
