@@ -1,0 +1,14 @@
+{
+  "id": "relationship:qmap-01",
+  "a": "dataset:qmap-250k",
+  "b": "entity:gns-science",
+  "label": "Maintained and published by",
+  "basis": "GNS Science published the QMAP series and integrated its digital layers.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science / Earth Sciences NZ, 1:250 000 Geological Map: QMAP programme and editions",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ]
+}
