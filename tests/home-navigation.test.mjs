@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {homeHighlightSlugs} from '../src/lib/home-highlights.mjs';
-import {siteContributionMailto,contributionRecipient,contributionDraft,contributionGmailUrl,contributionContextFromSearch,passageContributionPageUrl} from '../src/lib/passage-contributions.mjs';
+import {siteContributionGmailUrl,passageContributionGmailUrl,contributionRecipient,contributionDraft,contributionContextFromSearch} from '../src/lib/passage-contributions.mjs';
 
 const home=readFileSync('src/pages/index.astro','utf8');
 const layout=readFileSync('src/layouts/Layout.astro','utf8');
@@ -53,16 +53,16 @@ test('desktop and mobile menus provide About and Contribute, with accessible nat
  assert.match(layout,/id="palette"/);
 });
 
-test('contribution action opens email client with questions and no automatic sending',()=>{
- const mailto=siteContributionMailto();
- const url=new URL(mailto);
- assert.equal(url.protocol,'mailto:');
- assert.equal(url.pathname,contributionRecipient);
- assert.equal(url.searchParams.get('subject'),'NZ GIS History Contributions and Corrections');
- const body=url.searchParams.get('body')||'';
- for(const part of ['chapter, story','correct, add or clarify','dates, sources, links or documents','credit your name','permission to share'])assert.ok(body.includes(part));
- assert.ok(about.includes("const contributionHref='/contribute/'"));
- assert.ok(layout.includes("const contributionHref='/contribute/'"));
+test('navigation buttons open a Gmail draft directly, not an intermediate page',()=>{
+ const url=new URL(siteContributionGmailUrl());
+ assert.equal(url.origin,'https://mail.google.com');
+ assert.equal(url.searchParams.get('to'),contributionRecipient);
+ assert.equal(url.searchParams.get('su'),'NZ GIS History Contributions and Corrections');
+ for(const field of ['correct, add or clarify','Who or what is involved','sources, photographs','credited'])assert.ok(url.searchParams.get('body').includes(field));
+ assert.ok(layout.includes('const contributionHref=siteContributionGmailUrl()'));
+ assert.ok(about.includes('const contributionHref=siteContributionGmailUrl()'));
+ assert.equal((layout.match(/target="_blank" rel="noopener noreferrer"/g)||[]).length,2);
+ assert.ok(!layout.includes("'/contribute/'"));
 });
 
 test('obsolete book labels are removed from reading navigation',()=>{
@@ -71,28 +71,17 @@ test('obsolete book labels are removed from reading navigation',()=>{
  }
 });
 
-test('browser contribution page and Gmail drafting work without Windows mailto',()=>{
- const page=readFileSync('src/pages/contribute/index.astro','utf8');
- const form=readFileSync('src/components/ContributeForm.svelte','utf8');
- assert.match(page,/ContributeForm client:load/);
- assert.match(form,/navigator.clipboard.writeText/);
- assert.match(form,/Open draft in Gmail/);
- assert.match(form,/id="contribution-subject"/);
- assert.match(form,/id="contribution-message"/);
- const article={title:'Landonline',url:'/stories/landonline/'};
+test('passage drafts retain the permanent link without a form',()=>{
  const passage={title:'From register to transaction system',slug:'from-register-to-transaction-system-60c6ff7b97'};
- const contributionUrl=passageContributionPageUrl(article,passage);
- const context=contributionContextFromSearch(new URL(contributionUrl,'https://history.pm4gis.nz').search);
- const draft=contributionDraft(context);
- assert.ok(draft.body.includes('Link to passage: https://history.pm4gis.nz/stories/landonline/#'+passage.slug));
- const gmail=new URL(contributionGmailUrl(draft.subject,draft.body));
- assert.equal(gmail.origin,'https://mail.google.com');
- assert.equal(gmail.searchParams.get('to'),'pm4gis@gmail.com');
- assert.equal(gmail.searchParams.get('su'),draft.subject);
- assert.ok(gmail.searchParams.get('body').includes(passage.slug));
+ const url=new URL(passageContributionGmailUrl({title:'Landonline',url:'/stories/landonline/'},passage));
+ assert.equal(url.searchParams.get('to'),'pm4gis@gmail.com');
+ assert.ok(url.searchParams.get('su').includes(passage.title));
+ assert.ok(url.searchParams.get('body').includes('https://history.pm4gis.nz/stories/landonline/#'+passage.slug));
+ const historic=contributionContextFromSearch('?chapter=Landonline&passage=From+register+to+transaction+system&ref='+encodeURIComponent('https://history.pm4gis.nz/stories/landonline/#'+passage.slug));
+ assert.ok(contributionDraft(historic).body.includes(passage.slug));
  assert.equal(contributionContextFromSearch('?ref=https://evil.example/').reference,'');
- for(const text of [page,form,readFileSync('src/pages/about/index.astro','utf8'),readFileSync('src/lib/passage-contributions.mjs','utf8')]){
-  assert.doesNotMatch(text,/Do not send restricted iwi or hapū information/);
-  assert.doesNotMatch(text,/Please avoid sending restricted iwi/);
- }
+ const fallback=readFileSync('src/pages/contribute/index.astro','utf8');
+ assert.match(fallback,/window.location.replace\(url\)/);
+ assert.doesNotMatch(fallback,/ContributeForm|textarea|Copy email/);
+ for(const text of [fallback,about,readFileSync('src/lib/passage-contributions.mjs','utf8')])assert.doesNotMatch(text,/Do not send restricted iwi|Please avoid sending restricted iwi/);
 });

@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
-const contributionHref='/contribute/';
+import {siteContributionGmailUrl} from '../../lib/passage-contributions.mjs';
+const contributionHref=siteContributionGmailUrl();
 ---
 <Layout title="About the project · NZ GIS History" description="About A History of GIS in New Zealand: its editor, scope, evidence, sources and how to contribute.">
  <div class="wrap narrative">
@@ -20,6 +21,6 @@ const contributionHref='/contribute/';
   <p>Browse the <a href="/images/">image register</a>, explore the <a href="/timeline/">timeline</a>, or inspect the <a href="https://github.com/pm4gis/gishistory26">source repository</a> and <a href="/release.json">publication revision</a>.</p>
   <h2>Contributions and corrections</h2>
   <p>If you worked on a GIS project, have photographs or documents, recognise an error, or can add detail about a person or organisation, please contribute. Include the relevant chapter or passage link, your connection to the subject, and any sources that help establish the account. Please identify the creator and source of photographs, maps and screenshots.</p>
-  <p><a class="button primary" href={contributionHref}>Contribute or suggest a correction →</a></p>
+  <p><a class="button primary" href={contributionHref} target="_blank" rel="noopener noreferrer">Contribute or suggest a correction →</a></p>
  </div>
 </Layout>
