@@ -1,0 +1,45 @@
+chapter,chapter_title,article_slug,locally_stored_documentary_images,status
+1,"Maps before computers",what-the-computer-inherited,"tuki-map-1793-1798; hector-geological-map-1884; new-river-cadastre-1898",illustrated
+2,"Survey calculations",coordinates-enter-the-computer,"brees-surveyors-porirua-1840s; tripp-station-theodolite-surveyors; petone-lower-hutt-survey-1909",illustrated
+3,"Computer cartography",drawing-maps-by-machine,"clutha-molyneux-nzms13-1955",illustrated
+4,"Early remote sensing",turning-the-landscape-into-numbers,"southland-aerial-verdon-1988",illustrated
+5,"Digital land inventories",from-map-sheets-to-spatial-data,"",requires subject-specific image
+6,"Early GIS systems",when-gis-became-gis,"",requires subject-specific image
+7,"Land assessment",mapping-land-as-data,"",requires subject-specific image
+8,"Forestry GIS",forestry-finds-gis,"canterbury-wilding-pines",illustrated
+9,"Scientific mapping",science-goes-spatial,"qmap-christchurch-2008; nz-geology-lange-2012; rotoiti-bathymetry-2021; ruapehu-theodolite-1988",illustrated
+10,"Government GIS",gis-inside-government,"",requires subject-specific image
+11,"University teaching and research",universities-build-a-field,"",requires subject-specific image
+12,"Companies and user groups",an-industry-and-community-form,"",requires subject-specific image
+13,"The digital cadastre",the-cadastre-becomes-data,"waikaka-cadastre-1888",illustrated
+14,"Landonline",landonline,"linz-landonline-survey-work-2025",illustrated
+15,"Digital topography",topography-goes-digital,"ongaonga-linz-topo50-2020",illustrated
+16,"Census geography",census-geography,"nz-census-density-2023",illustrated
+17,"Roads, addresses and property",roads-addresses-and-property,"auckland-region-transport-2014",illustrated
+18,"GPS in practice",gps-changes-where-here-is,"linz-positionz-2018",illustrated
+19,"The national coordinate system",rebuilding-the-coordinate-framework,"riverhead-geodetic-mark-2025",illustrated
+20,"Aerial imagery",imagery-becomes-infrastructure,"wrights-hill-1945",illustrated
+21,"Spatial data infrastructure",the-spatial-infrastructure-idea,"linz-wmts-qgis-connection",illustrated
+22,"Desktop GIS",gis-comes-to-the-desktop,"linz-arcmap-property-relationships-2016",illustrated
+23,"Council GIS",councils-build-corporate-gis,"victoria-square-aerial-1955",illustrated
+24,"GIS across government",government-goes-spatial,"linz-landonline-territorial-authority-2025",illustrated
+25,"Utility networks",mapping-the-networks,"kiwirail-passenger-network-map",illustrated
+26,"Conservation and environment",conservation-and-environment,"ecoregions-qgis-2025",illustrated
+27,"Health population and place",health-population-and-place,"",requires subject-specific image
+28,"Policing and public safety",safety-policing-and-emergency-gis,"geonet-kaikoura-felt-2016; nema-tsunami-forecast-2021",illustrated
+29,"The GIS profession",becoming-a-gis-professional,"",requires subject-specific image
+30,"Early web mapping",the-first-web-maps,"",requires subject-specific image
+31,"Google Maps and Earth",google-changes-the-audience,"",requires subject-specific image
+32,"Open source GIS",open-source-changes-the-tools,"auckland-osm-colour-2018",illustrated
+33,"Open spatial data",open-data-changes-access,"linz-wmts-qgis-data-view",illustrated
+34,"GIS in the field",mapping-leaves-the-office,"",requires subject-specific image
+35,"Mapping applications",the-map-becomes-an-application,"auckland-osm-bw-2018",illustrated
+36,"Satellite observations",earth-observation-becomes-routine,"landsat-christchurch-2001",illustrated
+37,"LiDAR mapping",lidar-remakes-the-landscape,"kapiti-island-lidar-2024",illustrated
+38,"Drone mapping",mapping-from-a-drone,"",requires subject-specific image
+39,"Mapping in 3D",from-flat-maps-to-3d,"ruapehu-3d-2002; nz-dem-arcgis-2006",illustrated
+40,"Enterprise GIS",enterprise-gis,"",requires subject-specific image
+41,"Spatial services and the cloud",cloud-services-and-apis,"linz-wfs-attribute-service-2023",illustrated
+42,"Disaster response and live mapping",the-real-time-map,"christchurch-quake-shaking-2011; kaikoura-shakemap-2016; masterton-earthquake-fault-map-1942; fiordland-nasa-earthquake-2009",illustrated
+43,"GIS automation",automating-the-gis-work,"",requires subject-specific image
+44,"GIS and AI in 2025",gis-at-the-end-of-2025,"",requires subject-specific image
