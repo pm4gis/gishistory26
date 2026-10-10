@@ -1,9 +1,9 @@
 ---
 import '../styles/site.css';
-import {siteContributionGmailUrl} from '../lib/passage-contributions.mjs';
+import {siteContributionPageUrl} from '../lib/passage-contributions.mjs';
 const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
-const contributionHref=siteContributionGmailUrl();
+const contributionHref=siteContributionPageUrl();
 ---
 <!doctype html>
 <html lang="en-NZ">
@@ -20,7 +20,7 @@ const contributionHref=siteContributionGmailUrl();
   <nav class="nav nav--desktop" aria-label="Main navigation">
    <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
    <a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a>
-   <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref} target="_blank" rel="noopener noreferrer">Contribute</a>
+   <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
   </nav>
   <div class="topbar-tools">
    <button id="palette" type="button" aria-label="Change colour theme">◐ <span>Night</span></button>
@@ -29,7 +29,7 @@ const contributionHref=siteContributionGmailUrl();
     <nav class="nav nav--mobile" aria-label="Mobile navigation">
      <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
      <a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a>
-     <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref} target="_blank" rel="noopener noreferrer">Contribute</a>
+     <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
     </nav>
    </details>
   </div>
