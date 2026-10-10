@@ -6,12 +6,21 @@
   "category": "People",
   "url": "/people/a-c-shailes/",
   "story": [
-    "A. C. Shailes later described the Mangaweka road-rail deviation as one case in which computers generated or evaluated possible trail lines subject to engineering controls such as gradient and earthworks. In the Clutha Valley, ten road alternatives were reported as being examined through computer processing where manual methods might have allowed detailed consideration of only two. The computers supported engineering analysis."
+    "A. C. Shailes later described the Mangaweka road-rail deviation as one case in which computers generated or evaluated possible trail lines subject to engineering controls such as gradient and earthworks. In the Clutha Valley, ten road alternatives were reported as being examined through computer processing where manual methods might have allowed detailed consideration of only two. The computers supported engineering analysis.",
+    "Shailes’s 1980 account of public-sector computing describes the Ministry’s engineering computer centre and the scope for testing more route and terrain alternatives. Chapter 2 uses his examples from Clutha Valley and Mangaweka as period project estimates."
   ],
   "sources": [
     {
       "label": "Chapter 3 · Routes and terrain",
       "url": "/stories/drawing-maps-by-machine/"
+    },
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    },
+    {
+      "label": "Related chapter: Chapter 2 · Survey calculations",
+      "url": "/stories/coordinates-enter-the-computer/"
     }
   ],
   "aliases": [
@@ -25,6 +34,16 @@
       {
         "label": "Chapter 3 · Routes and terrain",
         "url": "/stories/drawing-maps-by-machine/"
+      }
+    ],
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      },
+      {
+        "label": "Related chapter: Chapter 2 · Survey calculations",
+        "url": "/stories/coordinates-enter-the-computer/"
       }
     ]
   ]

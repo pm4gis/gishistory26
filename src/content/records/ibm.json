@@ -1,0 +1,41 @@
+{
+  "id": "entity:ibm",
+  "slug": "ibm",
+  "name": "International Business Machines (IBM)",
+  "kind": "Business",
+  "category": "Computing companies",
+  "url": "/entities/ibm/",
+  "website": null,
+  "story": [
+    "IBM supplied New Zealand Treasury with an IBM 650 data-processing system. Installed in 1960, it used magnetic tape and processed the central public-service payroll, returning printed vouchers and punched-card cheques."
+  ],
+  "sources": [
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    },
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ],
+  "aliases": [
+    "IBM",
+    "International Business Machines"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      },
+      {
+        "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+        "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+      }
+    ]
+  ]
+}

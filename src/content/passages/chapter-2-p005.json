@@ -4,41 +4,78 @@
   "articleId": "article:chapter-2",
   "title": "Engineering by batch",
   "order": 4,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
-    "chapter:2"
+    "chapter:2",
+    "entity:ministry-of-works-and-development",
+    "entity:vogel-computer-centre",
+    "person:a-c-shailes",
+    "person:g-j-harrington"
   ],
   "blocks": [
     {
       "type": "paragraph",
-      "text": "The Ministry of Works became one of the important homes of technical computing in the public sector. Its engineering responsibilities created problems involving routes, terrain, structures, hydrology and earthworks, all of which could require large numerical calculations. Public-sector computing histories describe substantial technical use during the 1960s and early 1970s, including road and hydro-development work. The computer was attractive where several alternatives could be calculated more systematically than a team could manage manually.",
-      "markdown": "The Ministry of Works became one of the important homes of technical computing in the public sector. Its engineering responsibilities created problems involving routes, terrain, structures, hydrology and earthworks, all of which could require large numerical calculations. Public-sector computing histories describe substantial technical use during the 1960s and early 1970s, including road and hydro-development work. The computer was attractive where several alternatives could be calculated more systematically than a team could manage manually.",
-      "sources": [],
+      "text": "The Ministry of Works used computers for engineering decisions involving terrain, cost and competing designs. A. C. Shailes’s 1980 account traces its Computer Services Section to 1966 and describes the Vogel Computer Centre as a specialist service for engineering and scientific work.",
+      "markdown": "The Ministry of Works used computers for engineering decisions involving terrain, cost and competing designs. A. C. Shailes’s 1980 account traces its Computer Services Section to 1966 and describes the Vogel Computer Centre as a specialist service for engineering and scientific work.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s05-p01"
     },
     {
       "type": "paragraph",
-      "text": "Route work illustrates the boundary between spatial calculation and GIS. An alignment can be represented by coordinates, gradients, curve parameters, terrain values and engineering constraints. Software can compare alternatives and calculate quantities without maintaining a reusable digital road network or landscape database. The problem is geographic, but the computer is solving a designed calculation rather than providing a general environment for geographic enquiry.",
-      "markdown": "Route work illustrates the boundary between spatial calculation and GIS. An alignment can be represented by coordinates, gradients, curve parameters, terrain values and engineering constraints. Software can compare alternatives and calculate quantities without maintaining a reusable digital road network or landscape database. The problem is geographic, but the computer is solving a designed calculation rather than providing a general environment for geographic enquiry.",
-      "sources": [],
+      "text": "For the Clutha Valley development, engineers examined ten alternatives for relocating the highway between Cromwell and Clyde. Shailes reported that reduced earthworks on the selected route were estimated to save $1.5 million against the best of the first three alternatives, at the contract rates then in use. The machine widened the comparison; engineers set the constraints and assessed the design.",
+      "markdown": "For the Clutha Valley development, engineers examined ten alternatives for relocating the highway between Cromwell and Clyde. Shailes reported that reduced earthworks on the selected route were estimated to save $1.5 million against the best of the first three alternatives, at the contract rates then in use. The machine widened the comparison; engineers set the constraints and assessed the design.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s05-p02"
     },
     {
       "type": "paragraph",
-      "text": "Retrospective accounts describe Ministry of Works projects in which computers helped generate or compare route alternatives, including work associated with the Mangaweka road-rail deviation and Clutha Valley planning. Computers supported route planning and engineering decisions before general-purpose GIS arrived.",
-      "markdown": "Retrospective accounts describe Ministry of Works projects in which computers helped generate or compare route alternatives, including work associated with the Mangaweka road-rail deviation and Clutha Valley planning. Computers supported route planning and engineering decisions before general-purpose GIS arrived.",
-      "sources": [],
+      "text": "The Mangaweka road–rail deviation gives a more vivid example. A press statement from the early 1970s, reproduced in Shailes’s account, says Ministry engineers used aerial photographs and programmed gradients and other controls to generate route lines with lower earthworks. The estimates were specific to the proposal and the prices of the day, but the method shows computers being used to search a real terrain problem rather than merely print coordinates.",
+      "markdown": "The Mangaweka road–rail deviation gives a more vivid example. A press statement from the early 1970s, reproduced in Shailes’s account, says Ministry engineers used aerial photographs and programmed gradients and other controls to generate route lines with lower earthworks. The estimates were specific to the proposal and the prices of the day, but the method shows computers being used to search a real terrain problem rather than merely print coordinates.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s05-p03"
     },
     {
       "type": "paragraph",
-      "text": "Terrain posed a related problem. Heights could be measured at surveyed positions and software could calculate profiles, volumes or interpolated surfaces between them. By the mid-1970s New Zealand technical publications included programs for producing contours from surveyed field data. Detailed automated contouring belongs in Chapter 3 because the output was moving into computer-assisted mapping, but the underlying calculation developed from the same earlier habit: represent position and height numerically, then let the machine repeat the mathematics.",
-      "markdown": "Terrain posed a related problem. Heights could be measured at surveyed positions and software could calculate profiles, volumes or interpolated surfaces between them. By the mid-1970s New Zealand technical publications included programs for producing contours from surveyed field data. Detailed automated contouring belongs in Chapter 3 because the output was moving into computer-assisted mapping, but the underlying calculation developed from the same earlier habit: represent position and height numerically, then let the machine repeat the mathematics.",
-      "sources": [],
+      "text": "A 1969 account described a contouring programme for grid surveys; G. J. Harrington’s 1976 work used irregularly spaced stadia readings to build contours. That output sits on the edge of the next shift: calculation was starting to produce reusable digital map geometry.",
+      "markdown": "A 1969 account described a contouring programme for grid surveys; G. J. Harrington’s 1976 work used irregularly spaced stadia readings to build contours. That output sits on the edge of the next shift: calculation was starting to produce reusable digital map geometry.",
+      "sources": [
+        {
+          "label": "W. C. Boughton, “Contour plans by computer” (1969), AGRIS",
+          "url": "https://agris.fao.org/search/en/providers/125257/records/676599bf6784547a43e37f10"
+        },
+        {
+          "label": "G. J. Harrington, “Contouring by Computer from Stadia Field Data” (1976)",
+          "url": "https://eurekamag.com/research/105/798/105798884.php"
+        },
+        {
+          "label": "Related chapter: Chapter 3 · Computer cartography",
+          "url": "/stories/drawing-maps-by-machine/"
+        }
+      ],
       "id": "ch02-s05-p04"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    }
+  ],
   "legacyAnchor": "engineering-by-batch"
 }

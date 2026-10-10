@@ -1,0 +1,41 @@
+{
+  "id": "entity:new-zealand-treasury",
+  "slug": "new-zealand-treasury",
+  "name": "New Zealand Treasury",
+  "kind": "Agency",
+  "category": "Government",
+  "url": "/entities/new-zealand-treasury/",
+  "website": null,
+  "story": [
+    "The Treasury installed an IBM 650 in 1960; it was formally opened on 23 March 1961. Its first major application was the fortnightly payroll for about 34,000 public servants.",
+    "The payroll run calculated pay and deductions, stored results on magnetic tape, and produced vouchers and punched-card cheques. Treasury’s computer also acted as a bureau for other departments before much government processing moved to a central computer centre in 1970."
+  ],
+  "sources": [
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    }
+  ],
+  "aliases": [
+    "New Zealand Treasury",
+    "Treasury",
+    "The Treasury"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      }
+    ],
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      }
+    ]
+  ]
+}

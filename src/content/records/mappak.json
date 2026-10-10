@@ -1,0 +1,43 @@
+{
+  "id": "entity:mappak",
+  "slug": "mappak",
+  "name": "MAPPAK",
+  "kind": "Computer-assisted mapping system",
+  "category": "Cadastral mapping",
+  "url": "/entities/mappak/",
+  "website": null,
+  "story": [
+    "MAPPAK was a computer-assisted cadastral mapping system developed for the Department of Lands and Survey. The 1979 University of Canterbury thesis describes operators tracing selected features from paper maps, storing coordinates, editing linework and plotting new output.",
+    "The thesis also discussed proposed land-information functions. The operational mapping system is well documented; broader claims about MAPPAK as a complete GIS require care."
+  ],
+  "sources": [
+    {
+      "label": "M. S. Colley, A computer system for a cadastral mapping application, MSc thesis, University of Canterbury, 1979",
+      "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+    },
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    }
+  ],
+  "aliases": [
+    "MAPPAK"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "M. S. Colley, A computer system for a cadastral mapping application, MSc thesis, University of Canterbury, 1979",
+        "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+      }
+    ],
+    [
+      {
+        "label": "Related chapter: Chapter 3 · Computer cartography",
+        "url": "/stories/drawing-maps-by-machine/"
+      }
+    ]
+  ]
+}

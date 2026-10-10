@@ -4,7 +4,7 @@
   "articleId": "article:chapter-2",
   "title": "Storage without geography",
   "order": 7,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
     "chapter:2"
@@ -12,26 +12,65 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Magnetic tape and disks expanded the amount of information early computers could store. A tape could hold thousands of coordinate values and still contain no explicit representation of a connected road network or parcel fabric. A program could read those values, calculate new ones and write another tape without preserving the relationships a later spatial database would expect.",
-      "markdown": "Magnetic tape and disks expanded the amount of information early computers could store. A tape could hold thousands of coordinate values and still contain no explicit representation of a connected road network or parcel fabric. A program could read those values, calculate new ones and write another tape without preserving the relationships a later spatial database would expect.",
-      "sources": [],
+      "text": "Magnetic tape let early computers carry information between runs. But storage alone did not tell a programme whether coordinate values represented separate points, a connected road, a parcel boundary or an attribute table.",
+      "markdown": "Magnetic tape let early computers carry information between runs. But storage alone did not tell a programme whether coordinate values represented separate points, a connected road, a parcel boundary or an attribute table.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s08-p01"
     },
     {
       "type": "paragraph",
-      "text": "A coordinate file is spatial data, but it may not be a geographic information system. A program that calculates an alignment is computer-assisted spatial analysis, but it may not support general map editing or geographic query. A plot produced from calculated values is computer-generated cartography, but it may be only an output rather than a view of a maintained spatial database.",
-      "markdown": "A coordinate file is spatial data, but it may not be a geographic information system. A program that calculates an alignment is computer-assisted spatial analysis, but it may not support general map editing or geographic query. A plot produced from calculated values is computer-generated cartography, but it may be only an output rather than a view of a maintained spatial database.",
+      "text": "When assessing an early file, look for the structure around its coordinates: stable feature identifiers, rules for joining linework, attributes tied to geometry and a way to retrieve or edit the features together. A coordinate file could be valuable spatial data and still be only one input to a GIS.",
+      "markdown": "When assessing an early file, look for the structure around its coordinates: stable feature identifiers, rules for joining linework, attributes tied to geometry and a way to retrieve or edit the features together. A coordinate file could be valuable spatial data and still be only one input to a GIS.",
       "sources": [],
       "id": "ch02-s08-p02"
     },
     {
       "type": "paragraph",
-      "text": "The early systems handled demanding calculations and data-processing tasks. GIS developed through the convergence of numerical calculation, digital cartography, database design and spatial analysis. Surveyors brought coordinates and control. Engineers brought numerical terrain and route problems. Cartographers brought generalisation and graphic production. Photogrammetrists brought measured geometry from imagery. Remote-sensing researchers would bring machine-readable rasters, while land-resource teams would bring polygons and attributes. The first computerised stage solved only part of that puzzle: it made the numerical pieces easier to process.",
-      "markdown": "The early systems handled demanding calculations and data-processing tasks. GIS developed through the convergence of numerical calculation, digital cartography, database design and spatial analysis. Surveyors brought coordinates and control. Engineers brought numerical terrain and route problems. Cartographers brought generalisation and graphic production. Photogrammetrists brought measured geometry from imagery. Remote-sensing researchers would bring machine-readable rasters, while land-resource teams would bring polygons and attributes. The first computerised stage solved only part of that puzzle: it made the numerical pieces easier to process.",
-      "sources": [],
+      "text": "New Zealand’s early digital geography came from several jobs developing at once. Chapter 3 follows computer cartography; Chapters 4 and 5 follow imagery and land inventories; Chapter 6 looks at systems that brought more of those functions together.",
+      "markdown": "New Zealand’s early digital geography came from several jobs developing at once. Chapter 3 follows computer cartography; Chapters 4 and 5 follow imagery and land inventories; Chapter 6 looks at systems that brought more of those functions together.",
+      "sources": [
+        {
+          "label": "Related chapter: Chapter 3 · Computer cartography",
+          "url": "/stories/drawing-maps-by-machine/"
+        },
+        {
+          "label": "Related chapter: Chapter 4 · Early remote sensing",
+          "url": "/stories/turning-the-landscape-into-numbers/"
+        },
+        {
+          "label": "Related chapter: Chapter 5 · Digital land inventories",
+          "url": "/stories/from-map-sheets-to-spatial-data/"
+        },
+        {
+          "label": "Related chapter: Chapter 6 · Early GIS systems",
+          "url": "/stories/when-gis-became-gis/"
+        }
+      ],
       "id": "ch02-s08-p03"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    },
+    {
+      "label": "Related chapter: Chapter 4 · Early remote sensing",
+      "url": "/stories/turning-the-landscape-into-numbers/"
+    },
+    {
+      "label": "Related chapter: Chapter 5 · Digital land inventories",
+      "url": "/stories/from-map-sheets-to-spatial-data/"
+    },
+    {
+      "label": "Related chapter: Chapter 6 · Early GIS systems",
+      "url": "/stories/when-gis-became-gis/"
+    }
+  ],
   "legacyAnchor": "storage-without-geography"
 }

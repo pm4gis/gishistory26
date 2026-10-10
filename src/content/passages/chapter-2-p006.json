@@ -4,35 +4,64 @@
   "articleId": "article:chapter-2",
   "title": "Surveying and mapping by 1966",
   "order": 5,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
     "chapter:2",
-    "person:r-g-dick"
+    "person:r-g-dick",
+    "entity:department-of-lands-and-survey"
   ],
   "blocks": [
     {
       "type": "paragraph",
-      "text": "In the 1966 Encyclopaedia of New Zealand, R. G. Dick wrote that electronic computers were being used for involved and highly mathematical surveying and mapping computations. His account describes numerical calculation as an established part of that work.",
-      "markdown": "In the 1966 Encyclopaedia of New Zealand, R. G. Dick wrote that electronic computers were being used for involved and highly mathematical surveying and mapping computations. His account describes numerical calculation as an established part of that work.",
-      "sources": [],
+      "text": "In the 1966 Encyclopaedia of New Zealand, Surveyor-General Russell Gladstone Dick described electronic computers being used for the most demanding mathematical work in surveying and mapping. In the same account he called the office staff who performed calculations “computers” too—a useful reminder that a computer in a 1960s survey office could be a person or a machine.",
+      "markdown": "In the 1966 Encyclopaedia of New Zealand, Surveyor-General Russell Gladstone Dick described electronic computers being used for the most demanding mathematical work in surveying and mapping. In the same account he called the office staff who performed calculations “computers” too—a useful reminder that a computer in a 1960s survey office could be a person or a machine.",
+      "sources": [
+        {
+          "label": "Russell Gladstone Dick, “Maps and mapping” (1966), Te Ara",
+          "url": "https://teara.govt.nz/en/1966/maps-and-mapping/page-6"
+        }
+      ],
       "id": "ch02-s06-p01"
     },
     {
       "type": "paragraph",
-      "text": "The phrase “surveying and mapping computations” covered the part of the production chain most ready for computers. Observations and control could be expressed as numbers. Transformations could be defined mathematically. Repetitive calculations could be programmed. The final map still depended on draughting, photographic reproduction, photogrammetry and other production systems described in Chapter 1.",
-      "markdown": "The phrase “surveying and mapping computations” covered the part of the production chain most ready for computers. Observations and control could be expressed as numbers. Transformations could be defined mathematically. Repetitive calculations could be programmed. The final map still depended on draughting, photographic reproduction, photogrammetry and other production systems described in Chapter 1.",
-      "sources": [],
+      "text": "The distinction matters when reading a claim that mapping had been computerised. A survey office could calculate coordinates electronically while draughting, photographic reproduction and final map compilation still happened through established production methods.",
+      "markdown": "The distinction matters when reading a claim that mapping had been computerised. A survey office could calculate coordinates electronically while draughting, photographic reproduction and final map compilation still happened through established production methods.",
+      "sources": [
+        {
+          "label": "Russell Gladstone Dick, “Maps and mapping” (1966), Te Ara",
+          "url": "https://teara.govt.nz/en/1966/maps-and-mapping/page-6"
+        }
+      ],
       "id": "ch02-s06-p02"
     },
     {
       "type": "paragraph",
-      "text": "The transition emerged through a sequence rather than a public switch-over. Calculation migrated first. A surveyor could receive electronically computed coordinates while still plotting or compiling through conventional methods. A mapping organisation could use computer-generated values while the digital linework itself remained outside the computer.",
-      "markdown": "The transition emerged through a sequence rather than a public switch-over. Calculation migrated first. A surveyor could receive electronically computed coordinates while still plotting or compiling through conventional methods. A mapping organisation could use computer-generated values while the digital linework itself remained outside the computer.",
-      "sources": [],
+      "text": "The change arrived by task. Calculation moved first; capture and editing of map features followed later. Chapter 3 picks up that second step.",
+      "markdown": "The change arrived by task. Calculation moved first; capture and editing of map features followed later. Chapter 3 picks up that second step.",
+      "sources": [
+        {
+          "label": "Russell Gladstone Dick, “Maps and mapping” (1966), Te Ara",
+          "url": "https://teara.govt.nz/en/1966/maps-and-mapping/page-6"
+        },
+        {
+          "label": "Related chapter: Chapter 3 · Computer cartography",
+          "url": "/stories/drawing-maps-by-machine/"
+        }
+      ],
       "id": "ch02-p-a2967058da22"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 1 · Maps before computers",
+      "url": "/stories/what-the-computer-inherited/"
+    },
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    }
+  ],
   "legacyAnchor": "surveying-and-mapping-by-1966"
 }

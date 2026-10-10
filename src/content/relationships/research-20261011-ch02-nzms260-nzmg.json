@@ -1,0 +1,20 @@
+{
+  "id": "relationship:chapter-2-nzms260-nzmg",
+  "a": "entity:nzms260",
+  "b": "entity:new-zealand-map-grid",
+  "label": "Used NZMG as its map projection",
+  "basis": "LINZ identifies NZMG as the projection used to produce the NZMS260 series.",
+  "passageIds": [
+    "passage:chapter-2-2ab91fbc4f"
+  ],
+  "sources": [
+    {
+      "label": "LINZ, New Zealand Map Grid",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+    },
+    {
+      "label": "Te Ara, Mapping and surveying, 1950–1980",
+      "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/page-4"
+    }
+  ]
+}

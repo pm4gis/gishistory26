@@ -1,0 +1,45 @@
+{
+  "id": "entity:new-zealand-geodetic-datum-1949",
+  "slug": "new-zealand-geodetic-datum-1949",
+  "name": "New Zealand Geodetic Datum 1949 (NZGD49)",
+  "kind": "Geodetic datum",
+  "category": "Geodetic systems",
+  "url": "/entities/new-zealand-geodetic-datum-1949/",
+  "website": null,
+  "story": [
+    "NZGD49 was a static horizontal datum established from astronomical observations and triangulation. LINZ records that triangulation was completed in 1942 and the astronomical observations in 1949; the initial adjustment included 284 first-order stations. The coordinates were then held fixed.",
+    "NZGD49 is a datum, not a map projection. Historic coordinates may retain network distortions, so moving them into a modern reference system requires an appropriate transformation rather than a label change."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, New Zealand Geodetic Datum 1949",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-1949-nzgd1949"
+    },
+    {
+      "label": "LINZ, “A Proposal for a Dynamic National Geodetic Datum for New Zealand”",
+      "url": "https://www.linz.govt.nz/sites/default/files/cust/dynamic-national-geodeticdatum.pdf"
+    }
+  ],
+  "aliases": [
+    "NZGD49",
+    "NZGD1949",
+    "New Zealand Geodetic Datum 1949"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "LINZ, “A Proposal for a Dynamic National Geodetic Datum for New Zealand”",
+        "url": "https://www.linz.govt.nz/sites/default/files/cust/dynamic-national-geodeticdatum.pdf"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, New Zealand Geodetic Datum 1949",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-1949-nzgd1949"
+      }
+    ]
+  ]
+}

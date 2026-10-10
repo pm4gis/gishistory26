@@ -1,0 +1,33 @@
+{
+  "id": "entity:vogel-computer-centre",
+  "slug": "vogel-computer-centre",
+  "name": "Vogel Computer Centre",
+  "kind": "Computing centre",
+  "category": "Public-sector computing",
+  "url": "/entities/vogel-computer-centre/",
+  "website": null,
+  "story": [
+    "The Vogel Computer Centre grew from the Ministry of Works’ specialist computing section, established in 1966. By 1980 it provided engineering and scientific computing for public-sector work, including calculations where engineers needed to compare many route and terrain alternatives."
+  ],
+  "sources": [
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    }
+  ],
+  "aliases": [
+    "Vogel Computer Centre",
+    "Vogel Computer"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      }
+    ]
+  ]
+}

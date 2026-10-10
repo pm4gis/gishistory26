@@ -1,0 +1,16 @@
+{
+  "id": "relationship:chapter-2-nzgd49-nzgd2000",
+  "a": "entity:new-zealand-geodetic-datum-1949",
+  "b": "entity:new-zealand-geodetic-datum-2000",
+  "label": "Replaced by in 1998",
+  "basis": "LINZ records that NZGD2000 was implemented in 1998 and replaced NZGD49.",
+  "passageIds": [
+    "passage:chapter-2-2ab91fbc4f"
+  ],
+  "sources": [
+    {
+      "label": "LINZ, New Zealand Geodetic Datum 2000",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000"
+    }
+  ]
+}
