@@ -1,4 +1,21 @@
 ---
-import Layout from '../../layouts/Layout.astro';import {dataset} from '../../lib/data';const d=await dataset();
+import Layout from '../../layouts/Layout.astro';
+import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
+import {decorFor} from '../../lib/decor';
+import {dataset} from '../../lib/data';
+const d=await dataset();
 ---
-<Layout title="Themes · NZ GIS History"><div class="wrap"><p class="eyebrow">Reading collections</p><h1>Explore a theme.</h1><div class="cards">{d.themes.map((t:any)=><article class="card"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></article>)}</div></div></Layout>
+<Layout title="Themes · NZ GIS History">
+ <div class="wrap">
+  <div class="visual-page-heading">
+    <div><p class="eyebrow">Reading collections</p><h1>Explore a theme.</h1><p class="intro">Follow a subject through the people, organisations, technology and accounts of New Zealand's GIS history.</p></div>
+    <DecorativeLandscape id="north2024-karikari2" variant="banner" priority/>
+  </div>
+  <div class="cards cards--visual">{d.themes.map((t:any,i:number)=>
+    <article class="card art-card">
+      <DecorativeLandscape id={decorFor(i+2)} variant="card"/>
+      <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></div>
+    </article>)}
+  </div>
+ </div>
+</Layout>
