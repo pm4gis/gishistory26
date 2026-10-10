@@ -1,0 +1,28 @@
+{
+  "id": "event:2020-lcdb5",
+  "dateDisplay": "February 2020",
+  "startDate": "2020-02",
+  "datePrecision": "month",
+  "year": 2020,
+  "label": "Land Cover Database version 5 released",
+  "summary": "Manaaki Whenua released the fifth LCDB edition, using land cover observed in late 2018.",
+  "recordIds": [
+    "dataset:lcdb",
+    "entity:manaaki-whenua-landcare-research",
+    "entity:ministry-for-the-environment",
+    "entity:ministry-for-primary-industries",
+    "entity:department-of-conservation"
+  ],
+  "passageIds": [],
+  "themeIds": [],
+  "categories": [
+    "Environment",
+    "Datasets"
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, How is New Zealand's landscape changing? (4 February 2020)",
+      "url": "https://www.landcareresearch.co.nz/news/how-is-new-zealands-landscape-changing"
+    }
+  ]
+}
