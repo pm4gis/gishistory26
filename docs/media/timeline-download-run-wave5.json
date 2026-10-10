@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-10T09:50:36.677Z",
+  "success": 4,
+  "failed": 0,
+  "held": 0,
+  "items": [
+    {
+      "slug": "canterbury-seismic-hazard-2010",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Seismic_hazard_map_around_epicentre_of_2010_Canterbury_earthquake.jpg",
+      "sourceOriginalUrl": "File:Seismic hazard map around epicentre of 2010 Canterbury earthquake.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/canterbury-seismic-hazard-2010.jpg",
+      "web": "/assets/historical/web/canterbury-seismic-hazard-2010.webp",
+      "thumb": "/assets/historical/card/canterbury-seismic-hazard-2010.webp",
+      "sha256": "38f0b63f5b16edf07ab4f4d006c703c2abce9d3e1511e81dd0d92161074e9d2f",
+      "originalBytes": 73566,
+      "dimensions": [
+        494,
+        592
+      ],
+      "licenceVerified": "Public domain",
+      "finalSourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Seismic_hazard_map_around_epicentre_of_2010_Canterbury_earthquake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "slug": "greendale-fault-rupture-2010",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Greendale_Fault_(44).jpeg",
+      "sourceOriginalUrl": "File:Greendale Fault (44).jpeg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/greendale-fault-rupture-2010.jpg",
+      "web": "/assets/historical/web/greendale-fault-rupture-2010.webp",
+      "thumb": "/assets/historical/card/greendale-fault-rupture-2010.webp",
+      "sha256": "2a1f304fa73baec097bb074cf9d55ef7068c4e348ccce28d36c6baca374e5ea4",
+      "originalBytes": 3985800,
+      "dimensions": [
+        3648,
+        2736
+      ],
+      "licenceVerified": "CC BY 2.0",
+      "finalSourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Greendale_Fault_%2844%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "slug": "christchurch-response-orthophoto-2011",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cashmere_High_School_aerial_photo,_24_Feb_2011.jpg",
+      "sourceOriginalUrl": "File:Cashmere High School aerial photo, 24 Feb 2011.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/christchurch-response-orthophoto-2011.jpg",
+      "web": "/assets/historical/web/christchurch-response-orthophoto-2011.webp",
+      "thumb": "/assets/historical/card/christchurch-response-orthophoto-2011.webp",
+      "sha256": "9656f8777bbf96179d9d5930339aec455cf6c37c936407a7f8d05ba3f0767d9c",
+      "originalBytes": 2436552,
+      "dimensions": [
+        2561,
+        2301
+      ],
+      "licenceVerified": "CC BY 3.0 nz",
+      "finalSourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Cashmere_High_School_aerial_photo%2C_24_Feb_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "slug": "nasa-world-wind-napier-2006",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Napier06.jpg",
+      "sourceOriginalUrl": "File:Napier06.jpg",
+      "status": "downloaded",
+      "original": "/assets/historical/original/nasa-world-wind-napier-2006.jpg",
+      "web": "/assets/historical/web/nasa-world-wind-napier-2006.webp",
+      "thumb": "/assets/historical/card/nasa-world-wind-napier-2006.webp",
+      "sha256": "d07423719dba498ca99523a82531ff5045293abe74b6a8a51c87f708d551c8f8",
+      "originalBytes": 153056,
+      "dimensions": [
+        1280,
+        948
+      ],
+      "licenceVerified": "Public domain",
+      "finalSourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Napier06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    }
+  ]
+}

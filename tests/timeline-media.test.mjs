@@ -9,12 +9,16 @@ test('curated event illustrations refer to local, attributed image records',()=>
   const eventIds=new Set(readdirSync('src/content/events').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync(join('src/content/events',n),'utf8')).id));
   for(const [eventId,ref] of Object.entries(timelineMedia)){
     assert.ok(eventIds.has(eventId),eventId+' event is missing');
-    const recordPath=join('src/content/images',ref.slug+'.json');
-    assert.ok(existsSync(recordPath),ref.slug+' image record is missing');
-    const img=JSON.parse(readFileSync(recordPath,'utf8'));
-    assert.ok(existsSync(join('public',img.thumbnailPath||img.assetPath)),ref.slug+' card asset missing');
-    assert.ok(existsSync(join('public',img.assetPath)),ref.slug+' display asset missing');
-    assert.ok(img.sourceUrl&&img.credit&&img.licenceUrl,ref.slug+' image source incomplete');
+    if(ref.slug){
+      const recordPath=join('src/content/images',ref.slug+'.json');
+      assert.ok(existsSync(recordPath),ref.slug+' image record is missing');
+      const img=JSON.parse(readFileSync(recordPath,'utf8'));
+      assert.ok(existsSync(join('public',img.thumbnailPath||img.assetPath)),ref.slug+' card asset missing');
+      assert.ok(existsSync(join('public',img.assetPath)),ref.slug+' display asset missing');
+      assert.ok(img.sourceUrl&&img.credit&&img.licenceUrl,ref.slug+' image source incomplete');
+    }else{
+      assert.ok((ref.additionalSlugs||[]).length,eventId+' needs at least one image');
+    }
     assert.ok(ref.relation&&ref.relation.length>30,eventId+' needs an accurate contextual caption');
     for(const slug of ref.additionalSlugs||[]){
       const secondary=join('src/content/images',slug+'.json');
@@ -38,4 +42,11 @@ test('event presentation includes existing source narrative and archival image d
   assert.equal(out.relatedRecords[0].name,'Lands and Survey');
   assert.equal(out.contextualSources[0].label,'Published source');
   assert.ok(out.imageSourceLink.includes('natlib.govt.nz'));
+});
+
+test('timeline archives retain separate 1939 first and 1943 revised NZMS1 editions',()=>{
+ const e=timelineMedia['1939-first-nzms1'];
+ assert.match(e.sourceLink,/natlib.govt.nz/);
+ assert.ok(e.moreSources.some(s=>s.url.includes('/records/23363272')&&s.label.includes('1943')));
+ assert.match(e.relation,/not the original NZMS 1 N134/);
 });
