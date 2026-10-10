@@ -15,8 +15,9 @@
  function image(b:any){return images.find(i=>i.id===b.imageId)}
  function save(p:any=current){try{localStorage.setItem('nzgis-progress',JSON.stringify({articleId:article.id,passageId:p.id,url:article.url+(complete?'':'?mode=page')+'#'+p.slug,mode:complete?'chapter':'page'}))}catch{}}
  async function go(i:number,update=true){if(i<0||i>=passages.length)return;page=i;complete=false;selected=null;relatedAll=false;if(update)history.pushState(null,'',article.url+'?mode=page#'+passages[i].slug);save(passages[i]);await tick();requestAnimationFrame(()=>{document.querySelector<HTMLElement>('.page h2')?.focus();document.querySelector('.page')?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})})}
- function chapter(){complete=true;history.pushState(null,'',article.url+'#'+current.slug);save();requestAnimationFrame(()=>document.getElementById(current.slug)?.scrollIntoView())}
- function fromURL(){const id=decodeURIComponent(location.hash.slice(1));const i=passages.findIndex(p=>p.slug===id||p.legacyAnchor===id||p.id===id||p.blocks?.some((b:any)=>b.id===id));if(i>=0)page=i;complete=new URLSearchParams(location.search).get('mode')!=='page'}
+ async function chapter(){complete=true;history.pushState(null,'',article.url+'#'+current.slug);save();await tick();document.getElementById(current.slug)?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})}
+ function fromURL(){let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{}const i=passages.findIndex(p=>p.slug===id||p.legacyAnchor===id||p.id===id||p.blocks?.some((b:any)=>b.id===id));if(i>=0)page=i;complete=new URLSearchParams(location.search).get('mode')!=='page'}
+ function restoreDeepLink(){if(!location.hash)return;let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{return}tick().then(()=>requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({block:'start',behavior:'auto'})))}
  function selectEvent(e:any){const i=passages.findIndex(p=>e.passageIds?.includes(p.id));if(i>=0)go(i)}
  function cancelPreview(){if(previewTimer)clearTimeout(previewTimer)}
  function hover(r:any,trigger:HTMLElement){cancelPreview();previewTimer=setTimeout(()=>{previewTrigger=trigger;selected=r},300)}
@@ -32,8 +33,8 @@
   if(!names.length)return [{text}];const escape=(n:string)=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const re=new RegExp(names.map(escape).join('|'),'g');const out:any[]=[];let pos=0;
   for(const m of text.matchAll(re)){const i=m.index!;const end=i+m[0].length;if(i>0&&/[\p{L}\p{N}]/u.test(text[i-1])||end<text.length&&/[\p{L}\p{N}]/u.test(text[end]))continue;if(i>pos)out.push({text:text.slice(pos,i)});out.push({text:m[0],record:map.get(m[0])![0]});pos=end}if(pos<text.length)out.push({text:text.slice(pos)});return out;
  }
- onMount(()=>{motion=!matchMedia('(prefers-reduced-motion: reduce)').matches;fromURL();try{size=Number(localStorage.getItem('nzgis-text-size'))||19}catch{}
-  const pop=()=>fromURL();window.addEventListener('popstate',pop);const hash=()=>fromURL();window.addEventListener('hashchange',hash);
+ onMount(()=>{motion=!matchMedia('(prefers-reduced-motion: reduce)').matches;fromURL();restoreDeepLink();try{size=Number(localStorage.getItem('nzgis-text-size'))||19}catch{}
+  const pop=()=>{fromURL();restoreDeepLink()};window.addEventListener('popstate',pop);const hash=()=>{fromURL();restoreDeepLink()};window.addEventListener('hashchange',hash);
   const sections=document.querySelectorAll('[data-passage]');const observer=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting&&complete){const i=passages.findIndex(p=>p.slug===e.target.id);if(i>=0){page=i;save(passages[i])}}},{rootMargin:'-10% 0px -65% 0px'});sections.forEach(e=>observer.observe(e));
   return()=>{observer.disconnect();window.removeEventListener('popstate',pop);window.removeEventListener('hashchange',hash)};
  });
