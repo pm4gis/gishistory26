@@ -15,37 +15,35 @@ try{
  for(const view of [{width:1440,height:900,name:'desktop'},{width:390,height:844,name:'mobile'}]){
   const page=await browser.newPage({viewport:{width:view.width,height:view.height},reducedMotion:'reduce'});
   const selector='section#'+target;
-  await check(view.name+' full chapter contribution',async()=>{
+  await check(view.name+' full chapter opens a direct email draft',async()=>{
    await page.goto(base+'/stories/coordinates-enter-the-computer/#'+target,{waitUntil:'domcontentloaded'});
    const button=page.locator(selector+' .passage-contribute');
    await button.waitFor({timeout:25000});
-   assert.equal(await button.getAttribute('target'),null);
-   const path=new URL(await button.getAttribute('href'),base);
-   assert.equal(path.pathname,'/contribute/');
-   assert.ok(path.searchParams.get('chapter'));
-   assert.equal(path.searchParams.get('passage'),'Transforming one coordinate world into another');
-   assert.equal(path.searchParams.get('ref'),link);
-   await button.click();
-   await page.waitForURL('**/contribute/?*');
+   const draft=new URL(await button.getAttribute('href'));
+   assert.equal(draft.protocol,'mailto:');
+   assert.equal(decodeURIComponent(draft.pathname),'pm4gis@gmail.com');
+   assert.ok(draft.searchParams.get('subject').includes('Transforming one coordinate world into another'));
+   for(const phrase of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs','attach any photos'])assert.ok(draft.searchParams.get('body').includes(phrase),phrase);
+   const help=page.locator(selector+' .contribution-help');
+   const fallback=new URL(await help.getAttribute('href'),base);
+   assert.equal(fallback.pathname,'/contribute/');
+   assert.equal(fallback.searchParams.get('ref'),link);
+   await page.goto(fallback.href,{waitUntil:'domcontentloaded'});
+   assert.equal(await page.locator('form').count(),0);
    assert.equal(await page.locator('#contribution-reference').getAttribute('href'),link);
-   const message=await page.locator('#contribution-message').inputValue();
-   for(const field of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs'])assert.ok(message.includes(field),field);
-   await noHorizontalOverflow(page,view.name+' contribution form');
+   const message=await page.locator('#contribution-message').innerText();
+   for(const phrase of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs'])assert.ok(message.includes(phrase),phrase);
+   await noHorizontalOverflow(page,view.name+' contribution options');
   });
-  await check(view.name+' page-by-page contribution',async()=>{
+  await check(view.name+' page-by-page contribution preserves passage in direct email',async()=>{
    await page.goto(base+'/stories/coordinates-enter-the-computer/?mode=page#'+target,{waitUntil:'domcontentloaded'});
    const button=page.locator(selector+' .passage-contribute');
    await button.waitFor({timeout:25000});
-   const path=new URL(await button.getAttribute('href'),base);
-   assert.equal(path.pathname,'/contribute/');
-   assert.equal(path.searchParams.get('ref'),link);
-   await button.click();
-   await page.waitForURL('**/contribute/?*');
-   await page.locator('#contribution-people').fill('GIS team in 1997');
-   const body=(new URL(await page.locator('#contribution-mailto').getAttribute('href'))).searchParams.get('body');
-   assert.ok(body.includes(link));
-   assert.ok(body.includes('GIS team in 1997'));
-   await noHorizontalOverflow(page,view.name+' page-mode contribution');
+   const mail=new URL(await button.getAttribute('href'));
+   assert.equal(mail.protocol,'mailto:');
+   assert.equal(decodeURIComponent(mail.pathname),'pm4gis@gmail.com');
+   assert.ok(mail.searchParams.get('body').includes(link));
+   await noHorizontalOverflow(page,view.name+' page mode');
   });
   await check(view.name+' inline video and wider reader',async()=>{
    await page.goto(base+'/stories/the-map-becomes-an-application/',{waitUntil:'domcontentloaded'});
