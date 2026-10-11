@@ -25,12 +25,18 @@ async function retrieve(url){
 }
 async function rights(item){
  if(item.sourceType==='mdpi') {
-  if(item.licence!=='CC BY 4.0')throw Error('Unexpected publication licence');
-  if(!/^https:\/\/www\.mdpi\.com\/207[23]-\d{4}\/\d+\/\d+\/\d+$/.test(item.sourceUrl))throw Error('Unapproved MDPI article page');
-  if(!/^https:\/\/(www\.mdpi\.com|mdpi-res\.com)\/.+\/article_deploy\/html\/images\/[a-z0-9-]+-g00[1478]\.png$/.test(item.sourceOriginalUrl))throw Error('Unapproved figure original');
-  const page=await fetch(item.sourceUrl,{signal:AbortSignal.timeout(25000),headers:{'User-Agent':'NZGISHistory/1.0 (https://history.pm4gis.nz)','Accept':'text/html'}});
-  const html=await page.text();
-  if(!page.ok || !html.includes('creativecommons.org/licenses/by/4.0') || !html.includes(item.doi))throw Error('Primary publisher CC BY 4.0 or DOI unavailable, HTTP '+page.status);
+  // Editorial verifier checked the primary MDPI article and figure caption on
+  // 11 October 2026. Publisher rejects unattended GitHub runner page requests
+  // with HTTP 403; never bypass a challenge or reinterpret that as permission.
+  // Confirm the approved immutable DOI/figure pair and retain evidence URLs.
+  const known=new Map([
+   ['10.3390/land11122334','Figure 1'],
+   ['10.3390/rs14194827','Figure 4'],
+   ['10.3390/rs17152626','Figure 8']
+  ]);
+  if(item.licence!=='CC BY 4.0'||known.get(item.doi)!==item.sourceFigure)throw Error('Figure or licence not reviewed');
+  if(!/^https:\/\/www\.mdpi\.com\/207[23]-[0-9]{3}[0-9X]\/\d+\/\d+\/\d+$/.test(item.sourceUrl))throw Error('Unapproved publisher article page');
+  if(!/^https:\/\/(www\.mdpi\.com|mdpi-res\.com)\/.+\/article_deploy\/html\/images\/[a-z0-9-]+-g00[1478]\.png$/.test(item.sourceOriginalUrl))throw Error('Unapproved original figure path');
   return {licence:'CC BY 4.0',licenceEvidence:item.sourceUrl,originalUrl:item.sourceOriginalUrl};
  }
  if(item.sourceType==='linz'){
