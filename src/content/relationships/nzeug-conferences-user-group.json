@@ -1,0 +1,21 @@
+{
+  "id": "relationship:nzeug-conferences-user-group",
+  "a": "entity:new-zealand-esri-users-group",
+  "b": "entity:nzeug-conference-programme",
+  "label": "organised user meetings and conferences",
+  "basis": "NZEUG was the independent practitioner group whose annual and regional meetings formed the conference programme.",
+  "passageIds": [
+    "passage:chapter-12-nzeug-apuc-2012",
+    "passage:chapter-29-nzeug-community-programmes"
+  ],
+  "sources": [
+    {
+      "label": "Esri, ArcNews, 2012 APUC in Auckland",
+      "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+    },
+    {
+      "label": "Eagle Technology, NZEUC 2018 conference programme",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    }
+  ]
+}

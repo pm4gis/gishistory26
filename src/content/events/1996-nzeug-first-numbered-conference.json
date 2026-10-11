@@ -1,0 +1,32 @@
+{
+  "id": "1996-nzeug-first-numbered-conference",
+  "dateDisplay": "1996",
+  "startDate": "1996",
+  "datePrecision": "year",
+  "year": 1996,
+  "label": "NZEUG numbered conference series begins in New Plymouth",
+  "summary": "The group's recorded annual conference sequence starts with the New Plymouth meeting in 1996, followed by successive conferences in New Zealand centres. The record does not conflate this with its 1992 organisational founding.",
+  "url": "/stories/an-industry-and-community-form/#recurring-conferences-5a9922acb6",
+  "passageIds": [
+    "passage:chapter-12-5a9922acb6"
+  ],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "entity:nzeug-conference-programme",
+    "chapter:12"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "community",
+    "conference"
+  ],
+  "sources": [
+    {
+      "label": "NZ GIS History, Chapter 12: conference chronology from 1996",
+      "url": "/stories/an-industry-and-community-form/#recurring-conferences-5a9922acb6"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "2018-nzeug-agm-conference",
+  "dateDisplay": "2018-08-21",
+  "startDate": "2018-08-21",
+  "datePrecision": "day",
+  "year": 2018,
+  "label": "NZEUG AGM held during the 2018 New Zealand Esri User Conference",
+  "summary": "The published programme places the user-group AGM in an afternoon community session facilitated by Roland Pomana. Concurrent programme tracks include conservation, local-government services, central-government GIS, land information, enterprise systems and GIS data. Eagle's 2019 sponsorship prospectus retrospectively reported more than 550 delegates at the 2018 conference.",
+  "url": "/stories/becoming-a-gis-professional/#nzeug-community-programmes-2018-2025",
+  "passageIds": [
+    "passage:chapter-29-nzeug-community-programmes"
+  ],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "entity:nzeug-conference-programme",
+    "person:roland-pomana",
+    "person:anna-eilers",
+    "person:matthew-grose",
+    "chapter:29"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "conference",
+    "community"
+  ],
+  "sources": [
+    {
+      "label": "Eagle Technology, NZEUC 2018 final programme",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    },
+    {
+      "label": "Eagle Technology, NZEUC 2019 sponsorship prospectus reporting 2018 attendance",
+      "url": "https://www.eagle.co.nz/sites/default/files/Esri%20UC%202019-Sponsor.pdf"
+    }
+  ]
+}

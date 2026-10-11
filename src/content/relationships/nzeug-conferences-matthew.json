@@ -1,0 +1,16 @@
+{
+  "id": "relationship:nzeug-conferences-matthew",
+  "a": "entity:nzeug-conference-programme",
+  "b": "person:matthew-grose",
+  "label": "presented DOC GIS work",
+  "basis": "The 2018 NZEUC agenda lists Matthew Grose presenting DOC sees the need for speed.",
+  "passageIds": [
+    "passage:chapter-29-nzeug-community-programmes"
+  ],
+  "sources": [
+    {
+      "label": "Eagle Technology, NZEUC 2018 conference programme",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:nzeug-conferences-tonkin",
+  "a": "entity:nzeug-conference-programme",
+  "b": "entity:tonkin-taylor",
+  "label": "presented award-winning work",
+  "basis": "Tonkin & Taylor's team won the Eagle Technology Excellence in GIS Award in Auckland in 2012 for the Canterbury Earthquake Residential Land Damage application.",
+  "passageIds": [
+    "passage:chapter-12-nzeug-apuc-2012"
+  ],
+  "sources": [
+    {
+      "label": "Esri, ArcNews, 2012 APUC in Auckland",
+      "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+    }
+  ]
+}

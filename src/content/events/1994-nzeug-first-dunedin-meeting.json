@@ -1,0 +1,32 @@
+{
+  "id": "1994-nzeug-first-dunedin-meeting",
+  "dateDisplay": "1994",
+  "startDate": "1994",
+  "datePrecision": "year",
+  "year": 1994,
+  "label": "NZEUG participant recalls early Dunedin meeting",
+  "summary": "Rachel Summers, an early GIS educator, recalled attending what she described as the first NZEUG meeting in Dunedin in 1994. The group's own account dates its formation to 1992; the distinction remains open.",
+  "url": "/stories/an-industry-and-community-form/#users-organise-themselves-db33362cb9",
+  "passageIds": [
+    "passage:chapter-12-db33362cb9"
+  ],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "person:rachel-summers",
+    "chapter:12"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "conference",
+    "community"
+  ],
+  "sources": [
+    {
+      "label": "NZEUG committee profile of Rachel Summers, 2026, recalling first Dunedin meeting in 1994",
+      "url": "https://nz.linkedin.com/company/new-zealand-esri-users-group"
+    }
+  ]
+}

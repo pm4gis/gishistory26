@@ -1,0 +1,75 @@
+{
+  "id": "passage:chapter-12-nzeug-apuc-2012",
+  "slug": "nzeug-auckland-apuc-2012",
+  "articleId": "article:chapter-12",
+  "title": "The Asia-Pacific conference comes to Auckland",
+  "order": 9,
+  "updatedAt": "2026-10-11",
+  "themeIds": [
+    "profession"
+  ],
+  "recordIds": [
+    "chapter:12",
+    "entity:new-zealand-esri-users-group",
+    "entity:nzeug-conference-programme",
+    "entity:eagle-technology",
+    "entity:esri",
+    "entity:tonkin-taylor",
+    "person:kate-burns",
+    "person:james-lyth",
+    "person:kate-williams",
+    "person:afaf-abbas",
+    "person:manas-chakraborty",
+    "person:ryan-clements",
+    "person:norm-thornley"
+  ],
+  "blocks": [
+    {
+      "id": "nzeug-1-2",
+      "type": "paragraph",
+      "text": "On 5–7 November 2012, Auckland hosted the Esri Asia Pacific User Conference for the first time. Eagle Technology organised the meeting at SKYCITY, incorporating the New Zealand Esri Users Group's sixteenth annual conference. Esri's subsequent account reported 530 attendees from 20 countries and more than 220 organisations. The group was a distinct, independent practitioner body within the event, rather than an Eagle business unit. Before the event, Esri separately described the group as representing more than 300 member organisations. Those two organisation figures describe different populations and should not be added together.",
+      "sources": [
+        {
+          "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe, Winter 2013",
+          "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+        },
+        {
+          "label": "Esri, ArcNews, Abu Dhabi and Auckland to Host Upcoming Regional User Conferences, Fall 2012",
+          "url": "https://www.esri.com/news/arcnews/fall12articles/files/arcnews34-3/arcnews-fall12.pdf"
+        }
+      ]
+    },
+    {
+      "id": "nzeug-2-1",
+      "type": "paragraph",
+      "text": "The awards reveal more than a ceremonial side of the gathering. Kate Burns, James Lyth and Kate Williams from Tonkin & Taylor received the Eagle Technology Excellence in GIS Award for the Canterbury Earthquake Residential Land Damage application. The choice put one of the country's most pressing land-information problems in front of the regional GIS community. The conference also recognised Afaf Abbas of Opus International Consultants for the Auckland-Manukau Eastern Transport Initiative, and Manas Chakraborty of Horizons Regional Council for an integrated dataset describing significant freshwater values across ecological, social and economic dimensions. These were honourable mentions, distinct from the main award.",
+      "sources": [
+        {
+          "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe, Winter 2013",
+          "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+        }
+      ]
+    },
+    {
+      "id": "nzeug-3-1",
+      "type": "paragraph",
+      "text": "Ryan Clements of Queenstown Lakes District Council won the WebMap Award. Norm Thornley, then a Department of Conservation geospatial services manager, was quoted by Esri commenting on the mix of technical presentations and practical use, including the prospects for community-based conservation. The recorded projects extend across earthquake recovery, transport planning, freshwater management, local-government web mapping and conservation. They show what users considered worth demonstrating to one another in 2012, when ArcGIS Online, web services and cross-organisational spatial data were becoming increasingly visible.",
+      "sources": [
+        {
+          "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe, Winter 2013",
+          "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe, Winter 2013",
+      "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+    },
+    {
+      "label": "Esri, ArcNews, Abu Dhabi and Auckland to Host Upcoming Regional User Conferences, Fall 2012",
+      "url": "https://www.esri.com/news/arcnews/fall12articles/files/arcnews34-3/arcnews-fall12.pdf"
+    }
+  ]
+}

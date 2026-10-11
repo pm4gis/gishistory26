@@ -1,0 +1,31 @@
+{
+  "id": "1992-nzeug-formation",
+  "dateDisplay": "1992",
+  "startDate": "1992",
+  "datePrecision": "year",
+  "year": 1992,
+  "label": "New Zealand Esri Users Group formed",
+  "summary": "The independent New Zealand Esri Users Group dates its foundation to 1992. Later members describe a 1994 Dunedin meeting and the start of the annual conference sequence in 1996; these are different stages in the group's development.",
+  "url": "/stories/an-industry-and-community-form/#users-organise-themselves-db33362cb9",
+  "passageIds": [
+    "passage:chapter-12-db33362cb9"
+  ],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "chapter:12"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "community",
+    "organisation"
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Esri Users Group, public organisation profile (established 1992)",
+      "url": "https://nz.linkedin.com/company/new-zealand-esri-users-group"
+    }
+  ]
+}

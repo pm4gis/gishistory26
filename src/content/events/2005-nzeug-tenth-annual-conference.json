@@ -1,0 +1,32 @@
+{
+  "id": "2005-nzeug-tenth-annual-conference",
+  "dateDisplay": "2005",
+  "startDate": "2005",
+  "datePrecision": "year",
+  "year": 2005,
+  "label": "Tenth New Zealand Esri user conference",
+  "summary": "Contemporary conference accounts describe the 2005 New Zealand Esri user gathering as the tenth annual meeting in a conference series beginning in 1996.",
+  "url": "/stories/becoming-a-gis-professional/#user-groups-become-infrastructure-18b0a31a28",
+  "passageIds": [
+    "passage:chapter-29-18b0a31a28"
+  ],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "entity:nzeug-conference-programme",
+    "chapter:29"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "conference",
+    "community"
+  ],
+  "sources": [
+    {
+      "label": "Chapter 29, user groups become infrastructure; annual conference chronology",
+      "url": "/stories/becoming-a-gis-professional/#user-groups-become-infrastructure-18b0a31a28"
+    }
+  ]
+}

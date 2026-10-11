@@ -1,0 +1,16 @@
+{
+  "id": "relationship:nzeug-conferences-rachel",
+  "a": "entity:nzeug-conference-programme",
+  "b": "person:rachel-summers",
+  "label": "participated in early user meetings",
+  "basis": "Rachel Summers recalled attending a 1994 Dunedin NZEUG meeting and subsequent committee involvement; this is participant recollection, distinct from formal foundation.",
+  "passageIds": [
+    "passage:chapter-12-db33362cb9"
+  ],
+  "sources": [
+    {
+      "label": "NZEUG, committee profile of Rachel Summers",
+      "url": "https://nz.linkedin.com/company/new-zealand-esri-users-group"
+    }
+  ]
+}

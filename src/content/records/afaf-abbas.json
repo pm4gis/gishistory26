@@ -1,0 +1,31 @@
+{
+  "id": "person:afaf-abbas",
+  "slug": "afaf-abbas",
+  "name": "Afaf Abbas",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/afaf-abbas/",
+  "story": [
+    "Afaf Abbas of Opus International Consultants received an honourable mention at the 2012 Esri Asia Pacific User Conference in Auckland for the Auckland-Manukau Eastern Transport Initiative application."
+  ],
+  "sources": [
+    {
+      "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe (Winter 2013)",
+      "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "profession"
+  ],
+  "status": "Conference evidence available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe (Winter 2013)",
+        "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+      }
+    ]
+  ]
+}
