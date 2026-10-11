@@ -17,8 +17,8 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "A point cloud can look like a three-dimensional model when viewed on screen. Rotate it and a building, cliff or riverbank appears. Zoom closer and individual observations become visible. Yet the cloud may contain little explicit understanding of what each group of points represents. Turning dense measurements into useful spatial information requires classification, filtering, surfaces, object extraction or links to other datasets. ",
-      "markdown": "A point cloud can look like a three-dimensional model when viewed on screen. Rotate it and a building, cliff or riverbank appears. Zoom closer and individual observations become visible. Yet the cloud may contain little explicit understanding of what each group of points represents. Turning dense measurements into useful spatial information requires classification, filtering, surfaces, object extraction or links to other datasets. ",
+      "text": "A point cloud can look like a three-dimensional model when viewed on screen. Rotate it and a building, cliff or riverbank appears. Zoom closer and individual observations become visible. Yet the cloud may contain little explicit understanding of what each group of points represents. Turning dense measurements into useful spatial information requires classification, filtering, surfaces, object extraction or links to other datasets.",
+      "markdown": "A point cloud can look like a three-dimensional model when viewed on screen. Rotate it and a building, cliff or riverbank appears. Zoom closer and individual observations become visible. Yet the cloud may contain little explicit understanding of what each group of points represents. Turning dense measurements into useful spatial information requires classification, filtering, surfaces, object extraction or links to other datasets.",
       "sources": [],
       "id": "ch39-s04-p01"
     },

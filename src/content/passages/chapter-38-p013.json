@@ -35,8 +35,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Computing also mattered. Hundreds or thousands of high-resolution photographs consume storage and processing time, while dense point clouds and textured meshes can become large very quickly. Faster workstations, GPUs and later cloud processing made larger projects easier. ",
-      "markdown": "Computing also mattered. Hundreds or thousands of high-resolution photographs consume storage and processing time, while dense point clouds and textured meshes can become large very quickly. Faster workstations, GPUs and later cloud processing made larger projects easier. ",
+      "text": "Computing also mattered. Hundreds or thousands of high-resolution photographs consume storage and processing time, while dense point clouds and textured meshes can become large very quickly. Faster workstations, GPUs and later cloud processing made larger projects easier.",
+      "markdown": "Computing also mattered. Hundreds or thousands of high-resolution photographs consume storage and processing time, while dense point clouds and textured meshes can become large very quickly. Faster workstations, GPUs and later cloud processing made larger projects easier.",
       "sources": [],
       "id": "ch38-s13-p04"
     },
