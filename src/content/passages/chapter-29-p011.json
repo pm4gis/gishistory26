@@ -60,6 +60,17 @@
       ]
     },
     {
+      "id": "nzeug-2018-attendance-2019-brochure",
+      "type": "paragraph",
+      "text": "An Eagle Technology sponsorship prospectus issued for the 2019 conference reported more than 550 delegates at the 2018 gathering. Its attendee categories included analysts, developers, GIS managers, students, consultants, business analysts and senior executives, with local government, iwi, conservation, transport and utilities among the sectors represented. The figures came from conference publicity, so they describe organiser-reported attendance and categories rather than an independent industry survey.",
+      "sources": [
+        {
+          "label": "Eagle Technology, NZEUC 2019 sponsorship prospectus reporting 2018 attendance",
+          "url": "https://www.eagle.co.nz/sites/default/files/Esri%20UC%202019-Sponsor.pdf"
+        }
+      ]
+    },
+    {
       "id": "nzeug-4-2",
       "type": "paragraph",
       "text": "The regional meetings took presentations closer to people unable to attend a central national conference. NZEUG organisers reported that eight regional events in 2024 involved roughly 650 people from about 400 organisations. In 2025 the group's reports document meetings in Auckland and Christchurch. The Auckland account notes student attendance at AUT and names Eagle Technology alongside commercial supporters; the Christchurch account names committee organisers Kate Newton and Chris Wilson. Such records show a practical mix of presenters, volunteer organisers, local hosts and sponsors, and explain how an independent user community maintained contact outside its annual national gathering.",
@@ -71,17 +82,6 @@
         {
           "label": "NZEUG, Christchurch regional conference report, 2025",
           "url": "https://www.linkedin.com/posts/new-zealand-esri-users-group_nzeug25-christchurch-nzeug25-activity-7315660920276328449-jvS9"
-        }
-      ]
-    },
-    {
-      "id": "nzeug-2018-attendance-2019-brochure",
-      "type": "paragraph",
-      "text": "An Eagle Technology sponsorship prospectus issued for the 2019 conference reported more than 550 delegates at the 2018 gathering. Its attendee categories included analysts, developers, GIS managers, students, consultants, business analysts and senior executives, with local government, iwi, conservation, transport and utilities among the sectors represented. The figures came from conference publicity, so they describe organiser-reported attendance and categories rather than an independent industry survey.",
-      "sources": [
-        {
-          "label": "Eagle Technology, NZEUC 2019 sponsorship prospectus reporting 2018 attendance",
-          "url": "https://www.eagle.co.nz/sites/default/files/Esri%20UC%202019-Sponsor.pdf"
         }
       ]
     }
