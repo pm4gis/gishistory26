@@ -414,3 +414,15 @@
  }
  .narrative .passage-illustration img{height:auto;max-height:370px}
 }
+
+/* Period interface hosted by the source publisher; do not imply local image reuse. */
+.narrative .period-interface-source{
+ margin:1.05em 0 1.35em;
+ padding:.5em 0 .5em 1em;
+ border-left:2px solid var(--line);
+ max-width:100%;
+ clear:both;
+}
+.narrative .period-interface-source p{margin:.25em 0 .6em}
+.narrative .period-interface-source .eyebrow{font-size:.73em;letter-spacing:.07em}
+.narrative .period-interface-source a{overflow-wrap:anywhere;text-underline-offset:3px}
