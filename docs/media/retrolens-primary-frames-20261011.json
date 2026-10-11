@@ -1,0 +1,96 @@
+{
+  "prepared": "2026-10-11",
+  "periodCutoff": "2025-12-31",
+  "method": "Each original Wikimedia-hosted derivative is checked for explicit Retrolens provenance and reuse licence. Do not identify these as original unaltered Crown film negatives.",
+  "sources": [
+    "https://retrolens.co.nz/",
+    "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery",
+    "https://www.arcgis.com/home/item.html?id=c17119a2451c4d36856e1dc2527e076a"
+  ],
+  "items": [
+    {
+      "commonsTitle": "File:1946 aerial image of Verdon College site.jpg",
+      "date": "1946-06-07",
+      "location": "Invercargill, Verdon College area",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:1956 aerial image of Verdon College site.jpg",
+      "date": "1956",
+      "location": "Invercargill, Verdon College area",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:1962 aerial image of Verdon College site.jpg",
+      "date": "1962-02-28",
+      "location": "Invercargill, Verdon College area",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:1974 aerial image of Verdon College site.jpg",
+      "date": "1974-02-17",
+      "location": "Invercargill, Verdon College area",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:1981 aerial image of Verdon College site.jpg",
+      "date": "1981-02-09",
+      "location": "Invercargill, Verdon College area",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:Glentunnel Aerial 1, 1965.jpg",
+      "date": "1965-02-16",
+      "location": "Glentunnel, Selwyn District",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:Glentunnel Aerial 2,1943.jpg",
+      "date": "1943-03-09",
+      "location": "Glentunnel and Coalgate, Selwyn District",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:Rototuna School aerial photo 1952.jpg",
+      "date": "1952-09-26",
+      "location": "Rototuna, Hamilton",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:Te Rapa railway station.jpg",
+      "date": "1961-08-29",
+      "location": "Te Rapa, Hamilton",
+      "articleSlug": "mapping-leaves-the-office",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:Paeroa South on 26 January 1975.jpg",
+      "date": "1975-01-26",
+      "location": "Paeroa",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:Nokomai railway station in 1964.jpg",
+      "date": "1964",
+      "location": "Nokomai, Southland",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    },
+    {
+      "commonsTitle": "File:Bay View railway station in 1948.jpg",
+      "date": "1948-07-06",
+      "location": "Bay View, Hawke's Bay",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "primarySource": "Retrolens / Crown Aerial Film Library, via Wikimedia Commons"
+    }
+  ]
+}
