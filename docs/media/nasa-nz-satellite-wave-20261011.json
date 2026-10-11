@@ -1,0 +1,53 @@
+{
+  "cutoff": "2025-12-31",
+  "items": [
+    {
+      "slug": "nasa-landsat4-tasman-1990",
+      "date": "1990-12-30",
+      "articleSlug": "earth-observation-becomes-routine",
+      "title": "Landsat 4 observation of Tasman Glacier in 1990",
+      "instrument": "Landsat 4 Thematic Mapper",
+      "url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/8000/8434/tasman_l4_1990364_lrg.jpg?w=3000&h=3000&fit=clip&crop=faces%2Cfocalpoint",
+      "source": "https://science.nasa.gov/earth/earth-observatory/retreat-of-the-tasman-glacier-8434/",
+      "credit": "NASA Earth Observatory / Jesse Allen; Landsat 4 data, University of Maryland Global Land Cover Facility",
+      "provider": "NASA",
+      "caption": "Landsat 4's Thematic Mapper recorded the Tasman Glacier and neighbouring valleys on 30 December 1990. This provides a period satellite observation rather than a modern reconstruction."
+    },
+    {
+      "slug": "nasa-aster-tasman-2007",
+      "date": "2007-12-06",
+      "articleSlug": "earth-observation-becomes-routine",
+      "title": "ASTER observation of Tasman Glacier in 2007",
+      "instrument": "Terra ASTER",
+      "url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/8000/8434/tasman_ast_2007340_lrg.jpg?w=3400&h=4000&fit=clip&crop=faces%2Cfocalpoint",
+      "source": "https://science.nasa.gov/earth/earth-observatory/retreat-of-the-tasman-glacier-8434/",
+      "credit": "NASA Earth Observatory / Jesse Allen; NASA/GSFC/METI/ERSDAC/JAROS and the US/Japan ASTER Science Team",
+      "provider": "NASA",
+      "caption": "ASTER image of the Tasman Glacier on 6 December 2007, illustrating glacial retreat and expansion of terminal lakes since the 1990 Landsat observation."
+    },
+    {
+      "slug": "nasa-terra-modis-nz-2002",
+      "date": "2002-10-23",
+      "articleSlug": "earth-observation-becomes-routine",
+      "title": "NASA Terra MODIS cloud-free view of New Zealand, 2002",
+      "instrument": "Terra MODIS",
+      "url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/3000/3101/NewZealand_TMO2002296_lrg.jpg?w=4200&h=5600&fit=clip&crop=faces%2Cfocalpoint",
+      "source": "https://science.nasa.gov/earth/earth-observatory/new-zealand-3101/",
+      "credit": "NASA Earth Observatory, Terra MODIS",
+      "provider": "NASA",
+      "caption": "NASA Terra MODIS true-colour observation of New Zealand, acquired 23 October 2002. Shows the extent and regional coverage of early 2000s orbital environmental observations."
+    },
+    {
+      "slug": "usgs-hundred-millionth-landsat-nz-2017",
+      "date": "2017-05-24",
+      "articleSlug": "earth-observation-becomes-routine",
+      "title": "USGS Landsat archive 100 millionth download, New Zealand, 2017",
+      "instrument": "Landsat 8 OLI",
+      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/LC08_L1TP_073087_20170524_b432_v2-.png",
+      "source": "https://www.usgs.gov/media/images/100-millionth-scene-downloaded-usgs-landsat-archive",
+      "credit": "U.S. Geological Survey, Landsat 8",
+      "provider": "USGS",
+      "caption": "Landsat 8 scene captured over the southwestern North Island on 24 May 2017, used to commemorate the 100 millionth download from the USGS Landsat archive."
+    }
+  ]
+}
