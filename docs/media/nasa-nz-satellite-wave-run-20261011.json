@@ -1,0 +1,35 @@
+{
+  "startedAt": "2026-10-11T06:23:08.856Z",
+  "success": 4,
+  "held": 0,
+  "items": [
+    {
+      "slug": "nasa-landsat4-tasman-1990",
+      "status": "archived",
+      "originalBytes": 1704514,
+      "sha256": "d0fcf5756f756e3dbbb50c5f5ce6964857c5cb3d980f6eca4e66b7bb61f1b96f",
+      "webPath": "/assets/historical/web/nasa-landsat4-tasman-1990.webp"
+    },
+    {
+      "slug": "nasa-aster-tasman-2007",
+      "status": "archived",
+      "originalBytes": 1991329,
+      "sha256": "a88881ac18a1dd984e95ab5c6f7ceb78394352c1f78ad400eae290ce3ffc20c2",
+      "webPath": "/assets/historical/web/nasa-aster-tasman-2007.webp"
+    },
+    {
+      "slug": "nasa-terra-modis-nz-2002",
+      "status": "archived",
+      "originalBytes": 2067376,
+      "sha256": "6f3180dbaa6119ad307794dac477a2095d90480cdccef23178987ce6693f292f",
+      "webPath": "/assets/historical/web/nasa-terra-modis-nz-2002.webp"
+    },
+    {
+      "slug": "usgs-hundred-millionth-landsat-nz-2017",
+      "status": "archived",
+      "originalBytes": 3951064,
+      "sha256": "424aa4193617c733721d7927f1543d1ccb587c3c4218e2ea8bacf5e3f5ffe13c",
+      "webPath": "/assets/historical/web/usgs-hundred-millionth-landsat-nz-2017.webp"
+    }
+  ]
+}
