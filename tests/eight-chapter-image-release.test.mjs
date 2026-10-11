@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {placeChapterImages,chapterArchiveReuses} from '../src/lib/chapter-media.mjs';
+import {placeChapterImages} from '../src/lib/chapter-media.mjs';
 const read=path=>JSON.parse(fs.readFileSync(path,'utf8'));
 const entries=dir=>fs.readdirSync(dir).filter(f=>f.endsWith('.json')).map(f=>read(dir+'/'+f));
 const articles=entries('src/content/articles'), passages=entries('src/content/passages'), images=entries('src/content/images');
@@ -13,24 +13,26 @@ test('eight-chapter programme is limited to verified published historic media',(
     assert.ok(image.assetPath&&image.credit&&image.sourceUrl&&image.licence,'Missing image evidence '+image.slug);
   }
 });
-test('seven contextual reuses appear at real existing paragraphs with explicit caveats',()=>{
-  assert.equal(Object.keys(chapterArchiveReuses).length,7);
-  for(const [slug,links] of Object.entries(chapterArchiveReuses)){
-    const story=articles.find(a=>a.slug===slug);
-    const sections=passages.filter(p=>p.articleId===story.id).sort((a,b)=>a.order-b.order);
-    const layout=placeChapterImages(story,sections,images);
-    for(const link of links){
-      const original=images.find(image=>image.slug===link.slug);
-      assert.ok(original,'No original registered for '+link.slug);
-      const section=sections.find(p=>p.blocks?.some(b=>b.id===link.afterParagraphId));
-      assert.ok(section,'Missing paragraph '+link.afterParagraphId);
-      const published=layout[section.id]?.find(i=>i.slug===link.slug);
-      assert.equal(published?.inlineAfterBlockId,link.afterParagraphId);
-      assert.equal(published?.caption,link.caption);
-      assert.match(link.caption,/not |unverified|not been established|not an image/i);
-      assert.ok(fs.existsSync('public'+original.assetPath));
-    }
-  }
+test('contextual pictures without passage evidence do not interrupt the chapter',()=>{
+ const formerlyReused={
+  'mapping-land-as-data':'nz-geology-lange-2012',
+  'universities-build-a-field':'auckland-university-clocktower-2004',
+  'an-industry-and-community-form':'intergraph-clix-workstation',
+  'becoming-a-gis-professional':'tripp-station-theodolite-surveyors',
+  'enterprise-gis':'linz-wfs-attribute-service-2023',
+  'automating-the-gis-work':'linz-arcmap-property-relationships-2016',
+  'gis-at-the-end-of-2025':'ecoregions-qgis-2025'
+ };
+ for(const [slug,imageSlug] of Object.entries(formerlyReused)){
+   const story=articles.find(a=>a.slug===slug);
+   const sections=passages.filter(p=>p.articleId===story.id).sort((a,b)=>a.order-b.order);
+   const layout=placeChapterImages(story,sections,images);
+   const original=images.find(i=>i.slug===imageSlug);
+   assert.ok(original,'Source file retained in archive: '+imageSlug);
+   assert.ok(fs.existsSync('public'+original.assetPath));
+   assert.ok(!Object.values(layout).flat().some(i=>i.slug===imageSlug),
+     'A broad contextual reuse must not be placed as evidence for '+slug);
+ }
 });
 test('source candidates are held until downloaded, checked and dated by 2025',()=>{
   const queue=read('docs/media/eight-chapter-acquisition-20261011.json');
