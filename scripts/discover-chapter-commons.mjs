@@ -39,6 +39,7 @@ await fs.writeFile(outputPath,JSON.stringify(report,null,2)+'\n');
 const summaryPath=process.argv[4]||outputPath.replace('commons-discovery-','commons-candidates-');
 const imageFiles=(await fs.readdir('src/content/images')).filter(name=>name.endsWith('.json'));
 const existingImages=await Promise.all(imageFiles.map(async name=>JSON.parse(await fs.readFile('src/content/images/'+name,'utf8'))));
+if(!existingImages.length)throw new Error('Current image catalogue could not be loaded for duplicate checks.');
 const normalTitle=value=>clean(value).replace(/^File:/i,'').replaceAll('_',' ').toLowerCase();
 const existingTitles=new Set(existingImages.map(image=>normalTitle(image.sourceFileTitle||'')).filter(Boolean));
 const stop=new Set('new zealand the a an and for of in by after from to on at with into map maps image imagery data gis using from'.split(' '));
