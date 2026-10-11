@@ -1,0 +1,38 @@
+{
+  "id": "image:silverpeak-survey-district-1956",
+  "slug": "silverpeak-survey-district-1956",
+  "title": "Silverpeak survey district map, 1956",
+  "assetPath": "/assets/historical/web/silverpeak-survey-district-1956.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Silverpeak_Survey_District_(1956).jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "New Zealand Railways Corporation, District Engineer’s Office, Dunedin; Archives New Zealand, ref. DABB D101 409/23 (R6619107); via Wikimedia Commons.",
+  "licence": "CC BY 2.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Silverpeak_Survey_District_(1956).jpg",
+  "altText": "1956 NZMS 13 cadastral survey-district map sheet for Silverpeak, Otago, with parcel boundaries and printed labels.",
+  "caption": "NZMS 13 cadastral survey-district sheet 122, Silverpeak, Otago, third edition, 1956.",
+  "themeIds": [
+    "cadastre"
+  ],
+  "articleSlug": "the-cadastre-becomes-data",
+  "chapterNumber": 13,
+  "dateDisplay": "1956",
+  "context": "This printed cadastral survey-district sheet is an example of the paper record maps used before a national digital cadastral database. Its lines and labels served an administrative map purpose; the image should not be read as a modern GIS screen or as proof that every drawn boundary had survey-grade coordinates.",
+  "originalAssetPath": "/assets/historical/original/silverpeak-survey-district-1956.jpg",
+  "thumbnailPath": "/assets/historical/card/silverpeak-survey-district-1956.webp",
+  "originalSha256": "a4751e4adc7059d2ad0a1ca5faf57663d07ed12871ef6d1679c701be8a0ad972",
+  "webSha256": "ea2d137eb3e819b40bb94dde041b5af02c895d09b83ad6614670b7f433481607",
+  "originalWidth": 5782,
+  "originalHeight": 8645,
+  "sourceFileTitle": "File:Map of Silverpeak Survey District (1956).jpg",
+  "headerCandidate": false,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Map_of_Silverpeak_Survey_District_%281956%29.jpg",
+  "relatedRecords": [
+    {
+      "name": "Department of Lands and Survey",
+      "url": "/entities/department-of-lands-and-survey/",
+      "role": "published the cadastral map series"
+    }
+  ],
+  "derivativesNote": "Local JPEG source copy stored unchanged; WebP display width up to 1600 pixels and card width up to 720 pixels, resized without cropping."
+}

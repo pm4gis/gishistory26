@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "id": "image:gisborne-east-coast-luc-map-1967",
+      "slug": "gisborne-east-coast-luc-map-1967",
+      "title": "Gisborne–East Coast land use capability map, 1967",
+      "sourceType": "natlib",
+      "sourceUrl": "https://natlib.govt.nz/records/37100560",
+      "sourceOriginalUrl": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE27807111",
+      "sourceName": "National Library of New Zealand",
+      "licence": "Free to use and redistribute with acknowledgement: Sourced from LINZ. Crown Copyright reserved.",
+      "licenceUrl": "https://natlib.govt.nz/records/37100560",
+      "licenceEvidenceUrl": "https://natlib.govt.nz/records/37100560",
+      "credit": "New Zealand Department of Lands and Survey; source original from LINZ; digitised by the National Library of New Zealand. Acknowledgement: Sourced from LINZ. Crown Copyright reserved.",
+      "altText": "A coloured 1967 land use capability survey map for the Gisborne–East Coast region, with mapped classes and land-resource information.",
+      "caption": "Land use capability survey, Gisborne–East Coast Region, 1967. Sourced from LINZ. Crown Copyright reserved.",
+      "context": "The National Library catalogue describes this first-edition regional survey as a 1967 map at 1:126,720, with sheets for land capability, recommended land use and rock-type erodibility. It is an example of the paper classification and mapping work that preceded digital inventory use.",
+      "articleSlug": "mapping-land-as-data",
+      "chapter": 7,
+      "dateDisplay": "1967",
+      "afterParagraphId": "ch07-s02-p02",
+      "figureId": "ch07-figure-gisborne-east-coast-luc-map-1967",
+      "optional": true,
+      "maxDownloadBytes": 157286400,
+      "maxStoredSourceWidth": 2400,
+      "rightsReviewedAt": "2026-10-10",
+      "manualRightsEvidence": "National Library of New Zealand record 37100560, Use/Reproduction field: This image may be used, copied and re-distributed free of charge in any format or media. Where the image is redistributed to others the following acknowledgement note should be shown: 'Sourced from LINZ. Crown Copyright reserved.'"
+    }
+  ]
+}

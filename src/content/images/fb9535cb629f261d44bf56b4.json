@@ -1,0 +1,32 @@
+{
+  "id": "image:victoria-square-aerial-1975",
+  "slug": "victoria-square-aerial-1975",
+  "title": "Victoria Square aerial image, Christchurch, 1975",
+  "assetPath": "/assets/historical/web/victoria-square-aerial-1975.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AVicSq-Aerial-1975.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Land Information New Zealand, New Zealand Aerial Mapping, New Zealand Aerial Surveys and the Royal New Zealand Air Force; via Wikimedia Commons.",
+  "licence": "CC BY 3.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3AVicSq-Aerial-1975.jpg",
+  "altText": "An aerial image of Victoria Square in Christchurch, circa 1975.",
+  "caption": "Victoria Square, Christchurch, in an aerial image from 1975.",
+  "themeIds": [
+    "imagery"
+  ],
+  "articleSlug": "mapping-from-a-drone",
+  "chapterNumber": 38,
+  "dateDisplay": "1975",
+  "context": "This 1975 aerial image predates the Te Maari eruption and was not part of the 2012 UAV survey described here. It provides an earlier aerial-imaging comparison; it does not depict the Tongariro survey site.",
+  "originalAssetPath": "/assets/historical/original/victoria-square-aerial-1975.jpg",
+  "thumbnailPath": "/assets/historical/card/victoria-square-aerial-1975.webp",
+  "originalSha256": "c1541fc6f450fe8d628b903fd25c2a17c0e014d7be3085874d6e2258f040561c",
+  "webSha256": "45cf9f297b8aff5ef5af161a935989152bbaa6d088a80eacb91a3855fad8512b",
+  "originalWidth": 2001,
+  "originalHeight": 2001,
+  "sourceFileTitle": "File:VicSq-Aerial-1975.jpg",
+  "headerCandidate": false,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/VicSq-Aerial-1975.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+  "relatedRecords": []
+}

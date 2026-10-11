@@ -1,0 +1,39 @@
+{
+  "id": "image:wiri-north-quarry-1982",
+  "slug": "wiri-north-quarry-1982",
+  "title": "Wiri north quarry orthophotograph, 1982",
+  "assetPath": "/assets/historical/web/wiri-north-quarry-1982.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wiri_north_quarry_1982.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Land Information New Zealand (LINZ), via Retrolens and Wikimedia Commons.",
+  "licence": "CC BY 3.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Wiri_north_quarry_1982.jpg",
+  "altText": "1982 aerial orthophotograph showing Wiri railway station and the north quarry in Auckland.",
+  "caption": "Aerial orthophotograph of Wiri railway station and quarry, 7 February 1982.",
+  "themeIds": [
+    "imagery"
+  ],
+  "articleSlug": "imagery-becomes-infrastructure",
+  "chapterNumber": 20,
+  "dateDisplay": "7 February 1982",
+  "context": "LINZ orthophotograph sourced from Retrolens. It provides a later example of corrected aerial imagery and illustrates the chapter’s discussion of orthophotography; it does not depict the earlier 1977 Clutha–Alexandra production work.",
+  "originalAssetPath": "/assets/historical/original/wiri-north-quarry-1982.jpg",
+  "thumbnailPath": "/assets/historical/card/wiri-north-quarry-1982.webp",
+  "originalSha256": "e575ef30182fe8d3dde64cfc536028c3086e911beffe9f5bf8fbd977df296837",
+  "webSha256": "1262a73f593fbd7376a9424704b4ba1c7353fecc00751fa6d376c24ded0501cf",
+  "originalWidth": 3840,
+  "originalHeight": 3745,
+  "sourceFileTitle": "File:Wiri north quarry 1982.jpg (3840 × 3745 Wikimedia Commons rendition)",
+  "headerCandidate": false,
+  "sourceOriginalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Wiri_north_quarry_1982.jpg/3840px-Wiri_north_quarry_1982.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "source agency through Retrolens"
+    }
+  ],
+  "derivativesNote": "The locally archived JPEG is the 3840 × 3745 Wikimedia Commons rendition. The 6760 × 6593 full-resolution master is linked above. This JPEG is stored unchanged; WebP display and card variants were resized without cropping.",
+  "sourceMasterUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Wiri_north_quarry_1982.jpg"
+}
