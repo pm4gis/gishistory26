@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import {reviewedImagePassages,curatedImageParagraphs} from "../../lib/chapter-media.mjs";
 
 export async function getStaticPaths() {
   const images = await getCollection("images");
@@ -9,7 +10,14 @@ export async function getStaticPaths() {
 const { imageId } = Astro.props;
 const entries = await getCollection("images");
 const image = entries.find((entry) => entry.data.id === imageId)?.data;
-const relatedChapter = image?.articleSlug ? (await getCollection("articles")).find((entry) => entry.data.slug === image.articleSlug)?.data : null;
+// The original articleSlug was sometimes a broad acquisition category, not
+// a verified relationship. Link back only after a paragraph/passage is known.
+const reviewed = image ? reviewedImagePassages[image.slug] : null;
+const earlierAnchor = image?.afterParagraphId || (image && curatedImageParagraphs[image.slug]);
+const linkedArticle = reviewed?.articleSlug || ((earlierAnchor || image?.passageId || image?.passageSlug) ? image?.articleSlug : null);
+const relatedChapter = linkedArticle ? (await getCollection("articles")).find((entry) => entry.data.slug === linkedArticle)?.data : null;
+const linkedAnchor = reviewed?.afterParagraphId || earlierAnchor || image?.passageSlug;
+const illustratedPassageUrl = relatedChapter ? relatedChapter.url + (linkedAnchor ? '#'+linkedAnchor : '') : null;
 ---
 {image ? <Layout title={`${image.title} — Image details`} description={`${image.title}. ${image.credit}. Source and licence details.`}>
   <article class="image-detail page-wrap">
@@ -17,7 +25,7 @@ const relatedChapter = image?.articleSlug ? (await getCollection("articles")).fi
     <h1 class="page-title">{image.title}</h1>
     <figure class="image-detail-figure"><img src={image.assetPath} alt={image.altText} width={image.originalWidth} height={image.originalHeight} decoding="async" /><figcaption>{image.caption || image.title} Credit: {image.credit}</figcaption></figure>
     {image.context && <section aria-labelledby="image-context-heading"><h2 id="image-context-heading">About this image</h2><p>{image.context}</p></section>}
-    {relatedChapter && <p><a class="text-link" href={relatedChapter.url}>Read the related chapter: {relatedChapter.title} →</a></p>}
+    {relatedChapter && <p><a class="text-link" href={illustratedPassageUrl}>Read the illustrated passage in {relatedChapter.title} →</a></p>}
     {image.relatedRecords && image.relatedRecords.length > 0 && <section aria-labelledby="image-connections-heading"><h2 id="image-connections-heading">Connected records</h2><ul class="image-connected-records">{image.relatedRecords.map((record) => <li><a href={record.url}>{record.name}</a>{record.role && <span> · {record.role}</span>}</li>)}</ul></section>}
     {image.originalAssetPath && <p><a class="button" href={image.originalAssetPath} download>Download the original locally stored image</a></p>}
     <section class="image-source-card" aria-labelledby="image-source-heading">
