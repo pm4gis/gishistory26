@@ -4,6 +4,7 @@ on:
     branches: [editorial/site-language-audit-20261011]
     paths:
       - scripts/site-language-audit-20261011.mjs
+      - scripts/site-editorial-polish-20261011.mjs
       - .github/workflows/site-language-audit-20261011.yml
   workflow_dispatch:
 permissions:
@@ -22,6 +23,8 @@ jobs:
         with:
           node-version: '22.19.0'
           cache: npm
+      - name: Apply contextual editorial corrections and restore untouched text
+        run: node scripts/site-editorial-polish-20261011.mjs
       - name: Scan all public text and remove empty image disclaimers
         run: node scripts/site-language-audit-20261011.mjs
       - name: Run existing content tests and preservation checks
