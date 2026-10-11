@@ -60,6 +60,18 @@ for(const item of queue.items){
   if(![30,43].includes(item.chapter))throw Error('Non-target chapter');
   if(!item.afterParagraphId)throw Error('Missing exact paragraph anchor');
   const licence=await rights(item);
+  const priorPath='src/content/images/'+item.slug+'.json';
+  const priorText=await fs.readFile(priorPath,'utf8').catch(e=>{if(e.code==='ENOENT')return null;throw e;});
+  if(priorText){
+    const prior=JSON.parse(priorText);
+    if(prior.slug!==item.slug||prior.articleSlug!==item.articleSlug||prior.licence!==licence.licence||prior.sourceUrl!==item.sourceUrl)throw Error('Existing record differs from reviewed source');
+    for(const [asset,expected] of [[prior.originalAssetPath,prior.originalSha256],[prior.assetPath,prior.webSha256],[prior.thumbnailPath,prior.thumbnailSha256]]){
+      const bin=await fs.readFile('public'+asset);
+      if(sha(bin)!==expected)throw Error('Existing original or derivative checksum mismatch: '+asset);
+    }
+    Object.assign(res,{status:'verified-existing',original:prior.originalAssetPath,web:prior.assetPath,thumb:prior.thumbnailPath,sha256:prior.originalSha256,licenceVerified:licence.licence});
+    report.success++;report.items.push(res);console.log(item.slug,res.status);continue;
+  }
   const url=licence.originalUrl||item.sourceOriginalUrl;
   const {data,finalUrl}=await retrieve(url);
   const type=await sharp(data,{limitInputPixels:250000000}).metadata();
