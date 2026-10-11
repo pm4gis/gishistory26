@@ -2,40 +2,38 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import fs from 'node:fs';
-import {passageContributionPageUrl,siteContributionPageUrl,contributionDraft,contributionMailtoUrl,contributionText,contributionContextFromSearch,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
+import {passageContributionMailtoUrl,siteContributionMailtoUrl,passageContributionPageUrl,contributionDraft,contributionMailtoUrl,contributionText,contributionContextFromSearch,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
 import {ngaPoutamaVideos,ngaPoutamaPlaylist,ngaPoutamaThumbnail,ngaPoutamaForPassage,ngaPoutamaForEvent,ngaPoutamaRecordLinks} from '../src/lib/nga-poutama-videos.mjs';
 
 const article={title:'Coordinates enter the computer',url:'/stories/coordinates-enter-the-computer/'};
 const passage={title:'Transforming one coordinate world into another',slug:'transforming-one-coordinate-world-into-another-2ab91fbc4f'};
 
-test('passage contribution opens on the site and retains the permanent link',()=>{
+test('passage Contribute goes directly to a provider-neutral mailto draft',()=>{
  const url=passagePermanentUrl(article,passage);
- const parsed=new URL(passageContributionPageUrl(article,passage),'https://history.pm4gis.nz');
- assert.equal(parsed.pathname,'/contribute/');
- assert.equal(parsed.searchParams.get('chapter'),article.title);
- assert.equal(parsed.searchParams.get('passage'),passage.title);
- assert.equal(parsed.searchParams.get('ref'),url);
- assert.equal(siteContributionPageUrl(),'/contribute/');
- const draft=contributionDraft(contributionContextFromSearch(parsed.search));
- for(const field of ['Chapter: '+article.title,'Passage: '+passage.title,'Link to passage: '+url,'correct, add or clarify','sources, photographs','credited'])assert.ok(draft.body.includes(field),field);
- const mail=new URL(contributionMailtoUrl(draft.subject,draft.body));
+ const mail=new URL(passageContributionMailtoUrl(article,passage));
  assert.equal(mail.protocol,'mailto:');
  assert.equal(decodeURIComponent(mail.pathname),contributionRecipient);
- assert.equal(mail.searchParams.get('subject'),draft.subject);
- assert.equal(mail.searchParams.get('body'),draft.body);
- assert.ok(contributionText(draft).startsWith('To: '+contributionRecipient+'\nSubject: '));
+ assert.ok(mail.searchParams.get('subject').includes(passage.title));
+ for(const phrase of ['Chapter: '+article.title,'Passage: '+passage.title,'Link to passage: '+url,'correct, add or clarify','sources, photographs','credited','attach any photos'])assert.ok(mail.searchParams.get('body').includes(phrase),phrase);
+ assert.equal(new URL(siteContributionMailtoUrl()).protocol,'mailto:');
+ const fallback=new URL(passageContributionPageUrl(article,passage),'https://history.pm4gis.nz');
+ assert.equal(fallback.pathname,'/contribute/');
+ assert.equal(fallback.searchParams.get('ref'),url);
+ assert.ok(contributionText(contributionDraft(contributionContextFromSearch(fallback.search))).includes(url));
 });
-test('different passages get different on-site contribution links',()=>{
- const one=passageContributionPageUrl(article,passage);
- const two=passageContributionPageUrl(article,{title:'Second subsection',slug:'second-test-subsection'});
+test('separate passages have separate prefilled email drafts',()=>{
+ const one=passageContributionMailtoUrl(article,passage);
+ const two=passageContributionMailtoUrl(article,{title:'Second subsection',slug:'second-test-subsection'});
  assert.notEqual(one,two);
- assert.ok(new URL(two,'https://history.pm4gis.nz').searchParams.get('ref').includes('#second-test-subsection'));
+ assert.ok(new URL(two).searchParams.get('body').includes('#second-test-subsection'));
 });
-test('contribution answers are included in the prepared text',()=>{
- const draft=contributionDraft({contribution:'Fix the date',whoWhen:'Map team in 1998',sources:'https://example.org/source',credit:'Use my name'});
- for(const value of ['Fix the date','Map team in 1998','https://example.org/source','Use my name'])assert.ok(draft.body.includes(value));
+test('the email contains the contributor questions and attachment instruction',()=>{
+ const draft=contributionDraft({contribution:'Correct the date',whoWhen:'GIS team 1998',sources:'Old map',credit:'Use my name'});
+ for(const x of ['Correct the date','GIS team 1998','Old map','Use my name','attach any photos'])assert.ok(draft.body.includes(x));
+ assert.ok(contributionText(draft).includes(contributionRecipient));
+ assert.equal(new URL(contributionMailtoUrl(draft.subject,draft.body)).searchParams.get('body'),draft.body);
 });
-test('contribution context rejects external passage links',()=>{
+test('unsafe off-site references cannot be inserted into contribution drafts',()=>{
  assert.equal(contributionContextFromSearch('?ref='+encodeURIComponent('https://evil.example/stories/a/#b')).reference,'');
  assert.equal(contributionContextFromSearch('?ref='+encodeURIComponent(passagePermanentUrl(article,passage))).reference,passagePermanentUrl(article,passage));
 });
@@ -67,16 +65,16 @@ test('Ngā Poutama recordings are verified direct video links with external thum
  assert.throws(()=>ngaPoutamaThumbnail('../bad'));
 });
 
-test('reader, about and navigation use the provider-neutral contribution page',()=>{
+test('reader, about and navigation open direct email with a no-form fallback',()=>{
  const reader=readFileSync('src/components/Reader.svelte','utf8');
  assert.ok(reader.includes('Copy link</button><a class="button passage-contribute"'));
+ assert.ok(reader.includes('passageContributionMailtoUrl(article,p)'));
  assert.ok(reader.includes('passageContributionPageUrl(article,p)'));
- assert.ok(readFileSync('src/layouts/Layout.astro','utf8').includes('siteContributionPageUrl()'));
- assert.ok(readFileSync('src/pages/about/index.astro','utf8').includes('siteContributionPageUrl()'));
+ assert.ok(readFileSync('src/layouts/Layout.astro','utf8').includes('siteContributionMailtoUrl()'));
+ assert.ok(readFileSync('src/pages/about/index.astro','utf8').includes('siteContributionMailtoUrl()'));
  const page=readFileSync('src/pages/contribute/index.astro','utf8');
- for(const item of ['contributionContextFromSearch(window.location.search)','Copy complete message','Copy email address','Open email app','contributionMailtoUrl','contributionText(draft())','id="contribution-reference"'])assert.ok(page.includes(item),item);
- assert.ok(!page.includes('window.location.replace'));
- assert.ok(!page.includes('mail.google.com'));
+ for(const item of ['contributionContextFromSearch(window.location.search)','Gmail in browser','Outlook in browser','Copy prepared email','Open my email app','contributionMailtoUrl','contributionText(current)','id="contribution-reference"'])assert.ok(page.includes(item),item);
+ assert.ok(!/<form\b|<input\b|<textarea\b|window\.location\.replace/.test(page));
  const profile=readFileSync('src/pages/[...path].astro','utf8');
  assert.ok(profile.includes("r.kind==='Person'?null:pickRecordImage"));
  assert.ok(profile.includes("r.slug==='nga-poutama-matawhenua'"));
