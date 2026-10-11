@@ -54,7 +54,9 @@
         15,
         17
       ],
-      "candidateParagraph": "ch05-s02-p01"
+      "candidateParagraph": "ch05-s02-p01",
+      "cataloguePages": 80,
+      "scanLimitation": "Institutional metadata lists 80 pages; delivered PDF has 79. File transfer and PDF decoding are complete, but bibliographic page completeness is not assumed."
     },
     {
       "id": "luc-handbook-1971",
