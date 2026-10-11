@@ -1,0 +1,591 @@
+{
+  "baseline": "522eb4a666e23082ff617825258be6036c0a11d6",
+  "checkedAt": "2026-10-11",
+  "sourceUrl": "https://webstatic.niwa.co.nz/library/pHCC1.pdf",
+  "sourceSha256": "1a8ebe35e862012cff6229eea8979dc0e87d547fe4e156cb0723e943c61920bd",
+  "sourceBytes": 2717264,
+  "pdfPages": 58,
+  "numberedPages": 51,
+  "title": "LADEDA Plotting Handbook",
+  "creator": "R. D. Williams",
+  "date": "May 1982",
+  "publisher": "Water and Soil Science Centre, Ministry of Works and Development, Christchurch, for the National Water and Soil Conservation Organisation",
+  "series": "Publication No. 1",
+  "issn": "0111-798X",
+  "copyrightStatement": "Crown copyright 1982",
+  "publicationDecision": "Hold all extracts. No document-specific redistribution licence or authority over the Crown material established.",
+  "rightsEvidence": [
+    {
+      "url": "https://niwa.co.nz/about-niwa/terms",
+      "version": "1.1, February 2026",
+      "finding": "General CC BY 4.0 offer excludes identified third-party content and logos. The scan identifies a Ministry of Works and Development Crown work; no transfer or licensing authority for this item verified."
+    },
+    {
+      "url": "https://niwa.co.nz/climate-and-weather/copyright-and-conditions-niwa-data-access-and-use",
+      "finding": "Permission required for publications purchased or ordered through NIWA. Its application to this freely hosted historical scan is uncertain; not treated as definitive prohibition or permission."
+    },
+    {
+      "url": "https://www.iponz.govt.nz/get-ip/copyright/crown-copyright/",
+      "finding": "Crown works generally have a 100-year term. Bibliographic access and a download do not establish a republication licence."
+    }
+  ],
+  "inspection": {
+    "method": "Full PDF rendered at 130 dpi; bounded OCR used as a finding aid. Every listed plot page inspected visually against its explanatory text. Faint command listings are not reconstructed from OCR guesses.",
+    "plotPagesVisuallyInspected": [
+      18,
+      20,
+      22,
+      25,
+      26,
+      29,
+      30,
+      34,
+      36,
+      38,
+      40,
+      41,
+      42,
+      46,
+      48,
+      50,
+      53,
+      54
+    ],
+    "commandSyntaxPages": {
+      "printed": [
+        2,
+        3
+      ],
+      "pdf": [
+        9,
+        10
+      ]
+    },
+    "optionPages": {
+      "printed": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "pdf": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "limitations": [
+      "Scanned paper outputs, not original digital plot files or screenshots.",
+      "Several faint command listings, binding shadows, bleed-through and adjoining-page fragments. No image clean-up or reconstruction.",
+      "Some published plots were reduced. Printed scale labels must not be asserted as physical scale of an online derivative.",
+      "Plots visibly use NZ National Yard Grid, not proof of NZ Map Grid in this plotting workflow.",
+      "No original digitising workstation photograph or capture session is shown."
+    ],
+    "workflowEvidence": {
+      "pdfPage": 9,
+      "finding": "PLOT writes an intermediate vector-and-character file, followed by TSO PLOT or LDDPLOT for CALCOMP, VERSATEC or TEKTRONIX output."
+    }
+  },
+  "proseReviewIssues": [
+    {
+      "paragraphs": [
+        "ch05-s01-p03",
+        "ch05-note-01"
+      ],
+      "pdfPage": 4,
+      "finding": "Preface dates digitisation 1977–1981; accepted institutional chronology says 1977–1980. Preserve both trails for editorial review."
+    },
+    {
+      "paragraphs": [
+        "ch05-s03-p02"
+      ],
+      "pdfPage": 4,
+      "finding": "Preface credits van Berkel directing digitisation, A. M. Moffat writing the initial 1980 program, R. Christian converting boundaries in 1981, Williams continuing development. Do not silently rewrite accepted attribution."
+    },
+    {
+      "paragraphs": [
+        "ch05-s04-p01"
+      ],
+      "pdfPages": [
+        18,
+        46,
+        53
+      ],
+      "finding": "Plots label NZ National Yard Grid. This is narrower evidence than a claim about all database storage coordinates."
+    },
+    {
+      "paragraphs": [
+        "ch05-note-02"
+      ],
+      "finding": "Accepted note still describes handbook as unavailable. Retrieval and inspection now resolve availability; note preserved under instruction, correction pending separately."
+    }
+  ],
+  "plots": [
+    {
+      "id": "held-ladeda-plot-1-1",
+      "plotNumber": "1.1",
+      "subject": "Mosgiel: every map unit",
+      "printedPlotPages": [
+        11
+      ],
+      "pdfPlotPages": [
+        18
+      ],
+      "printedExplanationPages": [
+        10
+      ],
+      "pdfExplanationPages": [
+        17
+      ],
+      "scale": "1:63,360",
+      "verifiedCommandOrFieldNames": [
+        "NUMBER",
+        "LAND(1,4)",
+        "TITLE"
+      ],
+      "candidateParagraph": "ch05-s02-p02",
+      "limitations": "Unique unit numbers retain all segments; coarse enquiry omits some edge units.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-1-2",
+      "plotNumber": "1.2",
+      "subject": "Mosgiel: common segments removed",
+      "printedPlotPages": [
+        13
+      ],
+      "pdfPlotPages": [
+        20
+      ],
+      "printedExplanationPages": [
+        12
+      ],
+      "pdfExplanationPages": [
+        19
+      ],
+      "scale": "1:63,360",
+      "verifiedCommandOrFieldNames": [
+        "LAND(1,4)",
+        "BLANK"
+      ],
+      "candidateParagraph": "ch05-s04-p03",
+      "limitations": "Equal adjacent LUC values suppress their common boundary; not a fresh field survey.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-1-3",
+      "plotNumber": "1.3",
+      "subject": "Mosgiel: LUC class grouping",
+      "printedPlotPages": [
+        15
+      ],
+      "pdfPlotPages": [
+        22
+      ],
+      "printedExplanationPages": [
+        14
+      ],
+      "pdfExplanationPages": [
+        21
+      ],
+      "scale": "1:63,360",
+      "verifiedCommandOrFieldNames": [
+        "LAND(1,1)",
+        "CHARSIZE"
+      ],
+      "candidateParagraph": "ch05-s05-p01",
+      "limitations": "Class-only output removes more segments; some repeated labels survive the algorithm.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-1-4",
+      "plotNumber": "1.4",
+      "subject": "Dunedin: smaller-scale LUC plot",
+      "printedPlotPages": [
+        18,
+        19
+      ],
+      "pdfPlotPages": [
+        25,
+        26
+      ],
+      "printedExplanationPages": [
+        16
+      ],
+      "pdfExplanationPages": [
+        23
+      ],
+      "scale": "1:250,000",
+      "verifiedCommandOrFieldNames": [
+        "LAND(1,1)",
+        "SCALE",
+        "BOUNDARY",
+        "FRAMESIZE"
+      ],
+      "candidateParagraph": "ch05-s04-p03",
+      "limitations": "Two adjoining frames; enquiry spans S154, S155, S163 and S164. Labels overlap at small scale.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-1-5",
+      "plotNumber": "1.5",
+      "subject": "Dunedin: broad land grouping",
+      "printedPlotPages": [
+        22,
+        23
+      ],
+      "pdfPlotPages": [
+        29,
+        30
+      ],
+      "printedExplanationPages": [
+        20,
+        21
+      ],
+      "pdfExplanationPages": [
+        27,
+        28
+      ],
+      "scale": "1:250,000",
+      "verifiedCommandOrFieldNames": [
+        "DEFINE FIELD",
+        "SELECT",
+        "VECTOR",
+        "GRID"
+      ],
+      "candidateParagraph": "ch05-s05-p01",
+      "limitations": "Virtual arable/non-arable field; non-normal units excluded. Larger minimum vectors coarsen lines.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-2-1",
+      "plotNumber": "2.1",
+      "subject": "Levin: coarse circular overlay",
+      "printedPlotPages": [
+        27
+      ],
+      "pdfPlotPages": [
+        34
+      ],
+      "printedExplanationPages": [
+        25,
+        26
+      ],
+      "pdfExplanationPages": [
+        32,
+        33
+      ],
+      "scale": "1:100,000",
+      "verifiedCommandOrFieldNames": [
+        "DEFINE BOUNDARY",
+        "OVERLAY COARSELY",
+        "NUMBER"
+      ],
+      "candidateParagraph": "ch05-s05-p01",
+      "limitations": "Centroid selection includes whole units, not clipped areas. It is not an original worksheet.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-2-2",
+      "plotNumber": "2.2",
+      "subject": "Levin: exact circular overlay",
+      "printedPlotPages": [
+        29
+      ],
+      "pdfPlotPages": [
+        36
+      ],
+      "printedExplanationPages": [
+        28
+      ],
+      "pdfExplanationPages": [
+        35
+      ],
+      "scale": "1:100,000",
+      "verifiedCommandOrFieldNames": [
+        "OVERLAY EXACTLY",
+        "NUMBER"
+      ],
+      "candidateParagraph": "ch05-s05-p01",
+      "limitations": "Intersections calculate proportions; crowded edge labels move away from their units. Exact overlay was still developing.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-2-3",
+      "plotNumber": "2.3",
+      "subject": "Levin: overlay with margin",
+      "printedPlotPages": [
+        31
+      ],
+      "pdfPlotPages": [
+        38
+      ],
+      "printedExplanationPages": [
+        30
+      ],
+      "pdfExplanationPages": [
+        37
+      ],
+      "scale": "1:100,000",
+      "verifiedCommandOrFieldNames": [
+        "MARGIN",
+        "NUMBER"
+      ],
+      "candidateParagraph": "ch05-s05-p01",
+      "limitations": "Margin improves edge interpretation; it does not change the source inventory precision.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-3-1",
+      "plotNumber": "3.1",
+      "subject": "Paparua: worksheet frames",
+      "printedPlotPages": [
+        33
+      ],
+      "pdfPlotPages": [
+        40
+      ],
+      "printedExplanationPages": [
+        32
+      ],
+      "pdfExplanationPages": [
+        39
+      ],
+      "scale": "Reduced reproduction; original command scale 1:63,360",
+      "verifiedCommandOrFieldNames": [
+        "WKSHEET",
+        "PAPACOUN"
+      ],
+      "candidateParagraph": "ch05-s04-p02",
+      "limitations": "Worksheet boundaries and county frame, not a resource-class map. Commands deliberately omitted after reduction.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-3-2",
+      "plotNumber": "3.2",
+      "subject": "Paparua: basic frame layout",
+      "printedPlotPages": [
+        34
+      ],
+      "pdfPlotPages": [
+        41
+      ],
+      "printedExplanationPages": [
+        32
+      ],
+      "pdfExplanationPages": [
+        39
+      ],
+      "scale": "Reduced reproduction; original command scale 1:63,360",
+      "verifiedCommandOrFieldNames": [],
+      "candidateParagraph": "ch05-s04-p02",
+      "limitations": "Shares a page with Plot 3.3; only frames and county outline. No command listing.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-3-3",
+      "plotNumber": "3.3",
+      "subject": "Paparua: blocked frames",
+      "printedPlotPages": [
+        34
+      ],
+      "pdfPlotPages": [
+        41
+      ],
+      "printedExplanationPages": [
+        32
+      ],
+      "pdfExplanationPages": [
+        39
+      ],
+      "scale": "Reduced reproduction; original command scale 1:63,360",
+      "verifiedCommandOrFieldNames": [
+        "BLOCKED"
+      ],
+      "candidateParagraph": "ch05-s04-p02",
+      "limitations": "Shares a page with Plot 3.2; full page must remain uncropped. No command listing.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-3-4",
+      "plotNumber": "3.4",
+      "subject": "Paparua: aligned frames",
+      "printedPlotPages": [
+        35
+      ],
+      "pdfPlotPages": [
+        42
+      ],
+      "printedExplanationPages": [
+        32
+      ],
+      "pdfExplanationPages": [
+        39
+      ],
+      "scale": "Reduced reproduction; original command scale 1:63,360",
+      "verifiedCommandOrFieldNames": [
+        "ALIGNED"
+      ],
+      "candidateParagraph": "ch05-s04-p02",
+      "limitations": "Shares a page with Plot 3.5; frames aligned to worksheet origins. No command listing.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-3-5",
+      "plotNumber": "3.5",
+      "subject": "Paparua: aligned and blocked frames",
+      "printedPlotPages": [
+        35
+      ],
+      "pdfPlotPages": [
+        42
+      ],
+      "printedExplanationPages": [
+        32
+      ],
+      "pdfExplanationPages": [
+        39
+      ],
+      "scale": "Reduced reproduction; original command scale 1:63,360",
+      "verifiedCommandOrFieldNames": [
+        "ALIGNED",
+        "BLOCKED"
+      ],
+      "candidateParagraph": "ch05-s04-p02",
+      "limitations": "Shares a page with Plot 3.4; reduced frame diagram, not a full-sized working plot.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-4-1",
+      "plotNumber": "4.1",
+      "subject": "North Island: tunnel-gully centroids",
+      "printedPlotPages": [
+        39
+      ],
+      "pdfPlotPages": [
+        46
+      ],
+      "printedExplanationPages": [
+        38
+      ],
+      "pdfExplanationPages": [
+        45
+      ],
+      "scale": "1:4,000,000",
+      "verifiedCommandOrFieldNames": [
+        "TGDIST",
+        "EROSION",
+        "EXTRACT",
+        "GRID",
+        "NOMUBS"
+      ],
+      "candidateParagraph": "ch05-s04-p03",
+      "limitations": "Stars mark unit centres; density is not adjusted for unit area and can mislead.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-4-2",
+      "plotNumber": "4.2",
+      "subject": "North Island: tunnel-gully unit boundaries",
+      "printedPlotPages": [
+        41
+      ],
+      "pdfPlotPages": [
+        48
+      ],
+      "printedExplanationPages": [
+        40
+      ],
+      "pdfExplanationPages": [
+        47
+      ],
+      "scale": "1:4,000,000",
+      "verifiedCommandOrFieldNames": [
+        "TGDIST",
+        "NODESCRIPTION"
+      ],
+      "candidateParagraph": "ch05-s04-p03",
+      "limitations": "Selected inventory-unit boundaries, not surveyed gully outlines; labels suppressed.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-4-3",
+      "plotNumber": "4.3",
+      "subject": "North Canterbury: selected LUC units",
+      "printedPlotPages": [
+        43
+      ],
+      "pdfPlotPages": [
+        50
+      ],
+      "printedExplanationPages": [
+        42
+      ],
+      "pdfExplanationPages": [
+        49
+      ],
+      "scale": "Printed plot 1:1,432,800; automatic fit",
+      "verifiedCommandOrFieldNames": [
+        "NCANMAFS",
+        "NEWLAND",
+        "DEFINE FIELD",
+        "SCALE",
+        "GRID",
+        "NOMUBS"
+      ],
+      "candidateParagraph": "ch05-s05-p01",
+      "limitations": "Indexed letters identify selected LUC units; crowded letters cannot all be distinguished.",
+      "status": "rights-held",
+      "published": false
+    },
+    {
+      "id": "held-ladeda-plot-4-4",
+      "plotNumber": "4.4",
+      "subject": "S172: selected wetland vegetation",
+      "printedPlotPages": [
+        46,
+        47
+      ],
+      "pdfPlotPages": [
+        53,
+        54
+      ],
+      "printedExplanationPages": [
+        44,
+        45
+      ],
+      "pdfExplanationPages": [
+        51,
+        52
+      ],
+      "scale": "1:125,000",
+      "verifiedCommandOrFieldNames": [
+        "VEG",
+        "SELECT",
+        "OVERLAY COARSELY"
+      ],
+      "candidateParagraph": "ch05-s05-p01",
+      "limitations": "Two frames; extracted vegetation, not the original complete S172 worksheet. Labels meet frame edges.",
+      "status": "rights-held",
+      "published": false
+    }
+  ]
+}
