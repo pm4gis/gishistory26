@@ -37,6 +37,8 @@ jobs:
           git add src/content/images/ public/assets/historical/ docs/media/retrolens-primary-frames-run-20261011.json
           if ! git diff --cached --quiet; then
             git commit -m 'Archive sourced Retrolens survey images with in-chapter placement'
+            git reset --hard HEAD
+            git clean -fd
             git fetch origin media/retrolens-historical-frames-20261011
             git rebase origin/media/retrolens-historical-frames-20261011
             git push origin HEAD:media/retrolens-historical-frames-20261011
