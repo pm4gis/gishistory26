@@ -58,7 +58,7 @@ function imageRewrite(s,field) {
 function rewriteDocument(obj,kind){
  if(kind!=='images'){
    function reviseExample(o) {
-     if(typeof o==='string')return o.replace(/\s*It illustrates nationwide satellite coverage from the early 2000s, not a complete national time-series mosaic\./gi,'').trim();
+     if(typeof o==='string')const edited=o.replace(/\s*It illustrates nationwide satellite coverage from the early 2000s, not a complete national time-series mosaic\./gi,'');return edited===o?o:edited.trim();
      if(Array.isArray(o))return o.map(reviseExample);
      if(o&&typeof o==='object')for(const k of Object.keys(o)){
        o[k]=reviseExample(o[k]);
@@ -104,12 +104,12 @@ for(const [idx,folder] of locations.entries()) {
    }
  }
 }
-const otherFiles=['src/pages','src/components','src/layouts'];
+const otherFiles=['src/pages','src/components','src/layouts','src/lib'];
 for(const folder of otherFiles) {
  const list=fs.readdirSync(folder,{recursive:true,withFileTypes:true});
  let n=0;
  for(const entry of list) {
-   if(!entry.isFile()||!/\.(astro|svelte)$/i.test(entry.name))continue;
+   if(!entry.isFile()||!/\.(astro|svelte|mjs|ts)$/i.test(entry.name))continue;
    const fp=path.join(entry.parentPath,entry.name).replaceAll('\\','/');
    const str=fs.readFileSync(fp,'utf8');n++;
    for(const [label,re,weight] of markers){
