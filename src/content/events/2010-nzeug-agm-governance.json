@@ -1,0 +1,29 @@
+{
+  "id": "2010-nzeug-agm-governance",
+  "dateDisplay": "2010",
+  "startDate": "2010",
+  "datePrecision": "year",
+  "year": 2010,
+  "label": "NZEUG AGM documents independent governance",
+  "summary": "NZEUG's 2010 AGM records name Igor Albornett, Tony Standen, Kilmeny Stephens and Chris Holden as office holders, documenting an independent volunteer executive alongside Esri and Eagle's conference involvement.",
+  "url": "/entities/new-zealand-esri-users-group/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "person:kilmeny-stephens"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "community",
+    "governance"
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Esri Users Group, 2010 AGM minute record summarised in group profile",
+      "url": "/entities/new-zealand-esri-users-group/"
+    }
+  ]
+}
