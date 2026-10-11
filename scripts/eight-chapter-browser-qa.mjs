@@ -1,12 +1,12 @@
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {chapterArchiveReuses} from '../src/lib/chapter-media.mjs';
+import {reviewedImagePassages} from '../src/lib/chapter-media.mjs';
 
 const base=process.env.QA_BASE_URL||'http://127.0.0.1:4321';
 const scenarios=[
- ...Object.entries(chapterArchiveReuses).flatMap(([story,links])=>links.map(link=>({
-   story, slug:link.slug, paragraph:link.afterParagraphId, snippet:link.caption.slice(0,32)
- }))),
+ ...Object.entries(reviewedImagePassages).map(([slug,match])=>({
+   story:match.articleSlug,slug,paragraph:match.afterParagraphId,snippet:match.caption.slice(0,32)
+ })),
  {story:'the-first-web-maps',slug:'nz-libraries-wikidata-osm-2019',paragraph:'ch30-p-aedbf2d5def6',
   snippet:'A 2019 New Zealand library map'}
 ];
