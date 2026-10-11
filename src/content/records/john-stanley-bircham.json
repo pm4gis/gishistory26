@@ -1,0 +1,36 @@
+{
+  "id": "person:john-stanley-bircham",
+  "slug": "john-stanley-bircham",
+  "name": "John Stanley Bircham",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/john-stanley-bircham/",
+  "description": "Researcher whose 1995 master's work concerned natural hazards.",
+  "story": [
+    "In 1995, John Stanley Bircham completed MSc research at University of Canterbury titled “Avalanche hazard forecasting at Mount Hutt”. The university thesis record documents early terrain-related avalanche forecasting at Mount Hutt. It does not establish that the method became an operational forecasting service."
+  ],
+  "sources": [
+    {
+      "label": "John Stanley Bircham, Avalanche hazard forecasting at Mount Hutt, University of Canterbury, 1995",
+      "url": "https://ir.canterbury.ac.nz/items/53c772c8-a35a-4d3d-90dc-f11f810c6bdf"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "John Stanley Bircham, Avalanche hazard forecasting at Mount Hutt, University of Canterbury, 1995",
+        "url": "https://ir.canterbury.ac.nz/items/53c772c8-a35a-4d3d-90dc-f11f810c6bdf"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

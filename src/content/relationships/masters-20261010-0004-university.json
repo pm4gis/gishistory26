@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0004-university",
+  "a": "person:ciaran-keogh",
+  "b": "entity:university-of-otago",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch11"
+  ],
+  "sources": [
+    {
+      "label": "Ciaran Keogh, Defining the Spatial Extent of Visual Amenity Values under the RMA, University of Otago, 1994",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Defining-the-Spatial-Extent-of-Visual/9926480242101891"
+    }
+  ]
+}

@@ -4,34 +4,67 @@
   "articleId": "article:chapter-2",
   "title": "People between the field book and the machine",
   "order": 8,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
-    "chapter:2"
+    "chapter:2",
+    "entity:department-of-lands-and-survey"
   ],
   "blocks": [
     {
       "type": "paragraph",
-      "text": "Electronic computing changed the work of technical staff. Field observations still had to be made correctly, and someone had to decide how to encode them before a machine could do anything useful. Cards and tapes needed preparation and verification. Programs had to be written and tested. Results had to be checked against known values and then transferred back into survey, engineering or mapping workflows. The computer could take over the arithmetic, but it still depended on a remarkably human chain of people making sure the numbers meant what everybody thought they meant.",
-      "markdown": "Electronic computing changed the work of technical staff. Field observations still had to be made correctly, and someone had to decide how to encode them before a machine could do anything useful. Cards and tapes needed preparation and verification. Programs had to be written and tested. Results had to be checked against known values and then transferred back into survey, engineering or mapping workflows. The computer could take over the arithmetic, but it still depended on a remarkably human chain of people making sure the numbers meant what everybody thought they meant.",
-      "sources": [],
+      "text": "A calculation still passed through several hands. Survey staff made and recorded the observations; someone prepared the cards; programmers and operators ran the job; the results came back as tables or tape for technical staff to inspect. If a coordinate looked wrong, it had to be traced through the output, the input deck and the original field record.",
+      "markdown": "A calculation still passed through several hands. Survey staff made and recorded the observations; someone prepared the cards; programmers and operators ran the job; the results came back as tables or tape for technical staff to inspect. If a coordinate looked wrong, it had to be traced through the output, the input deck and the original field record.",
+      "sources": [
+        {
+          "label": "Russell Gladstone Dick, “Maps and mapping” (1966), Te Ara",
+          "url": "https://teara.govt.nz/en/1966/maps-and-mapping/page-6"
+        },
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s09-p01"
     },
     {
       "type": "paragraph",
-      "text": "Some of the older occupational labels faded as the work moved. The human computer became less common because electronic machines took over much of the repeated calculation. At the same time, programmers, computer operators and technical analysts appeared alongside survey and engineering staff. The work crossed organisational boundaries because the people who understood the geographic problem were not always the people who operated the central computer.",
-      "markdown": "Some of the older occupational labels faded as the work moved. The human computer became less common because electronic machines took over much of the repeated calculation. At the same time, programmers, computer operators and technical analysts appeared alongside survey and engineering staff. The work crossed organisational boundaries because the people who understood the geographic problem were not always the people who operated the central computer.",
-      "sources": [],
+      "text": "That division could separate knowledge of the machine from knowledge of the place. A programmer could produce a clean run from bad observations; a surveyor could spot an implausible position but need help changing the input. Reliable work depended on both kinds of expertise meeting at the same job.",
+      "markdown": "That division could separate knowledge of the machine from knowledge of the place. A programmer could produce a clean run from bad observations; a surveyor could spot an implausible position but need help changing the input. Reliable work depended on both kinds of expertise meeting at the same job.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s09-p02"
     },
     {
       "type": "paragraph",
-      "text": "This created a translation problem that would recur throughout GIS history. A surveyor might know what the calculation had to mean physically but not how a particular computer expected its input. A programmer might understand the machine but not recognise an impossible coordinate. Reliable work depended on both forms of knowledge reaching the same job. The later GIS specialist would often combine more of those responsibilities in one role, but the need to bridge domain knowledge and computing began much earlier.",
-      "markdown": "This created a translation problem that would recur throughout GIS history. A surveyor might know what the calculation had to mean physically but not how a particular computer expected its input. A programmer might understand the machine but not recognise an impossible coordinate. Reliable work depended on both forms of knowledge reaching the same job. The later GIS specialist would often combine more of those responsibilities in one role, but the need to bridge domain knowledge and computing began much earlier.",
-      "sources": [],
+      "text": "The practical lesson has lasted: retain identifiers and source observations, document the calculation, and check outputs against independent control. Electronic processing made it easier to repeat a method; it did not make a result self-validating.",
+      "markdown": "The practical lesson has lasted: retain identifiers and source observations, document the calculation, and check outputs against independent control. Electronic processing made it easier to repeat a method; it did not make a result self-validating.",
+      "sources": [
+        {
+          "label": "LINZ, New Zealand Geodetic Datum 1949",
+          "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-1949-nzgd1949"
+        },
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        }
+      ],
       "id": "ch02-s09-p03"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 1 · Maps before computers",
+      "url": "/stories/what-the-computer-inherited/"
+    },
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    }
+  ],
   "legacyAnchor": "people-between-the-field-book-and-the-machine"
 }

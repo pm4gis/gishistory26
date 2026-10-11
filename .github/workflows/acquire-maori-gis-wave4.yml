@@ -1,0 +1,48 @@
+name: Acquire Māori GIS and institutional documentary media
+on:
+  pull_request:
+    paths:
+      - 'docs/media/maori-gis-media-wave4-manifest.json'
+      - 'scripts/acquire-maori-gis-wave4.mjs'
+      - '.github/workflows/acquire-maori-gis-wave4.yml'
+permissions:
+  contents: write
+jobs:
+  images:
+    if: ${{ github.head_ref == 'feature/maori-gis-theme-media-20261010' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          ref: feature/maori-gis-theme-media-20261010
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Acquire verified originals, create WebP files and image records
+        run: node scripts/acquire-maori-gis-wave4.mjs
+      - name: Upload unchanged originals and integrity report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NZ_GIS_History_Maori_GIS_Media_Wave4_2026-10-10
+          path: |
+            docs/media/acquired-wave4/
+            docs/media/maori-gis-media-wave4-manifest.json
+          retention-days: 60
+          compression-level: 4
+          if-no-files-found: warn
+      - name: Commit only verified WebPs and image detail records to current PR branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/web/ public/assets/historical/card/ src/content/images/
+          if ! git diff --cached --quiet; then
+            git commit -m "Stage eight verified Wave 4 documentary images and licensed metadata"
+            git fetch origin feature/maori-gis-theme-media-20261010
+            git rebase origin/feature/maori-gis-theme-media-20261010
+            git push origin HEAD:feature/maori-gis-theme-media-20261010
+          fi

@@ -1,0 +1,36 @@
+{
+  "id": "person:kevin-england",
+  "slug": "kevin-england",
+  "name": "Kevin England",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/kevin-england/",
+  "description": "Researcher whose 2011 master's work concerned natural hazards.",
+  "story": [
+    "In 2011, Kevin England completed MSc research at University of Canterbury titled “A GIS approach to landslide hazard management for the West Coast region, New Zealand”. The Canterbury research mapped West Coast susceptibility to rainfall-triggered landslides using an inventory, bivariate statistical analysis and an analytical hierarchy process."
+  ],
+  "sources": [
+    {
+      "label": "Kevin England, A GIS approach to landslide hazard management for the West Coast region, New Zealand, University of Canterbury, 2011",
+      "url": "https://ir.canterbury.ac.nz/items/61976ffe-cfe4-43e2-8e72-f0e3d767c8f5"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Kevin England, A GIS approach to landslide hazard management for the West Coast region, New Zealand, University of Canterbury, 2011",
+        "url": "https://ir.canterbury.ac.nz/items/61976ffe-cfe4-43e2-8e72-f0e3d767c8f5"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

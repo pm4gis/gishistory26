@@ -1,0 +1,34 @@
+{
+  "id": "image:upper-hutt-civic-centre-2005",
+  "slug": "upper-hutt-civic-centre-2005",
+  "title": "Upper Hutt Civic Centre administration building and council chambers, 2005",
+  "assetPath": "/assets/historical/web/upper-hutt-civic-centre-2005.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Upper_Hutt_Civic_Centre.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Michael Dudding (Allthenamesaretaken)",
+  "licence": "Public domain (photographer dedication)",
+  "licenceUrl": "https://commons.wikimedia.org/wiki/File:Upper_Hutt_Civic_Centre.jpg",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Upper_Hutt_Civic_Centre.jpg",
+  "altText": "Upper Hutt civic administration building and council chambers, photographed in 2005.",
+  "caption": "Upper Hutt civic administration building and council chambers, photographed in 2005.",
+  "themeIds": [],
+  "dateDisplay": "29 April 2005",
+  "context": "A photograph of the council's civic facilities in 2005, after the first XPLORER mapping service; it is not an image of XPLORER.",
+  "thumbnailPath": "/assets/historical/card/upper-hutt-civic-centre-2005.webp",
+  "originalSha256": "f4ab4d3cbd2a0a3418cf43b038092e41f57dc820721aead5200435bf6d4fe7a8",
+  "webSha256": "95deeae2336469516466a9276c52cdbd521a8e443a1b5a5131845b78f8396904",
+  "thumbnailSha256": "cc27ed691771d84e5770c9b990e1945c8a6d22fc0f70c31039a0e6d637afcb35",
+  "originalWidth": 1522,
+  "originalHeight": 988,
+  "sourceFileTitle": "File:Upper Hutt Civic Centre.jpg",
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Upper_Hutt_Civic_Centre.jpg",
+  "derivativesNote": "Original unchanged JPEG preserved in NZ GIS History Research Packages / Wave 3 archive; the website serves uncropped 1600px and 720px WebP derivatives.",
+  "headerCandidate": false,
+  "relatedRecords": [
+    {
+      "name": "Upper Hutt City Council",
+      "url": "/entities/upper-hutt-city-council/",
+      "role": "Photographed institution"
+    }
+  ]
+}

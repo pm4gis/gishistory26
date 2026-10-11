@@ -4,34 +4,69 @@
   "articleId": "article:chapter-2",
   "title": "Maps and calculation",
   "order": 9,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
-    "chapter:2"
+    "chapter:2",
+    "entity:department-of-lands-and-survey",
+    "entity:ministry-of-works-and-development",
+    "entity:mappak"
   ],
   "blocks": [
     {
       "type": "paragraph",
-      "text": "By the early 1970s, electronic computation was no longer unusual in the technical parts of New Zealand government. Coordinates could be processed electronically, engineering alternatives could be compared, survey calculations could be repeated by program and national coordinate transformations could be handled at a scale that suited large conversion programmes. This was a substantial change from the calculation rooms inherited from the pre-war survey state.",
-      "markdown": "By the early 1970s, electronic computation was no longer unusual in the technical parts of New Zealand government. Coordinates could be processed electronically, engineering alternatives could be compared, survey calculations could be repeated by program and national coordinate transformations could be handled at a scale that suited large conversion programmes. This was a substantial change from the calculation rooms inherited from the pre-war survey state.",
-      "sources": [],
+      "text": "By the early 1970s, government survey and engineering offices were routinely using computers for selected calculations: adjusting observations, transforming coordinates, comparing route options and analysing terrain. The paper map remained the normal source and product for much of that work.",
+      "markdown": "By the early 1970s, government survey and engineering offices were routinely using computers for selected calculations: adjusting observations, transforming coordinates, comparing route options and analysing terrain. The paper map remained the normal source and product for much of that work.",
+      "sources": [
+        {
+          "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+          "url": "https://history.itp.nz/part-3/shailes.html"
+        },
+        {
+          "label": "Russell Gladstone Dick, “Maps and mapping” (1966), Te Ara",
+          "url": "https://teara.govt.nz/en/1966/maps-and-mapping/page-6"
+        }
+      ],
       "id": "ch02-s10-p01"
     },
     {
       "type": "paragraph",
-      "text": "The geography itself, however, remained mostly outside the computer. A cadastral map could supply coordinates to a calculation without its parcel fabric being stored digitally. A topographic sheet could provide terrain information without its roads and rivers existing as reusable features. An aerial photograph could support measurement while remaining a film object. The computer had become useful to mapping before the map became a computer-managed dataset.",
-      "markdown": "The geography itself, however, remained mostly outside the computer. A cadastral map could supply coordinates to a calculation without its parcel fabric being stored digitally. A topographic sheet could provide terrain information without its roads and rivers existing as reusable features. An aerial photograph could support measurement while remaining a film object. The computer had become useful to mapping before the map became a computer-managed dataset.",
-      "sources": [],
+      "text": "The next step was to keep geometry in the machine. Lands and Survey began tracing cadastral features from paper sheets onto digitising tables; computer contouring and photogrammetry brought more measured terrain and imagery into digital form. The output could now be edited, stored and reused as features, not only printed as a table.",
+      "markdown": "The next step was to keep geometry in the machine. Lands and Survey began tracing cadastral features from paper sheets onto digitising tables; computer contouring and photogrammetry brought more measured terrain and imagery into digital form. The output could now be edited, stored and reused as features, not only printed as a table.",
+      "sources": [
+        {
+          "label": "Related chapter: Chapter 3 · Computer cartography",
+          "url": "/stories/drawing-maps-by-machine/"
+        }
+      ],
       "id": "ch02-s10-p02"
     },
     {
       "type": "paragraph",
-      "text": "By the late 1970s, operators were placing paper maps on digitising tables so that lines could be captured and stored as coordinates. Computer contouring, orthophoto production and analytical photogrammetry moved more of the mapping chain into digital form. The arithmetic had entered first. The machine was beginning to remember the geometry.",
-      "markdown": "By the late 1970s, operators were placing paper maps on digitising tables so that lines could be captured and stored as coordinates. Computer contouring, orthophoto production and analytical photogrammetry moved more of the mapping chain into digital form. The arithmetic had entered first. The machine was beginning to remember the geometry.",
-      "sources": [],
+      "text": "For a GIS team, that changed the maintenance job: coordinates still had to be right, but geometry also needed identifiers, continuity and a record of how it had been edited. Chapter 3 follows MAPPAK and the parallel systems that moved New Zealand mapping toward reusable digital features.",
+      "markdown": "For a GIS team, that changed the maintenance job: coordinates still had to be right, but geometry also needed identifiers, continuity and a record of how it had been edited. Chapter 3 follows MAPPAK and the parallel systems that moved New Zealand mapping toward reusable digital features.",
+      "sources": [
+        {
+          "label": "Related chapter: Chapter 3 · Computer cartography",
+          "url": "/stories/drawing-maps-by-machine/"
+        }
+      ],
       "id": "ch02-s10-p03"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    },
+    {
+      "label": "Related chapter: Chapter 4 · Early remote sensing",
+      "url": "/stories/turning-the-landscape-into-numbers/"
+    },
+    {
+      "label": "Related chapter: Chapter 5 · Digital land inventories",
+      "url": "/stories/from-map-sheets-to-spatial-data/"
+    }
+  ],
   "legacyAnchor": "the-map-is-still-outside"
 }

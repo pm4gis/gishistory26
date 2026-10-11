@@ -1,0 +1,16 @@
+{
+  "id": "relationship:chapter-2-education-ict-1201",
+  "a": "entity:department-of-education",
+  "b": "entity:ict",
+  "label": "May have used ICT 1201 for teachers’ payroll",
+  "basis": "A later computing history presents the ICT 1201 as an earlier, less fully documented candidate for government computer use.",
+  "passageIds": [
+    "passage:chapter-2-57e353c855"
+  ],
+  "sources": [
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ]
+}

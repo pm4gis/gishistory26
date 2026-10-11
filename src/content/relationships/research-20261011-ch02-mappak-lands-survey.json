@@ -1,0 +1,16 @@
+{
+  "id": "relationship:chapter-2-mappak-lands-survey",
+  "a": "entity:mappak",
+  "b": "entity:department-of-lands-and-survey",
+  "label": "Developed for cadastral mapping work",
+  "basis": "Colley’s 1979 thesis describes MAPPAK requirements supplied by Lands and Survey and its operational cadastral mapping functions.",
+  "passageIds": [
+    "passage:chapter-2-ac4187e878"
+  ],
+  "sources": [
+    {
+      "label": "M. S. Colley, A computer system for a cadastral mapping application, MSc thesis, University of Canterbury, 1979",
+      "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+    }
+  ]
+}

@@ -1,58 +1,38 @@
 import fs from 'node:fs/promises';
-const queries=[
- 'New Zealand map grid coordinates',
- 'New Zealand map surveying triangulation',
- 'New Zealand cadastral map survey',
- 'New Zealand surveyor theodolite',
- 'New Zealand computer 1960 map',
- 'New Zealand computer cartography',
- 'New Zealand 1980s topographical mapping',
- 'NZMS 260 New Zealand map',
- 'NZMS 1 map survey',
- 'New Zealand Land Resource Inventory',
- 'NZLRI New Zealand land',
- 'New Zealand forestry thematic map',
- 'New Zealand wilding conifers map',
- 'New Zealand landsat 1970',
- 'New Zealand satellite imagery 1977',
- 'New Zealand Esri GIS conference',
- 'New Zealand university mapping laboratory',
- 'New Zealand university cartography',
- 'New Zealand Landonline survey',
- 'New Zealand LINZ Data Service',
- 'New Zealand GNSS survey station',
- 'New Zealand geodetic marker',
- 'New Zealand property parcel boundaries',
- 'New Zealand roads traffic mapping',
- 'New Zealand territorial authorities mapping',
- 'New Zealand lidar elevation',
- 'New Zealand airborne LiDAR',
- 'New Zealand drone survey orthomosaic',
- 'New Zealand conservation biodiversity map',
- 'New Zealand DOC protected area map',
- 'New Zealand geospatial open data',
- 'New Zealand emergency map earthquake',
- 'New Zealand tsunami hazard map',
- 'New Zealand geologic fault map',
- 'New Zealand water supply network map',
- 'New Zealand railway system map',
- 'New Zealand census meshblock map',
- 'New Zealand QGIS choropleth',
- 'New Zealand satellite radar Kaikoura'
-];
-async function get(q) {
+
+const cutoff='2025-12-31';
+const plan=JSON.parse(await fs.readFile('docs/media/chapter-image-search-plan-wave4-2025.json','utf8'));
+const clean=value=>String(value||'').replace(/<[^>]*>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'").replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&#([0-9]+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/\\s+/g,' ').trim();
+function extValue(meta,key){return clean(meta?.[key]?.value||'')}
+async function query(item){
  const url=new URL('https://commons.wikimedia.org/w/api.php');
- for(const [k,v] of Object.entries({action:'query',generator:'search',gsrsearch:q,gsrnamespace:'6',gsrlimit:'12',prop:'imageinfo',iiprop:'url|size|extmetadata',format:'json',formatversion:'2'}))url.searchParams.set(k,v);
- try {
- const resp=await fetch(url,{headers:{'User-Agent':'NZGISHistoryImageResearch/1.0 (https://history.pm4gis.nz/about/)','Accept':'application/json'},signal:AbortSignal.timeout(20000)});
- if(!resp.ok)throw Error('HTTP '+resp.status);
- const obj=await resp.json();
- return {query:q,results:(obj.query?.pages||[]).filter(p=>/\.(png|jpe?g|tif|svg)$/i.test(p.title)).map(p=>({title:p.title,url:p.imageinfo?.[0]?.descriptionurl||'https://commons.wikimedia.org/wiki/'+p.title.replaceAll(' ','_'),width:p.imageinfo?.[0]?.width,height:p.imageinfo?.[0]?.height,size:p.imageinfo?.[0]?.size,mime:p.imageinfo?.[0]?.mime,licence:p.imageinfo?.[0]?.extmetadata?.LicenseShortName?.value||'',artist:(p.imageinfo?.[0]?.extmetadata?.Artist?.value||'').replace(/<[^>]+>/g,'').slice(0,300),description:(p.imageinfo?.[0]?.extmetadata?.ImageDescription?.value||'').replace(/<[^>]+>/g,' ').slice(0,350)}))};
- }catch(e){return {query:q,error:String(e),results:[]}}
+ for(const [k,v] of Object.entries({action:'query',generator:'search',gsrsearch:item.query,gsrnamespace:'6',gsrlimit:'20',prop:'imageinfo',iiprop:'url|size|extmetadata',format:'json',formatversion:'2'}))url.searchParams.set(k,v);
+ let last;
+ for(let attempt=0;attempt<3;attempt++){
+  try{
+   const response=await fetch(url,{headers:{'User-Agent':'NZGISHistoryImageResearch/1.0 (https://history.pm4gis.nz/about/)','Accept':'application/json'},signal:AbortSignal.timeout(25000)});
+   if(!response.ok)throw new Error('HTTP '+response.status);
+   const json=await response.json();
+   const results=(json.query?.pages||[]).filter(p=>/\\.(jpe?g|png)$/i.test(p.title)).map(p=>{
+    const i=p.imageinfo?.[0]||{},m=i.extmetadata||{};
+    return {
+     title:p.title,sourceUrl:i.descriptionurl||'',originalUrl:i.url||'',width:i.width||0,height:i.height||0,bytes:i.size||0,mime:i.mime||'',
+     licence:extValue(m,'LicenseShortName'),licenceUrl:extValue(m,'LicenseUrl'),artist:extValue(m,'Artist'),
+     credit:extValue(m,'Credit'),dateOriginal:extValue(m,'DateTimeOriginal'),dateProperty:extValue(m,'Date'),
+     objectName:extValue(m,'ObjectName'),description:extValue(m,'ImageDescription'),uploadDate:extValue(m,'DateTime')
+    };
+   });
+   return {...item,results};
+  }catch(error){last=error;await new Promise(resolve=>setTimeout(resolve,500*(attempt+1)))}
+ }
+ return {...item,error:String(last?.message||last),results:[]};
 }
-const all=[];
-for(let i=0;i<queries.length;i+=3){all.push(...await Promise.all(queries.slice(i,i+3).map(get)));await new Promise(r=>setTimeout(r,300));}
-const out={preparedAt:new Date().toISOString(),queries:all,total:all.reduce((n,a)=>n+a.results.length,0)};
-await fs.writeFile('docs/media/commons-discovery-wave2.json',JSON.stringify(out,null,2)+'\n');
-console.log('Results',out.total,'Errors',all.filter(x=>x.error).map(x=>x.query+': '+x.error));
-for(const x of all)console.log(x.query, x.results.length, x.results.slice(0,3).map(r=>r.title).join(' | '));
+const queries=[];
+for(let i=0;i<plan.length;i+=3){
+ queries.push(...await Promise.all(plan.slice(i,i+3).map(query)));
+ await new Promise(resolve=>setTimeout(resolve,250));
+}
+const report={searchedAt:new Date().toISOString(),subjectDateCutoff:cutoff,queryCount:plan.length,resultCount:queries.reduce((n,q)=>n+q.results.length,0),queries};
+await fs.writeFile('docs/media/commons-discovery-wave4-2025.json',JSON.stringify(report,null,2)+'\\n');
+console.log('Date-limited chapter discovery:',report.queryCount,'queries,',report.resultCount,'results,',queries.filter(q=>q.error).length,'errors.');
+for(const q of queries.filter(q=>q.error))console.log('ERROR',q.chapter,q.query,q.error);

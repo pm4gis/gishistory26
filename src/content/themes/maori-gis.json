@@ -1,0 +1,186 @@
+{
+  "id": "maori-gis",
+  "slug": "maori-gis",
+  "title": "Māori GIS",
+  "description": "Explore iwi-led mapping, whenua and land information, Māori place names, cultural heritage, environmental planning, data sovereignty and the communities who developed practical Māori GIS in Aotearoa.",
+  "color": "#9fbf9e",
+  "passageIds": [
+    "passage:chapter-11-79631e4212",
+    "passage:research-20261010-ch26-iwi-led-motueka-information-system",
+    "passage:research-20261010-ch29-maori-gis-practitioner-conferences",
+    "passage:research-20261010-ch33-public-data-and-iwi-controlled-information",
+    "passage:research-20261010-ch35-ka-huru-manu-technical-history",
+    "passage:chapter-29-71ae35ecbd",
+    "passage:chapter-35-23fcc809db",
+    "passage:chapter-20-5cf3bc2665",
+    "passage:chapter-39-dd9961d631"
+  ],
+  "recordIds": [
+    "entity:maori-land-court",
+    "entity:te-kahui-manu-hokai-maori-gis-association",
+    "entity:nga-poutama-matawhenua",
+    "entity:mirmak-te-tau-ihu-iwi-gis-collaboration",
+    "entity:te-runanga-o-ngai-tahu-ngai-tahu-archive",
+    "entity:te-mana-raraunga",
+    "entity:maori-gis-facebook-group",
+    "entity:journey-gis",
+    "entity:land-information-new-zealand-linz",
+    "entity:manaaki-whenua-landcare-research",
+    "entity:tasman-district-council"
+  ],
+  "eventIds": [
+    "1996-maori-land-resource-conference",
+    "research-20261010-2003-mirmak-iwi-gis",
+    "research-20261010-2009-christchurch-maori-gis-conference",
+    "research-20261010-2010-lower-hutt-maori-gis-conference",
+    "research-20261010-2017-kahurumanu-atlas-launch",
+    "2017-maori-gis-facebook-group",
+    "2022-nga-poutama-community-impact-award",
+    "linzcap-2020-10-nga-poutama-matawhenua-online-wananga-begin",
+    "linzcap-2025-05-16-nga-poutama-explores-korero-takutai",
+    "linzcap-2025-05-05-nga-poutama-historical-aerial-imagery-session-published",
+    "linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga"
+  ],
+  "sections": [
+    {
+      "title": "Whenua, maps and authority",
+      "paragraphs": [
+        "Long before GIS, Māori geographic knowledge was held through whakapapa, oral histories, journeys, place names, maps and relationships with whenua and wai. Survey and land-court records introduced a different administrative record, important for understanding the history of land interests but not interchangeable with iwi or hapū knowledge. The history of Māori GIS includes how mapping was used to document land loss and claims, as well as how Māori organisations subsequently built and governed their own spatial information.",
+        "The Māori Land Information System was being digitised by April 2002. On 4 March 2011 the Māori Land Court launched its GIS Project, allowing users to view, search and download geographic information about Māori land blocks, including an interface available in te reo Māori. It drew on LINZ data and Google mapping technology; the published launch is evidence of the service at that date, not proof that every underlying ownership or boundary question was resolved."
+      ],
+      "sources": [
+        {
+          "label": "Waitangi Tribunal, Rangahaua Whānui research series",
+          "url": "https://waitangitribunal.govt.nz/en/publications/general/rangahaua-whanui"
+        },
+        {
+          "label": "Beehive, Māori Land Court changes, 16 April 2002",
+          "url": "https://www.beehive.govt.nz/release/m%C3%A4ori-land-court-changes-deliver-world-first"
+        },
+        {
+          "label": "Beehive, Māori Land Court GIS Project launch, 4 March 2011",
+          "url": "https://www.beehive.govt.nz/release/gis-launch-heralds-new-era"
+        }
+      ]
+    },
+    {
+      "title": "Iwi-led GIS",
+      "paragraphs": [
+        "A 28 June 1996 Wellington conference on Mapping Māori Land and Resource Aspirations provides an early dated marker for GIS-related debate over whenua. In November 2003, the Motueka Iwi Resource Management Advisory Komiti (MIRMAK) began an iwi-led GIS information project involving Te Tau Ihu iwi and Manaaki Whenua research support. Its documented purposes included environmental management, consenting, planning and cultural records.",
+        "The Motueka work drew a distinction between environmental information suitable for broader exchange and cultural information requiring restricted access. That distinction remains important: availability of public maps and government datasets does not imply permission to publish iwi-held knowledge, wāhi tapu locations or other sensitive material."
+      ],
+      "sources": [
+        {
+          "label": "Harmsworth, Park and Walker, Motueka iwi GIS case study, May 2005",
+          "url": "https://www.landcareresearch.co.nz/assets/researchpubs/harmsworth_gis_iwi.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Place names and heritage",
+      "paragraphs": [
+        "Ngāi Tahu's Kā Huru Manu Cultural Mapping Project built a research-led geospatial record of names, routes and places. A 2005 Kāi Tahu ki Otago pilot and mapping hui from 2007 preceded the public atlas launched in 2017. The project linked archival work, community review and a place-name information system to digital mapping; the public atlas contains material approved for release, not the full iwi knowledge base.",
+        "The distinction between public interpretation and iwi-controlled source material is as important to the history as the software. GIS and digital archives can help reconnect places with narratives, but context, accuracy and mana whenua decisions govern how such information is represented."
+      ],
+      "sources": [
+        {
+          "label": "Ngāi Tahu, Cultural Mapping Project begins",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/cultural-mapping-project-begins/"
+        },
+        {
+          "label": "Ngāi Tahu, the Ngāi Tahu Atlas",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+        },
+        {
+          "label": "Te Karaka, Kā Huru Manu, 2018",
+          "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+        }
+      ]
+    },
+    {
+      "title": "Practitioners and wānanga",
+      "paragraphs": [
+        "Māori GIS practitioner conferences in 2009 (Christchurch) and 2010 (Lower Hutt), followed by online practitioner networks, formed part of the move towards peer learning and applied Māori GIS capability. The former Māori GIS Facebook group was later deleted after being hacked; its history should not be mistaken for a current public group.",
+        "From October 2020, LINZ reported fortnightly online Ngā Poutama Matawhenua mapping wānanga delivered with Te Kāhui Manu Hōkai and supported by Journey GIS. The programme subsequently continued as monthly sessions covering whenua, mapping tools, historical aerial imagery, coastal information, environmental monitoring and 3D storytelling. The collaboration received the 2021 Community Impact Spatial Excellence Award at the 2022 award ceremony."
+      ],
+      "sources": [
+        {
+          "label": "LINZ Annual Report 2020/21, geospatial capability and wānanga",
+          "url": "https://www.linz.govt.nz/sites/default/files/corp/toitu-te-whenua_annual-report-20-21-a11y-web_20211201.pdf"
+        },
+        {
+          "label": "LINZ Annual Report 2021/22, Community Impact Award",
+          "url": "https://www.linz.govt.nz/sites/default/files/corp/Toitu%CC%84%20Te%20Whenua%20Annual%20Report%202021-22.pdf"
+        },
+        {
+          "label": "LINZ, Ngā Poutama Matawhenua",
+          "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/nga-poutama-matawhenua-practical-maori-gis-mapping-wananga"
+        }
+      ]
+    },
+    {
+      "title": "Data sovereignty",
+      "paragraphs": [
+        "Māori data sovereignty is not simply a software-access question. Te Mana Raraunga, formed in 2015, articulated principles of Māori authority, collective benefit and responsibilities in relation to data. GIS work involving iwi knowledge requires decisions about consent, storage, provenance, access rights, ownership, interpretation and reuse.",
+        "The examples in this collection distinguish openly licensed government geospatial datasets from restricted Māori information. They describe public historical evidence and do not reproduce protected whakapapa, wāhi tapu information, unpublished iwi maps or community knowledge that has not been approved for public release."
+      ],
+      "sources": [
+        {
+          "label": "Te Mana Raraunga, Tūtohinga / Charter",
+          "url": "https://www.temanararaunga.maori.nz/tutohinga"
+        },
+        {
+          "label": "Ngāi Tahu cultural mapping project",
+          "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+        }
+      ]
+    }
+  ],
+  "stops": [
+    {
+      "passageId": "passage:chapter-11-79631e4212",
+      "title": "Māori land values and GIS research",
+      "url": "/stories/universities-build-a-field/#maori-land-values-1995-1996-79631e4212"
+    },
+    {
+      "passageId": "passage:research-20261010-ch26-iwi-led-motueka-information-system",
+      "title": "An iwi-led information system in Motueka",
+      "url": "/stories/conservation-and-environment/#iwi-led-motueka-information-system"
+    },
+    {
+      "passageId": "passage:research-20261010-ch29-maori-gis-practitioner-conferences",
+      "title": "Māori GIS practitioner conferences",
+      "url": "/stories/becoming-a-gis-professional/#maori-gis-practitioner-conferences"
+    },
+    {
+      "passageId": "passage:research-20261010-ch33-public-data-and-iwi-controlled-information",
+      "title": "Public data and iwi-controlled information",
+      "url": "/stories/open-data-changes-access/#public-data-and-iwi-controlled-information"
+    },
+    {
+      "passageId": "passage:research-20261010-ch35-ka-huru-manu-technical-history",
+      "title": "Kā Huru Manu: the research behind the atlas",
+      "url": "/stories/the-map-becomes-an-application/#ka-huru-manu-technical-history"
+    },
+    {
+      "passageId": "passage:chapter-29-71ae35ecbd",
+      "title": "Professional networks and wānanga",
+      "url": "/stories/becoming-a-gis-professional/#new-professional-networks-71ae35ecbd"
+    },
+    {
+      "passageId": "passage:chapter-35-23fcc809db",
+      "title": "Practical Māori web mapping",
+      "url": "/stories/the-map-becomes-an-application/#practical-maori-web-mapping-23fcc809db"
+    },
+    {
+      "passageId": "passage:chapter-20-5cf3bc2665",
+      "title": "Historical imagery returns as a community tool",
+      "url": "/stories/imagery-becomes-infrastructure/#historical-imagery-returns-as-a-community-tool-5cf3bc2665"
+    },
+    {
+      "passageId": "passage:chapter-39-dd9961d631",
+      "title": "3D storytelling for whenua",
+      "url": "/stories/from-flat-maps-to-3d/#3d-storytelling-for-whenua-dd9961d631"
+    }
+  ]
+}

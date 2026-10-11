@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0021-university",
+  "a": "person:zhennan-shi",
+  "b": "entity:university-of-waikato",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch30"
+  ],
+  "sources": [
+    {
+      "label": "Zhennan Shi, A Web-based Geographical Information System for Low Bandwidth Access, University of Waikato, 2007",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/d024fb18-6ece-4d34-acfb-442b56e65de0"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "person:hussam-al-mahoozi",
+  "slug": "hussam-al-mahoozi",
+  "name": "Hussam Al-Mahoozi",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/hussam-al-mahoozi/",
+  "description": "Researcher whose 2011 master's work concerned retail and urban planning.",
+  "story": [
+    "In 2011, Hussam Al-Mahoozi completed Master of Business research at University of Otago titled “Improving GIS use in City Retail Planning: A Look at the Dunedin City Council's Geographic Information System”. The university record describes work on GIS use in Dunedin City Council retail and city planning. Specific subsequent council system changes are not established."
+  ],
+  "sources": [
+    {
+      "label": "Hussam Al-Mahoozi, Improving GIS use in City Retail Planning: A Look at the Dunedin City Council's Geographic Information System, University of Otago, 2011",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Improving-GIS-use-in-City-Retail/9926479300701891"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Hussam Al-Mahoozi, Improving GIS use in City Retail Planning: A Look at the Dunedin City Council's Geographic Information System, University of Otago, 2011",
+        "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Improving-GIS-use-in-City-Retail/9926479300701891"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/the-map-becomes-an-application/"
+    }
+  ]
+}

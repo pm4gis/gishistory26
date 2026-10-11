@@ -1,0 +1,34 @@
+{
+  "id": "image:lower-hutt-civic-centre-2021",
+  "slug": "lower-hutt-civic-centre-2021",
+  "title": "Lower Hutt Town Hall and council administration building, 2021",
+  "assetPath": "/assets/historical/web/lower-hutt-civic-centre-2021.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lower_Hutt_Town_Hall_and_Council_building_2021-09-25_2.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Tom Ackroyd (Quilt Phase)",
+  "licence": "CC BY-SA 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Lower_Hutt_Town_Hall_and_Council_building_2021-09-25_2.jpg",
+  "altText": "Lower Hutt Town Hall, clock tower and council administration building.",
+  "caption": "Lower Hutt Town Hall, clock tower and council administration building.",
+  "themeIds": [],
+  "dateDisplay": "25 September 2021",
+  "context": "The council's civic buildings photographed in 2021; not a historical map or GIS service screen.",
+  "thumbnailPath": "/assets/historical/card/lower-hutt-civic-centre-2021.webp",
+  "originalSha256": "4200c4cb27333c6d3d001993a78b274ff444baadb3a5e2cdc3c9396ff445e44d",
+  "webSha256": "eef6618320a86f0f0f9def81311b513e9dcf27da5e7d4434bd226f9f3ea9c48f",
+  "thumbnailSha256": "912fc25a6dec96a1619e2cf824bb7a36c2d51752fe502deb244faa3519aa40c1",
+  "originalWidth": 4032,
+  "originalHeight": 3024,
+  "sourceFileTitle": "File:Lower Hutt Town Hall and Council building 2021-09-25 2.jpg",
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Lower_Hutt_Town_Hall_and_Council_building_2021-09-25_2.jpg",
+  "derivativesNote": "Original unchanged JPEG preserved in NZ GIS History Research Packages / Wave 3 archive; the website serves uncropped 1600px and 720px WebP derivatives.",
+  "headerCandidate": false,
+  "relatedRecords": [
+    {
+      "name": "Hutt City Council",
+      "url": "/entities/hutt-city-council/",
+      "role": "Photographed institution"
+    }
+  ]
+}

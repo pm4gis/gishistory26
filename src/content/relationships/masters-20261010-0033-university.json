@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0033-university",
+  "a": "person:william-gorrie-tate",
+  "b": "entity:massey-university",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "William Gorrie Tate, The effect of a rise in mean sea level on the New Plymouth coastline: a GIS investigation, Massey University, 2013",
+      "url": "https://mro.massey.ac.nz/items/e132bd40-738c-4816-a8c1-051997cc1564"
+    }
+  ]
+}

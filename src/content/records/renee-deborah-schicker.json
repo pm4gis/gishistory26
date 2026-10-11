@@ -1,0 +1,36 @@
+{
+  "id": "person:renee-deborah-schicker",
+  "slug": "renee-deborah-schicker",
+  "name": "Renée Deborah Schicker",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/renee-deborah-schicker/",
+  "description": "Researcher whose 2010 master's work concerned natural hazards.",
+  "story": [
+    "In 2010, Renée Deborah Schicker completed MSc research at University of Waikato titled “Quantitative landslide susceptibility assessment of the Waikato region using GIS”. The Waikato research compared weights-of-evidence and logistic-regression approaches to landslide susceptibility using terrain, geology, rainfall, land cover and other mapped predictors."
+  ],
+  "sources": [
+    {
+      "label": "Renée Deborah Schicker, Quantitative landslide susceptibility assessment of the Waikato region using GIS, University of Waikato, 2010",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/4447be26-ff82-4bd5-b07e-0a4d11b34651"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Renée Deborah Schicker, Quantitative landslide susceptibility assessment of the Waikato region using GIS, University of Waikato, 2010",
+        "url": "https://researchcommons.waikato.ac.nz/entities/publication/4447be26-ff82-4bd5-b07e-0a4d11b34651"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/safety-policing-and-emergency-gis/"
+    }
+  ]
+}

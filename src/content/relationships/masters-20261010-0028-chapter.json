@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0028-chapter",
+  "a": "person:kevin-england",
+  "b": "chapter:28",
+  "label": "Research discussed in chapter",
+  "basis": "This thesis is linked to the cited thematic chapter passage",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "Kevin England, A GIS approach to landslide hazard management for the West Coast region, New Zealand, University of Canterbury, 2011",
+      "url": "https://ir.canterbury.ac.nz/items/61976ffe-cfe4-43e2-8e72-f0e3d767c8f5"
+    }
+  ]
+}

@@ -1,49 +1,112 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import DecorativeLandscape from '../components/DecorativeLandscape.astro';
+import SubjectImage from '../components/SubjectImage.astro';
+import {pickThemeImage} from '../lib/subject-media.mjs';
+import {homeHighlightSlugs} from '../lib/home-highlights.mjs';
 import {decorFor} from '../lib/decor';
 import {dataset} from '../lib/data';
+
 const d=await dataset();
-const chapters=d.articles.filter((a:any)=>a.slug!=='preface');
+const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
+const eligible=new Set(homeHighlightSlugs);
+const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
+  const passage=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order)[0];
+  const images=d.images.filter((img:any)=>img.articleSlug===a.slug&&img.assetPath);
+  const image=images.find((img:any)=>img.headerCandidate)||images[0]||null;
+  return {...a, passageTitle:passage?.title||a.title, storyUrl:passage?a.url+'#'+encodeURIComponent(passage.slug):a.url, image};
+});
+if(highlights.length<10)throw new Error('Too few curated published highlighted stories');
+const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images)}));
 ---
 <Layout>
-  <div class="wrap home-layout">
-    <section class="hero hero--visual">
-      <DecorativeLandscape id="north2024-raglan1" variant="hero" priority/>
-      <div class="hero-copy">
-        <p class="eyebrow">Maps · people · technology</p>
-        <h1>A history of GIS<br/>in New Zealand.</h1>
-        <p class="intro">Read the chapters in sequence, explore a period, or follow the people and organisations behind the work.</p>
-        <div class="actions">
-          <a class="button primary" href={chapters[0]?.url||'/read/'}>Start reading →</a>
-          <a class="button" href="/timeline/">Explore the timeline</a>
-          <a class="button" id="continue" href="/read/" hidden>Continue reading</a>
-        </div>
-        <div class="stats">
-          <span><strong>{chapters.length}</strong> chapters</span>
-          <span><strong>{d.records.filter((x:any)=>x.kind==='Person').length}</strong> people</span>
-          <span><strong>{d.events.length}</strong> events</span>
-        </div>
-      </div>
-    </section>
-    <div class="section-head"><h2>Explore by theme</h2><a href="/themes/">All themes →</a></div>
-    <div class="cards cards--visual">
-      {d.themes.map((t:any,i:number)=><article class="card art-card">
-        <DecorativeLandscape id={decorFor(i+2)} variant="card"/>
-        <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></div>
-      </article>)}
+ <div class="wrap home-layout">
+  <section class="hero hero--visual">
+   <DecorativeLandscape id="north2024-raglan1" variant="hero" priority/>
+   <div class="hero-copy">
+    <p class="eyebrow">Maps · people · technology</p>
+    <h1>A history of GIS<br/>in New Zealand.</h1>
+    <p class="intro">Read the chapters in sequence, explore a period, or follow the people and organisations behind the work.</p>
+    <div class="actions">
+     <a class="button primary" href={chapters[0]?.url||'/read/'}>Start reading →</a>
+     <a class="button" href="/timeline/">Explore the timeline</a>
+     <a class="button" id="continue" href="/read/" hidden>Continue reading</a>
     </div>
-    <div class="section-head"><h2>Begin the book</h2><a href="/read/">Contents →</a></div>
-    <div class="cards cards--visual">
-      {chapters.slice(0,6).map((a:any,i:number)=><article class="card art-card">
-        <DecorativeLandscape id={decorFor(i+7)} variant="card"/>
-        <div class="art-card-body">
-          <span class="eyebrow">Chapter {a.readingOrder}</span>
-          <a class="title" href={a.url}>{a.title}</a><p>{a.summary}</p><a href={a.url}>Read chapter →</a>
-        </div>
-      </article>)}
+    <div class="stats">
+     <span><strong>{chapters.length}</strong> chapters</span>
+     <span><strong>{d.records.filter((x:any)=>x.kind==='Person').length}</strong> people</span>
+     <span><strong>{d.events.length}</strong> events</span>
     </div>
-    <p class="preface-link"><a href="/stories/preface/">Read the author's preface</a></p>
-  </div>
-  <script>try{const p=JSON.parse(localStorage.getItem('nzgis-progress')||'null');const a=document.querySelector<HTMLAnchorElement>('#continue');if(a&&p?.url?.startsWith('/stories/')){a.href=p.url;a.hidden=false}}catch{}</script>
+   </div>
+  </section>
+
+  <section id="highlighted-stories" aria-labelledby="highlights-heading">
+   <div class="section-head"><div><p class="eyebrow">Discover something different</p><h2 id="highlights-heading">Highlighted stories</h2></div><a href="/read/">Read the history →</a></div>
+   <p class="section-intro">Five selections from across New Zealand's GIS history. A different selection appears each time you visit.</p>
+   <div class="cards highlight-grid">
+    {highlights.map((a:any,i:number)=><article class="card art-card highlight-card" data-highlight={a.slug} hidden={i>=5}>
+     {a.image?
+      <SubjectImage image={a.image} relation={'Documentary image associated with '+a.title} variant="card" showCaption={false}/>:
+      <DecorativeLandscape id={decorFor(i+9)} variant="card"/>}
+     <div class="art-card-body">
+      <span class="eyebrow">Chapter {a.readingOrder} · {a.title}</span>
+      <a class="title" href={a.storyUrl}>{a.passageTitle}</a>
+      <p>{a.summary}</p>
+      <a class="read-link" href={a.storyUrl}>Read story →</a>
+     </div>
+    </article>)}
+   </div>
+  </section>
+
+  <section id="chapters" aria-labelledby="chapters-heading">
+   <div class="section-head"><div><p class="eyebrow">Read the history</p><h2 id="chapters-heading">Explore the chapters</h2></div><a href="/read/">Chapter contents →</a></div>
+   <p class="section-intro">All {chapters.length} published chapters, in reading order. Choose a chapter or jump straight to its number.</p>
+   <nav class="chapter-index" aria-label="Jump to a chapter">
+    {chapters.map((a:any)=><a href={'#chapter-'+a.readingOrder} aria-label={'Jump to chapter '+a.readingOrder}>{a.readingOrder}</a>)}
+   </nav>
+   <div class="cards chapter-grid">
+    {chapters.map((a:any)=><article class="card chapter-card" id={'chapter-'+a.readingOrder}>
+     <span class="eyebrow">Chapter {a.readingOrder}</span>
+     <h3><a href={a.url}>{a.title}</a></h3>
+     <p>{a.summary}</p>
+     <a class="read-link" href={a.url}>Read chapter →</a>
+    </article>)}
+   </div>
+   <p class="preface-link"><a href="/stories/preface/">Read the author's preface →</a></p>
+  </section>
+
+  <section id="themes" aria-labelledby="themes-heading">
+   <div class="section-head"><div><p class="eyebrow">Follow a subject</p><h2 id="themes-heading">Explore by theme</h2></div><a href="/themes/">Browse all themes →</a></div>
+   <p class="section-intro">Follow subjects across chapters, people, organisations and events.</p>
+   <div class="cards cards--visual">
+    {themes.map((t:any,i:number)=><article class="card art-card">
+     {t.subject?<SubjectImage image={t.subject.image} relation={t.subject.relation} variant="card"/>:<DecorativeLandscape id={decorFor(i+2)} variant="card"/>}
+     <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></div>
+    </article>)}
+   </div>
+  </section>
+ </div>
+ <script>
+  try{
+   const progress=JSON.parse(localStorage.getItem('nzgis-progress')||'null');
+   const continued=document.querySelector<HTMLAnchorElement>('#continue');
+   if(continued&&progress?.url?.startsWith('/stories/')){continued.href=progress.url;continued.hidden=false;}
+  }catch{}
+  const grid=document.querySelector<HTMLElement>('#highlighted-stories .highlight-grid');
+  if(grid){
+   const cards=Array.from(grid.querySelectorAll<HTMLElement>('.highlight-card'));
+   try{
+    const previous=JSON.parse(sessionStorage.getItem('nzgis-last-highlights')||'[]');
+    const unused=cards.filter(card=>!Array.isArray(previous)||!previous.includes(card.dataset.highlight));
+    const choices=unused.length>=5?unused:[...cards];
+    for(let i=choices.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[choices[i],choices[j]]=[choices[j],choices[i]];}
+    const selected=choices.slice(0,5);
+    cards.forEach(card=>card.hidden=!selected.includes(card));
+    selected.forEach(card=>grid.appendChild(card));
+    sessionStorage.setItem('nzgis-last-highlights',JSON.stringify(selected.map(card=>card.dataset.highlight)));
+   }catch{
+    // The first five server-rendered stories remain visible when storage is unavailable.
+   }
+  }
+ </script>
 </Layout>

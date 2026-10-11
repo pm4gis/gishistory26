@@ -1,0 +1,26 @@
+{
+  "id": "masters-20261010-0020",
+  "dateDisplay": "2007",
+  "startDate": "2007",
+  "datePrecision": "year",
+  "year": 2007,
+  "label": "Xiaotie (Anthony) Huang: master’s research involving GIS",
+  "summary": "Development of a map service, University of Waikato, 2007.",
+  "url": "/stories/the-first-web-maps/",
+  "passageIds": [
+    "passage:masters-20261010-ch30"
+  ],
+  "recordIds": [
+    "person:xiaotie-anthony-huang"
+  ],
+  "themeIds": [],
+  "categories": [
+    "university-research"
+  ],
+  "sources": [
+    {
+      "label": "Xiaotie (Anthony) Huang, Development of a map service, University of Waikato, 2007",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/ba6aacd2-46d6-46a1-b179-1d8a5380f6e1"
+    }
+  ]
+}

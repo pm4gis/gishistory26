@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0014-chapter",
+  "a": "person:adrienne-kim-bonnington",
+  "b": "chapter:11",
+  "label": "Research discussed in chapter",
+  "basis": "This thesis is linked to the cited thematic chapter passage",
+  "passageIds": [
+    "passage:masters-20261010-ch11"
+  ],
+  "sources": [
+    {
+      "label": "Adrienne Kim Bonnington, A requirements engineering framework for developing COTS GIS applications, Massey University, 2002",
+      "url": "https://mro.massey.ac.nz/items/a942e7bb-65c3-4971-873c-6d340b9ae9b2"
+    }
+  ]
+}

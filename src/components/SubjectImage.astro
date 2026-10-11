@@ -1,0 +1,29 @@
+---
+/**
+ * Credited historical image. Unlike purely decorative aerials, the picture
+ * represents a specific published map, screenshot or photograph and therefore
+ * keeps its real title, source, date and contextual association.
+ */
+interface Props {
+ image:any;
+ relation:string;
+ variant?:'banner'|'card'|'feature';
+ priority?:boolean;
+ showCaption?:boolean;
+}
+const {image,relation,variant='feature',priority=false,showCaption=true}=Astro.props;
+const url='/images/'+encodeURIComponent(image.slug)+'/';
+---
+{image&&
+<figure class:list={['subject-media','subject-media--'+variant]}>
+  <a class="subject-media-link" href={url} aria-label={'Read image source and licence for '+image.title}>
+   <img src={variant==='card'?(image.thumbnailPath||image.assetPath):image.assetPath}
+    alt={image.altText}
+    loading={priority?'eager':'lazy'} decoding="async" fetchpriority={priority?'high':'auto'}/>
+  </a>
+  {showCaption&&<figcaption>
+   <strong>{image.title}</strong>
+   {variant!=='card'&&<span>{relation}</span>}
+   <a href={url}>Image source, credit and licence →</a>
+  </figcaption>}
+</figure>}

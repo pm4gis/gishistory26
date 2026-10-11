@@ -1,0 +1,53 @@
+name: Acquire chapter documentary originals wave 3
+on:
+  push:
+    branches: [research/chapter-documentary-imagery-wave3-20261010]
+    paths:
+      - scripts/download-chapter-images-wave3.mjs
+      - docs/media/curated-sources-wave3.json
+      - .github/workflows/acquire-chapter-images-wave3.yml
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: original-acquisition-wave3
+  cancel-in-progress: true
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/research/chapter-documentary-imagery-wave3-20261010'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/chapter-documentary-imagery-wave3-20261010}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Acquire verified original images and record failures
+        run: node scripts/download-chapter-images-wave3.mjs || true
+      - name: Verify all inherited assets, integrity, tests and production build
+        run: |
+          npm test
+          npm run build
+      - name: Commit preserved originals and image pages to review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/ src/content/images/ docs/media/chapter-download-run-wave3.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive wave 3 source originals and local web derivatives"
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin research/chapter-documentary-imagery-wave3-20261010
+            git rebase origin/research/chapter-documentary-imagery-wave3-20261010
+            git push origin HEAD:research/chapter-documentary-imagery-wave3-20261010
+          fi
+      - name: Require complete source checks before release
+        run: node -e "const d=require('./docs/media/chapter-download-run-wave3.json'); if(d.failed)throw Error(d.failed+' image rights or original retrieval failures')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chapter-images-wave3-report
+          path: docs/media/chapter-download-run-wave3.json
+          retention-days: 30

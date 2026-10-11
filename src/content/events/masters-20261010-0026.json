@@ -1,0 +1,26 @@
+{
+  "id": "masters-20261010-0026",
+  "dateDisplay": "2011",
+  "startDate": "2011",
+  "datePrecision": "year",
+  "year": 2011,
+  "label": "Geoffrey Hughes: master’s research involving GIS",
+  "summary": "A Spatial Analysis Of Assault Patterns In Entertainment Areas Throughout the Waikato using Geographic Information Systems, University of Waikato, 2011.",
+  "url": "/stories/safety-policing-and-emergency-gis/",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "recordIds": [
+    "person:geoffrey-hughes"
+  ],
+  "themeIds": [],
+  "categories": [
+    "university-research"
+  ],
+  "sources": [
+    {
+      "label": "Geoffrey Hughes, A Spatial Analysis Of Assault Patterns In Entertainment Areas Throughout the Waikato using Geographic Information Systems, University of Waikato, 2011",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/16b0ae7a-24b6-4088-b129-ad78f19956d5"
+    }
+  ]
+}

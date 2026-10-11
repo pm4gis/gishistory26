@@ -1,0 +1,36 @@
+{
+  "id": "image:linz-landonline-survey-work-2025",
+  "slug": "linz-landonline-survey-work-2025",
+  "title": "Landonline Web Search displaying survey work, 2025",
+  "assetPath": "/assets/historical/web/linz-landonline-survey-work-2025.webp",
+  "sourceUrl": "https://www.linz.govt.nz/guidance/landonline-support/web-search-support/display-survey-work",
+  "sourceName": "Toitū Te Whenua Land Information New Zealand",
+  "credit": "Source: Toitū Te Whenua Land Information New Zealand, licensed for re-use under Creative Commons Attribution 4.0 International (CC BY 4.0). Web display copy resized and converted to WebP.",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+  "altText": "Landonline Web Search spatial map showing survey vectors, survey marks and parcel information.",
+  "caption": "LINZ Web Search showing cadastral survey work as parcels, marks and survey vectors, with dimensions and relationships visible in a spatial display.",
+  "themeIds": [],
+  "articleSlug": "landonline",
+  "chapterNumber": 14,
+  "dateDisplay": "June 2025 demonstration",
+  "context": "An authentic screen from the 2025 web version of Landonline, documented by LINZ. It is not an image of the original 2000s launch interface.",
+  "originalAssetPath": "/assets/historical/original/linz-landonline-survey-work-2025.png",
+  "thumbnailPath": "/assets/historical/card/linz-landonline-survey-work-2025.webp",
+  "originalSha256": "d29476e4ae01c4bf32d7e0ae1a1d6838c0020ebb841bb522194ae17adb195c88",
+  "webSha256": "0a2414a40272ecbbef6433a5d1ae61c65040bc665e9aa5d6add8d311ba67acf7",
+  "originalWidth": 1288,
+  "originalHeight": 785,
+  "sourceFileTitle": "display survey work 1 - displayed work.png",
+  "sourceOriginalUrl": "https://www.linz.govt.nz/sites/default/files/img/display%20survey%20work%201%20-%20displayed%20work.png",
+  "headerCandidate": true,
+  "relatedRecords": [
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Source organisation and publisher"
+    }
+  ],
+  "derivativesNote": "Local original stored unchanged; WebP display width up to 1600 pixels and thumbnail width up to 720 pixels, resized without cropping."
+}

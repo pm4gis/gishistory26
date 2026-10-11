@@ -4,13 +4,14 @@
   "articleId": "article:chapter-1",
   "title": "The country from the air",
   "order": 5,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [
     "imagery"
   ],
   "recordIds": [
     "chapter:1",
     "entity:new-zealand-aerial-mapping",
+    "entity:land-information-new-zealand-linz",
     "person:henry-piet-drury-van-asch"
   ],
   "blocks": [
@@ -18,38 +19,76 @@
       "type": "paragraph",
       "text": "Aerial photography gave later digital systems a different kind of inherited record. Early aviation produced individual photographs, but the larger change was systematic aerial survey: planned flight lines, overlapping near-vertical frames, ground control, indexes and organised storage. The New Zealand Permanent Air Force carried out an aerial survey of the Waimakariri River in 1926, and Lands and Survey was experimenting with aerial photographs for contoured topographic work by 1930. By the later 1930s photography was feeding directly into national and defence mapping.",
       "markdown": "Aerial photography gave later digital systems a different kind of inherited record. Early aviation produced individual photographs, but the larger change was systematic aerial survey: planned flight lines, overlapping near-vertical frames, ground control, indexes and organised storage. The New Zealand Permanent Air Force carried out an aerial survey of the Waimakariri River in 1926, and Lands and Survey was experimenting with aerial photographs for contoured topographic work by 1930. By the later 1930s photography was feeding directly into national and defence mapping.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Te Ara, modern mapping and surveying",
+          "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/page-3"
+        }
+      ],
       "id": "ch01-s06-p01"
     },
     {
       "type": "paragraph",
       "text": "Private enterprise became part of this infrastructure early. Henry Piet Drury van Asch established New Zealand Aerial Mapping Ltd at the end of 1935, with substantive survey work documented from 1937. The company supplied aircraft, cameras, crews and later photogrammetric mapping to government and private clients. During and after the war, aerial survey became an ordinary input to topographic mapping, engineering, forestry, land development and scientific work.",
       "markdown": "Private enterprise became part of this infrastructure early. Henry Piet Drury van Asch established New Zealand Aerial Mapping Ltd at the end of 1935, with substantive survey work documented from 1937. The company supplied aircraft, cameras, crews and later photogrammetric mapping to government and private clients. During and after the war, aerial survey became an ordinary input to topographic mapping, engineering, forestry, land development and scientific work.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Te Ara, Henry Piet Drury van Asch",
+          "url": "https://teara.govt.nz/en/biographies/5v1/van-asch-henry-piet-drury"
+        }
+      ],
       "id": "ch01-s06-p02"
     },
     {
       "type": "paragraph",
       "text": "The film archive produced by that activity became a geographic asset of exceptional longevity. The Crown Aerial Film Library now describes nearly 700,000 negatives from about 7,300 surveys flown between 1936 and 2008, including Crown-funded and later-acquired New Zealand Aerial Mapping material. The original system consisted of negatives, rolls, survey diagrams, run and frame numbers, contact prints and indexes. Modern scanning and services such as Retrolens are later access layers over an archive whose organisational logic was created in the film era.",
       "markdown": "The film archive produced by that activity became a geographic asset of exceptional longevity. The Crown Aerial Film Library now describes nearly 700,000 negatives from about 7,300 surveys flown between 1936 and 2008, including Crown-funded and later-acquired New Zealand Aerial Mapping material. The original system consisted of negatives, rolls, survey diagrams, run and frame numbers, contact prints and indexes. Modern scanning and services such as Retrolens are later access layers over an archive whose organisational logic was created in the film era.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Land Information New Zealand, historical aerial imagery",
+          "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+        }
+      ],
       "id": "ch01-s06-p03"
     },
     {
       "type": "paragraph",
       "text": "Photography became measurement through photogrammetry. Overlapping photographs could be viewed stereoscopically so that an operator perceived a three-dimensional model, which survey control anchored to known positions and heights. A skilled photogrammetrist could trace roads, streams, ridges and contours without a field party measuring every feature directly. Instruments such as the Wild A8 stereoplotters acquired by New Zealand Aerial Mapping in 1959 were sophisticated analogue machines, but the interpretation remained human.",
       "markdown": "Photography became measurement through photogrammetry. Overlapping photographs could be viewed stereoscopically so that an operator perceived a three-dimensional model, which survey control anchored to known positions and heights. A skilled photogrammetrist could trace roads, streams, ridges and contours without a field party measuring every feature directly. Instruments such as the Wild A8 stereoplotters acquired by New Zealand Aerial Mapping in 1959 were sophisticated analogue machines, but the interpretation remained human.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "MOTAT, Plotting Aotearoa New Zealand: how we made our maps",
+          "url": "https://www.motat.nz/explore/stories/plotting-aotearoa-new-zealand-how-we-made-our-maps/"
+        },
+        {
+          "label": "Te Ara, modern mapping and surveying",
+          "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/page-3"
+        }
+      ],
       "id": "ch01-s06-p04"
     },
     {
       "type": "paragraph",
       "text": "This workflow divided geographic production into recognisable stages. Aircraft collected images. Survey control supplied geometry. Photogrammetrists extracted measured detail. Draughtspeople compiled the map. Reproduction staff created distributable products, while indexes and archives made the imagery discoverable later. Chapter 3 picks up this chain when computer calculation and digital coordinate capture begin entering the photogrammetric and orthophoto workflow.",
       "markdown": "This workflow divided geographic production into recognisable stages. Aircraft collected images. Survey control supplied geometry. Photogrammetrists extracted measured detail. Draughtspeople compiled the map. Reproduction staff created distributable products, while indexes and archives made the imagery discoverable later. Chapter 3 picks up this chain when computer calculation and digital coordinate capture begin entering the photogrammetric and orthophoto workflow.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Land Information New Zealand, historical aerial imagery",
+          "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+        }
+      ],
       "id": "ch01-s06-p05"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 4 · Early remote sensing",
+      "url": "/stories/turning-the-landscape-into-numbers/"
+    },
+    {
+      "label": "Related chapter: Chapter 20 · Aerial imagery",
+      "url": "/stories/imagery-becomes-infrastructure/"
+    }
+  ],
   "legacyAnchor": "the-country-from-the-air"
 }

@@ -1,0 +1,48 @@
+{
+  "id": "entity:ibm-650",
+  "slug": "ibm-650",
+  "name": "IBM 650",
+  "kind": "Computer",
+  "category": "Government computing",
+  "url": "/entities/ibm-650/",
+  "website": null,
+  "story": [
+    "The IBM 650 was installed at Treasury in 1960 and formally opened in March 1961. Its first major public-service task was the fortnightly payroll for about 34,000 staff.",
+    "The installed data-processing system used magnetic tape and punched-card output. The computer room needed air conditioning, a raised floor for cables and standby power."
+  ],
+  "sources": [
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    },
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ],
+  "aliases": [
+    "IBM 650",
+    "IBM Type 650"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      }
+    ],
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      },
+      {
+        "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+        "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+      }
+    ]
+  ]
+}

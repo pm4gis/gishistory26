@@ -4,12 +4,13 @@
   "articleId": "article:chapter-1",
   "title": "The people behind the sheets",
   "order": 7,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [
     "women-in-gis"
   ],
   "recordIds": [
     "chapter:1",
+    "entity:department-of-lands-and-survey",
     "person:mary-mulcahy",
     "person:mary-sutherland",
     "person:madge-pirrit",
@@ -22,21 +23,48 @@
       "type": "paragraph",
       "text": "The inherited system depended on a technical workforce that is easy to hide behind institutional names. Surveyors and field assistants established control and boundaries. Human computers reduced observations. Draughtspeople compiled plans and maps. Lithographic and photographic staff reproduced them. Clerks indexed records, photogrammetrists measured through stereo imagery, and staff in district offices knew how the pieces fitted together.",
       "markdown": "The inherited system depended on a technical workforce that is easy to hide behind institutional names. Surveyors and field assistants established control and boundaries. Human computers reduced observations. Draughtspeople compiled plans and maps. Lithographic and photographic staff reproduced them. Clerks indexed records, photogrammetrists measured through stereo imagery, and staff in district offices knew how the pieces fitted together.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1884–85",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1885-I.2.1.4.2"
+        }
+      ],
       "id": "ch01-s08-p01"
     },
     {
       "type": "paragraph",
       "text": "The work could reach industrial scale. By the 1890s Lands and Survey was producing more than a million lithographic impressions in a year for land administration and other government purposes. By the twentieth century the same broad production culture supported topographic series, census mapping, aerial photography, geological and soil mapping and specialised agency work. Standard symbols, sheet numbering, coordinate frameworks and record identifiers provided a form of interoperability before the word was common in information technology.",
       "markdown": "The work could reach industrial scale. By the 1890s Lands and Survey was producing more than a million lithographic impressions in a year for land administration and other government purposes. By the twentieth century the same broad production culture supported topographic series, census mapping, aerial photography, geological and soil mapping and specialised agency work. Standard symbols, sheet numbering, coordinate frameworks and record identifiers provided a form of interoperability before the word was common in information technology.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1884–85",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1885-I.2.1.4.2"
+        }
+      ],
       "id": "ch01-s08-p02"
     },
     {
       "type": "paragraph",
       "text": "Rachel Gillanders and draughtswoman Madge Pirrit worked within this broader production system. Pirrit’s credited maps span town and cadastral compilation from the 1920s through aerial-photo-supported wartime topography and later work into 1949. Their names sit alongside a much larger workforce whose observations, calculations and linework accumulated in departmental records. Later digitisation inherited that work, including its strengths, omissions and uncertain boundaries.",
       "markdown": "Rachel Gillanders and draughtswoman Madge Pirrit worked within this broader production system. Pirrit’s credited maps span town and cadastral compilation from the 1920s through aerial-photo-supported wartime topography and later work into 1949. Their names sit alongside a much larger workforce whose observations, calculations and linework accumulated in departmental records. Later digitisation inherited that work, including its strengths, omissions and uncertain boundaries.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "New Zealand Gazette, 1921 staff record for R. Gillanders",
+          "url": "https://gazette.howison.co.nz/nzg/1921/issue/65/page/1796"
+        },
+        {
+          "label": "National Library of New Zealand, Papakura town map credited to M. Pirrit",
+          "url": "https://natlib.govt.nz/records/32060309"
+        },
+        {
+          "label": "National Library of New Zealand, Wharekawa map credited to M. Pirrit",
+          "url": "https://natlib.govt.nz/records/21701281"
+        },
+        {
+          "label": "New Zealand Gazette, Lands and Survey transfer record for Madge Pirrit",
+          "url": "https://library.victoria.ac.nz/databases/nzgazettearchive/pubs/gazettes/1926/1926%20ISSUE%20038.pdf"
+        }
+      ],
       "id": "ch01-s08-p03"
     },
     {
@@ -44,22 +72,27 @@
       "text": "Mary Sutherland, a professionally qualified forester, undertook technical calculation and laboratory work during 1923–32 while accommodation rules limited her field deployment. M. Dovey and M. Freeman appear among the draughting staff converting soil-survey and laboratory classification into thematic maps in 1946–50. Mary Mulcahy selected ballot cards and processed military-service records in 1917–18, within a system organised through mapped recruiting districts. These were different jobs, each contributing to the records that linked people, resources and administrative decisions with place.",
       "sources": [
         {
-          "label": "Dictionary of New Zealand Biography / Te Ara, Mary Sutherland",
+          "label": "Te Ara, Mary Sutherland",
           "url": "https://teara.govt.nz/en/biographies/4s58/sutherland-mary/print"
         },
         {
-          "label": "Manaaki Whenua, A brief history of Soil Bureau, 1930–80, staff chronology",
-          "url": "https://cdm20022.contentdm.oclc.org/digital/collection/p20022coll3/id/268/"
+          "label": "Manatū Taonga, Mary Mulcahy",
+          "url": "https://nzhistory.govt.nz/people/mary-mulcahy"
         },
         {
-          "label": "Manatū Taonga / NZHistory, Mary Mulcahy",
-          "url": "https://nzhistory.govt.nz/people/mary-mulcahy"
+          "label": "Soil Survey Staff, draughting and laboratory records",
+          "url": "https://cdm20022.contentdm.oclc.org/digital/collection/p20022coll3/id/268/"
         }
       ],
       "id": "research-women-technical-records",
       "markdown": "Mary Sutherland, a professionally qualified forester, undertook technical calculation and laboratory work during 1923–32 while accommodation rules limited her field deployment. M. Dovey and M. Freeman appear among the draughting staff converting soil-survey and laboratory classification into thematic maps in 1946–50. Mary Mulcahy selected ballot cards and processed military-service records in 1917–18, within a system organised through mapped recruiting districts. These were different jobs, each contributing to the records that linked people, resources and administrative decisions with place."
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 29 · The GIS profession",
+      "url": "/stories/becoming-a-gis-professional/"
+    }
+  ],
   "legacyAnchor": "the-people-behind-the-sheets"
 }

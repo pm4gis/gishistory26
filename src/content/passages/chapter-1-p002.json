@@ -4,7 +4,7 @@
   "articleId": "article:chapter-1",
   "title": "The parcel record",
   "order": 1,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [
     "cadastre"
   ],
@@ -25,21 +25,36 @@
       "type": "paragraph",
       "text": "By 1884-85 the General Survey Office reported maintaining 1,470 ten-chain block sheets, 155 record maps and large-scale standard-survey sheets on which Land Transfer surveys were recorded. Those categories changed over time, but their operating purpose is familiar. New survey and title information had to be fitted into an existing spatial framework rather than treated as a separate drawing every time. Sheets, registers and indexes together allowed staff to find the current representation of a place, trace the surveys behind it and update the office record when something changed.",
       "markdown": "By 1884-85 the General Survey Office reported maintaining 1,470 ten-chain block sheets, 155 record maps and large-scale standard-survey sheets on which Land Transfer surveys were recorded. Those categories changed over time, but their operating purpose is familiar. New survey and title information had to be fitted into an existing spatial framework rather than treated as a separate drawing every time. Sheets, registers and indexes together allowed staff to find the current representation of a place, trace the surveys behind it and update the office record when something changed.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1884–85",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1885-I.2.1.4.2"
+        }
+      ],
       "id": "ch01-s02-p02"
     },
     {
       "type": "paragraph",
       "text": "There was no query language, topology engine or single schema controlling the whole system. Staff linked records through plan numbers, annotations and indexes, supported by their knowledge of which book or sheet answered a particular question. Later cadastral computing inherited these methods of finding, connecting and maintaining information.",
       "markdown": "There was no query language, topology engine or single schema controlling the whole system. Staff linked records through plan numbers, annotations and indexes, supported by their knowledge of which book or sheet answered a particular question. Later cadastral computing inherited these methods of finding, connecting and maintaining information.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1884–85",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1885-I.2.1.4.2"
+        }
+      ],
       "id": "ch01-s02-p03"
     },
     {
       "type": "paragraph",
       "text": "Accuracy also varied. Dense urban mapping could be based on large-scale surveys while remote areas might be represented much more generally, and office record maps accumulated information of different dates and quality. A clean line on a maintained sheet therefore did not guarantee that the geometry could support every later purpose. This would become a recurring digital problem: the computer could preserve a line more neatly than the original map, but it could not manufacture accuracy that had never been observed.",
       "markdown": "Accuracy also varied. Dense urban mapping could be based on large-scale surveys while remote areas might be represented much more generally, and office record maps accumulated information of different dates and quality. A clean line on a maintained sheet therefore did not guarantee that the geometry could support every later purpose. This would become a recurring digital problem: the computer could preserve a line more neatly than the original map, but it could not manufacture accuracy that had never been observed.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1884–85",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1885-I.2.1.4.2"
+        }
+      ],
       "id": "ch01-s02-p04"
     },
     {
@@ -54,11 +69,7 @@
       "text": "Te Wharekorari supplied geographic knowledge to Walter Mantell in 1848 during Crown land-acquisition work in the South Island. Rivers, lakes, routes and place names entered sketches and purchase mapping through encounters of this kind. The mapmaking occurred alongside negotiations over land and the recording of reserves and settlement interests. Naming the knowledge holder identifies a contribution otherwise easily absorbed into the credit given to the official who kept or published the paper record.",
       "sources": [
         {
-          "label": "National Library / ATL, Te Wharekorari map record",
-          "url": "https://natlib.govt.nz/records/22386209"
-        },
-        {
-          "label": "National Library, Te Wharekorari authority record and associated Mantell maps E-333-036, E-333-037, E-333-038",
+          "label": "National Library of New Zealand, Te Wharekorari and associated Mantell maps",
           "url": "https://natlib.govt.nz/records/22386209"
         }
       ],
@@ -66,6 +77,11 @@
       "markdown": "Te Wharekorari supplied geographic knowledge to Walter Mantell in 1848 during Crown land-acquisition work in the South Island. Rivers, lakes, routes and place names entered sketches and purchase mapping through encounters of this kind. The mapmaking occurred alongside negotiations over land and the recording of reserves and settlement interests. Naming the knowledge holder identifies a contribution otherwise easily absorbed into the credit given to the official who kept or published the paper record."
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 13 · The digital cadastre",
+      "url": "/stories/the-cadastre-becomes-data/"
+    }
+  ],
   "legacyAnchor": "the-parcel-record"
 }

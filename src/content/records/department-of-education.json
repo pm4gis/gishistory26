@@ -1,0 +1,44 @@
+{
+  "id": "entity:department-of-education",
+  "slug": "department-of-education",
+  "name": "Department of Education (New Zealand)",
+  "kind": "Agency",
+  "category": "Government",
+  "url": "/entities/department-of-education/",
+  "website": null,
+  "story": [
+    "A later history of New Zealand computing argues that an ICT 1201 was installed for the Department of Education before Treasury’s IBM 650 and may have processed teachers’ pay by August or September 1960. This chronology is plausible but less firmly documented than Treasury’s machine.",
+    "By 1969 the Education Department’s computer was also acting as a bureau for other departments. In 1970 its computer operations were brought into the Government Computer Centre."
+  ],
+  "sources": [
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    },
+    {
+      "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+      "url": "https://history.itp.nz/part-3/shailes.html"
+    }
+  ],
+  "aliases": [
+    "Department of Education",
+    "Education Department"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+        "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+      }
+    ],
+    [
+      {
+        "label": "A. C. Shailes, “The impact of computers on the public sector” (1980), ITPNZ history",
+        "url": "https://history.itp.nz/part-3/shailes.html"
+      }
+    ]
+  ]
+}

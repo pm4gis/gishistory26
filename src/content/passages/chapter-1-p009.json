@@ -4,7 +4,7 @@
   "articleId": "article:chapter-1",
   "title": "The mapping inheritance",
   "order": 8,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
     "chapter:1"
@@ -14,7 +14,20 @@
       "type": "paragraph",
       "text": "By the late 1950s, New Zealand therefore possessed most of the institutional ingredients that digital mapping would later require. It had a maintained cadastral framework, national geodetic control, standard topographic series, mapped statistical areas, systematic aerial photography, photogrammetric measurement, thematic resource mapping and organisations accustomed to exchanging geographic products. It also had filing systems, identifiers, classifications and production routines that allowed those records to remain useful over time.",
       "markdown": "By the late 1950s, New Zealand therefore possessed most of the institutional ingredients that digital mapping would later require. It had a maintained cadastral framework, national geodetic control, standard topographic series, mapped statistical areas, systematic aerial photography, photogrammetric measurement, thematic resource mapping and organisations accustomed to exchanging geographic products. It also had filing systems, identifiers, classifications and production routines that allowed those records to remain useful over time.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1884–85",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1885-I.2.1.4.2"
+        },
+        {
+          "label": "Department of Lands and Survey, report for 1949–50",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1950-I.2.2.2.2"
+        },
+        {
+          "label": "Land Information New Zealand, historical aerial imagery",
+          "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+        }
+      ],
       "id": "ch01-s09-p01"
     },
     {
@@ -28,10 +41,24 @@
       "type": "paragraph",
       "text": "Early electronic computing handled survey arithmetic. A machine did not need to understand a parcel or a river to reduce observations, adjust networks, transform coordinates or solve engineering calculations. Geography entered the computer as numbers long before the whole map followed.",
       "markdown": "Early electronic computing handled survey arithmetic. A machine did not need to understand a parcel or a river to reduce observations, adjust networks, transform coordinates or solve engineering calculations. Geography entered the computer as numbers long before the whole map followed.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Related chapter: Chapter 2 · Survey calculations",
+          "url": "/stories/coordinates-enter-the-computer/"
+        }
+      ],
       "id": "ch01-s09-p03"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 2 · Survey calculations",
+      "url": "/stories/coordinates-enter-the-computer/"
+    },
+    {
+      "label": "Related chapter: Chapter 3 · Computer cartography",
+      "url": "/stories/drawing-maps-by-machine/"
+    }
+  ],
   "legacyAnchor": "what-the-machine-received"
 }

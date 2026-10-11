@@ -1,0 +1,32 @@
+{
+  "id": "entity:ict-1201",
+  "slug": "ict-1201",
+  "name": "ICT 1201",
+  "kind": "Computer",
+  "category": "Government computing",
+  "url": "/entities/ict-1201/",
+  "website": null,
+  "story": [
+    "A later computing history argues that an ICT 1201 was installed for the Department of Education before Treasury’s IBM 650 and may have processed teachers’ payroll by August or September 1960. The earlier date is plausible but less firmly documented."
+  ],
+  "sources": [
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ],
+  "aliases": [
+    "ICT 1201"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+        "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0016-chapter",
+  "a": "person:franziska-meinzinger",
+  "b": "chapter:26",
+  "label": "Research discussed in chapter",
+  "basis": "This thesis is linked to the cited thematic chapter passage",
+  "passageIds": [
+    "passage:masters-20261010-ch26"
+  ],
+  "sources": [
+    {
+      "label": "Franziska Meinzinger, GIS-based site identification for the land application of wastewater, Christchurch City, New Zealand, Lincoln University, 2003",
+      "url": "https://hdl.handle.net/10182/1147"
+    }
+  ]
+}

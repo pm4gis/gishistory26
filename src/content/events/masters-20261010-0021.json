@@ -1,0 +1,26 @@
+{
+  "id": "masters-20261010-0021",
+  "dateDisplay": "2007",
+  "startDate": "2007",
+  "datePrecision": "year",
+  "year": 2007,
+  "label": "Zhennan Shi: master’s research involving GIS",
+  "summary": "A Web-based Geographical Information System for Low Bandwidth Access, University of Waikato, 2007.",
+  "url": "/stories/the-first-web-maps/",
+  "passageIds": [
+    "passage:masters-20261010-ch30"
+  ],
+  "recordIds": [
+    "person:zhennan-shi"
+  ],
+  "themeIds": [],
+  "categories": [
+    "university-research"
+  ],
+  "sources": [
+    {
+      "label": "Zhennan Shi, A Web-based Geographical Information System for Low Bandwidth Access, University of Waikato, 2007",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/d024fb18-6ece-4d34-acfb-442b56e65de0"
+    }
+  ]
+}

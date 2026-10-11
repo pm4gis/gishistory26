@@ -1,5 +1,6 @@
 <script lang="ts">
  import {scaleLinear} from 'd3-scale';
+ import {ngaPoutamaForEvent} from '../lib/nga-poutama-videos.mjs';
  export let events:any[]=[];export let compact=false;export let onSelect:(e:any)=>void=()=>{};
  let from='';let to='';let term='';let selected:any=null;let includeUndated=true;
  const year=(e:any)=>e.datePrecision==='unknown'?null:(e.year??(e.startDate?.match(/^\d{4}/)?Number(e.startDate.slice(0,4)):null));
@@ -27,7 +28,61 @@
  {/each}</nav>{/if}
  <svg class="timeline-svg" viewBox="0 0 1000 65" role="img" aria-label="Event dates overview. Use the labelled events below to explore."><line x1="25" y1="25" x2="975" y2="25"/>{#each ticks as y}<line x1={scale(y)} y1="20" x2={scale(y)} y2="32"/><text x={scale(y)} y="55" text-anchor="middle">{y}</text>{/each}{#each filtered.filter(e=>year(e)!==null) as e}{#if e.endDate&&Number(e.endDate.slice(0,4))>year(e)}<rect x={scale(year(e))} y="21" width={Math.max(3,scale(Number(e.endDate.slice(0,4)))-scale(year(e)))} height="8"/>{:else}<circle cx={scale(year(e))} cy="25" r="3"/>{/if}{/each}</svg>
  <div class="timeline-result-count" aria-live="polite">{filtered.length} of {events.length} events {#if !compact}· Select an event for its summary, sources and related account{/if}</div>
- <div class="timeline-rail" tabindex="0" aria-label="Chronological event buttons">{#each filtered as e}<button class="timeline-event" aria-pressed={selected?.id===e.id} on:click={()=>{pick(e);if(!compact){const u=new URL(location.href);u.searchParams.set('event',e.id);history.replaceState(null,'',u)}}}><small>{e.dateDisplay} · {e.datePrecision}</small><span>{e.label}</span></button>{/each}</div>
+
+ <div class="timeline-rail" tabindex="0" aria-label="Chronological event buttons">
+ {#each filtered as e (e.id)}
+ <button class={'timeline-event'+(e.featuredImage?' timeline-event--photo':'')} aria-pressed={selected?.id===e.id} aria-label={e.dateDisplay+': '+e.label} on:click={()=>{pick(e);if(!compact){const u=new URL(location.href);u.searchParams.set('event',e.id);history.replaceState(null,'',u)}}}>
+ {#if e.featuredImage}<img class="timeline-event-photo" src={e.featuredImage.cardPath} alt="" loading="lazy" decoding="async"/>{/if}
+ <span class="timeline-event-body"><small>{e.dateDisplay} · {e.datePrecision}</small><span class="timeline-event-title">{e.label}</span>{#if !compact}<span class="timeline-event-teaser">{e.summary}</span>{/if}</span>
+ </button>
+ {/each}
+ </div>
  {#if !filtered.length}<p class="empty">No events in this period. Clear the filters to see all dates.</p>{/if}
- {#if selected}<section class="event-summary" aria-live="polite"><h3>{selected.label}</h3><p>{selected.summary}</p><small>{selected.dateDisplay} · {selected.datePrecision} precision</small>{#if selected.url}<p><a href={selected.url}>Read the linked account →</a></p>{/if}{#if selected.sources?.length}<details class="sources"><summary>Event sources</summary><ul>{#each selected.sources as s}<li>{#if s.url&&(/^https?:\/\//.test(s.url)||s.url.startsWith('/'))}<a href={s.url}>{s.label}</a>{:else}{s.label}{/if}</li>{/each}</ul></details>{/if}</section>{/if}
+
+ {#if selected}
+ <section class="event-summary" aria-live="polite">
+  <div class={'event-summary-grid'+(selected.featuredImage?' event-summary-grid--with-image':'')}>
+   <div class="event-summary-copy">
+    <p class="eyebrow">Selected event · {selected.dateDisplay}</p>
+    <h3>{selected.label}</h3>
+    <p class="event-summary-lead">{selected.summary}</p>
+    <small>{selected.dateDisplay} · {selected.datePrecision} precision</small>
+    {#if selected.contextParagraphs?.length}
+     <div class="event-summary-context">
+      <h4>{selected.contextTitle||'Historical context'}</h4>
+      {#each selected.contextParagraphs as paragraph}<p>{paragraph}</p>{/each}
+     </div>
+    {/if}
+    {#if selected.url}<p><a href={selected.url}>Read the linked account →</a></p>{/if}
+    {#if ngaPoutamaForEvent(selected.id).length}
+      <div class="event-wananga-links"><h4>Related published recording</h4>
+        {#each ngaPoutamaForEvent(selected.id) as video (video.id)}
+          <p><a href={video.source} target="_blank" rel="noopener noreferrer">{video.title} ↗</a> <small>{video.date}. {video.attribution}</small></p>
+        {/each}
+      </div>
+    {/if}
+   </div>
+   {#if selected.featuredImage}
+   <figure class="event-illustration">
+    <a href={'/images/'+selected.featuredImage.slug+'/'} aria-label={'View source and details for '+selected.featuredImage.title}><img src={selected.featuredImage.assetPath} alt={selected.featuredImage.altText} loading="lazy" decoding="async"/></a>
+    <figcaption><strong>{selected.featuredImage.title}</strong>{#if selected.featuredImage.dateDisplay}<span>Image date: {selected.featuredImage.dateDisplay}</span>{/if}<span>{selected.featuredImage.relation}</span><a href={'/images/'+selected.featuredImage.slug+'/'}>View image, source and attribution →</a></figcaption>
+   </figure>
+   {/if}
+  </div>
+  {#if selected.additionalImages?.length}
+   <section class="event-companion-images" aria-label="Related documentary images">
+    <h4>Additional documentary images</h4>
+    <div class="event-companion-images-grid">
+     {#each selected.additionalImages as image (image.slug)}
+      <a href={'/images/'+image.slug+'/'}><img src={image.assetPath} alt={image.altText} loading="lazy" decoding="async"/><span>{image.title} · View source, date and attribution →</span></a>
+     {/each}
+    </div>
+   </section>
+  {/if}
+  {#if selected.imageSourceLink}<p class="event-primary-source"><a href={selected.imageSourceLink} target="_blank" rel="noopener noreferrer">{selected.imageSourceLabel||'See the archival source'} ↗</a></p>{/if}
+  {#if selected.additionalArchivalSources?.length}<div class="event-extra-sources"><h4>Original archive references</h4><ul>{#each selected.additionalArchivalSources as source}<li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a></li>{/each}</ul></div>{/if}
+  {#if selected.relatedRecords?.length}<div class="event-related"><h4>Related people and organisations</h4><div class="event-related-links">{#each selected.relatedRecords as r}<a href={r.url}>{r.name}</a>{/each}</div></div>{/if}
+  {#if selected.contextualSources?.length}<details class="sources"><summary>Sources and further reading · {selected.contextualSources.length}</summary><ul>{#each selected.contextualSources as source}<li>{#if source.url&&(/^https?:\/\//.test(source.url)||source.url.startsWith('/'))}<a href={source.url}>{source.label}</a>{:else}{source.label}{/if}</li>{/each}</ul></details>{/if}
+ </section>
+ {/if}
 </section>

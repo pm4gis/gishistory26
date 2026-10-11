@@ -1,0 +1,26 @@
+{
+  "id": "masters-20261010-0014",
+  "dateDisplay": "2002",
+  "startDate": "2002",
+  "datePrecision": "year",
+  "year": 2002,
+  "label": "Adrienne Kim Bonnington: master’s research involving GIS",
+  "summary": "A requirements engineering framework for developing COTS GIS applications, Massey University, 2002.",
+  "url": "/stories/universities-build-a-field/",
+  "passageIds": [
+    "passage:masters-20261010-ch11"
+  ],
+  "recordIds": [
+    "person:adrienne-kim-bonnington"
+  ],
+  "themeIds": [],
+  "categories": [
+    "university-research"
+  ],
+  "sources": [
+    {
+      "label": "Adrienne Kim Bonnington, A requirements engineering framework for developing COTS GIS applications, Massey University, 2002",
+      "url": "https://mro.massey.ac.nz/items/a942e7bb-65c3-4971-873c-6d340b9ae9b2"
+    }
+  ]
+}

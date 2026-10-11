@@ -4,11 +4,11 @@
   "articleId": "article:chapter-1",
   "title": "Coordinates before computers",
   "order": 2,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
     "chapter:1",
-    "entity:traverse-seamless",
+    "entity:department-of-lands-and-survey",
     "person:rachel-gillanders"
   ],
   "blocks": [
@@ -16,38 +16,84 @@
       "type": "paragraph",
       "text": "A national digital map also required something less visible than the parcel sheet: a common positional framework. Early New Zealand survey often depended on local meridional circuits and regional control, which worked for district administration but did not automatically form one seamless national coordinate system. Surveyors extended control through triangulation, observing angles through networks of fixed trig stations and calculating positions from carefully measured baselines. The mathematics bound local surveys to a wider geometric framework long before a computer stored the result.",
       "markdown": "A national digital map also required something less visible than the parcel sheet: a common positional framework. Early New Zealand survey often depended on local meridional circuits and regional control, which worked for district administration but did not automatically form one seamless national coordinate system. Surveyors extended control through triangulation, observing angles through networks of fixed trig stations and calculating positions from carefully measured baselines. The mathematics bound local surveys to a wider geometric framework long before a computer stored the result.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Land Information New Zealand, introduction to the national geodetic system",
+          "url": "https://www.linz.govt.nz/sites/default/files/cust/sq-introduction-sept-09.pdf"
+        },
+        {
+          "label": "Department of Lands and Survey, 1910 survey report",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1910-I.2.1.4.2/3"
+        }
+      ],
       "id": "ch01-s03-p01"
     },
     {
       "type": "paragraph",
       "text": "Those calculations created an occupation with a name that later sounds unexpectedly modern. A computer was originally a person employed to compute. Survey departments used mathematical staff to reduce observations, solve trigonometric problems, adjust networks and produce coordinate values that field and mapping staff could then use. Rachel Gillanders, for example, appears in official records as a Computer and later as a Draughtswoman and Computer in Lands and Survey.",
       "markdown": "Those calculations created an occupation with a name that later sounds unexpectedly modern. A computer was originally a person employed to compute. Survey departments used mathematical staff to reduce observations, solve trigonometric problems, adjust networks and produce coordinate values that field and mapping staff could then use. Rachel Gillanders, for example, appears in official records as a Computer and later as a Draughtswoman and Computer in Lands and Survey.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "New Zealand Gazette, 1921 staff record for R. Gillanders",
+          "url": "https://gazette.howison.co.nz/nzg/1921/issue/65/page/1796"
+        }
+      ],
       "id": "ch01-s03-p02"
     },
     {
       "type": "paragraph",
       "text": "From 1909 the Wairarapa baseline became part of a renewed effort to establish more precise national geodetic control. First-order triangulation expanded over subsequent decades, with difficult long-distance observations, repeated calculations and later post-war adjustment. Lands and Survey reported completion of the fieldwork for the first-order triangulation around 1950, and the work underpinned the New Zealand Geodetic Datum 1949, or NZGD49. The datum provided a common reference framework against which survey, mapping, engineering and other coordinate-based work could be related.",
       "markdown": "From 1909 the Wairarapa baseline became part of a renewed effort to establish more precise national geodetic control. First-order triangulation expanded over subsequent decades, with difficult long-distance observations, repeated calculations and later post-war adjustment. Lands and Survey reported completion of the fieldwork for the first-order triangulation around 1950, and the work underpinned the New Zealand Geodetic Datum 1949, or NZGD49. The datum provided a common reference framework against which survey, mapping, engineering and other coordinate-based work could be related.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Land Information New Zealand, introduction to the national geodetic system",
+          "url": "https://www.linz.govt.nz/sites/default/files/cust/sq-introduction-sept-09.pdf"
+        },
+        {
+          "label": "Department of Lands and Survey, 1910 survey report",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1910-I.2.1.4.2/3"
+        },
+        {
+          "label": "Department of Lands and Survey, report for 1949–50",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1950-I.2.2.2.2"
+        }
+      ],
       "id": "ch01-s03-p03"
     },
     {
       "type": "paragraph",
       "text": "That common framework connected otherwise separate mapping activities. Cadastral surveys could refer to national control. Topographic mapping could be compiled against known positions. Engineering projects could start from established coordinates rather than create their own isolated geometry. In 1950 Lands and Survey reported supplying coordinates for 223 trig stations and other control to HMNZS Lachlan for the modern hydrographic resurvey of New Zealand’s coasts. Marine charting and land survey were separate disciplines, but the ship still depended on positional control established ashore.",
       "markdown": "That common framework connected otherwise separate mapping activities. Cadastral surveys could refer to national control. Topographic mapping could be compiled against known positions. Engineering projects could start from established coordinates rather than create their own isolated geometry. In 1950 Lands and Survey reported supplying coordinates for 223 trig stations and other control to HMNZS Lachlan for the modern hydrographic resurvey of New Zealand’s coasts. Marine charting and land survey were separate disciplines, but the ship still depended on positional control established ashore.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1949–50",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1950-I.2.2.2.2"
+        }
+      ],
       "id": "ch01-s03-p04"
     },
     {
       "type": "paragraph",
       "text": "By then, survey and geodetic work had produced a large body of numerical geographic information before electronic computing became routine. Coordinate lists, observation books, adjustment calculations and trig records were already abstractions of place into numbers. The later computer did not invent coordinates. It changed how quickly they could be calculated, transformed, stored and reused.",
       "markdown": "By then, survey and geodetic work had produced a large body of numerical geographic information before electronic computing became routine. Coordinate lists, observation books, adjustment calculations and trig records were already abstractions of place into numbers. The later computer did not invent coordinates. It changed how quickly they could be calculated, transformed, stored and reused.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Department of Lands and Survey, report for 1949–50",
+          "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1950-I.2.2.2.2"
+        }
+      ],
       "id": "ch01-s03-p05"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 2 · Survey calculations",
+      "url": "/stories/coordinates-enter-the-computer/"
+    },
+    {
+      "label": "Related chapter: Chapter 19 · The national coordinate system",
+      "url": "/stories/rebuilding-the-coordinate-framework/"
+    }
+  ],
   "legacyAnchor": "coordinates-before-computers"
 }

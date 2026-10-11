@@ -1,0 +1,40 @@
+{
+  "id": "entity:new-zealand-geodetic-datum-2000",
+  "slug": "new-zealand-geodetic-datum-2000",
+  "name": "New Zealand Geodetic Datum 2000 (NZGD2000)",
+  "kind": "Geodetic datum",
+  "category": "Geodetic systems",
+  "url": "/entities/new-zealand-geodetic-datum-2000/",
+  "website": null,
+  "story": [
+    "NZGD2000 became New Zealand’s official geodetic datum in 1998, replacing NZGD49. It provides geodetic coordinates at the reference epoch 1 January 2000 and uses a deformation model to account for plate motion and major earthquakes.",
+    "LINZ treats NZGD2000 as semi-dynamic. When transforming coordinates from an older grid or a time-dependent global datum, the source reference and, where relevant, coordinate epoch affect the result."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, New Zealand Geodetic Datum 2000",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000"
+    }
+  ],
+  "aliases": [
+    "NZGD2000",
+    "New Zealand Geodetic Datum 2000"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "LINZ, New Zealand Geodetic Datum 2000",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, New Zealand Geodetic Datum 2000",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000"
+      }
+    ]
+  ]
+}

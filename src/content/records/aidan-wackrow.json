@@ -1,0 +1,36 @@
+{
+  "id": "person:aidan-wackrow",
+  "slug": "aidan-wackrow",
+  "name": "Aidan Wackrow",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/aidan-wackrow/",
+  "description": "Researcher whose 2016 master's work concerned public space and equity.",
+  "story": [
+    "In 2016, Aidan Wackrow completed Master of Environmental Planning research at University of Waikato titled “A Study of Green Space Access in the Waikato Region”. The research examined geographic access to green space in the Waikato region using environmental-planning and spatial evidence."
+  ],
+  "sources": [
+    {
+      "label": "Aidan Wackrow, A Study of Green Space Access in the Waikato Region, University of Waikato, 2016",
+      "url": "https://researchcommons.waikato.ac.nz/items/c5b1212e-b0aa-4ca5-b61d-08288a57ea75"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Aidan Wackrow, A Study of Green Space Access in the Waikato Region, University of Waikato, 2016",
+        "url": "https://researchcommons.waikato.ac.nz/items/c5b1212e-b0aa-4ca5-b61d-08288a57ea75"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/conservation-and-environment/"
+    }
+  ]
+}

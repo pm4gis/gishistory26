@@ -1,9 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
+import SubjectImage from '../../components/SubjectImage.astro';
+import {pickThemeImage} from '../../lib/subject-media.mjs';
 import {decorFor} from '../../lib/decor';
 import {dataset} from '../../lib/data';
 const d=await dataset();
+const thematic=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images)}));
 ---
 <Layout title="Themes · NZ GIS History">
  <div class="wrap">
@@ -11,9 +14,9 @@ const d=await dataset();
     <div><p class="eyebrow">Reading collections</p><h1>Explore a theme.</h1><p class="intro">Follow a subject through the people, organisations, technology and accounts of New Zealand's GIS history.</p></div>
     <DecorativeLandscape id="north2024-karikari2" variant="banner" priority/>
   </div>
-  <div class="cards cards--visual">{d.themes.map((t:any,i:number)=>
+  <div class="cards cards--visual">{thematic.map((t:any,i:number)=>
     <article class="card art-card">
-      <DecorativeLandscape id={decorFor(i+2)} variant="card"/>
+      {t.subject?<SubjectImage image={t.subject.image} relation={t.subject.relation} variant="card"/>:<DecorativeLandscape id={decorFor(i+2)} variant="card"/>}
       <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></div>
     </article>)}
   </div>

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:chapter-2-reilly-nzmg",
+  "a": "person:w-i-reilly",
+  "b": "entity:new-zealand-map-grid",
+  "label": "Designed the projection published in 1973",
+  "basis": "LINZ identifies Reilly’s 1973 paper as the description of the New Zealand Map Grid.",
+  "passageIds": [
+    "passage:chapter-2-2ab91fbc4f"
+  ],
+  "sources": [
+    {
+      "label": "LINZ, New Zealand Map Grid",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+    }
+  ]
+}

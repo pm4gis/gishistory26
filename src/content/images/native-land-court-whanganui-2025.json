@@ -1,0 +1,33 @@
+{
+  "id": "image:native-land-court-whanganui-2025",
+  "slug": "native-land-court-whanganui-2025",
+  "title": "Former Native Land Court and Aotea Māori Land Board building, Whanganui",
+  "assetPath": "/assets/historical/web/native-land-court-whanganui-2025.webp",
+  "thumbnailPath": "/assets/historical/card/native-land-court-whanganui-2025.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Native_Land_Court_and_Aotea_Maori_Land_Board_Building_(Former)_TA_2025-05-11.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Tom Ackroyd",
+  "licence": "CC BY-SA 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Native_Land_Court_and_Aotea_Maori_Land_Board_Building_(Former)_TA_2025-05-11.jpg",
+  "altText": "Former Native Land Court and Aotea Māori Land Board building in Whanganui, photographed in 2025; not a photo of today's Māori Land Court GIS services.",
+  "caption": "Former Native Land Court and Aotea Māori Land Board building in Whanganui, photographed in 2025; not a photo of today's Māori Land Court GIS services.",
+  "context": "Former Native Land Court and Aotea Māori Land Board building in Whanganui, photographed in 2025; not a photo of today's Māori Land Court GIS services.",
+  "themeIds": [],
+  "dateDisplay": "11 May 2025 (photograph); historical former court building",
+  "originalSha256": "acd84075f9dde2ca67958693f9785e2a110bef3ad141468025c7cefe7fd8e8d2",
+  "webSha256": "dbb6570be392f3d38b9da0c64ea88a7bda5e3bdd876673e03c381d415c3a7e5f",
+  "thumbnailSha256": "2271266f7bb180e37826a89f6249be7a6235f33241bffd524e66f7f937c478de",
+  "originalWidth": 3317,
+  "originalHeight": 2023,
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Native_Land_Court_and_Aotea_Maori_Land_Board_Building_%28Former%29_TA_2025-05-11.jpg",
+  "sourceFileTitle": "File:File:Native Land Court and Aotea Maori Land Board Building (Former) TA 2025-05-11.jpg",
+  "derivativesNote": "Original unchanged JPEG archived in the Wave 4 research package; the website uses uncropped WebP display and card derivatives. Original and crop licensing per Commons file page; no cropping performed.",
+  "relatedRecords": [
+    {
+      "name": "maori land court",
+      "url": "/entities/maori-land-court/",
+      "role": "Image subject or related institution; see context for limitations"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "passage:masters-20261010-ch27",
+  "slug": "masters-research-applications-27-20261010",
+  "articleId": "article:chapter-27",
+  "title": "Graduate research in health geography",
+  "order": 14,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:27",
+    "person:gregory-m-lauer",
+    "person:esther-christiane-rind",
+    "person:robert-arthur-poynter",
+    "person:rowan-thom",
+    "person:duane-wilkins",
+    "person:lars-brabyn"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Postgraduate researchers used GIS to investigate disease distribution and hospital service use. Gregory Lauer’s 1999 Canterbury master’s research examined the geography of poverty and hospital admissions in Christchurch. His later paper with Ross Barnett geocoded hospital admissions by census meshblock and compared their patterns with New Zealand deprivation indices. The paper refers to his qualification differently in its byline and bibliography, leaving the precise degree designation for further checking. Esther Christiane Rind’s 2007 Canterbury MSc investigated the geographic distribution of campylobacteriosis using GIS, environmental variables and statistical analysis.",
+      "markdown": "Postgraduate researchers used GIS to investigate disease distribution and hospital service use. Gregory Lauer’s 1999 Canterbury master’s research examined the geography of poverty and hospital admissions in Christchurch. His later paper with Ross Barnett geocoded hospital admissions by census meshblock and compared their patterns with New Zealand deprivation indices. The paper refers to his qualification differently in its byline and bibliography, leaving the precise degree designation for further checking. Esther Christiane Rind’s 2007 Canterbury MSc investigated the geographic distribution of campylobacteriosis using GIS, environmental variables and statistical analysis.",
+      "sources": [
+        {
+          "label": "Gregory M. Lauer, Poverty and hospital admissions in Christchurch, 1988–1998, University of Canterbury, 1999",
+          "url": "https://ir.canterbury.ac.nz/bitstream/handle/10092/6856/lauer_thesis.pdf?sequence=1&isAllowed=y"
+        },
+        {
+          "label": "Esther Christiane Rind, Investigating the spatial distribution of campylobacteriosis in New Zealand, University of Canterbury, 2007",
+          "url": "https://ir.canterbury.ac.nz/items/f12a97ff-3848-4ae2-8708-c729f6c6791d"
+        }
+      ],
+      "id": "masters-ch27-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Robert Arthur Poynter’s 2016 Canterbury master’s work applied GIS to the spatial and temporal geography of hospitalisations for chronic obstructive pulmonary disease in Christchurch. Rowan Thom’s 2021 Master of Commerce at Victoria University of Wellington used historical landholding information and other evidence to examine possible relationships between Māori land loss and intergenerational wellbeing. Their subjects and methods differed, but both depended on careful interpretation of the geographic units used in statistical work. The original researchers’ qualifications do not by themselves establish subsequent public-sector roles.",
+      "markdown": "Robert Arthur Poynter’s 2016 Canterbury master’s work applied GIS to the spatial and temporal geography of hospitalisations for chronic obstructive pulmonary disease in Christchurch. Rowan Thom’s 2021 Master of Commerce at Victoria University of Wellington used historical landholding information and other evidence to examine possible relationships between Māori land loss and intergenerational wellbeing. Their subjects and methods differed, but both depended on careful interpretation of the geographic units used in statistical work. The original researchers’ qualifications do not by themselves establish subsequent public-sector roles.",
+      "sources": [
+        {
+          "label": "Robert Arthur Poynter, Assessing the influence of environment and socio-economics on spatial and temporal patterns of COPD hospitalisation in Christchurch : a GIS approach, University of Canterbury, 2016",
+          "url": "https://ir.canterbury.ac.nz/items/ca33a224-2d02-4815-bbe5-8acfb06b78c9"
+        },
+        {
+          "label": "Rowan Thom, Land Loss, Historic Trauma and the Intergenerational Transmission of Wellbeing: The Experience of Iwi in Aotearoa New Zealand, Victoria University of Wellington, 2021",
+          "url": "https://openaccess.wgtn.ac.nz/articles/thesis/Land_Loss_Historic_Trauma_and_the_Intergenerational_Transmission_of_Wellbeing_The_Experience_of_Iwi_in_Aotearoa_New_Zealand/14420591"
+        }
+      ],
+      "id": "masters-ch27-p02"
+    },
+    {
+      "type": "paragraph",
+      "text": "A related earlier example is the 2001 paper Mapping health events: a comparison of approaches by University of Waikato researchers Lars Brabyn and Duane Wilkins. It compared vector-area and raster-neighbourhood representations of notified disease rates. The published paper and a later professional biography independently document Wilkins’s work in health GIS and his MSocSc qualification. An official university catalogue record confirming the exact title of his master’s dissertation has not yet been recovered, so the article is cited as a published paper rather than presented as that thesis.",
+      "markdown": "A related earlier example is the 2001 paper Mapping health events: a comparison of approaches by University of Waikato researchers Lars Brabyn and Duane Wilkins. It compared vector-area and raster-neighbourhood representations of notified disease rates. The published paper and a later professional biography independently document Wilkins’s work in health GIS and his MSocSc qualification. An official university catalogue record confirming the exact title of his master’s dissertation has not yet been recovered, so the article is cited as a published paper rather than presented as that thesis.",
+      "sources": [
+        {
+          "label": "Brabyn, Lars and Duane Wilkins, Mapping health events: a comparison of approaches, Health Informatics Journal, 2001",
+          "url": "https://doi.org/10.1177/146045820100700316"
+        },
+        {
+          "label": "LEARNZ, Meet Duane Wilkins: professional biography and qualification",
+          "url": "https://www.learnz.org.nz/node/1394"
+        }
+      ],
+      "id": "masters-ch27-p03"
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "masters-research-applications-27"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0018-chapter",
+  "a": "person:hamish-lough",
+  "b": "chapter:26",
+  "label": "Research discussed in chapter",
+  "basis": "This thesis is linked to the cited thematic chapter passage",
+  "passageIds": [
+    "passage:masters-20261010-ch26"
+  ],
+  "sources": [
+    {
+      "label": "Hamish Lough, Predicting the spatial distribution of stoats, ship rats and weasels in a beech forest setting using GIS, University of Canterbury, 2006",
+      "url": "https://ir.canterbury.ac.nz/items/adcc9494-784a-40ee-968a-af763adada25"
+    }
+  ]
+}

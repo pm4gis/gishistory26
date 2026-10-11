@@ -4,7 +4,7 @@
   "articleId": "article:chapter-1",
   "title": "Thematic geography",
   "order": 6,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
     "chapter:1"
@@ -14,24 +14,60 @@
       "type": "paragraph",
       "text": "The state also accumulated maps whose boundaries represented interpretation rather than surveyed ownership. Geological mapping classified rock and structure. Soil surveys separated land according to field observation and scientific classification. Forestry mapping recorded resources and management areas. Planning and engineering organisations mapped catchments, land use, transport and development constraints. These maps would later become attractive candidates for GIS conversion because each represented a distinct theme that could be compared with others.",
       "markdown": "The state also accumulated maps whose boundaries represented interpretation rather than surveyed ownership. Geological mapping classified rock and structure. Soil surveys separated land according to field observation and scientific classification. Forestry mapping recorded resources and management areas. Planning and engineering organisations mapped catchments, land use, transport and development constraints. These maps would later become attractive candidates for GIS conversion because each represented a distinct theme that could be compared with others.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "National Library of New Zealand, 1964 Northland National Resources Survey maps",
+          "url": "https://natlib.govt.nz/records/37099349"
+        },
+        {
+          "label": "National Library of New Zealand, 1959 Descriptive Atlas of New Zealand",
+          "url": "https://natlib.govt.nz/records/37103438"
+        }
+      ],
       "id": "ch01-s07-p01"
     },
     {
       "type": "paragraph",
       "text": "The National Resources Survey brought together relief, communications, geology, soils, current land use and land-use potential in coordinated map sets. The 1959 Descriptive Atlas of New Zealand similarly placed climate, geology, soils, vegetation, population, land classification, manufacturing and communications into one national cartographic publication. Each layer was still a static map and the synthesis was performed by people, but the information model of comparing several geographic themes was already established.",
       "markdown": "The National Resources Survey brought together relief, communications, geology, soils, current land use and land-use potential in coordinated map sets. The 1959 Descriptive Atlas of New Zealand similarly placed climate, geology, soils, vegetation, population, land classification, manufacturing and communications into one national cartographic publication. Each layer was still a static map and the synthesis was performed by people, but the information model of comparing several geographic themes was already established.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "National Library of New Zealand, 1964 Northland National Resources Survey maps",
+          "url": "https://natlib.govt.nz/records/37099349"
+        },
+        {
+          "label": "National Library of New Zealand, 1959 Descriptive Atlas of New Zealand",
+          "url": "https://natlib.govt.nz/records/37103438"
+        }
+      ],
       "id": "ch01-s07-p02"
     },
     {
       "type": "paragraph",
       "text": "Those thematic maps also demonstrate why later digital geometry needed metadata and subject knowledge. A soil boundary could mark a transition interpreted from field evidence. A cadastral line could have legal survey evidence behind it. A census boundary existed for statistical administration. A coastline might have been compiled at a particular scale from several surveys. GIS would eventually store all of them as points, lines or polygons, but geometry alone could not explain what each line meant.",
       "markdown": "Those thematic maps also demonstrate why later digital geometry needed metadata and subject knowledge. A soil boundary could mark a transition interpreted from field evidence. A cadastral line could have legal survey evidence behind it. A census boundary existed for statistical administration. A coastline might have been compiled at a particular scale from several surveys. GIS would eventually store all of them as points, lines or polygons, but geometry alone could not explain what each line meant.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "National Library of New Zealand, 1964 Northland National Resources Survey maps",
+          "url": "https://natlib.govt.nz/records/37099349"
+        },
+        {
+          "label": "National Library of New Zealand, 1959 Descriptive Atlas of New Zealand",
+          "url": "https://natlib.govt.nz/records/37103438"
+        }
+      ],
       "id": "ch01-s07-p03"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 5 · Digital land inventories",
+      "url": "/stories/from-map-sheets-to-spatial-data/"
+    },
+    {
+      "label": "Related chapter: Chapter 7 · Land assessment",
+      "url": "/stories/mapping-land-as-data/"
+    }
+  ],
   "legacyAnchor": "thematic-geography"
 }

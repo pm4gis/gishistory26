@@ -1,0 +1,36 @@
+{
+  "id": "person:zhennan-shi",
+  "slug": "zhennan-shi",
+  "name": "Zhennan Shi",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/zhennan-shi/",
+  "description": "Researcher whose 2007 master's work concerned web GIS.",
+  "story": [
+    "In 2007, Zhennan Shi completed MSc research at University of Waikato titled “A Web-based Geographical Information System for Low Bandwidth Access”. The study built a browser GIS using the Google Maps API and a web server to present agricultural information, examining delivery under low-bandwidth conditions."
+  ],
+  "sources": [
+    {
+      "label": "Zhennan Shi, A Web-based Geographical Information System for Low Bandwidth Access, University of Waikato, 2007",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/d024fb18-6ece-4d34-acfb-442b56e65de0"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Zhennan Shi, A Web-based Geographical Information System for Low Bandwidth Access, University of Waikato, 2007",
+        "url": "https://researchcommons.waikato.ac.nz/entities/publication/d024fb18-6ece-4d34-acfb-442b56e65de0"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/the-first-web-maps/"
+    }
+  ]
+}

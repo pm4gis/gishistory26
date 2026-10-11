@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0026-university",
+  "a": "person:geoffrey-hughes",
+  "b": "entity:university-of-waikato",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "Geoffrey Hughes, A Spatial Analysis Of Assault Patterns In Entertainment Areas Throughout the Waikato using Geographic Information Systems, University of Waikato, 2011",
+      "url": "https://researchcommons.waikato.ac.nz/entities/publication/16b0ae7a-24b6-4088-b129-ad78f19956d5"
+    }
+  ]
+}

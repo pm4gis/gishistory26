@@ -1,0 +1,36 @@
+{
+  "id": "person:ciaran-keogh",
+  "slug": "ciaran-keogh",
+  "name": "Ciaran Keogh",
+  "kind": "Person",
+  "category": "Person",
+  "url": "/people/ciaran-keogh/",
+  "description": "Researcher whose 1994 master's work concerned planning and landscape.",
+  "story": [
+    "In 1994, Ciaran Keogh completed Master of Regional and Resource Planning research at University of Otago titled “Defining the Spatial Extent of Visual Amenity Values under the RMA”. The university record concerns spatial definition of landscape amenity values for planning under the Resource Management Act. The full thesis was not available for a technical review."
+  ],
+  "sources": [
+    {
+      "label": "Ciaran Keogh, Defining the Spatial Extent of Visual Amenity Values under the RMA, University of Otago, 1994",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Defining-the-Spatial-Extent-of-Visual/9926480242101891"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "published",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Ciaran Keogh, Defining the Spatial Extent of Visual Amenity Values under the RMA, University of Otago, 1994",
+        "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Defining-the-Spatial-Extent-of-Visual/9926480242101891"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Relevant GIS history chapter",
+      "url": "/stories/universities-build-a-field/"
+    }
+  ]
+}

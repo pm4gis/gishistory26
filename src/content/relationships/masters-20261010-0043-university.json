@@ -1,0 +1,16 @@
+{
+  "id": "relationship:masters-20261010-0043-university",
+  "a": "person:emir-hartato",
+  "b": "entity:university-of-canterbury",
+  "label": "Completed master’s research at",
+  "basis": "Named institutional thesis record records award, author and university",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "sources": [
+    {
+      "label": "Emir Hartato, Volunteered geographic information (VGI) for disaster management : a case study for floods in Jakarta, University of Canterbury, 2017",
+      "url": "https://ir.canterbury.ac.nz/items/cf250824-3908-4fbc-8e60-ca4d3ce3b9d1"
+    }
+  ]
+}

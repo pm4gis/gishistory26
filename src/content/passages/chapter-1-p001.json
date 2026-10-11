@@ -4,12 +4,14 @@
   "articleId": "article:chapter-1",
   "title": "Existing map records",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-11",
   "themeIds": [],
   "recordIds": [
     "chapter:1",
     "person:tuki-te-terenui-whare-pirau",
+    "person:huru",
     "person:philip-gidley-king",
+    "person:reko",
     "person:john-turnbull-thomson"
   ],
   "blocks": [
@@ -39,11 +41,11 @@
       "text": "Tuki Te Terenui Whare Pirau drew a map of Aotearoa during the Norfolk Island encounter of 1793, after he and Huru had been taken from their home. The map was recorded in the colonial setting involving Philip Gidley King. Tuki represented geographic knowledge together with social, political and spiritual relationships. Place names and routes carried information that a later European survey sheet would organise differently. The map preserves that exchange and the circumstances in which it took place.",
       "sources": [
         {
-          "label": "National Library of New Zealand, Tuki map catalogue, Ref MapColl-830ap/[1793]/Acc.6421",
-          "url": "https://natlib.govt.nz/records/22364255"
+          "label": "National Library of New Zealand, Tuki’s map catalogue record",
+          "url": "https://natlib.govt.nz/records/22687375"
         },
         {
-          "label": "National Library, Polynesian navigation and Tuki's map",
+          "label": "National Library of New Zealand, Polynesian navigation and Tuki’s map",
           "url": "https://natlib.govt.nz/visiting/wellington/unfolding-the-map/polynesian-navigation-and-tukis-map"
         }
       ],
@@ -55,23 +57,23 @@
       "text": "In 1856 Reko shared knowledge of the South Island interior with John Turnbull Thomson at Tūtūrau, including a map drawn in dust. Thomson subsequently carried out reconnaissance and published mapping. The records link these activities to Reko’s account, although direct copying between particular maps remains uncertain.",
       "sources": [
         {
-          "label": "National Library of New Zealand, Reko, 1803?-1868 authority record",
+          "label": "National Library of New Zealand, Reko authority record",
           "url": "https://natlib.govt.nz/records/22394114"
         },
         {
-          "label": "Turnbull Library Record, Maori geographical knowledge and mapping, 1 May 1980",
+          "label": "Turnbull Library Record, Māori geographical knowledge and mapping",
           "url": "https://paperspast.natlib.govt.nz/periodicals/TLR19800501.2.5"
         },
         {
-          "label": "History of Cartography, Māori Cartography and the European Encounter",
+          "label": "History of Cartography, Māori cartography and the European encounter",
           "url": "https://press.uchicago.edu/books/hoc/HOC_V2_B3/HOC_VOLUME2_Book3_chapter14.pdf"
         },
         {
-          "label": "National Library, John Turnbull Thomson authority/item records",
+          "label": "National Library of New Zealand, John Turnbull Thomson record",
           "url": "https://natlib.govt.nz/records/22393531"
         },
         {
-          "label": "National Library, Arrowsmith 1858 New Zealand – South Districts of the Province of Otago",
+          "label": "National Library of New Zealand, Arrowsmith 1858 South Districts map",
           "url": "https://natlib.govt.nz/records/36167407"
         }
       ],
@@ -79,6 +81,15 @@
       "markdown": "In 1856 Reko shared knowledge of the South Island interior with John Turnbull Thomson at Tūtūrau, including a map drawn in dust. Thomson subsequently carried out reconnaissance and published mapping. The records link these activities to Reko’s account, although direct copying between particular maps remains uncertain."
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Related chapter: Chapter 13 · The digital cadastre",
+      "url": "/stories/the-cadastre-becomes-data/"
+    },
+    {
+      "label": "Related chapter: Chapter 16 · Census geography",
+      "url": "/stories/census-geography/"
+    }
+  ],
   "legacyAnchor": "a-country-already-filed-by-location"
 }

@@ -1,0 +1,42 @@
+{
+  "id": "passage:masters-20261010-ch35",
+  "slug": "masters-research-applications-35-20261010",
+  "articleId": "article:chapter-35",
+  "title": "Applied GIS research behind specialised applications",
+  "order": 16,
+  "updatedAt": "2026-10-10",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:35",
+    "person:daniel-gerard-odonohue",
+    "person:hussam-al-mahoozi"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "GIS application research examined problems hidden from the end user. Daniel Gerard O’Donohue’s 2010 Canterbury MSc investigated automatic correction of spatial misalignment between directly georeferenced aerial thermal imagery and building-footprint vector data. Its feature-matching approach was designed to improve positional accuracy when mapped datasets were combined. This was a defined research contribution to integrating imagery and vector information, rather than an inventory of every subsequent operational application.",
+      "markdown": "GIS application research examined problems hidden from the end user. Daniel Gerard O’Donohue’s 2010 Canterbury MSc investigated automatic correction of spatial misalignment between directly georeferenced aerial thermal imagery and building-footprint vector data. Its feature-matching approach was designed to improve positional accuracy when mapped datasets were combined. This was a defined research contribution to integrating imagery and vector information, rather than an inventory of every subsequent operational application.",
+      "sources": [
+        {
+          "label": "Daniel Gerard O'Donohue, Matching of image features and vector objects to automatically correct spatial misalignment between image and vector data sets, University of Canterbury, 2010",
+          "url": "https://ir.canterbury.ac.nz/items/3f5334ee-88d1-40c5-a4b8-68e31ea92bab"
+        }
+      ],
+      "id": "masters-ch35-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hussam Al-Mahoozi’s 2011 Otago Master of Business examined the use of Dunedin City Council’s GIS for city retail planning. The institutional thesis record establishes the business and local-government planning context, but does not establish any specific later system changes adopted by the council. Together, these research projects show that a useful map application depends on underlying data quality as well as on how the application supports a planning decision.",
+      "markdown": "Hussam Al-Mahoozi’s 2011 Otago Master of Business examined the use of Dunedin City Council’s GIS for city retail planning. The institutional thesis record establishes the business and local-government planning context, but does not establish any specific later system changes adopted by the council. Together, these research projects show that a useful map application depends on underlying data quality as well as on how the application supports a planning decision.",
+      "sources": [
+        {
+          "label": "Hussam Al-Mahoozi, Improving GIS use in City Retail Planning: A Look at the Dunedin City Council's Geographic Information System, University of Otago, 2011",
+          "url": "https://ourarchive.otago.ac.nz/esploro/outputs/graduate/Improving-GIS-use-in-City-Retail/9926479300701891"
+        }
+      ],
+      "id": "masters-ch35-p02"
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "masters-research-applications-35"
+}

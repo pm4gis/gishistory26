@@ -1,0 +1,16 @@
+{
+  "id": "relationship:chapter-2-ict1201-education",
+  "a": "entity:ict-1201",
+  "b": "entity:department-of-education",
+  "label": "Possibly used for teachers’ payroll",
+  "basis": "A later study presents this as an earlier but less fully documented government computing installation.",
+  "passageIds": [
+    "passage:chapter-2-57e353c855"
+  ],
+  "sources": [
+    {
+      "label": "Brian E. Carpenter, “The First Computer in New Zealand”",
+      "url": "https://www.cs.auckland.ac.nz/~brian/FirstCiNZ.pdf"
+    }
+  ]
+}

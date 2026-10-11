@@ -1,0 +1,26 @@
+{
+  "id": "masters-20261010-0046",
+  "dateDisplay": "2018",
+  "startDate": "2018",
+  "datePrecision": "year",
+  "year": 2018,
+  "label": "Andrew Cunningham: master’s research involving GIS",
+  "summary": "Utilisation of crowdsourced geographic information for benefitting disaster response in New Zealand, University of Canterbury, 2018.",
+  "url": "/stories/safety-policing-and-emergency-gis/",
+  "passageIds": [
+    "passage:masters-20261010-ch28"
+  ],
+  "recordIds": [
+    "person:andrew-cunningham"
+  ],
+  "themeIds": [],
+  "categories": [
+    "university-research"
+  ],
+  "sources": [
+    {
+      "label": "Andrew Cunningham, Utilisation of crowdsourced geographic information for benefitting disaster response in New Zealand, University of Canterbury, 2018",
+      "url": "https://ir.canterbury.ac.nz/items/bfeeb9c3-dcfb-4436-9d46-4d17b97bd12f"
+    }
+  ]
+}

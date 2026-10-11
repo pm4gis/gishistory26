@@ -1,0 +1,41 @@
+{
+  "id": "entity:nzms260",
+  "slug": "nzms260",
+  "name": "New Zealand Map Series 260 (NZMS260)",
+  "kind": "Topographic map series",
+  "category": "National mapping",
+  "url": "/entities/nzms260/",
+  "website": null,
+  "story": [
+    "NZMS260 was New Zealand’s 1:50,000 metric topographic map series, published from 1977 to 1997. Its first sheet was T12 Thames. The series used the New Zealand Map Grid with NZGD49 and replaced the earlier imperial NZMS1 sheets."
+  ],
+  "sources": [
+    {
+      "label": "Te Ara, Mapping and surveying, 1950–1980",
+      "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/page-4"
+    },
+    {
+      "label": "LINZ, New Zealand Map Grid",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+    }
+  ],
+  "aliases": [
+    "NZMS260",
+    "New Zealand Map Series 260"
+  ],
+  "themeIds": [],
+  "status": "Historical account available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Te Ara, Mapping and surveying, 1950–1980",
+        "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/page-4"
+      },
+      {
+        "label": "LINZ, New Zealand Map Grid",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/new-zealand-map-grid-nzmg"
+      }
+    ]
+  ]
+}
