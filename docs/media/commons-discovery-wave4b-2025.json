@@ -1,8 +1,8 @@
 {
-  "searchedAt": "2026-10-11T00:21:18.855Z",
+  "searchedAt": "2026-10-11T00:26:10.859Z",
   "subjectDateCutoff": "2025-12-31",
   "queryCount": 176,
-  "resultCount": 1606,
+  "resultCount": 1608,
   "queries": [
     {
       "chapter": 1,
@@ -1522,24 +1522,6 @@
           "objectName": "Stamp of Brazil - 1960 - Colnect 213958 - 1 - Rui Barbosa",
           "description": "Big Chess Back - diferent paper than BR 514",
           "uploadDate": "2021-01-03 09:01:36"
-        },
-        {
-          "title": "File:Filipe Bole 1960.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filipe_Bole_1960.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Filipe_Bole_1960.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 277,
-          "height": 320,
-          "bytes": 40480,
-          "mime": "",
-          "licence": "Public domain",
-          "licenceUrl": "",
-          "artist": "Unknown (Crown Studios of Wellington)",
-          "credit": "https://natlib.govt.nz/records/23175326 ?",
-          "dateOriginal": "1960",
-          "dateProperty": "",
-          "objectName": "Filipe Bole 1960",
-          "description": "Fiji Students Association of Wellington",
-          "uploadDate": "2023-03-22 12:14:25"
         },
         {
           "title": "File:Pengiran Puteh (1960).jpg",
@@ -3081,6 +3063,24 @@
           "uploadDate": "2022-02-16 17:09:51"
         },
         {
+          "title": "File:Overlapping principle of aerial images.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Overlapping_principle_of_aerial_images.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Overlapping_principle_of_aerial_images.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1891,
+          "height": 1147,
+          "bytes": 174791,
+          "mime": "",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "VictorSo1031",
+          "credit": "Own work",
+          "dateOriginal": "2022-10-05",
+          "dateProperty": "",
+          "objectName": "Overlapping principle of aerial images",
+          "description": "This diagram shows how the overlapped images are taken by the airplanes",
+          "uploadDate": "2022-10-05 09:53:45"
+        },
+        {
           "title": "File:Displacement on aerial photograph (updated).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Displacement_on_aerial_photograph_(updated).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Displacement_on_aerial_photograph_%28updated%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -3115,24 +3115,6 @@
           "objectName": "Berlin Mitte June 2023 01",
           "description": "Central Berlin (Berlin-Mitte) seen from Fischerinsel.",
           "uploadDate": "2023-10-14 13:15:24"
-        },
-        {
-          "title": "File:001 Volcano eruption of Litli-Hrútur in Iceland in 2023 Photo by Giles Laurent.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:001_Volcano_eruption_of_Litli-Hr%C3%BAtur_in_Iceland_in_2023_Photo_by_Giles_Laurent.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/001_Volcano_eruption_of_Litli-Hr%C3%BAtur_in_Iceland_in_2023_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 3041,
-          "height": 2027,
-          "bytes": 6118465,
-          "mime": "",
-          "licence": "CC BY-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "artist": "Giles Laurent",
-          "credit": "Own work , from gileslaurent.com",
-          "dateOriginal": "2023-07-26 17:38:16",
-          "dateProperty": "",
-          "objectName": "001 Volcano eruption of Litli-Hrútur in Iceland in 2023 Photo by Giles Laurent",
-          "description": "Volcano eruption at Fagradalsfjall next to Litli-Hrútur in Iceland in 2023 captured from up close with a drone . Such a shot was only made possible by the use of new technologies, since it is otherwise impossible to safely observe an erupting volcano at such close range. The picture was also captured with Keilir perfectly aligned in the background. The extreme temperature of the lava creates a heat haze that can be seen on the left side of the image, being carried by the wind.",
-          "uploadDate": "2023-11-21 21:36:58"
         },
         {
           "title": "File:Recording data during an aerial survey flight.jpg",
@@ -5220,12 +5202,12 @@
       "query": "GIS map software",
       "results": [
         {
-          "title": "File:Tutorial winGRASS GIS installation 02.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_02.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Tutorial_winGRASS_GIS_installation_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 572,
-          "height": 599,
-          "bytes": 131062,
+          "title": "File:Tutorial winGRASS GIS installation 01.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_01.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Tutorial_winGRASS_GIS_installation_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 570,
+          "height": 597,
+          "bytes": 128908,
           "mime": "",
           "licence": "GPL",
           "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
@@ -5233,9 +5215,9 @@
           "credit": "Own work",
           "dateOriginal": "2008-03",
           "dateProperty": "",
-          "objectName": "Tutorial winGRASS GIS installation 02",
+          "objectName": "Tutorial winGRASS GIS installation 01",
           "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
-          "uploadDate": "2008-03-14 03:48:22"
+          "uploadDate": "2008-03-14 03:41:46"
         },
         {
           "title": "File:Tutorial winGRASS GIS installation 03.jpg",
@@ -5274,24 +5256,6 @@
           "uploadDate": "2008-03-14 03:51:09"
         },
         {
-          "title": "File:Tutorial winGRASS GIS installation 05.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_05.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Tutorial_winGRASS_GIS_installation_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 642,
-          "height": 302,
-          "bytes": 35300,
-          "mime": "",
-          "licence": "GPL",
-          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
-          "artist": "Eric Gaba ( Sting )",
-          "credit": "Own work",
-          "dateOriginal": "2008-03",
-          "dateProperty": "",
-          "objectName": "Tutorial winGRASS GIS installation 05",
-          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
-          "uploadDate": "2008-03-14 03:51:53"
-        },
-        {
           "title": "File:Tutorial winGRASS GIS installation 06.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_06.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Tutorial_winGRASS_GIS_installation_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -5308,6 +5272,24 @@
           "objectName": "Tutorial winGRASS GIS installation 06",
           "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
           "uploadDate": "2008-03-14 03:52:46"
+        },
+        {
+          "title": "File:Tutorial winGRASS GIS installation 07.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_07.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tutorial_winGRASS_GIS_installation_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 642,
+          "height": 302,
+          "bytes": 36562,
+          "mime": "",
+          "licence": "GPL",
+          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
+          "artist": "Eric Gaba ( Sting )",
+          "credit": "Own work",
+          "dateOriginal": "2008-03",
+          "dateProperty": "",
+          "objectName": "Tutorial winGRASS GIS installation 07",
+          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
+          "uploadDate": "2008-03-14 03:53:33"
         },
         {
           "title": "File:Tutorial winGRASS GIS installation 08.jpg",
@@ -5328,24 +5310,6 @@
           "uploadDate": "2008-03-14 03:54:18"
         },
         {
-          "title": "File:Tutorial winGRASS GIS installation 09.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_09.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Tutorial_winGRASS_GIS_installation_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 642,
-          "height": 302,
-          "bytes": 73422,
-          "mime": "",
-          "licence": "GPL",
-          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
-          "artist": "Eric Gaba ( Sting )",
-          "credit": "Own work",
-          "dateOriginal": "2008-03",
-          "dateProperty": "",
-          "objectName": "Tutorial winGRASS GIS installation 09",
-          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
-          "uploadDate": "2008-03-14 03:55:03"
-        },
-        {
           "title": "File:Tutorial winGRASS GIS installation 10.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_10.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Tutorial_winGRASS_GIS_installation_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -5362,6 +5326,42 @@
           "objectName": "Tutorial winGRASS GIS installation 10",
           "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
           "uploadDate": "2008-03-14 03:56:08"
+        },
+        {
+          "title": "File:Tutorial winGRASS GIS installation 11.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_11.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Tutorial_winGRASS_GIS_installation_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 642,
+          "height": 302,
+          "bytes": 54926,
+          "mime": "",
+          "licence": "GPL",
+          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
+          "artist": "Eric Gaba ( Sting )",
+          "credit": "Own work",
+          "dateOriginal": "2008-03",
+          "dateProperty": "",
+          "objectName": "Tutorial winGRASS GIS installation 11",
+          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
+          "uploadDate": "2008-03-14 03:57:13"
+        },
+        {
+          "title": "File:Tutorial winGRASS GIS installation 12a.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_12a.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Tutorial_winGRASS_GIS_installation_12a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 642,
+          "height": 302,
+          "bytes": 56445,
+          "mime": "",
+          "licence": "GPL",
+          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
+          "artist": "Eric Gaba ( Sting )",
+          "credit": "Own work",
+          "dateOriginal": "2008-03",
+          "dateProperty": "",
+          "objectName": "Tutorial winGRASS GIS installation 12a",
+          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
+          "uploadDate": "2008-03-14 03:57:58"
         },
         {
           "title": "File:Tutorial winGRASS GIS installation 12b.jpg",
@@ -5400,6 +5400,24 @@
           "uploadDate": "2008-04-06 02:30:30"
         },
         {
+          "title": "File:Tutorial winGRASS GIS installation 17.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_17.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tutorial_winGRASS_GIS_installation_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1280,
+          "height": 1024,
+          "bytes": 168088,
+          "mime": "",
+          "licence": "GPL",
+          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
+          "artist": "Eric Gaba ( Sting )",
+          "credit": "Own work",
+          "dateOriginal": "2008-03",
+          "dateProperty": "",
+          "objectName": "Tutorial winGRASS GIS installation 17",
+          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
+          "uploadDate": "2008-04-06 02:33:32"
+        },
+        {
           "title": "File:Tutorial winGRASS GIS installation 18a.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_18a.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Tutorial_winGRASS_GIS_installation_18a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -5416,24 +5434,6 @@
           "objectName": "Tutorial winGRASS GIS installation 18a",
           "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
           "uploadDate": "2008-04-06 02:35:36"
-        },
-        {
-          "title": "File:Tutorial winGRASS GIS installation 18b.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_18b.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Tutorial_winGRASS_GIS_installation_18b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1280,
-          "height": 1024,
-          "bytes": 190093,
-          "mime": "",
-          "licence": "GPL",
-          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
-          "artist": "Eric Gaba ( Sting )",
-          "credit": "Own work",
-          "dateOriginal": "2008-03",
-          "dateProperty": "",
-          "objectName": "Tutorial winGRASS GIS installation 18b",
-          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
-          "uploadDate": "2008-04-06 02:36:40"
         },
         {
           "title": "File:Tutorial winGRASS GIS installation 19.jpg",
@@ -5488,24 +5488,6 @@
           "objectName": "Tutorial winGRASS GIS installation 21",
           "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
           "uploadDate": "2008-04-07 21:17:55"
-        },
-        {
-          "title": "File:Tutorial winGRASS GIS installation 22b.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutorial_winGRASS_GIS_installation_22b.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tutorial_winGRASS_GIS_installation_22b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1280,
-          "height": 1024,
-          "bytes": 204023,
-          "mime": "",
-          "licence": "GPL",
-          "licenceUrl": "http://www.gnu.org/licenses/gpl.html",
-          "artist": "Eric Gaba ( Sting )",
-          "credit": "Own work",
-          "dateOriginal": "2008-03",
-          "dateProperty": "",
-          "objectName": "Tutorial winGRASS GIS installation 22b",
-          "description": "Screenshot made for the French speaking Atelier graphique showing a step of a tutorial made to learn how to install the free GIS software GRASS GIS under Windows.",
-          "uploadDate": "2008-04-07 21:19:52"
         },
         {
           "title": "File:Saga-gis.png",
@@ -6057,22 +6039,22 @@
           "uploadDate": "2014-10-03 00:37:01"
         },
         {
-          "title": "File:Royal Zone in Aso Farm Land 3.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Zone_in_Aso_Farm_Land_3.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Royal_Zone_in_Aso_Farm_Land_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "title": "File:Royal Zone in Aso Farm Land 1.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Zone_in_Aso_Farm_Land_1.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Royal_Zone_in_Aso_Farm_Land_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "width": 3992,
           "height": 2994,
-          "bytes": 4627045,
+          "bytes": 4364991,
           "mime": "",
           "licence": "CC BY-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "artist": "そらみみ",
           "credit": "Own work",
-          "dateOriginal": "2017-11-06 10:54:51",
+          "dateOriginal": "2017-11-06 10:49:40",
           "dateProperty": "",
-          "objectName": "Royal Zone in Aso Farm Land 3",
+          "objectName": "Royal Zone in Aso Farm Land 1",
           "description": "阿蘇ファームランド・ロイヤルゾーン",
-          "uploadDate": "2018-04-09 03:19:35"
+          "uploadDate": "2018-04-09 03:19:31"
         },
         {
           "title": "File:Farm land and industrial land - geograph.org.uk - 2057338.jpg",
@@ -6380,22 +6362,22 @@
           "uploadDate": "2019-10-08 09:51:42"
         },
         {
-          "title": "File:Ashley River - Rakahuri, Puketeraki Forest Conservation Area, Canterbury, New Zealand 07.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ashley_River_-_Rakahuri,_Puketeraki_Forest_Conservation_Area,_Canterbury,_New_Zealand_07.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ashley_River_-_Rakahuri%2C_Puketeraki_Forest_Conservation_Area%2C_Canterbury%2C_New_Zealand_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 5256,
-          "height": 3504,
-          "bytes": 16124987,
+          "title": "File:Ashley River - Rakahuri, Puketeraki Forest Conservation Area, Canterbury, New Zealand 08.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ashley_River_-_Rakahuri,_Puketeraki_Forest_Conservation_Area,_Canterbury,_New_Zealand_08.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ashley_River_-_Rakahuri%2C_Puketeraki_Forest_Conservation_Area%2C_Canterbury%2C_New_Zealand_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 5123,
+          "height": 3415,
+          "bytes": 15031864,
           "mime": "",
           "licence": "CC BY-SA 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "artist": "Michal Klajban",
           "credit": "Own work",
-          "dateOriginal": "2019-11-17 12:03:39",
+          "dateOriginal": "2019-11-17 12:21:48",
           "dateProperty": "",
-          "objectName": "Ashley River - Rakahuri, Puketeraki Forest Conservation Area, Canterbury, New Zealand 07",
+          "objectName": "Ashley River - Rakahuri, Puketeraki Forest Conservation Area, Canterbury, New Zealand 08",
           "description": "Ashley River - Rakahuri, Puketeraki Forest Conservation Area, Canterbury, New Zealand",
-          "uploadDate": "2019-11-22 02:22:07"
+          "uploadDate": "2019-11-22 02:22:22"
         },
         {
           "title": "File:Tarn Hut, Puketeraki Forest Conservation Area, Canterbury, New Zealand 12.jpg",
@@ -7325,6 +7307,24 @@
           "uploadDate": "2015-07-30 16:44:28"
         },
         {
+          "title": "File:Transactions and proceedings of the New Zealand Institute (1869) (14749895675).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transactions_and_proceedings_of_the_New_Zealand_Institute_(1869)_(14749895675).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Transactions_and_proceedings_of_the_New_Zealand_Institute_%281869%29_%2814749895675%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1746,
+          "height": 3094,
+          "bytes": 434404,
+          "mime": "",
+          "licence": "No restrictions",
+          "licenceUrl": "https://www.flickr.com/commons/usage/",
+          "artist": "Internet Archive Book Images",
+          "credit": "https://www.flickr.com/photos/internetarchivebookimages/14749895675/ Source book page: https://archive.org/stream/transactionsproc21869newz/transactionsproc21869newz#page/n184/mode/1up",
+          "dateOriginal": "1869",
+          "dateProperty": "",
+          "objectName": "Transactions and proceedings of the New Zealand Institute (1869) (14749895675)",
+          "description": "Identifier : transactionsproc21869newz ( find matches ) Title : Transactions and proceedings of the New Zealand Institute Year : 1868 ( 1860s ) Authors : New Zealand Institute (Wellington, N.Z Subjects : Science Birds Publisher : Wellington : J. Hughes, Printer Contributing Library : Smithsonian Libraries Digitizing Sponsor : Biodiversity Heritage Library View Book Page : Book Viewer About This Book : Catalog Entry View All Images : All Images From Book Click here to view book online to see this illustration in context in a browseable online version of this book. Text Appearing Before Image: iginal flora, bythe Maori race ; the displacement of a portion of the original species ; thespontaneous amalgamation of introduced and native species for the benefit ofman ; the relative statistical importance of the naturalized species to eachother, and to the indigenous flora; the influence of climatal and geognosticconditions in facilitating or retarding distribution, and in developing aberrationsfrom the original type, are attractive subjects of vast importance to the phyto-geographical student, and at the present time could probably be worked outmore clearly and with greater precision for this colony than for any othercountry whose flora is equally well determined, owing to the small admixtureof error with the facts upon which the student must base his conclusions. The following plan has been adopted for expressing the known facts foreach species, in a concise manner, and admits of ready adaptation for otherdistricts. j&lt;j\\^il5rfi Oaf 174, TRANS.OF N.Z. INSTITUTE VOLITPla/beJS. Text Appearing After Image: 17f 176 133 I.—Extent of diffusion. With the view of indicating, as precisely as practicable, the presentdiffusion of each species, the Province of Auckland, as far south as Ngarua-wahia, has been divided (somewhat arbitrarily) into districts, as under:— 1. North Cape:—from. Cape Maria Van Dieman and the North Cape., toHokianga and the Bay of Islands. 2. Whangarei:—from Hokianga and the Bay of Islands, to Cape Bodneyand the north head of the Kaipara harbour. 3. Waitemata:—from the south head of the Kaipara, and Cape Bodney,to the head of the Manukau harbour at Benrose, and the Tamaki at Panmure. 4. The Islands:—including the Cavalhos and Taranga groups, the Greatand Little Barriers, etc., the Kawau, and those in the Firth of Thames. 5. Cape Colville:—-the Cape Colville peninsula as far south as Kawae-ranga and Wangamata Bay. 6. Waikato:—from Penrose and Panmure to Whaingaroa and Nga-ruawahia. The district in which each species is known to occur will be indicated bythe Note About Images Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.",
+          "uploadDate": "2015-10-09 12:25:49"
+        },
+        {
           "title": "File:Queenstown, New Zealand - panoramio (31).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queenstown,_New_Zealand_-_panoramio_(31).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Queenstown%2C_New_Zealand_-_panoramio_%2831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -7395,24 +7395,6 @@
           "objectName": "New Zealand Bush Robin (Petroica australis)",
           "description": "New Zealand robins and tomtits resemble British robins, but the two groups are not closely related. The New Zealand species belong to the Australian–New Guinean family Petroicidae. Robins and tomtits have large heads, short necks, round bodies and an upright stance. They have short bristles around the bill. Robins have long legs, and are larger than tomtits. All are insectivorous. The oldest known bird lived 16 years, but their life expectancy is three years.",
           "uploadDate": "2018-01-22 16:53:32"
-        },
-        {
-          "title": "File:New Zealand Bush Robin (11257397443).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Bush_Robin_(11257397443).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/New_Zealand_Bush_Robin_%2811257397443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 2400,
-          "height": 1553,
-          "bytes": 2751982,
-          "mime": "",
-          "licence": "CC0",
-          "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "artist": "Bernard Spragg. NZ from Christchurch, New Zealand",
-          "credit": "New Zealand Bush Robin",
-          "dateOriginal": "2010-05-06 15:24",
-          "dateProperty": "",
-          "objectName": "New Zealand Bush Robin (11257397443)",
-          "description": "New Zealand robins and tomtits resemble British robins, but the two groups are not closely related. The New Zealand species belong to the Australian–New Guinean family Petroicidae. Robins and tomtits have large heads, short necks, round bodies and an upright stance. They have short bristles around the bill. Robins have long legs, and are larger than tomtits. All are insectivorous. The oldest known bird lived 16 years, but their life expectancy is three years.",
-          "uploadDate": "2018-06-21 11:24:19"
         },
         {
           "title": "File:New Zealand Shoveler (8647077799).jpg",
@@ -8342,6 +8324,24 @@
           "uploadDate": "2018-12-11 23:18:32"
         },
         {
+          "title": "File:Fig 29 & 30 Plate XLVIII The butterflies & moths of New Zealand (cropped).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig_29_%26_30_Plate_XLVIII_The_butterflies_%26_moths_of_New_Zealand_(cropped).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Fig_29_%26_30_Plate_XLVIII_The_butterflies_%26_moths_of_New_Zealand_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 154,
+          "height": 205,
+          "bytes": 8218,
+          "mime": "",
+          "licence": "Public domain",
+          "licenceUrl": "",
+          "artist": "George Vernon Hudson",
+          "credit": "http://www.bugz.org.nz/WebForms/ResultDetails.aspx?CurrentDoc=C7E94865-492F-45DA-9777-CC8E1E8B1438&CurrentPage=1&searchType=1&StartChar=%EF%BF%BD",
+          "dateOriginal": "1928",
+          "dateProperty": "",
+          "objectName": "Fig 29 & 30 Plate XLVIII The butterflies & moths of New Zealand (cropped)",
+          "description": "Plate XLVIII The butterflies & moths of New Zealand",
+          "uploadDate": "2019-04-10 00:40:03"
+        },
+        {
           "title": "File:Top of Liburne Hill, Puketeraki Forest Conservation Area, Canterbury, New Zealand.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Liburne_Hill,_Puketeraki_Forest_Conservation_Area,_Canterbury,_New_Zealand.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Top_of_Liburne_Hill%2C_Puketeraki_Forest_Conservation_Area%2C_Canterbury%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -8448,24 +8448,6 @@
           "objectName": "Fig 2 Plate L The butterflies & moths of New Zealand 1928 (cropped)",
           "description": "Plate L The butterflies & moths of New Zealand Fig 2 Depicts Mnesarchaea hudsoni",
           "uploadDate": "2021-08-16 02:58:58"
-        },
-        {
-          "title": "File:Fig 20 Plate XLVI The butterflies & moths of New Zealand (cropped).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fig_20_Plate_XLVI_The_butterflies_%26_moths_of_New_Zealand_(cropped).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Fig_20_Plate_XLVI_The_butterflies_%26_moths_of_New_Zealand_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 243,
-          "height": 177,
-          "bytes": 10378,
-          "mime": "",
-          "licence": "Public domain",
-          "licenceUrl": "",
-          "artist": "George Vernon Hudson",
-          "credit": "http://www.bugz.org.nz/WebForms/ResultDetails.aspx?CurrentDoc=C7E94865-492F-45DA-9777-CC8E1E8B1438&CurrentPage=1&searchType=1&StartChar=%EF%BF%BD",
-          "dateOriginal": "1928",
-          "dateProperty": "",
-          "objectName": "Fig 20 Plate XLVI The butterflies & moths of New Zealand (cropped)",
-          "description": "Plate XLVI The butterflies & moths of New Zealand",
-          "uploadDate": "2021-11-04 01:23:49"
         },
         {
           "title": "File:DOC marker - orange triangle - New Zealand trail marker (Paratu Stream, West Coast, New Zealand).jpg",
@@ -9616,22 +9598,22 @@
           "uploadDate": "2021-08-22 22:20:03"
         },
         {
-          "title": "File:SD 36 - Map of Hokonui Survey District.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_36_-_Map_of_Hokonui_Survey_District.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/SD_36_-_Map_of_Hokonui_Survey_District.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 6069,
-          "height": 4920,
-          "bytes": 10037290,
+          "title": "File:OT 135 - Waipahi Survey District.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:OT_135_-_Waipahi_Survey_District.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/OT_135_-_Waipahi_Survey_District.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 3912,
+          "height": 4740,
+          "bytes": 4726330,
           "mime": "",
           "licence": "CC BY 2.0",
           "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-          "artist": "Drawn by W. Deverell, New Zealand Railways Corporation, District Engineer's Office, Dunedin Archives New Zealand",
-          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE60042587",
-          "dateOriginal": "1926",
+          "artist": "Drawn by A.J. Morrison, New Zealand Railways Corporation, District Engineer's Office, Dunedin Archives New Zealand",
+          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE60043134",
+          "dateOriginal": "1912, revised in 1924",
           "dateProperty": "",
-          "objectName": "SD 36 - Map of Hokonui Survey District",
-          "description": "[No.] SD 36 - Map of Hokonui Survey District - [bound in folder of 35 Cadastral Maps published by Lands and Survey Department] (additions to June 1926) - Archives New Zealand reference: DABB D101 423/ IN 4175 (R6617938)",
-          "uploadDate": "2021-08-22 22:32:34"
+          "objectName": "OT 135 - Waipahi Survey District",
+          "description": "[No.] OT 135 - Waipahi Survey District - [bound in folder of 35 Cadastral Maps published by Lands and Survey Department] (February 1912, revised in 1924) - Archives New Zealand reference: DABB D101 423/ IN 4014 (R6617921)",
+          "uploadDate": "2021-08-22 22:27:45"
         },
         {
           "title": "File:Takaka cadastral map, 1953 (bottom).jpg",
@@ -9733,24 +9715,6 @@
           "uploadDate": "2020-03-26 23:34:17"
         },
         {
-          "title": "File:Map of Glenomaru Survey District (1933).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Glenomaru_Survey_District_(1933).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Map_of_Glenomaru_Survey_District_%281933%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 6139,
-          "height": 6762,
-          "bytes": 4435185,
-          "mime": "",
-          "licence": "CC BY 2.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-          "artist": "New Zealand Railways Corporation, District Engineer's Office, Dunedin",
-          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE39572603",
-          "dateOriginal": "May 1892, Revised in July 1933",
-          "dateProperty": "",
-          "objectName": "Map of Glenomaru Survey District (1933)",
-          "description": "[No.] OT 158 - Glenomaru Survey District - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1933) - New Zealand Archives Reference: DABB D101 409/30 - R6619084",
-          "uploadDate": "2020-03-27 00:00:55"
-        },
-        {
           "title": "File:Map of Gimmerburn Survey District and Part of Poolburn Survey District (1902).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Gimmerburn_Survey_District_and_Part_of_Poolburn_Survey_District_(1902).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Map_of_Gimmerburn_Survey_District_and_Part_of_Poolburn_Survey_District_%281902%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -9803,24 +9767,6 @@
           "objectName": "Map of Beaumont Survey District (1922)",
           "description": "Beaumont Survey District - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1922) - New Zealand Archives Reference: DABB D101 409/43 - R6619072",
           "uploadDate": "2020-03-29 22:51:36"
-        },
-        {
-          "title": "File:Map of Rimu Survey District (1906).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Rimu_Survey_District_(1906).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Map_of_Rimu_Survey_District_%281906%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 8011,
-          "height": 7780,
-          "bytes": 4813005,
-          "mime": "",
-          "licence": "CC BY 2.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-          "artist": "New Zealand Railways Corporation, District Engineer's Office, Dunedin",
-          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE39572818",
-          "dateOriginal": "1906-07",
-          "dateProperty": "",
-          "objectName": "Map of Rimu Survey District (1906)",
-          "description": "Map of Rimu Survey District - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1906) - New Zealand Archives Reference: DABB D101 409/46 - R6619105",
-          "uploadDate": "2020-03-29 23:05:29"
         },
         {
           "title": "File:Map of Kyeburn Survey District (1902).jpg",
@@ -9877,6 +9823,24 @@
           "uploadDate": "2020-03-29 23:21:29"
         },
         {
+          "title": "File:Map of Waihemo Survey District (1924).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Waihemo_Survey_District_(1924).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Map_of_Waihemo_Survey_District_%281924%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 7461,
+          "height": 8031,
+          "bytes": 3920700,
+          "mime": "",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "New Zealand Railways Corporation, District Engineer's Office, Dunedin",
+          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE39573358",
+          "dateOriginal": "September 1894, Revised in November 1923",
+          "dateProperty": "",
+          "objectName": "Map of Waihemo Survey District (1924)",
+          "description": "[No.] OT 96 - Waihemo Survey District - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1924) - New Zealand Archives Reference: DABB D101 409/53 - R6619116",
+          "uploadDate": "2020-03-29 23:27:48"
+        },
+        {
           "title": "File:Map of Kurow Survey District (1906).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Kurow_Survey_District_(1906).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Map_of_Kurow_Survey_District_%281906%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -9893,6 +9857,24 @@
           "objectName": "Map of Kurow Survey District (1906)",
           "description": "Kurow Survey District - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1906) - New Zealand Archives Reference: DABB D101 409/111 - R6619091",
           "uploadDate": "2020-03-29 23:49:43"
+        },
+        {
+          "title": "File:Map of Crookston Survey District (1932).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Crookston_Survey_District_(1932).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Map_of_Crookston_Survey_District_%281932%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 7389,
+          "height": 7250,
+          "bytes": 4945348,
+          "mime": "",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "New Zealand Railways Corporation, District Engineer's Office, Dunedin",
+          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE39572497",
+          "dateOriginal": "March 1888, Revised in 1932",
+          "dateProperty": "",
+          "objectName": "Map of Crookston Survey District (1932)",
+          "description": "[No.] OT 117 - Crookston Survey District - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1932) - New Zealand Archives Reference: DABB D101 409/115 - R6619078",
+          "uploadDate": "2020-03-30 00:33:37"
         },
         {
           "title": "File:Map of Lammerlaw Survey District (1922).jpg",
@@ -9949,22 +9931,22 @@
           "uploadDate": "2020-03-30 01:11:28"
         },
         {
-          "title": "File:Map of Blackstone Survey District (1955).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Blackstone_Survey_District_(1955).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Map_of_Blackstone_Survey_District_%281955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 7466,
-          "height": 8227,
-          "bytes": 4429011,
+          "title": "File:Map of Tarras Survey District (1952).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_Tarras_Survey_District_(1952).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Map_of_Tarras_Survey_District_%281952%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 7693,
+          "height": 8692,
+          "bytes": 4754920,
           "mime": "",
           "licence": "CC BY 2.0",
           "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
           "artist": "New Zealand Railways Corporation, District Engineer's Office, Dunedin",
-          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE39565189",
-          "dateOriginal": "1955-06-01",
+          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE39573245",
+          "dateOriginal": "1952-06-01",
           "dateProperty": "",
-          "objectName": "Map of Blackstone Survey District (1955)",
-          "description": "New Zealand Cadastral Map, Survey District Series 1:63,360 NZMS [New Zealand Mapping Service] 13 - Otago (OT) 65 - Blackstone Survey District - Edition 3 - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1955) - New Zealand Archive Reference: DABB D101 409 - R6619074",
-          "uploadDate": "2020-03-30 02:05:55"
+          "objectName": "Map of Tarras Survey District (1952)",
+          "description": "New Zealand Cadastral Map, Survey District Series 1:63,360 NZMS [New Zealand Mapping Service] 13 - Otago (OT) 47 - Tarras Survey District - Edition 3 - [bound in folder of 50 Cadastral Maps published by Lands and Survey Department] (1952) - New Zealand Archives Reference: DABB D101 409/125 - R6619111",
+          "uploadDate": "2020-03-30 01:34:09"
         },
         {
           "title": "File:Ordnance Survey One-Inch Tourist Map of the Peak District, Published 1924.jpg",
@@ -10695,6 +10677,24 @@
           "uploadDate": "2020-08-25 23:51:37"
         },
         {
+          "title": "File:Survey Office - Plan of Reefton Inangahua Nelson S.W.G.F. (sheets numbered 1, 2, 4 and 5, no sheet 6).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Survey_Office_-_Plan_of_Reefton_Inangahua_Nelson_S.W.G.F._(sheets_numbered_1,_2,_4_and_5,_no_sheet_6).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Survey_Office_-_Plan_of_Reefton_Inangahua_Nelson_S.W.G.F._%28sheets_numbered_1%2C_2%2C_4_and_5%2C_no_sheet_6%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1080,
+          "height": 1107,
+          "bytes": 102646,
+          "mime": "",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "Land Information New Zealand [LINZ] Christchurch Processing Centre (2001 - current) Department of Survey and Land Information, Nelson District Office (1987 - 1996) Land Information New Zealand Nelson Office (1996 - 2001) Department of Lands and Survey, Nelson District Office (1891 - 1987)",
+          "credit": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE40892419",
+          "dateOriginal": "circa 1860 date QS:P,+1860-00-00T00:00:00Z/9,P1480,Q5727902",
+          "dateProperty": "",
+          "objectName": "Survey Office - Plan of Reefton Inangahua Nelson S.W.G.F. (sheets numbered 1, 2, 4 and 5, no sheet 6)",
+          "description": "Survey Office - Plan of Reefton Inangahua Nelson S.W.G.F. (sheets numbered 1, 2, 4 and 5, no sheet 6)(c.1860) - Archives New Zealand Reference: CAYN 23144 CH1031 104 / SO 121 - 1, 2, 4, 5, 6 - R25533532",
+          "uploadDate": "2020-08-27 23:12:13"
+        },
+        {
           "title": "File:Survey Office - Plan of Maruia & Grey River.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Survey_Office_-_Plan_of_Maruia_%26_Grey_River.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Survey_Office_-_Plan_of_Maruia_%26_Grey_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -11414,6 +11414,24 @@
           "uploadDate": "2019-08-04 06:43:01"
         },
         {
+          "title": "File:Solidarity Grid by Mischa Kuball (Mexico City, Mexico), Christchurch, New Zealand 02.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidarity_Grid_by_Mischa_Kuball_(Mexico_City,_Mexico),_Christchurch,_New_Zealand_02.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Solidarity_Grid_by_Mischa_Kuball_%28Mexico_City%2C_Mexico%29%2C_Christchurch%2C_New_Zealand_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 3527,
+          "height": 5291,
+          "bytes": 20432058,
+          "mime": "",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Michal Klajban",
+          "credit": "Own work",
+          "dateOriginal": "2019-08-03 10:50:52",
+          "dateProperty": "",
+          "objectName": "Solidarity Grid by Mischa Kuball (Mexico City, Mexico), Christchurch, New Zealand 02",
+          "description": "Artwork \"Solidarity Grid\" by Mischa Kuball, Christchurch, New Zealand. The artwork consists of 21 streetlamps. Each lamp represents a different city around the world that donated a streetlamp to Christchurch as a gesture of solidarity with the city after the earthquakes. This lamp was donated by Mexico City, Mexico",
+          "uploadDate": "2019-08-04 06:43:20"
+        },
+        {
           "title": "File:Solidarity Grid by Mischa Kuball (Kurashiki, Japan), Christchurch, New Zealand 02.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidarity_Grid_by_Mischa_Kuball_(Kurashiki,_Japan),_Christchurch,_New_Zealand_02.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Solidarity_Grid_by_Mischa_Kuball_%28Kurashiki%2C_Japan%29%2C_Christchurch%2C_New_Zealand_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -11448,24 +11466,6 @@
           "objectName": "Solidarity Grid by Mischa Kuball (Boston, USA), Christchurch, New Zealand 02",
           "description": "Artwork \"Solidarity Grid\" by Mischa Kuball, Christchurch, New Zealand. The artwork consists of 21 streetlamps. Each lamp represents a different city around the world that donated a streetlamp to Christchurch as a gesture of solidarity with the city after the earthquakes. This lamp was donated by Boston, USA",
           "uploadDate": "2019-08-04 06:43:51"
-        },
-        {
-          "title": "File:Solidarity Grid by Mischa Kuball (Boston, USA), Christchurch, New Zealand 03.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidarity_Grid_by_Mischa_Kuball_(Boston,_USA),_Christchurch,_New_Zealand_03.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solidarity_Grid_by_Mischa_Kuball_%28Boston%2C_USA%29%2C_Christchurch%2C_New_Zealand_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 3462,
-          "height": 5204,
-          "bytes": 21007309,
-          "mime": "",
-          "licence": "CC BY-SA 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "artist": "Michal Klajban",
-          "credit": "Own work",
-          "dateOriginal": "2019-08-03 10:53:43",
-          "dateProperty": "",
-          "objectName": "Solidarity Grid by Mischa Kuball (Boston, USA), Christchurch, New Zealand 03",
-          "description": "Artwork \"Solidarity Grid\" by Mischa Kuball, Christchurch, New Zealand. The artwork consists of 21 streetlamps. Each lamp represents a different city around the world that donated a streetlamp to Christchurch as a gesture of solidarity with the city after the earthquakes. This lamp was donated by Boston, USA",
-          "uploadDate": "2019-08-04 06:44:07"
         },
         {
           "title": "File:Solidarity Grid by Mischa Kuball (Graz, Austria), Christchurch, New Zealand 17.jpg",
@@ -11675,6 +11675,24 @@
           "uploadDate": "2026-02-26 05:23:57"
         },
         {
+          "title": "File:Lake Marakapia map.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Marakapia_map.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Lake_Marakapia_map.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 710,
+          "height": 709,
+          "bytes": 230883,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Land and Information New Zealand",
+          "credit": "https://www.linz.govt.nz/products-services/maps/new-zealand-topographic-maps/topo50-map-chooser/topo50-map-ci02-cape-young",
+          "dateOriginal": "2020",
+          "dateProperty": "",
+          "objectName": "Lake Marakapia map",
+          "description": "Topographic map of Lake Marakapia",
+          "uploadDate": "2026-03-02 03:51:13"
+        },
+        {
           "title": "File:Warkworth map.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warkworth_map.png",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Warkworth_map.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -11817,24 +11835,6 @@
           "objectName": "Kelso map",
           "description": "Map of Kelso",
           "uploadDate": "2026-08-28 22:10:05"
-        },
-        {
-          "title": "File:Robinsons Bay map.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robinsons_Bay_map.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Robinsons_Bay_map.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 947,
-          "height": 709,
-          "bytes": 643814,
-          "mime": "",
-          "licence": "CC BY 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-          "artist": "Traumnovelle (edited version), Land and Information New Zealand (original maps)",
-          "credit": "Own work derived from two topographic maps [1] [2]",
-          "dateOriginal": "2020",
-          "dateProperty": "",
-          "objectName": "Robinsons Bay map",
-          "description": "Topographic map of Robinsons Bay derived from Topo50 BX25 and Topo50 BY25",
-          "uploadDate": "2026-09-21 01:28:04"
         }
       ]
     },
@@ -12304,6 +12304,24 @@
           "uploadDate": "2024-10-20 02:01:20"
         },
         {
+          "title": "File:2023 NZ Census Population Density - Marlborough District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Marlborough_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/2023_NZ_Census_Population_Density_-_Marlborough_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 2644,
+          "height": 3575,
+          "bytes": 974489,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Vardion",
+          "credit": "Own work",
+          "dateOriginal": "2024-10-20",
+          "dateProperty": "",
+          "objectName": "2023 NZ Census Population Density - Marlborough District",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
+          "uploadDate": "2024-10-20 02:01:21"
+        },
+        {
           "title": "File:2023 NZ Census Population Density - New Plymouth District.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_New_Plymouth_District.png",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/2023_NZ_Census_Population_Density_-_New_Plymouth_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -12340,24 +12358,6 @@
           "uploadDate": "2024-10-20 02:15:12"
         },
         {
-          "title": "File:2023 NZ Census Population Density - Rangitikei District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Rangitikei_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/2023_NZ_Census_Population_Density_-_Rangitikei_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 2119,
-          "height": 2394,
-          "bytes": 715340,
-          "mime": "",
-          "licence": "CC BY 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-          "artist": "Vardion",
-          "credit": "Own work",
-          "dateOriginal": "2024-10-20",
-          "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Rangitikei District",
-          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:15:14"
-        },
-        {
           "title": "File:2023 NZ Census Population Density - Ruapehu District.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Ruapehu_District.png",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/2023_NZ_Census_Population_Density_-_Ruapehu_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -12376,12 +12376,12 @@
           "uploadDate": "2024-10-20 02:15:17"
         },
         {
-          "title": "File:2023 NZ Census Population Density - Stratford District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Stratford_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/2023_NZ_Census_Population_Density_-_Stratford_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1653,
-          "height": 1206,
-          "bytes": 309429,
+          "title": "File:2023 NZ Census Population Density - Taupō District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1931,
+          "height": 2163,
+          "bytes": 474937,
           "mime": "",
           "licence": "CC BY 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -12389,27 +12389,9 @@
           "credit": "Own work",
           "dateOriginal": "2024-10-20",
           "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Stratford District",
+          "objectName": "2023 NZ Census Population Density - Taupō District",
           "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:15:22"
-        },
-        {
-          "title": "File:2023 NZ Census Population Density - Waimakariri District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Waimakariri_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/2023_NZ_Census_Population_Density_-_Waimakariri_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1459,
-          "height": 1294,
-          "bytes": 416122,
-          "mime": "",
-          "licence": "CC BY 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-          "artist": "Vardion",
-          "credit": "Own work",
-          "dateOriginal": "2024-10-20",
-          "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Waimakariri District",
-          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:15:32"
+          "uploadDate": "2024-10-20 02:15:25"
         },
         {
           "title": "File:2023 NZ Census Population Density - Waipa District.png",
@@ -12464,6 +12446,24 @@
           "objectName": "2023 NZ Census Population Density - Westland District",
           "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
           "uploadDate": "2024-10-20 02:15:40"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Whakatāne District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1350,
+          "height": 2125,
+          "bytes": 380598,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Vardion",
+          "credit": "Own work",
+          "dateOriginal": "2024-10-20",
+          "dateProperty": "",
+          "objectName": "2023 NZ Census Population Density - Whakatāne District",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
+          "uploadDate": "2024-10-20 02:15:42"
         }
       ]
     },
@@ -13627,24 +13627,6 @@
           "uploadDate": "2015-02-27 03:57:06"
         },
         {
-          "title": "File:73'Valiant Regal Coupe,Auckland New Zealand (12716026955).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:73%27Valiant_Regal_Coupe,Auckland_New_Zealand_(12716026955).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/73%27Valiant_Regal_Coupe%2CAuckland_New_Zealand_%2812716026955%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 2270,
-          "height": 1120,
-          "bytes": 770949,
-          "mime": "",
-          "licence": "CC BY 2.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-          "artist": "GPS 56 from New Zealand",
-          "credit": "73'Valiant Regal Coupe,Auckland New Zealand",
-          "dateOriginal": "1987-02-23 23:37",
-          "dateProperty": "",
-          "objectName": "73'Valiant Regal Coupe,Auckland New Zealand (12716026955)",
-          "description": "The photo was taken way back in the late 80's.",
-          "uploadDate": "2015-02-27 04:06:07"
-        },
-        {
           "title": "File:Auckland Fire Service,New Zealand (9373889709).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Fire_Service,New_Zealand_(9373889709).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Auckland_Fire_Service%2CNew_Zealand_%289373889709%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -13769,6 +13751,24 @@
           "objectName": "A part of Auckland,New Zealand (11041458333)",
           "description": "A part of Auckland,New Zealand",
           "uploadDate": "2015-02-27 04:31:28"
+        },
+        {
+          "title": "File:One Tree Hill Epson Auckland,New Zealand (12624880334).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:One_Tree_Hill_Epson_Auckland,New_Zealand_(12624880334).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/One_Tree_Hill_Epson_Auckland%2CNew_Zealand_%2812624880334%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 6000,
+          "height": 4000,
+          "bytes": 9870327,
+          "mime": "",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "GPS 56 from New Zealand",
+          "credit": "One Tree Hill Epson Auckland,New Zealand",
+          "dateOriginal": "2014-02-19 12:02",
+          "dateProperty": "",
+          "objectName": "One Tree Hill Epson Auckland,New Zealand (12624880334)",
+          "description": "One Tree Hill Epson Auckland,New Zealand",
+          "uploadDate": "2015-02-27 04:32:05"
         },
         {
           "title": "File:Derelict House Parnell,Auckland.New Zealand (16248107174).jpg",
@@ -14940,24 +14940,6 @@
           "uploadDate": "2017-11-22 14:43:46"
         },
         {
-          "title": "File:NZR Dc4726 Leaving Avondale Rail Station (14460778931).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NZR_Dc4726_Leaving_Avondale_Rail_Station_(14460778931).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/NZR_Dc4726_Leaving_Avondale_Rail_Station_%2814460778931%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 2228,
-          "height": 1485,
-          "bytes": 909134,
-          "mime": "",
-          "licence": "CC BY 2.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-          "artist": "GPS 56 from New Zealand",
-          "credit": "NZR Dc4726 Leaving Avondale Rail Station",
-          "dateOriginal": "2014-06-19 16:40",
-          "dateProperty": "",
-          "objectName": "NZR Dc4726 Leaving Avondale Rail Station (14460778931)",
-          "description": "Avondale,Auckland.New Zealand",
-          "uploadDate": "2017-11-22 16:57:21"
-        },
-        {
           "title": "File:Ba552 Just About There At New Market (14216543379).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ba552_Just_About_There_At_New_Market_(14216543379).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Ba552_Just_About_There_At_New_Market_%2814216543379%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -15010,6 +14992,24 @@
           "objectName": "Train Leaving Avondale Train Station (9734573130)",
           "description": "OLYMPUS DIGITAL CAMERA",
           "uploadDate": "2017-11-22 19:02:37"
+        },
+        {
+          "title": "File:Coming into the old Avondale Rail Station from Crayford Street Crossing (9011053393).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coming_into_the_old_Avondale_Rail_Station_from_Crayford_Street_Crossing_(9011053393).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Coming_into_the_old_Avondale_Rail_Station_from_Crayford_Street_Crossing_%289011053393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 4319,
+          "height": 2879,
+          "bytes": 2742300,
+          "mime": "",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "GPS 56 from New Zealand",
+          "credit": "Coming into the old Avondale Rail Station from Crayford Street Crossing",
+          "dateOriginal": "2012-06-26 16:27",
+          "dateProperty": "",
+          "objectName": "Coming into the old Avondale Rail Station from Crayford Street Crossing (9011053393)",
+          "description": "Coming into the old Avondale Rail Station from Crayford Street Crossing",
+          "uploadDate": "2017-11-22 19:04:14"
         },
         {
           "title": "File:Ja1250 At Glenbrook Station (14384817033) (cropped).jpg",
@@ -15362,24 +15362,6 @@
           "uploadDate": "2022-08-31 01:10:33"
         },
         {
-          "title": "File:Top of a trig point - geograph.org.uk - 3766510.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_a_trig_point_-_geograph.org.uk_-_3766510.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Top_of_a_trig_point_-_geograph.org.uk_-_3766510.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1024,
-          "height": 680,
-          "bytes": 370875,
-          "mime": "",
-          "licence": "CC BY-SA 2.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-          "artist": "Philip Halling",
-          "credit": "Geograph Britain and Ireland",
-          "dateOriginal": "2013-11-30",
-          "dateProperty": "",
-          "objectName": "Top of a trig point - geograph.org.uk - 3766510",
-          "description": "Top of a trig point",
-          "uploadDate": "2022-09-06 00:09:55"
-        },
-        {
           "title": "File:Great Orme Trig Point and View Point - geograph.org.uk - 4388751.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Orme_Trig_Point_and_View_Point_-_geograph.org.uk_-_4388751.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Great_Orme_Trig_Point_and_View_Point_-_geograph.org.uk_-_4388751.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -15504,6 +15486,24 @@
           "objectName": "Trig point - geograph.org.uk - 8257110",
           "description": "Trig point",
           "uploadDate": "2026-03-25 21:06:46"
+        },
+        {
+          "title": "File:Trig point on Snaefell - geograph.org.uk - 8356566.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trig_point_on_Snaefell_-_geograph.org.uk_-_8356566.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Trig_point_on_Snaefell_-_geograph.org.uk_-_8356566.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 4000,
+          "height": 3000,
+          "bytes": 3077695,
+          "mime": "",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "Chris Morgan",
+          "credit": "Geograph Britain and Ireland",
+          "dateOriginal": "2026-06-26",
+          "dateProperty": "",
+          "objectName": "Trig point on Snaefell - geograph.org.uk - 8356566",
+          "description": "Trig point on Snaefell",
+          "uploadDate": "2026-08-06 21:45:27"
         }
       ]
     },
@@ -15514,24 +15514,6 @@
       "passageTitle": "A photograph you can measure",
       "query": "New Zealand aerial photo",
       "results": [
-        {
-          "title": "File:Murchison New Zealand 1978.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Murchison_New_Zealand_1978.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Murchison_New_Zealand_1978.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 812,
-          "height": 528,
-          "bytes": 727735,
-          "mime": "",
-          "licence": "CC BY 2.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
-          "artist": "Phillip Capper from Wellington, New Zealand",
-          "credit": "Flickr",
-          "dateOriginal": "2005-05-21 15:39:32",
-          "dateProperty": "",
-          "objectName": "Murchison New Zealand 1978",
-          "description": "En route Reefton to Nelson, Murchison New Zealand Murchison, New Zealand 1978",
-          "uploadDate": "2006-09-08 06:05:10"
-        },
         {
           "title": "File:Reefton New Zealand 1976.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reefton_New_Zealand_1976.jpg",
@@ -15765,6 +15747,24 @@
           "objectName": "Aerial photo of Ross, New Zealand",
           "description": "View of Ross, New Zealand, from Air New Zealand Q300 en route from Christchurch to Hokitika on 19 March 2021.",
           "uploadDate": "2021-03-20 09:00:12"
+        },
+        {
+          "title": "File:Aerial view of Manukau Entrance and Cornwallis Village, New Zealand (AM 75238-1) (cropped).png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Manukau_Entrance_and_Cornwallis_Village,_New_Zealand_(AM_75238-1)_(cropped).png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Aerial_view_of_Manukau_Entrance_and_Cornwallis_Village%2C_New_Zealand_%28AM_75238-1%29_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1110,
+          "height": 764,
+          "bytes": 780817,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Collins, Tudor Washington, 1898-1970, photographer",
+          "credit": "API data Catalogue record Photo",
+          "dateOriginal": "circa 1940 date QS:P571,+1940-00-00T00:00:00Z/9,P1480,Q5727902 s.",
+          "dateProperty": "",
+          "objectName": "(Aerial photograph of land and sea)",
+          "description": "Aerial view of Manukau Entrance to Manukau Harbour and Cornwallis Village, New Zealand; view to the South-West (cropped).",
+          "uploadDate": "2021-09-08 23:00:23"
         },
         {
           "title": "File:Aerial Photo of Alexandra, New Zealand.jpg",
@@ -16001,42 +16001,6 @@
           "uploadDate": "2019-01-04 23:55:19"
         },
         {
-          "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 1).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Photographic_Mosaic_of_Military_Reservation,_Camp_Bragg,_North_Carolina_-_NARA_-_137929421_(page_1).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Aerial_Photographic_Mosaic_of_Military_Reservation%2C_Camp_Bragg%2C_North_Carolina_-_NARA_-_137929421_%28page_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 5976,
-          "height": 4878,
-          "bytes": 6181292,
-          "mime": "",
-          "licence": "Public domain",
-          "licenceUrl": "",
-          "artist": "Unknown author Unknown author or not provided",
-          "credit": "U.S. National Archives and Records Administration",
-          "dateOriginal": "1920 date QS:P571,+1920-00-00T00:00:00Z/9",
-          "dateProperty": "",
-          "objectName": "Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina",
-          "description": "",
-          "uploadDate": "2019-07-25 04:32:58"
-        },
-        {
-          "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 3).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Photographic_Mosaic_of_Military_Reservation,_Camp_Bragg,_North_Carolina_-_NARA_-_137929421_(page_3).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Aerial_Photographic_Mosaic_of_Military_Reservation%2C_Camp_Bragg%2C_North_Carolina_-_NARA_-_137929421_%28page_3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 5944,
-          "height": 5072,
-          "bytes": 6958510,
-          "mime": "",
-          "licence": "Public domain",
-          "licenceUrl": "",
-          "artist": "Unknown author Unknown author or not provided",
-          "credit": "U.S. National Archives and Records Administration",
-          "dateOriginal": "1920 date QS:P571,+1920-00-00T00:00:00Z/9",
-          "dateProperty": "",
-          "objectName": "Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina",
-          "description": "",
-          "uploadDate": "2019-07-25 04:33:12"
-        },
-        {
           "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 6).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Photographic_Mosaic_of_Military_Reservation,_Camp_Bragg,_North_Carolina_-_NARA_-_137929421_(page_6).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Aerial_Photographic_Mosaic_of_Military_Reservation%2C_Camp_Bragg%2C_North_Carolina_-_NARA_-_137929421_%28page_6%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -16073,12 +16037,12 @@
           "uploadDate": "2019-07-25 04:33:33"
         },
         {
-          "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 8).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Photographic_Mosaic_of_Military_Reservation,_Camp_Bragg,_North_Carolina_-_NARA_-_137929421_(page_8).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Aerial_Photographic_Mosaic_of_Military_Reservation%2C_Camp_Bragg%2C_North_Carolina_-_NARA_-_137929421_%28page_8%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 5856,
-          "height": 4789,
-          "bytes": 3088181,
+          "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 9).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Photographic_Mosaic_of_Military_Reservation,_Camp_Bragg,_North_Carolina_-_NARA_-_137929421_(page_9).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Aerial_Photographic_Mosaic_of_Military_Reservation%2C_Camp_Bragg%2C_North_Carolina_-_NARA_-_137929421_%28page_9%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 5836,
+          "height": 4428,
+          "bytes": 6486394,
           "mime": "",
           "licence": "Public domain",
           "licenceUrl": "",
@@ -16088,7 +16052,7 @@
           "dateProperty": "",
           "objectName": "Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina",
           "description": "",
-          "uploadDate": "2019-07-25 04:33:38"
+          "uploadDate": "2019-07-25 04:33:44"
         },
         {
           "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 10).jpg",
@@ -16107,6 +16071,42 @@
           "objectName": "Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina",
           "description": "",
           "uploadDate": "2019-07-25 04:33:49"
+        },
+        {
+          "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 11).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Photographic_Mosaic_of_Military_Reservation,_Camp_Bragg,_North_Carolina_-_NARA_-_137929421_(page_11).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Aerial_Photographic_Mosaic_of_Military_Reservation%2C_Camp_Bragg%2C_North_Carolina_-_NARA_-_137929421_%28page_11%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 4828,
+          "height": 5443,
+          "bytes": 2552014,
+          "mime": "",
+          "licence": "Public domain",
+          "licenceUrl": "",
+          "artist": "Unknown author Unknown author or not provided",
+          "credit": "U.S. National Archives and Records Administration",
+          "dateOriginal": "1920 date QS:P571,+1920-00-00T00:00:00Z/9",
+          "dateProperty": "",
+          "objectName": "Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina",
+          "description": "",
+          "uploadDate": "2019-07-25 04:33:54"
+        },
+        {
+          "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 13).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Photographic_Mosaic_of_Military_Reservation,_Camp_Bragg,_North_Carolina_-_NARA_-_137929421_(page_13).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Aerial_Photographic_Mosaic_of_Military_Reservation%2C_Camp_Bragg%2C_North_Carolina_-_NARA_-_137929421_%28page_13%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 5908,
+          "height": 4571,
+          "bytes": 7262932,
+          "mime": "",
+          "licence": "Public domain",
+          "licenceUrl": "",
+          "artist": "Unknown author Unknown author or not provided",
+          "credit": "U.S. National Archives and Records Administration",
+          "dateOriginal": "1920 date QS:P571,+1920-00-00T00:00:00Z/9",
+          "dateProperty": "",
+          "objectName": "Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina",
+          "description": "",
+          "uploadDate": "2019-07-25 04:34:05"
         },
         {
           "title": "File:Aerial Photographic Mosaic of Military Reservation, Camp Bragg, North Carolina - NARA - 137929421 (page 15).jpg",
@@ -16280,12 +16280,12 @@
           "uploadDate": "2012-04-06 23:47:18"
         },
         {
-          "title": "File:Seattle - Harbor Island aerial 02A.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seattle_-_Harbor_Island_aerial_02A.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Seattle_-_Harbor_Island_aerial_02A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "title": "File:Seattle - Harbor Island aerial 03A.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seattle_-_Harbor_Island_aerial_03A.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Seattle_-_Harbor_Island_aerial_03A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "width": 4288,
           "height": 2848,
-          "bytes": 7178420,
+          "bytes": 7296224,
           "mime": "",
           "licence": "CC BY-SA 3.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -16293,9 +16293,9 @@
           "credit": "Photo by Joe Mabel",
           "dateOriginal": "Taken on 1 April 2012",
           "dateProperty": "",
-          "objectName": "Seattle - Harbor Island aerial 02A",
+          "objectName": "Seattle - Harbor Island aerial 03A",
           "description": "Harbor Island in the Duwamish Waterway, Seattle, Washington, USA. One of a series of photos taken from a low-flying airplane headed south, east of the island.",
-          "uploadDate": "2012-04-06 23:55:18"
+          "uploadDate": "2012-04-07 00:05:21"
         },
         {
           "title": "File:Seattle - Harbor Island aerial 05A.jpg",
@@ -16665,6 +16665,24 @@
           "objectName": "PIA21509 - New Zealand Glaciers",
           "description": "New Zealand contains over 3,000 glaciers, most of which are in the Southern Alps on the South Island. Since 1890, the glaciers have been retreating, with short periods of small advances. The differences between 1990 (Landsat image from January 12) and 2017 (ASTER image from January 29) can be seen in the pair of images, that include the Mueller, Hooker and Tasman Glaciers. Notice the larger terminal lakes, the retreat of the ice free of moraine cover, and the higher moraine walls due to ice thinning. The images cover an area of 39 by 46 km, and are located at 43.7 degrees south, 170 degrees east. With its 14 spectral bands from the visible to the thermal infrared wavelength region and its high spatial resolution of 15 to 90 meters (about 50 to 300 feet), ASTER images Earth to map and monitor the changing surface of our planet. ASTER is one of five Earth-observing instruments launched Dec. 18, 1999, on Terra. The instrument was built by Japan's Ministry of Economy, Trade and Industry. A joint U.S./Japan science team is responsible for validation and calibration of the instrument and data products. The broad spectral coverage and high spectral resolution of ASTER provides scientists in numerous disciplines with critical information for surface mapping and monitoring of dynamic conditions and temporal change. Example applications are: monitoring glacial advances and retreats; monitoring potentially active volcanoes; identifying crop stress; determining cloud morphology and physical properties; wetlands evaluation; thermal pollution monitoring; coral reef degradation; surface temperature mapping of soils and geology; and measuring surface heat balance. The U.S. science team is located at NASA's Jet Propulsion Laboratory, Pasadena, Calif. The Terra mission is part of NASA's Science Mission Directorate, Washington, D.C. More information about ASTER is available at http://asterweb.jpl.nasa.gov/ .",
           "uploadDate": "2017-03-10 04:51:51"
+        },
+        {
+          "title": "File:Admiralty Chart No 2543 Maunganui Bluff to Manukau Harbour and Tutukaka Harbour to Mayor Island, Published 1908.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_2543_Maunganui_Bluff_to_Manukau_Harbour_and_Tutukaka_Harbour_to_Mayor_Island,_Published_1908.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Admiralty_Chart_No_2543_Maunganui_Bluff_to_Manukau_Harbour_and_Tutukaka_Harbour_to_Mayor_Island%2C_Published_1908.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 16246,
+          "height": 11106,
+          "bytes": 14098991,
+          "mime": "",
+          "licence": "Public domain",
+          "licenceUrl": "",
+          "artist": "United Kingdom Hydrographic Office",
+          "credit": "Scan of original Admiralty chart",
+          "dateOriginal": "1908-02-04",
+          "dateProperty": "",
+          "objectName": "Admiralty Chart No 2543 Maunganui Bluff to Manukau Harbour and Tutukaka Harbour to Mayor Island, Published 1908",
+          "description": "Nautical chart of Maunganui Bluff to Manukau Harbour and Tutukaka Harbour to Mayor Island, New Zealand, at a scale of 1:290,000. The east coast is from surveys by Captain A.G.N. Wyatt H.M. Surveying Ship Endeavour 1937-8, Captain W. Pudsey Dawson H.M. Surveying Ship Penguin 1905-5, and Commr. J.W. Combe 1901. The west coast is from earlier British Surveys, with additions and corrections from Harbour plans to 1937. Not current - not to be used for navigation!",
+          "uploadDate": "2019-08-22 19:09:11"
         },
         {
           "title": "File:Admiralty Chart No 3633 New Zealand North Island, Published 1962.jpg",
@@ -17323,24 +17341,6 @@
           "uploadDate": "2011-05-25 13:44:19"
         },
         {
-          "title": "File:SolarGIS-Solar-map-Moldavia-en.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SolarGIS-Solar-map-Moldavia-en.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/SolarGIS-Solar-map-Moldavia-en.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 630,
-          "height": 850,
-          "bytes": 277439,
-          "mime": "",
-          "licence": "CC BY-SA 3.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "artist": "SolarGIS © 2011 GeoModel Solar s.r.o.",
-          "credit": "http://solargis.info/free-solar-maps image",
-          "dateOriginal": "2011-05-26",
-          "dateProperty": "",
-          "objectName": "SolarGIS-Solar-map-Moldavia-en",
-          "description": "Solar Radiation Map: Global Horizontal Irradiation map of Moldavia, SolarGIS 2011",
-          "uploadDate": "2013-03-16 17:32:02"
-        },
-        {
           "title": "File:SolarGIS-Solar-map-Europe-en.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:SolarGIS-Solar-map-Europe-en.png",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/SolarGIS-Solar-map-Europe-en.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -17485,22 +17485,22 @@
           "uploadDate": "2011-05-31 13:10:32"
         },
         {
-          "title": "File:SolarGIS-Solar-map-Czech-Republic-cz.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SolarGIS-Solar-map-Czech-Republic-cz.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/SolarGIS-Solar-map-Czech-Republic-cz.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1000,
-          "height": 698,
-          "bytes": 603458,
+          "title": "File:SolarGIS-Solar-map-Denmark-en.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SolarGIS-Solar-map-Denmark-en.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/SolarGIS-Solar-map-Denmark-en.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 900,
+          "height": 711,
+          "bytes": 247117,
           "mime": "",
           "licence": "CC BY-SA 3.0",
           "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "artist": "SolarGIS © 2011 GeoModel Solar s.r.o.",
+          "artist": "GHI Solar Map © 2014 GeoModel Solar",
           "credit": "http://solargis.info/free-solar-maps image",
           "dateOriginal": "2011-05-31",
           "dateProperty": "",
-          "objectName": "SolarGIS-Solar-map-Czech-Republic-cz",
-          "description": "Solar Radiation Map: Mapa slunečního záření pro Českou republiku - globální horizontální záření, SolarGIS 2011. Průměrný roční úhrn.",
-          "uploadDate": "2011-05-31 13:20:51"
+          "objectName": "SolarGIS-Solar-map-Denmark-en",
+          "description": "Solar Radiation Map: Global Horizontal Irradiation Map of Denmark, SolarGIS 2014, improved edition",
+          "uploadDate": "2014-10-18 10:11:05"
         },
         {
           "title": "File:SolarGIS-Solar-map-Germany-de.png",
@@ -17555,6 +17555,24 @@
           "objectName": "SolarGIS-Solar-map-Switzerland-de",
           "description": "Solar Radiation Map: Globalstrahlung Switzerland , SolarGIS 2011",
           "uploadDate": "2011-06-12 13:59:23"
+        },
+        {
+          "title": "File:SolarGIS-Solar-map-Switzerland-en.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SolarGIS-Solar-map-Switzerland-en.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/SolarGIS-Solar-map-Switzerland-en.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1000,
+          "height": 734,
+          "bytes": 848186,
+          "mime": "",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "SolarGIS © 2011 GeoModel Solar s.r.o.",
+          "credit": "image linked from website",
+          "dateOriginal": "2011-06-12",
+          "dateProperty": "",
+          "objectName": "SolarGIS-Solar-map-Switzerland-en",
+          "description": "Solar Radiation Map: Global Horizontal Irradiation Map of Switzerland, SolarGIS 2011",
+          "uploadDate": "2011-06-12 14:01:38"
         },
         {
           "title": "File:SolarGIS-Solar-map-Switzerland-fr.png",
@@ -18591,12 +18609,12 @@
       "query": "New Zealand boundary map",
       "results": [
         {
-          "title": "File:New Zealand Malaysia Locator.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Malaysia_Locator.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/New_Zealand_Malaysia_Locator.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "title": "File:New Zealand India Locator.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_India_Locator.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/New_Zealand_India_Locator.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "width": 1432,
           "height": 742,
-          "bytes": 57739,
+          "bytes": 57953,
           "mime": "",
           "licence": "CC0",
           "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
@@ -18604,9 +18622,9 @@
           "credit": "Own work Transferred from en.wikipedia",
           "dateOriginal": "21 June 2011 (original upload date)",
           "dateProperty": "",
-          "objectName": "New Zealand Malaysia Locator",
+          "objectName": "New Zealand India Locator",
           "description": "",
-          "uploadDate": "2012-01-29 14:18:57"
+          "uploadDate": "2012-01-29 15:03:28"
         },
         {
           "title": "File:Sunrise over Lake Wanaka from Boundary Creek, New Zealand.jpg",
@@ -19911,24 +19929,6 @@
       "query": "New Zealand hospital map",
       "results": [
         {
-          "title": "File:New Zealand. Masterton Hospital Band, 1918.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand._Masterton_Hospital_Band,_1918.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/New_Zealand._Masterton_Hospital_Band%2C_1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1062,
-          "height": 566,
-          "bytes": 151377,
-          "mime": "",
-          "licence": "Public domain",
-          "licenceUrl": "",
-          "artist": "Unknown author Unknown author",
-          "credit": "Taken from this site .",
-          "dateOriginal": "1918",
-          "dateProperty": "",
-          "objectName": "New Zealand. Masterton Hospital Band, 1918",
-          "description": "New Zealand. Masterton Hospital Band, 1918",
-          "uploadDate": "2014-03-10 14:38:52"
-        },
-        {
           "title": "File:Nurses at New Zealand Stationary Hospital, Wisques, France, World War I, 1918 (13951974706).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nurses_at_New_Zealand_Stationary_Hospital,_Wisques,_France,_World_War_I,_1918_(13951974706).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Nurses_at_New_Zealand_Stationary_Hospital%2C_Wisques%2C_France%2C_World_War_I%2C_1918_%2813951974706%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -20269,6 +20269,24 @@
           "objectName": "NZRN stained glass window, Wellington Hospital, New Zealand",
           "description": "Designed by Beverley Shore Bennett",
           "uploadDate": "2023-07-27 07:28:20"
+        },
+        {
+          "title": "File:Wellington Hospital buildings, Wellington, New Zealand.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wellington_Hospital_buildings,_Wellington,_New_Zealand.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Wellington_Hospital_buildings%2C_Wellington%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 3934,
+          "height": 2406,
+          "bytes": 7607174,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Gertrude206",
+          "credit": "Own work",
+          "dateOriginal": "2023-08-24 12:22:16",
+          "dateProperty": "",
+          "objectName": "Wellington Hospital buildings, Wellington, New Zealand",
+          "description": "Clinical Services Block on the left. In the centre the white building is the Regional Hospital building with the old children's hospital in front with the red roof. To the right the Grace Neill building. Photo taken looking from east to west.",
+          "uploadDate": "2023-11-19 03:42:18"
         }
       ]
     },
@@ -23497,24 +23515,6 @@
           "uploadDate": "2024-10-20 01:48:46"
         },
         {
-          "title": "File:2023 NZ Census Population Density - Canterbury Region.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Canterbury_Region.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/2023_NZ_Census_Population_Density_-_Canterbury_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 3159,
-          "height": 3059,
-          "bytes": 631565,
-          "mime": "",
-          "licence": "CC BY 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-          "artist": "Vardion",
-          "credit": "Own work",
-          "dateOriginal": "2024-10-20",
-          "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Canterbury Region",
-          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 01:48:46"
-        },
-        {
           "title": "File:2023 NZ Census Population Density - Nelson Region.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Nelson_Region.png",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2023_NZ_Census_Population_Density_-_Nelson_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -23533,6 +23533,24 @@
           "uploadDate": "2024-10-20 01:48:52"
         },
         {
+          "title": "File:2023 NZ Census Population Density - Otago Region.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Otago_Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2023_NZ_Census_Population_Density_-_Otago_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 2125,
+          "height": 2541,
+          "bytes": 513944,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Vardion",
+          "credit": "Own work",
+          "dateOriginal": "2024-10-20",
+          "dateProperty": "",
+          "objectName": "2023 NZ Census Population Density - Otago Region",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
+          "uploadDate": "2024-10-20 01:48:54"
+        },
+        {
           "title": "File:2023 NZ Census Population Density - Tasman Region.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Tasman_Region.png",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/2023_NZ_Census_Population_Density_-_Tasman_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -23549,24 +23567,6 @@
           "objectName": "2023 NZ Census Population Density - Tasman Region",
           "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
           "uploadDate": "2024-10-20 01:48:57"
-        },
-        {
-          "title": "File:2023 NZ Census Population Density - Buller District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Buller_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/2023_NZ_Census_Population_Density_-_Buller_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 2353,
-          "height": 3434,
-          "bytes": 490172,
-          "mime": "",
-          "licence": "CC BY 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-          "artist": "Vardion",
-          "credit": "Own work",
-          "dateOriginal": "2024-10-20",
-          "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Buller District",
-          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:00:42"
         },
         {
           "title": "File:2023 NZ Census Population Density - Auckland City.png",
@@ -23605,6 +23605,24 @@
           "uploadDate": "2024-10-20 02:00:43"
         },
         {
+          "title": "File:2023 NZ Census Population Density - Christchurch City.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Christchurch_City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/2023_NZ_Census_Population_Density_-_Christchurch_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 2234,
+          "height": 2138,
+          "bytes": 894029,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Vardion",
+          "credit": "Own work",
+          "dateOriginal": "2024-10-20",
+          "dateProperty": "",
+          "objectName": "2023 NZ Census Population Density - Christchurch City",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
+          "uploadDate": "2024-10-20 02:00:49"
+        },
+        {
           "title": "File:2023 NZ Census Population Density - Gisborne District.png",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Gisborne_District.png",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/2023_NZ_Census_Population_Density_-_Gisborne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -23623,12 +23641,12 @@
           "uploadDate": "2024-10-20 02:00:53"
         },
         {
-          "title": "File:2023 NZ Census Population Density - Gore District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Gore_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/2023_NZ_Census_Population_Density_-_Gore_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1084,
-          "height": 1266,
-          "bytes": 177095,
+          "title": "File:2023 NZ Census Population Density - Hastings District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Hastings_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/2023_NZ_Census_Population_Density_-_Hastings_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1725,
+          "height": 2266,
+          "bytes": 521929,
           "mime": "",
           "licence": "CC BY 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -23636,17 +23654,17 @@
           "credit": "Own work",
           "dateOriginal": "2024-10-20",
           "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Gore District",
+          "objectName": "2023 NZ Census Population Density - Hastings District",
           "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:00:53"
+          "uploadDate": "2024-10-20 02:00:57"
         },
         {
-          "title": "File:2023 NZ Census Population Density - Hauraki District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Hauraki_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/2023_NZ_Census_Population_Density_-_Hauraki_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1313,
-          "height": 1328,
-          "bytes": 379336,
+          "title": "File:2023 NZ Census Population Density - Hurunui District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Hurunui_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/2023_NZ_Census_Population_Density_-_Hurunui_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 2588,
+          "height": 2513,
+          "bytes": 530358,
           "mime": "",
           "licence": "CC BY 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -23654,17 +23672,17 @@
           "credit": "Own work",
           "dateOriginal": "2024-10-20",
           "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Hauraki District",
+          "objectName": "2023 NZ Census Population Density - Hurunui District",
           "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
           "uploadDate": "2024-10-20 02:01:00"
         },
         {
-          "title": "File:2023 NZ Census Population Density - Invercargill City.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Invercargill_City.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/2023_NZ_Census_Population_Density_-_Invercargill_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1278,
-          "height": 1497,
-          "bytes": 244360,
+          "title": "File:2023 NZ Census Population Density - Marlborough District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Marlborough_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/2023_NZ_Census_Population_Density_-_Marlborough_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 2644,
+          "height": 3575,
+          "bytes": 974489,
           "mime": "",
           "licence": "CC BY 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -23672,27 +23690,9 @@
           "credit": "Own work",
           "dateOriginal": "2024-10-20",
           "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Invercargill City",
+          "objectName": "2023 NZ Census Population Density - Marlborough District",
           "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:01:03"
-        },
-        {
-          "title": "File:2023 NZ Census Population Density - Kaikōura District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Kaik%C5%8Dura_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/2023_NZ_Census_Population_Density_-_Kaik%C5%8Dura_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 1509,
-          "height": 1447,
-          "bytes": 135697,
-          "mime": "",
-          "licence": "CC BY 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-          "artist": "Vardion",
-          "credit": "Own work",
-          "dateOriginal": "2024-10-20",
-          "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Kaikōura District",
-          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:01:04"
+          "uploadDate": "2024-10-20 02:01:21"
         },
         {
           "title": "File:2023 NZ Census Population Density - New Plymouth District.png",
@@ -23713,12 +23713,12 @@
           "uploadDate": "2024-10-20 02:15:05"
         },
         {
-          "title": "File:2023 NZ Census Population Density - Waitaki District.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Waitaki_District.png",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/2023_NZ_Census_Population_Density_-_Waitaki_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 2506,
-          "height": 3529,
-          "bytes": 777755,
+          "title": "File:2023 NZ Census Population Density - Taupō District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1931,
+          "height": 2163,
+          "bytes": 474937,
           "mime": "",
           "licence": "CC BY 4.0",
           "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -23726,9 +23726,9 @@
           "credit": "Own work",
           "dateOriginal": "2024-10-20",
           "dateProperty": "",
-          "objectName": "2023 NZ Census Population Density - Waitaki District",
+          "objectName": "2023 NZ Census Population Density - Taupō District",
           "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
-          "uploadDate": "2024-10-20 02:15:36"
+          "uploadDate": "2024-10-20 02:15:25"
         },
         {
           "title": "File:2023 NZ Census Population Density - Westland District.png",
@@ -23747,6 +23747,24 @@
           "objectName": "2023 NZ Census Population Density - Westland District",
           "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
           "uploadDate": "2024-10-20 02:15:40"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Whakatāne District.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1350,
+          "height": 2125,
+          "bytes": 380598,
+          "mime": "",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Vardion",
+          "credit": "Own work",
+          "dateOriginal": "2024-10-20",
+          "dateProperty": "",
+          "objectName": "2023 NZ Census Population Density - Whakatāne District",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square km and above 2000 people per square km and above 3000 people per square km and above 4000 people per square km and above",
+          "uploadDate": "2024-10-20 02:15:42"
         },
         {
           "title": "File:2023 NZ Census Population Density.png",
@@ -24127,6 +24145,24 @@
           "uploadDate": "2016-01-20 15:25:41"
         },
         {
+          "title": "File:Paragliding in New Zealand. (Unsplash).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paragliding_in_New_Zealand._(Unsplash).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Paragliding_in_New_Zealand._%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 5000,
+          "height": 3333,
+          "bytes": 3445609,
+          "mime": "",
+          "licence": "CC0",
+          "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Pablo Heimplatz pabloheimplatz",
+          "credit": "https://unsplash.com/photos/R4679uf28lY Image at the Wayback Machine Gallery at the Wayback Machine",
+          "dateOriginal": "9 February 2016 (according to Exif data)",
+          "dateProperty": "",
+          "objectName": "Paragliding in New Zealand. (Unsplash)",
+          "description": "Queenstown, New Zealand",
+          "uploadDate": "2017-08-25 07:33:33"
+        },
+        {
           "title": "File:Admiralty Chart No 3633 New Zealand North Island, Published 1962.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_3633_New_Zealand_North_Island,_Published_1962.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Admiralty_Chart_No_3633_New_Zealand_North_Island%2C_Published_1962.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -24179,24 +24215,6 @@
           "objectName": "Pohara, Tasman, New Zealand 2",
           "description": "Pohara, Selwyn St, Tasman, New Zealand",
           "uploadDate": "2023-04-12 21:16:40"
-        },
-        {
-          "title": "File:Pohara, Tasman, New Zealand 3.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pohara,_Tasman,_New_Zealand_3.jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Pohara%2C_Tasman%2C_New_Zealand_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 4032,
-          "height": 3024,
-          "bytes": 2844787,
-          "mime": "",
-          "licence": "CC BY 4.0",
-          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
-          "artist": "Michal Klajban",
-          "credit": "Own work",
-          "dateOriginal": "9 April 2023 (according to Exif data)",
-          "dateProperty": "",
-          "objectName": "Pohara, Tasman, New Zealand 3",
-          "description": "Pohara, Selwyn St, Tasman, New Zealand",
-          "uploadDate": "2023-04-12 21:16:58"
         }
       ]
     },
@@ -24522,24 +24540,6 @@
       "passageTitle": "The LINZ Data Service",
       "query": "LINZ Data Service",
       "results": [
-        {
-          "title": "File:Emery LDS Church Emery Utah.jpeg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emery_LDS_Church_Emery_Utah.jpeg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Emery_LDS_Church_Emery_Utah.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 2560,
-          "height": 1920,
-          "bytes": 1190380,
-          "mime": "",
-          "licence": "Public domain",
-          "licenceUrl": "",
-          "artist": "Ntsimp",
-          "credit": "Own work",
-          "dateOriginal": "2009-04-10",
-          "dateProperty": "",
-          "objectName": "Emery LDS Church Emery Utah",
-          "description": "Emery LDS Church, built 1898–1900 by The Church of Jesus Christ of Latter-day Saints , is the oldest surviving religious building in the town of Emery , Utah , United States .",
-          "uploadDate": "2009-04-13 14:08:42"
-        },
         {
           "title": "File:LDS-Hospital.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:LDS-Hospital.jpg",
@@ -27447,24 +27447,6 @@
           "uploadDate": "2024-02-02 19:22:17"
         },
         {
-          "title": "File:New Zealand (MODIS 2015-05-11).jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_(MODIS_2015-05-11).jpg",
-          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/New_Zealand_%28MODIS_2015-05-11%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "width": 4600,
-          "height": 5800,
-          "bytes": 5282770,
-          "mime": "",
-          "licence": "Public domain",
-          "licenceUrl": "",
-          "artist": "Jeff Schmaltz, MODIS Land Rapid Response Team, NASA GSFC",
-          "credit": "This image or video was catalogued by Goddard Space Flight Center of the United States National Aeronautics and Space Administration (NASA) under Photo ID: 2015-05-11 .",
-          "dateOriginal": "Taken on 30 April 2015",
-          "dateProperty": "",
-          "objectName": "New Zealand (MODIS 2015-05-11)",
-          "description": "On April 30, 2015 New Zealand�s Met Service predicted the arrival of clear, sunny days as well as star-filled, chilly nights. The Moderate Resolution Imaging Spectroradiometer (MODIS) aboard NASA's Terra satellite captured this true-color image on that same day, as New Zealand began to emerge from several days of windy weather, which had brought gales and storms to the southern and eastern coasts. In this image, the have clouds parted over New Zealand�s North Island, leaving only small �popcorn� clouds over the higher elevations of the autumn landscape. To the south, South Island remains partially hidden underneath a significant cloud cover. On the northwest coast of South Island, a bank of low cloud (fog) reaches to the lower rises of the Southern Alps. The highest elevations of the Southern Alps are covered with a blanket of snow. The first snowfalls of the season usually occur in early April, although the mountains are snow-capped year-round.",
-          "uploadDate": "2024-02-14 21:38:54"
-        },
-        {
           "title": "File:New Zealand (MODIS 2015-12-29).jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_(MODIS_2015-12-29).jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/New_Zealand_%28MODIS_2015-12-29%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -27643,6 +27625,24 @@
           "objectName": "New Zealand (MODIS 2020-03-09)",
           "description": "On March 5, 2020, the Moderate Resolution Imaging Spectroradiometer (MODIS) on board NASA’s Aqua satellite acquired a true-color image of the southwestern section of New Zealand’s gorgeous South Island on a sunny summer day. The rugged, steep Southern Alps runs the length of South Island. These mountains were created as the Pacific Plate, the section of the Earth’s crust that holds the Pacific Ocean, including parts of New Zealand’s South Island, sinks beneath the Australian Plate, which holds the rest of New Zealand. That process continues today, as the slow collision between the two plates pushes the mountains upwards and fosters volcanic activity on the country’s North Island. Not only do the mountains mark the line between two tectonic plates, they also create different climate regions. The shoreline northwest of the mountains receives more rain than any other place in the South Island. In this image, clouds cover the shoreline, likely bringing rain to the temperate rain forest. To the south, the shore turns dark brown where rocky mountain terrain extends to the Pacific Ocean. Fingers of water cut into the western shore where glaciers cut deep fjords over time. The landscape on the east side of the mountains is dramatically different. The rain shadow of the Southern Alps receives relatively little rain and therefore appears tan instead of green. The dry landscape is punctuated by alpine glacier lakes that hang like sapphire and aquamarine pendants amid the high peaks of the Southern Alps.",
           "uploadDate": "2024-02-17 03:16:12"
+        },
+        {
+          "title": "File:Cook Strait, New Zealand (MODIS 2019-06-06).jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cook_Strait,_New_Zealand_(MODIS_2019-06-06).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Cook_Strait%2C_New_Zealand_%28MODIS_2019-06-06%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 2082,
+          "height": 1573,
+          "bytes": 1055113,
+          "mime": "",
+          "licence": "Public domain",
+          "licenceUrl": "",
+          "artist": "MODIS Land Rapid Response Team, NASA GSFC",
+          "credit": "This image or video was catalogued by Goddard Space Flight Center of the United States National Aeronautics and Space Administration (NASA) under Photo ID: 2019-06-06 .",
+          "dateOriginal": "Taken on 3 June 2019",
+          "dateProperty": "",
+          "objectName": "Cook Strait, New Zealand (MODIS 2019-06-06)",
+          "description": "Approximately 20 miles (32 km) long and only 14 miles (22.5 km) wide at the narrowest point, the small Cook Strait remains a formidable body of water. The narrow strip of sea separating the North and South Islands of New Zealand has a reputation for being among the world’s roughest stretches of water. The two islands lie within the “Roaring Forties”, a belt of strong winds that circle the globe at about 40 degrees south. The gusting westerlies hit the islands and their mountainous terrain, and are forced into to the strait, which acts something like a huge wind tunnel. While ferries safely cross the Strait, on windy days the three-hour trip from Wellington Harbor, North Island, and Queen Charlotte Sound in the South Island has been described as “something like riding a bucking bronco”. On May 3, 2019, the Moderate Resolution Imaging Spectroradiometer (MODIS) on board NASA’s Terra satellite acquired a true-color image of Cook Strait. The shorelines of both North Island and South Island are ringed with a halo of blues and greens—colors typical of sinking sediment. Sediment washed into water typically appears tan when it is near the surface then, as it sinks, the reflectance changes to make it appear either blue or green from space. The high waves and wind typical here contributes to shoreline erosion, resulting in turbid water. However, sediment may not be causing all of the color. The waters around New Zealand are rich in nutrients, so it is likely that phytoplankton are contributing to some of the fanciful swirls in the image, especially further from the shoreline. Mixing currents bring nutrients to the ocean’s surface, providing a prime environment for plankton blooms. Made up of millions of tiny plant-like organisms, the blooms routinely color the ocean with broad strokes of green and blue.",
+          "uploadDate": "2024-02-17 03:17:57"
         },
         {
           "title": "File:North Island, New Zealand (MODIS 2019-03-06).jpg",
@@ -28286,6 +28286,24 @@
           "uploadDate": "2022-06-19 11:15:57"
         },
         {
+          "title": "File:NZ83 Queenstown viewfrHotel 3 small.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NZ83_Queenstown_viewfrHotel_3_small.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/NZ83_Queenstown_viewfrHotel_3_small.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 10624,
+          "height": 2988,
+          "bytes": 3896856,
+          "mime": "",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "VasuVR",
+          "credit": "Own work",
+          "dateOriginal": "2018-05",
+          "dateProperty": "",
+          "objectName": "NZ83 Queenstown viewfrHotel 3 small",
+          "description": "3 Dimensional view from a hotel in Queenstown, New Zealand. Parallel view images taken consecutively and combined for Stereoscopic effect.",
+          "uploadDate": "2022-06-19 11:17:05"
+        },
+        {
           "title": "File:NZ85 Queenstown viewfrHotel 4 small.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:NZ85_Queenstown_viewfrHotel_4_small.jpg",
           "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/NZ85_Queenstown_viewfrHotel_4_small.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -28801,6 +28819,24 @@
           "objectName": "Mapeo OSM Paradero SITP complejo",
           "description": "Componentes a mapear en OpenStreetMap de un paradero del SITP",
           "uploadDate": "2023-04-03 22:26:45"
+        },
+        {
+          "title": "File:Kartenn OpenStreetMap e brezhoneg.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kartenn_OpenStreetMap_e_brezhoneg.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kartenn_OpenStreetMap_e_brezhoneg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "width": 1246,
+          "height": 879,
+          "bytes": 1003452,
+          "mime": "",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "User:Adriendelucca",
+          "credit": "https://kartenn.openstreetmap.bzh/",
+          "dateOriginal": "2023-04-27",
+          "dateProperty": "",
+          "objectName": "Kartenn OpenStreetMap e brezhoneg",
+          "description": "Tapadenn-skramm kartenn OpennStreetMap e brezhoneg",
+          "uploadDate": "2023-04-27 13:05:18"
         }
       ]
     },
