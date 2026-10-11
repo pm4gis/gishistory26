@@ -6,6 +6,7 @@ on:
       - src/lib/chapter-media.mjs
       - scripts/audit-media-evidence-wave2.mjs
       - tests/all-image-evidence-wave2.test.mjs
+      - tests/editorial-image-matches.test.mjs
       - .github/workflows/audit-media-evidence-wave2.yml
   workflow_dispatch:
 permissions: {contents: write}
