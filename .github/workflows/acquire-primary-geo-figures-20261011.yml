@@ -1,4 +1,4 @@
-name: Acquire New Zealand land and machine-learning map originals
+name: Acquire three original NZ geospatial figures
 on:
   push:
     branches: [research/period-verified-nzlri-automation-ai-20261011]
@@ -10,10 +10,9 @@ on:
 permissions: {contents: write}
 concurrency:
   group: mdpi-national-geospatial-20261011
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   acquire:
-    if: github.ref == 'refs/heads/research/period-verified-nzlri-automation-ai-20261011'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
