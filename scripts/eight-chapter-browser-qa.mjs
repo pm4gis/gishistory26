@@ -23,7 +23,7 @@ try {
    const figure=page.locator('p[id="'+item.paragraph+'"] + figure.passage-illustration');
    await figure.waitFor({timeout:25000});
    const link=figure.locator('a[href="/images/'+item.slug+'/"]');
-   assert.equal(await link.count(),1,view.name+' '+item.story+' image linked to its own record');
+   assert.ok((await link.count())>=2,view.name+' '+item.story+' image and caption link to their own record');
    assert.ok((await figure.locator('figcaption').innerText()).includes(item.snippet),item.story+' caption provenance');
    const image=figure.locator('img');
    await image.evaluate(async img=>{if(!img.complete)await new Promise((resolve,reject)=>{
