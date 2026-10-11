@@ -4,24 +4,28 @@ Scope: all article, passage, record, event, image, theme and relationship JSON, 
 
 ## Coverage
 
-| Collection | Files scanned | Candidate passages | Auto-corrected files |
+| Collection | Files scanned | Candidate passages | Files changed in this branch |
 | --- | ---: | ---: | ---: |
 | articles | 45 | 164 | 0 |
-| passages | 596 | 945 | 0 |
-| records | 863 | 149 | 0 |
+| passages | 596 | 945 | 5 |
+| records | 863 | 149 | 1 |
 | events | 201 | 12 | 0 |
-| images | 182 | 86 | 0 |
+| images | 182 | 86 | 91 |
 | themes | 8 | 0 | 0 |
 | relationships | 2614 | 2 | 0 |
 | src/pages | 22 | 13 | 0 |
 | src/components | 9 | 5 | 0 |
 | src/layouts | 1 | 0 | 0 |
-| src/lib | 12 | 169 | 0 |
-| **Total** | **4553** | **1545** | **0** |
+| src/lib | 12 | 169 | 1 |
+| **Total** | **4553** | **1545** | **98** |
 
 ## Applied corrections
 
-Only empty image disclaimers and the exact unsupported satellite claim are removed automatically. Image provenance, licences, attribution and source links remain intact.
+The release branch changes 97 historical-content files and one inline image-placement source file. It removes empty documentary image disclaimers, corrects the Terra MODIS caption and 15 other in-story image captions, rewrites two rhetorical uses of ‘matters’, and revises selected Chapter 36 passages. Image provenance, licences, attribution, IDs and source links remain intact. The 1,545 candidate matches are a review register, not 1,545 errors; many negative constructions carry necessary factual information.
+
+## Further editorial candidates
+
+The remaining register requires contextual line editing. Prioritise unsupported generalisations, repeated defensive image caveats, empty conclusions and stock contrast sentences. Keep source limitations that prevent historical misidentification.
 
 ## Highest-priority passages
 
