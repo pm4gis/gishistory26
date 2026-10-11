@@ -1,0 +1,51 @@
+name: Archive dated Retrolens source photographs
+on:
+  push:
+    branches: [media/retrolens-historical-frames-20261011]
+    paths:
+      - scripts/acquire-retrolens-frames-20261011.mjs
+      - docs/media/retrolens-primary-frames-20261011.json
+      - .github/workflows/archive-retrolens-frames-20261011.yml
+permissions: {contents: write}
+concurrency:
+  group: nzhistory-retrolens-frames-20261011
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media/retrolens-historical-frames-20261011
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Validate provenance and archive Retrolens frame copies
+        run: node scripts/acquire-retrolens-frames-20261011.mjs
+      - name: Verify schema, preservation and build
+        run: |
+          npm test
+          npm run build
+      - name: Commit Retrolens images and evidence to review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/ public/assets/historical/ docs/media/retrolens-primary-frames-run-20261011.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive sourced Retrolens survey images with in-chapter placement'
+            git fetch origin media/retrolens-historical-frames-20261011
+            git rebase origin/media/retrolens-historical-frames-20261011
+            git push origin HEAD:media/retrolens-historical-frames-20261011
+          fi
+      - run: |
+          node -e "const d=require('./docs/media/retrolens-primary-frames-run-20261011.json');console.log('Retrolens new '+d.added+'; held '+d.held+'; already '+d.skippedExisting);if(!d.added)process.exit(1)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: retrolens-aerial-frames-report
+          path: docs/media/retrolens-primary-frames-run-20261011.json
+          retention-days: 30
