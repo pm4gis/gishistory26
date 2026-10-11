@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-11T03:56:53.756Z",
+  "checkedAt": "2026-10-11T03:57:47.087Z",
   "success": 3,
   "failed": 0,
   "held": 0,
@@ -8,52 +8,34 @@
       "slug": "nz-agricultural-landuse-capability-2022",
       "sourcePage": "https://www.mdpi.com/2073-445X/11/12/2334",
       "sourceOriginalUrl": "https://mdpi-res.com/land/land-11-02334/article_deploy/html/images/land-11-02334-g001.png",
-      "status": "downloaded",
+      "status": "verified-existing",
       "original": "/assets/historical/original/nz-agricultural-landuse-capability-2022.png",
       "web": "/assets/historical/web/nz-agricultural-landuse-capability-2022.webp",
       "thumb": "/assets/historical/card/nz-agricultural-landuse-capability-2022.webp",
       "sha256": "31e5cae579e35a59ae860280e35c82c2659bac16c5e3fec4e9f1a53749f89954",
-      "originalBytes": 3724421,
-      "dimensions": [
-        3399,
-        3682
-      ],
-      "licenceVerified": "CC BY 4.0",
-      "finalSourceOriginalUrl": "https://mdpi-res.com/land/land-11-02334/article_deploy/html/images/land-11-02334-g001.png"
+      "licenceVerified": "CC BY 4.0"
     },
     {
       "slug": "nz-coastal-classification-workflow-2022",
       "sourcePage": "https://www.mdpi.com/2072-4292/14/19/4827",
       "sourceOriginalUrl": "https://mdpi-res.com/remotesensing/remotesensing-14-04827/article_deploy/html/images/remotesensing-14-04827-g004.png",
-      "status": "downloaded",
+      "status": "verified-existing",
       "original": "/assets/historical/original/nz-coastal-classification-workflow-2022.png",
       "web": "/assets/historical/web/nz-coastal-classification-workflow-2022.webp",
       "thumb": "/assets/historical/card/nz-coastal-classification-workflow-2022.webp",
       "sha256": "baef8f06103a3f5264befc30f81e98225b4aadfd289f0dc740f363a0de731b94",
-      "originalBytes": 4432827,
-      "dimensions": [
-        2968,
-        3213
-      ],
-      "licenceVerified": "CC BY 4.0",
-      "finalSourceOriginalUrl": "https://mdpi-res.com/remotesensing/remotesensing-14-04827/article_deploy/html/images/remotesensing-14-04827-g004.png"
+      "licenceVerified": "CC BY 4.0"
     },
     {
       "slug": "nz-wetlands-ml-national-2025",
       "sourcePage": "https://www.mdpi.com/2072-4292/17/15/2626",
       "sourceOriginalUrl": "https://mdpi-res.com/remotesensing/remotesensing-17-02626/article_deploy/html/images/remotesensing-17-02626-g008.png",
-      "status": "downloaded",
+      "status": "verified-existing",
       "original": "/assets/historical/original/nz-wetlands-ml-national-2025.png",
       "web": "/assets/historical/web/nz-wetlands-ml-national-2025.webp",
       "thumb": "/assets/historical/card/nz-wetlands-ml-national-2025.webp",
       "sha256": "94cea971d07065a6c49460781160e673d3029e3999176863f3759bce22c8ddba",
-      "originalBytes": 2474443,
-      "dimensions": [
-        4043,
-        2462
-      ],
-      "licenceVerified": "CC BY 4.0",
-      "finalSourceOriginalUrl": "https://mdpi-res.com/remotesensing/remotesensing-17-02626/article_deploy/html/images/remotesensing-17-02626-g008.png"
+      "licenceVerified": "CC BY 4.0"
     }
   ]
 }
