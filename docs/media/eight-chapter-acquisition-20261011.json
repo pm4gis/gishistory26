@@ -21,7 +21,9 @@
       "altText": "Screenshot of an OpenStreetMap-based map generated from a Wikidata query for New Zealand libraries.",
       "caption": "A 2019 New Zealand library map generated using Wikidata and OpenStreetMap, showing what browser mapping could support by the late 2010s.",
       "context": "A genuine 2019 browser-based map, made long after the first New Zealand web maps of the late 1990s and early 2000s. It illustrates the later combination of open map services and linked data. It is not a screenshot of GUILD-on-the-Web, PHEW!, or the original 2001 Census WebMap."
-    },
+    }
+  ],
+  "held": [
     {
       "id": "image:qgis-310-modeler-workflow-2019",
       "slug": "qgis-310-modeler-workflow-2019",
@@ -40,7 +42,9 @@
       "dateDisplay": "QGIS 3.10 documentation, 2019",
       "altText": "The QGIS graphical modeler with processing steps linked into a reusable GIS analysis workflow.",
       "caption": "QGIS 3.10 documentation shows a connected graphical processing model. It illustrates repeatable geoprocessing available to GIS practitioners by 2019.",
-      "context": "This is an authentic QGIS documentation screenshot, not a New Zealand project or evidence of an earlier New Zealand automation first. It provides a software example alongside the chapter's independently sourced New Zealand scripting and FME history."
+      "context": "This is an authentic QGIS documentation screenshot, not a New Zealand project or evidence of an earlier New Zealand automation first. It provides a software example alongside the chapter's independently sourced New Zealand scripting and FME history.",
+      "status": "held",
+      "reason": "Publication licence for this exact QGIS documentation screenshot could not be independently verified by the source acquisition check. Do not copy or publish until documentary reuse conditions are established."
     }
   ]
 }
