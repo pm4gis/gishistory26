@@ -1,5 +1,5 @@
 {
-  "files": 7123,
+  "files": 7072,
   "largestAsset": 24883682,
   "javascript": [
     {
@@ -7,8 +7,8 @@
       "gzip": 1772
     },
     {
-      "path": "dist/_astro/Reader.1QwVXAcn.js",
-      "gzip": 11075
+      "path": "dist/_astro/Reader.UL8Wycki.js",
+      "gzip": 14222
     },
     {
       "path": "dist/_astro/Timeline.B95B8uef.js",

@@ -1,0 +1,190 @@
+export const chapterCollectionSources = [
+  {
+    "id": "hocken-maps-plans",
+    "afterParagraphId": "ch01-s01-p01",
+    "articleSlug": "what-the-computer-inherited",
+    "articleTitle": "Maps before computers",
+    "title": "Finding the paper records at Hocken",
+    "text": "Hocken’s Maps and plans guide explains how to find maps, charts, plans and aerial photographs. Published mapping is searched through Library Search | Ketu; archival maps and plans through Hākena. This is a present-day route into the records described here.",
+    "links": [
+      {
+        "label": "Hocken maps and plans guide",
+        "url": "https://www.otago.ac.nz/__data/assets/pdf_file/0016/280222/Maps_and_Plans_Guide.pdf"
+      },
+      {
+        "label": "Hocken collection catalogue guidance",
+        "url": "https://www.otago.ac.nz/library/hocken/map"
+      }
+    ],
+    "limitations": "The guide is not a complete inventory. A catalogue entry does not establish that an item has been digitised.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "crown-film-access",
+    "afterParagraphId": "ch01-s06-p03",
+    "articleSlug": "what-the-computer-inherited",
+    "articleTitle": "Maps before computers",
+    "title": "From Crown film negatives to Retrolens",
+    "text": "LINZ identifies its aerial-photo footprint layer as the comprehensive catalogue of the Crown Aerial Film Library. Retrolens provides an interactive route to many surveys, with downloads at lower resolution than the original scans. Survey, run and frame identifiers remain essential when comparing images.",
+    "links": [
+      {
+        "label": "LINZ historical aerial imagery",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+      },
+      {
+        "label": "Retrolens",
+        "url": "https://retrolens.co.nz/"
+      }
+    ],
+    "limitations": "A photograph is not automatically an orthorectified map. Capture dates, frame identity and positional limitations must be checked for each use.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "hector-map-provenance",
+    "afterParagraphId": "ch01-s07-p01",
+    "articleSlug": "what-the-computer-inherited",
+    "articleTitle": "Maps before computers",
+    "title": "Hector’s geological map of Otago",
+    "text": "Hocken preserves a large geological map attributed to James Hector and dated 1864, at approximately four miles to one inch. Simon Nathan’s curatorial account cautions that it may be a later copy using a later topographic base. It differs from the eight-mile-to-the-inch map listed for the 1865 Dunedin exhibition.",
+    "links": [
+      {
+        "label": "Hocken: about the map",
+        "url": "https://www.otago.ac.nz/library/treasures/hector/otago_geological_map.html"
+      },
+      {
+        "label": "Hocken high-resolution map viewer",
+        "url": "https://www.otago.ac.nz/library/treasures/hector/map.php"
+      }
+    ],
+    "limitations": "The date on the map does not resolve the date of this surviving object. It is geological mapping, not a LUC survey or NZLRI worksheet.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "nzlri-online-lineage",
+    "afterParagraphId": "ch07-s11-p04",
+    "articleSlug": "mapping-land-as-data",
+    "articleTitle": "Land assessment",
+    "title": "Following the inventory into Our Environment",
+    "text": "Manaaki Whenua’s Our Environment documentation connects online LRI and LUC layers to regional-scale mapping. Its provenance page distinguishes original 1:63,360 boundaries from later 1:50,000 mapping. The December 2021 LUC update reconciled classification units and descriptions without changing the underlying geometry.",
+    "links": [
+      {
+        "label": "Our Environment data provenance",
+        "url": "https://ourenvironment.scinfo.org.nz/data-provenance"
+      },
+      {
+        "label": "LUC classification and revised data",
+        "url": "https://ourenvironment.scinfo.org.nz/help/land-use-capability"
+      }
+    ],
+    "limitations": "The current service is a later access layer. Its maps must not be presented as original 1967 survey sheets, first-edition NZLRI worksheets or LADEDA outputs.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "geological-archive-continuity",
+    "afterParagraphId": "ch09-s03-p03",
+    "articleSlug": "science-goes-spatial",
+    "articleTitle": "Scientific mapping",
+    "title": "The Historic Geological Map Archive",
+    "text": "GNS describes an archive of more than 9,000 geological maps and field sheets, including field mapping, draft compilations and published sheets. Its pre-2012 holdings were scanned at high resolution and georeferenced during the 2010s. The collection retains the earlier interpretation behind later geological GIS.",
+    "links": [
+      {
+        "label": "Historic Geological Map Archive",
+        "url": "https://www.gns.cri.nz/data-and-resources/historic-geological-map-archive/"
+      },
+      {
+        "label": "GNS dataset catalogue",
+        "url": "https://data.gns.cri.nz/metadata/srv/eng/catalog.search"
+      }
+    ],
+    "limitations": "An archive scan is not evidence of the original map’s digital production. Identify the item’s author, date, scale and publication state before using it as an illustration.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "university-geodatahub",
+    "afterParagraphId": "ch11-s02-p02",
+    "articleSlug": "universities-build-a-field",
+    "articleTitle": "University teaching and research",
+    "title": "University access to cartographic and GIS resources",
+    "text": "Igor Drecki’s 2019 GeoDataHub abstract describes the University of Auckland Library bringing digitised maps, charts, aerial photography and spatial datasets into one repository, alongside its physical Map Room collection. It records catalogue discovery through GeoNetwork and different access routes for public and university users.",
+    "links": [
+      {
+        "label": "Drecki, GeoDataHub, 2019",
+        "url": "https://ica-abs.copernicus.org/articles/1/66/2019/ica-abs-1-66-2019.html"
+      },
+      {
+        "label": "University of Auckland GeoDataHub",
+        "url": "https://geodatahub.library.auckland.ac.nz/"
+      }
+    ],
+    "limitations": "This later example illustrates university data access; it does not establish what was available in a particular 1980s GIS class.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "geographx-unfolding-map",
+    "afterParagraphId": "ch12-s11-p03",
+    "articleSlug": "an-industry-and-community-form",
+    "articleTitle": "Companies and user groups",
+    "title": "Geographx and Unfolding the Map",
+    "text": "The National Library’s October 2015 account identifies Roger Smith of Geographx as curator of Unfolding the Map. The exhibition drew on Turnbull and Archives New Zealand collections and connected earlier cartography with GPS, interactive mapping and digital terrain. Its Tasman River illustration is credited to Smith.",
+    "links": [
+      {
+        "label": "National Library: Unfolding the Map",
+        "url": "https://natlib.govt.nz/blog/posts/unfolding-the-map-the-cartography-of-new-zealand"
+      }
+    ],
+    "limitations": "The exhibition is a documented example of cartographic presentation. Its modern terrain image is not an illustration of an early NZLRI or LADEDA system.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "environment-open-components",
+    "afterParagraphId": "ch32-s09-p02",
+    "articleSlug": "open-source-changes-the-tools",
+    "articleTitle": "Open source GIS",
+    "title": "An environmental service built from open components",
+    "text": "Our Environment’s institutional account identifies an open-source platform including PostgreSQL/PostGIS, MapServer, GDAL, GEOS and OpenLayers. These components sit behind a public mapping and reporting service, providing a concrete example of open databases, processing libraries and web mapping working together.",
+    "links": [
+      {
+        "label": "Our Environment: service history and platform",
+        "url": "https://ourenvironment.scinfo.org.nz/help/about"
+      }
+    ],
+    "limitations": "The platform description records the service documented by the institution. It does not date the adoption of each individual component.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "environment-portal-access",
+    "afterParagraphId": "ch33-s06-p01",
+    "articleSlug": "open-data-changes-access",
+    "articleTitle": "Open spatial data",
+    "title": "From LRIS downloads to a public land atlas",
+    "text": "Manaaki Whenua dates the first Our Environment release to 2011. It provides maps and reports for users who do not need desktop GIS, while directing users to the LRIS Portal for downloadable data and to separate WMS and WMTS services. These are distinct routes into related science datasets.",
+    "links": [
+      {
+        "label": "Our Environment: history and access routes",
+        "url": "https://ourenvironment.scinfo.org.nz/help/about"
+      },
+      {
+        "label": "LRIS Portal",
+        "url": "https://lris.scinfo.org.nz/"
+      }
+    ],
+    "limitations": "The 2011 date belongs to Our Environment, not the separate LRIS Portal launch in 2010.",
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "environment-scale-limits",
+    "afterParagraphId": "ch33-s11-p05",
+    "articleSlug": "open-data-changes-access",
+    "articleTitle": "Open spatial data",
+    "title": "Reading the metadata before reuse",
+    "text": "Our Environment’s provenance statement describes its LRI polygons as regional-scale information and explains differences in mapping scale and attribute uncertainty. Its guidance makes a useful companion to the point here: access to a spatial layer does not establish its fitness for a particular analysis.",
+    "links": [
+      {
+        "label": "Our Environment: accuracy and provenance",
+        "url": "https://ourenvironment.scinfo.org.nz/data-provenance"
+      }
+    ],
+    "limitations": "Current metadata may describe revised classifications and layers. Consult edition and update information before comparing it with historical outputs.",
+    "checkedAt": "2026-10-11"
+  }
+];

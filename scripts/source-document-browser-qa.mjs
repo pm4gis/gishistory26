@@ -7,8 +7,9 @@ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 try {
  for(const width of [1440,390]){
   const page=await browser.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
-  await page.goto(base+'/stories/from-map-sheets-to-spatial-data/',{waitUntil:'networkidle'});
+
   for(const document of chapterDocuments){
+   await page.goto(base+'/stories/'+document.articleSlug+'/',{waitUntil:'networkidle'});
    const card=page.locator('#'+document.afterParagraphId+' + aside.source-download');
    assert.equal(await card.count(),1);
    assert.equal(await card.locator('a[download]').getAttribute('href'),document.assetPath);

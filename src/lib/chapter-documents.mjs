@@ -24,12 +24,47 @@ export const chapterDocuments = [
     "sourceUrl": "https://digitallibrary.landcareresearch.co.nz/digital/api/collection/p20022coll27/id/24/download",
     "catalogueUrl": "https://doi.org/10.7931/dl27-olr",
     "pdfPages": 79,
-    "archiveParts": ["sources/documents/Our_Land_Resources_1979.pdf.part01", "sources/documents/Our_Land_Resources_1979.pdf.part02"],
+    "archiveParts": [
+      "sources/documents/Our_Land_Resources_1979.pdf.part01",
+      "sources/documents/Our_Land_Resources_1979.pdf.part02"
+    ],
     "bytes": 13568260,
     "sha256": "a122de72cae9f33cf5806175ccc2187f7f62907dca5d5f14c9ff80e950069a81",
     "afterParagraphId": "ch05-s02-p01",
     "articleSlug": "from-map-sheets-to-spatial-data",
     "rights": "Crown copyright 1979 (printed in the original).",
     "limitations": "A bulletin accompanying the New Zealand Land Resource Inventory worksheets. PDF pages 14–15 show a worksheet excerpt and enlarged inventory codes. The excerpt has no visible sheet number or edition imprint and is not a separately identified full worksheet. The catalogue describes 80 pages; the downloaded PDF contains 79."
+  },
+  {
+    "slug": "hocken-maps-and-plans-guide",
+    "title": "Maps and plans at the Hocken Collections",
+    "creator": "Hocken Collections, University of Otago Library",
+    "date": "Undated guide; retrieved 11 October 2026",
+    "pdfPages": 32,
+    "sourceUrl": "https://www.otago.ac.nz/__data/assets/pdf_file/0016/280222/Maps_and_Plans_Guide.pdf",
+    "catalogueUrl": "https://www.otago.ac.nz/__data/assets/pdf_file/0016/280222/Maps_and_Plans_Guide.pdf",
+    "afterParagraphId": "ch01-s01-p01",
+    "articleSlug": "what-the-computer-inherited",
+    "rights": "University of Otago / Hocken Collections. No item-specific open licence stated in the retrieved guide.",
+    "limitations": "Original 32-page reference guide. The cover identifies the Hector map as 1864? and Map Collection 880 [1864] caq. The file metadata gives a creation date in April 2026; this is not treated as a printed publication date. Some catalogue entries describe undigitised holdings.",
+    "assetPath": "/assets/historical/documents/Hocken_Maps_and_Plans_Guide.pdf",
+    "bytes": 622547,
+    "sha256": "e0b009c5e53577caa1e72d05f9553446e4c18252353dd867267b35ce5517d1b1"
+  },
+  {
+    "slug": "geodatahub-drecki-2019",
+    "title": "GeoDataHub: Building centralised repository of authoritative cartographic and geospatial resources",
+    "creator": "Igor Drecki, University of Auckland",
+    "date": "15 July 2019",
+    "pdfPages": 1,
+    "sourceUrl": "https://ica-abs.copernicus.org/articles/1/66/2019/ica-abs-1-66-2019.pdf",
+    "catalogueUrl": "https://ica-abs.copernicus.org/articles/1/66/2019/ica-abs-1-66-2019.html",
+    "afterParagraphId": "ch11-s02-p02",
+    "articleSlug": "universities-build-a-field",
+    "rights": "© Authors 2019. Creative Commons Attribution 4.0, printed in the original.",
+    "limitations": "One-page conference abstract, Abstracts of the International Cartographic Association 1, 66. DOI 10.5194/ica-abs-1-66-2019. It describes GeoDataHub in 2019 and is not evidence of data access in an earlier university course.",
+    "assetPath": "/assets/historical/documents/GeoDataHub_Drecki_2019.pdf",
+    "bytes": 727298,
+    "sha256": "b4f031ec006c28049ab54fbd541f205d8faab2f119c3c2284444af7a79c29193"
   }
 ];
