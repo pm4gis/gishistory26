@@ -11,10 +11,21 @@ const added=['retrolens-3ec520daec5ae4a0','christchurch-response-orthophoto-2011
 test('all documentary images have an explicit chapter publication decision',()=>{
  assert.ok(images.length>=181);
  const file=fs.readFileSync('docs/media/chapter-image-alignment-wave2-20261011.csv','utf8').trim().split(/\r?\n/);
- assert.equal(file.length,images.length+1,'one header and one decision per registered image required');
- const registry=new Set(file.slice(1).map(row=>row.match(/^"([^"]+)"/)?.[1]));
+ const held=file.slice(1).filter(row=>/"(?:ladeda|nzlri)-review-held"/.test(row));
+ const registered=file.slice(1).filter(row=>!held.includes(row));
+ assert.equal(registered.length,images.length,'one decision per registered image required');
+ const registry=new Set(registered.map(row=>row.match(/^"([^"]+)"/)?.[1]));
  assert.equal(registry.size,images.length,'all records have one unique decision');
  for(const image of images)assert.ok(registry.has(image.slug),'Unreviewed source image: '+image.slug);
+ const review=JSON.parse(fs.readFileSync('docs/media/ladeda-handbook-review-20261011.json','utf8'));
+ const acquisition=JSON.parse(fs.readFileSync('docs/media/luc-original-acquisition-20261011.json','utf8'));
+ const candidates=[...review.plots,...acquisition.items.filter(item=>item.id.startsWith('held-nzlri-'))];
+ assert.equal(held.length,candidates.length,'every held candidate has an alignment decision');
+ for(const candidate of candidates){
+  assert.equal(candidate.published,false);
+  assert.ok(held.some(row=>row.startsWith('"'+candidate.id+'",')));
+  assert.ok(!images.some(image=>image.slug===candidate.id),'Rights-held candidate published: '+candidate.id);
+ }
  assert.ok(file.every(row=>!row.includes('undefined')),'bad image evidence fields');
 });
 test('six additions depict the named data, system, event or archival process of the actual paragraph',()=>{
