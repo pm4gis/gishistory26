@@ -1,0 +1,156 @@
+{
+  "checkedAt": "2026-10-11T06:36:55.985Z",
+  "originalDownloads": 86,
+  "cullReasons": [
+    {
+      "slug": "doc-historic-map-dd0af843e2134e11",
+      "title": "Historical map: Church Street Rail Crossing, Onehunga, Auckland (16807288390)",
+      "reason": "Rail crossing photograph, not documented historical map"
+    },
+    {
+      "slug": "doc-historic-map-34de07126ec3a31e",
+      "title": "Historical map: Erewhon map",
+      "reason": "Fictional Erewhon map, not historical NZ cartography"
+    },
+    {
+      "slug": "doc-historic-map-a5f0313486b8c477",
+      "title": "Historical map: Erewhon.map",
+      "reason": "Second fictional Erewhon map"
+    },
+    {
+      "slug": "doc-aerial-274e3e572442c0c9",
+      "title": "Historical aerial photograph: Aerial Photo of Debris (14714239936)",
+      "reason": "Whenuapai wartime crash photograph, unrelated to historic aerial surveying"
+    },
+    {
+      "slug": "doc-aerial-c662d03418398083",
+      "title": "Historical aerial photograph: Aerial view of a New Zealand coast",
+      "reason": "Unidentified coast, inadequate documentary context"
+    },
+    {
+      "slug": "doc-satellite-f265205ba9a74f26",
+      "title": "Satellite observation: New Zealand Topography",
+      "reason": "Topography composition, source image wrongly classified as orbital observation"
+    },
+    {
+      "slug": "doc-satellite-e1436d9d742caba4",
+      "title": "Satellite observation: Otago Map Physical New Zealand",
+      "reason": "Otago composite map using NASA image, wrongly classified as original orbital observation"
+    }
+  ],
+  "recovered": 11,
+  "held": 1,
+  "items": [
+    {
+      "title": "File:Palmerston North 1942 map.jpg",
+      "articleSlug": "councils-build-corporate-gis",
+      "status": "archived",
+      "slug": "wave6-curated-f7010892d0de77ca",
+      "source": "https://commons.wikimedia.org/wiki/File:Palmerston_North_1942_map.jpg",
+      "date": "1942",
+      "sha256": "c2b6699da59b7f11f84d12dcf7b762a58d958cf74754aa87e3476a4c2c376cde"
+    },
+    {
+      "title": "File:Rough sketch map of Rangiriri, and Paetai on the Waikato River c1863 (27834851896).jpg",
+      "articleSlug": "what-the-computer-inherited",
+      "status": "archived",
+      "slug": "wave6-curated-6ef188c85e6ed54f",
+      "source": "https://commons.wikimedia.org/wiki/File:Rough_sketch_map_of_Rangiriri%2C_and_Paetai_on_the_Waikato_River_c1863_(27834851896).jpg",
+      "date": "1863",
+      "sha256": "630dbf4b41ea9de11481d3c6081d9ef603804509da3972abf290ab2d00c06fff"
+    },
+    {
+      "title": "File:2021-04-05 Gisborne, New Zealand M6 earthquake shakemap (USGS).jpg",
+      "articleSlug": "safety-policing-and-emergency-gis",
+      "status": "archived",
+      "slug": "wave6-curated-b14968974c2e0cbe",
+      "source": "https://commons.wikimedia.org/wiki/File:2021-04-05_Gisborne%2C_New_Zealand_M6_earthquake_shakemap_(USGS).jpg",
+      "date": "2021",
+      "sha256": "a217d08afad75c1e1fe10ab243a111461cf2b2cc850362047a42400a036983f3"
+    },
+    {
+      "title": "File:CBD Tunnel Landsat 7 Image Auckland.jpg",
+      "articleSlug": "earth-observation-becomes-routine",
+      "status": "archived",
+      "slug": "wave6-curated-ac8b5aca1a4a96e1",
+      "source": "https://commons.wikimedia.org/wiki/File:CBD_Tunnel_Landsat_7_Image_Auckland.jpg",
+      "date": "2010",
+      "sha256": "5584ad4794c9454a6b5f6c3721a92479046b418ea730b99f3ca1f606ef8fb916"
+    },
+    {
+      "title": "File:LANDSAT 2005 Slipper Island Whakahau.jpg",
+      "articleSlug": "earth-observation-becomes-routine",
+      "status": "archived",
+      "slug": "wave6-curated-030d25a204167aa7",
+      "source": "https://commons.wikimedia.org/wiki/File:LANDSAT_2005_Slipper_Island_Whakahau.jpg",
+      "date": "2005",
+      "sha256": "a09932d1486dfe64899ecc0314160186a20a049455be688a8c6dfaff9b9b10f5"
+    },
+    {
+      "title": "File:Another Puff from Whakaari (153818 - nzwhakaari oli2 20250107).jpg",
+      "articleSlug": "earth-observation-becomes-routine",
+      "status": "archived",
+      "slug": "wave6-curated-1329dba018507b01",
+      "source": "https://commons.wikimedia.org/wiki/File:Another_Puff_from_Whakaari_(153818_-_nzwhakaari_oli2_20250107).jpg",
+      "date": "2025",
+      "sha256": "3d2f0e672394b583e0da1a4cf971bb0f1effb7160c07593482f52e199195421d"
+    },
+    {
+      "title": "File:Ashburton NZ aerial.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "status": "archived",
+      "slug": "wave6-curated-37546bb51ece2fff",
+      "source": "https://commons.wikimedia.org/wiki/File:Ashburton_NZ_aerial.jpg",
+      "date": "2009",
+      "sha256": "78b5c9545f195bcffcd9706e9a7a6104cd9a75599b348252b49fe3b66ff0de9b"
+    },
+    {
+      "title": "File:Beaumont, New Zealand aerial photo 2006.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "status": "archived",
+      "slug": "wave6-curated-3c70b9cd82272289",
+      "source": "https://commons.wikimedia.org/wiki/File:Beaumont%2C_New_Zealand_aerial_photo_2006.jpg",
+      "date": "2006",
+      "sha256": "ca7e76b1ec766d37031a95c98585ae11ef70d31db050b9f34ad373c599056d26"
+    },
+    {
+      "title": "File:Duders Beach and Regional Park Aerial view.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "status": "archived",
+      "slug": "wave6-curated-54836909f9fe60c5",
+      "source": "https://commons.wikimedia.org/wiki/File:Duders_Beach_and_Regional_Park_Aerial_view.jpg",
+      "date": "2015",
+      "sha256": "a10465e94a8aa2a8d84cf21f4cd5e45684888b33308e259e67cd000a0c9ba85a"
+    },
+    {
+      "title": "File:Crown Grant Map - Forest Hill Hundred, Part Blocks II, IX, X, XII.jpg",
+      "articleSlug": "the-cadastre-becomes-data",
+      "status": "archived",
+      "slug": "wave6-curated-7a04bfeaf63f78f1",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Forest_Hill_Hundred%2C_Part_Blocks_II%2C_IX%2C_X%2C_XII.jpg",
+      "date": "Historic cadastral map; year unconfirmed",
+      "sha256": "affaad5014a0e2240f91d506d06f1422224b39b436e96cdb4d15745a09e40f0e"
+    },
+    {
+      "title": "File:FMIB 50818 Sketch Map of Campbell Island.jpeg",
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "status": "archived",
+      "slug": "wave6-curated-96287bf4b2288c8e",
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_50818_Sketch_Map_of_Campbell_Island.jpeg",
+      "date": "Historic survey map; year unconfirmed",
+      "sha256": "5472500016e91babcea274dd27b95d066db1600e82df6633f403bff733c7346c"
+    },
+    {
+      "title": "File:FMIB 50819 Sketch Map of the Auckland Islands.jpeg",
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "status": "held",
+      "reason": "HTTP 429"
+    }
+  ],
+  "publishedWave6": 90,
+  "otherVerifiedBatches": 16,
+  "netNew": 106,
+  "target": 100,
+  "shortfall": 0,
+  "completedAt": "2026-10-11T06:37:06.031Z"
+}
