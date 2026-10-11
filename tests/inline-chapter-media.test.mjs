@@ -43,3 +43,32 @@ test('image placement does not alter historical paragraphs or source metadata',(
   assert.equal(JSON.stringify({article,passages}),before);
   assert.equal(JSON.stringify(imgs),imageBefore);
 });
+
+
+test('all nine archived figures have real source images and exact accepted paragraph anchors',async()=>{
+  const {default:fs}=await import('node:fs');
+  const {curatedImageParagraphs}=await import('../src/lib/chapter-media.mjs');
+  const root='src/content';
+  const catalog=fs.readdirSync(root+'/images').map(name=>
+    JSON.parse(fs.readFileSync(root+'/images/'+name,'utf8')));
+  const sections=fs.readdirSync(root+'/passages').map(name=>
+    JSON.parse(fs.readFileSync(root+'/passages/'+name,'utf8')));
+  const articles=fs.readdirSync(root+'/articles').map(name=>
+    JSON.parse(fs.readFileSync(root+'/articles/'+name,'utf8')));
+  assert.equal(Object.keys(curatedImageParagraphs).length,9);
+  for(const [slug,blockId] of Object.entries(curatedImageParagraphs)){
+    const image=catalog.find(x=>x.slug===slug);
+    assert.ok(image,'Missing sourced image '+slug);
+    const section=sections.find(p=>p.blocks?.some(b=>b.id===blockId&&b.type==='paragraph'));
+    assert.ok(section,'Missing original paragraph '+blockId);
+    const story=articles.find(a=>a.id===section.articleId);
+    assert.equal(image.articleSlug,story?.slug,slug+' chapter');
+    const assigned=placeChapterImages(story,sections.filter(p=>p.articleId===story.id)
+      .sort((a,b)=>a.order-b.order),catalog);
+    assert.equal(assigned[section.id]?.find(p=>p.slug===slug)?.inlineAfterBlockId,blockId,slug+' inline anchor');
+    for(const asset of [image.assetPath,image.thumbnailPath,image.originalAssetPath]){
+      assert.ok(fs.existsSync('public'+asset),'Missing local asset '+asset);
+    }
+    assert.ok(image.credit&&image.sourceUrl&&image.licence&&image.licenceUrl,slug+' rights');
+  }
+});
