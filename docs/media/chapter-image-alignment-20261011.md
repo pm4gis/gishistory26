@@ -27,4 +27,6 @@ The original 106-image acquisition was assigned to broad chapters and then autom
 
 A source-image category or `articleSlug` is not sufficient for publication in a story. A reviewed assignment must identify the actual paragraph and the documented relationship between its subject and the image. The caption must state the date and disclose contextual use without implying a historic first or that a source map was an original GIS system screen.
 
+A chapter with no suitable documentary image is preferable to a chapter with unrelated images. Do not treat empty image coverage as an instruction to fill the page with maps from unrelated places or periods.
+
 Never auto-distribute leftover images alphabetically or equally across sections. Keep nonmatching files searchable as individual source-image records, and reassess them only if a suitable passage actually discusses the pictured system, dataset, person or process. The accompanying CSV accounts for all 106 new images with current status.
