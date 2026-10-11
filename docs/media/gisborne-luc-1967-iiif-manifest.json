@@ -1,0 +1,192 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://ndhadeliver.natlib.govt.nz/delivery/iiif/presentation/3/IE27807111/manifest",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "Land use capability survey.               Gisborne-East Coast Region :               North Island, New Zealand - 1964 / \ndrawn by the Department of Lands and Survey."
+    ]
+  },
+  "summary": {
+    "none": [
+      ""
+    ]
+  },
+  "requiredStatement": {
+    "label": {
+      "none": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "none": [
+        "  This image may be used, copied and re-distributed free of charge in any format or media. Where the image is redistributed\nto others the following acknowledgement note should be shown : 'Sourced from LINZ. Crown Copyright reserved.'  More information can be found in our <a href='https://natlib.govt.nz/about-this-site/terms-of-use'>Terms of Use</a>. "
+      ]
+    }
+  },
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          " Alma MMSID"
+        ]
+      },
+      "value": {
+        "none": [
+          " 9917927613502836"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          " Publisher"
+        ]
+      },
+      "value": {
+        "none": [
+          " [Wellington] :               [Department of Lands and Survey],"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          " Publication Date"
+        ]
+      },
+      "value": {
+        "none": [
+          " 1967."
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          " Reproduction Note"
+        ]
+      },
+      "value": {
+        "none": [
+          " Electronic reproduction of Land Information New Zealand original.               University of Auckland,               2014."
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          " Item Reference"
+        ]
+      },
+      "value": {
+        "none": [
+          " Land use capability survey, Gisborne-East Coast Region. Land use capability classes sheet 1"
+        ]
+      }
+    }
+  ],
+  "provider": [
+    {
+      "id": "https://natlib.govt.nz/about-us",
+      "type": "Agent",
+      "label": {
+        "none": [
+          "National Library of New Zealand"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://natlib.govt.nz/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "National Library\nof New Zealand Homepage"
+            ]
+          },
+          "format": "text/html"
+        }
+      ]
+    }
+  ],
+  "logo": [
+    {
+      "id": "https://ndhadeliver.natlib.govt.nz/delivery/images/910567127/logo-main.png",
+      "type": "Image",
+      "format": "image/png",
+      "height": 100,
+      "width": 120
+    }
+  ],
+  "rights": "",
+  "thumbnail": [
+    {
+      "id": "https://ndhadeliver.natlib.govt.nz/delivery/DeliveryManagerServlet?dps_pid=IE27807111&dps_func=thumbnail",
+      "type": "Image/jpeg"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://natlib-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=NLNZ&institution=64NLNZ&search_scope=NLNZ&query=any,exact,9917927613502836",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "National Library Record"
+        ]
+      }
+    }
+  ],
+  "viewingDirection": "left-to-right",
+  "behavior": [
+    "individuals"
+  ],
+  "items": [
+    {
+      "id": "https://ndhadeliver.natlib.govt.nz/delivery/iiif/presentation/3/IE27807111/canvas/FL27807309",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "LS072_1_luc_1967_600ppi"
+        ]
+      },
+      "height": 17240,
+      "width": 18557,
+      "items": [
+        {
+          "id": "https://ndhadeliver.natlib.govt.nz/delivery/iiif/presentation/3/IE27807111/annopage/FL27807309",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://ndhadeliver.natlib.govt.nz/delivery/iiif/presentation/3/IE27807111/annotation/FL27807309",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://ndhadeliver.natlib.govt.nz/delivery/iiif/presentation/3/IE27807111/canvas/FL27807309",
+              "body": {
+                "id": "https://ndhadeliver.natlib.govt.nz:443/iiif/3/IE27807111:FL27807309.jp2/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jp2",
+                "height": 17240,
+                "width": 18557,
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/image/3/context.json",
+                    "id": "https://ndhadeliver.natlib.govt.nz:443/iiif/3/IE27807111:FL27807309.jp2",
+                    "type": "ImageService3",
+                    "profile": "level2\""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://ndhadeliver.natlib.govt.nz:443/iiif/3/IE27807111:FL27807309.jp2/full/150,/0/default.jpg",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "structures": []
+}
