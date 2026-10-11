@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-11T06:22:00.690Z",
+  "requested": 12,
+  "added": 12,
+  "skippedExisting": 0,
+  "held": 0,
+  "items": [
+    {
+      "file": "File:1946 aerial image of Verdon College site.jpg",
+      "date": "1946-06-07",
+      "status": "archived",
+      "slug": "retrolens-c515a148bd788efa",
+      "source": "https://commons.wikimedia.org/wiki/File:1946_aerial_image_of_Verdon_College_site.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "originalSha256": "2bc6e139bceb81a77eb35630292300ffaedc0e12b656e297ba1d5938c9167eb8"
+    },
+    {
+      "file": "File:1956 aerial image of Verdon College site.jpg",
+      "date": "1956",
+      "status": "archived",
+      "slug": "retrolens-c9d69fc2b0bb2445",
+      "source": "https://commons.wikimedia.org/wiki/File:1956_aerial_image_of_Verdon_College_site.jpg",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "originalSha256": "d00091b968779d1dd3b9007b92cab2c331b17d01a58b5a187efe9c824cd10ad9"
+    },
+    {
+      "file": "File:1962 aerial image of Verdon College site.jpg",
+      "date": "1962-02-28",
+      "status": "archived",
+      "slug": "retrolens-fb8cfefdccb907d2",
+      "source": "https://commons.wikimedia.org/wiki/File:1962_aerial_image_of_Verdon_College_site.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "originalSha256": "e76160b1176c427f7bf804d11075f57df576b3154d743eae6d47324e813df00d"
+    },
+    {
+      "file": "File:1974 aerial image of Verdon College site.jpg",
+      "date": "1974-02-17",
+      "status": "archived",
+      "slug": "retrolens-1300ac31046ed097",
+      "source": "https://commons.wikimedia.org/wiki/File:1974_aerial_image_of_Verdon_College_site.jpg",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "originalSha256": "af86907d1c6ed915a33d96ef154b93c29dc8909d0b60772563e34585f34bd157"
+    },
+    {
+      "file": "File:1981 aerial image of Verdon College site.jpg",
+      "date": "1981-02-09",
+      "status": "archived",
+      "slug": "retrolens-6a8c14a668467123",
+      "source": "https://commons.wikimedia.org/wiki/File:1981_aerial_image_of_Verdon_College_site.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "originalSha256": "f37a3c307fbba67f2753cd7be9867566d99007fee831e7b95786b08efdb69e22"
+    },
+    {
+      "file": "File:Glentunnel Aerial 1, 1965.jpg",
+      "date": "1965-02-16",
+      "status": "archived",
+      "slug": "retrolens-e4cdc9fe170430c3",
+      "source": "https://commons.wikimedia.org/wiki/File:Glentunnel_Aerial_1%2C_1965.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "originalSha256": "a94d23f147dba42fc513a91bebfae2c8e85cd6b3d1eb7ab59435be6045f06ece"
+    },
+    {
+      "file": "File:Glentunnel Aerial 2,1943.jpg",
+      "date": "1943-03-09",
+      "status": "archived",
+      "slug": "retrolens-3ec520daec5ae4a0",
+      "source": "https://commons.wikimedia.org/wiki/File:Glentunnel_Aerial_2%2C1943.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "originalSha256": "212724defc08bf644050d88e044b8bcca7926c28e70a39f4d9c09fb18bb27f98"
+    },
+    {
+      "file": "File:Rototuna School aerial photo 1952.jpg",
+      "date": "1952-09-26",
+      "status": "archived",
+      "slug": "retrolens-2a8708e8e23e32e9",
+      "source": "https://commons.wikimedia.org/wiki/File:Rototuna_School_aerial_photo_1952.jpg",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "originalSha256": "7d40649cd738735317914c3a6d8328eaeea168621418eb8957cad2a62f6cea5f"
+    },
+    {
+      "file": "File:Te Rapa railway station.jpg",
+      "date": "1961-08-29",
+      "status": "archived",
+      "slug": "retrolens-86188c957db8a0d2",
+      "source": "https://commons.wikimedia.org/wiki/File:Te_Rapa_railway_station.jpg",
+      "articleSlug": "mapping-leaves-the-office",
+      "originalSha256": "731f872427edd5349bb02c21872fa09fe50faf3feb4bc70c21984074522f1f16"
+    },
+    {
+      "file": "File:Paeroa South on 26 January 1975.jpg",
+      "date": "1975-01-26",
+      "status": "archived",
+      "slug": "retrolens-4dc839e772e7585f",
+      "source": "https://commons.wikimedia.org/wiki/File:Paeroa_South_on_26_January_1975.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "originalSha256": "2afb77553981de5e8cc305aaf31d453d4c1c08235b7caf4cfefdf9d938b4c537"
+    },
+    {
+      "file": "File:Nokomai railway station in 1964.jpg",
+      "date": "1964",
+      "status": "archived",
+      "slug": "retrolens-824f3aea477e79fc",
+      "source": "https://commons.wikimedia.org/wiki/File:Nokomai_railway_station_in_1964.jpg",
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "originalSha256": "e38038042ad605ae42ef4f713524ab1583193e68f041fa93a18e34523d51276d"
+    },
+    {
+      "file": "File:Bay View railway station in 1948.jpg",
+      "date": "1948-07-06",
+      "status": "archived",
+      "slug": "retrolens-35540a9dc2e1db42",
+      "source": "https://commons.wikimedia.org/wiki/File:Bay_View_railway_station_in_1948.jpg",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "originalSha256": "40aa4e77b73694497b9d144719d2717fc60eaaf1120fbf3d97f6767ca81f15ca"
+    }
+  ]
+}
