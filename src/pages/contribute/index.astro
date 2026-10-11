@@ -1,129 +1,95 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import {contributionDraft,contributionMailtoUrl,contributionText,contributionRecipient} from '../../lib/passage-contributions.mjs';
-const defaultDraft=contributionDraft();
+const draft=contributionDraft();
+const params=new URLSearchParams({view:'cm',fs:'1',to:contributionRecipient,su:draft.subject,body:draft.body});
+const gmail='https://mail.google.com/mail/?'+params.toString();
+const outlook='https://outlook.live.com/mail/0/deeplink/compose?'+new URLSearchParams({to:contributionRecipient,subject:draft.subject,body:draft.body}).toString();
 ---
-<Layout title="Contribute or suggest a correction · NZ GIS History" description="Suggest a correction, share historical information or provide sources for the history of GIS in New Zealand. Use any email provider.">
- <div class="wrap narrative contribute-page">
-  <p class="eyebrow">Help improve the history</p>
-  <h1>Contribute or suggest a correction</h1>
-  <p>Have a correction, recollection, document or photograph to share? Write your message here, then open it in your usual email app or copy it into any webmail service. No Gmail account is required.</p>
+<Layout title="Email a contribution · NZ GIS History" description="Open a pre-addressed email draft in your usual mail application or webmail to contribute corrections, documents and photographs.">
+ <div class="wrap narrative email-options-page">
+  <p class="eyebrow">Contributions and corrections</p>
+  <h1>Email a contribution</h1>
+  <p>Choose your email service. A new email draft opens addressed to <strong>{contributionRecipient}</strong>, with the subject and questions already included. Attach photographs, maps, screenshots or documents using your email service's attachment button, then send it.</p>
+
   <div id="contribution-context" class="contribution-context" hidden>
    <p id="contribution-chapter"></p>
    <p id="contribution-passage"></p>
    <p><a id="contribution-reference" href="#"></a></p>
   </div>
-  <form id="contribution-form" class="contribution-form">
-   <label for="contribution-detail">What would you like to correct, add or clarify?</label>
-   <textarea id="contribution-detail" rows="5" placeholder="Describe the correction or addition"></textarea>
 
-   <label for="contribution-people">Who or what is involved, and when did it happen?</label>
-   <textarea id="contribution-people" rows="3" placeholder="Names, organisations, projects and approximate dates"></textarea>
+  <div class="actions email-options-buttons">
+   <a id="contribution-mailto" class="button primary" href={contributionMailtoUrl(draft.subject,draft.body)}>Open my email app →</a>
+   <a id="contribution-gmail" class="button" href={gmail} target="_blank" rel="noopener noreferrer">Gmail in browser ↗</a>
+   <a id="contribution-outlook" class="button" href={outlook} target="_blank" rel="noopener noreferrer">Outlook in browser ↗</a>
+  </div>
+  <p class="email-options-note">The first option uses your browser's email setting. It can open Apple Mail, Gmail, Outlook, Thunderbird, another installed email app or a registered webmail service. If it does nothing, choose a browser option above or open your preferred email service and paste the prepared message below.</p>
 
-   <label for="contribution-sources">What sources, photographs, links or documents can you share?</label>
-   <textarea id="contribution-sources" rows="3" placeholder="Add source URLs, titles or a description of material you hold"></textarea>
-
-   <label for="contribution-credit">How would you like to be credited?</label>
-   <input id="contribution-credit" type="text" placeholder="Your name, or anonymous"/>
-
-   <p class="contribution-recipient">Send to <a href={"mailto:"+contributionRecipient}>{contributionRecipient}</a></p>
-   <div class="actions contribution-buttons">
-    <a id="contribution-mailto" class="button" href={contributionMailtoUrl(defaultDraft.subject,defaultDraft.body)}>Open email app →</a>
-    <button id="contribution-copy" class="button primary" type="button">Copy complete message</button>
+  <div class="email-copy-options">
+   <div class="actions">
+    <button id="contribution-copy" class="button" type="button">Copy prepared email</button>
     <button id="contribution-copy-address" class="button" type="button">Copy email address</button>
    </div>
-   <p id="contribution-status" class="contribution-status" role="status" aria-live="polite">Nothing is sent from this page. You choose when to send the email.</p>
+   <p id="contribution-status" class="contribution-status" role="status" aria-live="polite">No message is sent by this page.</p>
    <details class="contribution-preview">
-    <summary>View or manually copy your message</summary>
-    <p>Select the text below to copy it into your own email service.</p>
-    <textarea id="contribution-message" rows="15" readonly aria-label="Prepared contribution email">{contributionText(defaultDraft)}</textarea>
+    <summary>Show prepared email to copy manually</summary>
+    <pre id="contribution-message">{contributionText(draft)}</pre>
    </details>
-  </form>
+  </div>
  </div>
  <script>
   import {contributionContextFromSearch,contributionDraft,contributionMailtoUrl,contributionText,contributionRecipient} from '../../lib/passage-contributions.mjs';
   const context=contributionContextFromSearch(window.location.search);
-  const input=(id:string)=>document.getElementById(id) as HTMLInputElement|HTMLTextAreaElement|null;
-  const form=document.getElementById('contribution-form');
+  const current=contributionDraft(context);
   const mail=document.getElementById('contribution-mailto') as HTMLAnchorElement|null;
-  const preview=document.getElementById('contribution-message') as HTMLTextAreaElement|null;
+  const gmail=document.getElementById('contribution-gmail') as HTMLAnchorElement|null;
+  const outlook=document.getElementById('contribution-outlook') as HTMLAnchorElement|null;
+  const preview=document.getElementById('contribution-message');
   const status=document.getElementById('contribution-status');
-  const contextBox=document.getElementById('contribution-context');
+  if(mail)mail.href=contributionMailtoUrl(current.subject,current.body);
+  if(gmail)gmail.href='https://mail.google.com/mail/?'+new URLSearchParams({view:'cm',fs:'1',to:contributionRecipient,su:current.subject,body:current.body}).toString();
+  if(outlook)outlook.href='https://outlook.live.com/mail/0/deeplink/compose?'+new URLSearchParams({to:contributionRecipient,subject:current.subject,body:current.body}).toString();
+  if(preview)preview.textContent=contributionText(current);
   if(context.chapter||context.passage||context.reference){
-   if(contextBox)contextBox.hidden=false;
+   const box=document.getElementById('contribution-context');
+   if(box)box.hidden=false;
    const chapter=document.getElementById('contribution-chapter');
    const passage=document.getElementById('contribution-passage');
    const ref=document.getElementById('contribution-reference') as HTMLAnchorElement|null;
    if(chapter){chapter.textContent=context.chapter?'Chapter: '+context.chapter:'';chapter.hidden=!context.chapter;}
    if(passage){passage.textContent=context.passage?'Passage: '+context.passage:'';passage.hidden=!context.passage;}
-   if(ref){ref.textContent=context.reference?'Read the passage being discussed':'';ref.hidden=!context.reference;if(context.reference)ref.href=context.reference;}
+   if(ref){ref.textContent=context.reference?'Read the referenced passage':'';ref.hidden=!context.reference;if(context.reference)ref.href=context.reference;}
   }
-  function draft(){
-   return contributionDraft({
-    ...context,
-    contribution:input('contribution-detail')?.value||'',
-    whoWhen:input('contribution-people')?.value||'',
-    sources:input('contribution-sources')?.value||'',
-    credit:input('contribution-credit')?.value||''
-   });
-  }
-  function render(){
-   const current=draft();
-   if(mail)mail.href=contributionMailtoUrl(current.subject,current.body);
-   if(preview)preview.value=contributionText(current);
-  }
-  form?.addEventListener('input',render);
-  form?.addEventListener('submit',(event)=>event.preventDefault());
-  render();
   async function copy(text:string,success:string){
-   try{
-    if(!navigator.clipboard?.writeText)throw new Error('Clipboard API unavailable');
-    await navigator.clipboard.writeText(text);
-    if(status)status.textContent=success;
-    return;
-   }catch{
-    // Some browsers deny clipboard access; try a local selection-based copy.
-    const fallback=document.createElement('textarea');
-    fallback.value=text;
-    fallback.setAttribute('readonly','');
-    fallback.style.position='fixed';
-    fallback.style.opacity='0';
-    document.body.append(fallback);
-    fallback.focus();
-    fallback.select();
-    let copied=false;
-    try{copied=document.execCommand('copy')}catch{}
-    fallback.remove();
-    if(copied){if(status)status.textContent=success;return;}
-    if(preview){
-     preview.closest('details')!.open=true;
-     preview.focus();
-     preview.select();
-    }
-    if(status)status.textContent='Copy the email address or select the text in the message preview and press Ctrl+C (or Copy on mobile).';
-   }
+   try{await navigator.clipboard.writeText(text);if(status)status.textContent=success;return;}catch{}
+   const fallback=document.createElement('textarea');
+   fallback.value=text;
+   fallback.setAttribute('readonly','');
+   fallback.style.position='fixed';fallback.style.opacity='0';
+   document.body.append(fallback);
+   fallback.select();
+   let copied=false;
+   try{copied=document.execCommand('copy')}catch{}
+   fallback.remove();
+   if(status)status.textContent=copied?success:'Select the prepared text above and copy it into your email.';
+   if(!copied){const details=preview?.closest('details');if(details)details.open=true;}
   }
-  document.getElementById('contribution-copy')?.addEventListener('click',()=>copy(contributionText(draft()),'Complete message copied. Paste it into your email service.'));
+  document.getElementById('contribution-copy')?.addEventListener('click',()=>copy(contributionText(current),'Prepared email copied. Paste it into your email service and attach any files.'));
   document.getElementById('contribution-copy-address')?.addEventListener('click',()=>copy(contributionRecipient,'Email address copied.'));
  </script>
 </Layout>
 <style>
- .contribute-page{max-width:980px;padding-block:38px 72px}
- .contribute-page h1{max-width:23ch}
- .contribute-page>p:not(.eyebrow){max-width:74ch}
- .contribution-context{margin:24px 0;border-left:3px solid var(--accent);border-radius:5px;background:var(--raised);padding:15px 20px}
- .contribution-context p{margin:4px 0;overflow-wrap:anywhere}
- .contribution-form{display:flex;flex-direction:column;gap:10px;margin-top:28px;max-width:800px}
- .contribution-form label{font-weight:650;margin-top:13px}
- .contribution-form textarea,.contribution-form input{box-sizing:border-box;display:block;width:100%;padding:12px 14px;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:9px;font:inherit;line-height:1.55}
- .contribution-form textarea:focus,.contribution-form input:focus{outline:2px solid var(--accent);outline-offset:2px}
- .contribution-recipient{margin:15px 0 0}
- .contribution-buttons{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:5px}
- .contribution-buttons .button{white-space:normal;text-align:center}
- .contribution-status{font-size:14px;color:var(--muted);margin:6px 0 18px}
- .contribution-preview{margin-top:10px;padding:16px;border:1px solid var(--line);border-radius:10px}
- .contribution-preview summary{cursor:pointer;font-weight:650}
- .contribution-preview p{color:var(--muted);font-size:14px}
- .contribution-preview textarea{font-family:inherit;font-size:14px;min-height:290px}
- @media(max-width:600px){.contribution-buttons{flex-direction:column;align-items:stretch}.contribution-buttons .button{width:100%}}
+ .email-options-page{max-width:940px;padding-block:35px 65px}
+ .email-options-page>p:not(.eyebrow){max-width:78ch}
+ .email-options-buttons{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:25px 0 15px}
+ .email-options-buttons a{max-width:100%;text-align:center}
+ .email-options-note{color:var(--muted);font-size:.95rem;line-height:1.7}
+ .contribution-context{margin:22px 0;padding:14px 20px;border-left:3px solid var(--accent);background:var(--raised);border-radius:5px}
+ .contribution-context p{margin:5px 0;overflow-wrap:anywhere}
+ .email-copy-options{margin-top:22px;border-top:1px solid var(--line);padding-top:20px}
+ .contribution-status{font-size:14px;color:var(--muted);margin:12px 0}
+ .contribution-preview{max-width:780px;border:1px solid var(--line);border-radius:12px;padding:15px 18px}
+ .contribution-preview summary{cursor:pointer;font-weight:600}
+ .contribution-preview pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.7;margin:18px 0}
+ @media(max-width:600px){.email-options-buttons{flex-direction:column;align-items:stretch}.email-options-buttons .button{width:100%}}
 </style>
