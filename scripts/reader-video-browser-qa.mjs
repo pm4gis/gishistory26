@@ -31,7 +31,7 @@ try{
    await page.goto(fallback.href,{waitUntil:'domcontentloaded'});
    assert.equal(await page.locator('form').count(),0);
    assert.equal(await page.locator('#contribution-reference').getAttribute('href'),link);
-   const message=await page.locator('#contribution-message').innerText();
+   const message=await page.locator('#contribution-message').textContent();
    for(const phrase of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs'])assert.ok(message.includes(phrase),phrase);
    await noHorizontalOverflow(page,view.name+' contribution options');
   });
