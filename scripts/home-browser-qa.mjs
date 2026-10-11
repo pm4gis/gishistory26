@@ -126,7 +126,7 @@ try{
     const uri=new URL(await anchor.getAttribute('href'));
     assert.equal(uri.protocol,'mailto:');
     assert.equal(decodeURIComponent(uri.pathname),'pm4gis@gmail.com');
-    assert.ok(uri.searchParams.get('body').includes('attach any photos'));
+    assert.ok((uri.searchParams.get('body')||'').includes('attach any photos'),'mail body '+JSON.stringify(await anchor.getAttribute('href')).slice(0,950));
     assert.equal(await anchor.getAttribute('target'),null);
    }
    await page.goto(base+'/contribute/',{waitUntil:'domcontentloaded'});
@@ -141,7 +141,7 @@ try{
     assert.equal(url.hostname,host);
     assert.equal(url.searchParams.get('to'),'pm4gis@gmail.com');
    }
-   assert.ok((await page.locator('#contribution-message').innerText()).includes('attach any photos'));
+   assert.ok((await page.locator('#contribution-message').textContent()).includes('attach any photos'),'preview missing attachment');
    await page.locator('#contribution-copy').click();
    await page.waitForFunction(()=>/copied|Select the prepared text/i.test(document.getElementById('contribution-status')?.textContent||''));
    await dimensions(page,viewport.name+' email options');
