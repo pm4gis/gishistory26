@@ -1,0 +1,31 @@
+{
+  "id": "person:james-lyth",
+  "slug": "james-lyth",
+  "name": "James Lyth",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/james-lyth/",
+  "story": [
+    "James Lyth was named with Kate Burns and Kate Williams of Tonkin & Taylor as a recipient of the 2012 Eagle Technology Excellence in GIS Award, for the Canterbury Earthquake Residential Land Damage application."
+  ],
+  "sources": [
+    {
+      "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe (Winter 2013)",
+      "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "profession"
+  ],
+  "status": "Conference evidence available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe (Winter 2013)",
+        "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+      }
+    ]
+  ]
+}
