@@ -1,0 +1,53 @@
+name: Curate and complete documentary image wave six
+on:
+  push:
+    branches: [media/documentary-100-20261011]
+    paths:
+      - scripts/curate-documentary-wave6-20261011.mjs
+      - docs/media/documentary-wave6-curation-20261011.json
+      - .github/workflows/curate-documentary-wave6-20261011.yml
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: nzgis-wave6-curated-publication
+  cancel-in-progress: false
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 23
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: media/documentary-100-20261011, fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Cull unsuitable material and acquire high-value documentary replacements
+        run: node scripts/curate-documentary-wave6-20261011.mjs
+      - name: Validate new image detail pages, sources and protected historical content
+        run: |
+          npm test
+          npm run build
+      - name: Commit final curation changes to open image publication PR
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A src/content/images public/assets/historical docs/media/documentary-wave6-curation-result-20261011.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Curate 100-image batch with historically relevant originals and verify source dates'
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin media/documentary-100-20261011
+            git rebase origin/media/documentary-100-20261011
+            git push origin HEAD:media/documentary-100-20261011
+          fi
+      - name: Confirm overall additional image goal
+        run: |
+          node -e "const d=require('./docs/media/documentary-wave6-curation-result-20261011.json');console.log('Additional images '+d.netNew+'; rejected '+d.cullReasons.length+'; shortfall '+d.shortfall);if(d.shortfall)process.exit(1)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: documentary-wave6-final-curation-report
+          path: docs/media/documentary-wave6-curation-result-20261011.json
+          retention-days: 30
