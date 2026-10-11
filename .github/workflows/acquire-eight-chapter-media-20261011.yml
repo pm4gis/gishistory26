@@ -5,7 +5,7 @@ on:
     paths:
       - scripts/acquire-eight-chapter-media-20261011.mjs
       - docs/media/eight-chapter-acquisition-20261011.json
-      - .github/workflows/acquire-chapter-images-wave3.yml
+      - .github/workflows/acquire-eight-chapter-media-20261011.yml
   workflow_dispatch:
 permissions: {contents: write}
 concurrency:
