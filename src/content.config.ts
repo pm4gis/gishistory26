@@ -125,7 +125,7 @@ const image = z.object({
   articleSlug: z.string().optional(),
   passageSlug: z.string().optional(),
   chapterNumber: z.number().int().optional(),
-  subjectDateEnd: z.string().regex(/^\\d{4}-\\d{2}-\\d{2}$/).optional(),
+  subjectDateEnd: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   dateDisplay: z.string().optional(),
   context: z.string().optional(),
   originalAssetPath: z.string().startsWith("/").optional(),
