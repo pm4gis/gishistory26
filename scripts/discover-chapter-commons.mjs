@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 
 const cutoff='2025-12-31';
 const plan=JSON.parse(await fs.readFile('docs/media/chapter-image-search-plan-wave4-2025.json','utf8'));
-const clean=value=>String(value||'').replace(/<[^>]*>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'").replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&#([0-9]+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/\\s+/g,' ').trim();
+const clean=value=>String(value||'').replace(/<[^>]*>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'").replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&#([0-9]+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/\s+/g,' ').trim();
 function extValue(meta,key){return clean(meta?.[key]?.value||'')}
 async function query(item){
  const url=new URL('https://commons.wikimedia.org/w/api.php');
@@ -13,7 +13,7 @@ async function query(item){
    const response=await fetch(url,{headers:{'User-Agent':'NZGISHistoryImageResearch/1.0 (https://history.pm4gis.nz/about/)','Accept':'application/json'},signal:AbortSignal.timeout(25000)});
    if(!response.ok)throw new Error('HTTP '+response.status);
    const json=await response.json();
-   const results=(json.query?.pages||[]).filter(p=>/\\.(jpe?g|png)$/i.test(p.title)).map(p=>{
+   const results=(json.query?.pages||[]).filter(p=>/\.(jpe?g|png)$/i.test(p.title)).map(p=>{
     const i=p.imageinfo?.[0]||{},m=i.extmetadata||{};
     return {
      title:p.title,sourceUrl:i.descriptionurl||'',originalUrl:i.url||'',width:i.width||0,height:i.height||0,bytes:i.size||0,mime:i.mime||'',
@@ -33,6 +33,6 @@ for(let i=0;i<plan.length;i+=3){
  await new Promise(resolve=>setTimeout(resolve,250));
 }
 const report={searchedAt:new Date().toISOString(),subjectDateCutoff:cutoff,queryCount:plan.length,resultCount:queries.reduce((n,q)=>n+q.results.length,0),queries};
-await fs.writeFile('docs/media/commons-discovery-wave4-2025.json',JSON.stringify(report,null,2)+'\\n');
+await fs.writeFile('docs/media/commons-discovery-wave4-2025.json',JSON.stringify(report,null,2)+'\n');
 console.log('Date-limited chapter discovery:',report.queryCount,'queries,',report.resultCount,'results,',queries.filter(q=>q.error).length,'errors.');
 for(const q of queries.filter(q=>q.error))console.log('ERROR',q.chapter,q.query,q.error);
