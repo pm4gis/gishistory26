@@ -1,0 +1,16 @@
+{
+  "id": "relationship:nzeug-conferences-kurt",
+  "a": "entity:nzeug-conference-programme",
+  "b": "person:kurt-janssen",
+  "label": "served as user-group chair",
+  "basis": "Kurt Janssen's professional record names his NZEUG chair term from October 2012 to August 2016, and his 2013 GISList announcement.",
+  "passageIds": [
+    "passage:chapter-29-18b0a31a28"
+  ],
+  "sources": [
+    {
+      "label": "Kurt Janssen's NZEUG and GISList account",
+      "url": "/people/kurt-janssen/"
+    }
+  ]
+}
