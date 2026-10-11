@@ -1,0 +1,32 @@
+{
+  "id": "2024-nzeug-eight-regional-events",
+  "dateDisplay": "2024",
+  "startDate": "2024",
+  "datePrecision": "year",
+  "year": 2024,
+  "label": "NZEUG runs eight regional user events",
+  "summary": "The group's organisers reported approximately 650 attendees from around 400 organisations at eight 2024 regional events. These are organiser-reported figures for the regional programme, not membership totals.",
+  "url": "/stories/becoming-a-gis-professional/#a-profession-broader-than-one-platform-99e14779ee",
+  "passageIds": [
+    "passage:chapter-29-99e14779ee"
+  ],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "entity:nzeug-conference-programme",
+    "chapter:29"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "conference",
+    "community"
+  ],
+  "sources": [
+    {
+      "label": "Chapter 29, 2024 NZEUG regional user conference organiser figures",
+      "url": "/stories/becoming-a-gis-professional/#a-profession-broader-than-one-platform-99e14779ee"
+    }
+  ]
+}
