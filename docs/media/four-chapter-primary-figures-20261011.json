@@ -1,0 +1,82 @@
+{
+  "subjectDateCutoff": "2025-12-31",
+  "notes": "Documentary figures from New Zealand university research; third-party data in figure descriptions are credited to the original authors and publisher. CC BY 4.0 from the three original MDPI article licence statements. The 1996-2003 New Zealand web-GIS screen remains held until one is verifiably cleared.",
+  "items": [
+    {
+      "id": "image:nz-agricultural-landuse-capability-2022",
+      "slug": "nz-agricultural-landuse-capability-2022",
+      "chapter": 7,
+      "articleSlug": "mapping-land-as-data",
+      "afterParagraphId": "ch07-s05-p04",
+      "title": "New Zealand agricultural land use mapped with LUC, LUCAS and AgriBase data, 2022",
+      "sourceType": "mdpi",
+      "sourceUrl": "https://www.mdpi.com/2073-445X/11/12/2334",
+      "sourceOriginalUrl": "https://www.mdpi.com/land/land-11-02334/article_deploy/html/images/land-11-02334-g001.png",
+      "sourceName": "Land (MDPI), volume 11, issue 12, article 2334, figure 1",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.mdpi.com/2073-445X/11/12/2334",
+      "credit": "Clémence Vannier, Thomas A. Cochrane, Peyman Zawar-Reza and Larry Bellamy (2022), Land 11(12), 2334, Figure 1, CC BY 4.0",
+      "dateDisplay": "19 December 2022",
+      "altText": "Map of agricultural land use across New Zealand based in part on national land-use and land-use-capability data.",
+      "caption": "A 2022 Canterbury-led map of New Zealand agricultural land use using LUCAS, Land Use Capability and AgriBase sources. It shows later spatial reuse of national land-assessment data, not an original 1970s NZLRI worksheet.",
+      "context": "Figure 1 from Vannier and colleagues (2022). This is an actual geospatial output from New Zealand LUC and other agricultural data, created in 2022. It is not presented as a first-edition NZLRI worksheet, Land Use Capability sheet, or original LADEDA map. The primary figure caption explicitly identifies its datasets.",
+      "sourceFigure": "Figure 1",
+      "doi": "10.3390/land11122334"
+    },
+    {
+      "id": "image:nz-coastal-classification-workflow-2022",
+      "slug": "nz-coastal-classification-workflow-2022",
+      "chapter": 43,
+      "articleSlug": "automating-the-gis-work",
+      "afterParagraphId": "ch43-s11-p01",
+      "title": "Automated coastal landcover classification workflow, New Zealand, 2022",
+      "sourceType": "mdpi",
+      "sourceUrl": "https://www.mdpi.com/2072-4292/14/19/4827",
+      "sourceOriginalUrl": "https://mdpi-res.com/remotesensing/remotesensing-14-04827/article_deploy/html/images/remotesensing-14-04827-g004.png",
+      "sourceName": "Remote Sensing (MDPI), volume 14, issue 19, article 4827, figure 4",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.mdpi.com/2072-4292/14/19/4827",
+      "credit": "Benedict Collings, Murray Ford and Mark Dickson (2022), Remote Sensing 14(19), 4827, Figure 4, CC BY 4.0",
+      "dateDisplay": "2022 (published September 2022)",
+      "altText": "Multi-stage automated processing flow from New Zealand satellite image composites through rule-based masking and machine-learning classification.",
+      "caption": "A documented 2022 University of Auckland coastal remote-sensing workflow combines satellite composites, rule-based processing and supervised classification into repeatable New Zealand mapping.",
+      "context": "Figure 4 from Collings, Ford and Dickson (2022), using Sentinel-1 and Sentinel-2 imagery. Unlike a generic model-builder illustration, this documents a real New Zealand automated geospatial research workflow. It is not claimed to be an earlier NIWA or local-council processing workflow.",
+      "sourceFigure": "Figure 4",
+      "doi": "10.3390/rs14194827"
+    },
+    {
+      "id": "image:nz-wetlands-ml-national-2025",
+      "slug": "nz-wetlands-ml-national-2025",
+      "chapter": 44,
+      "articleSlug": "gis-at-the-end-of-2025",
+      "afterParagraphId": "ch44-s03-p04",
+      "title": "Machine-learning national wetland prediction, New Zealand, 2025",
+      "sourceType": "mdpi",
+      "sourceUrl": "https://www.mdpi.com/2072-4292/17/15/2626",
+      "sourceOriginalUrl": "https://www.mdpi.com/remotesensing/remotesensing-17-02626/article_deploy/html/images/remotesensing-17-02626-g008.png",
+      "sourceName": "Remote Sensing (MDPI), volume 17, issue 15, article 2626, figure 8",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenceEvidenceUrl": "https://www.mdpi.com/2072-4292/17/15/2626",
+      "credit": "Md. Saiful Islam Khan, Maria C. Vega-Corredor and Matthew D. Wilson (2025), Remote Sensing 17(15), 2626, Figure 8, CC BY 4.0",
+      "dateDisplay": "29 July 2025",
+      "altText": "National modelled wetland distribution compared with an existing New Zealand land-cover dataset and potential wetland extent.",
+      "caption": "University of Canterbury researchers' 2025 national wetland prediction, comparing machine-learning output with mapped wetland datasets. This is actual New Zealand ML geospatial work, not an output from the LUCAS programme.",
+      "context": "Figure 8 from Khan, Vega-Corredor and Wilson (2025), showing (a) national predictions of wetlands by a histogram gradient boosting model, (b) the LCDBv5 wetland layer and (c) potential wetland area. The study was published 29 July 2025. It must not be described as a LUCAS 2020 result.",
+      "sourceFigure": "Figure 8",
+      "doi": "10.3390/rs17152626"
+    }
+  ],
+  "held": [
+    {
+      "chapter": 30,
+      "reason": "A reuse-cleared authentic screenshot from GUILD-on-the-Web (1996), Statistics New Zealand Census WebMap (2001/02), or PHEW! (1999/2002) was not located. Existing 2019 browser map retained; no plausible later image will be relabelled as an early system.",
+      "sources": [
+        "https://www.dlib.org/dlib/may04/authors/05authors.html",
+        "https://statsnz.contentdm.oclc.org/digital/api/collection/p20045coll19/id/436/download"
+      ]
+    }
+  ]
+}
