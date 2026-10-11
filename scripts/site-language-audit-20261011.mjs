@@ -35,7 +35,7 @@ function proseStrings(x, p='', list=[]) {
    x.forEach((v,i)=>proseStrings(v,p+'['+i+']',list));
  } else if(x && typeof x==='object') {
    Object.entries(x).forEach(([k,v])=>{
-     if(['sources','sourceNotes','paragraphSources','biographyParagraphSources','contentSections','photoGallery','relatedRecords'].includes(k) || /^(text|markdown|summary|description|caption|context|altText|title|label|basis|story|recollections|name|intro|credit|derivativesNote|stops|paragraphs)$/i.test(k)){
+     if(['sources','sourceNotes','paragraphSources','biographyParagraphSources','contentSections','photoGallery','relatedRecords','blocks'].includes(k) || /^(text|markdown|summary|description|caption|context|altText|title|label|basis|story|recollections|name|intro|credit|derivativesNote|stops|paragraphs)$/i.test(k)){
        proseStrings(v, p ? p+'.'+k:k, list);
      }
    });
@@ -61,7 +61,7 @@ function rewriteDocument(obj,kind){
      if(typeof o==='string')return o.replace(/\s*It illustrates nationwide satellite coverage from the early 2000s, not a complete national time-series mosaic\./gi,'').trim();
      if(Array.isArray(o))return o.map(reviseExample);
      if(o&&typeof o==='object')for(const k of Object.keys(o)){
-       if(['text','markdown','caption','context','description','summary'].includes(k))o[k]=reviseExample(o[k]);
+       o[k]=reviseExample(o[k]);
      }
      return o;
    }
