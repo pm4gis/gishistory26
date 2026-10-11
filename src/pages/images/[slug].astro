@@ -13,10 +13,13 @@ const image = entries.find((entry) => entry.data.id === imageId)?.data;
 // The original articleSlug was sometimes a broad acquisition category, not
 // a verified relationship. Link back only after a paragraph/passage is known.
 const reviewed = image ? reviewedImagePassages[image.slug] : null;
-const earlierAnchor = image?.afterParagraphId || (image && curatedImageParagraphs[image.slug]);
-const linkedArticle = reviewed?.articleSlug || ((earlierAnchor || image?.passageId || image?.passageSlug) ? image?.articleSlug : null);
+const earlierAnchor = (typeof image?.afterParagraphId === "string" ? image.afterParagraphId : "") ||
+  (image ? curatedImageParagraphs[image.slug] : undefined);
+const explicitPassageId = typeof image?.passageId === "string" ? image.passageId : "";
+const explicitPassageSlug = typeof image?.passageSlug === "string" ? image.passageSlug : "";
+const linkedArticle = reviewed?.articleSlug || ((earlierAnchor || explicitPassageId || explicitPassageSlug) ? image?.articleSlug : null);
 const relatedChapter = linkedArticle ? (await getCollection("articles")).find((entry) => entry.data.slug === linkedArticle)?.data : null;
-const linkedAnchor = reviewed?.afterParagraphId || earlierAnchor || image?.passageSlug;
+const linkedAnchor = reviewed?.afterParagraphId || earlierAnchor || explicitPassageSlug;
 const illustratedPassageUrl = relatedChapter ? relatedChapter.url + (linkedAnchor ? '#'+linkedAnchor : '') : null;
 ---
 {image ? <Layout title={`${image.title} — Image details`} description={`${image.title}. ${image.credit}. Source and licence details.`}>
