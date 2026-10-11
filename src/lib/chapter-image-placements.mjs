@@ -51,8 +51,8 @@ export const chapterImagePlacements = {
   "wrights-hill-1945": "a-photograph-you-can-measure-72c979d587"
 };
 
-const ISO_DATE = /^\\d{4}-\\d{2}-\\d{2}$/;
-const FUTURE_YEAR = /\\b20(?:2[6-9]|[3-9]\\d)\\b/;
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+const FUTURE_YEAR = /\b20(?:2[6-9]|[3-9]\d)\b/;
 
 export function isWithinMediaCutoff(image) {
   if (image?.subjectDateEnd) {
