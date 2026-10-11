@@ -8,8 +8,8 @@ const [images,articles,passages]=await Promise.all([
 ]);
 const batch=images.filter(image=>image.collectionBatch===BATCH);
 const errors=[];
-const allowedLicence=licence=>/^(?:CC0|Public domain(?: \\(.*\\))?|CC BY(?:-SA)? \\d+(?:\\.\\d+)?(?: [a-z]+)?)$/i.test(String(licence||'').trim());
-const futureYear=/\\b20(?:2[6-9]|[3-9]\\d)\\b/;
+const allowedLicence=licence=>/^(?:CC0|Public domain(?: \(.*\))?|CC BY(?:-SA)? \d+(?:\.\d+)?(?: [a-z]+)?)$/i.test(String(licence||'').trim());
+const futureYear=/\b20(?:2[6-9]|[3-9]\d)\b/;
 const year=image=>Number(image.subjectDateEnd?.slice(0,4));
 const articleBySlug=new Map(articles.map(article=>[article.slug,article]));
 const passageBySlug=new Map(passages.map(passage=>[passage.slug,passage]));
@@ -22,12 +22,12 @@ for(const image of batch){
  const article=articleBySlug.get(image.articleSlug);
  const passage=passageBySlug.get(image.passageSlug);
  if(!article||!passage||passage.articleId!==article.id)errors.push(key+' points to a passage outside its article');
- if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(image.subjectDateEnd||'')||image.subjectDateEnd>CUTOFF)errors.push(key+' subjectDateEnd is invalid or after '+CUTOFF);
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(image.subjectDateEnd||'')||image.subjectDateEnd>CUTOFF)errors.push(key+' subjectDateEnd is invalid or after '+CUTOFF);
  if(!image.dateEvidenceField||!image.dateEvidenceValue||!String(image.dateEvidenceValue).includes(String(year(image))))errors.push(key+' lacks matching source date evidence');
  if(futureYear.test([image.title,image.caption,image.context,image.dateDisplay,image.sourceFileTitle,image.dateEvidenceValue].filter(Boolean).join(' ')))errors.push(key+' contains a subject date after the cutoff');
  if(!allowedLicence(image.licence)||!image.licenceUrl||!image.sourceUrl||!image.credit)errors.push(key+' lacks approved reuse terms or attribution');
  if(image.headerCandidate!==false)errors.push(key+' should not be marked for a chapter header');
- if(/(?:\\bCC BY|\\bCC0|licensed under|\\bcredit:|\\bsource:)/i.test(image.caption||''))errors.push(key+' includes attribution in the chapter caption');
+ if(/(?:\bCC BY|\bCC0|licensed under|\bcredit:|\bsource:)/i.test(image.caption||''))errors.push(key+' includes attribution in the chapter caption');
 }
 if(batch.length&&batch.length<200)errors.push('Only '+batch.length+' new batch images were acquired; at least 200 are required');
 if(batch.length>=200){
