@@ -26,6 +26,7 @@ try {
    assert.ok((await link.count())>=2,view.name+' '+item.story+' image and caption link to their own record');
    assert.ok((await figure.locator('figcaption').innerText()).includes(item.snippet),item.story+' caption provenance');
    const image=figure.locator('img');
+   await image.scrollIntoViewIfNeeded();
    await image.evaluate(async img=>{if(!img.complete)await new Promise((resolve,reject)=>{
      img.addEventListener('load',resolve,{once:true});img.addEventListener('error',()=>reject(new Error('Image load failure')),{once:true});
    });});
