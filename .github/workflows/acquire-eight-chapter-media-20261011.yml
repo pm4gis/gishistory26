@@ -44,7 +44,7 @@ jobs:
             git push origin HEAD:research/period-verified-nzlri-automation-ai-20261011
           fi
       - name: Require complete source checks before release
-        run: node -e "const d=require('./docs/media/four-chapter-originals-run-20261011.json'); if(d.failed||d.success!==3)throw Error('Incomplete verified source downloads: '+JSON.stringify(d.items))"
+        run: node -e "const d=require('./docs/media/four-chapter-originals-run-20261011.json'); if(d.failed||d.success!==3)throw Error('Incomplete verified source downloads '+JSON.stringify(d.items))"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
