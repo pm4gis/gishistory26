@@ -1,51 +1,53 @@
-name: Acquire chapter historical sources October 2026
+name: Acquire final chapter historical source originals
 on:
   push:
     branches: [media/eight-chapter-source-recovery-20261011]
     paths:
       - scripts/acquire-eight-chapter-media-20261011.mjs
       - docs/media/eight-chapter-acquisition-20261011.json
-      - .github/workflows/acquire-eight-chapter-media-20261011.yml
+      - .github/workflows/acquire-chapter-images-wave3.yml
   workflow_dispatch:
-permissions:
-  contents: write
+permissions: {contents: write}
 concurrency:
-  group: gis-history-eight-chapter-sources
-  cancel-in-progress: false
+  group: original-acquisition-oct11-2026
+  cancel-in-progress: true
 jobs:
   acquire:
     if: github.ref == 'refs/heads/media/eight-chapter-source-recovery-20261011'
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with: {ref: media/eight-chapter-source-recovery-20261011}
       - uses: actions/setup-node@v4
         with:
           node-version: '22.19.0'
           cache: npm
       - run: npm ci
-      - name: Fetch and validate every candidate, record held items
+      - name: Acquire verified original images and record failures
         run: node scripts/acquire-eight-chapter-media-20261011.mjs || true
-      - name: Preserve historical corpus and validate publication
+      - name: Verify all inherited assets, integrity, tests and production build
         run: |
           npm test
           npm run build
-      - name: Commit verified originals and responsive derivatives
+      - name: Commit preserved originals and image pages to review branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/assets/historical/ src/content/images/ docs/media/eight-chapter-download-run-20261011.json
           if ! git diff --cached --quiet; then
-            git commit -m "Archive licensed chapter image originals and provenance"
+            git commit -m "Archive 2025-or-earlier originals with image metadata"
+            git reset --hard HEAD
+            git clean -fd
             git fetch origin media/eight-chapter-source-recovery-20261011
             git rebase origin/media/eight-chapter-source-recovery-20261011
             git push origin HEAD:media/eight-chapter-source-recovery-20261011
           fi
-      - name: Require each intended historical image before release
-        run: node -e "const fs=require('fs');const f=JSON.parse(fs.readFileSync('docs/media/eight-chapter-download-run-20261011.json'));if(f.failed||f.success!==2)throw Error('Missing verified originals: '+JSON.stringify(f.items))"
+      - name: Require complete source checks before release
+        run: node -e "const d=require('./docs/media/eight-chapter-download-run-20261011.json'); if(d.failed)throw Error(d.failed+' image rights or original retrieval failures')"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: documentary-image-source-check
+          name: eight-chapter-originals-report
           path: docs/media/eight-chapter-download-run-20261011.json
           retention-days: 30
