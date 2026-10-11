@@ -1,0 +1,1234 @@
+[
+  {
+    "chapter": 1,
+    "articleSlug": "what-the-computer-inherited",
+    "passageSlug": "national-sheets-80f8ea6518",
+    "passageTitle": "National sheets",
+    "query": "New Zealand map"
+  },
+  {
+    "chapter": 1,
+    "articleSlug": "what-the-computer-inherited",
+    "passageSlug": "the-people-behind-the-sheets-a364eef899",
+    "passageTitle": "The people behind the sheets",
+    "query": "New Zealand surveyors"
+  },
+  {
+    "chapter": 1,
+    "articleSlug": "what-the-computer-inherited",
+    "passageSlug": "thematic-geography-899fa91ade",
+    "passageTitle": "Thematic geography",
+    "query": "New Zealand geological map"
+  },
+  {
+    "chapter": 1,
+    "articleSlug": "what-the-computer-inherited",
+    "passageSlug": "the-country-from-the-air-db246fba61",
+    "passageTitle": "The country from the air",
+    "query": "New Zealand aerial"
+  },
+  {
+    "chapter": 2,
+    "articleSlug": "coordinates-enter-the-computer",
+    "passageSlug": "the-first-government-machines-57e353c855",
+    "passageTitle": "The first government machines",
+    "query": "government computer 1960"
+  },
+  {
+    "chapter": 2,
+    "articleSlug": "coordinates-enter-the-computer",
+    "passageSlug": "cards-and-coordinate-lists-0b893079e1",
+    "passageTitle": "Cards and coordinate lists",
+    "query": "punched card computer"
+  },
+  {
+    "chapter": 2,
+    "articleSlug": "coordinates-enter-the-computer",
+    "passageSlug": "surveying-and-mapping-by-1966-8de87e20d6",
+    "passageTitle": "Surveying and mapping by 1966",
+    "query": "New Zealand theodolite"
+  },
+  {
+    "chapter": 2,
+    "articleSlug": "coordinates-enter-the-computer",
+    "passageSlug": "transforming-one-coordinate-world-into-another-2ab91fbc4f",
+    "passageTitle": "Transforming one coordinate world into another",
+    "query": "survey triangulation New Zealand"
+  },
+  {
+    "chapter": 3,
+    "articleSlug": "drawing-maps-by-machine",
+    "passageSlug": "digitising-map-sheets-5966de2c1f",
+    "passageTitle": "Digitising map sheets",
+    "query": "New Zealand map sheet"
+  },
+  {
+    "chapter": 3,
+    "articleSlug": "drawing-maps-by-machine",
+    "passageSlug": "inside-mappak-b7f1ee3026",
+    "passageTitle": "Inside MAPPAK",
+    "query": "computer cartography"
+  },
+  {
+    "chapter": 3,
+    "articleSlug": "drawing-maps-by-machine",
+    "passageSlug": "orthophoto-production-160846e07d",
+    "passageTitle": "Orthophoto production",
+    "query": "New Zealand aerial photo"
+  },
+  {
+    "chapter": 3,
+    "articleSlug": "drawing-maps-by-machine",
+    "passageSlug": "analytical-photogrammetry-712fd9e97d",
+    "passageTitle": "Analytical photogrammetry",
+    "query": "photogrammetry aerial"
+  },
+  {
+    "chapter": 4,
+    "articleSlug": "turning-the-landscape-into-numbers",
+    "passageSlug": "landsat-arrives-e9b8032a50",
+    "passageTitle": "Landsat arrives",
+    "query": "Landsat New Zealand"
+  },
+  {
+    "chapter": 4,
+    "articleSlug": "turning-the-landscape-into-numbers",
+    "passageSlug": "rilis-191c7a5478",
+    "passageTitle": "RILIS",
+    "query": "New Zealand satellite"
+  },
+  {
+    "chapter": 4,
+    "articleSlug": "turning-the-landscape-into-numbers",
+    "passageSlug": "classification-9f0c8aa526",
+    "passageTitle": "Classification",
+    "query": "land cover New Zealand"
+  },
+  {
+    "chapter": 4,
+    "articleSlug": "turning-the-landscape-into-numbers",
+    "passageSlug": "snow-forests-and-large-areas-0f88b9975a",
+    "passageTitle": "Snow, forests and large areas",
+    "query": "New Zealand MODIS"
+  },
+  {
+    "chapter": 5,
+    "articleSlug": "from-map-sheets-to-spatial-data",
+    "passageSlug": "a-national-land-inventory-a0b07eb248",
+    "passageTitle": "A national land inventory",
+    "query": "New Zealand soil map"
+  },
+  {
+    "chapter": 5,
+    "articleSlug": "from-map-sheets-to-spatial-data",
+    "passageSlug": "from-coloured-units-to-polygons-e9abb2d6e6",
+    "passageTitle": "From coloured units to polygons",
+    "query": "land capability New Zealand"
+  },
+  {
+    "chapter": 5,
+    "articleSlug": "from-map-sheets-to-spatial-data",
+    "passageSlug": "querying-the-inventory-704e1b2aa3",
+    "passageTitle": "Querying the inventory",
+    "query": "land resource map"
+  },
+  {
+    "chapter": 5,
+    "articleSlug": "from-map-sheets-to-spatial-data",
+    "passageSlug": "early-spatial-datasets-7d651ec112",
+    "passageTitle": "Early spatial datasets",
+    "query": "New Zealand land inventory"
+  },
+  {
+    "chapter": 6,
+    "articleSlug": "when-gis-became-gis",
+    "passageSlug": "commercial-workstations-b5f009e26c",
+    "passageTitle": "Commercial workstations",
+    "query": "GIS workstation"
+  },
+  {
+    "chapter": 6,
+    "articleSlug": "when-gis-became-gis",
+    "passageSlug": "from-ladeda-to-arc-info-215b00c649",
+    "passageTitle": "From LADEDA to ARC/INFO",
+    "query": "ARC INFO GIS"
+  },
+  {
+    "chapter": 6,
+    "articleSlug": "when-gis-became-gis",
+    "passageSlug": "specialist-hardware-1b035688c6",
+    "passageTitle": "Specialist hardware",
+    "query": "GIS computer 1980"
+  },
+  {
+    "chapter": 6,
+    "articleSlug": "when-gis-became-gis",
+    "passageSlug": "defining-gis-73fe4882ef",
+    "passageTitle": "Defining GIS",
+    "query": "GIS map software"
+  },
+  {
+    "chapter": 7,
+    "articleSlug": "mapping-land-as-data",
+    "passageSlug": "reading-the-land-2b878e178f",
+    "passageTitle": "Reading the land",
+    "query": "New Zealand land map"
+  },
+  {
+    "chapter": 7,
+    "articleSlug": "mapping-land-as-data",
+    "passageSlug": "erosion-on-the-map-df68c9ed13",
+    "passageTitle": "Erosion on the map",
+    "query": "soil erosion New Zealand"
+  },
+  {
+    "chapter": 7,
+    "articleSlug": "mapping-land-as-data",
+    "passageSlug": "from-map-to-farm-plan-6b5f5a778a",
+    "passageTitle": "From map to farm plan",
+    "query": "farm land use map"
+  },
+  {
+    "chapter": 7,
+    "articleSlug": "mapping-land-as-data",
+    "passageSlug": "urban-land-capability-6c61371599",
+    "passageTitle": "Urban land capability",
+    "query": "urban land capability map"
+  },
+  {
+    "chapter": 8,
+    "articleSlug": "forestry-finds-gis",
+    "passageSlug": "mapping-forest-change-1b6d74c5d5",
+    "passageTitle": "Mapping forest change",
+    "query": "New Zealand forest"
+  },
+  {
+    "chapter": 8,
+    "articleSlug": "forestry-finds-gis",
+    "passageSlug": "forest-inventory-data-f44e7f6f2c",
+    "passageTitle": "Forest inventory data",
+    "query": "forest inventory map"
+  },
+  {
+    "chapter": 8,
+    "articleSlug": "forestry-finds-gis",
+    "passageSlug": "stands-and-roads-deed76e801",
+    "passageTitle": "Stands and roads",
+    "query": "forestry road New Zealand"
+  },
+  {
+    "chapter": 8,
+    "articleSlug": "forestry-finds-gis",
+    "passageSlug": "photographs-into-forest-data-5f74d8d0d8",
+    "passageTitle": "Photographs into forest data",
+    "query": "forest aerial New Zealand"
+  },
+  {
+    "chapter": 9,
+    "articleSlug": "science-goes-spatial",
+    "passageSlug": "scientific-map-records-7021842bb3",
+    "passageTitle": "Scientific map records",
+    "query": "New Zealand geological map"
+  },
+  {
+    "chapter": 9,
+    "articleSlug": "science-goes-spatial",
+    "passageSlug": "ecological-databases-68517bbc35",
+    "passageTitle": "Ecological databases",
+    "query": "New Zealand species map"
+  },
+  {
+    "chapter": 9,
+    "articleSlug": "science-goes-spatial",
+    "passageSlug": "field-geology-into-digital-production-f9f05acb91",
+    "passageTitle": "Field geology into digital production",
+    "query": "geology map QMAP"
+  },
+  {
+    "chapter": 9,
+    "articleSlug": "science-goes-spatial",
+    "passageSlug": "catchment-monitoring-7b174cd504",
+    "passageTitle": "Catchment monitoring",
+    "query": "lake bathymetry New Zealand"
+  },
+  {
+    "chapter": 10,
+    "articleSlug": "gis-inside-government",
+    "passageSlug": "a-national-conversion-job-7ee8b0bc4d",
+    "passageTitle": "A national conversion job",
+    "query": "New Zealand government map"
+  },
+  {
+    "chapter": 10,
+    "articleSlug": "gis-inside-government",
+    "passageSlug": "topographic-databases-d4532463e0",
+    "passageTitle": "Topographic databases",
+    "query": "New Zealand topo map"
+  },
+  {
+    "chapter": 10,
+    "articleSlug": "gis-inside-government",
+    "passageSlug": "conservation-databases-1990-3248d864d9",
+    "passageTitle": "Conservation databases, 1990",
+    "query": "DOC New Zealand map"
+  },
+  {
+    "chapter": 10,
+    "articleSlug": "gis-inside-government",
+    "passageSlug": "planning-departmental-gis-7666f816ad",
+    "passageTitle": "Planning departmental GIS",
+    "query": "New Zealand planning map"
+  },
+  {
+    "chapter": 11,
+    "articleSlug": "universities-build-a-field",
+    "passageSlug": "building-a-workstation-laboratory-1e2dba36e8",
+    "passageTitle": "Building a workstation laboratory",
+    "query": "University GIS lab"
+  },
+  {
+    "chapter": 11,
+    "articleSlug": "universities-build-a-field",
+    "passageSlug": "a-recurring-research-forum-6b17dc2b4d",
+    "passageTitle": "A recurring research forum",
+    "query": "New Zealand geography conference"
+  },
+  {
+    "chapter": 11,
+    "articleSlug": "universities-build-a-field",
+    "passageSlug": "maori-land-values-1995-1996-79631e4212",
+    "passageTitle": "Māori land values, 1995–1996",
+    "query": "Māori land map New Zealand"
+  },
+  {
+    "chapter": 11,
+    "articleSlug": "universities-build-a-field",
+    "passageSlug": "cyclone-bola-erosion-research-1995-224cf9ea6b",
+    "passageTitle": "Cyclone Bola erosion research, 1995",
+    "query": "Cyclone Bola map"
+  },
+  {
+    "chapter": 12,
+    "articleSlug": "an-industry-and-community-form",
+    "passageSlug": "local-channels-6f2ca241b9",
+    "passageTitle": "Local channels",
+    "query": "GIS user group"
+  },
+  {
+    "chapter": 12,
+    "articleSlug": "an-industry-and-community-form",
+    "passageSlug": "a-consultancy-appears-b51b8936ec",
+    "passageTitle": "A consultancy appears",
+    "query": "GIS company New Zealand"
+  },
+  {
+    "chapter": 12,
+    "articleSlug": "an-industry-and-community-form",
+    "passageSlug": "assembling-a-gis-44546cee53",
+    "passageTitle": "Assembling a GIS",
+    "query": "GIS workstation map"
+  },
+  {
+    "chapter": 12,
+    "articleSlug": "an-industry-and-community-form",
+    "passageSlug": "recurring-conferences-5a9922acb6",
+    "passageTitle": "Recurring conferences",
+    "query": "GIS conference New Zealand"
+  },
+  {
+    "chapter": 13,
+    "articleSlug": "the-cadastre-becomes-data",
+    "passageSlug": "cadastral-linework-573557de34",
+    "passageTitle": "Cadastral linework",
+    "query": "New Zealand cadastral"
+  },
+  {
+    "chapter": 13,
+    "articleSlug": "the-cadastre-becomes-data",
+    "passageSlug": "a-national-conversion-job-7ee8b0bc4d",
+    "passageTitle": "A national conversion job",
+    "query": "survey district map"
+  },
+  {
+    "chapter": 13,
+    "articleSlug": "the-cadastre-becomes-data",
+    "passageSlug": "accuracy-and-continuity-31b499bdf2",
+    "passageTitle": "Accuracy and continuity",
+    "query": "New Zealand survey mark"
+  },
+  {
+    "chapter": 13,
+    "articleSlug": "the-cadastre-becomes-data",
+    "passageSlug": "uses-of-cadastral-data-197b3f6ce4",
+    "passageTitle": "Uses of cadastral data",
+    "query": "parcel map New Zealand"
+  },
+  {
+    "chapter": 14,
+    "articleSlug": "landonline",
+    "passageSlug": "stage-one-07493706d7",
+    "passageTitle": "Stage one",
+    "query": "Landonline"
+  },
+  {
+    "chapter": 14,
+    "articleSlug": "landonline",
+    "passageSlug": "converting-the-archive-58cb45d19f",
+    "passageTitle": "Converting the archive",
+    "query": "New Zealand land records map"
+  },
+  {
+    "chapter": 14,
+    "articleSlug": "landonline",
+    "passageSlug": "the-survey-becomes-data-67de02c526",
+    "passageTitle": "The survey becomes data",
+    "query": "New Zealand survey plan"
+  },
+  {
+    "chapter": 14,
+    "articleSlug": "landonline",
+    "passageSlug": "a-national-utility-226b4cfcfc",
+    "passageTitle": "A national utility",
+    "query": "Landonline map"
+  },
+  {
+    "chapter": 15,
+    "articleSlug": "topography-goes-digital",
+    "passageSlug": "converting-the-detailed-map-a898c7b19e",
+    "passageTitle": "Converting the detailed map",
+    "query": "NZMS topographic"
+  },
+  {
+    "chapter": 15,
+    "articleSlug": "topography-goes-digital",
+    "passageSlug": "data-and-cartography-c5de79514a",
+    "passageTitle": "Data and cartography",
+    "query": "New Zealand topo map"
+  },
+  {
+    "chapter": 15,
+    "articleSlug": "topography-goes-digital",
+    "passageSlug": "a-new-grid-for-a-new-series-db99d477e1",
+    "passageTitle": "A new grid for a new series",
+    "query": "New Zealand grid map"
+  },
+  {
+    "chapter": 15,
+    "articleSlug": "topography-goes-digital",
+    "passageSlug": "the-topo50-release-6ca71b18e1",
+    "passageTitle": "The Topo50 release",
+    "query": "Topo50 New Zealand"
+  },
+  {
+    "chapter": 16,
+    "articleSlug": "census-geography",
+    "passageSlug": "early-census-geography-bdb6c3e775",
+    "passageTitle": "Early census geography",
+    "query": "New Zealand census map"
+  },
+  {
+    "chapter": 16,
+    "articleSlug": "census-geography",
+    "passageSlug": "population-meshblocks-0e5532e401",
+    "passageTitle": "Population meshblocks",
+    "query": "New Zealand population map"
+  },
+  {
+    "chapter": 16,
+    "articleSlug": "census-geography",
+    "passageSlug": "digitising-boundaries-1a92db9d49",
+    "passageTitle": "Digitising boundaries",
+    "query": "census meshblock map"
+  },
+  {
+    "chapter": 16,
+    "articleSlug": "census-geography",
+    "passageSlug": "using-census-data-f2e8d11365",
+    "passageTitle": "Using census data",
+    "query": "New Zealand census density"
+  },
+  {
+    "chapter": 17,
+    "articleSlug": "roads-addresses-and-property",
+    "passageSlug": "roads-and-addresses-a972171969",
+    "passageTitle": "Roads and addresses",
+    "query": "New Zealand road map"
+  },
+  {
+    "chapter": 17,
+    "articleSlug": "roads-addresses-and-property",
+    "passageSlug": "rural-distance-becomes-an-address-b9920fb018",
+    "passageTitle": "Rural distance becomes an address",
+    "query": "New Zealand rural address"
+  },
+  {
+    "chapter": 17,
+    "articleSlug": "roads-addresses-and-property",
+    "passageSlug": "from-street-list-to-geocoding-a3670e1c5c",
+    "passageTitle": "From street list to geocoding",
+    "query": "New Zealand street map"
+  },
+  {
+    "chapter": 17,
+    "articleSlug": "roads-addresses-and-property",
+    "passageSlug": "public-address-data-78d25a532d",
+    "passageTitle": "Public address data",
+    "query": "New Zealand address map"
+  },
+  {
+    "chapter": 18,
+    "articleSlug": "gps-changes-where-here-is",
+    "passageSlug": "a-receiver-on-the-trig-6482c1e00e",
+    "passageTitle": "A receiver on the trig",
+    "query": "GPS New Zealand"
+  },
+  {
+    "chapter": 18,
+    "articleSlug": "gps-changes-where-here-is",
+    "passageSlug": "accuracy-had-a-price-97d1feb386",
+    "passageTitle": "Accuracy had a price",
+    "query": "GNSS survey"
+  },
+  {
+    "chapter": 18,
+    "articleSlug": "gps-changes-where-here-is",
+    "passageSlug": "corrections-are-infrastructure-a77896ba7d",
+    "passageTitle": "Corrections are infrastructure",
+    "query": "PositioNZ map"
+  },
+  {
+    "chapter": 18,
+    "articleSlug": "gps-changes-where-here-is",
+    "passageSlug": "gis-goes-into-the-field-c4ce579f27",
+    "passageTitle": "GIS goes into the field",
+    "query": "GPS field survey map"
+  },
+  {
+    "chapter": 19,
+    "articleSlug": "rebuilding-the-coordinate-framework",
+    "passageSlug": "the-repeat-gps-network-e05eda5fc5",
+    "passageTitle": "The repeat GPS network",
+    "query": "New Zealand GPS station"
+  },
+  {
+    "chapter": 19,
+    "articleSlug": "rebuilding-the-coordinate-framework",
+    "passageSlug": "designing-nzgd2000-d8aa821386",
+    "passageTitle": "Designing NZGD2000",
+    "query": "NZGD2000"
+  },
+  {
+    "chapter": 19,
+    "articleSlug": "rebuilding-the-coordinate-framework",
+    "passageSlug": "datum-and-projection-efe15c6958",
+    "passageTitle": "Datum and projection",
+    "query": "New Zealand map projection"
+  },
+  {
+    "chapter": 19,
+    "articleSlug": "rebuilding-the-coordinate-framework",
+    "passageSlug": "from-marks-to-active-control-1a47aa28cd",
+    "passageTitle": "From marks to active control",
+    "query": "New Zealand trig point"
+  },
+  {
+    "chapter": 20,
+    "articleSlug": "imagery-becomes-infrastructure",
+    "passageSlug": "a-photograph-you-can-measure-72c979d587",
+    "passageTitle": "A photograph you can measure",
+    "query": "New Zealand aerial photo"
+  },
+  {
+    "chapter": 20,
+    "articleSlug": "imagery-becomes-infrastructure",
+    "passageSlug": "from-project-image-to-gis-layer-bfa2694dc2",
+    "passageTitle": "From project image to GIS layer",
+    "query": "New Zealand orthophoto"
+  },
+  {
+    "chapter": 20,
+    "articleSlug": "imagery-becomes-infrastructure",
+    "passageSlug": "the-mosaic-7cd1eb2e36",
+    "passageTitle": "The mosaic",
+    "query": "aerial image mosaic"
+  },
+  {
+    "chapter": 20,
+    "articleSlug": "imagery-becomes-infrastructure",
+    "passageSlug": "a-shared-south-island-image-base-804f2b19d0",
+    "passageTitle": "A shared South Island image base",
+    "query": "South Island aerial photo"
+  },
+  {
+    "chapter": 21,
+    "articleSlug": "the-spatial-infrastructure-idea",
+    "passageSlug": "different-systems-same-country-9d58529552",
+    "passageTitle": "Different systems, same country",
+    "query": "New Zealand spatial data"
+  },
+  {
+    "chapter": 21,
+    "articleSlug": "the-spatial-infrastructure-idea",
+    "passageSlug": "the-exchange-problem-360e89fffc",
+    "passageTitle": "The exchange problem",
+    "query": "WMS WFS map"
+  },
+  {
+    "chapter": 21,
+    "articleSlug": "the-spatial-infrastructure-idea",
+    "passageSlug": "metadata-travels-with-the-data-ee30d4b7c3",
+    "passageTitle": "Metadata travels with the data",
+    "query": "geospatial metadata map"
+  },
+  {
+    "chapter": 21,
+    "articleSlug": "the-spatial-infrastructure-idea",
+    "passageSlug": "ogc-in-palmerston-north-71400a2800",
+    "passageTitle": "OGC in Palmerston North",
+    "query": "OGC map service"
+  },
+  {
+    "chapter": 22,
+    "articleSlug": "gis-comes-to-the-desktop",
+    "passageSlug": "the-gis-room-ac7aab1bb3",
+    "passageTitle": "The GIS room",
+    "query": "GIS workstation"
+  },
+  {
+    "chapter": 22,
+    "articleSlug": "gis-comes-to-the-desktop",
+    "passageSlug": "mapinfo-in-gisborne-0a91fb37f4",
+    "passageTitle": "MapInfo in Gisborne",
+    "query": "MapInfo GIS"
+  },
+  {
+    "chapter": 22,
+    "articleSlug": "gis-comes-to-the-desktop",
+    "passageSlug": "quickmap-72c3b55191",
+    "passageTitle": "QuickMap",
+    "query": "QuickMap map New Zealand"
+  },
+  {
+    "chapter": 22,
+    "articleSlug": "gis-comes-to-the-desktop",
+    "passageSlug": "desktop-limitations-d000c583b1",
+    "passageTitle": "Desktop limitations",
+    "query": "ArcMap GIS screenshot"
+  },
+  {
+    "chapter": 23,
+    "articleSlug": "councils-build-corporate-gis",
+    "passageSlug": "regional-land-resource-data-1993-1994-e6274a0794",
+    "passageTitle": "Regional land-resource data, 1993–1994",
+    "query": "regional land map New Zealand"
+  },
+  {
+    "chapter": 23,
+    "articleSlug": "councils-build-corporate-gis",
+    "passageSlug": "maps-from-all-over-council-9ef0acf90d",
+    "passageTitle": "Maps from all over council",
+    "query": "council GIS map"
+  },
+  {
+    "chapter": 23,
+    "articleSlug": "councils-build-corporate-gis",
+    "passageSlug": "wellington-hazard-data-1996-896825b241",
+    "passageTitle": "Wellington hazard data, 1996",
+    "query": "Wellington hazard map"
+  },
+  {
+    "chapter": 23,
+    "articleSlug": "councils-build-corporate-gis",
+    "passageSlug": "napier-develops-mapit-3756b33c09",
+    "passageTitle": "Napier develops MAPiT",
+    "query": "Napier map GIS"
+  },
+  {
+    "chapter": 24,
+    "articleSlug": "government-goes-spatial",
+    "passageSlug": "the-varroa-response-8f6edc1487",
+    "passageTitle": "The varroa response",
+    "query": "varroa map"
+  },
+  {
+    "chapter": 24,
+    "articleSlug": "government-goes-spatial",
+    "passageSlug": "fisheries-builds-a-spatial-service-52ac4c0640",
+    "passageTitle": "Fisheries builds a spatial service",
+    "query": "New Zealand fisheries map"
+  },
+  {
+    "chapter": 24,
+    "articleSlug": "government-goes-spatial",
+    "passageSlug": "regulation-is-geometry-5f49908484",
+    "passageTitle": "Regulation is geometry",
+    "query": "New Zealand boundary map"
+  },
+  {
+    "chapter": 24,
+    "articleSlug": "government-goes-spatial",
+    "passageSlug": "routine-government-use-981b72aea2",
+    "passageTitle": "Routine government use",
+    "query": "New Zealand government map"
+  },
+  {
+    "chapter": 25,
+    "articleSlug": "mapping-the-networks",
+    "passageSlug": "network-connections-aa605f56a3",
+    "passageTitle": "Network connections",
+    "query": "New Zealand utility map"
+  },
+  {
+    "chapter": 25,
+    "articleSlug": "mapping-the-networks",
+    "passageSlug": "auckland-lifelines-established-in-1996-ff9371440e",
+    "passageTitle": "Auckland lifelines, established in 1996",
+    "query": "Auckland lifelines map"
+  },
+  {
+    "chapter": 25,
+    "articleSlug": "mapping-the-networks",
+    "passageSlug": "network-topology-and-tracing-310848c3b6",
+    "passageTitle": "Network topology and tracing",
+    "query": "New Zealand electricity network"
+  },
+  {
+    "chapter": 25,
+    "articleSlug": "mapping-the-networks",
+    "passageSlug": "watercare-joins-map-and-maintenance-a9c43e94e1",
+    "passageTitle": "Watercare joins map and maintenance",
+    "query": "Watercare map Auckland"
+  },
+  {
+    "chapter": 26,
+    "articleSlug": "conservation-and-environment",
+    "passageSlug": "species-records-1987-1993-0a1a08e6d9",
+    "passageTitle": "Species records, 1987–1993",
+    "query": "New Zealand biodiversity map"
+  },
+  {
+    "chapter": 26,
+    "articleSlug": "conservation-and-environment",
+    "passageSlug": "a-national-picture-of-land-cover-3065a3f775",
+    "passageTitle": "A national picture of land cover",
+    "query": "New Zealand land cover"
+  },
+  {
+    "chapter": 26,
+    "articleSlug": "conservation-and-environment",
+    "passageSlug": "a-plan-for-each-farm-12070ee487",
+    "passageTitle": "A plan for each farm",
+    "query": "New Zealand farm environment map"
+  },
+  {
+    "chapter": 26,
+    "articleSlug": "conservation-and-environment",
+    "passageSlug": "conservation-gis-beyond-government-611e7efe0e",
+    "passageTitle": "Conservation GIS beyond government",
+    "query": "DOC conservation area map"
+  },
+  {
+    "chapter": 27,
+    "articleSlug": "health-population-and-place",
+    "passageSlug": "cases-and-population-29839cfc31",
+    "passageTitle": "Cases and population",
+    "query": "New Zealand public health map"
+  },
+  {
+    "chapter": 27,
+    "articleSlug": "health-population-and-place",
+    "passageSlug": "waikato-builds-a-routine-map-4b1fb43cf4",
+    "passageTitle": "Waikato builds a routine map",
+    "query": "Waikato health map"
+  },
+  {
+    "chapter": 27,
+    "articleSlug": "health-population-and-place",
+    "passageSlug": "a-national-surveillance-environment-492f2312f2",
+    "passageTitle": "A national surveillance environment",
+    "query": "New Zealand disease map"
+  },
+  {
+    "chapter": 27,
+    "articleSlug": "health-population-and-place",
+    "passageSlug": "getting-to-a-hospital-73a6354dbb",
+    "passageTitle": "Getting to a hospital",
+    "query": "New Zealand hospital map"
+  },
+  {
+    "chapter": 28,
+    "articleSlug": "safety-policing-and-emergency-gis",
+    "passageSlug": "crime-enters-the-records-system-828e75ea07",
+    "passageTitle": "Crime enters the records system",
+    "query": "New Zealand crime map"
+  },
+  {
+    "chapter": 28,
+    "articleSlug": "safety-policing-and-emergency-gis",
+    "passageSlug": "maps-in-wellington-7b9af32627",
+    "passageTitle": "MAPS in Wellington",
+    "query": "Wellington police map"
+  },
+  {
+    "chapter": 28,
+    "articleSlug": "safety-policing-and-emergency-gis",
+    "passageSlug": "incident-geography-and-emergency-response-a74e7647c8",
+    "passageTitle": "Incident geography and emergency response",
+    "query": "New Zealand emergency map"
+  },
+  {
+    "chapter": 28,
+    "articleSlug": "safety-policing-and-emergency-gis",
+    "passageSlug": "from-hot-spots-to-priority-locations-46b1a61852",
+    "passageTitle": "From hot spots to priority locations",
+    "query": "crime hotspot map"
+  },
+  {
+    "chapter": 29,
+    "articleSlug": "becoming-a-gis-professional",
+    "passageSlug": "recurring-forums-aa58591027",
+    "passageTitle": "Recurring forums",
+    "query": "GIS conference"
+  },
+  {
+    "chapter": 29,
+    "articleSlug": "becoming-a-gis-professional",
+    "passageSlug": "user-groups-become-infrastructure-18b0a31a28",
+    "passageTitle": "User groups become infrastructure",
+    "query": "GIS user group New Zealand"
+  },
+  {
+    "chapter": 29,
+    "articleSlug": "becoming-a-gis-professional",
+    "passageSlug": "new-professional-networks-71ae35ecbd",
+    "passageTitle": "New professional networks",
+    "query": "geospatial conference New Zealand"
+  },
+  {
+    "chapter": 29,
+    "articleSlug": "becoming-a-gis-professional",
+    "passageSlug": "maori-gis-practitioner-conferences",
+    "passageTitle": "Māori GIS practitioner conferences",
+    "query": "Māori GIS map"
+  },
+  {
+    "chapter": 30,
+    "articleSlug": "the-first-web-maps",
+    "passageSlug": "guild-on-the-web-1996-1ac44c5733",
+    "passageTitle": "GUILD-on-the-Web, 1996",
+    "query": "GUILD Web map New Zealand"
+  },
+  {
+    "chapter": 30,
+    "articleSlug": "the-first-web-maps",
+    "passageSlug": "phew-in-1999-dbe9d50e38",
+    "passageTitle": "PHEW! in 1999",
+    "query": "PHEW web map"
+  },
+  {
+    "chapter": 30,
+    "articleSlug": "the-first-web-maps",
+    "passageSlug": "dunedin-webmap-e8a4aa6754",
+    "passageTitle": "Dunedin WebMap",
+    "query": "Dunedin web map"
+  },
+  {
+    "chapter": 30,
+    "articleSlug": "the-first-web-maps",
+    "passageSlug": "arcims-inside-government-77a201a83c",
+    "passageTitle": "ArcIMS inside government",
+    "query": "ArcIMS map server"
+  },
+  {
+    "chapter": 31,
+    "articleSlug": "google-changes-the-audience",
+    "passageSlug": "a-globe-on-the-desktop-fe3c526a67",
+    "passageTitle": "A globe on the desktop",
+    "query": "Google Earth New Zealand"
+  },
+  {
+    "chapter": 31,
+    "articleSlug": "google-changes-the-audience",
+    "passageSlug": "new-zealand-in-a-google-layer-c2e3d42633",
+    "passageTitle": "New Zealand in a Google layer",
+    "query": "Google Maps New Zealand"
+  },
+  {
+    "chapter": 31,
+    "articleSlug": "google-changes-the-audience",
+    "passageSlug": "imagery-becomes-ordinary-336d16e715",
+    "passageTitle": "Imagery becomes ordinary",
+    "query": "Google satellite New Zealand"
+  },
+  {
+    "chapter": 31,
+    "articleSlug": "google-changes-the-audience",
+    "passageSlug": "kml-as-a-bridge-efe6519f22",
+    "passageTitle": "KML as a bridge",
+    "query": "KML Google Earth"
+  },
+  {
+    "chapter": 32,
+    "articleSlug": "open-source-changes-the-tools",
+    "passageSlug": "open-source-underneath-the-map-069a12d50e",
+    "passageTitle": "Open source underneath the map",
+    "query": "QGIS map"
+  },
+  {
+    "chapter": 32,
+    "articleSlug": "open-source-changes-the-tools",
+    "passageSlug": "web-maps-without-a-single-vendor-55defdf0d2",
+    "passageTitle": "Web maps without a single vendor",
+    "query": "OpenStreetMap New Zealand"
+  },
+  {
+    "chapter": 32,
+    "articleSlug": "open-source-changes-the-tools",
+    "passageSlug": "qgis-comes-into-view-91d01fe961",
+    "passageTitle": "QGIS comes into view",
+    "query": "QGIS New Zealand map"
+  },
+  {
+    "chapter": 32,
+    "articleSlug": "open-source-changes-the-tools",
+    "passageSlug": "the-national-map-adopts-open-tools-ce97893059",
+    "passageTitle": "The national map adopts open tools",
+    "query": "open source GIS map"
+  },
+  {
+    "chapter": 33,
+    "articleSlug": "open-data-changes-access",
+    "passageSlug": "viewing-and-reuse-8d2a393282",
+    "passageTitle": "Viewing and reuse",
+    "query": "open data New Zealand map"
+  },
+  {
+    "chapter": 33,
+    "articleSlug": "open-data-changes-access",
+    "passageSlug": "national-topography-becomes-downloadable-c8fefdff5a",
+    "passageTitle": "National topography becomes downloadable",
+    "query": "LINZ Topo50 map"
+  },
+  {
+    "chapter": 33,
+    "articleSlug": "open-data-changes-access",
+    "passageSlug": "the-linz-data-service-51393f242c",
+    "passageTitle": "The LINZ Data Service",
+    "query": "LINZ Data Service"
+  },
+  {
+    "chapter": 33,
+    "articleSlug": "open-data-changes-access",
+    "passageSlug": "teaching-people-to-use-the-open-data-environment-8f9efcc241",
+    "passageTitle": "Teaching people to use the open-data environment",
+    "query": "open data GIS New Zealand"
+  },
+  {
+    "chapter": 34,
+    "articleSlug": "mapping-leaves-the-office",
+    "passageSlug": "taking-gis-into-the-field-be5de9df71",
+    "passageTitle": "Taking GIS into the field",
+    "query": "New Zealand GPS field"
+  },
+  {
+    "chapter": 34,
+    "articleSlug": "mapping-leaves-the-office",
+    "passageSlug": "forty-ipaqs-and-six-toughbooks-e0abd14e18",
+    "passageTitle": "Forty iPAQs and six Toughbooks",
+    "query": "field GIS handheld"
+  },
+  {
+    "chapter": 34,
+    "articleSlug": "mapping-leaves-the-office",
+    "passageSlug": "the-camera-joins-the-record-ae96aa10db",
+    "passageTitle": "The camera joins the record",
+    "query": "field survey camera GPS"
+  },
+  {
+    "chapter": 34,
+    "articleSlug": "mapping-leaves-the-office",
+    "passageSlug": "field-reality-corrects-the-database-55a033c645",
+    "passageTitle": "Field reality corrects the database",
+    "query": "GPS ecology fieldwork"
+  },
+  {
+    "chapter": 35,
+    "articleSlug": "the-map-becomes-an-application",
+    "passageSlug": "s-map-and-our-environment-fabb1c89cf",
+    "passageTitle": "S-map and Our Environment",
+    "query": "S-map New Zealand"
+  },
+  {
+    "chapter": 35,
+    "articleSlug": "the-map-becomes-an-application",
+    "passageSlug": "maps-beside-numbers-9652c96e6c",
+    "passageTitle": "Maps beside numbers",
+    "query": "New Zealand thematic map"
+  },
+  {
+    "chapter": 35,
+    "articleSlug": "the-map-becomes-an-application",
+    "passageSlug": "storymaps-999bb8d90f",
+    "passageTitle": "StoryMaps",
+    "query": "StoryMap New Zealand"
+  },
+  {
+    "chapter": 35,
+    "articleSlug": "the-map-becomes-an-application",
+    "passageSlug": "public-applications-8ab5f7559c",
+    "passageTitle": "Public applications",
+    "query": "interactive map New Zealand"
+  },
+  {
+    "chapter": 36,
+    "articleSlug": "earth-observation-becomes-routine",
+    "passageSlug": "repeated-satellite-coverage-e6f8bc631d",
+    "passageTitle": "Repeated satellite coverage",
+    "query": "New Zealand Landsat"
+  },
+  {
+    "chapter": 36,
+    "articleSlug": "earth-observation-becomes-routine",
+    "passageSlug": "land-cover-through-time-b4b26dba97",
+    "passageTitle": "Land cover through time",
+    "query": "New Zealand land cover satellite"
+  },
+  {
+    "chapter": 36,
+    "articleSlug": "earth-observation-becomes-routine",
+    "passageSlug": "sentinel-changes-the-rhythm-f75e5d686d",
+    "passageTitle": "Sentinel changes the rhythm",
+    "query": "Sentinel New Zealand"
+  },
+  {
+    "chapter": 36,
+    "articleSlug": "earth-observation-becomes-routine",
+    "passageSlug": "finding-the-usable-observation-d9d482336e",
+    "passageTitle": "Finding the usable observation",
+    "query": "MODIS New Zealand"
+  },
+  {
+    "chapter": 37,
+    "articleSlug": "lidar-remakes-the-landscape",
+    "passageSlug": "christchurch-july-2003-a6aa735b22",
+    "passageTitle": "Christchurch, July 2003",
+    "query": "Christchurch lidar"
+  },
+  {
+    "chapter": 37,
+    "articleSlug": "lidar-remakes-the-landscape",
+    "passageSlug": "water-finds-the-low-places-d3f659379a",
+    "passageTitle": "Water finds the low places",
+    "query": "LiDAR flood map"
+  },
+  {
+    "chapter": 37,
+    "articleSlug": "lidar-remakes-the-landscape",
+    "passageSlug": "the-point-cloud-becomes-a-dataset-8577c437a3",
+    "passageTitle": "The point cloud becomes a dataset",
+    "query": "New Zealand point cloud lidar"
+  },
+  {
+    "chapter": 37,
+    "articleSlug": "lidar-remakes-the-landscape",
+    "passageSlug": "open-elevation-997878372e",
+    "passageTitle": "Open elevation",
+    "query": "LINZ lidar"
+  },
+  {
+    "chapter": 38,
+    "articleSlug": "mapping-from-a-drone",
+    "passageSlug": "a-crater-field-above-tongariro-7683399e76",
+    "passageTitle": "A crater field above Tongariro",
+    "query": "Tongariro drone"
+  },
+  {
+    "chapter": 38,
+    "articleSlug": "mapping-from-a-drone",
+    "passageSlug": "from-photographs-to-geometry-87961ebf58",
+    "passageTitle": "From photographs to geometry",
+    "query": "New Zealand drone photogrammetry"
+  },
+  {
+    "chapter": 38,
+    "articleSlug": "mapping-from-a-drone",
+    "passageSlug": "wetlands-from-low-altitude-15f5186a6e",
+    "passageTitle": "Wetlands from low altitude",
+    "query": "New Zealand UAV wetland"
+  },
+  {
+    "chapter": 38,
+    "articleSlug": "mapping-from-a-drone",
+    "passageSlug": "surveying-from-above-c796922a65",
+    "passageTitle": "Surveying from above",
+    "query": "drone orthomosaic New Zealand"
+  },
+  {
+    "chapter": 39,
+    "articleSlug": "from-flat-maps-to-3d",
+    "passageSlug": "three-dimensional-mapping-0d16451ce2",
+    "passageTitle": "Three dimensional mapping",
+    "query": "New Zealand 3D map"
+  },
+  {
+    "chapter": 39,
+    "articleSlug": "from-flat-maps-to-3d",
+    "passageSlug": "terrain-becomes-data-44fef5297f",
+    "passageTitle": "Terrain becomes data",
+    "query": "New Zealand terrain model"
+  },
+  {
+    "chapter": 39,
+    "articleSlug": "from-flat-maps-to-3d",
+    "passageSlug": "digital-auckland-31427c7f72",
+    "passageTitle": "Digital Auckland",
+    "query": "Digital Auckland 3D"
+  },
+  {
+    "chapter": 39,
+    "articleSlug": "from-flat-maps-to-3d",
+    "passageSlug": "buildings-meet-geography-2289da86de",
+    "passageTitle": "Buildings meet geography",
+    "query": "New Zealand 3D buildings"
+  },
+  {
+    "chapter": 40,
+    "articleSlug": "enterprise-gis",
+    "passageSlug": "shared-organisational-systems-fa8b4c43f6",
+    "passageTitle": "Shared organisational systems",
+    "query": "enterprise GIS map"
+  },
+  {
+    "chapter": 40,
+    "articleSlug": "enterprise-gis",
+    "passageSlug": "linz-builds-a-spatial-database-f3b06480da",
+    "passageTitle": "LINZ builds a spatial database",
+    "query": "LINZ spatial database"
+  },
+  {
+    "chapter": 40,
+    "articleSlug": "enterprise-gis",
+    "passageSlug": "doc-builds-a-national-platform-3782b862a2",
+    "passageTitle": "DOC builds a national platform",
+    "query": "DOCGIS map"
+  },
+  {
+    "chapter": 40,
+    "articleSlug": "enterprise-gis",
+    "passageSlug": "nzta-moves-to-kubernetes-2ad50c26cf",
+    "passageTitle": "NZTA moves to Kubernetes",
+    "query": "NZTA map data"
+  },
+  {
+    "chapter": 41,
+    "articleSlug": "cloud-services-and-apis",
+    "passageSlug": "a-new-zealand-spatial-marketplace-1aee9b50bf",
+    "passageTitle": "A New Zealand spatial marketplace",
+    "query": "New Zealand geospatial data portal"
+  },
+  {
+    "chapter": 41,
+    "articleSlug": "cloud-services-and-apis",
+    "passageSlug": "the-service-moves-to-the-cloud-fbd36de1bc",
+    "passageTitle": "The service moves to the cloud",
+    "query": "cloud GIS map service"
+  },
+  {
+    "chapter": 41,
+    "articleSlug": "cloud-services-and-apis",
+    "passageSlug": "types-of-service-d251b21eed",
+    "passageTitle": "Types of service",
+    "query": "WFS map New Zealand"
+  },
+  {
+    "chapter": 41,
+    "articleSlug": "cloud-services-and-apis",
+    "passageSlug": "geography-between-machines-9b5a821419",
+    "passageTitle": "Geography between machines",
+    "query": "GIS API map"
+  },
+  {
+    "chapter": 42,
+    "articleSlug": "the-real-time-map",
+    "passageSlug": "geonet-normalises-the-live-map-1f0c613fc3",
+    "passageTitle": "GeoNet normalises the live map",
+    "query": "GeoNet earthquake map"
+  },
+  {
+    "chapter": 42,
+    "articleSlug": "the-real-time-map",
+    "passageSlug": "canterbury-common-operating-picture-2010-26067d18a1",
+    "passageTitle": "Canterbury Common Operating Picture, 2010",
+    "query": "Canterbury earthquake map"
+  },
+  {
+    "chapter": 42,
+    "articleSlug": "the-real-time-map",
+    "passageSlug": "kaikoura-moves-the-map-again-e2a0d99be5",
+    "passageTitle": "Kaikōura moves the map again",
+    "query": "Kaikoura earthquake map"
+  },
+  {
+    "chapter": 42,
+    "articleSlug": "the-real-time-map",
+    "passageSlug": "cyclone-gabrielle-b274c9f004",
+    "passageTitle": "Cyclone Gabrielle",
+    "query": "Cyclone Gabrielle flood map"
+  },
+  {
+    "chapter": 43,
+    "articleSlug": "automating-the-gis-work",
+    "passageSlug": "the-repetitive-job-3a10af3db4",
+    "passageTitle": "The repetitive job",
+    "query": "GIS modelbuilder"
+  },
+  {
+    "chapter": 43,
+    "articleSlug": "automating-the-gis-work",
+    "passageSlug": "teaching-the-desktop-the-sequence-94f9a79d1f",
+    "passageTitle": "Teaching the desktop the sequence",
+    "query": "ArcGIS ModelBuilder"
+  },
+  {
+    "chapter": 43,
+    "articleSlug": "automating-the-gis-work",
+    "passageSlug": "python-enters-the-server-66aa2e3a19",
+    "passageTitle": "Python enters the server",
+    "query": "Python GIS"
+  },
+  {
+    "chapter": 43,
+    "articleSlug": "automating-the-gis-work",
+    "passageSlug": "maps-become-builds-57333fc6ed",
+    "passageTitle": "Maps become builds",
+    "query": "automated cartography GIS"
+  },
+  {
+    "chapter": 44,
+    "articleSlug": "gis-at-the-end-of-2025",
+    "passageSlug": "ai-before-the-boom-84462ade72",
+    "passageTitle": "AI before the boom",
+    "query": "AI map interpretation"
+  },
+  {
+    "chapter": 44,
+    "articleSlug": "gis-at-the-end-of-2025",
+    "passageSlug": "reading-maps-with-ai-ebb70c2c9a",
+    "passageTitle": "Reading maps with AI",
+    "query": "machine learning map"
+  },
+  {
+    "chapter": 44,
+    "articleSlug": "gis-at-the-end-of-2025",
+    "passageSlug": "ai-enters-practice-77e4d81263",
+    "passageTitle": "AI enters practice",
+    "query": "AI GIS"
+  },
+  {
+    "chapter": 44,
+    "articleSlug": "gis-at-the-end-of-2025",
+    "passageSlug": "ai-governance-9d4100aa44",
+    "passageTitle": "AI governance",
+    "query": "AI geospatial ethics"
+  }
+]
