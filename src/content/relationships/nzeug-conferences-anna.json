@@ -1,0 +1,16 @@
+{
+  "id": "relationship:nzeug-conferences-anna",
+  "a": "entity:nzeug-conference-programme",
+  "b": "person:anna-eilers",
+  "label": "facilitated sessions",
+  "basis": "The NZEUC 2018 programme names Anna Eilers as facilitator of local and regional government sessions.",
+  "passageIds": [
+    "passage:chapter-29-nzeug-community-programmes"
+  ],
+  "sources": [
+    {
+      "label": "Eagle Technology, NZEUC 2018 conference programme",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    }
+  ]
+}
