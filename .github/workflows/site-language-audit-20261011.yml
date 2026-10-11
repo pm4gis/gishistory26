@@ -1,0 +1,49 @@
+name: Audit and correct site editorial language
+on:
+  push:
+    branches: [editorial/site-language-audit-20261011]
+    paths:
+      - scripts/site-language-audit-20261011.mjs
+      - .github/workflows/site-language-audit-20261011.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  review:
+    if: github.ref == 'refs/heads/editorial/site-language-audit-20261011'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - name: Scan all public text and remove empty image disclaimers
+        run: node scripts/site-language-audit-20261011.mjs
+      - name: Run existing content tests and preservation checks
+        run: |
+          npm ci
+          npm test
+          npm run build
+          node scripts/assert-editorial-exclusions.mjs
+      - name: Save the complete audit and checked changes to this branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/ content/preservation-manifest.json docs/reviews/site-language-audit-20261011.md docs/reviews/site-language-candidates-20261011.csv
+          if ! git diff --cached --quiet; then
+            git commit -m 'Remove empty documentary caveats and record full-site editorial audit [skip ci]'
+            git push origin HEAD:editorial/site-language-audit-20261011
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: site-language-audit-20261011
+          path: |
+            docs/reviews/site-language-audit-20261011.md
+            docs/reviews/site-language-candidates-20261011.csv
+          retention-days: 30
