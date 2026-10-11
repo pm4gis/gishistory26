@@ -34,7 +34,7 @@ jobs:
           node scripts/eight-chapter-browser-qa.mjs
       - name: Check Cloudflare branch preview in desktop and mobile browsers
         env:
-          QA_BASE_URL: https://media-source-downloads-20261011.gishistory26.pages.dev
+          QA_BASE_URL: https://media-source-downloads-20261.gishistory26.pages.dev
         run: |
           for i in $(seq 1 24); do
             if curl -fsS "$QA_BASE_URL/images/gisborne-east-coast-luc-map-1967/" -o /tmp/preview-image.html; then break; fi
