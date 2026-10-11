@@ -1,0 +1,39 @@
+{
+  "id": "image:north-island-counties-districts-1981",
+  "slug": "north-island-counties-districts-1981",
+  "title": "North Island counties and districts map, 1981",
+  "assetPath": "/assets/historical/web/north-island-counties-districts-1981.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg",
+  "sourceName": "Wikimedia Commons",
+  "credit": "Department of Lands and Survey New Zealand; National Library of New Zealand, sourced from LINZ; via Wikimedia Commons.",
+  "licence": "CC BY-SA 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg",
+  "altText": "1981 map of North Island counties and districts with administrative boundaries and place labels.",
+  "caption": "North Island counties and districts in 1981, published by the Department of Lands and Survey before the 1989 local-government reforms.",
+  "themeIds": [
+    "local-government"
+  ],
+  "articleSlug": "councils-build-corporate-gis",
+  "chapterNumber": 23,
+  "dateDisplay": "1981",
+  "context": "This administrative map predates the 1989 local-government reforms. It helps orient the reader to the county and district system before the reform; it is an historical map, not a GIS interface or a representation of the new authorities.",
+  "originalAssetPath": "/assets/historical/original/north-island-counties-districts-1981.jpg",
+  "thumbnailPath": "/assets/historical/card/north-island-counties-districts-1981.webp",
+  "originalSha256": "ef609eab2fa08dbcdcebe0697c09ceba97615500252c4da0accf646fa0316805",
+  "webSha256": "70d19e9ff31ab428dc54e1227437d438a5c3edf6937348cb4f01bc2cf74b5a8d",
+  "originalWidth": 1920,
+  "originalHeight": 2317,
+  "sourceFileTitle": "File:New Zealand North Island Counties and Districts Map 1981.jpg; locally stored 1920 × 2317 rendition",
+  "headerCandidate": false,
+  "sourceOriginalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg/1920px-New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sourceMasterUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/New_Zealand_North_Island_Counties_and_Districts_Map_1981.jpg",
+  "relatedRecords": [
+    {
+      "name": "Department of Lands and Survey",
+      "url": "/entities/department-of-lands-and-survey/",
+      "role": "published the map"
+    }
+  ],
+  "derivativesNote": "The locally stored JPEG is a 1920 × 2317 Wikimedia Commons rendition. The 8192 × 9884 full-resolution master is 93.66 MB and remains linked above because it exceeds the site’s 25 MiB per-file asset limit. The rendition is stored unchanged; WebP display and card variants were resized without cropping."
+}
