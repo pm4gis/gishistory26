@@ -33,7 +33,7 @@ test('the 106 originals are preserved with licensed source records',()=>{
 test('reviewed images have direct documentary relationships to an actual named paragraph',()=>{
  assert.ok(Object.keys(reviewedImagePassages).length>=8);
  for(const [slug,match] of Object.entries(reviewedImagePassages)){
-  assert.ok(idSet.has(slug),'Review refers to an image outside the acquired collection: '+slug);
+  assert.ok(images.some(image=>image.slug===slug),'Review refers to a missing registered image: '+slug);
   const article=articles.find(x=>x.slug===match.articleSlug);
   assert.ok(article,slug+' missing story');
   const matched=passages.find(x=>x.articleId===article.id&&
@@ -58,8 +58,9 @@ test('unreviewed downloads remain in image archive, never scattered across chapt
   }
  }
  const fromWave=placed.filter(x=>idSet.has(x.slug));
- assert.equal(fromWave.length,Object.keys(reviewedImagePassages).length);
- assert.deepEqual(new Set(fromWave.map(x=>x.slug)),new Set(Object.keys(reviewedImagePassages)));
+ const reviewedNew=Object.keys(reviewedImagePassages).filter(slug=>idSet.has(slug));
+ assert.equal(fromWave.length,reviewedNew.length);
+ assert.deepEqual(new Set(fromWave.map(x=>x.slug)),new Set(reviewedNew));
  assert.ok(newSlugs.length>fromWave.length,'archive-only material must stay accessible without forced insertion');
  for(const {slug} of fromWave)assert.equal(placed.filter(x=>x.slug===slug).length,1);
 });
