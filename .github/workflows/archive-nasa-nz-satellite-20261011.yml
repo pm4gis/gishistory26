@@ -1,0 +1,45 @@
+name: Archive historical NASA and USGS New Zealand satellite scenes
+on:
+  push:
+    branches: [media/nasa-landsat-new-zealand-20261011]
+    paths:
+      - scripts/archive-nasa-nz-satellite-20261011.mjs
+      - docs/media/nasa-nz-satellite-wave-20261011.json
+      - .github/workflows/archive-nasa-nz-satellite-20261011.yml
+permissions: {contents: write}
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: media/nasa-landsat-new-zealand-20261011, fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - run: node scripts/archive-nasa-nz-satellite-20261011.mjs
+      - run: |
+          npm test
+          npm run build
+      - name: Commit verified original satellites to review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/ public/assets/historical/ docs/media/nasa-nz-satellite-wave-run-20261011.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive original NZ Landsat, MODIS and ASTER observations'
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin media/nasa-landsat-new-zealand-20261011
+            git rebase origin/media/nasa-landsat-new-zealand-20261011
+            git push origin HEAD:media/nasa-landsat-new-zealand-20261011
+          fi
+      - run: node -e "const d=require('./docs/media/nasa-nz-satellite-wave-run-20261011.json');console.log(d);if(!d.success)process.exit(1)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nasa-usgs-nz-satellite-report
+          path: docs/media/nasa-nz-satellite-wave-run-20261011.json
+          retention-days: 30
