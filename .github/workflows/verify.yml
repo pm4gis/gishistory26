@@ -18,6 +18,8 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - name: Verify excluded names absent from the site and generated pages
+        run: node scripts/assert-editorial-exclusions.mjs
       - run: node scripts/editorial.mjs state > docs/verification/editorial-state.json
       - run: node scripts/simulated-review.mjs
       - uses: actions/upload-artifact@v4
