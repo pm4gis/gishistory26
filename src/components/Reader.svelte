@@ -66,8 +66,7 @@
  {#each blocks(p) as b,blockIndex}
  {#if b.type==='figure'}<figure id={b.id}>{#if image(b)}<a href={'/images/'+image(b).slug+'/'}><img src={image(b).assetPath} alt={b.alt||image(b).altText} loading="lazy"/></a>{/if}<figcaption>{b.caption} {b.credit||b.source||''}{#if image(b)} <a href={'/images/'+image(b).slug+'/'}>Image details</a>{/if}</figcaption></figure>
  {:else}<p id={b.id}>{#each parts(b.text||'',p) as part}{#if part.record}<button class="inline-record" aria-haspopup="dialog" aria-expanded={selected?.id===part.record.id} on:mouseenter={(e)=>hover(part.record,e.currentTarget)} on:mouseleave={leavePreview} on:focus={(e)=>{if(!suppressPreview)open(part.record,e.currentTarget)}} on:click={(e)=>open(part.record,e.currentTarget,true)}>{part.text}</button>{:else}{part.text}{/if}{/each}</p>{/if}
- {#if blockIndex===0}
- {#each imagePlacements[p.id] || [] as document (document.id)}
+ {#each (imagePlacements[p.id] || []).filter(document => document.inlineAfterBlockId ? document.inlineAfterBlockId === b.id : blockIndex === 0) as document (document.id)}
  <figure class="passage-illustration">
   <a href={'/images/'+document.slug+'/'} aria-label={'View the image record for '+document.title}>
    <img src={document.assetPath} alt={document.altText} loading="lazy" decoding="async"/>
@@ -75,7 +74,6 @@
   <figcaption>{document.caption||document.context||document.title} <a href={'/images/'+document.slug+'/'}>Image details</a></figcaption>
  </figure>
  {/each}
- {/if}
  {#if blockIndex===Math.min(1,blocks(p).length-1)&&ngaPoutamaForPassage(p.id).length}
    <WanangaVideos inline={true} compact={true} videos={ngaPoutamaForPassage(p.id)}/>
  {/if}
