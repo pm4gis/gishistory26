@@ -1,0 +1,2171 @@
+{
+  "startedAt": "2026-10-11T06:24:46.650Z",
+  "target": 100,
+  "success": 86,
+  "failed": 0,
+  "held": 196,
+  "skipped": 0,
+  "byCategory": {
+    "Old maps of New Zealand": 35,
+    "Old maps of cities in New Zealand": 2,
+    "Crown Grant": 12,
+    "Old geological maps of New Zealand": 3,
+    "Old maps of the history of New Zealand": 5,
+    "Aerial photographs of New Zealand": 9,
+    "Landsat images of New Zealand": 1,
+    "Satellite pictures of New Zealand": 8,
+    "Geological maps of New Zealand": 6,
+    "Maps of earthquakes in New Zealand": 5
+  },
+  "sourceTypes": {
+    "Wikimedia Commons": 86,
+    "USGS": 0
+  },
+  "items": [
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:134_of_'Narrative_of_a_Voyage_to_New_Zealand%2C_performed_in_the_years_1814_and_1815%2C_in_company_with_the_Rev._S._Marsden%2C_etc'_(11003664973).jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "slug": "doc-historic-map-2020d7ac5512ebad",
+      "title": "(1842) MAP OF THE COLONY NEW ZEALAND",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "1842",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:(1842)_MAP_OF_THE_COLONY_NEW_ZEALAND.jpg",
+      "original": "/assets/historical/original/doc-historic-map-2020d7ac5512ebad.jpg",
+      "web": "/assets/historical/web/doc-historic-map-2020d7ac5512ebad.webp",
+      "sha256": "92c41d5d83f28fd0830277e687ab7c8069c41fc44b56da7f85b44c6d0b566345",
+      "bytes": 3477491,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-935e9ebe2e820dad",
+      "title": "1925 Air Routes of New Zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "1925",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:1925_Air_Routes_of_New_Zealand.jpg",
+      "original": "/assets/historical/original/doc-historic-map-935e9ebe2e820dad.jpg",
+      "web": "/assets/historical/web/doc-historic-map-935e9ebe2e820dad.webp",
+      "sha256": "0b1c567ec843db47b37d8e676dd37c1dfea25319278655ecdc26445aa4af6297",
+      "bytes": 782047,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-a2e432b8bed0bd6c",
+      "title": "1938 Index to Admiralty charts of New Zealand nla.obj-574968413",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "1938",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:1938_Index_to_Admiralty_charts_of_New_Zealand_nla.obj-574968413.jpg",
+      "original": "/assets/historical/original/doc-historic-map-a2e432b8bed0bd6c.jpg",
+      "web": "/assets/historical/web/doc-historic-map-a2e432b8bed0bd6c.webp",
+      "sha256": "496f71efca2def660ddae1d65e201d64c83a5cb0df3b076456a7fd2738fad432",
+      "bytes": 13480228,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:209_of_'Pitman's_Commercial_Geography_of_the_World'_(11248720244).jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:22_of_'(The_New_Zealand_Pilot._From_surveys_made_in_H.M._Ships_Acheron_and_Pandora._..._Compiled_by_..._G._H._Richards_and_F._J._Evans.)'_(11165413216).jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "slug": "doc-historic-map-b654fee9b64015f4",
+      "title": "A chart of Nelson Haven, Tasman's Gulf, New Zealand MapColl-834.1aj",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:A_chart_of_Nelson_Haven%2C_Tasman's_Gulf%2C_New_Zealand_MapColl-834.1aj.jpg",
+      "original": "/assets/historical/original/doc-historic-map-b654fee9b64015f4.jpg",
+      "web": "/assets/historical/web/doc-historic-map-b654fee9b64015f4.webp",
+      "sha256": "e4b984bd5afcc5c7261a86dd34b1e3c3c4b86f3d4cb679adaab68a100c00ce25",
+      "bytes": 117972,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-db3d935aa147e91b",
+      "title": "Admiralty Chart Catalogue 1967 Page 080 Index N",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "1967",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_Catalogue_1967_Page_080_Index_N.jpg",
+      "original": "/assets/historical/original/doc-historic-map-db3d935aa147e91b.jpg",
+      "web": "/assets/historical/web/doc-historic-map-db3d935aa147e91b.webp",
+      "sha256": "35973ceeddb86f9b85ef01e03461b4d9415c7d55b61b24e2883614cb7cfb79bc",
+      "bytes": 7724531,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-7b0ffa700c4a8aab",
+      "title": "Admiralty Chart No 1090 Chart of the Bay of Islands (western half) (16030576661), Surveyed 1849",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "1849",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1090_Chart_of_the_Bay_of_Islands_(western_half)_(16030576661)%2C_Surveyed_1849.jpg",
+      "original": "/assets/historical/original/doc-historic-map-7b0ffa700c4a8aab.jpg",
+      "web": "/assets/historical/web/doc-historic-map-7b0ffa700c4a8aab.webp",
+      "sha256": "febe46db399078c19ef5e288666e0c7b3db538e9329ade50c0207552bd40a5d4",
+      "bytes": 3931212,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1090_Plans_on_the_north_coast_of_North_Island%2C_New_Zealand%2C_Published_1942.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-historic-map-17bed2d97b6abec1",
+      "title": "Admiralty Chart No 1212 New Zealand, Published 1856",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "1856",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1212_New_Zealand%2C_Published_1856.jpg",
+      "original": "/assets/historical/original/doc-historic-map-17bed2d97b6abec1.jpg",
+      "web": "/assets/historical/web/doc-historic-map-17bed2d97b6abec1.webp",
+      "sha256": "a53e9d53550529952e69ac2bb9b6c4a9e94be661dd2c46539756b1946dee7970",
+      "bytes": 12829907,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-8dfda42e6692dcd8",
+      "title": "Admiralty Chart No 1212 The islands of New Zealand compiled from the voyages of Captain Cook and all the subsequent British and French navigators, Published 1838",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "1838",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1212_The_islands_of_New_Zealand_compiled_from_the_voyages_of_Captain_Cook_and_all_the_subsequent_British_and_French_navigators%2C_Published_1838.jpg",
+      "original": "/assets/historical/original/doc-historic-map-8dfda42e6692dcd8.jpg",
+      "web": "/assets/historical/web/doc-historic-map-8dfda42e6692dcd8.webp",
+      "sha256": "15ac6a85ed6185e8ed76e28e2b31d7344157c3c40b1a04e3ebddaed7a04467e0",
+      "bytes": 8668368,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-ed11019d3f8d3947",
+      "title": "Admiralty Chart No 1575 Akaroa Harbour (16380266047), Surveyed 1849-1850",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "1849",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1575_Akaroa_Harbour_(16380266047)%2C_Surveyed_1849-1850.jpg",
+      "original": "/assets/historical/original/doc-historic-map-ed11019d3f8d3947.jpg",
+      "web": "/assets/historical/web/doc-historic-map-ed11019d3f8d3947.webp",
+      "sha256": "a86c719a4f641af73db6c5a6ac60f5f7eab526cd1bbb450e946a0ad77eab7404",
+      "bytes": 5689514,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_2574_Mercury_Bay%2C_Published_1940.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_615_New_Zealand_South_Island%2C_Province_of_Otago._George%2C_Bligh_and_Milford_Sounds%2C_Published_1884.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_788_South_Pacific_Ocean_Western_Sheet%2C_Published_1877.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:An_atlas_of_commercial_geography_(1913)_(14779122374).jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "slug": "doc-historic-map-9823132ada1ac12a",
+      "title": "Auckland Islands (Maungahuka) (20648924731)",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Auckland_Islands_(Maungahuka)_(20648924731).jpg",
+      "original": "/assets/historical/original/doc-historic-map-9823132ada1ac12a.jpg",
+      "web": "/assets/historical/web/doc-historic-map-9823132ada1ac12a.webp",
+      "sha256": "ca097c8ad033ece28032ea3085ab65abddee0d359a2caf250a079cd2c0397358",
+      "bytes": 2904373,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Bay_of_Islands_cropped_from_Admiralty_Chart_No_1090_Plans_on_the_north_coast_of_North_Island%2C_New_Zealand%2C_Published_1942.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-historic-map-eb827bb971877be7",
+      "title": "Bay of Islands New Zealand (by Captain James Cook, 1773)",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "1773",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Bay_of_Islands_New_Zealand_(by_Captain_James_Cook%2C_1773).jpg",
+      "original": "/assets/historical/original/doc-historic-map-eb827bb971877be7.jpg",
+      "web": "/assets/historical/web/doc-historic-map-eb827bb971877be7.webp",
+      "sha256": "14eb1134528f2315dee97cb3440c44e08db78fb2bdbc6002526cb61bc4acc84b",
+      "bytes": 1481592,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-6c572e829a93c5f5",
+      "title": "Black Map Christchurch 1850",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "1850",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Map_Christchurch_1850.jpg",
+      "original": "/assets/historical/original/doc-historic-map-6c572e829a93c5f5.jpg",
+      "web": "/assets/historical/web/doc-historic-map-6c572e829a93c5f5.webp",
+      "sha256": "b3b8bbabb069e5f982f00b39fd326700321039bbcfb77a5bcba4f57cc969d5fc",
+      "bytes": 1007417,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-19bab61eca46447e",
+      "title": "Black Map, Christchurch (12485843915)",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Map%2C_Christchurch_(12485843915).jpg",
+      "original": "/assets/historical/original/doc-historic-map-19bab61eca46447e.jpg",
+      "web": "/assets/historical/web/doc-historic-map-19bab61eca46447e.webp",
+      "sha256": "62ca4e1a16ecc1c1a4db9a50ba42b37fd8be03f2f10f8815e7b328ac6a3eeec8",
+      "bytes": 1458141,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Map%2C_Christchurch.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Botanische_Jahrb%C3%BCcher_f%C3%BCr_Systematik%2C_Pflanzengeschichte_und_Pflanzengeographie_(1897)_(19780047814).jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:British_Library_digitised_image_from_page_682_of_%22Stanford's_Compendium_of_Geography_and_Travel_..._Australasia._Edited_and_extended_by_A._R._Wallace_..._With_ethnological_appendix_by_A._H._Keane_..._Fifth_edition%22.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "slug": "doc-historic-map-35e48222f8652570",
+      "title": "Catalogue of Admiralty Charts 1914 Index Sheet 14 New Zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "1914",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Catalogue_of_Admiralty_Charts_1914_Index_Sheet_14_New_Zealand.png",
+      "original": "/assets/historical/original/doc-historic-map-35e48222f8652570.png",
+      "web": "/assets/historical/web/doc-historic-map-35e48222f8652570.webp",
+      "sha256": "aa08a264ff765c8040ff53bd6467347424fa79e82543d9b443dfe4456a2d355e",
+      "bytes": 5279396,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-bd17a9d533e4dcb1",
+      "title": "Chapman's map of the Middle (South) Island, c.1860-1869 (16592596960)",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "1860",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chapman's_map_of_the_Middle_(South)_Island%2C_c.1860-1869_(16592596960).jpg",
+      "original": "/assets/historical/original/doc-historic-map-bd17a9d533e4dcb1.jpg",
+      "web": "/assets/historical/web/doc-historic-map-bd17a9d533e4dcb1.webp",
+      "sha256": "c4ee745c59a55cd6aafcbc05f78c9e42d4fb15db818d29b5bfb770cedacea5b7",
+      "bytes": 11116552,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Chapman's_map_of_the_Waikato%2C_1866.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-historic-map-fd67f74a9e0f5edf",
+      "title": "Chart of Mercury Bay by Richard Pickersgill (1769)",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "1769",
+      "licence": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chart_of_Mercury_Bay_by_Richard_Pickersgill_(1769).jpg",
+      "original": "/assets/historical/original/doc-historic-map-fd67f74a9e0f5edf.jpg",
+      "web": "/assets/historical/web/doc-historic-map-fd67f74a9e0f5edf.webp",
+      "sha256": "3f8253c32b12dff7238211d7797636bb390b9f606fb8c331dda937cf21d52aea",
+      "bytes": 124182,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-3087e70277bc5965",
+      "title": "Chart of Tolaga Bay New Zealand (by Captain James Cook, 1773)",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "1773",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Chart_of_Tolaga_Bay_New_Zealand_(by_Captain_James_Cook%2C_1773).jpg",
+      "original": "/assets/historical/original/doc-historic-map-3087e70277bc5965.jpg",
+      "web": "/assets/historical/web/doc-historic-map-3087e70277bc5965.webp",
+      "sha256": "edabd7ac047ebcb51d7621be0e5f434b177f9b295f858227b5179bafc66b3c7f",
+      "bytes": 1426271,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-dd0af843e2134e11",
+      "title": "Church Street Rail Crossing, Onehunga, Auckland (16807288390)",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Church_Street_Rail_Crossing%2C_Onehunga%2C_Auckland_(16807288390).jpg",
+      "original": "/assets/historical/original/doc-historic-map-dd0af843e2134e11.jpg",
+      "web": "/assets/historical/web/doc-historic-map-dd0af843e2134e11.webp",
+      "sha256": "4b1218bb7c6a1a600777de9aae381266b11e5b1a5b2fc5dce4586272204d9750",
+      "bytes": 5198566,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-2ef3f257c1dd13e8",
+      "title": "Collier's 1921 New Zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "1921",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Collier's_1921_New_Zealand.jpg",
+      "original": "/assets/historical/original/doc-historic-map-2ef3f257c1dd13e8.jpg",
+      "web": "/assets/historical/web/doc-historic-map-2ef3f257c1dd13e8.webp",
+      "sha256": "217d45f011045eece862c0abcdb18e0ea9632ecac20a73cae08e2361c62b12ea",
+      "bytes": 709580,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-a5efcae9cdd91ed9",
+      "title": "Cook chart of New Zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cook_chart_of_New_Zealand.jpg",
+      "original": "/assets/historical/original/doc-historic-map-a5efcae9cdd91ed9.jpg",
+      "web": "/assets/historical/web/doc-historic-map-a5efcae9cdd91ed9.webp",
+      "sha256": "4d70fd7c0456b2416022ab9b070aa144e2725773af23107d94549bd5486535de",
+      "bytes": 307926,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-299d1ee93ac71751",
+      "title": "Cook new zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cook_new_zealand.jpg",
+      "original": "/assets/historical/original/doc-historic-map-299d1ee93ac71751.jpg",
+      "web": "/assets/historical/web/doc-historic-map-299d1ee93ac71751.webp",
+      "sha256": "354f7a5bae5f88f6eb87bc4166237d7d13664dd6a274824ef89c011171a86c04",
+      "bytes": 314481,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-00f0fdd6ea708a84",
+      "title": "Cook.south.island",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Cook.south.island.jpg",
+      "original": "/assets/historical/original/doc-historic-map-00f0fdd6ea708a84.jpg",
+      "web": "/assets/historical/web/doc-historic-map-00f0fdd6ea708a84.webp",
+      "sha256": "c4d28be8262ba4ee28cb8e16b995418c84d53356f175ca37b5295128d4cc8467",
+      "bytes": 522368,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-0a422a6a010ddf9c",
+      "title": "CookchartNorthIsland",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:CookchartNorthIsland.jpg",
+      "original": "/assets/historical/original/doc-historic-map-0a422a6a010ddf9c.jpg",
+      "web": "/assets/historical/web/doc-historic-map-0a422a6a010ddf9c.webp",
+      "sha256": "7143cada56831291e673a9354bc63fa507f92024eee56a694655a6f1c13da3b7",
+      "bytes": 8672611,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_(Longwood_Survey_District)_Blocks_1%2C_2%2C_3.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Town_of_Woodend.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-historic-map-5b740651f436c1a9",
+      "title": "Detail from a map of Wanganui River Valley, Canterbury",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Detail_from_a_map_of_Wanganui_River_Valley%2C_Canterbury.jpg",
+      "original": "/assets/historical/original/doc-historic-map-5b740651f436c1a9.jpg",
+      "web": "/assets/historical/web/doc-historic-map-5b740651f436c1a9.webp",
+      "sha256": "5ca82741af91473ffa67b286471e9d4c23970ae5004d0e56a84136ba90926878",
+      "bytes": 3163274,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-16c540bc8d329155",
+      "title": "EB1911 New Zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "1911",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:EB1911_New_Zealand.jpg",
+      "original": "/assets/historical/original/doc-historic-map-16c540bc8d329155.jpg",
+      "web": "/assets/historical/web/doc-historic-map-16c540bc8d329155.webp",
+      "sha256": "15278104b601a0a9ab2850eb8fd36019f2eb28808fe60165616a0fbeb8010206",
+      "bytes": 927911,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-34de07126ec3a31e",
+      "title": "Erewhon map",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Erewhon_map.png",
+      "original": "/assets/historical/original/doc-historic-map-34de07126ec3a31e.png",
+      "web": "/assets/historical/web/doc-historic-map-34de07126ec3a31e.webp",
+      "sha256": "8df5db2df2c64c6cc0c9bef8e130ea0b849281d289605f854e7513d3b3aed810",
+      "bytes": 467573,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-a5f0313486b8c477",
+      "title": "Erewhon.map",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Erewhon.map.jpg",
+      "original": "/assets/historical/original/doc-historic-map-a5f0313486b8c477.jpg",
+      "web": "/assets/historical/web/doc-historic-map-a5f0313486b8c477.webp",
+      "sha256": "a7f58de372e8211a9e5ab92a596e2a17ce23ab423973d8a83531d24213e1fb29",
+      "bytes": 328963,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-e8a763b2bd992936",
+      "title": "FMIB 35269 Relief Map of South Island, New Zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_35269_Relief_Map_of_South_Island%2C_New_Zealand.jpeg",
+      "original": "/assets/historical/original/doc-historic-map-e8a763b2bd992936.jpg",
+      "web": "/assets/historical/web/doc-historic-map-e8a763b2bd992936.webp",
+      "sha256": "e4d4489f3353a83a7c46591f803a43e7bd0d62a17129a600ef8c2f30b0641ed6",
+      "bytes": 129317,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-3cf82146ff3e3e64",
+      "title": "FMIB 35271 Relief Map of North Island, New Zealand",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_35271_Relief_Map_of_North_Island%2C_New_Zealand.jpeg",
+      "original": "/assets/historical/original/doc-historic-map-3cf82146ff3e3e64.jpg",
+      "web": "/assets/historical/web/doc-historic-map-3cf82146ff3e3e64.webp",
+      "sha256": "d75b5ab122de99c38875ee88f526f092aa3e78739b53c2fc2293504ef6f1d1fb",
+      "bytes": 180564,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-c0bd5308b6e73017",
+      "title": "FMIB 50799 Plan of Foreshore of Head of Perseverance Harbour, Campbell Island, Showing the Number and Direction of Dykes",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_50799_Plan_of_Foreshore_of_Head_of_Perseverance_Harbour%2C_Campbell_Island%2C_Showing_the_Number_and_Direction_of_Dykes.jpeg",
+      "original": "/assets/historical/original/doc-historic-map-c0bd5308b6e73017.jpg",
+      "web": "/assets/historical/web/doc-historic-map-c0bd5308b6e73017.webp",
+      "sha256": "3c79d97d973d169ddee6804a7825f486961943fda039f475933450b973ce6b79",
+      "bytes": 81489,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-cb851feb90fa2f0f",
+      "title": "FMIB 50816 Sketch Map of the Antipodes Islands",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_50816_Sketch_Map_of_the_Antipodes_Islands.jpeg",
+      "original": "/assets/historical/original/doc-historic-map-cb851feb90fa2f0f.jpg",
+      "web": "/assets/historical/web/doc-historic-map-cb851feb90fa2f0f.webp",
+      "sha256": "2b49febc78df59e532ad5c6a6c8544a76453460be30bd3399a6e984e2d7988ff",
+      "bytes": 177576,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_50818_Sketch_Map_of_Campbell_Island.jpeg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_50819_Sketch_Map_of_the_Auckland_Islands.jpeg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Image_taken_from_page_8_of_'The_Wonderland_of_the_Antipodes%3B_and_other_sketches_of_travel_in_the_North_Island_of_New_Zealand_..._With_map_and_..._illustrations%2C_etc'_(11099490936).jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Islands_of_New_Zealand%2C_Joel_Samuel_Polack.jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY 1.0"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Map_and_Photo_of_Argo_(11969040323).jpg",
+      "category": "Old maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "slug": "doc-historic-map-777b1981f3a8ee1d",
+      "title": "Map of Beaumont Survey District (1922)",
+      "category": "Old maps of New Zealand",
+      "chapter": 15,
+      "articleSlug": "topography-goes-digital",
+      "date": "1922",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Beaumont_Survey_District_(1922).jpg",
+      "original": "/assets/historical/original/doc-historic-map-777b1981f3a8ee1d.jpg",
+      "web": "/assets/historical/web/doc-historic-map-777b1981f3a8ee1d.webp",
+      "sha256": "ba52aa3deea16d60385313966866625de5f4c769dde4c1c37c3e7cc49b720234",
+      "bytes": 3251137,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-afc7645352d7d630",
+      "title": "Map of Blackstone Survey District (1955)",
+      "category": "Old maps of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "1955",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Blackstone_Survey_District_(1955).jpg",
+      "original": "/assets/historical/original/doc-historic-map-afc7645352d7d630.jpg",
+      "web": "/assets/historical/web/doc-historic-map-afc7645352d7d630.webp",
+      "sha256": "4cac9f4241908695ae1b516ffc936349356531d25a28dd5dc30d52fa09f2b5de",
+      "bytes": 4429011,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-87bb7d7701cec516",
+      "title": "Map of Domet Survey District (unknown date)",
+      "category": "Old maps of New Zealand",
+      "chapter": 5,
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Domet_Survey_District_(unknown_date).jpg",
+      "original": "/assets/historical/original/doc-historic-map-87bb7d7701cec516.jpg",
+      "web": "/assets/historical/web/doc-historic-map-87bb7d7701cec516.webp",
+      "sha256": "fa3205e3f15532f650c520b4753d1832f8bfb2a8cab8f64a14c12680f23941f1",
+      "bytes": 2636753,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-8dd373784e381549",
+      "title": "Map of Kakanui Survey District (1911)",
+      "category": "Old maps of New Zealand",
+      "chapter": 3,
+      "articleSlug": "drawing-maps-by-machine",
+      "date": "1911",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Kakanui_Survey_District_(1911).jpg",
+      "original": "/assets/historical/original/doc-historic-map-8dd373784e381549.jpg",
+      "web": "/assets/historical/web/doc-historic-map-8dd373784e381549.webp",
+      "sha256": "8ace72dd1925c4df6b59b464d5251c988ca05b896025c21f560fd4e34239138a",
+      "bytes": 3087520,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-b2ce49ca6259e58c",
+      "title": "A sketch of Hau Ridi (Napier) in the south part of Hawkes Bay, New Zealand by Thomas Wing, 1837",
+      "category": "Old maps of cities in New Zealand",
+      "chapter": 23,
+      "articleSlug": "councils-build-corporate-gis",
+      "date": "1837",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:A_sketch_of_Hau_Ridi_(Napier)_in_the_south_part_of_Hawkes_Bay%2C_New_Zealand_by_Thomas_Wing%2C_1837.jpg",
+      "original": "/assets/historical/original/doc-historic-map-b2ce49ca6259e58c.jpg",
+      "web": "/assets/historical/web/doc-historic-map-b2ce49ca6259e58c.webp",
+      "sha256": "58e56729fd8df75f40bf77274eee6ca6065d607da405dc4735888dcc3b6d5d6d",
+      "bytes": 11161387,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-a868c215fda3b827",
+      "title": "Plan of new plymouth 1860-61",
+      "category": "Old maps of cities in New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "1860",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Plan_of_new_plymouth_1860-61.jpg",
+      "original": "/assets/historical/original/doc-historic-map-a868c215fda3b827.jpg",
+      "web": "/assets/historical/web/doc-historic-map-a868c215fda3b827.webp",
+      "sha256": "5c28d51b7fba343eaf8305779c8fbc7514ab3200aee7372e95d26284ee358cbe",
+      "bytes": 138985,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Palmerston_North_1942_map.jpg",
+      "category": "Old maps of cities in New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_(Longwood_Survey_District)_Blocks_1%2C_2%2C_3.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Campbelltown_Hundred.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Chatton_Village_Settlement_(Block_II_Chatton_Survey_District).jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Eastern_Bush_Township.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Eyre_Survey_District%2C_Blocks_XXXI%2C_XXXV%2C_XLI.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Forest_Hill_Hundred%2C_Part_Blocks_II%2C_IX%2C_X%2C_XII.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Heddon_Bush_Township.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Hokonui_Survey_District%2C_Blocks_XVI%2C_XVII%2C_XXI%2C_XXII%2C_XXIII%2C_XXVIII%2C_XXIX%2C_XXX%2C_XXXI%2C_XXXII%2C_XXXVIII%2C_XL%2C_XLI%2C_XLIX%2C_LI%2C_LVIII.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Invercargill_Hundred%2C_Blocks_IV%2C_V.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-cadastre-0b896091338c2f90",
+      "title": "Crown Grant Map - Invercargill Hundred, Part Block XV - Educational Reserve",
+      "category": "Crown Grant",
+      "chapter": 13,
+      "articleSlug": "the-cadastre-becomes-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Invercargill_Hundred%2C_Part_Block_XV_-_Educational_Reserve.jpg",
+      "original": "/assets/historical/original/doc-cadastre-0b896091338c2f90.jpg",
+      "web": "/assets/historical/web/doc-cadastre-0b896091338c2f90.webp",
+      "sha256": "04f479e26aeebdfa3494902e946325a50330612052ccf35862592730cda15638",
+      "bytes": 6443265,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Invercargill_North.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-cadastre-9142079fd0314bd8",
+      "title": "Crown Grant Map - Jacobs River Hundred, Part Blocks I - VI, XVII - XIX",
+      "category": "Crown Grant",
+      "chapter": 14,
+      "articleSlug": "landonline",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Jacobs_River_Hundred%2C_Part_Blocks_I_-_VI%2C_XVII_-_XIX.jpg",
+      "original": "/assets/historical/original/doc-cadastre-9142079fd0314bd8.jpg",
+      "web": "/assets/historical/web/doc-cadastre-9142079fd0314bd8.webp",
+      "sha256": "d12e9588f4d5e8e356468639646dd0bcdbb5f07d7903ddbf2712ce2191bd2a79",
+      "bytes": 8779100,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-cadastre-bf16d1ffbb4a12cd",
+      "title": "Crown Grant Map - Jacobs River Hundred, Part Blocks XIV, XVI, Aparima Hundred, Part - Ringway Settlement",
+      "category": "Crown Grant",
+      "chapter": 17,
+      "articleSlug": "roads-addresses-and-property",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Jacobs_River_Hundred%2C_Part_Blocks_XIV%2C_XVI%2C_Aparima_Hundred%2C_Part_-_Ringway_Settlement.jpg",
+      "original": "/assets/historical/original/doc-cadastre-bf16d1ffbb4a12cd.jpg",
+      "web": "/assets/historical/web/doc-cadastre-bf16d1ffbb4a12cd.webp",
+      "sha256": "39519bd73a2a0f6874c2461775655a59899ba49b0e0202cd169e0891398b7141",
+      "bytes": 5330806,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-cadastre-d0a9d201bc3c1739",
+      "title": "Crown Grant Map - Lindhurst Survey District, Blocks I, II, V - VIII",
+      "category": "Crown Grant",
+      "chapter": 13,
+      "articleSlug": "the-cadastre-becomes-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Lindhurst_Survey_District%2C_Blocks_I%2C_II%2C_V_-_VIII.jpg",
+      "original": "/assets/historical/original/doc-cadastre-d0a9d201bc3c1739.jpg",
+      "web": "/assets/historical/web/doc-cadastre-d0a9d201bc3c1739.webp",
+      "sha256": "27a05cf3f806c51703594d14c7dc202841b3e96b2316f64ccb4b3f23b6b26dc9",
+      "bytes": 69597,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Longwood_Survey_District.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Mabel_Survey_District%2C_Blocks_I_-_VII%2C_Lothian_Survey_District%2C_Blocks_I_-_VIII.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Mavora_Survey_District_Block_I.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-cadastre-f3cb2053093d719e",
+      "title": "Crown Grant Map - Mokoreta Township",
+      "category": "Crown Grant",
+      "chapter": 14,
+      "articleSlug": "landonline",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Mokoreta_Township.jpg",
+      "original": "/assets/historical/original/doc-cadastre-f3cb2053093d719e.jpg",
+      "web": "/assets/historical/web/doc-cadastre-f3cb2053093d719e.webp",
+      "sha256": "d7e2f7a8ef2ffd0861159a98b108360cf6d1afd10bf642d8f34b2821a68cd2c6",
+      "bytes": 74201,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Oban_Township.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Otara_Survey_District%2C_Blocks_I_-_VII.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Rakiura_Township.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_South_Wakatipu_Survey_District_Blocks_I%2C_II.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Taringatura_Survey_District%2C_Blocks_I_-_XX.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-cadastre-794a3655d9dab411",
+      "title": "Crown Grant Map - Terepa Estate",
+      "category": "Crown Grant",
+      "chapter": 17,
+      "articleSlug": "roads-addresses-and-property",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Terepa_Estate.jpg",
+      "original": "/assets/historical/original/doc-cadastre-794a3655d9dab411.jpg",
+      "web": "/assets/historical/web/doc-cadastre-794a3655d9dab411.webp",
+      "sha256": "a2c6c895abc260e0cb60b571949636899e8009d94367249dad7f923801c02812",
+      "bytes": 3847474,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-cadastre-3a9be9732bba2ec1",
+      "title": "Crown Grant Map - Town of Cromarty",
+      "category": "Crown Grant",
+      "chapter": 13,
+      "articleSlug": "the-cadastre-becomes-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Town_of_Cromarty.jpg",
+      "original": "/assets/historical/original/doc-cadastre-3a9be9732bba2ec1.jpg",
+      "web": "/assets/historical/web/doc-cadastre-3a9be9732bba2ec1.webp",
+      "sha256": "1092ca5a7c4ebff6b9527b887dd2991d6f8c49929ac3e5e99cc55a5b79a95305",
+      "bytes": 7536487,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Town_of_East_Gore%2C_Blocks_1_-_17%2C_19.jpg",
+      "category": "Crown Grant",
+      "status": "held",
+      "reason": "too large to archive"
+    },
+    {
+      "slug": "doc-cadastre-30760e43deee1695",
+      "title": "Crown Grant Map - Town of Gore, Part",
+      "category": "Crown Grant",
+      "chapter": 14,
+      "articleSlug": "landonline",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Town_of_Gore%2C_Part.jpg",
+      "original": "/assets/historical/original/doc-cadastre-30760e43deee1695.jpg",
+      "web": "/assets/historical/web/doc-cadastre-30760e43deee1695.webp",
+      "sha256": "913599dd06b0c3bf5cc4fcc859334c5574e1c300aa628e730d3dc1f251cf9bb8",
+      "bytes": 4672040,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-cadastre-4692b3c6c84d230a",
+      "title": "Crown Grant Map - Town of Mataura Bridge - Blocks I - XVI",
+      "category": "Crown Grant",
+      "chapter": 17,
+      "articleSlug": "roads-addresses-and-property",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Town_of_Mataura_Bridge_-_Blocks_I_-_XVI.jpg",
+      "original": "/assets/historical/original/doc-cadastre-4692b3c6c84d230a.jpg",
+      "web": "/assets/historical/web/doc-cadastre-4692b3c6c84d230a.webp",
+      "sha256": "b4ccb4b1ca482c2117e72ec6b592d5bb4959f4d51bb35e055cb3188aa7c18227",
+      "bytes": 5633313,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-cadastre-3770422ed61e14cb",
+      "title": "Crown Grant Map - Town of Tokanui",
+      "category": "Crown Grant",
+      "chapter": 13,
+      "articleSlug": "the-cadastre-becomes-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Town_of_Tokanui.jpg",
+      "original": "/assets/historical/original/doc-cadastre-3770422ed61e14cb.jpg",
+      "web": "/assets/historical/web/doc-cadastre-3770422ed61e14cb.webp",
+      "sha256": "b716acd69e4c282ae6b57a6e35d72d42b1854a5edc27dda72dd5126b18ac82e3",
+      "bytes": 4787930,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-cadastre-43a84019990b0233",
+      "title": "Crown Grant Map - Town of Wyndham - Sheet No. 1",
+      "category": "Crown Grant",
+      "chapter": 14,
+      "articleSlug": "landonline",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Town_of_Wyndham_-_Sheet_No._1.jpg",
+      "original": "/assets/historical/original/doc-cadastre-43a84019990b0233.jpg",
+      "web": "/assets/historical/web/doc-cadastre-43a84019990b0233.webp",
+      "sha256": "6c747374cb84c05fdcd2803f54881e711015654591e20d043c5bd90bd20e8957",
+      "bytes": 8080014,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-cadastre-a7958ff4ae21597d",
+      "title": "Crown Grant Map - Township of Feldwick",
+      "category": "Crown Grant",
+      "chapter": 17,
+      "articleSlug": "roads-addresses-and-property",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Crown_Grant_Map_-_Township_of_Feldwick.jpg",
+      "original": "/assets/historical/original/doc-cadastre-a7958ff4ae21597d.jpg",
+      "web": "/assets/historical/web/doc-cadastre-a7958ff4ae21597d.webp",
+      "sha256": "f6308dcd8261903b2a744b440373b9d2fcf78e45a8f71353a19f5d0440118f36",
+      "bytes": 5256953,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-geology-8b75496a3141c4ff",
+      "title": "FMIB 50791 Geological Map of Campbell Island",
+      "category": "Old geological maps of New Zealand",
+      "chapter": 7,
+      "articleSlug": "mapping-land-as-data",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_50791_Geological_Map_of_Campbell_Island.jpeg",
+      "original": "/assets/historical/original/doc-geology-8b75496a3141c4ff.jpg",
+      "web": "/assets/historical/web/doc-geology-8b75496a3141c4ff.webp",
+      "sha256": "399467913d3c02cece678ab6d79a8a2603571144d42df9221793aec22292ee43",
+      "bytes": 233012,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-geology-c5740b4e9a49ab59",
+      "title": "FMIB 50811 Geological Sketch Map of Southern Half of Auckland Islands",
+      "category": "Old geological maps of New Zealand",
+      "chapter": 9,
+      "articleSlug": "science-goes-spatial",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:FMIB_50811_Geological_Sketch_Map_of_Southern_Half_of_Auckland_Islands.jpeg",
+      "original": "/assets/historical/original/doc-geology-c5740b4e9a49ab59.jpg",
+      "web": "/assets/historical/web/doc-geology-c5740b4e9a49ab59.webp",
+      "sha256": "03940ebd645a1019616a3bd3b389b02cb73ee0fa7670eb15547e076f9e6bf166",
+      "bytes": 292690,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-geology-06e1e56e2eeb9d53",
+      "title": "Geological sketch map of the Chatham Islands",
+      "category": "Old geological maps of New Zealand",
+      "chapter": 4,
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Geological_sketch_map_of_the_Chatham_Islands.jpg",
+      "original": "/assets/historical/original/doc-geology-06e1e56e2eeb9d53.jpg",
+      "web": "/assets/historical/web/doc-geology-06e1e56e2eeb9d53.webp",
+      "sha256": "2d6d6b8b1d5818b1777deab3c3954aa16f8a57415713890ec11b13235c6d3552",
+      "bytes": 184571,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Coromandel_subdivision%2C_Hauraki%2C_Auckland_(1907)_(14591951710).jpg",
+      "category": "Old geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Coromandel_subdivision%2C_Hauraki%2C_Auckland_(1907)_(14755670146).jpg",
+      "category": "Old geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Coromandel_subdivision%2C_Hauraki%2C_Auckland_(1907)_(14776321144).jpg",
+      "category": "Old geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_New_Plymouth_subdivision%2C_Taranaki_division_(1912)_(14589487880).jpg",
+      "category": "Old geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Oamaru_district%2C_North_Otago_(Eastern_Otago_division)_(1918)_(14598027478).jpg",
+      "category": "Old geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Oamaru_district%2C_North_Otago_(Eastern_Otago_division)_(1918)_(14784697365).jpg",
+      "category": "Old geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "slug": "doc-historic-map-d97b89649515fb67",
+      "title": "Locality plan of orakau",
+      "category": "Old maps of the history of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Locality_plan_of_orakau.jpg",
+      "original": "/assets/historical/original/doc-historic-map-d97b89649515fb67.jpg",
+      "web": "/assets/historical/web/doc-historic-map-d97b89649515fb67.webp",
+      "sha256": "f78cd86faef3a11a313f3358edaf55eccda575c890a3503a2a6eee3caa1f4840",
+      "bytes": 150848,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-7e7c19a485127de5",
+      "title": "North island of new zealand showing sites of engagements in maori campaigns",
+      "category": "Old maps of the history of New Zealand",
+      "chapter": 2,
+      "articleSlug": "coordinates-enter-the-computer",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:North_island_of_new_zealand_showing_sites_of_engagements_in_maori_campaigns.jpg",
+      "original": "/assets/historical/original/doc-historic-map-7e7c19a485127de5.jpg",
+      "web": "/assets/historical/web/doc-historic-map-7e7c19a485127de5.webp",
+      "sha256": "4ff00e4bcf16cb4512512704562e818a6afe222c3b72c732c79764699a4cbf4f",
+      "bytes": 435435,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-81e100d8739119b4",
+      "title": "Old Westland Tasman map",
+      "category": "Old maps of the history of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Old_Westland_Tasman_map.jpg",
+      "original": "/assets/historical/original/doc-historic-map-81e100d8739119b4.jpg",
+      "web": "/assets/historical/web/doc-historic-map-81e100d8739119b4.webp",
+      "sha256": "61079909e6505996fd2d311c7a3a0c42cb616afd76479114bf82c7a466c1dda7",
+      "bytes": 563755,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-5c54357b9f88aed3",
+      "title": "Plan of tauranga ika pa",
+      "category": "Old maps of the history of New Zealand",
+      "chapter": 2,
+      "articleSlug": "coordinates-enter-the-computer",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Plan_of_tauranga_ika_pa.jpg",
+      "original": "/assets/historical/original/doc-historic-map-5c54357b9f88aed3.jpg",
+      "web": "/assets/historical/web/doc-historic-map-5c54357b9f88aed3.webp",
+      "sha256": "a10afcd3b2c790a12f195e5076060e3d7d9a4876a6e85d54572d18a45c03da41",
+      "bytes": 545953,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-historic-map-1f8cf6d078272645",
+      "title": "Plan of waerenga-a-hika pa and battlefield",
+      "category": "Old maps of the history of New Zealand",
+      "chapter": 1,
+      "articleSlug": "what-the-computer-inherited",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Plan_of_waerenga-a-hika_pa_and_battlefield.jpg",
+      "original": "/assets/historical/original/doc-historic-map-1f8cf6d078272645.jpg",
+      "web": "/assets/historical/web/doc-historic-map-1f8cf6d078272645.webp",
+      "sha256": "c484675cd119a5f5cc5e06b25df513ef34e8173578803fb873733c65c059a89f",
+      "bytes": 528172,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Rambles_in_New_Zealand_p10.jpg",
+      "category": "Old maps of the history of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Rough_sketch_map_of_Rangiriri%2C_and_Paetai_on_the_Waikato_River_c1863_(27834851896).jpg",
+      "category": "Old maps of the history of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Tahiti_and_New_Zealand_map_with_track_of_the_Endeavour.jpg",
+      "category": "Old maps of the history of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:1946_aerial_image_of_Verdon_College_site.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:1962_aerial_image_of_Verdon_College_site.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:1979_Festival_Aerial_Image.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY-SA 2.5"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:1979_Festival_parking_and_camping.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY-SA 2.5"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:1981_Nambassa_Festival_at_Waitawheta_Valley_near_Waikino.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "insufficient source resolution"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:2017_satellite_image_of_Verdon_College.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Abel_Tasman_National_Park%2C_Nelson%2C_NewZealand%2C_26th._Nov._2010_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "slug": "doc-aerial-274e3e572442c0c9",
+      "title": "Aerial Photo of Debris (14714239936)",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 20,
+      "articleSlug": "imagery-becomes-infrastructure",
+      "date": "1943",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_Photo_of_Debris_(14714239936).jpg",
+      "original": "/assets/historical/original/doc-aerial-274e3e572442c0c9.jpg",
+      "web": "/assets/historical/web/doc-aerial-274e3e572442c0c9.webp",
+      "sha256": "f3f0f9eee53c1ce98cb9cb4a4be047f7d865da992a5b5d87a87a88ad44082cd8",
+      "bytes": 8534664,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-aerial-00f0ed1811912d0b",
+      "title": "Aerial view Kaitorete Spit",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 4,
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "date": "2009",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_Kaitorete_Spit.jpg",
+      "original": "/assets/historical/original/doc-aerial-00f0ed1811912d0b.jpg",
+      "web": "/assets/historical/web/doc-aerial-00f0ed1811912d0b.webp",
+      "sha256": "503984e1821403c1b7306238c1e3b9342f31637d49b78b654f6062ffdb4d63f7",
+      "bytes": 4306201,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-aerial-c662d03418398083",
+      "title": "Aerial view of a New Zealand coast",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 38,
+      "articleSlug": "mapping-from-a-drone",
+      "date": "2016",
+      "licence": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_a_New_Zealand_coast.jpg",
+      "original": "/assets/historical/original/doc-aerial-c662d03418398083.jpg",
+      "web": "/assets/historical/web/doc-aerial-c662d03418398083.webp",
+      "sha256": "d0361dad540508a10b81ac00311ed04921e629cb5cb8becd3913d595c03d7e8e",
+      "bytes": 4405309,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-aerial-3614865fdac5da67",
+      "title": "Aerial view of Lake Tasman",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 20,
+      "articleSlug": "imagery-becomes-infrastructure",
+      "date": "2009",
+      "licence": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Lake_Tasman.jpg",
+      "original": "/assets/historical/original/doc-aerial-3614865fdac5da67.jpg",
+      "web": "/assets/historical/web/doc-aerial-3614865fdac5da67.webp",
+      "sha256": "b7f653e0e2848d182c564a81e3be8eac4dc82413aa1565da1ff2ae0618402900",
+      "bytes": 2072354,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Petone%2C_looking_east_(4399845336).jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "slug": "doc-aerial-5c1e84f30e04f7e4",
+      "title": "Aerial view of Warkworth (AM 79642-1)",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 4,
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "date": "1937",
+      "licence": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Warkworth_(AM_79642-1).jpg",
+      "original": "/assets/historical/original/doc-aerial-5c1e84f30e04f7e4.jpg",
+      "web": "/assets/historical/web/doc-aerial-5c1e84f30e04f7e4.webp",
+      "sha256": "b87e67d1ad92eb2898e65cbfd941184a1d038a715492a6c539ff21c3ac47a736",
+      "bytes": 841027,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-aerial-d711a1402942aba1",
+      "title": "Aerial-Ohope Bch",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 38,
+      "articleSlug": "mapping-from-a-drone",
+      "date": "2008",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial-Ohope_Bch.JPG",
+      "original": "/assets/historical/original/doc-aerial-d711a1402942aba1.jpg",
+      "web": "/assets/historical/web/doc-aerial-d711a1402942aba1.webp",
+      "sha256": "ae5f055f25ce68d1361f34766f8865d17d0fa5c5a7c1a5db2a2ce6881ace38db",
+      "bytes": 2819655,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Aoraki_Mount_Cook_and_Mount_Tasman%2C_Southern_Alps%2C_New_Zealand%2C_22_July_2005.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Ashburton_NZ_aerial.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Beaumont%2C_New_Zealand_aerial_photo_2006.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Clevedon%2C_Auckland%2C_New_Zealand%2C_1_April_2011_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Cornerstone_Christian_School_-_Gymnasium_Construction_-_March_2018.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Dappled_Cook_Strait%2C_New_Zealand%2C_1_April_2011_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Duders_Beach_and_Regional_Park_Aerial_view.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Formation_passing_Patea%2C_1991_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Golden_Downs_plantation_forest%2C_Nelson_1978_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Huntly_and_the_Waikato%2C_New_Zealand_1991.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Kaikoura_NZ_aerial.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Kamahi_in_2024.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Kaweka_27_April_2005_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Taupo%2C_New_Zealand%2C_1990_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Land%2C_sea_and_sky_(405552013).jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Lichfield_1944.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Mackenzie_Country%2C_Canterbury%2C_New_Zealand%2C_22_July_2005.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Mid_Dome%2C_aerial_view.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Aspiring%2C_Otago%2C_New_Zealand%2C_22_July_2005.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Maunganui_Sunrise_Aerial.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Taranaki_Egmont_National_Park_aerial_view.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Mt_Haast%2C_Mt_Lendenfeld%2C_Mt_Tasman_and_Torres_Peak_NZ_helicopter_view_from_NW_Fri_Nov_28_2008.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Murchison_New_Zealand_1978.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Near_Tapawera_New_Zealand_1979.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_landfall_-_Auckland_West_Coast%2C_16_Aug._2010_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand%2C_South_Island%2C_1997.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:NZV8s_at_Levels_2013.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Out_of_the_gloom%2C_Wellington%2C_New_Zealand%2C_17_Oct._2010_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Paeroa_10_March_2005_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Patea%2C_Taranaki%2C_New_Zealand%2C_12_April_2008.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Petone_and_Lower_Hutt%2C_New_Zealand%2C_6_July_2005_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Porirua%2C_Pauatahanui%2C_Paremata_and_Titahi_Bay%2C_New_Zealand_6_July_2005_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Reefton_New_Zealand_1976.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Ruatapu%2C_West_Coast%2C_New_Zealand%2C_3_June_2008.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Silver_Fern_Rally_2014_(15810001332).jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Tarawera%2C_Edgecumbe_and_White_Island%2C_New_Zealand_10_March_2005.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Te_Atatu_aerial_view_in_1951.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Thames%2C_New_Zealand_10_March_2005_-_Flickr_-_PhillipC.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Waiau_Uwha_River_Nov_2015.jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Waihopai_Valley_base_(2005).jpg",
+      "category": "Aerial photographs of New Zealand",
+      "status": "held",
+      "reason": "insufficient source resolution"
+    },
+    {
+      "slug": "doc-aerial-c24a085218be4824",
+      "title": "Waitaki River and Benmore Dam, Otago, New Zealand, 22 July 2005",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 20,
+      "articleSlug": "imagery-becomes-infrastructure",
+      "date": "2005",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Waitaki_River_and_Benmore_Dam%2C_Otago%2C_New_Zealand%2C_22_July_2005.jpg",
+      "original": "/assets/historical/original/doc-aerial-c24a085218be4824.jpg",
+      "web": "/assets/historical/web/doc-aerial-c24a085218be4824.webp",
+      "sha256": "7831b6e951c9d56a287041da0edff9cc043b4a2683cb0f3ceb77c82840efea13",
+      "bytes": 7789737,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-aerial-a00c932ebc07802d",
+      "title": "West Dome, aerial view",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 4,
+      "articleSlug": "turning-the-landscape-into-numbers",
+      "date": "2010",
+      "licence": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:West_Dome%2C_aerial_view.jpg",
+      "original": "/assets/historical/original/doc-aerial-a00c932ebc07802d.jpg",
+      "web": "/assets/historical/web/doc-aerial-a00c932ebc07802d.webp",
+      "sha256": "b30283fc69353d78a749a29163448d00fe26b961a0cabe76cbd95344b56eff0f",
+      "bytes": 1309023,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-aerial-457c5e380ea2ac58",
+      "title": "Ōrākei Aerial Photograph",
+      "category": "Aerial photographs of New Zealand",
+      "chapter": 38,
+      "articleSlug": "mapping-from-a-drone",
+      "date": "2021",
+      "licence": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%C5%8Cr%C4%81kei_Aerial_Photograph.jpg",
+      "original": "/assets/historical/original/doc-aerial-457c5e380ea2ac58.jpg",
+      "web": "/assets/historical/web/doc-aerial-457c5e380ea2ac58.webp",
+      "sha256": "5bdce4ae05ce4b6e8c795d87d70ef8a88394270fece9d9c1f62f840e1aef2693",
+      "bytes": 1236598,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Another_Puff_from_Whakaari_(153818_-_nzwhakaari_oli2_20250107).jpg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Another_Puff_from_Whakaari_(153818).jpg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:CBD_Tunnel_Landsat_7_Image_Auckland.jpg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Central_Connector_Landsat_7_Image_Auckland.jpg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Christchurch_New_Zealand_NASA_Satellite.JPG",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Dunedin%2C_New_Zealand_location_map.PNG",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "insufficient source resolution"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:DunedinSatmap.png",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "insufficient source resolution"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Home_Reef%2C_New_Zealand_(Landsat).png",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:LANDSAT_2005_Slipper_Island_Whakahau.jpg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "slug": "doc-landsat-b68fd62840dccdf1",
+      "title": "Mount Taranaki’s Ring of Forest (153342)",
+      "category": "Landsat images of New Zealand",
+      "chapter": 36,
+      "articleSlug": "earth-observation-becomes-routine",
+      "date": "2023",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Taranaki%E2%80%99s_Ring_of_Forest_(153342).jpg",
+      "original": "/assets/historical/original/doc-landsat-b68fd62840dccdf1.jpg",
+      "web": "/assets/historical/web/doc-landsat-b68fd62840dccdf1.webp",
+      "sha256": "0d7866032d57f0f37f2a95adc325d85ae519d739782ac5b1b8f2f539ad9f0275",
+      "bytes": 886545,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:M%C4%81hia_Peninsula_landsat.jpg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Powerful_Earthquake_Exposes_New_Land_Near_Kaikoura.jpeg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Tongariro_NP_satellite.jpg",
+      "category": "Landsat images of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:1979-80_South_Pacific_cyclone_season_summary.png",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Ash_over_New_Zealand_from_Puyehue-Cord%C3%B3n_Caulle_volcano_(Chile)%2C_06-13-2011.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:AST-22-1777_-_Apollo_Soyuz_Test_Project_-_Apollo_Soyuz_Test_Project%2C_New_Zealand_(North_Island)%2C_East_Cape%2C_Clouds_-_NARA_-_16632237.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Australia_and_New_Zealand_topic_image_Satellite_image.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Cook_Strait_(New_Zealand).jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Envisat_image_over_New_Zealand_ESA228311.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY-SA 3.0 igo"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_(16094149559).jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_-_Envisat.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY-SA 3.0 igo"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_-_Neuseeland_-_2.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_-_Neuseeland_-_3.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "slug": "doc-satellite-3f2f9ae2115b22f2",
+      "title": "New Zealand - Neuseeland - 4",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 36,
+      "articleSlug": "earth-observation-becomes-routine",
+      "date": "2018",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_-_Neuseeland_-_4.jpg",
+      "original": "/assets/historical/original/doc-satellite-3f2f9ae2115b22f2.jpg",
+      "web": "/assets/historical/web/doc-satellite-3f2f9ae2115b22f2.webp",
+      "sha256": "b2cbfe7131c7eae58f0ad7025c185f1a50364d43c27324f45f51e8dd84315803",
+      "bytes": 3322265,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-satellite-8508e0d8aa67899d",
+      "title": "New Zealand - Neuseeland",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 39,
+      "articleSlug": "from-flat-maps-to-3d",
+      "date": "2018",
+      "licence": "CC BY-SA 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_-_Neuseeland.jpg",
+      "original": "/assets/historical/original/doc-satellite-8508e0d8aa67899d.jpg",
+      "web": "/assets/historical/web/doc-satellite-8508e0d8aa67899d.webp",
+      "sha256": "0b0b3ac3ee92d78afdef8f73eedb6d9899099bc360aae0608355df45331ed8e6",
+      "bytes": 4109553,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-satellite-d3fea612a6f964d8",
+      "title": "New Zealand 2017 01 30 (31806907754)",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 36,
+      "articleSlug": "earth-observation-becomes-routine",
+      "date": "2017",
+      "licence": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_2017_01_30_(31806907754).jpg",
+      "original": "/assets/historical/original/doc-satellite-d3fea612a6f964d8.jpg",
+      "web": "/assets/historical/web/doc-satellite-d3fea612a6f964d8.webp",
+      "sha256": "92b90bb8bef5be8928d74c6ecbe0691e74022cd3fa16304e3f50517397c4650c",
+      "bytes": 2253889,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_as_seen_by_Envisat_ESA217570.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY-SA 3.0 igo"
+    },
+    {
+      "slug": "doc-satellite-26c7ee087498fbe7",
+      "title": "New Zealand from space",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 39,
+      "articleSlug": "from-flat-maps-to-3d",
+      "date": "2015",
+      "licence": "CC BY 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_from_space.png",
+      "original": "/assets/historical/original/doc-satellite-26c7ee087498fbe7.png",
+      "web": "/assets/historical/web/doc-satellite-26c7ee087498fbe7.webp",
+      "sha256": "4e6566414db20ad2174b8c6f4eb6880167fc36a3ab4f94dc35c5e12da3b4aaee",
+      "bytes": 648947,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_islands_captured_by_Envisat_ESA225644.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY-SA 3.0 igo"
+    },
+    {
+      "slug": "doc-satellite-f265205ba9a74f26",
+      "title": "New Zealand Topography",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 36,
+      "articleSlug": "earth-observation-becomes-routine",
+      "date": "2000",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_Topography.jpg",
+      "original": "/assets/historical/original/doc-satellite-f265205ba9a74f26.jpg",
+      "web": "/assets/historical/web/doc-satellite-f265205ba9a74f26.webp",
+      "sha256": "00bfd235db1f59165fbf4d31fa4392a02c2b55374e77d9c22588f95ff6f78a0f",
+      "bytes": 1271951,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-satellite-e1436d9d742caba4",
+      "title": "Otago Map Physical New Zealand",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 39,
+      "articleSlug": "from-flat-maps-to-3d",
+      "date": "2011",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Otago_Map_Physical_New_Zealand.jpg",
+      "original": "/assets/historical/original/doc-satellite-e1436d9d742caba4.jpg",
+      "web": "/assets/historical/web/doc-satellite-e1436d9d742caba4.webp",
+      "sha256": "686606e901fadf7c35ac405bb0dbc2eec4ce56c6b916b2015de9819f5053c61f",
+      "bytes": 128553,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-satellite-4478e38ff0a9541a",
+      "title": "Satellite image of New Zealand in December 2002",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 36,
+      "articleSlug": "earth-observation-becomes-routine",
+      "date": "2002",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Satellite_image_of_New_Zealand_in_December_2002.jpg",
+      "original": "/assets/historical/original/doc-satellite-4478e38ff0a9541a.jpg",
+      "web": "/assets/historical/web/doc-satellite-4478e38ff0a9541a.webp",
+      "sha256": "514333852a33393c538c25aab03ed86b784f63a5ba9ea0661d453168433e1c92",
+      "bytes": 3553912,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-satellite-77d9c52cbffd74c4",
+      "title": "Satellitenaufnahme Neuseeland 01 KMJ",
+      "category": "Satellite pictures of New Zealand",
+      "chapter": 39,
+      "articleSlug": "from-flat-maps-to-3d",
+      "date": "2004",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Satellitenaufnahme_Neuseeland_01_KMJ.jpg",
+      "original": "/assets/historical/original/doc-satellite-77d9c52cbffd74c4.jpg",
+      "web": "/assets/historical/web/doc-satellite-77d9c52cbffd74c4.webp",
+      "sha256": "d8b14571b5687c36ad432b86f60fa294400b5ed8c82bcf94193f8a28482acd5f",
+      "bytes": 62194,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:STS128-E-9557_-_View_of_the_North_Island_of_New_Zealand.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_Greenstone_Waters%2C_New_Zealand.jpg",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:West_Coast_inset.png",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:White_Island_plume.png",
+      "category": "Satellite pictures of New Zealand",
+      "status": "held",
+      "reason": "insufficient source resolution"
+    },
+    {
+      "slug": "doc-geology-73858bd484ced49f",
+      "title": "30 ma New Zealand Zealandia",
+      "category": "Geological maps of New Zealand",
+      "chapter": 9,
+      "articleSlug": "science-goes-spatial",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:30_ma_New_Zealand_Zealandia.png",
+      "original": "/assets/historical/original/doc-geology-73858bd484ced49f.png",
+      "web": "/assets/historical/web/doc-geology-73858bd484ced49f.webp",
+      "sha256": "bc5b6686823353500c2041724b685d39eb34e9626d03c00a2663aad30c557edf",
+      "bytes": 1773794,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Canterbury-hydrogeology-A-Geological-map-of-the-Canterbury-Plains-and-Banks-Peninsula.png",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Dunstan_Mountains_Schist_TZ_Terranes.png",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Fig_1_Chatham_Rise_Map.jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Geology_map_of_Karioi%2C_Pirongia%2C_Kakepuku_and_Te_Kawa.jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Kermadec_Plate_map-fr.png",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: CC BY-SA 2.5"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Disappear_geology.jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Map_and_Cross_Section_of_Taranaki_Basin.jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Map_New_Zealand_Geology.png",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_the_Kermadec_and_Tonga_subduction_trench.jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_geology_map_with_key.jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "slug": "doc-geology-38eacd9bf8771658",
+      "title": "New Zealand geology map with key",
+      "category": "Geological maps of New Zealand",
+      "chapter": 7,
+      "articleSlug": "mapping-land-as-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Zealand_geology_map_with_key.png",
+      "original": "/assets/historical/original/doc-geology-38eacd9bf8771658.png",
+      "web": "/assets/historical/web/doc-geology-38eacd9bf8771658.webp",
+      "sha256": "00638f32a5c6cf9ea188a69c8e930715f9669b58424b6708303a33591e1b5ccb",
+      "bytes": 624802,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:NZ_faults_Hope_Fault.png",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:NZ_faults.png",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "slug": "doc-geology-262fede5a5aed6f0",
+      "title": "Paeroa-Ngapouri-Rotomahana Faults",
+      "category": "Geological maps of New Zealand",
+      "chapter": 9,
+      "articleSlug": "science-goes-spatial",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Paeroa-Ngapouri-Rotomahana_Faults.jpg",
+      "original": "/assets/historical/original/doc-geology-262fede5a5aed6f0.jpg",
+      "web": "/assets/historical/web/doc-geology-262fede5a5aed6f0.webp",
+      "sha256": "80da886772a17bcc7c769d6f5253ca8cb3b20cb98e1767c495aecaedf68696a8",
+      "bytes": 287170,
+      "status": "archived"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Report_on_the_geology_and_gold_fields_of_Otago_(Plate_V)_BHL43691900.jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "HTTP 429 upload.wikimedia.org"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Oamaru_district%2C_North_Otago_(Eastern_Otago_division)_(1918)_(14597963950).jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Oamaru_district%2C_North_Otago_(Eastern_Otago_division)_(1918)_(14598017599).jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Oamaru_district%2C_North_Otago_(Eastern_Otago_division)_(1918)_(14598027478).jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:The_geology_of_the_Oamaru_district%2C_North_Otago_(Eastern_Otago_division)_(1918)_(14598030058).jpg",
+      "category": "Geological maps of New Zealand",
+      "status": "held",
+      "reason": "licence not on approved list: No restrictions"
+    },
+    {
+      "slug": "doc-geology-82e1edc93a1f6de9",
+      "title": "Zealandia and New Zealand 90 ma Gondwana",
+      "category": "Geological maps of New Zealand",
+      "chapter": 7,
+      "articleSlug": "mapping-land-as-data",
+      "date": "Historical map, exact date not established",
+      "licence": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zealandia_and_New_Zealand_90_ma_Gondwana.png",
+      "original": "/assets/historical/original/doc-geology-82e1edc93a1f6de9.png",
+      "web": "/assets/historical/web/doc-geology-82e1edc93a1f6de9.webp",
+      "sha256": "dc053c8fd3eab926eb8b4da6cb120cd660d66e792ff81dc69c203131829faf8a",
+      "bytes": 523308,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-geology-de984d68a67b731a",
+      "title": "Zealandia topography and magnetism",
+      "category": "Geological maps of New Zealand",
+      "chapter": 9,
+      "articleSlug": "science-goes-spatial",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Zealandia_topography_and_magnetism.jpg",
+      "original": "/assets/historical/original/doc-geology-de984d68a67b731a.jpg",
+      "web": "/assets/historical/web/doc-geology-de984d68a67b731a.webp",
+      "sha256": "90d8fa443083f2428de740a5af38517f43bdc487233f6b60ffbc50936b6b9f07",
+      "bytes": 1062550,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-geology-5c715d45011ba9cf",
+      "title": "Zealandia topography",
+      "category": "Geological maps of New Zealand",
+      "chapter": 7,
+      "articleSlug": "mapping-land-as-data",
+      "date": "Historical map, exact date not established",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Zealandia_topography.jpg",
+      "original": "/assets/historical/original/doc-geology-5c715d45011ba9cf.jpg",
+      "web": "/assets/historical/web/doc-geology-5c715d45011ba9cf.webp",
+      "sha256": "20c648652d94d44f6e790ed8163dbcbe109aab317883c89d61f2e45e0a186319",
+      "bytes": 1407089,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-hazard-13e306ee203bebd1",
+      "title": "1855 Wairarapa EQ Location1",
+      "category": "Maps of earthquakes in New Zealand",
+      "chapter": 28,
+      "articleSlug": "safety-policing-and-emergency-gis",
+      "date": "1855",
+      "licence": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:1855_Wairarapa_EQ_Location1.png",
+      "original": "/assets/historical/original/doc-hazard-13e306ee203bebd1.png",
+      "web": "/assets/historical/web/doc-hazard-13e306ee203bebd1.webp",
+      "sha256": "d67b547eb2ddeee07e90047ed898794c9b6d04e11f8c9a57719c6bd0e146c483",
+      "bytes": 110330,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-hazard-afdf3b4fc71102c7",
+      "title": "2018-10-30 Waitara, New Zealand M6.1 earthquake intensity map (USGS)",
+      "category": "Maps of earthquakes in New Zealand",
+      "chapter": 9,
+      "articleSlug": "science-goes-spatial",
+      "date": "2018",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:2018-10-30_Waitara%2C_New_Zealand_M6.1_earthquake_intensity_map_(USGS).jpg",
+      "original": "/assets/historical/original/doc-hazard-afdf3b4fc71102c7.jpg",
+      "web": "/assets/historical/web/doc-hazard-afdf3b4fc71102c7.webp",
+      "sha256": "b4864aade3a85ca9c48829a9e63d932c5be52482620e2d7b8cf34442c88c0d38",
+      "bytes": 89615,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-hazard-9bc081786c23dfdd",
+      "title": "2019-03-06 L'Esperance Rock, New Zealand M6.4 earthquake intensity map (USGS)",
+      "category": "Maps of earthquakes in New Zealand",
+      "chapter": 28,
+      "articleSlug": "safety-policing-and-emergency-gis",
+      "date": "2019",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:2019-03-06_L'Esperance_Rock%2C_New_Zealand_M6.4_earthquake_intensity_map_(USGS).jpg",
+      "original": "/assets/historical/original/doc-hazard-9bc081786c23dfdd.jpg",
+      "web": "/assets/historical/web/doc-hazard-9bc081786c23dfdd.webp",
+      "sha256": "32f03785bacf1fac227b832818260efc4e5c0ec026cc4a3208b938e021900d2d",
+      "bytes": 57665,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-hazard-19b30e463aa4e8cd",
+      "title": "2019-06-15 L'Esperance Rock, New Zealand M7.2 earthquake intensity map (USGS)",
+      "category": "Maps of earthquakes in New Zealand",
+      "chapter": 9,
+      "articleSlug": "science-goes-spatial",
+      "date": "2019",
+      "licence": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:2019-06-15_L'Esperance_Rock%2C_New_Zealand_M7.2_earthquake_intensity_map_(USGS).jpg",
+      "original": "/assets/historical/original/doc-hazard-19b30e463aa4e8cd.jpg",
+      "web": "/assets/historical/web/doc-hazard-19b30e463aa4e8cd.webp",
+      "sha256": "765acd462b56dbb85c19f8fcb4a2724328accd7777fd92c0207c0c20336f5822",
+      "bytes": 58422,
+      "status": "archived"
+    },
+    {
+      "slug": "doc-hazard-65ce26f08644672d",
+      "title": "Earthquake risk zones New Zealand",
+      "category": "Maps of earthquakes in New Zealand",
+      "chapter": 28,
+      "articleSlug": "safety-policing-and-emergency-gis",
+      "date": "2010",
+      "licence": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Earthquake_risk_zones_New_Zealand.png",
+      "original": "/assets/historical/original/doc-hazard-65ce26f08644672d.png",
+      "web": "/assets/historical/web/doc-hazard-65ce26f08644672d.webp",
+      "sha256": "51c650adb5b398fb4a56b5b03dfcb8df79463282c1b297043fec0bac2c1f4dc3",
+      "bytes": 2525174,
+      "status": "archived"
+    }
+  ],
+  "warnings": [],
+  "completedAt": "2026-10-11T06:32:37.122Z",
+  "shortfall": 14
+}
