@@ -1,0 +1,92 @@
+{
+  "id": "passage:chapter-29-nzeug-community-programmes",
+  "slug": "nzeug-community-programmes-2018-2025",
+  "articleId": "article:chapter-29",
+  "title": "What the conference programmes preserve",
+  "order": 2,
+  "updatedAt": "2026-10-11",
+  "themeIds": [
+    "profession"
+  ],
+  "recordIds": [
+    "chapter:29",
+    "entity:new-zealand-esri-users-group",
+    "entity:nzeug-conference-programme",
+    "entity:eagle-technology",
+    "person:roland-pomana",
+    "person:anna-eilers",
+    "person:matthew-grose",
+    "person:rachel-summers",
+    "person:kilmeny-stephens",
+    "person:nathan-heazlewood",
+    "person:scott-campbell"
+  ],
+  "blocks": [
+    {
+      "id": "nzeug-1-1",
+      "type": "paragraph",
+      "text": "A conference agenda is a useful record of the problems GIS teams were bringing to their peers. The New Zealand Esri User Conference programme for 20–22 August 2018, published by Eagle Technology, mixed technical sessions with work from DOC, LINZ, councils, universities, transport agencies and consultants. Matthew Grose of DOC was presenting 'DOC sees the need for speed'; Kilmeny Stephens of Nelson City Council was discussing the sharing of spatial information; and LINZ's Graeme Blick was outlining Mapping New Zealand 2025. Their subjects show the range of jobs sitting under a common GIS conference label.",
+      "sources": [
+        {
+          "label": "Eagle Technology, NZEUC 2018 final conference programme, updated 14 August 2018",
+          "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+        }
+      ]
+    },
+    {
+      "id": "nzeug-2-1",
+      "type": "paragraph",
+      "text": "The same programme covered hyperspectral imagery for agricultural and environmental work, GIS for water allocation in Northland, 3D datums, deprivation analysis, Wellington's development capacity, cloud GIS in DOC, automated map-service publishing, and Sentinel-2 forestry applications. These were named presentations about work being done in New Zealand, alongside Esri product demonstrations. Several sessions dealt with the less visible parts of enterprise GIS, such as service authoring, data integration and keeping complex applications operating. The programme offers a snapshot of the industry's technical vocabulary in 2018.",
+      "sources": [
+        {
+          "label": "Eagle Technology, NZEUC 2018 final conference programme, updated 14 August 2018",
+          "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+        }
+      ]
+    },
+    {
+      "id": "nzeug-3-2",
+      "type": "paragraph",
+      "text": "The user-group AGM had its own place in that programme. Roland Pomana facilitated the community meeting on 21 August; Anna Eilers facilitated local and regional government sessions, while Nathan Heazlewood chaired land-management and project-management sessions. The main conference drew speakers from Esri and Eagle, but the AGM and volunteer facilitators demonstrate that NZEUG continued as a practitioner-run organisation. Its earlier governance records name different volunteers over time, and the preserved 2017–2025 AGM collection provides a route for reconstructing the sequence without relying solely on conference publicity.",
+      "sources": [
+        {
+          "label": "Eagle Technology, NZEUC 2018 final conference programme, updated 14 August 2018",
+          "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+        },
+        {
+          "label": "NZEUG, annual general meeting records, 2017–2025",
+          "url": "https://storymaps.arcgis.com/collections/3815273d952741d893b27e01de989fcb"
+        }
+      ]
+    },
+    {
+      "id": "nzeug-4-2",
+      "type": "paragraph",
+      "text": "The regional meetings took presentations closer to people unable to attend a central national conference. NZEUG organisers reported that eight regional events in 2024 involved roughly 650 people from about 400 organisations. In 2025 the group's reports document meetings in Auckland and Christchurch. The Auckland account notes student attendance at AUT and names Eagle Technology alongside commercial supporters; the Christchurch account names committee organisers Kate Newton and Chris Wilson. Such records show a practical mix of presenters, volunteer organisers, local hosts and sponsors, and explain how an independent user community maintained contact outside its annual national gathering.",
+      "sources": [
+        {
+          "label": "NZEUG, Auckland regional conference report, 2025",
+          "url": "https://www.linkedin.com/posts/new-zealand-esri-users-group_auckland-nzeug-networking-activity-7315305187932352512-ii9u"
+        },
+        {
+          "label": "NZEUG, Christchurch regional conference report, 2025",
+          "url": "https://www.linkedin.com/posts/new-zealand-esri-users-group_nzeug25-christchurch-activity-7315660920276328449-jvS9"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Eagle Technology, NZEUC 2018 final conference programme, updated 14 August 2018",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    },
+    {
+      "label": "NZEUG, Auckland regional conference report, 2025",
+      "url": "https://www.linkedin.com/posts/new-zealand-esri-users-group_auckland-nzeug-networking-activity-7315305187932352512-ii9u"
+    },
+    {
+      "label": "NZEUG, Christchurch regional conference report, 2025",
+      "url": "https://www.linkedin.com/posts/new-zealand-esri-users-group_nzeug25-christchurch-activity-7315660920276328449-jvS9"
+    }
+  ]
+}
