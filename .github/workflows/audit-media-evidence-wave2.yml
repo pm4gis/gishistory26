@@ -1,0 +1,51 @@
+name: Audit all 181 documentary images
+on:
+  push:
+    branches: [media/paragraph-evidence-wave2-20261011]
+    paths:
+      - src/lib/chapter-media.mjs
+      - scripts/audit-media-evidence-wave2.mjs
+      - tests/all-image-evidence-wave2.test.mjs
+      - .github/workflows/audit-media-evidence-wave2.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  verify-source-alignment:
+    if: github.ref == 'refs/heads/media/paragraph-evidence-wave2-20261011'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: media/paragraph-evidence-wave2-20261011, fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Audit all media, 106 recent acquisitions and 75 earlier items
+        run: node scripts/audit-media-evidence-wave2.mjs
+      - name: Validate evidence and protected historical corpus
+        run: |
+          npm test
+          npm run build
+      - name: Commit auditable editorial register
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/media/chapter-image-alignment-wave2-20261011.csv docs/media/chapter-image-alignment-wave2-20261011.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish second-wave audit and exact evidence decisions for all 181 images'
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin media/paragraph-evidence-wave2-20261011
+            git rebase origin/media/paragraph-evidence-wave2-20261011
+            git push origin HEAD:media/paragraph-evidence-wave2-20261011
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: editorial-image-wave2-audit
+          path: |
+            docs/media/chapter-image-alignment-wave2-20261011.csv
+            docs/media/chapter-image-alignment-wave2-20261011.md
+          retention-days: 30
