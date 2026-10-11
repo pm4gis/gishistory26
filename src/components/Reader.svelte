@@ -6,6 +6,7 @@
  import {passageContributionMailtoUrl,passageContributionPageUrl} from '../lib/passage-contributions.mjs';
  import {ngaPoutamaForPassage} from '../lib/nga-poutama-videos.mjs';
  import {placeChapterImages} from '../lib/chapter-media.mjs';
+ import {historicInterfaceFor} from '../lib/historical-interface-sources.mjs';
  export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';
  let suppressPreview=false;let relatedAll=false;let relatedKind='All';let previewTrigger:HTMLElement|null=null;let previewTimer:ReturnType<typeof setTimeout>|undefined;let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
  $: current=passages[page];
@@ -74,6 +75,13 @@
   <figcaption>{document.caption||document.context||document.title} <a href={'/images/'+document.slug+'/'}>Image details</a></figcaption>
  </figure>
  {/each}
+ {#if historicInterfaceFor(article.slug,b.id)}
+ <aside class="period-interface-source" aria-label="Original 2003 web GIS interface source">
+  <p class="eyebrow">Original interface source · 2003</p>
+  <p>{historicInterfaceFor(article.slug,b.id).statement}</p>
+  <p><a href={historicInterfaceFor(article.slug,b.id).sourceUrl} target="_blank" rel="noopener noreferrer">{historicInterfaceFor(article.slug,b.id).sourceLabel} ↗</a></p>
+ </aside>
+ {/if}
  {#if blockIndex===Math.min(1,blocks(p).length-1)&&ngaPoutamaForPassage(p.id).length}
    <WanangaVideos inline={true} compact={true} videos={ngaPoutamaForPassage(p.id)}/>
  {/if}
