@@ -24,6 +24,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/media/commons-discovery-wave4b-2025.json
+          git add docs/media/commons-discovery-wave4b-2025.json docs/media/commons-candidates-wave4b-2025.json
           git commit -m "Record date-limited chapter image discovery evidence"
           git push origin HEAD:research/historical-documentary-images-wave2-20261010
