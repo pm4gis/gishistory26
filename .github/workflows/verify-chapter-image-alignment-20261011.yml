@@ -1,0 +1,53 @@
+name: Verify documentary image paragraph alignment
+on:
+  push:
+    branches: [fix/editorial-image-matching-20261011]
+    paths:
+      - src/lib/chapter-media.mjs
+      - scripts/audit-chapter-image-alignment-20261011.mjs
+      - tests/inline-chapter-media.test.mjs
+      - tests/eight-chapter-image-release.test.mjs
+      - tests/editorial-image-matches.test.mjs
+      - .github/workflows/verify-chapter-image-alignment-20261011.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  audit:
+    if: github.ref == 'refs/heads/fix/editorial-image-matching-20261011'
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: fix/editorial-image-matching-20261011, fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Generate complete 106-image alignment register
+        run: node scripts/audit-chapter-image-alignment-20261011.mjs
+      - name: Check editorial matching, sources, preservation and full site build
+        run: |
+          npm test
+          npm run build
+      - name: Commit source-backed alignment report to review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/media/chapter-image-alignment-20261011.csv docs/media/chapter-image-alignment-20261011.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Audit all 106 acquired image records against exact chapter paragraphs'
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin fix/editorial-image-matching-20261011
+            git rebase origin/fix/editorial-image-matching-20261011
+            git push origin HEAD:fix/editorial-image-matching-20261011
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chapter-image-alignment-audit
+          path: |
+            docs/media/chapter-image-alignment-20261011.csv
+            docs/media/chapter-image-alignment-20261011.md
+          retention-days: 30

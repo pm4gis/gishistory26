@@ -13,96 +13,107 @@ export const curatedImageParagraphs = Object.freeze({
 });
 
 /**
- * Place previously verified chapter-linked images inside chapter prose.
- * This is presentation-only: accepted passage content and source files are untouched.
- * Figures already embedded by an editor retain their original position.
+ * Editorially reviewed links between a particular documentary original and
+ * the passage that actually discusses its subject. A file's chapterNumber
+ * alone is NOT evidence that it belongs anywhere in that story.
+ *
+ * New historical batches without a reviewed link remain discoverable through
+ * their image-detail records, but do not appear as in-story illustrations.
  */
-
-/**
- * Additional illustrations reuse already licensed archive files. These are
- * historical context with a plainly stated limitation, never evidence of
- * the original New Zealand installation or an individual's involvement.
- */
-export const chapterArchiveReuses = Object.freeze({
-  'mapping-land-as-data': [
-    {slug:'nz-geology-lange-2012',
-     afterParagraphId:'ch07-s01-p01',
-     caption:'A digital New Zealand geological map prepared in 2012 using published GNS information. Geology was one of the original NZLRI inventory inputs; this later map is not an NZLRI or land-use-capability sheet.'}
-  ],
-  'automating-the-gis-work': [
-    {slug:'linz-arcmap-property-relationships-2016',
-     afterParagraphId:'ch43-s01-p02',
-     caption:'LINZ ArcMap documentation of linked property-record tables using an Esri file geodatabase. This is a real GIS data-handling operation of the period, not a screenshot of an automated model or New Zealand Python programme.'}
-  ],
-  'gis-at-the-end-of-2025': [
-    {slug:'ecoregions-qgis-2025',
-     afterParagraphId:'ch44-s01-p02',
-     caption:'New Zealand ecoregions mapped with QGIS in October 2025. This is documented desktop GIS map production and does not demonstrate machine learning or artificial intelligence.'}
-  ],
-  'universities-build-a-field': [
-    {slug:'auckland-university-clocktower-2004',
-     afterParagraphId:'ch11-s01-p02',
-     caption:'The University of Auckland Clock Tower in 2004. University context for the documented 1985 GIS teaching; not a photograph of the original course, students or software.'}
-  ],
-  'an-industry-and-community-form': [
-    {slug:'intergraph-clix-workstation',
-     afterParagraphId:'ch12-s01-p02',
-     caption:'A genuine late-1980s Intergraph CLIX workstation, representative of specialist hardware sold and supported during the early commercial GIS period. Its use at a New Zealand business has not been established.'}
-  ],
-  'becoming-a-gis-professional': [
-    {slug:'tripp-station-theodolite-surveyors',
-     afterParagraphId:'ch29-s01-p02',
-     caption:'Surveyors using a theodolite at Tripp Station. The photograph illustrates a predecessor profession that supplied GIS practitioners; its date and any GIS involvement are unverified.'}
-  ],
-  'enterprise-gis': [
-    {slug:'linz-wfs-attribute-service-2023',
-     afterParagraphId:'ch40-p-f6bb5c1149ab',
-     caption:'LINZ Web Feature Service filtering example from material held by 2023. This is evidence of later interoperable spatial-data services, not an image of an enterprise GIS system from the 1990s.'}
-  ]
+export const reviewedImagePassages = Object.freeze({
+  'doc-historic-map-6c572e829a93c5f5': {
+    articleSlug:'what-the-computer-inherited', afterParagraphId:'ch01-p-242c96db76e3',
+    caption:'The 1850 Christchurch Black Map illustrates the nineteenth-century paper mapping inherited by later cadastral record systems. It is not a computer-era cadastral map.',
+    evidence:'Chapter 1, The parcel record: historical paper plans and land-office records'
+  },
+  'doc-historic-map-777b1981f3a8ee1d': {
+    articleSlug:'what-the-computer-inherited', afterParagraphId:'ch01-s02-p02',
+    caption:'A 1922 Beaumont Survey District map is a surviving example of a paper survey sheet. The chapter discusses how offices maintained sheets and indexes long before electronic cadastral databases.',
+    evidence:'Chapter 1, The parcel record: maintained survey district and record sheets'
+  },
+  'doc-aerial-5c1e84f30e04f7e4': {
+    articleSlug:'what-the-computer-inherited', afterParagraphId:'ch01-s06-p02',
+    caption:'Aerial view of Warkworth, 1937, from the early period of organised aerial survey in New Zealand. The photograph does not establish which firm flew this particular survey.',
+    evidence:'Chapter 1, The country from the air: systematic aerial survey from the 1930s'
+  },
+  'wave6-curated-7a04bfeaf63f78f1': {
+    articleSlug:'the-cadastre-becomes-data', afterParagraphId:'ch13-s02-p01',
+    caption:'A Crown grant map for Forest Hill Hundred shows one type of historic land record. It is not a survey-grade digital boundary file or an example of the DCDB software.',
+    evidence:'Chapter 13, Records made for different jobs: grants, survey plans, indexes and maps'
+  },
+  'retrolens-c515a148bd788efa': {
+    articleSlug:'imagery-becomes-infrastructure', afterParagraphId:'ch20-s09-p01',
+    caption:'An aerial photograph of the Verdon College site, Invercargill, captured on 7 June 1946 and subsequently preserved through Retrolens. It represents the film-frame archive described here.',
+    evidence:'Chapter 20, An archive becomes digital: Crown Aerial Film Library and survey frames'
+  },
+  'retrolens-fb8cfefdccb907d2': {
+    articleSlug:'imagery-becomes-infrastructure', afterParagraphId:'ch20-s09-p03',
+    caption:'The same Verdon College area photographed on 28 February 1962, illustrating the value of retaining dated survey frames. This is a historical aerial frame, not necessarily an orthorectified GIS layer.',
+    evidence:'Chapter 20, An archive becomes digital: different dated frames, scanning and orthorectification'
+  },
+  'nasa-terra-modis-nz-2002': {
+    articleSlug:'earth-observation-becomes-routine', afterParagraphId:'ch36-s01-p02',
+    caption:'NASA Terra MODIS observation of New Zealand on 23 October 2002. It illustrates nationwide satellite coverage from the early 2000s, not a complete national time-series mosaic.',
+    evidence:'Chapter 36, Repeated satellite coverage: individual observations versus maintained national series'
+  },
+  'usgs-hundred-millionth-landsat-nz-2017': {
+    articleSlug:'earth-observation-becomes-routine', afterParagraphId:'ch36-s06-p01',
+    caption:'The 2017 New Zealand Landsat scene associated with the USGS archive’s 100-millionth download. The archive became freely available in 2008; this later scene illustrates its use, not the 2008 decision.',
+    evidence:'Chapter 36, The archive opens: 2008 USGS Landsat free-access policy and subsequent reuse'
+  },
+  'nasa-landsat4-tasman-1990': {
+    articleSlug:'earth-observation-becomes-routine', afterParagraphId:'ch36-p-3c6e90ec73b2',
+    caption:'Landsat 4 acquired this image of Tasman Glacier on 30 December 1990. The chapter identifies the archive of New Zealand Landsat 4 material dating from 1990.',
+    evidence:'Chapter 36, A national archive takes shape: Landsat 4 images from 1990'
+  },
+  'nasa-aster-tasman-2007': {
+    articleSlug:'earth-observation-becomes-routine', afterParagraphId:'ch36-s13-p03',
+    caption:'ASTER observed Tasman Glacier in December 2007. Together with the archived 1990 Landsat view, it shows why older acquisitions can be revisited, while cross-sensor comparisons still require care.',
+    evidence:'Chapter 36, A national archive takes shape: reanalysis and limits of comparing different sensors'
+  }
 });
 
+/**
+ * A reviewed paragraph reference is required for in-story placement.
+ * No alphabetical sorting, evenly distributed fallbacks or section fillers.
+ * Image records and archived source files remain accessible independently.
+ */
 export function placeChapterImages(article, passages, images) {
   const assignments = Object.create(null);
   if (!article?.slug || !Array.isArray(passages) || !Array.isArray(images)) return assignments;
-  const sections = passages.filter(p => (p.blocks?.length || p.paragraphs?.length || 0) > 0);
-  if (!sections.length) return assignments;
-
   const embedded = new Set(passages.flatMap(p =>
     (p.blocks || []).filter(b => b.type === 'figure' && b.imageId).map(b => b.imageId)));
-  const seen = new Set();
-  const archiveReuses = (chapterArchiveReuses[article.slug] || []).flatMap(reuse => {
-    const original = images.find(i => i.slug === reuse.slug);
-    return original && original.assetPath ? [{...original,
-      afterParagraphId:reuse.afterParagraphId,
-      caption:reuse.caption,
-      context:reuse.caption}] : [];
-  });
-  const linked = [...images.filter(image => image.articleSlug === article.slug), ...archiveReuses].filter(image => {
-    if (!image.slug || !image.assetPath) return false;
-    if (embedded.has(image.id) || embedded.has(image.slug)) return false;
-    const key = image.id || image.slug;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  }).sort((a, b) =>
-    Number(Boolean(b.headerCandidate)) - Number(Boolean(a.headerCandidate)) ||
-    a.slug.localeCompare(b.slug, 'en-NZ'));
-
-  // Let the account develop before the first image. Distribute later images
-  // across different reading sections, rather than clustering at the start or end.
-  const eligible = sections.length > 2 ? sections.slice(1) : sections;
-  for (let index = 0; index < linked.length; index++) {
-    const picture = linked[index];
-    const blockId = picture.afterParagraphId || curatedImageParagraphs[picture.slug];
-    const blockSection = blockId && sections.find(p =>
-      p.blocks?.some(b => b.id === blockId && b.type === 'paragraph'));
-    const requested = sections.find(p => (picture.passageId && picture.passageId === p.id) ||
-      (picture.passageSlug && picture.passageSlug === p.slug));
-    const section = blockSection || requested || eligible[Math.min(eligible.length - 1,
-      Math.floor(((index + 0.5) * eligible.length) / linked.length))];
-    // The presentation copy does not modify protected image metadata.
-    (assignments[section.id] ||= []).push({...picture,
-      inlineAfterBlockId: blockSection ? blockId : null});
+  const paragraphLookup = new Map();
+  for (const passage of passages) {
+    for (const block of passage.blocks || []) {
+      if (block.type === 'paragraph' && block.id) paragraphLookup.set(block.id, passage);
+    }
+  }
+  const used = new Set();
+  for (const image of images) {
+    if (!image?.slug || !image.assetPath || used.has(image.id || image.slug)) continue;
+    if (embedded.has(image.id) || embedded.has(image.slug)) continue;
+    const reviewed = reviewedImagePassages[image.slug];
+    const isNewBatch = /^(?:doc-|wave6-curated-|retrolens-|nasa-|usgs-)/.test(image.slug);
+    if (isNewBatch && !reviewed) continue;
+    if (reviewed && reviewed.articleSlug !== article.slug) continue;
+    if (!reviewed && image.articleSlug !== article.slug) continue;
+    const blockId = reviewed?.afterParagraphId || image.afterParagraphId || curatedImageParagraphs[image.slug];
+    let passage = blockId ? paragraphLookup.get(blockId) : undefined;
+    let actualBlockId = blockId;
+    // An explicitly identified passage is accepted for older records only;
+    // without an anchor, put the image beside the first paragraph in that passage.
+    if (!passage && !isNewBatch && (image.passageId || image.passageSlug)) {
+      passage = passages.find(p =>
+        (image.passageId && p.id === image.passageId) ||
+        (image.passageSlug && p.slug === image.passageSlug));
+      actualBlockId = passage?.blocks?.find(b => b.type === 'paragraph')?.id;
+    }
+    if (!passage || !actualBlockId || paragraphLookup.get(actualBlockId) !== passage) continue;
+    const placed = reviewed ? {...image,caption:reviewed.caption,context:reviewed.evidence,
+      inlineAfterBlockId:actualBlockId} : {...image,inlineAfterBlockId:actualBlockId};
+    (assignments[passage.id] ||= []).push(placed);
+    used.add(image.id || image.slug);
   }
   return assignments;
 }
