@@ -12,9 +12,9 @@ const entries = await getCollection("images");
 const image = entries.find((entry) => entry.data.id === imageId)?.data;
 // The original articleSlug was sometimes a broad acquisition category, not
 // a verified relationship. Link back only after a paragraph/passage is known.
-const reviewed = image ? reviewedImagePassages[image.slug] : null;
+const reviewed = image ? (reviewedImagePassages as Record<string,{articleSlug:string;afterParagraphId:string}>)[image.slug] : null;
 const earlierAnchor = (typeof image?.afterParagraphId === "string" ? image.afterParagraphId : "") ||
-  (image ? curatedImageParagraphs[image.slug] : undefined);
+  (image ? (curatedImageParagraphs as Record<string,string>)[image.slug] : undefined);
 const explicitPassageId = typeof image?.passageId === "string" ? image.passageId : "";
 const explicitPassageSlug = typeof image?.passageSlug === "string" ? image.passageSlug : "";
 const linkedArticle = reviewed?.articleSlug || ((earlierAnchor || explicitPassageId || explicitPassageSlug) ? image?.articleSlug : null);
