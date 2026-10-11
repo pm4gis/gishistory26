@@ -1,0 +1,121 @@
+{
+  "prepared": "2026-10-11",
+  "imageCutoff": "2025-12-31",
+  "purpose": "Replace questionable, fictional and miscategorised candidate illustrations with independently licensed and specifically documented New Zealand maps and aerial/satellite sources.",
+  "remove": [
+    [
+      "doc-historic-map-dd0af843e2134e11",
+      "Rail crossing photograph, not documented historical map"
+    ],
+    [
+      "doc-historic-map-34de07126ec3a31e",
+      "Fictional Erewhon map, not historical NZ cartography"
+    ],
+    [
+      "doc-historic-map-a5f0313486b8c477",
+      "Second fictional Erewhon map"
+    ],
+    [
+      "doc-aerial-274e3e572442c0c9",
+      "Whenuapai wartime crash photograph, unrelated to historic aerial surveying"
+    ],
+    [
+      "doc-aerial-c662d03418398083",
+      "Unidentified coast, inadequate documentary context"
+    ],
+    [
+      "doc-satellite-f265205ba9a74f26",
+      "Topography composition, source image wrongly classified as orbital observation"
+    ],
+    [
+      "doc-satellite-e1436d9d742caba4",
+      "Otago composite map using NASA image, wrongly classified as original orbital observation"
+    ]
+  ],
+  "add": [
+    {
+      "title": "File:Palmerston North 1942 map.jpg",
+      "date": "1942",
+      "articleSlug": "councils-build-corporate-gis",
+      "kind": "historic-map",
+      "caption": "A 1942 map of Palmerston North, documenting urban mapping before the introduction of computerised council GIS."
+    },
+    {
+      "title": "File:Rough sketch map of Rangiriri, and Paetai on the Waikato River c1863 (27834851896).jpg",
+      "date": "1863",
+      "articleSlug": "what-the-computer-inherited",
+      "kind": "historic-map",
+      "caption": "A contemporaneous 1863 sketch map showing Rangiriri and Paetai on the Waikato River. This colonial-period historical source precedes digital GIS."
+    },
+    {
+      "title": "File:2021-04-05 Gisborne, New Zealand M6 earthquake shakemap (USGS).jpg",
+      "date": "2021",
+      "articleSlug": "safety-policing-and-emergency-gis",
+      "kind": "hazard",
+      "caption": "USGS intensity map for the Gisborne-region magnitude-six earthquake of 5 April 2021, an example of digital emergency mapping."
+    },
+    {
+      "title": "File:CBD Tunnel Landsat 7 Image Auckland.jpg",
+      "date": "2010",
+      "articleSlug": "earth-observation-becomes-routine",
+      "kind": "landsat",
+      "caption": "An Auckland map image employing Landsat 7 imagery in the context of the CBD rail tunnel, dated around 2010 in the Commons record."
+    },
+    {
+      "title": "File:LANDSAT 2005 Slipper Island Whakahau.jpg",
+      "date": "2005",
+      "articleSlug": "earth-observation-becomes-routine",
+      "kind": "landsat",
+      "caption": "A 2005 Landsat view of Slipper Island (Whakahau), an actual New Zealand satellite scene."
+    },
+    {
+      "title": "File:Another Puff from Whakaari (153818 - nzwhakaari oli2 20250107).jpg",
+      "date": "2025",
+      "articleSlug": "earth-observation-becomes-routine",
+      "kind": "landsat",
+      "caption": "A Landsat observation of Whakaari/White Island showing an eruption plume on 7 January 2025."
+    },
+    {
+      "title": "File:Ashburton NZ aerial.jpg",
+      "date": "2009",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "kind": "aerial",
+      "caption": "A 2009 aerial photograph of Ashburton, documenting a regional landscape available to subsequent spatial analysis."
+    },
+    {
+      "title": "File:Beaumont, New Zealand aerial photo 2006.jpg",
+      "date": "2006",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "kind": "aerial",
+      "caption": "A 2006 aerial photograph of Beaumont, showing ordinary regional aerial-image capture before today's integrated image services."
+    },
+    {
+      "title": "File:Duders Beach and Regional Park Aerial view.jpg",
+      "date": "2015",
+      "articleSlug": "imagery-becomes-infrastructure",
+      "kind": "aerial",
+      "caption": "An aerial view of Duders Beach and Regional Park in Auckland, dated 2015 in the source record."
+    },
+    {
+      "title": "File:Crown Grant Map - Forest Hill Hundred, Part Blocks II, IX, X, XII.jpg",
+      "date": "Historic cadastral map; year unconfirmed",
+      "articleSlug": "the-cadastre-becomes-data",
+      "kind": "cadastre",
+      "caption": "Crown grant plan showing parcel blocks in Forest Hill Hundred, Southland. A historic land-title record created before digital cadastres."
+    },
+    {
+      "title": "File:FMIB 50818 Sketch Map of Campbell Island.jpeg",
+      "date": "Historic survey map; year unconfirmed",
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "kind": "historic-map",
+      "caption": "Historical sketch map of Campbell Island, illustrating original paper geographic records preceding spatial databases."
+    },
+    {
+      "title": "File:FMIB 50819 Sketch Map of the Auckland Islands.jpeg",
+      "date": "Historic survey map; year unconfirmed",
+      "articleSlug": "from-map-sheets-to-spatial-data",
+      "kind": "historic-map",
+      "caption": "Historical sketch map of the Auckland Islands, a pre-digital paper map held in the source archive."
+    }
+  ]
+}
