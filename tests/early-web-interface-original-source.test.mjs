@@ -1,0 +1,33 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {externalHistoricInterfaces,historicInterfaceFor} from '../src/lib/historical-interface-sources.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const passages=fs.readdirSync('src/content/passages').filter(f=>f.endsWith('.json')).map(f=>read('src/content/passages/'+f));
+const images=fs.readdirSync('src/content/images').filter(f=>f.endsWith('.json')).map(f=>read('src/content/images/'+f));
+test('original 2003 DOCgis screenshot is a source link, never an image copied or claimed licensed',()=>{
+ const items=Object.entries(externalHistoricInterfaces);
+ assert.equal(items.length,1);
+ const [anchor,item]=items[0];
+ assert.equal(anchor,'ch30-s09-p01');
+ assert.equal(item.articleSlug,'the-first-web-maps');
+ assert.equal(item.captureYear,2003);
+ assert.equal(item.figureNumber,9);
+ assert.equal(item.reuseStatus,'external-link-only');
+ assert.equal(item.locallyApproved,false);
+ assert.equal(item.sourceUrl,'https://proceedings.esri.com/library/userconf/proc03/p1048.pdf#page=19');
+ assert.match(item.statement,/permission.*not.*confirmed/i);
+ assert.equal('assetPath' in item,false);
+ assert.ok(!images.some(i=>i.slug==='docgis-beta-html-2003'));
+ assert.equal(historicInterfaceFor('gis-at-the-end-of-2025',anchor),null);
+ assert.equal(historicInterfaceFor('the-first-web-maps','ch30-s05-p01'),null);
+ assert.equal(historicInterfaceFor('the-first-web-maps',anchor),item);
+ assert.ok(passages.some(p=>p.articleId==='article:chapter-30'&&p.blocks?.some(b=>b.id===anchor&&b.type==='paragraph')));
+});
+test('original 2019 sourced New Zealand browser map remains precisely identified',()=>{
+ const image=images.find(i=>i.slug==='nz-libraries-wikidata-osm-2019');
+ assert.ok(image);
+ assert.equal(image.dateDisplay,'19 February 2019');
+ assert.equal(image.articleSlug,'the-first-web-maps');
+ for(const url of [image.assetPath,image.thumbnailPath,image.originalAssetPath])assert.ok(fs.existsSync('public'+url));
+});
