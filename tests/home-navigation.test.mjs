@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {homeHighlightSlugs} from '../src/lib/home-highlights.mjs';
-import {siteContributionPageUrl,passageContributionPageUrl,contributionRecipient,contributionDraft,contributionMailtoUrl,contributionContextFromSearch} from '../src/lib/passage-contributions.mjs';
+import {siteContributionMailtoUrl,passageContributionMailtoUrl,passageContributionPageUrl,contributionRecipient,contributionDraft,contributionMailtoUrl,contributionContextFromSearch} from '../src/lib/passage-contributions.mjs';
 
 const home=readFileSync('src/pages/index.astro','utf8');
 const layout=readFileSync('src/layouts/Layout.astro','utf8');
@@ -64,16 +64,16 @@ test('desktop and mobile menus provide About and Contribute, with accessible nat
  assert.match(layout,/id="palette"/);
 });
 
-test('navigation buttons open the in-site contribution page for all email providers',()=>{
- assert.equal(siteContributionPageUrl(),'/contribute/');
- assert.ok(layout.includes('const contributionHref=siteContributionPageUrl()'));
- assert.ok(about.includes('const contributionHref=siteContributionPageUrl()'));
+test('navigation opens an email draft with the chosen registered mail handler',()=>{
+ const url=new URL(siteContributionMailtoUrl());
+ assert.equal(url.protocol,'mailto:');
+ assert.equal(decodeURIComponent(url.pathname),contributionRecipient);
+ assert.equal(url.searchParams.get('subject'),'NZ GIS History Contributions and Corrections');
+ assert.ok(url.searchParams.get('body').includes('attach any photos'));
+ assert.ok(layout.includes('const contributionHref=siteContributionMailtoUrl()'));
+ assert.ok(about.includes('const contributionHref=siteContributionMailtoUrl()'));
  assert.equal((layout.match(/href=\{contributionHref\}/g)||[]).length,2);
  assert.ok(!layout.includes('mail.google.com'));
- const draft=contributionDraft();
- const mail=contributionMailtoUrl(draft.subject,draft.body);
- assert.ok(mail.startsWith('mailto:'+contributionRecipient+'?'));
- for(const field of ['correct, add or clarify','Who or what is involved','sources, photographs','credited'])assert.ok(decodeURIComponent(mail).includes(field));
 });
 
 test('obsolete book labels are removed from reading navigation',()=>{
@@ -82,19 +82,22 @@ test('obsolete book labels are removed from reading navigation',()=>{
  }
 });
 
-test('passage context is retained with an email-app and copy alternative',()=>{
+test('passage-specific email drafts include the link and the alternative page has no form',()=>{
  const passage={title:'From register to transaction system',slug:'from-register-to-transaction-system-60c6ff7b97'};
+ const mail=new URL(passageContributionMailtoUrl({title:'Landonline',url:'/stories/landonline/'},passage));
+ assert.equal(mail.protocol,'mailto:');
+ assert.equal(decodeURIComponent(mail.pathname),'pm4gis@gmail.com');
+ assert.ok(mail.searchParams.get('body').includes('https://history.pm4gis.nz/stories/landonline/#'+passage.slug));
+ assert.ok(mail.searchParams.get('subject').includes(passage.title));
  const url=new URL(passageContributionPageUrl({title:'Landonline',url:'/stories/landonline/'},passage),'https://history.pm4gis.nz');
  assert.equal(url.pathname,'/contribute/');
- assert.equal(url.searchParams.get('passage'),passage.title);
- assert.ok(url.searchParams.get('ref').includes('https://history.pm4gis.nz/stories/landonline/#'+passage.slug));
  const historic=contributionContextFromSearch(url.search);
  assert.ok(contributionDraft(historic).body.includes(passage.slug));
  assert.equal(contributionContextFromSearch('?ref=https://evil.example/').reference,'');
  const fallback=readFileSync('src/pages/contribute/index.astro','utf8');
- assert.doesNotMatch(fallback,/window.location.replace/);
- assert.match(fallback,/Copy complete message/);
- assert.match(fallback,/Copy email address/);
- assert.match(fallback,/contributionMailtoUrl/);
+ assert.match(fallback,/Gmail in browser/);
+ assert.match(fallback,/Outlook in browser/);
+ assert.match(fallback,/Copy prepared email/);
+ assert.doesNotMatch(fallback,/<form\b|<input\b|<textarea\b|window\.location\.replace/);
  for(const text of [fallback,about,readFileSync('src/lib/passage-contributions.mjs','utf8')])assert.doesNotMatch(text,/Do not send restricted iwi|Please avoid sending restricted iwi/);
 });
