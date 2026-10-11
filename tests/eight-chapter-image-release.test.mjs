@@ -13,8 +13,8 @@ test('eight-chapter programme is limited to verified published historic media',(
     assert.ok(image.assetPath&&image.credit&&image.sourceUrl&&image.licence,'Missing image evidence '+image.slug);
   }
 });
-test('four contextual reuses appear at real existing paragraphs with explicit caveats',()=>{
-  assert.equal(Object.keys(chapterArchiveReuses).length,4);
+test('seven contextual reuses appear at real existing paragraphs with explicit caveats',()=>{
+  assert.equal(Object.keys(chapterArchiveReuses).length,7);
   for(const [slug,links] of Object.entries(chapterArchiveReuses)){
     const story=articles.find(a=>a.slug===slug);
     const sections=passages.filter(p=>p.articleId===story.id).sort((a,b)=>a.order-b.order);
