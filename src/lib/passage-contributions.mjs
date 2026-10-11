@@ -1,6 +1,6 @@
 /**
- * Provider-neutral contribution drafts and links. The site never sends email,
- * assumes a Gmail account, or requires a configured desktop mail application.
+ * Direct, provider-neutral email drafts. A mailto: link opens the visitor's
+ * registered email handler. Attachments are added in their email application.
  */
 export const contributionRecipient='pm4gis@gmail.com';
 export const productionOrigin='https://history.pm4gis.nz';
@@ -35,6 +35,8 @@ export function contributionDraft({
   '',
   answer('How would you like to be credited?',credit),
   '',
+  'Please attach any photos, maps, screenshots or documents to this email before sending.',
+  '',
   'Ngā mihi'
  ].join('\n');
  return {subject,body};
@@ -47,6 +49,20 @@ export function contributionMailtoUrl(subject,body){
 
 export function contributionText({subject,body}){
  return 'To: '+contributionRecipient+'\nSubject: '+subject+'\n\n'+body;
+}
+
+export function siteContributionMailtoUrl(){
+ const {subject,body}=contributionDraft();
+ return contributionMailtoUrl(subject,body);
+}
+
+export function passageContributionMailtoUrl(article,passage){
+ const {subject,body}=contributionDraft({
+  chapter:String(article?.title||''),
+  passage:String(passage?.title||''),
+  reference:passagePermanentUrl(article,passage)
+ });
+ return contributionMailtoUrl(subject,body);
 }
 
 export function siteContributionPageUrl(){
