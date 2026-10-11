@@ -57,6 +57,6 @@ const edits=[
 for(const [p,from,to] of edits)jsonText(work+p,from,to);
 const manifest=JSON.parse(fs.readFileSync('content/preservation-manifest.json','utf8'));
 const changed=execFileSync('git',['diff','--name-only','origin/main','--','src/content'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
-for(const p of changed)if(Object.hasOwn(manifest,p)&&fs.existsSync(p))manifest[p]=crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+for(const p of new Set([...changed,...restoreFiles.map(x=>work+x)]))if(Object.hasOwn(manifest,p)&&fs.existsSync(p))manifest[p]=crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 fs.writeFileSync('content/preservation-manifest.json',JSON.stringify(manifest,null,2)+'\n');
 console.log('Context-reviewed phrase edits applied: '+edits.length+'; accepted text restored in '+restoreFiles.length+' files; manifest updated for '+changed.length+' content files.');
