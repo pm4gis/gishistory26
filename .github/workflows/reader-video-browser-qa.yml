@@ -3,6 +3,10 @@ on:
   pull_request:
     paths:
       - 'src/components/Reader.svelte'
+      - 'src/lib/chapter-media.mjs'
+      - 'src/content/images/**'
+      - 'public/assets/historical/**'
+      - 'scripts/eight-chapter-browser-qa.mjs'
       - 'src/components/WanangaVideos.svelte'
       - 'src/components/WanangaClip.svelte'
       - 'src/pages/nga-poutama-videos/**'
@@ -42,3 +46,4 @@ jobs:
           done
           if ! curl -fsS -o /dev/null http://127.0.0.1:4321/; then cat /tmp/nzgis-preview.log; echo 'Static preview failed to start'; exit 1; fi
           node scripts/reader-video-browser-qa.mjs
+          node scripts/eight-chapter-browser-qa.mjs
