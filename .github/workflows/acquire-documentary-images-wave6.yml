@@ -39,6 +39,8 @@ jobs:
           git add public/assets/historical/original/ public/assets/historical/web/ public/assets/historical/card/ src/content/images/ docs/media/documentary-image-wave6-result-20261011.json
           if ! git diff --cached --quiet; then
             git commit -m 'Archive licensed NZ historical maps, aerial and satellite source originals with chapter placement'
+            git reset --hard HEAD
+            git clean -fd
             git fetch origin media/documentary-100-20261011
             git rebase origin/media/documentary-100-20261011
             git push origin HEAD:media/documentary-100-20261011
