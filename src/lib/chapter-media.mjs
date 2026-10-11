@@ -24,6 +24,21 @@ export const curatedImageParagraphs = Object.freeze({
  * the original New Zealand installation or an individual's involvement.
  */
 export const chapterArchiveReuses = Object.freeze({
+  'mapping-land-as-data': [
+    {slug:'nz-geology-lange-2012',
+     afterParagraphId:'ch07-s01-p01',
+     caption:'A digital New Zealand geological map prepared in 2012 using published GNS information. Geology was one of the original NZLRI inventory inputs; this later map is not an NZLRI or land-use-capability sheet.'}
+  ],
+  'automating-the-gis-work': [
+    {slug:'linz-arcmap-property-relationships-2016',
+     afterParagraphId:'ch43-s01-p02',
+     caption:'LINZ ArcMap documentation of linked property-record tables using an Esri file geodatabase. This is a real GIS data-handling operation of the period, not a screenshot of an automated model or New Zealand Python programme.'}
+  ],
+  'gis-at-the-end-of-2025': [
+    {slug:'ecoregions-qgis-2025',
+     afterParagraphId:'ch44-s01-p02',
+     caption:'New Zealand ecoregions mapped with QGIS in October 2025. This is documented desktop GIS map production and does not demonstrate machine learning or artificial intelligence.'}
+  ],
   'universities-build-a-field': [
     {slug:'auckland-university-clocktower-2004',
      afterParagraphId:'ch11-s01-p02',
