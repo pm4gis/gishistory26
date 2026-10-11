@@ -4,11 +4,13 @@ Implemented 10 October 2026 in `pm4gis/gishistory26`. Preserve all 4,102 source 
 
 ## Reader contribution
 
-Updated 11 October 2026: the Gmail-specific compose redirect and links have been replaced with a provider-neutral contribution page at `/contribute/`. The main navigation, About page and passage-level links all lead to that page. Passage links retain the original chapter, passage and permanent passage URL in validated query parameters, which are inserted in the prepared message.
+Updated 11 October 2026. The approved public interaction is a **direct email draft**, with no on-site contribution form. The desktop/mobile Contribute buttons in the main navigation and About page use standard `mailto:` links, addressed to `pm4gis@gmail.com`, with subject `NZ GIS History Contributions and Corrections` and prefilled questions. Every passage-level Contribute button also includes the chapter name, passage title and production permanent link. This preserves the visitor's normal email compose process and lets them attach maps, photographs, screenshots or documents inside their own email service before choosing Send.
 
-The page provides four questions, a copy-complete-message button, an optional `mailto:` link using the visitor's configured email application, a copy-address button and a selectable message preview. It never redirects to Gmail, assumes an email provider, sends a message, stores personal data or claims that opening a draft sends an email. The copy option is the primary option for users without a configured default mail application; the visitor pastes the message into any email service and chooses to send it. The intended recipient is `pm4gis@gmail.com`.
+A `mailto:` link uses the email handler configured on the visitor's device or browser, which may be an installed email app (Apple Mail, Outlook, Thunderbird and others) or registered webmail (including Gmail). A website cannot universally choose the visitor's private email provider, force an unconfigured handler to open, or attach local files to a `mailto:` draft automatically. Do not claim that it can.
 
-Helper: `src/lib/passage-contributions.mjs`; page: `src/pages/contribute/index.astro`; regression tests: `tests/passage-contributions-wananga.test.mjs` and `tests/home-navigation.test.mjs`.
+The optional `/contribute/` help page contains **no form**. It offers the normal email handler, direct browser-based Gmail and Outlook compose links and an editable-in-email, copyable text draft for other services. The help page preserves passage context and does not send or store visitor submissions. The page is reachable from passage-level Email options links, About, and the footer.
+
+Implementation: `src/lib/passage-contributions.mjs`, `src/pages/contribute/index.astro`, `src/layouts/Layout.astro`, `src/pages/about/index.astro`, `src/components/Reader.svelte`. Validation: `tests/passage-contributions-wananga.test.mjs`, `tests/home-navigation.test.mjs`, `scripts/home-browser-qa.mjs` and `scripts/reader-video-browser-qa.mjs`.
 
 ## Desktop reader width
 
@@ -34,4 +36,4 @@ Project files: `src/lib/nga-poutama-videos.mjs`, `src/components/WanangaVideos.s
 
 ## Validation and preservation
 
-Run `npm ci`, `npm test`, `npm run build` and the existing automated quality suite. Verify the canonical passage URL in the on-site draft and mailto body, copy-to-clipboard and manual-copy fallback, no automatic redirect, no claim of delivery and no person profile image additions. Visually check wide desktop and mobile reader widths, source disclosures, video thumbnail rendering and keyboard navigation. Record the published GitHub PR merge SHA and exact matching Cloudflare production deployment only after they succeed.
+Run `npm ci`, `npm test`, `npm run build` and the existing automated quality suite. Verify that the nav/reader links launch direct mailto drafts, including chapter/passages and a file attachment instruction. Check that the optional help page contains no forms, supports a selectable message, and has functional Gmail/Outlook compose links. Do not claim automatic attachments, email delivery or support for an unconfigured mail handler. Verify no person profile image additions. Visually check wide desktop and mobile reader widths, source disclosures, video thumbnail rendering and keyboard navigation. Record the published GitHub PR merge SHA and exact matching Cloudflare production deployment only after they succeed.
