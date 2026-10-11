@@ -1,0 +1,31 @@
+{
+  "id": "person:anna-eilers",
+  "slug": "anna-eilers",
+  "name": "Anna Eilers",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/anna-eilers/",
+  "story": [
+    "The published 2018 New Zealand Esri User Conference programme names Anna Eilers as facilitator for local and regional government and transportation sessions. It places her in the user-conference programme and the practitioner exchange around local-government GIS."
+  ],
+  "sources": [
+    {
+      "label": "Eagle Technology, NZEUC 2018 final programme, updated 14 August 2018",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "profession"
+  ],
+  "status": "Conference evidence available",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Eagle Technology, NZEUC 2018 final programme, updated 14 August 2018",
+        "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+      }
+    ]
+  ]
+}
