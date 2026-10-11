@@ -1,0 +1,66 @@
+{
+  "baseline": "d545a325d0e314d122944993f797d7282c1ed1b8",
+  "checkedAt": "2026-10-11",
+  "publishedImages": 1,
+  "items": [
+    {
+      "id": "luc-1967-sheet1",
+      "status": "accepted",
+      "sourceUrl": "https://natlib.govt.nz/records/37100560",
+      "paragraph": "ch07-s02-p02",
+      "decision": "Original legend visibly defines classes I–VIII and arable/non-arable/protection uses, directly illustrating the eight-class scheme. Separate regional 1:126,720 survey, 1967 publication with 1964 title; not a national NZLRI worksheet or LADEDA plot.",
+      "archiveSha256": "2197c64d529e7561fe93b81a0fe02cf2f5964b7284ba3259d748d02db07c13db",
+      "archiveBytes": 530411389
+    },
+    {
+      "id": "luc-1967-as-nzlri",
+      "status": "rejected-association",
+      "sourceUrl": "https://natlib.govt.nz/records/37100560",
+      "paragraph": "ch05-s01-p01",
+      "decision": "The 1967 regional LUC survey predates the national 1973–1979 NZLRI project; cannot illustrate its first edition."
+    },
+    {
+      "id": "ladeda-handbook-1982",
+      "status": "rights-held",
+      "sourceUrl": "https://webstatic.niwa.co.nz/library/pHCC1.pdf",
+      "paragraph": "ch05-s03-p02",
+      "decision": "Complete 58-page scan acquired; cover, title and copyright page inspected. R. D. Williams, Water and Soil Science Centre, May 1982, publication 1, ISSN 0111-798X. Crown Copyright 1982; redistribution permission unestablished. No page images published.",
+      "sha256": "1a8ebe35e862012cff6229eea8979dc0e87d547fe4e156cb0723e943c61920bd"
+    },
+    {
+      "id": "nzlri-edition1-worksheets",
+      "status": "unresolved-original",
+      "sourceUrl": "https://lrp.landcareresearch.co.nz/topics/luc-surveys/mapping-editions",
+      "paragraph": "ch05-s01-p03",
+      "decision": "Verified edition and digitisation history; no individual first-edition worksheet scan with sheet identity, original file and reuse permission obtained."
+    },
+    {
+      "id": "our-land-resources-1979",
+      "status": "access-held",
+      "sourceUrl": "https://doi.org/10.7931/dl27-olr",
+      "paragraph": "ch05-s02-p01",
+      "decision": "Institutional key-document index identifies 1979 explanatory handbook. Digital Library item p20022coll27/24 inaccessible through web retrieval; no figure published."
+    },
+    {
+      "id": "luc-handbook-1971",
+      "status": "rights-held",
+      "sourceUrl": "https://lrp.landcareresearch.co.nz/assets/LUC-pdfs/1971-LUC-Handbook_web.pdf",
+      "paragraph": "ch07-s02-p03",
+      "decision": "144-page second-edition source identified. Original Ministry of Works content; host terms do not automatically clear third-party copyright. No extracted figure published."
+    },
+    {
+      "id": "nzlri-roadmap-2013",
+      "status": "rights-held",
+      "sourceUrl": "https://lrp.landcareresearch.co.nz/assets/LUC-pdfs/NZLRI-LUC-Roadmap-2013a.pdf",
+      "paragraph": "ch05-s02-p04",
+      "decision": "Source-specific copyright page requires written permission. Section 11.3 says original first-edition field sheets do not appear to have been kept; published worksheets are the closest equivalent. Historical finding, not proof of present absence."
+    },
+    {
+      "id": "ladeda-workflow-photo",
+      "status": "unresolved-original",
+      "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/SRIR88.pdf",
+      "paragraph": "ch05-s02-p04",
+      "decision": "Technical description supports digitisation and LADEDA history; no identified photograph of the original workflow obtained. No later screenshot substituted."
+    }
+  ]
+}

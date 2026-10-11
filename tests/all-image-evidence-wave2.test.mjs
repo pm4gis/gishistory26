@@ -8,12 +8,12 @@ const images=all('src/content/images'),articles=all('src/content/articles'),pass
 const added=['retrolens-3ec520daec5ae4a0','christchurch-response-orthophoto-2011',
  'geonet-kaikoura-felt-2016','gabrielle-sentinel-flooding-napier-2023',
  'landsat-christchurch-2001','nz-census-density-2023'];
-test('all 181 documentary images have an explicit chapter publication decision',()=>{
- assert.equal(images.length,181);
+test('all documentary images have an explicit chapter publication decision',()=>{
+ assert.ok(images.length>=181);
  const file=fs.readFileSync('docs/media/chapter-image-alignment-wave2-20261011.csv','utf8').trim().split(/\r?\n/);
- assert.equal(file.length,182,'one header and 181 image decisions required');
+ assert.equal(file.length,images.length+1,'one header and one decision per registered image required');
  const registry=new Set(file.slice(1).map(row=>row.match(/^"([^"]+)"/)?.[1]));
- assert.equal(registry.size,181,'all records have one unique decision');
+ assert.equal(registry.size,images.length,'all records have one unique decision');
  for(const image of images)assert.ok(registry.has(image.slug),'Unreviewed source image: '+image.slug);
  assert.ok(file.every(row=>!row.includes('undefined')),'bad image evidence fields');
 });
