@@ -1,0 +1,46 @@
+{
+  "id": "entity:nzeug-conference-programme",
+  "slug": "nzeug-conference-programme",
+  "name": "New Zealand Esri user conferences and regional meetings",
+  "kind": "Project",
+  "category": "Professional communities",
+  "url": "/entities/nzeug-conference-programme/",
+  "story": [
+    "The New Zealand Esri Users Group, established according to its organisational history in 1992, developed recurring national meetings from the mid-1990s. A numbered annual conference series began in New Plymouth in 1996. Its independence from Esri and local distributor Eagle Technology remained a feature of the arrangement: professional volunteers organised community activity while the commercial organisations supplied programme and technical support.",
+    "The series acquired an international dimension in Auckland on 5–7 November 2012, when Eagle Technology hosted the Esri Asia Pacific User Conference at SKYCITY, incorporating the NZEUG's sixteenth annual meeting. Esri reported 530 delegates from 20 countries and more than 220 organisations. The 2012 meeting recognised work on Canterbury earthquake residential land damage, Auckland transport, Horizons freshwater data, and web maps produced at Queenstown Lakes District Council.",
+    "By August 2018 the three-day New Zealand conference programme included an NZEUG AGM alongside sessions from councils, DOC, LINZ, transport agencies, utilities, research institutions and consultants. On 21 August Roland Pomana facilitated the AGM. The published programme records demonstrations of ArcGIS Online and Enterprise, conservation data, land management, emergency management, planning, 3D GIS and automated service authoring. This is a useful record of what New Zealand practitioners were actually showing one another.",
+    "The group's reach also extended outside the main annual conference. Organisers reported approximately 650 participants from around 400 organisations across eight regional events in 2024. Posts by the group show that the 2025 regional programme included meetings in Auckland, Christchurch and Dunedin. These records document regional access to peer presentations, new technology and professional contact."
+  ],
+  "sources": [
+    {
+      "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe (Winter 2013)",
+      "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+    },
+    {
+      "label": "Eagle Technology, NZEUC 2018 final programme, updated 14 August 2018",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    },
+    {
+      "label": "New Zealand Esri Users Group, 2024 regional event attendance described in chapter 29",
+      "url": "/stories/becoming-a-gis-professional/#a-profession-broader-than-one-platform-99e14779ee"
+    },
+    {
+      "label": "New Zealand Esri Users Group, 2025 Christchurch event report",
+      "url": "https://www.linkedin.com/posts/new-zealand-esri-users-group_nzeug25-christchurch-activity-7315660920276328449-jvS9"
+    },
+    {
+      "label": "New Zealand Esri Users Group, 2025 Auckland event report",
+      "url": "https://www.linkedin.com/posts/new-zealand-esri-users-group_auckland-nzeug-networking-activity-7315305187932352512-ii9u"
+    }
+  ],
+  "aliases": [
+    "NZEUC and NZEUG regional meetings",
+    "New Zealand Esri User Conference"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "status": "Documented history",
+  "paragraphSources": [],
+  "biographyParagraphSources": []
+}
