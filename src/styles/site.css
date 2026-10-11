@@ -371,3 +371,46 @@
  .mobile-menu summary span:last-child{display:none}
 }
 
+
+
+/* Documentary images belong to the prose. Preserve complete uncropped map labels. */
+.narrative section[data-passage]{display:flow-root}
+.narrative .passage-illustration{
+ float:right;
+ width:min(43%,320px);
+ margin:0.3em 0 1.4em 1.25em;
+ background:var(--raised);
+ border:1px solid var(--line);
+ border-radius:12px;
+ overflow:hidden;
+}
+.narrative .passage-illustration a:first-child{display:block}
+.narrative .passage-illustration img{
+ width:100%;
+ height:clamp(170px,20vw,230px);
+ max-width:100%;
+ object-fit:contain;
+ border-radius:0;
+ background:var(--surface);
+}
+.narrative .passage-illustration figcaption{
+ margin:0;
+ padding:11px 13px 13px;
+ font-size:0.72em;
+ line-height:1.55;
+ overflow-wrap:anywhere;
+ color:var(--muted);
+}
+.narrative .passage-illustration figcaption a{
+ display:inline;
+ text-underline-offset:3px;
+}
+@media(max-width:680px){
+ .narrative .passage-illustration{
+  float:none;
+  width:100%;
+  max-width:100%;
+  margin:1.15em 0 1.45em;
+ }
+ .narrative .passage-illustration img{height:auto;max-height:370px}
+}
