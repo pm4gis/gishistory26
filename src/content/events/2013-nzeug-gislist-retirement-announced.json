@@ -1,0 +1,29 @@
+{
+  "id": "2013-nzeug-gislist-retirement-announced",
+  "dateDisplay": "2013-01",
+  "startDate": "2013-01",
+  "datePrecision": "month",
+  "year": 2013,
+  "label": "NZEUG president announces GISList retirement",
+  "summary": "Kurt Janssen, NZEUG president at the time, told mailing-list members that GISList was scheduled to close on 8 February 2013 and pointed users towards web forums and RSS. The January announcement records a shift in practitioner communications, not a verified date of technical shutdown.",
+  "url": "/people/kurt-janssen/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "person:kurt-janssen"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "conference",
+    "community"
+  ],
+  "sources": [
+    {
+      "label": "Kurt Janssen career and GISList account retained in NZ GIS History",
+      "url": "/people/kurt-janssen/"
+    }
+  ]
+}
