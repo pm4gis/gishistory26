@@ -5,7 +5,7 @@
   "datePrecision": "year",
   "year": 2024,
   "label": "NZEUG runs eight regional user events",
-  "summary": "The group's organisers reported approximately 650 attendees from around 400 organisations at eight 2024 regional events. These are organiser-reported figures for the regional programme, not membership totals.",
+  "summary": "The group's organisers reported approximately 650 attendees from around 400 organisations at eight 2024 regional events. The NZEUG programme lists Marlborough, Tauranga, Hawke’s Bay, Invercargill, New Plymouth, Auckland, Christchurch and Wellington. These are organiser-reported figures for regional events, not membership totals.",
   "url": "/stories/becoming-a-gis-professional/#a-profession-broader-than-one-platform-99e14779ee",
   "passageIds": [
     "passage:chapter-29-99e14779ee"
@@ -27,6 +27,10 @@
     {
       "label": "Chapter 29, 2024 NZEUG regional user conference organiser figures",
       "url": "/stories/becoming-a-gis-professional/#a-profession-broader-than-one-platform-99e14779ee"
+    },
+    {
+      "label": "NZEUG, Regional User Conference agendas for April–May 2024",
+      "url": "https://storymaps.arcgis.com/collections/bffbe8b2b5d14939905e298448e14ef0"
     }
   ]
 }
