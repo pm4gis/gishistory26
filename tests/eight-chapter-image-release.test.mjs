@@ -35,7 +35,10 @@ test('four contextual reuses appear at real existing paragraphs with explicit ca
 test('source candidates are held until downloaded, checked and dated by 2025',()=>{
   const queue=read('docs/media/eight-chapter-acquisition-20261011.json');
   assert.equal(queue.subjectCutoff,'2025-12-31');
-  assert.deepEqual(queue.items.map(x=>x.chapter),[30,43]);
+  assert.deepEqual(queue.items.map(x=>x.chapter),[30]);
+  assert.equal(queue.held.length,1);
+  assert.equal(queue.held[0].chapter,43);
+  assert.match(queue.held[0].reason,/reuse rights|licence/i);
   for(const c of queue.items){
     assert.ok(c.afterParagraphId&&c.sourceUrl&&c.licenceEvidenceUrl);
     const story=articles.find(a=>a.slug===c.articleSlug);
