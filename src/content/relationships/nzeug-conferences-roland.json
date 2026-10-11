@@ -1,0 +1,16 @@
+{
+  "id": "relationship:nzeug-conferences-roland",
+  "a": "entity:nzeug-conference-programme",
+  "b": "person:roland-pomana",
+  "label": "facilitated the user-group AGM",
+  "basis": "The 2018 NZEUC programme names Roland Pomana as facilitator of the NZEUG AGM community session.",
+  "passageIds": [
+    "passage:chapter-29-nzeug-community-programmes"
+  ],
+  "sources": [
+    {
+      "label": "Eagle Technology, NZEUC 2018 conference programme",
+      "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    }
+  ]
+}
