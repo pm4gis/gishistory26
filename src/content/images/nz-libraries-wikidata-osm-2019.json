@@ -15,7 +15,7 @@
   "articleSlug": "the-first-web-maps",
   "chapterNumber": 30,
   "dateDisplay": "19 February 2019",
-  "context": "A genuine 2019 browser-based map, made long after the first New Zealand web maps of the late 1990s and early 2000s. It illustrates the later combination of open map services and linked data. It is not a screenshot of GUILD-on-the-Web, PHEW!, or the original 2001 Census WebMap.",
+  "context": "A browser-based map created in 2019 from Wikidata and OpenStreetMap, showing New Zealand libraries.",
   "afterParagraphId": "ch30-p-aedbf2d5def6",
   "originalAssetPath": "/assets/historical/original/nz-libraries-wikidata-osm-2019.png",
   "thumbnailPath": "/assets/historical/card/nz-libraries-wikidata-osm-2019.webp",

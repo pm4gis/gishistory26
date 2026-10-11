@@ -26,8 +26,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The same choice could appear inside one organisation. An authoritative database might remain on premises while selected layers were replicated to a hosted platform. Sensitive editing might stay internal while public data was exposed through a cloud service. A mobile application could cache data for offline use and synchronise later. By the early 2020s, organisations were maintaining hybrid architectures to meet their requirements.",
-      "markdown": "The same choice could appear inside one organisation. An authoritative database might remain on premises while selected layers were replicated to a hosted platform. Sensitive editing might stay internal while public data was exposed through a cloud service. A mobile application could cache data for offline use and synchronise later. By the early 2020s, organisations were maintaining hybrid architectures to meet their requirements.",
+      "text": "The same choice could appear inside one organisation. An authoritative database might remain on premises while selected layers were replicated to a hosted platform. Sensitive editing might stay internal while public data was exposed through a cloud service. A mobile application could cache data for offline use and synchronise later. By the early 2020s, organisations were maintaining hybrid architectures to meet their requirements. ",
+      "markdown": "The same choice could appear inside one organisation. An authoritative database might remain on premises while selected layers were replicated to a hosted platform. Sensitive editing might stay internal while public data was exposed through a cloud service. A mobile application could cache data for offline use and synchronise later. By the early 2020s, organisations were maintaining hybrid architectures to meet their requirements. ",
       "sources": [],
       "id": "ch41-s11-p03"
     }

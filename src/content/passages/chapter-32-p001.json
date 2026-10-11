@@ -15,8 +15,8 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "New Zealand organisations adopted open-source GIS software gradually. Early operational uses included spatial databases, web servers and custom applications. By the middle of the 2000s, organisations were assembling systems from components such as PostgreSQL/PostGIS, MapServer, Apache, GeoServer and OpenLayers while continuing to use commercial GIS elsewhere.",
-      "markdown": "New Zealand organisations adopted open-source GIS software gradually. Early operational uses included spatial databases, web servers and custom applications. By the middle of the 2000s, organisations were assembling systems from components such as PostgreSQL/PostGIS, MapServer, Apache, GeoServer and OpenLayers while continuing to use commercial GIS elsewhere.",
+      "text": "New Zealand organisations adopted open-source GIS software gradually. Early operational uses included spatial databases, web servers and custom applications. By the middle of the 2000s, organisations were assembling systems from components such as PostgreSQL/PostGIS, MapServer, Apache, GeoServer and OpenLayers while continuing to use commercial GIS elsewhere. ",
+      "markdown": "New Zealand organisations adopted open-source GIS software gradually. Early operational uses included spatial databases, web servers and custom applications. By the middle of the 2000s, organisations were assembling systems from components such as PostgreSQL/PostGIS, MapServer, Apache, GeoServer and OpenLayers while continuing to use commercial GIS elsewhere. ",
       "sources": [],
       "id": "ch32-p-ffa2fd6cd3ca"
     },

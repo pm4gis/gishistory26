@@ -67,8 +67,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Mobile field work increasingly used task-specific forms rather than miniature desktop GIS interfaces. The Department of Conservation's Helicopter Boarding Pass used a location-enabled form for a defined safety task. It was a pre-flight safety checklist, not a mapping system. Survey123 supplied the form, location and supporting metadata, but the person completing it did not need to think about layers, spatial databases or web services.",
-      "markdown": "Mobile field work increasingly used task-specific forms rather than miniature desktop GIS interfaces. The Department of Conservation's Helicopter Boarding Pass used a location-enabled form for a defined safety task. It was a pre-flight safety checklist, not a mapping system. Survey123 supplied the form, location and supporting metadata, but the person completing it did not need to think about layers, spatial databases or web services.",
+      "text": "Mobile field work increasingly used task-specific forms rather than miniature desktop GIS interfaces. The Department of Conservation's Helicopter Boarding Pass used a location-enabled form for a defined safety task. It was a pre-flight safety checklist, not a mapping system. Survey123 supplied the form, location and supporting metadata, but the person completing it did not need to think about layers, spatial databases or web services. ",
+      "markdown": "Mobile field work increasingly used task-specific forms rather than miniature desktop GIS interfaces. The Department of Conservation's Helicopter Boarding Pass used a location-enabled form for a defined safety task. It was a pre-flight safety checklist, not a mapping system. Survey123 supplied the form, location and supporting metadata, but the person completing it did not need to think about layers, spatial databases or web services. ",
       "sources": [],
       "id": "ch35-s01-p03"
     },

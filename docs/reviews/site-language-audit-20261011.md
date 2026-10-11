@@ -6,140 +6,29 @@ Scope: all article, passage, record, event, image, theme and relationship JSON, 
 
 | Collection | Files scanned | Candidate passages | Auto-corrected files |
 | --- | ---: | ---: | ---: |
-| articles | 45 | 164 | 4 |
-| passages | 596 | 949 | 9 |
-| records | 863 | 150 | 12 |
+| articles | 45 | 164 | 0 |
+| passages | 596 | 945 | 0 |
+| records | 863 | 149 | 0 |
 | events | 201 | 12 | 0 |
-| images | 182 | 182 | 85 |
+| images | 182 | 86 | 0 |
 | themes | 8 | 0 | 0 |
 | relationships | 2614 | 2 | 0 |
-| src/pages | 19 | 13 | 0 |
+| src/pages | 22 | 13 | 0 |
 | src/components | 9 | 5 | 0 |
 | src/layouts | 1 | 0 | 0 |
-| **Total** | **4538** | **1477** | **110** |
+| src/lib | 12 | 169 | 0 |
+| **Total** | **4553** | **1545** | **0** |
 
 ## Applied corrections
 
 Only empty image disclaimers and the exact unsupported satellite claim are removed automatically. Image provenance, licences, attribution and source links remain intact.
-- src/content/articles/gis-at-the-end-of-2025.json
-- src/content/articles/gis-inside-government.json
-- src/content/articles/lidar-remakes-the-landscape.json
-- src/content/articles/when-gis-became-gis.json
-- src/content/passages/chapter-32-p001.json
-- src/content/passages/chapter-33-p008.json
-- src/content/passages/chapter-34-p011.json
-- src/content/passages/chapter-35-p001.json
-- src/content/passages/chapter-35-p008.json
-- src/content/passages/chapter-38-p013.json
-- src/content/passages/chapter-39-p004.json
-- src/content/passages/chapter-40-p006.json
-- src/content/passages/chapter-41-p013.json
-- src/content/records/david-pimblott.json
-- src/content/records/drawing-maps-by-machine.json
-- src/content/records/earth-observation-becomes-routine.json
-- src/content/records/gis-inside-government.json
-- src/content/records/journey-gis.json
-- src/content/records/kat-salm.json
-- src/content/records/kirsty-mackie.json
-- src/content/records/open-source-changes-the-tools.json
-- src/content/records/robert-sanson.json
-- src/content/records/the-real-time-map.json
-- src/content/records/turning-the-landscape-into-numbers.json
-- src/content/records/universities-build-a-field.json
-- src/content/images/arc-pitt-street-2007.json
-- src/content/images/christchurch-quake-shaking-2011.json
-- src/content/images/doc-aerial-00f0ed1811912d0b.json
-- src/content/images/doc-aerial-3614865fdac5da67.json
-- src/content/images/doc-aerial-457c5e380ea2ac58.json
-- src/content/images/doc-aerial-5c1e84f30e04f7e4.json
-- src/content/images/doc-aerial-a00c932ebc07802d.json
-- src/content/images/doc-aerial-c24a085218be4824.json
-- src/content/images/doc-aerial-d711a1402942aba1.json
-- src/content/images/doc-cadastre-0b896091338c2f90.json
-- src/content/images/doc-cadastre-30760e43deee1695.json
-- src/content/images/doc-cadastre-3770422ed61e14cb.json
-- src/content/images/doc-cadastre-3a9be9732bba2ec1.json
-- src/content/images/doc-cadastre-43a84019990b0233.json
-- src/content/images/doc-cadastre-4692b3c6c84d230a.json
-- src/content/images/doc-cadastre-794a3655d9dab411.json
-- src/content/images/doc-cadastre-9142079fd0314bd8.json
-- src/content/images/doc-cadastre-a7958ff4ae21597d.json
-- src/content/images/doc-cadastre-bf16d1ffbb4a12cd.json
-- src/content/images/doc-cadastre-d0a9d201bc3c1739.json
-- src/content/images/doc-cadastre-f3cb2053093d719e.json
-- src/content/images/doc-geology-06e1e56e2eeb9d53.json
-- src/content/images/doc-geology-262fede5a5aed6f0.json
-- src/content/images/doc-geology-38eacd9bf8771658.json
-- src/content/images/doc-geology-5c715d45011ba9cf.json
-- src/content/images/doc-geology-73858bd484ced49f.json
-- src/content/images/doc-geology-82e1edc93a1f6de9.json
-- src/content/images/doc-geology-8b75496a3141c4ff.json
-- src/content/images/doc-geology-c5740b4e9a49ab59.json
-- src/content/images/doc-geology-de984d68a67b731a.json
-- src/content/images/doc-hazard-13e306ee203bebd1.json
-- src/content/images/doc-hazard-19b30e463aa4e8cd.json
-- src/content/images/doc-hazard-65ce26f08644672d.json
-- src/content/images/doc-hazard-9bc081786c23dfdd.json
-- src/content/images/doc-hazard-afdf3b4fc71102c7.json
-- src/content/images/doc-historic-map-00f0fdd6ea708a84.json
-- src/content/images/doc-historic-map-0a422a6a010ddf9c.json
-- src/content/images/doc-historic-map-16c540bc8d329155.json
-- src/content/images/doc-historic-map-17bed2d97b6abec1.json
-- src/content/images/doc-historic-map-19bab61eca46447e.json
-- src/content/images/doc-historic-map-1f8cf6d078272645.json
-- src/content/images/doc-historic-map-2020d7ac5512ebad.json
-- src/content/images/doc-historic-map-299d1ee93ac71751.json
-- src/content/images/doc-historic-map-2ef3f257c1dd13e8.json
-- src/content/images/doc-historic-map-3087e70277bc5965.json
-- src/content/images/doc-historic-map-35e48222f8652570.json
-- src/content/images/doc-historic-map-3cf82146ff3e3e64.json
-- src/content/images/doc-historic-map-5b740651f436c1a9.json
-- src/content/images/doc-historic-map-5c54357b9f88aed3.json
-- src/content/images/doc-historic-map-6c572e829a93c5f5.json
-- src/content/images/doc-historic-map-777b1981f3a8ee1d.json
-- src/content/images/doc-historic-map-7b0ffa700c4a8aab.json
-- src/content/images/doc-historic-map-7e7c19a485127de5.json
-- src/content/images/doc-historic-map-81e100d8739119b4.json
-- src/content/images/doc-historic-map-87bb7d7701cec516.json
-- src/content/images/doc-historic-map-8dd373784e381549.json
-- src/content/images/doc-historic-map-8dfda42e6692dcd8.json
-- src/content/images/doc-historic-map-935e9ebe2e820dad.json
-- src/content/images/doc-historic-map-9823132ada1ac12a.json
-- src/content/images/doc-historic-map-a2e432b8bed0bd6c.json
-- src/content/images/doc-historic-map-a5efcae9cdd91ed9.json
-- src/content/images/doc-historic-map-a868c215fda3b827.json
-- src/content/images/doc-historic-map-afc7645352d7d630.json
-- src/content/images/doc-historic-map-b2ce49ca6259e58c.json
-- src/content/images/doc-historic-map-b654fee9b64015f4.json
-- src/content/images/doc-historic-map-bd17a9d533e4dcb1.json
-- src/content/images/doc-historic-map-c0bd5308b6e73017.json
-- src/content/images/doc-historic-map-cb851feb90fa2f0f.json
-- src/content/images/doc-historic-map-d97b89649515fb67.json
-- src/content/images/doc-historic-map-db3d935aa147e91b.json
-- src/content/images/doc-historic-map-e8a763b2bd992936.json
-- src/content/images/doc-historic-map-eb827bb971877be7.json
-- src/content/images/doc-historic-map-ed11019d3f8d3947.json
-- src/content/images/doc-historic-map-fd67f74a9e0f5edf.json
-- src/content/images/doc-landsat-b68fd62840dccdf1.json
-- src/content/images/doc-satellite-26c7ee087498fbe7.json
-- src/content/images/doc-satellite-3f2f9ae2115b22f2.json
-- src/content/images/doc-satellite-4478e38ff0a9541a.json
-- src/content/images/doc-satellite-77d9c52cbffd74c4.json
-- src/content/images/doc-satellite-8508e0d8aa67899d.json
-- src/content/images/doc-satellite-d3fea612a6f964d8.json
-- src/content/images/fb9535cb629f261d44bf56b4.json
-- src/content/images/gabrielle-nasa-modis-2023.json
-- src/content/images/petone-lower-hutt-survey-1909.json
-- src/content/images/wiri-north-quarry-1982.json
 
 ## Highest-priority passages
 
 All candidates, including lower-priority hits, are in docs/reviews/site-language-candidates-20261011.csv. Repeated paragraph text/markdown is reported once. Source notes and source quotations are excluded from automatic rewriting.
 
-- **src/content/images/nz-libraries-wikidata-osm-2019.json** (context; contrived-not;it-illustrates;does-not;generic-not): It illustrates the later combination of open map services and linked data.
 - **src/content/passages/chapter-1-p004.json** (blocks[3].text; contrived-not;not-rather;does-not;generic-not): A road centreline suitable for a national topographic map was not a cadastral boundary, and a contour was an interpreted representation of terrain rather than a directly surveyed line at every point.
 - **src/content/passages/chapter-35-p001.json** (blocks[5].text; contrived-not;not-rather;does-not;generic-not): Mobile field work increasingly used task-specific forms rather than miniature desktop GIS interfaces.
-- **src/content/records/wellington-earthquake-lifelines-group.json** (story[2]; matters;not-rather): The distinction matters: an exercise and a proposal are evidence of coordination work, rather than proof that every organisation had installed the same GIS.
 - **src/content/records/new-zealand-geodetic-datum-1949.json** (story[1]; contrived-not;not-rather;generic-not): NZGD49 is a datum, not a map projection.
 - **src/content/articles/mapping-land-as-data.json** (sourceNotes[1].text; contrived-not;does-not;generic-not): The classification describes sustained productive capability and physical limitation; it is not a land-value, consent or statutory-zoning system.
 - **src/content/passages/chapter-12-p010.json** (blocks[4].markdown; contrived-not;does-not;generic-not): The conference numbering corroborates the mid-1990s origin of the annual series; the surviving archive does not resolve every year.
@@ -152,20 +41,16 @@ All candidates, including lower-priority hits, are in docs/reviews/site-language
 - **src/content/records/amy-tay.json** (story[0]; contrived-not;does-not;generic-not): The page identifies her as committee secretary when the biography was written; it is not a dated employment record.
 - **src/content/events/2015-wis-career-networks-event.json** (summary; contrived-not;does-not;generic-not): The group report is not a survey of the geospatial workforce.
 - **src/content/images/canterbury-wilding-pines.json** (context; contrived-not;does-not;generic-not): The photograph itself is not a GIS map.
-- **src/content/images/d2f88a23489401ef1cb1e75f.json** (context; it-illustrates;does-not;generic-not): It illustrates a government fieldwork setting before mobile GIS; it is not evidence of a GIS-based field workflow.
 - **src/content/images/efcd44f0d0ed495b8caa85ba.json** (context; contrived-not;does-not;generic-not): It is not an NZLRI worksheet and does not show the inventory land units described in this chapter.
 - **src/content/images/gabrielle-sentinel-flooding-napier-2023.json** (caption; contrived-not;does-not;generic-not): The image illustrates observed flood extent and is not an NZTA operational GIS screenshot.
-- **src/content/images/gisborne-east-coast-luc-map-1967.json** (context; contrived-not;does-not;generic-not): This is direct evidence for the eight-class LUC scheme discussed in this paragraph; it is not a first-edition NZLRI worksheet, digitisation photograph or LADEDA output.
 - **src/content/images/kapiti-island-lidar-2024.json** (context; contrived-not;does-not;generic-not): It shows terrain detail possible using high-density elevation measurements; it is not a scan of an early New Zealand LiDAR flight.
 - **src/content/images/kiwirail-passenger-network-map.json** (context; contrived-not;does-not;generic-not): It is not a water or electricity utility map, nor an original enterprise GIS screen.
 - **src/content/images/linz-landonline-survey-work-2025.json** (context; contrived-not;does-not;generic-not): It is not an image of the original 2000s launch interface.
-- **src/content/images/linz-wfs-attribute-service-2023.json** (context; it-illustrates;does-not;generic-not): It illustrates interoperable APIs and is not the first appearance of web geospatial services in New Zealand.
 - **src/content/images/linz-wmts-qgis-data-view.json** (context; contrived-not;does-not;generic-not): It documents software access to open spatial data and is not an image of the earliest version of the LINZ Data Service.
 - **src/content/images/maori-land-court-minute-books-2013.json** (altText; contrived-not;does-not;generic-not): Photographic record of Māori Land Court minute books, providing evidence of original paper records; this is not a 2002 or 2011 GIS screenshot.
 - **src/content/images/upper-hutt-civic-centre-2005.json** (context; contrived-not;does-not;generic-not): A photograph of the council's civic facilities in 2005, after the first XPLORER mapping service; it is not an image of XPLORER.
 - **src/content/images/victoria-square-aerial-1955.json** (context; contrived-not;does-not;generic-not): This image is not a 1990s GIS screenshot.
 - **src/content/images/canterbury-seismic-hazard-2010.json** (context; it-illustrates;not-rather): It illustrates background seismic risk geography rather than observed ground shaking or Jithen Singh's earthquake response GIS.
-- **src/content/passages/chapter-2-p006.json** (blocks[1].text; matters): The distinction matters when reading a claim that mapping had been computerised.
 - **src/content/articles/becoming-a-gis-professional.json** (sourceNotes[11].text; contrived-not;generic-not): These sources support selected practitioner examples, not a census of the workforce.
 - **src/content/articles/councils-build-corporate-gis.json** (sourceNotes[3].text; contrived-not;generic-not): Their maturity model is research, not an official standard.
 - **src/content/articles/drawing-maps-by-machine.json** (sourceNotes[0].text; contrived-not;generic-not): The thesis supports an operational computer-assisted cadastral mapping system, not a national-first GIS claim.
@@ -197,7 +82,6 @@ All candidates, including lower-priority hits, are in docs/reviews/site-language
 - **src/content/passages/chapter-34-p003.json** (blocks[0].text; contrived-not;generic-not): The numbers now look almost comically small, but the design problem has not gone away: a field worker needs the right information, not every byte the organisation owns.
 - **src/content/passages/chapter-35-p007.json** (blocks[1].text; not-rather;does-not;generic-not): A person registering for access did not need the same interface as someone entering place-based information.
 - **src/content/passages/chapter-35-p007.json** (blocks[2].text; not-rather;does-not;generic-not): The technical record described place-based capture through a small number of mapping steps rather than relying only on typed addresses.
-- **src/content/passages/chapter-36-p006.json** (blocks[2].text; contrived-not;generic-not): The satellite had been repeatedly observing the country whether or not a particular New Zealand agency had an active project underway.
 - **src/content/passages/chapter-37-p012.json** (blocks[3].text; not-rather;does-not;generic-not): Just as an orthophoto cannot decide where a cadastral boundary legally lies, a LiDAR point cloud measures surfaces rather than ownership.
 - **src/content/passages/chapter-38-p003.json** (blocks[2].text; not-rather;does-not;generic-not): At suitable flight heights the ground sample distance could be measured in centimetres rather than metres.
 - **src/content/passages/chapter-39-p012.json** (blocks[3].text; not-rather;does-not;generic-not): The exchange problem therefore became selective rather than absolute.
@@ -223,17 +107,9 @@ All candidates, including lower-priority hits, are in docs/reviews/site-language
 - **src/content/images/canterbury-seismic-hazard-2010.json** (caption; contrived-not;generic-not): This is a hazard forecast, not a measured shaking map or the emergency response Common Operating Picture.
 - **src/content/images/christchurch-civic-offices-2019.json** (context; contrived-not;generic-not): Council office exterior photographed in 2019, not an illustration of the council's early geospatial technology.
 - **src/content/images/christchurch-response-orthophoto-2011.json** (context; contrived-not;generic-not): It is an operational imagery product, not a screenshot from the Common Operating Picture.
-- **src/content/images/doc-landsat-b68fd62840dccdf1.json** (caption; contrived-not;generic-not): This is remotely sensed imagery, not a photograph of GIS software.
-- **src/content/images/doc-satellite-26c7ee087498fbe7.json** (caption; contrived-not;generic-not): This is remotely sensed imagery, not a photograph of GIS software.
-- **src/content/images/doc-satellite-3f2f9ae2115b22f2.json** (caption; contrived-not;generic-not): This is remotely sensed imagery, not a photograph of GIS software.
-- **src/content/images/doc-satellite-4478e38ff0a9541a.json** (caption; contrived-not;generic-not): This is remotely sensed imagery, not a photograph of GIS software.
-- **src/content/images/doc-satellite-77d9c52cbffd74c4.json** (caption; contrived-not;generic-not): This is remotely sensed imagery, not a photograph of GIS software.
-- **src/content/images/doc-satellite-8508e0d8aa67899d.json** (caption; contrived-not;generic-not): This is remotely sensed imagery, not a photograph of GIS software.
-- **src/content/images/doc-satellite-d3fea612a6f964d8.json** (caption; contrived-not;generic-not): This is remotely sensed imagery, not a photograph of GIS software.
 - **src/content/images/linz-positionz-2018.json** (context; it-illustrates;generic-not): It illustrates practical survey positioning services in New Zealand, not the first introduction of handheld GPS.
 - **src/content/images/linz-wmts-qgis-connection.json** (context; contrived-not;generic-not): The image illustrates standards and interoperable infrastructure, not a historical screen from 1990s SDI planning.
 - **src/content/images/lower-hutt-civic-centre-2021.json** (context; contrived-not;generic-not): The council's civic buildings photographed in 2021; not a historical map or GIS service screen.
-- **src/content/images/nasa-world-wind-napier-2006.json** (caption; it-illustrates;generic-not): This illustrates a contemporaneous online globe, not Google Maps, Google Earth or the 2007 localised New Zealand Google Maps interface.
 - **src/content/images/native-land-court-whanganui-2025.json** (altText; contrived-not;generic-not): Former Native Land Court and Aotea Māori Land Board building in Whanganui, photographed in 2025; not a photo of today's Māori Land Court GIS services.
 - **src/content/images/niwa-rv-tangaroa-2010.json** (altText; contrived-not;generic-not): Direct institutional image; not an image of NIWA's GIS systems or geospatial data.
 - **src/content/images/north-island-counties-districts-1981.json** (context; contrived-not;generic-not): It helps orient the reader to the county and district system before the reform; it is an historical map, not a GIS interface or a representation of the new authorities.
@@ -250,7 +126,6 @@ All candidates, including lower-priority hits, are in docs/reviews/site-language
 - **src/content/passages/chapter-29-p005.json** (blocks[0].text; does-not;more-than;generic-not): The GIS analyst was the most obvious role, but operational systems needed more than analysis.
 - **src/content/passages/chapter-33-p001.json** (blocks[0].text; no-longer;does-not;generic-not): Government agencies were learning that a useful map no longer had to sit on a specialist workstation.
 - **src/content/passages/chapter-34-p014.json** (blocks[1].text; no-longer;does-not;generic-not): The common thread was no longer the device.
-- **src/content/passages/chapter-36-p001.json** (blocks[1].text; no-longer;does-not;generic-not): A GIS analyst no longer needed to begin with magnetic tape or build a complete processing chain simply to look at a new observation.
 - **src/content/passages/chapter-36-p005.json** (blocks[3].text; no-longer;does-not;generic-not): The computer was no longer struggling simply to turn tape into a rectified image.
 - **src/content/passages/chapter-44-p009.json** (blocks[0].text; does-not;more-than;generic-not): A highly automated spatial workflow can still be wrong about more than coordinates.
 - **src/content/records/open-data-changes-access.json** (description; no-longer;does-not;generic-not): Government agencies were learning that a useful map no longer had to sit on a specialist workstation.
@@ -274,6 +149,44 @@ All candidates, including lower-priority hits, are in docs/reviews/site-language
 - **src/content/passages/chapter-42-p006.json** (blocks[0].text; not-rather;more-than): SCIRT's GIS Viewer was another system in the same recovery environment, serving infrastructure-rebuild operations rather than public land-zoning enquiries or the whole CERA data-sharing programme.
 - **src/content/passages/chapter-43-p014.json** (blocks[2].text; not-rather;no-longer): Machine learning increasingly allowed some patterns to be learned from examples rather than specified step by step.
 - **src/content/passages/chapter-44-p010.json** (blocks[3].text; not-rather;no-longer): A planner might use a map application rather than a desktop GIS.
+- **src/lib/nga-poutama-videos.mjs** (page; contrived-not): rdings. Original media remains with YouTube. * The public official playlist feed exposes 14 recent entries, not an exhaustive * historical export. Two additional recordings were verified individually. * Dates are YouTube publication dates, not necessarily
+- **src/lib/subject-media.mjs** (page; contrived-not): 1898', relation: 'Historic cadastral survey records are the starting point of this theme. This sheet is not an early Landonline screenshot.' }, 'imagery': { slug: 'wrights-hill-1945', relation: 'A genuine New Zealand aerial survey pho
+- **src/lib/subject-media.mjs** (page; contrived-not): t territorial-authority spatial-information interface, illustrating the information councils work with. It is not a 1980s council GIS system.' }, 'open-practice': { slug: 'linz-wmts-qgis-data-view', relation: 'Public spatial data delivered
+- **src/lib/subject-media.mjs** (page; contrived-not): in 2013, illustrating the historical records that underpin later digitisation and land information services; not a GIS application screen.'}, 'te-runanga-o-ngai-tahu-ngai-tahu-archive': {slug:'maori-south-island-sketch-1841',relation:'An early nineteenth-
+- **src/lib/subject-media.mjs** (page; contrived-not): based on an unidentified Ngāi Tahu/Kāi Tahu sketch, transcribed through colonial mapping. Historical context, not a Kā Huru Manu GIS map or an image produced by the contemporary Ngāi Tahu Archive.'}, 'niwa': {slug:'niwa-rv-tangaroa-2010',relation:'NIWA res
+- **src/lib/subject-media.mjs** (page; contrived-not): ation:'NIWA research vessel Tangaroa photographed for NIWA by Dave Allen, an institutional research platform; not a screenshot of NIWA GIS, bathymetry or DASmap.'}, 'university-of-otago': {slug:'otago-registry-2009',relation:'The University of Otago Regist
+- **src/lib/subject-media.mjs** (page; contrived-not): e Herenga Waka—Victoria University of Wellington bilingual signage on Rutherford House, photographed in 2025; not an image of its GIS teaching facilities.'}, // Central government, research, companies. 'land-information-new-zealand-linz': { slug:
+- **src/lib/subject-media.mjs** (page; contrived-not): ation: 'A map of road hierarchy across Auckland, illustrating the transport networks analysed with GIS. It is not an NZ Transport Agency product.' }, 'bay-of-plenty-regional-council': { slug: 'rotoiti-bathymetry-2021', relation: 'GNS Scienc
+- **src/lib/subject-media.mjs** (page; contrived-not): GNS Science bathymetry of Lake Rotoiti in the Bay of Plenty. It illustrates regional scientific spatial data, not a Bay of Plenty Regional Council project.' }, 'department-of-conservation': { slug: 'ecoregions-qgis-2025', relation: 'A QGIS
+- **src/lib/subject-media.mjs** (page; contrived-not): GIS map of ecological regions. It illustrates the type of geographic information used in conservation, but is not a DOC system screenshot.' }, 'gns-science': { slug: 'qmap-christchurch-2008', relation: 'An actual GNS Science QMAP geological
+- **src/lib/subject-media.mjs** (page; contrived-not): elevation mapping created with ArcGIS 9.1; an illustration of the Esri software family represented by Eagle, not an Eagle-produced map.' }, 'aerial-surveys': { slug: 'southland-aerial-verdon-1988', relation: 'A genuine historic New Zealand
+- **src/lib/subject-media.mjs** (page; contrived-not): , relation: 'The former Auckland Regional Council offices on Pitt Street, photographed in January 2007; not an image of a council GIS application.' }, 'upper-hutt-city-council': { slug: 'upper-hutt-civic-centre-2005', relation: 'Upper
+- **src/lib/subject-media.mjs** (page; contrived-not): per Hutt City Council administration building and council chambers in 2005, two years after XPLORER launched; not a screenshot of that service.' }, 'auckland-council': { slug: 'auckland-osm-colour-2018', relation: 'An independently produced
+- **src/lib/subject-media.mjs** (page; contrived-not): lour-2018', relation: 'An independently produced map of Auckland. It provides geographic context but is not an Auckland Council GeoMaps or GFMO screenshot.' }, 'christchurch-city-council': { slug: 'christchurch-civic-offices-2019', re
+- **src/lib/subject-media.mjs** (page; contrived-not): ower Hutt Town Hall and council administration building in September 2021; this is an institutional portrait, not a council GIS map.' }, 'wellington-city-council': { slug: 'wrights-hill-1945', relation: 'A 1945 aerial survey photograph of t
+- **src/lib/subject-media.mjs** (page; contrived-not): ill-1945', relation: 'A 1945 aerial survey photograph of the Wellington area. It is geographic context, not a Wellington City Council software screen.' }, 'canterbury-regional-council-environment-canterbury': { slug: 'canterbury-wilding-pin
+- **src/lib/subject-media.mjs** (page; contrived-not): ation: 'A photograph of wilding pines in Canterbury, illustrating a regional land-management challenge. It is not a council GIS map or software screen.' } } }); export function pickThemeImage(slug,images) { const binding=subjectMedia.themes[slug]; if
+- **src/lib/subject-media.mjs** (page; it-illustrates): lug: 'rotoiti-bathymetry-2021', relation: 'GNS Science bathymetry of Lake Rotoiti in the Bay of Plenty. It illustrates regional scientific spatial data, not a Bay of Plenty Regional Council project.' }, 'department-of-conservation': { slug:
+- **src/lib/subject-media.mjs** (page; it-illustrates): nt-of-conservation': { slug: 'ecoregions-qgis-2025', relation: 'A QGIS map of ecological regions. It illustrates the type of geographic information used in conservation, but is not a DOC system screenshot.' }, 'gns-science': { slug: '
+- **src/lib/subject-media.mjs** (page; it-illustrates): slug: 'southland-aerial-verdon-1988', relation: 'A genuine historic New Zealand aerial photograph. It illustrates aerial survey inputs rather than documenting an Aerial Surveys project.' }, // Local government: prefer an image of the authori
+- **src/lib/timeline-media.mjs** (page; contrived-not): 023',relation:'Modern census geography from 2023. This illustrates later use of statistical geographic units, not a 1940s census map.'}, '1949-nzgd49': {slug:'riverhead-geodetic-mark-2025',relation:'A geodetic survey mark photographed in 2025. Its relationsh
+- **src/lib/timeline-media.mjs** (page; contrived-not): An aerial photograph captured in 1988, illustrating the input material used in photogrammetric mapping. It is not a photograph of a stereoplotter.'}, '1989-wellington-lifelines-study': {slug:'masterton-earthquake-fault-map-1942',relation:'Historical hazard m
+- **src/lib/timeline-media.mjs** (page; contrived-not): lation:'1955 Christchurch aerial photography, later made accessible through council mapping services. This is not a 1993 GIS screen.'}, '1996-wairarapa-lifelines-association': {slug:'masterton-earthquake-fault-map-1942',relation:'An earlier earthquake-fault
+- **src/lib/timeline-media.mjs** (page; contrived-not): :'linz-positionz-2018',relation:'A later illustration of LINZ satellite positioning infrastructure from 2018, not a depiction of the 2000 selective availability decision.'}, '2001-landonline': {slug:'linz-landonline-survey-work-2025',relation:'An authentic L
+- **src/lib/timeline-media.mjs** (page; contrived-not): onga-linz-topo50-2020',relation:'A 2020 map produced using the modern national topographic mapping framework, not an image from 2001.'}, '2003-christchurch-lidar': {slug:'kapiti-island-lidar-2024',relation:'A 2024 LINZ LiDAR-derived shaded relief map of Kāpi
+- **src/lib/timeline-media.mjs** (page; contrived-not): ral survey map showing the paper parcel records subsequently converted into digital cadastral datasets. It is not a DCDB software screenshot."}, "1989-mackenzie-ecological-gis": {slug:"ecoregions-qgis-2025",relation:"A later QGIS-produced ecological mapping
+- **src/lib/timeline-media.mjs** (page; contrived-not): uthland cadastral sheet illustrating the legacy parcel data available before council CAD/GIS systems. This is not a Gore or MapInfo screenshot."}, "1999-auckland-councils": {slug:"auckland-region-transport-2014",relation:"A later Auckland regional transport
+- **src/lib/timeline-media.mjs** (page; contrived-not): l transport map, showing the geographic datasets that can be shared across local-government boundaries. It is not a 1999 working-group output."}, "2009-aamhatch-wellington-city-model": {slug:"nz-dem-arcgis-2006",relation:"An authentic 2006 ArcGIS elevation m
+- **src/lib/timeline-media.mjs** (page; contrived-not): tion:"A 2025 New Zealand ecological map created in QGIS. It illustrates one broad conservation GIS use but is not a DOCgis interface."}, '2010-canterbury-common-operating-picture': {slug:'canterbury-seismic-hazard-2010',additionalSlugs:['greendale-fault-rupt
+- **src/lib/timeline-media.mjs** (page; contrived-not): bsequent official LINZ QGIS map-service screenshot, demonstrating public access to geospatial datasets. It is not a photograph of Jan Pierce or the 2016 event."}, "2017-ogc-palmerston-north": {slug:"linz-wmts-qgis-connection",relation:"LINZ’s actual QGIS WMT
+- **src/lib/timeline-media.mjs** (page; contrived-not): is-2025",relation:"An actual 2025 New Zealand QGIS map illustrating free and open-source geospatial software; not an image from the Auckland conference."}, "linzcap-2016-school-virtual-field-trip-focuses-on-positioning": {slug:"linz-positionz-2018",relation:
+- **src/lib/timeline-media.mjs** (page; contrived-not): survey frame from Wellington demonstrating the kind of archival material covered by the Ngā Poutama session; not a webinar screenshot."}, "linzcap-2026-05-17-nga-poutama-earthquake-and-earth-science-data-session": {slug:"geonet-kaikoura-felt-2016",relation:
+- **src/lib/timeline-media.mjs** (page; contrived-not): f Cyclone Gabrielle flooding near Napier in February 2023, contemporaneous with the emergency response. It is not a screenshot of the NZTA ArcGIS platform.'}, }); /** Enrich the presentation model without changing source event records or chronology. */ export
+- **src/lib/timeline-media.mjs** (page; it-illustrates): seline': {slug:'petone-lower-hutt-survey-1909',relation:'A contemporary 1909 survey map from the Hutt Valley. It illustrates New Zealand survey control but does not depict the Wairarapa baseline.'}, '1926-waimakariri-air-survey': {slug:'wrights-hill-1945',re
+- **src/lib/timeline-media.mjs** (page; it-illustrates): '1945-population-mesh-blocks': {slug:'nz-census-density-2023',relation:'Modern census geography from 2023. This illustrates later use of statistical geographic units, not a 1940s census map.'}, '1949-nzgd49': {slug:'riverhead-geodetic-mark-2025',relation:
+- **src/lib/timeline-media.mjs** (page; it-illustrates): thods.'}, "1973-nzmg": {slug:"ongaonga-linz-topo50-2020",relation:"A later LINZ Topo50 product in NZTM2000. It illustrates subsequent national mapping after the 1973 New Zealand Map Grid, not NZMG cartography."}, "1977-orthophoto-computer": {slug:"southlan
+- **src/lib/timeline-media.mjs** (page; it-illustrates): ical-gis": {slug:"ecoregions-qgis-2025",relation:"A later QGIS-produced ecological mapping example from 2025. It illustrates digital ecological spatial analysis, not the 1989 Mackenzie GIS."}, "1993-doc-biosite": {slug:"ecoregions-qgis-2025",relation:"A late
+- **src/lib/timeline-media.mjs** (page; it-illustrates): 009-docgis-public": {slug:"ecoregions-qgis-2025",relation:"A 2025 New Zealand ecological map created in QGIS. It illustrates one broad conservation GIS use but is not a DOCgis interface."}, '2010-canterbury-common-operating-picture': {slug:'canterbury-seismi
 - **src/content/passages/chapter-12-p001.json** (blocks[1].text; no-longer;more-than): Different sectors chose different products, and some organisations used more than one.
 - **src/content/articles/an-industry-and-community-form.json** (sourceNotes[6].text; not-rather;generic-not): The original founding minutes have not been recovered.
 - **src/content/articles/earth-observation-becomes-routine.json** (sourceNotes[3].text; not-rather;generic-not): Later releases and monitoring illustrate continuity rather than a new origin story.
@@ -414,28 +327,6 @@ All candidates, including lower-priority hits, are in docs/reviews/site-language
 - **src/content/passages/chapter-15-p009.json** (blocks[6].text; does-not;generic-not): That did not mean a newly observed road reached a finished map in fifteen minutes.
 - **src/content/passages/chapter-15-p010.json** (blocks[3].text; does-not;generic-not): Census boundaries and meshblocks were not designed to describe ridges, rivers or tracks.
 - **src/content/passages/chapter-16-p003.json** (blocks[1].text; does-not;generic-not): The census did not need to claim ownership of the road or define the river as a physical feature; it needed a defensible way to assign households and population to one side or the other.
-- **src/content/passages/chapter-16-p003.json** (blocks[2].text; does-not;generic-not): The areas used to collect census information were not the parliamentary electorates themselves, yet population had to be transferred from the census framework into the geography used by the Representation Commission.
-- **src/content/passages/chapter-16-p006.json** (blocks[0].text; does-not;generic-not): Changes at the larger level did not require the statistical system to begin again from a blank national map, provided the underlying small units were maintained carefully enough.
-- **src/content/passages/chapter-16-p006.json** (blocks[1].text; does-not;generic-not): They were aggregations of adjacent meshblocks and did not themselves have an administrative function.
-- **src/content/passages/chapter-16-p009.json** (blocks[2].text; does-not;generic-not): A centroid was not the location of every person in the polygon, and analysts had to understand that approximation, but the common geography made national-scale population analysis practical with the desktop GIS tools of the period.
-- **src/content/passages/chapter-16-p011.json** (blocks[2].text; does-not;generic-not): A local authority might be reorganised while a statistical area remained analytically useful, or a statistical area might be revised while the council boundary did not move.
-- **src/content/passages/chapter-16-p012.json** (blocks[1].text; more-than;generic-not): Quality control therefore involved more than checking whether polygons closed.
-- **src/content/passages/chapter-16-p015.json** (blocks[3].text; does-not;generic-not): The digital meshblock did not replace the older need for geographic judgement.
-- **src/content/passages/chapter-17-p001.json** (blocks[1].text; does-not;generic-not): These users shared a broad interest in place, but they did not begin with one common national database.
-- **src/content/passages/chapter-17-p001.json** (blocks[2].text; does-not;generic-not): Rating and valuation systems grouped land and improvements according to administrative requirements that did not always match parcel boundaries.
-- **src/content/passages/chapter-17-p002.json** (blocks[0].text; does-not;generic-not): One parcel can contain several addresses, one address can serve several units, and a property used for rating does not have to reproduce a legal survey boundary exactly.
-- **src/content/passages/chapter-17-p009.json** (blocks[3].text; does-not;generic-not): Removing the invoice did not remove the work.
-- **src/content/passages/chapter-17-p013.json** (blocks[1].text; does-not;generic-not): Satellite positioning added another way to establish where something was; it did not replace the institutional geography that told users what the place was called and how it related to other records.
-- **src/content/passages/chapter-18-p002.json** (blocks[1].text; does-not;generic-not): The technologies, constellations and techniques were different, but the underlying problem was already visible: a position calculated in a global satellite reference system did not necessarily sit neatly on the coordinates used by an older national mapping system.
-- **src/content/passages/chapter-18-p003.json** (blocks[2].text; does-not;generic-not): These were related techniques, but they were not interchangeable names for “accurate GPS”.
-- **src/content/passages/chapter-18-p003.json** (blocks[3].text; does-not;generic-not): Satellites removed some old lines of sight between ground stations; they did not remove field discipline.
-- **src/content/passages/chapter-18-p006.json** (blocks[0].text; does-not;generic-not): It did not prevent precise professional surveying because relative, carrier-phase and differential methods could remove or reduce much of the error, but it made a cheap stand-alone receiver far less accurate than later users would consider normal.
-- **src/content/passages/chapter-18-p008.json** (blocks[3].text; does-not;generic-not): In 2002 Vector had considered wireless access but decided the available bandwidth was not adequate for the amount of mapping data involved.
-- **src/content/passages/chapter-18-p009.json** (blocks[1].text; does-not;generic-not): Yield mapping and variable-rate application did not require the same accuracy as a cadastral boundary, but errors could still translate directly into wasted fertiliser, poor guidance or misleading maps.
-- **src/content/passages/chapter-18-p012.json** (blocks[0].text; does-not;generic-not): GPS did not make those systems redundant.
-- **src/content/passages/chapter-18-p012.json** (blocks[1].text; does-not;generic-not): Vector’s crews did not use GPS as a substitute for the electricity-network database.
-- **src/content/passages/chapter-18-p013.json** (blocks[0].text; does-not;generic-not): A GPS receiver could produce an internally good position that did not overlay older national data correctly if the datum relationship was ignored.
-- **src/content/passages/chapter-18-p013.json** (blocks[1].text; does-not;generic-not): New Zealand needed a coordinate framework compatible with satellite positioning and capable of dealing with a country whose crust does not stay put.
 
 ## Release checks
 
