@@ -118,37 +118,33 @@ try{
    const themeHref=await page.locator('#themes article.art-card .title').first().getAttribute('href');
    assert.ok(themeHref.startsWith('/themes/'));
   });
-  await check(viewport.name+' email-provider-neutral contribution journey',async()=>{
+  await check(viewport.name+' direct email draft and no-form fallback',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    const links=page.locator('.nav-contribute');
    assert.equal(await links.count(),2);
    for(const anchor of await links.all()){
-    assert.equal(await anchor.getAttribute('href'),'/contribute/');
+    const uri=new URL(await anchor.getAttribute('href'));
+    assert.equal(uri.protocol,'mailto:');
+    assert.equal(decodeURIComponent(uri.pathname),'pm4gis@gmail.com');
+    assert.ok((uri.searchParams.get('body')||'').includes('attach any photos'),'mail body '+JSON.stringify(await anchor.getAttribute('href')).slice(0,950));
     assert.equal(await anchor.getAttribute('target'),null);
    }
-   if(viewport.mobile){
-    await page.locator('.mobile-menu summary').click();
-    await page.locator('.nav--mobile .nav-contribute').click();
-   }else{
-    await page.locator('.nav--desktop .nav-contribute').click();
+   await page.goto(base+'/contribute/',{waitUntil:'domcontentloaded'});
+   assert.equal(await page.locator('h1').innerText(),'Email a contribution');
+   assert.equal(await page.locator('form').count(),0);
+   assert.equal(await page.locator('input, textarea').count(),0);
+   const alternative=new URL(await page.locator('#contribution-mailto').getAttribute('href'));
+   assert.equal(alternative.protocol,'mailto:');
+   assert.equal(decodeURIComponent(alternative.pathname),'pm4gis@gmail.com');
+   for(const [id,host] of [['#contribution-gmail','mail.google.com'],['#contribution-outlook','outlook.live.com']]){
+    const url=new URL(await page.locator(id).getAttribute('href'));
+    assert.equal(url.hostname,host);
+    assert.equal(url.searchParams.get('to'),'pm4gis@gmail.com');
    }
-   await page.waitForURL('**/contribute/');
-   assert.equal(await page.locator('h1').innerText(),'Contribute or suggest a correction');
-   assert.equal(await page.locator('#contribution-mailto').count(),1);
-   await page.locator('#contribution-detail').fill('The map was published in 1998');
-   await page.locator('#contribution-credit').fill('NZ GIS historian');
-   const preview=await page.locator('#contribution-message').inputValue();
-   assert.ok(preview.includes('The map was published in 1998'));
-   assert.ok(preview.includes('NZ GIS historian'));
-   const email=new URL(await page.locator('#contribution-mailto').getAttribute('href'));
-   assert.equal(email.protocol,'mailto:');
-   assert.equal(decodeURIComponent(email.pathname),'pm4gis@gmail.com');
-   assert.ok(email.searchParams.get('body').includes('The map was published in 1998'));
+   assert.ok((await page.locator('#contribution-message').textContent()).includes('attach any photos'),'preview missing attachment');
    await page.locator('#contribution-copy').click();
-   await page.waitForFunction(()=>/copied|Copy the email address/i.test(document.getElementById('contribution-status')?.textContent||''));
-   const message=await page.locator('#contribution-status').innerText();
-   assert.ok(message.includes('copied')||message.includes('Copy the email address'),message);
-   await dimensions(page,viewport.name+' contribution page');
+   await page.waitForFunction(()=>/copied|Select the prepared text/i.test(document.getElementById('contribution-status')?.textContent||''));
+   await dimensions(page,viewport.name+' email options');
   });
   await context.close();
  }
