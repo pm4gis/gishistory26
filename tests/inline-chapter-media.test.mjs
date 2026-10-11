@@ -4,34 +4,37 @@ import {placeChapterImages} from '../src/lib/chapter-media.mjs';
 
 const article = {slug:'landonline'};
 const passages = Array.from({length:8},(_,i)=>({
-  id:'p'+i,slug:'passage-'+i,blocks:[{type:'paragraph',text:'Accepted prose '+i}]
+  id:'p'+i,slug:'passage-'+i,blocks:[{type:'paragraph',id:'p'+i+'-first',text:'Accepted prose '+i}]
 }));
 const image = (slug, extra={}) => ({
   id:'image:'+slug,slug,articleSlug:'landonline',assetPath:'/assets/historical/web/'+slug+'.webp',
   caption:'Documentary image '+slug,...extra
 });
 
-test('chapter images are distributed through reading sections, never as heading or end gallery',()=>{
-  const imgs=[image('a'),image('b'),image('c')];
-  const placed=placeChapterImages(article,passages,imgs);
-  assert.deepEqual(Object.keys(placed),['p2','p4','p6']);
-  assert.deepEqual(Object.values(placed).flat().map(i=>i.slug),['a','b','c']);
-  assert.equal(placed.p0,undefined);
-  assert.equal(placed.p7,undefined);
+test('images without reviewed paragraph anchors are NOT automatically placed',()=>{
+  const placed=placeChapterImages(article,passages,[image('a'),image('b'),image('c')]);
+  assert.deepEqual(Object.keys(placed),[]);
 });
 
-test('only explicit chapter relationships qualify, with no duplicated block figure',()=>{
+test('an explicit paragraph anchor works and block figures never duplicate',()=>{
   const withFigure=structuredClone(passages);
   withFigure[1].blocks.push({type:'figure',imageId:'image:a'});
-  const imgs=[image('a'),image('b'),image('c',{articleSlug:'other'}),image('b')];
+  const imgs=[
+    image('a',{afterParagraphId:'p1-first'}),
+    image('b',{afterParagraphId:'p4-first'}),
+    image('c',{afterParagraphId:'p2-first',articleSlug:'other'}),
+    image('d',{afterParagraphId:'a-paragraph-that-does-not-exist'})
+  ];
   const placed=placeChapterImages(article,withFigure,imgs);
   assert.deepEqual(Object.values(placed).flat().map(i=>i.slug),['b']);
+  assert.equal(placed.p4[0].inlineAfterBlockId,'p4-first');
   assert.equal(withFigure[1].blocks[1].imageId,'image:a');
 });
 
-test('curated passage identifiers override automatic distribution',()=>{
+test('an expressly identified legacy passage uses its first paragraph, not random placement',()=>{
   const placed=placeChapterImages(article,passages,[image('a',{passageSlug:'passage-3'})]);
   assert.equal(placed.p3[0].slug,'a');
+  assert.equal(placed.p3[0].inlineAfterBlockId,'p3-first');
   assert.deepEqual(placeChapterImages(article,[],[image('a')]),{__proto__:null});
 });
 
