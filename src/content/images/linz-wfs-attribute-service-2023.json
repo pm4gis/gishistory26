@@ -15,7 +15,7 @@
   "articleSlug": "cloud-services-and-apis",
   "chapterNumber": 41,
   "dateDisplay": "LINZ screenshot stored under a June 2023 media path; capture date unverified",
-  "context": "Original LINZ tutorial screenshot of a live spatial-service interface or response. It illustrates interoperable APIs and is not the first appearance of web geospatial services in New Zealand.",
+  "context": "Original LINZ tutorial screenshot of a live spatial-service interface or response. The screenshot shows the LINZ Web Feature Service request and response example.",
   "originalAssetPath": "/assets/historical/original/linz-wfs-attribute-service-2023.png",
   "thumbnailPath": "/assets/historical/card/linz-wfs-attribute-service-2023.webp",
   "originalSha256": "2684305ebcfdb370891781043c2969dec1ac1bb8a89279bc8fe8ff6627bbaa26",
