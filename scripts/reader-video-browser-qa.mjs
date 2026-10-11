@@ -23,7 +23,7 @@ try{
    assert.equal(draft.protocol,'mailto:');
    assert.equal(decodeURIComponent(draft.pathname),'pm4gis@gmail.com');
    assert.ok(draft.searchParams.get('subject').includes('Transforming one coordinate world into another'));
-   for(const phrase of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs','attach any photos'])assert.ok(draft.searchParams.get('body').includes(phrase),phrase);
+   for(const phrase of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs','attach any photos'])assert.ok((draft.searchParams.get('body')||'').includes(phrase),phrase+' in draft '+JSON.stringify(await button.getAttribute('href')).slice(0,1000));
    const help=page.locator(selector+' .contribution-help');
    const fallback=new URL(await help.getAttribute('href'),base);
    assert.equal(fallback.pathname,'/contribute/');
