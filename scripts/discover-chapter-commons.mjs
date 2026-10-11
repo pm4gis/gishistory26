@@ -36,5 +36,51 @@ for(let i=0;i<plan.length;i+=3){
 }
 const report={searchedAt:new Date().toISOString(),subjectDateCutoff:cutoff,queryCount:plan.length,resultCount:queries.reduce((n,q)=>n+q.results.length,0),queries};
 await fs.writeFile(outputPath,JSON.stringify(report,null,2)+'\n');
+const summaryPath=process.argv[4]||outputPath.replace('commons-discovery-','commons-candidates-');
+const imageFiles=(await fs.readdir('src/content/images')).filter(name=>name.endsWith('.json'));
+const existingImages=await Promise.all(imageFiles.map(async name=>JSON.parse(await fs.readFile('src/content/images/'+name,'utf8'))));
+const normalTitle=value=>clean(value).replace(/^File:/i,'').replaceAll('_',' ').toLowerCase();
+const existingTitles=new Set(existingImages.map(image=>normalTitle(image.sourceFileTitle||'')).filter(Boolean));
+const stop=new Set('new zealand the a an and for of in by after from to on at with into map maps image imagery data gis using from'.split(' '));
+const words=value=>clean(value).toLowerCase().replace(/[^a-z0-9]+/g,' ').split(/\s+/).filter(word=>word.length>2&&!stop.has(word));
+const years=value=>[...String(value||'').matchAll(/\b(18\d{2}|19\d{2}|20\d{2})\b/g)].map(match=>Number(match[1]));
+const allowed=licence=>/^(?:CC0|Public domain(?: \(.*\))?|CC BY(?:-SA)? \d+(?:\.\d+)?(?: [a-z]+)?)$/i.test(String(licence||'').trim());
+const preliminary=[];
+for(const item of queries){
+ for(const result of item.results||[]){
+  if(result.width<400||result.height<300||result.bytes>2*1024*1024||!allowed(result.licence))continue;
+  if(!result.sourceUrl||!result.originalUrl||existingTitles.has(normalTitle(result.title)))continue;
+  const subjectText=[result.title,result.dateOriginal,result.dateProperty,result.objectName,result.description].join(' ');
+  if(years(subjectText).some(year=>year>2025))continue;
+  const evidenceOptions=[['DateTimeOriginal',result.dateOriginal],['Date',result.dateProperty],['ObjectName',result.objectName],['ImageDescription',result.description]];
+  const evidence=evidenceOptions.find(([,value])=>years(value).length);
+  if(!evidence)continue;
+  const subjectYear=Math.max(...years(evidence[1]));
+  const queryWords=words(item.query);
+  const titleWords=new Set(words(result.title+' '+result.objectName));
+  const descriptionWords=new Set(words(result.description));
+  const matches=queryWords.filter(word=>titleWords.has(word)||descriptionWords.has(word));
+  const score=matches.reduce((total,word)=>total+(titleWords.has(word)?2:1),0);
+  if(score<2)continue;
+  preliminary.push({
+   chapter:item.chapter,articleSlug:item.articleSlug,passageSlug:item.passageSlug,passageTitle:item.passageTitle,query:item.query,
+   title:result.title,sourceUrl:result.sourceUrl,originalUrl:result.originalUrl,width:result.width,height:result.height,bytes:result.bytes,
+   licence:result.licence,licenceUrl:result.licenceUrl,artist:result.artist,credit:result.credit,
+   dateEvidenceField:evidence[0],dateEvidenceValue:evidence[1],subjectDateEnd:String(subjectYear)+'-12-31',
+   description:clean(result.description).slice(0,900),objectName:result.objectName,score,matchedTerms:matches
+  });
+ }
+}
+preliminary.sort((a,b)=>b.score-a.score||a.chapter-b.chapter||a.title.localeCompare(b.title));
+const picked=[],seenTitles=new Set(),chapterCounts=new Map();
+for(const candidate of preliminary){
+ const title=normalTitle(candidate.title);
+ const count=chapterCounts.get(candidate.chapter)||0;
+ if(seenTitles.has(title)||count>=20)continue;
+ seenTitles.add(title);chapterCounts.set(candidate.chapter,count+1);picked.push(candidate);
+}
+const candidateReport={searchedAt:report.searchedAt,subjectDateCutoff:cutoff,queryCount:plan.length,rawResultCount:report.resultCount,existingImageCount:existingImages.length,candidateCount:picked.length,candidates:picked};
+await fs.writeFile(summaryPath,JSON.stringify(candidateReport,null,2)+'\n');
+console.log('Screened candidates:',candidateReport.candidateCount,'after date, licence, size, duplicate and passage-query checks.');
 console.log('Date-limited chapter discovery:',report.queryCount,'queries,',report.resultCount,'results,',queries.filter(q=>q.error).length,'errors.');
 for(const q of queries.filter(q=>q.error))console.log('ERROR',q.chapter,q.query,q.error);
