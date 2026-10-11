@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {chapterCollectionSources} from '../../lib/chapter-collection-sources.mjs';
+import {chapterDocuments} from '../../lib/chapter-documents.mjs';
+---
+<Layout title="Map collections and source documents" description="Research routes into New Zealand historical maps, aerial photography, geological archives and environmental GIS.">
+ <article class="page-wrap">
+  <p class="eyebrow">Sources and collections</p><h1 class="page-title">Map collections and source documents</h1>
+  <p>These collection notes accompany specific chapter paragraphs. They distinguish original records from later scans, repositories and web services. Sources checked on 11 October 2026.</p>
+  <p>The University of Otago’s <a href="https://otago.libguides.com/c.php?g=171492&amp;p=7033025">GIS and datasets guide</a> provides a starting point for several of these research routes.</p>
+  {chapterCollectionSources.map(source=><section id={source.id}><h2>{source.title}</h2><p>{source.text}</p><ul>{source.links.map(link=><li><a href={link.url}>{link.label}</a></li>)}</ul><p class="muted">{source.limitations}</p><p><a href={'/stories/'+source.articleSlug+'/#'+source.afterParagraphId}>Read the related paragraph in {source.articleTitle} →</a></p></section>)}
+  <h2>Download original documents</h2><ul>{chapterDocuments.map(document=><li><a href={document.assetPath} download>{document.title} (PDF, {(document.bytes/1000000).toFixed(1)} MB)</a> · <a href={'/documents/'+document.slug+'/'}>Document details</a></li>)}</ul>
+ </article>
+</Layout>

@@ -3,6 +3,7 @@
  import {fade} from 'svelte/transition';
  import Timeline from './Timeline.svelte';
  import {chapterDocuments} from '../lib/chapter-documents.mjs';
+ import {chapterCollectionSources} from '../lib/chapter-collection-sources.mjs';
  import WanangaVideos from './WanangaVideos.svelte';
  import {passageContributionMailtoUrl,passageContributionPageUrl} from '../lib/passage-contributions.mjs';
  import {ngaPoutamaForPassage} from '../lib/nga-poutama-videos.mjs';
@@ -79,6 +80,13 @@
  <aside class="source-download" aria-label="Original source document">
   <p><strong>{document.title}</strong> · {document.date}<br/><a href={document.assetPath} download>Download original PDF ({(document.bytes/1000000).toFixed(1)} MB)</a> · <a href={'/documents/'+document.slug+'/'}>Document details</a></p>
  </aside>
+ {/each}
+ {#each chapterCollectionSources.filter(source => source.articleSlug === article.slug && source.afterParagraphId === b.id) as source}
+ <details class="sources collection-source" data-source-note={source.id}>
+  <summary>Source collection: {source.title}</summary><p>{source.text}</p>
+  <ul>{#each source.links as link}<li><a href={link.url}>{link.label}</a></li>{/each}</ul>
+  <p class="muted">{source.limitations}</p><a href="/sources/collections/">Explore related collections →</a>
+ </details>
  {/each}
  {#if blockIndex===Math.min(1,blocks(p).length-1)&&ngaPoutamaForPassage(p.id).length}
    <WanangaVideos inline={true} compact={true} videos={ngaPoutamaForPassage(p.id)}/>

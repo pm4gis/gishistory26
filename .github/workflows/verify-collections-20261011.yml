@@ -1,0 +1,53 @@
+name: Verify chapter collection research release
+on:
+  push:
+    branches: [research/collections-20261011]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0', cache: npm}
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: node scripts/assert-editorial-exclusions.mjs
+      - name: Confirm baseline prose, identifiers and assets unchanged
+        run: |
+          test -z "$(git diff --name-only 6d3d7f528c366a05bb22087c07bffe8fa38a7f1e -- src/content/articles src/content/passages src/content/records src/content/events src/content/relationships)"
+          git diff --name-status 6d3d7f528c366a05bb22087c07bffe8fa38a7f1e -- public/assets/historical/ src/content/images/ | awk '$1 != "A" {bad=1} END {exit bad}'
+      - run: npm install --no-save --ignore-scripts playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - name: Check local desktop and mobile browser journeys
+        run: |
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist > /tmp/preview.log 2>&1 &
+          trap 'kill $!' EXIT
+          node scripts/luc-original-browser-qa.mjs
+          node scripts/ladeda-held-browser-qa.mjs
+          node scripts/source-document-browser-qa.mjs
+          node scripts/collection-sources-browser-qa.mjs
+          node scripts/primary-geo-figures-browser-qa.mjs
+          node scripts/eight-chapter-browser-qa.mjs
+      - name: Check Cloudflare branch preview in desktop and mobile browsers
+        env:
+          QA_BASE_URL: https://research-collections-2026101.gishistory26.pages.dev
+        run: |
+          for i in $(seq 1 24); do
+            if curl -fsS "$QA_BASE_URL/images/gisborne-east-coast-luc-map-1967/" -o /tmp/preview-image.html; then break; fi
+            sleep 10
+          done
+          node scripts/luc-original-browser-qa.mjs
+          node scripts/ladeda-held-browser-qa.mjs
+          node scripts/source-document-browser-qa.mjs
+          node scripts/collection-sources-browser-qa.mjs
+          node scripts/primary-geo-figures-browser-qa.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collection-research-release-validation
+          path: docs/verification/
