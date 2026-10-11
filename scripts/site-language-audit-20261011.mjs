@@ -58,7 +58,7 @@ function imageRewrite(s,field) {
 function rewriteDocument(obj,kind){
  if(kind!=='images'){
    function reviseExample(o) {
-     if(typeof o==='string')const edited=o.replace(/\s*It illustrates nationwide satellite coverage from the early 2000s, not a complete national time-series mosaic\./gi,'');return edited===o?o:edited.trim();
+     if(typeof o==='string'){const edited=o.replace(/\s*It illustrates nationwide satellite coverage from the early 2000s, not a complete national time-series mosaic\./gi,'');return edited===o?o:edited.trim();}
      if(Array.isArray(o))return o.map(reviseExample);
      if(o&&typeof o==='object')for(const k of Object.keys(o)){
        o[k]=reviseExample(o[k]);
