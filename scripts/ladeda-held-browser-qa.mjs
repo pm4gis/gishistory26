@@ -14,7 +14,7 @@ try{
   for(const expected of ['LADEDA','1977','1979','Williams'])assert.ok(body.includes(expected));
   const html=await page.content();
   for(const id of candidates)assert.ok(!html.includes(id),'Held candidate entered chapter HTML '+id);
-  assert.ok(!html.includes('/library/pHCC1.pdf'),'Handbook embedded without permission');
+  assert.ok(html.includes('/documents/ladeda-plotting-handbook-1982/'),'Original handbook download details missing');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));
   await page.goto(base+'/images/',{waitUntil:'networkidle'});
   const gallery=await page.content();
@@ -26,7 +26,7 @@ try{
  const page=await browser.newPage();
  for(const id of candidates){
   const response=await page.request.get(base+'/images/'+id+'/');
-  assert.equal(response.status(),404,'Unlicensed detail route published '+id);
+  assert.equal(response.status(),404,'Unpublished extract detail route published '+id);
  }
  const path='/assets/historical/web/gisborne-east-coast-luc-map-1967.webp';
  const response=await page.request.get(base+path);assert.equal(response.status(),200);

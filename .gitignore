@@ -5,3 +5,5 @@ dist/
 !.env.example
 public/api/
 docs/migration-ledger.json
+
+/public/assets/historical/documents/Our_Land_Resources_1979.pdf

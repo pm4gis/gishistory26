@@ -66,3 +66,7 @@ National Library, university-oriented catalogue, Manaaki Whenua, LRIS and instit
 ### Evidence differences held for editorial review
 
 No accepted wording is silently changed. The handbook preface dates digitisation 1977–1981 and credits A. M. Moffat's initial 1980 program, R. Christian's boundary conversion and Williams's subsequent development, alongside van Berkel's direction. Those details need reconciliation with the accepted chronology and attribution. The Chapter 5 source note describing the scan as unavailable is now stale, but remains intact under the preservation instruction. The printed Yard Grid evidence must also be reconciled with the database-coordinate statement. These are separate editorial questions, not reasons to invent images or revise prose in this release.
+
+## Original document downloads, 11 October 2026
+
+The user explicitly instructed publication of the source files for download, superseding the earlier requirement to withhold these PDFs while establishing item-specific redistribution authority. The unchanged LADEDA Plotting Handbook (May 1982) and Our Land Resources (1979) PDFs are published with institutional source links, printed Crown copyright notices, page counts, limitations and SHA-256 checksums. No Creative Commons licence is asserted. The links follow ch05-s03-p02 and ch05-s02-p01 respectively. Accepted chapter prose and all existing images and placements remain unchanged. Individual map extracts and the unresolved Levin N152 worksheet remain unpublished; the 1967 regional LUC survey retains its separate identity.

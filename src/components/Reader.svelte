@@ -2,6 +2,7 @@
  import {onMount,tick} from 'svelte';
  import {fade} from 'svelte/transition';
  import Timeline from './Timeline.svelte';
+ import {chapterDocuments} from '../lib/chapter-documents.mjs';
  import WanangaVideos from './WanangaVideos.svelte';
  import {passageContributionMailtoUrl,passageContributionPageUrl} from '../lib/passage-contributions.mjs';
  import {ngaPoutamaForPassage} from '../lib/nga-poutama-videos.mjs';
@@ -73,6 +74,11 @@
   </a>
   <figcaption>{document.caption||document.context||document.title} <a href={'/images/'+document.slug+'/'}>Image details</a></figcaption>
  </figure>
+ {/each}
+ {#each chapterDocuments.filter(document => document.articleSlug === article.slug && document.afterParagraphId === b.id) as document}
+ <aside class="source-download" aria-label="Original source document">
+  <p><strong>{document.title}</strong> · {document.date}<br/><a href={document.assetPath} download>Download original PDF ({(document.bytes/1000000).toFixed(1)} MB)</a> · <a href={'/documents/'+document.slug+'/'}>Document details</a></p>
+ </aside>
  {/each}
  {#if blockIndex===Math.min(1,blocks(p).length-1)&&ngaPoutamaForPassage(p.id).length}
    <WanangaVideos inline={true} compact={true} videos={ngaPoutamaForPassage(p.id)}/>

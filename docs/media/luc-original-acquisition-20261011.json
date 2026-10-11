@@ -21,13 +21,16 @@
     },
     {
       "id": "ladeda-handbook-1982",
-      "status": "rights-held",
+      "status": "published-original-download",
       "sourceUrl": "https://webstatic.niwa.co.nz/library/pHCC1.pdf",
       "paragraph": "ch05-s03-p02",
-      "decision": "All 17 numbered plot examples inspected with explanations. Identified maps, commands, pages and candidate matches recorded in the inspection register. Crown work; general NIWA CC terms exclude identified third-party content, and item-specific licensing authority remains unverified. All extracts held.",
+      "decision": "Original PDF published following the user’s explicit instruction to include these files for download on 2026-10-11. Printed Crown copyright retained; no Creative Commons licence asserted. The original scan includes plotting commands and all 17 numbered examples. Printed page numbers differ from PDF page numbers by seven. These are LADEDA outputs, not complete first-edition NZLRI worksheets.",
       "sha256": "1a8ebe35e862012cff6229eea8979dc0e87d547fe4e156cb0723e943c61920bd",
       "reviewRegister": "docs/media/ladeda-handbook-review-20261011.json",
-      "published": false
+      "published": true,
+      "downloadPublished": true,
+      "individualExtractsPublished": false,
+      "downloadPath": "/assets/historical/documents/LADEDA_Plotting_Handbook_RD_Williams_May_1982.pdf"
     },
     {
       "id": "nzlri-edition1-worksheets",
@@ -38,15 +41,15 @@
     },
     {
       "id": "our-land-resources-1979",
-      "status": "rights-held",
+      "status": "published-original-download",
       "sourceUrl": "https://doi.org/10.7931/dl27-olr",
       "paragraph": "ch05-s02-p01",
-      "decision": "Full 79-page institutional PDF obtained through public Digital Library API. Crown copyright 1979 on PDF page 2. PDF page 14 has a worksheet excerpt around Matata, Awakaponga and Edgecumbe; page 15 enlarges the compact LRI/LUC codes. No sheet number, edition imprint or complete marginal legend visible in that excerpt, so it is not accepted as a separately identified full worksheet. General host terms and a descriptive metadata rights field do not establish item-specific republication permission. No figures published.",
+      "decision": "Original PDF published following the user’s explicit instruction to include these files for download on 2026-10-11. Printed Crown copyright retained; no Creative Commons licence asserted. A bulletin accompanying the New Zealand Land Resource Inventory worksheets. PDF pages 14–15 show a worksheet excerpt and enlarged inventory codes. The excerpt has no visible sheet number or edition imprint and is not a separately identified full worksheet. The catalogue describes 80 pages; the downloaded PDF contains 79.",
       "sourceDownloadUrl": "https://digitallibrary.landcareresearch.co.nz/digital/api/collection/p20022coll27/id/24/download",
       "sha256": "a122de72cae9f33cf5806175ccc2187f7f62907dca5d5f14c9ff80e950069a81",
       "bytes": 13568260,
       "pdfPages": 79,
-      "published": false,
+      "published": true,
       "inspectedPdfPages": [
         2,
         13,
@@ -56,7 +59,10 @@
       ],
       "candidateParagraph": "ch05-s02-p01",
       "cataloguePages": 80,
-      "scanLimitation": "Institutional metadata lists 80 pages; delivered PDF has 79. File transfer and PDF decoding are complete, but bibliographic page completeness is not assumed."
+      "scanLimitation": "Institutional metadata lists 80 pages; delivered PDF has 79. File transfer and PDF decoding are complete, but bibliographic page completeness is not assumed.",
+      "downloadPublished": true,
+      "individualExtractsPublished": false,
+      "downloadPath": "/assets/historical/documents/Our_Land_Resources_1979.pdf"
     },
     {
       "id": "luc-handbook-1971",
@@ -97,5 +103,6 @@
   ],
   "continuationBaseline": "522eb4a666e23082ff617825258be6036c0a11d6",
   "continuationPublishedImages": 0,
-  "inspectionRegister": "docs/media/ladeda-handbook-review-20261011.json"
+  "inspectionRegister": "docs/media/ladeda-handbook-review-20261011.json",
+  "publishedDocuments": 2
 }
