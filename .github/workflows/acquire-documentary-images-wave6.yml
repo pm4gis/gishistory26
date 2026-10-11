@@ -1,0 +1,56 @@
+name: Acquire 100 documentary NZ GIS history images
+on:
+  push:
+    branches: [media/documentary-100-20261011]
+    paths:
+      - scripts/acquire-documentary-images-wave6.mjs
+      - .github/workflows/acquire-documentary-images-wave6.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nzgis-documentary-wave6-oct2026
+  cancel-in-progress: true
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/media/documentary-100-20261011'
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media/documentary-100-20261011
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Fetch, license-check, checksum and place source images
+        run: node scripts/acquire-documentary-images-wave6.mjs
+      - name: Verify chapter presentation and all content invariants
+        run: |
+          npm test
+          npm run build
+      - name: Preserve the originals and metadata on the review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/assets/historical/original/ public/assets/historical/web/ public/assets/historical/card/ src/content/images/ docs/media/documentary-image-wave6-result-20261011.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive licensed NZ historical maps, aerial and satellite source originals with chapter placement'
+            git reset --hard HEAD
+            git clean -fd
+            git fetch origin media/documentary-100-20261011
+            git rebase origin/media/documentary-100-20261011
+            git push origin HEAD:media/documentary-100-20261011
+          fi
+      - name: Report any image-count shortfall without inventing acquisitions
+        run: |
+          node -e "const d=require('./docs/media/documentary-image-wave6-result-20261011.json');console.log('Archived '+d.success+' of desired '+d.target+'; held '+d.held+'; shortfall '+d.shortfall);if(!d.success)process.exit(1)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: documentary-images-wave6
+          path: docs/media/documentary-image-wave6-result-20261011.json
+          retention-days: 30
