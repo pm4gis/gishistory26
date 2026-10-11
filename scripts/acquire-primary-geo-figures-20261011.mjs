@@ -5,7 +5,7 @@ import crypto from 'node:crypto';
 import sharp from 'sharp';
 
 const queue=JSON.parse(await fs.readFile('docs/media/four-chapter-primary-figures-20261011.json','utf8'));
-if(queue.subjectCutoff!=='2025-12-31')throw Error('Source period constraint changed');
+if(queue.subjectDateCutoff!=='2025-12-31')throw Error('Source period constraint changed');
 const report={checkedAt:new Date().toISOString(),success:0,failed:0,held:0,items:[]};
 const sha=buf=>crypto.createHash('sha256').update(buf).digest('hex');
 async function retrieve(url){
