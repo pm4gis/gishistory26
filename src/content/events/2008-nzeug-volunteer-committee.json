@@ -1,0 +1,32 @@
+{
+  "id": "2008-nzeug-volunteer-committee",
+  "dateDisplay": "2008-12",
+  "startDate": "2008-12",
+  "datePrecision": "month",
+  "year": 2008,
+  "label": "NZEUG newsletter names its volunteer committee",
+  "summary": "A December 2008 user-group newsletter listed committee members across Defence, MAF, utilities, councils and consultancy, with Martin Erasmuson signing as chair. The surviving list demonstrates the cross-sector volunteer work behind the conferences.",
+  "url": "/stories/an-industry-and-community-form/#conferences-and-meetings-b0f15360d7",
+  "passageIds": [
+    "passage:chapter-12-b0f15360d7"
+  ],
+  "recordIds": [
+    "entity:new-zealand-esri-users-group",
+    "chapter:12",
+    "person:rachel-summers"
+  ],
+  "themeIds": [
+    "profession"
+  ],
+  "categories": [
+    "professional",
+    "community",
+    "governance"
+  ],
+  "sources": [
+    {
+      "label": "NZ GIS History, Chapter 12: 2008 NZEUG newsletter volunteer committee record",
+      "url": "/stories/an-industry-and-community-form/#conferences-and-meetings-b0f15360d7"
+    }
+  ]
+}
