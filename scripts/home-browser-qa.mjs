@@ -11,7 +11,7 @@ async function dimensions(page,label){
  const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:window.innerWidth}));
  assert.ok(size.scroll<=size.width+2,label+' overflow: '+JSON.stringify(size));
 }
-const colors=['night','forest','paper','mist'];
+const colors=['slate','coastal','forest','archive','bubblegum'];
 try{
  for(const viewport of [
   {name:'wide desktop',width:1440,height:900,mobile:false},
@@ -100,21 +100,44 @@ try{
    }
    await dimensions(page,viewport.name+' rotated highlights');
   });
-  await check(viewport.name+' themes and colour palettes',async()=>{
+  await check(viewport.name+' five palettes, modes, persistence and page consistency',async()=>{
+   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    const selector=page.locator('#palette');
-   for(const expected of ['forest','paper','mist','night']){
-    await selector.click();
-    assert.equal(await page.locator('html').getAttribute('data-theme'),expected);
-    const contrast=await page.evaluate(()=>{
+   await selector.click();
+   assert.equal(await selector.getAttribute('aria-expanded'),'true');
+   for(const palette of colors){
+    await page.locator('[data-appearance-palette="'+palette+'"]').click();
+    assert.equal(await page.locator('html').getAttribute('data-palette'),palette);
+    for(const mode of ['dark','light']){
+     await page.locator('[data-appearance-mode="'+mode+'"]').click();
+     assert.equal(await page.locator('html').getAttribute('data-appearance'),mode);
+     const contrast=await page.evaluate(()=>{
       const element=document.querySelector('.nav--desktop .nav-contribute');
       const style=getComputedStyle(element);
       function rgb(s){return [...s.matchAll(/[\d.]+/g)].slice(0,3).map(x=>Number(x[0])/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);}
       const lum=([r,g,b])=>.2126*r+.7152*g+.0722*b;
       const a=lum(rgb(style.color)),b=lum(rgb(style.backgroundColor));
       return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
-    });
-    assert.ok(contrast>=4.5,'contribute button contrast '+expected+' '+contrast);
+     });
+     assert.ok(contrast>=4.5,'Contribute button contrast '+palette+'/'+mode+': '+contrast);
+    }
    }
+   await page.locator('[data-appearance-mode="system"]').click();
+   const systemScheme=await page.evaluate(()=>matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+   assert.equal(await page.locator('html').getAttribute('data-appearance'),systemScheme);
+   await page.locator('[data-appearance-palette="bubblegum"]').click();
+   await page.locator('[data-appearance-mode="light"]').click();
+   await page.keyboard.press('Escape');
+   assert.equal(await selector.getAttribute('aria-expanded'),'false');
+   await page.reload({waitUntil:'domcontentloaded'});
+   assert.equal(await page.locator('html').getAttribute('data-palette'),'bubblegum');
+   assert.equal(await page.locator('html').getAttribute('data-appearance'),'light');
+   for(const route of ['/read/','/timeline/','/datasets/','/themes/','/browse/','/network/','/search/']){
+    await page.goto(base+route,{waitUntil:'domcontentloaded'});
+    assert.equal(await page.locator('html').getAttribute('data-palette'),'bubblegum');
+    await dimensions(page,viewport.name+' '+route);
+   }
+   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    const themeHref=await page.locator('#themes article.art-card .title').first().getAttribute('href');
    assert.ok(themeHref.startsWith('/themes/'));
   });

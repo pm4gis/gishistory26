@@ -1,9 +1,11 @@
 ---
 import '../styles/site.css';
 import {siteContributionMailtoUrl} from '../lib/passage-contributions.mjs';
+import {PALETTE_ORDER,PALETTE_NAMES,PALETTE_TOKENS} from '../lib/appearance.mjs';
 const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
 const contributionHref=siteContributionMailtoUrl();
+const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof PALETTE_NAMES],dark:PALETTE_TOKENS[id].dark,light:PALETTE_TOKENS[id].light}));
 ---
 <!doctype html>
 <html lang="en-NZ">
@@ -11,7 +13,32 @@ const contributionHref=siteContributionMailtoUrl();
  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
  <title>{title}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/>
  <meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/>
- <script is:inline>try{const old=JSON.parse(localStorage.getItem('nzgis-colour-palette-v1')||'null');const t=localStorage.getItem('nzgis-theme')||({'dark-night':'night','dark-forest':'forest','light-paper':'paper','light-mist':'mist'}[old]);if(['night','forest','paper','mist'].includes(t))document.documentElement.dataset.theme=t}catch{}</script>
+ <script is:inline>
+  // Apply the saved theme before first paint, including legacy selections.
+  try {
+   let saved=null;try{saved=JSON.parse(localStorage.getItem('nzgis-appearance-v2')||'null')}catch{}
+   let palette='slate',mode='dark';
+   if(saved&&typeof saved==='object'){
+    if(['slate','coastal','forest','archive','bubblegum'].includes(saved.palette))palette=saved.palette;
+    if(['dark','light','system'].includes(saved.mode))mode=saved.mode;
+   }else{
+    let old=localStorage.getItem('nzgis-theme');
+    if(!old){try{old=JSON.parse(localStorage.getItem('nzgis-colour-palette-v1')||'null')}catch{}}
+    const legacy={'night':['coastal','dark'],'dark-night':['coastal','dark'],
+     'forest':['forest','dark'],'dark-forest':['forest','dark'],
+     'paper':['archive','light'],'light-paper':['archive','light'],
+     'mist':['coastal','light'],'light-mist':['coastal','light']};
+    if(legacy[old]){[palette,mode]=legacy[old]}
+   }
+   const resolved=mode==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):mode;
+   document.documentElement.dataset.palette=palette;
+   document.documentElement.dataset.appearance=resolved;
+   document.documentElement.style.colorScheme=resolved;
+  }catch{
+   document.documentElement.dataset.palette='slate';
+   document.documentElement.dataset.appearance='dark';
+  }
+ </script>
 </head>
 <body>
  <a class="skip" href="#main">Skip to content</a>
@@ -23,7 +50,27 @@ const contributionHref=siteContributionMailtoUrl();
    <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
   </nav>
   <div class="topbar-tools">
-   <button id="palette" type="button" aria-label="Change colour theme">◐ <span>Night</span></button>
+   <div class="appearance-control">
+    <button id="palette" type="button" aria-label="Open appearance settings" aria-controls="appearance-panel" aria-expanded="false">◐ <span>Appearance</span></button>
+    <section id="appearance-panel" class="appearance-panel" role="group" aria-label="Appearance settings" hidden>
+     <div class="appearance-heading"><strong>Appearance</strong><button class="appearance-close" type="button" aria-label="Close appearance settings">×</button></div>
+     <fieldset class="appearance-fieldset"><legend>Mode</legend>
+      <div class="appearance-modes" role="group" aria-label="Choose light or dark mode">
+       <button type="button" data-appearance-mode="dark" aria-pressed="false">Dark</button>
+       <button type="button" data-appearance-mode="light" aria-pressed="false">Light</button>
+       <button type="button" data-appearance-mode="system" aria-pressed="false">System</button>
+      </div>
+     </fieldset>
+     <fieldset class="appearance-fieldset"><legend>Colour palette</legend>
+      <div class="appearance-choices">
+       {choices.map(choice=><button class="appearance-choice" type="button" data-appearance-palette={choice.id} aria-pressed="false">
+        <span class="appearance-swatch" aria-hidden="true" style={`--swatch-dark:${choice.dark.bg};--swatch-dark-accent:${choice.dark.accent};--swatch-light:${choice.light.bg};--swatch-light-accent:${choice.light.accent}`}></span>
+        <span>{choice.label}</span>
+       </button>)}
+      </div>
+     </fieldset>
+    </section>
+   </div>
    <details class="mobile-menu">
     <summary aria-label="Open navigation menu"><span class="hamburger-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
     <nav class="nav nav--mobile" aria-label="Mobile navigation">
@@ -37,11 +84,57 @@ const contributionHref=siteContributionMailtoUrl();
  <main id="main"><slot/></main>
  <footer class="footer"><span>A History of GIS in New Zealand</span><div class="actions"><a href="/about/">About &amp; sources</a><a href="/contribute/">Email options</a><a href="/network/">Connections</a><a href="/release.json">Publication revision</a></div></footer>
  <script>
-  const names=['night','forest','paper','mist'];
-  const b=document.getElementById('palette');
-  function label(){const t=document.documentElement.dataset.theme||'night';const s=b?.querySelector('span');if(s)s.textContent=t[0].toUpperCase()+t.slice(1);}
-  label();
-  b?.addEventListener('click',()=>{const t=names[(names.indexOf(document.documentElement.dataset.theme||'night')+1)%4];document.documentElement.dataset.theme=t;try{localStorage.setItem('nzgis-theme',t)}catch{}label();});
+  import {PALETTE_NAMES,PALETTE_TOKENS,readAppearance,resolveAppearance,saveAppearance} from '../lib/appearance.mjs';
+  const root=document.documentElement;
+  const toggle=document.getElementById('palette') as HTMLButtonElement|null;
+  const panel=document.getElementById('appearance-panel');
+  const closeButton=document.querySelector<HTMLButtonElement>('.appearance-close');
+  const media=window.matchMedia('(prefers-color-scheme: dark)');
+  let storage:Storage|undefined;
+  try{storage=window.localStorage}catch{}
+  let choice=readAppearance(storage);
+  function showSettings(open:boolean){
+   if(!panel||!toggle)return;
+   panel.hidden=!open;
+   toggle.setAttribute('aria-expanded',String(open));
+   if(open)panel.querySelector<HTMLButtonElement>('button[data-appearance-mode]')?.focus();
+   else toggle.focus();
+  }
+  function sync(){
+   const scheme=resolveAppearance(choice.mode,media.matches);
+   root.dataset.palette=choice.palette;
+   root.dataset.appearance=scheme;
+   root.style.colorScheme=scheme;
+   if(toggle)toggle.setAttribute('aria-label','Appearance settings: '+PALETTE_NAMES[choice.palette as keyof typeof PALETTE_NAMES]+', '+choice.mode+'. Open settings');
+   document.querySelectorAll<HTMLButtonElement>('[data-appearance-mode]').forEach(button=>{
+    button.setAttribute('aria-pressed',String(button.dataset.appearanceMode===choice.mode));
+   });
+   document.querySelectorAll<HTMLButtonElement>('[data-appearance-palette]').forEach(button=>{
+    button.setAttribute('aria-pressed',String(button.dataset.appearancePalette===choice.palette));
+   });
+  }
+  toggle?.addEventListener('click',()=>showSettings(panel?.hidden??true));
+  closeButton?.addEventListener('click',()=>showSettings(false));
+  panel?.querySelectorAll<HTMLButtonElement>('[data-appearance-mode]').forEach(button=>
+   button.addEventListener('click',()=>{
+    const mode=button.dataset.appearanceMode;
+    if(mode==='dark'||mode==='light'||mode==='system'){choice={...choice,mode};saveAppearance(storage,choice);sync();}
+   })
+  );
+  panel?.querySelectorAll<HTMLButtonElement>('[data-appearance-palette]').forEach(button=>
+   button.addEventListener('click',()=>{
+    const palette=button.dataset.appearancePalette;
+    if(palette&&Object.hasOwn(PALETTE_TOKENS,palette)){choice={...choice,palette};saveAppearance(storage,choice);sync();}
+   })
+  );
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!panel?.hidden)showSettings(false)});
+  document.addEventListener('pointerdown',event=>{
+   if(panel&&!panel.hidden&&!document.querySelector('.appearance-control')?.contains(event.target as Node)){
+    panel.hidden=true;toggle?.setAttribute('aria-expanded','false');
+   }
+  });
+  media.addEventListener('change',()=>{if(choice.mode==='system')sync()});
+  sync();
   const mobileMenu=document.querySelector<HTMLDetailsElement>('.mobile-menu');
   mobileMenu?.addEventListener('keydown',(event)=>{if(event.key==='Escape'){mobileMenu.open=false;mobileMenu.querySelector('summary')?.focus();}});
   mobileMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.open=false;}));
