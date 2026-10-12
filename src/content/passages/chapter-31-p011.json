@@ -4,10 +4,17 @@
   "articleId": "article:chapter-31",
   "title": "Maps inside other websites",
   "order": 10,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
-    "chapter:31"
+    "chapter:31",
+    "person:john-clegg",
+    "person:stephen-davis",
+    "person:cameron-prebble",
+    "person:thong-kuah",
+    "person:raja-bhadhury",
+    "entity:projectx",
+    "system:mapsicle-2009"
   ],
   "blocks": [
     {
@@ -30,6 +37,18 @@
       "markdown": "This broadened the group of people who could make maps. GIS professionals remained important where data quality, spatial analysis, coordinate systems or authoritative information were involved, but they were no longer the only people capable of putting an interactive map online. Web developers could treat mapping as one component among many.",
       "sources": [],
       "id": "ch31-s11-p03"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-projectx-mapsicle-street-view-2009",
+      "text": "A Wellington development team extended Street View soon after its New Zealand release. On 16 November 2009 John Clegg of ProjectX announced Mapsicle 1.0 through Google's Maps API developer blog. The open-source library could place markers and information windows inside Street View panoramas, including markers outside the visible field of view. Clegg credited Stephen Davis with creating and naming the prototype, Cameron Prebble with demonstrations and front-end development, Thong Kuah with project management and encouraging the open-source release, and Raja Bhadhury with testing and refinement. The team also produced a StreetTag demonstration and published Mapsicle through the Google Maps API Utility Library.",
+      "markdown": "A Wellington development team extended Street View soon after its New Zealand release. On 16 November 2009 John Clegg of ProjectX announced Mapsicle 1.0 through Google's Maps API developer blog. The open-source library could place markers and information windows inside Street View panoramas, including markers outside the visible field of view. Clegg credited Stephen Davis with creating and naming the prototype, Cameron Prebble with demonstrations and front-end development, Thong Kuah with project management and encouraging the open-source release, and Raja Bhadhury with testing and refinement. The team also produced a StreetTag demonstration and published Mapsicle through the Google Maps API Utility Library.",
+      "sources": [
+        {
+          "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+          "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+        }
+      ]
     }
   ],
   "sources": [],

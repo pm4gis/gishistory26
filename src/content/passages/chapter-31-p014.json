@@ -7,7 +7,10 @@
   "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
-    "chapter:31"
+    "chapter:31",
+    "person:john-bailey",
+    "person:ray-wallace",
+    "person:duane-wilkins"
   ],
   "blocks": [
     {
@@ -53,8 +56,8 @@
     {
       "type": "paragraph",
       "id": "research-lower-hutt-map-my-waahi-2019",
-      "text": "By June 2019, location-based storytelling had become part of New Zealand geospatial education. The LINZ-supported LEARNZ Map My Wāhi field trip based in Lower Hutt included Google representative John Bailey discussing Earth, Voyager and the now-retired Tour Builder for telling stories about places. Separate videos featured Belmont School families sharing heritage and Lower Hutt mayor Ray Wallace discussing the city's diverse communities. Duane Wilkins demonstrated Esri's ArcGIS StoryMaps in another video. The programme used several mapping and storytelling tools; the Lower Hutt community video itself should not be presented as a Google Earth production.",
-      "markdown": "By June 2019, location-based storytelling had become part of New Zealand geospatial education. The LINZ-supported LEARNZ Map My Wāhi field trip based in Lower Hutt included Google representative John Bailey discussing Earth, Voyager and the now-retired Tour Builder for telling stories about places. Separate videos featured Belmont School families sharing heritage and Lower Hutt mayor Ray Wallace discussing the city's diverse communities. Duane Wilkins demonstrated Esri's ArcGIS StoryMaps in another video. The programme used several mapping and storytelling tools; the Lower Hutt community video itself should not be presented as a Google Earth production.",
+      "text": "In June 2019 the LINZ-supported LEARNZ Map My Wāhi field trip explored place-based storytelling in Lower Hutt and Wellington. Google presenter John Bailey demonstrated Google Earth, Voyager and the now-retired Tour Builder. Belmont School pupil Marcia explained how to make a Tour Builder project, and other pupils shared family and cultural mapping work. Lower Hutt mayor Ray Wallace discussed cultural diversity with Belmont students. Duane Wilkins demonstrated Esri's ArcGIS StoryMaps in a separate video. These were distinct interviews and mapping tools within the same school programme.",
+      "markdown": "In June 2019 the LINZ-supported LEARNZ Map My Wāhi field trip explored place-based storytelling in Lower Hutt and Wellington. Google presenter John Bailey demonstrated Google Earth, Voyager and the now-retired Tour Builder. Belmont School pupil Marcia explained how to make a Tour Builder project, and other pupils shared family and cultural mapping work. Lower Hutt mayor Ray Wallace discussed cultural diversity with Belmont students. Duane Wilkins demonstrated Esri's ArcGIS StoryMaps in a separate video. These were distinct interviews and mapping tools within the same school programme.",
       "sources": [
         {
           "label": "LEARNZ, Map My Waahi 2019 video series, including Telling stories through Google Earth and Celebrating different cultures in Lower Hutt",

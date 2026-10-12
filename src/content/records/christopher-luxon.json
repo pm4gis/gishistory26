@@ -1,0 +1,29 @@
+{
+  "id": "person:christopher-luxon",
+  "slug": "christopher-luxon",
+  "name": "Christopher Luxon",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/christopher-luxon/",
+  "story": [
+    "Air New Zealand chief executive pictured by DOC at the November 2015 Street View Great Walks launch."
+  ],
+  "sources": [
+    {
+      "label": "Lou Sanson, DOC Director-General, D-G Direct, 3 December 2015",
+      "url": "https://blog.doc.govt.nz/2015/12/03/d-g-direct-update/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Lou Sanson, DOC Director-General, D-G Direct, 3 December 2015",
+        "url": "https://blog.doc.govt.nz/2015/12/03/d-g-direct-update/"
+      }
+    ]
+  ]
+}

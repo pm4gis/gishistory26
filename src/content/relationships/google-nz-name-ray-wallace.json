@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-ray-wallace",
+  "a": "person:ray-wallace",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "Lower Hutt mayor who visited Belmont School and discussed cultural diversity during the 2019 LEARNZ field trip.",
+  "passageIds": [
+    "passage:chapter-31-54386442a8"
+  ],
+  "sources": [
+    {
+      "label": "LEARNZ, Map Your Waahi 2019 videos",
+      "url": "https://www.learnz.org.nz/mapping192/videos"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-stephen-davis",
+  "a": "person:stephen-davis",
+  "b": "system:mapsicle-2009",
+  "label": "Contributed to Mapsicle 1.0",
+  "basis": "ProjectX developer who created and named the 2009 Mapsicle prototype, according to John Clegg's technical release account.",
+  "passageIds": [
+    "passage:chapter-31-934c71685f"
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ]
+}

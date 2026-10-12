@@ -1,0 +1,37 @@
+{
+  "id": "person:peter-hiemstra",
+  "slug": "peter-hiemstra",
+  "name": "Peter Hiemstra",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/peter-hiemstra/",
+  "story": [
+    "DOC GIS analyst who accompanied the Google Street View Trekker on most of the Great Walks and photographed fieldwork."
+  ],
+  "sources": [
+    {
+      "label": "DOC, The Great Walks on Google Maps, 6 November 2015",
+      "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+    },
+    {
+      "label": "Lou Sanson, DOC Director-General, D-G Direct, 3 December 2015",
+      "url": "https://blog.doc.govt.nz/2015/12/03/d-g-direct-update/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "DOC, The Great Walks on Google Maps, 6 November 2015",
+        "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+      },
+      {
+        "label": "Lou Sanson, DOC Director-General, D-G Direct, 3 December 2015",
+        "url": "https://blog.doc.govt.nz/2015/12/03/d-g-direct-update/"
+      }
+    ]
+  ]
+}

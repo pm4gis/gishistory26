@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-raja-bhadhury",
+  "a": "person:raja-bhadhury",
+  "b": "system:mapsicle-2009",
+  "label": "Contributed to Mapsicle 1.0",
+  "basis": "ProjectX contributor who helped test and refine Mapsicle ahead of its 2009 Google Maps API Utility Library release.",
+  "passageIds": [
+    "passage:chapter-31-934c71685f"
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ]
+}

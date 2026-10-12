@@ -1,0 +1,29 @@
+{
+  "id": "person:noel-gordon",
+  "slug": "noel-gordon",
+  "name": "Noel Gordon",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/noel-gordon/",
+  "story": [
+    "Google software engineer, author of the official December 2007 localised New Zealand Google Maps announcement."
+  ],
+  "sources": [
+    {
+      "label": "Noel Gordon, Google, New Zealand Google Maps launch, 12 December 2007",
+      "url": "https://googleblog.blogspot.com/2007/12/haere-mai-google-maps-lands-in-new.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Noel Gordon, Google, New Zealand Google Maps launch, 12 December 2007",
+        "url": "https://googleblog.blogspot.com/2007/12/haere-mai-google-maps-lands-in-new.html"
+      }
+    ]
+  ]
+}

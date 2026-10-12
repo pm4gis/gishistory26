@@ -12,7 +12,15 @@
   ],
   "recordIds": [
     "chapter:31",
-    "entity:department-of-conservation"
+    "entity:department-of-conservation",
+    "person:peter-hiemstra",
+    "person:matt-jenke",
+    "person:riki-mules",
+    "person:cynthia-wei",
+    "person:steven-silverman",
+    "person:john-key",
+    "person:lou-sanson",
+    "person:christopher-luxon"
   ],
   "themeIds": [],
   "categories": [

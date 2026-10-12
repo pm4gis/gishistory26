@@ -1,0 +1,29 @@
+{
+  "id": "person:john-clegg",
+  "slug": "john-clegg",
+  "name": "John Clegg",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/john-clegg/",
+  "story": [
+    "ProjectX developer in Wellington who authored the 16 November 2009 Google Maps API blog account announcing Mapsicle 1.0."
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+        "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+      }
+    ]
+  ]
+}

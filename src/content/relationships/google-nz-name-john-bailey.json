@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-john-bailey",
+  "a": "person:john-bailey",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "Google presenter who explained Google Earth, Voyager and Tour Builder in the 2019 LEARNZ Map My Wāhi videos.",
+  "passageIds": [
+    "passage:chapter-31-54386442a8"
+  ],
+  "sources": [
+    {
+      "label": "LEARNZ, Map Your Waahi 2019 videos",
+      "url": "https://www.learnz.org.nz/mapping192/videos"
+    }
+  ]
+}

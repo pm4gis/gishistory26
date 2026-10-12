@@ -1,0 +1,34 @@
+{
+  "id": "2009-projectx-mapsicle-street-view",
+  "dateDisplay": "16 November 2009",
+  "startDate": "2009-11-16",
+  "datePrecision": "day",
+  "year": 2009,
+  "label": "Wellington ProjectX releases Mapsicle for Google Street View",
+  "summary": "John Clegg credited Stephen Davis, Cameron Prebble, Thong Kuah and Raja Bhadhury for the open-source Mapsicle 1.0 panorama annotation library.",
+  "url": "/stories/google-changes-the-audience/#maps-inside-other-websites-934c71685f",
+  "passageIds": [
+    "passage:chapter-31-934c71685f"
+  ],
+  "recordIds": [
+    "chapter:31",
+    "entity:projectx",
+    "system:mapsicle-2009",
+    "person:john-clegg",
+    "person:stephen-davis",
+    "person:cameron-prebble",
+    "person:thong-kuah",
+    "person:raja-bhadhury"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "software"
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ]
+}

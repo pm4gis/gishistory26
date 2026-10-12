@@ -1,0 +1,37 @@
+{
+  "id": "person:ray-wallace",
+  "slug": "ray-wallace",
+  "name": "Ray Wallace",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/ray-wallace/",
+  "story": [
+    "Lower Hutt mayor who visited Belmont School and discussed cultural diversity during the 2019 LEARNZ field trip."
+  ],
+  "sources": [
+    {
+      "label": "LEARNZ, Map Your Waahi 2019 videos",
+      "url": "https://www.learnz.org.nz/mapping192/videos"
+    },
+    {
+      "label": "LINZ, Map my Wāhi: discovering our shared heritage",
+      "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools/map-my-wahi-discovering-our-shared-heritage"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "LEARNZ, Map Your Waahi 2019 videos",
+        "url": "https://www.learnz.org.nz/mapping192/videos"
+      },
+      {
+        "label": "LINZ, Map my Wāhi: discovering our shared heritage",
+        "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools/map-my-wahi-discovering-our-shared-heritage"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:thong-kuah",
+  "slug": "thong-kuah",
+  "name": "Thong Kuah",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/thong-kuah/",
+  "story": [
+    "ProjectX contributor who managed Mapsicle development and advocated releasing the library as open-source software in 2009."
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+        "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+      }
+    ]
+  ]
+}

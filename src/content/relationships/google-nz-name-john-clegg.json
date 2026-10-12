@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-john-clegg",
+  "a": "person:john-clegg",
+  "b": "system:mapsicle-2009",
+  "label": "Contributed to Mapsicle 1.0",
+  "basis": "ProjectX developer in Wellington who authored the 16 November 2009 Google Maps API blog account announcing Mapsicle 1.0.",
+  "passageIds": [
+    "passage:chapter-31-934c71685f"
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ]
+}

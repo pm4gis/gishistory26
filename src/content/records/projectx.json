@@ -1,0 +1,28 @@
+{
+  "id": "entity:projectx",
+  "slug": "projectx",
+  "name": "ProjectX",
+  "kind": "Business",
+  "category": "New Zealand web mapping development",
+  "url": "/entities/projectx/",
+  "story": [
+    "Wellington-based ProjectX built web mapping and addressing applications. In November 2009 its staff published Mapsicle 1.0, an open-source library that added interactive markers and information windows to Google Street View."
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+        "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+      }
+    ]
+  ]
+}

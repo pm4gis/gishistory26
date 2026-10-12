@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-cynthia-wei",
+  "a": "person:cynthia-wei",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "Google Street View programme manager who announced the release of seven New Zealand Great Walks panoramas in November 2015.",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "sources": [
+    {
+      "label": "Cynthia Wei, Google, Take a walk on the wild side with Street View in New Zealand, 4 November 2015",
+      "url": "https://blog.google/intl/en-nz/products/2015_11_take-walk-on-wild-side-with-street-view/"
+    }
+  ]
+}
