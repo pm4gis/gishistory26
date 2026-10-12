@@ -1,0 +1,28 @@
+{
+  "id": "2005-cfrt-arcflax-9-presentation",
+  "dateDisplay": "2005",
+  "startDate": "2005",
+  "datePrecision": "year",
+  "year": 2005,
+  "label": "CFRT ArcFlax 9 presentation describes participatory GIS",
+  "summary": "An archived presentation titled “ESRI 2005 – Participatory GIS ArcFlax 9” credits Duane Wilkins at the Crown Forestry Rental Trust, describes ArcFlax 9 as participatory GIS for evidential work in a judicial inquiry, and identifies ArcReader 9.1. The deck records the presentation’s framing; it does not identify a regional edition or the exact contents of later DVDs.",
+  "url": "/timeline/",
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "recordIds": [
+    "entity:crown-forestry-rental-trust",
+    "person:duane-wilkins"
+  ],
+  "themeIds": [],
+  "categories": [
+    "Historical GIS",
+    "Treaty mapping"
+  ],
+  "sources": [
+    {
+      "label": "Duane Wilkins, “ESRI 2005 – Participatory GIS ArcFlax 9”, 43-slide presentation; Google Drive archive copy, accessed 12 October 2026 (access may be restricted)",
+      "url": "https://docs.google.com/presentation/d/1P8HBD7_ANh-rKXzcVVDASHI7UpTK3hNXATLISCbXZSg/edit"
+    }
+  ]
+}

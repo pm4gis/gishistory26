@@ -8,7 +8,8 @@
   "description": "Five-disc two- and three-dimensional ArcFlax GIS distribution containing historical land and claim mapping for Northland, recorded in the Te Paparahi o Te Raki inquiry index.",
   "story": [
     "The official Waitangi Tribunal Te Paparahi o Te Raki inquiry register has an entry A045 for 'Arcflax 1.0, Northland', dated January 2007 and described as a 2D and 3D Geographic Information System viewer on discs 1–5. The catalogue identifies Crown purchases, Old Land Claims, Native Land Court blocks and other historical map-image DVDs. It records the Crown Forestry Rental Trust supplying the item on 6 December 2013.",
-    "This evidence names an actual regional GIS package and categories of mapped historical documents. It is separate from the National Library's 2006 Whanganui Edition 2.0 DVD. The regional version numbers need not be successive national versions. The archive index does not identify the software used in the Northland viewer or constitute an inventory of every GIS layer."
+    "This evidence names a regional GIS package and broad categories of historical mapping. The Tribunal index does not identify the software or every layer. A January 2007 CFRT quick-start guide retained in Duane Wilkins’s Drive archive identifies Northland 1.0 as an interactive 2D/3D package based on ArcReader 9.1. ArcFlax supplied map data; ArcReader was installed separately. Users were instructed to copy the DVD project folder to the root of C:\\\\ before opening it. The guide gives minimum requirements of Windows XP or similar, DVD drive, 5 GB free space and 256 MB RAM, and restricts use to contracted CFRT clients for Treaty-settlement purposes. It describes seven project variants using the same source data, with all layers in the Deluxe edition. The guide includes a QuickStart tutorial but says CFRT could not provide ongoing installation or use support.",
+    "The Northland guide lists 75 cm aerial photography for Whangārei District, Natural Geographx textures for Northland, DOC-maintained archaeological data, LENZ-based predicted potential vegetation from Landcare Research, LUC, LINZ Crown Licensed Forests, Core Record Set and Topo50k, Native Land Court parent-block boundaries drawn from original survey plans, Crown Purchase and Old Land Claim boundaries from the Northland Technical Research Programme, 2001 deprivation and population data by meshblock, and Landsat imagery. It says 2006 Census data were expected in ArcFlax 2.0; the guide does not prove that the Whanganui Edition 2.0 disc included them."
   ],
   "sources": [
     {
@@ -18,6 +19,10 @@
     {
       "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
       "url": "https://natlib.govt.nz/records/30673810"
+    },
+    {
+      "label": "Crown Forestry Rental Trust, “ArcFlax 1.0 Northland 2007: Geographic Data Layer Descriptions & Quick Start Guide”, January 2007; Google Drive archive copy (access may be restricted)",
+      "url": "https://drive.google.com/file/d/1dPIB2_44N3li5qiZLo3jdHyNO1HfwJ45/view"
     }
   ],
   "paragraphSources": [
@@ -37,8 +42,14 @@
         "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
       },
       {
-        "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
-        "url": "https://natlib.govt.nz/records/30673810"
+        "label": "Crown Forestry Rental Trust, “ArcFlax 1.0 Northland 2007: Geographic Data Layer Descriptions & Quick Start Guide”, January 2007; Google Drive archive copy (access may be restricted)",
+        "url": "https://drive.google.com/file/d/1dPIB2_44N3li5qiZLo3jdHyNO1HfwJ45/view"
+      }
+    ],
+    [
+      {
+        "label": "Crown Forestry Rental Trust, “ArcFlax 1.0 Northland 2007: Geographic Data Layer Descriptions & Quick Start Guide”, January 2007; Google Drive archive copy (access may be restricted)",
+        "url": "https://drive.google.com/file/d/1dPIB2_44N3li5qiZLo3jdHyNO1HfwJ45/view"
       }
     ]
   ],
