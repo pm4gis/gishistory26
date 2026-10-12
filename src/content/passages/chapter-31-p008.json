@@ -4,7 +4,7 @@
   "articleId": "article:chapter-31",
   "title": "Imagery becomes ordinary",
   "order": 7,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
     "chapter:31"
@@ -30,6 +30,42 @@
       "markdown": "The apparent realism required care. Imagery might be months or years old. Orthorectification, mosaicking, capture angle, terrain and source resolution could affect what a user saw. A house visible in the image was not proof of its current condition, and an apparent boundary was not a cadastral boundary merely because it lined up with a fence. Consumer access widened the audience for imagery much faster than it widened understanding of its limitations.",
       "sources": [],
       "id": "ch31-s08-p03"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-nz-street-view-launch-2008",
+      "text": "Street View added another kind of imagery to the New Zealand public map. Launched here on 2 December 2008, it let people move through linked 360-degree roadside panoramas, from major city streets to scenic rural roads. Google described New Zealand as the seventh country to receive the service. Its original tourism examples included Lake Wakatipu and the Stone Store in Kerikeri. Street View gave people a different way to examine a neighbourhood, plan a visit or look at a building from the road. It was street-level photography, with different collection dates and coverage from Google Earth's overhead imagery.",
+      "markdown": "Street View added another kind of imagery to the New Zealand public map. Launched here on 2 December 2008, it let people move through linked 360-degree roadside panoramas, from major city streets to scenic rural roads. Google described New Zealand as the seventh country to receive the service. Its original tourism examples included Lake Wakatipu and the Stone Store in Kerikeri. Street View gave people a different way to examine a neighbourhood, plan a visit or look at a building from the road. It was street-level photography, with different collection dates and coverage from Google Earth's overhead imagery.",
+      "sources": [
+        {
+          "label": "Google Australia and New Zealand, Street View now in New Zealand, 2 December 2008",
+          "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-nz-street-view-privacy-2010",
+      "text": "There were consequences to photographing public roads at national scale. Google's Street View vehicles also gathered Wi-Fi network information. On 14 December 2010, New Zealand's Privacy Commissioner reported that Google had collected communications payload data from unsecured networks in breach of the Privacy Act, and had collected publicly visible Wi-Fi information without adequate notice. Google apologised and agreed to delete the captured payload data and improve its privacy procedures. The inquiry concerned Wi-Fi data gathered during Street View filming, rather than the mere existence of roadside photographs.",
+      "markdown": "There were consequences to photographing public roads at national scale. Google's Street View vehicles also gathered Wi-Fi network information. On 14 December 2010, New Zealand's Privacy Commissioner reported that Google had collected communications payload data from unsecured networks in breach of the Privacy Act, and had collected publicly visible Wi-Fi information without adequate notice. Google apologised and agreed to delete the captured payload data and improve its privacy procedures. The inquiry concerned Wi-Fi data gathered during Street View filming, rather than the mere existence of roadside photographs.",
+      "sources": [
+        {
+          "label": "Office of the Privacy Commissioner, Google's collection of WiFi information during Street View filming, 14 December 2010",
+          "url": "https://www.privacy.org.nz/resources-and-learning/public-inquiries/googles-collection-of-wifi-information-during-street-view-filming/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-nz-christchurch-historical-street-view-2014",
+      "text": "On 23 April 2014 Google made historical Street View imagery available to compare Christchurch streets before and after the Canterbury earthquakes. Users could select earlier panoramas in Google Maps and inspect changes to buildings, roads and neighbourhoods. Google presented the imagery as a record that residents could use while remembering and rebuilding the city. Unlike a single image background, the successive roadside photographs showed how a place had changed, although only at locations and dates where Google had captured imagery.",
+      "markdown": "On 23 April 2014 Google made historical Street View imagery available to compare Christchurch streets before and after the Canterbury earthquakes. Users could select earlier panoramas in Google Maps and inspect changes to buildings, roads and neighbourhoods. Google presented the imagery as a record that residents could use while remembering and rebuilding the city. Unlike a single image background, the successive roadside photographs showed how a place had changed, although only at locations and dates where Google had captured imagery.",
+      "sources": [
+        {
+          "label": "Google New Zealand, Preserving Christchurch's history to help Cantabrians remember, plan, and rebuild, 23 April 2014",
+          "url": "https://blog.google/intl/en-nz/products/2014_04_preserving-christchurchs-history-to/"
+        }
+      ]
     }
   ],
   "sources": [],

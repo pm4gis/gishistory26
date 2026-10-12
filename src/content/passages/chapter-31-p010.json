@@ -4,7 +4,7 @@
   "articleId": "article:chapter-31",
   "title": "KML as a bridge",
   "order": 9,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
     "chapter:31"
@@ -37,6 +37,18 @@
       "markdown": "KML also helped blur the boundary between making a map and sharing geographic data. The recipient could inspect, navigate and reuse the shared geographic content. They could switch other layers on and off, zoom to a location, inspect attributes and combine the overlay with the wider Google Earth environment. That was modest compared with a full GIS, but it was enough for many communication tasks.",
       "sources": [],
       "id": "ch31-p-5bf84846a4e0"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-canterbury-cordon-kml-google-earth-2011",
+      "text": "The Canterbury recovery record provides a specific government example of KML distribution. The Department of the Prime Minister and Cabinet's archive of CERA material lists a Christchurch central-city cordon dataset dated 22 February 2011 and a package explicitly prepared for Google Earth. The archive confirms that Google Earth-compatible KML was among the public geospatial formats used to describe the cordon. The listed dataset date should not be mistaken for proof that CERA itself published the package on the day of the earthquake.",
+      "markdown": "The Canterbury recovery record provides a specific government example of KML distribution. The Department of the Prime Minister and Cabinet's archive of CERA material lists a Christchurch central-city cordon dataset dated 22 February 2011 and a package explicitly prepared for Google Earth. The archive confirms that Google Earth-compatible KML was among the public geospatial formats used to describe the cordon. The listed dataset date should not be mistaken for proof that CERA itself published the package on the day of the earthquake.",
+      "sources": [
+        {
+          "label": "Department of the Prime Minister and Cabinet, Other CERA publications and data (archive listing for Christchurch CBD cordon and Google Earth KML, dated 22 February 2011)",
+          "url": "https://www.dpmc.govt.nz/publications/other-cera-publications-and-data"
+        }
+      ]
     }
   ],
   "sources": [],

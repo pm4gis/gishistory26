@@ -1,0 +1,27 @@
+{
+  "id": "2011-canterbury-cordon-google-earth-kml",
+  "dateDisplay": "2011",
+  "startDate": "2011",
+  "datePrecision": "year",
+  "year": 2011,
+  "label": "Christchurch cordon data preserved in Google Earth KML",
+  "summary": "A government archive records Christchurch CBD cordon KML dated 22 February 2011, including a Google Earth package; the original public release date is not established.",
+  "url": "/stories/google-changes-the-audience/",
+  "passageIds": [
+    "passage:chapter-31-efe6519f22"
+  ],
+  "recordIds": [
+    "chapter:31"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "mass-market"
+  ],
+  "sources": [
+    {
+      "label": "Department of the Prime Minister and Cabinet, Other CERA publications and data (archive listing for Christchurch CBD cordon and Google Earth KML, dated 22 February 2011)",
+      "url": "https://www.dpmc.govt.nz/publications/other-cera-publications-and-data"
+    }
+  ]
+}

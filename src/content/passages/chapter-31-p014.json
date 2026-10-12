@@ -4,7 +4,7 @@
   "articleId": "article:chapter-31",
   "title": "A wider mapping public",
   "order": 13,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
     "chapter:31"
@@ -37,6 +37,34 @@
       "markdown": "By the early 2010s, this expectation was firmly established. Google was adding location prompts and inviting users to help improve map information, while organisations across New Zealand were publishing data and applications into a web environment in which interactive maps were already familiar. Attention increasingly shifted to who could obtain the underlying data, which software could be used to work with it, and how applications could consume spatial services directly.",
       "sources": [],
       "id": "ch31-p-866f04464cdb"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-google-earth-outreach-nz-2012",
+      "text": "In November 2012 Google extended its Google Earth Outreach programme to Australia and New Zealand. It offered non-profit and research organisations a way to use Google's mapping tools to illustrate environmental and community issues to a wider audience. This was another public-facing use of a geographic platform that had begun chiefly as a way to explore satellite imagery and terrain.",
+      "markdown": "In November 2012 Google extended its Google Earth Outreach programme to Australia and New Zealand. It offered non-profit and research organisations a way to use Google's mapping tools to illustrate environmental and community issues to a wider audience. This was another public-facing use of a geographic platform that had begun chiefly as a way to explore satellite imagery and terrain.",
+      "sources": [
+        {
+          "label": "Google Maps Blog, Google Earth Outreach launches in Australia and New Zealand, 5 November 2012",
+          "url": "https://maps.googleblog.com/2012/11/google-earth-outreach-launches-in.html"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-lower-hutt-map-my-waahi-2019",
+      "text": "By June 2019, location-based storytelling had become part of New Zealand geospatial education. The LINZ-supported LEARNZ Map My Wāhi field trip based in Lower Hutt included Google representative John Bailey discussing Earth, Voyager and the now-retired Tour Builder for telling stories about places. Separate videos featured Belmont School families sharing heritage and Lower Hutt mayor Ray Wallace discussing the city's diverse communities. Duane Wilkins demonstrated Esri's ArcGIS StoryMaps in another video. The programme used several mapping and storytelling tools; the Lower Hutt community video itself should not be presented as a Google Earth production.",
+      "markdown": "By June 2019, location-based storytelling had become part of New Zealand geospatial education. The LINZ-supported LEARNZ Map My Wāhi field trip based in Lower Hutt included Google representative John Bailey discussing Earth, Voyager and the now-retired Tour Builder for telling stories about places. Separate videos featured Belmont School families sharing heritage and Lower Hutt mayor Ray Wallace discussing the city's diverse communities. Duane Wilkins demonstrated Esri's ArcGIS StoryMaps in another video. The programme used several mapping and storytelling tools; the Lower Hutt community video itself should not be presented as a Google Earth production.",
+      "sources": [
+        {
+          "label": "LEARNZ, Map My Waahi 2019 video series, including Telling stories through Google Earth and Celebrating different cultures in Lower Hutt",
+          "url": "https://www.learnz.org.nz/mapping192/videos"
+        },
+        {
+          "label": "LINZ, Map my Wāhi: discovering our shared heritage (preserved 2019 education resources)",
+          "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools/map-my-wahi-discovering-our-shared-heritage"
+        }
+      ]
     }
   ],
   "sources": [],
