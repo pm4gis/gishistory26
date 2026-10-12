@@ -1,0 +1,16 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-036",
+  "a": "system:gns-regional-geological-map-catalogue-2009",
+  "b": "dataset:gns-historic-geological-maps",
+  "label": "Indexed and preserved historical map records",
+  "basis": "Indexed and preserved historical map records. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-899fa91ade"
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, Regional Geological Map Archive and Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+    }
+  ]
+}

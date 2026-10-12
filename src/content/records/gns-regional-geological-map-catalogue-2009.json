@@ -1,0 +1,42 @@
+{
+  "id": "system:gns-regional-geological-map-catalogue-2009",
+  "slug": "gns-regional-geological-map-catalogue-2009",
+  "name": "GNS regional geological-map digital catalogue (2009)",
+  "kind": "Project",
+  "category": "Historical GIS systems and projects",
+  "url": "/systems/gns-regional-geological-map-catalogue-2009/",
+  "description": "GNS work to expose archived geological-map records through a digital image catalogue.",
+  "story": [
+    "The Regional Geological Map Archive and Database received national significance recognition in 1992. The geological map collection contains printed and unpublished mapping, GIS records and legacy images reaching back to the nineteenth century. GNS Science inherited custodianship when CRIs were established.",
+    "GNS records dedicated funding in 2009 for a digital image map catalogue, intended to improve access and reduce handling of older maps. The catalogue made historical source material more discoverable, while QMAP was separately reinterpreting regional geology in GIS."
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, Regional Geological Map Archive and Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "GNS Science, Regional Geological Map Archive and Database",
+        "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+      }
+    ],
+    [
+      {
+        "label": "GNS Science, Regional Geological Map Archive and Database",
+        "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "GNS historical map dataset",
+      "url": "/datasets/gns-historic-geological-maps/"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

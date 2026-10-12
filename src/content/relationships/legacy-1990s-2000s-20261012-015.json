@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-015",
+  "a": "dataset:national-vegetation-survey-databank",
+  "b": "entity:manaaki-whenua-landcare-research",
+  "label": "Maintains historic vegetation observations",
+  "basis": "Maintains historic vegetation observations. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Parliamentary Commissioner for the Environment, inventory of National Vegetation Survey database development",
+      "url": "https://pce.parliament.nz/media/lddfaexd/dawson-stocktake-of-resources-and-databases-pdf-12mb.pdf"
+    }
+  ]
+}

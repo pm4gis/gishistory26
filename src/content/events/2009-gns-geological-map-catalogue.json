@@ -1,0 +1,26 @@
+{
+  "id": "2009-gns-geological-map-catalogue",
+  "dateDisplay": "2009",
+  "startDate": "2009",
+  "datePrecision": "year",
+  "year": 2009,
+  "label": "GNS receives geological archive digitisation funding",
+  "summary": "Dedicated funding supported the Regional Geological Map Archive's digital image catalogue, enabling discovery of earlier maps.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "system:gns-regional-geological-map-catalogue-2009",
+    "entity:gns-science"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, Regional Geological Map Archive and Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+    }
+  ]
+}

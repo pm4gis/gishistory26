@@ -1,0 +1,17 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-005",
+  "a": "dataset:national-digital-topo250-1989",
+  "b": "dataset:historic-nzms1",
+  "label": "Earlier printed topographic compilation",
+  "basis": "Earlier printed topographic compilation. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-80f8ea6518",
+    "passage:chapter-15-f5ce4f99a7"
+  ],
+  "sources": [
+    {
+      "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+      "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+    }
+  ]
+}

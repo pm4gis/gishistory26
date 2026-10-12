@@ -1,0 +1,18 @@
+{
+  "id": "relationship:forest-research-1998-003",
+  "a": "system:forest-research-spatial-monitoring-1998",
+  "b": "person:tim-payn",
+  "label": "Research author, spatial forest productivity",
+  "basis": "Payn co-authored the 1998 and 1999 forest spatial methods papers.",
+  "sources": [
+    {
+      "label": "Höck, Payn and Dunningham, Research on spatial analytical tools for New Zealand plantation forests, SIRC 1998",
+      "url": "https://www.researchgate.net/publication/229049415_Research_on_spatial_analytical_tools_for_New_Zealand_plantation_forests"
+    },
+    {
+      "label": "Payn et al, GIS and spatial analysis for forest productivity and nutrition, Forest Ecology and Management, 1999",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    }
+  ],
+  "passageIds": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "dataset:qmap-regional-gis-1994",
+  "slug": "qmap-regional-gis-1994",
+  "name": "QMAP regional geological GIS sheets (1994–2012)",
+  "kind": "Dataset",
+  "category": "Historical geological datasets",
+  "url": "/datasets/qmap-regional-gis-1994/",
+  "description": "The individual GIS-based regional geological compilations made before the seamless national QMAP dataset.",
+  "story": [
+    "GNS Science's QMAP programme began with the Dunedin sheet in 1994 and went on to produce 21 1:250,000 regional geological map sheets. The GIS process compiled published and unpublished geological maps, integrated fieldwork and stored geological boundaries and attributes for revised cartographic outputs.",
+    "The regional GIS sheets are historical products in their own right. Their interpretation and preparation dates differ by sheet. GNS created the seamless national GIS mosaic in 2014, after the regional programme, so the two datasets should be distinguished."
+  ],
+  "sources": [
+    {
+      "label": "Rattenbury and Isaac, QMAP 1:250,000 Geological Map project, 2012",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00288306.2012.725417"
+    },
+    {
+      "label": "GNS Science, QMAP programme and geological GIS data",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Rattenbury and Isaac, QMAP 1:250,000 Geological Map project, 2012",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/00288306.2012.725417"
+      },
+      {
+        "label": "GNS Science, QMAP programme and geological GIS data",
+        "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+      }
+    ],
+    [
+      {
+        "label": "Rattenbury and Isaac, QMAP 1:250,000 Geological Map project, 2012",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/00288306.2012.725417"
+      },
+      {
+        "label": "GNS Science, QMAP programme and geological GIS data",
+        "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Seamless national QMAP dataset",
+      "url": "/datasets/qmap-250k/"
+    },
+    {
+      "label": "GNS regional map series",
+      "url": "https://www.gns.cri.nz/data-and-resources/digital-qmap-geological-maps-at-1250000/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "dataset:national-digital-topo250-1989",
+  "slug": "national-digital-topo250-1989",
+  "name": "National 1:250,000 digital topographic database (1980s)",
+  "kind": "Dataset",
+  "category": "Historical topographic datasets",
+  "url": "/datasets/national-digital-topo250-1989/",
+  "description": "The early national vector topographic database built by scanning and vectorising earlier small-scale map material.",
+  "story": [
+    "By 1989, the New Zealand mapping agency had an established national 1:250,000 digital topographic database. The conversion combined SCITEX scanning and vectorisation with a GeoVision VISION database environment, as described in contemporary mapping papers and a 1999 technical retrospective.",
+    "This was source information assembled from mapped features, rather than a raster copy of an older sheet. Its development precedes both the present Topo250 GIS layers and the separately maintained Topo50 database. Historic scale and compilation choices remain part of its lineage."
+  ],
+  "sources": [
+    {
+      "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+      "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+    },
+    {
+      "label": "LINZ, Topographic data and underlying database",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+        "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+      },
+      {
+        "label": "LINZ, Topographic data and underlying database",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+      }
+    ],
+    [
+      {
+        "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+        "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+      },
+      {
+        "label": "LINZ, Topographic data and underlying database",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Digital topography chapter",
+      "url": "/stories/topography-goes-digital/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "1998-nvs-national-significance",
+  "dateDisplay": "1998",
+  "startDate": "1998",
+  "datePrecision": "year",
+  "year": 1998,
+  "label": "National Vegetation Survey Databank recognised",
+  "summary": "NVS was accorded Nationally Significant Database status, preserving decades of field vegetation observations.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "dataset:national-vegetation-survey-databank"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Parliamentary Commissioner for the Environment, inventory of National Vegetation Survey database development",
+      "url": "https://pce.parliament.nz/media/lddfaexd/dawson-stocktake-of-resources-and-databases-pdf-12mb.pdf"
+    }
+  ]
+}

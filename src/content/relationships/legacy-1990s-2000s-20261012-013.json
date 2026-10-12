@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-013",
+  "a": "dataset:niwa-freshwater-biodata-2004",
+  "b": "dataset:rec",
+  "label": "REC supplied the planned FINZ hydrological geographic framework",
+  "basis": "REC supplied the planned FINZ hydrological geographic framework. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, September 2004",
+      "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    }
+  ]
+}

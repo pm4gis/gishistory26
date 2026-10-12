@@ -1,0 +1,54 @@
+{
+  "id": "dataset:national-vegetation-survey-databank",
+  "slug": "national-vegetation-survey-databank",
+  "name": "National Vegetation Survey (NVS) Databank",
+  "kind": "Dataset",
+  "category": "Historical ecological datasets",
+  "url": "/datasets/national-vegetation-survey-databank/",
+  "description": "A national repository of geolocated vegetation plot records and repeat surveys with origins before GIS.",
+  "story": [
+    "NVS preserved ecological plot and vegetation-survey measurements collected in the field over many decades. Central archiving of paper and computer survey records was formalised in the late 1980s. The collection gained Nationally Significant Database status in 1998 and underwent a transition to a SQL relational database in 2001.",
+    "The later database connects observations to actual plot locations and repeat measurements, preserving field data that predates digital maps. Manaaki Whenua's 2007–08 report records archived carbon-monitoring plots and continued submissions from the Department of Conservation. Plot coordinates, survey methods and measurement dates remain part of the evidence."
+  ],
+  "sources": [
+    {
+      "label": "Parliamentary Commissioner for the Environment, inventory of National Vegetation Survey database development",
+      "url": "https://pce.parliament.nz/media/lddfaexd/dawson-stocktake-of-resources-and-databases-pdf-12mb.pdf"
+    },
+    {
+      "label": "National Vegetation Survey, 2007–08 report, field observations and carbon plots",
+      "url": "https://nvs.landcareresearch.co.nz/Content/NVS_annual_report_0708.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Parliamentary Commissioner for the Environment, inventory of National Vegetation Survey database development",
+        "url": "https://pce.parliament.nz/media/lddfaexd/dawson-stocktake-of-resources-and-databases-pdf-12mb.pdf"
+      },
+      {
+        "label": "National Vegetation Survey, 2007–08 report, field observations and carbon plots",
+        "url": "https://nvs.landcareresearch.co.nz/Content/NVS_annual_report_0708.pdf"
+      }
+    ],
+    [
+      {
+        "label": "Parliamentary Commissioner for the Environment, inventory of National Vegetation Survey database development",
+        "url": "https://pce.parliament.nz/media/lddfaexd/dawson-stocktake-of-resources-and-databases-pdf-12mb.pdf"
+      },
+      {
+        "label": "National Vegetation Survey, 2007–08 report, field observations and carbon plots",
+        "url": "https://nvs.landcareresearch.co.nz/Content/NVS_annual_report_0708.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Conservation and environmental GIS",
+      "url": "/stories/conservation-and-environment/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

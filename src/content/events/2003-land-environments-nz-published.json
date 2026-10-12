@@ -1,0 +1,26 @@
+{
+  "id": "2003-land-environments-nz-published",
+  "dateDisplay": "23 April 2003",
+  "startDate": "2003-04-23",
+  "datePrecision": "day",
+  "year": 2003,
+  "label": "Land Environments of New Zealand published",
+  "summary": "The national LENZ environmental classification was published with ministry and Landcare Research support.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "dataset:land-environments-nz-2003",
+    "entity:manaaki-whenua-landcare-research"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Minister for the Environment, Land Environments of New Zealand, 23 April 2003",
+      "url": "https://www.beehive.govt.nz/release/award-winning-classification-system-published-full-colour-atlas"
+    }
+  ]
+}

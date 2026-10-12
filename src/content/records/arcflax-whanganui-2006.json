@@ -1,0 +1,54 @@
+{
+  "id": "system:arcflax-whanganui-2006",
+  "slug": "arcflax-whanganui-2006",
+  "name": "ArcFlax 2.0 Whanganui interactive GIS DVD (2006)",
+  "kind": "Project",
+  "category": "Historical GIS systems and projects",
+  "url": "/systems/arcflax-whanganui-2006/",
+  "description": "A 2006 Crown Forestry Rental Trust interactive GIS distribution for mapping associated with Treaty research, using Esri ArcReader.",
+  "story": [
+    "The National Library of New Zealand catalogues ArcFlax Edition 2.0 Whanganui 2006 as an interactive GIS data DVD. The record names Duane Wilkins and the Crown Forestry Rental Trust, identifies Wellington as the place of publication, and specifies ArcReader 9.1. The preserved catalogue is a contemporary bibliographic anchor for the product.",
+    "The DVD format offered a way to give people prepared digital maps and GIS tools without purchasing a full desktop GIS licence. The National Library record establishes the existence and technical format of the Whanganui edition, while other editions and their exact content must be documented separately."
+  ],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    },
+    {
+      "label": "Crown Forestry Rental Trust, Mapping services",
+      "url": "https://cfrt.org.nz/research-activities/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, Mapping services",
+        "url": "https://cfrt.org.nz/research-activities/"
+      }
+    ],
+    [
+      {
+        "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, Mapping services",
+        "url": "https://cfrt.org.nz/research-activities/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "National Library archived DVD record",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-031",
+  "a": "system:arcflax-whanganui-2006",
+  "b": "entity:crown-forestry-rental-trust",
+  "label": "Publisher of the documented 2006 edition",
+  "basis": "Publisher of the documented 2006 edition. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ]
+}

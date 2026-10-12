@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-019",
+  "a": "dataset:nz-carbon-monitoring-1996",
+  "b": "dataset:lcdb",
+  "label": "1996/97 mapped forest and shrubland supported the sampling design",
+  "basis": "1996/97 mapped forest and shrubland supported the sampling design. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, A history of New Zealand soil survey",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    }
+  ]
+}

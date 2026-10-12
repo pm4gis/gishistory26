@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-010",
+  "a": "dataset:niwa-river-water-quality-network",
+  "b": "entity:niwa",
+  "label": "Managed spatially located long-running monitoring records",
+  "basis": "Managed spatially located long-running monitoring records. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "NIWA, National Rivers Water Quality Network origins",
+      "url": "https://niwa.co.nz/freshwater/water-quality-monitoring-capabilities"
+    }
+  ]
+}

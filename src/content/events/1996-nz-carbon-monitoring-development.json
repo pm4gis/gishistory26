@@ -1,0 +1,26 @@
+{
+  "id": "1996-nz-carbon-monitoring-development",
+  "dateDisplay": "1996",
+  "startDate": "1996",
+  "datePrecision": "year",
+  "year": 1996,
+  "label": "National Carbon Monitoring System development begins",
+  "summary": "Landcare Research began a national carbon-monitoring data programme drawing on older soil surveys and vegetation observation records.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "dataset:nz-carbon-monitoring-1996",
+    "entity:manaaki-whenua-landcare-research"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, A history of New Zealand soil survey",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    }
+  ]
+}

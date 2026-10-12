@@ -1,0 +1,42 @@
+{
+  "id": "dataset:gns-active-faults",
+  "slug": "gns-active-faults",
+  "name": "New Zealand Active Faults Database (NZAFD)",
+  "kind": "Dataset",
+  "category": "Historical geological datasets",
+  "url": "/datasets/gns-active-faults/",
+  "description": "GNS national GIS mapping of active fault traces and their geological attributes.",
+  "story": [
+    "GNS Science's Active Faults Database records mapped onshore surface traces and attributes such as location, activity and displacement. It integrates field geological mapping and regional fault studies that predate the contemporary web layers, making them usable in spatial analysis and hazard assessment.",
+    "The 1:250,000 fault dataset and higher-resolution regional mapping serve different scales. The current publication is a maintained interpretation of geological evidence; its online service date must not be mistaken for the date when each trace was first surveyed."
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, New Zealand Active Faults Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/new-zealand-active-faults-database/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "GNS Science, New Zealand Active Faults Database",
+        "url": "https://www.gns.cri.nz/data-and-resources/new-zealand-active-faults-database/"
+      }
+    ],
+    [
+      {
+        "label": "GNS Science, New Zealand Active Faults Database",
+        "url": "https://www.gns.cri.nz/data-and-resources/new-zealand-active-faults-database/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "QMAP national geology",
+      "url": "/datasets/qmap-250k/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

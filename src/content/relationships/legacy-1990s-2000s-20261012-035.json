@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-035",
+  "a": "system:gns-regional-geological-map-catalogue-2009",
+  "b": "entity:gns-science",
+  "label": "Managed digital catalogue work",
+  "basis": "Managed digital catalogue work. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science, Regional Geological Map Archive and Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+    }
+  ]
+}

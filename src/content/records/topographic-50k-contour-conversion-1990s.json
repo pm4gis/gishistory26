@@ -1,0 +1,54 @@
+{
+  "id": "system:topographic-50k-contour-conversion-1990s",
+  "slug": "topographic-50k-contour-conversion-1990s",
+  "name": "National 1:50,000 contour conversion programme (1990s)",
+  "kind": "Project",
+  "category": "Historical GIS systems and projects",
+  "url": "/systems/topographic-50k-contour-conversion-1990s/",
+  "description": "The dedicated contour-vector conversion effort associated with the move from map sheets to a national topographic database.",
+  "story": [
+    "Demand for digital elevation and topographic geometry drove a national contour-capture programme during the 1990s. A 1999 technical account describes the use of Mapsetter and VTRAK tools to convert topographic contour sources while national detailed topographic database coverage was still being assembled.",
+    "The work converted and checked contours drawn on earlier topographic compilation sheets. The resulting vector terrain representation retained the accuracy limits of its mapping sources and preceded the later Topo50 data-delivery products."
+  ],
+  "sources": [
+    {
+      "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+      "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+    },
+    {
+      "label": "LINZ, NZTopo accuracy, data model and technical information",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+        "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+      },
+      {
+        "label": "LINZ, NZTopo accuracy, data model and technical information",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+      }
+    ],
+    [
+      {
+        "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+        "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+      },
+      {
+        "label": "LINZ, NZTopo accuracy, data model and technical information",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Topographic GIS history",
+      "url": "/stories/topography-goes-digital/"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

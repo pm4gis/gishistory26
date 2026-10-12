@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-030",
+  "a": "dataset:agribase-2000-snapshot",
+  "b": "entity:asurequality",
+  "label": "Agricultural register stewardship",
+  "basis": "Agricultural register stewardship. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "University of Canterbury, geospatial data holdings and AgriBase December 2000 snapshot",
+      "url": "https://www.canterbury.ac.nz/study/academic-study/science/science-schools-and-departments/school-of-earth-and-environment/facilities-and-equipment/geospatial-data-and-software"
+    }
+  ]
+}

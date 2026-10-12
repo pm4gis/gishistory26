@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-026",
+  "a": "dataset:geonet-observations-2001",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Founding project partner",
+  "basis": "Founding project partner. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoNet, About GeoNet and programme origins",
+      "url": "https://www.geonet.org.nz/about"
+    }
+  ]
+}

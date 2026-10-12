@@ -1,0 +1,54 @@
+{
+  "id": "system:forest-research-spatial-monitoring-1998",
+  "slug": "forest-research-spatial-monitoring-1998",
+  "name": "Forest Research plantation spatial monitoring (1998–1999)",
+  "kind": "Project",
+  "category": "Historical GIS systems and projects",
+  "url": "/systems/forest-research-spatial-monitoring-1998/",
+  "description": "Forest Research's late-1990s GIS, geostatistical and remotely sensed mapping research for plantation productivity and environmental indicators.",
+  "story": [
+    "In 1998 Barbara Höck, Tim Payn and Andrew Dunningham described Forest Research work combining plantation inventory, remotely sensed imagery, forest soils and GIS. They examined methods to extract forest attributes from imagery and to model the spatial variation of productivity and environmental indicators.",
+    "A 1999 journal paper by Payn and colleagues documented a New Zealand plantation case study linking growth, foliage nutrition and mapped soils in a predictive spatial framework, including a roughly 35,000-hectare Kinleith Forest study area. It shows how digital mapping moved beyond forest boundary compilation into geographical comparisons of forest health and management."
+  ],
+  "sources": [
+    {
+      "label": "Höck, Payn and Dunningham, Research on spatial analytical tools for New Zealand plantation forests, SIRC 1998",
+      "url": "https://www.researchgate.net/publication/229049415_Research_on_spatial_analytical_tools_for_New_Zealand_plantation_forests"
+    },
+    {
+      "label": "Payn et al, GIS and spatial analysis for forest productivity and nutrition, Forest Ecology and Management, 1999",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Höck, Payn and Dunningham, Research on spatial analytical tools for New Zealand plantation forests, SIRC 1998",
+        "url": "https://www.researchgate.net/publication/229049415_Research_on_spatial_analytical_tools_for_New_Zealand_plantation_forests"
+      },
+      {
+        "label": "Payn et al, GIS and spatial analysis for forest productivity and nutrition, Forest Ecology and Management, 1999",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+      }
+    ],
+    [
+      {
+        "label": "Höck, Payn and Dunningham, Research on spatial analytical tools for New Zealand plantation forests, SIRC 1998",
+        "url": "https://www.researchgate.net/publication/229049415_Research_on_spatial_analytical_tools_for_New_Zealand_plantation_forests"
+      },
+      {
+        "label": "Payn et al, GIS and spatial analysis for forest productivity and nutrition, Forest Ecology and Management, 1999",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Forestry finds GIS",
+      "url": "/stories/forestry-finds-gis/"
+    }
+  ],
+  "status": "Source-backed historical research"
+}

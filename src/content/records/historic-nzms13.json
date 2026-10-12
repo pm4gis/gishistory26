@@ -1,0 +1,50 @@
+{
+  "id": "dataset:historic-nzms13",
+  "slug": "historic-nzms13",
+  "name": "NZMS13 cadastral survey district sheets",
+  "kind": "Dataset",
+  "category": "Historical cadastral datasets",
+  "url": "/datasets/historic-nzms13/",
+  "description": "The one-inch survey-district cadastral mapping series, distinct from the NZMS1 national topographic series.",
+  "story": [
+    "NZMS13 sheets show survey districts, land parcels, roads and cadastral features in a pre-digital map format. Archived 1955 Clutha and South Molyneux and 1956 Silverpeak sheets survive as examples. Their source role was legal and administrative mapping rather than the general topographic portrayal of NZMS1.",
+    "The maps were compiled and maintained at particular editions and source scales. Digitisation of later cadastral records should not be taken to imply that every feature in an NZMS13 sheet became a survey-accurate vector parcel."
+  ],
+  "sources": [
+    {
+      "label": "NZMS13 Clutha and Molyneux 1955 map source",
+      "url": "https://commons.wikimedia.org/wiki/File:Map_of_Survey_Districts_Clutha_and_South_Molyneux_(1955).jpg"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "NZMS13 Clutha and Molyneux 1955 map source",
+        "url": "https://commons.wikimedia.org/wiki/File:Map_of_Survey_Districts_Clutha_and_South_Molyneux_(1955).jpg"
+      }
+    ],
+    [
+      {
+        "label": "NZMS13 Clutha and Molyneux 1955 map source",
+        "url": "https://commons.wikimedia.org/wiki/File:Map_of_Survey_Districts_Clutha_and_South_Molyneux_(1955).jpg"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "1955 Clutha and Molyneux map",
+      "url": "/images/clutha-molyneux-nzms13-1955/"
+    },
+    {
+      "label": "1956 Silverpeak survey map",
+      "url": "/images/silverpeak-survey-district-1956/"
+    },
+    {
+      "label": "Related cadastral history",
+      "url": "/stories/the-cadastre-becomes-data/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

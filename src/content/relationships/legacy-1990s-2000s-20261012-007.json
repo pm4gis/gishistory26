@@ -1,0 +1,16 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-007",
+  "a": "dataset:land-environments-nz-2003",
+  "b": "entity:manaaki-whenua-landcare-research",
+  "label": "Developed national environment classes",
+  "basis": "Developed national environment classes. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-899fa91ade"
+  ],
+  "sources": [
+    {
+      "label": "Minister for the Environment, Land Environments of New Zealand, 23 April 2003",
+      "url": "https://www.beehive.govt.nz/release/award-winning-classification-system-published-full-colour-atlas"
+    }
+  ]
+}

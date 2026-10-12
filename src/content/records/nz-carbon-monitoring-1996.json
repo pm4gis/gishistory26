@@ -1,0 +1,54 @@
+{
+  "id": "dataset:nz-carbon-monitoring-1996",
+  "slug": "nz-carbon-monitoring-1996",
+  "name": "New Zealand Carbon Monitoring System (1996–2007)",
+  "kind": "Dataset",
+  "category": "Historical ecological datasets",
+  "url": "/datasets/nz-carbon-monitoring-1996/",
+  "description": "National soil and indigenous-vegetation carbon monitoring assembled from earlier surveys and new permanent plots.",
+  "story": [
+    "Work on the Carbon Monitoring System began in 1996, with its development phase finished in late 2001 and implementation continuing to early 2007. Manaaki Whenua traced its scientific inputs to soil chemical surveys from the 1960s–1980s, supplemented by wider national soil and vegetation carbon observations.",
+    "The vegetation monitoring work used mapped forest and shrubland distribution from LCDB1 and established permanent sample plots, whose field records were archived in NVS. Historical soil profiles, satellite-derived land cover and plot coordinates supplied different kinds of evidence and should retain their separate dates and scales."
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, A history of New Zealand soil survey",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    },
+    {
+      "label": "National Vegetation Survey, 2007–08 report, field observations and carbon plots",
+      "url": "https://nvs.landcareresearch.co.nz/Content/NVS_annual_report_0708.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Manaaki Whenua, A history of New Zealand soil survey",
+        "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+      },
+      {
+        "label": "National Vegetation Survey, 2007–08 report, field observations and carbon plots",
+        "url": "https://nvs.landcareresearch.co.nz/Content/NVS_annual_report_0708.pdf"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua, A history of New Zealand soil survey",
+        "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+      },
+      {
+        "label": "National Vegetation Survey, 2007–08 report, field observations and carbon plots",
+        "url": "https://nvs.landcareresearch.co.nz/Content/NVS_annual_report_0708.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Land cover database history",
+      "url": "/datasets/lcdb/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "dataset:geonet-observations-2001",
+  "slug": "geonet-observations-2001",
+  "name": "GeoNet geological hazard observations (from 2001)",
+  "kind": "Dataset",
+  "category": "Historical geological datasets",
+  "url": "/datasets/geonet-observations-2001/",
+  "description": "Site-based and event-based records for earthquake, volcanic and ground-deformation monitoring, modernised from 2001.",
+  "story": [
+    "GeoNet was established in 2001 to modernise New Zealand's geological hazard monitoring. It brought together geophysical instruments, automated processing, national communications and technical staff for seismic, volcanic, landslide, tsunami and ground-deformation observations.",
+    "The records include locations, event times and measured physical signals. Data collected by earlier monitoring networks form part of the system's historical context, but GeoNet's 2001 establishment is the programme start, not the date of every geological observation it holds."
+  ],
+  "sources": [
+    {
+      "label": "GeoNet, About GeoNet and programme origins",
+      "url": "https://www.geonet.org.nz/about"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoNet, About GeoNet and programme origins",
+        "url": "https://www.geonet.org.nz/about"
+      }
+    ],
+    [
+      {
+        "label": "GeoNet, About GeoNet and programme origins",
+        "url": "https://www.geonet.org.nz/about"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "GeoNet institutional overview",
+      "url": "https://www.gns.cri.nz/data-and-resources/geonet/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

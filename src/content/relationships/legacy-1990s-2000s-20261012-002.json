@@ -1,0 +1,17 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-002",
+  "a": "dataset:historic-nzms13",
+  "b": "dataset:digital-cadastral-database",
+  "label": "Earlier cadastral map source context",
+  "basis": "Earlier cadastral map source context. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-67bf38bca3",
+    "passage:chapter-3-5966de2c1f"
+  ],
+  "sources": [
+    {
+      "label": "NZMS13 Clutha and Molyneux 1955 map source",
+      "url": "https://commons.wikimedia.org/wiki/File:Map_of_Survey_Districts_Clutha_and_South_Molyneux_(1955).jpg"
+    }
+  ]
+}
