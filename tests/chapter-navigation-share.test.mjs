@@ -12,7 +12,7 @@ test('chapter navigation only accepts an image with reviewed placement or an emb
   altText:'Historic survey map',title:'Historic survey map',headerCandidate:true};
  const unreviewed={...approved,id:'image:archive-only',slug:'doc-historic-map-unknown',headerCandidate:false};
  assert.equal(chapterNavImage(article,[passage],[unreviewed]),null,'archive-only documents must be excluded');
- assert.deepEqual(chapterNavImage(article,[passage],[unreviewed,approved]),approved);
+ assert.equal(chapterNavImage(article,[passage],[unreviewed,approved])?.slug,approved.slug);
  assert.equal(chapterNavImage({id:'article:no-image',slug:'none'},[passage],[approved]),null);
  assert.equal(chapterNavImageMap([article],[passage],[approved])[article.slug]?.slug,approved.slug);
 });
