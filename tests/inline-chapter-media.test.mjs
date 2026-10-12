@@ -48,7 +48,7 @@ test('image placement does not alter historical paragraphs or source metadata',(
 });
 
 
-test('all nine archived figures have real source images and exact accepted paragraph anchors',async()=>{
+test('all ten archived figures have real source images and exact accepted paragraph anchors',async()=>{
   const {default:fs}=await import('node:fs');
   const {curatedImageParagraphs}=await import('../src/lib/chapter-media.mjs');
   const root='src/content';
@@ -58,7 +58,8 @@ test('all nine archived figures have real source images and exact accepted parag
     JSON.parse(fs.readFileSync(root+'/passages/'+name,'utf8')));
   const articles=fs.readdirSync(root+'/articles').map(name=>
     JSON.parse(fs.readFileSync(root+'/articles/'+name,'utf8')));
-  assert.equal(Object.keys(curatedImageParagraphs).length,9);
+  assert.equal(Object.keys(curatedImageParagraphs).length,10);
+  assert.equal(curatedImageParagraphs['qmap-christchurch-2008'],'research-cri-qmap-cd-2006','New documentary placement must remain anchored to the exact QMAP passage');
   for(const [slug,blockId] of Object.entries(curatedImageParagraphs)){
     const image=catalog.find(x=>x.slug===slug);
     assert.ok(image,'Missing sourced image '+slug);

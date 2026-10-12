@@ -20,7 +20,7 @@ The 2004–2006 multi-CRI GIS programme is recorded as commissioned research and
 
 ## Image alignment
 
-The existing verified GNS Christchurch QMAP map, 2008, `qmap-christchurch-2008`, is anchored after `research-cri-qmap-cd-2006` in Chapter 9 using the editorial placement helper. Its caption calls it a printed geological map product, not an interface screenshot or the 2006 vector CD. Original image binary and archive metadata remain unchanged. Alignment register entry appended to `docs/media/chapter-image-alignment-20261011.csv`. No other new image was placed because no relevant original depiction had been authenticated.
+The existing verified GNS Christchurch QMAP map, 2008, `qmap-christchurch-2008`, is anchored after `research-cri-qmap-cd-2006` in Chapter 9 using the editorial placement helper. Its caption calls it a printed geological map product, not an interface screenshot or the 2006 vector CD. Original image binary and archive metadata remain unchanged. Alignment register entry appended to `docs/media/cri-1990-2010-image-alignment-20261012.csv`. No other new image was placed because no relevant original depiction had been authenticated.
 
 ## Preservation and release checks
 
