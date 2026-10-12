@@ -4,7 +4,7 @@
   "articleId": "article:chapter-26",
   "title": "DOCgis after the 2003 releases",
   "order": 6,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:26",
@@ -57,7 +57,15 @@
       "type": "paragraph",
       "text": "Departmental teams included Science and Technology & Information Services Division, Information Management Unit and Spatial Information Management at Head Office, alongside conservancy information-management units. Duane Wilkins recalls that Eagle Technology designed DOCgis before 2003, with departmental analysts and developers continuing its development. He also recalls difficult relations between regional teams and the GIS manager. Around a decade later, Wilkins returned to lead GIS; in 2012 the team became a shared service for the regions, a change he remembers as highly successful.",
       "markdown": "Departmental teams included Science and Technology & Information Services Division, Information Management Unit and Spatial Information Management at Head Office, alongside conservancy information-management units. Duane Wilkins recalls that Eagle Technology designed DOCgis before 2003, with departmental analysts and developers continuing its development. He also recalls difficult relations between regional teams and the GIS manager. Around a decade later, Wilkins returned to lead GIS; in 2012 the team became a shared service for the regions, a change he remembers as highly successful.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Duane Wilkins, account of DOCgis development and the 2012 shared-service reform"
+        },
+        {
+          "label": "Department of Conservation, Managing Conservation Enterprise Systems: National Enterprise GIS Implementation for Conservation Management, Esri International User Conference 2003, Paper 1048",
+          "url": "https://proceedings.esri.com/library/userconf/proc03/p1048.pdf"
+        }
+      ],
       "id": "integration-docgis-after-the-2003-releases-04"
     },
     {

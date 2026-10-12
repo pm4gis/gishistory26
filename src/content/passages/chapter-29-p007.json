@@ -4,7 +4,7 @@
   "articleId": "article:chapter-29",
   "title": "New professional networks",
   "order": 6,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [
     "women-in-gis"
   ],
@@ -161,7 +161,20 @@
       "type": "paragraph",
       "text": "Professional exchange also overlapped with Māori capability work. LINZ, Te Kāhui Manu Hōkai Māori GIS Association and GIS Journey Limited supported Ngā Poutama Matawhenua, a practical online mapping wānanga series. LINZ’s annual report records fortnightly sessions from October 2020 for iwi, Māori trusts and other participants, and names Duane Wilkins as a GIS wānanga facilitator in Whangārei. LINZ lists Wilkins as a geospatial consultant for the series.",
       "markdown": "Professional exchange also overlapped with Māori capability work. LINZ, Te Kāhui Manu Hōkai Māori GIS Association and GIS Journey Limited supported Ngā Poutama Matawhenua, a practical online mapping wānanga series. LINZ’s annual report records fortnightly sessions from October 2020 for iwi, Māori trusts and other participants, and names Duane Wilkins as a GIS wānanga facilitator in Whangārei. LINZ lists Wilkins as a geospatial consultant for the series.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "LINZ Annual Report 2020/21",
+          "url": "https://www.linz.govt.nz/sites/default/files/corp/toitu-te-whenua_annual-report-20-21-a11y-web_20211201.pdf"
+        },
+        {
+          "label": "LINZ, Geospatial Capability Committee",
+          "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-capability-committee"
+        },
+        {
+          "label": "LINZ, Ngā Poutama Matawhenua: Practical Māori GIS Mapping Wānanga",
+          "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/nga-poutama-matawhenua-practical-maori-gis-mapping-wananga"
+        }
+      ],
       "id": "ch29-s07-p08"
     },
     {

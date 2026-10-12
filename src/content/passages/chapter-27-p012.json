@@ -4,7 +4,7 @@
   "articleId": "article:chapter-27",
   "title": "Manaaki",
   "order": 11,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:27",
@@ -36,7 +36,15 @@
       "type": "paragraph",
       "text": "Duane Wilkins prepared the Manaaki technical design and migration record while the team planned the service’s transfer or continued management. Seconded from LINZ to the COVID-19 Operations Command Centre, he developed a support website and map-based tools for Māori and Pacific communities and NGOs. Manaaki was a collaborative response programme.",
       "markdown": "Duane Wilkins prepared the Manaaki technical design and migration record while the team planned the service’s transfer or continued management. Seconded from LINZ to the COVID-19 Operations Command Centre, he developed a support website and map-based tools for Māori and Pacific communities and NGOs. Manaaki was a collaborative response programme.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Duane Wilkins, Manaaki COVID-19 response GIS design and migration record, May 2020"
+        },
+        {
+          "label": "Public Service Commission, Public Service Day Awards 2020: Duane Wilkins",
+          "url": "https://www.publicservice.govt.nz/role-and-purpose/spirit-of-service/public-service-day-awards/public-service-day-2020"
+        }
+      ],
       "id": "ch27-s12-p04"
     }
   ],

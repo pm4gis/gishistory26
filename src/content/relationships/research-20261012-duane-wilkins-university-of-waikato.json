@@ -1,0 +1,14 @@
+{
+  "id": "relationship:duane-wilkins-university-of-waikato",
+  "a": "person:duane-wilkins",
+  "b": "entity:university-of-waikato",
+  "label": "Studied at",
+  "basis": "Duane Wilkins’s LEARNZ profile says he studied geography, environmental science and GIS mapping at the University of Waikato.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Learnz, Meet Duane Wilkins",
+      "url": "https://www.learnz.org.nz/location173/meet-duane-wilkins"
+    }
+  ]
+}
