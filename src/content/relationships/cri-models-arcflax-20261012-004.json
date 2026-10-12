@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-models-arcflax-20261012-004",
+  "a": "system:niwa-rotan-2008",
+  "b": "entity:niwa",
+  "label": "Developed and publicised ROTAN catchment nutrient GIS",
+  "basis": "Developed and publicised ROTAN catchment nutrient GIS. Original supporting source documented in the 2026 research register.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+    }
+  ]
+}

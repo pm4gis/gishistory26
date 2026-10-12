@@ -1,0 +1,58 @@
+{
+  "id": "system:arcflax-northland-2007",
+  "slug": "arcflax-northland-2007",
+  "name": "ArcFlax 1.0 Northland five-disc GIS viewer (January 2007)",
+  "kind": "Project",
+  "category": "Historical GIS systems and research",
+  "url": "/systems/arcflax-northland-2007/",
+  "description": "Five-disc two- and three-dimensional ArcFlax GIS distribution containing historical land and claim mapping for Northland, recorded in the Te Paparahi o Te Raki inquiry index.",
+  "story": [
+    "The official Waitangi Tribunal Te Paparahi o Te Raki inquiry register has an entry A045 for 'Arcflax 1.0, Northland', dated January 2007 and described as a 2D and 3D Geographic Information System viewer on discs 1–5. The catalogue identifies Crown purchases, Old Land Claims, Native Land Court blocks and other historical map-image DVDs. It records the Crown Forestry Rental Trust supplying the item on 6 December 2013.",
+    "This evidence names an actual regional GIS package and categories of mapped historical documents. It is separate from the National Library's 2006 Whanganui Edition 2.0 DVD. The regional version numbers need not be successive national versions. The archive index does not identify the software used in the Northland viewer or constitute an inventory of every GIS layer."
+  ],
+  "sources": [
+    {
+      "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+    },
+    {
+      "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+        "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ],
+    [
+      {
+        "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+        "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Other regional ArcFlax edition",
+      "url": "/systems/arcflax-whanganui-2006/"
+    },
+    {
+      "label": "Official inquiry index PDF (entry A045)",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

@@ -8,7 +8,8 @@
   "description": "Pastoral-agriculture Crown research institute established in 1992.",
   "story": [
     "AgResearch was formed during the 1992 Crown Research Institute reorganisation, incorporating government agricultural research functions. Its work included farm production, nutrient budgets, pasture and environmental research. GIS capacity grew in projects before being coordinated institution-wide, as documented by Bruce McLennan at SIRC in 2007.",
-    "From 2004, AgResearch was a partner in NIWA-led catchment modelling intended to connect GIS with OVERSEER nutrient-budget calculations and other farm and water-quality models. The records establish research involvement and model integration plans; they do not establish that every proposed interface was deployed."
+    "From 2004, AgResearch was a partner in NIWA-led catchment modelling intended to connect GIS with OVERSEER nutrient-budget calculations and other farm and water-quality models. The records establish research involvement and model integration plans; they do not establish that every proposed interface was deployed.",
+    "A NIWA account published in March 2008 identifies AgResearch as a partner in ROTAN nitrogen-routing research at Lake Taupō, alongside Lincoln Ventures and GNS Science. This was a specific catchment modelling application, distinct from AgResearch's contribution of OVERSEER calculations to the separate CLUES programme."
   ],
   "sources": [
     {
@@ -18,6 +19,10 @@
     {
       "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
       "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+    },
+    {
+      "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
     }
   ],
   "paragraphSources": [
@@ -39,6 +44,12 @@
       {
         "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
         "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
       }
     ]
   ],

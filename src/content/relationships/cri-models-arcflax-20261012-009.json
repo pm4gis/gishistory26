@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-models-arcflax-20261012-009",
+  "a": "system:multi-cri-catchment-gis-2004",
+  "b": "person:ude-shankar",
+  "label": "Listed GIS and modelling framework practitioner in NIWA 2004 Stage I report",
+  "basis": "Listed GIS and modelling framework practitioner in NIWA 2004 Stage I report. Original supporting source documented in the 2026 research register.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Woods et al., Predicting the effects of land use on water quality, Stage I, report CHC2004-097 (August 2004), pp. 7–10",
+      "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+    }
+  ]
+}

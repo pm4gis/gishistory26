@@ -1,0 +1,28 @@
+{
+  "id": "2007-arcflax-northland-gis-discs",
+  "year": 2007,
+  "startDate": "2007-01",
+  "dateDisplay": "January 2007",
+  "datePrecision": "month",
+  "label": "Northland ArcFlax 1.0 five-disc GIS package",
+  "summary": "Te Paparahi o Te Raki inquiry register entry A045 dates a five-disc 2D and 3D ArcFlax Northland viewer and historical land-claim mapping to January 2007.",
+  "recordIds": [
+    "system:arcflax-northland-2007",
+    "entity:crown-forestry-rental-trust"
+  ],
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "sources": [
+    {
+      "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+    }
+  ],
+  "url": "/timeline/",
+  "themeIds": [],
+  "categories": [
+    "Historical GIS",
+    "CRI research"
+  ]
+}

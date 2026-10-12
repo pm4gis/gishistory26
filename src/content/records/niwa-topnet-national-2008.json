@@ -1,0 +1,42 @@
+{
+  "id": "system:niwa-topnet-national-2008",
+  "slug": "niwa-topnet-national-2008",
+  "name": "TopNet national-scale river-flow modelling (2008)",
+  "kind": "Project",
+  "category": "Historical GIS systems and research",
+  "url": "/systems/niwa-topnet-national-2008/",
+  "description": "NIWA's 2008 national water-resource simulation and mapped river-flow estimates for gauged and ungauged catchments.",
+  "story": [
+    "On 18 March 2008 NIWA reported that hydrologist Ross Woods and colleagues had redeveloped TopNet to model river flows across all New Zealand catchments. The approach used river geography, climate and rainfall estimates to predict flows where a long stream-gauge record was unavailable.",
+    "The account described the first national-scale water-resource simulation model, a detailed national water-resources map and applications assessing land-use change and hydroelectric generation. It was a hydrological simulation and water-availability programme, separate from the nutrient-routing and land-use management systems CLUES and ROTAN."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Catchment monitoring chapter",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

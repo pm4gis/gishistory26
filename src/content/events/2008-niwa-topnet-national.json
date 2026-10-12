@@ -1,0 +1,28 @@
+{
+  "id": "2008-niwa-topnet-national",
+  "year": 2008,
+  "startDate": "2008-03-18",
+  "dateDisplay": "18 March 2008",
+  "datePrecision": "day",
+  "label": "NIWA documents national TopNet river-flow GIS",
+  "summary": "NIWA publicly reported Ross Woods and colleagues' national hydrological model and mapped river-flow estimates.",
+  "recordIds": [
+    "system:niwa-topnet-national-2008",
+    "entity:niwa"
+  ],
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+    }
+  ],
+  "url": "/timeline/",
+  "themeIds": [],
+  "categories": [
+    "Historical GIS",
+    "CRI research"
+  ]
+}
