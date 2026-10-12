@@ -6,9 +6,11 @@ import {pickThemeImage} from '../lib/subject-media.mjs';
 import {homeHighlightSlugs} from '../lib/home-highlights.mjs';
 import {decorFor} from '../lib/decor';
 import {dataset} from '../lib/data';
+import {chapterNavImageMap} from '../lib/chapter-nav-media.mjs';
 
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
+const chapterNavImages=chapterNavImageMap(chapters,d.passages,d.images);
 const eligible=new Set(homeHighlightSlugs);
 const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
   const passage=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order)[0];
@@ -66,6 +68,11 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    </nav>
    <div class="cards chapter-grid">
     {chapters.map((a:any)=><article class="card chapter-card" id={'chapter-'+a.readingOrder}>
+     <a class="chapter-card-media" href={a.url} aria-label={'Read Chapter '+a.readingOrder+' · '+a.title}>
+      {chapterNavImages[a.slug]?
+       <img src={chapterNavImages[a.slug].thumbnailPath||chapterNavImages[a.slug].assetPath} alt={chapterNavImages[a.slug].altText} loading="lazy" decoding="async"/>:
+       <span class="chapter-image-fallback" aria-hidden="true">Chapter {a.readingOrder}</span>}
+     </a>
      <span class="eyebrow">Chapter {a.readingOrder}</span>
      <h3><a href={a.url}>{a.title}</a></h3>
      <p>{a.summary}</p>
