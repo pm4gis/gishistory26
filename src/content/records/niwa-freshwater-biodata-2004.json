@@ -1,0 +1,42 @@
+{
+  "id": "dataset:niwa-freshwater-biodata-2004",
+  "slug": "niwa-freshwater-biodata-2004",
+  "name": "NIWA Freshwater Biodata Information System (FBIS), 2004",
+  "kind": "Dataset",
+  "category": "Historical freshwater datasets",
+  "url": "/datasets/niwa-freshwater-biodata-2004/",
+  "description": "An integrated biodiversity database with catchment, river-reach and map-polygon queries described in 2004.",
+  "story": [
+    "NIWA's Freshwater Biodata Information System was documented in September 2004 by Don Robertson and Mary de Winton. It integrated freshwater fish, invertebrate, aquatic-plant, bryophyte, algae and diatom records assembled over many decades, with support from the Department of Conservation's TFBIS programme.",
+    "FBIS allowed users to search by organism and collection details, or spatially by catchment, river reach and map polygon. NIWA was also developing a wider Freshwater Information New Zealand service intended to combine those observations with the River Environment Classification. The two named systems had different scope and were at different stages in 2004."
+  ],
+  "sources": [
+    {
+      "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, September 2004",
+      "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, September 2004",
+        "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+      }
+    ],
+    [
+      {
+        "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, September 2004",
+        "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "NIWA source article",
+      "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

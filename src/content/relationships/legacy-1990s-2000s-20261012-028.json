@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-028",
+  "a": "dataset:gns-active-faults",
+  "b": "dataset:qmap-250k",
+  "label": "Related national geological interpretation",
+  "basis": "Related national geological interpretation. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science, New Zealand Active Faults Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/new-zealand-active-faults-database/"
+    }
+  ]
+}

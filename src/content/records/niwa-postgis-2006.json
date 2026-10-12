@@ -1,0 +1,42 @@
+{
+  "id": "system:niwa-postgis-2006",
+  "slug": "niwa-postgis-2006",
+  "name": "NIWA PostGIS spatial databases (2006)",
+  "kind": "Project",
+  "category": "Historical GIS systems and projects",
+  "url": "/systems/niwa-postgis-2006/",
+  "description": "NIWA's documented use of open-source PostGIS for operational scientific geospatial data in 2006.",
+  "story": [
+    "On 30 October 2006 NIWA's Brent Wood described using PostGIS on several research systems, including spatial datasets with hundreds of millions of features. His archived technical correspondence demonstrates that open-source spatial database management was part of routine research practice well before the later growth of hosted web-mapping services.",
+    "Wood's example records operational use rather than a software procurement announcement. The underlying scientific datasets were multiple and are not identified by the mailing-list exchange, so they should not be assigned invented dataset names or applications."
+  ],
+  "sources": [
+    {
+      "label": "PostgreSQL mailing list, Brent Wood, NIWA, 30 October 2006",
+      "url": "https://www.postgresql.org/message-id/454689A5.8070306%40niwa.co.nz"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "PostgreSQL mailing list, Brent Wood, NIWA, 30 October 2006",
+        "url": "https://www.postgresql.org/message-id/454689A5.8070306%40niwa.co.nz"
+      }
+    ],
+    [
+      {
+        "label": "PostgreSQL mailing list, Brent Wood, NIWA, 30 October 2006",
+        "url": "https://www.postgresql.org/message-id/454689A5.8070306%40niwa.co.nz"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "NIWA profile",
+      "url": "/entities/niwa/"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

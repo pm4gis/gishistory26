@@ -1,0 +1,16 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-017",
+  "a": "dataset:national-vegetation-survey-databank",
+  "b": "dataset:lcdb",
+  "label": "Related vegetation data, different capture methods",
+  "basis": "Related vegetation data, different capture methods. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-899fa91ade"
+  ],
+  "sources": [
+    {
+      "label": "Parliamentary Commissioner for the Environment, inventory of National Vegetation Survey database development",
+      "url": "https://pce.parliament.nz/media/lddfaexd/dawson-stocktake-of-resources-and-databases-pdf-12mb.pdf"
+    }
+  ]
+}

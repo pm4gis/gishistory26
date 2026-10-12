@@ -1,0 +1,27 @@
+{
+  "id": "1992-research-institutes-geodata",
+  "dateDisplay": "1 July 1992",
+  "startDate": "1992-07-01",
+  "datePrecision": "day",
+  "year": 1992,
+  "label": "Crown Research Institutes take over national mapping research",
+  "summary": "The 1992 CRI reorganisation redistributed DSIR, Water and Soil, soil survey, remote sensing and geological mapping staff and datasets among successor institutes.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:manaaki-whenua-landcare-research",
+    "entity:niwa",
+    "entity:gns-science"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, A history of New Zealand soil survey",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    }
+  ]
+}

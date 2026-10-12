@@ -1,0 +1,14 @@
+{
+  "id": "relationship:forest-research-1998-001",
+  "a": "system:forest-research-spatial-monitoring-1998",
+  "b": "entity:scion-forest-research",
+  "label": "Predecessor Forest Research scientific programme",
+  "basis": "The 1998 researchers gave the Forest Research affiliation; Scion is the later name for this CRI lineage.",
+  "sources": [
+    {
+      "label": "Höck, Payn and Dunningham, Research on spatial analytical tools for New Zealand plantation forests, SIRC 1998",
+      "url": "https://www.researchgate.net/publication/229049415_Research_on_spatial_analytical_tools_for_New_Zealand_plantation_forests"
+    }
+  ],
+  "passageIds": []
+}

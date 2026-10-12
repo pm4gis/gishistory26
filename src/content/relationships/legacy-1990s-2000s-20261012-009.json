@@ -1,0 +1,16 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-009",
+  "a": "dataset:land-environments-nz-2003",
+  "b": "dataset:lcdb",
+  "label": "Complementary but different landscape classification",
+  "basis": "Complementary but different landscape classification. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-899fa91ade"
+  ],
+  "sources": [
+    {
+      "label": "Minister for the Environment, Land Environments of New Zealand, 23 April 2003",
+      "url": "https://www.beehive.govt.nz/release/award-winning-classification-system-published-full-colour-atlas"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-034",
+  "a": "system:niwa-postgis-2006",
+  "b": "entity:niwa",
+  "label": "Operational use of PostGIS in research systems",
+  "basis": "Operational use of PostGIS in research systems. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "PostgreSQL mailing list, Brent Wood, NIWA, 30 October 2006",
+      "url": "https://www.postgresql.org/message-id/454689A5.8070306%40niwa.co.nz"
+    }
+  ]
+}

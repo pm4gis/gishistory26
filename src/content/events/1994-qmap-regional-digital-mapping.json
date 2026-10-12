@@ -1,0 +1,26 @@
+{
+  "id": "1994-qmap-regional-digital-mapping",
+  "dateDisplay": "1994",
+  "startDate": "1994",
+  "datePrecision": "year",
+  "year": 1994,
+  "label": "QMAP geological GIS compilation starts",
+  "summary": "The QMAP project began with the Dunedin sheet, introducing GIS-based regional capture, management and compilation of mapped geology.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "dataset:qmap-regional-gis-1994",
+    "entity:gns-science"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Rattenbury and Isaac, QMAP 1:250,000 Geological Map project, 2012",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00288306.2012.725417"
+    }
+  ]
+}

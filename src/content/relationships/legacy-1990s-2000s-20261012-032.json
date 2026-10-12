@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-032",
+  "a": "system:arcflax-whanganui-2006",
+  "b": "person:duane-wilkins",
+  "label": "Credited creator in National Library catalogue",
+  "basis": "Credited creator in National Library catalogue. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-027",
+  "a": "dataset:gns-active-faults",
+  "b": "entity:gns-science",
+  "label": "Maintained fault interpretation database",
+  "basis": "Maintained fault interpretation database. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science, New Zealand Active Faults Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/new-zealand-active-faults-database/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-018",
+  "a": "dataset:nz-carbon-monitoring-1996",
+  "b": "dataset:national-vegetation-survey-databank",
+  "label": "Permanent-plot records archived in NVS",
+  "basis": "Permanent-plot records archived in NVS. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, A history of New Zealand soil survey",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    }
+  ]
+}

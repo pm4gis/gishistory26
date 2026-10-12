@@ -1,0 +1,42 @@
+{
+  "id": "dataset:niwa-river-water-quality-network",
+  "slug": "niwa-river-water-quality-network",
+  "name": "National Rivers Water Quality Network (NRWQN)",
+  "kind": "Dataset",
+  "category": "Historical freshwater datasets",
+  "url": "/datasets/niwa-river-water-quality-network/",
+  "description": "A national location-based river monitoring series begun in January 1989 and continued through the 1990s and 2000s.",
+  "story": [
+    "The National Rivers Water Quality Network began monitoring in January 1989, with an original 77 sites on 35 large rivers. Measurements of water chemistry, clarity, temperature and other indicators were attached to recurring monitoring locations, forming an important spatial and time-series resource.",
+    "NIWA maintained the network through the 1990s and 2000s. The station records offer measured conditions at sampled river sites and must be distinguished from a continuous map prediction for every stream reach, such as classifications derived from national GIS models."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, National Rivers Water Quality Network origins",
+      "url": "https://niwa.co.nz/freshwater/water-quality-monitoring-capabilities"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, National Rivers Water Quality Network origins",
+        "url": "https://niwa.co.nz/freshwater/water-quality-monitoring-capabilities"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, National Rivers Water Quality Network origins",
+        "url": "https://niwa.co.nz/freshwater/water-quality-monitoring-capabilities"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "NIWA institutional history",
+      "url": "/entities/niwa/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

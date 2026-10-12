@@ -1,0 +1,14 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-014",
+  "a": "dataset:niwa-freshwater-biodata-2004",
+  "b": "entity:department-of-conservation",
+  "label": "TFBIS programme co-funding",
+  "basis": "TFBIS programme co-funding. See the supporting documented activity and linked sources.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, September 2004",
+      "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    }
+  ]
+}

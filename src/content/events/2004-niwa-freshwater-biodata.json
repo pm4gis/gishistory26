@@ -1,0 +1,26 @@
+{
+  "id": "2004-niwa-freshwater-biodata",
+  "dateDisplay": "September 2004",
+  "startDate": "2004-09",
+  "datePrecision": "month",
+  "year": 2004,
+  "label": "NIWA publishes account of FBIS",
+  "summary": "Don Robertson and Mary de Winton documented NIWA's integrated freshwater biodiversity database and spatial-query functions.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "dataset:niwa-freshwater-biodata-2004",
+    "entity:niwa"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, September 2004",
+      "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    }
+  ]
+}

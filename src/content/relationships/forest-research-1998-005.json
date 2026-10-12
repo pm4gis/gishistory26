@@ -1,0 +1,14 @@
+{
+  "id": "relationship:forest-research-1998-005",
+  "a": "system:forest-research-spatial-monitoring-1998",
+  "b": "dataset:nz-carbon-monitoring-1996",
+  "label": "Contemporary environmental monitoring methods",
+  "basis": "The 1998/99 forestry studies used spatial monitoring of plantation condition alongside the separate national carbon monitoring era. This is a contemporaneous methods connection, not shared dataset provenance.",
+  "sources": [
+    {
+      "label": "Höck, Payn and Dunningham, Research on spatial analytical tools for New Zealand plantation forests, SIRC 1998",
+      "url": "https://www.researchgate.net/publication/229049415_Research_on_spatial_analytical_tools_for_New_Zealand_plantation_forests"
+    }
+  ],
+  "passageIds": []
+}

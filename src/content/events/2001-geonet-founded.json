@@ -1,0 +1,26 @@
+{
+  "id": "2001-geonet-founded",
+  "dateDisplay": "2001",
+  "startDate": "2001",
+  "datePrecision": "year",
+  "year": 2001,
+  "label": "GeoNet modernises geological monitoring",
+  "summary": "GeoNet began as a national partnership in hazard monitoring, communications, instrument networks and data management.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "dataset:geonet-observations-2001",
+    "entity:gns-science"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "GeoNet, About GeoNet and programme origins",
+      "url": "https://www.geonet.org.nz/about"
+    }
+  ]
+}

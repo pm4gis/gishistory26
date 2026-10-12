@@ -1,0 +1,27 @@
+{
+  "id": "2006-arcflax-whanganui-dvd",
+  "dateDisplay": "2006",
+  "startDate": "2006",
+  "datePrecision": "year",
+  "year": 2006,
+  "label": "ArcFlax Whanganui interactive GIS DVD published",
+  "summary": "The Crown Forestry Rental Trust published ArcFlax Edition 2.0 Whanganui, catalogued by the National Library with ArcReader 9.1 requirements and Duane Wilkins credit.",
+  "url": "/timeline/",
+  "passageIds": [],
+  "recordIds": [
+    "system:arcflax-whanganui-2006",
+    "entity:crown-forestry-rental-trust",
+    "person:duane-wilkins"
+  ],
+  "themeIds": [],
+  "categories": [
+    "datasets",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ]
+}

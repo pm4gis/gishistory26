@@ -1,0 +1,54 @@
+{
+  "id": "dataset:land-environments-nz-2003",
+  "slug": "land-environments-nz-2003",
+  "name": "Land Environments of New Zealand (LENZ), 2003",
+  "kind": "Dataset",
+  "category": "Land and environmental datasets",
+  "url": "/datasets/land-environments-nz-2003/",
+  "description": "The national environmental classification derived from climate, landform and soil variables and published in 2003.",
+  "story": [
+    "Land Environments of New Zealand grouped places with similar underlying environmental conditions, using climatic, terrain and soil variables. The classification was published in 2003 by Manaaki Whenua Landcare Research and the Ministry for the Environment, accompanied by a technical guide and national maps.",
+    "LENZ gave ecological researchers and planners a consistent environmental classification across different parts of the country. It describes modelled environmental similarity, and must be distinguished from the actual land-cover classes recorded by the LCDB series."
+  ],
+  "sources": [
+    {
+      "label": "Minister for the Environment, Land Environments of New Zealand, 23 April 2003",
+      "url": "https://www.beehive.govt.nz/release/award-winning-classification-system-published-full-colour-atlas"
+    },
+    {
+      "label": "National Library, Land Environments of New Zealand book, 2003",
+      "url": "https://natlib.govt.nz/records/22149229"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Minister for the Environment, Land Environments of New Zealand, 23 April 2003",
+        "url": "https://www.beehive.govt.nz/release/award-winning-classification-system-published-full-colour-atlas"
+      },
+      {
+        "label": "National Library, Land Environments of New Zealand book, 2003",
+        "url": "https://natlib.govt.nz/records/22149229"
+      }
+    ],
+    [
+      {
+        "label": "Minister for the Environment, Land Environments of New Zealand, 23 April 2003",
+        "url": "https://www.beehive.govt.nz/release/award-winning-classification-system-published-full-colour-atlas"
+      },
+      {
+        "label": "National Library, Land Environments of New Zealand book, 2003",
+        "url": "https://natlib.govt.nz/records/22149229"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Research sources and historic mapping",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "status": "Source-backed historical dataset"
+}

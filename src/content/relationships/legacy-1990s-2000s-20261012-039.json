@@ -1,0 +1,17 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-039",
+  "a": "system:topographic-50k-contour-conversion-1990s",
+  "b": "dataset:historic-nzms1",
+  "label": "Older compiled relief information as historical antecedent",
+  "basis": "Older compiled relief information as historical antecedent. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-80f8ea6518",
+    "passage:chapter-15-a898c7b19e"
+  ],
+  "sources": [
+    {
+      "label": "Howard, Pickering, Mole and Woodsford, A National Topographic Database for the 21st Century, ICC 1999",
+      "url": "https://icaci.org/files/documents/ICC_proceedings/ICC1999/sections/02.pdf"
+    }
+  ]
+}

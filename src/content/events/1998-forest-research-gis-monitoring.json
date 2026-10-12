@@ -1,0 +1,28 @@
+{
+  "id": "1998-forest-research-gis-monitoring",
+  "dateDisplay": "November 1998",
+  "startDate": "1998-11",
+  "datePrecision": "month",
+  "year": 1998,
+  "label": "Forest Research documents GIS for plantation monitoring",
+  "summary": "Barbara Höck, Tim Payn and Andrew Dunningham presented Forest Research's GIS and remote-sensing methods for plantation forest inventories and environmental indicators at the 10th Spatial Information Research Centre colloquium.",
+  "recordIds": [
+    "system:forest-research-spatial-monitoring-1998",
+    "entity:scion-forest-research",
+    "person:barbara-hock",
+    "person:tim-payn",
+    "person:andrew-dunningham"
+  ],
+  "passageIds": [],
+  "themeIds": [],
+  "categories": [
+    "forestry",
+    "GIS research"
+  ],
+  "sources": [
+    {
+      "label": "Höck, Payn and Dunningham, Research on spatial analytical tools for New Zealand plantation forests, SIRC 1998",
+      "url": "https://www.researchgate.net/publication/229049415_Research_on_spatial_analytical_tools_for_New_Zealand_plantation_forests"
+    }
+  ]
+}

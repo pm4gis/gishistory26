@@ -1,0 +1,16 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-001",
+  "a": "dataset:historic-nzms13",
+  "b": "entity:department-of-lands-and-survey",
+  "label": "Departmental paper-map lineage",
+  "basis": "Departmental paper-map lineage. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-67bf38bca3"
+  ],
+  "sources": [
+    {
+      "label": "NZMS13 Clutha and Molyneux 1955 map source",
+      "url": "https://commons.wikimedia.org/wiki/File:Map_of_Survey_Districts_Clutha_and_South_Molyneux_(1955).jpg"
+    }
+  ]
+}

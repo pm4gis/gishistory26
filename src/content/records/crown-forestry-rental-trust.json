@@ -1,0 +1,54 @@
+{
+  "id": "entity:crown-forestry-rental-trust",
+  "slug": "crown-forestry-rental-trust",
+  "name": "Crown Forestry Rental Trust",
+  "kind": "Organisation",
+  "category": "Organisations",
+  "url": "/entities/crown-forestry-rental-trust/",
+  "description": "Trust funder and publisher of claimant-oriented research and cartographic resources, including the 2006 ArcFlax DVD.",
+  "story": [
+    "The Crown Forestry Rental Trust provides research and mapping support for eligible Māori claimant groups involved in Waitangi Tribunal hearings and settlement negotiations. Its mapping activities include historical land transactions, block ownership, rohe and other geography relevant to research.",
+    "The Trust is named as the publisher of the 2006 ArcFlax Whanganui interactive GIS DVD. Historical maps used in a claim can have different access and ownership arrangements, so the existence of a public DVD catalogue does not imply that every underlying claimant dataset is public."
+  ],
+  "sources": [
+    {
+      "label": "Crown Forestry Rental Trust, Mapping services",
+      "url": "https://cfrt.org.nz/research-activities/"
+    },
+    {
+      "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Crown Forestry Rental Trust, Mapping services",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ],
+    [
+      {
+        "label": "Crown Forestry Rental Trust, Mapping services",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "ArcFlax 2006 DVD",
+      "url": "/systems/arcflax-whanganui-2006/"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

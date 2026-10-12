@@ -1,0 +1,16 @@
+{
+  "id": "relationship:legacy-1990s-2000s-20261012-023",
+  "a": "dataset:qmap-regional-gis-1994",
+  "b": "dataset:geological-250k-1959-1973",
+  "label": "Updated preceding geological map series",
+  "basis": "Updated preceding geological map series. See the supporting documented activity and linked sources.",
+  "passageIds": [
+    "passage:chapter-1-899fa91ade"
+  ],
+  "sources": [
+    {
+      "label": "Rattenbury and Isaac, QMAP 1:250,000 Geological Map project, 2012",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/00288306.2012.725417"
+    }
+  ]
+}
