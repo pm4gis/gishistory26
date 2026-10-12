@@ -3,7 +3,7 @@ main = "index.mjs"
 compatibility_date = "2026-10-06"
 compatibility_flags = ["nodejs_compat"]
 workers_dev = false
-routes = [{ pattern = "mcp.history.pm4gis.nz", custom_domain = true }
+routes = [{ pattern = "mcp.history.pm4gis.nz", custom_domain = true }]
 
 [[d1_databases]]
 binding = "EDITORIAL_DB"
