@@ -1,0 +1,28 @@
+{
+  "id": "1975-nzms1-first-edition-complete",
+  "dateDisplay": "1975",
+  "startDate": "1975",
+  "datePrecision": "year",
+  "year": 1975,
+  "label": "Final first-edition NZMS 1 topographic sheet published",
+  "summary": "The Department of Lands and Survey completed the first-edition NZMS 1 inch-to-the-mile map series. Its sheets formed an extensive standardised paper topographic record that later digital mapping drew upon.",
+  "url": "/stories/topography-goes-digital/#maintaining-topographic-data-e05655154a",
+  "passageIds": [
+    "passage:chapter-15-e05655154a"
+  ],
+  "recordIds": [
+    "chapter:15"
+  ],
+  "categories": [
+    "topography",
+    "map series",
+    "cartography"
+  ],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, Topographical mapping: final NZMS 1 sheet in 1975",
+      "url": "https://natlib.govt.nz/visiting/wellington/exhibitions/unfolding-the-map/topographical-mapping"
+    }
+  ],
+  "themeIds": []
+}

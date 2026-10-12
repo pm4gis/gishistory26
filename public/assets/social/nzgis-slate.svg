@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">A history of GIS in New Zealand</title>
+<desc id="desc">Slate blue publication card with an abstract arrangement of grid, data layers and connection points; no geographical map is depicted.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111A29"/><stop offset=".58" stop-color="#1B283B"/><stop offset="1" stop-color="#101B2D"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A2C6FF"/><stop offset="1" stop-color="#6E90C2"/></linearGradient>
+ <linearGradient id="pane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#345C89" stop-opacity=".75"/><stop offset="1" stop-color="#213750" stop-opacity=".7"/></linearGradient>
+ <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#8CA6C8" opacity=".23"/></pattern>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#A2C6FF" stroke-width=".9" opacity=".16"/></pattern>
+ <filter id="glow"><feGaussianBlur stdDeviation="12"/></filter>
+ <clipPath id="right"><rect x="690" y="0" width="510" height="630"/></clipPath>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<rect x="690" y="0" width="510" height="630" fill="url(#grid)" opacity=".6"/>
+<rect x="700" y="0" width="500" height="630" fill="url(#dots)"/>
+<path d="M0 0H1200V630H0Z" fill="none" stroke="#6586AA" stroke-width="14" opacity=".12"/>
+<path d="M0 470H1200" stroke="#6E849D" stroke-width="1" opacity=".35"/>
+<rect x="72" y="67" width="13" height="13" rx="2" fill="#A2C6FF"/>
+<text x="102" y="80" fill="#A2C6FF" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="4">NZ GIS HISTORY</text>
+<path d="M72 114H626" stroke="#6280A4" stroke-width="1.5" opacity=".7"/>
+<text x="68" y="207" fill="#E8EDF7" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">A history of GIS</text>
+<text x="68" y="291" fill="#E8EDF7" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">in New Zealand</text>
+<rect x="72" y="327" width="95" height="5" rx="2" fill="url(#accent)"/>
+<text x="72" y="379" fill="#B6C5D9" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="400">Mapping  ·  people  ·  technology</text>
+<path d="M72 500H645" stroke="#7C9ABD" stroke-width="2" opacity=".65"/>
+<g fill="#A2C6FF"><circle cx="72" cy="500" r="6"/><circle cx="179" cy="500" r="4"/><circle cx="286" cy="500" r="5"/><circle cx="393" cy="500" r="4"/><circle cx="500" cy="500" r="5"/><circle cx="645" cy="500" r="6"/></g>
+<g opacity=".45" stroke="#7C9ABD"><path d="M179 490V510M286 490V510M393 490V510M500 490V510"/></g>
+<text x="72" y="561" fill="#8FA9CA" font-family="Arial,Helvetica,sans-serif" font-size="16" letter-spacing="1.5">HISTORY.PM4GIS.NZ</text>
+<g clip-path="url(#right)">
+ <path d="M744 434L1008 515L1170 436L910 357Z" fill="#A2C6FF" opacity=".18" filter="url(#glow)"/>
+ <path d="M727 420L993 501L1168 406L903 325Z" fill="#243953" stroke="#86A5CE" stroke-width="3"/>
+ <path d="M727 420L993 501L1168 406" fill="none" stroke="#A2C6FF" stroke-width="2.5"/>
+ <path d="M747 413L997 486L1142 406L900 340Z" fill="url(#pane)"/>
+ <path d="M772 413L999 477M791 396L1020 466M813 382L1043 453M837 369L1062 441M860 357L1085 427" stroke="#A2C6FF" stroke-width="1" opacity=".24"/>
+ <path d="M809 432L952 355M851 446L993 368M898 460L1041 383M946 471L1088 399" stroke="#A2C6FF" stroke-width="1" opacity=".24"/>
+ <path d="M727 345L993 427L1168 332L903 251Z" fill="#253E5B" stroke="#A2C6FF" stroke-width="2.2" opacity=".94"/>
+ <g fill="none" stroke="#93B8E9" stroke-width="2">
+  <path d="M761 341L850 369L939 331L1033 357L1124 323" opacity=".88"/>
+  <path d="M803 374L865 329L950 365L1026 291L1112 331" opacity=".8"/>
+ </g>
+ <g fill="#C3DBFF"><circle cx="761" cy="341" r="5"/><circle cx="850" cy="369" r="5"/><circle cx="939" cy="331" r="5"/><circle cx="1033" cy="357" r="5"/><circle cx="1124" cy="323" r="5"/><circle cx="865" cy="329" r="4"/><circle cx="1026" cy="291" r="4"/></g>
+ <path d="M727 270L993 350L1168 256L903 175Z" fill="#375A82" stroke="#A2C6FF" stroke-width="3" opacity=".92"/>
+ <g fill="#84B7FB" opacity=".74"><rect x="812" y="263" width="17" height="17" transform="skewY(17)"/><rect x="851" y="253" width="17" height="17" transform="skewY(17)"/><rect x="890" y="247" width="17" height="17" transform="skewY(17)"/></g>
+ <g fill="none" stroke="#BBDAFF" stroke-width="2" opacity=".74">
+  <path d="M765 279L887 315L961 274L837 240"/>
+  <path d="M887 315L887 330"/>
+  <path d="M961 274L1059 306L1120 269"/>
+ </g>
+ <path d="M903 175V134M1168 256V214M727 270V227M993 350V307" stroke="#A2C6FF" stroke-dasharray="5 7" stroke-width="2" opacity=".6"/>
+ <circle cx="903" cy="134" r="8" fill="#A2C6FF"/><circle cx="903" cy="134" r="17" stroke="#A2C6FF" stroke-width="1" opacity=".4" fill="none"/>
+</g>
+</svg>

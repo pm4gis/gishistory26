@@ -8,7 +8,7 @@
  import {passageContributionMailtoUrl,passageContributionPageUrl} from '../lib/passage-contributions.mjs';
  import {ngaPoutamaForPassage} from '../lib/nga-poutama-videos.mjs';
  import {placeChapterImages} from '../lib/chapter-media.mjs';
- export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';
+ export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';export let chapterNavImages:Record<string,any>={};
  let suppressPreview=false;let relatedAll=false;let relatedKind='All';let previewTrigger:HTMLElement|null=null;let previewTimer:ReturnType<typeof setTimeout>|undefined;let page=0;let complete=true;let contentsOpen=false;let relatedOpen=false;let selected:any=null;let size=19;let motion=true;let status='';
  $: current=passages[page];
  $: visible=complete?passages:[current].filter(Boolean);
@@ -97,7 +97,29 @@
  </section>{/each}
  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
  </div>
- <nav class="page-nav" aria-label="Reading navigation">{#if !complete&&page>0}<button on:click={()=>go(page-1)}>← Previous</button>{:else if previous}<a class="button" href={previous.url}>← Previous chapter</a>{:else}<a href="/read/">Contents</a>{/if}<span>{complete?'Complete chapter':`${page+1} of ${passages.length}`}</span>{#if !complete&&page<passages.length-1}<button on:click={()=>go(page+1)}>Next →</button>{:else if next}<a class="button primary" href={next.url}>Next chapter →</a>{:else}<a href="/read/">Back to contents</a>{/if}</nav>
+ <nav class="page-nav chapter-page-nav" aria-label="Reading navigation">
+  {#if !complete&&page>0}
+   <button on:click={()=>go(page-1)}>← Previous passage</button>
+  {:else if previous}
+   <a class="chapter-page-link" href={previous.url}>
+    {#if chapterNavImages[previous.slug]}
+     <img src={chapterNavImages[previous.slug].thumbnailPath||chapterNavImages[previous.slug].assetPath} alt={chapterNavImages[previous.slug].altText} loading="lazy"/>
+    {/if}
+    <span class="chapter-page-link-copy"><small>← Previous chapter</small><strong>{previous.title}</strong></span>
+   </a>
+  {:else}<a href="/read/">Contents</a>{/if}
+  <span class="chapter-page-status">{complete?'Complete chapter':`${page+1} of ${passages.length}`}</span>
+  {#if !complete&&page<passages.length-1}
+   <button on:click={()=>go(page+1)}>Next passage →</button>
+  {:else if next}
+   <a class="chapter-page-link chapter-page-link--next" href={next.url}>
+    {#if chapterNavImages[next.slug]}
+     <img src={chapterNavImages[next.slug].thumbnailPath||chapterNavImages[next.slug].assetPath} alt={chapterNavImages[next.slug].altText} loading="lazy"/>
+    {/if}
+    <span class="chapter-page-link-copy"><small>Next chapter →</small><strong>{next.title}</strong></span>
+   </a>
+  {:else}<a href="/read/">Back to contents</a>{/if}
+ </nav>
  </article>
  <aside class:open={relatedOpen} class="related" aria-label="Related material"><p class="eyebrow">Follow a connection</p><h3>Related entries</h3><div class="related-filters" role="group" aria-label="Related entry types"><button aria-pressed={relatedKind==='All'} on:click={()=>{relatedKind='All';relatedAll=false}}>All</button>{#each relatedKinds as kind}<button aria-pressed={relatedKind===kind} on:click={()=>{relatedKind=kind;relatedAll=false}}>{kind}</button>{/each}</div><div class="related-list">{#each (relatedAll?filteredRelated:filteredRelated.slice(0,8)) as r}<a class="related-item" href={recordLink(r)} on:click={relatedClick}>{r.name}<span>{r.kind} · indexed with {complete?'this chapter':'this passage'}</span></a>{/each}</div>{#if filteredRelated.length>8}<button aria-expanded={relatedAll} on:click={()=>relatedAll=!relatedAll}>{relatedAll?'Show fewer entries':`View all ${filteredRelated.length} entries`}</button>{/if}{#if !filteredRelated.length}<p class="muted">No matching entries. Select All to see the entries indexed for this {complete?'chapter':'passage'}.</p>{/if}
  {#if currentEvents.length}<details><summary>Linked events · {currentEvents.length}</summary>{#each currentEvents as e}<button on:click={()=>selectEvent(e)}>{e.dateDisplay} · {e.label}</button>{/each}</details>{/if}

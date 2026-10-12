@@ -16,4 +16,16 @@ if (sitemap.includes('https://gishistory26.pages.dev') ||
     robots.includes('https://gishistory26.pages.dev')) {
   throw Error('Sitemap or robots.txt contains a non-canonical production hostname');
 }
+const share='dist/assets/social/nzgis-slate.png';
+if(!fs.existsSync(share))throw Error('Missing generated Slate Blue social sharing PNG');
+const header=fs.readFileSync(share).subarray(0,24);
+if(header.subarray(0,8).toString('hex')!=='89504e470d0a1a0a'||header.readUInt32BE(16)!==1200||header.readUInt32BE(20)!==630){
+ throw Error('Invalid social preview PNG signature or dimensions (must be 1200 × 630)');
+}
+const homeHtml=fs.readFileSync('dist/index.html','utf8');
+if(!homeHtml.includes('property="og:image"')||!homeHtml.includes('/assets/social/nzgis-slate.png')||!homeHtml.includes('name="twitter:card"')){
+ throw Error('Social preview metadata missing from generated homepage');
+}
+console.log('Slate Blue Open Graph preview verified: 1200 × 630 PNG and social tags');
+
 await import('./check-links.mjs');

@@ -1,0 +1,28 @@
+{
+  "id": "1962-aerial-photo-coverage",
+  "dateDisplay": "By 1962",
+  "startDate": "1962",
+  "datePrecision": "approximate",
+  "year": 1962,
+  "label": "Aerial photography covers the North Island and much of the South",
+  "summary": "By 1962, aerial photographs covered all of the North Island and about two-thirds of the South Island. This photographic archive became an important source for later topographic compilation and digital orthophotography.",
+  "url": "/stories/imagery-becomes-infrastructure/#a-photograph-you-can-measure-72c979d587",
+  "passageIds": [
+    "passage:chapter-20-72c979d587"
+  ],
+  "recordIds": [
+    "chapter:20"
+  ],
+  "categories": [
+    "aerial photography",
+    "photogrammetry",
+    "topography"
+  ],
+  "sources": [
+    {
+      "label": "Te Ara, Modern mapping and surveying: aerial photography coverage by 1962",
+      "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/print"
+    }
+  ],
+  "themeIds": []
+}

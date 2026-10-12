@@ -451,3 +451,36 @@
 @media(max-width:520px){.appearance-panel{right:-54px}.appearance-choice{font-size:12px}}
 @media(prefers-reduced-transparency:reduce){.topbar,.nav--mobile{background:var(--surface);backdrop-filter:none;-webkit-backdrop-filter:none}}
 @media(prefers-reduced-motion:reduce){.appearance-control *, .appearance-control *::before{animation:none!important;transition:none!important}}
+
+
+/* Documentary chapter navigation. Only paragraph-reviewed or explicitly embedded
+   historical images qualify. Every thumbnail frame keeps the entire map visible. */
+.chapter-card-media,.chapter-image-slot{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;background:var(--document-bg);overflow:hidden}
+.chapter-card-media{margin:-22px -22px 15px;text-decoration:none;border-bottom:1px solid var(--line);border-radius:15px 15px 0 0}
+.chapter-card-media img,.chapter-image-slot img{width:100%;height:100%;object-fit:contain;display:block;border-radius:0}
+.chapter-image-fallback{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:15px;background:linear-gradient(145deg,var(--raised),var(--surface));color:var(--muted);font-size:clamp(15px,2vw,23px);font-weight:700;letter-spacing:.025em;text-align:center}
+.chapter-card-media:hover img,.chapter-card-media:focus-visible img{filter:none}
+.chapter-catalogue{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:18px;margin:28px 0 70px}
+.chapter-catalogue-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid var(--line);background:var(--surface);border-radius:15px;color:var(--text);text-decoration:none;box-shadow:var(--shade)}
+.chapter-catalogue-card:hover,.chapter-catalogue-card:focus-visible{border-color:var(--accent)}
+.chapter-catalogue-card .chapter-image-slot{border-bottom:1px solid var(--line);flex:none}
+.chapter-catalogue-copy{display:flex;flex-direction:column;gap:8px;flex:1;padding:18px 20px 21px}
+.chapter-catalogue-copy>strong{font-size:20px;line-height:1.35}
+.chapter-catalogue-summary{font-size:14px;line-height:1.55;color:var(--muted);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;line-clamp:4;overflow:hidden}
+.chapter-catalogue-arrow{margin-top:auto;padding-top:10px;color:var(--link);font-size:14px;font-weight:650}
+.chapter-page-nav{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:stretch}
+.chapter-page-nav>.chapter-page-status{align-self:center;font-size:12px;color:var(--muted);white-space:nowrap}
+.chapter-page-nav>.chapter-page-link{display:flex;align-items:center;gap:10px;min-width:0;border:1px solid var(--line);border-radius:12px;padding:9px;background:var(--raised);color:var(--text);text-decoration:none}
+.chapter-page-nav>.chapter-page-link:hover,.chapter-page-nav>.chapter-page-link:focus-visible{border-color:var(--accent);background:var(--accent-soft)}
+.chapter-page-link img{width:74px;height:63px;object-fit:contain;flex:none;background:var(--document-bg);border-radius:7px}
+.chapter-page-link-copy{display:flex;flex-direction:column;gap:5px;min-width:0;line-height:1.3}
+.chapter-page-link-copy small{color:var(--muted);font-size:11px}
+.chapter-page-link-copy strong{font-size:14px;overflow-wrap:anywhere}
+.chapter-page-link--next{justify-self:stretch}
+@media(max-width:700px){
+ .chapter-page-nav{display:flex;flex-direction:column;gap:12px}
+ .chapter-page-nav>.chapter-page-link{width:100%}
+ .chapter-page-nav>.chapter-page-status{order:-1;text-align:center}
+ .chapter-page-link img{width:86px;height:64px}
+ .chapter-catalogue{grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr))}
+}

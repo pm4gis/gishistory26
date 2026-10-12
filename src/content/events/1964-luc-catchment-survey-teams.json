@@ -1,0 +1,28 @@
+{
+  "id": "1964-luc-catchment-survey-teams",
+  "dateDisplay": "1964",
+  "startDate": "1964",
+  "datePrecision": "year",
+  "year": 1964,
+  "label": "Soil Bureau teams begin catchment land-use capability surveys",
+  "summary": "Survey teams established in both islands assessed land-use capability for catchments and development blocks for the national water and soil conservation programme. Their mapped assessments preceded the national NZLRI programme.",
+  "url": "/stories/mapping-land-as-data/#inventory-and-judgement-dbfff42fef",
+  "passageIds": [
+    "passage:chapter-7-dbfff42fef"
+  ],
+  "recordIds": [
+    "chapter:7"
+  ],
+  "categories": [
+    "land use capability",
+    "soil",
+    "water and soil conservation"
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, history of New Zealand soil survey: survey teams established in 1964",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    }
+  ],
+  "themeIds": []
+}

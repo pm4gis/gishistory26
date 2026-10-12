@@ -1,0 +1,32 @@
+{
+  "id": "1968-soils-of-new-zealand-bulletin",
+  "dateDisplay": "1968",
+  "startDate": "1968",
+  "datePrecision": "year",
+  "year": 1968,
+  "label": "Soils of New Zealand publishes a nationwide soil reference",
+  "summary": "DSIR Soil Bureau Bulletin 26 brought together soil classification, regional descriptions and accompanying maps, with specialist contributions across scientific and land-use agencies. The maps and descriptions became reference material for later land information systems.",
+  "url": "/stories/mapping-land-as-data/#reading-the-land-2b878e178f",
+  "passageIds": [
+    "passage:chapter-7-2b878e178f"
+  ],
+  "recordIds": [
+    "chapter:7"
+  ],
+  "categories": [
+    "soils",
+    "land resources",
+    "cartography"
+  ],
+  "sources": [
+    {
+      "label": "National Library catalogue, Soils of New Zealand, Soil Bureau Bulletin 26 (1968)",
+      "url": "https://natlib.govt.nz/records/22001615"
+    },
+    {
+      "label": "Digitised 1968 Soil Bureau Bulletin 26(1), Manaaki Whenua",
+      "url": "https://soils.landcareresearch.co.nz/assets/pdfs/Classification_NZ_soils_1968.pdf"
+    }
+  ],
+  "themeIds": []
+}
