@@ -4,7 +4,7 @@
   "articleId": "article:chapter-40",
   "title": "The platform team",
   "order": 10,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:40",
@@ -38,7 +38,11 @@
       "type": "paragraph",
       "text": "New Zealand Police’s ArcGIS Enterprise implementation began in 2021 under a team led by Duane Wilkins, with Sarah Hodgson among its members.",
       "markdown": "New Zealand Police’s ArcGIS Enterprise implementation began in 2021 under a team led by Duane Wilkins, with Sarah Hodgson among its members.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Author account supplied by Duane Wilkins, Police ArcGIS Enterprise team, 2021"
+        }
+      ],
       "id": "ch40-s10-p04"
     }
   ],
