@@ -1,0 +1,31 @@
+{
+  "id": "1937-new-zealand-aerial-mapping-survey",
+  "dateDisplay": "April 1937",
+  "startDate": "1937-04",
+  "datePrecision": "month",
+  "year": 1937,
+  "label": "New Zealand Aerial Mapping surveys the Richardson Range",
+  "summary": "Piet van Asch began aerial survey work near Queenstown for the DSIR. This early commercial survey added systematic imagery to the national mapping record before the first NZMS 1 sheet was published in 1939.",
+  "url": "/stories/what-the-computer-inherited/#the-country-from-the-air-db246fba61",
+  "passageIds": [
+    "passage:chapter-1-db246fba61"
+  ],
+  "recordIds": [
+    "chapter:1",
+    "entity:new-zealand-aerial-mapping",
+    "person:henry-piet-drury-van-asch"
+  ],
+  "themeIds": [
+    "imagery"
+  ],
+  "categories": [
+    "imagery",
+    "survey"
+  ],
+  "sources": [
+    {
+      "label": "Matthew Wright, “van Asch, Henry Piet Drury”, Dictionary of New Zealand Biography, Te Ara, 2000",
+      "url": "https://teara.govt.nz/en/biographies/5v1/van-asch-henry-piet-drury"
+    }
+  ]
+}
