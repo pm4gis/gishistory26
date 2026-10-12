@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-lou-sanson",
+  "a": "person:lou-sanson",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "DOC Director-General who attended the 2015 Great Walks Street View launch and credited DOC and partner staff.",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "sources": [
+    {
+      "label": "Lou Sanson, DOC Director-General, D-G Direct, 3 December 2015",
+      "url": "https://blog.doc.govt.nz/2015/12/03/d-g-direct-update/"
+    }
+  ]
+}

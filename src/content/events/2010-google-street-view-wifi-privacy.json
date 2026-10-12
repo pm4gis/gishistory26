@@ -1,0 +1,27 @@
+{
+  "id": "2010-google-street-view-wifi-privacy",
+  "dateDisplay": "2010-12-14",
+  "startDate": "2010-12-14",
+  "datePrecision": "day",
+  "year": 2010,
+  "label": "NZ Privacy Commissioner reports Street View Wi-Fi breaches",
+  "summary": "The Privacy Commissioner found that Google's Street View vehicles had collected Wi-Fi information unfairly and communications payload data from unsecured networks in breach of the Privacy Act.",
+  "url": "/stories/google-changes-the-audience/",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "recordIds": [
+    "chapter:31"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "mass-market"
+  ],
+  "sources": [
+    {
+      "label": "Office of the Privacy Commissioner, Google's collection of WiFi information during Street View filming, 14 December 2010",
+      "url": "https://www.privacy.org.nz/resources-and-learning/public-inquiries/googles-collection-of-wifi-information-during-street-view-filming/"
+    }
+  ]
+}

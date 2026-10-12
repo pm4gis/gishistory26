@@ -1,0 +1,29 @@
+{
+  "id": "2008-google-street-view-new-zealand",
+  "dateDisplay": "2008-12-02",
+  "startDate": "2008-12-02",
+  "datePrecision": "day",
+  "year": 2008,
+  "label": "Google Street View launches in New Zealand",
+  "summary": "Google launched linked 360-degree roadside panoramas in New Zealand, its seventh Street View country. The first release covered cities, towns and scenic routes.",
+  "url": "/stories/google-changes-the-audience/",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "recordIds": [
+    "chapter:31",
+    "person:andrew-foster",
+    "person:george-hickton"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "mass-market"
+  ],
+  "sources": [
+    {
+      "label": "Google Australia and New Zealand, Street View now in New Zealand, 2 December 2008",
+      "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+    }
+  ]
+}

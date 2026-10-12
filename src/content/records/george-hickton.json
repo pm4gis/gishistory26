@@ -1,0 +1,29 @@
+{
+  "id": "person:george-hickton",
+  "slug": "george-hickton",
+  "name": "George Hickton",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/george-hickton/",
+  "story": [
+    "Tourism New Zealand chief executive cited in Google's December 2008 Street View announcement about visitor research."
+  ],
+  "sources": [
+    {
+      "label": "Andrew Foster, Google, Street View now in New Zealand, 2 December 2008",
+      "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Andrew Foster, Google, Street View now in New Zealand, 2 December 2008",
+        "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+      }
+    ]
+  ]
+}

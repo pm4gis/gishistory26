@@ -1,0 +1,37 @@
+{
+  "id": "person:john-bailey",
+  "slug": "john-bailey",
+  "name": "John Bailey",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/john-bailey/",
+  "story": [
+    "Google presenter who explained Google Earth, Voyager and Tour Builder in the 2019 LEARNZ Map My Wāhi videos."
+  ],
+  "sources": [
+    {
+      "label": "LEARNZ, Map Your Waahi 2019 videos",
+      "url": "https://www.learnz.org.nz/mapping192/videos"
+    },
+    {
+      "label": "LINZ, Map my Wāhi: discovering our shared heritage",
+      "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools/map-my-wahi-discovering-our-shared-heritage"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "LEARNZ, Map Your Waahi 2019 videos",
+        "url": "https://www.learnz.org.nz/mapping192/videos"
+      },
+      {
+        "label": "LINZ, Map my Wāhi: discovering our shared heritage",
+        "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools/map-my-wahi-discovering-our-shared-heritage"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:rudy-tetteroo",
+  "slug": "rudy-tetteroo",
+  "name": "Rudy Tetteroo",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/rudy-tetteroo/",
+  "story": [
+    "DOC programme manager who welcomed the first Google Street View Trekker expedition on the Abel Tasman Coast Track in 2013."
+  ],
+  "sources": [
+    {
+      "label": "Project Janszoon, Google steps onto the wild side, 19 August 2013",
+      "url": "https://janszoon.org/news/google-steps-onto-the-wild-side/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Project Janszoon, Google steps onto the wild side, 19 August 2013",
+        "url": "https://janszoon.org/news/google-steps-onto-the-wild-side/"
+      }
+    ]
+  ]
+}

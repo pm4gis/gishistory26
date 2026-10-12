@@ -1,0 +1,30 @@
+{
+  "id": "system:mapsicle-2009",
+  "slug": "mapsicle-2009",
+  "name": "Mapsicle 1.0 (2009)",
+  "kind": "Project",
+  "category": "Historical web GIS systems",
+  "url": "/systems/mapsicle-2009/",
+  "story": [
+    "In November 2009 Wellington company ProjectX released Mapsicle 1.0, which added markers, annotations and information windows to Google Street View panoramas. John Clegg documented the project and named Stephen Davis, Cameron Prebble, Thong Kuah and Raja Bhadhury as developers and contributors. The library was made available in the Google Maps API Utility Library."
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ],
+  "aliases": [
+    "Mapsicle"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+        "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+      }
+    ]
+  ]
+}

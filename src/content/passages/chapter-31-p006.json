@@ -4,11 +4,12 @@
   "articleId": "article:chapter-31",
   "title": "Google Maps lands in New Zealand",
   "order": 5,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
     "chapter:31",
-    "entity:stats-nz"
+    "entity:stats-nz",
+    "person:noel-gordon"
   ],
   "blocks": [
     {
@@ -38,6 +39,18 @@
       "markdown": "That shift sounds obvious now because it became normal. At the time, it rearranged the relationship between the map and the organisation that supplied information. People increasingly expected to begin with a general-purpose map and then add context, rather than begin with an agency and discover whether it happened to provide a map.",
       "sources": [],
       "id": "ch31-s06-p04"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-google-maps-noel-gordon-2007",
+      "text": "Google software engineer Noel Gordon wrote the official announcement of the localised New Zealand Google Maps release in December 2007. He described its business search, driving directions, custom maps and mobile access.",
+      "markdown": "Google software engineer Noel Gordon wrote the official announcement of the localised New Zealand Google Maps release in December 2007. He described its business search, driving directions, custom maps and mobile access.",
+      "sources": [
+        {
+          "label": "Noel Gordon, Google, New Zealand Google Maps launch, 12 December 2007",
+          "url": "https://googleblog.blogspot.com/2007/12/haere-mai-google-maps-lands-in-new.html"
+        }
+      ]
     }
   ],
   "sources": [],

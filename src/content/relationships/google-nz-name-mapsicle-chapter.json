@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-mapsicle-chapter",
+  "a": "system:mapsicle-2009",
+  "b": "chapter:31",
+  "label": "Documented within the New Zealand Google mapping chapter",
+  "basis": "ProjectX's Mapsicle 1.0 appears in John Clegg's contemporary November 2009 Google Maps Platform article.",
+  "passageIds": [
+    "passage:chapter-31-934c71685f"
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ]
+}

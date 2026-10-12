@@ -1,0 +1,29 @@
+{
+  "id": "person:andrew-foster",
+  "slug": "andrew-foster",
+  "name": "Andrew Foster",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/andrew-foster/",
+  "story": [
+    "Google Australia and New Zealand product manager, author of Google's 2 December 2008 Street View launch account."
+  ],
+  "sources": [
+    {
+      "label": "Andrew Foster, Google, Street View now in New Zealand, 2 December 2008",
+      "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Andrew Foster, Google, Street View now in New Zealand, 2 December 2008",
+        "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+      }
+    ]
+  ]
+}

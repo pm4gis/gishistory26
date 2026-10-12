@@ -1,0 +1,34 @@
+{
+  "id": "2019-map-my-waahi-google-earth-lower-hutt",
+  "dateDisplay": "June 2019",
+  "startDate": "2019-06",
+  "datePrecision": "month",
+  "year": 2019,
+  "label": "Map My Wāhi combines Google Earth, story maps and Lower Hutt heritage",
+  "summary": "The LEARNZ Lower Hutt field trip included John Bailey on Google Earth and Tour Builder, local heritage videos and a separate ArcGIS StoryMaps demonstration by Duane Wilkins.",
+  "url": "/stories/google-changes-the-audience/",
+  "passageIds": [
+    "passage:chapter-31-54386442a8"
+  ],
+  "recordIds": [
+    "chapter:31",
+    "person:john-bailey",
+    "person:ray-wallace",
+    "person:duane-wilkins"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "mass-market"
+  ],
+  "sources": [
+    {
+      "label": "LEARNZ, Map My Waahi 2019 video series, including Telling stories through Google Earth and Celebrating different cultures in Lower Hutt",
+      "url": "https://www.learnz.org.nz/mapping192/videos"
+    },
+    {
+      "label": "LINZ, Map my Wāhi: discovering our shared heritage (preserved 2019 education resources)",
+      "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools/map-my-wahi-discovering-our-shared-heritage"
+    }
+  ]
+}

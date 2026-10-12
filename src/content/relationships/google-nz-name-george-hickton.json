@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-george-hickton",
+  "a": "person:george-hickton",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "Tourism New Zealand chief executive cited in Google's December 2008 Street View announcement about visitor research.",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "sources": [
+    {
+      "label": "Andrew Foster, Google, Street View now in New Zealand, 2 December 2008",
+      "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-cameron-prebble",
+  "a": "person:cameron-prebble",
+  "b": "system:mapsicle-2009",
+  "label": "Contributed to Mapsicle 1.0",
+  "basis": "ProjectX contributor responsible for Mapsicle demonstrations and front-end experience before its 2009 publication.",
+  "passageIds": [
+    "passage:chapter-31-934c71685f"
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ]
+}

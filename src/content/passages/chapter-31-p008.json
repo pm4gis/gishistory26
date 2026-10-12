@@ -4,10 +4,23 @@
   "articleId": "article:chapter-31",
   "title": "Imagery becomes ordinary",
   "order": 7,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
-    "chapter:31"
+    "chapter:31",
+    "person:andrew-foster",
+    "person:george-hickton",
+    "person:rudy-tetteroo",
+    "person:nabil-naghdy",
+    "person:anthony-baxter",
+    "person:peter-hiemstra",
+    "person:matt-jenke",
+    "person:riki-mules",
+    "person:cynthia-wei",
+    "person:steven-silverman",
+    "person:john-key",
+    "person:lou-sanson",
+    "person:christopher-luxon"
   ],
   "blocks": [
     {
@@ -30,6 +43,114 @@
       "markdown": "The apparent realism required care. Imagery might be months or years old. Orthorectification, mosaicking, capture angle, terrain and source resolution could affect what a user saw. A house visible in the image was not proof of its current condition, and an apparent boundary was not a cadastral boundary merely because it lined up with a fence. Consumer access widened the audience for imagery much faster than it widened understanding of its limitations.",
       "sources": [],
       "id": "ch31-s08-p03"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-nz-street-view-launch-2008",
+      "text": "Street View added another kind of imagery to the New Zealand public map. Launched here on 2 December 2008, it let people move through linked 360-degree roadside panoramas, from major city streets to scenic rural roads. Google described New Zealand as the seventh country to receive the service. Its original tourism examples included Lake Wakatipu and the Stone Store in Kerikeri. Street View gave people a different way to examine a neighbourhood, plan a visit or look at a building from the road. It was street-level photography, with different collection dates and coverage from Google Earth's overhead imagery.",
+      "markdown": "Street View added another kind of imagery to the New Zealand public map. Launched here on 2 December 2008, it let people move through linked 360-degree roadside panoramas, from major city streets to scenic rural roads. Google described New Zealand as the seventh country to receive the service. Its original tourism examples included Lake Wakatipu and the Stone Store in Kerikeri. Street View gave people a different way to examine a neighbourhood, plan a visit or look at a building from the road. It was street-level photography, with different collection dates and coverage from Google Earth's overhead imagery.",
+      "sources": [
+        {
+          "label": "Google Australia and New Zealand, Street View now in New Zealand, 2 December 2008",
+          "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-nz-street-view-privacy-2010",
+      "text": "There were consequences to photographing public roads at national scale. Google's Street View vehicles also gathered Wi-Fi network information. On 14 December 2010, New Zealand's Privacy Commissioner reported that Google had collected communications payload data from unsecured networks in breach of the Privacy Act, and had collected publicly visible Wi-Fi information without adequate notice. Google apologised and agreed to delete the captured payload data and improve its privacy procedures. The inquiry concerned Wi-Fi data gathered during Street View filming, rather than the mere existence of roadside photographs.",
+      "markdown": "There were consequences to photographing public roads at national scale. Google's Street View vehicles also gathered Wi-Fi network information. On 14 December 2010, New Zealand's Privacy Commissioner reported that Google had collected communications payload data from unsecured networks in breach of the Privacy Act, and had collected publicly visible Wi-Fi information without adequate notice. Google apologised and agreed to delete the captured payload data and improve its privacy procedures. The inquiry concerned Wi-Fi data gathered during Street View filming, rather than the mere existence of roadside photographs.",
+      "sources": [
+        {
+          "label": "Office of the Privacy Commissioner, Google's collection of WiFi information during Street View filming, 14 December 2010",
+          "url": "https://www.privacy.org.nz/resources-and-learning/public-inquiries/googles-collection-of-wifi-information-during-street-view-filming/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-google-trekker-great-walks-capture-2013",
+      "text": "DOC's partnership with Google took Street View beyond roads. In August 2013 Google Maps product manager Nabil Naghdy announced that the wearable Trekker camera was beginning to capture the Abel Tasman Coast and Heaphy tracks. DOC programme manager Rudy Tetteroo publicly welcomed the expedition in a Project Janszoon report. DOC's 2014 annual report also recorded the Great Walks photography and the supply of recreation information for Google Maps and HERE basemaps. The work relied on DOC's track knowledge as well as Google's mapping platform.",
+      "markdown": "DOC's partnership with Google took Street View beyond roads. In August 2013 Google Maps product manager Nabil Naghdy announced that the wearable Trekker camera was beginning to capture the Abel Tasman Coast and Heaphy tracks. DOC programme manager Rudy Tetteroo publicly welcomed the expedition in a Project Janszoon report. DOC's 2014 annual report also recorded the Great Walks photography and the supply of recreation information for Google Maps and HERE basemaps. The work relied on DOC's track knowledge as well as Google's mapping platform.",
+      "sources": [
+        {
+          "label": "Google New Zealand, Street View Trekker takes on the Abel Tasman and Heaphy Tracks, 18 August 2013",
+          "url": "https://blog.google/intl/en-nz/products/2013_08_street-view-trekker-takes-on-abe/"
+        },
+        {
+          "label": "Department of Conservation, Annual Report for the year ended 30 June 2014, p. 76",
+          "url": "https://www.doc.govt.nz/globalassets/documents/about-doc/annual-reports/annual-report-2014/doc-annual-report-2014.pdf"
+        },
+        {
+          "label": "Project Janszoon, Google steps onto the wild side, 19 August 2013",
+          "url": "https://janszoon.org/news/google-steps-onto-the-wild-side/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-nz-christchurch-historical-street-view-2014",
+      "text": "In April 2014 Google made historical Street View imagery available for comparing Christchurch before and after the Canterbury earthquakes. Anthony Baxter of Google Crisis Response published the New Zealand announcement, describing earlier panoramas of changed buildings, roads and neighbourhoods. The successive images provided a useful visual record at locations and dates where Google had collected imagery.",
+      "markdown": "In April 2014 Google made historical Street View imagery available for comparing Christchurch before and after the Canterbury earthquakes. Anthony Baxter of Google Crisis Response published the New Zealand announcement, describing earlier panoramas of changed buildings, roads and neighbourhoods. The successive images provided a useful visual record at locations and dates where Google had collected imagery.",
+      "sources": [
+        {
+          "label": "Google New Zealand, Preserving Christchurch's history to help Cantabrians remember, plan, and rebuild, 23 April 2014",
+          "url": "https://blog.google/intl/en-nz/products/2014_04_preserving-christchurchs-history-to/"
+        },
+        {
+          "label": "Anthony Baxter, Google New Zealand, Preserving Christchurch's history, April 2014",
+          "url": "https://newzealand.googleblog.com/2014/04/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-google-doc-seven-great-walks-street-view-2015",
+      "text": "In November 2015 Google released Street View panoramas of seven DOC Great Walks: Rakiura, Milford, Heaphy, Lake Waikaremoana, Routeburn, Kepler and Abel Tasman Coast. DOC reported that planning and fieldwork had begun in 2012, involving local iwi, its geospatial and marketing teams, and staff who knew the tracks. GIS analyst Peter Hiemstra accompanied the Trekker on most of the walks. DOC's account names Matt Jenke as the Trekker operator and Riki Mules as an iwi representative on the Routeburn. The panoramas let overseas visitors preview remote tracks and gave trampers another way to examine the route before travelling. These were walking-track panoramas published through Google Maps and Street View, distinct from overhead Google Earth imagery.",
+      "markdown": "In November 2015 Google released Street View panoramas of seven DOC Great Walks: Rakiura, Milford, Heaphy, Lake Waikaremoana, Routeburn, Kepler and Abel Tasman Coast. DOC reported that planning and fieldwork had begun in 2012, involving local iwi, its geospatial and marketing teams, and staff who knew the tracks. GIS analyst Peter Hiemstra accompanied the Trekker on most of the walks. DOC's account names Matt Jenke as the Trekker operator and Riki Mules as an iwi representative on the Routeburn. The panoramas let overseas visitors preview remote tracks and gave trampers another way to examine the route before travelling. These were walking-track panoramas published through Google Maps and Street View, distinct from overhead Google Earth imagery.",
+      "sources": [
+        {
+          "label": "Department of Conservation, The Great Walks on Google Maps, 6 November 2015",
+          "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+        },
+        {
+          "label": "Google New Zealand, Take a walk on the wild side with Street View in New Zealand, 4 November 2015",
+          "url": "https://blog.google/intl/en-nz/products/2015_11_take-walk-on-wild-side-with-street-view/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-street-view-andrew-foster-george-hickton-2008",
+      "text": "Andrew Foster, Google product manager for Australia and New Zealand, announced the 2008 Street View launch. His account also cited Tourism New Zealand chief executive George Hickton on how visitors researched destinations. Tourism New Zealand had selected examples such as Lake Wakatipu and the historic Stone Store in Kerikeri.",
+      "markdown": "Andrew Foster, Google product manager for Australia and New Zealand, announced the 2008 Street View launch. His account also cited Tourism New Zealand chief executive George Hickton on how visitors researched destinations. Tourism New Zealand had selected examples such as Lake Wakatipu and the historic Stone Store in Kerikeri.",
+      "sources": [
+        {
+          "label": "Andrew Foster, Google, Street View now in New Zealand, 2 December 2008",
+          "url": "https://australia.googleblog.com/2008/12/street-view-now-in-new-zealand.html"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-doc-google-named-participants-launch-2015",
+      "text": "Google Street View programme manager Cynthia Wei announced the November 2015 release. DOC GIS analyst Peter Hiemstra had accompanied camera operator Matt Jenke on most of the walks, with iwi representative Riki Mules identified on the Routeburn. At the Auckland launch, DOC Director-General Lou Sanson joined Google Trekker inventor Steven Silverman, Prime Minister John Key and Air New Zealand chief executive Christopher Luxon. Sanson subsequently credited DOC's GIS, visitor-facing and regional staff, alongside Air New Zealand's support. The public launch participants had different roles from those carrying and preparing the camera in the field.",
+      "markdown": "Google Street View programme manager Cynthia Wei announced the November 2015 release. DOC GIS analyst Peter Hiemstra had accompanied camera operator Matt Jenke on most of the walks, with iwi representative Riki Mules identified on the Routeburn. At the Auckland launch, DOC Director-General Lou Sanson joined Google Trekker inventor Steven Silverman, Prime Minister John Key and Air New Zealand chief executive Christopher Luxon. Sanson subsequently credited DOC's GIS, visitor-facing and regional staff, alongside Air New Zealand's support. The public launch participants had different roles from those carrying and preparing the camera in the field.",
+      "sources": [
+        {
+          "label": "Cynthia Wei, Google, Take a walk on the wild side with Street View in New Zealand, 4 November 2015",
+          "url": "https://blog.google/intl/en-nz/products/2015_11_take-walk-on-wild-side-with-street-view/"
+        },
+        {
+          "label": "DOC, The Great Walks on Google Maps, 6 November 2015",
+          "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+        },
+        {
+          "label": "Lou Sanson, DOC Director-General, D-G Direct, 3 December 2015",
+          "url": "https://blog.doc.govt.nz/2015/12/03/d-g-direct-update/"
+        }
+      ]
     }
   ],
   "sources": [],

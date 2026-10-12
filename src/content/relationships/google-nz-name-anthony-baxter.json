@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-anthony-baxter",
+  "a": "person:anthony-baxter",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "Google Crisis Response author of the April 2014 Christchurch historical Street View announcement.",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "sources": [
+    {
+      "label": "Anthony Baxter, Google New Zealand, Preserving Christchurch's history, April 2014",
+      "url": "https://newzealand.googleblog.com/2014/04/"
+    }
+  ]
+}

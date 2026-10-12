@@ -1,0 +1,29 @@
+{
+  "id": "person:stephen-davis",
+  "slug": "stephen-davis",
+  "name": "Stephen Davis",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/stephen-davis/",
+  "story": [
+    "ProjectX developer who created and named the 2009 Mapsicle prototype, according to John Clegg's technical release account."
+  ],
+  "sources": [
+    {
+      "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+      "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "John Clegg, ProjectX, Mapsicle 1.0: Annotating Street View Panoramas, 16 November 2009",
+        "url": "https://mapsplatform.googleblog.com/2009/11/mapsicle-10-annotating-street-view.html"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-nabil-naghdy",
+  "a": "person:nabil-naghdy",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "Google Maps product manager for New Zealand, author of the August 2013 Great Walks Google Trekker announcement.",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "sources": [
+    {
+      "label": "Nabil Naghdy, Google, Street View Trekker takes on the Abel Tasman and Heaphy Tracks, 18 August 2013",
+      "url": "https://blog.google/intl/en-nz/products/2013_08_street-view-trekker-takes-on-abe/"
+    }
+  ]
+}

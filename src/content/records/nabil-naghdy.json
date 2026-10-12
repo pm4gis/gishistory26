@@ -1,0 +1,37 @@
+{
+  "id": "person:nabil-naghdy",
+  "slug": "nabil-naghdy",
+  "name": "Nabil Naghdy",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/nabil-naghdy/",
+  "story": [
+    "Google Maps product manager for New Zealand, author of the August 2013 Great Walks Google Trekker announcement."
+  ],
+  "sources": [
+    {
+      "label": "Nabil Naghdy, Google, Street View Trekker takes on the Abel Tasman and Heaphy Tracks, 18 August 2013",
+      "url": "https://blog.google/intl/en-nz/products/2013_08_street-view-trekker-takes-on-abe/"
+    },
+    {
+      "label": "Project Janszoon, Google steps onto the wild side, 19 August 2013",
+      "url": "https://janszoon.org/news/google-steps-onto-the-wild-side/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Nabil Naghdy, Google, Street View Trekker takes on the Abel Tasman and Heaphy Tracks, 18 August 2013",
+        "url": "https://blog.google/intl/en-nz/products/2013_08_street-view-trekker-takes-on-abe/"
+      },
+      {
+        "label": "Project Janszoon, Google steps onto the wild side, 19 August 2013",
+        "url": "https://janszoon.org/news/google-steps-onto-the-wild-side/"
+      }
+    ]
+  ]
+}

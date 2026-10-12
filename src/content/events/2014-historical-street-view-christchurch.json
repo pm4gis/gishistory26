@@ -1,0 +1,27 @@
+{
+  "id": "2014-historical-street-view-christchurch",
+  "dateDisplay": "2014-04-23",
+  "startDate": "2014-04-23",
+  "datePrecision": "day",
+  "year": 2014,
+  "label": "Historical Street View records Christchurch's transformation",
+  "summary": "Google made earlier street-level panoramas available for comparisons of Christchurch before and after the Canterbury earthquakes.",
+  "url": "/stories/google-changes-the-audience/",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "recordIds": [
+    "chapter:31"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "mass-market"
+  ],
+  "sources": [
+    {
+      "label": "Google New Zealand, Preserving Christchurch's history to help Cantabrians remember, plan, and rebuild, 23 April 2014",
+      "url": "https://blog.google/intl/en-nz/products/2014_04_preserving-christchurchs-history-to/"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "2015-doc-google-seven-great-walks-street-view",
+  "dateDisplay": "November 2015",
+  "startDate": "2015-11",
+  "datePrecision": "month",
+  "year": 2015,
+  "label": "Seven DOC Great Walks published on Google Street View",
+  "summary": "Google published seven Great Walks as 360-degree Street View trails, following a DOC collaboration with geospatial teams, local iwi and track staff dating back to 2012.",
+  "url": "/stories/google-changes-the-audience/#imagery-becomes-ordinary-336d16e715",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "recordIds": [
+    "chapter:31",
+    "entity:department-of-conservation",
+    "person:peter-hiemstra",
+    "person:matt-jenke",
+    "person:riki-mules",
+    "person:cynthia-wei",
+    "person:steven-silverman",
+    "person:john-key",
+    "person:lou-sanson",
+    "person:christopher-luxon"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "conservation",
+    "mass-market"
+  ],
+  "sources": [
+    {
+      "label": "Department of Conservation, The Great Walks on Google Maps, 6 November 2015",
+      "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+    },
+    {
+      "label": "Google New Zealand, Take a walk on the wild side with Street View in New Zealand, 4 November 2015",
+      "url": "https://blog.google/intl/en-nz/products/2015_11_take-walk-on-wild-side-with-street-view/"
+    }
+  ]
+}

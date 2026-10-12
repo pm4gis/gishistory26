@@ -1,0 +1,16 @@
+{
+  "id": "relationship:google-nz-name-peter-hiemstra",
+  "a": "person:peter-hiemstra",
+  "b": "chapter:31",
+  "label": "Documented contributor or participant",
+  "basis": "DOC GIS analyst who accompanied the Google Street View Trekker on most of the Great Walks and photographed fieldwork.",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "sources": [
+    {
+      "label": "DOC, The Great Walks on Google Maps, 6 November 2015",
+      "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+    }
+  ]
+}
