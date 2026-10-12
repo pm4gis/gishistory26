@@ -21,7 +21,10 @@
     "person:john-quinn",
     "system:clues-catchment-gis",
     "person:sandy-elliott",
-    "dataset:rec"
+    "dataset:rec",
+    "system:niwa-topnet-national-2008",
+    "system:niwa-rotan-2008",
+    "entity:gns-science"
   ],
   "blocks": [
     {
@@ -92,6 +95,18 @@
       "id": "research-cri-multiagency-catchments-2004"
     },
     {
+      "id": "research-niwa-stage1-toolbox-2004",
+      "type": "paragraph",
+      "text": "NIWA's August 2004 Stage I report preserves the actual early GIS application. Ude Shankar and Jochen Schmidt worked on the GIS and modelling framework alongside project leader Ross Woods and SPARROW researcher Sandy Elliott. The team had created a Water Quality Modelling Toolbox inside ArcGIS, with controls for selecting a downstream river reach and a catchment study area. A connected SPARROW model could produce a colour-coded nitrogen-load map for the Waikato catchment; the report illustrates the interface in Figures 5-2 to 5-5. At this stage SPARROW was running, while several links to OVERSEER, SPASMO and EnSus were still being developed. The original report is a contemporary screenshot record of the system in use, and should be distinguished from later CLUES releases.",
+      "markdown": "NIWA's August 2004 Stage I report preserves the actual early GIS application. Ude Shankar and Jochen Schmidt worked on the GIS and modelling framework alongside project leader Ross Woods and SPARROW researcher Sandy Elliott. The team had created a Water Quality Modelling Toolbox inside ArcGIS, with controls for selecting a downstream river reach and a catchment study area. A connected SPARROW model could produce a colour-coded nitrogen-load map for the Waikato catchment; the report illustrates the interface in Figures 5-2 to 5-5. At this stage SPARROW was running, while several links to OVERSEER, SPASMO and EnSus were still being developed. The original report is a contemporary screenshot record of the system in use, and should be distinguished from later CLUES releases.",
+      "sources": [
+        {
+          "label": "NIWA, Woods et al., Predicting the effects of land use on water quality, Stage I, report CHC2004-097 (August 2004), pp. 7–10",
+          "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+        }
+      ]
+    },
+    {
       "type": "paragraph",
       "id": "research-clues-working-gis-2008",
       "text": "The multi-institute modelling programme produced a usable system called CLUES, Catchment Land Use for Environmental Sustainability. A later technical account dates its first release to 2005, while the July 2008 iEMSs paper describes the developed ArcGIS application and an early analysis of catchments at risk from nitrate sources. SPARROW modelled the river network and nutrient transport; OVERSEER and SPASMO contributed farm and horticultural nutrient estimates. A purpose-built control panel within ArcGIS handled catchment and reach selections, model runs, land-use scenarios and map or table output. By August 2009 a published evaluation recorded that regional council staff had been trained to use CLUES. Those dated accounts establish development, application and training beyond the proposed decision-support system described in the original 2004–2006 reports. Later ArcMap packages and newer model inputs belong to subsequent versions.",
@@ -108,6 +123,30 @@
         {
           "label": "CLUES initial release date, retrospectively described in 2016 technical paper",
           "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
+        }
+      ]
+    },
+    {
+      "id": "research-niwa-topnet-national-2008",
+      "type": "paragraph",
+      "text": "NIWA's hydrological work took a national turn by March 2008. Ross Woods and colleagues redeveloped TopNet to simulate river flow across New Zealand, including catchments without long flow-gauge records. The published account calls it the country's first national-scale water-resource simulation model and describes the resulting detailed national water-resource map. It joined rainfall estimates, climate modelling and river-network geography to examine water availability, changes in land use and hydroelectric generation. This was a river-flow and water-quantity programme, separate from the nutrient-loading questions addressed through CLUES.",
+      "markdown": "NIWA's hydrological work took a national turn by March 2008. Ross Woods and colleagues redeveloped TopNet to simulate river flow across New Zealand, including catchments without long flow-gauge records. The published account calls it the country's first national-scale water-resource simulation model and describes the resulting detailed national water-resource map. It joined rainfall estimates, climate modelling and river-network geography to examine water availability, changes in land use and hydroelectric generation. This was a river-flow and water-quantity programme, separate from the nutrient-loading questions addressed through CLUES.",
+      "sources": [
+        {
+          "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+          "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+        }
+      ]
+    },
+    {
+      "id": "research-niwa-rotan-2008",
+      "type": "paragraph",
+      "text": "A second NIWA model addressed nitrogen travelling from land to lakes. In March 2008 NIWA described ROTAN, a GIS-based model that could display mapped flow and nutrient-delivery pathways, estimate quantities and delays in catchment reaches and test different land-use and riparian-planting scenarios. It was being applied in the Rotorua catchment for Environment Bay of Plenty with GNS Science, and at Taupō in research involving AgResearch, Lincoln Ventures and GNS Science. Its outputs connected historical fertiliser and stocking information with spatial hydrology. The contemporary account describes work under way, rather than a nationwide public software release.",
+      "markdown": "A second NIWA model addressed nitrogen travelling from land to lakes. In March 2008 NIWA described ROTAN, a GIS-based model that could display mapped flow and nutrient-delivery pathways, estimate quantities and delays in catchment reaches and test different land-use and riparian-planting scenarios. It was being applied in the Rotorua catchment for Environment Bay of Plenty with GNS Science, and at Taupō in research involving AgResearch, Lincoln Ventures and GNS Science. Its outputs connected historical fertiliser and stocking information with spatial hydrology. The contemporary account describes work under way, rather than a nationwide public software release.",
+      "sources": [
+        {
+          "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+          "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
         }
       ]
     },

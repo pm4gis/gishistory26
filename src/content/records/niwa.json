@@ -9,7 +9,8 @@
   "story": [
     "NIWA used geographic information in freshwater, marine and atmospheric research. Its DASmap work connects a research organisation with Integrated Mapping and early web delivery. The wider history includes mapped scientific observations and services whose requirements extended beyond conventional land-based mapping.",
     "NIWA developed the River Environment Classification for the Ministry for the Environment, which launched it in Wellington on 22 March 2004. The hierarchy classified river sections using catchment climate, topography, geology and land cover, followed by stream order and valley landform. Maps at about 1:50,000 provided a spatial framework for regional planning and environmental reporting. NIWA worked with regional councils on water-quality and water-quantity case studies; Ton Snelder documented the programme in Freshwater Update.",
-    "Don Robertson and Mary de Winton’s September 2004 account described the completed Freshwater Biodata Information System, partly funded through DOC’s TFBIS programme. It integrated fish, invertebrate, aquatic-plant and other biological records, searchable by organism, sampling attributes, catchment, river reach or map polygon. They distinguished this working data service from Freshwater Information New Zealand, then still under development. FINZ was intended to use the River Environment Classification to connect biological and environmental data with enhanced web mapping."
+    "Don Robertson and Mary de Winton’s September 2004 account described the completed Freshwater Biodata Information System, partly funded through DOC’s TFBIS programme. It integrated fish, invertebrate, aquatic-plant and other biological records, searchable by organism, sampling attributes, catchment, river reach or map polygon. They distinguished this working data service from Freshwater Information New Zealand, then still under development. FINZ was intended to use the River Environment Classification to connect biological and environmental data with enhanced web mapping.",
+    "In 2008 NIWA publicly documented two separate catchment GIS modelling efforts. Ross Woods and colleagues had redeveloped TopNet for national river-flow and water-availability estimates. The GIS-based ROTAN system mapped nutrient routing and land-use scenarios for the Rotorua and Taupō catchments with GNS Science and agricultural research partners. Their 18 March 2008 accounts preserve the distinction between water quantity and nitrogen transport."
   ],
   "sources": [
     {
@@ -23,6 +24,14 @@
     {
       "label": "Don Robertson and Mary de Winton, FBIS: a new freshwater biodata information system, 1 September 2004",
       "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    },
+    {
+      "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+    },
+    {
+      "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
     }
   ],
   "aliases": [
@@ -48,7 +57,27 @@
         "label": "Don Robertson and Mary de Winton, FBIS: a new freshwater biodata information system, 1 September 2004",
         "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
       }
+    ],
+    [
+      {
+        "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+      },
+      {
+        "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+      }
     ]
   ],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [],
+  "contextLinks": [
+    {
+      "label": "TopNet national hydrology",
+      "url": "/systems/niwa-topnet-national-2008/"
+    },
+    {
+      "label": "ROTAN catchment nutrient GIS",
+      "url": "/systems/niwa-rotan-2008/"
+    }
+  ]
 }

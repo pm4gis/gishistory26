@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-models-arcflax-20261012-003",
+  "a": "system:niwa-topnet-national-2008",
+  "b": "entity:niwa",
+  "label": "Developed and publicised national TopNet hydrological model",
+  "basis": "Developed and publicised national TopNet hydrological model. Original supporting source documented in the 2026 research register.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, 'How much water is available?', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/how-much-water-available"
+    }
+  ]
+}

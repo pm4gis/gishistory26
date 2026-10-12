@@ -1,0 +1,30 @@
+{
+  "id": "2008-niwa-rotan-nitrogen-routing",
+  "year": 2008,
+  "startDate": "2008-03-18",
+  "dateDisplay": "18 March 2008",
+  "datePrecision": "day",
+  "label": "NIWA reports Rotorua and Taupō ROTAN GIS research",
+  "summary": "ROTAN used GIS to model nitrogen routing and changes in land use in two lake catchments with CRI and council collaborators.",
+  "recordIds": [
+    "system:niwa-rotan-2008",
+    "entity:niwa",
+    "entity:agresearch",
+    "entity:gns-science"
+  ],
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+    }
+  ],
+  "url": "/timeline/",
+  "themeIds": [],
+  "categories": [
+    "Historical GIS",
+    "CRI research"
+  ]
+}

@@ -12,7 +12,8 @@
     "entity:crown-forestry-rental-trust",
     "person:duane-wilkins",
     "system:cfrt-treaty-3d-mapping-2004",
-    "system:cfrt-inquiry-mapbooks-2005"
+    "system:cfrt-inquiry-mapbooks-2005",
+    "system:arcflax-northland-2007"
   ],
   "blocks": [
     {
@@ -49,6 +50,22 @@
         }
       ],
       "id": "research-cri-arcflax-2006"
+    },
+    {
+      "id": "research-arcflax-northland-five-discs-2007",
+      "type": "paragraph",
+      "text": "A separate Tribunal archival record gives a clearer view of another ArcFlax package. The Te Paparahi o Te Raki inquiry register lists an ArcFlax 1.0 Northland two-dimensional and three-dimensional GIS viewer, dated January 2007 and held as five discs under entry A045. Its documented material includes Crown purchase maps, Old Land Claims, Native Land Court blocks and other historical map images. The register records the package as supplied by the Crown Forestry Rental Trust in December 2013. This Northland edition follows the catalogued 2006 Whanganui 'Edition 2.0' in calendar time, which shows why edition numbers cannot be treated as a single national release sequence. The five-disc record is evidence of geographic coverage and map categories, but its internal project files have not been inspected.",
+      "markdown": "A separate Tribunal archival record gives a clearer view of another ArcFlax package. The Te Paparahi o Te Raki inquiry register lists an ArcFlax 1.0 Northland two-dimensional and three-dimensional GIS viewer, dated January 2007 and held as five discs under entry A045. Its documented material includes Crown purchase maps, Old Land Claims, Native Land Court blocks and other historical map images. The register records the package as supplied by the Crown Forestry Rental Trust in December 2013. This Northland edition follows the catalogued 2006 Whanganui 'Edition 2.0' in calendar time, which shows why edition numbers cannot be treated as a single national release sequence. The five-disc record is evidence of geographic coverage and map categories, but its internal project files have not been inspected.",
+      "sources": [
+        {
+          "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+          "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+        },
+        {
+          "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
+          "url": "https://natlib.govt.nz/records/30673810"
+        }
+      ]
     },
     {
       "type": "paragraph",

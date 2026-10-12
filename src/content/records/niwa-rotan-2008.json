@@ -1,0 +1,46 @@
+{
+  "id": "system:niwa-rotan-2008",
+  "slug": "niwa-rotan-2008",
+  "name": "ROTAN nitrogen-routing GIS for Rotorua and Taupō (2008)",
+  "kind": "Project",
+  "category": "Historical GIS systems and research",
+  "url": "/systems/niwa-rotan-2008/",
+  "description": "NIWA GIS catchment model of nitrogen pathways and land-use-change scenarios, documented as being applied in 2008.",
+  "story": [
+    "NIWA's March 2008 account describes ROTAN as a new GIS-based model of nutrient movement from rural land to waterways. It could display flow and nitrogen-delivery pathways, amounts, delays and losses by catchment component, along with tables and graphs of historic land use, fertiliser, stock and rainfall conditions.",
+    "At the time of publication, ROTAN was being applied in the Rotorua catchment for Environment Bay of Plenty in collaboration with GNS Science, and at Lake Taupō as part of research involving AgResearch, Lincoln Ventures and GNS Science. The record supports named collaborations and applications in progress; it does not establish a publicly distributed product or completed predictions for all catchments."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Catchment monitoring chapter",
+      "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "GNS collaborator",
+      "url": "/entities/gns-science/"
+    }
+  ],
+  "status": "Source-backed historical activity"
+}

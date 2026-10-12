@@ -8,7 +8,8 @@
   "description": "A 2006 Crown Forestry Rental Trust interactive GIS distribution for mapping associated with Treaty research, using Esri ArcReader.",
   "story": [
     "The National Library of New Zealand catalogues ArcFlax Edition 2.0 Whanganui 2006 as an interactive GIS data DVD. The record names Duane Wilkins and the Crown Forestry Rental Trust, identifies Wellington as the place of publication, and specifies ArcReader 9.1. The preserved catalogue is a contemporary bibliographic anchor for the product.",
-    "The DVD format offered a way to give people prepared digital maps and GIS tools without purchasing a full desktop GIS licence. The National Library record establishes the existence and technical format of the Whanganui edition, while other editions and their exact content must be documented separately."
+    "The DVD format offered a way to give people prepared digital maps and GIS tools without purchasing a full desktop GIS licence. The National Library record establishes the existence and technical format of the Whanganui edition, while other editions and their exact content must be documented separately.",
+    "A separate official Waitangi Tribunal inquiry index lists ArcFlax 1.0 Northland, dated January 2007, as a five-disc 2D and 3D GIS viewer with Crown purchases, Old Land Claims and Native Land Court block map material. It is catalogued separately from the Whanganui Edition 2.0 DVD published in 2006. Regional edition identifiers should not be interpreted as a single national version chronology."
   ],
   "sources": [
     {
@@ -18,6 +19,10 @@
     {
       "label": "Crown Forestry Rental Trust, Mapping services",
       "url": "https://cfrt.org.nz/research-activities/"
+    },
+    {
+      "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
     }
   ],
   "paragraphSources": [
@@ -40,6 +45,16 @@
         "label": "Crown Forestry Rental Trust, Mapping services",
         "url": "https://cfrt.org.nz/research-activities/"
       }
+    ],
+    [
+      {
+        "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+        "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
     ]
   ],
   "aliases": [],
@@ -48,6 +63,10 @@
     {
       "label": "National Library archived DVD record",
       "url": "https://natlib.govt.nz/records/30673810"
+    },
+    {
+      "label": "Northland ArcFlax 1.0 five-disc archival entry",
+      "url": "/systems/arcflax-northland-2007/"
     }
   ],
   "status": "Source-backed historical activity"

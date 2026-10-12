@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-models-arcflax-20261012-002",
+  "a": "system:arcflax-northland-2007",
+  "b": "system:arcflax-whanganui-2006",
+  "label": "Two different documented regional ArcFlax editions",
+  "basis": "Two different documented regional ArcFlax editions. Original supporting source documented in the 2026 research register.",
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "sources": [
+    {
+      "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+    }
+  ]
+}
