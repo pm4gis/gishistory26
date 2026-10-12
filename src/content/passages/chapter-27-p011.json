@@ -4,7 +4,7 @@
   "articleId": "article:chapter-27",
   "title": "From public maps to controlled operational data",
   "order": 10,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:27",
@@ -29,7 +29,12 @@
       "type": "paragraph",
       "text": "The official response account credits Duane Wilkins with developing a support website and map-based tools for Māori and Pacific communities and NGOs. The Manaaki design described below explains how the tools connected field reporting with shared GIS services.",
       "markdown": "The official response account credits Duane Wilkins with developing a support website and map-based tools for Māori and Pacific communities and NGOs. The Manaaki design described below explains how the tools connected field reporting with shared GIS services.",
-      "sources": [],
+      "sources": [
+        {
+          "label": "Public Service Commission, Public Service Day Awards 2020: Duane Wilkins",
+          "url": "https://www.publicservice.govt.nz/role-and-purpose/spirit-of-service/public-service-day-awards/public-service-day-2020"
+        }
+      ],
       "id": "ch27-s11-p03"
     }
   ],
