@@ -1,0 +1,28 @@
+{
+  "id": "1976-stratford-land-inventory-soil-maps",
+  "dateDisplay": "1976",
+  "startDate": "1976",
+  "datePrecision": "year",
+  "year": 1976,
+  "label": "Stratford land-inventory soil mapping documented",
+  "summary": "A 1976 Stratford land-inventory soils sheet documents the detailed thematic mapping used in land assessment. The published map is an example of the source material underpinning later digital land inventories.",
+  "url": "/stories/mapping-land-as-data/#field-mapping-2177212399",
+  "passageIds": [
+    "passage:chapter-7-2177212399"
+  ],
+  "recordIds": [
+    "chapter:7"
+  ],
+  "categories": [
+    "land inventory",
+    "soils",
+    "land assessment"
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, historical soil survey: Land Inventory Survey, Stratford, Soils (1976)",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    }
+  ],
+  "themeIds": []
+}

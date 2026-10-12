@@ -1,0 +1,28 @@
+{
+  "id": "1974-west-coast-primary-triangulation",
+  "dateDisplay": "1974",
+  "startDate": "1974",
+  "datePrecision": "year",
+  "year": 1974,
+  "label": "West Coast primary triangulation extends the national survey network",
+  "summary": "Surveyors extended first-order triangulation across the north-west of the South Island using helicopters and electromagnetic distance measurement. Te Ara records that the extension was completed in two months.",
+  "url": "/stories/coordinates-enter-the-computer/#geodetic-adjustment-d29b3d5200",
+  "passageIds": [
+    "passage:chapter-2-d29b3d5200"
+  ],
+  "recordIds": [
+    "chapter:2"
+  ],
+  "categories": [
+    "survey",
+    "geodesy",
+    "measurement"
+  ],
+  "sources": [
+    {
+      "label": "Te Ara, Mapping and surveying 1950–1980: West Coast primary triangulation",
+      "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/page-4"
+    }
+  ],
+  "themeIds": []
+}

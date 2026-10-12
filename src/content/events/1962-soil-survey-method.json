@@ -1,0 +1,32 @@
+{
+  "id": "1962-soil-survey-method",
+  "dateDisplay": "1962",
+  "startDate": "1962",
+  "datePrecision": "year",
+  "year": 1962,
+  "label": "Soil Survey Method standardises field descriptions",
+  "summary": "N. H. Taylor and I. J. Pohlen published Soil Survey Method, a New Zealand handbook setting common descriptions and mapping practices for soil surveyors. It supplied standards for information later brought into land-use capability inventories.",
+  "url": "/stories/mapping-land-as-data/#field-mapping-2177212399",
+  "passageIds": [
+    "passage:chapter-7-2177212399"
+  ],
+  "recordIds": [
+    "chapter:7"
+  ],
+  "categories": [
+    "soils",
+    "land assessment",
+    "field mapping"
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, history of New Zealand soil survey",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    },
+    {
+      "label": "Manaaki Whenua, legacy soil classification systems and 1962 publication",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-classification/legacy-systems"
+    }
+  ],
+  "themeIds": []
+}
