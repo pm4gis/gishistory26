@@ -5,7 +5,7 @@ import {PALETTE_ORDER,PALETTE_NAMES,PALETTE_TOKENS} from '../lib/appearance.mjs'
 const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
 const contributionHref=siteContributionMailtoUrl();
-const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id],dark:PALETTE_TOKENS[id].dark,light:PALETTE_TOKENS[id].light}));
+const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof PALETTE_NAMES],dark:PALETTE_TOKENS[id].dark,light:PALETTE_TOKENS[id].light}));
 ---
 <!doctype html>
 <html lang="en-NZ">
@@ -105,7 +105,7 @@ const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id],dark:PALETTE_TO
    root.dataset.palette=choice.palette;
    root.dataset.appearance=scheme;
    root.style.colorScheme=scheme;
-   if(toggle)toggle.setAttribute('aria-label','Appearance settings: '+PALETTE_NAMES[choice.palette]+', '+choice.mode+'. Open settings');
+   if(toggle)toggle.setAttribute('aria-label','Appearance settings: '+PALETTE_NAMES[choice.palette as keyof typeof PALETTE_NAMES]+', '+choice.mode+'. Open settings');
    document.querySelectorAll<HTMLButtonElement>('[data-appearance-mode]').forEach(button=>{
     button.setAttribute('aria-pressed',String(button.dataset.appearanceMode===choice.mode));
    });
