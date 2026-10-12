@@ -57,6 +57,22 @@
     },
     {
       "type": "paragraph",
+      "id": "research-google-trekker-great-walks-capture-2013",
+      "text": "DOC's partnership with Google took Street View beyond roads. In August 2013 Google announced that its wearable Trekker camera was beginning to capture the Abel Tasman Coast and Heaphy tracks, where a Street View vehicle could not travel. The camera system was carried by a person walking the tracks. DOC's 2014 annual report also recorded its work on Great Walks imagery and on supplying recreational data for Google Maps and HERE basemaps. This was a practical use of DOC's geographical information and field knowledge in widely used consumer services.",
+      "markdown": "DOC's partnership with Google took Street View beyond roads. In August 2013 Google announced that its wearable Trekker camera was beginning to capture the Abel Tasman Coast and Heaphy tracks, where a Street View vehicle could not travel. The camera system was carried by a person walking the tracks. DOC's 2014 annual report also recorded its work on Great Walks imagery and on supplying recreational data for Google Maps and HERE basemaps. This was a practical use of DOC's geographical information and field knowledge in widely used consumer services.",
+      "sources": [
+        {
+          "label": "Google New Zealand, Street View Trekker takes on the Abel Tasman and Heaphy Tracks, 18 August 2013",
+          "url": "https://blog.google/intl/en-nz/products/2013_08_street-view-trekker-takes-on-abe/"
+        },
+        {
+          "label": "Department of Conservation, Annual Report for the year ended 30 June 2014, p. 76",
+          "url": "https://www.doc.govt.nz/globalassets/documents/about-doc/annual-reports/annual-report-2014/doc-annual-report-2014.pdf"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
       "id": "research-nz-christchurch-historical-street-view-2014",
       "text": "On 23 April 2014 Google made historical Street View imagery available to compare Christchurch streets before and after the Canterbury earthquakes. Users could select earlier panoramas in Google Maps and inspect changes to buildings, roads and neighbourhoods. Google presented the imagery as a record that residents could use while remembering and rebuilding the city. Unlike a single image background, the successive roadside photographs showed how a place had changed, although only at locations and dates where Google had captured imagery.",
       "markdown": "On 23 April 2014 Google made historical Street View imagery available to compare Christchurch streets before and after the Canterbury earthquakes. Users could select earlier panoramas in Google Maps and inspect changes to buildings, roads and neighbourhoods. Google presented the imagery as a record that residents could use while remembering and rebuilding the city. Unlike a single image background, the successive roadside photographs showed how a place had changed, although only at locations and dates where Google had captured imagery.",
@@ -64,6 +80,22 @@
         {
           "label": "Google New Zealand, Preserving Christchurch's history to help Cantabrians remember, plan, and rebuild, 23 April 2014",
           "url": "https://blog.google/intl/en-nz/products/2014_04_preserving-christchurchs-history-to/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "research-google-doc-seven-great-walks-street-view-2015",
+      "text": "In November 2015 Google released Street View panoramas of seven DOC Great Walks: Rakiura, Milford, Heaphy, Lake Waikaremoana, Routeburn, Kepler and Abel Tasman Coast. DOC reported that planning and fieldwork had begun in 2012, involving local iwi, its geospatial and marketing teams, and staff who knew the tracks. GIS analyst Peter Hiemstra accompanied the Trekker on most of the walks. DOC's account names Matt Jenke as the Trekker operator and Riki Mules as an iwi representative on the Routeburn. The panoramas let overseas visitors preview remote tracks and gave trampers another way to examine the route before travelling. These were walking-track panoramas published through Google Maps and Street View, distinct from overhead Google Earth imagery.",
+      "markdown": "In November 2015 Google released Street View panoramas of seven DOC Great Walks: Rakiura, Milford, Heaphy, Lake Waikaremoana, Routeburn, Kepler and Abel Tasman Coast. DOC reported that planning and fieldwork had begun in 2012, involving local iwi, its geospatial and marketing teams, and staff who knew the tracks. GIS analyst Peter Hiemstra accompanied the Trekker on most of the walks. DOC's account names Matt Jenke as the Trekker operator and Riki Mules as an iwi representative on the Routeburn. The panoramas let overseas visitors preview remote tracks and gave trampers another way to examine the route before travelling. These were walking-track panoramas published through Google Maps and Street View, distinct from overhead Google Earth imagery.",
+      "sources": [
+        {
+          "label": "Department of Conservation, The Great Walks on Google Maps, 6 November 2015",
+          "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+        },
+        {
+          "label": "Google New Zealand, Take a walk on the wild side with Street View in New Zealand, 4 November 2015",
+          "url": "https://blog.google/intl/en-nz/products/2015_11_take-walk-on-wild-side-with-street-view/"
         }
       ]
     }

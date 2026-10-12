@@ -1,0 +1,33 @@
+{
+  "id": "2013-doc-google-street-view-trekker-great-walks",
+  "dateDisplay": "18 August 2013",
+  "startDate": "2013-08-18",
+  "datePrecision": "day",
+  "year": 2013,
+  "label": "DOC and Google begin Street View Trekker coverage of Great Walks",
+  "summary": "Google announced the first New Zealand Trekker expedition with DOC, capturing 360-degree imagery on the Abel Tasman Coast and Heaphy tracks. DOC's 2014 annual report recorded the wider Google Maps recreation-data collaboration.",
+  "url": "/stories/google-changes-the-audience/#imagery-becomes-ordinary-336d16e715",
+  "passageIds": [
+    "passage:chapter-31-336d16e715"
+  ],
+  "recordIds": [
+    "chapter:31",
+    "entity:department-of-conservation"
+  ],
+  "themeIds": [],
+  "categories": [
+    "web",
+    "conservation",
+    "mass-market"
+  ],
+  "sources": [
+    {
+      "label": "Google New Zealand, Street View Trekker takes on the Abel Tasman and Heaphy Tracks, 18 August 2013",
+      "url": "https://blog.google/intl/en-nz/products/2013_08_street-view-trekker-takes-on-abe/"
+    },
+    {
+      "label": "Department of Conservation, Annual Report for the year ended 30 June 2014, p. 76",
+      "url": "https://www.doc.govt.nz/globalassets/documents/about-doc/annual-reports/annual-report-2014/doc-annual-report-2014.pdf"
+    }
+  ]
+}

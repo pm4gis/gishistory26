@@ -521,7 +521,7 @@
   "src/content/passages/chapter-31-p005.json": "96bfe3054d7032a5a8bc3c42deb5999228b4d12de1e22e53e1caa1526dd548b5",
   "src/content/passages/chapter-31-p006.json": "5d14daeff2a7e14db4d32fa273a4eb98d2d26ad4f945fba316e2d78a1499bc91",
   "src/content/passages/chapter-31-p007.json": "e562aca77aa046feeef121289474c0757d4d506e0b0c9de52720af277151e3e0",
-  "src/content/passages/chapter-31-p008.json": "d4f5e1850d76348e48a1340a124b24a6cf513c7c6a6e29754044d3af0660f7ee",
+  "src/content/passages/chapter-31-p008.json": "b875b266df9f95272aea7c6adc0472503bb44d603aceaaa8d8336ab1619d3ce7",
   "src/content/passages/chapter-31-p009.json": "0e6ba2880b5810eae8bed5a4cb35a11098d1047c08c0c3f4add632bf28574973",
   "src/content/passages/chapter-31-p010.json": "9eb7d4526b39d9ff617c48e812792ed35cad5c6f661a84937d083452257512b9",
   "src/content/passages/chapter-31-p011.json": "23659a6e577a6daf10f0dbf92c99d6835ff38df96a1b06749ebeaf2d8ff03d5b",
@@ -4133,5 +4133,7 @@
   "src/content/events/2011-canterbury-cordon-google-earth-kml.json": "a94655f8153df0a2b5deec1b5a689f6058cff8377c09468a22e46477b1990fb6",
   "src/content/events/2012-google-earth-outreach-aotearoa.json": "6c8798215cb48369f37256339f7e45abf2d1062e9264313c5df0522abe691e28",
   "src/content/events/2014-historical-street-view-christchurch.json": "5f14dced5f3ad71e343f7300e1b5c105c4b0b3a602e2f8d24d8d80e3c95f3975",
-  "src/content/events/2019-map-my-waahi-google-earth-lower-hutt.json": "728a4bc9ec608fb06d9fdeae082d2c43b9ec6057d33f54fb2cf7dea8c322cf8a"
+  "src/content/events/2019-map-my-waahi-google-earth-lower-hutt.json": "728a4bc9ec608fb06d9fdeae082d2c43b9ec6057d33f54fb2cf7dea8c322cf8a",
+  "src/content/events/2013-doc-google-street-view-trekker-great-walks.json": "c6f9ae62769e60cbbdd48adb156e382a499e51ff1a8b7c145c80eaa9127d9db5",
+  "src/content/events/2015-doc-google-seven-great-walks-street-view.json": "c1591efdbfad866939af74c3b08ed08bd7c3eabcb8452aa476178fa16feade57"
 }
