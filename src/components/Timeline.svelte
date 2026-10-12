@@ -12,6 +12,8 @@
  let includeUndated=true;
  let zoom=1;
  let hoveredId='';
+ let activeDecade:number|null=null;
+ let activeFiveYearStart:number|null=null;
  const maxZoom=12;
  const year=(event:any):number|null=>{
   if(event.datePrecision==='unknown')return null;
@@ -47,7 +49,9 @@
  $: ticks=scale.ticks(7);
  $: periodGroups=[...new Set(dated.map(e=>Math.floor((year(e)??0)/10)*10))].sort((a,b)=>a-b).map(y=>({year:y,count:dated.filter(e=>Math.floor((year(e)??0)/10)*10===y).length}));
  $: densityMax=Math.max(1,...periodGroups.map(x=>x.count));
- $: selectedPeriod=from&&to&&Number.isFinite(Number(from))&&Number(to)===Number(from)+9?Number(from):null;
+ $: fiveYearGroups=activeDecade===null?[]:[activeDecade,activeDecade+5].filter(start=>start<=max).map(start=>{const end=Math.min(start+4,max);const count=dated.filter(e=>{const y=year(e) as number;const finish=endYear(e)??y;return finish>=start&&y<=end;}).length;return {start,end,count};});
+ $: fiveYearDensityMax=Math.max(1,...fiveYearGroups.map(x=>x.count));
+ $: selectedPeriod=activeDecade??(from&&to&&Number.isFinite(Number(from))&&Number(to)===Number(from)+9?Number(from):null);
  $: baseChartMarks=(()=>{
   const lanes=new Map<number,number>();
   return filtered.filter(e=>{
@@ -77,18 +81,20 @@
  }
  function pick(e:any){selected=e;onSelect(e);if(!compact)updateURL(e.id)}
  function markerKeydown(event:KeyboardEvent,e:any){if(event.key==='Enter'||event.key===' '){event.preventDefault();pick(e)}}
- function resetDateFilter(){selected=null;zoom=1;updateURL()}
+ function resetDateFilter(){activeDecade=null;activeFiveYearStart=null;selected=null;zoom=1;updateURL()}
  function zoomIn(){zoom=Math.min(maxZoom,Number((zoom+0.5).toFixed(2)));updateURL(selected?.id)}
  function zoomOut(){zoom=Math.max(1,Number((zoom-0.5).toFixed(2)));updateURL(selected?.id)}
  function resetZoom(){zoom=1;updateURL(selected?.id)}
- function decade(y:number){from=String(y);to=String(y+9);includeUndated=false;selected=null;zoom=1;updateURL()}
- function clearFilters(){from='';to='';term='';includeUndated=true;selected=null;zoom=1;updateURL()}
+ function chooseFiveYear(start:number){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start;from=String(start);to=String(Math.min(start+4,max));includeUndated=false;selected=null;zoom=1;updateURL()}
+ function decade(y:number){chooseFiveYear(y)}
+ function clearFilters(){activeDecade=null;activeFiveYearStart=null;from='';to='';term='';includeUndated=true;selected=null;zoom=1;updateURL()}
  function yearLabel(value:number){return String(Math.floor(value))}
  onMount(()=>{
   if(!compact){
    const p=new URLSearchParams(location.search);
    from=p.get('from')||'';
    to=p.get('to')||'';
+   if(from&&to&&Number.isFinite(Number(from))&&Number.isFinite(Number(to))){const start=Number(from);const finish=Number(to);if(finish===start+4&&(start%10===0||start%10===5)){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start}else if(finish===start+9&&start%10===0){activeDecade=start}}
    term=p.get('q')||'';
    includeUndated=p.get('undated')!=='0';
    const requestedZoom=Number(p.get('zoom'));
@@ -100,12 +106,19 @@
 </script>
 <section class="timeline-box" aria-label="Linked timeline"><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?'This chapter in time':'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
  {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max="2100" bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max="2100" bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={updateURL}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
- <div class="period-head"><h2>Choose a decade</h2><p>Move from left to right through the history. Select a decade to focus the events below.</p></div>
- <nav class="period-nav" aria-label="Timeline decades">
+ <div class="period-head"><h2>{activeDecade===null?'Choose a decade':`Choose a five-year period in the ${activeDecade}s`}</h2><p>{activeDecade===null?'Move from left to right through the history. Select a decade to focus the events below.':'The timeline is focused on a five-year span. Choose the first or second half of this decade.'}</p></div>
+ <nav class="period-nav" aria-label={activeDecade===null?'Timeline decades':'Five-year timeline periods'}>
+ {#if activeDecade===null}
  <button class="period-choice" class:active={!from&&!to} aria-pressed={!from&&!to} on:click={clearFilters}><strong>All years</strong><span>{dated.length} dated events</span></button>
  {#each periodGroups as group}
  <button class="period-choice" class:active={selectedPeriod===group.year} aria-pressed={selectedPeriod===group.year} on:click={()=>decade(group.year)}><strong>{group.year}s</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/densityMax*100)+'%'}></i></button>
- {/each}</nav>{/if}
+ {/each}
+ {:else}
+ <button class="period-choice" on:click={clearFilters}><strong>All years</strong><span>Back to decade selection</span></button>
+ {#each fiveYearGroups as group}
+ <button class="period-choice" class:active={activeFiveYearStart===group.start} aria-pressed={activeFiveYearStart===group.start} on:click={()=>chooseFiveYear(group.start)}><strong>{group.start}–{group.end}</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/fiveYearDensityMax*100)+'%'}></i></button>
+ {/each}
+ {/if}</nav>{/if}
   <div class="timeline-overview-toolbar" aria-label="Timeline overview controls">
   <div><strong>Event date map</strong><span>{chartMarks.length} markers in view · {yearLabel(viewMin)}–{yearLabel(viewMax)}</span></div>
   {#if !compact}<div class="timeline-zoom-controls">
