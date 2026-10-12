@@ -4,10 +4,11 @@
   "articleId": "article:chapter-12",
   "title": "GIS reaches the school classroom",
   "order": 13,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
-    "chapter:12"
+    "chapter:12",
+    "person:duane-wilkins"
   ],
   "blocks": [
     {
