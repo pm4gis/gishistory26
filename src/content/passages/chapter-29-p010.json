@@ -4,10 +4,11 @@
   "articleId": "article:chapter-29",
   "title": "Geospatial capability becomes a programme",
   "order": 9,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
-    "chapter:29"
+    "chapter:29",
+    "person:duane-wilkins"
   ],
   "blocks": [
     {
@@ -36,8 +37,8 @@
     },
     {
       "type": "paragraph",
-      "text": "The 2026 Geospatial Capability Committee membership lists Clay Byrne, Mairéad de Róiste, Geoff O’Malley, Kat Salm, Deanna Teao, Chris Morris, Adrian Patchett, Brendon Robertson, Holden Hohaia, Nathan Heazlewood, Duane Wilkins, Jasmin Callosa-Tarr. LINZ’s geospatial-industry career profiles also name Boris Kirov, Erica Black, Jana Kaeppler, Scott Tansley, Trish Merz.",
-      "markdown": "The 2026 Geospatial Capability Committee membership lists Clay Byrne, Mairéad de Róiste, Geoff O’Malley, Kat Salm, Deanna Teao, Chris Morris, Adrian Patchett, Brendon Robertson, Holden Hohaia, Nathan Heazlewood, Duane Wilkins, Jasmin Callosa-Tarr. LINZ’s geospatial-industry career profiles also name Boris Kirov, Erica Black, Jana Kaeppler, Scott Tansley, Trish Merz.",
+      "text": "The 2026 Geospatial Capability Committee lists Clay Byrne, Mairéad de Róiste, Geoff O’Malley, Kat Salm, Deanna Teao, Chris Morris, Adrian Patchett, Brendon Robertson and Holden Hohaia as members. Its corresponding members include Nathan Heazlewood, Duane Wilkins and Jasmin Callosa-Tarr. LINZ identifies Wilkins as Geospatial Consultant for the Ngā Poutama Matawhenua Practical Māori GIS Mapping Wānanga webinar series. LINZ’s geospatial-industry career profiles also name Boris Kirov, Erica Black, Jana Kaeppler, Scott Tansley and Trish Merz.",
+      "markdown": "The 2026 Geospatial Capability Committee lists Clay Byrne, Mairéad de Róiste, Geoff O’Malley, Kat Salm, Deanna Teao, Chris Morris, Adrian Patchett, Brendon Robertson and Holden Hohaia as members. Its corresponding members include Nathan Heazlewood, Duane Wilkins and Jasmin Callosa-Tarr. LINZ identifies Wilkins as Geospatial Consultant for the Ngā Poutama Matawhenua Practical Māori GIS Mapping Wānanga webinar series. LINZ’s geospatial-industry career profiles also name Boris Kirov, Erica Black, Jana Kaeppler, Scott Tansley and Trish Merz.",
       "sources": [
         {
           "label": "LINZ, Geospatial Capability Committee",
