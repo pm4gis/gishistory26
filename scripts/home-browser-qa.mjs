@@ -114,7 +114,7 @@ try{
      const contrast=await page.evaluate(()=>{
       const element=document.querySelector('.nav--desktop .nav-contribute');
       const style=getComputedStyle(element);
-      function rgb(s){return [...s.matchAll(/[\\d.]+/g)].slice(0,3).map(x=>Number(x[0])/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);}
+      function rgb(s){return [...s.matchAll(/[\d.]+/g)].slice(0,3).map(x=>Number(x[0])/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);}
       const lum=([r,g,b])=>.2126*r+.7152*g+.0722*b;
       const a=lum(rgb(style.color)),b=lum(rgb(style.backgroundColor));
       return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
