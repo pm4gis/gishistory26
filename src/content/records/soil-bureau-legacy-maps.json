@@ -1,0 +1,58 @@
+{
+  "id": "dataset:soil-bureau-legacy-maps",
+  "slug": "soil-bureau-legacy-maps",
+  "name": "New Zealand Soil Bureau legacy soil maps (1932–1989)",
+  "kind": "Dataset",
+  "category": "Historical soil datasets",
+  "url": "/datasets/soil-bureau-legacy-maps/",
+  "description": "Historic soil-survey maps retained and digitised by Manaaki Whenua.",
+  "story": [
+    "Manaaki Whenua records a collection of more than 300 reference soil-map items covering New Zealand and the Pacific, with New Zealand maps published between 1932 and 1989. Scanning and online spatial discovery preserve access to the original classification and mapping work.",
+    "These maps contain the observations and classifications available to the original soil surveyors. The resulting polygons and categories should not be assumed identical to later Fundamental Soil Layers or S-map units."
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, national soil data and legacy map viewer",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-data/new-zealand-soil-data/national"
+    },
+    {
+      "label": "Manaaki Whenua, history of New Zealand soil surveys",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Manaaki Whenua, national soil data and legacy map viewer",
+        "url": "https://soils.landcareresearch.co.nz/topics/soil-data/new-zealand-soil-data/national"
+      },
+      {
+        "label": "Manaaki Whenua, history of New Zealand soil surveys",
+        "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua, national soil data and legacy map viewer",
+        "url": "https://soils.landcareresearch.co.nz/topics/soil-data/new-zealand-soil-data/national"
+      },
+      {
+        "label": "Manaaki Whenua, history of New Zealand soil surveys",
+        "url": "https://soils.landcareresearch.co.nz/topics/soil-survey/history-of-nz-soil-survey"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/mapping-land-as-data/"
+    },
+    {
+      "label": "Manaaki Whenua, national soil data and legacy map viewer",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-data/new-zealand-soil-data/national"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

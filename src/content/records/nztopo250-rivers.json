@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nztopo250-rivers",
+  "slug": "nztopo250-rivers",
+  "name": "NZ River Centrelines (Topo, 1:250,000)",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo250-rivers/",
+  "description": "Generalised river-line features used in the Topo250 map series.",
+  "story": [
+    "Rivers were a major element of survey and topographic compilation long before they became selectable and queryable GIS lines. LINZ publishes a 1:250,000 river-centreline feature layer for its Topo250 map series.",
+    "It provides a smaller-scale representation rather than a complete inventory of every watercourse. Earlier topographic mapping and later vector maintenance have different dates and positional qualities."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ River Centrelines (Topo, 1:250k)",
+      "url": "https://data.linz.govt.nz/layer/50182-nz-river-centrelines-topo-1250k/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ River Centrelines (Topo, 1:250k)",
+        "url": "https://data.linz.govt.nz/layer/50182-nz-river-centrelines-topo-1250k/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ River Centrelines (Topo, 1:250k)",
+        "url": "https://data.linz.govt.nz/layer/50182-nz-river-centrelines-topo-1250k/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ Data Service, NZ River Centrelines (Topo, 1:250k)",
+      "url": "https://data.linz.govt.nz/layer/50182-nz-river-centrelines-topo-1250k/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

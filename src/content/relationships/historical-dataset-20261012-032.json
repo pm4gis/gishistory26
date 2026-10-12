@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-032",
+  "a": "dataset:nz-chart-geotiffs",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Produces chart layers",
+  "basis": "LINZ publishes georeferenced nautical chart image products.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, hydrographic data and chart GeoTIFFs",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+    }
+  ]
+}

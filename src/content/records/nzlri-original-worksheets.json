@@ -1,0 +1,58 @@
+{
+  "id": "dataset:nzlri-original-worksheets",
+  "slug": "nzlri-original-worksheets",
+  "name": "NZLRI first-edition land-resource worksheets (1973–1979)",
+  "kind": "Dataset",
+  "category": "Historical land datasets",
+  "url": "/datasets/nzlri-original-worksheets/",
+  "description": "Paper land-resource inventory worksheets later captured as GIS polygons.",
+  "story": [
+    "The first edition of the New Zealand Land Resource Inventory was surveyed at 1:63,360 between 1973 and 1979, using stereo aerial photographs, existing reference maps and fieldwork. Its worksheets recorded rock, soil, slope, erosion, vegetation and land-use capability for land units.",
+    "Digitising the worksheets turned a national paper inventory into a reusable GIS database. The mapped units from that original survey remain distinct from subsequent regional remapping, corrected geography and revised national capability legends."
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, brief history of LUC and NZLRI",
+      "url": "https://lrp.landcareresearch.co.nz/topics/understanding-luc/brief-history"
+    },
+    {
+      "label": "Manaaki Whenua, development of the LUC layer",
+      "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Manaaki Whenua, brief history of LUC and NZLRI",
+        "url": "https://lrp.landcareresearch.co.nz/topics/understanding-luc/brief-history"
+      },
+      {
+        "label": "Manaaki Whenua, development of the LUC layer",
+        "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua, brief history of LUC and NZLRI",
+        "url": "https://lrp.landcareresearch.co.nz/topics/understanding-luc/brief-history"
+      },
+      {
+        "label": "Manaaki Whenua, development of the LUC layer",
+        "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/from-map-sheets-to-spatial-data/"
+    },
+    {
+      "label": "Manaaki Whenua, brief history of LUC and NZLRI",
+      "url": "https://lrp.landcareresearch.co.nz/topics/understanding-luc/brief-history"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

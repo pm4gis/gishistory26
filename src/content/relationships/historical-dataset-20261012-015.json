@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-015",
+  "a": "dataset:historic-nz-orthophotos-1994-2006",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Commissioned and archives",
+  "basis": "LINZ documents national commissioned orthophoto acquisitions from 1994 to 2006.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, historical aerial imagery: commissioned orthophotos",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+    }
+  ]
+}

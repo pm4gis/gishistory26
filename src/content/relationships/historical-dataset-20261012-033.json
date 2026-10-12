@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-033",
+  "a": "dataset:nz-chart-geotiffs",
+  "b": "dataset:historic-hydrographic-soundings",
+  "label": "Uses related hydrographic evidence",
+  "basis": "Hydrographic survey observations form part of the evidence from which navigational charts are compiled.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, hydrographic data and chart GeoTIFFs",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dataset:digital-cadastral-database",
+  "slug": "digital-cadastral-database",
+  "name": "Digital Cadastral Database (DCDB)",
+  "kind": "Dataset",
+  "category": "Historical cadastral datasets",
+  "url": "/datasets/digital-cadastral-database/",
+  "description": "The national digital cadastral mapping dataset assembled from older record maps from the mid-1980s.",
+  "story": [
+    "LINZ describes the Digital Cadastral Database as its first system containing digitised cadastral records. Cadastral record maps were converted from the mid-1980s, allowing parcel-related spatial information to be worked with electronically rather than solely through paper map sheets.",
+    "The DCDB was later superseded by Landonline. LINZ's recorded district maintenance cutovers from 2000 to 2002 and its conversion documentation are needed when tracing a Landonline feature back to older cadastral geometry."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, historic property databases and DCDB lineage",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, historic property databases and DCDB lineage",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, historic property databases and DCDB lineage",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/the-cadastre-becomes-data/"
+    },
+    {
+      "label": "LINZ, historic property databases and DCDB lineage",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dataset:geological-250k-1959-1973",
+  "slug": "geological-250k-1959-1973",
+  "name": "Geological maps 1:250,000 (1959–1973 editions)",
+  "kind": "Dataset",
+  "category": "Historical geological datasets",
+  "url": "/datasets/geological-250k-1959-1973/",
+  "description": "The earlier regional geological sheet mapping that preceded the QMAP revisions.",
+  "story": [
+    "The national 1:250,000 geological sheets issued between 1959 and 1973 were a major source for later geological interpretation. GNS Science records that these maps needed revision as geological understanding changed, especially after plate-tectonic models became established.",
+    "QMAP, developed during 1995–2012, combined published and unpublished mapping with new field observations and GIS. The earlier editions remain historical datasets in their own right, with boundaries and interpretations appropriate to the period in which they were prepared."
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, 1:250,000 Geological Map programme",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "GNS Science, 1:250,000 Geological Map programme",
+        "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+      }
+    ],
+    [
+      {
+        "label": "GNS Science, 1:250,000 Geological Map programme",
+        "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "GNS Science, 1:250,000 Geological Map programme",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

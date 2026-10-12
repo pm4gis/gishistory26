@@ -1,0 +1,58 @@
+{
+  "id": "dataset:nztopo250-raster",
+  "slug": "nztopo250-raster",
+  "name": "NZ Topo250 georeferenced map sheets",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo250-raster/",
+  "description": "The 1:250,000 national map-sheet images published for use within GIS.",
+  "story": [
+    "LINZ's Topo250 series supplies printed maps and corresponding georeferenced raster images for national and regional use. The LINZ Data Service records a 2011 publication of its raster layer; that service date should be kept separate from the underlying mapping series and the observations on individual sheets.",
+    "The digital sheets retain cartographic symbols and labelling as pixels. They are a separate product from the Topo250 vector features used to produce maps, and from the older national 1:250,000 mapping programmes."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Topo250 Maps",
+      "url": "https://data.linz.govt.nz/layer/50798-nz-topo250-maps/"
+    },
+    {
+      "label": "LINZ, topographic data",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Topo250 Maps",
+        "url": "https://data.linz.govt.nz/layer/50798-nz-topo250-maps/"
+      },
+      {
+        "label": "LINZ, topographic data",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Topo250 Maps",
+        "url": "https://data.linz.govt.nz/layer/50798-nz-topo250-maps/"
+      },
+      {
+        "label": "LINZ, topographic data",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Topo250 Maps",
+      "url": "https://data.linz.govt.nz/layer/50798-nz-topo250-maps/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

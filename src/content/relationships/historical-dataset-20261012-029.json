@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-029",
+  "a": "dataset:meshblock-1991",
+  "b": "entity:stats-nz",
+  "label": "Maintains historical geography",
+  "basis": "Stats NZ publishes the 1991 statistical meshblock geography.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Stats NZ Geographic Data Service, Meshblock 1991 (generalised)",
+      "url": "https://datafinder.stats.govt.nz/layer/95635-meshblock-1991-generalised/"
+    }
+  ]
+}

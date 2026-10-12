@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-002",
+  "a": "dataset:nztopo250-raster",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Publishes map product",
+  "basis": "LINZ distributes the georeferenced Topo250 images.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Topo250 Maps",
+      "url": "https://data.linz.govt.nz/layer/50798-nz-topo250-maps/"
+    }
+  ]
+}

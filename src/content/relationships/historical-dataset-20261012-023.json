@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-023",
+  "a": "dataset:fundamental-soil-layers",
+  "b": "dataset:national-soils-database",
+  "label": "Uses observation data from",
+  "basis": "The source soil observations provide attribute evidence in the fundamental soil layers.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, origin of Fundamental Soil Layers",
+      "url": "https://soils.landcareresearch.co.nz/tools/fsl/origin-of-fsl"
+    }
+  ]
+}

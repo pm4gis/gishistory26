@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-007",
+  "a": "dataset:nztopo250-vector",
+  "b": "dataset:nztopo50-vector",
+  "label": "Generalised from",
+  "basis": "LINZ documents 1:250,000 base data as generalised from its 1:50,000 base.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, accuracy statements and technical information",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+    }
+  ]
+}

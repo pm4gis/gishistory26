@@ -1,0 +1,46 @@
+{
+  "id": "dataset:fundamental-soil-layers",
+  "slug": "fundamental-soil-layers",
+  "name": "New Zealand Fundamental Soil Layers (FSL)",
+  "kind": "Dataset",
+  "category": "Historical soil datasets",
+  "url": "/datasets/fundamental-soil-layers/",
+  "description": "Sixteen national soil-attribute layers derived using NZLRI polygon geometry and earlier soil-profile records.",
+  "story": [
+    "The Fundamental Soil Layers were assembled by linking regional soil evidence and National Soils Database attributes to the mapped polygons of the New Zealand Land Resource Inventory. The product contains 16 physical and chemical soil attributes selected for broad national land-resource assessment.",
+    "Regional soil maps and observations differed in age, scale and detail. Manaaki Whenua warns that FSL estimates can vary in precision and that newer S-map coverage offers improved soil information in the areas where it is available."
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, origin of Fundamental Soil Layers",
+      "url": "https://soils.landcareresearch.co.nz/tools/fsl/origin-of-fsl"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Manaaki Whenua, origin of Fundamental Soil Layers",
+        "url": "https://soils.landcareresearch.co.nz/tools/fsl/origin-of-fsl"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua, origin of Fundamental Soil Layers",
+        "url": "https://soils.landcareresearch.co.nz/tools/fsl/origin-of-fsl"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/mapping-land-as-data/"
+    },
+    {
+      "label": "Manaaki Whenua, origin of Fundamental Soil Layers",
+      "url": "https://soils.landcareresearch.co.nz/tools/fsl/origin-of-fsl"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

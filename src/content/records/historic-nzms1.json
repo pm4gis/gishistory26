@@ -1,0 +1,46 @@
+{
+  "id": "dataset:historic-nzms1",
+  "slug": "historic-nzms1",
+  "name": "NZMS1 one-inch topographic map series",
+  "kind": "Dataset",
+  "category": "Historical source maps",
+  "url": "/datasets/historic-nzms1/",
+  "description": "The former 1:63,360 national topographic sheets, drawn on the North and South Island Yard Grids.",
+  "story": [
+    "The inch-to-the-mile NZMS1 series formed an important pre-digital source of contours, watercourses, roads, place names and landforms. LINZ records that the island yard grids were used for mainland one-inch mapping between 1942 and 1973. These sheets provided a reference for later metric mapping, but the map image and any vector data subsequently captured from it must be distinguished.",
+    "A map sheet records the position and classification of features at the date it was compiled or revised. Its linework does not automatically describe present-day locations, roads or watercourses."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, North and South Island Yard Grids",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/north-and-south-island-yard-grids-niyg-siyg"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, North and South Island Yard Grids",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/north-and-south-island-yard-grids-niyg-siyg"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, North and South Island Yard Grids",
+        "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/north-and-south-island-yard-grids-niyg-siyg"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/what-the-computer-inherited/"
+    },
+    {
+      "label": "LINZ, North and South Island Yard Grids",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/north-and-south-island-yard-grids-niyg-siyg"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

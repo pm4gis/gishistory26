@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-008",
+  "a": "dataset:nztopo50-contours",
+  "b": "dataset:nztopo50-vector",
+  "label": "Feature layer within",
+  "basis": "Contours are a component class in the Topo50 dataset.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Contours (Topo, 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/50768-nz-contours-topo-150k/"
+    }
+  ]
+}

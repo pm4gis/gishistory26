@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nztopo50-contours",
+  "slug": "nztopo50-contours",
+  "name": "NZ Contours (Topo, 1:50,000)",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo50-contours/",
+  "description": "Vector contour lines with elevation values from the national Topo50 feature database.",
+  "story": [
+    "The LINZ contour layer expresses the shape of the land as lines joining points of equal elevation. Contours became a GIS layer that could be queried and analysed separately from the hill shading, symbols and labels of a printed topographic sheet.",
+    "Its digital release belongs to the modern LINZ topographic database. The paper map compilation, field measurements and photogrammetry behind older contours represent earlier stages of the same mapping lineage, with differing accuracy and update dates."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Contours (Topo, 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/50768-nz-contours-topo-150k/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Contours (Topo, 1:50k)",
+        "url": "https://data.linz.govt.nz/layer/50768-nz-contours-topo-150k/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Contours (Topo, 1:50k)",
+        "url": "https://data.linz.govt.nz/layer/50768-nz-contours-topo-150k/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Contours (Topo, 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/50768-nz-contours-topo-150k/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

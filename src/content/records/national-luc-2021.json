@@ -1,0 +1,46 @@
+{
+  "id": "dataset:national-luc-2021",
+  "slug": "national-luc-2021",
+  "name": "National Land Use Capability layer (2021)",
+  "kind": "Dataset",
+  "category": "Historical land datasets",
+  "url": "/datasets/national-luc-2021/",
+  "description": "Nationally correlated LUC polygons drawing on the older NZLRI inventory.",
+  "story": [
+    "The 2021 national Land Use Capability layer retains a direct lineage to the 1970s NZLRI map units and subsequent regional editions. Manaaki Whenua documents a national legend that correlates regional classes while preserving the older LUC codes and descriptions.",
+    "The 2021 update represents a reclassification and data-structure change rather than a fresh national field survey. The source dates of underlying rock, soil, slope, erosion and vegetation observations can be much earlier than the dataset's release date."
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, development of the LUC layer",
+      "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Manaaki Whenua, development of the LUC layer",
+        "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua, development of the LUC layer",
+        "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/mapping-land-as-data/"
+    },
+    {
+      "label": "Manaaki Whenua, development of the LUC layer",
+      "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

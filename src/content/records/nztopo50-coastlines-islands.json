@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nztopo50-coastlines-islands",
+  "slug": "nztopo50-coastlines-islands",
+  "name": "NZ Coastlines and Islands (Topo, 1:50,000)",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo50-coastlines-islands/",
+  "description": "A combined national coastline and island polygon layer assembled from the Topo50 map data.",
+  "story": [
+    "Coastlines first drawn and revised on survey and topographic maps now appear as GIS boundaries and polygons. LINZ combines its Topo50 coast and island component layers, including data for New Zealand's offshore islands, into a published dataset.",
+    "The layer follows the topographic coastline definition of mean high water. It is a cartographic boundary at the source scale, not an assertion that a shoreline has remained fixed since the date of an older survey."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Coastlines and Islands Polygons (Topo 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Coastlines and Islands Polygons (Topo 1:50k)",
+        "url": "https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Coastlines and Islands Polygons (Topo 1:50k)",
+        "url": "https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Coastlines and Islands Polygons (Topo 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

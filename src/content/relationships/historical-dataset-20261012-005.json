@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-005",
+  "a": "dataset:nztopo50-vector",
+  "b": "dataset:nztopo50",
+  "label": "Source data for",
+  "basis": "Topo50 georeferenced map sheets are rendered from the topographic database.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, topographic data",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+    }
+  ]
+}

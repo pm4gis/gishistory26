@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-013",
+  "a": "dataset:crown-aerial-film-library",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Archive custodian",
+  "basis": "LINZ holds and digitised the Crown Aerial Film Library.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, historical aerial imagery",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+    }
+  ]
+}

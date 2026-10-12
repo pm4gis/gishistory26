@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-027",
+  "a": "dataset:digital-cadastral-database",
+  "b": "entity:department-of-survey-and-land-information-dosli",
+  "label": "Developed in DOSLI era",
+  "basis": "DOSLI maintained national digital cadastral mapping after the 1987 agency restructure.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, historic property databases and DCDB lineage",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
+    }
+  ]
+}

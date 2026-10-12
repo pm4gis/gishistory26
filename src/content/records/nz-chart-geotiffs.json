@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-chart-geotiffs",
+  "slug": "nz-chart-geotiffs",
+  "name": "Georeferenced New Zealand nautical chart images",
+  "kind": "Dataset",
+  "category": "Historical marine datasets",
+  "url": "/datasets/nz-chart-geotiffs/",
+  "description": "GIS-compatible raster versions of New Zealand nautical charts.",
+  "story": [
+    "LINZ produces georeferenced GeoTIFF images from official nautical chart products and supplies indexes showing the geographic extent of each chart. The digital map images allow chart content to be displayed alongside other geographic information.",
+    "A chart image is a cartographic product derived from hydrographic surveys and chart compilation. The LINZ Data Service copies are not an authoritative navigation replacement; their updates and currency differ from the official notices and charts used by mariners."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, hydrographic data and chart GeoTIFFs",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, hydrographic data and chart GeoTIFFs",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, hydrographic data and chart GeoTIFFs",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "LINZ, hydrographic data and chart GeoTIFFs",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

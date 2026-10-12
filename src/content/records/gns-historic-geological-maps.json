@@ -1,0 +1,58 @@
+{
+  "id": "dataset:gns-historic-geological-maps",
+  "slug": "gns-historic-geological-maps",
+  "name": "GNS Historic Geological Map Archive",
+  "kind": "Dataset",
+  "category": "Historical geological datasets",
+  "url": "/datasets/gns-historic-geological-maps/",
+  "description": "Scanned and georeferenced geological maps and field sheets reaching back to nineteenth-century surveys.",
+  "story": [
+    "GNS Science preserves thousands of published and unpublished geological maps, field sheets and draft compilations. Many were produced before GIS; later scanning and georeferencing made historical geological observations accessible in a map image service.",
+    "The archive includes competing interpretations made at different times. The scanned maps form historical source evidence and should remain distinct from newer geological units, faults and boundaries interpreted in QMAP."
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, Historic Geological Map Archive",
+      "url": "https://www.gns.cri.nz/data-and-resources/historic-geological-map-archive/"
+    },
+    {
+      "label": "GNS Science, Regional Geological Map Archive and Database",
+      "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "GNS Science, Historic Geological Map Archive",
+        "url": "https://www.gns.cri.nz/data-and-resources/historic-geological-map-archive/"
+      },
+      {
+        "label": "GNS Science, Regional Geological Map Archive and Database",
+        "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+      }
+    ],
+    [
+      {
+        "label": "GNS Science, Historic Geological Map Archive",
+        "url": "https://www.gns.cri.nz/data-and-resources/historic-geological-map-archive/"
+      },
+      {
+        "label": "GNS Science, Regional Geological Map Archive and Database",
+        "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "GNS Science, Historic Geological Map Archive",
+      "url": "https://www.gns.cri.nz/data-and-resources/historic-geological-map-archive/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

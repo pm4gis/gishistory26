@@ -1,0 +1,58 @@
+{
+  "id": "dataset:nztopo50-roads",
+  "slug": "nztopo50-roads",
+  "name": "NZ Road Centrelines (Topo, 1:50,000)",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo50-roads/",
+  "description": "The national topographic road-line layer maintained for Topo50 mapping.",
+  "story": [
+    "Roads that once appeared chiefly as symbols on compiled topographic sheets are maintained as line features in LINZ's Topo50 database. The layer records formed all-weather routes at the mapping scale and supports cartography and GIS applications.",
+    "Topographic road centrelines have a different purpose and lineage from road-addressing data and legal road parcels. Those three datasets should not be merged merely because their lines often occupy the same part of a map."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Road Centrelines (Topo, 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/50329-nz-road-centrelines-topo-150k/"
+    },
+    {
+      "label": "LINZ, getting started with LDS and data origins",
+      "url": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/getting-started-lds"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Road Centrelines (Topo, 1:50k)",
+        "url": "https://data.linz.govt.nz/layer/50329-nz-road-centrelines-topo-150k/"
+      },
+      {
+        "label": "LINZ, getting started with LDS and data origins",
+        "url": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/getting-started-lds"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Road Centrelines (Topo, 1:50k)",
+        "url": "https://data.linz.govt.nz/layer/50329-nz-road-centrelines-topo-150k/"
+      },
+      {
+        "label": "LINZ, getting started with LDS and data origins",
+        "url": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/getting-started-lds"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/roads-addresses-and-property/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Road Centrelines (Topo, 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/50329-nz-road-centrelines-topo-150k/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-009",
+  "a": "dataset:nztopo50-roads",
+  "b": "dataset:nztopo50-vector",
+  "label": "Feature layer within",
+  "basis": "Road centrelines are a component class in the Topo50 dataset.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Road Centrelines (Topo, 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/50329-nz-road-centrelines-topo-150k/"
+    }
+  ]
+}

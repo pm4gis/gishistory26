@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-017",
+  "a": "dataset:gns-historic-geological-maps",
+  "b": "entity:gns-science",
+  "label": "Collection custodian",
+  "basis": "GNS preserves and serves historical geology maps and field sheets.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science, Historic Geological Map Archive",
+      "url": "https://www.gns.cri.nz/data-and-resources/historic-geological-map-archive/"
+    }
+  ]
+}

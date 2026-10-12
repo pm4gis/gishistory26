@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-026",
+  "a": "dataset:national-luc-2021",
+  "b": "dataset:nzlri",
+  "label": "Correlated from",
+  "basis": "The national LUC legend is correlated from NZLRI map units and regional classifications.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, development of the LUC layer",
+      "url": "https://lrp.landcareresearch.co.nz/tools/land-resource-information-system-lris/development-of-a-land-use-capability-layer"
+    }
+  ]
+}

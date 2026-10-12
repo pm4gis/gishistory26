@@ -1,0 +1,46 @@
+{
+  "id": "dataset:historic-hydrographic-soundings",
+  "slug": "historic-hydrographic-soundings",
+  "name": "Historic hydrographic sounding sheets and indexes",
+  "kind": "Dataset",
+  "category": "Historical marine datasets",
+  "url": "/datasets/historic-hydrographic-soundings/",
+  "description": "Archived hydrographic observations, often digitised from paper sounding sheets.",
+  "story": [
+    "The New Zealand Hydrographic Authority holds bathymetric records from surveys and sounding sheets. LINZ reports that much of the older material is available as georeferenced TIFF images of original hardcopy sheets, with GIS indexes helping researchers identify the relevant survey coverage.",
+    "A georeferenced sounding-sheet image preserves the historical measurement context; it is different from a modern interpreted bathymetric grid or nautical chart. LINZ notes that the dataset indexes support discovery while data files may need to be requested separately."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, hydrographic data and bathymetric indexes",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, hydrographic data and bathymetric indexes",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, hydrographic data and bathymetric indexes",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "LINZ, hydrographic data and bathymetric indexes",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

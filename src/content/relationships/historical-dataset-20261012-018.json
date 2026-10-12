@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-018",
+  "a": "dataset:geological-250k-1959-1973",
+  "b": "dataset:qmap-250k",
+  "label": "Earlier geological mapping",
+  "basis": "The pre-QMAP 1:250,000 mapping was revised and reinterpreted through QMAP.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science, 1:250,000 Geological Map programme",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ]
+}

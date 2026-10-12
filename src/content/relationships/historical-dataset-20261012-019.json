@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-019",
+  "a": "dataset:geological-250k-1959-1973",
+  "b": "entity:gns-science",
+  "label": "Recorded by custodian",
+  "basis": "GNS documents the original map dates and later QMAP revisions.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science, 1:250,000 Geological Map programme",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ]
+}

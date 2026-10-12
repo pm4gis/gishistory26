@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-024",
+  "a": "dataset:nzlri-original-worksheets",
+  "b": "dataset:nzlri",
+  "label": "Original survey source for",
+  "basis": "The digitised NZLRI traces its mapping to the original national paper worksheets.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, brief history of LUC and NZLRI",
+      "url": "https://lrp.landcareresearch.co.nz/topics/understanding-luc/brief-history"
+    }
+  ]
+}

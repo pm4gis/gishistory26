@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-028",
+  "a": "dataset:digital-cadastral-database",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Successor data custodian",
+  "basis": "LINZ documents the DCDB conversion into Landonline and district migration dates.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, historic property databases and DCDB lineage",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
+    }
+  ]
+}

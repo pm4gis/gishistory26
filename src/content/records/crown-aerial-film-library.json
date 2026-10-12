@@ -1,0 +1,58 @@
+{
+  "id": "dataset:crown-aerial-film-library",
+  "slug": "crown-aerial-film-library",
+  "name": "Crown Aerial Film Library historical photographs",
+  "kind": "Dataset",
+  "category": "Historical aerial datasets",
+  "url": "/datasets/crown-aerial-film-library/",
+  "description": "Digitised aerial photograph negatives from New Zealand surveys flown between 1936 and 2008.",
+  "story": [
+    "The Crown Aerial Film Library preserves aerial survey photographs originally captured on film for mapping, planning, land management and other work. LINZ records nearly 700,000 negatives from about 7,300 surveys. Scanning between 2014 and 2023 converted the surviving film into digital image files.",
+    "A digitised film frame is a historical image, not automatically an orthophoto. Researchers need its survey number, run, photo identifier and camera information, and often must georeference it before combining it with GIS layers."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, historical aerial imagery",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+    },
+    {
+      "label": "LINZ, Crown Aerial Film Library scanning project",
+      "url": "https://www.linz.govt.nz/our-work/projects/crown-aerial-film-archive-historical-imagery-scanning-project"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, historical aerial imagery",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+      },
+      {
+        "label": "LINZ, Crown Aerial Film Library scanning project",
+        "url": "https://www.linz.govt.nz/our-work/projects/crown-aerial-film-archive-historical-imagery-scanning-project"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, historical aerial imagery",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+      },
+      {
+        "label": "LINZ, Crown Aerial Film Library scanning project",
+        "url": "https://www.linz.govt.nz/our-work/projects/crown-aerial-film-archive-historical-imagery-scanning-project"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/imagery-becomes-infrastructure/"
+    },
+    {
+      "label": "LINZ, historical aerial imagery",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nztopo250-vector",
+  "slug": "nztopo250-vector",
+  "name": "NZTopo 1:250,000 generalised vector database",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo250-vector/",
+  "description": "A smaller-scale geographic database derived from LINZ's 1:50,000 topographic information.",
+  "story": [
+    "LINZ describes its 1:250,000 topographic base data as generalised from the 1:50,000 data. Features are selected and simplified for smaller-scale maps. The database and its Topo250 raster cartography serve different tasks even where the geographic subjects overlap.",
+    "Its lineage runs through the detailed topographic base rather than being a digital copy of every line on a historical quarter-million map. Scale and generalisation affect how accurately its geometry can be compared with older maps."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, accuracy statements and technical information",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, accuracy statements and technical information",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, accuracy statements and technical information",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ, accuracy statements and technical information",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}
