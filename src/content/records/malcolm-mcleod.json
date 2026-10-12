@@ -6,12 +6,17 @@
   "category": "People",
   "url": "/people/malcolm-mcleod/",
   "story": [
-    "In 1994, Harmsworth and Malcolm McLeod documented Gisborne–East Cape land-resource data for GIS, including rock, landform, land-system and soil information."
+    "In 1994, Harmsworth and Malcolm McLeod documented Gisborne–East Cape land-resource data for GIS, including rock, landform, land-system and soil information.",
+    "Malcolm McLeod of Landcare Research co-authored the 2003 Hokianga and Western Kaipara assessment, contributing the soil and land-resource knowledge used in its regional crop maps."
   ],
   "sources": [
     {
       "label": "Chapter 23 · Regional land-resource data, 1993–1994",
       "url": "/stories/councils-build-corporate-gis/"
+    },
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
     }
   ],
   "aliases": [
@@ -19,12 +24,25 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {
         "label": "Chapter 23 · Regional land-resource data, 1993–1994",
         "url": "/stories/councils-build-corporate-gis/"
+      }
+    ],
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
       }
     ]
   ]

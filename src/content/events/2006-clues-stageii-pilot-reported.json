@@ -1,0 +1,44 @@
+{
+  "id": "2006-clues-stageii-pilot-reported",
+  "startDate": "2006",
+  "dateDisplay": "2006",
+  "datePrecision": "year",
+  "year": 2006,
+  "label": "NIWA documents the CLUES Stage II pilot and model inputs",
+  "summary": "The July 2006 Stage II report documented an ArcGIS 8.3/9 scenario toolbox, Environment Waikato pilot testing, integrated SPARROW, OVERSEER and Harris Consulting outputs, partner-only file exchange and data limitations that left SPASMO non-spatial.",
+  "url": "/timeline/",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "recordIds": [
+    "system:multi-cri-catchment-gis-2004",
+    "system:clues-catchment-gis",
+    "entity:niwa",
+    "entity:agresearch",
+    "entity:hortresearch",
+    "entity:manaaki-whenua-landcare-research",
+    "person:ross-woods",
+    "person:david-wheeler",
+    "person:brent-clothier",
+    "person:r-g-gibb"
+  ],
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+    },
+    {
+      "label": "NIWA, Predicting the effects of land use on water quality, Stage I, report CHC2004-097 (August 2004)",
+      "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+    },
+    {
+      "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs 2008",
+      "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+    }
+  ]
+}

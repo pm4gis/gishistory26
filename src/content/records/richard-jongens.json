@@ -1,0 +1,45 @@
+{
+  "id": "person:richard-jongens",
+  "slug": "richard-jongens",
+  "name": "Richard Jongens",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/richard-jongens/",
+  "story": [
+    "Richard Jongens co-authored the 2003 Active Faults Database data dictionary and the GNS 2004 description of its public query service."
+  ],
+  "sources": [
+    {
+      "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+      "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+    },
+    {
+      "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+      "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
+    }
+  ],
+  "aliases": [
+    "Richard Jongens"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+        "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+      },
+      {
+        "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+        "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "New Zealand Active Faults Database",
+      "url": "/datasets/gns-active-faults/"
+    }
+  ]
+}

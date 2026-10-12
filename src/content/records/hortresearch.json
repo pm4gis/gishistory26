@@ -8,7 +8,8 @@
   "description": "Horticulture and Food Research Institute of New Zealand, a CRI operating from 1992 until December 2008.",
   "story": [
     "HortResearch combined horticultural research functions formerly conducted by DSIR and MAF predecessor organisations. Its work linked crop production, climate, fruit quality and geographical conditions. In December 2000 Alistair Mowat of the Ruakura Research Centre presented a spatial study comparing production and quality from 24 persimmon orchards using geographic coordinates and a statistical self-organising map.",
-    "During 2004–2006 HortResearch took part in NIWA-led research proposing links between catchment GIS models and the SPASMO horticultural soil, plant and atmosphere model. On 1 December 2008 HortResearch merged with Crop & Food Research to create Plant & Food Research. The historical GIS and research work predates that merger."
+    "During 2004–2006 HortResearch took part in NIWA-led research proposing links between catchment GIS models and the SPASMO horticultural soil, plant and atmosphere model. On 1 December 2008 HortResearch merged with Crop & Food Research to create Plant & Food Research. The historical GIS and research work predates that merger.",
+    "HortResearch contributed crop expertise to the 2003 NIWA-led Hokianga and Western Kaipara suitability study. The report’s 10 crop assessments were based on climate and soil requirements and published as regional maps for community use, complementing HortResearch’s other geographically linked orchard research."
   ],
   "sources": [
     {
@@ -22,6 +23,10 @@
     {
       "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
       "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+    },
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
     }
   ],
   "paragraphSources": [
@@ -51,6 +56,12 @@
       {
         "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
         "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+      }
+    ],
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
       }
     ]
   ],

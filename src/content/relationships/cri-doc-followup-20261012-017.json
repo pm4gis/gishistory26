@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-doc-followup-20261012-017",
+  "a": "system:iwi-futures-land-resource-evaluation-2008",
+  "b": "person:garth-harmsworth",
+  "label": "Land and resource evaluation co-author",
+  "basis": "Land and resource evaluation co-author is identified in the 2010 Iwi Futures Land and Resource Evaluation paper.",
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "sources": [
+    {
+      "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+    }
+  ]
+}

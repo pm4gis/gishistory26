@@ -3,7 +3,7 @@
   "startDate": "2004",
   "dateDisplay": "2004",
   "label": "NIWA and research institutes develop catchment GIS modelling",
-  "summary": "A multi-CRI project documented GIS integration of models for land-use-change effects on catchment water quality, involving NIWA, AgResearch, HortResearch and Landcare Research.",
+  "summary": "NIWA’s 2004–2006 programme progressed from the Stage I SPARROW toolbox to a tested ArcGIS CLUES pilot. The 2006 report documents a 2005 Environment Waikato test, integrated SPARROW, OVERSEER and Harris Consulting models, documented data inputs and limits on SPASMO’s spatial use.",
   "recordIds": [
     "system:multi-cri-catchment-gis-2004",
     "entity:niwa",

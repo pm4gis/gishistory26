@@ -1,0 +1,32 @@
+{
+  "id": "2010-iwi-futures-land-resource-evaluation-module",
+  "startDate": "2010",
+  "dateDisplay": "2010",
+  "datePrecision": "year",
+  "year": 2010,
+  "label": "Iwi Futures paper describes a draft Māori land-resource evaluation module",
+  "summary": "Garth Harmsworth and Alec Mackay documented a draft step-by-step land and resource evaluation module developed from four Māori land case studies, with GIS repositories and access-restricted cultural layers.",
+  "url": "/timeline/",
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "recordIds": [
+    "system:iwi-futures-land-resource-evaluation-2008",
+    "entity:agresearch",
+    "entity:manaaki-whenua-landcare-research",
+    "person:garth-harmsworth",
+    "person:alec-mackay"
+  ],
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history",
+    "Māori GIS"
+  ],
+  "sources": [
+    {
+      "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+    }
+  ]
+}

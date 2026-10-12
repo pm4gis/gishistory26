@@ -8,12 +8,21 @@
   "description": "GNS national GIS mapping of active fault traces and their geological attributes.",
   "story": [
     "GNS Science's Active Faults Database records mapped onshore surface traces and attributes such as location, activity and displacement. It integrates field geological mapping and regional fault studies that predate the contemporary web layers, making them usable in spatial analysis and hazard assessment.",
-    "The 1:250,000 fault dataset and higher-resolution regional mapping serve different scales. The current publication is a maintained interpretation of geological evidence; its online service date must not be mistaken for the date when each trace was first surveyed."
+    "The 1:250,000 fault dataset and higher-resolution regional mapping serve different scales. The current publication is a maintained interpretation of geological evidence; its online service date must not be mistaken for the date when each trace was first surveyed.",
+    "An Institute of Geological & Nuclear Sciences data dictionary from 2003 defined the database as fault-trace and section lines plus point features such as trenches and displaced terraces, with structured geologic, spatial-quality and earthquake-history attributes. The authors said it had not yet been used in a working environment. A 2004 GNS conference abstract describes more than 200 active faults available through a public web map and attribute-query interface, providing a dated distinction between database design and operational access."
   ],
   "sources": [
     {
       "label": "GNS Science, New Zealand Active Faults Database",
       "url": "https://www.gns.cri.nz/data-and-resources/new-zealand-active-faults-database/"
+    },
+    {
+      "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+      "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+    },
+    {
+      "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+      "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
     }
   ],
   "paragraphSources": [
@@ -28,6 +37,16 @@
         "label": "GNS Science, New Zealand Active Faults Database",
         "url": "https://www.gns.cri.nz/data-and-resources/new-zealand-active-faults-database/"
       }
+    ],
+    [
+      {
+        "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+        "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+      },
+      {
+        "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+        "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
+      }
     ]
   ],
   "aliases": [],
@@ -36,6 +55,14 @@
     {
       "label": "QMAP national geology",
       "url": "/datasets/qmap-250k/"
+    },
+    {
+      "label": "2003 Active Faults Database data dictionary",
+      "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+    },
+    {
+      "label": "GNS Science",
+      "url": "/entities/gns-science/"
     }
   ],
   "status": "Source-backed historical dataset"

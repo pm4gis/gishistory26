@@ -1,0 +1,49 @@
+{
+  "id": "2003-northland-crop-suitability-maps",
+  "startDate": "2003",
+  "dateDisplay": "2003",
+  "datePrecision": "year",
+  "year": 2003,
+  "label": "NIWA and partners publish Hokianga and Western Kaipara crop maps",
+  "summary": "A 35-map inventory of climate and soil information screened potential for ten crops across western Kaipara and Hokianga. Kaipara and Far North councils distributed the results through local libraries and council offices.",
+  "url": "/timeline/",
+  "passageIds": [
+    "passage:chapter-23-461687bcb1"
+  ],
+  "recordIds": [
+    "system:northland-crop-suitability-gis-2003",
+    "entity:niwa",
+    "entity:manaaki-whenua-landcare-research",
+    "entity:crop-food-research",
+    "entity:hortresearch",
+    "entity:kaipara-district-council",
+    "entity:far-north-district-council",
+    "person:georgina-griffiths",
+    "person:andrew-tait",
+    "person:david-wratt",
+    "person:m-r-jessen",
+    "person:malcolm-mcleod",
+    "person:jeff-reid",
+    "person:annette-richardson"
+  ],
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history",
+    "land information"
+  ],
+  "sources": [
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+    },
+    {
+      "label": "NIWA, GIS mapping: showing great potential!, Water & Atmosphere, December 2002",
+      "url": "https://niwa.co.nz/water-atmosphere/vol10-no4-december-2002/niwa-news-forum"
+    },
+    {
+      "label": "NIWA, Assessment of crop and tree species growing potential using climate, soil and topographic information",
+      "url": "https://niwa.co.nz/climate-and-weather/assessment-crop-and-tree-species-growing-potential-using-climate-soil-and"
+    }
+  ]
+}

@@ -10,7 +10,8 @@
     "NIWA used geographic information in freshwater, marine and atmospheric research. Its DASmap work connects a research organisation with Integrated Mapping and early web delivery. The wider history includes mapped scientific observations and services whose requirements extended beyond conventional land-based mapping.",
     "NIWA developed the River Environment Classification for the Ministry for the Environment, which launched it in Wellington on 22 March 2004. The hierarchy classified river sections using catchment climate, topography, geology and land cover, followed by stream order and valley landform. Maps at about 1:50,000 provided a spatial framework for regional planning and environmental reporting. NIWA worked with regional councils on water-quality and water-quantity case studies; Ton Snelder documented the programme in Freshwater Update.",
     "Don Robertson and Mary de Winton’s September 2004 account described the completed Freshwater Biodata Information System, partly funded through DOC’s TFBIS programme. It integrated fish, invertebrate, aquatic-plant and other biological records, searchable by organism, sampling attributes, catchment, river reach or map polygon. They distinguished this working data service from Freshwater Information New Zealand, then still under development. FINZ was intended to use the River Environment Classification to connect biological and environmental data with enhanced web mapping.",
-    "In 2008 NIWA publicly documented two separate catchment GIS modelling efforts. Ross Woods and colleagues had redeveloped TopNet for national river-flow and water-availability estimates. The GIS-based ROTAN system mapped nutrient routing and land-use scenarios for the Rotorua and Taupō catchments with GNS Science and agricultural research partners. Their 18 March 2008 accounts preserve the distinction between water quantity and nitrogen transport."
+    "In 2008 NIWA publicly documented two separate catchment GIS modelling efforts. Ross Woods and colleagues had redeveloped TopNet for national river-flow and water-availability estimates. The GIS-based ROTAN system mapped nutrient routing and land-use scenarios for the Rotorua and Taupō catchments with GNS Science and agricultural research partners. Their 18 March 2008 accounts preserve the distinction between water quantity and nitrogen transport.",
+    "NIWA led the 2001–2003 Hokianga and Western Kaipara climate, soil and crop-suitability study with Landcare Research, Crop & Food Research and HortResearch. Its 35-map regional inventory combined existing climate and soil information to screen potential for ten selected crops, with results distributed through local councils and two public libraries."
   ],
   "sources": [
     {
@@ -32,6 +33,14 @@
     {
       "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
       "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+    },
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+    },
+    {
+      "label": "NIWA, Assessment of crop and tree species growing potential using climate, soil and topographic information",
+      "url": "https://niwa.co.nz/climate-and-weather/assessment-crop-and-tree-species-growing-potential-using-climate-soil-and"
     }
   ],
   "aliases": [
@@ -66,6 +75,16 @@
       {
         "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
         "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+      }
+    ],
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+      },
+      {
+        "label": "NIWA, Assessment of crop and tree species growing potential using climate, soil and topographic information",
+        "url": "https://niwa.co.nz/climate-and-weather/assessment-crop-and-tree-species-growing-potential-using-climate-soil-and"
       }
     ]
   ],

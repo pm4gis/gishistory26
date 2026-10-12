@@ -13,7 +13,12 @@
     "person:duane-wilkins",
     "system:cfrt-treaty-3d-mapping-2004",
     "system:cfrt-inquiry-mapbooks-2005",
-    "system:arcflax-northland-2007"
+    "system:arcflax-northland-2007",
+    "system:iwi-futures-land-resource-evaluation-2008",
+    "entity:agresearch",
+    "entity:manaaki-whenua-landcare-research",
+    "person:garth-harmsworth",
+    "person:alec-mackay"
   ],
   "blocks": [
     {
@@ -66,6 +71,18 @@
           "url": "https://natlib.govt.nz/records/30673810"
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A related task-focused effort joined AgResearch and Landcare Research with Māori land organisations. From the Iwi Futures programme begun in late 2007, Garth Harmsworth and Alec Mackay developed a Land and Resource Evaluation module through case studies with Ngāti Hine Health Trust, Paehinahina-Mourea Trust, Waimarama Incorporation and Aohanga Incorporation. The work assembled land-block information, soil and other national datasets, field observations and owner questions into GIS knowledge repositories, thematic maps and reusable data layers. The 2010 paper describes a draft, step-by-step module for identifying resources and assessing development options; it does not prove that a public web service was launched. It also notes that cultural layers in the case-study repositories were confidential and access restricted.",
+      "markdown": "A related task-focused effort joined AgResearch and Landcare Research with Māori land organisations. From the Iwi Futures programme begun in late 2007, Garth Harmsworth and Alec Mackay developed a Land and Resource Evaluation module through case studies with Ngāti Hine Health Trust, Paehinahina-Mourea Trust, Waimarama Incorporation and Aohanga Incorporation. The work assembled land-block information, soil and other national datasets, field observations and owner questions into GIS knowledge repositories, thematic maps and reusable data layers. The 2010 paper describes a draft, step-by-step module for identifying resources and assessing development options; it does not prove that a public web service was launched. It also notes that cultural layers in the case-study repositories were confidential and access restricted.",
+      "sources": [
+        {
+          "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+          "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+        }
+      ],
+      "id": "research-iwi-futures-land-resource-evaluation-2008-2010"
     },
     {
       "type": "paragraph",

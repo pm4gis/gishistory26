@@ -32,7 +32,11 @@
     "person:duane-wilkins",
     "system:cfrt-treaty-3d-mapping-2004",
     "system:cfrt-inquiry-mapbooks-2005",
-    "system:arcflax-northland-2007"
+    "system:arcflax-northland-2007",
+    "system:iwi-futures-land-resource-evaluation-2008",
+    "entity:agresearch",
+    "person:garth-harmsworth",
+    "person:alec-mackay"
   ],
   "eventIds": [
     "1996-maori-land-resource-conference",
@@ -49,7 +53,8 @@
     "2006-arcflax-whanganui-dvd",
     "2004-cfrt-3d-mapping",
     "2005-cfrt-thematic-mapbooks",
-    "2007-arcflax-northland-gis-discs"
+    "2007-arcflax-northland-gis-discs",
+    "2010-iwi-futures-land-resource-evaluation-module"
   ],
   "sections": [
     {

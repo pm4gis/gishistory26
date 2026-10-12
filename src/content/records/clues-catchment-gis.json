@@ -8,7 +8,8 @@
   "story": [
     "A NIWA-led programme funded by the Ministry of Agriculture and Forestry and Ministry for the Environment aimed to let catchment managers compare how changes in farm land use might affect river water quality and related economic conditions. Stage I (2004) and Stage II (2006) reports describe the developing GIS framework and collaboration among NIWA, AgResearch, HortResearch, Landcare Research, Lincoln Ventures and Harris Consulting.",
     "The resulting system became CLUES, Catchment Land Use for Environmental Sustainability. A 2016 retrospective dates an initial release to 2005; a July 2008 technical paper describes a developed spatial decision-support system and an early nitrate-risk application, while a 2009 paper records that regional council staff had been trained to use it. These establish actual model development and use, rather than only the proposed objectives of the earlier programme.",
-    "CLUES integrated catchment routing and nutrient and land-use calculations from SPARROW, OVERSEER and SPASMO. Its custom control panel sat inside Esri ArcGIS, guiding reach selection, model runs, scenario preparation and map or tabular output. Later ArcMap distributions used the River Environment Classification network; current input-data baselines and software versions should not be projected back onto 2005."
+    "CLUES integrated catchment routing and nutrient and land-use calculations from SPARROW, OVERSEER and SPASMO. Its custom control panel sat inside Esri ArcGIS, guiding reach selection, model runs, scenario preparation and map or tabular output. Later ArcMap distributions used the River Environment Classification network; current input-data baselines and software versions should not be projected back onto 2005.",
+    "The Stage II report (July 2006) documents the implemented research prototype in more detail. Its ArcGIS 8.3/9 toolbox allowed up to five sketched land-use scenarios, catchment overlay, river-reach queries and mapped or tabular outputs. SPARROW, OVERSEER and Harris Consulting models were linked; the report says SPASMO had only begun integration and was not run spatially because National Soils Database coverage of required soil-physics properties was inadequate. The test with Environment Waikato began in June 2005 and council staff were already making their own scenarios. A password-protected Landcare FTP directory supported partner exchange. Later sources date an initial CLUES release to 2005 and describe a completed first version distributed to national and regional agencies by 2008. Those descriptions may refer to an early release versus a fuller version; the surviving sources do not define the release labels consistently."
   ],
   "sources": [
     {
@@ -34,6 +35,10 @@
     {
       "label": "NIWA, CLUES model, software and GIS technical description",
       "url": "https://niwa.co.nz/freshwater/clues-catchment-land-use-environmental-sustainability-model"
+    },
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
     }
   ],
   "contextLinks": [
@@ -127,6 +132,20 @@
       {
         "label": "NIWA, CLUES model, software and GIS technical description",
         "url": "https://niwa.co.nz/freshwater/clues-catchment-land-use-environmental-sustainability-model"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+        "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+      },
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Elliott et al., A national-scale GIS-based system for modelling impacts of land use on water quality, 2016 retrospective",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
       }
     ]
   ]

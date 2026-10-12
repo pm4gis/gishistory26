@@ -1,0 +1,20 @@
+{
+  "id": "relationship:cri-doc-followup-20261012-021",
+  "a": "dataset:gns-active-faults",
+  "b": "person:grant-dellow",
+  "label": "2003 data dictionary co-author",
+  "basis": "2003 data dictionary co-author is documented in the 2003 database dictionary or 2004 GNS conference abstract.",
+  "passageIds": [
+    "passage:chapter-9-94bf81a964"
+  ],
+  "sources": [
+    {
+      "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+      "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+    },
+    {
+      "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+      "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
+    }
+  ]
+}

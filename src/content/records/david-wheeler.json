@@ -1,0 +1,41 @@
+{
+  "id": "person:david-wheeler",
+  "slug": "david-wheeler",
+  "name": "David Wheeler",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/david-wheeler/",
+  "story": [
+    "David Wheeler represented AgResearch in the 2006 CLUES project team, contributing the OVERSEER enterprise-scale modelling work described in the Stage II report."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+    }
+  ],
+  "aliases": [
+    "David Wheeler"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+        "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "AgResearch",
+      "url": "/organisations/agresearch/"
+    },
+    {
+      "label": "CLUES catchment GIS",
+      "url": "/systems/clues-catchment-gis/"
+    }
+  ]
+}

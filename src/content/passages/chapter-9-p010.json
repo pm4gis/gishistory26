@@ -24,7 +24,16 @@
     "dataset:rec",
     "system:niwa-topnet-national-2008",
     "system:niwa-rotan-2008",
-    "entity:gns-science"
+    "entity:gns-science",
+    "dataset:agribase-2003-snapshot",
+    "dataset:lcdb",
+    "dataset:fundamental-soil-layers",
+    "dataset:national-soils-database",
+    "dataset:land-environments-nz-2003",
+    "person:ross-woods",
+    "person:david-wheeler",
+    "person:brent-clothier",
+    "person:r-g-gibb"
   ],
   "blocks": [
     {
@@ -105,6 +114,26 @@
           "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The July 2006 Stage II report documents a functioning CLUES toolbox, not only a proposed GIS. Built for ArcGIS 8.3 or 9, it let users sketch and overlay up to five land-use scenarios, query catchment reaches and run the integrated SPARROW, OVERSEER and Harris Consulting economic models to map nitrogen loads, leaching and economic outputs. Environment Waikato had begun testing in June 2005; its staff reported generating their own land-use scenarios. Partners exchanged project files through a password-protected Landcare FTP site. The 2006 national land-use layer combined AgriBase (September 2003), LCDB2 (2001/02 imagery released in 2004), MAF Monitor Farms (2004) and LENZ (2002); AgriBase classifications were retained only where consistent with LCDB2. Fundamental Soil Layers/NZLRI and the National Soils Database supplied soil attributes. SPASMO had only begun integration and was not run spatially because too few NSD sites contained the soil-physics measurements it required. This was a tested research pilot and partner tool, not evidence that every model was integrated or that a public download or council-wide service had been released.",
+      "markdown": "The July 2006 Stage II report documents a functioning CLUES toolbox, not only a proposed GIS. Built for ArcGIS 8.3 or 9, it let users sketch and overlay up to five land-use scenarios, query catchment reaches and run the integrated SPARROW, OVERSEER and Harris Consulting economic models to map nitrogen loads, leaching and economic outputs. Environment Waikato had begun testing in June 2005; its staff reported generating their own land-use scenarios. Partners exchanged project files through a password-protected Landcare FTP site. The 2006 national land-use layer combined AgriBase (September 2003), LCDB2 (2001/02 imagery released in 2004), MAF Monitor Farms (2004) and LENZ (2002); AgriBase classifications were retained only where consistent with LCDB2. Fundamental Soil Layers/NZLRI and the National Soils Database supplied soil attributes. SPASMO had only begun integration and was not run spatially because too few NSD sites contained the soil-physics measurements it required. This was a tested research pilot and partner tool, not evidence that every model was integrated or that a public download or council-wide service had been released.",
+      "sources": [
+        {
+          "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+          "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+        },
+        {
+          "label": "NIWA, Predicting the effects of land use on water quality, Stage I, report CHC2004-097 (August 2004)",
+          "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+        },
+        {
+          "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs 2008",
+          "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+        }
+      ],
+      "id": "research-niwa-stage2-clues-pilot-and-data-2006"
     },
     {
       "type": "paragraph",

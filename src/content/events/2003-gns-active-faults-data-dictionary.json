@@ -1,0 +1,31 @@
+{
+  "id": "2003-gns-active-faults-data-dictionary",
+  "startDate": "2003",
+  "dateDisplay": "2003",
+  "datePrecision": "year",
+  "year": 2003,
+  "label": "Institute of Geological & Nuclear Sciences defines the Active Faults Database",
+  "summary": "A 2003 data dictionary specified line and point feature geometry and attributes for field mapping of active faults, but said the database had not yet been used in a working environment.",
+  "url": "/timeline/",
+  "passageIds": [
+    "passage:chapter-9-94bf81a964"
+  ],
+  "recordIds": [
+    "dataset:gns-active-faults",
+    "entity:gns-science",
+    "person:richard-jongens",
+    "person:grant-dellow"
+  ],
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history",
+    "geology"
+  ],
+  "sources": [
+    {
+      "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+      "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+    }
+  ]
+}
