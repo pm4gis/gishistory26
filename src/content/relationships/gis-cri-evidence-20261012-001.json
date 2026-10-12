@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-001",
+  "a": "system:clues-catchment-gis",
+  "b": "system:multi-cri-catchment-gis-2004",
+  "label": "Implementation developed through earlier multi-CRI programme",
+  "basis": "Implementation developed through earlier multi-CRI programme. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+      "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "system:clues-catchment-gis",
+  "slug": "clues-catchment-gis",
+  "kind": "Project",
+  "name": "CLUES catchment GIS decision-support system (2005–2009)",
+  "category": "Historical scientific GIS systems",
+  "description": "NIWA-led GIS decision-support system integrating nutrient, catchment and farm-practice models, developed through the 2004–2006 programme.",
+  "story": [
+    "A NIWA-led programme funded by the Ministry of Agriculture and Forestry and Ministry for the Environment aimed to let catchment managers compare how changes in farm land use might affect river water quality and related economic conditions. Stage I (2004) and Stage II (2006) reports describe the developing GIS framework and collaboration among NIWA, AgResearch, HortResearch, Landcare Research, Lincoln Ventures and Harris Consulting.",
+    "The resulting system became CLUES, Catchment Land Use for Environmental Sustainability. A 2016 retrospective dates an initial release to 2005; a July 2008 technical paper describes a developed spatial decision-support system and an early nitrate-risk application, while a 2009 paper records that regional council staff had been trained to use it. These establish actual model development and use, rather than only the proposed objectives of the earlier programme.",
+    "CLUES integrated catchment routing and nutrient and land-use calculations from SPARROW, OVERSEER and SPASMO. Its custom control panel sat inside Esri ArcGIS, guiding reach selection, model runs, scenario preparation and map or tabular output. Later ArcMap distributions used the River Environment Classification network; current input-data baselines and software versions should not be projected back onto 2005."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Predicting the effects of land use on water quality, Stage I report CHC2004-097 (2004)",
+      "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+    },
+    {
+      "label": "NIWA, Predicting the effects of land use on water quality, Stage II report HAM2006-096 (2006)",
+      "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+    },
+    {
+      "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+      "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+    },
+    {
+      "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+      "url": "https://ageconsearch.umn.edu/record/97166"
+    },
+    {
+      "label": "Elliott et al., A national-scale GIS-based system for modelling impacts of land use on water quality, 2016 retrospective",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
+    },
+    {
+      "label": "NIWA, CLUES model, software and GIS technical description",
+      "url": "https://niwa.co.nz/freshwater/clues-catchment-land-use-environmental-sustainability-model"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "Earlier multi-CRI catchment programme",
+      "url": "/systems/multi-cri-catchment-gis-2004/"
+    },
+    {
+      "label": "Scientific mapping chapter",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "url": "/systems/clues-catchment-gis/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, Predicting the effects of land use on water quality, Stage I report CHC2004-097 (2004)",
+        "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+      },
+      {
+        "label": "NIWA, Predicting the effects of land use on water quality, Stage II report HAM2006-096 (2006)",
+        "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      },
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      },
+      {
+        "label": "Elliott et al., A national-scale GIS-based system for modelling impacts of land use on water quality, 2016 retrospective",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
+      },
+      {
+        "label": "NIWA, CLUES model, software and GIS technical description",
+        "url": "https://niwa.co.nz/freshwater/clues-catchment-land-use-environmental-sustainability-model"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Predicting the effects of land use on water quality, Stage I report CHC2004-097 (2004)",
+        "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+      },
+      {
+        "label": "NIWA, Predicting the effects of land use on water quality, Stage II report HAM2006-096 (2006)",
+        "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      },
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      },
+      {
+        "label": "Elliott et al., A national-scale GIS-based system for modelling impacts of land use on water quality, 2016 retrospective",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
+      },
+      {
+        "label": "NIWA, CLUES model, software and GIS technical description",
+        "url": "https://niwa.co.nz/freshwater/clues-catchment-land-use-environmental-sustainability-model"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Predicting the effects of land use on water quality, Stage I report CHC2004-097 (2004)",
+        "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+      },
+      {
+        "label": "NIWA, Predicting the effects of land use on water quality, Stage II report HAM2006-096 (2006)",
+        "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      },
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      },
+      {
+        "label": "Elliott et al., A national-scale GIS-based system for modelling impacts of land use on water quality, 2016 retrospective",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
+      },
+      {
+        "label": "NIWA, CLUES model, software and GIS technical description",
+        "url": "https://niwa.co.nz/freshwater/clues-catchment-land-use-environmental-sustainability-model"
+      }
+    ]
+  ]
+}

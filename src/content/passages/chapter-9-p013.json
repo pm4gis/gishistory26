@@ -4,10 +4,13 @@
   "articleId": "article:chapter-9",
   "title": "Shared scientific infrastructure",
   "order": 12,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
-    "chapter:9"
+    "chapter:9",
+    "system:ocean-survey-chatham-challenger-2006",
+    "dataset:chatham-challenger-multibeam-2006",
+    "person:scott-nodder"
   ],
   "blocks": [
     {
@@ -23,6 +26,18 @@
       "markdown": "Their systems nevertheless shared a growing set of requirements. Data needed coordinates, documented classifications, maintainable attributes and a way to move between analytical software and cartographic output. Scientists needed to know scale, source, date and uncertainty. Organisations needed to preserve both the files and enough institutional knowledge to make them usable after staff or software changed.",
       "sources": [],
       "id": "ch09-s12-p02"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-niwa-multibeam-biodiversity-2006",
+      "text": "Marine science was doing comparable work with a different geography. Under the government’s Ocean Survey 20/20 programme, NIWA’s research vessel Tangaroa mapped multibeam sonar transects across Chatham Rise and Challenger Plateau in August 2006. Scientists combined bathymetry and seabed composition with satellite-derived chlorophyll and modelled tidal currents, then divided the seabed into environmental strata to choose places for biological sampling. Voyages in April–June 2007 used deep-towed cameras, sledges and corers to sample those habitats. Scott Nodder, Don Robertson and David Bowden reported the method and survey-station maps in June 2008. The GIS and remote observations determined where to look next; the field samples then tested what the mapped seabed categories represented.",
+      "markdown": "Marine science was doing comparable work with a different geography. Under the government’s Ocean Survey 20/20 programme, NIWA’s research vessel Tangaroa mapped multibeam sonar transects across Chatham Rise and Challenger Plateau in August 2006. Scientists combined bathymetry and seabed composition with satellite-derived chlorophyll and modelled tidal currents, then divided the seabed into environmental strata to choose places for biological sampling. Voyages in April–June 2007 used deep-towed cameras, sledges and corers to sample those habitats. Scott Nodder, Don Robertson and David Bowden reported the method and survey-station maps in June 2008. The GIS and remote observations determined where to look next; the field samples then tested what the mapped seabed categories represented.",
+      "sources": [
+        {
+          "label": "Nodder, Robertson and Bowden, NIWA, Chatham–Challenger marine surveys, June 2008",
+          "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+        }
+      ]
     },
     {
       "type": "paragraph",

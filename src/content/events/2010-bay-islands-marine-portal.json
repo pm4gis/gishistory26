@@ -1,0 +1,28 @@
+{
+  "id": "2010-bay-islands-marine-portal",
+  "startDate": "2010-12-22",
+  "dateDisplay": "22 December 2010",
+  "label": "NIWA announces Bay of Islands mapping and imagery portal",
+  "summary": "NIWA and SilverStripe released a portal with seabed maps, GIS layers, survey data and about 20,000 marine images.",
+  "year": 2010,
+  "datePrecision": "day",
+  "recordIds": [
+    "system:niwa-bay-of-islands-marine-portal-2010",
+    "person:mark-morrison-niwa"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Bay of Islands Ocean Survey 20/20 portal launched by December 2010",
+      "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+    }
+  ],
+  "passageIds": [
+    "passage:chapter-32-3460d584f6"
+  ],
+  "themeIds": [],
+  "categories": [
+    "GIS research",
+    "Historical datasets"
+  ],
+  "url": "/timeline/"
+}

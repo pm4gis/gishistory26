@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-009",
+  "a": "system:whatawhata-icm-1996",
+  "b": "entity:niwa",
+  "label": "Stream monitoring and catchment research",
+  "basis": "Stream monitoring and catchment research. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Whatawhata ICM project: 1995 monitoring and 2000–2001 land-use conversion",
+      "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+    }
+  ]
+}

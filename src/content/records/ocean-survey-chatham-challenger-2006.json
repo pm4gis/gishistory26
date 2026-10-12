@@ -1,0 +1,69 @@
+{
+  "id": "system:ocean-survey-chatham-challenger-2006",
+  "slug": "ocean-survey-chatham-challenger-2006",
+  "kind": "Project",
+  "name": "Ocean Survey 20/20 Chatham Rise–Challenger Plateau GIS (2006–2007)",
+  "category": "Historical marine GIS and research",
+  "description": "A multidisciplinary NIWA marine survey combining multibeam seabed mapping, oceanographic models and selected biological sampling sites.",
+  "story": [
+    "The Ocean Survey 20/20 Chatham–Challenger programme joined LINZ, the Ministry of Fisheries, DOC, NIWA and GNS Science. NIWA's research vessel Tangaroa carried out a first multibeam echo-sounder survey in August 2006, mapping seabed contours and substrate properties along transects across Chatham Rise and Challenger Plateau.",
+    "Researchers combined those surveys with satellite-derived surface chlorophyll and modelled tidal currents to define environmental strata for later sampling. On two voyages during April–June 2007 they deployed cameras, sledges, sediment corers and other equipment in the selected habitats. Scott Nodder, Don Robertson and David Bowden documented the strategy and preliminary results in NIWA's June 2008 Water & Atmosphere.",
+    "The resulting geospatial data were used to help decide where to sample, rather than simply to illustrate a finished biological report. The original NIWA publication includes the survey and station maps. These should be reproduced as documentary figures only from verified original source assets with preserved attribution."
+  ],
+  "sources": [
+    {
+      "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+      "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+    },
+    {
+      "label": "NIWA, Ocean Survey 20/20 programme and government partnership",
+      "url": "https://niwa.co.nz/oceans/oceans-2020"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "NIWA historic survey article",
+      "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+    },
+    {
+      "label": "Scientific mapping",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "url": "/systems/ocean-survey-chatham-challenger-2006/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      },
+      {
+        "label": "NIWA, Ocean Survey 20/20 programme and government partnership",
+        "url": "https://niwa.co.nz/oceans/oceans-2020"
+      }
+    ],
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      },
+      {
+        "label": "NIWA, Ocean Survey 20/20 programme and government partnership",
+        "url": "https://niwa.co.nz/oceans/oceans-2020"
+      }
+    ],
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      },
+      {
+        "label": "NIWA, Ocean Survey 20/20 programme and government partnership",
+        "url": "https://niwa.co.nz/oceans/oceans-2020"
+      }
+    ]
+  ]
+}

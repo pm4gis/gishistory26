@@ -10,7 +10,9 @@
     "chapter:35",
     "system:arcflax-whanganui-2006",
     "entity:crown-forestry-rental-trust",
-    "person:duane-wilkins"
+    "person:duane-wilkins",
+    "system:cfrt-treaty-3d-mapping-2004",
+    "system:cfrt-inquiry-mapbooks-2005"
   ],
   "blocks": [
     {
@@ -19,6 +21,22 @@
       "markdown": "The first generation of New Zealand web GIS had already reduced the need for installed specialist software. PHEW!, Census WebMap, council viewers, DOCgis and other early web systems let people reach maps through browsers. That was a substantial change, but many of those applications still behaved like GIS viewers. They were designed around the map and the layers available through it. The user generally began by deciding what to display, where to navigate and what to inspect.",
       "sources": [],
       "id": "ch35-s02-p01"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-cfrt-3d-and-mapbooks-2004",
+      "text": "The Crown Forestry Rental Trust had already been using digital mapping in Treaty work before the Whanganui ArcFlax DVD appeared. In November 2004 the Trust publicly confirmed that it was using three-dimensional mapping technology to assist Māori claimants and the Waitangi Tribunal. The Tribunal’s bibliography separately identifies several Trust-commissioned thematic and land-block map books from 2005, covering Central North Island inquiries, Te Urewera and other districts. Those were documented mapping products prepared to support hearings, while the 2006 ArcFlax edition was catalogued as an interactive DVD for viewing GIS information. The surviving records describe three related kinds of work, but do not establish a single software platform or identical underlying map layers across them.",
+      "markdown": "The Crown Forestry Rental Trust had already been using digital mapping in Treaty work before the Whanganui ArcFlax DVD appeared. In November 2004 the Trust publicly confirmed that it was using three-dimensional mapping technology to assist Māori claimants and the Waitangi Tribunal. The Tribunal’s bibliography separately identifies several Trust-commissioned thematic and land-block map books from 2005, covering Central North Island inquiries, Te Urewera and other districts. Those were documented mapping products prepared to support hearings, while the 2006 ArcFlax edition was catalogued as an interactive DVD for viewing GIS information. The surviving records describe three related kinds of work, but do not establish a single software platform or identical underlying map layers across them.",
+      "sources": [
+        {
+          "label": "Crown Forestry Rental Trust statement, 15 November 2004",
+          "url": "https://www.scoop.co.nz/stories/BU0411/S00197/cfrt-is-an-independent-trust.htm"
+        },
+        {
+          "label": "Waitangi Tribunal, bibliography of 2005 Crown Forestry Rental Trust thematic map books",
+          "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+        }
+      ]
     },
     {
       "type": "paragraph",

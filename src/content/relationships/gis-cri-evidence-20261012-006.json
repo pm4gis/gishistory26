@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-006",
+  "a": "system:clues-catchment-gis",
+  "b": "dataset:rec",
+  "label": "River network geography used by CLUES model",
+  "basis": "River network geography used by CLUES model. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, CLUES model, software and GIS technical description",
+      "url": "https://niwa.co.nz/freshwater/clues-catchment-land-use-environmental-sustainability-model"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "person:sandy-elliott",
+  "slug": "sandy-elliott",
+  "name": "Sandy Elliott",
+  "kind": "Person",
+  "category": "GIS and environmental modelling practitioners",
+  "story": [
+    "Sandy Elliott (Alexander Elliott in research citation metadata) contributed to NIWA's catchment water-quality modelling work. Elliott was among the named authors of the 2008 iEMSs paper describing the CLUES spatial decision-support system and its integration of farm-scale nutrient models with regional and national river-network analysis.",
+    "The historical evidence establishes authorship and modelling contributions during the 2000s. More detailed career chronology has not been independently established here."
+  ],
+  "sources": [
+    {
+      "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+      "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+    },
+    {
+      "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+      "url": "https://ageconsearch.umn.edu/record/97166"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "CLUES GIS system",
+      "url": "/systems/clues-catchment-gis/"
+    }
+  ],
+  "url": "/people/sandy-elliott/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ],
+    [
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ],
+    [
+      {
+        "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+        "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ]
+  ]
+}

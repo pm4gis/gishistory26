@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-010",
+  "a": "system:whatawhata-icm-1996",
+  "b": "entity:agresearch",
+  "label": "Farm systems research and project collaboration",
+  "basis": "Farm systems research and project collaboration. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "AgResearch, Whatawhata Integrated Catchment Farm: 1990s origins, participants, mapped land uses",
+      "url": "https://www.agresearch.co.nz/our-research/whatawhata-integrated-catchment/"
+    }
+  ]
+}

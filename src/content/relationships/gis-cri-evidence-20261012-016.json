@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-016",
+  "a": "system:ocean-survey-chatham-challenger-2006",
+  "b": "entity:gns-science",
+  "label": "Science programme partner",
+  "basis": "Science programme partner. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-9-5cfbbbf632"
+  ],
+  "sources": [
+    {
+      "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+      "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+    }
+  ]
+}

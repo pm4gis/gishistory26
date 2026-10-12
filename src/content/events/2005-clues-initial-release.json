@@ -1,0 +1,32 @@
+{
+  "id": "2005-clues-initial-release",
+  "startDate": "2005",
+  "dateDisplay": "2005",
+  "label": "CLUES earliest release noted in later scientific retrospective",
+  "summary": "A 2016 peer-reviewed description dates the first CLUES release to 2005; the 2008 conference provides a contemporary operational description.",
+  "year": 2005,
+  "datePrecision": "year",
+  "recordIds": [
+    "system:clues-catchment-gis",
+    "entity:niwa"
+  ],
+  "sources": [
+    {
+      "label": "Elliott et al., A national-scale GIS-based system for modelling impacts of land use on water quality, 2016 retrospective",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
+    },
+    {
+      "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+      "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+    }
+  ],
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "themeIds": [],
+  "categories": [
+    "GIS research",
+    "Historical datasets"
+  ],
+  "url": "/timeline/"
+}

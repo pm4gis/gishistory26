@@ -1,0 +1,70 @@
+{
+  "id": "system:cfrt-treaty-3d-mapping-2004",
+  "slug": "cfrt-treaty-3d-mapping-2004",
+  "kind": "Project",
+  "name": "Crown Forestry Rental Trust 3D Treaty mapping (2004)",
+  "category": "Historical Māori GIS activity",
+  "description": "Documented use of three-dimensional mapping to assist Māori claimants in Treaty of Waitangi proceedings by November 2004.",
+  "story": [
+    "In a statement dated 15 November 2004 the Crown Forestry Rental Trust confirmed it was using 3D mapping technology to help Māori claimants and the Waitangi Tribunal with claims involving Crown forest licensed land. The statement also corrected a press report that had described the Trust as a government agency; the Trust identified itself as independent.",
+    "The 2004 statement establishes a dated working application and its purpose, but names no GIS software, terrain model, contractor or specific map. This episode predates the separately catalogued ArcFlax Edition 2.0 Whanganui DVD in 2006. No surviving source examined here proves that the 2004 3D work used the ArcFlax DVD."
+  ],
+  "sources": [
+    {
+      "label": "Crown Forestry Rental Trust statement, 15 November 2004, confirming use of 3D mapping in Treaty claims",
+      "url": "https://www.scoop.co.nz/stories/BU0411/S00197/cfrt-is-an-independent-trust.htm"
+    },
+    {
+      "label": "Crown Forestry Rental Trust, research and mapping services, public/claimant map-book distinction",
+      "url": "https://cfrt.org.nz/research-activities/"
+    },
+    {
+      "label": "National Library, ArcFlax Edition 2.0 Whanganui, interactive GIS DVD (2006)",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "ArcFlax 2006 DVD",
+      "url": "/systems/arcflax-whanganui-2006/"
+    },
+    {
+      "label": "Māori GIS theme",
+      "url": "/themes/maori-gis/"
+    }
+  ],
+  "url": "/systems/cfrt-treaty-3d-mapping-2004/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "Crown Forestry Rental Trust statement, 15 November 2004, confirming use of 3D mapping in Treaty claims",
+        "url": "https://www.scoop.co.nz/stories/BU0411/S00197/cfrt-is-an-independent-trust.htm"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, research and mapping services, public/claimant map-book distinction",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui, interactive GIS DVD (2006)",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ],
+    [
+      {
+        "label": "Crown Forestry Rental Trust statement, 15 November 2004, confirming use of 3D mapping in Treaty claims",
+        "url": "https://www.scoop.co.nz/stories/BU0411/S00197/cfrt-is-an-independent-trust.htm"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, research and mapping services, public/claimant map-book distinction",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui, interactive GIS DVD (2006)",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ]
+  ]
+}

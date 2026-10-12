@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-013",
+  "a": "system:cfrt-treaty-3d-mapping-2004",
+  "b": "entity:crown-forestry-rental-trust",
+  "label": "Contemporary statement confirms 2004 mapping use",
+  "basis": "Contemporary statement confirms 2004 mapping use. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "sources": [
+    {
+      "label": "Crown Forestry Rental Trust statement, 15 November 2004, confirming use of 3D mapping in Treaty claims",
+      "url": "https://www.scoop.co.nz/stories/BU0411/S00197/cfrt-is-an-independent-trust.htm"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-008",
+  "a": "system:clues-catchment-gis",
+  "b": "person:john-quinn",
+  "label": "Named 2009 CLUES study co-author",
+  "basis": "Named 2009 CLUES study co-author. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+      "url": "https://ageconsearch.umn.edu/record/97166"
+    }
+  ]
+}

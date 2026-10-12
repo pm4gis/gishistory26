@@ -4,13 +4,15 @@
   "articleId": "article:chapter-32",
   "title": "The database arrives quietly",
   "order": 1,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:32",
     "entity:geographic-business-solutions",
     "person:harley-prowse",
-    "person:tony-elson"
+    "person:tony-elson",
+    "system:niwa-bay-of-islands-marine-portal-2010",
+    "person:mark-morrison-niwa"
   ],
   "blocks": [
     {
@@ -47,6 +49,18 @@
       "markdown": "NIWA’s 2010 Ocean Survey 20/20 Bay of Islands portal gives a fuller picture of the same approach. Later technical documentation records GeoNetwork handling metadata and discovery, PostGIS storing spatial data, MapServer publishing WMS and WFS services, OpenLayers providing browser mapping and SilverStripe supporting the web environment. Several packages together formed the working GIS, each performing a different job and communicating through agreed interfaces. That component model became familiar across geospatial systems, whether the components themselves were open or proprietary.",
       "sources": [],
       "id": "ch32-p-c067a2b65c11"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-niwa-bay-of-islands-public-portal-2010",
+      "text": "The Bay of Islands project makes the delivery record more specific. NIWA surveyed the seabed and marine biodiversity from 2008 to June 2010, using multibeam and side-scan sonar, biological sampling, photography and other measurements. In December 2010 the organisation announced that its new public portal, developed with Wellington firm SilverStripe, exposed high-resolution seabed maps, selectable GIS layers, reports and about 20,000 survey images. The project was led by NIWA scientist Mark Morrison and funded through LINZ’s Ocean Survey 20/20 programme. The portal had been shortlisted for the 2010 New Zealand Open Source Awards. Those are contemporary records of an operating application and published marine data, rather than simply a proposal for future web delivery.",
+      "markdown": "The Bay of Islands project makes the delivery record more specific. NIWA surveyed the seabed and marine biodiversity from 2008 to June 2010, using multibeam and side-scan sonar, biological sampling, photography and other measurements. In December 2010 the organisation announced that its new public portal, developed with Wellington firm SilverStripe, exposed high-resolution seabed maps, selectable GIS layers, reports and about 20,000 survey images. The project was led by NIWA scientist Mark Morrison and funded through LINZ’s Ocean Survey 20/20 programme. The portal had been shortlisted for the 2010 New Zealand Open Source Awards. Those are contemporary records of an operating application and published marine data, rather than simply a proposal for future web delivery.",
+      "sources": [
+        {
+          "label": "NIWA, Bay of Islands mapping portal release, 22 December 2010",
+          "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+        }
+      ]
     }
   ],
   "sources": [],
