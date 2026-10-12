@@ -1,0 +1,29 @@
+{
+  "id": "2006-qmap-geology-vector-cd",
+  "startDate": "2006",
+  "dateDisplay": "2006–2014",
+  "label": "QMAP geological vector data distributed on CD",
+  "summary": "GNS QMAP regional geological products included vector coverages, shapefiles and preconfigured ArcMap, ArcView and ArcReader GIS projects.",
+  "recordIds": [
+    "system:qmap-vector-cd-2006",
+    "entity:gns-science",
+    "dataset:qmap-regional-gis-1994"
+  ],
+  "passageIds": [
+    "passage:chapter-9-94bf81a964"
+  ],
+  "sources": [
+    {
+      "label": "National Library NZ, regional QMAP vector-data CD-ROMs (2006–2014)",
+      "url": "https://natlib.govt.nz/records/21642661"
+    }
+  ],
+  "year": 2006,
+  "datePrecision": "year",
+  "url": "/timeline/",
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history"
+  ]
+}

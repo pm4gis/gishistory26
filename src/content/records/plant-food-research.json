@@ -1,0 +1,54 @@
+{
+  "id": "entity:plant-food-research",
+  "slug": "plant-food-research",
+  "name": "Plant & Food Research",
+  "kind": "Organisation",
+  "category": "Crown research institutes",
+  "url": "/organisations/plant-food-research/",
+  "description": "Successor institute formed on 1 December 2008 from the merger of HortResearch and Crop & Food Research.",
+  "story": [
+    "The New Zealand Institute for Plant & Food Research was formally established on 1 December 2008 when two existing Crown Research Institutes merged. It inherited scientific knowledge and datasets from both HortResearch and Crop & Food Research, including environmental, crop and horticultural research that had already used geographical and climate information.",
+    "Historic citations to research conducted by either predecessor before December 2008 retain the original institutional affiliation. This profile establishes the successor relationship without reassigning authorship or project dates to the new institute."
+  ],
+  "sources": [
+    {
+      "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+      "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+    },
+    {
+      "label": "Plant & Food Research, CRI histories including 1992 establishment and December 2008 merger",
+      "url": "https://www.plantandfood.com/en-au/our-history"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+        "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+      },
+      {
+        "label": "Plant & Food Research, CRI histories including 1992 establishment and December 2008 merger",
+        "url": "https://www.plantandfood.com/en-au/our-history"
+      }
+    ],
+    [
+      {
+        "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+        "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+      },
+      {
+        "label": "Plant & Food Research, CRI histories including 1992 establishment and December 2008 merger",
+        "url": "https://www.plantandfood.com/en-au/our-history"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Scientific GIS research",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "status": "Source-backed historical research"
+}

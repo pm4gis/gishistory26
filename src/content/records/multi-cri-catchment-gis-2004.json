@@ -1,0 +1,58 @@
+{
+  "id": "system:multi-cri-catchment-gis-2004",
+  "slug": "multi-cri-catchment-gis-2004",
+  "name": "Multi-CRI catchment GIS decision-support research (2004–2006)",
+  "kind": "Project",
+  "category": "1990s–2000s CRI GIS research",
+  "url": "/systems/multi-cri-catchment-gis-2004/",
+  "description": "NIWA-led GIS model integration to assess land-use-change effects on water quality, funded from 2003/04.",
+  "story": [
+    "The Ministry of Agriculture and Forestry and the Ministry for the Environment commissioned NIWA and research partners to develop a GIS decision-support framework relating changes in rural land use to catchment water quality. The programme covered national, regional and catchment analysis and included AgResearch, HortResearch, Landcare Research, Lincoln Ventures and Harris Consulting.",
+    "The reports describe planned integration of NIWA's SPARROW catchment modelling, AgResearch's OVERSEER nutrient model and HortResearch's SPASMO environmental model. The 2004 and 2006 stages provide direct evidence of the programme and work in progress. Any claim that a particular commercial interface or fully deployed system resulted requires separate evidence."
+  ],
+  "sources": [
+    {
+      "label": "NIWA Stage I modelling report CHC2004-097 (2004)",
+      "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+    },
+    {
+      "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+      "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA Stage I modelling report CHC2004-097 (2004)",
+        "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+      },
+      {
+        "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+        "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      }
+    ],
+    [
+      {
+        "label": "NIWA Stage I modelling report CHC2004-097 (2004)",
+        "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+      },
+      {
+        "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+        "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "NIWA research lineage",
+      "url": "/entities/niwa/"
+    },
+    {
+      "label": "Scientific mapping",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "status": "Source-backed historical research"
+}

@@ -4,13 +4,15 @@
   "articleId": "article:chapter-27",
   "title": "A health-geoinformatics community",
   "order": 9,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:27",
     "person:chris-skelly",
     "person:jan-rigby",
-    "person:peter-whigham"
+    "person:peter-whigham",
+    "entity:esr",
+    "system:christchurch-legionella-spatial-2005"
   ],
   "blocks": [
     {
@@ -26,6 +28,22 @@
       "markdown": "The programme brought together public-health practitioners, GIS researchers and international specialists. Disease mapping, environmental exposure, accessibility, spatial statistics and health-service analysis were no longer isolated papers scattered through unrelated meetings. New Zealand had enough operational work and research to support a conference organised specifically around geographic information and health decision-making. The later continuation of GeoHealth reinforced that emerging community.",
       "sources": [],
       "id": "ch27-s10-p02"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Christchurch Legionnaires' disease investigation in 2005 showed how spatial analysis could join public-health surveillance with environmental and laboratory evidence. Nineteen laboratory-confirmed cases were investigated over April to August, with three deaths. Spatial epidemiologists examined case locations and possible cooling-tower sources, identifying seven significant clusters and a directional pattern consistent with windborne dispersal. ESR maintained the national EpiSurv notification database and undertook microbiological confirmation; Canterbury public-health staff and Ministry of Health analysts carried out complementary epidemiological, environmental and spatial work. A later peer-reviewed account identified a cooling tower as the most probable source. The mapping helped narrow the investigation, but did not replace the field and laboratory evidence.",
+      "markdown": "A Christchurch Legionnaires' disease investigation in 2005 showed how spatial analysis could join public-health surveillance with environmental and laboratory evidence. Nineteen laboratory-confirmed cases were investigated over April to August, with three deaths. Spatial epidemiologists examined case locations and possible cooling-tower sources, identifying seven significant clusters and a directional pattern consistent with windborne dispersal. ESR maintained the national EpiSurv notification database and undertook microbiological confirmation; Canterbury public-health staff and Ministry of Health analysts carried out complementary epidemiological, environmental and spatial work. A later peer-reviewed account identified a cooling tower as the most probable source. The mapping helped narrow the investigation, but did not replace the field and laboratory evidence.",
+      "sources": [
+        {
+          "label": "White et al., 'Epidemiological investigation of a Legionnaires' disease outbreak in Christchurch', Epidemiology and Infection 141 (2013), pp. 789–799; investigation in 2005",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11616728/"
+        },
+        {
+          "label": "ESR publication summary of 2005 spatial outbreak investigation",
+          "url": "https://www.esr.cri.nz/digital-library/epidemiological-investigation-of-a-legionnaires-disease-outbreak-in-christchurch-new-zealand-the-value-of-spatial-methods-for-practical-public-health/"
+        }
+      ],
+      "id": "research-cri-christchurch-legionella-2005"
     },
     {
       "type": "paragraph",

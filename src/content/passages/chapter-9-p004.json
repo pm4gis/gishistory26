@@ -4,7 +4,7 @@
   "articleId": "article:chapter-9",
   "title": "The CRI reorganisation",
   "order": 3,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:9",
@@ -26,7 +26,10 @@
     "person:mary-de-winton",
     "person:d-u-pfeiffer",
     "person:j-s-mckenzie",
-    "person:r-s-morris"
+    "person:r-s-morris",
+    "entity:hortresearch",
+    "person:alistair-mowat",
+    "system:hortresearch-persimmon-mapping-2000"
   ],
   "blocks": [
     {
@@ -105,6 +108,18 @@
       "markdown": "AgResearch shows a third pattern. At SIRC in December 2007, Bruce McLennan described GIS uptake inside the institute as piecemeal: individual researchers had built useful project-level capability, but access to software, core datasets and support was uneven across its four campuses. AgResearch was therefore preparing a company-wide geographic information service intended to provide common software access, core data, specialist support and in-house training. The CRI began organising GIS as a shared service for its research teams.",
       "sources": [],
       "id": "ch09-s03-p11"
+    },
+    {
+      "type": "paragraph",
+      "text": "HortResearch brought a different kind of spatial analysis to the SIRC colloquium in Dunedin in December 2000. Alistair Mowat, working at its Ruakura Research Centre, combined two seasons of fruit-quality and productivity measurements from 24 persimmon orchards with their locations and growing regions. He used a self-organising map, a statistical technique for arranging related observations, to compare orchards alongside regional climate information. This was a study of geographically linked measurements, rather than a computerised survey map of individual trees. It gives horticultural research a specific place in the emerging geospatial research community.",
+      "markdown": "HortResearch brought a different kind of spatial analysis to the SIRC colloquium in Dunedin in December 2000. Alistair Mowat, working at its Ruakura Research Centre, combined two seasons of fruit-quality and productivity measurements from 24 persimmon orchards with their locations and growing regions. He used a self-organising map, a statistical technique for arranging related observations, to compare orchards alongside regional climate information. This was a study of geographically linked measurements, rather than a computerised survey map of individual trees. It gives horticultural research a specific place in the emerging geospatial research community.",
+      "sources": [
+        {
+          "label": "Alistair Mowat, HortResearch, 'Visualising Spatial Patterns in Fruit Quality and Productivity of Persimmon Orchards using Self Organising Maps', SIRC 2000",
+          "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+        }
+      ],
+      "id": "research-cri-hortresearch-persimmon-2000"
     },
     {
       "type": "paragraph",

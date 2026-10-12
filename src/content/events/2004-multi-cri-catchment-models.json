@@ -1,0 +1,35 @@
+{
+  "id": "2004-multi-cri-catchment-models",
+  "startDate": "2004",
+  "dateDisplay": "2004",
+  "label": "NIWA and research institutes develop catchment GIS modelling",
+  "summary": "A multi-CRI project documented GIS integration of models for land-use-change effects on catchment water quality, involving NIWA, AgResearch, HortResearch and Landcare Research.",
+  "recordIds": [
+    "system:multi-cri-catchment-gis-2004",
+    "entity:niwa",
+    "entity:agresearch",
+    "entity:hortresearch",
+    "entity:manaaki-whenua-landcare-research"
+  ],
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA Stage I modelling report CHC2004-097 (2004)",
+      "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+    },
+    {
+      "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+      "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+    }
+  ],
+  "year": 2004,
+  "datePrecision": "year",
+  "url": "/timeline/",
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history"
+  ]
+}

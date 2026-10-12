@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-integrate-20261012-006",
+  "a": "system:multi-cri-catchment-gis-2004",
+  "b": "entity:hortresearch",
+  "label": "Contributor of horticultural SPASMO model",
+  "basis": "Contributor of horticultural SPASMO model. Source citation documents this association.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+      "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+    }
+  ]
+}

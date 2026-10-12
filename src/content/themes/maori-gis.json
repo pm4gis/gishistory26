@@ -26,7 +26,10 @@
     "entity:journey-gis",
     "entity:land-information-new-zealand-linz",
     "entity:manaaki-whenua-landcare-research",
-    "entity:tasman-district-council"
+    "entity:tasman-district-council",
+    "system:arcflax-whanganui-2006",
+    "entity:crown-forestry-rental-trust",
+    "person:duane-wilkins"
   ],
   "eventIds": [
     "1996-maori-land-resource-conference",
@@ -39,7 +42,8 @@
     "linzcap-2020-10-nga-poutama-matawhenua-online-wananga-begin",
     "linzcap-2025-05-16-nga-poutama-explores-korero-takutai",
     "linzcap-2025-05-05-nga-poutama-historical-aerial-imagery-session-published",
-    "linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga"
+    "linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga",
+    "2006-arcflax-whanganui-dvd"
   ],
   "sections": [
     {
@@ -67,12 +71,17 @@
       "title": "Iwi-led GIS",
       "paragraphs": [
         "A 28 June 1996 Wellington conference on Mapping Māori Land and Resource Aspirations provides an early dated marker for GIS-related debate over whenua. In November 2003, the Motueka Iwi Resource Management Advisory Komiti (MIRMAK) began an iwi-led GIS information project involving Te Tau Ihu iwi and Manaaki Whenua research support. Its documented purposes included environmental management, consenting, planning and cultural records.",
-        "The Motueka work drew a distinction between environmental information suitable for broader exchange and cultural information requiring restricted access. That distinction remains important: availability of public maps and government datasets does not imply permission to publish iwi-held knowledge, wāhi tapu locations or other sensitive material."
+        "The Motueka work drew a distinction between environmental information suitable for broader exchange and cultural information requiring restricted access. That distinction remains important: availability of public maps and government datasets does not imply permission to publish iwi-held knowledge, wāhi tapu locations or other sensitive material.",
+        "A documented example of distribution by physical media is the Crown Forestry Rental Trust's ArcFlax Edition 2.0 Whanganui (2006). The National Library records an interactive GIS DVD credited to Duane Wilkins and requiring ArcReader 9.1. The record establishes the edition and the means of access, without giving a full inventory of its GIS layers or the date of any earlier edition. This work belongs alongside iwi-led information systems as an example of how GIS was made usable for Treaty research."
       ],
       "sources": [
         {
           "label": "Harmsworth, Park and Walker, Motueka iwi GIS case study, May 2005",
           "url": "https://www.landcareresearch.co.nz/assets/researchpubs/harmsworth_gis_iwi.pdf"
+        },
+        {
+          "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006, Interactive GIS data DVD",
+          "url": "https://natlib.govt.nz/records/30673810"
         }
       ]
     },

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-integrate-20261012-001",
+  "a": "system:hortresearch-persimmon-mapping-2000",
+  "b": "entity:hortresearch",
+  "label": "Institute conducting spatial orchard research",
+  "basis": "Institute conducting spatial orchard research. Source citation documents this association.",
+  "passageIds": [
+    "passage:chapter-9-f5818ca326"
+  ],
+  "sources": [
+    {
+      "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+      "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+    }
+  ]
+}

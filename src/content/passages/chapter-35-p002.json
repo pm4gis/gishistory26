@@ -4,10 +4,13 @@
   "articleId": "article:chapter-35",
   "title": "From viewer to task",
   "order": 1,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
-    "chapter:35"
+    "chapter:35",
+    "system:arcflax-whanganui-2006",
+    "entity:crown-forestry-rental-trust",
+    "person:duane-wilkins"
   ],
   "blocks": [
     {
@@ -16,6 +19,18 @@
       "markdown": "The first generation of New Zealand web GIS had already reduced the need for installed specialist software. PHEW!, Census WebMap, council viewers, DOCgis and other early web systems let people reach maps through browsers. That was a substantial change, but many of those applications still behaved like GIS viewers. They were designed around the map and the layers available through it. The user generally began by deciding what to display, where to navigate and what to inspect.",
       "sources": [],
       "id": "ch35-s02-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "One route to wider GIS use still depended on a disc rather than a website. The Crown Forestry Rental Trust published ArcFlax Edition 2.0 Whanganui in 2006 as an interactive GIS DVD. The National Library's catalogue credits Duane Wilkins and specifies ArcReader 9.1, a free Esri viewer, as a system requirement. It is a documented example of packaging prepared geographic information for Treaty research without requiring the recipient to own a full desktop GIS authoring package. The catalogue identifies this edition and its format but does not describe every dataset on the disc or establish when an earlier edition first appeared.",
+      "markdown": "One route to wider GIS use still depended on a disc rather than a website. The Crown Forestry Rental Trust published ArcFlax Edition 2.0 Whanganui in 2006 as an interactive GIS DVD. The National Library's catalogue credits Duane Wilkins and specifies ArcReader 9.1, a free Esri viewer, as a system requirement. It is a documented example of packaging prepared geographic information for Treaty research without requiring the recipient to own a full desktop GIS authoring package. The catalogue identifies this edition and its format but does not describe every dataset on the disc or establish when an earlier edition first appeared.",
+      "sources": [
+        {
+          "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006, Interactive GIS data DVD",
+          "url": "https://natlib.govt.nz/records/30673810"
+        }
+      ],
+      "id": "research-cri-arcflax-2006"
     },
     {
       "type": "paragraph",
