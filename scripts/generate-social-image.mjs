@@ -4,7 +4,7 @@ const source='public/assets/social/nzgis-slate.svg';
 const target='public/assets/social/nzgis-slate.png';
 const svg=await readFile(source);
 await mkdir('public/assets/social',{recursive:true});
-const {info}=await sharp(svg,{density:144})
+const info=await sharp(svg,{density:144})
  .resize(1200,630,{fit:'fill'})
  .png({compressionLevel:9,palette:false})
  .toFile(target);
