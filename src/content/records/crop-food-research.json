@@ -1,0 +1,54 @@
+{
+  "id": "entity:crop-food-research",
+  "slug": "crop-food-research",
+  "name": "Crop & Food Research",
+  "kind": "Organisation",
+  "category": "Historic Crown research institutes",
+  "url": "/organisations/crop-food-research/",
+  "description": "1992–2008 Crown research institute for arable crops, vegetables, crop systems and food research.",
+  "story": [
+    "Crop & Food Research was one of the institutes formed in the 1992 government science reorganisation. It inherited crop and food-related scientific work from earlier government research units. Environmental, agricultural and climate-impact research required data describing where soils, crops, climate and land uses varied across New Zealand.",
+    "Its participation in the multi-institution CLIMPACTS research is recorded in the scientific-mapping chapter. Crop & Food Research merged with HortResearch on 1 December 2008, establishing Plant & Food Research. This historical profile separates the institute's original work from the later combined organisation."
+  ],
+  "sources": [
+    {
+      "label": "Plant & Food Research, CRI histories including 1992 establishment and December 2008 merger",
+      "url": "https://www.plantandfood.com/en-au/our-history"
+    },
+    {
+      "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+      "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Plant & Food Research, CRI histories including 1992 establishment and December 2008 merger",
+        "url": "https://www.plantandfood.com/en-au/our-history"
+      },
+      {
+        "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+        "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+      }
+    ],
+    [
+      {
+        "label": "Plant & Food Research, CRI histories including 1992 establishment and December 2008 merger",
+        "url": "https://www.plantandfood.com/en-au/our-history"
+      },
+      {
+        "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+        "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Scientific mapping and CLIMPACTS",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "status": "Source-backed historical research"
+}

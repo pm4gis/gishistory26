@@ -1,0 +1,29 @@
+{
+  "id": "2008-hort-crop-research-merger",
+  "startDate": "2008-12-01",
+  "dateDisplay": "1 December 2008",
+  "label": "HortResearch and Crop & Food Research merge",
+  "summary": "The predecessor research institutes formed Plant & Food Research, combining their plant and horticultural research organisations and datasets.",
+  "recordIds": [
+    "entity:hortresearch",
+    "entity:crop-food-research",
+    "entity:plant-food-research"
+  ],
+  "passageIds": [
+    "passage:chapter-9-f5818ca326"
+  ],
+  "sources": [
+    {
+      "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+      "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+    }
+  ],
+  "year": 2008,
+  "datePrecision": "day",
+  "url": "/timeline/",
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history"
+  ]
+}

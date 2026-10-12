@@ -1,6 +1,7 @@
 
 /* Exact paragraph anchors verified in the source-image acquisition notes. */
 export const curatedImageParagraphs = Object.freeze({
+  'qmap-christchurch-2008':'research-cri-qmap-cd-2006',
   'levin-topographic-map-1973':'ch05-s01-p02',
   'intergraph-clix-workstation':'ch06-s01-p03',
   'te-kuiti-land-development-office':'ch10-p-f2800ed17165',

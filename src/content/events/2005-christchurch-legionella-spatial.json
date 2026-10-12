@@ -1,0 +1,28 @@
+{
+  "id": "2005-christchurch-legionella-spatial",
+  "startDate": "2005",
+  "dateDisplay": "April–August 2005",
+  "label": "Spatial investigation supports Christchurch Legionnaires' response",
+  "summary": "Public-health, epidemiological and laboratory teams assessed mapped cases and cooling-tower exposures during a Christchurch Legionnaires' disease outbreak; the scientific account was published in 2013.",
+  "recordIds": [
+    "system:christchurch-legionella-spatial-2005",
+    "entity:esr"
+  ],
+  "passageIds": [
+    "passage:chapter-27-3a9d0a44c2"
+  ],
+  "sources": [
+    {
+      "label": "White et al., Christchurch 2005 Legionnaires spatial epidemiology, published 2013",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11616728/"
+    }
+  ],
+  "year": 2005,
+  "datePrecision": "year",
+  "url": "/timeline/",
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history"
+  ]
+}

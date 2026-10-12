@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-integrate-20261012-012",
+  "a": "entity:hortresearch",
+  "b": "entity:plant-food-research",
+  "label": "Merged into successor on 1 December 2008",
+  "basis": "Merged into successor on 1 December 2008. Source citation documents this association.",
+  "passageIds": [
+    "passage:chapter-9-f5818ca326"
+  ],
+  "sources": [
+    {
+      "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+      "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+    }
+  ]
+}

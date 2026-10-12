@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-integrate-20261012-011",
+  "a": "system:qmap-vector-cd-2006",
+  "b": "dataset:qmap-250k",
+  "label": "Earlier regional vector data preceded the 2014 seamless national mosaic",
+  "basis": "Earlier regional vector data preceded the 2014 seamless national mosaic. Source citation documents this association.",
+  "passageIds": [
+    "passage:chapter-9-94bf81a964"
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, the original QMAP 1996–2012 programme and digital map production",
+      "url": "https://www.gns.cri.nz/data-and-resources/1250-000-geological-map/"
+    }
+  ]
+}

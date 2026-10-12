@@ -4,14 +4,19 @@
   "articleId": "article:chapter-9",
   "title": "Catchment monitoring",
   "order": 9,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:9",
     "entity:university-of-waikato",
     "person:brent-wood",
     "person:sohail-afzal-choudhry",
-    "person:andrew-watkins"
+    "person:andrew-watkins",
+    "system:multi-cri-catchment-gis-2004",
+    "entity:agresearch",
+    "entity:hortresearch",
+    "entity:niwa",
+    "entity:manaaki-whenua-landcare-research"
   ],
   "blocks": [
     {
@@ -48,6 +53,22 @@
       "markdown": "The Kaimai project was university research; NIWA also used GIS in its operational work. In October 2006 NIWA's Brent Wood described PostGIS running behind about half a dozen systems, with some datasets containing hundreds of millions of features. In December 2008 he described PostGIS, Apache and UMN MapServer as a standards-based web-mapping environment supporting WMS and WFS for maritime, fisheries, ecological and oceanographic work. By 2009 the same practitioner record included GeoServer and OpenLayers, and Andrew Watkins was working with GeoNetwork in 2010.",
       "sources": [],
       "id": "ch09-s09-p05"
+    },
+    {
+      "type": "paragraph",
+      "text": "Between 2004 and 2006, NIWA led another application of GIS that crossed research-institute boundaries. A Ministry of Agriculture and Forestry and Ministry for the Environment project commissioned NIWA with AgResearch, HortResearch, Landcare Research, Lincoln Ventures and Harris Consulting to develop a catchment decision-support framework for estimating how land-use changes could affect water quality. The 2004 work proposed connecting NIWA's SPARROW catchment modelling with AgResearch's OVERSEER and HortResearch's SPASMO models through GIS. The 2006 Stage II report described the national, regional and catchment purposes of the framework and its intended computer-based tools. These are documented project aims and working stages, rather than proof that every proposed interface was ultimately delivered.",
+      "markdown": "Between 2004 and 2006, NIWA led another application of GIS that crossed research-institute boundaries. A Ministry of Agriculture and Forestry and Ministry for the Environment project commissioned NIWA with AgResearch, HortResearch, Landcare Research, Lincoln Ventures and Harris Consulting to develop a catchment decision-support framework for estimating how land-use changes could affect water quality. The 2004 work proposed connecting NIWA's SPARROW catchment modelling with AgResearch's OVERSEER and HortResearch's SPASMO models through GIS. The 2006 Stage II report described the national, regional and catchment purposes of the framework and its intended computer-based tools. These are documented project aims and working stages, rather than proof that every proposed interface was ultimately delivered.",
+      "sources": [
+        {
+          "label": "NIWA, Predicting the Effects of Land-use on Water Quality, Stage II, report HAM2006-096 (2006)",
+          "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+        },
+        {
+          "label": "NIWA, Predicting the Effects of Landuse on Water Quality, Stage I (2004)",
+          "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+        }
+      ],
+      "id": "research-cri-multiagency-catchments-2004"
     },
     {
       "type": "paragraph",

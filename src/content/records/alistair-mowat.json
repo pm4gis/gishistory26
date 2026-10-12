@@ -1,0 +1,56 @@
+{
+  "id": "person:alistair-mowat",
+  "slug": "alistair-mowat",
+  "name": "Alistair Mowat",
+  "kind": "Person",
+  "category": "GIS and spatial research practitioners",
+  "url": "/people/alistair-mowat/",
+  "description": "HortResearch researcher who presented geographic fruit-quality analysis at SIRC 2000.",
+  "story": [
+    "Alistair Mowat worked at HortResearch's Ruakura Research Centre and presented a paper at the 12th Spatial Information Research Centre colloquium in Dunedin, 10–13 December 2000. The study associated two seasons of fruit-quality and productivity information from 24 persimmon orchards with their location, regional identity and climate observations.",
+    "The analysis used self-organising maps to detect patterns among orchards and growing regions. These were statistical maps generated from geographic and production data, rather than topographic or cadastral sheets."
+  ],
+  "sources": [
+    {
+      "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+      "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+        "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+      }
+    ],
+    [
+      {
+        "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+        "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+        "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+      }
+    ],
+    [
+      {
+        "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+        "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Research project",
+      "url": "/projects/hortresearch-persimmon-mapping-2000/"
+    }
+  ],
+  "status": "Source-backed historical research"
+}

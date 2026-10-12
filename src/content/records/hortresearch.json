@@ -1,0 +1,66 @@
+{
+  "id": "entity:hortresearch",
+  "slug": "hortresearch",
+  "name": "HortResearch",
+  "kind": "Organisation",
+  "category": "Historic Crown research institutes",
+  "url": "/organisations/hortresearch/",
+  "description": "Horticulture and Food Research Institute of New Zealand, a CRI operating from 1992 until December 2008.",
+  "story": [
+    "HortResearch combined horticultural research functions formerly conducted by DSIR and MAF predecessor organisations. Its work linked crop production, climate, fruit quality and geographical conditions. In December 2000 Alistair Mowat of the Ruakura Research Centre presented a spatial study comparing production and quality from 24 persimmon orchards using geographic coordinates and a statistical self-organising map.",
+    "During 2004–2006 HortResearch took part in NIWA-led research proposing links between catchment GIS models and the SPASMO horticultural soil, plant and atmosphere model. On 1 December 2008 HortResearch merged with Crop & Food Research to create Plant & Food Research. The historical GIS and research work predates that merger."
+  ],
+  "sources": [
+    {
+      "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+      "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+    },
+    {
+      "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+      "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+    },
+    {
+      "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+      "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+        "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+      },
+      {
+        "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+        "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      },
+      {
+        "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+        "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+      }
+    ],
+    [
+      {
+        "label": "Mowat, SIRC 2000 persimmon-orchard spatial study, HortResearch Ruakura",
+        "url": "https://www.researchgate.net/publication/228963403_Visualising_Spatial_Patterns_in_Fruit_Quality_and_Productivity_of_Persimmon_Orchards_using_Self_Organising_Maps"
+      },
+      {
+        "label": "NIWA Stage II catchment GIS modelling report, HAM2006-096 (2006)",
+        "url": "https://docs.niwa.co.nz/library/public/HAM2006-096.pdf"
+      },
+      {
+        "label": "Beehive, Minister welcomes merged Plant & Food Research, 1 December 2008",
+        "url": "https://www.beehive.govt.nz/release/minister-welcomes-new-crown-research-institute"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "2000 persimmon spatial study",
+      "url": "/projects/hortresearch-persimmon-mapping-2000/"
+    }
+  ],
+  "status": "Source-backed historical research"
+}
