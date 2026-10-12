@@ -86,7 +86,8 @@
  function zoomOut(){zoom=Math.max(1,Number((zoom-0.5).toFixed(2)));updateURL(selected?.id)}
  function resetZoom(){zoom=1;updateURL(selected?.id)}
  function chooseFiveYear(start:number){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start;from=String(start);to=String(Math.min(start+4,max));includeUndated=false;selected=null;zoom=1;updateURL()}
- function decade(y:number){chooseFiveYear(y)}
+ function countEventsInFiveYearPeriod(start:number){const finish=Math.min(start+4,max);return dated.filter(e=>{const y=year(e) as number;const eventFinish=endYear(e)??y;return eventFinish>=start&&y<=finish;}).length}
+ function decade(y:number){const secondHalf=y+5;chooseFiveYear(secondHalf<=max&&countEventsInFiveYearPeriod(secondHalf)>countEventsInFiveYearPeriod(y)?secondHalf:y)}
  function clearFilters(){activeDecade=null;activeFiveYearStart=null;from='';to='';term='';includeUndated=true;selected=null;zoom=1;updateURL()}
  function yearLabel(value:number){return String(Math.floor(value))}
  onMount(()=>{
