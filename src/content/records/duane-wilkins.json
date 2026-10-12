@@ -10,7 +10,7 @@
     "Wilkins recalls that Eagle Technology designed DOCgis before 2003, with departmental analysts and developers continuing its development. He later returned to lead GIS at DOC; in 2012 the team became a shared service for the regions, a change he remembers as highly successful.",
     "LINZ’s 2026 Geospatial Capability Committee page lists Wilkins as a corresponding member and identifies him as the geospatial consultant for Ngā Poutama Matawhenua’s Practical Māori GIS Mapping Wānanga webinar series. LINZ’s 2020/21 annual report records fortnightly online Ngā Poutama sessions from October 2020, delivered with Te Kāhui Manu Hōkai for iwi, Māori trusts and environmental groups.",
     "LINZ’s school capability record lists Wilkins as a virtual field-trip subject specialist and Geographic Information Advocate for the 2017 virtual field trip. LINZ later featured him in Map My Wāhi virtual field trips for the East Coast and Taranaki, with material on StoryMaps, field data collection and local mapping.",
-    "His published resources include 2025 guides to historical imagery and 3D StoryMaps for kaupapa Māori GIS. In 2026, he wrote about two decades of Māori GIS practice, practitioner networks, and the importance of data authority and provenance."
+    "The National Library of New Zealand credits Wilkins as creator of ArcFlax Edition 2.0 Whanganui, a 2006 interactive GIS data DVD. His later published resources include 2025 guides to historical imagery and 3D StoryMaps for kaupapa Māori GIS. In 2026, he wrote about two decades of Māori GIS practice, practitioner networks, and the importance of data authority and provenance."
   ],
   "sources": [
     {
@@ -97,6 +97,14 @@
     {
       "label": "Māori GIS Mapping, We will never ask you for your data: Māori GIS, control and the difference between access and authority",
       "url": "https://maorigis.nz/blog/we-will-never-ask-you-for-your-data"
+    },
+    {
+      "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    },
+    {
+      "label": "ArcFlax 2.0 Whanganui interactive GIS DVD (2006)",
+      "url": "/systems/arcflax-whanganui-2006/"
     }
   ],
   "aliases": [
@@ -187,6 +195,10 @@
       {
         "label": "Māori GIS Mapping, We will never ask you for your data: Māori GIS, control and the difference between access and authority",
         "url": "https://maorigis.nz/blog/we-will-never-ask-you-for-your-data"
+      },
+      {
+        "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
       }
     ]
   ],
@@ -214,6 +226,10 @@
     {
       "label": "ArcGIS StoryMaps, Creating 3D Flythroughs for Cultural Narratives",
       "url": "https://storymaps.arcgis.com/stories/16c06b0ad9be4dffa3bb4650580c68b9"
+    },
+    {
+      "label": "ArcFlax 2.0 Whanganui interactive GIS DVD (2006)",
+      "url": "/systems/arcflax-whanganui-2006/"
     }
   ]
 }
