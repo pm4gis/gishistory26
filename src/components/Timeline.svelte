@@ -48,7 +48,7 @@
  $: periodGroups=[...new Set(dated.map(e=>Math.floor((year(e)??0)/10)*10))].sort((a,b)=>a-b).map(y=>({year:y,count:dated.filter(e=>Math.floor((year(e)??0)/10)*10===y).length}));
  $: densityMax=Math.max(1,...periodGroups.map(x=>x.count));
  $: selectedPeriod=from&&to&&Number.isFinite(Number(from))&&Number(to)===Number(from)+9?Number(from):null;
- $: chartMarks=(()=>{
+ $: baseChartMarks=(()=>{
   const lanes=new Map<number,number>();
   return filtered.filter(e=>{
    const start=year(e);const end=endYear(e)??start;
@@ -56,9 +56,13 @@
   }).map(event=>{
    const start=year(event) as number;const end=endYear(event)??start;
    const lane=lanes.get(start)||0;lanes.set(start,lane+1);
-   return {event,x1:scale(Math.max(viewMin,start)),x2:scale(Math.min(viewMax,end)),y:14+(lane%4)*8};
+   return {event,x1:scale(Math.max(viewMin,start)),x2:scale(Math.min(viewMax,end)),lane};
   });
  })();
+ $: maxMarkerLane=Math.max(0,...baseChartMarks.map(mark=>mark.lane));
+ $: chartAxisY=Math.max(64,24+maxMarkerLane*8);
+ $: chartHeight=Math.max(92,chartAxisY+28);
+ $: chartMarks=baseChartMarks.map(mark=>({...mark,y:chartAxisY-12-mark.lane*8}));
  $: hoveredEvent=chartMarks.find(mark=>mark.event.id===hoveredId)?.event||null;
  function updateURL(eventId?:any){
   if(compact)return;
@@ -73,6 +77,7 @@
  }
  function pick(e:any){selected=e;onSelect(e);if(!compact)updateURL(e.id)}
  function markerKeydown(event:KeyboardEvent,e:any){if(event.key==='Enter'||event.key===' '){event.preventDefault();pick(e)}}
+ function resetDateFilter(){selected=null;zoom=1;updateURL()}
  function zoomIn(){zoom=Math.min(maxZoom,Number((zoom+0.5).toFixed(2)));updateURL(selected?.id)}
  function zoomOut(){zoom=Math.max(1,Number((zoom-0.5).toFixed(2)));updateURL(selected?.id)}
  function resetZoom(){zoom=1;updateURL(selected?.id)}
@@ -94,7 +99,7 @@
  });
 </script>
 <section class="timeline-box" aria-label="Linked timeline"><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?'This chapter in time':'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
- {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max="2100" bind:value={from} on:change={()=>{selected=null;zoom=1;updateURL()}}/></label><label>To year<input type="number" min="1000" max="2100" bind:value={to} on:change={updateURL}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={updateURL}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
+ {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max="2100" bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max="2100" bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={updateURL}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
  <div class="period-head"><h2>Choose a decade</h2><p>Move from left to right through the history. Select a decade to focus the events below.</p></div>
  <nav class="period-nav" aria-label="Timeline decades">
  <button class="period-choice" class:active={!from&&!to} aria-pressed={!from&&!to} on:click={clearFilters}><strong>All years</strong><span>{dated.length} dated events</span></button>
@@ -110,11 +115,11 @@
    <button type="button" on:click={resetZoom} disabled={zoom===1}>Reset</button>
   </div>{/if}
  </div>
- <svg class="timeline-svg timeline-svg--interactive" viewBox="0 0 1000 92" role="group" aria-label="Interactive event date overview. Select a marker for its summary; zoom controls adjust the date scale.">
-  <line class="timeline-axis" x1="30" y1="53" x2="970" y2="53"/>
+ <svg class="timeline-svg timeline-svg--interactive" viewBox={'0 0 1000 '+chartHeight} style={'height:'+chartHeight+'px'} role="group" aria-label="Interactive event date overview. Select a marker for its summary; zoom controls adjust the date scale.">
+  <line class="timeline-axis" x1="30" y1={chartAxisY} x2="970" y2={chartAxisY}/>
   {#each ticks as tick}
-   <line class="timeline-tick" x1={scale(tick)} y1="49" x2={scale(tick)} y2="58"/>
-   <text x={scale(tick)} y="82" text-anchor="middle">{Math.round(tick)}</text>
+   <line class="timeline-tick" x1={scale(tick)} y1={chartAxisY-4} x2={scale(tick)} y2={chartAxisY+5}/>
+   <text x={scale(tick)} y={chartHeight-4} text-anchor="middle">{Math.round(tick)}</text>
   {/each}
   {#each chartMarks as mark (mark.event.id)}
    <g class="timeline-mark" class:selected={selected?.id===mark.event.id} class:hovered={hoveredId===mark.event.id} role="button" tabindex="0" aria-label={mark.event.dateDisplay+': '+mark.event.label} aria-pressed={selected?.id===mark.event.id}
@@ -193,7 +198,7 @@
 .timeline-zoom-controls button{min-width:44px}
 .timeline-zoom-level{display:flex;align-items:center;gap:8px;color:var(--muted);white-space:nowrap}
 .timeline-zoom-level input{width:120px;padding:0;accent-color:var(--accent)}
-.timeline-svg--interactive{height:92px;overflow:visible}
+.timeline-svg--interactive{overflow:visible}
 .timeline-svg--interactive .timeline-axis,.timeline-svg--interactive .timeline-tick{stroke:var(--line);stroke-width:1}
 .timeline-svg--interactive .timeline-span{stroke:var(--accent);stroke-width:3;opacity:.38;transition:opacity .16s,stroke-width .16s}
 .timeline-mark{cursor:pointer;outline:none;animation:timeline-marker-in .18s ease both}
