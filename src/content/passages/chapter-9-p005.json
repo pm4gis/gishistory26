@@ -21,7 +21,10 @@
     "person:penny-murray",
     "system:qmap-vector-cd-2006",
     "entity:gns-science",
-    "dataset:qmap-regional-gis-1994"
+    "dataset:qmap-regional-gis-1994",
+    "dataset:gns-active-faults",
+    "person:richard-jongens",
+    "person:grant-dellow"
   ],
   "blocks": [
     {
@@ -67,6 +70,22 @@
         }
       ],
       "id": "research-cri-qmap-cd-2006"
+    },
+    {
+      "type": "paragraph",
+      "text": "GNS Science’s predecessor, the Institute of Geological & Nuclear Sciences, defined the Active Faults Database’s spatial model in a 2003 data dictionary. It used lines for fault traces, sections and overall faults, and points for features such as trenches and displaced terraces, with fields for trace accuracy, geomorphic expression, movement, event timing and recurrence. The report explicitly says the database had not yet been used in a working environment. A 2004 GNS conference abstract then describes more than 200 faults in a public web map with spatial and attribute queries. The sources distinguish a 2003 database design from evidence of a public operational service by 2004; neither the 2003 schema date nor a current web layer dates every underlying field observation.",
+      "markdown": "GNS Science’s predecessor, the Institute of Geological & Nuclear Sciences, defined the Active Faults Database’s spatial model in a 2003 data dictionary. It used lines for fault traces, sections and overall faults, and points for features such as trenches and displaced terraces, with fields for trace accuracy, geomorphic expression, movement, event timing and recurrence. The report explicitly says the database had not yet been used in a working environment. A 2004 GNS conference abstract then describes more than 200 faults in a public web map with spatial and attribute queries. The sources distinguish a 2003 database design from evidence of a public operational service by 2004; neither the 2003 schema date nor a current web layer dates every underlying field observation.",
+      "sources": [
+        {
+          "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+          "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+        },
+        {
+          "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+          "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
+        }
+      ],
+      "id": "research-gns-active-faults-dictionary-and-web-map-2003-2004"
     },
     {
       "type": "paragraph",

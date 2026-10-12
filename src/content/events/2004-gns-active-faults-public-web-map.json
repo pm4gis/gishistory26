@@ -1,0 +1,31 @@
+{
+  "id": "2004-gns-active-faults-public-web-map",
+  "startDate": "2004",
+  "dateDisplay": "2004",
+  "datePrecision": "year",
+  "year": 2004,
+  "label": "GNS reports a public Active Faults Database map and query service",
+  "summary": "A GNS conference abstract described a compiled database of more than 200 active faults and public access through spatial web mapping and attribute queries.",
+  "url": "/timeline/",
+  "passageIds": [
+    "passage:chapter-9-94bf81a964"
+  ],
+  "recordIds": [
+    "dataset:gns-active-faults",
+    "entity:gns-science",
+    "person:richard-jongens",
+    "person:grant-dellow"
+  ],
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history",
+    "geology"
+  ],
+  "sources": [
+    {
+      "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+      "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
+    }
+  ]
+}

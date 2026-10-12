@@ -1,0 +1,41 @@
+{
+  "id": "person:brent-clothier",
+  "slug": "brent-clothier",
+  "name": "Brent Clothier",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/brent-clothier/",
+  "story": [
+    "Brent Clothier and Steve Green represented HortResearch in the CLUES Stage II project team; the report describes their SPASMO horticultural-model contribution."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+    }
+  ],
+  "aliases": [
+    "Brent Clothier"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+        "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "HortResearch",
+      "url": "/entities/hortresearch/"
+    },
+    {
+      "label": "CLUES catchment GIS",
+      "url": "/systems/clues-catchment-gis/"
+    }
+  ]
+}

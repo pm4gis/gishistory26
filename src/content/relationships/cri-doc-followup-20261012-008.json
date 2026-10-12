@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-doc-followup-20261012-008",
+  "a": "system:northland-crop-suitability-gis-2003",
+  "b": "person:georgina-griffiths",
+  "label": "Report co-author",
+  "basis": "Report co-author is identified in NIWA Client Report AKL2003-037 and the associated institutional report.",
+  "passageIds": [
+    "passage:chapter-23-461687bcb1"
+  ],
+  "sources": [
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "person:ross-woods",
+  "slug": "ross-woods",
+  "name": "Ross Woods",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/ross-woods/",
+  "story": [
+    "Ross Woods led NIWA’s 2004–2006 CLUES modelling project and is credited as project leader on the July 2006 Stage II report."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+    }
+  ],
+  "aliases": [
+    "Ross Woods"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+        "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "CLUES catchment GIS",
+      "url": "/systems/clues-catchment-gis/"
+    },
+    {
+      "label": "NIWA",
+      "url": "/entities/niwa/"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "person:malcolm-skinner",
+  "slug": "malcolm-skinner",
+  "name": "Malcolm Skinner",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/malcolm-skinner/",
+  "story": [
+    "Malcolm Skinner co-authored Forest Research’s 1999 Kinleith Forest study of spatial monitoring methods for forest growth and nutrition."
+  ],
+  "sources": [
+    {
+      "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    }
+  ],
+  "aliases": [
+    "Malcolm Skinner"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Forest Research plantation spatial monitoring",
+      "url": "/systems/forest-research-spatial-monitoring-1998/"
+    }
+  ]
+}

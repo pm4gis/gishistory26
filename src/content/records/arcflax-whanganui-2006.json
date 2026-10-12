@@ -9,7 +9,8 @@
   "story": [
     "The National Library of New Zealand catalogues ArcFlax Edition 2.0 Whanganui 2006 as an interactive GIS data DVD. The record names Duane Wilkins and the Crown Forestry Rental Trust, identifies Wellington as the place of publication, and specifies ArcReader 9.1. The preserved catalogue is a contemporary bibliographic anchor for the product.",
     "The DVD format offered a way to give people prepared digital maps and GIS tools without purchasing a full desktop GIS licence. The National Library record establishes the existence and technical format of the Whanganui edition, while other editions and their exact content must be documented separately.",
-    "A separate official Waitangi Tribunal inquiry index lists ArcFlax 1.0 Northland, dated January 2007, as a five-disc 2D and 3D GIS viewer with Crown purchases, Old Land Claims and Native Land Court block map material. It is catalogued separately from the Whanganui Edition 2.0 DVD published in 2006. Regional edition identifiers should not be interpreted as a single national version chronology."
+    "A separate official Waitangi Tribunal inquiry index lists ArcFlax 1.0 Northland, dated January 2007, as a five-disc 2D and 3D GIS viewer with Crown purchases, Old Land Claims and Native Land Court block map material. It is catalogued separately from the Whanganui Edition 2.0 DVD published in 2006. Regional edition identifiers should not be interpreted as a single national version chronology.",
+    "The catalogue gives a limited but useful view of the DVD contents: relief is shown by contours, shading and spot heights; map scales vary; and Taranaki appears among the subject headings. Its title names Whanganui, but the record does not define a precise coverage boundary or identify the underlying elevation source. ArcReader 9.1 is documented as the system requirement. Esri product documentation explains the general ArcReader/Publisher viewing architecture, while Wilkins’s later recollection describes larger ArcReader packages for non-specialist users; neither proves the exact file format, datasets, user list or contents of this one-disc Whanganui edition. CFRT’s current mapping description identifies claimant groups and Tribunal/settlement work as its general audience, and warns that some claimant material is confidential. The original disc remains unexamined."
   ],
   "sources": [
     {
@@ -23,6 +24,14 @@
     {
       "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
       "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+    },
+    {
+      "label": "Esri, ArcReader and ArcGIS Publisher product guide",
+      "url": "https://content.esri.com/support/documentation/ao_/what_is_arcgis_sep2005.pdf"
+    },
+    {
+      "label": "Duane Wilkins, retrospective account of Māori GIS DVD packages, 16 August 2026",
+      "url": "https://maorigis.nz/blog/when-maori-gis-came-on-ten-dvds"
     }
   ],
   "paragraphSources": [
@@ -55,6 +64,28 @@
         "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006 DVD catalogue",
         "url": "https://natlib.govt.nz/records/30673810"
       }
+    ],
+    [
+      {
+        "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+        "url": "https://natlib.govt.nz/records/30673810"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, Mapping services",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "Esri, ArcReader and ArcGIS Publisher product guide",
+        "url": "https://content.esri.com/support/documentation/ao_/what_is_arcgis_sep2005.pdf"
+      },
+      {
+        "label": "Duane Wilkins, retrospective account of Māori GIS DVD packages, 16 August 2026",
+        "url": "https://maorigis.nz/blog/when-maori-gis-came-on-ten-dvds"
+      },
+      {
+        "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry record A045, Northland ArcFlax 1.0, January 2007",
+        "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+      }
     ]
   ],
   "aliases": [],
@@ -67,6 +98,10 @@
     {
       "label": "Northland ArcFlax 1.0 five-disc archival entry",
       "url": "/systems/arcflax-northland-2007/"
+    },
+    {
+      "label": "Esri and ArcGIS product context",
+      "url": "/systems/esri-arcgis/"
     }
   ],
   "status": "Source-backed historical activity"

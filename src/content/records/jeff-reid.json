@@ -1,0 +1,41 @@
+{
+  "id": "person:jeff-reid",
+  "slug": "jeff-reid",
+  "name": "Jeff Reid",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/jeff-reid/",
+  "story": [
+    "Jeff Reid of Crop & Food Research co-authored the 2003 Hokianga and Western Kaipara crop-suitability report."
+  ],
+  "sources": [
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+    }
+  ],
+  "aliases": [
+    "Jeff Reid"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Crop & Food Research",
+      "url": "/entities/crop-food-research/"
+    },
+    {
+      "label": "Hokianga and Western Kaipara crop-suitability maps",
+      "url": "/systems/northland-crop-suitability-gis-2003/"
+    }
+  ]
+}

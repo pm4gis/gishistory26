@@ -1,0 +1,61 @@
+{
+  "id": "system:iwi-futures-land-resource-evaluation-2008",
+  "slug": "iwi-futures-land-resource-evaluation-2008",
+  "name": "Iwi Futures land and resource evaluation module (2008–2010)",
+  "kind": "Project",
+  "category": "Historical Māori GIS and research projects",
+  "url": "/systems/iwi-futures-land-resource-evaluation-2008/",
+  "description": "A Landcare Research and AgResearch framework for Māori land owners and organisations to locate blocks, assemble resource information and assess land-use options.",
+  "story": [
+    "The Foundation for Research, Science and Technology funded Iwi Futures: Integrated Māori Land Resource Development: A Decision Support Framework from late 2007. Landcare Research’s Garth Harmsworth and AgResearch’s Alec Mackay describe a Land and Resource Evaluation module developed from early 2008 to February 2010, guided by questions raised by Māori landowners and organisations.",
+    "Four case studies—Ngāti Hine Health Trust, Paehinahina-Mourea Trust, Waimarama Incorporation and Aohanga Incorporation—combined national and secondary datasets with field visits and participatory GIS. The inputs included Māori land-block information, NZLRI, soils, pasture potential, forestry, infrastructure and hydrology. The project produced GIS knowledge repositories, thematic layers, detailed resource maps, ready-to-print PDFs or JPEGs and data layers for desktop GIS.",
+    "The 2010 paper calls the generic Land and Resource Evaluation module a draft and describes a step-by-step web-accessible process for locating blocks, characterising resources and assessing alternative enterprises and development options. It does not establish that a public operational website or nationwide service was launched. The authors also identify cultural layers as confidential and access restricted; this history does not reproduce them."
+  ],
+  "sources": [
+    {
+      "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+      }
+    ],
+    [
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+      }
+    ],
+    [
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+      }
+    ]
+  ],
+  "aliases": [
+    "Iwi Futures LRE module"
+  ],
+  "themeIds": [
+    "maori-gis"
+  ],
+  "status": "Source-backed research module",
+  "contextLinks": [
+    {
+      "label": "Māori GIS",
+      "url": "/themes/maori-gis/"
+    },
+    {
+      "label": "Manaaki Whenua Landcare Research",
+      "url": "/entities/manaaki-whenua-landcare-research/"
+    },
+    {
+      "label": "AgResearch",
+      "url": "/entities/agresearch/"
+    }
+  ]
+}

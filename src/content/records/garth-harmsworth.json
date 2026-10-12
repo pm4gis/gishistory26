@@ -8,7 +8,8 @@
   "story": [
     "Garth Harmsworth completed an honours MSc in earth sciences at Waikato in 1983. His environmental-science career has included resource assessment, national databases, GIS and Indigenous research at Manaaki Whenua from 1992. He has worked with Māori organisations, government agencies, councils and communities on land-use planning, ecosystem health, cultural indicators, landscape restoration and research capability.",
     "Garth Harmsworth joined Landcare Research in 1992. His work connected land-resource assessment and national environmental databases with GIS and Māori-led research. Manaaki Whenua’s professional account describes research on Māori land use, ecosystem indicators and the relationship between environmental information and Indigenous knowledge. He co-authored the 2005 Motueka case study on developing and using GIS for iwi and hapū with Mick Park and Dean Walker. His earlier work included regional land-resource data for GIS in 1993–1994 and Māori land-values research in 1995–1996.",
-    "Garth Harmsworth prepared a discussion document on Māori values for land-use planning in 1995 and contributed an extended abstract on GIS and Māori land values to the April 1996 remote-sensing and GIS workshop at Massey University."
+    "Garth Harmsworth prepared a discussion document on Māori values for land-use planning in 1995 and contributed an extended abstract on GIS and Māori land values to the April 1996 remote-sensing and GIS workshop at Massey University.",
+    "Garth Harmsworth co-authored the 2010 Iwi Futures Land and Resource Evaluation paper with AgResearch’s Alec Mackay. Their work developed a draft module for Māori landowners, based on four case studies and participatory GIS, while noting that cultural layers in case-study repositories were access restricted."
   ],
   "sources": [
     {
@@ -30,6 +31,10 @@
     {
       "label": "Chapter 11 · Māori land values, 1995–1996",
       "url": "/stories/universities-build-a-field/"
+    },
+    {
+      "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
     }
   ],
   "aliases": [
@@ -37,7 +42,14 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {
@@ -67,6 +79,12 @@
       {
         "label": "Chapter 11 · Māori land values, 1995–1996",
         "url": "/stories/universities-build-a-field/"
+      }
+    ],
+    [
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
       }
     ]
   ],

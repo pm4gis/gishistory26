@@ -1,0 +1,24 @@
+{
+  "id": "relationship:cri-doc-followup-20261012-001",
+  "a": "system:arcflax-whanganui-2006",
+  "b": "system:esri-arcgis",
+  "label": "ArcReader 9.1 viewer requirement recorded for the DVD",
+  "basis": "The 2006 catalogue specifies ArcReader 9.1 as the system requirement; the link records the software family, without assuming the disc’s internal project format.",
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "sources": [
+    {
+      "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
+      "url": "https://natlib.govt.nz/records/30673810"
+    },
+    {
+      "label": "Crown Forestry Rental Trust, Mapping services",
+      "url": "https://cfrt.org.nz/research-activities/"
+    },
+    {
+      "label": "Esri, ArcReader and ArcGIS Publisher product guide",
+      "url": "https://content.esri.com/support/documentation/ao_/what_is_arcgis_sep2005.pdf"
+    }
+  ]
+}

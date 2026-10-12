@@ -4,7 +4,7 @@
   "articleId": "article:chapter-8",
   "title": "Routine forestry use",
   "order": 9,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:8",
@@ -12,7 +12,12 @@
     "person:andrew-dunningham",
     "person:barbara-hock",
     "person:tim-payn",
-    "person:j-w-shirley"
+    "person:j-w-shirley",
+    "system:forest-research-spatial-monitoring-1998",
+    "person:reece-hill",
+    "person:malcolm-skinner",
+    "person:alan-thorn",
+    "person:w-c-rijkse"
   ],
   "blocks": [
     {
@@ -49,6 +54,18 @@
       "markdown": "A 1998 paper by Forest Research scientists Barbara Höck, Tim Payn and Andrew Dunningham describes later work combining remote sensing, permanent sample plots, foliage measurements, soil-map units, GIS and geostatistics. One trial treated satellite pixels as 25-metre ground cells and tested them against measured forest data. Another loaded growth and foliage plots into GIS and overlaid them with soil units while the team worked on a better link between MARVL and GIS. These methods allowed staff to compare field inventory, imagery and environmental information after the institute became a Crown Research Institute.",
       "sources": [],
       "id": "ch08-s10-p05"
+    },
+    {
+      "type": "paragraph",
+      "text": "A 1999 Forest Research study by Tim Payn, Reece Hill, Barbara Höck, Malcolm Skinner, Alan Thorn and W. C. Rijkse tested GIS and geostatistics for long-term forest monitoring. The Kinleith Forest case combined site-index growth estimates, foliage-nutrition measurements and mapped soil units; kriging was used to estimate spatial patterns and illustrate possible change over two rotations. The authors concluded that the available soil and foliage data were too sparse for confident use of the methods, and that structured sampling would still be needed. This was a research method and modelled map example, not proof of an operational monitoring service across plantation estates.",
+      "markdown": "A 1999 Forest Research study by Tim Payn, Reece Hill, Barbara Höck, Malcolm Skinner, Alan Thorn and W. C. Rijkse tested GIS and geostatistics for long-term forest monitoring. The Kinleith Forest case combined site-index growth estimates, foliage-nutrition measurements and mapped soil units; kriging was used to estimate spatial patterns and illustrate possible change over two rotations. The authors concluded that the available soil and foliage data were too sparse for confident use of the methods, and that structured sampling would still be needed. This was a research method and modelled map example, not proof of an operational monitoring service across plantation estates.",
+      "sources": [
+        {
+          "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Potential for the use of GIS and spatial analysis techniques as tools for monitoring changes in forest productivity and nutrition, Forest Ecology and Management 122 (1999), 187–196",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+        }
+      ],
+      "id": "research-forest-research-geostatistics-1999"
     },
     {
       "type": "paragraph",

@@ -15,7 +15,8 @@
     "Its web-mapping work included GUILD-on-the-Web, released in January 1996 under Robert Gibb’s leadership with David Medyckyj-Scott as co-developer. Later services included the LRIS Portal, S-map Online and Our Environment. Medyckyj-Scott recalls LRIS as Koordinates’ first hosted instance outside the company’s own service.",
     "Robert Gibb, Alexander Raichev and Michael Speth developed rHEALPix, and Gibb contributed to the OGC and ISO DGGS standards. Later land-use mapping at the institute applied the H3 grid. Manaaki Whenua also hosted the OGC Technical and Planning Committee meeting and two open summits in Palmerston North in December 2017.",
     "Land Environments of New Zealand (LENZ) was released as a national atlas and digital resource in April 2003. Developed by Landcare Research with the Ministry for the Environment, it classified New Zealand environments using 15 climate, landform and soil variables and supplied atlas, technical and digital-data components.",
-    "In August 2011 the Government announced a four-year, $4 million Land Cover Research Programme led by Landcare Research. It linked satellite imagery, geospatial mapping and advanced computing with work by the Ministry for the Environment, Department of Conservation, Ministry of Agriculture and Forestry and regional councils, building on the existing LUCAS programme."
+    "In August 2011 the Government announced a four-year, $4 million Land Cover Research Programme led by Landcare Research. It linked satellite imagery, geospatial mapping and advanced computing with work by the Ministry for the Environment, Department of Conservation, Ministry of Agriculture and Forestry and regional councils, building on the existing LUCAS programme.",
+    "Landcare Research contributed soil and land-resource expertise to the 2003 Hokianga and Western Kaipara crop-suitability mapping and co-produced the 2008–2010 Iwi Futures Land and Resource Evaluation module with AgResearch. The latter assembled GIS repositories and map layers for four Māori land case studies; its paper describes a draft module and restricted cultural layers, not an open national service."
   ],
   "sources": [
     {
@@ -65,6 +66,14 @@
     {
       "label": "Beehive, $4 million for high-tech mapping programme, 12 August 2011",
       "url": "https://www.beehive.govt.nz/release/4-million-high-tech-mapping-programme"
+    },
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+    },
+    {
+      "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
     }
   ],
   "aliases": [
@@ -129,6 +138,18 @@
       {
         "label": "James Barringer, Manaaki Whenua contribution to Cartographic Activities in New Zealand 2015–2019, printed pp.30–31: OGC meeting and summits",
         "url": "https://icaci.org/files/documents/national_reports/2015-2019/newzealand-2019_lq.pdf"
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+      },
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
       }
     ]
   ],

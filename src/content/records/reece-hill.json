@@ -1,0 +1,37 @@
+{
+  "id": "person:reece-hill",
+  "slug": "reece-hill",
+  "name": "Reece Hill",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/reece-hill/",
+  "story": [
+    "Reece Hill co-authored Forest Research’s 1999 Kinleith Forest study of GIS, geostatistics, growth and foliage nutrition."
+  ],
+  "sources": [
+    {
+      "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    }
+  ],
+  "aliases": [
+    "Reece Hill"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "Forest Research plantation spatial monitoring",
+      "url": "/systems/forest-research-spatial-monitoring-1998/"
+    }
+  ]
+}

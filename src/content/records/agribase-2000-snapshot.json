@@ -8,12 +8,17 @@
   "description": "A national agricultural farm-type dataset held as GIS spatial information around 2000.",
   "story": [
     "AgriBase provided georeferenced farm boundaries or farm units and agricultural attributes for spatial analysis. A University of Canterbury geospatial holdings catalogue identifies a simplified version of AgriBase dated December 2000 in a New Zealand Map Grid-based collection.",
-    "The December 2000 copy is a dated dataset snapshot, not evidence of when the AgriBase programme was originally founded or of its later currency. Land-cover datasets and farm-type information are different sources: the former characterises observed surface cover, while the latter represents agricultural holdings and uses."
+    "The December 2000 copy is a dated dataset snapshot, not evidence of when the AgriBase programme was originally founded or of its later currency. Land-cover datasets and farm-type information are different sources: the former characterises observed surface cover, while the latter represents agricultural holdings and uses.",
+    "This December 2000 dataset is separate from the AgriBase layer dated September 2003 that NIWA later used in the CLUES land-use mapping. The two snapshots should not be treated as the same file or vintage."
   ],
   "sources": [
     {
       "label": "University of Canterbury, geospatial data holdings and AgriBase December 2000 snapshot",
       "url": "https://www.canterbury.ac.nz/study/academic-study/science/science-schools-and-departments/school-of-earth-and-environment/facilities-and-equipment/geospatial-data-and-software"
+    },
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
     }
   ],
   "paragraphSources": [
@@ -28,6 +33,12 @@
         "label": "University of Canterbury, geospatial data holdings and AgriBase December 2000 snapshot",
         "url": "https://www.canterbury.ac.nz/study/academic-study/science/science-schools-and-departments/school-of-earth-and-environment/facilities-and-equipment/geospatial-data-and-software"
       }
+    ],
+    [
+      {
+        "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+        "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+      }
     ]
   ],
   "aliases": [],
@@ -36,6 +47,10 @@
     {
       "label": "Forestry and land-use GIS history",
       "url": "/stories/forestry-finds-gis/"
+    },
+    {
+      "label": "CLUES AgriBase input dated September 2003",
+      "url": "/datasets/agribase-2003-snapshot/"
     }
   ],
   "status": "Source-backed historical dataset"

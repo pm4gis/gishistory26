@@ -7,7 +7,8 @@
   "url": "/people/m-r-jessen/",
   "story": [
     "P. G. Luckman, R. G. Gibb and M. R. Jessen wrote on combining expert systems and GIS for land classification.",
-    "M. R. Jessen’s 1987 *Urban Land Use Capability Survey Handbook* documented a system developed for land evaluation at the more detailed scales required for urban development. The work drew on the LUC tradition but focused on constraints relevant to settlement, infrastructure and hazard rather than on agricultural production alone."
+    "M. R. Jessen’s 1987 *Urban Land Use Capability Survey Handbook* documented a system developed for land evaluation at the more detailed scales required for urban development. The work drew on the LUC tradition but focused on constraints relevant to settlement, infrastructure and hazard rather than on agricultural production alone.",
+    "The 2003 Hokianga and Western Kaipara report credits Murray Jessen of Landcare Research as a co-author of the regional soil and crop-potential mapping."
   ],
   "sources": [
     {
@@ -17,16 +18,28 @@
     {
       "label": "Chapter 7 · Urban land capability",
       "url": "/stories/mapping-land-as-data/"
+    },
+    {
+      "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
     }
   ],
   "aliases": [
-    "M. R. Jessen"
+    "M. R. Jessen",
+    "Murray Jessen"
   ],
   "themeIds": [
     "profession"
   ],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {
@@ -38,6 +51,12 @@
       {
         "label": "Chapter 7 · Urban land capability",
         "url": "/stories/mapping-land-as-data/"
+      }
+    ],
+    [
+      {
+        "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
       }
     ]
   ]

@@ -4,7 +4,7 @@
   "articleId": "article:chapter-23",
   "title": "A new local government",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "themeIds": [],
   "recordIds": [
     "chapter:23",
@@ -19,7 +19,23 @@
     "person:ian-sutherland",
     "person:ian-mccahon",
     "person:ian-lynn",
-    "person:sam-carrick"
+    "person:sam-carrick",
+    "system:northland-crop-suitability-gis-2003",
+    "entity:niwa",
+    "entity:manaaki-whenua-landcare-research",
+    "entity:crop-food-research",
+    "entity:hortresearch",
+    "entity:kaipara-district-council",
+    "entity:far-north-district-council",
+    "person:georgina-griffiths",
+    "person:andrew-tait",
+    "person:david-wratt",
+    "person:m-r-jessen",
+    "person:malcolm-mcleod",
+    "person:jeff-reid",
+    "person:annette-richardson",
+    "dataset:lcdb",
+    "dataset:land-environments-nz-2003"
   ],
   "blocks": [
     {
@@ -88,6 +104,26 @@
       ],
       "id": "research-growotago-distribution",
       "markdown": "Otago Regional Council published growOTAGO in 2004 with NIWA, AgResearch, Manaaki Whenua, universities and other partners. The product included 92 climate maps, soil mapping and topographic and aerial context, distributed on four CDs and later through an online map service. Ian Lynn and Sam Carrick are among the research contributors identified in the technical histories. Integrated Mapping developed the website and CD presentation. The combination made regional land-resource information usable beyond the offices that had assembled it: farmers and advisers could compare soil and climate conditions when considering an existing activity or a possible new one."
+    },
+    {
+      "type": "paragraph",
+      "text": "A 2001–03 NIWA-led study commissioned for the Hokianga and western Kaipara brought Landcare Research, Crop & Food Research and HortResearch together to map broad crop potential. Georgina Griffiths, Andrew Tait, David Wratt, Murray Jessen, Malcolm McLeod, Jeff Reid, John Anderson, Noel Porter, Stephan Halloy and Annette Richardson are named in the March 2003 report. Its inventory comprised 28 climate maps at 1:250,000 and seven soil maps at 1:50,000, based on existing station, terrain and soil information; climate estimates represented 500-metre cells. The GIS assessment covered peanuts, Māori potato, mānuka for oil, banana, mate tea, avocado, cherimoya, fig, blueberry and hydrangea. Councils made the results available through two public libraries and their offices. The report presents regional screening to guide further investigation, not a site-specific crop recommendation, and it does not name the GIS software. Its copyright notice requires prior permission to reproduce its data, figures, tables or maps.",
+      "markdown": "A 2001–03 NIWA-led study commissioned for the Hokianga and western Kaipara brought Landcare Research, Crop & Food Research and HortResearch together to map broad crop potential. Georgina Griffiths, Andrew Tait, David Wratt, Murray Jessen, Malcolm McLeod, Jeff Reid, John Anderson, Noel Porter, Stephan Halloy and Annette Richardson are named in the March 2003 report. Its inventory comprised 28 climate maps at 1:250,000 and seven soil maps at 1:50,000, based on existing station, terrain and soil information; climate estimates represented 500-metre cells. The GIS assessment covered peanuts, Māori potato, mānuka for oil, banana, mate tea, avocado, cherimoya, fig, blueberry and hydrangea. Councils made the results available through two public libraries and their offices. The report presents regional screening to guide further investigation, not a site-specific crop recommendation, and it does not name the GIS software. Its copyright notice requires prior permission to reproduce its data, figures, tables or maps.",
+      "sources": [
+        {
+          "label": "Griffiths et al., Use of Climate, Soil, and Crop Information for Identifying Potential Land-Use Change in the Hokianga and Western Kaipara Region, NIWA Client Report AKL2003-037, March 2003",
+          "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+        },
+        {
+          "label": "NIWA, GIS mapping: showing great potential!, Water & Atmosphere, December 2002",
+          "url": "https://niwa.co.nz/water-atmosphere/vol10-no4-december-2002/niwa-news-forum"
+        },
+        {
+          "label": "NIWA, Assessment of crop and tree species growing potential using climate, soil and topographic information",
+          "url": "https://niwa.co.nz/climate-and-weather/assessment-crop-and-tree-species-growing-potential-using-climate-soil-and"
+        }
+      ],
+      "id": "research-northland-crop-suitability-maps-2003"
     }
   ],
   "sources": [],

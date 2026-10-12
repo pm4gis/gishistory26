@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-doc-followup-20261012-029",
+  "a": "system:clues-catchment-gis",
+  "b": "dataset:land-environments-nz-2003",
+  "label": "LENZ landform input",
+  "basis": "The July 2006 Stage II report identifies this data source in CLUES land-use or soil modelling.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
+    }
+  ]
+}

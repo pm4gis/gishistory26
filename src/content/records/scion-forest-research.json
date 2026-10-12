@@ -7,15 +7,29 @@
   "url": "/entities/scion-forest-research/",
   "website": null,
   "story": [
-    "Forestry research linked growth models, inventory and geographic information. The Forest Research and later Scion lineage contributed methods and systems used by forest managers and commercial service providers. GIS helped connect models with the actual stands, terrain and conditions to which a management decision applied."
+    "Forestry research linked growth models, inventory and geographic information. The Forest Research and later Scion lineage contributed methods and systems used by forest managers and commercial service providers. GIS helped connect models with the actual stands, terrain and conditions to which a management decision applied.",
+    "Forest Research’s 1999 Kinleith study explored GIS, soil-unit stratification and geostatistics for mapping tree growth and foliage nutrition. The authors identified sparse observations as a limitation and called for structured sampling, evidence of applied research rather than a proven operational monitoring service."
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    }
+  ],
   "aliases": [
     "Scion",
     "Forest Research"
   ],
   "themeIds": [],
   "status": "GIS account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [
+      {
+        "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

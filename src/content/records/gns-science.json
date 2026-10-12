@@ -10,7 +10,8 @@
     "GNS Science’s geological mapping developed through QMAP and later seamless digital datasets. GIS linked mapped geology to descriptions, observations and compilation decisions. Steve Edbrooke and Jane Forsyth appear among the national geological-map contributors in the research, making the people behind the published layers more visible.",
     "QMAP combined earlier published and unpublished geological mapping with targeted fieldwork. Its 21 revised regional sheets were published during 1996–2012, each with an explanatory text covering the area’s geological history, resources and hazards. GIS held more than the printed colours: geological-unit polygons and fault lines carried attributes such as rock type, age, location accuracy and movement. The sheets and their digital datasets were related products with different uses.",
     "In 2014, GNS Science joined the individual QMAP datasets into a seamless national 1:250,000 dataset. A second edition in 2018 adopted GeoSciML-Lite structure and geoscience vocabularies. The 2020 third edition incorporated new regional mapping, aligned active-fault geometry with the New Zealand Active Fault Database and improved North Island topology.",
-    "The Regional Geological Map Archive and Database was recognised as nationally significant in 1992, with GNS Science as custodian. Funding in 2009 supported a digital image catalogue to improve access while reducing handling of original maps. Its older field sheets and unpublished interpretations complement the later digital map collection, preserving the observations behind successive GIS compilations."
+    "The Regional Geological Map Archive and Database was recognised as nationally significant in 1992, with GNS Science as custodian. Funding in 2009 supported a digital image catalogue to improve access while reducing handling of original maps. Its older field sheets and unpublished interpretations complement the later digital map collection, preserving the observations behind successive GIS compilations.",
+    "The 2003 Active Faults Database data dictionary was produced by the predecessor Institute of Geological & Nuclear Sciences. It defined line and point features, spatial quality, fault movement and earthquake-history attributes; its authors said the database was not yet in a working environment. A GNS conference abstract in 2004 described a public spatial web map and attribute query for more than 200 active faults."
   ],
   "sources": [
     {
@@ -20,6 +21,14 @@
     {
       "label": "GNS Science, Regional Geological Map Archive and Database",
       "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+    },
+    {
+      "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+      "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+    },
+    {
+      "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+      "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
     }
   ],
   "aliases": [
@@ -50,6 +59,16 @@
       {
         "label": "GNS Science, Regional Geological Map Archive and Database",
         "url": "https://www.gns.cri.nz/data-and-resources/regional-geological-map-archive-and-database/"
+      }
+    ],
+    [
+      {
+        "label": "Jongens and Dellow, The Active Faults Database of NZ: Data Dictionary, Institute of Geological & Nuclear Sciences Science Report 2003/17",
+        "url": "https://shop.gns.cri.nz/sr_2003-017-pdf/"
+      },
+      {
+        "label": "Jongens et al., Active Faults Database of New Zealand, Geological Society of New Zealand Annual Conference abstracts, 2004",
+        "url": "https://gsnz.org.nz/assets/Uploads/Shop/Products/GSNZ_annual_conference/MP117_2004_Taupo/MP117A_2004_GSNZ_conference_Taupo_abstract_volume.pdf"
       }
     ]
   ],

@@ -9,7 +9,8 @@
   "story": [
     "The Ministry of Agriculture and Forestry and the Ministry for the Environment commissioned NIWA and research partners to develop a GIS decision-support framework relating changes in rural land use to catchment water quality. The programme covered national, regional and catchment analysis and included AgResearch, HortResearch, Landcare Research, Lincoln Ventures and Harris Consulting.",
     "The reports describe planned integration of NIWA's SPARROW catchment modelling, AgResearch's OVERSEER nutrient model and HortResearch's SPASMO environmental model. The 2004 and 2006 stages provide direct evidence of the programme and work in progress. Any claim that a particular commercial interface or fully deployed system resulted requires separate evidence.",
-    "The August 2004 Stage I report also documents an already working ArcGIS interface: its Water Quality Modelling Toolbox selected catchment river reaches, ran the SPARROW nitrogen model and produced mapped outputs for the Waikato catchment. Figures 5-2 through 5-5 show the actual screen and model outputs. The other component model integrations were still under development in August 2004; the later CLUES system was demonstrated separately by 2008."
+    "The August 2004 Stage I report also documents an already working ArcGIS interface: its Water Quality Modelling Toolbox selected catchment river reaches, ran the SPARROW nitrogen model and produced mapped outputs for the Waikato catchment. Figures 5-2 through 5-5 show the actual screen and model outputs. The other component model integrations were still under development in August 2004; the later CLUES system was demonstrated separately by 2008.",
+    "The July 2006 Stage II report shows that the programme moved beyond its initial proposal. A custom GIS menu worked in ArcGIS 8.3 or 9, allowing scenario sketching and catchment overlays. At the report date, SPARROW, OVERSEER and Harris Consulting economic calculations were integrated; SPASMO integration had only begun. Environment Waikato started testing in June 2005 and staff were generating their own land-use scenarios. Partner exchange used a password-protected Landcare FTP site. Land-use inputs included AgriBase (September 2003), LCDB2, MAF Monitor Farms (2004) and LENZ (2002); the report records incompatibility between AgriBase and LCDB2, resolved by using AgriBase only where it agreed with LCDB2. NZLRI/Fundamental Soil Layers and the National Soils Database provided soil attributes. SPASMO relied on representative regional horticultural soil profiles rather than spatially modelled soils because the required soil-physics data were sparse. The report therefore documents a working research pilot and tested workflows, while leaving some model integrations and public distribution unproven."
   ],
   "sources": [
     {
@@ -23,6 +24,10 @@
     {
       "label": "NIWA, Woods et al., Predicting the effects of land use on water quality, Stage I, report CHC2004-097 (August 2004), pp. 7–10",
       "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+    },
+    {
+      "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+      "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
     }
   ],
   "paragraphSources": [
@@ -50,6 +55,12 @@
       {
         "label": "NIWA, Woods et al., Predicting the effects of land use on water quality, Stage I, report CHC2004-097 (August 2004), pp. 7–10",
         "url": "https://webstatic.niwa.co.nz/library/CHC2004-097.pdf"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, The CLUES Project: Predicting the Effects of Land-use on Water Quality – Stage II, Client Report HAM2006-096, July 2006",
+        "url": "https://webstatic.niwa.co.nz/library/HAM2006-096.pdf"
       }
     ]
   ],

@@ -1,0 +1,41 @@
+{
+  "id": "person:alec-mackay",
+  "slug": "alec-mackay",
+  "name": "Alec Mackay",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/alec-mackay/",
+  "story": [
+    "Alec Mackay of AgResearch co-authored the 2010 Iwi Futures Land and Resource Evaluation paper with Garth Harmsworth of Landcare Research."
+  ],
+  "sources": [
+    {
+      "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+    }
+  ],
+  "aliases": [
+    "Alec Mackay"
+  ],
+  "themeIds": [],
+  "status": "Source-backed contribution",
+  "paragraphSources": [],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
+      }
+    ]
+  ],
+  "contextLinks": [
+    {
+      "label": "AgResearch",
+      "url": "/entities/agresearch/"
+    },
+    {
+      "label": "Iwi Futures Land and Resource Evaluation module",
+      "url": "/systems/iwi-futures-land-resource-evaluation-2008/"
+    }
+  ]
+}

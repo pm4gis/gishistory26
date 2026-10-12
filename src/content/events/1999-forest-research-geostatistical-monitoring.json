@@ -1,0 +1,35 @@
+{
+  "id": "1999-forest-research-geostatistical-monitoring",
+  "startDate": "1999",
+  "dateDisplay": "1999",
+  "datePrecision": "year",
+  "year": 1999,
+  "label": "Forest Research tests geostatistics for plantation monitoring",
+  "summary": "A Kinleith Forest study combined GIS, soil units, site-index estimates and foliage measurements to explore long-term productivity and nutrition mapping. The authors warned that sparse data prevented confident estimates and recommended structured sampling.",
+  "url": "/timeline/",
+  "passageIds": [
+    "passage:chapter-8-87633bc2db"
+  ],
+  "recordIds": [
+    "system:forest-research-spatial-monitoring-1998",
+    "entity:scion-forest-research",
+    "person:tim-payn",
+    "person:barbara-hock",
+    "person:reece-hill",
+    "person:malcolm-skinner",
+    "person:alan-thorn",
+    "person:w-c-rijkse"
+  ],
+  "themeIds": [],
+  "categories": [
+    "Research institutes",
+    "GIS history",
+    "forestry"
+  ],
+  "sources": [
+    {
+      "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    }
+  ]
+}

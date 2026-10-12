@@ -9,7 +9,8 @@
   "story": [
     "AgResearch was formed during the 1992 Crown Research Institute reorganisation, incorporating government agricultural research functions. Its work included farm production, nutrient budgets, pasture and environmental research. GIS capacity grew in projects before being coordinated institution-wide, as documented by Bruce McLennan at SIRC in 2007.",
     "From 2004, AgResearch was a partner in NIWA-led catchment modelling intended to connect GIS with OVERSEER nutrient-budget calculations and other farm and water-quality models. The records establish research involvement and model integration plans; they do not establish that every proposed interface was deployed.",
-    "A NIWA account published in March 2008 identifies AgResearch as a partner in ROTAN nitrogen-routing research at Lake Taupō, alongside Lincoln Ventures and GNS Science. This was a specific catchment modelling application, distinct from AgResearch's contribution of OVERSEER calculations to the separate CLUES programme."
+    "A NIWA account published in March 2008 identifies AgResearch as a partner in ROTAN nitrogen-routing research at Lake Taupō, alongside Lincoln Ventures and GNS Science. This was a specific catchment modelling application, distinct from AgResearch's contribution of OVERSEER calculations to the separate CLUES programme.",
+    "AgResearch’s Alec Mackay co-developed the Iwi Futures Land and Resource Evaluation module with Landcare Research scientist Garth Harmsworth. The 2008–2010 work used participatory GIS and four Māori land case studies to assemble land-resource data and assess potential development options. The 2010 paper describes a draft module and case-study repositories, not a confirmed public operational service."
   ],
   "sources": [
     {
@@ -23,6 +24,10 @@
     {
       "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
       "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+    },
+    {
+      "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
     }
   ],
   "paragraphSources": [
@@ -50,6 +55,12 @@
       {
         "label": "NIWA, 'Nitrates in water – now and in the future', Freshwater Update 26, 18 March 2008",
         "url": "https://niwa.co.nz/lakes/freshwater-update/no26-2008/nitrates-water-now-and-future"
+      }
+    ],
+    [
+      {
+        "label": "Harmsworth and Mackay, Māori Land Resource Assessment and Evaluation Tool, Iwi Futures programme, 2010",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/1025/download"
       }
     ]
   ],

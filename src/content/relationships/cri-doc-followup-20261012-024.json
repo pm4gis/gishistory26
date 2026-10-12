@@ -1,0 +1,16 @@
+{
+  "id": "relationship:cri-doc-followup-20261012-024",
+  "a": "system:forest-research-spatial-monitoring-1998",
+  "b": "person:malcolm-skinner",
+  "label": "1999 research paper co-author",
+  "basis": "1999 research paper co-author is documented in the 1998–1999 plantation spatial monitoring research record.",
+  "passageIds": [
+    "passage:chapter-8-87633bc2db"
+  ],
+  "sources": [
+    {
+      "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    }
+  ]
+}
