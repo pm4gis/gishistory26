@@ -1,5 +1,15 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {onRequest} from '../functions/mcp.js';
-const req=body=>new Request('https://example.org/mcp',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const env={ASSETS:{fetch:async url=>Response.json(url.pathname==='/release.json'?{revision:'fixture'}:[])}};
-test('MCP lists read tools and excludes writes',async()=>{const res=await onRequest({request:req({jsonrpc:'2.0',id:1,method:'tools/list'}),env});const body=await res.json();assert.equal(body.result.tools.length,3);assert.ok(body.result.tools.every(t=>!/publish|write|delete/.test(t.name)))});
-test('MCP reports unknown tools and invalid input',async()=>{const res=await onRequest({request:req({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'publish',arguments:{}}}),env});assert.equal((await res.json()).error.code,-32601)});
-test('MCP retrieves publication revision',async()=>{const res=await onRequest({request:req({jsonrpc:'2.0',id:2,method:'tools/call',params:{name:'publication_state'}}),env});assert.match((await res.json()).result.content[0].text,/fixture/)});
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {onRequest} from '../functions/mcp.js';
+
+test('the unauthenticated legacy MCP endpoint is retired',async()=>{
+  for(const method of ['GET','POST']){
+    const request=new Request('https://example.org/mcp',{method});
+    const response=await onRequest({request});
+    assert.equal(response.status,410);
+    assert.ok((response.headers.get('content-type')||'').startsWith('application/json'));
+    assert.equal(response.headers.get('cache-control'),'no-store');
+    const body=await response.json();
+    assert.equal(body.endpoint,'https://mcp.history.pm4gis.nz/mcp');
+  }
+});

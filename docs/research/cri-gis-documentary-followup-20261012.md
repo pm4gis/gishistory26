@@ -1,6 +1,6 @@
 # CRI GIS documentary follow-up: ArcFlax, CLUES and applied mapping, 12 October 2026
 
-Baseline: production commit `4d3a6bd0498be12960ac9d86946f0bf7cf35f012` in `pm4gis/gishistory26`, including PR #58 and PR #60. This review first checked the active chapter passages, institution and project profiles, existing events and relationship graph, preservation manifest, accepted QMAP placement, and the CRI image-alignment register. Existing ESR EpiSurv/PHEW! and 2000s health-geocoding passages already document the operational workflow, so no duplicate health passage was added. Existing QMAP image placement and the ArcFlax Northland (2007) account are retained.
+Baseline reviewed: production commit `4d3a6bd0498be12960ac9d86946f0bf7cf35f012` in `pm4gis/gishistory26`, including PR #58 and PR #60. Before publication, this branch was reconciled with production commit `2f72bff76e4d7993b0fe4ab65e1ded04a442bd77` (the five-year timeline drill-down change); those current timeline and Māori GIS theme changes are retained. This review first checked the active chapter passages, institution and project profiles, existing events and relationship graph, preservation manifest, accepted QMAP placement, and the CRI image-alignment register. Existing ESR EpiSurv/PHEW! and 2000s health-geocoding passages already document the operational workflow, so no duplicate health passage was added. Existing QMAP image placement and the ArcFlax Northland (2007) account are retained.
 
 ## 1. ArcFlax Whanganui Edition 2.0 (2006)
 
