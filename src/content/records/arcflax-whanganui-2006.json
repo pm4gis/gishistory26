@@ -10,7 +10,8 @@
     "The National Library of New Zealand catalogues ArcFlax Edition 2.0 Whanganui 2006 as an interactive GIS data DVD. The record names Duane Wilkins and the Crown Forestry Rental Trust, identifies Wellington as the place of publication, and specifies ArcReader 9.1. The preserved catalogue is a contemporary bibliographic anchor for the product.",
     "The DVD format offered a way to give people prepared digital maps and GIS tools without purchasing a full desktop GIS licence. The National Library record establishes the existence and technical format of the Whanganui edition, while other editions and their exact content must be documented separately.",
     "A separate official Waitangi Tribunal inquiry index lists ArcFlax 1.0 Northland, dated January 2007, as a five-disc 2D and 3D GIS viewer with Crown purchases, Old Land Claims and Native Land Court block map material. It is catalogued separately from the Whanganui Edition 2.0 DVD published in 2006. Regional edition identifiers should not be interpreted as a single national version chronology.",
-    "The catalogue gives a limited but useful view of the DVD contents: relief is shown by contours, shading and spot heights; map scales vary; and Taranaki appears among the subject headings. Its title names Whanganui, but the record does not define a precise coverage boundary or identify the underlying elevation source. ArcReader 9.1 is documented as the system requirement. Esri product documentation explains the general ArcReader/Publisher viewing architecture, while Wilkins’s later recollection describes larger ArcReader packages for non-specialist users; neither proves the exact file format, datasets, user list or contents of this one-disc Whanganui edition. CFRT’s current mapping description identifies claimant groups and Tribunal/settlement work as its general audience, and warns that some claimant material is confidential. The original disc remains unexamined."
+    "The catalogue gives a limited but useful view of the DVD contents: relief is shown by contours, shading and spot heights; map scales vary; and Taranaki appears among the subject headings. Its title names Whanganui, but the record does not define a precise coverage boundary or identify the underlying elevation source. ArcReader 9.1 is documented as the system requirement. Esri product documentation explains the general ArcReader/Publisher viewing architecture, while Wilkins’s later recollection describes larger ArcReader packages for non-specialist users; neither proves the exact file format, datasets, user list or contents of this one-disc Whanganui edition. CFRT’s current mapping description identifies claimant groups and Tribunal/settlement work as its general audience, and warns that some claimant material is confidential. The original disc remains unexamined.",
+    "An archived presentation titled “ESRI 2005 – Participatory GIS ArcFlax 9” credits Duane Wilkins at CFRT, frames the work as participatory GIS for evidence in a judicial inquiry, and identifies ArcReader 9.1. Wilkins’s later “About ArcFlax 2.0” presentation describes a 2004–2007 DVD series supporting Tribunal inquiry districts, then describes a separate all-Aotearoa Drive resource with data from LINZ, Stats NZ, DOC, MFE, Te Puni Kōkiri, the Māori Land Court and Manaaki Whenua, plus QGIS, Google Earth, ArcGIS, templates and tutorials. These sources add programme history and a named practitioner, but do not identify the Whanganui disc’s exact layers, user list or precise boundary."
   ],
   "sources": [
     {
@@ -32,6 +33,14 @@
     {
       "label": "Duane Wilkins, retrospective account of Māori GIS DVD packages, 16 August 2026",
       "url": "https://maorigis.nz/blog/when-maori-gis-came-on-ten-dvds"
+    },
+    {
+      "label": "Duane Wilkins, “ESRI 2005 – Participatory GIS ArcFlax 9”, 43-slide presentation; Google Drive archive copy, accessed 12 October 2026 (access may be restricted)",
+      "url": "https://docs.google.com/presentation/d/1P8HBD7_ANh-rKXzcVVDASHI7UpTK3hNXATLISCbXZSg/edit"
+    },
+    {
+      "label": "Duane Wilkins, “About ArcFlax 2.0”, Google Drive presentation, modified 8 November 2020 (access may be restricted)",
+      "url": "https://docs.google.com/presentation/d/1lgQ6if5L0P23DHxknnizbeJedk50LbWltDOAD4brt0c/edit"
     }
   ],
   "paragraphSources": [
@@ -85,6 +94,16 @@
       {
         "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry record A045, Northland ArcFlax 1.0, January 2007",
         "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+      }
+    ],
+    [
+      {
+        "label": "Duane Wilkins, “ESRI 2005 – Participatory GIS ArcFlax 9”, 43-slide presentation; Google Drive archive copy, accessed 12 October 2026 (access may be restricted)",
+        "url": "https://docs.google.com/presentation/d/1P8HBD7_ANh-rKXzcVVDASHI7UpTK3hNXATLISCbXZSg/edit"
+      },
+      {
+        "label": "Duane Wilkins, “About ArcFlax 2.0”, Google Drive presentation, modified 8 November 2020 (access may be restricted)",
+        "url": "https://docs.google.com/presentation/d/1lgQ6if5L0P23DHxknnizbeJedk50LbWltDOAD4brt0c/edit"
       }
     ]
   ],

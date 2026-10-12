@@ -31,6 +31,18 @@ Original contemporaneous GIS screenshots are printed in NIWA Stage I 2004 report
 
 The more recent ArcFlax 2.0 materials describing QGIS and tens of thousands of Māori land block maps belong to another product period; the 2006 and 2007 packages cannot be said to have contained those tools or all the contemporary datasets.
 
+## ArcFlax Drive archive evidence, 12 October 2026
+
+A search of Duane Wilkins’s Google Drive recovered three records relevant to the earlier ArcFlax account. The sources are labelled and linked in the published records; access remains governed by the existing Drive permissions.
+
+| Item | Verified evidence | Editorial use |
+| --- | --- | --- |
+| *ESRI 2005 – Participatory GIS ArcFlax 9* presentation | The 43-slide deck credits Duane Wilkins at CFRT, describes ArcFlax 9 as participatory GIS for evidence in a judicial inquiry, and identifies ArcReader 9.1. It establishes the presentation’s framing, not a particular regional DVD’s contents. | Added a separately dated 2005 event and a paragraph in Chapter 35; it is not treated as the 2006 Whanganui edition. |
+| *ArcFlax 1.0 Northland 2007: Geographic Data Layer Descriptions & Quick Start Guide* | January 2007 guide: separate ArcReader 9.1 install; DVD data copied to C:\\; 2D/3D projects; contracted CFRT clients for Treaty settlement work; seven variants with Deluxe containing all layers. It identifies Northland-specific source layers and says 2006 Census data were expected in ArcFlax 2.0. | Expanded the Northland profile, Chapter 35 and the existing 2007 event. The Census note remains a planned-content statement, not evidence of the Whanganui disc’s delivered layers. |
+| *About ArcFlax 2.0* presentation | Wilkins’s later description says a DVD series was made in 2004–2007 for Tribunal inquiry districts. It describes the later 2.0 resource kete as an all-Aotearoa Google Drive collection containing data from LINZ, Stats NZ, DOC, MFE, Te Puni Kōkiri, the Māori Land Court and Manaaki Whenua, alongside QGIS, Google Earth, ArcGIS, templates and tutorials. | Used as retrospective programme context only. Its current contents are not backdated to the 2006 DVD. |
+
+The Whanganui DVD itself remains unexamined. No Northland layer has been assigned to Whanganui, and the original 2006 coverage boundary and recipient list remain unresolved. The presentation deck and guide contain potential historical map/viewer images, but no visual asset was extracted or placed in this change. The presentation also has slides marked “Used with Permission”; its individual slide images and contexts need review before any image is selected.
+
 ## Publishing and preservation
 
 Two existing passage JSON files gain inserted source-linked paragraph blocks without edits to the original blocks or immutable paragraph identifiers. One existing theme and three existing profiles are extended; three new project records, three events and ten relationship records have distinct IDs. Recompute preservation-manifest SHA-256 only for the two changed passage files, add a reviewed manifest note, run `npm test`, `npm run build` and full browser QA, and verify Cloudflare preview and production deployment. Existing historical images and their binary checksums remain unchanged. 

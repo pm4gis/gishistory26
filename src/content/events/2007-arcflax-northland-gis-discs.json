@@ -5,7 +5,7 @@
   "dateDisplay": "January 2007",
   "datePrecision": "month",
   "label": "Northland ArcFlax 1.0 five-disc GIS package",
-  "summary": "Te Paparahi o Te Raki inquiry register entry A045 dates a five-disc 2D and 3D ArcFlax Northland viewer and historical land-claim mapping to January 2007.",
+  "summary": "Te Paparahi o Te Raki inquiry entry A045 records five discs of Northland ArcFlax 1.0; a January 2007 CFRT guide identifies ArcReader 9.1, 2D/3D projects, intended claimant use and named data layers.",
   "recordIds": [
     "system:arcflax-northland-2007",
     "entity:crown-forestry-rental-trust"
@@ -17,6 +17,10 @@
     {
       "label": "Waitangi Tribunal, Te Paparahi o Te Raki Inquiry Wai 1040 Record of Inquiry index, entry A045, p. 354 (PDF page 354), January 2007",
       "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/1040-ROI-index-1July2019.pdf"
+    },
+    {
+      "label": "Crown Forestry Rental Trust, “ArcFlax 1.0 Northland 2007: Geographic Data Layer Descriptions & Quick Start Guide”, January 2007; Google Drive archive copy (access may be restricted)",
+      "url": "https://drive.google.com/file/d/1dPIB2_44N3li5qiZLo3jdHyNO1HfwJ45/view"
     }
   ],
   "url": "/timeline/",

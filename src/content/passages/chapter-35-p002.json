@@ -45,6 +45,22 @@
       ]
     },
     {
+      "id": "research-cfrt-arcflax-9-presentation-2005",
+      "type": "paragraph",
+      "text": "An archived presentation titled “ESRI 2005 – Participatory GIS ArcFlax 9” gives a closer view of the Trust’s work before the Whanganui DVD. The 43-slide deck credits Duane Wilkins at CFRT, describes ArcFlax 9 as participatory GIS for presenting evidence in a judicial inquiry, and identifies ArcReader 9.1. A later presentation by Wilkins describes a 2004–2007 DVD series for Waitangi Tribunal inquiry districts and a then-current all-Aotearoa ArcFlax 2.0 resource kete stored in Google Drive. These records document a wider programme and a named practitioner, but they do not establish the exact coverage or layers on the Whanganui disc.",
+      "markdown": "An archived presentation titled “ESRI 2005 – Participatory GIS ArcFlax 9” gives a closer view of the Trust’s work before the Whanganui DVD. The 43-slide deck credits Duane Wilkins at CFRT, describes ArcFlax 9 as participatory GIS for presenting evidence in a judicial inquiry, and identifies ArcReader 9.1. A later presentation by Wilkins describes a 2004–2007 DVD series for Waitangi Tribunal inquiry districts and a then-current all-Aotearoa ArcFlax 2.0 resource kete stored in Google Drive. These records document a wider programme and a named practitioner, but they do not establish the exact coverage or layers on the Whanganui disc.",
+      "sources": [
+        {
+          "label": "Duane Wilkins, “ESRI 2005 – Participatory GIS ArcFlax 9”, 43-slide presentation; Google Drive archive copy, accessed 12 October 2026 (access may be restricted)",
+          "url": "https://docs.google.com/presentation/d/1P8HBD7_ANh-rKXzcVVDASHI7UpTK3hNXATLISCbXZSg/edit"
+        },
+        {
+          "label": "Duane Wilkins, “About ArcFlax 2.0”, Google Drive presentation, modified 8 November 2020 (access may be restricted)",
+          "url": "https://docs.google.com/presentation/d/1lgQ6if5L0P23DHxknnizbeJedk50LbWltDOAD4brt0c/edit"
+        }
+      ]
+    },
+    {
       "type": "paragraph",
       "text": "One route to wider GIS use still depended on a disc rather than a website. The Crown Forestry Rental Trust published ArcFlax Edition 2.0 Whanganui in 2006 as an interactive GIS DVD. The National Library's catalogue credits Duane Wilkins and specifies ArcReader 9.1, a free Esri viewer, as a system requirement. It is a documented example of packaging prepared geographic information for Treaty research without requiring the recipient to own a full desktop GIS authoring package. The catalogue identifies this edition and its format but does not describe every dataset on the disc or establish when an earlier edition first appeared.",
       "markdown": "One route to wider GIS use still depended on a disc rather than a website. The Crown Forestry Rental Trust published ArcFlax Edition 2.0 Whanganui in 2006 as an interactive GIS DVD. The National Library's catalogue credits Duane Wilkins and specifies ArcReader 9.1, a free Esri viewer, as a system requirement. It is a documented example of packaging prepared geographic information for Treaty research without requiring the recipient to own a full desktop GIS authoring package. The catalogue identifies this edition and its format but does not describe every dataset on the disc or establish when an earlier edition first appeared.",
@@ -55,6 +71,30 @@
         }
       ],
       "id": "research-cri-arcflax-2006"
+    },
+    {
+      "id": "research-arcflax-northland-guide-2007",
+      "type": "paragraph",
+      "text": "A January 2007 quick-start guide supplies implementation details for Northland Edition 1.0. It says ArcFlax was the map data; users installed ArcReader 9.1 separately, copied the DVD folder to the root of C:\\\\, and opened the 2D or 3D projects there. The stated minimum was Windows XP or similar, a DVD drive, 5 GB free space and 256 MB RAM. The guide limits use to contracted CFRT clients for Treaty-settlement purposes, says the DVD was intended to support Northland claimant mapping planned for 2007–08, and lists seven project variants using the same source data, with all layers available only in the Deluxe editions. The guide includes a QuickStart tutorial and says CFRT could not provide ongoing installation or use support.",
+      "markdown": "A January 2007 quick-start guide supplies implementation details for Northland Edition 1.0. It says ArcFlax was the map data; users installed ArcReader 9.1 separately, copied the DVD folder to the root of C:\\\\, and opened the 2D or 3D projects there. The stated minimum was Windows XP or similar, a DVD drive, 5 GB free space and 256 MB RAM. The guide limits use to contracted CFRT clients for Treaty-settlement purposes, says the DVD was intended to support Northland claimant mapping planned for 2007–08, and lists seven project variants using the same source data, with all layers available only in the Deluxe editions. The guide includes a QuickStart tutorial and says CFRT could not provide ongoing installation or use support.",
+      "sources": [
+        {
+          "label": "Crown Forestry Rental Trust, “ArcFlax 1.0 Northland 2007: Geographic Data Layer Descriptions & Quick Start Guide”, January 2007; Google Drive archive copy (access may be restricted)",
+          "url": "https://drive.google.com/file/d/1dPIB2_44N3li5qiZLo3jdHyNO1HfwJ45/view"
+        }
+      ]
+    },
+    {
+      "id": "research-arcflax-northland-guide-layers-2007",
+      "type": "paragraph",
+      "text": "The guide names 75 cm aerial photography for Whangārei District; Natural Geographx textures for Northland; archaeological data maintained by DOC; Landcare Research’s LENZ-based predicted potential vegetation; land-use capability; LINZ Crown Licensed Forests, Core Record Set and Topo50k; Native Land Court parent-block boundaries drawn from original survey plans; Crown Purchase and Old Land Claim blocks captured for the Northland Technical Research Programme; 2001 deprivation and population data at meshblock scale; and Landsat imagery. It says 2006 Census data were expected in ArcFlax 2.0, but that forward-looking note does not prove their inclusion in the 2006 Whanganui Edition 2.0. These layer details belong to Northland 1.0 unless the Whanganui disc itself is examined.",
+      "markdown": "The guide names 75 cm aerial photography for Whangārei District; Natural Geographx textures for Northland; archaeological data maintained by DOC; Landcare Research’s LENZ-based predicted potential vegetation; land-use capability; LINZ Crown Licensed Forests, Core Record Set and Topo50k; Native Land Court parent-block boundaries drawn from original survey plans; Crown Purchase and Old Land Claim blocks captured for the Northland Technical Research Programme; 2001 deprivation and population data at meshblock scale; and Landsat imagery. It says 2006 Census data were expected in ArcFlax 2.0, but that forward-looking note does not prove their inclusion in the 2006 Whanganui Edition 2.0. These layer details belong to Northland 1.0 unless the Whanganui disc itself is examined.",
+      "sources": [
+        {
+          "label": "Crown Forestry Rental Trust, “ArcFlax 1.0 Northland 2007: Geographic Data Layer Descriptions & Quick Start Guide”, January 2007; Google Drive archive copy (access may be restricted)",
+          "url": "https://drive.google.com/file/d/1dPIB2_44N3li5qiZLo3jdHyNO1HfwJ45/view"
+        }
+      ]
     },
     {
       "id": "research-arcflax-northland-five-discs-2007",
