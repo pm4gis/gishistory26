@@ -1,4 +1,12 @@
-const definitions=[{name:'publication_state',description:'Read the current public publication revision and counts.',inputSchema:{type:'object',properties:{},additionalProperties:false}},{name:'get_item',description:'Retrieve an item by permanent ID from the public dataset.',inputSchema:{type:'object',properties:{id:{type:'string'}},required:['id'],additionalProperties:false}},{name:'search_content',description:'Search public record names, aliases, chapter titles and passage headings.',inputSchema:{type:'object',properties:{query:{type:'string'},limit:{type:'integer',minimum:1,maximum:30}},required:['query'],additionalProperties:false}}];
-export async function onRequest({request,env}){if(request.method==='GET')return new Response('Use MCP JSON-RPC POST. Public read tools only.',{status:405,headers:{Allow:'POST'}});if(request.method!=='POST')return new Response('Method not allowed',{status:405});if(Number(request.headers.get('content-length')||0)>65536)return new Response('Request too large',{status:413});let msg;try{msg=await request.json()}catch{return new Response('Invalid JSON',{status:400})}const response=(result)=>Response.json({jsonrpc:'2.0',id:msg.id,result});const error=(code,message)=>Response.json({jsonrpc:'2.0',id:msg.id,error:{code,message}});if(msg.jsonrpc!=='2.0')return error(-32600,'Invalid request');if(msg.method==='notifications/initialized')return new Response(null,{status:202});if(msg.method==='initialize')return response({protocolVersion:'2025-03-26',capabilities:{tools:{listChanged:false}},serverInfo:{name:'nzgis-publication-read',version:'1.0.0'}});if(msg.method==='ping')return response({});if(msg.method==='tools/list')return response({tools:definitions});if(msg.method!=='tools/call')return error(-32601,'Method not found');const args=msg.params?.arguments||{};let value;
-try{if(msg.params.name==='publication_state'){value=await (await env.ASSETS.fetch(new URL('/release.json',request.url))).json()}else{if(msg.params.name==='get_item'){if(typeof args.id!=='string'||args.id.length>200)return error(-32602,'Permanent ID required');const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(args.id));const key=[...new Uint8Array(digest)].map(v=>v.toString(16).padStart(2,'0')).join('').slice(0,24);const res=await env.ASSETS.fetch(new URL('/api/items/'+key+'.json',request.url));value=res.ok?await res.json():null;}else if(msg.params.name==='search_content'){if(typeof args.query!=='string'||args.query.length>200)return error(-32602,'Query must be a short string');const index=await(await env.ASSETS.fetch(new URL('/api/search.json',request.url))).json();const q=args.query.toLocaleLowerCase();value=index.filter(i=>i.text.includes(q)).slice(0,Math.max(1,Math.min(30,args.limit||10))).map(({text,...item})=>item);}else return error(-32601,'Unknown tool')}}catch{return error(-32603,'Publication content unavailable')}
-return response({content:[{type:'text',text:JSON.stringify(value)}]});}
+export async function onRequest() {
+  return new Response(JSON.stringify({
+    error: 'This unauthenticated MCP endpoint has been retired.',
+    endpoint: 'https://mcp.history.pm4gis.nz/mcp',
+  }), {
+    status: 410,
+    headers: {
+      'content-type': 'application/json; charset=utf-8',
+      'cache-control': 'no-store',
+    },
+  });
+}
