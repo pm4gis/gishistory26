@@ -1,0 +1,42 @@
+{
+  "id": "dataset:chatham-challenger-multibeam-2006",
+  "slug": "chatham-challenger-multibeam-2006",
+  "kind": "Dataset",
+  "name": "Chatham Rise and Challenger Plateau multibeam survey (2006)",
+  "category": "Historical marine datasets",
+  "description": "NIWA Ocean Survey 20/20 acoustic bathymetry and seabed-characterisation transects gathered in August 2006.",
+  "story": [
+    "During the August 2006 Ocean Survey 20/20 voyage, NIWA's Tangaroa collected multibeam acoustic transects across Chatham Rise and Challenger Plateau. These observations provided bathymetric and seabed-composition evidence that scientists combined with chlorophyll measurements and tidal-current models.",
+    "The mapped transects informed sampling-site selection for April–June 2007 biological voyages. The underlying geophysical observations and the later environmental classifications are different products; the 2008 NIWA article reproduces maps of survey coverage and station locations but does not state that every original acoustic data file is downloadable from that article."
+  ],
+  "sources": [
+    {
+      "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+      "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "Survey project",
+      "url": "/systems/ocean-survey-chatham-challenger-2006/"
+    }
+  ],
+  "url": "/datasets/chatham-challenger-multibeam-2006/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      }
+    ],
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      }
+    ]
+  ]
+}

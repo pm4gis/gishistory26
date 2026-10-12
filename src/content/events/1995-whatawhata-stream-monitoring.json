@@ -1,0 +1,28 @@
+{
+  "id": "1995-whatawhata-stream-monitoring",
+  "startDate": "1995",
+  "dateDisplay": "1995",
+  "label": "Long-term Whatawhata stream monitoring begins",
+  "summary": "NIWA records the start of multisite monitoring in 1995, before the 1996 inter-disciplinary catchment management group.",
+  "year": 1995,
+  "datePrecision": "year",
+  "recordIds": [
+    "system:whatawhata-icm-1996",
+    "entity:niwa"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Whatawhata ICM project: 1995 monitoring and 2000–2001 land-use conversion",
+      "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+    }
+  ],
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "themeIds": [],
+  "categories": [
+    "GIS research",
+    "Historical datasets"
+  ],
+  "url": "/timeline/"
+}

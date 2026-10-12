@@ -29,7 +29,9 @@
     "entity:tasman-district-council",
     "system:arcflax-whanganui-2006",
     "entity:crown-forestry-rental-trust",
-    "person:duane-wilkins"
+    "person:duane-wilkins",
+    "system:cfrt-treaty-3d-mapping-2004",
+    "system:cfrt-inquiry-mapbooks-2005"
   ],
   "eventIds": [
     "1996-maori-land-resource-conference",
@@ -43,7 +45,9 @@
     "linzcap-2025-05-16-nga-poutama-explores-korero-takutai",
     "linzcap-2025-05-05-nga-poutama-historical-aerial-imagery-session-published",
     "linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga",
-    "2006-arcflax-whanganui-dvd"
+    "2006-arcflax-whanganui-dvd",
+    "2004-cfrt-3d-mapping",
+    "2005-cfrt-thematic-mapbooks"
   ],
   "sections": [
     {
@@ -72,6 +76,7 @@
       "paragraphs": [
         "A 28 June 1996 Wellington conference on Mapping Māori Land and Resource Aspirations provides an early dated marker for GIS-related debate over whenua. In November 2003, the Motueka Iwi Resource Management Advisory Komiti (MIRMAK) began an iwi-led GIS information project involving Te Tau Ihu iwi and Manaaki Whenua research support. Its documented purposes included environmental management, consenting, planning and cultural records.",
         "The Motueka work drew a distinction between environmental information suitable for broader exchange and cultural information requiring restricted access. That distinction remains important: availability of public maps and government datasets does not imply permission to publish iwi-held knowledge, wāhi tapu locations or other sensitive material.",
+        "By November 2004 the independent Crown Forestry Rental Trust was publicly describing the use of 3D maps to assist Māori claimants and the Waitangi Tribunal. A later Tribunal bibliography lists multiple thematic inquiry map books commissioned in 2005, including maps supporting Central North Island and Te Urewera hearings. The 2006 Whanganui ArcFlax edition adds a further, separately documented form of delivery through an interactive GIS DVD. The dates and format of each are established by different records; their shared programme context does not identify the software or full dataset content used to produce every map.",
         "A documented example of distribution by physical media is the Crown Forestry Rental Trust's ArcFlax Edition 2.0 Whanganui (2006). The National Library records an interactive GIS DVD credited to Duane Wilkins and requiring ArcReader 9.1. The record establishes the edition and the means of access, without giving a full inventory of its GIS layers or the date of any earlier edition. This work belongs alongside iwi-led information systems as an example of how GIS was made usable for Treaty research."
       ],
       "sources": [
@@ -82,6 +87,14 @@
         {
           "label": "National Library, ArcFlax Edition 2.0 Whanganui 2006, Interactive GIS data DVD",
           "url": "https://natlib.govt.nz/records/30673810"
+        },
+        {
+          "label": "Crown Forestry Rental Trust statement, 15 November 2004",
+          "url": "https://www.scoop.co.nz/stories/BU0411/S00197/cfrt-is-an-independent-trust.htm"
+        },
+        {
+          "label": "Waitangi Tribunal, bibliography of 2005 Crown Forestry Rental Trust thematic map books",
+          "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
         }
       ]
     },

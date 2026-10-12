@@ -1,0 +1,55 @@
+{
+  "id": "person:scott-nodder",
+  "slug": "scott-nodder",
+  "name": "Scott Nodder",
+  "kind": "Person",
+  "category": "Marine GIS and scientific mapping practitioners",
+  "story": [
+    "Dr Scott Nodder of NIWA co-authored the June 2008 Water & Atmosphere account of Chatham Rise and Challenger Plateau mapping under Ocean Survey 20/20. The article documented multibeam acoustic surveys, seafloor sampling design and the integration of geographic data with biological observations.",
+    "The publication identifies Nodder as a marine geologist in Wellington and credits the programme's broader multi-agency research team. The particular multibeam GIS datasets were collaborative outputs, not individual authorship claims."
+  ],
+  "sources": [
+    {
+      "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+      "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "Chatham–Challenger marine survey",
+      "url": "/systems/ocean-survey-chatham-challenger-2006/"
+    }
+  ],
+  "url": "/people/scott-nodder/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      }
+    ],
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      }
+    ],
+    [
+      {
+        "label": "Nodder, Robertson and Bowden, Mapping biodiversity in NZ's Exclusive Economic Zone, NIWA, June 2008",
+        "url": "https://niwa.co.nz/about-niwa/water-atmosphere/vol16-no2-june-2008/mapping-biodiversity-new-zealands-exclusive-economic-zone"
+      }
+    ]
+  ]
+}

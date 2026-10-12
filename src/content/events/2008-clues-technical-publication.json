@@ -1,0 +1,28 @@
+{
+  "id": "2008-clues-technical-publication",
+  "startDate": "2008-07",
+  "dateDisplay": "July 2008",
+  "label": "CLUES GIS system described with early nitrate-risk application",
+  "summary": "NIWA and partners published the CLUES spatial decision-support interface, modelling methods and early real-world application at iEMSs.",
+  "year": 2008,
+  "datePrecision": "month",
+  "recordIds": [
+    "system:clues-catchment-gis",
+    "person:sandy-elliott"
+  ],
+  "sources": [
+    {
+      "label": "Elliott et al., CLUES Spatial DSS: From Farm-Scale Leaching Models to Regional Decision Support, iEMSs conference, July 2008",
+      "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+    }
+  ],
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "themeIds": [],
+  "categories": [
+    "GIS research",
+    "Historical datasets"
+  ],
+  "url": "/timeline/"
+}

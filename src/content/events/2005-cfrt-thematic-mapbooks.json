@@ -1,0 +1,28 @@
+{
+  "id": "2005-cfrt-thematic-mapbooks",
+  "startDate": "2005",
+  "dateDisplay": "2005",
+  "label": "Trust commissions multiple Tribunal inquiry map books",
+  "summary": "Waitangi Tribunal bibliography identifies 2005 thematic map book series for Central North Island, Te Urewera and other inquiries.",
+  "year": 2005,
+  "datePrecision": "year",
+  "recordIds": [
+    "system:cfrt-inquiry-mapbooks-2005",
+    "entity:crown-forestry-rental-trust"
+  ],
+  "sources": [
+    {
+      "label": "Waitangi Tribunal, Bibliography of Research Reports 1975–2016, Part 2, pp. 41–42, commissioned 2005 map books",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+    }
+  ],
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "themeIds": [],
+  "categories": [
+    "GIS research",
+    "Historical datasets"
+  ],
+  "url": "/timeline/"
+}

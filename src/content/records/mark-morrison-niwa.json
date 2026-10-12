@@ -1,0 +1,55 @@
+{
+  "id": "person:mark-morrison-niwa",
+  "slug": "mark-morrison-niwa",
+  "name": "Mark Morrison",
+  "kind": "Person",
+  "category": "Marine GIS and scientific mapping practitioners",
+  "story": [
+    "NIWA identified Dr Mark Morrison as project leader for the Bay of Islands Ocean Survey 20/20 marine biodiversity survey, undertaken in 2008–2010. The programme produced seabed maps, biological samples and imagery for a public web-portal release in December 2010.",
+    "The historical record establishes the project-lead role but does not assign development of the portal's web code or individual GIS datasets to Morrison."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Bay of Islands Ocean Survey 20/20 portal launched by December 2010",
+      "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "Bay of Islands 2010 mapping portal",
+      "url": "/systems/niwa-bay-of-islands-marine-portal-2010/"
+    }
+  ],
+  "url": "/people/mark-morrison-niwa/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, Bay of Islands Ocean Survey 20/20 portal launched by December 2010",
+        "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Bay of Islands Ocean Survey 20/20 portal launched by December 2010",
+        "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "NIWA, Bay of Islands Ocean Survey 20/20 portal launched by December 2010",
+        "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Bay of Islands Ocean Survey 20/20 portal launched by December 2010",
+        "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "person:john-quinn",
+  "slug": "john-quinn",
+  "name": "John Quinn",
+  "kind": "Person",
+  "category": "GIS and environmental modelling practitioners",
+  "story": [
+    "John Quinn was named by NIWA as a contact and contributor to the Whatawhata Sustainable Land Management Project during the 2000s. The project combined stream monitoring, erosion and land-use assessment with farm economics to test integrated hill-country catchment management.",
+    "Quinn also appears as an author of the 2009 CLUES modelling paper, linking two contemporary but distinct lines of environmental research."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+    },
+    {
+      "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+      "url": "https://ageconsearch.umn.edu/record/97166"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "Whatawhata catchment study",
+      "url": "/systems/whatawhata-icm-1996/"
+    }
+  ],
+  "url": "/people/john-quinn/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+      },
+      {
+        "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+        "url": "https://ageconsearch.umn.edu/record/97166"
+      }
+    ]
+  ]
+}

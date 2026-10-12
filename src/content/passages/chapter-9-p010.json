@@ -16,7 +16,12 @@
     "entity:agresearch",
     "entity:hortresearch",
     "entity:niwa",
-    "entity:manaaki-whenua-landcare-research"
+    "entity:manaaki-whenua-landcare-research",
+    "system:whatawhata-icm-1996",
+    "person:john-quinn",
+    "system:clues-catchment-gis",
+    "person:sandy-elliott",
+    "dataset:rec"
   ],
   "blocks": [
     {
@@ -49,6 +54,22 @@
     },
     {
       "type": "paragraph",
+      "id": "research-whatawhata-catchments-1995",
+      "text": "A multi-agency programme at the Whatawhata Research Station near Hamilton tested some of these questions on real land. Stream monitoring started in 1995, and an integrated catchment management group formed in 1996 with NIWA, AgResearch, Landcare Research, councils, farmers and Ngāti Māhanga representatives. The Mangaotama catchment was mapped and monitored alongside the Kiripaka and Whakakai comparison catchments. In 2000–2001 the project converted steep pasture to pine forestry and native restoration planting, changed livestock management and protected waterways. Monitoring stations, stream measurements, land-use classes, soils and farm economics gave the researchers a geographically specific way of testing the results. Whatawhata was a continuing field experiment, distinct from NIWA’s later national CLUES modelling application.",
+      "markdown": "A multi-agency programme at the Whatawhata Research Station near Hamilton tested some of these questions on real land. Stream monitoring started in 1995, and an integrated catchment management group formed in 1996 with NIWA, AgResearch, Landcare Research, councils, farmers and Ngāti Māhanga representatives. The Mangaotama catchment was mapped and monitored alongside the Kiripaka and Whakakai comparison catchments. In 2000–2001 the project converted steep pasture to pine forestry and native restoration planting, changed livestock management and protected waterways. Monitoring stations, stream measurements, land-use classes, soils and farm economics gave the researchers a geographically specific way of testing the results. Whatawhata was a continuing field experiment, distinct from NIWA’s later national CLUES modelling application.",
+      "sources": [
+        {
+          "label": "NIWA, Whatawhata Integrated Catchment Management Project",
+          "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+        },
+        {
+          "label": "AgResearch, Whatawhata Integrated Catchment Farm",
+          "url": "https://www.agresearch.co.nz/our-research/whatawhata-integrated-catchment/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
       "text": "The Kaimai project was university research; NIWA also used GIS in its operational work. In October 2006 NIWA's Brent Wood described PostGIS running behind about half a dozen systems, with some datasets containing hundreds of millions of features. In December 2008 he described PostGIS, Apache and UMN MapServer as a standards-based web-mapping environment supporting WMS and WFS for maritime, fisheries, ecological and oceanographic work. By 2009 the same practitioner record included GeoServer and OpenLayers, and Andrew Watkins was working with GeoNetwork in 2010.",
       "markdown": "The Kaimai project was university research; NIWA also used GIS in its operational work. In October 2006 NIWA's Brent Wood described PostGIS running behind about half a dozen systems, with some datasets containing hundreds of millions of features. In December 2008 he described PostGIS, Apache and UMN MapServer as a standards-based web-mapping environment supporting WMS and WFS for maritime, fisheries, ecological and oceanographic work. By 2009 the same practitioner record included GeoServer and OpenLayers, and Andrew Watkins was working with GeoNetwork in 2010.",
       "sources": [],
@@ -69,6 +90,26 @@
         }
       ],
       "id": "research-cri-multiagency-catchments-2004"
+    },
+    {
+      "type": "paragraph",
+      "id": "research-clues-working-gis-2008",
+      "text": "The multi-institute modelling programme produced a usable system called CLUES, Catchment Land Use for Environmental Sustainability. A later technical account dates its first release to 2005, while the July 2008 iEMSs paper describes the developed ArcGIS application and an early analysis of catchments at risk from nitrate sources. SPARROW modelled the river network and nutrient transport; OVERSEER and SPASMO contributed farm and horticultural nutrient estimates. A purpose-built control panel within ArcGIS handled catchment and reach selections, model runs, land-use scenarios and map or table output. By August 2009 a published evaluation recorded that regional council staff had been trained to use CLUES. Those dated accounts establish development, application and training beyond the proposed decision-support system described in the original 2004–2006 reports. Later ArcMap packages and newer model inputs belong to subsequent versions.",
+      "markdown": "The multi-institute modelling programme produced a usable system called CLUES, Catchment Land Use for Environmental Sustainability. A later technical account dates its first release to 2005, while the July 2008 iEMSs paper describes the developed ArcGIS application and an early analysis of catchments at risk from nitrate sources. SPARROW modelled the river network and nutrient transport; OVERSEER and SPASMO contributed farm and horticultural nutrient estimates. A purpose-built control panel within ArcGIS handled catchment and reach selections, model runs, land-use scenarios and map or table output. By August 2009 a published evaluation recorded that regional council staff had been trained to use CLUES. Those dated accounts establish development, application and training beyond the proposed decision-support system described in the original 2004–2006 reports. Later ArcMap packages and newer model inputs belong to subsequent versions.",
+      "sources": [
+        {
+          "label": "Elliott et al., CLUES Spatial DSS, iEMSs conference July 2008",
+          "url": "https://scholarsarchive.byu.edu/iemssconference/2008/all/2/"
+        },
+        {
+          "label": "Harris et al., CLUES regional decision support, 2009, including council-user training",
+          "url": "https://ageconsearch.umn.edu/record/97166"
+        },
+        {
+          "label": "CLUES initial release date, retrospectively described in 2016 technical paper",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815216306260"
+        }
+      ]
     },
     {
       "type": "paragraph",

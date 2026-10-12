@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-022",
+  "a": "system:niwa-bay-of-islands-marine-portal-2010",
+  "b": "person:mark-morrison-niwa",
+  "label": "NIWA survey project leader",
+  "basis": "NIWA survey project leader. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-32-3460d584f6"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Bay of Islands Ocean Survey 20/20 portal launched by December 2010",
+      "url": "https://niwa.co.nz/oceans/aquatic-biodiversity-biosecurity-update/aquatic-biodiversity-biosecurity-update-31-december/web-portal-opens-door-bay-islands-data"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-014",
+  "a": "system:cfrt-inquiry-mapbooks-2005",
+  "b": "entity:crown-forestry-rental-trust",
+  "label": "Commissioned 2005 Treaty map books",
+  "basis": "Commissioned 2005 Treaty map books. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-35-5ab89427eb"
+  ],
+  "sources": [
+    {
+      "label": "Waitangi Tribunal, Bibliography of Research Reports 1975–2016, Part 2, pp. 41–42, commissioned 2005 map books",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+    }
+  ]
+}

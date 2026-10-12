@@ -1,0 +1,28 @@
+{
+  "id": "2009-clues-council-training",
+  "startDate": "2009-08",
+  "dateDisplay": "August 2009",
+  "label": "CLUES paper records trained regional council users",
+  "summary": "An August 2009 conference paper reported model use and training for council staff, documenting adoption beyond research proposals.",
+  "year": 2009,
+  "datePrecision": "month",
+  "recordIds": [
+    "system:clues-catchment-gis",
+    "entity:niwa"
+  ],
+  "sources": [
+    {
+      "label": "Harris et al., Integrated assessment with the CLUES model, NZ Agricultural and Resource Economics Society, August 2009",
+      "url": "https://ageconsearch.umn.edu/record/97166"
+    }
+  ],
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "themeIds": [],
+  "categories": [
+    "GIS research",
+    "Historical datasets"
+  ],
+  "url": "/timeline/"
+}

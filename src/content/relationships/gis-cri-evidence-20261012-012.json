@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-012",
+  "a": "system:whatawhata-icm-1996",
+  "b": "person:john-quinn",
+  "label": "NIWA Whatawhata project contributor",
+  "basis": "NIWA Whatawhata project contributor. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-9-7b174cd504"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+    }
+  ]
+}

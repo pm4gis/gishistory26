@@ -1,0 +1,16 @@
+{
+  "id": "relationship:gis-cri-evidence-20261012-023",
+  "a": "system:niwa-bay-of-islands-marine-portal-2010",
+  "b": "person:brent-wood",
+  "label": "NIWA GIS and spatial data management expertise",
+  "basis": "NIWA GIS and spatial data management expertise. The cited source supports the association; different products and years retain distinct identities.",
+  "passageIds": [
+    "passage:chapter-32-3460d584f6"
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Mapping marine biodiversity in Bay of Islands",
+      "url": "https://niwa.co.nz/environmental-information/mapping-marine-biodiversity-bay-islands"
+    }
+  ]
+}

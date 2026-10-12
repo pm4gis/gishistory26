@@ -1,0 +1,85 @@
+{
+  "id": "system:whatawhata-icm-1996",
+  "slug": "whatawhata-icm-1996",
+  "kind": "Project",
+  "name": "Whatawhata integrated catchment GIS and monitoring (1995–2001)",
+  "category": "Historical scientific GIS systems",
+  "description": "Multi-agency Waikato hill-country catchment experiment linking field monitoring, land-use classifications, mapped restoration and economic models.",
+  "story": [
+    "Multi-site stream monitoring at the Whatawhata Research Station began in 1995, and an integrated catchment management group formed in 1996. NIWA and AgResearch worked with Manaaki Whenua, councils, DOC, farmers and Ngāti Māhanga representatives on a Waikato hill-country research station. The work combined land-use mapping, water-quality time series, soil and erosion assessment, farm economics and biological observations.",
+    "The research compared a modified agricultural catchment, Mangaotama, with controls including Kiripaka and Whakakai. From 2000–2001, pine forestry, riparian planting, fencing and changed pastoral management altered the landscape. Repeated observations tested effects on streams, sediment, biodiversity and farm performance. The NIWA source map locates sampling stations and classes of forest, pasture and native planting.",
+    "Whatawhata was an operational field experiment with mapped and monitored evidence, distinct from CLUES's national decision-support model. Their overlapping institutional disciplines do not establish that Whatawhata's data were direct CLUES model inputs."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, Whatawhata ICM project: 1995 monitoring and 2000–2001 land-use conversion",
+      "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+    },
+    {
+      "label": "AgResearch, Whatawhata Integrated Catchment Farm: 1990s origins, participants, mapped land uses",
+      "url": "https://www.agresearch.co.nz/our-research/whatawhata-integrated-catchment/"
+    },
+    {
+      "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+      "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "Original NIWA catchment map and monitoring description",
+      "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+    },
+    {
+      "label": "Scientific mapping chapter",
+      "url": "/stories/science-goes-spatial/"
+    }
+  ],
+  "url": "/systems/whatawhata-icm-1996/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, Whatawhata ICM project: 1995 monitoring and 2000–2001 land-use conversion",
+        "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+      },
+      {
+        "label": "AgResearch, Whatawhata Integrated Catchment Farm: 1990s origins, participants, mapped land uses",
+        "url": "https://www.agresearch.co.nz/our-research/whatawhata-integrated-catchment/"
+      },
+      {
+        "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Whatawhata ICM project: 1995 monitoring and 2000–2001 land-use conversion",
+        "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+      },
+      {
+        "label": "AgResearch, Whatawhata Integrated Catchment Farm: 1990s origins, participants, mapped land uses",
+        "url": "https://www.agresearch.co.nz/our-research/whatawhata-integrated-catchment/"
+      },
+      {
+        "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, Whatawhata ICM project: 1995 monitoring and 2000–2001 land-use conversion",
+        "url": "https://niwa.co.nz/freshwater/whatawhata-integrated-catchment-management-project"
+      },
+      {
+        "label": "AgResearch, Whatawhata Integrated Catchment Farm: 1990s origins, participants, mapped land uses",
+        "url": "https://www.agresearch.co.nz/our-research/whatawhata-integrated-catchment/"
+      },
+      {
+        "label": "NIWA, Whatawhata Sustainable Land Management Project, historic Freshwater Update article",
+        "url": "https://niwa.co.nz/lakes/freshwater-update/no03-2003/whatawhata-sustainable-land-management-project"
+      }
+    ]
+  ]
+}

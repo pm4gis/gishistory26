@@ -1,0 +1,85 @@
+{
+  "id": "system:cfrt-inquiry-mapbooks-2005",
+  "slug": "cfrt-inquiry-mapbooks-2005",
+  "kind": "Project",
+  "name": "Crown Forestry Rental Trust thematic inquiry map books (2005)",
+  "category": "Historical Māori GIS activity",
+  "description": "A documented set of Trust-commissioned 2005 printed map books supporting several Waitangi Tribunal inquiry districts.",
+  "story": [
+    "The Waitangi Tribunal's 2017 bibliography records numerous map books commissioned by the Crown Forestry Rental Trust for proceedings held in 2005. Examples include a three-part thematic series for Central North Island inquiries (Wai 1200), a National Park inquiry map book (Wai 1130), Te Urewera maps for Maungapōhatu and Ruatoki (Wai 894), and further Wairarapa land-block mapping.",
+    "These are identifiable documentary map products with source-specific Tribunal document identifiers, locations and purposes. The bibliography establishes their commissioning and filing; without examining their source files it does not prove which GIS software generated each book, nor whether their map layers were included on the separately catalogued 2006 ArcFlax DVD.",
+    "The Trust distinguishes general overview map books filed in hearings from claimant-specific map books. The available bibliography is evidence for the former map products, while direct access to unpublished claimant-owned map data should not be presumed."
+  ],
+  "sources": [
+    {
+      "label": "Waitangi Tribunal, Bibliography of Research Reports 1975–2016, Part 2, pp. 41–42, commissioned 2005 map books",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+    },
+    {
+      "label": "Crown Forestry Rental Trust, research and mapping services, public/claimant map-book distinction",
+      "url": "https://cfrt.org.nz/research-activities/"
+    },
+    {
+      "label": "National Library, ArcFlax Edition 2.0 Whanganui, interactive GIS DVD (2006)",
+      "url": "https://natlib.govt.nz/records/30673810"
+    }
+  ],
+  "contextLinks": [
+    {
+      "label": "Waitangi Tribunal 2017 research bibliography",
+      "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+    },
+    {
+      "label": "Māori GIS theme",
+      "url": "/themes/maori-gis/"
+    }
+  ],
+  "url": "/systems/cfrt-inquiry-mapbooks-2005/",
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical activity",
+  "paragraphSources": [
+    [
+      {
+        "label": "Waitangi Tribunal, Bibliography of Research Reports 1975–2016, Part 2, pp. 41–42, commissioned 2005 map books",
+        "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, research and mapping services, public/claimant map-book distinction",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui, interactive GIS DVD (2006)",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ],
+    [
+      {
+        "label": "Waitangi Tribunal, Bibliography of Research Reports 1975–2016, Part 2, pp. 41–42, commissioned 2005 map books",
+        "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, research and mapping services, public/claimant map-book distinction",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui, interactive GIS DVD (2006)",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ],
+    [
+      {
+        "label": "Waitangi Tribunal, Bibliography of Research Reports 1975–2016, Part 2, pp. 41–42, commissioned 2005 map books",
+        "url": "https://www.waitangitribunal.govt.nz/assets/DOCUMENTS/WT-Bibliography-Part-2.pdf"
+      },
+      {
+        "label": "Crown Forestry Rental Trust, research and mapping services, public/claimant map-book distinction",
+        "url": "https://cfrt.org.nz/research-activities/"
+      },
+      {
+        "label": "National Library, ArcFlax Edition 2.0 Whanganui, interactive GIS DVD (2006)",
+        "url": "https://natlib.govt.nz/records/30673810"
+      }
+    ]
+  ]
+}
