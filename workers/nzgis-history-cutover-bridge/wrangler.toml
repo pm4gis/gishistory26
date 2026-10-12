@@ -1,0 +1,8 @@
+name = "nzgis-history-cutover-bridge"
+main = "index.js"
+compatibility_date = "2026-10-10"
+workers_dev = false
+routes = [
+  { pattern = "history.pm4gis.nz/*", zone_name = "pm4gis.nz" },
+  { pattern = "gishistory.pm4gis.nz/*", zone_name = "pm4gis.nz" },
+]
