@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-020",
+  "a": "dataset:soil-bureau-legacy-maps",
+  "b": "entity:manaaki-whenua-landcare-research",
+  "label": "Archive custodian",
+  "basis": "Manaaki Whenua digitises and exposes former Soil Bureau map holdings.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, national soil data and legacy map viewer",
+      "url": "https://soils.landcareresearch.co.nz/topics/soil-data/new-zealand-soil-data/national"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-025",
+  "a": "dataset:nzlri-original-worksheets",
+  "b": "entity:ministry-of-works-and-development",
+  "label": "Survey responsibility",
+  "basis": "The Ministry of Works and Development undertook the first nationwide survey for NWASCO.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, brief history of LUC and NZLRI",
+      "url": "https://lrp.landcareresearch.co.nz/topics/understanding-luc/brief-history"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "dataset:national-soils-database",
+  "slug": "national-soils-database",
+  "name": "National Soils Database (NSD) legacy observations",
+  "kind": "Dataset",
+  "category": "Historical soil datasets",
+  "url": "/datasets/national-soils-database/",
+  "description": "National soil-profile observation records with earlier paper, card and computer database stages.",
+  "story": [
+    "The National Soils Database includes descriptions and laboratory results for about 1,500 soil profiles. Manaaki Whenua records that the collection was paper-based until 1980, when soil observations were entered into Datatrieve; it later moved to Paradox in 1993 and Microsoft SQL Server in 2000.",
+    "The site observations record conditions measured at particular locations rather than continuous soil-map polygons. The soil analyses, dates and original classification methods should be retained when those observations contribute to derived national spatial layers."
+  ],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, history of the National Soils Database",
+      "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database/nsd-development"
+    },
+    {
+      "label": "Manaaki Whenua, National Soil Data Repository",
+      "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Manaaki Whenua, history of the National Soils Database",
+        "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database/nsd-development"
+      },
+      {
+        "label": "Manaaki Whenua, National Soil Data Repository",
+        "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua, history of the National Soils Database",
+        "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database/nsd-development"
+      },
+      {
+        "label": "Manaaki Whenua, National Soil Data Repository",
+        "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/mapping-land-as-data/"
+    },
+    {
+      "label": "Manaaki Whenua, history of the National Soils Database",
+      "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database/nsd-development"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

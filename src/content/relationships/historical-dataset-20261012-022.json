@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-022",
+  "a": "dataset:fundamental-soil-layers",
+  "b": "dataset:nzlri",
+  "label": "Uses mapped polygons from",
+  "basis": "Fundamental Soil Layers link soil attributes to the mapped NZLRI polygon boundaries.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, origin of Fundamental Soil Layers",
+      "url": "https://soils.landcareresearch.co.nz/tools/fsl/origin-of-fsl"
+    }
+  ]
+}

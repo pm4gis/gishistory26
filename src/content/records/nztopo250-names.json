@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nztopo250-names",
+  "slug": "nztopo250-names",
+  "name": "NZ Geographic Names (Topo, 1:250,000)",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo250-names/",
+  "description": "The feature-name layer associated with Topo250 mapping.",
+  "story": [
+    "Place names that were lettered on printed maps can now be stored as attributed geographic features. LINZ's 1:250,000 topographic geographic-name layer covers named objects in the Topo250 database and is distinct from descriptive map text.",
+    "The layer records names used in topographic production. Historical spellings and the legal status of official geographic names need reference to their own sources and dates."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Geographic Names (Topo 1:250k)",
+      "url": "https://data.linz.govt.nz/layer/50164-nz-geographic-names-topo-1250k/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Geographic Names (Topo 1:250k)",
+        "url": "https://data.linz.govt.nz/layer/50164-nz-geographic-names-topo-1250k/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Geographic Names (Topo 1:250k)",
+        "url": "https://data.linz.govt.nz/layer/50164-nz-geographic-names-topo-1250k/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Geographic Names (Topo 1:250k)",
+      "url": "https://data.linz.govt.nz/layer/50164-nz-geographic-names-topo-1250k/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

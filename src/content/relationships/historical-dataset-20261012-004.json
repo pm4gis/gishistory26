@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-004",
+  "a": "dataset:nztopo50-vector",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Maintains topographic data",
+  "basis": "LINZ maintains the vector feature base and uses it to produce Topo50.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, topographic data",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+    }
+  ]
+}

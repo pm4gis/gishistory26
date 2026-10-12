@@ -1,0 +1,46 @@
+{
+  "id": "dataset:meshblock-1991",
+  "slug": "meshblock-1991",
+  "name": "Stats NZ meshblock boundaries (1991 edition)",
+  "kind": "Dataset",
+  "category": "Historical statistical datasets",
+  "url": "/datasets/meshblock-1991/",
+  "description": "Retrospective GIS polygons preserving the statistical geography of 1991.",
+  "story": [
+    "Stats NZ publishes a generalised GIS layer of meshblock boundaries as at 1 January 1991. Meshblocks are the building blocks for census and other statistical geography; their boundaries and codes are specific to each geographic vintage.",
+    "This dataset makes historical census geography available for later spatial comparison. The digital publication date is later than the boundaries it records, and current meshblocks should not be substituted for 1991 meshblocks in longitudinal analysis."
+  ],
+  "sources": [
+    {
+      "label": "Stats NZ Geographic Data Service, Meshblock 1991 (generalised)",
+      "url": "https://datafinder.stats.govt.nz/layer/95635-meshblock-1991-generalised/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Stats NZ Geographic Data Service, Meshblock 1991 (generalised)",
+        "url": "https://datafinder.stats.govt.nz/layer/95635-meshblock-1991-generalised/"
+      }
+    ],
+    [
+      {
+        "label": "Stats NZ Geographic Data Service, Meshblock 1991 (generalised)",
+        "url": "https://datafinder.stats.govt.nz/layer/95635-meshblock-1991-generalised/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/census-geography/"
+    },
+    {
+      "label": "Stats NZ Geographic Data Service, Meshblock 1991 (generalised)",
+      "url": "https://datafinder.stats.govt.nz/layer/95635-meshblock-1991-generalised/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

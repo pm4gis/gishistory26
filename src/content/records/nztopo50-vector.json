@@ -1,0 +1,58 @@
+{
+  "id": "dataset:nztopo50-vector",
+  "slug": "nztopo50-vector",
+  "name": "NZTopo 1:50,000 topographic vector database",
+  "kind": "Dataset",
+  "category": "Topographic datasets",
+  "url": "/datasets/nztopo50-vector/",
+  "description": "The geographic feature data used to compile and revise Topo50 mapping.",
+  "story": [
+    "LINZ holds a national topographic feature database used for Topo50 sheets. Its road, water, relief, building, vegetation and other feature classes are stored as vector geometry with attributes. This is the maintained geographic information behind map production, rather than a collection of scanned paper maps.",
+    "Earlier survey records, aerial photography, field revision and cartographic source maps supplied the antecedents of the data. The present vector database has its own revision history and source quality, so older feature positions should not be treated as an unchanged historical snapshot."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, topographic data",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+    },
+    {
+      "label": "LINZ, topographic accuracy and technical information",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, topographic data",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+      },
+      {
+        "label": "LINZ, topographic accuracy and technical information",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, topographic data",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+      },
+      {
+        "label": "LINZ, topographic accuracy and technical information",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data/accuracy-statements-and-technical-information"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/topography-goes-digital/"
+    },
+    {
+      "label": "LINZ, topographic data",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/topographic-data"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-010",
+  "a": "dataset:nztopo50-coastlines-islands",
+  "b": "dataset:nztopo50-vector",
+  "label": "Assembled from",
+  "basis": "LINZ combines its Topo50 coastline and island polygon layers.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Coastlines and Islands Polygons (Topo 1:50k)",
+      "url": "https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-014",
+  "a": "dataset:crown-aerial-footprints",
+  "b": "dataset:crown-aerial-film-library",
+  "label": "Indexes",
+  "basis": "The footprints and metadata locate aerial frames from the historic library.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Aerial Photo Footprints 1936–2008",
+      "url": "https://data.linz.govt.nz/layer/51002-nz-aerial-photo-footprints-mainland-nz-1936-2008-polygons/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-012",
+  "a": "dataset:nztopo250-names",
+  "b": "dataset:nztopo250-vector",
+  "label": "Feature layer within",
+  "basis": "Geographic names are part of the Topo250 feature data.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Geographic Names (Topo 1:250k)",
+      "url": "https://data.linz.govt.nz/layer/50164-nz-geographic-names-topo-1250k/"
+    }
+  ]
+}

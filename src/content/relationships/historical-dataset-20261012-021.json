@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-021",
+  "a": "dataset:national-soils-database",
+  "b": "entity:manaaki-whenua-landcare-research",
+  "label": "Data custodian",
+  "basis": "Manaaki Whenua documents historic soil observations and successive database platforms.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, history of the National Soils Database",
+      "url": "https://soils.landcareresearch.co.nz/tools/national-soils-database/nsd-development"
+    }
+  ]
+}

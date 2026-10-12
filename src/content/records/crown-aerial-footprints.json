@@ -1,0 +1,46 @@
+{
+  "id": "dataset:crown-aerial-footprints",
+  "slug": "crown-aerial-footprints",
+  "name": "NZ Aerial Photo Footprints (1936–2008)",
+  "kind": "Dataset",
+  "category": "Historical aerial datasets",
+  "url": "/datasets/crown-aerial-footprints/",
+  "description": "Index polygons and accompanying metadata for photography in the Crown Aerial Film Library.",
+  "story": [
+    "LINZ's aerial-photo footprint layer helps locate individual film frames from aerial surveys flown between 1936 and 2008. Its attributes identify surveys, runs, frames and other source details, giving GIS users a spatial way to locate imagery made long before the dataset was published online.",
+    "The frame outlines are estimated and some records lack geometries. The footprint catalogue identifies photographs; it does not itself contain the full-resolution aerial images."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Aerial Photo Footprints 1936–2008",
+      "url": "https://data.linz.govt.nz/layer/51002-nz-aerial-photo-footprints-mainland-nz-1936-2008-polygons/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Aerial Photo Footprints 1936–2008",
+        "url": "https://data.linz.govt.nz/layer/51002-nz-aerial-photo-footprints-mainland-nz-1936-2008-polygons/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Aerial Photo Footprints 1936–2008",
+        "url": "https://data.linz.govt.nz/layer/51002-nz-aerial-photo-footprints-mainland-nz-1936-2008-polygons/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/imagery-becomes-infrastructure/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Aerial Photo Footprints 1936–2008",
+      "url": "https://data.linz.govt.nz/layer/51002-nz-aerial-photo-footprints-mainland-nz-1936-2008-polygons/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

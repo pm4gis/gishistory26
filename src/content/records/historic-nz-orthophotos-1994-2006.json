@@ -1,0 +1,46 @@
+{
+  "id": "dataset:historic-nz-orthophotos-1994-2006",
+  "slug": "historic-nz-orthophotos-1994-2006",
+  "name": "LINZ commissioned orthophotos (1994–2006)",
+  "kind": "Dataset",
+  "category": "Historical aerial datasets",
+  "url": "/datasets/historic-nz-orthophotos-1994-2006/",
+  "description": "Early digital orthophotos aligned to successive national topographic map-sheet grids.",
+  "story": [
+    "LINZ records that commissioned New Zealand orthophotos from 1994 to 2003 followed NZMS260 sheet extents; acquisitions from 2003 to 2006 followed Topo50 sheet extents. These images are an example of aerial survey products moving into the GIS production and distribution system.",
+    "Their sheet layout ties the datasets to successive eras of topographic mapping. This collection is separate from the wider Crown Aerial Film Library and from later regional aerial-photo programmes."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, historical aerial imagery: commissioned orthophotos",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, historical aerial imagery: commissioned orthophotos",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, historical aerial imagery: commissioned orthophotos",
+        "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/imagery-becomes-infrastructure/"
+    },
+    {
+      "label": "LINZ, historical aerial imagery: commissioned orthophotos",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

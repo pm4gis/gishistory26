@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-031",
+  "a": "dataset:historic-hydrographic-soundings",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Custodian of records",
+  "basis": "LINZ hydrographic services provide sounding-sheet indexes and access to older survey records.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, hydrographic data and bathymetric indexes",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/hydrographic-data"
+    }
+  ]
+}

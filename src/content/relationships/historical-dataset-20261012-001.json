@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-001",
+  "a": "dataset:historic-nzms1",
+  "b": "entity:department-of-lands-and-survey",
+  "label": "Historical mapping responsibility",
+  "basis": "Lands and Survey's topographic survey and cartography programme supplied the national paper map lineage.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, North and South Island Yard Grids",
+      "url": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/projections/north-and-south-island-yard-grids-niyg-siyg"
+    }
+  ]
+}

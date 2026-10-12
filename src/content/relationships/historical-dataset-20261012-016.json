@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-016",
+  "a": "dataset:historic-nz-orthophotos-1994-2006",
+  "b": "entity:nzms260",
+  "label": "Earlier sheet alignment",
+  "basis": "The commissioned orthophotos from 1994 to 2003 followed the NZMS260 sheet grid.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, historical aerial imagery: commissioned orthophotos",
+      "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/aerial-imagery/historical-aerial-imagery"
+    }
+  ]
+}

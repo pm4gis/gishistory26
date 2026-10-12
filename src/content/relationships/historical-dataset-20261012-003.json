@@ -1,0 +1,14 @@
+{
+  "id": "relationship:historical-dataset-20261012-003",
+  "a": "dataset:nztopo250-raster",
+  "b": "dataset:nztopo250-vector",
+  "label": "Map portrayal of",
+  "basis": "The raster map is cartographically compiled from geographic features in the topographic database.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Topo250 Maps",
+      "url": "https://data.linz.govt.nz/layer/50798-nz-topo250-maps/"
+    }
+  ]
+}
