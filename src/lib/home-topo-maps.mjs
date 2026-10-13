@@ -7,27 +7,27 @@
 export const homeTopoMaps=Object.freeze([
   {
     "id": "topo-01",
-    "title": "250-04 topographic sheet",
-    "sourceTitle": "250-04_TIFFv1-02.tif",
-    "driveId": "1sOXmUD9F41lQCCKMskWk-0ND8TOiJ1Lq",
+    "title": "North topographic map",
+    "sourceTitle": "North Topo A1.png",
+    "driveId": "1n_bNNMDXg5QZ1Ax_ipIKrEYyRy66D7Md",
     "src": "/assets/home-topo/topo-01.webp",
-    "alt": "Topographic map detail: 250-04 topographic sheet"
+    "alt": "Topographic map detail: North topographic map"
   },
   {
     "id": "topo-02",
-    "title": "250-02 topographic sheet",
-    "sourceTitle": "250-02_TIFFv1-03.tif",
-    "driveId": "1Xf_v7W-ksIRGaF-o65TrxiyODqS_MADX",
+    "title": "Far North topographic map",
+    "sourceTitle": "Far North Topo A1.png",
+    "driveId": "1vrOvwnxbs7vJ7NVOb3EmWyUEmcWFv9Un",
     "src": "/assets/home-topo/topo-02.webp",
-    "alt": "Topographic map detail: 250-02 topographic sheet"
+    "alt": "Topographic map detail: Far North topographic map"
   },
   {
     "id": "topo-03",
-    "title": "250-01 topographic sheet",
-    "sourceTitle": "250-01_TIFFv1-03.tif",
-    "driveId": "1Fdt6r5p8xV3g51uiudvY9LcN5Q8IewJI",
+    "title": "Pawarenga topographic map",
+    "sourceTitle": "Pawarenga Topo A1.png",
+    "driveId": "11wHJ3vb_aj3-4sp3lI5Cs8S-sR55PS4-",
     "src": "/assets/home-topo/topo-03.webp",
-    "alt": "Topographic map detail: 250-01 topographic sheet"
+    "alt": "Topographic map detail: Pawarenga topographic map"
   },
   {
     "id": "topo-04",
