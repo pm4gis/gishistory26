@@ -6,7 +6,7 @@ import {pickThemeImage} from '../lib/subject-media.mjs';
 import {homeHighlightSlugs} from '../lib/home-highlights.mjs';
 import {decorFor} from '../lib/decor';
 import {dataset} from '../lib/data';
-import {homepageChapterImageMap} from '../lib/home-chapter-thumbnails.mjs';
+import {homepageChapterImageMap,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../lib/home-chapter-thumbnails.mjs';
 
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
@@ -72,7 +72,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    </nav>
    <div class="cards chapter-grid">
     {chapters.map((a:any)=><article class="card chapter-card" id={'chapter-'+a.readingOrder}>
-     <a class:list={['chapter-card-media',chapterNavImages[a.slug]?.homeCardKind==='photo'&&'chapter-card-media--photo']} href={a.url} aria-label={'Read Chapter '+a.readingOrder+' · '+a.title}>
+     <a class:list={['chapter-card-media',(chapterNavImages[a.slug]?.homeCardKind==='photo'||homepageFullBleedImageSlugs.has(chapterNavImages[a.slug]?.slug))&&'chapter-card-media--photo',homepageMapDetailChapterSlugs.has(a.slug)&&'chapter-card-media--detail']} href={a.url} aria-label={'Read Chapter '+a.readingOrder+' · '+a.title}>
       {chapterNavImages[a.slug]?
        <img src={chapterNavImages[a.slug].thumbnailPath||chapterNavImages[a.slug].assetPath} alt={chapterNavImages[a.slug].altText} loading="lazy" decoding="async"/>:
        <span class="chapter-image-fallback" aria-hidden="true">Chapter {a.readingOrder}</span>}

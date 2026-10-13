@@ -79,6 +79,37 @@ try{
    assert.equal(observed.titleVisible,true);
    await dimensions(page,viewport.name+' Landsat hero');
   });
+  await check(viewport.name+' 44 chapter thumbnails present and correctly framed',async()=>{
+   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+   const images=page.locator('#chapters .chapter-card img');
+   assert.equal(await images.count(),44);
+   if(['wide desktop','mobile'].includes(viewport.name)){
+    await images.evaluateAll(list=>list.forEach(img=>{img.loading='eager';}));
+    await images.evaluateAll(list=>Promise.all(list.map(img=>img.decode())));
+   }
+   const cards=await page.locator('#chapters .chapter-card').evaluateAll(list=>list.map(card=>{
+    const frame=card.querySelector('.chapter-card-media');
+    const img=frame?.querySelector('img');
+    const box=frame?.getBoundingClientRect();
+    const style=img?getComputedStyle(img):null;
+    return {number:card.id,width:box?.width,height:box?.height,source:img?.getAttribute('src'),
+     fit:style?.objectFit,loaded:!!(img?.complete&&img?.naturalWidth),alt:img?.alt,
+     photo:frame?.classList.contains('chapter-card-media--photo'),detail:frame?.classList.contains('chapter-card-media--detail')};
+   }));
+   assert.equal(cards.length,44);
+   for(const c of cards){
+    assert.ok(c.source?.startsWith('/assets/'),c.number+' must show project image');
+    assert.ok((c.alt||'').length>12,c.number+' must retain source alt text');
+    assert.ok(Math.abs(c.width/c.height-16/9)<.02,c.number+' image frame distorted');
+    if(['wide desktop','mobile'].includes(viewport.name))assert.ok(c.loaded,c.number+' original must load');
+    if(c.photo||c.detail)assert.equal(c.fit,'cover',c.number+' editorial image framing');
+    else assert.equal(c.fit,'contain',c.number+' must preserve full map/diagram');
+   }
+   assert.equal(cards.find(c=>c.number==='chapter-39')?.source,'/assets/historical/card/ruapehu-3d-2002.webp');
+   assert.equal(cards.find(c=>c.number==='chapter-36')?.source,'/assets/historical/card/nasa-landsat4-tasman-1990.webp');
+   assert.equal(cards.find(c=>c.number==='chapter-9')?.fit,'cover');
+   await dimensions(page,viewport.name+' documentary thumbnail grid');
+  });
   await check(viewport.name+' navigation, contribution action and menu',async()=>{
    const desktop=page.locator('.nav--desktop');
    const summary=page.locator('.mobile-menu summary');
