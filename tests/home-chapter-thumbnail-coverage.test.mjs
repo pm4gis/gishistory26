@@ -56,6 +56,6 @@ test('homepage uses the checked image registry and only photographic thumbnails 
  assert.match(home,/alt=\{chapterNavImages\[a.slug\].altText\}/);
  assert.match(home,/loading="lazy"/);
  assert.match(css,/#chapters \.chapter-card-media--photo img\{object-fit:cover;object-position:center\}/);
- assert.match(css,/\.chapter-card-media img\{width:100%;height:100%;object-fit:contain/);
+ assert.match(css,/\.chapter-card-media img,\.chapter-image-slot img\{width:100%;height:100%;object-fit:contain/);
  assert.doesNotMatch(home,/decorFor\(a\.readingOrder/);
 });
