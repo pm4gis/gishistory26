@@ -504,3 +504,21 @@
 #chapters .chapter-card-media--photo{background:var(--raised)}
 #chapters .chapter-card-media:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 #chapters .chapter-card-media:hover,#chapters .chapter-card-media:focus-visible{border-bottom-color:var(--accent)}
+
+
+/* Chapter thumbnail review, 13 October 2026.
+   The original maps/screenshots are never altered. The seven named homepage
+   card views show a legible EXCERPT at small sizes; full originals remain
+   available in the image collection and their source records. */
+#chapters .chapter-card-media--detail img{object-fit:cover;object-position:50% 50%;filter:none}
+#chapters #chapter-3 .chapter-card-media--detail img{object-position:50% 39%}
+#chapters #chapter-9 .chapter-card-media--detail img{object-position:33% 50%}
+#chapters #chapter-13 .chapter-card-media--detail img{object-position:50% 45%}
+#chapters #chapter-16 .chapter-card-media--detail img{object-position:48% 50%}
+#chapters #chapter-18 .chapter-card-media--detail img{object-position:50% 43%}
+#chapters #chapter-25 .chapter-card-media--detail img{object-position:50% 50%}
+#chapters .chapter-card-media--photo img{object-fit:cover;object-position:center;filter:none}
+#chapters .chapter-card-media--photo,#chapters .chapter-card-media--detail{background:var(--raised)}
+#chapters .chapter-card-media{height:auto;min-height:0;isolation:isolate}
+#chapters .chapter-card-media img{will-change:auto}
+@media (prefers-reduced-motion:reduce){#chapters .chapter-card-media img{transition:none!important;transform:none!important}}
