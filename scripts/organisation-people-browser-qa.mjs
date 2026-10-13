@@ -8,7 +8,7 @@ const added=JSON.parse(fs.readFileSync('docs/research/people-expansion-20261013.
 const proxyUrl=base.startsWith('http://127.')?null:process.env.HTTPS_PROXY||process.env.HTTP_PROXY;
 const proxy=proxyUrl?(()=>{const u=new URL(proxyUrl);return {server:u.protocol+'//'+u.host,...(u.username?{username:decodeURIComponent(u.username),password:decodeURIComponent(u.password)}:{})}})():undefined;
 const browser=await chromium.launch({headless:true,args:['--no-sandbox'],proxy});
-const context=await browser.newContext({viewport:{width:1440,height:1000}});
+const context=await browser.newContext({viewport:{width:1440,height:1000},ignoreHTTPSErrors:!!proxy});
 const page=await context.newPage();const errors=[];const checks=[];
 page.on('pageerror',e=>errors.push(e.message));
 try{
@@ -50,7 +50,7 @@ try{
   }
  }
  assert.deepEqual(errors,[]);
- const record={base,checkedAt:new Date().toISOString(),newProfiles:checks.length,profiles:checks,viewports:[1440,390],aliasSearch:true,referenceCatalogueExcluded:true,referenceRoutePreserved:true,mpiAgencyFilter:true,imageLoads:true,pageErrors:errors};
+ const record={base,checkedAt:new Date().toISOString(),managedProxy:!!proxy,tlsCertificateVerification:proxy?'not assessed through the intercepted browser connection':'standard browser verification',newProfiles:checks.length,profiles:checks,viewports:[1440,390],aliasSearch:true,referenceCatalogueExcluded:true,referenceRoutePreserved:true,mpiAgencyFilter:true,imageLoads:true,pageErrors:errors};
  fs.writeFileSync('docs/verification/organisation-people-browser-'+(base.startsWith('http://127.')?'local':base.includes('pages.dev')?'preview':'production')+'-20261013.json',JSON.stringify(record,null,2)+'\n');
  console.log('Browser verification passed: '+checks.length+' new profiles, alias and catalogue controls, documentary images at desktop/mobile. '+base);
 }finally{await browser.close();}

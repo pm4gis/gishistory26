@@ -1,5 +1,5 @@
 {
-  "files": 7917,
+  "files": 7858,
   "largestAsset": 24883682,
   "javascript": [
     {
@@ -11,20 +11,20 @@
       "gzip": 1733
     },
     {
-      "path": "dist/_astro/Reader.D_QWpvEk.js",
-      "gzip": 14887
+      "path": "dist/_astro/Reader.DCamtEZw.js",
+      "gzip": 14885
     },
     {
-      "path": "dist/_astro/Timeline.DWuxOpJG.js",
+      "path": "dist/_astro/Timeline.8ud-ydc_.js",
+      "gzip": 14309
+    },
+    {
+      "path": "dist/_astro/Timeline.B1TDQj0a.js",
       "gzip": 69
     },
     {
-      "path": "dist/_astro/Timeline.DptZ3wU5.js",
-      "gzip": 14068
-    },
-    {
-      "path": "dist/_astro/WanangaVideos.C9T28Ad7.js",
-      "gzip": 2894
+      "path": "dist/_astro/WanangaVideos.CC_i1t8w.js",
+      "gzip": 2895
     },
     {
       "path": "dist/_astro/client.BSqglUCA.js",
@@ -55,8 +55,8 @@
       "gzip": 125
     },
     {
-      "path": "dist/_astro/nga-poutama-videos.BivurURo.js",
-      "gzip": 3626
+      "path": "dist/_astro/nga-poutama-videos.C12mrpUC.js",
+      "gzip": 3530
     },
     {
       "path": "dist/_astro/passage-contributions.BwdmXVhk.js",
