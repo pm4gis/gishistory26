@@ -486,16 +486,20 @@
 }
 
 
-/* Homepage hero: original Landsat 4 Tasman Glacier observation, 30 December 1990.
-   Uses the existing project image unchanged. All modes keep solid text backing. */
-.hero--landsat .hero-documentary-media{position:absolute;inset:0 0 0 40%;z-index:-1;overflow:hidden;background:var(--raised)}
-.hero--landsat .hero-documentary-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:none}
-.hero--landsat::before{background:linear-gradient(90deg,var(--surface) 0%,var(--surface) 34%,color-mix(in srgb,var(--surface) 96%,transparent) 45%,color-mix(in srgb,var(--surface) 80%,transparent) 58%,color-mix(in srgb,var(--surface) 35%,transparent) 76%,transparent 96%)}
-.hero--landsat .hero-copy{z-index:1}
+/* Homepage title: twenty genuine topographic sheets, trimmed to the fixed
+   hero aspect ratio during the build. Slides sit behind the original text. */
+.hero--topo .hero-documentary-media{position:absolute;inset:0 0 0 40%;z-index:-1;overflow:hidden;background:var(--raised)}
+.hero--topo .topo-slide{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 1.1s ease;filter:saturate(.9) contrast(1.05)}
+.hero--topo .topo-slide.is-active{opacity:1}
+.hero--topo::before{background:linear-gradient(90deg,var(--surface) 0%,var(--surface) 34%,color-mix(in srgb,var(--surface) 96%,transparent) 45%,color-mix(in srgb,var(--surface) 80%,transparent) 58%,color-mix(in srgb,var(--surface) 35%,transparent) 76%,transparent 96%)}
+.hero--topo .hero-copy{z-index:1}
 @media(max-width:850px){
- .hero--landsat .hero-documentary-media{position:relative;inset:auto;width:100%;height:clamp(210px,40vw,265px);border-radius:12px;flex:none;z-index:0}
- .hero--landsat .hero-documentary-media img{object-fit:contain;object-position:center}
- .hero--landsat::before{display:none}
+ .hero--topo .hero-documentary-media{position:relative;inset:auto;width:100%;height:clamp(210px,40vw,265px);border-radius:12px;flex:none;z-index:0}
+ .hero--topo .topo-slide{object-fit:cover;object-position:center}
+ .hero--topo::before{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero--topo .topo-slide{transition:none}
 }
 
 /* Homepage documentary thumbnails: photographs fill the frame, whilst maps,

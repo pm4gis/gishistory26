@@ -4,6 +4,7 @@ import DecorativeLandscape from '../components/DecorativeLandscape.astro';
 import SubjectImage from '../components/SubjectImage.astro';
 import {pickThemeImage} from '../lib/subject-media.mjs';
 import {homeHighlightSlugs} from '../lib/home-highlights.mjs';
+import {homeTopoMaps} from '../lib/home-topo-maps.mjs';
 import {decorFor} from '../lib/decor';
 import {dataset} from '../lib/data';
 import {homepageChapterImageMap,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../lib/home-chapter-thumbnails.mjs';
@@ -11,8 +12,6 @@ import {homepageChapterImageMap,homepageFullBleedImageSlugs,homepageMapDetailCha
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
 const chapterNavImages=homepageChapterImageMap(chapters,d.passages,d.images);
-const heroImage=d.images.find((image:any)=>image.slug==='nasa-landsat4-tasman-1990'&&image.assetPath);
-if(!heroImage)throw new Error('The authenticated 1990 Tasman Glacier Landsat image is missing');
 const eligible=new Set(homeHighlightSlugs);
 const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
   const passage=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order)[0];
@@ -25,9 +24,10 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
 ---
 <Layout>
  <div class="wrap home-layout">
-  <section class="hero hero--visual hero--landsat">
-   <div class="hero-documentary-media">
-    <img src={heroImage.assetPath} alt={heroImage.altText} width="3000" height="3000" loading="eager" fetchpriority="high" decoding="async"/>
+  <section class="hero hero--visual hero--topo">
+   <div class="hero-documentary-media" data-topo-sources={JSON.stringify(homeTopoMaps.map(({src,alt})=>({src,alt})))} aria-hidden="true">
+    <img class="topo-slide is-active" src={homeTopoMaps[0].src} alt="" width="1400" height="788" loading="eager" fetchpriority="high" decoding="async"/>
+    <img class="topo-slide" src={homeTopoMaps[1].src} alt="" width="1400" height="788" loading="eager" decoding="async"/>
    </div>
    <div class="hero-copy">
     <p class="eyebrow">Maps · people · technology</p>
@@ -48,7 +48,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
 
   <section id="highlighted-stories" aria-labelledby="highlights-heading">
    <div class="section-head"><div><p class="eyebrow">Discover something different</p><h2 id="highlights-heading">Highlighted stories</h2></div><a href="/read/">Read the history →</a></div>
-   <p class="section-intro">Five selections from across New Zealand's GIS history. A different selection appears each time you visit.</p>
+   <p class="section-intro">Five selections from across New Zealand's GIS history.</p>
    <div class="cards highlight-grid">
     {highlights.map((a:any,i:number)=><article class="card art-card highlight-card" data-highlight={a.slug} hidden={i>=5}>
      {a.image?
@@ -103,6 +103,51 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    const continued=document.querySelector<HTMLAnchorElement>('#continue');
    if(continued&&progress?.url?.startsWith('/stories/')){continued.href=progress.url;continued.hidden=false;}
   }catch{}
+  // Run the image sequence without introducing visible controls or captions.
+  // The initial frame changes on every visit; subsequent frames complete a loop.
+  const topoMedia=document.querySelector<HTMLElement>('.hero--topo .hero-documentary-media');
+  if(topoMedia){
+   try{
+    const maps=JSON.parse(topoMedia.dataset.topoSources||'[]');
+    const frames=Array.from(topoMedia.querySelectorAll<HTMLImageElement>('.topo-slide'));
+    if(maps.length===20&&frames.length===2){
+     let index=Math.floor(Math.random()*maps.length);
+     let front=0;
+     let switching=false;
+     frames[0].src=maps[index].src;
+     frames[1].src=maps[(index+1)%maps.length].src;
+     function advance(){
+      if(document.hidden||switching)return;
+      switching=true;
+      const next=(index+1)%maps.length;
+      const incoming=frames[1-front];
+      const outgoing=frames[front];
+      let finished=false;
+      function finish(ok:boolean){
+       if(finished)return;
+       finished=true;
+       incoming.onload=null;
+       incoming.onerror=null;
+       if(ok){
+        incoming.classList.add('is-active');
+        outgoing.classList.remove('is-active');
+        index=next;
+        front=1-front;
+       }else index=next;
+       switching=false;
+      }
+      incoming.onload=()=>finish(true);
+      incoming.onerror=()=>finish(false);
+      incoming.src=maps[next].src;
+      if(incoming.complete&&incoming.naturalWidth>0)finish(true);
+     }
+     const timer=window.setInterval(advance,9000);
+     window.addEventListener('pagehide',()=>window.clearInterval(timer),{once:true});
+    }
+   }catch{
+    // The first server-rendered topographic map remains available without JS.
+   }
+  }
   const grid=document.querySelector<HTMLElement>('#highlighted-stories .highlight-grid');
   if(grid){
    const cards=Array.from(grid.querySelectorAll<HTMLElement>('.highlight-card'));
