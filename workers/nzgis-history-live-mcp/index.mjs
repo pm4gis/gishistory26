@@ -1,7 +1,7 @@
 const LIVE_DATA_URL = 'https://history.pm4gis.nz/editor-data.json';
 const SITE_ROOT = 'https://history.pm4gis.nz';
 const SERVER_NAME = 'A History of GIS in New Zealand Live';
-const SERVER_VERSION = '2026-10-12.1';
+const SERVER_VERSION = '2026-10-13.2';
 const PROTOCOL_VERSION = '2025-06-18';
 
 function json(data, status = 200, headers = {}) {
@@ -326,6 +326,8 @@ function publicationSummary(data) {
     serverVersion: SERVER_VERSION,
     smallUpdatesAvailable: true,
     editorAuthorised: true,
+    publicWebsiteUpdatedByMcp: false,
+    publicPublicationSource: 'GitHub main / Cloudflare Pages',
   };
 }
 
@@ -524,7 +526,7 @@ async function publishHistoryPatch(env, args) {
   ];
   const result = await env.EDITORIAL_DB.batch(stmts);
   if (!result?.[0]?.meta || Number(result[0].meta.changes) !== 1 || Number(result?.[1]?.meta?.changes) !== 1) throw new Error('Concurrent publication detected; no revision was committed');
-  return { status:'published', revision, sequence:nextSequence, updatedAt:now, summary:args.summary.trim(), operationCount:operations.length, activeOperationCount:activeOperations.length };
+  return { status:'published_to_mcp_sidecar', revision, sequence:nextSequence, updatedAt:now, summary:args.summary.trim(), operationCount:operations.length, activeOperationCount:activeOperations.length, publicWebsiteUpdated:false, publicPublicationSource:'GitHub main / Cloudflare Pages' };
 }
 
 async function restoreHistoryRevision(env, args) {
@@ -577,6 +579,34 @@ async function getPublicationState(env) {
     editorialPatchConflicts:data.editorialPatchConflicts,
     smallUpdatesAvailable:true,
     editorAuthorised:true,
+    publicWebsiteUpdatedByMcp:false,
+    publicPublicationSource:'GitHub main / Cloudflare Pages',
+  };
+}
+
+async function prepareGitHubPublicationHandoff(env, args) {
+  const state = await readEditorState(env, false);
+  if (args.expectedRevision !== state.revision) throw new Error('Stale MCP revision: expected ' + args.expectedRevision + ', current ' + state.revision);
+  const current = await getData();
+  const operations = [], privateOmissions = [];
+  for (const [position, op] of state.operations.entries()) {
+    const root = typeof op.path === 'string' ? op.path.replace(/^\//, '').split(/[./]/)[0] : '';
+    if (root === 'researchSources' || root === 'sourceNotes') {
+      privateOmissions.push({position, recordId:op.recordId, path:op.path, reason:'private_field'});
+      continue;
+    }
+    operations.push(op);
+  }
+  return {
+    status:'handoff_ready_for_git_reconciliation',
+    expectedMcpRevision: state.revision,
+    sourceRevision: current.sourceRevision,
+    publicRepository: 'pm4gis/gishistory26',
+    publishingBranch: 'main',
+    operations,
+    privateOmissions,
+    publicWebsiteUpdated: false,
+    note: 'Revalidate against the current GitHub content and Git head before preparing a pull request. Do not commit the private MCP envelope to the public repository.'
   };
 }
 
@@ -753,9 +783,10 @@ function toolDefs() {
     { name: 'get_entity_history', description: 'Retrieve a named person, business, organisation, agency, council, project or technology from the current live NZ GIS History publication, with references, chapters and labelled relationships.', inputSchema: { type:'object', properties:{ name:{type:'string',minLength:1,maxLength:320}, kind:{type:'string',enum:['Person','Business','Organisation','Agency','Council','Project','Technology']} }, required:['name'], additionalProperties:false }, annotations: ro },
     { name: 'trace_evidence', description: 'Retrieve live published passages and source references relevant to a claim. A search match describes the published account and does not independently verify the claim.', inputSchema: { type:'object', properties:{ claim:{type:'string',minLength:1,maxLength:320}, limit:{type:'integer',minimum:1,maximum:10,default:10} }, required:['claim'], additionalProperties:false }, annotations: ro },
     { name: 'list_timeline', description: 'List timeline events from the current live publication, optionally constrained by year.', inputSchema: { type:'object', properties:{ fromYear:{type:'integer'}, toYear:{type:'integer'}, limit:{type:'integer',minimum:1,maximum:200,default:100} }, additionalProperties:false }, annotations: ro },
-    { name: 'get_publication_state', description: 'Inspect the live small-update revision, retained revision history and active patch operations.', inputSchema: { type:'object', properties:{}, additionalProperties:false }, annotations: ro },
+    { name: 'get_publication_state', description: 'Inspect the private MCP sidecar revision, revision history, active patches, and separately identify the GitHub/Cloudflare public publication.', inputSchema: { type:'object', properties:{}, additionalProperties:false }, annotations: ro },
+    { name: 'prepare_github_publication', description: 'Export the non-private operations in the owner-authorised MCP sidecar as a GitHub reconciliation handoff. Does not publish or expose internal research fields. Apply the current Git HEAD lease and full content validation before merging.', inputSchema: {type:'object', properties:{expectedRevision:{type:'string',minLength:1,maxLength:80}}, required:['expectedRevision'], additionalProperties:false}, annotations:ro },
     { name: 'preview_history_patch', description: 'Preview controlled replacements to existing published prose or reference arrays. The exact preview token is required for publication and expires after 15 minutes.', inputSchema: { type:'object', properties:{ expectedRevision:{type:'string',maxLength:80}, summary:{type:'string',minLength:1,maxLength:500}, operations:{type:'array',minItems:1,maxItems:30,items:opSchema} }, required:['expectedRevision','summary','operations'], additionalProperties:false }, annotations: wr },
-    { name: 'publish_history_patch', description: 'Publish the exact previously previewed small patch. Rejects stale revisions, changed before-values, invalid or replayed preview tokens, unknown records and unsupported paths.', inputSchema: { type:'object', properties:{ expectedRevision:{type:'string',maxLength:80}, summary:{type:'string',minLength:1,maxLength:500}, operations:{type:'array',minItems:1,maxItems:30,items:opSchema}, previewToken:{type:'string',minLength:64,maxLength:64} }, required:['expectedRevision','summary','operations','previewToken'], additionalProperties:false }, annotations: wr },
+    { name: 'publish_history_patch', description: 'Publish only to the audited private MCP D1 sidecar; it DOES NOT update the public website. Rejects stale revisions, changed before-values, invalid or replayed preview tokens, unknown records and unsupported paths.', inputSchema: { type:'object', properties:{ expectedRevision:{type:'string',maxLength:80}, summary:{type:'string',minLength:1,maxLength:500}, operations:{type:'array',minItems:1,maxItems:30,items:opSchema}, previewToken:{type:'string',minLength:64,maxLength:64} }, required:['expectedRevision','summary','operations','previewToken'], additionalProperties:false }, annotations: wr },
     { name: 'restore_history_revision', description: 'Restore a retained small-update revision as a new audited revision. Omit previewToken to preview; provide the returned token to publish the restoration.', inputSchema: { type:'object', properties:{ expectedRevision:{type:'string',maxLength:80}, revision:{type:'string',maxLength:80}, summary:{type:'string',minLength:1,maxLength:500}, previewToken:{type:'string',minLength:64,maxLength:64} }, required:['expectedRevision','revision','summary'], additionalProperties:false }, annotations: wr },
     { name: 'preview_canonical_release', description: 'Validate and preview a complete canonical release by manifest URL or package reference. Checks checksums, manifest-declared total record, Person, edge, event and chapter counts, unique IDs and names, chapter numbering, relationship endpoints, deterministic patch conflicts and content retention. Returns a 15-minute one-use token; nothing is published.', inputSchema: { type:'object', properties:{ manifestUrl:{type:'string',maxLength:500}, packageReference:{type:'string',maxLength:500}, manifestSha256:{type:'string',pattern:'^[a-fA-F0-9]{64}$'}, expectedRevision:{type:'string',maxLength:80} }, required:['manifestSha256','expectedRevision'], additionalProperties:false }, annotations: wr },
     { name: 'publish_canonical_release', description: 'Atomically publish the exact previously previewed canonical release by one-use preview token and expected revision. Retains the prior release for rollback and records an audit entry.', inputSchema: { type:'object', properties:{ previewToken:{type:'string',minLength:64,maxLength:64}, expectedRevision:{type:'string',maxLength:80} }, required:['previewToken','expectedRevision'], additionalProperties:false }, annotations: wr },
@@ -769,6 +800,7 @@ async function callTool(name, args, env) {
   if(name==='publish_canonical_release')return publishCanonicalRelease(env,args);
   if(name==='preview_canonical_rollback')return previewCanonicalRollback(env,args);
   if(name==='rollback_canonical_release')return rollbackCanonicalRelease(env,args);
+  if(name==='prepare_github_publication')return prepareGitHubPublicationHandoff(env,args);
   const data = await getEffectiveData(env);
   switch (name) {
     case 'search_history': return { query: args.query, matched: searchHistory(data, args.query, args.kind, args.limit).length, results: searchHistory(data, args.query, args.kind, args.limit), publication: publicationSummary(data) };
@@ -790,7 +822,7 @@ async function handleRpc(msg, env) {
   const id = msg.id;
   switch (msg.method) {
     case 'initialize':
-      return rpcResult(id, { protocolVersion: PROTOCOL_VERSION, capabilities:{ tools:{ listChanged:false } }, serverInfo:{ name:SERVER_NAME, version:SERVER_VERSION }, instructions:'Synchronized MCP for the live A History of GIS in New Zealand publication at history.pm4gis.nz, with controlled small-update editorial revisions.' });
+      return rpcResult(id, { protocolVersion: PROTOCOL_VERSION, capabilities:{ tools:{ listChanged:false } }, serverInfo:{ name:SERVER_NAME, version:SERVER_VERSION }, instructions:'Read the live NZ GIS History publication and prepare owner-only editorial changes. MCP patch publication changes only the D1 sidecar; public website releases require GitHub and Cloudflare Pages.' });
     case 'ping': return rpcResult(id, {});
     case 'tools/list': return rpcResult(id, { tools: toolDefs() });
     case 'tools/call': {
