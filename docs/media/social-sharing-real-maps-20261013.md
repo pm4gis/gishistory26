@@ -17,6 +17,9 @@ Source artwork remains in `public/assets/historical/web/` and full source, licen
 
 ## Build and verification
 
-`scripts/generate-social-image.mjs` reads each project's original image record, checks source and attribution fields, and fails if an expected stored source asset has been changed. `sharp` assembles the card at 1200 × 630 with `fit:contain`, retaining the original map content. Output is `public/assets/social/nzgis-verified-maps-20261013.png`. Open Graph and Twitter metadata use that asset and the changed filename prevents reuse of the previous cached social card.
+`scripts/generate-social-image.mjs` reads each project's original image record, checks source and attribution fields, and fails if an expected stored source asset has been changed. `sharp` assembles the card at 1200 × 630 with `fit:contain`, retaining the original map content. Output is `public/assets/social/nzgis-verified-maps-20261013-v2.png`. Open Graph and Twitter metadata use that asset and the changed filename prevents reuse of the previous cached social card.
 
 The source-based unit test is in `tests/chapter-navigation-share.test.mjs`, and `scripts/check-build.mjs` checks the generated PNG signature, dimensions and live metadata path. The GitHub publication build, Chromium browser QA and Cloudflare Pages deployment must pass before this change is merged.
+## Social preview refresh, 13 October 2026
+
+The document-backed artwork was already the published image. Its output filename and the Open Graph/Twitter image URLs were versioned to `nzgis-verified-maps-20261013-v2.png` to prompt social-media scrapers to request a new URL rather than reuse their previous cached thumbnail. The four underlying documentary source images, wording, dimensions and original rights records remain unchanged. After production deployment, purge cached HTML for the public website and verify the new image URL.

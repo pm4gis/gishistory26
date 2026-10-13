@@ -69,10 +69,10 @@ test('social share card uses only actual local documentary maps with traceable s
  assert.doesNotMatch(generator,/path d="M.*map|fabricate|fake map/);
  assert.match(generator,/A history of/);
  assert.match(generator,/#111A29/);
- assert.match(layout,/property="og:image" content="https:\/\/history\.pm4gis\.nz\/assets\/social\/nzgis-verified-maps-20261013\.png"/);
+ assert.match(layout,/property="og:image" content="https:\/\/history\.pm4gis\.nz\/assets\/social\/nzgis-verified-maps-20261013-v2\.png"/);
  assert.match(layout,/name="twitter:card" content="summary_large_image"/);
  assert.match(layout,/property="og:image:width" content="1200"/);
  assert.match(layout,/property="og:image:height" content="630"/);
- assert.match(check,/nzgis-verified-maps-20261013\.png/);
+ assert.match(check,/nzgis-verified-maps-20261013-v2\.png/);
  assert.match(read('package.json'),/node scripts\/generate-social-image\.mjs/);
 });
