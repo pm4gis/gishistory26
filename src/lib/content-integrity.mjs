@@ -1,3 +1,4 @@
+import {isTimelineEventInPeriod} from './timeline-cutoff.mjs';
 const PRIVATE_FIELD = /(researchSources|researchRegister|mrr|editorial|review|internal|private|sourceDocument|googleDrive|drive|assetMetadata|storageMetadata|contributor|contact|email|phone|moderator|metadata)/i;
 const PRIVATE_VALUE = /\/assets\/contributions\/|\/drive\/folders\/|research register source|\b(?:MRR|DR|GAP\d*|PE|OP\d*|LINZCAP|BIO|R\d*|C\d*|P\d*|UT\d*|GOV\d*)-[A-Z0-9-]{1,16}\b/i;
 const PRIVATE_URL = /\/assets\/contributions\/|\/drive\/folders\//i;
@@ -91,6 +92,7 @@ export function inspectContent({ records = [], events = [], relationships = [], 
   for (const event of events) {
     const at = "event " + (event.id || "(missing ID)"); unique(event.id, at, "events");
     if (!event.dateDisplay || !event.datePrecision || !event.label) errors.push(at + ": date, precision and label are required");
+    if (!isTimelineEventInPeriod(event)) errors.push(at + ": event exceeds the public timeline cut-off of 31 December 2025");
     const unknownDate = event.datePrecision === "unknown" || event.startDate === "unknown";
     const start = unknownDate ? null : DATE_PARTS.exec(event.startDate || "");
     const end = event.endDate ? DATE_PARTS.exec(event.endDate) : null;
