@@ -521,4 +521,4 @@
 #chapters .chapter-card-media--photo,#chapters .chapter-card-media--detail{background:var(--raised)}
 #chapters .chapter-card-media{height:auto;min-height:0;isolation:isolate}
 #chapters .chapter-card-media img{will-change:auto}
-@media (prefers-reduced-motion:reduce){#chapters .chapter-card-media img{transition:none!important;transform:none!important}}
+@media (prefers-reduced-motion:reduce){#chapters .chapter-card-media img{transition:none!important}}
