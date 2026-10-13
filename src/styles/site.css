@@ -512,7 +512,7 @@
    available in the image collection and their source records. */
 #chapters .chapter-card-media--detail img{object-fit:cover;object-position:50% 50%;filter:none}
 #chapters #chapter-3 .chapter-card-media--detail img{object-position:50% 39%}
-#chapters #chapter-9 .chapter-card-media--detail img{object-position:33% 50%}
+#chapters #chapter-9 .chapter-card-media--detail img{object-position:33% 50%;transform:scale(1.25);transform-origin:31% 50%}
 #chapters #chapter-13 .chapter-card-media--detail img{object-position:50% 45%}
 #chapters #chapter-16 .chapter-card-media--detail img{object-position:48% 50%}
 #chapters #chapter-18 .chapter-card-media--detail img{object-position:50% 43%}
