@@ -2,10 +2,10 @@
 import Layout from '../../layouts/Layout.astro';
 import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
 import {dataset} from '../../lib/data';
-import {chapterNavImageMap} from '../../lib/chapter-nav-media.mjs';
+import {chapterCardImageMap,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../../lib/home-chapter-thumbnails.mjs';
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
-const navImages=chapterNavImageMap(chapters,d.passages,d.images);
+const navImages=chapterCardImageMap(chapters,d.passages,d.images);
 ---
 <Layout title="Chapters · NZ GIS History" description="Read every published chapter in A History of GIS in New Zealand, in sequence or by subject.">
  <div class="wrap">
@@ -15,8 +15,8 @@ const navImages=chapterNavImageMap(chapters,d.passages,d.images);
   </div>
   <p><a href="/stories/preface/">Read the author's preface →</a></p>
   <div class="chapter-catalogue" aria-label="Chapter catalogue">
-   {chapters.map((a:any)=><a class="chapter-catalogue-card" href={a.url}>
-    <span class="chapter-image-slot">
+   {chapters.map((a:any)=><a class="chapter-catalogue-card" id={'chapter-'+a.readingOrder} href={a.url}>
+    <span class:list={['chapter-image-slot',(navImages[a.slug]?.homeCardKind==='photo'||homepageFullBleedImageSlugs.has(navImages[a.slug]?.slug))&&'chapter-card-media--photo',homepageMapDetailChapterSlugs.has(a.slug)&&'chapter-card-media--detail']}>
      {navImages[a.slug]?
       <img src={navImages[a.slug].thumbnailPath||navImages[a.slug].assetPath} alt={navImages[a.slug].altText} loading="lazy" decoding="async"/>:
       <span class="chapter-image-fallback" aria-hidden="true">Chapter {a.readingOrder}</span>}
