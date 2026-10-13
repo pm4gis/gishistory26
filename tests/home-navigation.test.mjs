@@ -101,3 +101,22 @@ test('passage-specific email drafts include the link and the alternative page ha
  assert.doesNotMatch(fallback,/<form\b|<input\b|<textarea\b|window\.location\.replace/);
  for(const text of [fallback,about,readFileSync('src/lib/passage-contributions.mjs','utf8')])assert.doesNotMatch(text,/Do not send restricted iwi|Please avoid sending restricted iwi/);
 });
+
+
+test('homepage hero uses the authentic 1990 Landsat 4 observation without modifying its image',()=>{
+ const image=JSON.parse(readFileSync('src/content/images/nasa-landsat4-tasman-1990.json','utf8'));
+ assert.equal(image.assetPath,'/assets/historical/web/nasa-landsat4-tasman-1990.webp');
+ assert.equal(image.dateDisplay,'1990-12-30');
+ assert.ok(image.sourceUrl.startsWith('https://science.nasa.gov/'));
+ assert.ok(image.originalSha256&&image.webSha256,'documentary source checksums must be retained');
+ assert.match(home,/image\.slug==='nasa-landsat4-tasman-1990'/);
+ assert.match(home,/class="hero-documentary-media"/);
+ assert.match(home,/src=\{heroImage\.assetPath\}/);
+ assert.match(home,/alt=\{heroImage\.altText\}/);
+ assert.match(home,/fetchpriority="high"/);
+ assert.doesNotMatch(home,/north2024-raglan1/);
+ assert.match(css,/\.hero--landsat \.hero-documentary-media img\{[^}]*object-fit:cover;[^}]*filter:none\}/);
+ assert.match(css,/\.hero--landsat::before\{background:linear-gradient\(90deg,var\(--surface\)/);
+ assert.match(css,/@media\(max-width:850px\)\{\s*\.hero--landsat/);
+ assert.match(css,/\.hero--landsat \.hero-documentary-media img\{object-fit:contain;object-position:center\}/);
+});
