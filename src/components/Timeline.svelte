@@ -2,6 +2,7 @@
  import {scaleLinear} from 'd3-scale';
  import {ngaPoutamaForEvent} from '../lib/nga-poutama-videos.mjs';
  import {onMount} from 'svelte';
+ import {TIMELINE_LAST_YEAR,TIMELINE_LAST_DATE,isTimelineEventInPeriod} from '../lib/timeline-cutoff.mjs';
  export let events:any[]=[];
  export let compact=false;
  export let onSelect:(e:any)=>void=()=>{};
@@ -25,9 +26,10 @@
   const match=event.endDate?.match(/^\d{4}/);
   return match?Number(match[0]):year(event);
  };
- $: dated=events.filter(e=>year(e)!==null);
+ $: timelineEvents=events.filter(isTimelineEventInPeriod);
+ $: dated=timelineEvents.filter(e=>year(e)!==null);
  $: min=Math.min(...dated.map(e=>year(e) as number),1900);
- $: max=Math.max(...dated.map(e=>year(e) as number),new Date().getFullYear());
+ $: max=TIMELINE_LAST_YEAR;
  $: rangeStart=from&&Number.isFinite(Number(from))?Math.max(min,Math.min(max,Number(from))):min;
  $: rangeEnd=to&&Number.isFinite(Number(to))?Math.max(min,Math.min(max,Number(to))):max;
  $: baseStart=Math.min(rangeStart,rangeEnd);
@@ -37,7 +39,7 @@
  $: viewMin=Math.max(min,Math.min(max-1,centre-zoomSpan/2));
  $: viewMax=Math.min(max,Math.max(viewMin+1,centre+zoomSpan/2));
  $: scale=scaleLinear().domain([viewMin,viewMax]).range([30,970]);
- $: filtered=events.filter(e=>{
+ $: filtered=timelineEvents.filter(e=>{
   const y=year(e);
   if(y===null&&!includeUndated)return false;
   const end=endYear(e)??y;
@@ -80,8 +82,10 @@
   history.replaceState(null,'',u);
  }
  function pick(e:any){selected=e;onSelect(e);if(!compact)updateURL(e.id)}
+ function historicalEventVideos(id:string){return ngaPoutamaForEvent(id).filter((video:any)=>video.publishedOn&&video.publishedOn<=TIMELINE_LAST_DATE)}
  function markerKeydown(event:KeyboardEvent,e:any){if(event.key==='Enter'||event.key===' '){event.preventDefault();pick(e)}}
- function resetDateFilter(){activeDecade=null;activeFiveYearStart=null;selected=null;zoom=1;updateURL()}
+ function clampYearInput(value:string){if(!value)return '';const n=Number(value);return Number.isFinite(n)?String(Math.min(TIMELINE_LAST_YEAR,Math.max(1000,Math.floor(n)))):''}
+ function resetDateFilter(){from=clampYearInput(from);to=clampYearInput(to);activeDecade=null;activeFiveYearStart=null;selected=null;zoom=1;updateURL()}
  function zoomIn(){zoom=Math.min(maxZoom,Number((zoom+0.5).toFixed(2)));updateURL(selected?.id)}
  function zoomOut(){zoom=Math.max(1,Number((zoom-0.5).toFixed(2)));updateURL(selected?.id)}
  function resetZoom(){zoom=1;updateURL(selected?.id)}
@@ -93,20 +97,20 @@
  onMount(()=>{
   if(!compact){
    const p=new URLSearchParams(location.search);
-   from=p.get('from')||'';
-   to=p.get('to')||'';
+   from=clampYearInput(p.get('from')||'');
+   to=clampYearInput(p.get('to')||'');
    if(from&&to&&Number.isFinite(Number(from))&&Number.isFinite(Number(to))){const start=Number(from);const finish=Number(to);if(finish===start+4&&(start%10===0||start%10===5)){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start}else if(finish===start+9&&start%10===0){activeDecade=start}}
    term=p.get('q')||'';
    includeUndated=p.get('undated')!=='0';
    const requestedZoom=Number(p.get('zoom'));
    zoom=Number.isFinite(requestedZoom)?Math.min(maxZoom,Math.max(1,requestedZoom)):1;
-   const e=events.find(e=>e.id===p.get('event'));
+   const e=timelineEvents.find(e=>e.id===p.get('event'));
    if(e)selected=e;
   }
  });
 </script>
 <section class="timeline-box" aria-label="Linked timeline"><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?'This chapter in time':'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
- {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max="2100" bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max="2100" bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={updateURL}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
+ {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={updateURL}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
  <div class="period-head"><h2>{activeDecade===null?'Choose a decade':`Choose a five-year period in the ${activeDecade}s`}</h2><p>{activeDecade===null?'Move from left to right through the history. Select a decade to focus the events below.':'The timeline is focused on a five-year span. Choose the first or second half of this decade.'}</p></div>
  <nav class="period-nav" aria-label={activeDecade===null?'Timeline decades':'Five-year timeline periods'}>
  {#if activeDecade===null}
@@ -145,7 +149,7 @@
   {/each}
  </svg>
  <div class="timeline-hover-label" aria-hidden="true">{#if hoveredEvent}{hoveredEvent.dateDisplay} · {hoveredEvent.label}{:else}Hover or focus a marker to preview it; select to open its account.{/if}</div>
- <div class="timeline-result-count" aria-live="polite">{filtered.length} of {events.length} events {#if !compact}· {chartMarks.length} markers in the overview · Select an event for its summary, sources and related account{/if}</div>
+ <div class="timeline-result-count" aria-live="polite">{filtered.length} of {timelineEvents.length} events {#if !compact}· {chartMarks.length} markers in the overview · Select an event for its summary, sources and related account{/if}</div>
 
  <div class="timeline-rail" tabindex="0" aria-label="Chronological event buttons">
  {#each filtered as e (e.id)}
@@ -172,9 +176,9 @@
      </div>
     {/if}
     {#if selected.url}<p><a href={selected.url}>Read the linked account →</a></p>{/if}
-    {#if ngaPoutamaForEvent(selected.id).length}
+    {#if historicalEventVideos(selected.id).length}
       <div class="event-wananga-links"><h4>Related published recording</h4>
-        {#each ngaPoutamaForEvent(selected.id) as video (video.id)}
+        {#each historicalEventVideos(selected.id) as video (video.id)}
           <p><a href={video.source} target="_blank" rel="noopener noreferrer">{video.title} ↗</a> <small>{video.date}. {video.attribution}</small></p>
         {/each}
       </div>
