@@ -6,6 +6,7 @@ import {PALETTE_ORDER,PALETTE_NAMES,PALETTE_TOKENS,APPEARANCE_KEY,DEFAULT_APPEAR
 const css=readFileSync('src/styles/site.css','utf8');
 const layout=readFileSync('src/layouts/Layout.astro','utf8');
 const network=readFileSync('src/lib/network.ts','utf8');
+const networkCss=readFileSync('src/styles/network.css','utf8');
 const storage=(initial={})=>{
  const map=new Map(Object.entries(initial));
  return {getItem:key=>map.get(key)??null,setItem:(key,value)=>map.set(key,value)};
@@ -60,8 +61,10 @@ test('system mode resolves using the device preference while explicit selections
  assert.equal(resolveAppearance('light',true),'light');
 });
 test('accessible appearance controls and palette-aware network rendering are connected',()=>{
- assert.match(network,/getComputedStyle\(document.documentElement\)/);
- assert.match(network,/attributeFilter:\['data-palette','data-appearance'\]/);
+ assert.match(network,/createElementNS/);
+ assert.match(networkCss,/\.network-node--focus rect\{fill:var\(--accent-soft\);stroke:var\(--accent\)/);
+ assert.match(networkCss,/\.network-node__name\{fill:var\(--text\)/);
+ assert.match(networkCss,/\.network-link\{stroke:var\(--network-edge\)/);
  assert.match(layout,/aria-controls="appearance-panel"/);
  assert.match(layout,/aria-pressed="false"/);
  assert.match(layout,/prefers-color-scheme: dark/);

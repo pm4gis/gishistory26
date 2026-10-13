@@ -1,33 +1,226 @@
-declare global{interface Window{__network:any}}
-export function initNetwork(){const {records,edges}=window.__network;const select=document.getElementById('focus') as HTMLSelectElement;const button=document.getElementById('load-network') as HTMLButtonElement;const canvas=document.getElementById('graph')!;const list=document.getElementById('connections')!;const status=document.getElementById('network-status')!;let renderer:any;let visual=false;const recordMap=new Map<string,any>(records.map((r:any)=>[r.id,r]));
- const u=new URL(location.href);if(recordMap.has(u.searchParams.get('focus')||''))select.value=u.searchParams.get('focus')!;
- function relevant(){return edges.filter((e:any)=>e.a===select.value||e.b===select.value)}
- function links(){list.replaceChildren();for(const e of relevant()){const other=recordMap.get(e.a===select.value?e.b:e.a);const li=document.createElement('li');const a=document.createElement('a');a.href=other?.url||'/browse/';a.textContent=other?.name||'Related entry';const label=document.createElement('small');label.textContent=e.label;const details=document.createElement('details');const summary=document.createElement('summary');summary.textContent='Connection basis';const p=document.createElement('p');p.textContent=e.basis;details.append(summary,p);for(const s of e.sources||[]){if(!s.url||!/^https?:\/\/|^\//.test(s.url))continue;const link=document.createElement('a');link.href=s.url;link.textContent=s.label;details.append(link,document.createElement('br'))}li.append(label,a,details);list.append(li)}if(!list.children.length){const li=document.createElement('li');li.textContent='No documented connections for this entry.';list.append(li)}}
+import { networkNeighbourhood, radialNetworkLayout, networkLabelLines } from './network-layout.mjs';
 
- function drawSvg(rel:any[],allIds:string[]){
-  canvas.replaceChildren();canvas.hidden=false;
-  const ids=allIds.slice(0,31);const allowed=new Set(ids);const positions=new Map<string,{x:number,y:number}>();
-  ids.forEach((id,i)=>positions.set(id,i===0?{x:400,y:300}:{x:400+260*Math.cos((i-1)/Math.max(1,ids.length-1)*Math.PI*2),y:300+230*Math.sin((i-1)/Math.max(1,ids.length-1)*Math.PI*2)}));
-  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 800 600');svg.setAttribute('class','network-svg');svg.setAttribute('aria-label','Interactive connection diagram. Use the evidence list for every connection.');
-  const lines:{a:string,b:string,el:SVGLineElement}[]=[];
-  for(const e of rel.filter(e=>allowed.has(e.a)&&allowed.has(e.b))){const line=document.createElementNS(svg.namespaceURI,'line') as SVGLineElement;line.setAttribute('stroke','var(--line)');line.setAttribute('stroke-width','1.5');svg.append(line);lines.push({a:e.a,b:e.b,el:line})}
-  const groups=new Map<string,SVGGElement>();
-  function position(){for(const [id,g] of groups){const p=positions.get(id)!;g.setAttribute('transform',`translate(${p.x},${p.y})`)}for(const l of lines){const a=positions.get(l.a)!,b=positions.get(l.b)!;l.el.setAttribute('x1',String(a.x));l.el.setAttribute('y1',String(a.y));l.el.setAttribute('x2',String(b.x));l.el.setAttribute('y2',String(b.y))}}
-  for(const id of ids){
-   const g=document.createElementNS(svg.namespaceURI,'g') as SVGGElement;const r=recordMap.get(id);g.setAttribute('role','button');g.setAttribute('tabindex','0');g.setAttribute('aria-label','Explore '+(r?.name||id));g.style.cursor='pointer';g.style.touchAction='none';
-   const c=document.createElementNS(svg.namespaceURI,'circle');c.setAttribute('r',id===select.value?'14':'9');c.setAttribute('fill','var(--accent)');
-   const text=document.createElementNS(svg.namespaceURI,'text');text.setAttribute('y','-20');text.setAttribute('text-anchor','middle');text.setAttribute('fill','var(--text)');text.setAttribute('font-size','12');text.textContent=(r?.name||id).length>34?(r?.name||id).slice(0,31)+'…':r?.name||id;
-   const title=document.createElementNS(svg.namespaceURI,'title');title.textContent=r?.name||id;g.append(title,c,text);svg.append(g);groups.set(id,g);
-   let dragging=false;let moved=false;let startX=0;let startY=0;
-   g.addEventListener('pointerdown',e=>{dragging=true;moved=false;startX=e.clientX;startY=e.clientY;g.setPointerCapture(e.pointerId)});
-   g.addEventListener('pointermove',e=>{if(!dragging)return;const box=svg.getBoundingClientRect();moved ||= Math.hypot(e.clientX-startX,e.clientY-startY)>4;positions.set(id,{x:Math.max(25,Math.min(775,(e.clientX-box.left)/box.width*800)),y:Math.max(30,Math.min(570,(e.clientY-box.top)/box.height*600))});position()});
-   g.addEventListener('pointerup',()=>dragging=false);g.addEventListener('pointercancel',()=>dragging=false);
-   g.addEventListener('click',()=>{if(moved){moved=false;return}select.value=id;change()});
-   g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select.value=id;change()}});
+declare global {
+  interface Window {
+    __network: {
+      records: Array<{id: string; name: string; kind?: string; url?: string}>;
+      edges: Array<{id: string; a: string; b: string; label?: string; basis?: string; sources?: Array<{label: string; url: string}>}>;
+    };
   }
-  canvas.append(svg);position();status.textContent=`Interactive diagram: ${ids.length} of ${allIds.length} entries. Drag an entry or select it to explore. All connections remain in the evidence list.`;
- }
+}
 
- async function draw(){if(!visual)return;status.textContent='Loading network…';try{const [{default:Graph},{default:Sigma,DEFAULT_STYLES}]=await Promise.all([import('graphology'),import('sigma')]);renderer?.kill();const graph=new Graph({multi:true,type:'undirected'});const rel=relevant();const ids=[select.value,...new Set(rel.map((e:any)=>e.a===select.value?e.b:e.a))];const rootStyles=getComputedStyle(document.documentElement);const color=rootStyles.getPropertyValue('--accent').trim()||'#A2C6FF';const edgeColor=rootStyles.getPropertyValue('--network-edge').trim()||'#6E849D';const labelColor=rootStyles.getPropertyValue('--network-label').trim()||'#E8EDF7';ids.forEach((id:any,i)=>{const r=recordMap.get(id);graph.addNode(id,{label:r?.name||id,x:i===0?0:Math.cos(i/ids.length*Math.PI*2),y:i===0?0:Math.sin(i/ids.length*Math.PI*2),size:i===0?12:7,color})});rel.forEach((e:any)=>graph.addEdgeWithKey(e.id,e.a,e.b,{color:edgeColor,size:1}));canvas.hidden=false;renderer=new Sigma(graph,canvas,{settings:{renderEdgeLabels:false,enableNodeDrag:true},styles:{nodes:[DEFAULT_STYLES.nodes,{labelColor}]}});renderer.on('clickNode',({node}:any)=>{select.value=node;change()});status.textContent=`${ids.length} entries; ${rel.length} connections. Use the list below for evidence.`}catch(e){renderer?.kill();renderer=null;const rel=relevant();drawSvg(rel,[select.value,...new Set(rel.map((e:any)=>e.a===select.value?e.b:e.a))] as string[]);console.warn('Using the interactive SVG network because WebGL rendering is unavailable.')}}
- function change(){const u=new URL(location.href);u.searchParams.set('focus',select.value);history.replaceState(null,'',u);links();draw()}
- select.addEventListener('change',change);button.addEventListener('click',()=>{visual=!visual;button.textContent=visual?'Close visual network':'Open visual network';canvas.hidden=!visual;if(visual)draw();else{renderer?.kill();renderer=null}});new MutationObserver(()=>{if(visual)draw()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-palette','data-appearance']});links();}
+const SVG_NS = 'http://www.w3.org/2000/svg';
+
+function element(tag: string, attrs: Record<string, string> = {}) {
+  const node = document.createElementNS(SVG_NS, tag);
+  for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
+  return node;
+}
+
+export function initNetwork() {
+  if (!window.__network) return;
+  const {records, edges} = window.__network;
+  const select = document.getElementById('focus') as HTMLSelectElement | null;
+  const canvas = document.getElementById('graph');
+  const list = document.getElementById('connections');
+  const status = document.getElementById('network-status');
+  const zoomIn = document.getElementById('network-zoom-in') as HTMLButtonElement | null;
+  const zoomOut = document.getElementById('network-zoom-out') as HTMLButtonElement | null;
+  const reset = document.getElementById('network-reset') as HTMLButtonElement | null;
+  const recordLink = document.getElementById('network-entry-link') as HTMLAnchorElement | null;
+  if (!select || !canvas || !list || !status || !zoomIn || !zoomOut || !reset || !recordLink) return;
+
+  const recordsById = new Map(records.map(record => [record.id, record]));
+  const search = new URL(location.href).searchParams.get('focus');
+  if (search && recordsById.has(search)) select.value = search;
+  let svg: SVGSVGElement | null = null;
+  let width = 980;
+  let height = 620;
+  let zoom = 1;
+  let centreX = 0;
+  let centreY = 0;
+  let pan: {pointerId: number; x: number; y: number; centreX: number; centreY: number} | null = null;
+
+  function updateViewport() {
+    if (!svg) return;
+    const vw = width * zoom;
+    const vh = height * zoom;
+    svg.setAttribute('viewBox', [centreX - vw / 2, centreY - vh / 2, vw, vh].join(' '));
+    zoomIn!.disabled = zoom <= 0.46;
+    zoomOut!.disabled = zoom >= 2.49;
+  }
+
+  function changeZoom(factor: number) {
+    zoom = Math.max(0.45, Math.min(2.5, zoom * factor));
+    updateViewport();
+  }
+
+  function resetView() {
+    zoom = 1;
+    centreX = 0;
+    centreY = 0;
+    updateViewport();
+  }
+
+  function updateFocus(id: string) {
+    if (!recordsById.has(id)) return;
+    select!.value = id;
+    const url = new URL(location.href);
+    url.searchParams.set('focus', id);
+    history.replaceState(null, '', url);
+    render();
+  }
+
+  function renderEvidence(relationships: typeof edges) {
+    list!.replaceChildren();
+    for (const edge of relationships) {
+      const otherId = edge.a === select!.value ? edge.b : edge.a;
+      const other = recordsById.get(otherId);
+      if (!other) continue;
+      const item = document.createElement('li');
+      item.className = 'network-evidence-item';
+      const title = document.createElement('a');
+      title.href = other.url || '/browse/';
+      title.textContent = other.name;
+      const relation = document.createElement('p');
+      relation.className = 'network-evidence-relation';
+      relation.textContent = edge.label || 'Documented relationship';
+      const detail = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.textContent = 'Evidence and sources';
+      const basis = document.createElement('p');
+      basis.textContent = edge.basis || 'No description recorded.';
+      detail.append(summary, basis);
+      for (const source of edge.sources || []) {
+        if (!source.url || !/^(https?:\/\/|\/(?!\/))/i.test(source.url)) continue;
+        const link = document.createElement('a');
+        link.href = source.url;
+        link.textContent = source.label || source.url;
+        link.className = 'network-source-link';
+        detail.append(link);
+      }
+      item.append(title, relation, detail);
+      list!.append(item);
+    }
+    if (!list!.childElementCount) {
+      const empty = document.createElement('li');
+      empty.textContent = 'There are no documented connections for this entry.';
+      list!.append(empty);
+    }
+  }
+
+  function makeNode(id: string, x: number, y: number, isFocus: boolean) {
+    const record = recordsById.get(id);
+    const name = record?.name || id;
+    const group = element('g', {
+      'class': 'network-node' + (isFocus ? ' network-node--focus' : ''),
+      'transform': 'translate(' + x + ' ' + y + ')',
+      'role': 'button',
+      'tabindex': '0',
+      'aria-label': 'Explore connections for ' + name
+    });
+    const title = element('title');
+    title.textContent = name;
+    const boxWidth = isFocus ? 250 : 220;
+    const boxHeight = isFocus ? 96 : 82;
+    const box = element('rect', {
+      x: String(-boxWidth / 2), y: String(-boxHeight / 2),
+      width: String(boxWidth), height: String(boxHeight), rx: '15'
+    });
+    const label = element('text', {'class': 'network-node__name', 'text-anchor': 'middle'});
+    const lines = networkLabelLines(name, isFocus ? 27 : 23);
+    lines.forEach((line: string, i: number) => {
+      const span = element('tspan', {x: '0', y: String(lines.length === 1 ? -3 : -15 + i * 19)});
+      span.textContent = line;
+      label.append(span);
+    });
+    const kind = element('text', {'class': 'network-node__kind', x: '0', y: isFocus ? '34' : '29', 'text-anchor': 'middle'});
+    kind.textContent = isFocus ? 'SELECTED · ' + (record?.kind || 'entry') : (record?.kind || 'entry');
+    group.append(title, box, label, kind);
+    group.addEventListener('click', () => { if (!isFocus) updateFocus(id); });
+    group.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        if (!isFocus) updateFocus(id);
+      }
+    });
+    return group;
+  }
+
+  function render() {
+    const view = networkNeighbourhood(records, edges, select!.value);
+    const layout = radialNetworkLayout(view.visibleIds);
+    width = layout.width;
+    height = layout.height;
+    const current = recordsById.get(select!.value);
+    recordLink!.href = current?.url || '/browse/';
+    recordLink!.textContent = 'Read entry: ' + (current?.name || 'Selected entry');
+    renderEvidence(view.relationships);
+
+    const scene = element('svg', {
+      class: 'network-svg',
+      role: 'group',
+      'aria-label': 'Interactive diagram showing the selected entry and its documented neighbouring entries. Select a node to explore its connections.'
+    }) as SVGSVGElement;
+    const desc = element('desc');
+    desc.textContent = 'The central entry is connected to its immediate neighbours. Use Tab and Enter to select a node. Relationship evidence is listed below the diagram.';
+    scene.append(desc);
+    const links = element('g', {class: 'network-links', 'aria-hidden': 'true'});
+    for (const edge of view.visibleRelationships) {
+      const a = layout.positions.get(edge.a);
+      const b = layout.positions.get(edge.b);
+      if (!a || !b) continue;
+      const line = element('line', {
+        x1: String(a.x), y1: String(a.y), x2: String(b.x), y2: String(b.y),
+        class: 'network-link'
+      });
+      const title = element('title');
+      title.textContent = edge.label || 'Documented relationship';
+      line.append(title);
+      links.append(line);
+    }
+    scene.append(links);
+    const nodes = element('g', {class: 'network-nodes'});
+    for (const id of view.visibleIds) {
+      const position = layout.positions.get(id);
+      if (!position) continue;
+      nodes.append(makeNode(id, position.x, position.y, id === select!.value));
+    }
+    scene.append(nodes);
+    scene.addEventListener('pointerdown', event => {
+      if (event.button !== 0 || (event.target as Element).closest('.network-node')) return;
+      pan = {pointerId: event.pointerId, x: event.clientX, y: event.clientY, centreX, centreY};
+      scene.setPointerCapture(event.pointerId);
+      scene.classList.add('is-panning');
+    });
+    scene.addEventListener('pointermove', event => {
+      if (!pan || event.pointerId !== pan.pointerId) return;
+      const bounds = scene.getBoundingClientRect();
+      centreX = pan.centreX - (event.clientX - pan.x) / bounds.width * width * zoom;
+      centreY = pan.centreY - (event.clientY - pan.y) / bounds.height * height * zoom;
+      updateViewport();
+    });
+    const endPan = () => { pan = null; scene.classList.remove('is-panning'); };
+    scene.addEventListener('pointerup', endPan);
+    scene.addEventListener('pointercancel', endPan);
+    scene.addEventListener('lostpointercapture', endPan);
+    scene.addEventListener('wheel', event => {
+      if (!event.ctrlKey && !event.metaKey) return;
+      event.preventDefault();
+      changeZoom(event.deltaY < 0 ? 0.85 : 1.15);
+    }, {passive: false});
+
+    svg = scene;
+    canvas!.replaceChildren(scene);
+    resetView();
+    const neighbours = view.neighbours.length;
+    const suffix = view.hiddenCount ? ' Showing the first ' + (neighbours - view.hiddenCount) + ' neighbours; all relationships are listed below.' : '';
+    status!.textContent = (neighbours + 1) + (neighbours === 0 ? ' entry, ' : ' entries, ') + view.relationships.length + (view.relationships.length === 1 ? ' connection.' : ' connections.') + suffix;
+  }
+
+  zoomIn.addEventListener('click', () => changeZoom(0.78));
+  zoomOut.addEventListener('click', () => changeZoom(1.28));
+  reset.addEventListener('click', resetView);
+  select.addEventListener('change', () => updateFocus(select.value));
+  render();
+}

@@ -1,4 +1,48 @@
 ---
-import Layout from '../../layouts/Layout.astro';import {dataset} from '../../lib/data';const d=await dataset();
+import Layout from '../../layouts/Layout.astro';
+import {dataset} from '../../lib/data';
+import '../../styles/network.css';
+
+const d = await dataset();
+const entries = [...d.records].sort((a: any, b: any) => a.name.localeCompare(b.name, 'en-NZ'));
 ---
-<Layout title="Connections · NZ GIS History"><div class="wrap"><p class="eyebrow">Optional network view</p><h1>Explore connections.</h1><p class="intro">Choose an entry to view its immediate neighbours. Read each relationship's basis and sources in the list below.</p><label>Entry<select id="focus" style="display:block;width:100%;margin:15px 0">{d.records.map((r:any)=><option value={r.id}>{r.name}</option>)}</select></label><button id="load-network">Open visual network</button><p id="network-status" aria-live="polite"></p><div id="graph" class="network-canvas" hidden></div><ul class="list" id="connections"></ul></div><script define:vars={{records:d.records.map((r:any)=>({id:r.id,name:r.name,kind:r.kind,url:r.url})),edges:d.relationships}}>window.__network={records,edges};</script><script>import {initNetwork} from '../../lib/network';initNetwork();</script></Layout>
+<Layout title="Connections · NZ GIS History">
+  <div class="wrap network-page">
+    <p class="eyebrow">Connections</p>
+    <h1>Explore connections</h1>
+    <p class="intro">Choose a person, organisation, project or dataset to see its documented connections. Select another entry in the diagram to explore further.</p>
+
+    <label class="network-picker" for="focus">Choose an entry
+      <select id="focus">
+        {entries.map((entry: any) => <option value={entry.id}>{entry.name}</option>)}
+      </select>
+    </label>
+
+    <section class="network-panel" aria-label="Connection diagram">
+      <div class="network-toolbar">
+        <p id="network-status" role="status" aria-live="polite">Loading connections…</p>
+        <div class="network-zoom-controls" role="group" aria-label="Diagram controls">
+          <button id="network-zoom-in" type="button" aria-label="Zoom in">+</button>
+          <button id="network-zoom-out" type="button" aria-label="Zoom out">−</button>
+          <button id="network-reset" type="button">Reset view</button>
+        </div>
+      </div>
+      <div id="graph" class="network-canvas"></div>
+      <div class="network-panel-footer">
+        <p>Drag the background to move around. Select a node to explore it. Use the controls to zoom.</p>
+        <a id="network-entry-link" href="/browse/">Read selected entry</a>
+      </div>
+    </section>
+
+    <section class="network-evidence" aria-labelledby="network-evidence-title">
+      <h2 id="network-evidence-title">Relationship evidence</h2>
+      <p class="muted">Each documented connection is listed here, including its description and sources.</p>
+      <ul class="list" id="connections"></ul>
+    </section>
+    <noscript><p class="muted">Enable JavaScript to use the interactive network.</p></noscript>
+  </div>
+  <script define:vars={{records:d.records.map((r:any)=>({id:r.id,name:r.name,kind:r.kind,url:r.url})),edges:d.relationships}}>
+    window.__network={records,edges};
+  </script>
+  <script>import {initNetwork} from '../../lib/network';initNetwork();</script>
+</Layout>
