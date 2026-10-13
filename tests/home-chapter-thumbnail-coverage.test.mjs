@@ -59,7 +59,7 @@ test('homepage uses checked project image records and deliberately framed docume
  assert.match(home,/loading="lazy"/);
  assert.match(css,/#chapters \.chapter-card-media--photo img\{object-fit:cover;object-position:center\}/);
  assert.match(css,/#chapters \.chapter-card-media--detail img\{object-fit:cover;/);
- assert.match(css,/#chapters #chapter-9 \.chapter-card-media--detail img\{object-position:33% 50%\}/);
+ assert.match(css,/#chapters #chapter-9 \.chapter-card-media--detail img\{object-position:33% 50%;transform:scale\(1\.25\);transform-origin:31% 50%\}/);
  assert.match(css,/\.chapter-card-media img,\.chapter-image-slot img\{width:100%;height:100%;object-fit:contain/);
  assert.doesNotMatch(home,/decorFor\(a\.readingOrder/);
 });
