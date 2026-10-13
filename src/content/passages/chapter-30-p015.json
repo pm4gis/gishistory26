@@ -12,8 +12,8 @@
   "blocks": [
     {
       "type": "paragraph",
-      "text": "The early browser period has left a peculiar historical record. DOCgis survives unusually well because a training guide and a detailed technical paper were retained. Dunedin’s help pages still expose the vocabulary, browser problems and data warnings of an early ArcIMS application. PHEW! is almost the reverse: its purpose, date and functions are securely documented, but the original visual interface remains missing.",
-      "markdown": "The early browser period has left a peculiar historical record. DOCgis survives unusually well because a training guide and a detailed technical paper were retained. Dunedin’s help pages still expose the vocabulary, browser problems and data warnings of an early ArcIMS application. PHEW! is almost the reverse: its purpose, date and functions are securely documented, but the original visual interface remains missing.",
+      "text": "The early years of web GIS have left an uneven paper trail. A training guide and detailed technical paper survive for DOCgis, while Dunedin’s help pages record the terminology, browser problems and data warnings of its early ArcIMS application. Contemporary reports describe what the Ministry of Health’s PHEW! system did and when it appeared, but a screenshot of its original interface has yet to be found.",
+      "markdown": "The early years of web GIS have left an uneven paper trail. A training guide and detailed technical paper survive for DOCgis, while Dunedin’s help pages record the terminology, browser problems and data warnings of its early ArcIMS application. Contemporary reports describe what the Ministry of Health’s PHEW! system did and when it appeared, but a screenshot of its original interface has yet to be found.",
       "sources": [],
       "id": "ch30-s14-p01"
     },
