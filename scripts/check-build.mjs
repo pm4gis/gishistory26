@@ -16,16 +16,16 @@ if (sitemap.includes('https://gishistory26.pages.dev') ||
     robots.includes('https://gishistory26.pages.dev')) {
   throw Error('Sitemap or robots.txt contains a non-canonical production hostname');
 }
-const share='dist/assets/social/nzgis-verified-maps-20261013-v2.png';
-if(!fs.existsSync(share))throw Error('Missing generated Slate Blue social sharing PNG');
-const header=fs.readFileSync(share).subarray(0,24);
-if(header.subarray(0,8).toString('hex')!=='89504e470d0a1a0a'||header.readUInt32BE(16)!==1200||header.readUInt32BE(20)!==630){
- throw Error('Invalid social preview PNG signature or dimensions (must be 1200 × 630)');
-}
+const share='dist/assets/social/nzgis-selected-20261013.jpg';
+if(!fs.existsSync(share))throw Error('Selected social sharing image is missing from build');
+const bytes=fs.readFileSync(share);
+if(bytes[0]!==0xff||bytes[1]!==0xd8||bytes[bytes.length-2]!==0xff||bytes[bytes.length-1]!==0xd9)
+ throw Error('Invalid selected image: expected complete JPEG');
+const meta=await (await import('sharp')).default(share).metadata();
+if(meta.width!==1200||meta.height!==630||meta.format!=='jpeg')throw Error('Selected social JPEG has incorrect size');
 const homeHtml=fs.readFileSync('dist/index.html','utf8');
-if(!homeHtml.includes('property="og:image"')||!homeHtml.includes('/assets/social/nzgis-verified-maps-20261013-v2.png')||!homeHtml.includes('name="twitter:card"')){
- throw Error('Social preview metadata missing from generated homepage');
-}
-console.log('Documentary-map Open Graph preview verified: 1200 × 630 PNG and social tags');
+if(!homeHtml.includes('property="og:image"')||!homeHtml.includes('/assets/social/nzgis-selected-20261013.jpg')||!homeHtml.includes('name="twitter:card"')||!homeHtml.includes('image/jpeg'))
+ throw Error('Approved social artwork metadata missing from generated homepage');
+console.log('Selected social card verified: 1200 x 630, JPEG, Open Graph and X metadata');
 
 await import('./check-links.mjs');

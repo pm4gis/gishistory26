@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {chapterNavImage,chapterNavImageMap} from '../src/lib/chapter-nav-media.mjs';
 
 const read=path=>readFileSync(path,'utf8');
@@ -46,33 +47,19 @@ test('seven documentary timeline additions include source references and valid c
   assert.ok(event.passageIds?.length,name+' lacks passage ID');
  }
 });
-test('social share card uses only actual local documentary maps with traceable sources',()=>{
+test('social sharing uses the selected supplied image with no generated cartography',()=>{
+ const image=readFileSync('public/assets/social/nzgis-selected-20261013.jpg');
+ const actual=createHash('sha256').update(image).digest('hex');
+ assert.equal(actual,'e3af221679b6360667d1271ca32dd51399f66413f2c0f714791023343601f514');
  const layout=read('src/layouts/Layout.astro');
- const generator=read('scripts/generate-social-image.mjs');
- const check=read('scripts/check-build.mjs');
- const expected=[
-  'ongaonga-linz-topo50-2020',
-  'gisborne-east-coast-luc-map-1967',
-  'rotoiti-bathymetry-2021',
-  'retrolens-c515a148bd788efa'
- ];
- for(const id of expected){
-  const record=JSON.parse(read('src/content/images/'+id+'.json'));
-  assert.ok(record.sourceUrl?.startsWith('https://'),id+' missing documentary source');
-  assert.ok(record.credit?.length>8,id+' missing credit');
-  assert.ok(record.assetPath?.startsWith('/assets/historical/web/'),id+' missing stored map asset');
-  assert.ok(generator.includes(id+'.json'),id+' not included in share card');
-  assert.ok(generator.includes(record.assetPath),id+' stored asset not used');
- }
- assert.match(generator,/sharp\(source\)/);
- assert.match(generator,/fit:'contain'/);
- assert.doesNotMatch(generator,/path d="M.*map|fabricate|fake map/);
- assert.match(generator,/A history of/);
- assert.match(generator,/#111A29/);
- assert.match(layout,/property="og:image" content="https:\/\/history\.pm4gis\.nz\/assets\/social\/nzgis-verified-maps-20261013-v2\.png"/);
+ const script=read('scripts/generate-social-image.mjs');
+ const build=read('scripts/check-build.mjs');
+ assert.match(script,/Verify the precise social artwork/);
+ assert.doesNotMatch(script,/\.resize\(|\.composite\(/);
+ assert.match(layout,/property="og:image" content="https:\/\/history\.pm4gis\.nz\/assets\/social\/nzgis-selected-20261013\.jpg"/);
+ assert.match(layout,/property="og:image:type" content="image\/jpeg"/);
  assert.match(layout,/name="twitter:card" content="summary_large_image"/);
- assert.match(layout,/property="og:image:width" content="1200"/);
- assert.match(layout,/property="og:image:height" content="630"/);
- assert.match(check,/nzgis-verified-maps-20261013-v2\.png/);
- assert.match(read('package.json'),/node scripts\/generate-social-image\.mjs/);
+ assert.match(layout,/name="twitter:image"/);
+ assert.match(build,/nzgis-selected-20261013\.jpg/);
+ assert.doesNotMatch(layout,/nzgis-verified-maps-20261013-v2\.png/);
 });
