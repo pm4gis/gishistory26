@@ -5,7 +5,7 @@ import {mkdir,readFile} from 'node:fs/promises';
 // This social image consists only of real, archived project image files.
 // No coastline, map labels, contours, bathymetry or terrain are drawn by code.
 const width=1200,height=630;
-const output='public/assets/social/nzgis-verified-maps-20261013.png';
+const output='public/assets/social/nzgis-verified-maps-20261013-v2.png';
 const maps=[
  {record:'ongaonga-linz-topo50-2020.json',asset:'/assets/historical/web/ongaonga-linz-topo50-2020.webp',kind:'LINZ Topo50 Ongaonga 2020',x:887,y:24,w:292,h:282},
  {record:'gisborne-east-coast-luc-map-1967.json',asset:'/assets/historical/web/gisborne-east-coast-luc-map-1967.webp',kind:'Gisborne–East Coast LUC survey 1967',x:705,y:289,w:252,h:304},
