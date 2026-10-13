@@ -37,3 +37,27 @@ test('Git handoff omits private operations and rejects a stale MCP revision',asy
   assert.match(stale.result.content[0].text,/Stale MCP revision/);
  } finally {globalThis.fetch=originalFetch;}
 });
+
+test('MCP timeline and search exclude every event after 31 December 2025',async()=>{
+ const originalFetch=globalThis.fetch;
+ const dataset={records:[{id:'person:alpha',kind:'Person',name:'Alpha',story:['Old account']}],articles:[],passages:[],edges:[],events:[
+  {id:'event:valid',year:2025,startDate:'2025-12-31',dateDisplay:'2025',label:'Survey completed',summary:'Historical survey completed in 2025',url:'/timeline/'},
+  {id:'event:later',year:2026,startDate:'2026-01-01',dateDisplay:'2026',label:'Future webinar',summary:'2026 webinar',url:'/timeline/'},
+  {id:'event:retrospective',year:2025,startDate:'2025-01-01',dateDisplay:'2025',label:'A programme',summary:'Work continued in 2027',url:'/timeline/'}
+ ]};
+ globalThis.fetch=async()=>new Response(JSON.stringify({revision:'github-test',data:dataset}),{status:200,headers:{'content-type':'application/json'}});
+ const env={EDITORIAL_DB:{prepare(){return {async first(){return state;}}}}};
+ try{
+  const listed=await rpc(env,'list_timeline',{});
+  assert.equal(listed.result.isError,false);
+  assert.deepEqual(listed.result.structuredContent.events.map(event=>event.id),['event:valid']);
+  const future=await rpc(env,'search_history',{query:'2026',kind:'Timeline event'});
+  assert.equal(future.result.isError,false);
+  assert.deepEqual(future.result.structuredContent.results,[]);
+  const valid=await rpc(env,'search_history',{query:'Survey completed',kind:'Timeline event'});
+  assert.deepEqual(valid.result.structuredContent.results.map(event=>event.id),['event:valid']);
+  const publishedState=await rpc(env,'get_publication_state',{});
+  assert.equal(publishedState.result.isError,false);
+  assert.equal(publishedState.result.structuredContent.publication.eventCount,1);
+ } finally {globalThis.fetch=originalFetch;}
+});
