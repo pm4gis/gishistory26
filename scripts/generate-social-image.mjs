@@ -28,8 +28,8 @@ for(const item of maps){
   .png().toBuffer();
  const frame=await sharp({create:{width:item.w,height:item.h,channels:4,background:'#F2F0EB'}})
   .composite([{input:paper,gravity:'center'}]).png().toBuffer();
- const shadow=Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="'+(item.w+16)+'" height="'+(item.h+16)+'"><rect x="5" y="5" width="'+item.w+'" height="'+item.h+'" rx="2" fill="#000" opacity=".4"/></svg>');
- overlays.push({input:shadow,left:item.x+3,top:item.y+3});
+ const shadow=Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="'+item.w+'" height="'+item.h+'"><rect x="3" y="3" width="'+(item.w-4)+'" height="'+(item.h-4)+'" rx="2" fill="#000" opacity=".35"/></svg>');
+ overlays.push({input:shadow,left:item.x,top:item.y});
  overlays.push({input:frame,left:item.x,top:item.y});
  console.log('Social preview source:',item.kind,'|',meta.sourceUrl);
 }
