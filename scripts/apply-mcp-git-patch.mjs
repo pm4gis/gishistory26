@@ -39,6 +39,8 @@ if(result.status==='prepared'){
     safeReport.validationProblems=problems;
   }
 }
+if(apply && safeReport.status==='prepared' && execFileSync('git',['status','--porcelain'],{encoding:'utf8'}).trim())
+  throw Error('Refusing to apply with an uncommitted working tree');
 if(reportPath){
   fs.mkdirSync(path.dirname(reportPath),{recursive:true});
   fs.writeFileSync(reportPath,JSON.stringify(safeReport,null,2)+'\n');
@@ -46,8 +48,6 @@ if(reportPath){
 console.log(JSON.stringify(safeReport,null,2));
 if(safeReport.status!=='prepared')process.exitCode=1;
 else if(apply) {
-  if(execFileSync('git',['status','--porcelain'],{encoding:'utf8'}).trim())
-    throw Error('Refusing to apply with an uncommitted working tree');
   const filesById=new Map();
   for(const col of ['records','passages','events']){
     for(const file of fs.readdirSync('src/content/'+col).filter(f=>f.endsWith('.json'))){
