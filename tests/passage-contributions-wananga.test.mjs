@@ -58,7 +58,7 @@ test('Ngā Poutama recordings are verified direct video links with external thum
  assert.ok(ngaPoutamaVideos.some(v=>v.description.includes('Keith Holswich')));
  assert.equal(ngaPoutamaVideos.filter(v=>v.publishedOn).length,15);
  assert.equal(ngaPoutamaForPassage('passage:chapter-20-5cf3bc2665')[0].id,'yZcwtxGsZIE');
- assert.equal(ngaPoutamaForEvent('linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga')[0].id,'uDBBtaO5k5Q');
+ assert.equal(ngaPoutamaForEvent('linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga').length,0,'2026 recordings must not reference an event in the historical timeline');
  assert.equal(ngaPoutamaForEvent('linzcap-2025-05-16-nga-poutama-explores-korero-takutai')[0].id,'gZdhElp_GrI');
  assert.ok(ngaPoutamaRecordLinks['ZCb9zLz12O4'].some(x=>x.url==='/people/holden-hohaia/'));
  assert.ok(ngaPoutamaVideos.every(v=>v.evidenceUrl?.startsWith('https://')));
