@@ -497,3 +497,10 @@
  .hero--landsat .hero-documentary-media img{object-fit:contain;object-position:center}
  .hero--landsat::before{display:none}
 }
+
+/* Homepage documentary thumbnails: photographs fill the frame, whilst maps,
+   archival sheets and software screenshots retain their complete original data. */
+#chapters .chapter-card-media--photo img{object-fit:cover;object-position:center}
+#chapters .chapter-card-media--photo{background:var(--raised)}
+#chapters .chapter-card-media:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+#chapters .chapter-card-media:hover,#chapters .chapter-card-media:focus-visible{border-bottom-color:var(--accent)}

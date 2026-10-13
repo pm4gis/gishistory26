@@ -28,6 +28,23 @@ try{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    await page.locator('#highlighted-stories .highlight-card:visible').first().waitFor();
    assert.equal(await page.locator('#chapters .chapter-card').count(),44);
+   assert.equal(await page.locator('#chapters .chapter-card-media img').count(),44,'every chapter should have a documentary thumbnail');
+   assert.equal(await page.locator('#chapters .chapter-image-fallback').count(),0,'no generic chapter placeholder should remain');
+   const imageAlt=await page.locator('#chapters .chapter-card-media img').evaluateAll(images=>images.map(img=>img.getAttribute('alt')));
+   assert.equal(imageAlt.length,44);
+   assert.ok(imageAlt.every(alt=>alt&&alt.length>=12),'every chapter thumbnail requires documentary alt text');
+   for(const chapter of [2,8,14,25,31,37,41]){
+    const cover=page.locator('#chapter-'+chapter+' .chapter-card-media img');
+    await cover.scrollIntoViewIfNeeded();
+    const info=await cover.evaluate(async img=>{
+     await img.decode();
+     const style=getComputedStyle(img);
+     return {width:img.naturalWidth,height:img.naturalHeight,fit:style.objectFit};
+    });
+    assert.ok(info.width>=100&&info.height>=100,'chapter '+chapter+' thumbnail failed to decode');
+    assert.ok(['contain','cover'].includes(info.fit),'chapter '+chapter+' unexpected image fit '+info.fit);
+   }
+
    assert.equal(await page.locator('#chapters .chapter-index a').count(),44);
    assert.equal(await page.locator('#themes article.art-card').count(),8);
    assert.equal(await page.locator('#highlighted-stories .highlight-card:visible').count(),5);
