@@ -800,6 +800,7 @@ async function callTool(name, args, env) {
   if(name==='publish_canonical_release')return publishCanonicalRelease(env,args);
   if(name==='preview_canonical_rollback')return previewCanonicalRollback(env,args);
   if(name==='rollback_canonical_release')return rollbackCanonicalRelease(env,args);
+  if(name==='prepare_github_publication')return prepareGitHubPublicationHandoff(env,args);
   const data = await getEffectiveData(env);
   switch (name) {
     case 'search_history': return { query: args.query, matched: searchHistory(data, args.query, args.kind, args.limit).length, results: searchHistory(data, args.query, args.kind, args.limit), publication: publicationSummary(data) };
@@ -807,7 +808,6 @@ async function callTool(name, args, env) {
     case 'trace_evidence': return traceEvidence(data, args.claim, args.limit);
     case 'list_timeline': return listTimeline(data, args.fromYear, args.toYear, args.limit);
     case 'get_publication_state': return getPublicationState(env);
-    case 'prepare_github_publication': return prepareGitHubPublicationHandoff(env,args);
     case 'preview_history_patch': return previewHistoryPatch(env, args);
     case 'publish_history_patch': return publishHistoryPatch(env, args);
     case 'restore_history_revision': return restoreHistoryRevision(env, args);
