@@ -46,16 +46,33 @@ test('seven documentary timeline additions include source references and valid c
   assert.ok(event.passageIds?.length,name+' lacks passage ID');
  }
 });
-test('social sharing uses a Slate Blue 1200 by 630 PNG from reproducible SVG source',()=>{
+test('social share card uses only actual local documentary maps with traceable sources',()=>{
  const layout=read('src/layouts/Layout.astro');
- const source=read('public/assets/social/nzgis-slate.svg');
- const build=read('package.json');
- assert.match(source,/width="1200" height="630"/);
- assert.match(source,/#111A29/);
- assert.match(source,/A history of GIS/);
- assert.match(layout,/property="og:image" content="https:\/\/history\.pm4gis\.nz\/assets\/social\/nzgis-slate\.png"/);
+ const generator=read('scripts/generate-social-image.mjs');
+ const check=read('scripts/check-build.mjs');
+ const expected=[
+  'ongaonga-linz-topo50-2020',
+  'gisborne-east-coast-luc-map-1967',
+  'rotoiti-bathymetry-2021',
+  'retrolens-c515a148bd788efa'
+ ];
+ for(const id of expected){
+  const record=JSON.parse(read('src/content/images/'+id+'.json'));
+  assert.ok(record.sourceUrl?.startsWith('https://'),id+' missing documentary source');
+  assert.ok(record.credit?.length>8,id+' missing credit');
+  assert.ok(record.assetPath?.startsWith('/assets/historical/web/'),id+' missing stored map asset');
+  assert.ok(generator.includes(id+'.json'),id+' not included in share card');
+  assert.ok(generator.includes(record.assetPath),id+' stored asset not used');
+ }
+ assert.match(generator,/sharp\(source\)/);
+ assert.match(generator,/fit:'contain'/);
+ assert.doesNotMatch(generator,/path d="M.*map|fabricate|fake map/);
+ assert.match(generator,/A history of/);
+ assert.match(generator,/#111A29/);
+ assert.match(layout,/property="og:image" content="https:\/\/history\.pm4gis\.nz\/assets\/social\/nzgis-verified-maps-20261013\.png"/);
  assert.match(layout,/name="twitter:card" content="summary_large_image"/);
  assert.match(layout,/property="og:image:width" content="1200"/);
  assert.match(layout,/property="og:image:height" content="630"/);
- assert.match(build,/node scripts\/generate-social-image\.mjs/);
+ assert.match(check,/nzgis-verified-maps-20261013\.png/);
+ assert.match(read('package.json'),/node scripts\/generate-social-image\.mjs/);
 });
