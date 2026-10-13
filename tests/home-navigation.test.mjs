@@ -103,20 +103,18 @@ test('passage-specific email drafts include the link and the alternative page ha
 });
 
 
-test('homepage hero uses the authentic 1990 Landsat 4 observation without modifying its image',()=>{
+test('topographic homepage hero preserves the original Landsat media record',()=>{
  const image=JSON.parse(readFileSync('src/content/images/nasa-landsat4-tasman-1990.json','utf8'));
  assert.equal(image.assetPath,'/assets/historical/web/nasa-landsat4-tasman-1990.webp');
  assert.equal(image.dateDisplay,'1990-12-30');
  assert.ok(image.sourceUrl.startsWith('https://science.nasa.gov/'));
  assert.ok(image.originalSha256&&image.webSha256,'documentary source checksums must be retained');
- assert.match(home,/image\.slug==='nasa-landsat4-tasman-1990'/);
- assert.match(home,/class="hero-documentary-media"/);
- assert.match(home,/src=\{heroImage\.assetPath\}/);
- assert.match(home,/alt=\{heroImage\.altText\}/);
+ assert.match(home,/hero--topo/);
+ assert.match(home,/data-topo-sources=/);
  assert.match(home,/fetchpriority="high"/);
  assert.doesNotMatch(home,/north2024-raglan1/);
- assert.match(css,/\.hero--landsat \.hero-documentary-media img\{[^}]*object-fit:cover;[^}]*filter:none\}/);
- assert.match(css,/\.hero--landsat::before\{background:linear-gradient\(90deg,var\(--surface\)/);
- assert.match(css,/@media\(max-width:850px\)\{\s*\.hero--landsat/);
- assert.match(css,/\.hero--landsat \.hero-documentary-media img\{object-fit:contain;object-position:center\}/);
+ assert.match(css,/\.hero--topo \.topo-slide\{[^}]*object-fit:cover/);
+ assert.match(css,/\.hero--topo::before\{background:linear-gradient\(90deg,var\(--surface\)/);
+ assert.match(css,/@media\(max-width:850px\)\{\s*\.hero--topo/);
+ assert.match(css,/\.hero--topo \.topo-slide\{object-fit:cover;object-position:center\}/);
 });
