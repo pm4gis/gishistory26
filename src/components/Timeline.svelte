@@ -2,7 +2,7 @@
  import {scaleLinear} from 'd3-scale';
  import {ngaPoutamaForEvent} from '../lib/nga-poutama-videos.mjs';
  import {onMount} from 'svelte';
- import {TIMELINE_LAST_YEAR,isTimelineEventInPeriod} from '../lib/timeline-cutoff.mjs';
+ import {TIMELINE_LAST_YEAR,TIMELINE_LAST_DATE,isTimelineEventInPeriod} from '../lib/timeline-cutoff.mjs';
  export let events:any[]=[];
  export let compact=false;
  export let onSelect:(e:any)=>void=()=>{};
@@ -82,6 +82,7 @@
   history.replaceState(null,'',u);
  }
  function pick(e:any){selected=e;onSelect(e);if(!compact)updateURL(e.id)}
+ function historicalEventVideos(id:string){return ngaPoutamaForEvent(id).filter((video:any)=>video.publishedOn&&video.publishedOn<=TIMELINE_LAST_DATE)}
  function markerKeydown(event:KeyboardEvent,e:any){if(event.key==='Enter'||event.key===' '){event.preventDefault();pick(e)}}
  function clampYearInput(value:string){if(!value)return '';const n=Number(value);return Number.isFinite(n)?String(Math.min(TIMELINE_LAST_YEAR,Math.max(1000,Math.floor(n)))):''}
  function resetDateFilter(){from=clampYearInput(from);to=clampYearInput(to);activeDecade=null;activeFiveYearStart=null;selected=null;zoom=1;updateURL()}
@@ -175,9 +176,9 @@
      </div>
     {/if}
     {#if selected.url}<p><a href={selected.url}>Read the linked account →</a></p>{/if}
-    {#if ngaPoutamaForEvent(selected.id).length}
+    {#if historicalEventVideos(selected.id).length}
       <div class="event-wananga-links"><h4>Related published recording</h4>
-        {#each ngaPoutamaForEvent(selected.id) as video (video.id)}
+        {#each historicalEventVideos(selected.id) as video (video.id)}
           <p><a href={video.source} target="_blank" rel="noopener noreferrer">{video.title} ↗</a> <small>{video.date}. {video.attribution}</small></p>
         {/each}
       </div>
