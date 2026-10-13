@@ -26,8 +26,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Colley also designed structures for graphical and descriptive information that anticipated broader land-information processing. The thesis discussed ways of interrogating and manipulating stored data. MAPPAK can be described securely as an operational computer-assisted cadastral mapping system with land-information-system characteristics. An absolute claim that it was New Zealand’s first GIS remains unsupported.",
-      "markdown": "Colley also designed structures for graphical and descriptive information that anticipated broader land-information processing. The thesis discussed ways of interrogating and manipulating stored data. MAPPAK can be described securely as an operational computer-assisted cadastral mapping system with land-information-system characteristics. An absolute claim that it was New Zealand’s first GIS remains unsupported.",
+      "text": "Colley designed ways to store, query and manipulate both the graphical and descriptive information. MAPPAK was used for cadastral mapping, but some of its ideas anticipated the broader land information systems that followed.",
+      "markdown": "Colley designed ways to store, query and manipulate both the graphical and descriptive information. MAPPAK was used for cadastral mapping, but some of its ideas anticipated the broader land information systems that followed.",
       "sources": [],
       "id": "ch03-p-98ae4d4f3ece"
     },
