@@ -55,29 +55,31 @@ try{
    assert.deepEqual(numbers.map(x=>Number(x.trim().replace('Chapter ',''))),Array.from({length:44},(_,i)=>i+1));
    await dimensions(page,viewport.name+' homepage');
   });
-  await check(viewport.name+' authentic Tasman Glacier Landsat hero and readable title',async()=>{
+  await check(viewport.name+' topographic title crop and readable heading',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
-   const hero=page.locator('.hero--landsat');
+   const hero=page.locator('.hero--topo');
    assert.equal(await hero.count(),1);
-   const image=hero.locator('.hero-documentary-media img');
-   assert.equal(await image.count(),1);
-   assert.equal(await image.getAttribute('src'),'/assets/historical/web/nasa-landsat4-tasman-1990.webp');
-   assert.match(await image.getAttribute('alt')||'',/Landsat 4.*Tasman Glacier.*1990/);
-   const observed=await image.evaluate(async img=>{
+   const images=hero.locator('.hero-documentary-media .topo-slide');
+   assert.equal(await images.count(),2);
+   const active=hero.locator('.topo-slide.is-active');
+   assert.equal(await active.count(),1);
+   const src=await active.getAttribute('src')||'';
+   assert.match(src,/^\/assets\/home-topo\/topo-\d{2}\.webp$/);
+   const observed=await active.evaluate(async img=>{
     await img.decode();
     const frame=img.getBoundingClientRect();
-    const outer=img.closest('.hero--landsat').getBoundingClientRect();
-    const title=img.closest('.hero--landsat').querySelector('h1');
+    const outer=img.closest('.hero--topo').getBoundingClientRect();
+    const title=img.closest('.hero--topo').querySelector('h1');
     const style=getComputedStyle(img);
-    return {naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight,fit:style.objectFit,filter:style.filter,
+    return {naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight,fit:style.objectFit,
       imgLeft:frame.left,imgRight:frame.right,heroLeft:outer.left,heroRight:outer.right,titleVisible:!!title&&title.getBoundingClientRect().height>0};
    });
-   assert.ok(observed.naturalWidth>300&&observed.naturalHeight>300,'Landsat asset must load');
-   assert.equal(observed.filter,'none','NASA observation must not be recoloured');
-   assert.equal(observed.fit,viewport.width<=850?'contain':'cover');
-   assert.ok(observed.imgLeft>=observed.heroLeft-2&&observed.imgRight<=observed.heroRight+2,'hero image stays inside panel');
+   assert.equal(observed.naturalWidth,1400);
+   assert.equal(observed.naturalHeight,788);
+   assert.equal(observed.fit,'cover');
+   assert.ok(observed.imgLeft>=observed.heroLeft-2&&observed.imgRight<=observed.heroRight+2,'map image must stay inside the hero');
    assert.equal(observed.titleVisible,true);
-   await dimensions(page,viewport.name+' Landsat hero');
+   await dimensions(page,viewport.name+' topographic hero');
   });
   await check(viewport.name+' 44 chapter thumbnails present and correctly framed',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
