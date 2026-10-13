@@ -21,9 +21,7 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageIds": [
       "passage:chapter-39-dd9961d631"
     ],
-    "eventIds": [
-      "linzcap-2026-06-korero-a-mahere-3d-storymaps-wananga"
-    ],
+    "eventIds": [],
     "source": "https://www.youtube.com/watch?v=uDBBtaO5k5Q",
     "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
   },
@@ -59,9 +57,7 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageIds": [
       "passage:chapter-35-23fcc809db"
     ],
-    "eventIds": [
-      "linzcap-2026-05-17-nga-poutama-earthquake-and-earth-science-data-session"
-    ],
+    "eventIds": [],
     "source": "https://www.youtube.com/watch?v=2-9BW5GtZdg",
     "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
   },
@@ -79,9 +75,7 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageIds": [
       "passage:chapter-35-23fcc809db"
     ],
-    "eventIds": [
-      "linzcap-2026-nga-poutama-uses-baymaps-as-a-council-gis-case-study"
-    ],
+    "eventIds": [],
     "source": "https://www.youtube.com/watch?v=62vhPhpnfUo",
     "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
   },
@@ -99,9 +93,7 @@ export const ngaPoutamaVideos=Object.freeze([
     "passageIds": [
       "passage:chapter-29-71ae35ecbd"
     ],
-    "eventIds": [
-      "linzcap-2026-03-22-nga-poutama-covers-southern-institute-of-technology-gis-micro-credential"
-    ],
+    "eventIds": [],
     "source": "https://www.youtube.com/watch?v=LVmcrd1i6Y4",
     "evidenceUrl": "https://www.youtube.com/feeds/videos.xml?playlist_id=PLyE56PxGCqSXGUtFIvpNn0b_SauF4XfIk"
   },
