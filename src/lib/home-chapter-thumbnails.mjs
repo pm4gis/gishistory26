@@ -1,7 +1,7 @@
 import {chapterNavImageMap} from './chapter-nav-media.mjs';
 
 /**
- * Homepage-only contextual thumbnails approved against the chapter subjects.
+ * Curated navigation thumbnails approved against the chapter subjects for both the\n * homepage and Chapters catalogue.
  * These additions NEVER alter paragraph-reviewed in-story image placements.
  * Explanations identify a later illustration, related discipline, or comparative
  * software where it would otherwise be easy to suggest an inaccurate history.
@@ -131,10 +131,10 @@ export const curatedHomepageChapterImages=Object.freeze({
 });
 
 /**
- * Explicit homepage-only refinements after desktop and mobile visual/editorial audit.
+ * Explicit chapter-card refinements after desktop and mobile visual/editorial audit.
  * These never alter accepted illustrations, paragraph anchors or originals inside a chapter.
  * A review note is required whenever a previously placed in-chapter image is superseded
- * on the small homepage card by a demonstrably closer illustration.
+ * on chapter navigation cards by a demonstrably closer illustration.
  */
 export const reviewedHomepageOverrides=Object.freeze({
  'from-flat-maps-to-3d':{
@@ -190,7 +190,7 @@ export const homepageMapDetailChapterSlugs=new Set([
 
 /**
  * Existing verified in-chapter associations always win. Remaining homepage
- * cards use the explicit reviewed chapter-level associations above.
+ * cards on both pages use the explicit reviewed chapter-level associations above.
  * No generic aerial/map fallback, automatic asset borrowing or generated maps.
  */
 export function homepageChapterImageMap(articles,passages,images){
@@ -223,3 +223,6 @@ export function homepageChapterImageMap(articles,passages,images){
  }
  return out;
 }
+
+/** The same curated source is used by the homepage and the Chapters catalogue. */
+export const chapterCardImageMap=homepageChapterImageMap;
