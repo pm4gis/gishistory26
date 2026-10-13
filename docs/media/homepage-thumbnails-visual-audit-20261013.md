@@ -8,7 +8,7 @@ Editorial/visual QA of all 44 chapter-card assignments on `history.pm4gis.nz` fo
 
 Cloudflare browser rendering retrieved the current live chapter image, alt text and heading for **44 of 44 cards**, with no blanks. Screenshots of the original layout were inspected for desktop cards 1–4, 9–20 and for chapter cards 3 and 9 at a 390-pixel mobile width. They showed square/portrait paper maps and multi-panel geological figures becoming pale, small images in 16:9 frames. The Chromium suite now independently loads and checks the 44 documentary images and 16:9 cards at desktop, tablet and mobile widths, including 1440 and 390 pixels.
 
-The change introduces explicit, **homepage-only source-image viewport crops**, focussed around actual cartographic content for chapters 3, 9, 13, 16, 17, 18 and 25, and ordinary cover framing for identified photographic/aerial/terrain scenes. The files, colours, coastlines, contours, data values, legends and scanned originals remain unchanged; visual crops are only CSS `object-fit`/`object-position` on very small cards. Image-detail and chapter-reader pages continue to show their previously accepted source images and complete map pages.
+The change introduces explicit **homepage-only source-image viewport crops**, focussed around actual cartographic content in chapter cards 3, 9, 13, 16, 17, 18 and 25, along with specified GIS interface, LiDAR, application and workflow thumbnails for chapters 21, 22, 30, 33, 35, 37, 40, 41, 43 and 44. Original photographs, aerial photographs and terrain scenes receive full-bleed framing. The files, colours, coastlines, contours, data values, legends and scanned originals remain unchanged; visual crops are only CSS `object-fit`/`object-position` on very small cards. Image-detail and chapter-reader pages continue to show their previously accepted source images and complete map pages.
 
 ## Chapter-by-chapter appraisal
 
@@ -34,8 +34,8 @@ The change introduces explicit, **homepage-only source-image viewport crops**, f
 | 18 | GPS in practice | LINZ PositioNZ network, 2018 | Retain real GNSS context, detail framing |
 | 19 | The national coordinate system | Riverhead geodetic mark photograph | Retain photographed physical survey control, without asserting its datum |
 | 20 | Aerial imagery | Glentunnel/Coalgate aerial, 1943 | Retain verified Retrolens source, photographic framing |
-| 21 | Spatial data infrastructure | Official LINZ WMTS in QGIS | Retain real interoperability interface |
-| 22 | Desktop GIS | Official LINZ ArcMap Identify, 2016 | Retain genuine New Zealand desktop GIS workflow |
+| 21 | Spatial data infrastructure | Official LINZ WMTS in QGIS | Retain real interoperability interface with legible homepage-detail excerpt |
+| 22 | Desktop GIS | Official LINZ ArcMap Identify, 2016 | Retain genuine New Zealand desktop GIS workflow with small-card zoom |
 | 23 | Council GIS | North Island local-authority map, 1981 | Retain predecessor administrative geography context |
 | 24 | GIS across government | LINZ territorial-authority map, 2025 | Retain authentic shared geography as later context |
 | 25 | Utility networks | KiwiRail passenger route map | Retain temporarily as **network topology only** and frame readable excerpt; **weak subject match**, replacement should be a verified *electricity/water/telecom* network asset image |
@@ -50,14 +50,14 @@ The change introduces explicit, **homepage-only source-image viewport crops**, f
 | 34 | GIS in the field | Ministry of Works field trip, 1971 | Retain relevant historical field activity predecessor context |
 | 35 | Mapping applications | NZ libraries Wikidata/OSM web map, 2019 | Retain real map application, also shown in chapter 30 |
 | 36 | Satellite observations | **1990 NASA Landsat 4 Tasman Glacier** | **Homepage-only replacement** of the 2001 Christchurch scene; direct chapter evidence and independent historical period; original 2001 in-story placement remains intact |
-| 37 | LiDAR mapping | Kāpiti Island LiDAR relief, 2024 | Retain actual LiDAR-derived terrain product |
+| 37 | LiDAR mapping | Kāpiti Island LiDAR relief, 2024 | Retain actual LiDAR-derived terrain product, homepage detail framing |
 | 38 | Drone mapping | Christchurch Victoria Square aerial, 1975 | Retain *earlier aircraft photograph as precursor only* pending actual UAV evidence from 2012 Te Maari or another verified NZ survey |
 | 39 | Mapping in 3D | **2002 NASA Ruapehu oblique terrain model** | **Homepage-only replacement** of a flat aerial; the NASA Landsat/SRTM perspective visualisation directly matches computer 3D terrain use and is credited to the original; previous chapter media unchanged |
 | 40 | Enterprise GIS | LINZ ArcMap Identify/relationships, 2016 | Retain real data workflow, repeated from chapter 22; stronger deployment-specific source desirable |
 | 41 | Spatial services and cloud | LINZ WFS API response, 2023 | Retain real spatial service response |
 | 42 | Disaster response and live mapping | Christchurch 2011 response orthophoto | Retain verified event-time imagery, now photographic frame |
-| 43 | GIS automation | NZ coastal satellite-processing workflow, 2022 | Retain real processing workflow diagram, full view |
-| 44 | GIS and AI in 2025 | Actual 2025 NZ wetland ML comparison | Retain relevant modelled output, full view |
+| 43 | GIS automation | NZ coastal satellite-processing workflow, 2022 | Retain real processing workflow diagram; closer homepage viewport, full diagram unchanged in the image collection |
+| 44 | GIS and AI in 2025 | Actual 2025 NZ wetland ML comparison | Retain relevant modelled output; closer thumbnail viewport, original map unchanged |
 
 ## Verified documentary sources supporting the two replacements
 
@@ -80,3 +80,7 @@ Do not treat a passenger-rail route diagram as a utility asset map, a 1975 aircr
 - Unit-test the two *explicit* homepage-only overrides, thumbnail framing approvals and unchanged chapter/reader content.
 - Test desktop/tablet/mobile widths in Chromium and confirm every image loads with correct aspect ratio, without horizontal overflow.
 - Confirm Cloudflare Pages preview and production, publish only after all tests pass, and verify the rendered public page.
+
+## Supplementary desktop inspection
+
+Further desktop contact-sheet screenshots inspected chapter cards 21–28, 29–36 and 37–44 on the Cloudflare preview. Interfaces in 21/22/40 and the processing figure in 43 were too small at 16:9 size, with large pale source-sheet margins. The second framing pass adds homepage-only detail excerpts to these documented assets. It does not change the archival images or accepted chapter illustrations. The revised preview and Chromium checks are the publication acceptance evidence for the final visual treatment.
