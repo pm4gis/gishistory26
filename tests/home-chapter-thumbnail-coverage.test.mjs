@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {chapterNavImageMap} from '../src/lib/chapter-nav-media.mjs';
-import {curatedHomepageChapterImages,homepageChapterImageMap,reviewedHomepageOverrides,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../src/lib/home-chapter-thumbnails.mjs';
+import {curatedHomepageChapterImages,homepageChapterImageMap,chapterCardImageMap,reviewedHomepageOverrides,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../src/lib/home-chapter-thumbnails.mjs';
 
 const raw=collection=>readdirSync('src/content/'+collection)
  .filter(name=>name.endsWith('.json'))
@@ -50,16 +50,16 @@ test('contextual image approval is specific to chapter and cannot silently becom
 test('homepage uses checked project image records and deliberately framed documentary thumbnail excerpts',()=>{
  const home=readFileSync('src/pages/index.astro','utf8');
  const css=readFileSync('src/styles/site.css','utf8');
- assert.match(home,/homepageChapterImageMap\(chapters,d.passages,d.images\)/);
+ assert.match(home,/chapterCardImageMap\(chapters,d.passages,d.images\)/);
  assert.match(home,/homeCardKind==='photo'/);
  assert.match(home,/homepageFullBleedImageSlugs\.has/);
  assert.match(home,/homepageMapDetailChapterSlugs\.has/);
  assert.match(home,/src=\{chapterNavImages\[a.slug\].thumbnailPath\|\|chapterNavImages\[a.slug\].assetPath\}/);
  assert.match(home,/alt=\{chapterNavImages\[a.slug\].altText\}/);
  assert.match(home,/loading="lazy"/);
- assert.match(css,/#chapters \.chapter-card-media--photo img\{object-fit:cover;object-position:center\}/);
- assert.match(css,/#chapters \.chapter-card-media--detail img\{object-fit:cover;/);
- assert.match(css,/#chapters #chapter-9 \.chapter-card-media--detail img\{object-position:33% 50%;transform:scale\(1\.25\);transform-origin:31% 50%\}/);
+ assert.match(css,/:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--photo img\{object-fit:cover;object-position:center\}/);
+ assert.match(css,/:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--detail img\{object-fit:cover;/);
+ assert.match(css,/:is\(#chapters,\.chapter-catalogue\) #chapter-9 \.chapter-card-media--detail img\{object-position:33% 50%;transform:scale\(1\.25\);transform-origin:31% 50%\}/);
  assert.match(css,/\.chapter-card-media img,\.chapter-image-slot img\{width:100%;height:100%;object-fit:contain/);
  assert.doesNotMatch(home,/decorFor\(a\.readingOrder/);
 });
@@ -95,9 +95,9 @@ test('thumbnail crop approvals are specific, verified, and affect only homepage 
  const css=readFileSync('src/styles/site.css','utf8');
  const home=readFileSync('src/pages/index.astro','utf8');
  assert.match(css,/\.chapter-image-slot img\{width:100%;height:100%;object-fit:contain/);
- assert.match(css,/#chapters \.chapter-card-media--detail img\{object-fit:cover;/);
- assert.match(css,/#chapters \.chapter-card-media--photo img\{object-fit:cover;/);
- assert.doesNotMatch(readFileSync('src/pages/read/index.astro','utf8'),/homepageMapDetailChapterSlugs/);
+ assert.match(css,/:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--detail img\{object-fit:cover;/);
+ assert.match(css,/:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--photo img\{object-fit:cover;/);
+ assert.match(readFileSync('src/pages/read/index.astro','utf8'),/homepageMapDetailChapterSlugs/);
  assert.doesNotMatch(readFileSync('src/components/Reader.svelte','utf8'),/homepageMapDetailChapterSlugs/);
  assert.ok(home.includes('chapter-card-media--detail'));
 });
