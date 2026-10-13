@@ -1,7 +1,7 @@
 const LIVE_DATA_URL = 'https://history.pm4gis.nz/editor-data.json';
 const SITE_ROOT = 'https://history.pm4gis.nz';
 const SERVER_NAME = 'A History of GIS in New Zealand Live';
-const SERVER_VERSION = '2026-10-13.2';
+const SERVER_VERSION = '2026-10-14.1';
 const PROTOCOL_VERSION = '2025-06-18';
 
 function json(data, status = 200, headers = {}) {
@@ -476,6 +476,21 @@ async function readEditorState(env, includeHistory = false) {
   return state;
 }
 
+// Public chronology ends on 31 December 2025. MCP tools must apply the
+// same historical boundary as the GitHub publication and its timeline UI.
+const MCP_TIMELINE_LAST_YEAR = 2025;
+const futureYearInTimelineText = /\b(?:202[6-9]|20[3-9]\d|2[1-9]\d{2})\b/;
+function isHistoricalTimelineEvent(event) {
+  if (!event || typeof event !== 'object') return false;
+  if (Number.isFinite(Number(event.year)) && String(event.year ?? '').trim() !== '' && Number(event.year) > MCP_TIMELINE_LAST_YEAR) return false;
+  for (const field of ['startDate', 'endDate', 'date']) {
+    const year = /^([0-9]{4})(?:-|$)/.exec(String(event[field] ?? ''));
+    if (year && Number(year[1]) > MCP_TIMELINE_LAST_YEAR) return false;
+  }
+  return ['dateDisplay', 'label', 'title', 'summary', 'text', 'description']
+    .every(field => !futureYearInTimelineText.test(String(event[field] ?? '')));
+}
+
 async function getEffectiveData(env, state = null) {
   const currentState = state || await readEditorState(env, false);
   const data = await getData();
@@ -485,7 +500,9 @@ async function getEffectiveData(env, state = null) {
     updatedAt:currentState.updatedAt,
     summary:currentState.summary,
   };
-  return applyEditorialOperations(data, currentState.operations);
+  const effective = applyEditorialOperations(data, currentState.operations);
+  effective.events = (effective.events || []).filter(isHistoricalTimelineEvent);
+  return effective;
 }
 
 async function previewHistoryPatch(env, args) {
