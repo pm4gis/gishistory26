@@ -1,0 +1,36 @@
+name: Prepare permanent topographic hero assets
+
+on:
+  push:
+    branches:
+      - feature/topo-hero-rotation-20261013
+    paths:
+      - .github/workflows/prepare-topo-hero-assets.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - run: node scripts/generate-home-topo.mjs
+      - name: Commit the twenty original-source crops
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/home-topo/*.webp
+          if ! git diff --cached --quiet; then
+            git commit -m "Store twenty optimised topographic title crops from Drive originals"
+            git push origin HEAD:feature/topo-hero-rotation-20261013
+          fi
