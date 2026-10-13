@@ -215,7 +215,7 @@ export function initNetwork() {
     resetView();
     const neighbours = view.neighbours.length;
     const suffix = view.hiddenCount ? ' Showing the first ' + (neighbours - view.hiddenCount) + ' neighbours; all relationships are listed below.' : '';
-    status!.textContent = (neighbours + 1) + ' entries, ' + view.relationships.length + ' connections.' + suffix;
+    status!.textContent = (neighbours + 1) + (neighbours === 0 ? ' entry, ' : ' entries, ') + view.relationships.length + (view.relationships.length === 1 ? ' connection.' : ' connections.') + suffix;
   }
 
   zoomIn.addEventListener('click', () => changeZoom(0.78));
