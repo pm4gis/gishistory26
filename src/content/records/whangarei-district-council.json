@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/whangarei-district-council/",
   "website": "https://www.wdc.govt.nz",
-  "description": "Named in The parcel becomes a key (Chapter 23). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "Northland shows a different corporate GIS problem: several organisations could be working on the same regional issue without holding their information in equally usable forms. The Whole of Northland biodiversity project, developed from 2005 and reported in 2007, began assembling a regional GIS database from council, conservation and community information. The report records different approaches to data collection and different levels of GIS capacity. Some district information had to be entered from NZMS260 grid references, and it notes that two district councils had limited GIS capacity without securely identifying which two in that statement. A 2008 follow-up for Northland Regional Council documented the work. Roger Bawden of Wildland Consultants is named for the GIS work, Whangarei District Council had 613 covenant sites that could be compared with regional natural-area mapping, and other protection or management records were incomplete, erroneous or not spatial at all. Regional GIS integration therefore required converting and qualifying information before it could be compared across organisations."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "The parcel becomes a key",
+      "url": "/stories/councils-build-corporate-gis/#the-parcel-becomes-a-key-bef81bd90d"
     }
   ],
   "aliases": [
     "Whangarei District Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "The parcel becomes a key",
+        "url": "/stories/councils-build-corporate-gis/#the-parcel-becomes-a-key-bef81bd90d"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-033",
+  "a": "person:c-m-strachan",
+  "b": "entity:university-of-auckland",
+  "label": "Report affiliation, 1977",
+  "basis": "University of Auckland contributor who co-authored the East Taupō vegetation-mapping study in the 1977 national Landsat II report with G. Ross Cochrane.",
+  "passageIds": [
+    "passage:chapter-4-e9b8032a50"
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ]
+}

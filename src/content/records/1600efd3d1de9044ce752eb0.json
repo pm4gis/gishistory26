@@ -1,0 +1,30 @@
+{
+  "id": "person:kelly-buchanan",
+  "slug": "kelly-buchanan",
+  "name": "Kelly Buchanan",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/kelly-buchanan/",
+  "description": "",
+  "story": [
+    "Kelly Buchanan is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+        "url": "https://www.geocomputation.org/1997/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/masterton-district-council/",
   "website": "https://www.mstn.govt.nz",
-  "description": "Named in Recurring forums (Chapter 29). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "A 2005 Greater Wellington paper puts names and purchasing decisions into that story. Māori Policy Advisor Jason Kerehi and Rangitāne researcher Joseph Potangaroa planned a GIS for Ngāti Hāmua wāhi tapu and other cultural sites so the iwi could organise its research and respond more effectively to resource-consent and land-use pressures. Greater Wellington Technical Services Officer Tim Watson assessed the hardware and software. Although ArcView 8.1 was available, he recommended ArcView 3.2 because it did what the project needed, was well tested, carried a one-off cost and kept the iwi technically compatible with Greater Wellington and Masterton District Council. The kit around it was equally of its time: digital camera, scanner, memory stick and GPS. Rangitāne researchers controlled the site work and linked photographs, interviews and documentary evidence to the GIS, while elders raised ownership and security concerns. Price, support, compatibility, control and the task itself influenced software choice."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "Recurring forums",
+      "url": "/stories/becoming-a-gis-professional/#recurring-forums-aa58591027"
     }
   ],
   "aliases": [
     "Masterton District Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Recurring forums",
+        "url": "/stories/becoming-a-gis-professional/#recurring-forums-aa58591027"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

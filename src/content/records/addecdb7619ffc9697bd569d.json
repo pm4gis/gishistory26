@@ -1,0 +1,38 @@
+{
+  "id": "person:peter-g-firns",
+  "slug": "peter-g-firns",
+  "name": "Peter G. Firns",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/peter-g-firns/",
+  "description": "",
+  "story": [
+    "Peter G. Firns worked in Computer and Information Science at the University of Otago. He co-authored a 1991 study of semantic data models with George Benwell and Philip Sallis. Otago’s archived research record lists his 1993 SIRC paper on semantic data modelling and spatial relationships."
+  ],
+  "sources": [
+    {
+      "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+      "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+    },
+    {
+      "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+      "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+        "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+      },
+      {
+        "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+        "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

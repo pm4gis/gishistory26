@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/kapiti-coast-district-council/",
   "website": "https://www.kapiticoast.govt.nz",
-  "description": "Council directory entry.",
-  "story": [],
+  "description": "",
+  "story": [
+    "Leigh Hunt’s project history lists Kāpiti among the councils served by a Splice Group application that automated Land Information Memorandum production. The application retrieved information from GIS and council property or finance systems during his 2010–2013 period at Splice."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "Leigh Hunt, Splice Group project history, 2010–2013",
+      "url": "https://leighghunt.github.io/"
     }
   ],
   "aliases": [
     "Kāpiti Coast District Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Leigh Hunt, Splice Group project history, 2010–2013",
+        "url": "https://leighghunt.github.io/"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

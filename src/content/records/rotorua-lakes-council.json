@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/rotorua-lakes-council/",
   "website": "https://www.rotorualakescouncil.nz",
-  "description": "Council directory entry.",
-  "story": [],
+  "description": "",
+  "story": [
+    "John Arnerich’s 2025 account of Locus identifies Rotorua Lakes and Greg Bennett as early supporters of FME in New Zealand. The retrospective connects the council with the early adoption of geographic data conversion and integration tools; it supplies no precise date for that first support."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "John Arnerich, 25 Years of Locus, 27 November 2025",
+      "url": "https://locusglobal.com/blog/blog/2025/11/27/25-years-of-locus/"
     }
   ],
   "aliases": [
     "Rotorua Lakes Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "John Arnerich, 25 Years of Locus, 27 November 2025",
+        "url": "https://locusglobal.com/blog/blog/2025/11/27/25-years-of-locus/"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

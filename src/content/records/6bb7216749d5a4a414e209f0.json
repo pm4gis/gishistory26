@@ -1,0 +1,30 @@
+{
+  "id": "person:a-d-reid",
+  "slug": "a-d-reid",
+  "name": "A. D. Reid",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/a-d-reid/",
+  "description": "",
+  "story": [
+    "New Zealand Forest Service contributor based in Hokitika in the 1977 Landsat II report. Reid examined the potential use of Landsat imagery in Westland inventory proposals."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

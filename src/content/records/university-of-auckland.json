@@ -7,7 +7,8 @@
   "url": "/entities/university-of-auckland/",
   "website": null,
   "story": [
-    "The geography department’s GIS teaching is documented from 1985. Research, teaching and commercial consulting also met through UniServices and GTU. GBS’s retrospective remembers David Hawke as a technical mentor to Harley Prowse and Tony Elson, recording one route through which university experience entered later consulting work."
+    "The geography department’s GIS teaching is documented from 1985. Research, teaching and commercial consulting also met through UniServices and GTU. GBS’s retrospective remembers David Hawke as a technical mentor to Harley Prowse and Tony Elson, recording one route through which university experience entered later consulting work.",
+    "University geography staff also took part in the 1970s Landsat investigation. The 1977 report credits G. Ross Cochrane, J. Batty, C. M. Strachan and M. Bellingham with vegetation and coastal studies. This remote-sensing research preceded the GIS teaching documented from 1985."
   ],
   "sources": [
     {
@@ -17,6 +18,10 @@
     {
       "label": "Geographic Business Solutions, 20 years of GBS: a short history",
       "url": "https://gbs.kiwi/20-years-of-gbs-a-short-history/"
+    },
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
     }
   ],
   "aliases": [
@@ -27,5 +32,13 @@
   ],
   "status": "GIS account available",
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [
+    [],
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-024",
+  "a": "person:h-a-jefferies",
+  "b": "project:nz-landsat-investigation-1975-1977",
+  "label": "Landsat II programme contributor, 1977",
+  "basis": "Physics and Engineering Laboratory author credited in the 1977 report’s chapter on cartographic applications of Landsat data. The published affiliation connects this work with the national remote-sensing programme.",
+  "passageIds": [
+    "passage:chapter-4-e9b8032a50"
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ]
+}

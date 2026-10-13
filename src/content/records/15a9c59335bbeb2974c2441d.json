@@ -1,0 +1,30 @@
+{
+  "id": "project:geocomputation-sirc-1997",
+  "slug": "geocomputation-sirc-1997",
+  "name": "GeoComputation and SIRC, Dunedin 1997",
+  "kind": "Project",
+  "category": "Research and conferences",
+  "url": "/entities/geocomputation-sirc-1997/",
+  "story": [
+    "The University of Otago hosted the second International Conference on GeoComputation from 26 to 29 August 1997. Its proceedings, initially published on CD-ROM, name authors of New Zealand and international spatial-computing research."
+  ],
+  "description": "The University of Otago hosted the second International Conference on GeoComputation from 26 to 29 August 1997. Its proceedings, initially published on CD-ROM, name authors of New Zealand and international spatial-computing research.",
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+        "url": "https://www.geocomputation.org/1997/"
+      }
+    ]
+  ],
+  "contextLinks": [],
+  "status": "Source-backed historical account"
+}

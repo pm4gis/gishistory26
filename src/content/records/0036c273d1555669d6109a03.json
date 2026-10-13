@@ -1,0 +1,32 @@
+{
+  "id": "person:neville-ching",
+  "slug": "neville-ching",
+  "name": "Neville Ching",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/neville-ching/",
+  "description": "",
+  "story": [
+    "New Zealand Forest Service contributor to the 1977 Landsat II report. He wrote the introduction to its forest-management section and co-authored work on satellite snowfield assessment."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "N. P. Ching"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

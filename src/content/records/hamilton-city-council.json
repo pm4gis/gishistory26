@@ -6,12 +6,18 @@
   "category": "Local government",
   "url": "/entities/hamilton-city-council/",
   "website": "https://www.hamilton.co.nz",
-  "description": "Named in Users organise themselves (Chapter 12). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "It could also be argumentative. In September 2008 NZEUG chair Martin Erasmuson, then at Nelson City Council, asked members whether the annual conference should remain strongly Esri-focused, open further to competing vendors, or become a vendor-neutral GIS industry conference. Council staff were not spectators. Tony Standen, Team Leader Information Delivery at New Plymouth District Council, was handling the conference call for papers, while Junior Lee-Chee, Maps and Designs Manager at Auckland City Council, collected votes on the conference's future. Subodh Gidh, GIS Specialist at Hamilton City Council, argued for a more open format because some organisations already used more than one GIS application and staff often struggled to get approval for even one conference. Jack Tang at Dunedin City Council was terser: “I believe GIS professionals need wider views.”"
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "Users organise themselves",
+      "url": "/stories/an-industry-and-community-form/#users-organise-themselves-db33362cb9"
     }
   ],
   "aliases": [
@@ -20,8 +26,15 @@
   "themeIds": [
     "profession"
   ],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Users organise themselves",
+        "url": "/stories/an-industry-and-community-form/#users-organise-themselves-db33362cb9"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

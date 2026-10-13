@@ -16,8 +16,8 @@ test('all 44 home chapter cards have authentic project images, with previously r
  const covers=homepageChapterImageMap(articles,passages,images);
  const originalCount=Object.values(reviewed).filter(Boolean).length;
  assert.equal(articles.length,44);
- assert.equal(originalCount,19,'do not silently rewrite previously reviewed historical associations');
- assert.equal(Object.keys(curatedHomepageChapterImages).length,25);
+ assert.equal(originalCount,20,'do not silently rewrite previously reviewed historical associations');
+ assert.equal(Object.keys(curatedHomepageChapterImages).length,24);
  for(const article of articles){
   const card=covers[article.slug];
   assert.ok(card?.assetPath,'missing authentic chapter image: '+article.readingOrder+' '+article.title);
@@ -42,7 +42,7 @@ test('contextual image approval is specific to chapter and cannot silently becom
   assert.ok(['photo','map','interface'].includes(choice.kind),'unexpected image framing');
   assert.ok(rawCard[slug].homeCardContextual,'homepage fallback silently placed in chapter: '+slug);
  }
- assert.match(curatedHomepageChapterImages['google-changes-the-audience'].reason,/not Google Earth/);
+ assert.equal(rawCard['google-changes-the-audience'].slug,'doc-google-trekker-heaphy-2015');
  assert.match(curatedHomepageChapterImages['mapping-the-networks'].reason,/not an electricity/);
  assert.match(curatedHomepageChapterImages['safety-policing-and-emergency-gis'].reason,/distinct from police/);
 });

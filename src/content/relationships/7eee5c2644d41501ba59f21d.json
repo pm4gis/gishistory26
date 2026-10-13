@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-021",
+  "a": "person:a-d-fowles",
+  "b": "entity:dsir-physics-and-engineering-laboratory",
+  "label": "Report affiliation, 1977",
+  "basis": "Physics and Engineering Laboratory contributor to the 1977 Landsat II report. His credited work included target radiance, image acquisition, photographic processing and crop monitoring.",
+  "passageIds": [
+    "passage:chapter-4-e9b8032a50"
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ]
+}

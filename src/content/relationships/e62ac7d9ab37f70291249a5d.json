@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-035",
+  "a": "person:m-bellingham",
+  "b": "entity:university-of-auckland",
+  "label": "Report affiliation, 1977",
+  "basis": "University of Auckland contributor to the 1977 Landsat II report. The coastal-geomorphology section credits Bellingham and G. Ross Cochrane with analysis of the Aotea Harbour sand dunes.",
+  "passageIds": [
+    "passage:chapter-4-e9b8032a50"
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ]
+}

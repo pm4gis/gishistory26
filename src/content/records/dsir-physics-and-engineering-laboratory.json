@@ -7,11 +7,16 @@
   "url": "/entities/dsir-physics-and-engineering-laboratory/",
   "website": null,
   "story": [
-    "The laboratory coordinated the Landsat II Investigation Programme, with Mervyn Probine associated with the national effort. The September 1977 final report documents early digital image processing, rectification and classification. It connects mainframe and minicomputer work with the practical question of extracting useful information from satellite observations."
+    "The laboratory coordinated the Landsat II Investigation Programme, with Mervyn Probine associated with the national effort. The September 1977 final report documents early digital image processing, rectification and classification. It connects mainframe and minicomputer work with the practical question of extracting useful information from satellite observations.",
+    "The September 1977 report gives individual credits for the laboratory’s work. A. D. Fowler contributed to radiometry and photographic processing, C. T. Nankivell to image acquisition and crop monitoring, and H. A. Jefferies to cartographic applications. The named affiliations document the team behind the satellite-processing methods."
   ],
   "sources": [
     {
       "label": "DSIR Physics and Engineering Laboratory, Final Report: Landsat II Investigation Programme No. 28230, Report No. 587",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    },
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
       "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
     }
   ],
@@ -21,5 +26,13 @@
   "themeIds": [],
   "status": "GIS account available",
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [
+    [],
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ]
 }

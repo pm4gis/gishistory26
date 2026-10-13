@@ -1,0 +1,14 @@
+{
+  "id": "relationship:org-people-20261013-006",
+  "a": "person:julia-moloney",
+  "b": "entity:university-of-otago",
+  "label": "Physical geography and GIS study; MSc, 2017",
+  "basis": "Moloney’s EPA account describes five years of physical geography and GIS study at Otago and graduation in 2017 with an MSc in Environmental Management.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Environmental Protection Authority, Women in Science: Julia Moloney",
+      "url": "https://www.epa.govt.nz/community-involvement/science-at-work/women-in-science/"
+    }
+  ]
+}

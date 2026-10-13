@@ -1,0 +1,32 @@
+{
+  "id": "person:g-ross-cochrane",
+  "slug": "g-ross-cochrane",
+  "name": "G. Ross Cochrane",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/g-ross-cochrane/",
+  "description": "",
+  "story": [
+    "University of Auckland geography researcher who contributed to the national Landsat II investigation. The 1977 report credits him on vegetation mapping in Aupōuri, East Taupō and Westland, and on coastal and lake studies."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "G. R. Cochrane"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

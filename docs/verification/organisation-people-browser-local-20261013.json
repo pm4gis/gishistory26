@@ -1,0 +1,242 @@
+{
+  "base": "http://127.0.0.1:4321",
+  "checkedAt": "2026-10-13T09:28:51.394Z",
+  "newProfiles": 45,
+  "profiles": [
+    {
+      "route": "/people/richard-p-suggate/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/michael-g-mcgreevy/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/ian-f-stirling/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/robert-child/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/douglas-mck-scott/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/marie-clarke/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/c-t-nankivell/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/h-a-jefferies/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/p-dickson/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/g-ross-cochrane/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/j-batty/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/c-m-strachan/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/m-bellingham/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/neville-ching/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/b-m-lean/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/r-w-dale/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/i-r-hunter/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/a-d-reid/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/p-hay/",
+      "connectedTo": "/entities/nz-landsat-investigation-1975-1977/",
+      "status": 200
+    },
+    {
+      "route": "/people/l-p-lee/",
+      "connectedTo": "/entities/department-of-lands-and-survey/",
+      "status": 200
+    },
+    {
+      "route": "/people/mary-avery/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/glen-harrison/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/ken-hughey/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/tadeusz-dawidowski/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/ralph-winmill/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/hayden-munro/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/kevin-novins/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/clare-churcher/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/parames-prachuabmoh/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/samuel-mann/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/andrew-cardno/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/kelly-buchanan/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/pete-frizzell/",
+      "connectedTo": "/entities/geocomputation-sirc-1997/",
+      "status": 200
+    },
+    {
+      "route": "/people/peter-g-firns/",
+      "connectedTo": "/entities/university-of-otago/",
+      "status": 200
+    },
+    {
+      "route": "/people/nigel-stanger/",
+      "connectedTo": "/entities/university-of-otago/",
+      "status": 200
+    },
+    {
+      "route": "/people/paul-denys/",
+      "connectedTo": "/entities/university-of-otago/",
+      "status": 200
+    },
+    {
+      "route": "/people/markus-u-muller/",
+      "connectedTo": "/entities/sirc-nz-2013/",
+      "status": 200
+    },
+    {
+      "route": "/people/andrew-cowie/",
+      "connectedTo": "/entities/sirc-nz-2013/",
+      "status": 200
+    },
+    {
+      "route": "/people/tim-hinnerk-heuer/",
+      "connectedTo": "/entities/sirc-nz-2013/",
+      "status": 200
+    },
+    {
+      "route": "/people/pierre-roudier/",
+      "connectedTo": "/entities/sirc-nz-2013/",
+      "status": 200
+    },
+    {
+      "route": "/people/ben-adams/",
+      "connectedTo": "/entities/geocomputation-nzgrc-2019/",
+      "status": 200
+    },
+    {
+      "route": "/people/mark-gahegan/",
+      "connectedTo": "/entities/geocomputation-nzgrc-2019/",
+      "status": 200
+    },
+    {
+      "route": "/people/christina-hulbe/",
+      "connectedTo": "/entities/geocomputation-nzgrc-2019/",
+      "status": 200
+    },
+    {
+      "route": "/people/david-osullivan/",
+      "connectedTo": "/entities/geocomputation-nzgrc-2019/",
+      "status": 200
+    },
+    {
+      "route": "/people/matthew-wilson/",
+      "connectedTo": "/entities/geocomputation-nzgrc-2019/",
+      "status": 200
+    }
+  ],
+  "viewports": [
+    1440,
+    390
+  ],
+  "aliasSearch": true,
+  "referenceCatalogueExcluded": true,
+  "referenceRoutePreserved": true,
+  "mpiAgencyFilter": true,
+  "imageLoads": true,
+  "pageErrors": []
+}

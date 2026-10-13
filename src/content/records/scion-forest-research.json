@@ -8,12 +8,17 @@
   "website": null,
   "story": [
     "Forestry research linked growth models, inventory and geographic information. The Forest Research and later Scion lineage contributed methods and systems used by forest managers and commercial service providers. GIS helped connect models with the actual stands, terrain and conditions to which a management decision applied.",
-    "Forest Research’s 1999 Kinleith study explored GIS, soil-unit stratification and geostatistics for mapping tree growth and foliage nutrition. The authors identified sparse observations as a limitation and called for structured sampling, evidence of applied research rather than a proven operational monitoring service."
+    "Forest Research’s 1999 Kinleith study explored GIS, soil-unit stratification and geostatistics for mapping tree growth and foliage nutrition. The authors identified sparse observations as a limitation and called for structured sampling, evidence of applied research rather than a proven operational monitoring service.",
+    "The Forest Research Institute’s Michael G. McGreevy authored the Indigenous Forest Assessment chapter of the 1977 national Landsat II report. This is an earlier institute contribution within the forestry-research lineage, with the original affiliation retained."
   ],
   "sources": [
     {
       "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+    },
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
     }
   ],
   "aliases": [
@@ -31,5 +36,14 @@
       }
     ]
   ],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [
+    [],
+    [],
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ]
 }

@@ -1,0 +1,32 @@
+{
+  "id": "person:paul-denys",
+  "slug": "paul-denys",
+  "name": "Paul Denys",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/paul-denys/",
+  "description": "",
+  "story": [
+    "Paul Denys completed a Master of Surveying at Otago in 1987 and joined its School of Surveying in June 1995. His work addressed GPS networks, deformation and reference systems. In 2013 he co-authored the PositioNZ-PP online GPS-processing application account with C. Pearson, Chris Crook and A. Jordan."
+  ],
+  "sources": [
+    {
+      "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+      "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+        "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
+      }
+    ]
+  ],
+  "aliases": [
+    "Paul H. Denys"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

@@ -22,6 +22,21 @@ export const curatedImageParagraphs = Object.freeze({
  * their image-detail records, but do not appear as in-story illustrations.
  */
 export const reviewedImagePassages = Object.freeze({
+  'doc-google-trekker-heaphy-2015': {
+    articleSlug:'google-changes-the-audience', afterParagraphId:'research-google-doc-seven-great-walks-street-view-2015',
+    caption:'Google Trekker recording the Heaphy Track, photographed by DOC GIS analyst Peter Hiemstra and published in November 2015. The exact capture date is unstated.',
+    evidence:'DOC’s 6 November 2015 Great Walks account identifies the track, camera programme and photographer, directly supporting Chapter 31’s seven-track Street View release.'
+  },
+  'doc-google-trekker-routeburn-team-2015': {
+    articleSlug:'google-changes-the-audience', afterParagraphId:'research-doc-google-named-participants-launch-2015',
+    caption:'Matt Jenke, Peter Hiemstra and Riki Mules on the Routeburn Track, identified in DOC’s November 2015 Great Walks account. The photograph’s exact capture date is unstated.',
+    evidence:'DOC’s original photograph and caption name the field team discussed in the adjacent paragraph. This is fieldwork photography, separate from the Auckland launch event.'
+  },
+  'doc-google-trekker-milford-mist-2015': {
+    articleSlug:'mapping-leaves-the-office', afterParagraphId:'research-doc-trekker-field-capture-2015',
+    caption:'Matt Jenke carrying the Google Trekker at Mackinnon Pass on the Milford Track, in a field photograph published by DOC in November 2015.',
+    evidence:'The adjacent Chapter 34 paragraph describes DOC’s Great Walks field-capture programme; DOC identifies the operator and Mackinnon Pass scene.'
+  },
   'doc-historic-map-6c572e829a93c5f5': {
     articleSlug:'what-the-computer-inherited', afterParagraphId:'ch01-p-242c96db76e3',
     caption:'The Christchurch Black Map of 1850 is an example of the paper maps and plans kept in nineteenth-century land records.',

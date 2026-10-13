@@ -1,0 +1,14 @@
+{
+  "id": "relationship:org-people-20261013-009",
+  "a": "person:duane-wilkins",
+  "b": "entity:waikato-district-council",
+  "label": "Early Tamahere GIS project recalled",
+  "basis": "The preface recalls Wilkins’s council summer project on land fragmentation and soil degradation in Tamahere following early 1997 university GIS study.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Duane Wilkins, preface",
+      "url": "/preface/"
+    }
+  ]
+}

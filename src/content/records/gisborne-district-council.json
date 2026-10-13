@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/gisborne-district-council/",
   "website": "https://www.gdc.govt.nz",
-  "description": "Named in The parcel becomes a key (Chapter 23). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "Gisborne provides a particularly strong council-and-science example. From September 1995 Landcare Research and Gisborne District Council soil-conservation staff worked on the second-edition Gisborne-East Coast land-resource inventory. By October 1998 the 1:50,000 field sheets had been compiled and checked, and by mid-February 1999 the work had become a digital spatial database containing 7,790 mapped polygons and 104 land-use-capability units. The database was available through Landcare Research and Gisborne District Council held its own copy. More unusually, the remapped region was deliberately aligned with the council's administrative boundary so district-wide analysis no longer required staff to work across three older NZLRI regions and three classifications. The technical report also records land-use capability being used in district planning and credits a close working relationship with council soil-conservation staff. Here the council boundary shaped the compilation and maintenance of the GIS itself. It helped define how the national scientific database was rebuilt for practical local use. The report credits M. R. Jessen, T. F. Crippen, M. J. Page, W. C. Rijkse, G. R. Harmsworth and M. McLeod as authors."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "The parcel becomes a key",
+      "url": "/stories/councils-build-corporate-gis/#the-parcel-becomes-a-key-bef81bd90d"
     }
   ],
   "aliases": [
     "Gisborne District Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "The parcel becomes a key",
+        "url": "/stories/councils-build-corporate-gis/#the-parcel-becomes-a-key-bef81bd90d"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

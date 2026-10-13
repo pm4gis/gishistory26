@@ -7,14 +7,28 @@
   "url": "/entities/new-zealand-forest-service/",
   "website": null,
   "story": [
-    "The Forest Service’s mapping connected forest inventory, stands, roads and management records. Its disappearance in the 1980s changed the organisations responsible for that information, while the practical requirements of forestry continued. Later government and commercial systems inherited parts of the data, methods and experience."
+    "The Forest Service’s mapping connected forest inventory, stands, roads and management records. Its disappearance in the 1980s changed the organisations responsible for that information, while the practical requirements of forestry continued. Later government and commercial systems inherited parts of the data, methods and experience.",
+    "The 1977 Landsat II investigation credits Neville Ching and Forest Service colleagues with forest-management applications. B. M. Lean examined Canterbury windthrow; R. W. Dale mapped King Country vegetation; I. R. Hunter wrote the private forest resource study; A. D. Reid assessed Westland inventory possibilities; and P. Hay contributed to the Hanmer fire-damage study."
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
   "aliases": [
     "New Zealand Forest Service"
   ],
   "themeIds": [],
   "status": "GIS account available",
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [
+    [],
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ]
 }

@@ -4,12 +4,15 @@
   "articleId": "article:chapter-34",
   "title": "Forty iPAQs and six Toughbooks",
   "order": 1,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [],
   "recordIds": [
     "chapter:34",
     "entity:smallworld-ge-smallworld",
-    "entity:vector"
+    "entity:vector",
+    "person:peter-hiemstra",
+    "person:matt-jenke",
+    "entity:department-of-conservation"
   ],
   "blocks": [
     {
@@ -39,6 +42,18 @@
       "markdown": "A later 2003 account showed the system moving again. HP iPAQs were being used with ArcPad, Bluetooth and GPRS, and field staff could reach the corporate asset register more directly. The shift from cradle synchronisation towards connected field work happened quickly, but it did not abolish the earlier design problem. Mobile systems still needed to decide what data travelled, what could be edited, how identifiers were preserved and what happened if the network was unavailable. Connection changed the transfer mechanism. It did not remove the need for information management.",
       "sources": [],
       "id": "ch34-s02-p04"
+    },
+    {
+      "id": "research-doc-trekker-field-capture-2015",
+      "type": "paragraph",
+      "text": "DOC’s Great Walks work supplies a visible example of field capture. GIS analyst Peter Hiemstra accompanied Google Trekker operator Matt Jenke on most of the tracks, and DOC’s November 2015 account records involvement by local iwi, geospatial staff and regional colleagues. The backpack camera carried the recording equipment through places beyond the road network. DOC’s photographs show the operator on the tracks, including at Mackinnon Pass in mist.",
+      "markdown": "DOC’s Great Walks work supplies a visible example of field capture. GIS analyst Peter Hiemstra accompanied Google Trekker operator Matt Jenke on most of the tracks, and DOC’s November 2015 account records involvement by local iwi, geospatial staff and regional colleagues. The backpack camera carried the recording equipment through places beyond the road network. DOC’s photographs show the operator on the tracks, including at Mackinnon Pass in mist.",
+      "sources": [
+        {
+          "label": "Department of Conservation, The Great Walks on Google Maps, 6 November 2015",
+          "url": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/"
+        }
+      ]
     }
   ],
   "sources": [],

@@ -1,0 +1,1810 @@
+{
+  "patch": {
+    "schemaVersion": 1,
+    "baseRevision": "981ab936018b5f7ea82fd6891b44fac19f24877bd92270f036c1145b6cb65bc1",
+    "operations": [
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:richard-p-suggate",
+          "slug": "richard-p-suggate",
+          "name": "Richard P. Suggate",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/richard-p-suggate/",
+          "description": "",
+          "story": [
+            "Co-investigator for the geological strand of the national Landsat II programme, identified on the 1977 final report’s title page. Its geological section includes his foreword."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "R. P. Suggate"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:michael-g-mcgreevy",
+          "slug": "michael-g-mcgreevy",
+          "name": "Michael G. McGreevy",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/michael-g-mcgreevy/",
+          "description": "",
+          "story": [
+            "Forest Research Institute author of the Indigenous Forest Assessment chapter in the 1977 national Landsat II report. His contribution assessed satellite imagery for indigenous forest information."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "M. G. McGreevy"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:ian-f-stirling",
+          "slug": "ian-f-stirling",
+          "name": "Ian F. Stirling",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/ian-f-stirling/",
+          "description": "",
+          "story": [
+            "Named co-investigator in the New Zealand Landsat II programme’s September 1977 final report. The programme linked satellite observations with land-use, environmental, geological and forestry investigations."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "I. F. Stirling"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:robert-child",
+          "slug": "robert-child",
+          "name": "Robert Child",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/robert-child/",
+          "description": "",
+          "story": [
+            "Department of Lands and Survey contributor to the 1977 Landsat II report. He co-authored work on image acquisition, photographic processing, agricultural monitoring and land-use mapping."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "R. C. Child"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:douglas-mck-scott",
+          "slug": "douglas-mck-scott",
+          "name": "Douglas McK Scott",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/douglas-mck-scott/",
+          "description": "",
+          "story": [
+            "Department of Lands and Survey contributor listed in the 1977 Landsat II report. He co-authored the chapter on cartographic applications of satellite data."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "D. McK Scott"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:marie-clarke",
+          "slug": "marie-clarke",
+          "name": "Marie Clarke",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/marie-clarke/",
+          "description": "",
+          "story": [
+            "Acknowledged among Department of Lands and Survey staff who supported the national Landsat II investigation in the September 1977 report. The acknowledgement identifies her contribution without specifying an individual technical task."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:c-t-nankivell",
+          "slug": "c-t-nankivell",
+          "name": "C. T. Nankivell",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/c-t-nankivell/",
+          "description": "",
+          "story": [
+            "Physics and Engineering Laboratory contributor to the 1977 Landsat II report. He was credited in image acquisition, photographic processing and agricultural-monitoring chapters."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:h-a-jefferies",
+          "slug": "h-a-jefferies",
+          "name": "H. A. Jefferies",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/h-a-jefferies/",
+          "description": "",
+          "story": [
+            "Physics and Engineering Laboratory author credited in the 1977 report’s chapter on cartographic applications of Landsat data. The published affiliation connects this work with the national remote-sensing programme."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:p-dickson",
+          "slug": "p-dickson",
+          "name": "P. Dickson",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/p-dickson/",
+          "description": "",
+          "story": [
+            "Department of Lands and Survey author of the land-use and environmental-mapping section of the 1977 national Landsat II report, working with Robert Child."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:g-ross-cochrane",
+          "slug": "g-ross-cochrane",
+          "name": "G. Ross Cochrane",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/g-ross-cochrane/",
+          "description": "",
+          "story": [
+            "University of Auckland geography researcher who contributed to the national Landsat II investigation. The 1977 report credits him on vegetation mapping in Aupōuri, East Taupō and Westland, and on coastal and lake studies."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "G. R. Cochrane"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:j-batty",
+          "slug": "j-batty",
+          "name": "J. Batty",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/j-batty/",
+          "description": "",
+          "story": [
+            "University of Auckland contributor to the 1977 national Landsat II report. Batty co-authored satellite-based vegetation studies of the Aupōuri Peninsula and Westland."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:c-m-strachan",
+          "slug": "c-m-strachan",
+          "name": "C. M. Strachan",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/c-m-strachan/",
+          "description": "",
+          "story": [
+            "University of Auckland contributor who co-authored the East Taupō vegetation-mapping study in the 1977 national Landsat II report with G. Ross Cochrane."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:m-bellingham",
+          "slug": "m-bellingham",
+          "name": "M. Bellingham",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/m-bellingham/",
+          "description": "",
+          "story": [
+            "University of Auckland contributor to the 1977 Landsat II report. The coastal-geomorphology section credits Bellingham and G. Ross Cochrane with analysis of the Aotea Harbour sand dunes."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:neville-ching",
+          "slug": "neville-ching",
+          "name": "Neville Ching",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/neville-ching/",
+          "description": "",
+          "story": [
+            "New Zealand Forest Service contributor to the 1977 Landsat II report. He wrote the introduction to its forest-management section and co-authored work on satellite snowfield assessment."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "N. P. Ching"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:b-m-lean",
+          "slug": "b-m-lean",
+          "name": "B. M. Lean",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/b-m-lean/",
+          "description": "",
+          "story": [
+            "New Zealand Forest Service contributor based in Christchurch in the 1977 Landsat II report. Lean wrote its Canterbury windthrow account and co-authored the Hanmer fire-damaged-tree investigation."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [
+            "B. Lean"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:r-w-dale",
+          "slug": "r-w-dale",
+          "name": "R. W. Dale",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/r-w-dale/",
+          "description": "",
+          "story": [
+            "New Zealand Forest Service contributor based in Auckland in the 1977 Landsat II report. Dale’s chapter examined typing and mapping King Country vegetation from Landsat imagery."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:i-r-hunter",
+          "slug": "i-r-hunter",
+          "name": "I. R. Hunter",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/i-r-hunter/",
+          "description": "",
+          "story": [
+            "New Zealand Forest Service contributor based in Palmerston North in the 1977 Landsat II report. Hunter wrote its private forest resource study."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:a-d-reid",
+          "slug": "a-d-reid",
+          "name": "A. D. Reid",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/a-d-reid/",
+          "description": "",
+          "story": [
+            "New Zealand Forest Service contributor based in Hokitika in the 1977 Landsat II report. Reid examined the potential use of Landsat imagery in Westland inventory proposals."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:p-hay",
+          "slug": "p-hay",
+          "name": "P. Hay",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/p-hay/",
+          "description": "",
+          "story": [
+            "New Zealand Forest Service contributor based in Hanmer in the 1977 Landsat II report. Hay and B. Lean co-authored its study of fire-damaged trees in Hanmer Forest."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:l-p-lee",
+          "slug": "l-p-lee",
+          "name": "L. P. Lee",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/l-p-lee/",
+          "description": "",
+          "story": [
+            "L. P. Lee published on transverse Mercator computation in 1962 and 1963. His 1974 Pacific-projection paper identifies him as Chief Computer at the Department of Lands and Survey in Wellington. This work belongs to the mathematical and coordinate-computation foundations later used in digital mapping."
+          ],
+          "sources": [
+            {
+              "label": "L. P. Lee, The Transverse Mercator Projection of the Entire Spheroid, Empire Survey Review 16(123), 1962, pp.208–217",
+              "url": "https://doi.org/10.1179/sre.1962.16.123.208"
+            },
+            {
+              "label": "L. P. Lee, A Conformal Projection for the Map of the Pacific, New Zealand Geographer 30(1), 1974; author affiliation: Chief Computer, Department of Lands and Survey",
+              "url": "https://doi.org/10.1111/j.1745-7939.1974.tb00757.x"
+            },
+            {
+              "label": "Snyder and Steward, Bibliography of map projections, USGS Bulletin 1856, 1988",
+              "url": "https://pubs.usgs.gov/publication/b1856"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "L. P. Lee, The Transverse Mercator Projection of the Entire Spheroid, Empire Survey Review 16(123), 1962, pp.208–217",
+                "url": "https://doi.org/10.1179/sre.1962.16.123.208"
+              },
+              {
+                "label": "L. P. Lee, A Conformal Projection for the Map of the Pacific, New Zealand Geographer 30(1), 1974; author affiliation: Chief Computer, Department of Lands and Survey",
+                "url": "https://doi.org/10.1111/j.1745-7939.1974.tb00757.x"
+              },
+              {
+                "label": "Snyder and Steward, Bibliography of map projections, USGS Bulletin 1856, 1988",
+                "url": "https://pubs.usgs.gov/publication/b1856"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:mary-avery",
+          "slug": "mary-avery",
+          "name": "Mary Avery",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/mary-avery/",
+          "description": "",
+          "story": [
+            "Mary Avery is named as an author of “A GIS Based Walkway Management System” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:glen-harrison",
+          "slug": "glen-harrison",
+          "name": "Glen Harrison",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/glen-harrison/",
+          "description": "",
+          "story": [
+            "Glen Harrison is named as an author of “A GIS Based Walkway Management System” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:ken-hughey",
+          "slug": "ken-hughey",
+          "name": "Ken Hughey",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/ken-hughey/",
+          "description": "",
+          "story": [
+            "Ken Hughey is named as an author of “A GIS Based Walkway Management System” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:tadeusz-dawidowski",
+          "slug": "tadeusz-dawidowski",
+          "name": "Tadeusz Dawidowski",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/tadeusz-dawidowski/",
+          "description": "",
+          "story": [
+            "Tadeusz Dawidowski is named as an author of “New Zealand Land Tenure Beyond 2000: Full Integration and Automation of the New Zealand Survey and Title Systems” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:ralph-winmill",
+          "slug": "ralph-winmill",
+          "name": "Ralph Winmill",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/ralph-winmill/",
+          "description": "",
+          "story": [
+            "Ralph Winmill is named as an author of “New Zealand Land Tenure Beyond 2000: Full Integration and Automation of the New Zealand Survey and Title Systems” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:hayden-munro",
+          "slug": "hayden-munro",
+          "name": "Hayden Munro",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/hayden-munro/",
+          "description": "",
+          "story": [
+            "Hayden Munro is named as an author of “Interactive Exploration of Spatially Distributed Near Infrared Reflectance Data” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:kevin-novins",
+          "slug": "kevin-novins",
+          "name": "Kevin Novins",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/kevin-novins/",
+          "description": "",
+          "story": [
+            "Kevin Novins is named as an author of “Interactive Exploration of Spatially Distributed Near Infrared Reflectance Data” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:clare-churcher",
+          "slug": "clare-churcher",
+          "name": "Clare Churcher",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/clare-churcher/",
+          "description": "",
+          "story": [
+            "Clare Churcher is named as an author of “Visualisation Techniques for Collaborative GIS Browsers” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:parames-prachuabmoh",
+          "slug": "parames-prachuabmoh",
+          "name": "Parames Prachuabmoh",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/parames-prachuabmoh/",
+          "description": "",
+          "story": [
+            "Parames Prachuabmoh is named as an author of “Visualisation Techniques for Collaborative GIS Browsers” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:samuel-mann",
+          "slug": "samuel-mann",
+          "name": "Samuel Mann",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/samuel-mann/",
+          "description": "",
+          "story": [
+            "Samuel Mann is named as an author of “The GIS revolution, are we ready for GeoComputation?” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:andrew-cardno",
+          "slug": "andrew-cardno",
+          "name": "Andrew Cardno",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/andrew-cardno/",
+          "description": "",
+          "story": [
+            "Andrew Cardno is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:kelly-buchanan",
+          "slug": "kelly-buchanan",
+          "name": "Kelly Buchanan",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/kelly-buchanan/",
+          "description": "",
+          "story": [
+            "Kelly Buchanan is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:pete-frizzell",
+          "slug": "pete-frizzell",
+          "name": "Pete Frizzell",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/pete-frizzell/",
+          "description": "",
+          "story": [
+            "Pete Frizzell is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:peter-g-firns",
+          "slug": "peter-g-firns",
+          "name": "Peter G. Firns",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/peter-g-firns/",
+          "description": "",
+          "story": [
+            "Peter G. Firns worked in Computer and Information Science at the University of Otago. He co-authored a 1991 study of semantic data models with George Benwell and Philip Sallis. Otago’s archived research record lists his 1993 SIRC paper on semantic data modelling and spatial relationships."
+          ],
+          "sources": [
+            {
+              "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+              "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+            },
+            {
+              "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+              "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+                "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+              },
+              {
+                "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+                "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:nigel-stanger",
+          "slug": "nigel-stanger",
+          "name": "Nigel Stanger",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/nigel-stanger/",
+          "description": "",
+          "story": [
+            "Nigel Stanger contributed “The view from the Chathams: Geovisualisation of web site hits using Google Earth” to Otago’s eighteenth SIRC colloquium in 2006. The paper applied a digital globe to location-based visualisation of website activity, linking database and web research with geographic display."
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, Nigel Stanger profile and publication list",
+              "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "University of Otago, Nigel Stanger profile and publication list",
+                "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:paul-denys",
+          "slug": "paul-denys",
+          "name": "Paul Denys",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/paul-denys/",
+          "description": "",
+          "story": [
+            "Paul Denys completed a Master of Surveying at Otago in 1987 and joined its School of Surveying in June 1995. His work addressed GPS networks, deformation and reference systems. In 2013 he co-authored the PositioNZ-PP online GPS-processing application account with C. Pearson, Chris Crook and A. Jordan."
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+              "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+                "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
+              }
+            ]
+          ],
+          "aliases": [
+            "Paul H. Denys"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:markus-u-muller",
+          "slug": "markus-u-muller",
+          "name": "Markus U. Müller",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/markus-u-muller/",
+          "description": "",
+          "story": [
+            "Markus U. Müller co-authored “Current status and future directions of mobile GIS” for SIRC NZ in 2013, with David Medyckyj-Scott and fellow contributors. Otago’s repository records the paper under mobile devices, location-based services and open-source GIS."
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+              "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+                "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:andrew-cowie",
+          "slug": "andrew-cowie",
+          "name": "Andrew Cowie",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/andrew-cowie/",
+          "description": "",
+          "story": [
+            "Andrew Cowie co-authored “Current status and future directions of mobile GIS” for SIRC NZ in 2013, with David Medyckyj-Scott and fellow contributors. Otago’s repository records the paper under mobile devices, location-based services and open-source GIS."
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+              "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+                "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:tim-hinnerk-heuer",
+          "slug": "tim-hinnerk-heuer",
+          "name": "Tim-Hinnerk Heuer",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/tim-hinnerk-heuer/",
+          "description": "",
+          "story": [
+            "Tim-Hinnerk Heuer co-authored “Current status and future directions of mobile GIS” for SIRC NZ in 2013, with David Medyckyj-Scott and fellow contributors. Otago’s repository records the paper under mobile devices, location-based services and open-source GIS."
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+              "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+                "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:pierre-roudier",
+          "slug": "pierre-roudier",
+          "name": "Pierre Roudier",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/pierre-roudier/",
+          "description": "",
+          "story": [
+            "Pierre Roudier co-authored “Current status and future directions of mobile GIS” for SIRC NZ in 2013, with David Medyckyj-Scott and fellow contributors. Otago’s repository records the paper under mobile devices, location-based services and open-source GIS."
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+              "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+                "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:ben-adams",
+          "slug": "ben-adams",
+          "name": "Ben Adams",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/ben-adams/",
+          "description": "",
+          "story": [
+            "Ben Adams is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019."
+          ],
+          "sources": [
+            {
+              "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+              "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+            },
+            {
+              "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+              "url": "https://www.otago.ac.nz/geocomputation"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+                "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+              },
+              {
+                "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+                "url": "https://www.otago.ac.nz/geocomputation"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:mark-gahegan",
+          "slug": "mark-gahegan",
+          "name": "Mark Gahegan",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/mark-gahegan/",
+          "description": "",
+          "story": [
+            "Mark Gahegan is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019. Otago’s final account also names him as a keynote speaker from the University of Auckland."
+          ],
+          "sources": [
+            {
+              "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+              "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+            },
+            {
+              "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+              "url": "https://www.otago.ac.nz/geocomputation"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+                "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+              },
+              {
+                "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+                "url": "https://www.otago.ac.nz/geocomputation"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:christina-hulbe",
+          "slug": "christina-hulbe",
+          "name": "Christina Hulbe",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/christina-hulbe/",
+          "description": "",
+          "story": [
+            "Christina Hulbe is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019."
+          ],
+          "sources": [
+            {
+              "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+              "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+            },
+            {
+              "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+              "url": "https://www.otago.ac.nz/geocomputation"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+                "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+              },
+              {
+                "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+                "url": "https://www.otago.ac.nz/geocomputation"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:david-osullivan",
+          "slug": "david-osullivan",
+          "name": "David O’Sullivan",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/david-osullivan/",
+          "description": "",
+          "story": [
+            "David O’Sullivan is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019."
+          ],
+          "sources": [
+            {
+              "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+              "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+            },
+            {
+              "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+              "url": "https://www.otago.ac.nz/geocomputation"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+                "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+              },
+              {
+                "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+                "url": "https://www.otago.ac.nz/geocomputation"
+              }
+            ]
+          ],
+          "aliases": [
+            "David O'Sullivan"
+          ],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:matthew-wilson",
+          "slug": "matthew-wilson",
+          "name": "Matthew Wilson",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/matthew-wilson/",
+          "description": "",
+          "story": [
+            "Matthew Wilson is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019."
+          ],
+          "sources": [
+            {
+              "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+              "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+            },
+            {
+              "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+              "url": "https://www.otago.ac.nz/geocomputation"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+                "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+              },
+              {
+                "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+                "url": "https://www.otago.ac.nz/geocomputation"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "images",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "image:doc-google-trekker-milford-mist-2015",
+          "slug": "doc-google-trekker-milford-mist-2015",
+          "title": "Google Trekker at Mackinnon Pass in mist, published 2015",
+          "assetPath": "/assets/historical/web/doc-google-trekker-milford-mist-2015.webp",
+          "thumbnailPath": "/assets/historical/card/doc-google-trekker-milford-mist-2015.webp",
+          "originalAssetPath": "/assets/historical/original/doc-google-trekker-milford-mist-2015.jpg",
+          "sourceUrl": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/",
+          "sourceName": "Department of Conservation conservation blog",
+          "sourceOriginalUrl": "https://blog.doc.govt.nz/wp-content/uploads/2015/11/milford-blog2.jpg",
+          "credit": "Department of Conservation; the accompanying account credits Peter Hiemstra with photographing the fieldwork.",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenceEvidenceUrl": "https://www.doc.govt.nz/footer-links/copyright/",
+          "altText": "A silhouetted operator carrying the Google Trekker camera in mist at Mackinnon Pass on the Milford Track.",
+          "caption": "Google Trekker operator Matt Jenke at Mackinnon Pass on the Milford Track. DOC published this field photograph in November 2015; the exact day of capture is unstated.",
+          "themeIds": [],
+          "articleSlug": "mapping-leaves-the-office",
+          "chapterNumber": 34,
+          "afterParagraphId": "research-doc-trekker-field-capture-2015",
+          "dateDisplay": "Published 6 November 2015; exact capture date unstated",
+          "context": "DOC’s own account documents the named Street View field programme, the people and tracks. Its footer links to DOC’s Crown-copyright CC BY 4.0 policy. No separate third-party copyright notice appears on these photographs.",
+          "originalSha256": "be6591bce51ee78c429a0bd39b4f58bd9a3d6ae4827ba20f16931d6453e53d77",
+          "webSha256": "3f67970da5a2c8520a66d2eda059eec5ddca8936fab1cbc22032b9d074787540",
+          "thumbnailSha256": "82ce3754ad3dd78f9ea264f24637873e6898a32508655f0ce4ee5007ac79bc9d",
+          "originalWidth": 803,
+          "originalHeight": 1071,
+          "headerCandidate": false,
+          "derivativesNote": "Unchanged source JPEG retained; uncropped WebP display and thumbnail copies. No reconstructed historical content."
+        }
+      },
+      {
+        "collection": "images",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "image:doc-google-trekker-routeburn-team-2015",
+          "slug": "doc-google-trekker-routeburn-team-2015",
+          "title": "Google Trekker field team on the Routeburn Track, published 2015",
+          "assetPath": "/assets/historical/web/doc-google-trekker-routeburn-team-2015.webp",
+          "thumbnailPath": "/assets/historical/card/doc-google-trekker-routeburn-team-2015.webp",
+          "originalAssetPath": "/assets/historical/original/doc-google-trekker-routeburn-team-2015.jpg",
+          "sourceUrl": "https://blog.doc.govt.nz/2015/11/06/the-great-walks-on-google-maps/",
+          "sourceName": "Department of Conservation conservation blog",
+          "sourceOriginalUrl": "https://blog.doc.govt.nz/wp-content/uploads/2015/11/routeburn-blog2.jpg",
+          "credit": "Department of Conservation; photographer not separately identified for this group photograph.",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenceEvidenceUrl": "https://www.doc.govt.nz/footer-links/copyright/",
+          "altText": "Three members of the Routeburn field team with the Google Trekker camera visible beside them.",
+          "caption": "Matt Jenke, Peter Hiemstra and Riki Mules on the Routeburn Track, as identified in DOC’s November 2015 account. The photograph’s exact capture date is unstated.",
+          "themeIds": [],
+          "articleSlug": "google-changes-the-audience",
+          "chapterNumber": 31,
+          "afterParagraphId": "research-doc-google-named-participants-launch-2015",
+          "dateDisplay": "Published 6 November 2015; exact capture date unstated",
+          "context": "DOC’s own account documents the named Street View field programme, the people and tracks. Its footer links to DOC’s Crown-copyright CC BY 4.0 policy. No separate third-party copyright notice appears on these photographs.",
+          "originalSha256": "0d400d36235cca8e545033af858af82455d74782a2f16a19f80779432ff39651",
+          "webSha256": "bb1b8d805f1fbc752dedebcb81c6484825b43d0bd28d6aacc5397c5d4dda679d",
+          "thumbnailSha256": "67a5febe08b0e279b60488286a23911e28e7e77421b1ccd8b02f6775511eb5bb",
+          "originalWidth": 1080,
+          "originalHeight": 810,
+          "headerCandidate": false,
+          "derivativesNote": "Unchanged source JPEG retained; uncropped WebP display and thumbnail copies. No reconstructed historical content."
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:munir-morad",
+          "slug": "munir-morad",
+          "name": "Munir Morad",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/munir-morad/",
+          "story": [
+            "Munir Morad studied geography and completed a doctorate in London before taking a junior lectureship at Trinity College in Carmarthen, Wales. In his career interview he described teaching and research as the two interests confirmed by that appointment. He later became professor of environmental planning and head of the Department of Urban Environment and Leisure Studies at London South Bank University, combining research leadership with responsibility for staff, students and departmental resources.",
+            "In the preface, Duane Wilkins recalls that Munir Morad introduced him to KeyCad at Waikato University in early 1997. This encounter marked the beginning of Wilkins's own GIS career.",
+            "Duane Wilkins identifies Munir Morad as also known as Munro Morad and confirms that he was at the University of Waikato. Wilkins’s preface recalls learning KeyCad from him there in early 1997."
+          ],
+          "sources": [
+            {
+              "label": "Munir Morad · career/profile reference",
+              "url": "https://icould.com/stories/professor-munir-morad/"
+            },
+            {
+              "label": "Preface · Preface",
+              "url": "/preface/"
+            },
+            {
+              "label": "Duane Wilkins, Waikato University and Munro Morad name clarification, supplied 13 October 2026",
+              "url": "/preface/"
+            }
+          ],
+          "aliases": [
+            "Munir Morad",
+            "Munro Morad"
+          ],
+          "themeIds": [],
+          "status": "Account available",
+          "paragraphSources": [],
+          "biographyParagraphSources": [
+            [
+              {
+                "label": "Munir Morad · career/profile reference",
+                "url": "https://icould.com/stories/professor-munir-morad/"
+              }
+            ],
+            [
+              {
+                "label": "Preface · Preface",
+                "url": "/preface/"
+              }
+            ],
+            [
+              {
+                "label": "Duane Wilkins, Waikato University and Munro Morad name clarification, supplied 13 October 2026",
+                "url": "/preface/"
+              }
+            ]
+          ],
+          "description": "Munir Morad, also known as Munro Morad, taught GIS at Waikato University; Duane Wilkins recalls learning KeyCad from him in early 1997."
+        }
+      }
+    ],
+    "candidateHash": "3fe77e6feba42b284892e909ee4b290174baf3725fbb42fa31df9d312507856d"
+  },
+  "expectedGitHead": "614f6efcb75507f2c8990f3a8605abb0201cc53d",
+  "counts": {
+    "articles": 45,
+    "passages": 596,
+    "records": 1015,
+    "events": 249,
+    "relationships": 2872,
+    "themes": 8,
+    "images": 185
+  },
+  "appliedAt": "2026-10-13T09:05:22.520Z",
+  "status": "local-candidate-not-published"
+}

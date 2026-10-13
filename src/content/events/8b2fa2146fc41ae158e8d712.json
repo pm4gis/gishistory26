@@ -1,0 +1,27 @@
+{
+  "id": "1977-nz-landsat-final-report",
+  "label": "National Landsat II investigation publishes its final report",
+  "dateDisplay": "September 1977",
+  "startDate": "1977-09",
+  "datePrecision": "month",
+  "year": 1977,
+  "summary": "DSIR’s Physics and Engineering Laboratory coordinated a national Landsat II investigation with surveying, geological, forestry, agricultural and university contributors. The September 1977 report names authors and institutional affiliations and records the image-processing and applied mapping work.",
+  "url": "/stories/turning-the-landscape-into-numbers/#landsat-arrives-e9b8032a50",
+  "passageIds": [
+    "passage:chapter-4-e9b8032a50"
+  ],
+  "recordIds": [
+    "project:nz-landsat-investigation-1975-1977"
+  ],
+  "themeIds": [],
+  "categories": [
+    "imagery",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ]
+}

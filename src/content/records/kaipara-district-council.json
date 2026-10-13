@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/kaipara-district-council/",
   "website": "https://www.kaipara.govt.nz",
-  "description": "Council directory entry.",
-  "story": [],
+  "description": "",
+  "story": [
+    "Kaipara District Council helped commission and distribute the 2003 Hokianga and Western Kaipara land-use assessment. NIWA and partner institutes combined climate, soil and crop information into regional suitability maps for council and community use."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "Griffiths et al., NIWA report AKL2003-037, March 2003",
+      "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
     }
   ],
   "aliases": [
     "Kaipara District Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Griffiths et al., NIWA report AKL2003-037, March 2003",
+        "url": "https://www.kaipara.govt.nz/uploads/Climate%20and%20Soil%20data/Information_Document.pdf"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

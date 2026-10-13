@@ -1,0 +1,30 @@
+{
+  "id": "person:pete-frizzell",
+  "slug": "pete-frizzell",
+  "name": "Pete Frizzell",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/pete-frizzell/",
+  "description": "",
+  "story": [
+    "Pete Frizzell is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+        "url": "https://www.geocomputation.org/1997/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

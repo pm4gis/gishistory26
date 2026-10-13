@@ -98,11 +98,6 @@ export const curatedHomepageChapterImages=Object.freeze({
     "reason": "Historical Ministry of Works field team photograph illustrates the surveying and engineering professional backgrounds from which GIS practice developed; subjects are not identified as GIS specialists.",
     "kind": "photo"
   },
-  "google-changes-the-audience": {
-    "imageSlug": "nasa-world-wind-napier-2006",
-    "reason": "An authentic New Zealand NASA World Wind digital-globe screen from 2006 provides contemporary digital-globe context; it is expressly not Google Earth.",
-    "kind": "interface"
-  },
   "open-source-changes-the-tools": {
     "imageSlug": "auckland-osm-colour-2018",
     "reason": "An actual OpenStreetMap community-data cartographic output illustrates New Zealand open mapping contributions, not a first-release open-source GIS screen.",
@@ -159,6 +154,7 @@ export const reviewedHomepageOverrides=Object.freeze({
  * diagrams otherwise retain complete source views unless individually selected.
  */
 export const homepageFullBleedImageSlugs=new Set([
+ 'doc-google-trekker-heaphy-2015',
  'doc-aerial-5c1e84f30e04f7e4',
  'retrolens-3ec520daec5ae4a0',
  'landsat-christchurch-2001',

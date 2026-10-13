@@ -1,0 +1,14 @@
+{
+  "id": "relationship:org-people-20261013-008",
+  "a": "entity:kapiti-coast-district-council",
+  "b": "entity:splice-group",
+  "label": "LIM automation client, 2010–2013",
+  "basis": "Leigh Hunt lists Kāpiti among Splice’s LIM automation clients during his 2010–2013 role.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Leigh Hunt, Splice project history",
+      "url": "https://leighghunt.github.io/"
+    }
+  ]
+}

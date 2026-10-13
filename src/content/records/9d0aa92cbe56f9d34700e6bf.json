@@ -1,0 +1,30 @@
+{
+  "id": "person:nigel-stanger",
+  "slug": "nigel-stanger",
+  "name": "Nigel Stanger",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/nigel-stanger/",
+  "description": "",
+  "story": [
+    "Nigel Stanger contributed “The view from the Chathams: Geovisualisation of web site hits using Google Earth” to Otago’s eighteenth SIRC colloquium in 2006. The paper applied a digital globe to location-based visualisation of website activity, linking database and web research with geographic display."
+  ],
+  "sources": [
+    {
+      "label": "University of Otago, Nigel Stanger profile and publication list",
+      "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Otago, Nigel Stanger profile and publication list",
+        "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

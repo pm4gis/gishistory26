@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-049",
+  "a": "project:geocomputation-sirc-1997",
+  "b": "entity:university-of-otago",
+  "label": "Conference host, August 1997",
+  "basis": "The proceedings identify Otago and the 26–29 August dates.",
+  "passageIds": [
+    "passage:chapter-11-6b17dc2b4d"
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ]
+}

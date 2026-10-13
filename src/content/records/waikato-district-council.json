@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/waikato-district-council/",
   "website": "https://www.waikatodistrict.govt.nz",
-  "description": "Named in Preface (Chapter 0). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "Duane Wilkins’s preface recalls a summer GIS project at Waikato District Council following his introduction to KeyCad at Waikato University in early 1997. With encouragement from Lex Chalmers, he investigated land fragmentation and soil degradation in Tamahere. This is a participant’s recollection of a specific council project."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "Duane Wilkins, preface recollection",
+      "url": "/preface/"
     }
   ],
   "aliases": [
     "Waikato District Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Duane Wilkins, preface recollection",
+        "url": "/preface/"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

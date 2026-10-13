@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/taranaki-regional-council/",
   "website": "https://www.trc.govt.nz",
-  "description": "Named in A plan for each farm (Chapter 26). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "Taranaki provides a more concrete view of GIS inside an environmental programme. The Taranaki Regional Council adopted its Management of Riparian Margins implementation strategy in March 1993. The programme worked with landowners to fence and plant stream margins, particularly across the intensively farmed ring plain. Early property plans were prepared without the later GIS workflow and required substantial staff time."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "A plan for each farm",
+      "url": "/stories/conservation-and-environment/#a-plan-for-each-farm-12070ee487"
     }
   ],
   "aliases": [
     "Taranaki Regional Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "A plan for each farm",
+        "url": "/stories/conservation-and-environment/#a-plan-for-each-farm-12070ee487"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

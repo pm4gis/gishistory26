@@ -1,0 +1,30 @@
+{
+  "id": "person:tim-hinnerk-heuer",
+  "slug": "tim-hinnerk-heuer",
+  "name": "Tim-Hinnerk Heuer",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/tim-hinnerk-heuer/",
+  "description": "",
+  "story": [
+    "Tim-Hinnerk Heuer co-authored “Current status and future directions of mobile GIS” for SIRC NZ in 2013, with David Medyckyj-Scott and fellow contributors. Otago’s repository records the paper under mobile devices, location-based services and open-source GIS."
+  ],
+  "sources": [
+    {
+      "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+      "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
+        "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}
