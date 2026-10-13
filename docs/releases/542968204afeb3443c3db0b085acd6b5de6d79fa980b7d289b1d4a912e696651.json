@@ -1,0 +1,572 @@
+{
+  "patch": {
+    "schemaVersion": 1,
+    "baseRevision": "3fe77e6feba42b284892e909ee4b290174baf3725fbb42fa31df9d312507856d",
+    "operations": [
+      {
+        "collection": "events",
+        "action": "add",
+        "value": {
+          "id": "1977-nz-landsat-final-report",
+          "label": "National Landsat II investigation publishes its final report",
+          "dateDisplay": "September 1977",
+          "startDate": "1977-09",
+          "datePrecision": "month",
+          "year": 1977,
+          "summary": "DSIR’s Physics and Engineering Laboratory coordinated a national Landsat II investigation with surveying, geological, forestry, agricultural and university contributors. The September 1977 report names authors and institutional affiliations and records the image-processing and applied mapping work.",
+          "url": "/stories/turning-the-landscape-into-numbers/#landsat-arrives-e9b8032a50",
+          "passageIds": [
+            "passage:chapter-4-e9b8032a50"
+          ],
+          "recordIds": [
+            "project:nz-landsat-investigation-1975-1977"
+          ],
+          "themeIds": [],
+          "categories": [
+            "imagery",
+            "research"
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ]
+        }
+      },
+      {
+        "collection": "events",
+        "action": "add",
+        "value": {
+          "id": "1997-geocomputation-sirc-dunedin",
+          "label": "GeoComputation and SIRC meet in Dunedin",
+          "dateDisplay": "26–29 August 1997",
+          "startDate": "1997-08-26",
+          "datePrecision": "day-range",
+          "year": 1997,
+          "summary": "The University of Otago hosted the second International Conference on GeoComputation from 26 to 29 August 1997. Its proceedings, initially published on CD-ROM, name authors of New Zealand and international spatial-computing research.",
+          "url": "/stories/universities-build-a-field/#a-recurring-research-forum-6b17dc2b4d",
+          "passageIds": [
+            "passage:chapter-11-6b17dc2b4d"
+          ],
+          "recordIds": [
+            "project:geocomputation-sirc-1997"
+          ],
+          "themeIds": [],
+          "categories": [
+            "research",
+            "conference"
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "endDate": "1997-08-29"
+        }
+      },
+      {
+        "collection": "events",
+        "action": "add",
+        "value": {
+          "id": "2013-sirc-nz-gis-remote-sensing",
+          "label": "SIRC NZ GIS and Remote Sensing Research Conference",
+          "dateDisplay": "29–30 August 2013",
+          "startDate": "2013-08-29",
+          "datePrecision": "day-range",
+          "year": 2013,
+          "summary": "SIRC NZ ran at the University of Otago on 29–30 August 2013 alongside the 125th New Zealand Institute of Surveyors conference. It was a distinct conference from the earlier annual SIRC colloquium series.",
+          "url": "/stories/universities-build-a-field/#a-recurring-research-forum-6b17dc2b4d",
+          "passageIds": [
+            "passage:chapter-11-6b17dc2b4d"
+          ],
+          "recordIds": [
+            "project:sirc-nz-2013"
+          ],
+          "themeIds": [],
+          "categories": [
+            "research",
+            "conference"
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, SIRC NZ 2013 conference, 29–30 August 2013",
+              "url": "https://www.otago.ac.nz/surveying/news/seminars/-sirc-nz-2013-conference"
+            }
+          ],
+          "endDate": "2013-08-30"
+        }
+      },
+      {
+        "collection": "events",
+        "action": "add",
+        "value": {
+          "id": "2019-geocomputation-nzgrc-queenstown",
+          "label": "GeoComputation and NZGRC meet in Queenstown",
+          "dateDisplay": "18–21 September 2019",
+          "startDate": "2019-09-18",
+          "datePrecision": "day-range",
+          "year": 2019,
+          "summary": "GeoComputation returned to New Zealand on 18–21 September 2019, in conjunction with the New Zealand Geospatial Research Conference. Otago, Auckland, Canterbury and Victoria universities jointly organised the Queenstown event. The final institutional account lists Mark Gahegan among its keynote speakers.",
+          "url": "/stories/universities-build-a-field/#a-recurring-research-forum-6b17dc2b4d",
+          "passageIds": [
+            "passage:chapter-11-6b17dc2b4d"
+          ],
+          "recordIds": [
+            "project:geocomputation-nzgrc-2019"
+          ],
+          "themeIds": [],
+          "categories": [
+            "research",
+            "conference"
+          ],
+          "sources": [
+            {
+              "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+              "url": "https://www.otago.ac.nz/geocomputation"
+            },
+            {
+              "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+              "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+            }
+          ],
+          "endDate": "2019-09-21"
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "entity:dsir-physics-and-engineering-laboratory",
+          "slug": "dsir-physics-and-engineering-laboratory",
+          "name": "DSIR Physics and Engineering Laboratory",
+          "kind": "Organisation",
+          "category": "Research and education",
+          "url": "/entities/dsir-physics-and-engineering-laboratory/",
+          "website": null,
+          "story": [
+            "The laboratory coordinated the Landsat II Investigation Programme, with Mervyn Probine associated with the national effort. The September 1977 final report documents early digital image processing, rectification and classification. It connects mainframe and minicomputer work with the practical question of extracting useful information from satellite observations.",
+            "The September 1977 report gives individual credits for the laboratory’s work. A. D. Fowler contributed to radiometry and photographic processing, C. T. Nankivell to image acquisition and crop monitoring, and H. A. Jefferies to cartographic applications. The named affiliations document the team behind the satellite-processing methods."
+          ],
+          "sources": [
+            {
+              "label": "DSIR Physics and Engineering Laboratory, Final Report: Landsat II Investigation Programme No. 28230, Report No. 587",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            },
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "aliases": [
+            "DSIR Physics and Engineering Laboratory"
+          ],
+          "themeIds": [],
+          "status": "GIS account available",
+          "paragraphSources": [],
+          "biographyParagraphSources": [
+            [],
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "entity:new-zealand-forest-service",
+          "slug": "new-zealand-forest-service",
+          "name": "New Zealand Forest Service",
+          "kind": "Agency",
+          "category": "Government",
+          "url": "/entities/new-zealand-forest-service/",
+          "website": null,
+          "story": [
+            "The Forest Service’s mapping connected forest inventory, stands, roads and management records. Its disappearance in the 1980s changed the organisations responsible for that information, while the practical requirements of forestry continued. Later government and commercial systems inherited parts of the data, methods and experience.",
+            "The 1977 Landsat II investigation credits Neville Ching and Forest Service colleagues with forest-management applications. B. M. Lean examined Canterbury windthrow; R. W. Dale mapped King Country vegetation; I. R. Hunter wrote the private forest resource study; A. D. Reid assessed Westland inventory possibilities; and P. Hay contributed to the Hanmer fire-damage study."
+          ],
+          "sources": [
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "aliases": [
+            "New Zealand Forest Service"
+          ],
+          "themeIds": [],
+          "status": "GIS account available",
+          "paragraphSources": [],
+          "biographyParagraphSources": [
+            [],
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "entity:university-of-auckland",
+          "slug": "university-of-auckland",
+          "name": "University of Auckland",
+          "kind": "Organisation",
+          "category": "Research and education",
+          "url": "/entities/university-of-auckland/",
+          "website": null,
+          "story": [
+            "The geography department’s GIS teaching is documented from 1985. Research, teaching and commercial consulting also met through UniServices and GTU. GBS’s retrospective remembers David Hawke as a technical mentor to Harley Prowse and Tony Elson, recording one route through which university experience entered later consulting work.",
+            "University geography staff also took part in the 1970s Landsat investigation. The 1977 report credits G. Ross Cochrane, J. Batty, C. M. Strachan and M. Bellingham with vegetation and coastal studies. This remote-sensing research preceded the GIS teaching documented from 1985."
+          ],
+          "sources": [
+            {
+              "label": "David V. Hawke, 'gistt: a geographic information systems teaching tool', International Journal of Geographical Information Systems 6(4)",
+              "url": "https://www.tandfonline.com/doi/abs/10.1080/02693799208901913"
+            },
+            {
+              "label": "Geographic Business Solutions, 20 years of GBS: a short history",
+              "url": "https://gbs.kiwi/20-years-of-gbs-a-short-history/"
+            },
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "aliases": [
+            "University of Auckland"
+          ],
+          "themeIds": [
+            "profession"
+          ],
+          "status": "GIS account available",
+          "paragraphSources": [],
+          "biographyParagraphSources": [
+            [],
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "entity:department-of-lands-and-survey",
+          "slug": "department-of-lands-and-survey",
+          "name": "Department of Lands and Survey",
+          "kind": "Agency",
+          "category": "Government",
+          "url": "/entities/department-of-lands-and-survey/",
+          "website": null,
+          "story": [
+            "Lands and Survey maintained cadastral, geodetic, topographic and aerial-mapping records that became inputs to digital systems. Its staff worked across field survey, computation, draughting and map production. The transition to computer mapping inherited both that information and the need to keep it consistent as land and administrative records changed.",
+            "The department’s metric-conversion work supplied a concrete reason to automate mapping in the 1970s. M. S. Colley’s 1979 Canterbury thesis describes Lands and Survey’s responsibility for converting topographic and cadastral mapping from the earlier imperial grid to the metric grid introduced in 1973. The research addressed automated cadastral conversion, computer-produced cartography and structures that could store graphical features with descriptive information. Chapter 3 follows that work through MAPPAK.",
+            "The April 1987 reorganisation divided responsibilities as well as changing the national mapping organisation. DOSLI took government civil and military survey, mapping and land-information services, while land development and conservation management were assigned elsewhere. This division is important when tracing older datasets and staff accounts: a Lands and Survey origin does not imply that every function passed to DOSLI or, later, to LINZ.",
+            "Before map geometry was digitised, the department’s office computers were people doing mathematical work on survey records. Russell Gladstone Dick’s 1966 account describes those staff alongside the electronic computers then entering demanding survey and mapping calculations. Chapter 2 follows that change in the work.",
+            "L. P. Lee’s 1962 and 1963 transverse Mercator papers document the mathematical work behind coordinate conversion; his 1974 Pacific-projection paper gives his departmental title as Chief Computer. The 1977 Landsat report names Robert Child and Douglas McK Scott among the department’s contributors to satellite cartography and land-use mapping."
+          ],
+          "sources": [
+            {
+              "label": "Land Information New Zealand, Our whakapapa",
+              "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+            },
+            {
+              "label": "M. S. Colley, A computer system for a cadastral mapping application, MSc thesis, University of Canterbury, 1979",
+              "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+            },
+            {
+              "label": "Russell Gladstone Dick, “Maps and mapping” (1966), Te Ara",
+              "url": "https://teara.govt.nz/en/1966/maps-and-mapping/page-6"
+            },
+            {
+              "label": "Related chapter: Chapter 2 · Survey calculations",
+              "url": "/stories/coordinates-enter-the-computer/"
+            },
+            {
+              "label": "L. P. Lee, The Transverse Mercator Projection of the Entire Spheroid, Empire Survey Review 16(123), 1962, pp.208–217",
+              "url": "https://doi.org/10.1179/sre.1962.16.123.208"
+            },
+            {
+              "label": "L. P. Lee, A Conformal Projection for the Map of the Pacific, New Zealand Geographer 30(1), 1974; author affiliation: Chief Computer, Department of Lands and Survey",
+              "url": "https://doi.org/10.1111/j.1745-7939.1974.tb00757.x"
+            },
+            {
+              "label": "Snyder and Steward, Bibliography of map projections, USGS Bulletin 1856, 1988",
+              "url": "https://pubs.usgs.gov/publication/b1856"
+            },
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "aliases": [
+            "Department of Lands and Survey",
+            "Lands and Survey"
+          ],
+          "themeIds": [],
+          "status": "GIS account available",
+          "paragraphSources": [
+            [
+              {
+                "label": "Land Information New Zealand, Our whakapapa",
+                "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+              }
+            ],
+            [
+              {
+                "label": "M. S. Colley, A computer system for a cadastral mapping application, MSc thesis, University of Canterbury, 1979",
+                "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+              }
+            ],
+            [
+              {
+                "label": "LINZ, Our whakapapa: April 1987 restructuring, 1995 title transfer and 1 July 1996 division",
+                "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+              }
+            ]
+          ],
+          "biographyParagraphSources": [
+            [
+              {
+                "label": "Russell Gladstone Dick, “Maps and mapping” (1966), Te Ara",
+                "url": "https://teara.govt.nz/en/1966/maps-and-mapping/page-6"
+              },
+              {
+                "label": "Related chapter: Chapter 2 · Survey calculations",
+                "url": "/stories/coordinates-enter-the-computer/"
+              }
+            ],
+            [],
+            [],
+            [],
+            [
+              {
+                "label": "L. P. Lee, The Transverse Mercator Projection of the Entire Spheroid, Empire Survey Review 16(123), 1962, pp.208–217",
+                "url": "https://doi.org/10.1179/sre.1962.16.123.208"
+              },
+              {
+                "label": "L. P. Lee, A Conformal Projection for the Map of the Pacific, New Zealand Geographer 30(1), 1974; author affiliation: Chief Computer, Department of Lands and Survey",
+                "url": "https://doi.org/10.1111/j.1745-7939.1974.tb00757.x"
+              },
+              {
+                "label": "Snyder and Steward, Bibliography of map projections, USGS Bulletin 1856, 1988",
+                "url": "https://pubs.usgs.gov/publication/b1856"
+              },
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "entity:university-of-otago",
+          "slug": "university-of-otago",
+          "name": "University of Otago",
+          "kind": "Organisation",
+          "category": "Research and education",
+          "url": "/entities/university-of-otago/",
+          "website": null,
+          "story": [
+            "Otago connected surveying, geographic information and research through teaching and professional exchange. The SIRC conference lineage provided a recurring forum for spatial-information research. Māori spatial research associated with Hauiti Hākopa also examined how mapping could support information embedded in ancestral landscapes.",
+            "Its School of Surveying introduced the Land and Spatial Information Studies degree in the late 1980s.",
+            "Otago’s published research records put further names into this work. Peter G. Firns studied spatial data modelling in the early 1990s. Nigel Stanger used Google Earth to visualise website activity at SIRC in 2006. Paul Denys joined the School of Surveying in 1995 and contributed to GPS, deformation and reference-system research, including the 2013 PositioNZ-PP account."
+          ],
+          "sources": [
+            {
+              "label": "Ngā Pae o te Māramatanga, Hauiti Hākopa research profile",
+              "url": "https://www.maramatanga.ac.nz/person/dr-hauiti-h-kopa"
+            },
+            {
+              "label": "AJHR 1913 survey history",
+              "url": "https://paperspast.natlib.govt.nz/parliamentary/AJHR1913-I.2.3.2.2"
+            },
+            {
+              "label": "He Whare Hangarau Māori, University of Waikato, including on Indigenous Mapping Wānanga 2017",
+              "url": "https://natlib.govt.nz/records/38823234"
+            },
+            {
+              "label": "University of Otago, History of the School of Surveying: Land and Spatial Information Studies degree",
+              "url": "https://www.otago.ac.nz/surveying/about/history"
+            },
+            {
+              "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+              "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+            },
+            {
+              "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+              "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+            },
+            {
+              "label": "University of Otago, Nigel Stanger profile and publication list",
+              "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+            },
+            {
+              "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+              "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
+            }
+          ],
+          "aliases": [
+            "University of Otago"
+          ],
+          "themeIds": [
+            "profession",
+            "local-government"
+          ],
+          "status": "GIS account available",
+          "paragraphSources": [],
+          "biographyParagraphSources": [
+            [],
+            [],
+            [
+              {
+                "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+                "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+              },
+              {
+                "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+                "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+              },
+              {
+                "label": "University of Otago, Nigel Stanger profile and publication list",
+                "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+              },
+              {
+                "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+                "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "entity:scion-forest-research",
+          "slug": "scion-forest-research",
+          "name": "Scion / Forest Research",
+          "kind": "Organisation",
+          "category": "Research and education",
+          "url": "/entities/scion-forest-research/",
+          "website": null,
+          "story": [
+            "Forestry research linked growth models, inventory and geographic information. The Forest Research and later Scion lineage contributed methods and systems used by forest managers and commercial service providers. GIS helped connect models with the actual stands, terrain and conditions to which a management decision applied.",
+            "Forest Research’s 1999 Kinleith study explored GIS, soil-unit stratification and geostatistics for mapping tree growth and foliage nutrition. The authors identified sparse observations as a limitation and called for structured sampling, evidence of applied research rather than a proven operational monitoring service.",
+            "The Forest Research Institute’s Michael G. McGreevy authored the Indigenous Forest Assessment chapter of the 1977 national Landsat II report. This is an earlier institute contribution within the forestry-research lineage, with the original affiliation retained."
+          ],
+          "sources": [
+            {
+              "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+              "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+            },
+            {
+              "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+              "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+            }
+          ],
+          "aliases": [
+            "Scion",
+            "Forest Research"
+          ],
+          "themeIds": [],
+          "status": "GIS account available",
+          "paragraphSources": [
+            [],
+            [
+              {
+                "label": "Payn, Hill, Höck, Skinner, Thorn and Rijkse, Forest Ecology and Management 122 (1999), 187–196",
+                "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378112799000419"
+              }
+            ]
+          ],
+          "biographyParagraphSources": [
+            [],
+            [],
+            [
+              {
+                "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+                "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+              }
+            ]
+          ]
+        }
+      },
+      {
+        "collection": "images",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "image:mow-field-trip-gisborne-1971",
+          "slug": "mow-field-trip-gisborne-1971",
+          "title": "Ministry of Works field trip, Gisborne, 1971",
+          "assetPath": "/assets/historical/web/mow-field-trip-gisborne-1971.webp",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg",
+          "sourceName": "Wikimedia Commons",
+          "credit": "W. Neill; Archives New Zealand, reference R24802259 / AAQT 6539 W3537 113 / A97130; via Wikimedia Commons.",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File%3AGovernment_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg",
+          "altText": "Ministry of Works staff prepare for a field trip beside a Land Rover in Gisborne.",
+          "caption": "Ministry of Works staff prepare a field trip in Gisborne, March 1971.",
+          "themeIds": [
+            "technology-stack"
+          ],
+          "articleSlug": "mapping-leaves-the-office",
+          "chapterNumber": 34,
+          "dateDisplay": "March 1971",
+          "context": "This Archives New Zealand photograph shows Ministry of Works staff preparing a Gisborne field trip in March 1971. The photograph records the preparation for a Ministry of Works field trip in March 1971.",
+          "originalAssetPath": "/assets/historical/original/mow-field-trip-gisborne-1971.jpg",
+          "thumbnailPath": "/assets/historical/card/mow-field-trip-gisborne-1971.webp",
+          "originalSha256": "9a7167b5b409486cf1ec92e79b4473f381ce2ff56031c73db00ce2674571cbe1",
+          "webSha256": "ebcaefbeba714222cffbce4390f2a1d3d8f40ec019e797057a624e9ff8c26f19",
+          "originalWidth": 900,
+          "originalHeight": 684,
+          "sourceFileTitle": "File:Government Buildings, Lowe Street with M. O. W. Staff preparing a field trip with a Land Rover, Gisborne, (28445301672).jpg",
+          "headerCandidate": true,
+          "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Government_Buildings%2C_Lowe_Street_with_M._O._W._Staff_preparing_a_field_trip_with_a_Land_Rover%2C_Gisborne%2C_%2828445301672%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "derivativesNote": "The locally stored source file is unchanged. Responsive display and card derivatives are resized without cropping and follow the source licence; share-alike terms apply where required.",
+          "relatedRecords": []
+        }
+      }
+    ],
+    "candidateHash": "542968204afeb3443c3db0b085acd6b5de6d79fa980b7d289b1d4a912e696651"
+  },
+  "expectedGitHead": "614f6efcb75507f2c8990f3a8605abb0201cc53d",
+  "counts": {
+    "articles": 45,
+    "passages": 596,
+    "records": 1015,
+    "events": 253,
+    "relationships": 2872,
+    "themes": 8,
+    "images": 185
+  },
+  "appliedAt": "2026-10-13T09:06:53.792Z",
+  "status": "local-candidate-not-published"
+}

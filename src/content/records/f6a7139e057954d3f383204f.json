@@ -1,0 +1,32 @@
+{
+  "id": "person:richard-p-suggate",
+  "slug": "richard-p-suggate",
+  "name": "Richard P. Suggate",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/richard-p-suggate/",
+  "description": "",
+  "story": [
+    "Co-investigator for the geological strand of the national Landsat II programme, identified on the 1977 final report’s title page. Its geological section includes his foreword."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "R. P. Suggate"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

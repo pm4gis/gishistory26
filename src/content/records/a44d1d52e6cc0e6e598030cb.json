@@ -1,0 +1,30 @@
+{
+  "id": "project:sirc-nz-2013",
+  "slug": "sirc-nz-2013",
+  "name": "SIRC NZ GIS and Remote Sensing Research Conference, 2013",
+  "kind": "Project",
+  "category": "Research and conferences",
+  "url": "/entities/sirc-nz-2013/",
+  "story": [
+    "SIRC NZ ran at the University of Otago on 29–30 August 2013 alongside the 125th New Zealand Institute of Surveyors conference. It was a distinct conference from the earlier annual SIRC colloquium series."
+  ],
+  "description": "SIRC NZ ran at the University of Otago on 29–30 August 2013 alongside the 125th New Zealand Institute of Surveyors conference. It was a distinct conference from the earlier annual SIRC colloquium series.",
+  "sources": [
+    {
+      "label": "University of Otago, SIRC NZ 2013 conference, 29–30 August 2013",
+      "url": "https://www.otago.ac.nz/surveying/news/seminars/-sirc-nz-2013-conference"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Otago, SIRC NZ 2013 conference, 29–30 August 2013",
+        "url": "https://www.otago.ac.nz/surveying/news/seminars/-sirc-nz-2013-conference"
+      }
+    ]
+  ],
+  "contextLinks": [],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "person:michael-g-mcgreevy",
+  "slug": "michael-g-mcgreevy",
+  "name": "Michael G. McGreevy",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/michael-g-mcgreevy/",
+  "description": "",
+  "story": [
+    "Forest Research Institute author of the Indigenous Forest Assessment chapter in the 1977 national Landsat II report. His contribution assessed satellite imagery for indigenous forest information."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "M. G. McGreevy"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

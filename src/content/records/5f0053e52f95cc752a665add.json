@@ -1,0 +1,32 @@
+{
+  "id": "person:douglas-mck-scott",
+  "slug": "douglas-mck-scott",
+  "name": "Douglas McK Scott",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/douglas-mck-scott/",
+  "description": "",
+  "story": [
+    "Department of Lands and Survey contributor listed in the 1977 Landsat II report. He co-authored the chapter on cartographic applications of satellite data."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "D. McK Scott"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

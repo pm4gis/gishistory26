@@ -1,0 +1,30 @@
+{
+  "id": "person:ken-hughey",
+  "slug": "ken-hughey",
+  "name": "Ken Hughey",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/ken-hughey/",
+  "description": "",
+  "story": [
+    "Ken Hughey is named as an author of “A GIS Based Walkway Management System” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+        "url": "https://www.geocomputation.org/1997/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

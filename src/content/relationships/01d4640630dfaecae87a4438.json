@@ -1,0 +1,14 @@
+{
+  "id": "relationship:org-people-20261013-079",
+  "a": "project:geocomputation-nzgrc-2019",
+  "b": "entity:victoria-university-of-wellington",
+  "label": "Joint conference organiser, 2019",
+  "basis": "Otago’s final conference account names the four organising universities.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+      "url": "https://www.otago.ac.nz/geocomputation"
+    }
+  ]
+}

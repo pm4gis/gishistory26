@@ -1,0 +1,20 @@
+{
+  "id": "relationship:org-people-20261013-073",
+  "a": "person:christina-hulbe",
+  "b": "project:geocomputation-nzgrc-2019",
+  "label": "Conference organising committee, 2019",
+  "basis": "Christina Hulbe is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019.",
+  "passageIds": [
+    "passage:chapter-11-6b17dc2b4d"
+  ],
+  "sources": [
+    {
+      "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+      "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+    },
+    {
+      "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+      "url": "https://www.otago.ac.nz/geocomputation"
+    }
+  ]
+}

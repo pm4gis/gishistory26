@@ -1,0 +1,30 @@
+{
+  "id": "person:hayden-munro",
+  "slug": "hayden-munro",
+  "name": "Hayden Munro",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/hayden-munro/",
+  "description": "",
+  "story": [
+    "Hayden Munro is named as an author of “Interactive Exploration of Spatially Distributed Near Infrared Reflectance Data” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+        "url": "https://www.geocomputation.org/1997/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

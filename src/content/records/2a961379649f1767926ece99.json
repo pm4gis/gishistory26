@@ -1,0 +1,30 @@
+{
+  "id": "person:r-w-dale",
+  "slug": "r-w-dale",
+  "name": "R. W. Dale",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/r-w-dale/",
+  "description": "",
+  "story": [
+    "New Zealand Forest Service contributor based in Auckland in the 1977 Landsat II report. Dale’s chapter examined typing and mapping King Country vegetation from Landsat imagery."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

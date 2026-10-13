@@ -8,7 +8,8 @@
   "website": null,
   "story": [
     "Otago connected surveying, geographic information and research through teaching and professional exchange. The SIRC conference lineage provided a recurring forum for spatial-information research. Māori spatial research associated with Hauiti Hākopa also examined how mapping could support information embedded in ancestral landscapes.",
-    "Its School of Surveying introduced the Land and Spatial Information Studies degree in the late 1980s."
+    "Its School of Surveying introduced the Land and Spatial Information Studies degree in the late 1980s.",
+    "Otago’s published research records put further names into this work. Peter G. Firns studied spatial data modelling in the early 1990s. Nigel Stanger used Google Earth to visualise website activity at SIRC in 2006. Paul Denys joined the School of Surveying in 1995 and contributed to GPS, deformation and reference-system research, including the 2013 PositioNZ-PP account."
   ],
   "sources": [
     {
@@ -26,6 +27,22 @@
     {
       "label": "University of Otago, History of the School of Surveying: Land and Spatial Information Studies degree",
       "url": "https://www.otago.ac.nz/surveying/about/history"
+    },
+    {
+      "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+      "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+    },
+    {
+      "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+      "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+    },
+    {
+      "label": "University of Otago, Nigel Stanger profile and publication list",
+      "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+    },
+    {
+      "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+      "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
     }
   ],
   "aliases": [
@@ -37,5 +54,26 @@
   ],
   "status": "GIS account available",
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [
+    [],
+    [],
+    [
+      {
+        "label": "Benwell, Firns and Sallis, Deriving Semantic Data Models from Structured Process Descriptions of Reality, 1991",
+        "url": "https://aisel.aisnet.org/jit/vol6/iss1/3/"
+      },
+      {
+        "label": "University of Otago, Department of Information Science archived discussion-paper collection; 1993 spatial-data-modelling publications",
+        "url": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/commit/ed072ebbebdb12f4b443cae3f4e5a32a01ee06c6"
+      },
+      {
+        "label": "University of Otago, Nigel Stanger profile and publication list",
+        "url": "https://www.otago.ac.nz/school-of-computing/our-people/nigel-stanger"
+      },
+      {
+        "label": "University of Otago, Paul H. Denys: career history and 2013 PositioNZ-PP publication",
+        "url": "https://www.otago.ac.nz/surveying/staff/paul-denys"
+      }
+    ]
+  ]
 }

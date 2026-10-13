@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-017",
+  "a": "person:douglas-mck-scott",
+  "b": "project:nz-landsat-investigation-1975-1977",
+  "label": "Landsat II programme contributor, 1977",
+  "basis": "Department of Lands and Survey contributor listed in the 1977 Landsat II report. He co-authored the chapter on cartographic applications of satellite data.",
+  "passageIds": [
+    "passage:chapter-4-e9b8032a50"
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ]
+}

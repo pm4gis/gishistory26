@@ -1,0 +1,40 @@
+{
+  "id": "person:david-osullivan",
+  "slug": "david-osullivan",
+  "name": "David O’Sullivan",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/david-osullivan/",
+  "description": "",
+  "story": [
+    "David O’Sullivan is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019."
+  ],
+  "sources": [
+    {
+      "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+      "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+    },
+    {
+      "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+      "url": "https://www.otago.ac.nz/geocomputation"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+        "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+      },
+      {
+        "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+        "url": "https://www.otago.ac.nz/geocomputation"
+      }
+    ]
+  ],
+  "aliases": [
+    "David O'Sullivan"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

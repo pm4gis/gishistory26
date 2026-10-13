@@ -1,0 +1,32 @@
+{
+  "id": "person:b-m-lean",
+  "slug": "b-m-lean",
+  "name": "B. M. Lean",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/b-m-lean/",
+  "description": "",
+  "story": [
+    "New Zealand Forest Service contributor based in Christchurch in the 1977 Landsat II report. Lean wrote its Canterbury windthrow account and co-authored the Hanmer fire-damaged-tree investigation."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "B. Lean"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

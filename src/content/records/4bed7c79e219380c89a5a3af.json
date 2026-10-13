@@ -1,0 +1,30 @@
+{
+  "id": "person:p-dickson",
+  "slug": "p-dickson",
+  "name": "P. Dickson",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/p-dickson/",
+  "description": "",
+  "story": [
+    "Department of Lands and Survey author of the land-use and environmental-mapping section of the 1977 national Landsat II report, working with Robert Child."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

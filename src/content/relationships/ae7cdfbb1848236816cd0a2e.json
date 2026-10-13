@@ -1,0 +1,14 @@
+{
+  "id": "relationship:org-people-20261013-007",
+  "a": "entity:rotorua-lakes-council",
+  "b": "entity:locus",
+  "label": "Early FME supporter recalled",
+  "basis": "John Arnerich names Rotorua Lakes and Greg Bennett among the earliest FME supporters in his 2025 retrospective; the exact first-support date is unstated.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "John Arnerich, 25 Years of Locus",
+      "url": "https://locusglobal.com/blog/blog/2025/11/27/25-years-of-locus/"
+    }
+  ]
+}

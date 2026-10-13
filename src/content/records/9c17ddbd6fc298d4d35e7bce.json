@@ -1,0 +1,30 @@
+{
+  "id": "person:j-batty",
+  "slug": "j-batty",
+  "name": "J. Batty",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/j-batty/",
+  "description": "",
+  "story": [
+    "University of Auckland contributor to the 1977 national Landsat II report. Batty co-authored satellite-based vegetation studies of the Aupōuri Peninsula and Westland."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

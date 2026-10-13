@@ -1,0 +1,13 @@
+{
+  "revision": "6a3b1c9f445a5080238c08a91250cb8a823060229a23a9293e57776278fc0eea",
+  "gitHead": "961c784021215b4b063a015337266f538187c85d",
+  "counts": {
+    "articles": 45,
+    "passages": 596,
+    "records": 1015,
+    "events": 253,
+    "relationships": 2872,
+    "themes": 8,
+    "images": 185
+  }
+}

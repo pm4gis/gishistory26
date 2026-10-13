@@ -4,13 +4,34 @@
   "articleId": "article:chapter-4",
   "title": "Landsat arrives",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [
     "imagery"
   ],
   "recordIds": [
     "chapter:4",
-    "person:mervyn-c-probine"
+    "person:mervyn-c-probine",
+    "person:richard-p-suggate",
+    "person:michael-g-mcgreevy",
+    "person:ian-f-stirling",
+    "person:robert-child",
+    "person:douglas-mck-scott",
+    "person:marie-clarke",
+    "person:a-d-fowles",
+    "person:c-t-nankivell",
+    "person:h-a-jefferies",
+    "person:p-dickson",
+    "person:g-ross-cochrane",
+    "person:j-batty",
+    "person:c-m-strachan",
+    "person:m-bellingham",
+    "person:neville-ching",
+    "person:b-m-lean",
+    "person:r-w-dale",
+    "person:i-r-hunter",
+    "person:a-d-reid",
+    "person:p-hay",
+    "project:nz-landsat-investigation-1975-1977"
   ],
   "blocks": [
     {
@@ -33,6 +54,18 @@
       "markdown": "PEL staff therefore worked with raster data before raster GIS became routine software. The grid structure allowed programs to alter contrast, compare bands, remove known sensor effects, group similar values and register one scene against another. The output could still be a map or colour image, but the processing was applied to the stored measurements rather than to a photographic print. Forestry, agriculture, snow studies, land evaluation and other applications could use different combinations of the same source bands. The same scene could produce several derived products without changing the original tape.",
       "sources": [],
       "id": "ch04-s01-p03"
+    },
+    {
+      "id": "research-landsat-named-contributors-1977",
+      "type": "paragraph",
+      "text": "The 1977 report names the people and institutions behind the investigation. Richard P. Suggate, Michael G. McGreevy and Ian F. Stirling were co-investigators. Robert Child and Douglas McK Scott contributed from Lands and Survey; G. Ross Cochrane and colleagues worked at Auckland University; Neville Ching and other Forest Service contributors examined forest mapping, snowfields and damaged trees. Its affiliation list and chapter credits allow these contributions to be traced individually.",
+      "markdown": "The 1977 report names the people and institutions behind the investigation. Richard P. Suggate, Michael G. McGreevy and Ian F. Stirling were co-investigators. Robert Child and Douglas McK Scott contributed from Lands and Survey; G. Ross Cochrane and colleagues worked at Auckland University; Neville Ching and other Forest Service contributors examined forest mapping, snowfields and damaged trees. Its affiliation list and chapter credits allow these contributions to be traced individually.",
+      "sources": [
+        {
+          "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+          "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+        }
+      ]
     }
   ],
   "sources": [],

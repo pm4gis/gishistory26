@@ -4,7 +4,7 @@
   "articleId": "article:chapter-11",
   "title": "A recurring research forum",
   "order": 4,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-13",
   "themeIds": [
     "profession"
   ],
@@ -16,7 +16,27 @@
     "person:william-mackaness",
     "person:michael-anderson",
     "person:p-j-sallis",
-    "person:p-r-zwart"
+    "person:p-r-zwart",
+    "person:mary-avery",
+    "person:glen-harrison",
+    "person:ken-hughey",
+    "person:tadeusz-dawidowski",
+    "person:ralph-winmill",
+    "person:hayden-munro",
+    "person:kevin-novins",
+    "person:clare-churcher",
+    "person:parames-prachuabmoh",
+    "person:samuel-mann",
+    "person:andrew-cardno",
+    "person:kelly-buchanan",
+    "person:pete-frizzell",
+    "project:geocomputation-sirc-1997",
+    "person:ben-adams",
+    "person:mark-gahegan",
+    "person:christina-hulbe",
+    "person:david-osullivan",
+    "person:matthew-wilson",
+    "project:geocomputation-nzgrc-2019"
   ],
   "blocks": [
     {
@@ -80,6 +100,34 @@
       ],
       "id": "people-expansion-2026-10-05-ch11-01",
       "markdown": "The later university record also preserves the people who maintained GIS as a taught and practised discipline. At Otago, Aubrey Miller taught GIS, spatial analysis, programming and remote sensing and helped convene GIS@Otago, while Todd Redpath used remote sensing in glacier and seasonal-snow research. At Massey, Matthew Irwin taught across GIS, remote sensing, GPS and UAV technologies. These roles kept technical practice, research and teaching in direct contact."
+    },
+    {
+      "id": "research-geocomputation-1997-contributors",
+      "type": "paragraph",
+      "text": "The 1997 GeoComputation and SIRC proceedings show the range of that research community. Mary Avery, Glen Harrison and Ken Hughey were among the walkway-management authors; Tadeusz Dawidowski and Ralph Winmill contributed to the survey-and-title automation paper; Hayden Munro and Kevin Novins worked on near-infrared data exploration. Papers by Clare Churcher, Parames Prachuabmoh and Samuel Mann addressed collaborative browsers and the developing field of geocomputation.",
+      "markdown": "The 1997 GeoComputation and SIRC proceedings show the range of that research community. Mary Avery, Glen Harrison and Ken Hughey were among the walkway-management authors; Tadeusz Dawidowski and Ralph Winmill contributed to the survey-and-title automation paper; Hayden Munro and Kevin Novins worked on near-infrared data exploration. Papers by Clare Churcher, Parames Prachuabmoh and Samuel Mann addressed collaborative browsers and the developing field of geocomputation.",
+      "sources": [
+        {
+          "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+          "url": "https://www.geocomputation.org/1997/"
+        }
+      ]
+    },
+    {
+      "id": "research-geocomputation-2019-organisers",
+      "type": "paragraph",
+      "text": "GeoComputation returned to New Zealand in September 2019, this time in Queenstown alongside NZGRC. The organising committee included Ben Adams, Mark Gahegan, Christina Hulbe, David O’Sullivan and Matthew Wilson, with Antoni Moore, Mairéad de Róiste, Katarzyna Sila-Nowicka and Peter Whigham. Otago’s final account lists Gahegan among the keynote speakers. The earlier call had named O’Sullivan for that slot, so the organising and keynote roles need to be read against their respective sources.",
+      "markdown": "GeoComputation returned to New Zealand in September 2019, this time in Queenstown alongside NZGRC. The organising committee included Ben Adams, Mark Gahegan, Christina Hulbe, David O’Sullivan and Matthew Wilson, with Antoni Moore, Mairéad de Róiste, Katarzyna Sila-Nowicka and Peter Whigham. Otago’s final account lists Gahegan among the keynote speakers. The earlier call had named O’Sullivan for that slot, so the organising and keynote roles need to be read against their respective sources.",
+      "sources": [
+        {
+          "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+          "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+        },
+        {
+          "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+          "url": "https://www.otago.ac.nz/geocomputation"
+        }
+      ]
     }
   ],
   "sources": [],

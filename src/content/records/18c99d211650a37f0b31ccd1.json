@@ -1,0 +1,32 @@
+{
+  "id": "person:robert-child",
+  "slug": "robert-child",
+  "name": "Robert Child",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/robert-child/",
+  "description": "",
+  "story": [
+    "Department of Lands and Survey contributor to the 1977 Landsat II report. He co-authored work on image acquisition, photographic processing, agricultural monitoring and land-use mapping."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "R. C. Child"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

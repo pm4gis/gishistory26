@@ -1,0 +1,30 @@
+{
+  "id": "person:ralph-winmill",
+  "slug": "ralph-winmill",
+  "name": "Ralph Winmill",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/ralph-winmill/",
+  "description": "",
+  "story": [
+    "Ralph Winmill is named as an author of “New Zealand Land Tenure Beyond 2000: Full Integration and Automation of the New Zealand Survey and Title Systems” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+        "url": "https://www.geocomputation.org/1997/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

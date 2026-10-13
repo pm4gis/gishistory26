@@ -1,0 +1,38 @@
+{
+  "id": "project:geocomputation-nzgrc-2019",
+  "slug": "geocomputation-nzgrc-2019",
+  "name": "GeoComputation and NZGRC, Queenstown 2019",
+  "kind": "Project",
+  "category": "Research and conferences",
+  "url": "/entities/geocomputation-nzgrc-2019/",
+  "story": [
+    "GeoComputation returned to New Zealand on 18–21 September 2019, in conjunction with the New Zealand Geospatial Research Conference. Otago, Auckland, Canterbury and Victoria universities jointly organised the Queenstown event. The final institutional account lists Mark Gahegan among its keynote speakers."
+  ],
+  "description": "GeoComputation returned to New Zealand on 18–21 September 2019, in conjunction with the New Zealand Geospatial Research Conference. Otago, Auckland, Canterbury and Victoria universities jointly organised the Queenstown event. The final institutional account lists Mark Gahegan among its keynote speakers.",
+  "sources": [
+    {
+      "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+      "url": "https://www.otago.ac.nz/geocomputation"
+    },
+    {
+      "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+      "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "University of Otago, GeoComputation 2019 account and final keynotes",
+        "url": "https://www.otago.ac.nz/geocomputation"
+      },
+      {
+        "label": "Antoni Moore for GeoComputation 2019 organising committee, May 2019 call",
+        "url": "https://www.linkedin.com/pulse/geocomputation-2019-deadline-extension-katarzyna-sila-nowicka"
+      }
+    ]
+  ],
+  "contextLinks": [],
+  "status": "Source-backed historical account"
+}

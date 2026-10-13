@@ -1,0 +1,30 @@
+{
+  "id": "person:parames-prachuabmoh",
+  "slug": "parames-prachuabmoh",
+  "name": "Parames Prachuabmoh",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/parames-prachuabmoh/",
+  "description": "",
+  "story": [
+    "Parames Prachuabmoh is named as an author of “Visualisation Techniques for Collaborative GIS Browsers” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+        "url": "https://www.geocomputation.org/1997/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

@@ -21,5 +21,6 @@
   "status": "Council directory record",
   "currentCouncil": true,
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [],
+  "listingStatus": "reference-only"
 }

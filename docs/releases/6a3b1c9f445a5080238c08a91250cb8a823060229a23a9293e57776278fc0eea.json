@@ -1,0 +1,476 @@
+{
+  "patch": {
+    "schemaVersion": 1,
+    "baseRevision": "bf3c23b2c5965e9f79d426afa03cedf180d9b3ebef75f0618eda8baa491295f2",
+    "operations": [
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:mary-avery",
+          "slug": "mary-avery",
+          "name": "Mary Avery",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/mary-avery/",
+          "description": "",
+          "story": [
+            "Mary Avery is named as an author of “A GIS Based Walkway Management System” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:glen-harrison",
+          "slug": "glen-harrison",
+          "name": "Glen Harrison",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/glen-harrison/",
+          "description": "",
+          "story": [
+            "Glen Harrison is named as an author of “A GIS Based Walkway Management System” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:ken-hughey",
+          "slug": "ken-hughey",
+          "name": "Ken Hughey",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/ken-hughey/",
+          "description": "",
+          "story": [
+            "Ken Hughey is named as an author of “A GIS Based Walkway Management System” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:tadeusz-dawidowski",
+          "slug": "tadeusz-dawidowski",
+          "name": "Tadeusz Dawidowski",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/tadeusz-dawidowski/",
+          "description": "",
+          "story": [
+            "Tadeusz Dawidowski is named as an author of “New Zealand Land Tenure Beyond 2000: Full Integration and Automation of the New Zealand Survey and Title Systems” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:ralph-winmill",
+          "slug": "ralph-winmill",
+          "name": "Ralph Winmill",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/ralph-winmill/",
+          "description": "",
+          "story": [
+            "Ralph Winmill is named as an author of “New Zealand Land Tenure Beyond 2000: Full Integration and Automation of the New Zealand Survey and Title Systems” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:hayden-munro",
+          "slug": "hayden-munro",
+          "name": "Hayden Munro",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/hayden-munro/",
+          "description": "",
+          "story": [
+            "Hayden Munro is named as an author of “Interactive Exploration of Spatially Distributed Near Infrared Reflectance Data” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:kevin-novins",
+          "slug": "kevin-novins",
+          "name": "Kevin Novins",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/kevin-novins/",
+          "description": "",
+          "story": [
+            "Kevin Novins is named as an author of “Interactive Exploration of Spatially Distributed Near Infrared Reflectance Data” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:clare-churcher",
+          "slug": "clare-churcher",
+          "name": "Clare Churcher",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/clare-churcher/",
+          "description": "",
+          "story": [
+            "Clare Churcher is named as an author of “Visualisation Techniques for Collaborative GIS Browsers” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:parames-prachuabmoh",
+          "slug": "parames-prachuabmoh",
+          "name": "Parames Prachuabmoh",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/parames-prachuabmoh/",
+          "description": "",
+          "story": [
+            "Parames Prachuabmoh is named as an author of “Visualisation Techniques for Collaborative GIS Browsers” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:samuel-mann",
+          "slug": "samuel-mann",
+          "name": "Samuel Mann",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/samuel-mann/",
+          "description": "",
+          "story": [
+            "Samuel Mann is named as an author of “The GIS revolution, are we ready for GeoComputation?” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:andrew-cardno",
+          "slug": "andrew-cardno",
+          "name": "Andrew Cardno",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/andrew-cardno/",
+          "description": "",
+          "story": [
+            "Andrew Cardno is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:kelly-buchanan",
+          "slug": "kelly-buchanan",
+          "name": "Kelly Buchanan",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/kelly-buchanan/",
+          "description": "",
+          "story": [
+            "Kelly Buchanan is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      },
+      {
+        "collection": "records",
+        "action": "replace",
+        "acceptedEditorialChange": true,
+        "value": {
+          "id": "person:pete-frizzell",
+          "slug": "pete-frizzell",
+          "name": "Pete Frizzell",
+          "kind": "Person",
+          "category": "People",
+          "url": "/people/pete-frizzell/",
+          "description": "",
+          "story": [
+            "Pete Frizzell is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997."
+          ],
+          "sources": [
+            {
+              "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+              "url": "https://www.geocomputation.org/1997/"
+            }
+          ],
+          "paragraphSources": [
+            [
+              {
+                "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+                "url": "https://www.geocomputation.org/1997/"
+              }
+            ]
+          ],
+          "aliases": [],
+          "themeIds": [],
+          "status": "Source-backed historical account",
+          "contextLinks": []
+        }
+      }
+    ],
+    "candidateHash": "6a3b1c9f445a5080238c08a91250cb8a823060229a23a9293e57776278fc0eea"
+  },
+  "expectedGitHead": "961c784021215b4b063a015337266f538187c85d",
+  "counts": {
+    "articles": 45,
+    "passages": 596,
+    "records": 1015,
+    "events": 253,
+    "relationships": 2872,
+    "themes": 8,
+    "images": 185
+  },
+  "appliedAt": "2026-10-13T09:20:43.566Z",
+  "status": "local-candidate-not-published"
+}

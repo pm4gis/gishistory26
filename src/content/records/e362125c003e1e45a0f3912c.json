@@ -1,0 +1,46 @@
+{
+  "id": "person:l-p-lee",
+  "slug": "l-p-lee",
+  "name": "L. P. Lee",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/l-p-lee/",
+  "description": "",
+  "story": [
+    "L. P. Lee published on transverse Mercator computation in 1962 and 1963. His 1974 Pacific-projection paper identifies him as Chief Computer at the Department of Lands and Survey in Wellington. This work belongs to the mathematical and coordinate-computation foundations later used in digital mapping."
+  ],
+  "sources": [
+    {
+      "label": "L. P. Lee, The Transverse Mercator Projection of the Entire Spheroid, Empire Survey Review 16(123), 1962, pp.208–217",
+      "url": "https://doi.org/10.1179/sre.1962.16.123.208"
+    },
+    {
+      "label": "L. P. Lee, A Conformal Projection for the Map of the Pacific, New Zealand Geographer 30(1), 1974; author affiliation: Chief Computer, Department of Lands and Survey",
+      "url": "https://doi.org/10.1111/j.1745-7939.1974.tb00757.x"
+    },
+    {
+      "label": "Snyder and Steward, Bibliography of map projections, USGS Bulletin 1856, 1988",
+      "url": "https://pubs.usgs.gov/publication/b1856"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "L. P. Lee, The Transverse Mercator Projection of the Entire Spheroid, Empire Survey Review 16(123), 1962, pp.208–217",
+        "url": "https://doi.org/10.1179/sre.1962.16.123.208"
+      },
+      {
+        "label": "L. P. Lee, A Conformal Projection for the Map of the Pacific, New Zealand Geographer 30(1), 1974; author affiliation: Chief Computer, Department of Lands and Survey",
+        "url": "https://doi.org/10.1111/j.1745-7939.1974.tb00757.x"
+      },
+      {
+        "label": "Snyder and Steward, Bibliography of map projections, USGS Bulletin 1856, 1988",
+        "url": "https://pubs.usgs.gov/publication/b1856"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

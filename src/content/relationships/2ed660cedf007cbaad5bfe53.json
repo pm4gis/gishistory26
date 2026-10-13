@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-020",
+  "a": "person:marie-clarke",
+  "b": "entity:department-of-lands-and-survey",
+  "label": "Report affiliation, 1977",
+  "basis": "Acknowledged among Department of Lands and Survey staff who supported the national Landsat II investigation in the September 1977 report. The acknowledgement identifies her contribution without specifying an individual technical task.",
+  "passageIds": [
+    "passage:chapter-4-e9b8032a50"
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ]
+}

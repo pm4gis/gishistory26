@@ -1,0 +1,30 @@
+{
+  "id": "person:h-a-jefferies",
+  "slug": "h-a-jefferies",
+  "name": "H. A. Jefferies",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/h-a-jefferies/",
+  "description": "",
+  "story": [
+    "Physics and Engineering Laboratory author credited in the 1977 report’s chapter on cartographic applications of Landsat data. The published affiliation connects this work with the national remote-sensing programme."
+  ],
+  "sources": [
+    {
+      "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+      "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ellis, Thomas and McDonnell (eds), Landsat II Investigation Programme, PEL Report 587, September 1977, affiliations p.9 and contents pp.10–13",
+        "url": "https://ntrs.nasa.gov/api/citations/19770026620/downloads/19770026620.pdf"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed historical account",
+  "contextLinks": []
+}

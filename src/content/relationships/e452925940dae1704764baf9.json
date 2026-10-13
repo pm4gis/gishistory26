@@ -1,0 +1,14 @@
+{
+  "id": "relationship:org-people-20261013-066",
+  "a": "project:sirc-nz-2013",
+  "b": "entity:university-of-otago",
+  "label": "Conference host, 2013",
+  "basis": "Otago records the location, dates and relationship to the NZIS conference.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "University of Otago, SIRC NZ 2013 conference, 29–30 August 2013",
+      "url": "https://www.otago.ac.nz/surveying/news/seminars/-sirc-nz-2013-conference"
+    }
+  ]
+}

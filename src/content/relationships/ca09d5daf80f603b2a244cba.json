@@ -1,0 +1,14 @@
+{
+  "id": "relationship:org-people-20261013-001",
+  "a": "person:munir-morad",
+  "b": "entity:university-of-waikato",
+  "label": "GIS teaching recalled, 1997",
+  "basis": "Wilkins recalls Morad introducing him to KeyCad at Waikato University in early 1997 and supplies the Munro Morad alias.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Duane Wilkins, Waikato University and Munro Morad name clarification, supplied 13 October 2026",
+      "url": "/preface/"
+    }
+  ]
+}

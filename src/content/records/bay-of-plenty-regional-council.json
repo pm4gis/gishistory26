@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/bay-of-plenty-regional-council/",
   "website": "https://www.boprc.govt.nz",
-  "description": "Named in Desktop costs (Chapter 22). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "The Bay of Plenty gives the same period a more personal shape. Stuart Halliday later recorded that he became GIS Team Leader at the Bay of Plenty Regional Council in November 1992 and stayed until July 2003, establishing and implementing the council GIS, writing strategy, supervising three staff and integrating spatial and textual databases. A 2003 national report on New Zealand cartography, to which Halliday contributed, shows that the council did not treat every map-making task as GIS work. In 1998 it created a separate cartography section after deciding that GIS analysis and specialist map production required different skills. CorelDraw, Illustrator and Freehand remained part of the cartographic toolset, supplemented by GIS, CAD and remote-sensing software. Council mapping brought together several specialist systems and working practices."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "Desktop costs",
+      "url": "/stories/gis-comes-to-the-desktop/#desktop-costs-38b6be3006"
     }
   ],
   "aliases": [
     "Bay of Plenty Regional Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Desktop costs",
+        "url": "/stories/gis-comes-to-the-desktop/#desktop-costs-38b6be3006"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

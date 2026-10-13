@@ -1,0 +1,16 @@
+{
+  "id": "relationship:org-people-20261013-060",
+  "a": "person:andrew-cardno",
+  "b": "project:geocomputation-sirc-1997",
+  "label": "Conference paper author, 1997",
+  "basis": "Andrew Cardno is named as an author of “Using Middleware to Provide Geographic Information Systems (GIS) Based on Relational” in the proceedings of GeoComputation and SIRC at the University of Otago, 26–29 August 1997. The entry records this documented research contribution.",
+  "passageIds": [
+    "passage:chapter-11-6b17dc2b4d"
+  ],
+  "sources": [
+    {
+      "label": "Proceedings of the 2nd International Conference on GeoComputation, University of Otago, 26–29 August 1997",
+      "url": "https://www.geocomputation.org/1997/"
+    }
+  ]
+}

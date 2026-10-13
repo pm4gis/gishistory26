@@ -1,3 +1,4 @@
+import {orphanPersonIds} from './record-listing.mjs';
 const PRIVATE_FIELD = /(researchSources|researchRegister|mrr|editorial|review|internal|private|sourceDocument|googleDrive|drive|assetMetadata|storageMetadata|contributor|contact|email|phone|moderator|metadata)/i;
 const PRIVATE_VALUE = /\/assets\/contributions\/|\/drive\/folders\/|research register source|\b(?:MRR|DR|GAP\d*|PE|OP\d*|LINZCAP|BIO|R\d*|C\d*|P\d*|UT\d*|GOV\d*)-[A-Z0-9-]{1,16}\b/i;
 const PRIVATE_URL = /\/assets\/contributions\/|\/drive\/folders\//i;
@@ -124,6 +125,9 @@ export function inspectContent({ records = [], events = [], relationships = [], 
   for (const theme of themes) {
     for (const id of theme.passageIds || []) if (!ids.passages.has(id)) errors.push("theme " + theme.id + ": passage " + id + " is missing");
     for (const stop of theme.stops || []) if (!ids.passages.has(stop.passageId)) errors.push("theme " + theme.id + ": stop passage " + stop.passageId + " is missing");
+  }
+  for (const id of orphanPersonIds({records, relationships, events, passages})) {
+    errors.push('record ' + id + ': a person needs a documented relationship, event or indexed passage');
   }
   privateFields([records, events, relationships, articles, passages, themes, images], "content");
   return errors;

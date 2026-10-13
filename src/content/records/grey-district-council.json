@@ -6,20 +6,33 @@
   "category": "Local government",
   "url": "/entities/grey-district-council/",
   "website": "https://www.greydc.govt.nz",
-  "description": "Named in The parcel becomes a key (Chapter 23). Follow the linked passage for context.",
-  "story": [],
+  "description": "",
+  "story": [
+    "Grey District Council gives a much smaller but unusually concrete view of maintenance. Its 2004 Annual Report records a NZ$200,000 budget to update aerial photographs in the council's GIS system. The work did not proceed that financial year because of other commitments and less suitable prevailing conditions, so the budget was carried into 2004/05. By 2004, Grey District Council was budgeting for a substantial imagery refresh to keep its operational GIS current. Completing the work depended on aircraft availability and suitable flying conditions."
+  ],
   "sources": [
     {
       "label": "LGNZ council directory",
       "url": "https://www.lgnz.co.nz/local-government-in-nz/councils-in-aotearoa/council-websites-and-maps/"
+    },
+    {
+      "label": "The parcel becomes a key",
+      "url": "/stories/councils-build-corporate-gis/#the-parcel-becomes-a-key-bef81bd90d"
     }
   ],
   "aliases": [
     "Grey District Council"
   ],
   "themeIds": [],
-  "status": "Council directory record",
+  "status": "GIS account available",
   "currentCouncil": true,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "The parcel becomes a key",
+        "url": "/stories/councils-build-corporate-gis/#the-parcel-becomes-a-key-bef81bd90d"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }
