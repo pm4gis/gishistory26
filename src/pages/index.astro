@@ -11,6 +11,8 @@ import {chapterNavImageMap} from '../lib/chapter-nav-media.mjs';
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
 const chapterNavImages=chapterNavImageMap(chapters,d.passages,d.images);
+const heroImage=d.images.find((image:any)=>image.slug==='nasa-landsat4-tasman-1990'&&image.assetPath);
+if(!heroImage)throw new Error('The authenticated 1990 Tasman Glacier Landsat image is missing');
 const eligible=new Set(homeHighlightSlugs);
 const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
   const passage=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order)[0];
@@ -23,8 +25,10 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
 ---
 <Layout>
  <div class="wrap home-layout">
-  <section class="hero hero--visual">
-   <DecorativeLandscape id="north2024-raglan1" variant="hero" priority/>
+  <section class="hero hero--visual hero--landsat">
+   <div class="hero-documentary-media">
+    <img src={heroImage.assetPath} alt={heroImage.altText} width="3000" height="3000" loading="eager" fetchpriority="high" decoding="async"/>
+   </div>
    <div class="hero-copy">
     <p class="eyebrow">Maps · people · technology</p>
     <h1>A history of GIS<br/>in New Zealand.</h1>
