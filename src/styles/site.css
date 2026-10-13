@@ -517,6 +517,17 @@
 #chapters #chapter-16 .chapter-card-media--detail img{object-position:48% 50%}
 #chapters #chapter-18 .chapter-card-media--detail img{object-position:50% 43%}
 #chapters #chapter-25 .chapter-card-media--detail img{object-position:50% 50%}
+
+/* Several software interfaces and diagrams contain large white margins in the
+   source sheet. Only their homepage THUMBNAILS show a closer excerpt. */
+#chapters #chapter-21 .chapter-card-media--detail img,
+#chapters #chapter-22 .chapter-card-media--detail img,
+#chapters #chapter-40 .chapter-card-media--detail img{transform:scale(1.2);transform-origin:47% 48%}
+#chapters #chapter-37 .chapter-card-media--detail img{transform:scale(1.16);transform-origin:center}
+#chapters #chapter-41 .chapter-card-media--detail img{transform:scale(1.22);transform-origin:center}
+#chapters #chapter-43 .chapter-card-media--detail img{transform:scale(1.4);transform-origin:43% 48%}
+#chapters #chapter-44 .chapter-card-media--detail img{transform:scale(1.12);transform-origin:center}
+
 #chapters .chapter-card-media--photo img{object-fit:cover;object-position:center;filter:none}
 #chapters .chapter-card-media--photo,#chapters .chapter-card-media--detail{background:var(--raised)}
 #chapters .chapter-card-media{height:auto;min-height:0;isolation:isolate}
