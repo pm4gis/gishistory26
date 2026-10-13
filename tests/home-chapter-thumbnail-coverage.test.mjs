@@ -1,0 +1,61 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync,readdirSync} from 'node:fs';
+import {chapterNavImageMap} from '../src/lib/chapter-nav-media.mjs';
+import {curatedHomepageChapterImages,homepageChapterImageMap} from '../src/lib/home-chapter-thumbnails.mjs';
+
+const raw=collection=>readdirSync('src/content/'+collection)
+ .filter(name=>name.endsWith('.json'))
+ .map(name=>JSON.parse(readFileSync('src/content/'+collection+'/'+name,'utf8')));
+const articles=raw('articles').filter(a=>a.status==='published'&&a.slug!=='preface');
+const passages=raw('passages');
+const images=raw('images');
+
+test('all 44 home chapter cards have authentic project images, with previously reviewed choices preserved',()=>{
+ const reviewed=chapterNavImageMap(articles,passages,images);
+ const covers=homepageChapterImageMap(articles,passages,images);
+ const originalCount=Object.values(reviewed).filter(Boolean).length;
+ assert.equal(articles.length,44);
+ assert.equal(originalCount,19,'do not silently rewrite previously reviewed historical associations');
+ assert.equal(Object.keys(curatedHomepageChapterImages).length,25);
+ for(const article of articles){
+  const card=covers[article.slug];
+  assert.ok(card?.assetPath,'missing authentic chapter image: '+article.readingOrder+' '+article.title);
+  assert.ok(card?.altText?.length>12,'missing accessible alternative text: '+article.slug);
+  assert.ok(card?.sourceUrl,'missing image provenance: '+article.slug);
+  assert.ok(card?.credit,'missing image credit: '+article.slug);
+  if(reviewed[article.slug])assert.equal(card.slug,reviewed[article.slug].slug,'existing passage-reviewed image changed: '+article.slug);
+ }
+ const distinctNew=new Set(Object.values(covers).filter(img=>img.homeCardContextual).map(img=>img.slug));
+ assert.ok(distinctNew.size>=23,'contextual homepage images lack sufficient variety');
+ assert.equal(Object.values(covers).filter(Boolean).length,44);
+});
+
+test('contextual image approval is specific to chapter and cannot silently become in-story evidence',()=>{
+ const rawCard=homepageChapterImageMap(articles,passages,images);
+ const approvedSlugs=new Set(articles.map(a=>a.slug));
+ const recordSlugs=new Set(images.map(x=>x.slug));
+ for(const [slug,choice] of Object.entries(curatedHomepageChapterImages)){
+  assert.ok(approvedSlugs.has(slug),'unknown chapter '+slug);
+  assert.ok(recordSlugs.has(choice.imageSlug),'unknown image '+choice.imageSlug);
+  assert.ok(choice.reason?.length>65,'missing editorial suitability note for '+slug);
+  assert.ok(['photo','map','interface'].includes(choice.kind),'unexpected image framing');
+  assert.ok(rawCard[slug].homeCardContextual,'homepage fallback silently placed in chapter: '+slug);
+ }
+ assert.match(curatedHomepageChapterImages['google-changes-the-audience'].reason,/not Google Earth/);
+ assert.match(curatedHomepageChapterImages['mapping-the-networks'].reason,/not an electricity/);
+ assert.match(curatedHomepageChapterImages['safety-policing-and-emergency-gis'].reason,/distinct from police/);
+});
+
+test('homepage uses the checked image registry and only photographic thumbnails are cropped',()=>{
+ const home=readFileSync('src/pages/index.astro','utf8');
+ const css=readFileSync('src/styles/site.css','utf8');
+ assert.match(home,/homepageChapterImageMap\(chapters,d.passages,d.images\)/);
+ assert.match(home,/homeCardKind==='photo'/);
+ assert.match(home,/src=\{chapterNavImages\[a.slug\].thumbnailPath\|\|chapterNavImages\[a.slug\].assetPath\}/);
+ assert.match(home,/alt=\{chapterNavImages\[a.slug\].altText\}/);
+ assert.match(home,/loading="lazy"/);
+ assert.match(css,/#chapters \.chapter-card-media--photo img\{object-fit:cover;object-position:center\}/);
+ assert.match(css,/\.chapter-card-media img\{width:100%;height:100%;object-fit:contain/);
+ assert.doesNotMatch(home,/decorFor\(a\.readingOrder/);
+});
