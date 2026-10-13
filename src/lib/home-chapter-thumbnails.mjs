@@ -166,7 +166,10 @@ export const homepageFullBleedImageSlugs=new Set([
  'ruapehu-3d-2002',
  'doc-landsat-b68fd62840dccdf1',
  'christchurch-response-orthophoto-2011',
- 'mow-field-trip-gisborne-1971'
+ 'mow-field-trip-gisborne-1971',
+ 'intergraph-clix-workstation',
+ 'te-kuiti-land-development-office',
+ 'victoria-square-aerial-1975'
 ]);
 
 export const homepageMapDetailChapterSlugs=new Set([
@@ -176,7 +179,17 @@ export const homepageMapDetailChapterSlugs=new Set([
  'census-geography',
  'roads-addresses-and-property',
  'gps-changes-where-here-is',
- 'mapping-the-networks'
+ 'mapping-the-networks',
+ 'the-spatial-infrastructure-idea',
+ 'gis-comes-to-the-desktop',
+ 'open-data-changes-access',
+ 'enterprise-gis',
+ 'cloud-services-and-apis',
+ 'automating-the-gis-work',
+ 'lidar-remakes-the-landscape',
+ 'the-first-web-maps',
+ 'the-map-becomes-an-application',
+ 'gis-at-the-end-of-2025'
 ]);
 
 /**
