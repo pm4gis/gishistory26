@@ -95,7 +95,8 @@ test('curated video associations point to published passages, events and people 
  assert.ok(reader.includes('blockIndex===Math.min(1,blocks(p).length-1)'));
  assert.ok(!reader.includes('complete&&article.slug===\'the-map-becomes-an-application\''),'end-of-chapter gallery should be replaced with passage inserts');
  const timeline=readFileSync('src/components/Timeline.svelte','utf8');
- assert.ok(timeline.includes('ngaPoutamaForEvent(selected.id)'));
+ assert.ok(timeline.includes('historicalEventVideos(selected.id)'));
+ assert.ok(timeline.includes('video.publishedOn<=TIMELINE_LAST_DATE'));
 });
 
 
