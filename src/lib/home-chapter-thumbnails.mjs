@@ -136,6 +136,50 @@ export const curatedHomepageChapterImages=Object.freeze({
 });
 
 /**
+ * Explicit homepage-only refinements after desktop and mobile visual/editorial audit.
+ * These never alter accepted illustrations, paragraph anchors or originals inside a chapter.
+ * A review note is required whenever a previously placed in-chapter image is superseded
+ * on the small homepage card by a demonstrably closer illustration.
+ */
+export const reviewedHomepageOverrides=Object.freeze({
+ 'from-flat-maps-to-3d':{
+  imageSlug:'ruapehu-3d-2002',
+  reason:'NASA Earth Observatory 2002 Ruapehu oblique terrain model actually uses satellite imagery and radar elevations to depict a 3D surface; the previous flat aerial image was not a three-dimensional GIS rendering.',
+  kind:'photo'
+ },
+ 'earth-observation-becomes-routine':{
+  imageSlug:'nasa-landsat4-tasman-1990',
+  reason:'Original dated Landsat 4 Tasman Glacier scene of 30 December 1990, expressly discussed in this chapter. It replaces the 2001 Christchurch Landsat scene on this homepage card only, avoiding duplication with the 1975 early-remote-sensing chapter.',
+  kind:'photo'
+ }
+});
+
+/* Frame genuine aerial photography and satellite observations, including images
+ * already reviewed within chapters, to make small cards readable. Maps and
+ * diagrams otherwise retain complete source views unless individually selected.
+ */
+export const homepageFullBleedImageSlugs=new Set([
+ 'doc-aerial-5c1e84f30e04f7e4',
+ 'retrolens-3ec520daec5ae4a0',
+ 'landsat-christchurch-2001',
+ 'nasa-landsat4-tasman-1990',
+ 'ruapehu-3d-2002',
+ 'doc-landsat-b68fd62840dccdf1',
+ 'christchurch-response-orthophoto-2011',
+ 'mow-field-trip-gisborne-1971'
+]);
+
+export const homepageMapDetailChapterSlugs=new Set([
+ 'drawing-maps-by-machine',
+ 'geoscience-and-gis',
+ 'the-cadastre-becomes-data',
+ 'census-geography',
+ 'roads-addresses-and-property',
+ 'gps-changes-where-here-is',
+ 'mapping-the-networks'
+]);
+
+/**
  * Existing verified in-chapter associations always win. Remaining homepage
  * cards use the explicit reviewed chapter-level associations above.
  * No generic aerial/map fallback, automatic asset borrowing or generated maps.
@@ -146,6 +190,19 @@ export function homepageChapterImageMap(articles,passages,images){
  const out=Object.create(null);
  for(const article of articles){
   const original=inline[article.slug];
+  const override=reviewedHomepageOverrides[article.slug];
+  if(override){
+   if(!original)throw new Error('Homepage override lacks a formerly reviewed image: '+article.slug);
+   const selected=bySlug.get(override.imageSlug);
+   if(!selected?.assetPath||!selected.altText||!selected.title||!selected.credit||!selected.sourceUrl){
+    throw new Error('Missing reviewed homepage replacement '+override.imageSlug+' for '+article.slug);
+   }
+   if(selected.articleSlug!==article.slug){
+    throw new Error('Homepage replacement belongs to a different chapter: '+override.imageSlug);
+   }
+   out[article.slug]={...selected,homeCardReason:override.reason,homeCardKind:override.kind,homeCardContextual:true,homeCardReviewedOverride:true};
+   continue;
+  }
   if(original){out[article.slug]=original;continue}
   const chosen=curatedHomepageChapterImages[article.slug];
   if(!chosen){out[article.slug]=null;continue}
