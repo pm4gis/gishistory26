@@ -171,7 +171,7 @@ export const homepageFullBleedImageSlugs=new Set([
 
 export const homepageMapDetailChapterSlugs=new Set([
  'drawing-maps-by-machine',
- 'geoscience-and-gis',
+ 'science-goes-spatial',
  'the-cadastre-becomes-data',
  'census-geography',
  'roads-addresses-and-property',
