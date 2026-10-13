@@ -7,11 +7,11 @@ import {homeHighlightSlugs} from '../lib/home-highlights.mjs';
 import {homeTopoMaps} from '../lib/home-topo-maps.mjs';
 import {decorFor} from '../lib/decor';
 import {dataset} from '../lib/data';
-import {homepageChapterImageMap,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../lib/home-chapter-thumbnails.mjs';
+import {chapterCardImageMap,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../lib/home-chapter-thumbnails.mjs';
 
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
-const chapterNavImages=homepageChapterImageMap(chapters,d.passages,d.images);
+const chapterNavImages=chapterCardImageMap(chapters,d.passages,d.images);
 const eligible=new Set(homeHighlightSlugs);
 const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
   const passage=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order)[0];
