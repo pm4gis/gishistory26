@@ -479,7 +479,7 @@ async function readEditorState(env, includeHistory = false) {
 // Public chronology ends on 31 December 2025. MCP tools must apply the
 // same historical boundary as the GitHub publication and its timeline UI.
 const MCP_TIMELINE_LAST_YEAR = 2025;
-const futureYearInTimelineText = /\\b(?:202[6-9]|20[3-9]\\d|2[1-9]\\d{2})\\b/;
+const futureYearInTimelineText = /\b(?:202[6-9]|20[3-9]\d|2[1-9]\d{2})\b/;
 function isHistoricalTimelineEvent(event) {
   if (!event || typeof event !== 'object') return false;
   if (Number.isFinite(Number(event.year)) && String(event.year ?? '').trim() !== '' && Number(event.year) > MCP_TIMELINE_LAST_YEAR) return false;
