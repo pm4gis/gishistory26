@@ -46,7 +46,7 @@ test('MCP timeline and search exclude every event after 31 December 2025',async(
   {id:'event:retrospective',year:2025,startDate:'2025-01-01',dateDisplay:'2025',label:'A programme',summary:'Work continued in 2027',url:'/timeline/'}
  ]};
  globalThis.fetch=async()=>new Response(JSON.stringify({revision:'github-test',data:dataset}),{status:200,headers:{'content-type':'application/json'}});
- const env={EDITORIAL_DB:{prepare(){return {async first(){return state;}}}}};
+ const env={EDITORIAL_DB:{prepare(){return {async first(){return state;},async all(){return {results:[]};}}}}};
  try{
   const listed=await rpc(env,'list_timeline',{});
   assert.equal(listed.result.isError,false);
@@ -58,6 +58,6 @@ test('MCP timeline and search exclude every event after 31 December 2025',async(
   assert.deepEqual(valid.result.structuredContent.results.map(event=>event.id),['event:valid']);
   const publishedState=await rpc(env,'get_publication_state',{});
   assert.equal(publishedState.result.isError,false);
-  assert.equal(publishedState.result.structuredContent.publication.eventCount,1);
+  assert.equal(publishedState.result.structuredContent.eventCount,1);
  } finally {globalThis.fetch=originalFetch;}
 });
