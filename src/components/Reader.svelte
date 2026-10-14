@@ -54,7 +54,7 @@
 <svelte:window on:keydown={(e)=>{if(e.key==='Escape'&&selected){e.preventDefault();close(true)}}}/>
 <div class="reading-shell" style={`--reading-size:${size}px`}>
  <header class="reading-heading"><a class="breadcrumb" href="/read/">Chapter contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p><div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
- {#if events.length}<Timeline {events} compact={true} onSelect={selectEvent}/>{/if}
+ {#key complete?'chapter':current?.id||'page'}<Timeline {events} compact={true} currentPassageId={complete?null:current?.id||null} onSelect={selectEvent}/>{/key}
  <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Related entries · {relevant.length}</button></div>
  <div class="reading-grid"><aside class:open={contentsOpen} class="contents" aria-label="Chapter contents"><p class="eyebrow">In this chapter</p>{#each passages as p,i}<a href={article.url+'?mode=page#'+p.slug} class:active={page===i} on:click={(e)=>{e.preventDefault();go(i);contentsOpen=false}}>{p.title}</a>{/each}<a href="/read/">All chapters →</a></aside>
  <article class="page" aria-label="Chapter text" data-pagefind-body ><span class="sr-only" data-pagefind-filter="type">Chapter</span>
