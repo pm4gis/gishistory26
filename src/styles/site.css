@@ -549,7 +549,7 @@
   border-color:color-mix(in srgb,var(--line) 74%,transparent);
   box-shadow:var(--shade),inset 0 1px 0 color-mix(in srgb,var(--surface) 68%,transparent);
  }
- button:not([aria-pressed="true"]):not(.inline-record):not(.primary),.button:not(.primary),.period-choice:not([aria-pressed="true"]){
+ button:not([aria-pressed="true"]):not(.inline-record):not(.primary),.button:not(.primary):not(.passage-contribute),.period-choice:not([aria-pressed="true"]){
   background:var(--raised);
   background:color-mix(in srgb,var(--raised) 84%,transparent);
   border-color:color-mix(in srgb,var(--line) 78%,transparent);
@@ -557,7 +557,7 @@
   -webkit-backdrop-filter:blur(8px) saturate(125%);
   backdrop-filter:blur(8px) saturate(125%);
  }
- button:not([aria-pressed="true"]):not(.inline-record):not(.primary):hover,.button:not(.primary):hover{
+ button:not([aria-pressed="true"]):not(.inline-record):not(.primary):hover,.button:not(.primary):not(.passage-contribute):hover{
   border-color:var(--accent);
   box-shadow:0 7px 20px color-mix(in srgb,var(--accent) 12%,transparent),inset 0 1px 0 color-mix(in srgb,var(--surface) 72%,transparent);
  }
