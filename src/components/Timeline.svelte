@@ -237,6 +237,6 @@
 .timeline-mark:focus-visible circle{stroke:var(--text);filter:drop-shadow(0 0 3px var(--accent))}
 .timeline-hover-label{min-height:1.5em;padding:0 0 3px;color:var(--muted);font-size:12px}
 @keyframes timeline-marker-in{from{opacity:.45;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:700px){.timeline-overview-toolbar{align-items:flex-start;flex-direction:column}.timeline-zoom-controls{width:100%}.timeline-zoom-level{flex:1}.timeline-zoom-level input{width:min(40vw,150px)}}
+@media(max-width:700px){.timeline-scope-controls{align-items:flex-start;flex-direction:column}.timeline-overview-toolbar{align-items:flex-start;flex-direction:column}.timeline-zoom-controls{width:100%}.timeline-zoom-level{flex:1}.timeline-zoom-level input{width:min(40vw,150px)}}
 @media(prefers-reduced-motion:reduce){.timeline-mark,.timeline-mark circle,.timeline-mark .timeline-span{animation:none!important;transition:none!important}}
 </style>
