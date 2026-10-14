@@ -6,7 +6,8 @@
   "category": "People",
   "url": "/people/linda-lilburne/",
   "story": [
-    "Landcare Research scientist Linda Lilburne used the wider Internet to seek practical advice. She asked a Usenet artificial-intelligence group whether anyone had integrated an expert system with GIS, then later returned with a summary after finding that many of the replies were people asking her to forward whatever answers she received. She did exactly that, circulating the useful references and examples back to the group."
+    "At Landcare Research, Linda Lilburne was involved in the early exchange of practical GIS knowledge over the Internet. She asked a Usenet artificial-intelligence discussion group whether anyone had integrated an expert system with a GIS. When others asked to see the answers, she returned with a summary of the information and references received. The exchange is recorded in the history of New Zealand’s early GIS user community.",
+    "Lilburne also worked on digital soil information. With Allan Hewitt and Trevor Webb she authored a 2012 paper explaining the design of S-map, New Zealand’s soil-information system, and the combination of soil science, models and informatics behind it. Landcare Research subsequently identified her as a principal scientist in spatial data science and named her among the authors of its account of the S-map expansion."
   ],
   "sources": [
     {
@@ -16,6 +17,14 @@
     {
       "label": "Chapter 12 · Users organise themselves",
       "url": "/stories/an-industry-and-community-form/"
+    },
+    {
+      "label": "Manaaki Whenua, References and citing S-map: Lilburne, Hewitt and Webb (2012)",
+      "url": "https://smap.landcareresearch.co.nz/support/citing-s-map"
+    },
+    {
+      "label": "Manaaki Whenua, S-map expands further and reaches 11 million hectares",
+      "url": "https://www.landcareresearch.co.nz/publications/soil-horizons/soil-horizons-articles/s-map-expands-further-and-reaches-11-million-hectares/"
     }
   ],
   "aliases": [
@@ -29,8 +38,18 @@
   "biographyParagraphSources": [
     [
       {
-        "label": "Chapter 12 · Users organise themselves",
+        "label": "Chapter 12, Users organise themselves",
         "url": "/stories/an-industry-and-community-form/"
+      }
+    ],
+    [
+      {
+        "label": "Manaaki Whenua, References and citing S-map: Lilburne, Hewitt and Webb (2012)",
+        "url": "https://smap.landcareresearch.co.nz/support/citing-s-map"
+      },
+      {
+        "label": "Manaaki Whenua, S-map expands further and reaches 11 million hectares",
+        "url": "https://www.landcareresearch.co.nz/publications/soil-horizons/soil-horizons-articles/s-map-expands-further-and-reaches-11-million-hectares/"
       }
     ]
   ]

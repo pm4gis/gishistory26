@@ -1,0 +1,14 @@
+{
+  "id": "relationship:research-20261015-pimblotts-founded-explorer",
+  "a": "person:beryl-pimblott",
+  "b": "person:david-pimblott",
+  "label": "Co-founded Explorer Graphics",
+  "basis": "NorthSouth GIS identifies David and Beryl Pimblott as the joint founders of Explorer Graphics Ltd in 1987.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "NorthSouth GIS, History",
+      "url": "https://www.northsouthgis.com/about-nsg/history"
+    }
+  ]
+}

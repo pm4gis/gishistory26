@@ -1,0 +1,14 @@
+{
+  "id": "relationship:research-20261015-mary-de-winton-niwa",
+  "a": "person:mary-de-winton",
+  "b": "entity:niwa",
+  "label": "Worked at",
+  "basis": "NIWA’s September 2004 article identifies Mary de Winton as based at its Hamilton office.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, 1 September 2004",
+      "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    }
+  ]
+}

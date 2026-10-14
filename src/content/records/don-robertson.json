@@ -6,7 +6,7 @@
   "category": "People",
   "url": "/people/don-robertson/",
   "story": [
-    "Don Robertson and Mary de Winton described the Freshwater Biodata Information System, FBIS, as a web-based system joining records for fish, invertebrates, submerged macrophytes and other freshwater biota, some of them extending back decades. Users could search by organism, sampling attributes or location, and a web map allowed sites to be selected geographically. Their 2004 article includes a screen image showing how users accessed the records."
+    "Don Robertson was NIWA’s General Manager, Biodiversity, Biosecurity and Information Systems when he and Hamilton-based researcher Mary de Winton described the Freshwater Biodata Information System in September 2004. Their published account explained how the web service joined older freshwater biological records with searches by organism, catchment, river reach and mapped area. It also set out plans for the wider Freshwater Information New Zealand system, which remained under development."
   ],
   "sources": [
     {
@@ -27,11 +27,7 @@
   "biographyParagraphSources": [
     [
       {
-        "label": "Chapter 9 · The CRI reorganisation",
-        "url": "/stories/science-goes-spatial/"
-      },
-      {
-        "label": "Don Robertson and Mary de Winton, FBIS: a new freshwater biodata information system, 1 September 2004",
+        "label": "Don Robertson and Mary de Winton, FBIS: a new freshwater biodata information system, NIWA Water & Atmosphere, 1 September 2004",
         "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
       }
     ]

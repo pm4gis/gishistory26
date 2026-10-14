@@ -1,0 +1,14 @@
+{
+  "id": "relationship:research-20261015-lilburne-smap",
+  "a": "person:linda-lilburne",
+  "b": "system:s-map-online",
+  "label": "Published system research",
+  "basis": "Lilburne co-authored the 2012 Geoderma paper on the S-map information system design.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, References and citing S-map, including Lilburne, Hewitt and Webb (2012)",
+      "url": "https://smap.landcareresearch.co.nz/support/citing-s-map"
+    }
+  ]
+}

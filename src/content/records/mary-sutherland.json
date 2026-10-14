@@ -6,8 +6,8 @@
   "category": "People",
   "url": "/people/mary-sutherland/",
   "story": [
-    "Mary Sutherland was the first woman in the United Kingdom to complete a forestry BSc and became New Zealand's first forestry assistant in 1923. Her work included botanical research, including a 1934 paper on pines. After working at the Dominion Museum, she became the Department of Agriculture's farm forestry officer in 1946, planning plantations, inspecting sites and writing about trees on farms.",
-    "Mary Sutherland was a professionally qualified forester whose 1923–32 work included technical calculation and laboratory duties while accommodation rules limited field deployment."
+    "Mary Sutherland (1893–1955) was a forester and botanist who became New Zealand’s first woman appointed to a professional forestry position in the State Forest Service in 1923. She had already become the first woman in the United Kingdom to complete a forestry BSc. Restrictions on mixed field accommodation limited her assignments in New Zealand, so much of her early work involved technical calculations, plantation records and microscopic studies of conifers. She researched pine-leaf structure and participated in the New Zealand Institute of Foresters.",
+    "After retrenchment in 1932, Sutherland worked at the Dominion Museum. In 1946 she became the Department of Agriculture’s farm forestry officer, planning plantings and advising on farm shelter belts and woodlots. Her work belongs to the surveying, inventory and land-management practices that preceded computerised forestry mapping; the available biography does not attribute GIS work to her."
   ],
   "sources": [
     {
@@ -17,6 +17,10 @@
     {
       "label": "Mary Sutherland · career/profile reference",
       "url": "https://www.royalsociety.org.nz/150th-anniversary/150-women-in-150-words/1918-1967/mary-sutherland"
+    },
+    {
+      "label": "Michael Roche, Sutherland, Mary, Dictionary of New Zealand Biography, Te Ara",
+      "url": "https://teara.govt.nz/en/biographies/4s58/sutherland-mary"
     }
   ],
   "aliases": [
@@ -30,14 +34,18 @@
   "biographyParagraphSources": [
     [
       {
-        "label": "Mary Sutherland · career/profile reference",
-        "url": "https://www.royalsociety.org.nz/150th-anniversary/150-women-in-150-words/1918-1967/mary-sutherland"
+        "label": "Michael Roche, Sutherland, Mary, Dictionary of New Zealand Biography, Te Ara",
+        "url": "https://teara.govt.nz/en/biographies/4s58/sutherland-mary"
       }
     ],
     [
       {
-        "label": "Dictionary of New Zealand Biography / Te Ara, Mary Sutherland",
-        "url": "https://teara.govt.nz/en/biographies/4s58/sutherland-mary/print"
+        "label": "Michael Roche, Sutherland, Mary, Dictionary of New Zealand Biography, Te Ara",
+        "url": "https://teara.govt.nz/en/biographies/4s58/sutherland-mary"
+      },
+      {
+        "label": "Royal Society Te Apārangi, Mary Sutherland, 150 Women in 150 Words",
+        "url": "https://www.royalsociety.org.nz/150th-anniversary/150-women-in-150-words/1918-1967/mary-sutherland"
       }
     ]
   ]

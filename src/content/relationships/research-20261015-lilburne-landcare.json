@@ -1,0 +1,14 @@
+{
+  "id": "relationship:research-20261015-lilburne-landcare",
+  "a": "person:linda-lilburne",
+  "b": "entity:manaaki-whenua-landcare-research",
+  "label": "Principal scientist, spatial data science",
+  "basis": "Manaaki Whenua identifies Linda Lilburne as a principal scientist in spatial data science in its S-map publication.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Manaaki Whenua, S-map expands further and reaches 11 million hectares",
+      "url": "https://www.landcareresearch.co.nz/publications/soil-horizons/soil-horizons-articles/s-map-expands-further-and-reaches-11-million-hectares/"
+    }
+  ]
+}

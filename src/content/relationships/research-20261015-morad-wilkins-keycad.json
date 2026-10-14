@@ -1,0 +1,14 @@
+{
+  "id": "relationship:research-20261015-morad-wilkins-keycad",
+  "a": "person:munir-morad",
+  "b": "person:duane-wilkins",
+  "label": "Introduced KeyCad in 1997",
+  "basis": "Wilkins recalls learning KeyCad from Morad at the University of Waikato in early 1997.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Preface, Duane Wilkins’s Waikato University recollection",
+      "url": "/preface/"
+    }
+  ]
+}
