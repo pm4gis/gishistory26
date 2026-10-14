@@ -1,0 +1,14 @@
+{
+  "id": "relationship:research-20261015-reihana-ruka-wiss",
+  "a": "person:malindi-reihana-ruka",
+  "b": "entity:women-in-spatial-survey",
+  "label": "Student representative in historical committee profile",
+  "basis": "The group’s undated committee biography identifies Malindi Reihana-Ruka as student representative; current status is not inferred.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Women in Spatial + Surveying, The Committee",
+      "url": "https://womeninspatial.wordpress.com/the-committee/"
+    }
+  ]
+}

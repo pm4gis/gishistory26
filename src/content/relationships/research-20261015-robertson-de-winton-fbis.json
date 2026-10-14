@@ -1,0 +1,14 @@
+{
+  "id": "relationship:research-20261015-robertson-de-winton-fbis",
+  "a": "person:don-robertson",
+  "b": "person:mary-de-winton",
+  "label": "Co-authored a 2004 article",
+  "basis": "Both people are credited as authors of NIWA’s September 2004 account of FBIS.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Robertson and de Winton, FBIS, NIWA Water & Atmosphere, 1 September 2004",
+      "url": "https://niwa.co.nz/water-atmosphere/vol12-no3-september-2004/fbis-new-freshwater-biodata-information-system"
+    }
+  ]
+}

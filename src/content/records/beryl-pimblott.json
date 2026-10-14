@@ -6,8 +6,8 @@
   "category": "People",
   "url": "/people/beryl-pimblott/",
   "story": [
-    "Beryl Pimblott co-founded Explorer Graphics with David Pimblott in 1987. NorthSouth GIS’s company history credits the Pimblotts and Daniel Elroi with the international collaboration established in 2005. The New Zealand business adopted the NorthSouth GIS name in 2011 and was acquired by AAM in 2014. The source establishes Beryl’s founding role without specifying an individual technical portfolio.",
-    "Explorer Graphics was founded by David and Beryl Pimblott in 1987 and became an early specialist GIS and computer-mapping consultancy. Its later history spans workstation GIS, local-government work and eventually public web mapping. By the late 1980s, organisations could purchase GIS services from specialist firms."
+    "Beryl Pimblott and David Pimblott founded Explorer Graphics Ltd in New Zealand in 1987. It was an early specialist GIS consultancy at a time when businesses and councils were beginning to obtain computer mapping services from commercial suppliers. NorthSouth GIS’s published company history names both founders; it does not assign Beryl a separate technical specialisation.",
+    "In 2005 the Pimblotts and Daniel Elroi established an international NorthSouth GIS collaboration. Explorer Graphics adopted the NorthSouth GIS NZ name in 2011, and the New Zealand company was acquired by AAM in 2014. These dates trace the business that Beryl co-founded without assuming that her individual role remained unchanged throughout those later reorganisations."
   ],
   "sources": [
     {
@@ -36,8 +36,8 @@
     ],
     [
       {
-        "label": "Chapter 6 · A local market",
-        "url": "/stories/when-gis-became-gis/"
+        "label": "NorthSouth GIS, History",
+        "url": "https://www.northsouthgis.com/about-nsg/history"
       }
     ]
   ]
