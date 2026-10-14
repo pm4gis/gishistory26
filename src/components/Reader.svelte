@@ -27,7 +27,7 @@
  async function chapter(){complete=true;history.pushState(null,'',article.url+'#'+current.slug);save();await tick();document.getElementById(current.slug)?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})}
  function fromURL(){let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{}const i=passages.findIndex(p=>p.slug===id||p.legacyAnchor===id||p.id===id||p.blocks?.some((b:any)=>b.id===id));if(i>=0)page=i;complete=new URLSearchParams(location.search).get('mode')!=='page'}
  function restoreDeepLink(){if(!location.hash)return;let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{return}tick().then(()=>requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({block:'start',behavior:'auto'})))}
- function selectEvent(e:any){const i=passages.findIndex(p=>e.passageIds?.includes(p.id));if(i>=0)go(i)}
+ function selectEvent(e:any){const currentIndex=passages.findIndex(p=>p.id===current?.id);const i=currentIndex>=0&&e.passageIds?.includes(current?.id)?currentIndex:passages.findIndex(p=>e.passageIds?.includes(p.id));if(i>=0)go(i)}
  function cancelPreview(){if(previewTimer)clearTimeout(previewTimer)}
  function hover(r:any,trigger:HTMLElement){cancelPreview();previewTimer=setTimeout(()=>{previewTrigger=trigger;selected=r},300)}
  function leavePreview(){cancelPreview();previewTimer=setTimeout(()=>close(false),300)}
