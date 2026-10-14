@@ -217,7 +217,7 @@
  {/if}
 </section>
 <style>
-.timeline-scope-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0;color:var(--muted);font-size:13px}
+.timeline-scope-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0;padding:9px 12px;color:var(--muted);font-size:13px;background:var(--glass);border:1px solid var(--line);border-radius:12px;box-shadow:inset 0 1px 0 color-mix(in srgb,var(--surface) 68%,transparent)}
 .timeline-scope-controls p{margin:0}
 .timeline-scope-controls button{flex:0 0 auto}
 .timeline-overview-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:10px 0 3px;font-size:13px}
