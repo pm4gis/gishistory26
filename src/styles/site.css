@@ -537,3 +537,36 @@
 #chapters .chapter-card-media{height:auto;min-height:0;isolation:isolate}
 #chapters .chapter-card-media img{will-change:auto}
 @media (prefers-reduced-motion:reduce){#chapters .chapter-card-media img{transition:none!important}}
+
+/* Glass surfaces across shared site components */
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+ :root{--glass-panel:color-mix(in srgb,var(--surface) 84%,transparent)}
+ .topbar,.card,.page,.timeline-box,.image-source-card,.network-canvas,.reader-popover,.contents.open,.related.open{
+  background:var(--surface);
+  background:linear-gradient(145deg,color-mix(in srgb,var(--surface) 94%,transparent),var(--glass-panel));
+  -webkit-backdrop-filter:blur(16px) saturate(132%);
+  backdrop-filter:blur(16px) saturate(132%);
+  border-color:color-mix(in srgb,var(--line) 74%,transparent);
+  box-shadow:var(--shade),inset 0 1px 0 color-mix(in srgb,var(--surface) 68%,transparent);
+ }
+ button:not([aria-pressed="true"]):not(.inline-record):not(.primary),.button:not(.primary),.period-choice:not([aria-pressed="true"]){
+  background:var(--raised);
+  background:color-mix(in srgb,var(--raised) 84%,transparent);
+  border-color:color-mix(in srgb,var(--line) 78%,transparent);
+  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--surface) 62%,transparent);
+  -webkit-backdrop-filter:blur(8px) saturate(125%);
+  backdrop-filter:blur(8px) saturate(125%);
+ }
+ button:not([aria-pressed="true"]):not(.inline-record):not(.primary):hover,.button:not(.primary):hover{
+  border-color:var(--accent);
+  box-shadow:0 7px 20px color-mix(in srgb,var(--accent) 12%,transparent),inset 0 1px 0 color-mix(in srgb,var(--surface) 72%,transparent);
+ }
+ .cards .card,.timeline-event{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+ .cards .card:hover,.timeline-event:hover{
+  transform:translateY(-2px);
+  border-color:var(--accent);
+  box-shadow:var(--shade),inset 0 1px 0 color-mix(in srgb,var(--surface) 76%,transparent);
+ }
+}
+@media(prefers-reduced-motion:reduce){.cards .card:hover,.timeline-event:hover{transform:none}}
+
