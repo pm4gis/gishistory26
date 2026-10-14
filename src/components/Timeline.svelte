@@ -3,13 +3,16 @@
  import {ngaPoutamaForEvent} from '../lib/nga-poutama-videos.mjs';
  import {onMount} from 'svelte';
  import {TIMELINE_LAST_YEAR,TIMELINE_LAST_DATE,isTimelineEventInPeriod} from '../lib/timeline-cutoff.mjs';
+ import {timelineEventsForScope} from '../lib/timeline-page-scope.mjs';
  export let events:any[]=[];
  export let compact=false;
+ export let currentPassageId:string|null=null;
  export let onSelect:(e:any)=>void=()=>{};
  let from='';
  let to='';
  let term='';
  let selected:any=null;
+ let showChapterEvents=false;
  let includeUndated=true;
  let zoom=1;
  let hoveredId='';
@@ -27,7 +30,9 @@
   return match?Number(match[0]):year(event);
  };
  $: timelineEvents=events.filter(isTimelineEventInPeriod);
- $: dated=timelineEvents.filter(e=>year(e)!==null);
+ $: pageEvents=timelineEventsForScope(timelineEvents,currentPassageId,false);
+ $: scopedEvents=timelineEventsForScope(timelineEvents,currentPassageId,showChapterEvents);
+ $: dated=scopedEvents.filter(e=>year(e)!==null);
  $: min=Math.min(...dated.map(e=>year(e) as number),1900);
  $: max=TIMELINE_LAST_YEAR;
  $: rangeStart=from&&Number.isFinite(Number(from))?Math.max(min,Math.min(max,Number(from))):min;
@@ -39,7 +44,7 @@
  $: viewMin=Math.max(min,Math.min(max-1,centre-zoomSpan/2));
  $: viewMax=Math.min(max,Math.max(viewMin+1,centre+zoomSpan/2));
  $: scale=scaleLinear().domain([viewMin,viewMax]).range([30,970]);
- $: filtered=timelineEvents.filter(e=>{
+ $: filtered=scopedEvents.filter(e=>{
   const y=year(e);
   if(y===null&&!includeUndated)return false;
   const end=endYear(e)??y;
@@ -109,7 +114,8 @@
   }
  });
 </script>
-<section class="timeline-box" aria-label="Linked timeline"><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?'This chapter in time':'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
+<section class="timeline-box" aria-label={compact && currentPassageId && !showChapterEvents ? 'Events linked to this passage' : compact ? 'Chapter timeline' : 'Explore the chronology'}><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?(currentPassageId && !showChapterEvents?'This page in time':'This chapter in time'):'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
+ {#if compact && currentPassageId}<div class="timeline-scope-controls"><p aria-live="polite">{showChapterEvents?`Showing all ${timelineEvents.length} events in this chapter.`:`${pageEvents.length} ${pageEvents.length===1?'event':'events'} linked to this passage.`}</p>{#if pageEvents.length!==timelineEvents.length}<button type="button" aria-pressed={showChapterEvents} on:click={()=>{showChapterEvents=!showChapterEvents;selected=null;hoveredId=''}}>{showChapterEvents?'Show this page only':`Browse all ${timelineEvents.length} chapter events`}</button>{/if}</div>{/if}
  {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={updateURL}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
  <div class="period-head"><h2>{activeDecade===null?'Choose a decade':`Choose a five-year period in the ${activeDecade}s`}</h2><p>{activeDecade===null?'Move from left to right through the history. Select a decade to focus the events below.':'The timeline is focused on a five-year span. Choose the first or second half of this decade.'}</p></div>
  <nav class="period-nav" aria-label={activeDecade===null?'Timeline decades':'Five-year timeline periods'}>
@@ -124,6 +130,7 @@
  <button class="period-choice" class:active={activeFiveYearStart===group.start} aria-pressed={activeFiveYearStart===group.start} on:click={()=>chooseFiveYear(group.start)}><strong>{group.start}–{group.end}</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/fiveYearDensityMax*100)+'%'}></i></button>
  {/each}
  {/if}</nav>{/if}
+ {#if !compact || scopedEvents.length}
   <div class="timeline-overview-toolbar" aria-label="Timeline overview controls">
   <div><strong>Event date map</strong><span>{chartMarks.length} markers in view · {yearLabel(viewMin)}–{yearLabel(viewMax)}</span></div>
   {#if !compact}<div class="timeline-zoom-controls">
@@ -149,17 +156,18 @@
   {/each}
  </svg>
  <div class="timeline-hover-label" aria-hidden="true">{#if hoveredEvent}{hoveredEvent.dateDisplay} · {hoveredEvent.label}{:else}Hover or focus a marker to preview it; select to open its account.{/if}</div>
- <div class="timeline-result-count" aria-live="polite">{filtered.length} of {timelineEvents.length} events {#if !compact}· {chartMarks.length} markers in the overview · Select an event for its summary, sources and related account{/if}</div>
+ <div class="timeline-result-count" aria-live="polite">{filtered.length} of {scopedEvents.length} events {#if !compact}· {chartMarks.length} markers in the overview · Select an event for its summary, sources and related account{/if}</div>
+ {/if}
 
- <div class="timeline-rail" tabindex="0" aria-label="Chronological event buttons">
+ {#if filtered.length}<div class="timeline-rail" tabindex="0" aria-label="Chronological event buttons">
  {#each filtered as e (e.id)}
  <button class={'timeline-event'+(e.featuredImage?' timeline-event--photo':'')} aria-pressed={selected?.id===e.id} aria-label={e.dateDisplay+': '+e.label} on:click={()=>pick(e)}>
  {#if e.featuredImage}<img class="timeline-event-photo" src={e.featuredImage.cardPath} alt="" loading="lazy" decoding="async"/>{/if}
  <span class="timeline-event-body"><small>{e.dateDisplay} · {e.datePrecision}</small><span class="timeline-event-title">{e.label}</span>{#if !compact}<span class="timeline-event-teaser">{e.summary}</span>{/if}</span>
  </button>
  {/each}
- </div>
- {#if !filtered.length}<p class="empty">No events in this period. Clear the filters to see all dates.</p>{/if}
+ </div>{/if}
+ {#if !filtered.length}<p class="empty">{#if compact && currentPassageId && !showChapterEvents}{#if timelineEvents.length}No timeline events are linked to this passage. Browse all {timelineEvents.length} events in this chapter, or open the full timeline.{:else}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{/if}{:else if compact}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{:else}No events in this period. Clear the filters to see all dates.{/if}</p>{/if}
 
  {#if selected}
  <section class="event-summary" aria-live="polite">
@@ -209,6 +217,9 @@
  {/if}
 </section>
 <style>
+.timeline-scope-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0;padding:9px 12px;color:var(--muted);font-size:13px;background:var(--glass);border:1px solid var(--line);border-radius:12px;box-shadow:inset 0 1px 0 color-mix(in srgb,var(--surface) 68%,transparent)}
+.timeline-scope-controls p{margin:0}
+.timeline-scope-controls button{flex:0 0 auto}
 .timeline-overview-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:10px 0 3px;font-size:13px}
 .timeline-overview-toolbar>div:first-child{display:grid;gap:4px}
 .timeline-overview-toolbar>div:first-child span{color:var(--muted)}
@@ -226,6 +237,6 @@
 .timeline-mark:focus-visible circle{stroke:var(--text);filter:drop-shadow(0 0 3px var(--accent))}
 .timeline-hover-label{min-height:1.5em;padding:0 0 3px;color:var(--muted);font-size:12px}
 @keyframes timeline-marker-in{from{opacity:.45;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:700px){.timeline-overview-toolbar{align-items:flex-start;flex-direction:column}.timeline-zoom-controls{width:100%}.timeline-zoom-level{flex:1}.timeline-zoom-level input{width:min(40vw,150px)}}
+@media(max-width:700px){.timeline-scope-controls{align-items:flex-start;flex-direction:column}.timeline-overview-toolbar{align-items:flex-start;flex-direction:column}.timeline-zoom-controls{width:100%}.timeline-zoom-level{flex:1}.timeline-zoom-level input{width:min(40vw,150px)}}
 @media(prefers-reduced-motion:reduce){.timeline-mark,.timeline-mark circle,.timeline-mark .timeline-span{animation:none!important;transition:none!important}}
 </style>

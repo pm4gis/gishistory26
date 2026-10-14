@@ -27,7 +27,7 @@
  async function chapter(){complete=true;history.pushState(null,'',article.url+'#'+current.slug);save();await tick();document.getElementById(current.slug)?.scrollIntoView({block:'start',behavior:motion?'smooth':'auto'})}
  function fromURL(){let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{}const i=passages.findIndex(p=>p.slug===id||p.legacyAnchor===id||p.id===id||p.blocks?.some((b:any)=>b.id===id));if(i>=0)page=i;complete=new URLSearchParams(location.search).get('mode')!=='page'}
  function restoreDeepLink(){if(!location.hash)return;let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{return}tick().then(()=>requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({block:'start',behavior:'auto'})))}
- function selectEvent(e:any){const i=passages.findIndex(p=>e.passageIds?.includes(p.id));if(i>=0)go(i)}
+ function selectEvent(e:any){const currentIndex=passages.findIndex(p=>p.id===current?.id);const i=currentIndex>=0&&e.passageIds?.includes(current?.id)?currentIndex:passages.findIndex(p=>e.passageIds?.includes(p.id));if(i>=0)go(i)}
  function cancelPreview(){if(previewTimer)clearTimeout(previewTimer)}
  function hover(r:any,trigger:HTMLElement){cancelPreview();previewTimer=setTimeout(()=>{previewTrigger=trigger;selected=r},300)}
  function leavePreview(){cancelPreview();previewTimer=setTimeout(()=>close(false),300)}
@@ -54,7 +54,7 @@
 <svelte:window on:keydown={(e)=>{if(e.key==='Escape'&&selected){e.preventDefault();close(true)}}}/>
 <div class="reading-shell" style={`--reading-size:${size}px`}>
  <header class="reading-heading"><a class="breadcrumb" href="/read/">Chapter contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p><div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
- {#if events.length}<Timeline {events} compact={true} onSelect={selectEvent}/>{/if}
+ {#key complete?'chapter':current?.id||'page'}<Timeline {events} compact={true} currentPassageId={complete?null:current?.id||null} onSelect={selectEvent}/>{/key}
  <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Related entries · {relevant.length}</button></div>
  <div class="reading-grid"><aside class:open={contentsOpen} class="contents" aria-label="Chapter contents"><p class="eyebrow">In this chapter</p>{#each passages as p,i}<a href={article.url+'?mode=page#'+p.slug} class:active={page===i} on:click={(e)=>{e.preventDefault();go(i);contentsOpen=false}}>{p.title}</a>{/each}<a href="/read/">All chapters →</a></aside>
  <article class="page" aria-label="Chapter text" data-pagefind-body ><span class="sr-only" data-pagefind-filter="type">Chapter</span>
