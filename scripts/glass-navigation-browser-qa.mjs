@@ -45,7 +45,7 @@ async function contrastValues(page){
    muted:ratio(variable('muted'),variable('surface')),
    summaryColor:getComputedStyle(summary).color,
    headerFilter:getComputedStyle(document.querySelector('.topbar')).backdropFilter,
-   themeLinkCount:document.querySelectorAll('.nav--desktop .nav-theme-grid a').length,
+   themeLinkCount:document.querySelectorAll('.nav--desktop .nav-dropdown--themes .nav-theme-grid a').length,
   };
  });
 }
@@ -184,7 +184,7 @@ try{
  await page.goto(base+'/',{waitUntil:'domcontentloaded'});
  await check('animated disclosure respects normal motion settings',async()=>{
   await page.locator('.nav--desktop .nav-theme-toggle').click();
-  assert.equal(await page.locator('.nav--desktop .nav-dropdown-panel').evaluate(el=>getComputedStyle(el).animationName),'glass-menu-enter');
+  assert.equal(await page.locator('.nav--desktop .nav-dropdown--themes .nav-dropdown-panel').evaluate(el=>getComputedStyle(el).animationName),'glass-menu-enter');
  });
  await context.close();
 }finally{
