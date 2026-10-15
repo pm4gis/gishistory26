@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-primary-parcels",
+  "slug": "nz-primary-parcels",
+  "name": "NZ Primary Parcels",
+  "kind": "Dataset",
+  "category": "Property and address datasets",
+  "url": "/datasets/nz-primary-parcels/",
+  "description": "National primary land-parcel boundaries, including legal description, area, parcel purpose and associated title references.",
+  "story": [
+    "LINZ publishes primary cadastral parcel geometry from Landonline through the LINZ Data Service. Each polygon represents a primary parcel, including parcels for privately held land, Crown land, roads, Māori land and water bodies; it is not necessarily the same as a rating unit or property boundary.",
+    "The digital lineage runs through the earlier Digital Cadastral Database into Landonline and open web delivery. The publicly available layer includes parcel identifiers and references to titles, but the parcels and titles datasets serve different purposes."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Primary Parcels",
+      "url": "https://data.linz.govt.nz/layer/50772-nz-primary-parcels/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Primary Parcels",
+        "url": "https://data.linz.govt.nz/layer/50772-nz-primary-parcels/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Primary Parcels",
+        "url": "https://data.linz.govt.nz/layer/50772-nz-primary-parcels/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/the-cadastre-becomes-data/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Primary Parcels",
+      "url": "https://data.linz.govt.nz/layer/50772-nz-primary-parcels/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

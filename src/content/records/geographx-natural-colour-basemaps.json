@@ -1,0 +1,46 @@
+{
+  "id": "dataset:geographx-natural-colour-basemaps",
+  "slug": "geographx-natural-colour-basemaps",
+  "name": "Geographx natural-colour New Zealand basemaps",
+  "kind": "Dataset",
+  "category": "Elevation and terrain datasets",
+  "url": "/datasets/geographx-natural-colour-basemaps/",
+  "description": "Roger Smith's Geographx terrain-driven natural-colour map surfaces and cartographic products.",
+  "story": [
+    "Geographx developed distinctive natural-colour New Zealand terrain basemaps and other terrain-derived cartographic products. Its map design combines elevation surfaces, map features and colour to communicate landforms across print and digital mapping.",
+    "These designed basemaps are distinct from the public-domain Geographx-derived 8 m DEM distributed by LINZ. The public Geographx website documents the cartographic products but does not establish a licence for unrestricted reuse of its commercial map artwork. A reported use in TV3 weather graphics remains unverified and is not presented as established history."
+  ],
+  "sources": [
+    {
+      "label": "Geographx, About and cartographic outputs",
+      "url": "https://www.geographx.co.nz/about/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Geographx, About and cartographic outputs",
+        "url": "https://www.geographx.co.nz/about/"
+      }
+    ],
+    [
+      {
+        "label": "Geographx, About and cartographic outputs",
+        "url": "https://www.geographx.co.nz/about/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/from-flat-maps-to-3d/"
+    },
+    {
+      "label": "Geographx, About and cartographic outputs",
+      "url": "https://www.geographx.co.nz/about/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

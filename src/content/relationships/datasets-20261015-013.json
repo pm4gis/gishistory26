@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-013",
+  "a": "dataset:nz-building-outlines-all-sources",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Produced or maintained by",
+  "basis": "The All Sources dataset retains building outlines extracted from different aerial-photograph vintages, with capture-source dates and lifecycle information that allow users to compare individual areas over time.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Building Outlines (All Sources)",
+      "url": "https://data.linz.govt.nz/layer/101292-nz-building-outlines-all-sources/"
+    }
+  ]
+}

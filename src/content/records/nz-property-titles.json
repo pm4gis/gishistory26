@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-property-titles",
+  "slug": "nz-property-titles",
+  "name": "NZ Property Titles (spatial)",
+  "kind": "Dataset",
+  "category": "Property and address datasets",
+  "url": "/datasets/nz-property-titles/",
+  "description": "Spatial representations of Records of Title formed from their associated primary parcel geometries; the public layer excludes owner names.",
+  "story": [
+    "LINZ's open NZ Property Titles layer describes titles for which spatial primary-parcel relationships can be formed. A title may involve several parcels and a parcel may be associated with multiple titles, so a title polygon cannot be treated as identical to a parcel boundary.",
+    "The public layer deliberately excludes ownership information. Its underlying cadastral and title relationships were migrated into Landonline, and the open layer has been available through the LINZ Data Service since 2011."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Property Titles",
+      "url": "https://data.linz.govt.nz/layer/50804-nz-property-titles/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Property Titles",
+        "url": "https://data.linz.govt.nz/layer/50804-nz-property-titles/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Property Titles",
+        "url": "https://data.linz.govt.nz/layer/50804-nz-property-titles/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/landonline/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Property Titles",
+      "url": "https://data.linz.govt.nz/layer/50804-nz-property-titles/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

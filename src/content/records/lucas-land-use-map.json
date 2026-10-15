@@ -1,0 +1,46 @@
+{
+  "id": "dataset:lucas-land-use-map",
+  "slug": "lucas-land-use-map",
+  "name": "LUCAS New Zealand Land Use Map",
+  "kind": "Dataset",
+  "category": "Land and environmental datasets",
+  "url": "/datasets/lucas-land-use-map/",
+  "description": "Nationwide time-series land-use classification for carbon accounting, separate from NZLRI land-use capability.",
+  "story": [
+    "The Ministry for the Environment's Land Use and Carbon Analysis System (LUCAS) maps land-use classes used to monitor land-use change and report land-sector emissions and removals. The five representative dates are 1989, 2007, 2012, 2016 and 2020.",
+    "LUCAS is a land-use dataset, not the New Zealand Land Resource Inventory or its Land Use Capability classification. Its categories are based on remotely sensed land cover and supporting interpretation, with a particular emphasis on forests."
+  ],
+  "sources": [
+    {
+      "label": "Ministry for the Environment, New Zealand land use map",
+      "url": "https://environment.govt.nz/facts-and-science/science-and-data/new-zealand-land-use-map/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Ministry for the Environment, New Zealand land use map",
+        "url": "https://environment.govt.nz/facts-and-science/science-and-data/new-zealand-land-use-map/"
+      }
+    ],
+    [
+      {
+        "label": "Ministry for the Environment, New Zealand land use map",
+        "url": "https://environment.govt.nz/facts-and-science/science-and-data/new-zealand-land-use-map/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/mapping-land-as-data/"
+    },
+    {
+      "label": "Ministry for the Environment, New Zealand land use map",
+      "url": "https://environment.govt.nz/facts-and-science/science-and-data/new-zealand-land-use-map/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

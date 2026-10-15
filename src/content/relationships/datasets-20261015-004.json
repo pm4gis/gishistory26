@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-004",
+  "a": "dataset:nz-building-outlines",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Produced or maintained by",
+  "basis": "LINZ made NZ Building Outlines available in 2019. Its 2D polygons describe roof extents derived from aerial imagery by automated and manual interpretation; they are not building footprints surveyed on the ground.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Building Outlines",
+      "url": "https://data.linz.govt.nz/layer/101290-nz-building-outlines/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-005",
+  "a": "dataset:nz-8m-dem-geographx-2012",
+  "b": "entity:geographx",
+  "label": "Produced or maintained by",
+  "basis": "The national 8 m digital elevation model was originally created by Geographx, founded by Roger Smith, using mainly the January 2012 LINZ Topo50 contour dataset with additional processing around coasts and water bodies.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+    }
+  ]
+}
