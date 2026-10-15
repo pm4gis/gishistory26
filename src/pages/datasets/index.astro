@@ -1,16 +1,54 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { dataset } from '../../lib/data';
-const d = await dataset();
-const records = d.records.filter((r:any) => r.kind === 'Dataset').sort((a:any,b:any) => a.name.localeCompare(b.name,'en-NZ'));
-const groups = [...new Set(records.map((r:any)=>r.category||'Other datasets'))].sort();
+import {dataset} from '../../lib/data';
+import {datasetCardImageMap} from '../../lib/dataset-card-media.mjs';
+const d=await dataset();
+const records=d.records.filter((r:any)=>r.kind==='Dataset').sort((a:any,b:any)=>a.name.localeCompare(b.name,'en-NZ'));
+const visual=datasetCardImageMap(records,d.images);
+const groups=[...new Set(records.map((r:any)=>r.category||'Other datasets'))].sort((a:any,b:any)=>a.localeCompare(b,'en-NZ'));
+const popularSlugs=['nz-primary-parcels','nz-property-titles','nz-property-boundaries','nz-building-outlines','nzlri','national-luc-2021','lcdb','lucas-land-use-map','nz-8m-dem-geographx-2012','nztopo50-vector'];
+const popular=popularSlugs.map(slug=>records.find((r:any)=>r.slug===slug)).filter(Boolean);
+const photographic=new Set(['nasa-terra-modis-nz-2002','linz-otago','southland-aerial-verdon-1988','doc-aerial-c24a085218be4824','victoria-square-aerial-1955']);
 ---
-<Layout title="Datasets · NZ GIS History" description="Explore the history of New Zealand spatial datasets, their custodians, contributors and relationships.">
-  <div class="wrap">
-    <p class="eyebrow">Explore the evidence</p>
-    <h1>New Zealand GIS datasets</h1>
-    <p class="intro">Follow the datasets behind New Zealand GIS, from early digital surveys and scientific mapping to modern geographic information. Each entry links to source documents, responsible organisations, relevant people and other historical accounts.</p>
-    <p><a href="/browse/?kind=Dataset">Search and filter dataset entries</a> · <a href="/network/">Explore their connections</a> · <a href="/timeline/">Explore the timeline</a></p>
-    {groups.map((group:any)=><section><h2>{group}</h2><div class="cards">{records.filter((r:any)=>(r.category||'Other datasets')===group).map((r:any)=><article class="card"><small>Dataset</small><a class="title" href={r.url}>{r.name}</a><p>{r.description||r.story?.[0]}</p><p><a href={'/network/?focus='+encodeURIComponent(r.id)}>Related people and organisations →</a></p></article>)}</div></section>)}
+<Layout title="Datasets · NZ GIS History" description="Explore national and historical New Zealand spatial datasets, with documentary imagery, sources and linked organisations.">
+ <div class="wrap dataset-layout">
+  <p class="eyebrow">Explore the evidence</p>
+  <h1>New Zealand GIS datasets</h1>
+  <p class="intro">Follow the datasets behind New Zealand GIS, from national cadastral and land-resource surveys to open elevation, imagery and environmental data. The illustrations come from documented project image sources; captions distinguish original dataset imagery from related historical examples.</p>
+  <div class="actions">
+   <a class="button" href="/browse/?kind=Dataset">Find dataset records</a>
+   <a class="button" href="/network/">Explore their connections</a>
   </div>
+  <section class="dataset-popular" aria-labelledby="dataset-popular-heading">
+   <div class="section-head"><div><p class="eyebrow">National reference layers</p><h2 id="dataset-popular-heading">Popular starting points</h2></div><span class="muted">{records.length} dataset histories</span></div>
+   <nav class="dataset-shortcuts" aria-label="Jump to a dataset">
+    {popular.map((r:any)=><a href={'#dataset-'+r.slug}>{r.name}</a>)}
+   </nav>
+  </section>
+  {groups.map((group:any)=><section class="dataset-group" aria-label={group}>
+   <h2>{group}</h2>
+   <div class="cards dataset-grid">
+    {records.filter((r:any)=>(r.category||'Other datasets')===group).map((r:any)=>{
+     const image=visual[r.slug];
+     return <article class="card dataset-card" id={'dataset-'+r.slug}>
+      {image&&<figure class:list={['dataset-card-media',photographic.has(image.slug)&&'dataset-card-media--photo']}>
+       <a href={r.url} aria-label={'Read about '+r.name}>
+        <img src={image.thumbnailPath||image.assetPath} alt={image.altText} loading="lazy" decoding="async"/>
+       </a>
+       <figcaption>{image.sourceNote} <a href={'/images/'+image.slug+'/'}>Image source and credit</a></figcaption>
+      </figure>}
+      <div class="dataset-card-copy">
+       <small class="eyebrow">Dataset</small>
+       <a class="title" href={r.url}>{r.name}</a>
+       <p>{r.description||r.story?.[0]}</p>
+       <div class="dataset-card-links">
+        <a href={r.url}>Dataset history →</a>
+        <a href={'/network/?focus='+encodeURIComponent(r.id)}>Relationships →</a>
+       </div>
+      </div>
+     </article>;
+    })}
+   </div>
+  </section>)}
+ </div>
 </Layout>
