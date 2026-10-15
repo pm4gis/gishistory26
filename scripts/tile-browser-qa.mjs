@@ -102,11 +102,11 @@ async function paletteChecks(page,viewport){
    const cs=getComputedStyle(document.documentElement);
    const hex=name=>cs.getPropertyValue('--'+name).trim();
    const rgb=color=>{
-    const short=color.match(/^#([\\da-f]{3})$/i);
+    const short=color.match(/^#([\da-f]{3})$/i);
     if(short)return [...short[1]].map(c=>parseInt(c+c,16)/255);
-    const full=color.match(/^#([\\da-f]{6})$/i);
+    const full=color.match(/^#([\da-f]{6})$/i);
     if(full)return [0,2,4].map(n=>parseInt(full[1].slice(n,n+2),16)/255);
-    const match=color.match(/rgba?\\(\\s*(\\d+)[, ]+(\\d+)[, ]+(\\d+)/);
+    const match=color.match(/rgba?\(\s*(\d+)[, ]+(\d+)[, ]+(\d+)/);
     if(match)return [Number(match[1])/255,Number(match[2])/255,Number(match[3])/255];
     throw Error('Cannot calculate contrast from colour '+color);
    };
