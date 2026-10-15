@@ -1,0 +1,36 @@
+{
+  "id": "image:cera-central-recovery-blueprint-2012",
+  "slug": "cera-central-recovery-blueprint-2012",
+  "title": "Christchurch Central Recovery Plan anchor projects map, July 2012",
+  "assetPath": "/assets/historical/web/cera-central-recovery-blueprint-2012.webp",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch-central-recovery-plan-anchor-project-map-a3-1_(cropped).jpg",
+  "sourceName": "Wikimedia Commons; original Canterbury Earthquake Recovery Authority document",
+  "credit": "Canterbury Earthquake Recovery Authority (July 2012). Extracted and cropped on Wikimedia Commons by Schwede66 (2020). Local display derivatives resized without further cropping.",
+  "licence": "CC BY 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenceEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch-central-recovery-plan-anchor-project-map-a3-1_(cropped).jpg",
+  "altText": "Original CERA map of central Christchurch showing 2012 recovery anchor projects and coloured precincts with labelled streets and facilities.",
+  "caption": "July 2012 Christchurch Central Recovery Plan map depicting anchor projects including the Convention Centre, Health Precinct, central library and other recovery zones.",
+  "dateDisplay": "July 2012",
+  "articleSlug": "the-real-time-map",
+  "chapterNumber": 42,
+  "themeIds": [],
+  "context": "Original map prepared by CERA for its Christchurch Central Recovery Plan, illustrating post-earthquake spatial planning. It is distinct from the CERA Spatial Data Infrastructure service diagrams and parcel/technical-zoning viewers.",
+  "originalAssetPath": "/assets/historical/original/cera-central-recovery-blueprint-2012.jpg",
+  "thumbnailPath": "/assets/historical/card/cera-central-recovery-blueprint-2012.webp",
+  "originalSha256": "f9d13c7bea8c3e8ac5c6e615eb16c074ff8df4cf0899d31c13f48487c5be4296",
+  "webSha256": "7aeea79d0fd63093e36f0f0c370aa27477422c874f456b18f385b5250e2c0f49",
+  "originalWidth": 1891,
+  "originalHeight": 1330,
+  "sourceFileTitle": "File:Christchurch-central-recovery-plan-anchor-project-map-a3-1_(cropped).jpg",
+  "sourceOriginalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Christchurch-central-recovery-plan-anchor-project-map-a3-1_(cropped).jpg",
+  "derivativesNote": "The Wikimedia Commons image is itself an extract cropped from a July 2012 CERA map. Its archive original is preserved verbatim. Local WebP display and card images are resized without further cropping.",
+  "relatedRecords": [
+    {
+      "name": "Canterbury Earthquake Recovery Authority (CERA)",
+      "url": "/entities/canterbury-earthquake-recovery-authority-cera/",
+      "role": "Produced the original 2012 map"
+    }
+  ],
+  "headerCandidate": false
+}

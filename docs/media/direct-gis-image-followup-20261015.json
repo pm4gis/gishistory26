@@ -1,0 +1,16 @@
+{
+  "release": "direct-gis-image-followup-20261015",
+  "baseCuration": "docs/media/catalogue-curation-25-20261015.json",
+  "replacements": [
+    {
+      "recordSlug": "canterbury-earthquake-recovery-authority-cera",
+      "previousImageSlug": "christchurch-response-orthophoto-2011",
+      "imageSlug": "cera-central-recovery-blueprint-2012",
+      "relationship": "original agency planning map",
+      "dateDisplay": "July 2012",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch-central-recovery-plan-anchor-project-map-a3-1_(cropped).jpg",
+      "licence": "CC BY 4.0",
+      "decision": "Published: genuine CERA central-city recovery plan map. Does not depict the CERA cloud SDI or technical land zones."
+    }
+  ]
+}
