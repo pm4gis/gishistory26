@@ -6,6 +6,7 @@ import WanangaVideos from '../../components/WanangaVideos.svelte';
 import {ngaPoutamaReadingLinks} from '../../lib/nga-poutama-videos.mjs';
 import {pickThemeImage,pickRecordImage} from '../../lib/subject-media.mjs';
 import {dataset,passageUrl} from '../../lib/data';
+import {decorFor} from '../../lib/decor';
 export async function getStaticPaths(){const d=await dataset();return d.themes.map((t:any)=>({params:{slug:t.slug},props:{id:t.id}}))}
 const d=await dataset();
 const readingLinks=ngaPoutamaReadingLinks(d.passages,d.articles) as Record<string,string>;
@@ -29,6 +30,6 @@ const recordCards=records.map((r:any)=>({...r,subject:pickRecordImage(r,d.images
   {t.stops?.length>0&&<details><summary>Suggested reading sequence</summary><ol>{t.stops.map((s:any)=><li><a href={s.url}>{s.title}</a></li>)}</ol></details>}
   {events.length>0&&<section class="theme-chronology" aria-label={t.title+' timeline events'}><h2>Milestones and events</h2><p class="muted">Dates follow published source records. Select an event to see the complete timeline account and its evidence.</p><ol class="theme-event-list">{events.map((e:any)=><li><span class="theme-event-year">{e.dateDisplay}</span><div><a href={'/timeline/?event='+encodeURIComponent(e.id)}>{e.label}</a><p>{e.summary}</p></div></li>)}</ol></section>}
   {t.slug==='maori-gis'&&<WanangaVideos {readingLinks}/>}
-  <h2>Related entries</h2><div class="cards">{recordCards.map((r:any)=><article class="card subject-entry-card">{r.subject&&<SubjectImage image={r.subject.image} relation={r.subject.relation} variant="card"/>}<small>{r.kind}</small><a class="title" href={r.url}>{r.name}</a></article>)}</div>
+  <h2>Related entries</h2><div class="cards">{recordCards.map((r:any,i:number)=><article class="card subject-entry-card">{r.subject?<SubjectImage image={r.subject.image} relation={r.subject.relation} variant="card" showCaption={false} destination={r.url}/>:<a class="tile-media-link" href={r.url} aria-label={"Read "+r.name}><DecorativeLandscape id={decorFor(i+artIndex)} variant="card"/></a>}<small>{r.kind}</small><a class="title" href={r.url}>{r.name}</a></article>)}</div>
  </div>
 </Layout>
