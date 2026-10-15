@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdirSync,writeFileSync,existsSync} from 'node:fs';
 import {chromium} from 'playwright';
 
 const base=process.env.QA_BASE_URL||'http://127.0.0.1:4321';
@@ -55,6 +55,8 @@ async function cards(page,selector,{min,exact}={}){
  for(let i=0;i<result.length;i++){
   const card=result[i];
   assert.ok(card.imageSource,selector+' #'+i+' has no image');
+  const file=new URL(card.imageSource,base).pathname;
+  assert.ok(existsSync('dist'+file),selector+' #'+i+' image asset missing from production build: '+file);
   assert.ok(card.imageHref,selector+' #'+i+' image has no link');
   assert.ok(card.titleHref,selector+' #'+i+' title has no link');
   assert.equal(card.imageHref,card.titleHref,selector+' #'+i+' image opens different destination: '+card.imageHref);
