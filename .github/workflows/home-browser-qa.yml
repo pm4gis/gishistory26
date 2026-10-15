@@ -12,6 +12,7 @@ on:
       - 'src/lib/passage-contributions.mjs'
       - 'src/styles/site.css'
       - 'scripts/home-browser-qa.mjs'
+      - 'scripts/glass-navigation-browser-qa.mjs'
       - '.github/workflows/home-browser-qa.yml'
   push:
     branches: [main]
@@ -51,3 +52,12 @@ jobs:
           done
           if ! curl -fsS -o /dev/null http://127.0.0.1:4321/; then cat /tmp/nzgis-home-preview.log; echo 'Preview failed to start'; exit 1; fi
           node scripts/home-browser-qa.mjs
+          node scripts/glass-navigation-browser-qa.mjs
+      - name: Retain responsive glass navigation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: glass-navigation-qa
+          path: docs/verification/glass-nav-qa/
+          if-no-files-found: ignore
+          retention-days: 30

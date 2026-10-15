@@ -542,12 +542,12 @@
    Keep historic map and documentary image pixels untouched. */
 @supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
  :root{
-  --glass-panel:color-mix(in srgb,var(--surface) 78%,transparent);
+  --glass-panel:color-mix(in srgb,var(--surface) 71%,transparent);
   --glass-edge:color-mix(in srgb,var(--line) 58%,transparent);
   --glass-glint:color-mix(in srgb,var(--text) 10%,transparent);
  }
  :root[data-appearance="light"]{
-  --glass-panel:color-mix(in srgb,var(--surface) 88%,transparent);
+  --glass-panel:color-mix(in srgb,var(--surface) 86%,transparent);
   --glass-glint:color-mix(in srgb,var(--surface) 85%,transparent);
  }
  body{
@@ -558,8 +558,8 @@
  }
  .topbar{
   background:linear-gradient(115deg,
-   color-mix(in srgb,var(--surface) 88%,transparent),
-   color-mix(in srgb,var(--raised) 75%,transparent));
+   color-mix(in srgb,var(--surface) 82%,transparent),
+   color-mix(in srgb,var(--raised) 70%,transparent));
   border-bottom-color:var(--glass-edge);
   box-shadow:0 12px 32px color-mix(in srgb,var(--bg) 32%,transparent),inset 0 1px 0 var(--glass-glint);
   -webkit-backdrop-filter:blur(24px) saturate(148%);
@@ -599,7 +599,7 @@
  .contents.open,.related.open,.chapter-catalogue-card,.network-panel{
   background:var(--surface);
   background:linear-gradient(145deg,
-   color-mix(in srgb,var(--surface) 94%,transparent),
+   color-mix(in srgb,var(--surface) 88%,transparent),
    var(--glass-panel));
   border-color:var(--glass-edge);
   box-shadow:var(--shade),inset 0 1px 0 var(--glass-glint);
@@ -659,3 +659,105 @@
  .topbar{box-shadow:none}
 }
 @media(prefers-reduced-motion:reduce){.cards .card:hover,.timeline-event:hover{transform:none}}
+
+/* Dynamic Themes disclosure and restrained interactive glass surfaces.
+   Navigation remains usable with touch, keyboard and reduced-motion settings. */
+.nav-dropdown{position:relative;flex:0 0 auto;min-width:0}
+.nav-dropdown>summary{
+ list-style:none;display:flex;align-items:center;justify-content:space-between;gap:9px;
+ min-height:38px;padding:8px clamp(5px,.5vw,9px);
+ border:1px solid transparent;border-radius:10px;
+ color:var(--text);font-size:clamp(12px,1.06vw,15px);font-weight:550;
+ white-space:nowrap;cursor:pointer;user-select:none;
+ background:color-mix(in srgb,var(--surface) 12%,transparent);
+ transition:background .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease;
+}
+.nav-dropdown>summary::-webkit-details-marker{display:none}
+.nav-dropdown>summary:hover,.nav-dropdown[open]>summary{
+ background:color-mix(in srgb,var(--raised) 75%,transparent);
+ border-color:color-mix(in srgb,var(--accent) 40%,transparent);
+ box-shadow:inset 0 1px 0 var(--glass-glint,transparent);
+}
+.nav-dropdown>summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.nav-chevron{width:7px;height:7px;flex:none;margin:-4px 2px 0 0;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg);transition:transform .2s ease}
+.nav-dropdown[open] .nav-chevron{transform:translateY(3px) rotate(225deg)}
+.nav--desktop>a[aria-current="page"],.nav-theme-toggle.is-current{
+ background:color-mix(in srgb,var(--accent) 15%,var(--surface));
+ border-color:color-mix(in srgb,var(--accent) 40%,transparent);
+}
+.nav--desktop>a:not(.nav-contribute):hover{transform:translateY(-1px)}
+.nav--desktop .nav-dropdown-panel{
+ position:absolute;top:calc(100% + 12px);right:-60px;z-index:75;
+ width:min(490px,calc(100vw - 32px));max-height:min(70vh,560px);overflow-y:auto;
+ padding:15px;border:1px solid var(--line);border-radius:18px;
+ background:var(--surface);color:var(--text);
+ box-shadow:0 24px 50px #0005,inset 0 1px 0 var(--glass-glint,transparent);
+}
+.nav-dropdown[open]>.nav-dropdown-panel{animation:glass-menu-enter .2s ease-out both}
+@keyframes glass-menu-enter{from{opacity:0;transform:translateY(-7px) scale(.987)}to{opacity:1;transform:translateY(0) scale(1)}}
+.nav-theme-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.nav--desktop .nav-dropdown-panel a:not(.nav-contribute),
+.nav--mobile .nav-dropdown-panel a{
+ display:flex;align-items:center;justify-content:space-between;gap:8px;
+ min-width:0;min-height:44px;padding:11px 12px;
+ white-space:normal;text-decoration:none;line-height:1.4;font-size:13px;
+ border:1px solid transparent;border-radius:11px;
+ color:var(--text);background:color-mix(in srgb,var(--raised) 36%,transparent);
+ transition:background .16s ease,border-color .16s ease,transform .16s ease;
+}
+.nav--desktop .nav-dropdown-panel a:hover,
+.nav--desktop .nav-dropdown-panel a:focus-visible,
+.nav--mobile .nav-dropdown-panel a:hover,
+.nav--mobile .nav-dropdown-panel a:focus-visible{
+ color:var(--text);background:color-mix(in srgb,var(--raised) 84%,transparent);
+ border-color:color-mix(in srgb,var(--accent) 52%,transparent);
+ transform:translateX(2px);
+}
+.nav-dropdown-panel a[aria-current="page"]{
+ background:var(--accent-soft)!important;
+ border-color:var(--accent)!important;
+}
+.nav--desktop .nav-dropdown-panel .nav-dropdown-all:not(.nav-contribute),
+.nav--mobile .nav-dropdown-panel .nav-dropdown-all{
+ margin-bottom:10px;font-weight:700;min-height:45px;
+ background:color-mix(in srgb,var(--accent) 15%,var(--surface));
+ border-color:color-mix(in srgb,var(--accent) 35%,transparent);
+}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ .nav--desktop .nav-dropdown-panel{
+  border-color:var(--glass-edge,var(--line));
+  background:linear-gradient(145deg,
+   color-mix(in srgb,var(--surface) 93%,transparent),
+   color-mix(in srgb,var(--raised) 86%,transparent));
+  -webkit-backdrop-filter:blur(26px) saturate(155%);
+  backdrop-filter:blur(26px) saturate(155%);
+ }
+ .card,.page,.chapter-catalogue-card,.timeline-box,.image-source-card,.network-panel{
+  box-shadow:0 18px 42px color-mix(in srgb,var(--bg) 22%,transparent),
+   inset 0 1px 0 color-mix(in srgb,var(--text) 13%,transparent),
+   0 0 0 1px color-mix(in srgb,var(--accent) 5%,transparent);
+ }
+ .nav .nav-contribute{transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease}
+ .nav .nav-contribute:hover{transform:translateY(-1px)}
+ .hero--visual{box-shadow:0 18px 42px color-mix(in srgb,var(--bg) 22%,transparent),inset 0 1px 0 color-mix(in srgb,var(--text) 15%,transparent)}
+}
+@media(max-width:1180px){
+ .nav--mobile>.nav-dropdown{width:100%}
+ .nav--mobile .nav-dropdown>summary{padding:13px 14px;min-height:46px;font-size:16px}
+ .nav--mobile .nav-dropdown-panel{
+  position:static;max-height:none;overflow:visible;width:100%;padding:7px 4px 9px;
+  border:0;border-radius:0;background:transparent;box-shadow:none;
+ }
+ .nav--mobile .nav-theme-grid{grid-template-columns:1fr;gap:5px}
+ .nav--mobile .nav-dropdown-panel a{min-height:44px;font-size:14px;padding:10px 13px}
+ .nav--mobile{max-height:calc(100dvh - 82px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+}
+@media(prefers-reduced-transparency:reduce){
+ .nav--desktop .nav-dropdown-panel{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none}
+ .nav-dropdown>summary,.nav-dropdown-panel a{background:var(--surface)}
+}
+@media(prefers-reduced-motion:reduce){
+ .nav-dropdown[open]>.nav-dropdown-panel{animation:none}
+ .nav-chevron,.nav-dropdown>summary,.nav--desktop>a:not(.nav-contribute),.nav-dropdown-panel a{transition:none!important}
+ .nav--desktop>a:not(.nav-contribute):hover,.nav-dropdown-panel a:hover,.nav-dropdown-panel a:focus-visible,.nav .nav-contribute:hover{transform:none}
+}
