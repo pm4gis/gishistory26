@@ -114,7 +114,7 @@ try{
   });
   await check(viewport.name+' navigation, contribution action and menu',async()=>{
    const desktop=page.locator('.nav--desktop');
-   const summary=page.locator('.mobile-menu summary');
+   const summary=page.locator('.mobile-menu > summary');
    const mobileMenu=page.locator('.mobile-menu');
    if(viewport.mobile){
     assert.equal(await desktop.isVisible(),false);
