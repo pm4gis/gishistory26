@@ -11,7 +11,9 @@ const slug='cera-central-recovery-blueprint-2012';
 const file='Christchurch-central-recovery-plan-anchor-project-map-a3-1_(cropped).jpg';
 const digest=createHash('md5').update(file).digest('hex');
 const originalUrl='https://upload.wikimedia.org/wikipedia/commons/'+digest[0]+'/'+digest.slice(0,2)+'/'+encodeURIComponent(file);
-const expectedMd5='1653f47af6554182942f23626ed98103483d52e7';
+// Pin the real JPEG bytes retrieved from Wikimedia's original-file CDN. The
+// separate checksum in Commons structured-data metadata does not match this file.
+const expectedMd5='f1db8d25fdd7a4d4c52e4c24ef6bb0fb';
 const expectedBytes=117683;
 const response=await fetch(originalUrl,{headers:{'User-Agent':'NZGISHistoryDocumentaryResearch/1.0 (pm4gis@gmail.com)'}});
 if(!response.ok)throw Error('CERA source image unavailable HTTP '+response.status+' '+originalUrl);
@@ -20,7 +22,7 @@ if(!/^image\/jpeg(?:;|$)/i.test(header))throw Error('Unexpected CERA source cont
 const data=Buffer.from(await response.arrayBuffer());
 if(data.length!==expectedBytes)throw Error('Source byte count changed: '+data.length);
 const md5=createHash('md5').update(data).digest('hex');
-if(md5!==expectedMd5)throw Error('Source differs from verified Commons checksum: '+md5);
+if(md5!==expectedMd5)throw Error('Source differs from pinned downloaded original JPEG checksum: '+md5);
 const metadata=await sharp(data).metadata();
 if(metadata.width!==1891||metadata.height!==1330||metadata.format!=='jpeg')throw Error('CERA map dimensions changed');
 const dir='public/assets/historical';
