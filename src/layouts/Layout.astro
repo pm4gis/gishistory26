@@ -12,6 +12,10 @@ const isThemesRoute=currentPath.startsWith('/themes/');
 const menuThemes=(await getCollection('themes'))
  .map(entry=>({slug:entry.data.slug,title:entry.data.title}))
  .sort((a,b)=>a.title.localeCompare(b.title,'en-NZ'));
+const menuDatasets=(await getCollection('records'))
+ .filter(entry=>entry.data.kind==='Dataset')
+ .map(entry=>({slug:entry.data.slug,name:entry.data.name,category:entry.data.category||'Other datasets'}))
+ .sort((a,b)=>a.name.localeCompare(b.name,'en-NZ'));
 ---
 <!doctype html>
 <html lang="en-NZ">
@@ -62,7 +66,16 @@ const menuThemes=(await getCollection('themes'))
   <a class="brand" href="/"><small>NEW ZEALAND</small>GIS History</a>
   <nav class="nav nav--desktop" aria-label="Main navigation">
    <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
-   <a href="/datasets/">Datasets</a>
+   <details class="nav-dropdown nav-dropdown--datasets">
+    <summary class="nav-dataset-toggle">Datasets <span class="nav-chevron" aria-hidden="true"></span></summary>
+    <div class="nav-dropdown-panel nav-dataset-panel" role="group" aria-label="Dataset shortcuts">
+     <a class="nav-dropdown-all" href="/datasets/" aria-current={currentPath==='/datasets/'?'page':undefined}>Explore all datasets <span aria-hidden="true">↗</span></a>
+     <p class="nav-dropdown-caption">National and historical datasets</p>
+     <div class="nav-theme-grid">
+      {menuDatasets.map(record=><a href={'/datasets/'+record.slug+'/'} aria-current={currentPath==='/datasets/'+record.slug+'/'?'page':undefined}>{record.name}</a>)}
+     </div>
+    </div>
+   </details>
    <details class="nav-dropdown nav-dropdown--themes">
     <summary class:list={['nav-theme-toggle',isThemesRoute&&'is-current']}>Themes <span class="nav-chevron" aria-hidden="true"></span></summary>
     <div class="nav-dropdown-panel" role="group" aria-label="Theme shortcuts">
@@ -100,7 +113,16 @@ const menuThemes=(await getCollection('themes'))
     <summary aria-label="Open navigation menu"><span class="hamburger-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
     <nav class="nav nav--mobile" aria-label="Mobile navigation">
      <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
-     <a href="/datasets/">Datasets</a>
+     <details class="nav-dropdown nav-dropdown--datasets">
+    <summary class="nav-dataset-toggle">Datasets <span class="nav-chevron" aria-hidden="true"></span></summary>
+    <div class="nav-dropdown-panel nav-dataset-panel" role="group" aria-label="Dataset shortcuts">
+     <a class="nav-dropdown-all" href="/datasets/" aria-current={currentPath==='/datasets/'?'page':undefined}>Explore all datasets <span aria-hidden="true">↗</span></a>
+     <p class="nav-dropdown-caption">National and historical datasets</p>
+     <div class="nav-theme-grid">
+      {menuDatasets.map(record=><a href={'/datasets/'+record.slug+'/'} aria-current={currentPath==='/datasets/'+record.slug+'/'?'page':undefined}>{record.name}</a>)}
+     </div>
+    </div>
+   </details>
      <details class="nav-dropdown nav-dropdown--themes">
     <summary class:list={['nav-theme-toggle',isThemesRoute&&'is-current']}>Themes <span class="nav-chevron" aria-hidden="true"></span></summary>
     <div class="nav-dropdown-panel" role="group" aria-label="Theme shortcuts">
@@ -177,13 +199,13 @@ const menuThemes=(await getCollection('themes'))
   mobileMenu?.addEventListener('keydown',(event)=>{if(event.key==='Escape'){mobileMenu.open=false;mobileMenu.querySelector('summary')?.focus();}});
   mobileMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.open=false;}));
   document.addEventListener('pointerdown',(event)=>{if(mobileMenu?.open&&!mobileMenu.contains(event.target as Node))mobileMenu.open=false;});
-  const themeMenus=Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown--themes'));
-  for(const menu of themeMenus){
+  const navMenus=Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown'));
+  for(const menu of navMenus){
    const summary=menu.querySelector<HTMLElement>('summary');
    const links=Array.from(menu.querySelectorAll<HTMLAnchorElement>('.nav-dropdown-panel a'));
    menu.addEventListener('toggle',()=>{
     if(!menu.open)return;
-    themeMenus.forEach(other=>{if(other!==menu)other.open=false;});
+    navMenus.forEach(other=>{if(other!==menu)other.open=false;});
     if(panel&&!panel.hidden){panel.hidden=true;toggle?.setAttribute('aria-expanded','false');}
    });
    menu.addEventListener('keydown',(event)=>{
@@ -205,7 +227,7 @@ const menuThemes=(await getCollection('themes'))
    if(!mobileMenu.open)mobileMenu.querySelectorAll<HTMLDetailsElement>('.nav-dropdown').forEach(menu=>{menu.open=false;});
   });
   document.addEventListener('pointerdown',(event)=>{
-   for(const menu of themeMenus){
+   for(const menu of navMenus){
     if(menu.open&&!menu.contains(event.target as Node))menu.open=false;
    }
   });
