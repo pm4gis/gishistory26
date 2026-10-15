@@ -9,7 +9,11 @@
   "recordIds": [
     "chapter:39",
     "entity:tasman-district-council",
-    "entity:fox-and-associates"
+    "entity:fox-and-associates",
+    "person:roger-smith",
+    "entity:geographx",
+    "dataset:nz-8m-dem-geographx-2012",
+    "dataset:geographx-natural-colour-basemaps"
   ],
   "blocks": [
     {
@@ -25,6 +29,22 @@
       "markdown": "A terrain surface becomes more useful when it shares coordinates with roads, parcels, rivers, buildings and infrastructure. The surface may explain where water will flow, how a road cuts across a hillside or whether a proposed structure will be visible from another location. It can also provide the base on which other three-dimensional objects are positioned. These uses give the third dimension a persistent analytical role alongside its visual one.",
       "sources": [],
       "id": "ch39-p-4dfe1723d137"
+    },
+    {
+      "type": "paragraph",
+      "text": "Geographx provides an earlier New Zealand example of terrain modelling put to practical cartographic work. Roger Smith reported in 2012 that his firm had created a national 8 m elevation model from Topo50 contours and height points, then used it to shade a separate 4 m natural-colour land-cover basemap. That commercial raster product combined Topo50 and LCDB3 features in 116 large tiles, processed through GIS tools and scripted Photoshop layers. Smith demonstrated the results in Skyline TerraExplorer, with views over the Waitaki and Clarence rivers. Its convincing three-dimensional display was different from a measured high-resolution LiDAR surface: the 8 m figure described the raster cell spacing of a contour-derived model, and the underlying data limited its use for precise terrain analysis.",
+      "markdown": "Geographx provides an earlier New Zealand example of terrain modelling put to practical cartographic work. Roger Smith reported in 2012 that his firm had created a national 8 m elevation model from Topo50 contours and height points, then used it to shade a separate 4 m natural-colour land-cover basemap. That commercial raster product combined Topo50 and LCDB3 features in 116 large tiles, processed through GIS tools and scripted Photoshop layers. Smith demonstrated the results in Skyline TerraExplorer, with views over the Waitaki and Clarence rivers. Its convincing three-dimensional display was different from a measured high-resolution LiDAR surface: the 8 m figure described the raster cell spacing of a contour-derived model, and the underlying data limited its use for precise terrain analysis.",
+      "sources": [
+        {
+          "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 2012, pp 102–105",
+          "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+        },
+        {
+          "label": "New Zealand Cartographic Society, 2011–2015 ICA national report, 2015, p 14",
+          "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+        }
+      ],
+      "id": "research-geographx-terrain-2012-ch39-01"
     },
     {
       "type": "paragraph",

@@ -7,14 +7,35 @@
   "url": "/entities/geographx/",
   "website": null,
   "story": [
-    "Roger Smith established Geographx as a map-design studio in 1998. It produced custom maps for New Zealand and international clients while bringing digital cartography, terrain modelling and visualisation into print and GIS products.",
-    "Geographx coordinated the cartographic production of the EARTH Platinum World Atlas, recognised by Guinness World Records as the largest atlas printed and awarded the International Map Trade Association’s 2013 Global Award for Best Map Product. The company developed natural-colour New Zealand basemaps and a public-domain terrain model that its site reports has passed 375,000 LINZ Data Service downloads.",
-    "Its cartographic work also included distributing Skyline earth-visualisation software in New Zealand. In 2015 Smith curated the National Library’s Unfolding the Map exhibition, which ran into early 2018. He received the New Zealand Spatial Excellence Award for outstanding contribution in 2017; Geographx continues as a publisher of wilderness and backcountry maps."
+    "Roger Smith founded Geographx in Wellington in 1998 as a specialist commercial map-design studio. Its work linked raster terrain relief, feature classification and cartographic composition in maps for New Zealand and international clients.",
+    "Smith's 2012 conference paper documents a distinct 4 m-resolution natural-colour land-cover raster basemap assembled from Topo50, LCDB3 and Geographx's own 8 m contour-derived digital elevation model. The workflow used Manifold System and Global Mapper to prepare data and hillshades, and scripted Adobe Photoshop processing for approximately 116 high-resolution tiles. These commercial raster maps were separate from the openly licensed 8 m elevation data.",
+    "Geographx coordinated cartography for the 2013 EARTH Platinum World Atlas. The 2015 ICA report identifies Smith as chief cartographer and Craig MacAlpine as production manager, and reports the company's role as New Zealand Skyline Systems distributor from 2012. It also records the company's 2014 Great Walks fieldmap series. The 2019 ICA report describes continuing custom relief maps for visitor facilities, public spaces and other commissions.",
+    "LINZ's separately licensed 2013 source repository documents how a national natural-colour basemap could be reconstructed using TileMill, PostGIS, LCDB3.3, Topo50 and 8 m elevation/hillshade inputs. This LINZ publication should not be treated as permission to redistribute the 4 m Geographx commercial basemap. No verified contemporary source connects Geographx terrain imagery specifically to TV3 weather graphics."
   ],
   "sources": [
     {
       "label": "Geographx, About",
       "url": "https://www.geographx.co.nz/about/"
+    },
+    {
+      "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+      "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+    },
+    {
+      "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+      "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+    },
+    {
+      "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2015–2019, ICA national report",
+      "url": "https://icaci.org/files/documents/national_reports/2015-2019/newzealand-2019_lq.pdf"
+    },
+    {
+      "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+      "url": "https://github.com/linz/linz_basemaps"
+    },
+    {
+      "label": "MetService, Annual Report 2019, p 19, New Zealand broadcaster use of Weatherscape",
+      "url": "https://about.metservice.com/assets/downloads/annualreport/MetService-Annual-Report-2019-web.pdf"
     }
   ],
   "aliases": [
@@ -22,6 +43,80 @@
   ],
   "themeIds": [],
   "status": "GIS account available",
-  "paragraphSources": [],
-  "biographyParagraphSources": []
+  "paragraphSources": [
+    [
+      {
+        "label": "Geographx, About",
+        "url": "https://www.geographx.co.nz/about/"
+      }
+    ],
+    [
+      {
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+      },
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+        "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+        "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+      },
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2015–2019, ICA national report",
+        "url": "https://icaci.org/files/documents/national_reports/2015-2019/newzealand-2019_lq.pdf"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+        "url": "https://github.com/linz/linz_basemaps"
+      },
+      {
+        "label": "MetService, Annual Report 2019, p 19, New Zealand broadcaster use of Weatherscape",
+        "url": "https://about.metservice.com/assets/downloads/annualreport/MetService-Annual-Report-2019-web.pdf"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [
+    [
+      {
+        "label": "Geographx, About",
+        "url": "https://www.geographx.co.nz/about/"
+      }
+    ],
+    [
+      {
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+      },
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+        "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+        "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+      },
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2015–2019, ICA national report",
+        "url": "https://icaci.org/files/documents/national_reports/2015-2019/newzealand-2019_lq.pdf"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+        "url": "https://github.com/linz/linz_basemaps"
+      },
+      {
+        "label": "MetService, Annual Report 2019, p 19, New Zealand broadcaster use of Weatherscape",
+        "url": "https://about.metservice.com/assets/downloads/annualreport/MetService-Annual-Report-2019-web.pdf"
+      }
+    ]
+  ]
 }

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:geographx-terrain-20261015-001",
+  "a": "dataset:linz-nz-terrain-natural-colour-2013",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "LINZ published open reconstruction source in 2013",
+  "basis": "LINZ's project README records the basemap TileMill source release and 2013 Crown copyright under CC BY 3.0 NZ.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+      "url": "https://github.com/linz/linz_basemaps"
+    }
+  ]
+}

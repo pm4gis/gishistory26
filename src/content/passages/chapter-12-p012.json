@@ -30,7 +30,9 @@
     "person:tony-elson",
     "person:kim-ollivier",
     "person:steve-critchlow",
-    "person:mike-oberdries"
+    "person:mike-oberdries",
+    "dataset:nz-8m-dem-geographx-2012",
+    "dataset:geographx-natural-colour-basemaps"
   ],
   "blocks": [
     {
@@ -53,6 +55,22 @@
       "markdown": "Some commercial GIS businesses concentrated on particular products or services. Roger Smith established Geographx as a map-design studio in 1998, combining digital terrain, spatial data and cartographic production in work ranging from natural-colour New Zealand basemaps to major atlas projects. Matti Seikkula and Simon Jellie formed the consultancy that became e-Spatial in 1998 after meeting while working at Critchlow; Harrison Grierson announced a merger with the Wellington spatial consultancy in November 2017, and later accounts record its purchase in 2018. Geographx specialised in cartographic production, while e-Spatial supplied spatial consulting and implementation services.",
       "sources": [],
       "id": "ch12-s11-p03"
+    },
+    {
+      "type": "paragraph",
+      "text": "One cartographic strand had a different production model from the ordinary GIS installation business. Roger Smith's Geographx combined commercial map design with national data processing. By 2012 the studio had built a 4 m land-cover basemap from LINZ Topo50, Landcare Research LCDB3 and its own 8 m digital elevation model. Smith's workshop paper described Manifold and Global Mapper preparation followed by scripted Photoshop rendering of more than 30 billion pixels. The company also worked on the 2013 EARTH Platinum World Atlas and distributed Skyline visualisation software in New Zealand. The open-licensed 8 m elevation surface, Geographx's licensed commercial basemap and the later LINZ open basemap-reconstruction project were different products.",
+      "markdown": "One cartographic strand had a different production model from the ordinary GIS installation business. Roger Smith's Geographx combined commercial map design with national data processing. By 2012 the studio had built a 4 m land-cover basemap from LINZ Topo50, Landcare Research LCDB3 and its own 8 m digital elevation model. Smith's workshop paper described Manifold and Global Mapper preparation followed by scripted Photoshop rendering of more than 30 billion pixels. The company also worked on the 2013 EARTH Platinum World Atlas and distributed Skyline visualisation software in New Zealand. The open-licensed 8 m elevation surface, Geographx's licensed commercial basemap and the later LINZ open basemap-reconstruction project were different products.",
+      "sources": [
+        {
+          "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 2012, pp 102–105",
+          "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+        },
+        {
+          "label": "New Zealand Cartographic Society, 2011–2015 ICA national report, 2015, p 14",
+          "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+        }
+      ],
+      "id": "research-geographx-maps-2012-ch12-01"
     },
     {
       "type": "paragraph",

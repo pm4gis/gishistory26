@@ -7,25 +7,56 @@
   "url": "/datasets/nz-8m-dem-geographx-2012/",
   "description": "National 8 m raster elevation model built by Geographx mainly from LINZ Topo50 20 m contour data.",
   "story": [
-    "The national 8 m digital elevation model was originally created by Geographx, founded by Roger Smith, using mainly the January 2012 LINZ Topo50 contour dataset with additional processing around coasts and water bodies.",
-    "It became one of the most heavily downloaded national elevation layers distributed through LINZ. LINZ describes this contour-derived model as suitable for cartographic visualisation, not for detailed terrain analysis; its 8 m grid spacing does not imply 8 m source accuracy or LiDAR survey precision."
+    "Geographx's 8 m national digital elevation model was compiled primarily from LINZ Topo50 20 m contour data, with point heights, interpolation and supplementary processing around waterways and coastlines. Roger Smith's 2012 account identifies it as the terrain source for the company's separate 4 m land-cover raster basemaps.",
+    "LINZ made the model available for reuse under a Creative Commons licence; the 2015 New Zealand Cartographic Society report distinguishes this open elevation model from Geographx's commercial natural-colour basemap. An 8 m grid interval is the raster spacing, not a claim of 8 m vertical or positional accuracy. The contour-derived surface was designed principally for cartographic visualisation, not for detailed terrain analysis, including precise hydrological, geotechnical or site-level modelling.",
+    "Later cartographic services reused this elevation resource. LINZ's published basemap reconstruction workflow calls for the 2012 8 m DEM and associated hillshade as inputs to TileMill alongside Topo50 and LCDB3.3. GNS and regional council services have also cited the Geographx model as a hillshade or terrain source. These downstream displays should not be mistaken for the separate original 4 m commercial imagery."
   ],
   "sources": [
     {
-      "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+      "label": "LINZ Data Service, NZ 8 m Digital Elevation Model (2012)",
       "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+    },
+    {
+      "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+      "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+    },
+    {
+      "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+      "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+    },
+    {
+      "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+      "url": "https://github.com/linz/linz_basemaps"
     }
   ],
   "paragraphSources": [
     [
       {
-        "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+        "label": "LINZ Data Service, NZ 8 m Digital Elevation Model (2012)",
         "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+      },
+      {
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
       }
     ],
     [
       {
-        "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+        "label": "LINZ Data Service, NZ 8 m Digital Elevation Model (2012)",
+        "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+      },
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+        "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+        "url": "https://github.com/linz/linz_basemaps"
+      },
+      {
+        "label": "LINZ Data Service, NZ 8 m Digital Elevation Model (2012)",
         "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
       }
     ]
@@ -34,12 +65,20 @@
   "themeIds": [],
   "contextLinks": [
     {
-      "label": "Related history",
-      "url": "/stories/from-flat-maps-to-3d/"
+      "label": "LINZ licensed 8m DEM",
+      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
     },
     {
-      "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
-      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+      "label": "Roger Smith's 2012 design paper",
+      "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+    },
+    {
+      "label": "LINZ 2013 basemap reconstruction",
+      "url": "https://github.com/linz/linz_basemaps"
+    },
+    {
+      "label": "Related chapter",
+      "url": "/stories/from-flat-maps-to-3d/"
     }
   ],
   "status": "Source-backed dataset history"

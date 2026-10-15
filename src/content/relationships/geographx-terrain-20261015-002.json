@@ -1,0 +1,18 @@
+{
+  "id": "relationship:geographx-terrain-20261015-002",
+  "a": "dataset:linz-nz-terrain-natural-colour-2013",
+  "b": "dataset:nz-8m-dem-geographx-2012",
+  "label": "Reuses Geographx-derived elevation and hillshade source",
+  "basis": "LINZ's 2013 TileMill reconstruction instructions require the 2012 8 m elevation model and hillshade supplied through LINZ's Data Service; original terrain model attributed to Geographx.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+      "url": "https://github.com/linz/linz_basemaps"
+    },
+    {
+      "label": "LINZ Data Service, NZ 8 m Digital Elevation Model (2012)",
+      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+    }
+  ]
+}
