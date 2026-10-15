@@ -10,13 +10,15 @@ interface Props {
  variant?:'banner'|'card'|'feature';
  priority?:boolean;
  showCaption?:boolean;
+ destination?:string;
 }
-const {image,relation,variant='feature',priority=false,showCaption=true}=Astro.props;
+const {image,relation,variant='feature',priority=false,showCaption=true,destination}=Astro.props;
 const url='/images/'+encodeURIComponent(image.slug)+'/';
+const tileUrl=destination||url;
 ---
 {image&&
 <figure class:list={['subject-media','subject-media--'+variant]}>
-  <a class="subject-media-link" href={url} aria-label={'Read image source and licence for '+image.title}>
+  <a class="subject-media-link" href={tileUrl} aria-label={destination?'Open linked entry featuring '+image.title:'Read image source and licence for '+image.title}>
    <img src={variant==='card'?(image.thumbnailPath||image.assetPath):image.assetPath}
     alt={image.altText}
     loading={priority?'eager':'lazy'} decoding="async" fetchpriority={priority?'high':'auto'}/>
