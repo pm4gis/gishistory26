@@ -34,7 +34,7 @@ const record={
  licenceUrl:'https://creativecommons.org/licenses/by-sa/3.0/',
  altText:'Commercial Pinus radiata plantation at Pukeora Forest in Hawke’s Bay, New Zealand.',
  caption:'The remaining radiata-pine plantation at Pukeora Forest, Hawke’s Bay, photographed on 26 December 2018. Source: Mike Dickison, CC BY-SA 3.0. Used to illustrate plantation forestry; it does not depict an early New Zealand GIS installation.',
- themeIds:[],articleSlug:'forestry-finds-gis',chapterNumber:9,
+ themeIds:[],articleSlug:'forestry-finds-gis',chapterNumber:8,
  dateDisplay:'26 December 2018',
  context:'Contemporary real New Zealand commercial plantation scene; card illustration only, unrelated to the historical GIS hardware or survey described in the chapter.',
  originalAssetPath:'/assets/historical/original/'+slug+'.jpg',
