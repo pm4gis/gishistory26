@@ -24,6 +24,8 @@ async function contrastValues(page){
   const root=getComputedStyle(document.documentElement);
   const variable=name=>root.getPropertyValue('--'+name).trim();
   const rgb=value=>{
+   const short=value.match(/^#([\da-f]{3})$/i);
+   if(short)return [...short[1]].map(c=>parseInt(c+c,16)/255);
    const match=value.match(/^#([\da-f]{6})$/i);
    if(match)return [0,2,4].map(n=>parseInt(match[1].slice(n,n+2),16)/255);
    const m=value.match(/rgba?\((\d+)[, ]+(\d+)[, ]+(\d+)/);
@@ -86,6 +88,7 @@ try{
   });
 
   await check(viewport.name+' keyboard, focus, Escape and outside click',async()=>{
+   await page.keyboard.press('Tab');
    await summary.focus();
    assert.equal(await summary.evaluate(el=>getComputedStyle(el).outlineStyle!=='none'),true,'missing focus outline');
    if(!await menu.evaluate(el=>el.open))await page.keyboard.press('Enter');
