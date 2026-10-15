@@ -29,7 +29,8 @@ export const datasetCardSelections=Object.freeze({
  'nz-addresses-2025':{imageSlug:'auckland-region-transport-2014',note:'Road-network context for address mapping, not national address points.'},
  'niwa-river-environment-classification':{imageSlug:'doc-aerial-c24a085218be4824',note:'Aerial photograph of the Waitaki River, illustrating river geography rather than the REC network.'},
  'gns-digital-qmap':{imageSlug:'qmap-christchurch-2008',note:'Actual digital QMAP geological mapping for Christchurch.'},
- 'geographx-natural-colour-basemaps':{imageSlug:'ruapehu-3d-2002',note:'Independent 2002 3D terrain visualisation, not a Geographx commercial basemap.'}
+ 'geographx-natural-colour-basemaps':{imageSlug:'ruapehu-3d-2002',note:'Independent 2002 3D terrain visualisation, not a Geographx commercial basemap.'},
+ 'geographx-10m-terrain-imagery':{imageSlug:'nz-dem-arcgis-2006',note:'Independent DEM illustration, not a reproduced DOC-hosted Geographx tile or licensed Geographx artwork.'}
 });
 
 export function datasetCardImageMap(records,images){
