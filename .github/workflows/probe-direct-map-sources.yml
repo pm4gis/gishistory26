@@ -1,0 +1,22 @@
+name: Probe rights-identified historic map sources
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/probe-direct-map-sources.yml'
+      - 'scripts/probe-direct-map-sources-20261015.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - run: node scripts/probe-direct-map-sources-20261015.mjs
