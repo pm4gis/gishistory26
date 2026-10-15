@@ -68,4 +68,36 @@ const end=src.indexOf('\n',start);
 const replacement="    'canterbury-earthquake-recovery-authority-cera': {slug:'"+slug+"',relation:'A genuine CERA-produced July 2012 Christchurch Central Recovery Plan map showing designated anchor-project precincts. This is a spatial planning output, not a screenshot of the CERA data-sharing platform or technical land-zoning system.'},";
 src=src.slice(0,start)+replacement+src.slice(end);
 await writeFile(path,src);
+// Preserve the original October 15 first-wave register; this file records a later
+// deliberate, evidence-backed supersession of its CERA association.
+const followUp={
+ release:'direct-gis-image-followup-20261015',
+ baseCuration:'docs/media/catalogue-curation-25-20261015.json',
+ replacements:[{
+  recordSlug:'canterbury-earthquake-recovery-authority-cera',
+  previousImageSlug:'christchurch-response-orthophoto-2011',
+  imageSlug:slug,
+  relationship:'original agency planning map',
+  dateDisplay:'July 2012',
+  sourceUrl:sourcePage,
+  licence:'CC BY 4.0',
+  decision:'Published: genuine CERA central-city recovery plan map. Does not depict the CERA cloud SDI or technical land zones.'
+ }]
+};
+await writeFile('docs/media/direct-gis-image-followup-20261015.json',JSON.stringify(followUp,null,2)+'\n');
+// The site requires one explicit publication decision for each archived image.
+// Catalogue-only images are never placed in a chapter without paragraph evidence.
+const csvPath='docs/media/chapter-image-alignment-wave2-20261011.csv';
+let csv=await readFile(csvPath,'utf8');
+if(!csv.includes('"'+slug+'",')){
+ const cells=[
+  slug,record.title,'direct-gis-image-followup-20261015','',
+  'catalogue-only','Approved: original agency map for CERA entry; no paragraph placement',
+  '','','',record.dateDisplay,record.sourceUrl,record.licence,record.licenceEvidenceUrl,
+  'Actual CERA-authored 2012 Recovery Plan precinct and anchor-project map. CC BY 4.0 under Wikimedia Commons file metadata and CERA archive terms; Commons cropped extract preserved unchanged. Record tile only. Historical chapter prose remains unchanged.'
+ ];
+ const quote=value=>'"'+String(value||'').replaceAll('"','""')+'"';
+ csv=csv.replace(/\s*$/,'')+'\r\n'+cells.map(quote).join(',')+'\r\n';
+ await writeFile(csvPath,csv);
+}
 console.log(JSON.stringify({slug,originalUrl,originalSha256:sha(data),webSha256:sha(web),originalSize:data.length,webBytes:web.length,cardBytes:card.length},null,2));
