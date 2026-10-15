@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-003",
+  "a": "dataset:nz-property-boundaries",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Produced or maintained by",
+  "basis": "LINZ introduced NZ Property Boundaries in July 2025 as a practical representation of properties. The layer preferentially uses rating units, with spatial titles or primary parcels where the preferred source is unavailable.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Property Boundaries",
+      "url": "https://data.linz.govt.nz/layer/122657-nz-property-boundaries/"
+    }
+  ]
+}

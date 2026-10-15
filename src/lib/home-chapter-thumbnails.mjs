@@ -24,9 +24,9 @@ export const curatedHomepageChapterImages=Object.freeze({
     "kind": "map"
   },
   "forestry-finds-gis": {
-    "imageSlug": "doc-landsat-b68fd62840dccdf1",
-    "reason": "Actual satellite view of mapped forest cover on Taranaki, illustrating a later remote-sensing input to forestry mapping rather than an original forestry system.",
-    "kind": "map"
+    "imageSlug": "pukeora-commercial-pine-plantation-2018",
+    "reason": "Authentic 2018 photograph of a commercial radiata-pine plantation at Pukeora Forest, Hawke's Bay. Replaces the unrelated Mount Taranaki satellite image on both chapter-navigation tiles; this is contextual forestry photography, not documentation of the original GIS installation.",
+    "kind": "photo"
   },
   "universities-build-a-field": {
     "imageSlug": "auckland-university-clocktower-2004",

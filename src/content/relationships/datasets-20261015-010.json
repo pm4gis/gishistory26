@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-010",
+  "a": "dataset:gns-digital-qmap",
+  "b": "entity:gns-science",
+  "label": "Produced or maintained by",
+  "basis": "GNS Science's QMAP programme compiled regional geological mapping at 1:250,000 using GIS. Its digital editions brought mapped geology together with explanatory geological descriptions and an explicit national cartographic framework.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GNS Science, Digital QMAP",
+      "url": "https://www.gns.cri.nz/data-and-resources/digital-qmap-geological-maps-at-1250000/"
+    }
+  ]
+}

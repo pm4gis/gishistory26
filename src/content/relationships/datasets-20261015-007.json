@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-007",
+  "a": "dataset:lucas-land-use-map",
+  "b": "agency:ministry-for-the-environment",
+  "label": "Produced or maintained by",
+  "basis": "The Ministry for the Environment's Land Use and Carbon Analysis System (LUCAS) maps land-use classes used to monitor land-use change and report land-sector emissions and removals. The five representative dates are 1989, 2007, 2012, 2016 and 2020.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Ministry for the Environment, New Zealand land use map",
+      "url": "https://environment.govt.nz/facts-and-science/science-and-data/new-zealand-land-use-map/"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dataset:geographx-10m-terrain-imagery",
+  "slug": "geographx-10m-terrain-imagery",
+  "name": "Geographx 10 m terrain imagery service",
+  "kind": "Dataset",
+  "category": "Elevation and terrain datasets",
+  "url": "/datasets/geographx-10m-terrain-imagery/",
+  "description": "DOC-hosted Geographx-attributed 10 m terrain-imagery map cache in NZTM2000, distinct from the Geographx 8 m DEM.",
+  "story": [
+    "The Department of Conservation has published a cached map service named Terrain/Geographx10m. Its ArcGIS REST service describes a 10 m-resolution terrain-imagery layer, credits Geographx and uses the New Zealand Transverse Mercator 2000 coordinate system (NZTM2000, EPSG:2193).",
+    "The service demonstrates a second Geographx-derived national terrain product used in GIS delivery. The service record does not establish the original production date or show that this 10 m map cache is the same product as the Geographx 8 m elevation raster. Neither a TV3 weather-graphics use nor an unrestricted image-republication licence has been verified."
+  ],
+  "sources": [
+    {
+      "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
+      "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
+        "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+      }
+    ],
+    [
+      {
+        "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
+        "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related terrain history",
+      "url": "/stories/from-flat-maps-to-3d/"
+    },
+    {
+      "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
+      "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

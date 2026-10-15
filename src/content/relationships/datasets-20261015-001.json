@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-001",
+  "a": "dataset:nz-primary-parcels",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Produced or maintained by",
+  "basis": "LINZ publishes primary cadastral parcel geometry from Landonline through the LINZ Data Service. Each polygon represents a primary parcel, including parcels for privately held land, Crown land, roads, Māori land and water bodies; it is not necessarily the same as a rating unit or property boundary.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Primary Parcels",
+      "url": "https://data.linz.govt.nz/layer/50772-nz-primary-parcels/"
+    }
+  ]
+}

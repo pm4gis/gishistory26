@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-009",
+  "a": "dataset:niwa-river-environment-classification",
+  "b": "entity:niwa",
+  "label": "Produced or maintained by",
+  "basis": "NIWA built the River Environment Classification to describe New Zealand river segments and their catchments using physical and environmental attributes. Its network topology links upstream and downstream reaches, allowing catchment modelling and comparisons across regions.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "NIWA, River Environment Classification",
+      "url": "https://niwa.co.nz/freshwater/river-environment-classification-2"
+    }
+  ]
+}

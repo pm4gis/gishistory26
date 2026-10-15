@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-building-outlines",
+  "slug": "nz-building-outlines",
+  "name": "NZ Building Outlines",
+  "kind": "Dataset",
+  "category": "Property and address datasets",
+  "url": "/datasets/nz-building-outlines/",
+  "description": "Roof-outline polygons extracted from aerial photographs for buildings across most of mainland New Zealand.",
+  "story": [
+    "LINZ made NZ Building Outlines available in 2019. Its 2D polygons describe roof extents derived from aerial imagery by automated and manual interpretation; they are not building footprints surveyed on the ground.",
+    "The current-outlines layer uses the latest aerial imagery available for each region, so observation dates differ. LINZ also provides an All Sources series for comparing outlines extracted from different image vintages. Coverage excludes some remote areas."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Building Outlines",
+      "url": "https://data.linz.govt.nz/layer/101290-nz-building-outlines/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Building Outlines",
+        "url": "https://data.linz.govt.nz/layer/101290-nz-building-outlines/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Building Outlines",
+        "url": "https://data.linz.govt.nz/layer/101290-nz-building-outlines/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/imagery-becomes-infrastructure/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Building Outlines",
+      "url": "https://data.linz.govt.nz/layer/101290-nz-building-outlines/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

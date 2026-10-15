@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-8m-dem-geographx-2012",
+  "slug": "nz-8m-dem-geographx-2012",
+  "name": "NZ 8 m Digital Elevation Model (2012), Geographx",
+  "kind": "Dataset",
+  "category": "Elevation and terrain datasets",
+  "url": "/datasets/nz-8m-dem-geographx-2012/",
+  "description": "National 8 m raster elevation model built by Geographx mainly from LINZ Topo50 20 m contour data.",
+  "story": [
+    "The national 8 m digital elevation model was originally created by Geographx, founded by Roger Smith, using mainly the January 2012 LINZ Topo50 contour dataset with additional processing around coasts and water bodies.",
+    "It became one of the most heavily downloaded national elevation layers distributed through LINZ. LINZ describes this contour-derived model as suitable for cartographic visualisation, not for detailed terrain analysis; its 8 m grid spacing does not imply 8 m source accuracy or LiDAR survey precision."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+        "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+        "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/from-flat-maps-to-3d/"
+    },
+    {
+      "label": "LINZ Data Service, NZ 8m Digital Elevation Model (2012)",
+      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

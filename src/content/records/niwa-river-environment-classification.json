@@ -1,0 +1,46 @@
+{
+  "id": "dataset:niwa-river-environment-classification",
+  "slug": "niwa-river-environment-classification",
+  "name": "River Environment Classification (REC2)",
+  "kind": "Dataset",
+  "category": "Land and environmental datasets",
+  "url": "/datasets/niwa-river-environment-classification/",
+  "description": "NIWA's connected national river-segment and catchment network with environmental attributes.",
+  "story": [
+    "NIWA built the River Environment Classification to describe New Zealand river segments and their catchments using physical and environmental attributes. Its network topology links upstream and downstream reaches, allowing catchment modelling and comparisons across regions.",
+    "REC2 replaced and corrected aspects of the original network, using improved underlying elevation information and updated land-cover inputs. NIWA documents its use in national catchment models such as CLUES and TopNet."
+  ],
+  "sources": [
+    {
+      "label": "NIWA, River Environment Classification",
+      "url": "https://niwa.co.nz/freshwater/river-environment-classification-2"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "NIWA, River Environment Classification",
+        "url": "https://niwa.co.nz/freshwater/river-environment-classification-2"
+      }
+    ],
+    [
+      {
+        "label": "NIWA, River Environment Classification",
+        "url": "https://niwa.co.nz/freshwater/river-environment-classification-2"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "NIWA, River Environment Classification",
+      "url": "https://niwa.co.nz/freshwater/river-environment-classification-2"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

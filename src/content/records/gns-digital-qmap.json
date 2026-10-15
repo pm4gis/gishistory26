@@ -1,0 +1,46 @@
+{
+  "id": "dataset:gns-digital-qmap",
+  "slug": "gns-digital-qmap",
+  "name": "GNS Digital QMAP 1:250,000 geology",
+  "kind": "Dataset",
+  "category": "Geology and scientific datasets",
+  "url": "/datasets/gns-digital-qmap/",
+  "description": "The national regional series of GIS-based 1:250,000 geological maps and their digital derivatives.",
+  "story": [
+    "GNS Science's QMAP programme compiled regional geological mapping at 1:250,000 using GIS. Its digital editions brought mapped geology together with explanatory geological descriptions and an explicit national cartographic framework.",
+    "Published regional map files include georeferenced images for GIS use. Seamless geological datasets form a separate related output and should not be confused with the original individual regional QMAP sheets."
+  ],
+  "sources": [
+    {
+      "label": "GNS Science, Digital QMAP",
+      "url": "https://www.gns.cri.nz/data-and-resources/digital-qmap-geological-maps-at-1250000/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "GNS Science, Digital QMAP",
+        "url": "https://www.gns.cri.nz/data-and-resources/digital-qmap-geological-maps-at-1250000/"
+      }
+    ],
+    [
+      {
+        "label": "GNS Science, Digital QMAP",
+        "url": "https://www.gns.cri.nz/data-and-resources/digital-qmap-geological-maps-at-1250000/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "GNS Science, Digital QMAP",
+      "url": "https://www.gns.cri.nz/data-and-resources/digital-qmap-geological-maps-at-1250000/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

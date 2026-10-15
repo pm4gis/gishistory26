@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-011",
+  "a": "dataset:geographx-natural-colour-basemaps",
+  "b": "entity:geographx",
+  "label": "Produced or maintained by",
+  "basis": "Geographx developed distinctive natural-colour New Zealand terrain basemaps and other terrain-derived cartographic products. Its map design combines elevation surfaces, map features and colour to communicate landforms across print and digital mapping.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Geographx, About and cartographic outputs",
+      "url": "https://www.geographx.co.nz/about/"
+    }
+  ]
+}

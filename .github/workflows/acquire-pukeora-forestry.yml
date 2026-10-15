@@ -1,0 +1,35 @@
+name: Acquire verified Pukeora forestry photo
+on:
+  push:
+    branches: [content/national-datasets-media-navigation-20261015]
+    paths:
+      - 'scripts/acquire-pukeora-forestry.mjs'
+      - '.github/workflows/acquire-pukeora-forestry.yml'
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/content/national-datasets-media-navigation-20261015'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: content/national-datasets-media-navigation-20261015
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Preserve original, card derivative and source metadata
+        run: node scripts/acquire-pukeora-forestry.mjs
+      - name: Commit source-credited archival media to the feature branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/ src/content/images/pukeora-commercial-pine-plantation-2018.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive licensed Pukeora radiata-pine plantation image"
+            git pull --rebase origin content/national-datasets-media-navigation-20261015
+            git push origin HEAD:content/national-datasets-media-navigation-20261015
+          fi

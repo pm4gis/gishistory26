@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-property-boundaries",
+  "slug": "nz-property-boundaries",
+  "name": "NZ Property Boundaries",
+  "kind": "Dataset",
+  "category": "Property and address datasets",
+  "url": "/datasets/nz-property-boundaries/",
+  "description": "A combined best-available representation of properties from rating units, spatial titles and primary parcels.",
+  "story": [
+    "LINZ introduced NZ Property Boundaries in July 2025 as a practical representation of properties. The layer preferentially uses rating units, with spatial titles or primary parcels where the preferred source is unavailable.",
+    "These are mapped properties rather than survey-defined parcel boundaries. The distinction is important when working with planning, rates, landownership or cadastral datasets."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Property Boundaries",
+      "url": "https://data.linz.govt.nz/layer/122657-nz-property-boundaries/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Property Boundaries",
+        "url": "https://data.linz.govt.nz/layer/122657-nz-property-boundaries/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Property Boundaries",
+        "url": "https://data.linz.govt.nz/layer/122657-nz-property-boundaries/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/roads-addresses-and-property/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Property Boundaries",
+      "url": "https://data.linz.govt.nz/layer/122657-nz-property-boundaries/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-building-outlines-all-sources",
+  "slug": "nz-building-outlines-all-sources",
+  "name": "NZ Building Outlines (All Sources)",
+  "kind": "Dataset",
+  "category": "Property and address datasets",
+  "url": "/datasets/nz-building-outlines-all-sources/",
+  "description": "Building roof-outline geometries preserved across successive aerial-imagery captures since the 2019 programme.",
+  "story": [
+    "The All Sources dataset retains building outlines extracted from different aerial-photograph vintages, with capture-source dates and lifecycle information that allow users to compare individual areas over time.",
+    "It is a separate product from the current NZ Building Outlines layer. Multiple versions may represent the same building and should not be summed as a count of buildings."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Building Outlines (All Sources)",
+      "url": "https://data.linz.govt.nz/layer/101292-nz-building-outlines-all-sources/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Building Outlines (All Sources)",
+        "url": "https://data.linz.govt.nz/layer/101292-nz-building-outlines-all-sources/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Building Outlines (All Sources)",
+        "url": "https://data.linz.govt.nz/layer/101292-nz-building-outlines-all-sources/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/imagery-becomes-infrastructure/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Building Outlines (All Sources)",
+      "url": "https://data.linz.govt.nz/layer/101292-nz-building-outlines-all-sources/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}

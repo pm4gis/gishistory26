@@ -1,0 +1,46 @@
+{
+  "id": "dataset:nz-addresses-2025",
+  "slug": "nz-addresses-2025",
+  "name": "NZ Addresses",
+  "kind": "Dataset",
+  "category": "Property and address datasets",
+  "url": "/datasets/nz-addresses-2025/",
+  "description": "National point dataset of allocated addresses compiled from territorial-authority advice to LINZ.",
+  "story": [
+    "Territorial authorities allocate addresses and notify LINZ, which maintains the central Address Information Management System (AIMS). NZ Addresses provides national point locations and address components from this maintained source.",
+    "LINZ published the NZ Addresses layer on the LINZ Data Service in September 2025, supplying a national address reference for emergency services, asset systems, planning and geographic matching. An address point should not be interpreted as a cadastral boundary."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Data Service, NZ Addresses",
+      "url": "https://data.linz.govt.nz/layer/123113-nz-addresses/"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Data Service, NZ Addresses",
+        "url": "https://data.linz.govt.nz/layer/123113-nz-addresses/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Data Service, NZ Addresses",
+        "url": "https://data.linz.govt.nz/layer/123113-nz-addresses/"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "contextLinks": [
+    {
+      "label": "Related history",
+      "url": "/stories/roads-addresses-and-property/"
+    },
+    {
+      "label": "LINZ Data Service, NZ Addresses",
+      "url": "https://data.linz.govt.nz/layer/123113-nz-addresses/"
+    }
+  ],
+  "status": "Source-backed dataset history"
+}
