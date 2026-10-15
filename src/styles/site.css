@@ -188,6 +188,12 @@
 .subject-browse-card .browse-image>a{display:flex;align-items:center;justify-content:center;height:160px;background:var(--raised);border-bottom:1px solid var(--line);overflow:hidden}
 .subject-browse-card .browse-image img{display:block;width:100%;max-height:160px;height:100%;object-fit:contain;border-radius:0}
 .subject-browse-card .browse-image figcaption{font-size:12px;margin:0;padding:9px 15px 0}
+/* Listing tile images open their associated content. */
+.tile-media-link{display:block;width:100%;flex:none;overflow:hidden;text-decoration:none}
+.tile-media-link .decorative-landscape--card{height:auto;aspect-ratio:16/9;border-radius:0}
+.subject-entry-card > .tile-media-link{margin:-24px -24px 14px;width:calc(100% + 48px)}
+.subject-browse-card .browse-image.decorative img{object-fit:cover}
+.dataset-card > .dataset-media-fallback{border-bottom:1px solid var(--line)}
 @media(max-width:850px){
  .subject-media--banner .subject-media-link{height:200px}
  .subject-media--feature .subject-media-link{max-height:260px}
