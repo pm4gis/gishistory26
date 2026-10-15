@@ -16,7 +16,7 @@ const thematic=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.imag
   </div>
   <div class="cards cards--visual">{thematic.map((t:any,i:number)=>
     <article class="card art-card">
-      {t.subject?<SubjectImage image={t.subject.image} relation={t.subject.relation} variant="card"/>:<DecorativeLandscape id={decorFor(i+2)} variant="card"/>}
+      {t.subject?<SubjectImage image={t.subject.image} relation={t.subject.relation} variant="card" showCaption={false} destination={"/themes/"+t.slug+"/"}/>:<a class="tile-media-link" href={"/themes/"+t.slug+"/"} aria-label={"Explore "+t.title}><DecorativeLandscape id={decorFor(i+2)} variant="card"/></a>}
       <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></div>
     </article>)}
   </div>
