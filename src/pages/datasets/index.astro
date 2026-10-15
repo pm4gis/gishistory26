@@ -10,7 +10,7 @@ const visual=datasetCardImageMap(records,d.images);
 const groups=[...new Set(records.map((r:any)=>r.category||'Other datasets'))].sort((a:any,b:any)=>a.localeCompare(b,'en-NZ'));
 const popularSlugs=['nz-primary-parcels','nz-property-titles','nz-property-boundaries','nz-building-outlines','nzlri','national-luc-2021','lcdb','lucas-land-use-map','nz-8m-dem-geographx-2012','nztopo50-vector'];
 const popular=popularSlugs.map(slug=>records.find((r:any)=>r.slug===slug)).filter(Boolean);
-const photographic=new Set(['nasa-terra-modis-nz-2002','linz-otago','southland-aerial-verdon-1988','doc-aerial-c24a085218be4824','victoria-square-aerial-1955']);
+const photographic=new Set(['nasa-terra-modis-nz-2002','linz-otago','southland-aerial-verdon-1988','doc-aerial-c24a085218be4824','victoria-square-aerial-1955','wrights-hill-1945','pukeora-commercial-pine-plantation-2018']);
 ---
 <Layout title="Datasets · NZ GIS History" description="Explore national and historical New Zealand spatial datasets, with documentary imagery, sources and linked organisations.">
  <div class="wrap dataset-layout">
