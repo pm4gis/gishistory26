@@ -2,6 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import {dataset} from '../../lib/data';
 import {datasetCardImageMap} from '../../lib/dataset-card-media.mjs';
+import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
+import {decorFor} from '../../lib/decor';
 const d=await dataset();
 const records=d.records.filter((r:any)=>r.kind==='Dataset').sort((a:any,b:any)=>a.name.localeCompare(b.name,'en-NZ'));
 const visual=datasetCardImageMap(records,d.images);
@@ -28,7 +30,7 @@ const photographic=new Set(['nasa-terra-modis-nz-2002','linz-otago','southland-a
   {groups.map((group:any)=><section class="dataset-group" aria-label={group}>
    <h2>{group}</h2>
    <div class="cards dataset-grid">
-    {records.filter((r:any)=>(r.category||'Other datasets')===group).map((r:any)=>{
+    {records.filter((r:any)=>(r.category||'Other datasets')===group).map((r:any,i:number)=>{
      const image=visual[r.slug];
      return <article class="card dataset-card" id={'dataset-'+r.slug}>
       {image&&<figure class:list={['dataset-card-media',photographic.has(image.slug)&&'dataset-card-media--photo']}>
@@ -37,6 +39,7 @@ const photographic=new Set(['nasa-terra-modis-nz-2002','linz-otago','southland-a
        </a>
        <figcaption>{image.sourceNote} <a href={'/images/'+image.slug+'/'}>Image source and credit</a></figcaption>
       </figure>}
+      {!image&&<a class="tile-media-link dataset-media-fallback" href={r.url} aria-label={"Read about "+r.name}><DecorativeLandscape id={decorFor(i+groups.indexOf(group)*3)} variant="card"/></a>}
       <div class="dataset-card-copy">
        <small class="eyebrow">Dataset</small>
        <a class="title" href={r.url}>{r.name}</a>
