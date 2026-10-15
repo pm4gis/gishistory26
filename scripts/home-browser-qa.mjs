@@ -140,7 +140,7 @@ try{
    }
    await dimensions(page,viewport.name+' header');
   });
-  await check(viewport.name+' story rotation, uniform image frames and image-page attribution',async()=>{
+  await check(viewport.name+' story rotation, linked thumbnails and separate image-page attribution',async()=>{
    const selections=async()=>await page.locator('#highlighted-stories .highlight-card:visible').evaluateAll(els=>els.map(el=>el.dataset.highlight));
    const first=await selections();
    assert.equal(new Set(first).size,5);
@@ -162,9 +162,15 @@ try{
     assert.ok((await image.locator('img').getAttribute('alt'))?.length>10);
     assert.equal(await image.locator('figcaption').count(),0,'highlight cards should not show image attribution');
     const href=await image.locator('a.subject-media-link').getAttribute('href');
-    assert.ok(href?.startsWith('/images/'),'documentary image should link to its detail page');
+    const storyHref=await image.locator('..').locator('a.title').getAttribute('href');
+    assert.equal(href,storyHref,'highlight image must open its story, not the image-information page');
+    assert.ok(href?.startsWith('/stories/'),'highlight must open a published story');
+    // Source and licence remain available separately through the image archive.
+    const imageSrc=await image.locator('img').getAttribute('src');
+    const imageSlug=(imageSrc||'').split('/').at(-1).replace(/\.webp$/,'');
+    assert.ok(imageSlug,'documentary image missing its identifiable source image');
     const detailPage=await context.newPage();
-    await detailPage.goto(new URL(href,base).href,{waitUntil:'domcontentloaded'});
+    await detailPage.goto(new URL('/images/'+encodeURIComponent(imageSlug)+'/',base).href,{waitUntil:'domcontentloaded'});
     const attribution=detailPage.locator('.image-source-card');
     await attribution.waitFor();
     const details=await attribution.innerText();
