@@ -42,6 +42,10 @@ test('contextual image approval is specific to chapter and cannot silently becom
   assert.ok(['photo','map','interface'].includes(choice.kind),'unexpected image framing');
   assert.ok(rawCard[slug].homeCardContextual,'homepage fallback silently placed in chapter: '+slug);
  }
+ assert.equal(rawCard['forestry-finds-gis'].slug,'pukeora-commercial-pine-plantation-2018');
+ assert.equal(rawCard['forestry-finds-gis'].homeCardKind,'photo');
+ assert.ok(rawCard['forestry-finds-gis'].sourceUrl.includes('commons.wikimedia.org/wiki/File:Pukeora_Forest'));
+ assert.equal(rawCard['forestry-finds-gis'].chapterNumber,8);
  assert.equal(rawCard['google-changes-the-audience'].slug,'doc-google-trekker-heaphy-2015');
  assert.match(curatedHomepageChapterImages['mapping-the-networks'].reason,/not an electricity/);
  assert.match(curatedHomepageChapterImages['safety-policing-and-emergency-gis'].reason,/distinct from police/);
