@@ -64,7 +64,7 @@ try{
   const links=menu.locator('.nav-theme-grid a');
 
   await check(viewport.name+' populated theme links match all source records',async()=>{
-   if(viewport.mobile)await page.locator('.mobile-menu summary').click();
+   if(viewport.mobile)await page.locator('.mobile-menu > summary').click();
    assert.equal(await links.count(),themes.length);
    await summary.click();
    assert.ok(await menu.evaluate(element=>element.open));
@@ -106,7 +106,7 @@ try{
 
   await check(viewport.name+' palette combinations retain readable glass surfaces',async()=>{
    if(viewport.mobile&&!(await page.locator('.mobile-menu').evaluate(el=>el.open))){
-    await page.locator('.mobile-menu summary').click();
+    await page.locator('.mobile-menu > summary').click();
    }
    for(const palette of palettes){
     for(const mode of ['dark','light']){
@@ -123,7 +123,7 @@ try{
      assert.equal(await page.locator('html').getAttribute('data-appearance'),mode);
      await page.keyboard.press('Escape');
      if(viewport.mobile&&!(await page.locator('.mobile-menu').evaluate(el=>el.open))){
-      await page.locator('.mobile-menu summary').click();
+      await page.locator('.mobile-menu > summary').click();
      }
      await summary.click();
      await page.screenshot({path:shotDir+'/'+viewport.name+'-'+palette+'-'+mode+'-themes.png',animations:'disabled'});
