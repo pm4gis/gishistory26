@@ -87,6 +87,35 @@ try{
    }
   });
 
+  await check(viewport.name+' full dataset dropdown and sourced catalogue tiles',async()=>{
+   await page.goto(base+'/datasets/',{waitUntil:'domcontentloaded'});
+   const records=readdirSync('src/content/records').filter(n=>n.endsWith('.json'))
+    .map(n=>JSON.parse(readFileSync('src/content/records/'+n,'utf8')))
+    .filter(r=>r.kind==='Dataset');
+   const target=page.locator(viewport.mobile?'.nav--mobile .nav-dropdown--datasets':'.nav--desktop .nav-dropdown--datasets');
+   if(viewport.mobile)await page.locator('.mobile-menu > summary').click();
+   await target.locator('summary').click();
+   assert.equal(await target.locator('.nav-theme-grid a').count(),records.length,'menu must include every dataset history');
+   const links=await target.locator('.nav-theme-grid a').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')));
+   assert.deepEqual(new Set(links),new Set(records.map(r=>r.url)));
+   assert.equal(await target.locator('.nav-dropdown-all').getAttribute('href'),'/datasets/');
+   await noOverflow(page,viewport.name+' dataset disclosure');
+   const illustrated=page.locator('.dataset-card-media img');
+   assert.ok(await illustrated.count()>=20,'dataset catalogue missing source imagery');
+   assert.ok(await page.locator('.dataset-card-media figcaption a').count()>=20,'dataset image provenance links missing');
+   assert.equal(await page.locator('.dataset-shortcuts a').count(),10);
+   for(const card of ['nz-primary-parcels','lucas-land-use-map','nz-8m-dem-geographx-2012']){
+    const el=page.locator('#dataset-'+card+' img');
+    await el.scrollIntoViewIfNeeded();
+    const info=await el.evaluate(async img=>{await img.decode();return {width:img.naturalWidth,height:img.naturalHeight,alt:img.alt}});
+    assert.ok(info.width>=180&&info.height>=100&&info.alt.length>10,card+' documentary image failed');
+   }
+   await target.locator('summary').focus();
+   await page.keyboard.press('Escape');
+   assert.equal(await target.evaluate(el=>el.open),false);
+   await page.screenshot({path:shotDir+'/'+viewport.name+'-dataset-catalogue.png',animations:'disabled'});
+  });
+
   await check(viewport.name+' keyboard, focus, Escape and outside click',async()=>{
    await page.keyboard.press('Tab');
    await summary.focus();
