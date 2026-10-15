@@ -9,6 +9,9 @@ on:
       - 'src/components/SubjectImage.astro'
       - 'src/components/Browse.svelte'
       - 'scripts/tile-browser-qa.mjs'
+      - 'src/lib/subject-media.mjs'
+      - 'src/content/images/**'
+      - 'docs/media/direct-gis-image-followup-20261015.json'
       - 'src/pages/read/**'
       - 'src/pages/about/**'
       - 'src/pages/contribute/**'
@@ -30,10 +33,14 @@ on:
       - 'src/components/SubjectImage.astro'
       - 'src/components/Browse.svelte'
       - 'scripts/tile-browser-qa.mjs'
+      - 'src/lib/subject-media.mjs'
+      - 'src/content/images/**'
+      - 'docs/media/direct-gis-image-followup-20261015.json'
       - 'src/pages/contribute/**'
       - 'src/layouts/Layout.astro'
       - 'src/styles/site.css'
       - 'scripts/home-browser-qa.mjs'
+      - '.github/workflows/home-browser-qa.yml'
   workflow_dispatch:
 permissions:
   contents: read
