@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {mkdirSync,writeFileSync,existsSync} from 'node:fs';
+import {mkdirSync,writeFileSync,existsSync,readFileSync,readdirSync} from 'node:fs';
 import {chromium} from 'playwright';
 
 const base=process.env.QA_BASE_URL||'http://127.0.0.1:4321';
@@ -26,6 +26,12 @@ const catalogues=[
  {route:'/themes/women-in-gis/',selector:'.subject-entry-card',min:1}
 ];
 const palettes=['slate','coastal','forest','archive','bubblegum'];
+const curated=JSON.parse(readFileSync('docs/media/catalogue-curation-25-20261015.json','utf8')).selections;
+const collection=type=>new Map(readdirSync('src/content/'+type).filter(x=>x.endsWith('.json'))
+ .map(x=>JSON.parse(readFileSync('src/content/'+type+'/'+x,'utf8')))
+ .map(x=>[x.slug,x]));
+const curatedRecords=collection('records');
+const curatedImages=collection('images');
 async function check(label,fn){
  try{const result=await fn();outcomes.push({label,pass:true,...(result||{})});console.log('PASS '+label);}
  catch(e){outcomes.push({label,pass:false,error:String(e)});console.error('FAIL '+label+': '+e);process.exitCode=1;}
@@ -170,6 +176,43 @@ try{
    }
    return {opened};
   });
+  if(['desktop','mobile'].includes(viewport.name)){
+   await check(viewport.name+' all 25 documented replacements have the intended image and destination',async()=>{
+    const datasets=curated.filter(x=>x.kind==='Dataset');
+    const orgs=curated.filter(x=>x.kind!=='Dataset');
+    let count=0;
+    await page.goto(base+'/datasets/',{waitUntil:'domcontentloaded'});
+    for(const item of datasets){
+     const record=curatedRecords.get(item.recordSlug);
+     const image=curatedImages.get(item.imageSlug);
+     const card=page.locator('#dataset-'+item.recordSlug);
+     const photo=card.locator('.dataset-card-media img');
+     await photo.waitFor();
+     assert.equal(await photo.getAttribute('src'),image.thumbnailPath||image.assetPath,item.recordSlug+' dataset image');
+     assert.equal(await photo.locator('xpath=ancestor::a[1]').getAttribute('href'),record.url);
+     assert.equal(await card.locator('.dataset-card-media figcaption a').getAttribute('href'),'/images/'+image.slug+'/');
+     count++;
+    }
+    await page.goto(base+'/browse/',{waitUntil:'domcontentloaded'});
+    const search=page.locator('input[type="search"]');
+    await search.waitFor();
+    for(const item of orgs){
+     const record=curatedRecords.get(item.recordSlug);
+     const image=curatedImages.get(item.imageSlug);
+     await search.fill(record.name);
+     const card=page.locator('.subject-browse-card').filter({has:page.locator('a.title[href="'+record.url+'"]')});
+     await card.waitFor();
+     const photo=card.locator('img');
+     assert.equal(await photo.getAttribute('src'),image.thumbnailPath||image.assetPath,item.recordSlug+' catalogue image');
+     const anchor=photo.locator('xpath=ancestor::a[1]');
+     assert.equal(await anchor.getAttribute('href'),record.url,item.recordSlug+' wrong content destination');
+     assert.equal(await photo.getAttribute('alt'),image.altText,item.recordSlug+' missing documentary description');
+     count++;
+    }
+    assert.equal(count,25,'incomplete curated browser coverage');
+    return {checked:count};
+   });
+  }
   if(['desktop','mobile'].includes(viewport.name)){
    await check(viewport.name+' all five palettes and both modes keep tile text readable',async()=>paletteChecks(page,viewport.name));
    await check(viewport.name+' image provenance remains available in actual content pages',async()=>{
