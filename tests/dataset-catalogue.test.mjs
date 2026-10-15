@@ -16,7 +16,7 @@ test('popular nationwide datasets are individually sourced and not duplicates',(
  const added=['nz-primary-parcels','nz-property-titles','nz-property-boundaries',
   'nz-building-outlines','nz-building-outlines-all-sources','nz-8m-dem-geographx-2012',
   'lucas-land-use-map','nz-addresses-2025','niwa-river-environment-classification',
-  'gns-digital-qmap','geographx-natural-colour-basemaps'];
+  'gns-digital-qmap','geographx-natural-colour-basemaps','geographx-10m-terrain-imagery'];
  assert.equal(new Set(datasets.map(x=>x.slug)).size,datasets.length);
  for(const slug of added){
   const d=datasets.find(x=>x.slug===slug);
