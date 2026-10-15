@@ -1,0 +1,14 @@
+{
+  "id": "relationship:datasets-20261015-014",
+  "a": "dataset:geographx-10m-terrain-imagery",
+  "b": "entity:geographx",
+  "label": "Terrain imagery credited to Geographx",
+  "basis": "The DOC ArcGIS REST service is explicitly named Terrain/Geographx10m, describes 10 m terrain imagery and credits Geographx. Original production date is not specified.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
+      "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+    }
+  ]
+}
