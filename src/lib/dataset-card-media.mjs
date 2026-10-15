@@ -30,7 +30,18 @@ export const datasetCardSelections=Object.freeze({
  'niwa-river-environment-classification':{imageSlug:'doc-aerial-c24a085218be4824',note:'Aerial photograph of the Waitaki River, illustrating river geography rather than the REC network.'},
  'gns-digital-qmap':{imageSlug:'qmap-christchurch-2008',note:'Actual digital QMAP geological mapping for Christchurch.'},
  'geographx-natural-colour-basemaps':{imageSlug:'ruapehu-3d-2002',note:'Independent 2002 3D terrain visualisation, not a Geographx commercial basemap.'},
- 'geographx-10m-terrain-imagery':{imageSlug:'nz-dem-arcgis-2006',note:'Independent DEM illustration, not a reproduced DOC-hosted Geographx tile or licensed Geographx artwork.'}
+ 'geographx-10m-terrain-imagery':{imageSlug:'nz-dem-arcgis-2006',note:'Independent DEM illustration, not a reproduced DOC-hosted Geographx tile or licensed Geographx artwork.'},
+ // Reviewed documentary associations, October 2026: docs/media/catalogue-curation-25-20261015.md
+ 'crown-aerial-film-library':{imageSlug:'wrights-hill-1945',note:"A documented Retrolens aerial survey frame, survey SN373, Run B, Photo 15, captured in 1945. It illustrates an original type of frame preserved by the film library."},
+ 'crown-aerial-footprints':{imageSlug:'southland-aerial-verdon-1988',note:"An attributable Southland 1988 survey photograph, illustrating the original image frames located through the later aerial-footprints index; this is not a footprints polygon layer."},
+ 'gns-historic-geological-maps':{imageSlug:'hector-geological-map-1884',note:"Hector’s 1884 geological map is an authentic historic geological cartographic work, illustrating the type of older source preserved in geological collections, not a GNS online map screen."},
+ 'gns-active-faults':{imageSlug:'masterton-earthquake-fault-map-1942',note:"An original survey of fault traces after the 1942 Masterton earthquake. It illustrates predecessor field-fault mapping, not the current NZ Active Faults Database layer."},
+ 'geonet-observations-2001':{imageSlug:'geonet-kaikoura-felt-2016',note:"An actual GeoNet public felt-report map for the 2016 Kaikōura earthquake, showing one service available after GeoNet’s 2001 establishment; it is not a 2001 screenshot."},
+ 'historic-nzms13':{imageSlug:'clutha-molyneux-nzms13-1955',note:"An original Department of Lands and Survey Clutha and South Molyneux NZMS13 survey-district sheet from 1955, directly representative of this map series."},
+ 'qmap-250k':{imageSlug:'qmap-christchurch-2008',note:"A genuine 2008 Christchurch geological map compiled under GNS Science’s national QMAP programme, directly representative of the 1:250,000 series."},
+ 'nz-chart-geotiffs':{imageSlug:'doc-historic-map-17bed2d97b6abec1',note:"An authentic 1856 Admiralty nautical chart illustrates the older hydrographic chart lineage. It is a historic chart, not a georeferenced LINZ GeoTIFF layer."},
+ 'historic-hydrographic-soundings':{imageSlug:'doc-historic-map-17bed2d97b6abec1',note:"An original 1856 Admiralty chart provides historical hydrographic cartography context; it is not a digitised sounding sheet or the contemporary survey index."},
+ 'nz-carbon-monitoring-1996':{imageSlug:'pukeora-commercial-pine-plantation-2018',note:"A verified 2018 commercial plantation photograph provides forestry land-cover context, not a Carbon Monitoring System sample, analysis or result from 1996–2007."}
 });
 
 export function datasetCardImageMap(records,images){
