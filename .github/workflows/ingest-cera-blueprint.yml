@@ -1,0 +1,43 @@
+name: Archive original CERA 2012 map
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ingest-cera-blueprint.yml'
+      - 'scripts/ingest-cera-blueprint-2012.mjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Download and verify the original CERA source
+        run: node scripts/ingest-cera-blueprint-2012.mjs
+      - name: Validate source and production build before committing
+        run: |
+          npm test
+          npm run build
+      - name: Publish vetted source image and attribution
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/cera-central-recovery-blueprint-2012.json \
+            src/lib/subject-media.mjs \
+            public/assets/historical/original/cera-central-recovery-blueprint-2012.jpg \
+            public/assets/historical/web/cera-central-recovery-blueprint-2012.webp \
+            public/assets/historical/card/cera-central-recovery-blueprint-2012.webp
+          if git diff --cached --quiet; then echo 'No new assets to commit'; exit 0; fi
+          git commit -m 'Publish credited original CERA Christchurch recovery map'
+          git push origin HEAD:main
