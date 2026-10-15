@@ -1,3 +1,4 @@
+import {datasetCardSelections} from './dataset-card-media.mjs';
 /**
  * Curated documentary-media relationships for themes and non-person entries.
  * These reference existing, individually credited images from src/content/images.
@@ -101,7 +102,23 @@ export const subjectMedia = Object.freeze({
     'canterbury-regional-council-environment-canterbury': {
       slug: 'canterbury-wilding-pines',
       relation: 'A photograph of wilding pines in Canterbury, illustrating a regional land-management challenge. It is not a council GIS map or software screen.'
-    }
+    },
+    // Reviewed documentary associations, October 2026. Sources and limitations: docs/media/catalogue-curation-25-20261015.md
+    'department-of-lands-and-survey': {slug:'clutha-molyneux-nzms13-1955',relation:"A 1955 survey-district map credited to the Department of Lands and Survey, an original output of the department’s paper mapping programme, not a computer-produced map."},
+    'department-of-survey-and-land-information-dosli': {slug:'north-island-counties-districts-1981',relation:"A 1981 Lands and Survey administrative map from DOSLI’s predecessor. The sheet predates DOSLI’s 1987 establishment and is not a DOSLI system screenshot."},
+    'new-zealand-aerial-mapping': {slug:'christchurch-response-orthophoto-2011',relation:"Aerial orthophotography captured by New Zealand Aerial Mapping for the Christchurch Response Centre in February 2011; a documented company image product."},
+    'environment-southland-southland-regional-council': {slug:'southland-aerial-verdon-1988',relation:"A 1988 Invercargill aerial survey image credited to Southland Regional Council via LINZ, illustrating the regional imagery archive; not a Topoclimate South map."},
+    'new-zealand-geographic-board': {slug:'ongaonga-linz-topo50-2020',relation:"An actual LINZ Topo50 sheet with geographical names, illustrating an official mapping context for the Geographic Board’s naming work; not a Gazetteer screen."},
+    'canterbury-earthquake-recovery-authority-cera': {slug:'christchurch-response-orthophoto-2011',relation:"Christchurch response aerial imagery captured in February 2011, before CERA was established. It shows the geospatial evidence later available to recovery agencies, not a CERA GIS output."},
+    'geographx': {slug:'ruapehu-3d-2002',relation:"NASA’s authentic 2002 Ruapehu terrain visualisation illustrates the 3D cartography field in which Geographx worked. It is NASA work, not an image made by Geographx."},
+    'manaaki-whenua-landcare-research': {slug:'nz-agricultural-landuse-capability-2022',relation:"An independently published 2022 map using New Zealand Land Use Capability, LUCAS and AgriBase inputs. It illustrates downstream land-resource data use, not a Landcare-produced map."},
+    'ministry-for-primary-industries': {slug:'pukeora-commercial-pine-plantation-2018',relation:"A documented 2018 Hawke’s Bay commercial plantation illustrates a primary-industry landscape. It does not depict MPI’s biosecurity GIS or Survey123 programme."},
+    'new-zealand-forest-service': {slug:'pukeora-commercial-pine-plantation-2018',relation:"A real commercial radiata-pine plantation photographed in 2018. The image illustrates forest-management geography decades after the Forest Service ceased; it is not an agency inventory product."},
+    'hawke-s-bay-regional-council': {slug:'gabrielle-sentinel-flooding-napier-2023',relation:"Processed Copernicus Sentinel imagery shows February 2023 flood extent near Napier, relevant to regional hazard work. It is an independent satellite analysis, not a council-issued GIS map."},
+    'otago-regional-council': {slug:'doc-aerial-c24a085218be4824',relation:"An attributable 2005 aerial photograph of the Waitaki River and Benmore Dam in Otago, illustrating regional river and infrastructure geography; not an Otago Regional Council product."},
+    'gisborne-district-council': {slug:'gisborne-east-coast-luc-map-1967',relation:"The original 1967 Gisborne–East Coast LUC sheet provides a documented predecessor to the 1990s council–Landcare second-edition inventory work. The 1967 sheet is not council-produced."},
+    'ministry-for-the-environment': {slug:'ecoregions-qgis-2025',relation:"An independent 2025 QGIS ecoregion map illustrates environmental classification, a related field to LENZ. It is neither a LENZ atlas sheet nor a Ministry-produced map."},
+    'kapiti-coast-district-council': {slug:'kapiti-island-lidar-2024',relation:"A genuine LiDAR-derived depiction of Kāpiti Island terrain in 2024. It illustrates the district’s geographical setting but is not a council GIS or LIM application screenshot."},
   }
 });
 export function pickThemeImage(slug,images) {
@@ -112,7 +129,8 @@ export function pickThemeImage(slug,images) {
 }
 export function pickRecordImage(record,images) {
   if(!record || record.kind==='Person' || record.kind==='Story')return null;
-  const binding=subjectMedia.records[record.slug];
+  const selection=record.kind==='Dataset'?datasetCardSelections[record.slug]:null;
+  const binding=subjectMedia.records[record.slug]||(selection?{slug:selection.imageSlug,relation:selection.note}:null);
   if(!binding)return null;
   const image=images.find(image=>image.slug===binding.slug);
   return image?{image,relation:binding.relation}:null;
