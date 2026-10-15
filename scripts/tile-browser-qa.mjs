@@ -27,6 +27,9 @@ const catalogues=[
 ];
 const palettes=['slate','coastal','forest','archive','bubblegum'];
 const curated=JSON.parse(readFileSync('docs/media/catalogue-curation-25-20261015.json','utf8')).selections;
+const followUpFile='docs/media/direct-gis-image-followup-20261015.json';
+const followUp=existsSync(followUpFile)?JSON.parse(readFileSync(followUpFile,'utf8')):{replacements:[]};
+const newerImages=new Map(followUp.replacements.map(x=>[x.recordSlug,x.imageSlug]));
 const collection=type=>new Map(readdirSync('src/content/'+type).filter(x=>x.endsWith('.json'))
  .map(x=>JSON.parse(readFileSync('src/content/'+type+'/'+x,'utf8')))
  .map(x=>[x.slug,x]));
@@ -184,7 +187,7 @@ try{
     await page.goto(base+'/datasets/',{waitUntil:'domcontentloaded'});
     for(const item of datasets){
      const record=curatedRecords.get(item.recordSlug);
-     const image=curatedImages.get(item.imageSlug);
+     const image=curatedImages.get(newerImages.get(item.recordSlug)||item.imageSlug);
      const card=page.locator('#dataset-'+item.recordSlug);
      const photo=card.locator('.dataset-card-media img');
      await photo.waitFor();
@@ -198,7 +201,7 @@ try{
     await search.waitFor();
     for(const item of orgs){
      const record=curatedRecords.get(item.recordSlug);
-     const image=curatedImages.get(item.imageSlug);
+     const image=curatedImages.get(newerImages.get(item.recordSlug)||item.imageSlug);
      await search.fill(record.name);
      const card=page.locator('.subject-browse-card').filter({has:page.locator('a.title[href="'+record.url+'"]')});
      await card.waitFor();
