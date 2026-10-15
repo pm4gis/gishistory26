@@ -538,35 +538,124 @@
 #chapters .chapter-card-media img{will-change:auto}
 @media (prefers-reduced-motion:reduce){#chapters .chapter-card-media img{transition:none!important}}
 
-/* Glass surfaces across shared site components */
+/* A slightly clearer frosted finish, shared across the existing colour palettes.
+   Keep historic map and documentary image pixels untouched. */
 @supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
- :root{--glass-panel:color-mix(in srgb,var(--surface) 84%,transparent)}
- .topbar,.card,.page,.timeline-box,.image-source-card,.network-canvas,.reader-popover,.contents.open,.related.open{
+ :root{
+  --glass-panel:color-mix(in srgb,var(--surface) 78%,transparent);
+  --glass-edge:color-mix(in srgb,var(--line) 58%,transparent);
+  --glass-glint:color-mix(in srgb,var(--text) 10%,transparent);
+ }
+ :root[data-appearance="light"]{
+  --glass-panel:color-mix(in srgb,var(--surface) 88%,transparent);
+  --glass-glint:color-mix(in srgb,var(--surface) 85%,transparent);
+ }
+ body{
+  background:
+   radial-gradient(ellipse 68% 42% at 10% 6%,color-mix(in srgb,var(--accent) 6%,transparent),transparent 78%),
+   radial-gradient(ellipse 62% 55% at 94% 72%,color-mix(in srgb,var(--raised) 27%,transparent),transparent 82%),
+   var(--bg);
+ }
+ .topbar{
+  background:linear-gradient(115deg,
+   color-mix(in srgb,var(--surface) 88%,transparent),
+   color-mix(in srgb,var(--raised) 75%,transparent));
+  border-bottom-color:var(--glass-edge);
+  box-shadow:0 12px 32px color-mix(in srgb,var(--bg) 32%,transparent),inset 0 1px 0 var(--glass-glint);
+  -webkit-backdrop-filter:blur(24px) saturate(148%);
+  backdrop-filter:blur(24px) saturate(148%);
+ }
+ .nav--desktop{gap:clamp(4px,.6vw,11px)}
+ .nav--desktop a:not(.nav-contribute){
+  padding:8px clamp(4px,.44vw,8px);
+  border:1px solid transparent;
+  border-radius:10px;
+  background:color-mix(in srgb,var(--surface) 12%,transparent);
+  transition:background .16s ease,border-color .16s ease,box-shadow .16s ease,color .16s ease;
+ }
+ .nav--desktop a:not(.nav-contribute):hover,
+ .nav--desktop a:not(.nav-contribute):focus-visible{
+  background:color-mix(in srgb,var(--raised) 73%,transparent);
+  border-color:color-mix(in srgb,var(--accent) 34%,transparent);
+  box-shadow:inset 0 1px 0 var(--glass-glint);
+ }
+ .nav .nav-contribute{
+  box-shadow:0 5px 16px color-mix(in srgb,var(--accent) 18%,transparent),inset 0 1px 0 color-mix(in srgb,var(--surface) 24%,transparent);
+ }
+ .nav--mobile,.appearance-panel{
+  background:linear-gradient(145deg,
+   color-mix(in srgb,var(--surface) 93%,transparent),
+   color-mix(in srgb,var(--raised) 86%,transparent));
+  border-color:var(--glass-edge);
+  box-shadow:0 18px 40px #0003,inset 0 1px 0 var(--glass-glint);
+  -webkit-backdrop-filter:blur(24px) saturate(145%);
+  backdrop-filter:blur(24px) saturate(145%);
+ }
+ .nav--mobile a:not(.button):hover,
+ .nav--mobile a:not(.button):focus-visible{
+  background:color-mix(in srgb,var(--raised) 70%,transparent);
+ }
+ .card,.page,.timeline-box,.image-source-card,.reader-popover,
+ .contents.open,.related.open,.chapter-catalogue-card,.network-panel{
   background:var(--surface);
-  background:linear-gradient(145deg,color-mix(in srgb,var(--surface) 94%,transparent),var(--glass-panel));
-  -webkit-backdrop-filter:blur(16px) saturate(132%);
-  backdrop-filter:blur(16px) saturate(132%);
-  border-color:color-mix(in srgb,var(--line) 74%,transparent);
-  box-shadow:var(--shade),inset 0 1px 0 color-mix(in srgb,var(--surface) 68%,transparent);
+  background:linear-gradient(145deg,
+   color-mix(in srgb,var(--surface) 94%,transparent),
+   var(--glass-panel));
+  border-color:var(--glass-edge);
+  box-shadow:var(--shade),inset 0 1px 0 var(--glass-glint);
+  -webkit-backdrop-filter:blur(18px) saturate(132%);
+  backdrop-filter:blur(18px) saturate(132%);
  }
- button:not([aria-pressed="true"]):not(.inline-record):not(.primary),.button:not(.primary):not(.passage-contribute):not(.nav-contribute),.period-choice:not([aria-pressed="true"]){
-  background:var(--raised);
-  background:color-mix(in srgb,var(--raised) 84%,transparent);
-  border-color:color-mix(in srgb,var(--line) 78%,transparent);
-  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--surface) 62%,transparent);
-  -webkit-backdrop-filter:blur(8px) saturate(125%);
-  backdrop-filter:blur(8px) saturate(125%);
+ .hero--visual,.network-canvas{
+  border-color:var(--glass-edge);
+  box-shadow:var(--shade),inset 0 1px 0 var(--glass-glint);
  }
- button:not([aria-pressed="true"]):not(.inline-record):not(.primary):hover,.button:not(.primary):not(.passage-contribute):not(.nav-contribute):hover{
+ .timeline-event:not(.timeline-event--photo):not([aria-pressed="true"]),.period-choice:not(.active),
+ .chapter-index a,.chapter-page-nav>.chapter-page-link{
+  background:color-mix(in srgb,var(--raised) 81%,transparent);
+  border-color:var(--glass-edge);
+  box-shadow:inset 0 1px 0 var(--glass-glint);
+  -webkit-backdrop-filter:blur(12px) saturate(125%);
+  backdrop-filter:blur(12px) saturate(125%);
+ }
+ button:not([aria-pressed="true"]):not(.inline-record):not(.primary),
+ .button:not(.primary):not(.passage-contribute):not(.nav-contribute){
+  background:color-mix(in srgb,var(--raised) 82%,transparent);
+  border-color:color-mix(in srgb,var(--line) 75%,transparent);
+  box-shadow:inset 0 1px 0 var(--glass-glint);
+  -webkit-backdrop-filter:blur(9px) saturate(125%);
+  backdrop-filter:blur(9px) saturate(125%);
+ }
+ button:not([aria-pressed="true"]):not(.inline-record):not(.primary):hover,
+ .button:not(.primary):not(.passage-contribute):not(.nav-contribute):hover{
   border-color:var(--accent);
-  box-shadow:0 7px 20px color-mix(in srgb,var(--accent) 12%,transparent),inset 0 1px 0 color-mix(in srgb,var(--surface) 72%,transparent);
+  box-shadow:0 7px 20px color-mix(in srgb,var(--accent) 12%,transparent),inset 0 1px 0 var(--glass-glint);
+ }
+ .footer{
+  background:color-mix(in srgb,var(--surface) 45%,transparent);
+  border-top-color:var(--glass-edge);
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
  }
  .cards .card,.timeline-event{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
  .cards .card:hover,.timeline-event:hover{
   transform:translateY(-2px);
   border-color:var(--accent);
-  box-shadow:var(--shade),inset 0 1px 0 color-mix(in srgb,var(--surface) 76%,transparent);
+  box-shadow:var(--shade),inset 0 1px 0 var(--glass-glint);
  }
 }
+@media(prefers-reduced-transparency:reduce){
+ body{background:var(--bg)}
+ .topbar,.nav--mobile,.appearance-panel,.card,.page,.timeline-box,
+ .image-source-card,.reader-popover,.contents.open,.related.open,
+ .chapter-catalogue-card,.network-panel,.timeline-event:not(.timeline-event--photo):not([aria-pressed="true"]),
+ .period-choice:not(.active),.chapter-index a,.chapter-page-nav>.chapter-page-link,
+ .footer{
+  background:var(--surface);
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+ }
+ .nav--desktop a:not(.nav-contribute){background:transparent}
+ .topbar{box-shadow:none}
+}
 @media(prefers-reduced-motion:reduce){.cards .card:hover,.timeline-event:hover{transform:none}}
-
