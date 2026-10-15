@@ -1,0 +1,70 @@
+name: Prepare licensed LINZ basemap images
+on:
+  push:
+    branches: [research/geographx-terrain-evidence-20261015]
+    paths:
+      - 'scripts/prepare-linz-2013-basemap-images.mjs'
+      - '.github/workflows/prepare-linz-2013-basemap-images.yml'
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/research/geographx-terrain-evidence-20261015'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/geographx-terrain-evidence-20261015}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Generate audited derivatives and SHA256 image metadata
+        run: node scripts/prepare-linz-2013-basemap-images.mjs
+      - name: Run source, historical-media, preservation and publication tests
+        run: |
+          npm test
+          npm run validate
+      - name: Build complete historical site and verify generated pages
+        run: npm run build
+      - name: Install Chromium and Playwright for responsive QA
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test homepage, dataset catalogue, navigation, themes, palettes and reader
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist > /tmp/nzgis-geographx-qa.log 2>&1 &
+          PREVIEW_PID=$!
+          trap 'kill "$PREVIEW_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 40); do
+            if curl -fsS -o /dev/null http://127.0.0.1:4321/; then break; fi
+            sleep 1
+          done
+          curl -fsS -o /dev/null http://127.0.0.1:4321/datasets/
+          node scripts/home-browser-qa.mjs
+          node scripts/glass-navigation-browser-qa.mjs
+          node scripts/tile-browser-qa.mjs
+          node scripts/reader-video-browser-qa.mjs
+      - name: Keep visual and navigation QA output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geographx-responsive-qa
+          path: |
+            docs/verification/glass-nav-qa/
+            docs/verification/tile-navigation-qa/
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Commit only derived images and source metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/web/linz-2013-*.webp public/assets/historical/card/linz-2013-*.webp src/content/images/linz-2013-*.json content/preservation-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive verified LINZ 2013 web and card image variants"
+            git pull --rebase origin research/geographx-terrain-evidence-20261015
+            git push origin HEAD:research/geographx-terrain-evidence-20261015
+          fi

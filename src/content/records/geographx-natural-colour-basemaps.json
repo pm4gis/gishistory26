@@ -1,32 +1,70 @@
 {
   "id": "dataset:geographx-natural-colour-basemaps",
   "slug": "geographx-natural-colour-basemaps",
-  "name": "Geographx natural-colour New Zealand basemaps",
+  "name": "Geographx 4 m natural-colour land-cover basemaps (2012)",
   "kind": "Dataset",
   "category": "Elevation and terrain datasets",
   "url": "/datasets/geographx-natural-colour-basemaps/",
-  "description": "Roger Smith's Geographx terrain-driven natural-colour map surfaces and cartographic products.",
+  "description": "Commercial 4 m national land-cover raster tiles designed by Geographx using Topo50, LCDB3 and relief from its 8 m DEM.",
   "story": [
-    "Geographx developed distinctive natural-colour New Zealand terrain basemaps and other terrain-derived cartographic products. Its map design combines elevation surfaces, map features and colour to communicate landforms across print and digital mapping.",
-    "These designed basemaps are distinct from the public-domain Geographx-derived 8 m DEM distributed by LINZ. The public Geographx website documents the cartographic products but does not establish a licence for unrestricted reuse of its commercial map artwork. A reported use in TV3 weather graphics remains unverified and is not presented as established history."
+    "By the September 2012 Taurewa Mountain Cartography Workshop, Geographx had completed a New Zealand-wide set of natural-colour land-cover basemap textures with 4 m pixels. Roger Smith described 116 tiles, each 16,384 pixels square and covering about 65.5 km on a side. The layered Photoshop source files together totalled roughly 420 GB, more than 31 billion pixels.",
+    "Unlike a satellite mosaic, the basemap was built from mapped feature data: LINZ Topo50 vectors, land-cover classes substituted from Landcare Research LCDB3, and hillshading from the separately created Geographx 8 m digital elevation model. Smith described Manifold System for GIS preparation, Global Mapper for hillshades and masks, and Adobe Photoshop for scripted layering, tones and textures.",
+    "The processing sequence combined physical surfaces, vegetation, built areas, water, transport networks and hillshading. Smith described a script-controlled snowfall effect and exporting registered tiles as GeoTIFF, ECW or PNG for clients. Examples in his 2012 paper show Auckland-area tiles and Skyline TerraExplorer visualisations of the Waitaki and Clarence river landscapes.",
+    "The 2015 ICA national report states the 4 m basemap was offered commercially. Its rights differ from the open-licensed 8 m elevation model and from the separate 2013 LINZ TileMill basemap source release. The original 2012 paper has authoritative photographs of Geographx's own screens, but a separate right to republish the paper figures has not been established. A suggested TV3 weather customer remains unverified."
   ],
   "sources": [
     {
-      "label": "Geographx, About and cartographic outputs",
-      "url": "https://www.geographx.co.nz/about/"
+      "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+      "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+    },
+    {
+      "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+      "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+    },
+    {
+      "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+      "url": "https://github.com/linz/linz_basemaps"
+    },
+    {
+      "label": "MetService, Annual Report 2019, p 19, New Zealand broadcaster use of Weatherscape",
+      "url": "https://about.metservice.com/assets/downloads/annualreport/MetService-Annual-Report-2019-web.pdf"
     }
   ],
   "paragraphSources": [
     [
       {
-        "label": "Geographx, About and cartographic outputs",
-        "url": "https://www.geographx.co.nz/about/"
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
       }
     ],
     [
       {
-        "label": "Geographx, About and cartographic outputs",
-        "url": "https://www.geographx.co.nz/about/"
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+      }
+    ],
+    [
+      {
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Cartographic Society, Cartographic Activities in New Zealand 2011–2015, ICA national report, p 14",
+        "url": "https://icaci.org/files/documents/national_reports/2011-2015/new_zealand.pdf"
+      },
+      {
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+      },
+      {
+        "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+        "url": "https://github.com/linz/linz_basemaps"
+      },
+      {
+        "label": "MetService, Annual Report 2019, p 19, New Zealand broadcaster use of Weatherscape",
+        "url": "https://about.metservice.com/assets/downloads/annualreport/MetService-Annual-Report-2019-web.pdf"
       }
     ]
   ],
@@ -34,12 +72,16 @@
   "themeIds": [],
   "contextLinks": [
     {
-      "label": "Related history",
-      "url": "/stories/from-flat-maps-to-3d/"
+      "label": "2012 original cartographic paper, with actual Geographx 4m basemap figures",
+      "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
     },
     {
-      "label": "Geographx, About and cartographic outputs",
-      "url": "https://www.geographx.co.nz/about/"
+      "label": "LINZ's different open basemap source",
+      "url": "https://github.com/linz/linz_basemaps"
+    },
+    {
+      "label": "Related chapter",
+      "url": "/stories/from-flat-maps-to-3d/"
     }
   ],
   "status": "Source-backed dataset history"

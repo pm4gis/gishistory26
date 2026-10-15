@@ -5,15 +5,19 @@
   "kind": "Dataset",
   "category": "Elevation and terrain datasets",
   "url": "/datasets/geographx-10m-terrain-imagery/",
-  "description": "DOC-hosted Geographx-attributed 10 m terrain-imagery map cache in NZTM2000, distinct from the Geographx 8 m DEM.",
+  "description": "A separate DOC-hosted cached terrain display credited to Geographx, labelled as 10 m resolution in its ArcGIS metadata.",
   "story": [
-    "The Department of Conservation has published a cached map service named Terrain/Geographx10m. Its ArcGIS REST service describes a 10 m-resolution terrain-imagery layer, credits Geographx and uses the New Zealand Transverse Mercator 2000 coordinate system (NZTM2000, EPSG:2193).",
-    "The service demonstrates a second Geographx-derived national terrain product used in GIS delivery. The service record does not establish the original production date or show that this 10 m map cache is the same product as the Geographx 8 m elevation raster. Neither a TV3 weather-graphics use nor an unrestricted image-republication licence has been verified."
+    "The Department of Conservation's ArcGIS Server publishes Terrain/Geographx10m, a cached terrain map display whose service description specifies 10 m resolution and whose copyright line credits Geographx. The published map-service metadata declares NZTM2000 (EPSG:2193) and tiled imagery.",
+    "A map-cache service is different from a source DEM. The service metadata does not establish when the imagery was first produced, how its '10 m' designation was defined, whether it used the 2012 8 m DEM, or its complete processing and licensing history. Its map images are not automatically authorised for republication by the separate open licence on the LINZ 8 m DEM; the historical site links the service instead of copying its tiles."
   ],
   "sources": [
     {
       "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
       "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+    },
+    {
+      "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+      "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
     }
   ],
   "paragraphSources": [
@@ -27,6 +31,10 @@
       {
         "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
         "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+      },
+      {
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
       }
     ]
   ],
@@ -34,12 +42,12 @@
   "themeIds": [],
   "contextLinks": [
     {
-      "label": "Related terrain history",
-      "url": "/stories/from-flat-maps-to-3d/"
+      "label": "DOC service description and attribution",
+      "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
     },
     {
-      "label": "Department of Conservation, Terrain/Geographx10m ArcGIS MapServer",
-      "url": "https://mapserver.doc.govt.nz/arcgis/rest/services/Terrain/Geographx10m/MapServer"
+      "label": "Related history",
+      "url": "/stories/from-flat-maps-to-3d/"
     }
   ],
   "status": "Source-backed dataset history"

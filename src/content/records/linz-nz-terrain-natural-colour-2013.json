@@ -1,0 +1,76 @@
+{
+  "id": "dataset:linz-nz-terrain-natural-colour-2013",
+  "slug": "linz-nz-terrain-natural-colour-2013",
+  "name": "LINZ natural-colour terrain basemap reconstruction (2013)",
+  "kind": "Dataset",
+  "category": "Elevation and terrain datasets",
+  "url": "/datasets/linz-nz-terrain-natural-colour-2013/",
+  "description": "Open-licensed LINZ TileMill/PostGIS recipe and imagery for rebuilding a New Zealand natural-colour terrain basemap with Topo50, LCDB3.3 and the 8 m elevation model.",
+  "story": [
+    "In 2013 LINZ released a GitHub repository of styles, source instructions and texture files for reconstructing its natural-colour and graphite New Zealand terrain basemaps. The archive contains a TileMill project, auxiliary CartoCSS, layer metadata and two representative images; its README releases the project under Creative Commons Attribution 3.0 New Zealand.",
+    "The workflow assembled national LINZ Topo50 vector features, Manaaki Whenua's LCDB 3.3 land cover, the national 2012 8 m DEM and an associated hillshade. It describes PostgreSQL/PostGIS preparation, QGIS/GDAL conversion, virtual raster mosaics and rendering in TileMill. The historical instructions referenced 115 elevation and hillshade source tiles and record the earlier 3.5 GB LINZ Data Service download constraint.",
+    "This was an open LINZ basemap-reconstruction project, not the same dataset as Geographx's commercial 4 m Photoshop basemap. Both belong to the period when national height models and colour land-cover mapping became practical online GIS backdrops. LINZ's preserved 2013 map preview and colour-bathymetry image are reused on this site's dataset cards with the original Crown attribution."
+  ],
+  "sources": [
+    {
+      "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+      "url": "https://github.com/linz/linz_basemaps"
+    },
+    {
+      "label": "LINZ Data Service, NZ 8 m Digital Elevation Model (2012)",
+      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+    },
+    {
+      "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+      "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+        "url": "https://github.com/linz/linz_basemaps"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+        "url": "https://github.com/linz/linz_basemaps"
+      },
+      {
+        "label": "LINZ Data Service, NZ 8 m Digital Elevation Model (2012)",
+        "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, linz_basemaps 2013 reconstruction source, data inputs, TileMill workflow and CC BY 3.0 NZ terms",
+        "url": "https://github.com/linz/linz_basemaps"
+      },
+      {
+        "label": "Roger Smith, Designing Raster Base Maps with Photoshop, 8th Mountain Cartography Workshop, 2012, pp 101–106",
+        "url": "https://mountaincartography.icaci.org/publications/papers/papers_taurewa_12/papers/mcw2012_sec4_ch13_p101-106_smith.pdf"
+      }
+    ]
+  ],
+  "aliases": [
+    "LINZ NZ Terrain Natural Colour TileMill source",
+    "LINZ 2013 terrain basemap"
+  ],
+  "themeIds": [],
+  "status": "Source-backed historical dataset",
+  "contextLinks": [
+    {
+      "label": "2013 LINZ GitHub source and open licence",
+      "url": "https://github.com/linz/linz_basemaps"
+    },
+    {
+      "label": "LINZ 8 m DEM source",
+      "url": "https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/"
+    },
+    {
+      "label": "Historical basemap chapter",
+      "url": "/stories/cloud-services-and-apis/"
+    }
+  ]
+}
