@@ -610,7 +610,7 @@
   border-color:var(--glass-edge);
   box-shadow:var(--shade),inset 0 1px 0 var(--glass-glint);
  }
- .timeline-event:not(.timeline-event--photo),.period-choice:not(.active),
+ .timeline-event:not(.timeline-event--photo):not([aria-pressed="true"]),.period-choice:not(.active),
  .chapter-index a,.chapter-page-nav>.chapter-page-link{
   background:color-mix(in srgb,var(--raised) 81%,transparent);
   border-color:var(--glass-edge);
@@ -648,7 +648,7 @@
  body{background:var(--bg)}
  .topbar,.nav--mobile,.appearance-panel,.card,.page,.timeline-box,
  .image-source-card,.reader-popover,.contents.open,.related.open,
- .chapter-catalogue-card,.network-panel,.timeline-event:not(.timeline-event--photo),
+ .chapter-catalogue-card,.network-panel,.timeline-event:not(.timeline-event--photo):not([aria-pressed="true"]),
  .period-choice:not(.active),.chapter-index a,.chapter-page-nav>.chapter-page-link,
  .footer{
   background:var(--surface);
