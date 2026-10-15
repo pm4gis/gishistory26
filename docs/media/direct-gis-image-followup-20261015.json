@@ -11,6 +11,26 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christchurch-central-recovery-plan-anchor-project-map-a3-1_(cropped).jpg",
       "licence": "CC BY 4.0",
       "decision": "Published: genuine CERA central-city recovery plan map. Does not depict the CERA cloud SDI or technical land zones."
+    },
+    {
+      "recordSlug": "nz-8m-dem-geographx-2012",
+      "previousImageSlug": "nz-dem-arcgis-2006",
+      "imageSlug": "linz-2013-terrain-natural-colour-preview",
+      "relationship": "later open-licensed LINZ basemap using Geographx-derived elevation input",
+      "dateDisplay": "2013",
+      "sourceUrl": "https://github.com/linz/linz_basemaps/blob/master/NZ_Terrain_Natural_Colour/.thumb.png",
+      "licence": "CC BY 3.0 NZ",
+      "decision": "Separately published LINZ 2013 reconstruction preview illustrates use of the Geographx 8 m DEM; not a Geographx raw DEM or commercial basemap."
+    },
+    {
+      "recordSlug": "geographx-natural-colour-basemaps",
+      "previousImageSlug": "ruapehu-3d-2002",
+      "imageSlug": "linz-2013-north-island-natural-colour-bathymetry",
+      "relationship": "contemporary open-licensed LINZ terrain artwork, not a Geographx commercial map",
+      "dateDisplay": "2013",
+      "sourceUrl": "https://github.com/linz/linz_basemaps/blob/master/img/Colour_GenTwo_Working_Windows_250Bathy.jpeg",
+      "licence": "CC BY 3.0 NZ",
+      "decision": "Separately published LINZ 2013 natural-colour bathymetry artwork. It must not be attributed as the commercial Geographx 4 m basemap."
     }
   ]
 }
