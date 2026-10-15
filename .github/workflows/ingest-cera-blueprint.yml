@@ -35,6 +35,8 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add src/content/images/cera-central-recovery-blueprint-2012.json \
             src/lib/subject-media.mjs \
+            docs/media/direct-gis-image-followup-20261015.json \
+            docs/media/chapter-image-alignment-wave2-20261011.csv \
             public/assets/historical/original/cera-central-recovery-blueprint-2012.jpg \
             public/assets/historical/web/cera-central-recovery-blueprint-2012.webp \
             public/assets/historical/card/cera-central-recovery-blueprint-2012.webp
