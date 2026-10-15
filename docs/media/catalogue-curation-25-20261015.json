@@ -1,0 +1,157 @@
+{
+  "release": "catalogue-curation-25-20261015",
+  "baseCommit": "856cd2a15afe0c1a5e0f0d6bf47757cbdd276537",
+  "description": "Twenty-five previously decorative catalogue records with verified existing archive illustrations. Subject links and image source data reside in src/lib and src/content/images. Contextual use is deliberately distinguished from the record's actual historical output.",
+  "selections": [
+    {
+      "recordSlug": "department-of-lands-and-survey",
+      "kind": "Agency",
+      "imageSlug": "clutha-molyneux-nzms13-1955",
+      "relationship": "source product"
+    },
+    {
+      "recordSlug": "department-of-survey-and-land-information-dosli",
+      "kind": "Agency",
+      "imageSlug": "north-island-counties-districts-1981",
+      "relationship": "predecessor"
+    },
+    {
+      "recordSlug": "new-zealand-aerial-mapping",
+      "kind": "Business",
+      "imageSlug": "christchurch-response-orthophoto-2011",
+      "relationship": "source product"
+    },
+    {
+      "recordSlug": "environment-southland-southland-regional-council",
+      "kind": "Council",
+      "imageSlug": "southland-aerial-verdon-1988",
+      "relationship": "credited regional imagery"
+    },
+    {
+      "recordSlug": "new-zealand-geographic-board",
+      "kind": "Agency",
+      "imageSlug": "ongaonga-linz-topo50-2020",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "canterbury-earthquake-recovery-authority-cera",
+      "kind": "Agency",
+      "imageSlug": "christchurch-response-orthophoto-2011",
+      "relationship": "predecessor"
+    },
+    {
+      "recordSlug": "geographx",
+      "kind": "Business",
+      "imageSlug": "ruapehu-3d-2002",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "manaaki-whenua-landcare-research",
+      "kind": "Organisation",
+      "imageSlug": "nz-agricultural-landuse-capability-2022",
+      "relationship": "derived data use"
+    },
+    {
+      "recordSlug": "ministry-for-primary-industries",
+      "kind": "Agency",
+      "imageSlug": "pukeora-commercial-pine-plantation-2018",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "new-zealand-forest-service",
+      "kind": "Agency",
+      "imageSlug": "pukeora-commercial-pine-plantation-2018",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "hawke-s-bay-regional-council",
+      "kind": "Council",
+      "imageSlug": "gabrielle-sentinel-flooding-napier-2023",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "otago-regional-council",
+      "kind": "Council",
+      "imageSlug": "doc-aerial-c24a085218be4824",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "gisborne-district-council",
+      "kind": "Council",
+      "imageSlug": "gisborne-east-coast-luc-map-1967",
+      "relationship": "predecessor"
+    },
+    {
+      "recordSlug": "ministry-for-the-environment",
+      "kind": "Agency",
+      "imageSlug": "ecoregions-qgis-2025",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "kapiti-coast-district-council",
+      "kind": "Council",
+      "imageSlug": "kapiti-island-lidar-2024",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "crown-aerial-film-library",
+      "kind": "Dataset",
+      "imageSlug": "wrights-hill-1945",
+      "relationship": "source product"
+    },
+    {
+      "recordSlug": "crown-aerial-footprints",
+      "kind": "Dataset",
+      "imageSlug": "southland-aerial-verdon-1988",
+      "relationship": "contextual"
+    },
+    {
+      "recordSlug": "gns-historic-geological-maps",
+      "kind": "Dataset",
+      "imageSlug": "hector-geological-map-1884",
+      "relationship": "historic source"
+    },
+    {
+      "recordSlug": "gns-active-faults",
+      "kind": "Dataset",
+      "imageSlug": "masterton-earthquake-fault-map-1942",
+      "relationship": "predecessor"
+    },
+    {
+      "recordSlug": "geonet-observations-2001",
+      "kind": "Dataset",
+      "imageSlug": "geonet-kaikoura-felt-2016",
+      "relationship": "source product"
+    },
+    {
+      "recordSlug": "historic-nzms13",
+      "kind": "Dataset",
+      "imageSlug": "clutha-molyneux-nzms13-1955",
+      "relationship": "source product"
+    },
+    {
+      "recordSlug": "qmap-250k",
+      "kind": "Dataset",
+      "imageSlug": "qmap-christchurch-2008",
+      "relationship": "source product"
+    },
+    {
+      "recordSlug": "nz-chart-geotiffs",
+      "kind": "Dataset",
+      "imageSlug": "doc-historic-map-17bed2d97b6abec1",
+      "relationship": "predecessor"
+    },
+    {
+      "recordSlug": "historic-hydrographic-soundings",
+      "kind": "Dataset",
+      "imageSlug": "doc-historic-map-17bed2d97b6abec1",
+      "relationship": "historic source"
+    },
+    {
+      "recordSlug": "nz-carbon-monitoring-1996",
+      "kind": "Dataset",
+      "imageSlug": "pukeora-commercial-pine-plantation-2018",
+      "relationship": "contextual"
+    }
+  ]
+}
