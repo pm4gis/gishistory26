@@ -14,7 +14,7 @@ const viewports=[
  {name:'narrow-mobile',width:320,height:720,mobile:true}
 ];
 const catalogues=[
- {route:'/',selector:'#highlighted-stories .highlight-card',min:20},
+ {route:'/',selector:'#highlighted-stories .highlight-card:visible',exact:5},
  {route:'/',selector:'#chapters .chapter-card',exact:44},
  {route:'/',selector:'#themes article.art-card',exact:8},
  {route:'/read/',selector:'.chapter-catalogue-card',exact:44},
