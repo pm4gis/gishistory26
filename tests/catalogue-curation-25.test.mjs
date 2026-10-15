@@ -9,6 +9,11 @@ const readCollection=type=>readdirSync('src/content/'+type)
  .filter(name=>name.endsWith('.json'))
  .map(name=>readJson('src/content/'+type+'/'+name));
 const release=readJson('docs/media/catalogue-curation-25-20261015.json');
+const followUpPath='docs/media/direct-gis-image-followup-20261015.json';
+const followUp=existsSync(followUpPath)?readJson(followUpPath):{replacements:[]};
+const replacementByRecord=new Map(followUp.replacements.map(x=>[x.recordSlug,x.imageSlug]));
+const currentSlug=entry=>replacementByRecord.get(entry.recordSlug)||entry.imageSlug;
+
 const records=readCollection('records');
 const images=readCollection('images');
 const byRecord=new Map(records.map(x=>[x.slug,x]));
@@ -24,7 +29,7 @@ test('25 curated catalogue replacements are distinct pre-existing records with r
   assert.ok(r,'missing record '+entry.recordSlug);
   assert.equal(r.kind,entry.kind,entry.recordSlug+' record kind changed');
   assert.ok(r.url?.endsWith('/'+r.slug+'/'),'unexpected entry route '+r.slug);
-  const image=byImage.get(entry.imageSlug);
+  const image=byImage.get(currentSlug(entry));
   assert.ok(image,'missing historical image '+entry.imageSlug);
   assert.ok(image.sourceUrl?.startsWith('https://'),entry.imageSlug+' source URL absent');
   assert.ok(image.credit?.length>5,entry.imageSlug+' credit missing');
@@ -34,13 +39,13 @@ test('25 curated catalogue replacements are distinct pre-existing records with r
   assert.ok(existsSync('public'+image.assetPath),entry.imageSlug+' full image missing');
   const selected=pickRecordImage(r,images);
   assert.ok(selected,entry.recordSlug+' remains decorative');
-  assert.equal(selected.image.slug,entry.imageSlug,entry.recordSlug+' wrong image');
+  assert.equal(selected.image.slug,currentSlug(entry),entry.recordSlug+' wrong image');
   assert.ok(selected.relation?.length>=75,entry.recordSlug+' insufficient source context');
   if(entry.kind==='Dataset'){
    assert.equal(datasetCardSelections[r.slug]?.imageSlug,entry.imageSlug,'dataset cards and records disagree');
    assert.ok(datasetCardSelections[r.slug].note.length>=65);
   }else{
-   assert.equal(subjectMedia.records[r.slug]?.slug,entry.imageSlug);
+   assert.equal(subjectMedia.records[r.slug]?.slug,currentSlug(entry));
    assert.ok(subjectMedia.records[r.slug].relation.length>=75);
   }
  }
