@@ -47,6 +47,8 @@ const record={
  altText:'Original CERA map of central Christchurch showing 2012 recovery anchor projects and coloured precincts with labelled streets and facilities.',
  caption:'July 2012 Christchurch Central Recovery Plan map depicting anchor projects including the Convention Centre, Health Precinct, central library and other recovery zones.',
  dateDisplay:'July 2012',
+ articleSlug:'the-real-time-map',
+ chapterNumber:42,
  themeIds:[],
  context:'Original map prepared by CERA for its Christchurch Central Recovery Plan, illustrating post-earthquake spatial planning. It is distinct from the CERA Spatial Data Infrastructure service diagrams and parcel/technical-zoning viewers.',
  originalAssetPath:'/assets/historical/original/'+slug+'.jpg',
