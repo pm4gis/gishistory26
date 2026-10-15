@@ -118,3 +118,22 @@ test('topographic homepage hero preserves the original Landsat media record',()=
  assert.match(css,/@media\(max-width:850px\)\{\s*\.hero--topo/);
  assert.match(css,/\.hero--topo \.topo-slide\{object-fit:cover;object-position:center\}/);
 });
+
+test('desktop and mobile Themes menus are generated from published theme records',()=>{
+ const themes=readdirSync('src/content/themes').filter(n=>n.endsWith('.json'))
+  .map(n=>JSON.parse(readFileSync('src/content/themes/'+n,'utf8')));
+ assert.equal(themes.length,8);
+ assert.equal(new Set(themes.map(t=>t.slug)).size,themes.length);
+ assert.match(layout,/getCollection\('themes'\)/);
+ assert.equal((layout.match(/menuThemes\.map\(/g)||[]).length,2);
+ assert.equal((layout.match(/class="nav-dropdown nav-dropdown--themes"/g)||[]).length,2);
+ assert.equal((layout.match(/href="\/themes\/" aria-current=/g)||[]).length,2);
+ assert.match(layout,/event\.key==='ArrowDown'/);
+ assert.match(layout,/event\.key==='Escape'&&menu\.open/);
+ assert.match(css,/\.nav-dropdown\[open\]>\.nav-dropdown-panel\{animation:glass-menu-enter/);
+ assert.match(css,/@media\(prefers-reduced-motion:reduce\)\{/);
+ assert.match(css,/@media\(prefers-reduced-transparency:reduce\)\{/);
+ for(const theme of themes){
+  assert.ok(theme.title&&theme.slug&&theme.id,'every menu entry needs a source title, slug and identifier');
+ }
+});
