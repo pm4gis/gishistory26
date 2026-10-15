@@ -1,11 +1,17 @@
 ---
 import '../styles/site.css';
+import {getCollection} from 'astro:content';
 import {siteContributionMailtoUrl} from '../lib/passage-contributions.mjs';
 import {PALETTE_ORDER,PALETTE_NAMES,PALETTE_TOKENS} from '../lib/appearance.mjs';
 const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
 const contributionHref=siteContributionMailtoUrl();
 const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof PALETTE_NAMES],dark:PALETTE_TOKENS[id].dark,light:PALETTE_TOKENS[id].light}));
+const currentPath=Astro.url.pathname;
+const isThemesRoute=currentPath.startsWith('/themes/');
+const menuThemes=(await getCollection('themes'))
+ .map(entry=>({slug:entry.data.slug,title:entry.data.title}))
+ .sort((a,b)=>a.title.localeCompare(b.title,'en-NZ'));
 ---
 <!doctype html>
 <html lang="en-NZ">
@@ -56,8 +62,17 @@ const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof 
   <a class="brand" href="/"><small>NEW ZEALAND</small>GIS History</a>
   <nav class="nav nav--desktop" aria-label="Main navigation">
    <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
-   <a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a>
-   <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+   <a href="/datasets/">Datasets</a>
+   <details class="nav-dropdown nav-dropdown--themes">
+    <summary class:list={['nav-theme-toggle',isThemesRoute&&'is-current']}>Themes <span class="nav-chevron" aria-hidden="true"></span></summary>
+    <div class="nav-dropdown-panel" role="group" aria-label="Theme shortcuts">
+     <a class="nav-dropdown-all" href="/themes/" aria-current={currentPath==='/themes/'?'page':undefined}>Explore all themes <span aria-hidden="true">↗</span></a>
+     <div class="nav-theme-grid">
+      {menuThemes.map(theme=><a href={'/themes/'+theme.slug+'/'} aria-current={currentPath==='/themes/'+theme.slug+'/'?'page':undefined}>{theme.title}</a>)}
+     </div>
+    </div>
+   </details>
+   <a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
   </nav>
   <div class="topbar-tools">
    <div class="appearance-control">
@@ -85,8 +100,17 @@ const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof 
     <summary aria-label="Open navigation menu"><span class="hamburger-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
     <nav class="nav nav--mobile" aria-label="Mobile navigation">
      <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a>
-     <a href="/datasets/">Datasets</a><a href="/themes/">Themes</a><a href="/search/">Search</a>
-     <a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+     <a href="/datasets/">Datasets</a>
+     <details class="nav-dropdown nav-dropdown--themes">
+    <summary class:list={['nav-theme-toggle',isThemesRoute&&'is-current']}>Themes <span class="nav-chevron" aria-hidden="true"></span></summary>
+    <div class="nav-dropdown-panel" role="group" aria-label="Theme shortcuts">
+     <a class="nav-dropdown-all" href="/themes/" aria-current={currentPath==='/themes/'?'page':undefined}>Explore all themes <span aria-hidden="true">↗</span></a>
+     <div class="nav-theme-grid">
+      {menuThemes.map(theme=><a href={'/themes/'+theme.slug+'/'} aria-current={currentPath==='/themes/'+theme.slug+'/'?'page':undefined}>{theme.title}</a>)}
+     </div>
+    </div>
+   </details>
+     <a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
     </nav>
    </details>
   </div>
@@ -107,7 +131,11 @@ const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof 
    if(!panel||!toggle)return;
    panel.hidden=!open;
    toggle.setAttribute('aria-expanded',String(open));
-   if(open)panel.querySelector<HTMLButtonElement>('button[data-appearance-mode]')?.focus();
+   if(open){
+    document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown').forEach(menu=>{menu.open=false;});
+    mobileMenu?.removeAttribute('open');
+    panel.querySelector<HTMLButtonElement>('button[data-appearance-mode]')?.focus();
+   }
    else toggle.focus();
   }
   function sync(){
@@ -149,6 +177,38 @@ const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof 
   mobileMenu?.addEventListener('keydown',(event)=>{if(event.key==='Escape'){mobileMenu.open=false;mobileMenu.querySelector('summary')?.focus();}});
   mobileMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.open=false;}));
   document.addEventListener('pointerdown',(event)=>{if(mobileMenu?.open&&!mobileMenu.contains(event.target as Node))mobileMenu.open=false;});
+  const themeMenus=Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown--themes'));
+  for(const menu of themeMenus){
+   const summary=menu.querySelector<HTMLElement>('summary');
+   const links=Array.from(menu.querySelectorAll<HTMLAnchorElement>('.nav-dropdown-panel a'));
+   menu.addEventListener('toggle',()=>{
+    if(!menu.open)return;
+    themeMenus.forEach(other=>{if(other!==menu)other.open=false;});
+    if(panel&&!panel.hidden){panel.hidden=true;toggle?.setAttribute('aria-expanded','false');}
+   });
+   menu.addEventListener('keydown',(event)=>{
+    if(event.key==='Escape'&&menu.open){
+     event.preventDefault();
+     event.stopPropagation();
+     menu.open=false;
+     summary?.focus();
+    }else if(event.key==='ArrowDown'||event.key==='ArrowUp'){
+     event.preventDefault();
+     if(!menu.open)menu.open=true;
+     const index=links.indexOf(document.activeElement as HTMLAnchorElement);
+     const offset=event.key==='ArrowDown'?1:-1;
+     links[index<0?(offset>0?0:links.length-1):(index+offset+links.length)%links.length]?.focus();
+    }
+   });
+  }
+  mobileMenu?.addEventListener('toggle',()=>{
+   if(!mobileMenu.open)mobileMenu.querySelectorAll<HTMLDetailsElement>('.nav-dropdown').forEach(menu=>{menu.open=false;});
+  });
+  document.addEventListener('pointerdown',(event)=>{
+   for(const menu of themeMenus){
+    if(menu.open&&!menu.contains(event.target as Node))menu.open=false;
+   }
+  });
  </script>
 </body>
 </html>
