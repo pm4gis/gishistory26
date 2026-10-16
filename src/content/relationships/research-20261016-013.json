@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-20261016-013",
+  "a": "project:precision-agriculture-applications-2000",
+  "b": "entity:massey-university",
+  "label": "Workshop institution, February 2000",
+  "basis": "The February 2000 precision-agriculture paper is included in the Massey University Fertilizer and Lime Research Centre workshop proceedings.",
+  "sources": [
+    {
+      "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+      "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+    }
+  ]
+}

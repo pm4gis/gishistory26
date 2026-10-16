@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-20261016-005",
+  "a": "person:a-g-gillingham",
+  "b": "project:precision-agriculture-applications-2000",
+  "label": "Co-author, February 2000",
+  "basis": "Gillingham is listed as an author in the February 2000 Massey FLRC workshop programme.",
+  "sources": [
+    {
+      "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+      "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+    }
+  ]
+}

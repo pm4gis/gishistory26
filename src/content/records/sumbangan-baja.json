@@ -1,0 +1,36 @@
+{
+  "id": "person:sumbangan-baja",
+  "slug": "sumbangan-baja",
+  "name": "Sumbangan Baja",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/sumbangan-baja/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 1995.",
+  "story": [
+    "Sumbangan Baja produced a 1995 Massey University thesis, 'Land use changes on the Hautere Plains: a study using digital image analysis and geographic information systems'. The study examined land-use and land-cover change on the Hautere Plains near Ōtaki using image analysis and GIS.",
+    "The surviving thesis is direct evidence of a New Zealand remote-sensing and spatial-analysis contribution in the mid-1990s. This entry concerns the New Zealand research, without attributing later work in other countries to the development of GIS in New Zealand."
+  ],
+  "sources": [
+    {
+      "label": "Sumbangan Baja, Land use changes on the Hautere Plains, Massey University thesis, 1995",
+      "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/77c92511-10ca-40e2-8070-ec1d5a9a0f93/content"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Sumbangan Baja, Land use changes on the Hautere Plains, Massey University thesis, 1995",
+        "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/77c92511-10ca-40e2-8070-ec1d5a9a0f93/content"
+      }
+    ],
+    [
+      {
+        "label": "Sumbangan Baja, Land use changes on the Hautere Plains, Massey University thesis, 1995",
+        "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/77c92511-10ca-40e2-8070-ec1d5a9a0f93/content"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}

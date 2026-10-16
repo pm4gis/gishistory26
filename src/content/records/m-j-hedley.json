@@ -1,0 +1,39 @@
+{
+  "id": "person:m-j-hedley",
+  "slug": "m-j-hedley",
+  "name": "M. J. Hedley",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/m-j-hedley/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 1993–2000.",
+  "story": [
+    "M. J. Hedley was one of the listed authors of 'Precision Agriculture Applications in New Zealand' at the February 2000 Fertilizer and Lime Research Centre workshop, held at Massey University.",
+    "The workshop proceedings also list Hedley on soil research papers in the same programme. The precision-agriculture paper provides the specific geospatial connection; a detailed account of Hedley's individual contribution would require further evidence."
+  ],
+  "sources": [
+    {
+      "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+      "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+    }
+  ],
+  "aliases": [
+    "M.J. Hedley",
+    "Hedley, M. J."
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ],
+    [
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}

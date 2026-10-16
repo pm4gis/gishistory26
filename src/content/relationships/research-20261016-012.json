@@ -1,0 +1,17 @@
+{
+  "id": "relationship:research-20261016-012",
+  "a": "project:soil-conservation-gis-apiti-1993",
+  "b": "entity:massey-university",
+  "label": "Research institution, 1993",
+  "basis": "The case-study thesis and associated paper are attributed to Massey University soil-science research.",
+  "sources": [
+    {
+      "label": "C. N. S. Priyono, The use of a geographic information system (GIS) for farm soil conservation planning, Massey University thesis, 1993",
+      "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/4d3674a9-4ae5-4d00-ab08-7783ae12ab70/content"
+    },
+    {
+      "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+    }
+  ]
+}

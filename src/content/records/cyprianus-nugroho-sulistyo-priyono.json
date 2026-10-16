@@ -1,0 +1,51 @@
+{
+  "id": "person:cyprianus-nugroho-sulistyo-priyono",
+  "slug": "cyprianus-nugroho-sulistyo-priyono",
+  "name": "Cyprianus Nugroho Sulistyo Priyono",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/cyprianus-nugroho-sulistyo-priyono/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 1993.",
+  "story": [
+    "In 1993, Priyono submitted a Massey University thesis on using geographic information systems for farm soil conservation planning. The study examined how GIS could support land-resource and conservation decisions for a steep hill-country farm in the Āpiti district.",
+    "A 1993 New Zealand Soil News conference abstract lists C. S. N. Priyono, M. P. Tuohy and A. S. Palmer as co-authors of related work. The published abstract describes GIS as a planning tool. It documents the study and the authorship but does not establish an independent employment or software-development history."
+  ],
+  "sources": [
+    {
+      "label": "C. N. S. Priyono, The use of a geographic information system (GIS) for farm soil conservation planning, Massey University thesis, 1993",
+      "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/4d3674a9-4ae5-4d00-ab08-7783ae12ab70/content"
+    },
+    {
+      "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+    }
+  ],
+  "aliases": [
+    "C. N. S. Priyono",
+    "C. S. N. Priyono"
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "C. N. S. Priyono, The use of a geographic information system (GIS) for farm soil conservation planning, Massey University thesis, 1993",
+        "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/4d3674a9-4ae5-4d00-ab08-7783ae12ab70/content"
+      },
+      {
+        "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+      }
+    ],
+    [
+      {
+        "label": "C. N. S. Priyono, The use of a geographic information system (GIS) for farm soil conservation planning, Massey University thesis, 1993",
+        "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/4d3674a9-4ae5-4d00-ab08-7783ae12ab70/content"
+      },
+      {
+        "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}

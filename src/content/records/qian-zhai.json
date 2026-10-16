@@ -1,0 +1,36 @@
+{
+  "id": "person:qian-zhai",
+  "slug": "qian-zhai",
+  "name": "Qian Zhai",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/qian-zhai/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 2002.",
+  "story": [
+    "Qian Zhai prepared the 2002 Massey University dissertation 'A development and application of GIS in Whanganui Catchment based river environment classification system', for a Master in Resource and Environmental Planning.",
+    "The dissertation's title page and date document an early-2000s New Zealand application of geographic information systems to river-environment classification. The work is associated with the Whanganui catchment. A later professional profile describes terrain modelling and ARC/INFO work, but those claims are not needed to establish this entry and are not treated as independently verified."
+  ],
+  "sources": [
+    {
+      "label": "Qian Zhai, A development and application of GIS in Whanganui Catchment based river environment classification system, Massey University dissertation, 2002",
+      "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/6c808c4e-0ad5-4da1-ae93-8091eab44cf6/content"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Qian Zhai, A development and application of GIS in Whanganui Catchment based river environment classification system, Massey University dissertation, 2002",
+        "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/6c808c4e-0ad5-4da1-ae93-8091eab44cf6/content"
+      }
+    ],
+    [
+      {
+        "label": "Qian Zhai, A development and application of GIS in Whanganui Catchment based river environment classification system, Massey University dissertation, 2002",
+        "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/6c808c4e-0ad5-4da1-ae93-8091eab44cf6/content"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}

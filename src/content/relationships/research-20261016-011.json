@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-20261016-011",
+  "a": "person:qian-zhai",
+  "b": "entity:massey-university",
+  "label": "Postgraduate research, 2002",
+  "basis": "Zhai's 2002 Massey University thesis/dissertation establishes the institution and geospatial research contribution.",
+  "sources": [
+    {
+      "label": "Qian Zhai, A development and application of GIS in Whanganui Catchment based river environment classification system, Massey University dissertation, 2002",
+      "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/6c808c4e-0ad5-4da1-ae93-8091eab44cf6/content"
+    }
+  ]
+}

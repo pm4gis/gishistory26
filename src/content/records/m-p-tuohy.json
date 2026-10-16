@@ -1,0 +1,51 @@
+{
+  "id": "person:m-p-tuohy",
+  "slug": "m-p-tuohy",
+  "name": "M. P. Tuohy",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/m-p-tuohy/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 1993–2000.",
+  "story": [
+    "M. P. Tuohy is credited with C. S. N. Priyono and A. S. Palmer on a 1993 New Zealand Soil News account of GIS for farm soil conservation planning near Āpiti. The work described geographic information systems as tools for planning and spatial decision-making.",
+    "Tuohy is also named with I. J. Yule, A. G. Gillingham, J. P. Praat and M. J. Hedley as a co-author of 'Precision Agriculture Applications in New Zealand' in Massey University's February 2000 Fertilizer and Lime Research Centre workshop proceedings. The available records do not establish full given names or Tuohy's individual tasks."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+    },
+    {
+      "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+      "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+    }
+  ],
+  "aliases": [
+    "M.P. Tuohy",
+    "Tuohy, M. P."
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+      },
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+      },
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}

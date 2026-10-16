@@ -1,0 +1,39 @@
+{
+  "id": "person:j-p-praat",
+  "slug": "j-p-praat",
+  "name": "J. P. Praat",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/j-p-praat/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 1993–2000.",
+  "story": [
+    "J. P. Praat is listed with I. J. Yule, M. P. Tuohy, A. G. Gillingham and M. J. Hedley as an author of 'Precision Agriculture Applications in New Zealand'. The paper appears in Massey University's February 2000 Fertilizer and Lime Research Centre workshop proceedings.",
+    "The source establishes participation in a contemporary precision-agriculture publication. It does not show which parts of the work Praat personally undertook or establish full given names."
+  ],
+  "sources": [
+    {
+      "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+      "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+    }
+  ],
+  "aliases": [
+    "J.P. Praat",
+    "Praat, J. P."
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ],
+    [
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}

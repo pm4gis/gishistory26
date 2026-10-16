@@ -1,0 +1,29 @@
+{
+  "id": "project:precision-agriculture-applications-2000",
+  "slug": "precision-agriculture-applications-2000",
+  "name": "Precision Agriculture Applications in New Zealand, 2000",
+  "kind": "Project",
+  "category": "Research",
+  "url": "/entities/precision-agriculture-applications-2000/",
+  "description": "Named precision-agriculture workshop paper, February 2000",
+  "story": [
+    "At the 13th Annual Fertilizer and Lime Research Centre workshop, held at Massey University in February 2000, I. J. Yule, M. P. Tuohy, A. G. Gillingham, J. P. Praat and M. J. Hedley were listed as authors of 'Precision Agriculture Applications in New Zealand'. The surviving paper index establishes joint publication and the context of early precision-agriculture adoption."
+  ],
+  "sources": [
+    {
+      "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+      "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}
