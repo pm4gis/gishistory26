@@ -56,8 +56,8 @@
 .hero--visual .hero-copy{z-index:1;width:min(68%,700px);position:relative}
 .hero--visual h1{font-size:clamp(43px,5.5vw,77px);text-wrap:balance}
 .hero--visual .intro{max-width:45ch;color:var(--text)}
-.hero--visual .stats{margin-top:38px;max-width:none;gap:12px;flex-wrap:nowrap;font-size:14px}
-.hero--visual .stats strong{font-size:20px}
+.hero--visual .stats{margin-top:38px;max-width:none;gap:8px;flex-wrap:nowrap;font-size:13px}
+.hero--visual .stats strong{font-size:18px}
 .home-layout .section-head{margin:55px 0 18px}
 .home-layout .section-head a{text-decoration:none}
 .cards--visual{grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:20px}
@@ -90,7 +90,6 @@
  .reading-banner{height:110px}
  .home-layout .section-head{margin:38px 0 16px}
 }
-@media(min-width:851px) and (max-width:1100px){.hero--visual .stats{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.decorative-landscape img,.art-card{transition:none!important}.art-card:hover img,.art-card:focus-within img{transform:none}}
 
 /* Authenticated documentary images are separate from decorative aerial backgrounds. */
