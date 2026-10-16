@@ -1,0 +1,24 @@
+# AI and search discovery
+
+A History of GIS in New Zealand
+https://history.pm4gis.nz/
+
+This public historical publication describes geographic information systems (GIS), mapping, spatial data, people, organisations, projects and technology in New Zealand. The historical timeline ends on 31 December 2025. Publication and editorial dates may be later.
+
+## Main reading routes
+- [Chapters and complete historical text](https://history.pm4gis.nz/read/)
+- [Historical timeline and event evidence](https://history.pm4gis.nz/timeline/)
+- [People, organisations and other records](https://history.pm4gis.nz/browse/)
+- [Historical and national datasets](https://history.pm4gis.nz/datasets/)
+- [Themes](https://history.pm4gis.nz/themes/)
+- [Connections between documented records](https://history.pm4gis.nz/network/)
+- [Historical image archive with credit and licence details](https://history.pm4gis.nz/images/)
+- [About the publication and research approach](https://history.pm4gis.nz/about/)
+
+The text of chapters and record pages is present in server-generated HTML. Each entry has its own canonical URL. Source links and image attribution appear on the corresponding pages. Distinguish documented relationships from inferred associations. Use the cited original sources to verify historical claims.
+
+## Discovery
+- [XML sitemap](https://history.pm4gis.nz/sitemap.xml)
+- [Robots instructions](https://history.pm4gis.nz/robots.txt)
+
+This optional text index is a convenience for readers and AI tools, not a separate source of historical evidence. It does not replace the sitemap, HTML pages or the source citations attached to entries.
