@@ -31,12 +31,8 @@
       "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
     },
     {
-      "label": "Toitū Te Whenua LINZ, Our Whakapapa panel 1980–1989, photographed by Duane Wilkins on 16 October 2026",
-      "url": "/images/linz-our-whakapapa-1980-1989/"
-    },
-    {
-      "label": "Toitū Te Whenua LINZ, Our Whakapapa panel 1990–1999, photographed by Duane Wilkins on 16 October 2026",
-      "url": "/images/linz-our-whakapapa-1990-1999/"
+      "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1980–1989” (photographed 16 October 2026)",
+      "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
     }
   ],
   "aliases": [
@@ -76,8 +72,8 @@
     ],
     [
       {
-        "label": "Toitū Te Whenua LINZ, Our Whakapapa panel 1980–1989, photographed by Duane Wilkins on 16 October 2026",
-        "url": "/images/linz-our-whakapapa-1980-1989/"
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1980–1989” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
       },
       {
         "label": "LINZ, Historic property databases: DCDB lineage and district maintenance cutovers",
@@ -96,8 +92,8 @@
     [],
     [
       {
-        "label": "Toitū Te Whenua LINZ, Our Whakapapa panel 1980–1989, photographed by Duane Wilkins on 16 October 2026",
-        "url": "/images/linz-our-whakapapa-1980-1989/"
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1980–1989” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
       },
       {
         "label": "LINZ, Historic property databases: DCDB lineage and district maintenance cutovers",
@@ -173,15 +169,5 @@
         ]
       }
     ]
-  },
-  "contextLinks": [
-    {
-      "label": "Our Whakapapa panel 1980–1989 (photographed 16 October 2026)",
-      "url": "/images/linz-our-whakapapa-1980-1989/"
-    },
-    {
-      "label": "Our Whakapapa panel 1990–1999 (photographed 16 October 2026)",
-      "url": "/images/linz-our-whakapapa-1990-1999/"
-    }
-  ]
+  }
 }

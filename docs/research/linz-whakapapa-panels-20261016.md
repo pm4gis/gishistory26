@@ -1,41 +1,25 @@
-# LINZ Our Whakapapa panels and photographs, 16 October 2026
+# LINZ Our Whakapapa exhibition: source notes
 
-The photographer confirmed that the five photographs were taken by Duane Wilkins on 16 October 2026. The dates in the panel headings are the historical periods described by the exhibition; they are not the dates of the photographs or necessarily the dates of every image reproduced inside each panel.
+Toitū Te Whenua Land Information New Zealand’s *Our Whakapapa: The changing face of Toitū Te Whenua* exhibition was consulted through five photographs of its historical panels. Duane Wilkins took the photographs on 16 October 2026. The panel headings describe historical periods; 16 October 2026 is the photograph date, not a historical event date. The official exhibition page is [LINZ: Our Whakapapa](https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa).
 
-## Source files and preservation
+The photographs served only as research sources. They are not published as site images, image records, or image pages. Site citations identify the relevant panel period and link to LINZ’s exhibition page. Claims below are paraphrased and checked against the cited historical sources where available.
 
-The uploaded `Photos-1-001 (6).zip` was read from the local attachment path, not from Library. Its SHA-256 is `eb0e9d96b97e66a68de521a2c0676eb95cec1a484aed9b5b9bbfa32f08b5c3c2`. All five original JPEG byte streams are stored unchanged in `public/assets/historical/original/`, using their exact source filenames. EXIF records `Orientation 6`; the originals are 4000 × 1638 pixels and display upright at 1638 × 4000 pixels.
+## Panel evidence and editorial decisions
 
-The separately named `LINZ_Our_Whakapapa_1900-1999_upright_photo_archive.zip` was not present in the accessible local attachments or workspace. The site derivatives were therefore made directly from the supplied originals: the full-size WebP applies the EXIF rotation at the original display dimensions, and the smaller card WebP resizes the complete panel to fit without cropping. No content was removed or added. Each original remains downloadable from its image-detail page, and its SHA-256, original dimensions, upright display dimensions and derivative checksums are recorded in the matching JSON record.
-
-| Source filename | Historical panel | Original SHA-256 |
+| Panel | Evidence consulted | Cross-check and decision |
 |---|---|---|
-| `20261016_134012.jpg` | 1900–1929 | `2b6bd191715fc1752ea1d85009bbab8203b6ec16a0c823b0be3f92e5b957417d` |
-| `20261016_133941.jpg` | 1930–1959 | `80f6da67870ee611a084dca195af8c68f399903374af07db863cd356b8f564db` |
-| `20261016_133949.jpg` | 1960–1979 | `6e6db728d086dd60e5b45ad01262d156202e7ed3c15301cc6093a58ef8a62e85` |
-| `20261016_133955.jpg` | 1980–1989 | `699715aeefef5a059d133914e324a6ab95ff0dba59d6f8650b10509c81b549fd` |
-| `20261016_134000.jpg` | 1990–1999 | `1c60ae920f9a104890b43e9c5288f8e04cd065a840dd1ca0f0622438602dfee7` |
+| 1900–1929 | Retrospective account of surveying, settlement and Geographic Board origins; Herbert Girdlestone is named. | No independently matched person record or dated event was added from this panel. |
+| 1930–1959 | Account of geodetic and aerial survey, wartime map production, cadastral records and Antarctic work; Bill Robertson is named. | The panel fits existing chapter context. It was not used to create a second Bill Robertson profile or a new dated event. |
+| 1960–1979 | The panel reports a Computer Mapping Unit established in Lands and Survey in 1979 and names Chris Kinzett in its account of departmental mapping. | The unit is kept distinct from MAPPAK, which is documented in M. S. Colley’s 1979 thesis. The panel does not say Kinzett founded the unit. Its 1978 first-sheet date for NZMS 260 conflicts with Te Ara’s identification of T12 Thames as published in 1977; the site retains the independently supported 1977 date. |
+| 1980–1989 | The panel describes cadastral digitisation across twelve DOSLI district offices and dates an early GPS survey to Fiordland in March 1989. | LINZ’s historical database account independently places cadastral-map digitisation in the mid-1980s; Allan Wilson’s April 1990 article documents the DCDB programme in progress. The panel’s GPS date conflicts with Te Ara’s 1986 date. Chapter 18 retains 1986 as the earliest identified date and notes that the original survey record has not been recovered. No 1989 first-survey event was added. |
+| 1990–1999 | Retrospective account of the DOSLI–LINZ transition, Landonline planning, NZGD2000 and related geospatial work. | Existing site records already cover the DOSLI–LINZ split on 1 July 1996, NZGD2000 in 1998 and Landonline’s late-1990s start. The panel was not added as a site image or used to create new people or events. |
 
-The photographs show exhibition panels, not original scans of the historical photographs printed on those panels. No people have been identified from appearance. Source filenames remain visible in each image record.
+## Where the evidence is cited
 
-## Attribution and reproduction terms
+The 1960–1979 panel is cited on the 1979 Computer Mapping Unit event, the related organisation and Chris Kinzett records, and the Chapter 3 passage that distinguishes the unit from MAPPAK. The 1980–1989 panel is cited on the DOSLI record and Chapter 13’s account of district-office digitisation and the conflicting GPS dates. These passages pair the retrospective panel evidence with contemporary or official sources where available.
 
-LINZ’s current [copyright statement](https://www.linz.govt.nz/copyright) identifies LINZ-produced material as Crown copyright and states that, unless otherwise specified, content is licensed under Creative Commons Attribution 4.0 International. It requires written attribution. The image credits name Duane Wilkins as the photographer and Toitū Te Whenua Land Information New Zealand as the exhibition-content source, with the official terms linked from every image page.
+Existing person, event and relationship IDs are retained. No person profiles were added from names that could not be independently matched. The 31 December 2025 timeline cutoff remains in force; the 2026 photograph date is provenance only.
 
-The photographer supplied the photographs for this project. That authorisation covers their use in this draft website; it does not grant an onward licence to reuse the camera photographs. No panel-specific exception was visible in the photographs. The panels contain embedded historical photographs with no readable per-image credits or rights notices. Their individual reproduction permissions therefore remain unresolved and must be checked before merge or any public release. The panel display photographs are retained in the draft with this limitation disclosed on every image page.
+## Verification
 
-## Historical cross-check and editorial decisions
-
-| Panel | Existing records and chapter links | Cross-check and decision |
-|---|---|---|
-| 1900–1929 | Department of Lands and Survey; New Zealand Geographic Board; Chapter 1 | The panel’s provisional Geographic Board appointment and early survey account are kept as retrospective exhibition statements. Herbert Girdlestone is named, but no independently matched existing person record was found; no new profile or dated event was created. |
-| 1930–1959 | Department of Lands and Survey; existing Bill Robertson record; Chapters 1 and 20 | The panel’s World War II map-production and aerial-survey material fits existing chapters. The named Bill Robertson is associated with the existing profile; no second person record was created. |
-| 1960–1979 | Lands and Survey; existing 1979 Computer Mapping Unit, Chris Kinzett, Joyce Baillie, MAPPAK and M. S. Colley records; Chapters 3 and 5 | The panel dates the Computer Mapping Unit to 1979 and names Chris Kinzett; it does not establish that he founded the unit. MAPPAK remains a separate system documented by Colley’s 1979 thesis. The panel dates the first NZMS 260 sheet to 1978, while Te Ara identifies T12 Thames as published in 1977. The accepted 1977 event and chapter date are retained; no duplicate event or person was added. |
-| 1980–1989 | Lands and Survey and DOSLI; DCDB; Chapters 5, 13, 15 and 18 | The panel says teams digitised cadastral record sheets in all twelve district offices and describes computer terminals and electronic data systems. LINZ independently places DCDB map digitisation in the mid-1980s; Allan Wilson’s April 1990 article documents the programme in progress. The panel dates New Zealand’s first GPS survey to Fiordland in March 1989, while Te Ara says 1986. Chapter 18 retains 1986 as the earliest identified GPS survey and notes that the original survey record is unrecovered. No 1989 first-survey event was added. The panel’s reference to William Alexander Robertson in 1991 is not conflated with the existing Bill Robertson profile without further identity evidence. |
-| 1990–1999 | DOSLI and LINZ; Landonline; existing Graeme Jupp profile; Chapters 13, 14, 19 and 30 | The existing record and event preserve the DOSLI–LINZ split on 1 July 1996; Chapter 19 and the existing event cover NZGD2000 in 1998; Chapter 14 covers Landonline’s late-1990s start. Graeme Jupp’s existing profile is linked. Names in the panel without a verified existing match were not converted into new profiles. |
-
-The 1960–1979 chapter now distinguishes the Computer Mapping Unit from MAPPAK. Chapter 13 and the DOSLI organisation record now preserve the panel’s district-office account, clearly attributed as retrospective and cross-checked against official LINZ material and Wilson’s contemporary account. Each image-detail page links to relevant organisation records and chapters; the three organisation records link back to their applicable panel image pages. Existing person, event and relationship IDs are retained. No new timeline events were added, and the 31 December 2025 historical cutoff remains unchanged; the 2026 capture date appears only as image provenance.
-
-## Verification expected on the PR head
-
-The image test checks all five exact source filenames, SHA-256 values, source EXIF orientation, upright derivative dimensions and hashes, chapter links, related routes, institutional links, existing people/events and the 31 December 2025 cutoff. The panel photographs remain collection images rather than in-line chapter figures or chapter-card thumbnails. The final branch verification must also include `npm test`, `npm run validate`, and `npm run build`; the draft must remain unmerged and unpublished while embedded-image permissions remain unresolved.
+The panel-source test checks that panel citations link to LINZ’s exhibition page, the supported historical claims remain attached to those citations, and no panel image records, public assets or image routes are generated.
