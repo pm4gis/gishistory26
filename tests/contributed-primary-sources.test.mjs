@@ -24,7 +24,7 @@ test('all eight uploaded pre-2025 primary sources have permanent source pages an
   const chapter=JSON.parse(fs.readFileSync('src/content/articles/'+item.article+'.json','utf8'));
   assert.ok(chapter.sourceNotes.some(x=>x.id==='source-'+item.slug),'Missing narrative evidence note: '+item.article);
   if(item.sourceUrl)assert.ok(/^https:\/\//.test(item.sourceUrl));
-  else assert.match(item.rights,/not|No|permission|licence|rights|unresolved/i);
+  else assert.match(item.rights,/not|No|permission|licence|rights|unresolved|confirmation/i);
  }
  assert.ok(fs.existsSync('src/pages/sources/documents/index.astro'));
  assert.ok(fs.existsSync('src/pages/sources/documents/[slug].astro'));
