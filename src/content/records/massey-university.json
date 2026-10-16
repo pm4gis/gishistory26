@@ -18,6 +18,10 @@
     {
       "label": "Harmsworth, Park and Walker, Report on the development and use of GIS for iwi and hapū: bibliography of 1995–1996 work",
       "url": "https://www.landcareresearch.co.nz/assets/researchpubs/harmsworth_gis_iwi.pdf"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 4, 8–11",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -28,5 +32,19 @@
   ],
   "status": "GIS account available",
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "Massey University was the major Huia-level sponsor of PLACE19 in 2019. Its researchers contributed sessions on mātauranga Māori landscape classification, Te Awa Tupua GIS and satellite-data processing through Google Earth Engine."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 4, 8–11",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
+  ]
 }

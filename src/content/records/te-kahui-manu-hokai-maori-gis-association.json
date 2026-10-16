@@ -19,6 +19,10 @@
     {
       "label": "LINZ Annual Report 2020/21",
       "url": "https://www.linz.govt.nz/sites/default/files/corp/toitu-te-whenua_annual-report-20-21-a11y-web_20211201.pdf"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 3–7",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -31,5 +35,19 @@
   ],
   "status": "GIS account available",
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "The association’s PLACE19 programme records more than 100 delegates in Rotorua in November 2019. Its five streams covered people, landscapes, assets, communication and education, with programme support from LINZ and sponsorship from Massey University and other spatial organisations."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 3–7",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
+  ]
 }

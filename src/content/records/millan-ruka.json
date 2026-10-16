@@ -1,0 +1,21 @@
+{
+  "id": "person:millan-ruka",
+  "slug": "millan-ruka",
+  "name": "Millan Ruka",
+  "kind": "Person",
+  "url": "/people/millan-ruka/",
+  "description": "Millan Ruka’s PLACE19 abstract describes Environment River Patrol – Aotearoa, established in 2010, using topographic mapping and Google Earth in environmental reporting. It distinguishes that existing river-assessment work from a proposed digital nitrate-sensor project.",
+  "story": [
+    "Millan Ruka’s PLACE19 abstract describes Environment River Patrol – Aotearoa, established in 2010, using topographic mapping and Google Earth in environmental reporting. It distinguishes that existing river-assessment work from a proposed digital nitrate-sensor project."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 14",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

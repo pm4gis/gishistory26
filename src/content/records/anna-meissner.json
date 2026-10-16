@@ -1,0 +1,21 @@
+{
+  "id": "person:anna-meissner",
+  "slug": "anna-meissner",
+  "name": "Anna Meissner",
+  "kind": "Person",
+  "url": "/people/anna-meissner/",
+  "description": "Anna Meissner’s PLACE19 abstract describes the New Zealand Marine Geospatial Initiative and reuse of hydrographic data beyond navigation. Her programme biography records work on partnerships and technical advice to improve access to and use of marine geospatial information.",
+  "story": [
+    "Anna Meissner’s PLACE19 abstract describes the New Zealand Marine Geospatial Initiative and reuse of hydrographic data beyond navigation. Her programme biography records work on partnerships and technical advice to improve access to and use of marine geospatial information."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 15",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

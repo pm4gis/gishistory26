@@ -1,0 +1,21 @@
+{
+  "id": "person:jade-weideman",
+  "slug": "jade-weideman",
+  "name": "Jade Weideman",
+  "kind": "Person",
+  "url": "/people/jade-weideman/",
+  "description": "Jade Weideman’s PLACE19 abstract proposed a freshwater-sampling example showing ArcGIS Online browser and field workflows. The programme identifies him as an Esri technical consultant at Geographic Business Solutions supporting geospatial project implementation.",
+  "story": [
+    "Jade Weideman’s PLACE19 abstract proposed a freshwater-sampling example showing ArcGIS Online browser and field workflows. The programme identifies him as an Esri technical consultant at Geographic Business Solutions supporting geospatial project implementation."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 18",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

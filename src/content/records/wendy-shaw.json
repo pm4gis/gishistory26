@@ -16,6 +16,10 @@
     {
       "label": "LINZ, How to use the New Zealand Gazetteer",
       "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 20",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [],
@@ -44,5 +48,19 @@
         "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "At PLACE19 in 2019, Wendy Shaw described the New Zealand Gazetteer’s evolution from online spreadsheets in 2008 to map-based access in 2013. Her abstract records 2018–2019 enhancements using Leaflet, wider map coverage and unique URLs for linking and reuse."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 20",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }

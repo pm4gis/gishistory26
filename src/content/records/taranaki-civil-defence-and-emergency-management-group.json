@@ -1,0 +1,21 @@
+{
+  "id": "entity:taranaki-civil-defence-and-emergency-management-group",
+  "slug": "taranaki-civil-defence-and-emergency-management-group",
+  "name": "Taranaki Civil Defence and Emergency Management Group",
+  "kind": "Organisation",
+  "url": "/entities/taranaki-civil-defence-and-emergency-management-group/",
+  "description": "Adopted its geospatial strategy in May 2021 following stakeholder engagement and technical review. The strategy recorded existing systems and staffing dependencies and proposed a coordinated programme for skills, user needs, interoperable data and technology investment.",
+  "story": [
+    "Adopted its geospatial strategy in May 2021 following stakeholder engagement and technical review. The strategy recorded existing systems and staffing dependencies and proposed a coordinated programme for skills, user needs, interoperable data and technology investment."
+  ],
+  "sources": [
+    {
+      "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF pp. 2–7, 10–25",
+      "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "open-practice"
+  ]
+}

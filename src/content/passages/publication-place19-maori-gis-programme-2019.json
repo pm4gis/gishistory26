@@ -1,0 +1,67 @@
+{
+  "id": "passage:publication-place19-maori-gis-programme-2019",
+  "slug": "publication-place19-maori-gis-programme-2019",
+  "articleId": "article:chapter-12",
+  "title": "PLACE19 projects and teaching",
+  "order": 14,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "maori-gis"
+  ],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz",
+    "entity:massey-university",
+    "entity:te-kahui-manu-hokai-maori-gis-association",
+    "person:aaria-dobson-waitere",
+    "person:andrew-ferrel",
+    "person:anna-meissner",
+    "person:dean-walker",
+    "person:gabor-kereszturi",
+    "person:jacob-robinson",
+    "person:jade-weideman",
+    "person:jonathan-procter",
+    "person:kasey-oomen",
+    "person:mark-palmer",
+    "person:millan-ruka",
+    "person:parker-jones",
+    "person:raleigh-seamster",
+    "person:sean-bragg",
+    "person:stuart-mead",
+    "person:suzanne-bergman",
+    "person:takerei-norton",
+    "person:ted-taylor",
+    "person:wendy-shaw"
+  ],
+  "blocks": [
+    {
+      "id": "publication-place19-maori-gis-programme-2019-p1",
+      "type": "paragraph",
+      "text": "PLACE19’s programme records practical Māori GIS work across its people, landscapes, assets, communication and education streams in Rotorua on 13–15 November 2019. Jonathan Procter described developing a mātauranga Māori landscape classification with work centred on the Manawatū catchment. Jacob Robinson outlined GIS capability for Te Awa Tupua, including georeferencing historical maps and recovering place names, while Stuart Mead and Gabor Kereszturi offered a Google Earth Engine demonstration for satellite data processing. These abstracts describe research and capability building at their documented stages, rather than a completed national system. They show the range of environmental and cultural work presented within the same practitioner forum.",
+      "markdown": "PLACE19’s programme records practical Māori GIS work across its people, landscapes, assets, communication and education streams in Rotorua on 13–15 November 2019. Jonathan Procter described developing a mātauranga Māori landscape classification with work centred on the Manawatū catchment. Jacob Robinson outlined GIS capability for Te Awa Tupua, including georeferencing historical maps and recovering place names, while Stuart Mead and Gabor Kereszturi offered a Google Earth Engine demonstration for satellite data processing. These abstracts describe research and capability building at their documented stages, rather than a completed national system. They show the range of environmental and cultural work presented within the same practitioner forum.",
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 8–24 (printed pp. 7–23)",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    },
+    {
+      "id": "publication-place19-maori-gis-programme-2019-p2",
+      "type": "paragraph",
+      "text": "The programme also connects public data services with iwi-controlled accounts of place. Wendy Shaw described the Gazetteer’s move from online spreadsheets in 2008 to a map-based service in 2013 and a modular Leaflet platform in the 2018–2019 enhancements. Takerei Norton discussed Kā Huru Manu, launched in 2017 after a decade of research with marae communities and kaumātua. Dean Walker described co-creating planning tools with communities at Ōhinemutu and Tuahiwi, and Suzanne Bergman proposed a QGIS demonstration combining satellite classification, terrain slope and Land Use Capability data. Parker Jones and Aaria Dobson-Waitere contributed conservation GIS and training perspectives, while Duane Wilkins’s sessions covered available datasets and three-dimensional StoryMaps teaching.",
+      "markdown": "The programme also connects public data services with iwi-controlled accounts of place. Wendy Shaw described the Gazetteer’s move from online spreadsheets in 2008 to a map-based service in 2013 and a modular Leaflet platform in the 2018–2019 enhancements. Takerei Norton discussed Kā Huru Manu, launched in 2017 after a decade of research with marae communities and kaumātua. Dean Walker described co-creating planning tools with communities at Ōhinemutu and Tuahiwi, and Suzanne Bergman proposed a QGIS demonstration combining satellite classification, terrain slope and Land Use Capability data. Parker Jones and Aaria Dobson-Waitere contributed conservation GIS and training perspectives, while Duane Wilkins’s sessions covered available datasets and three-dimensional StoryMaps teaching.",
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 8–24 (printed pp. 7–23)",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 8–24 (printed pp. 7–23)",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ]
+}

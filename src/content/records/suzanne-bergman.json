@@ -1,0 +1,21 @@
+{
+  "id": "person:suzanne-bergman",
+  "slug": "suzanne-bergman",
+  "name": "Suzanne Bergman",
+  "kind": "Person",
+  "url": "/people/suzanne-bergman/",
+  "description": "The PLACE19 programme identifies Suzanne Bergman of Kenex as demonstrating land-use classification with QGIS and free data. The planned analysis combined satellite-based land cover, slope derived from terrain data and Land Use Capability information to assess possible land uses.",
+  "story": [
+    "The PLACE19 programme identifies Suzanne Bergman of Kenex as demonstrating land-use classification with QGIS and free data. The planned analysis combined satellite-based land cover, slope derived from terrain data and Land Use Capability information to assess possible land uses."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 20–21",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

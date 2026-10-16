@@ -1,0 +1,32 @@
+{
+  "id": "image:taranaki-current-systems-2021",
+  "slug": "taranaki-current-systems-2021",
+  "title": "Taranaki emergency GIS current-state diagram, 2021",
+  "assetPath": "/assets/historical/web/taranaki-current-systems-2021.webp",
+  "thumbnailPath": "/assets/historical/card/taranaki-current-systems-2021.webp",
+  "originalAssetPath": "/assets/historical/original/taranaki-current-systems-2021.png",
+  "sourceUrl": "https://history.pm4gis.nz/publications/taranaki-cdem-geospatial-strategy-2021/",
+  "sourceName": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF p. 22",
+  "credit": "Taranaki Civil Defence and Emergency Management Group; Teresa Gordon and Ed Cook",
+  "licence": "Preserved with contributor publication authorisation; original third-party credits retained",
+  "licenceUrl": "https://history.pm4gis.nz/publications/taranaki-cdem-geospatial-strategy-2021/",
+  "altText": "The technical system context recorded in the May 2021 Taranaki CDEM strategy. PDF p. 22. This is the documented current state in that strategy.",
+  "caption": "The technical system context recorded in the May 2021 Taranaki CDEM strategy. PDF p. 22. This is the documented current state in that strategy.",
+  "context": "The technical system context recorded in the May 2021 Taranaki CDEM strategy. PDF p. 22. This is the documented current state in that strategy.",
+  "themeIds": [
+    "open-practice"
+  ],
+  "dateDisplay": "May 2021 (publication date)",
+  "publicationSlug": "taranaki-cdem-geospatial-strategy-2021",
+  "sourcePage": 22,
+  "articleSlug": "safety-policing-and-emergency-gis",
+  "passageId": "passage:publication-taranaki-cdem-geospatial-strategy-2021",
+  "passageSlug": "publication-taranaki-cdem-geospatial-strategy-2021",
+  "afterParagraphId": "publication-taranaki-cdem-geospatial-strategy-2021-p2",
+  "originalWidth": 1191,
+  "originalHeight": 1684,
+  "originalSha256": "55bbdea6d5d0a5b20f285548980370ab83cb766a4fc6defeb317ee311e2b62ae",
+  "webSha256": "39eaf266d722aba515104e848593e922e4c9e8b84939fd03821b7984c4caa740",
+  "thumbnailSha256": "5ee4f747637d0b042d3cdcb1b601117ee099b82e970995d80a53d1b92f9b3a9b",
+  "derivativesNote": "Full original PDF page rendered at 144 dpi; web and card derivatives are uncropped. Original publication remains available as an unchanged file."
+}

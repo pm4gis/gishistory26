@@ -1,0 +1,32 @@
+{
+  "id": "image:strategy-governance-2007",
+  "slug": "strategy-governance-2007",
+  "title": "Proposed national geospatial governance, 2007",
+  "assetPath": "/assets/historical/web/strategy-governance-2007.webp",
+  "thumbnailPath": "/assets/historical/card/strategy-governance-2007.webp",
+  "originalAssetPath": "/assets/historical/original/strategy-governance-2007.png",
+  "sourceUrl": "https://history.pm4gis.nz/publications/nz-geospatial-strategy-2007/",
+  "sourceName": "Understanding our geographic information landscape: A New Zealand Geospatial Strategy, PDF p. 25",
+  "credit": "Land Information New Zealand and contributing New Zealand public agencies",
+  "licence": "Preserved with contributor publication authorisation; original third-party credits retained",
+  "licenceUrl": "https://history.pm4gis.nz/publications/nz-geospatial-strategy-2007/",
+  "altText": "The governance structure proposed in the January 2007 strategy. PDF p. 25, printed p. 23. The diagram describes intended arrangements.",
+  "caption": "The governance structure proposed in the January 2007 strategy. PDF p. 25, printed p. 23. The diagram describes intended arrangements.",
+  "context": "The governance structure proposed in the January 2007 strategy. PDF p. 25, printed p. 23. The diagram describes intended arrangements.",
+  "themeIds": [
+    "open-practice"
+  ],
+  "dateDisplay": "January 2007 (publication date)",
+  "publicationSlug": "nz-geospatial-strategy-2007",
+  "sourcePage": 25,
+  "articleSlug": "government-goes-spatial",
+  "passageId": "passage:publication-nz-geospatial-strategy-2007",
+  "passageSlug": "publication-nz-geospatial-strategy-2007",
+  "afterParagraphId": "publication-nz-geospatial-strategy-2007-p2",
+  "originalWidth": 1191,
+  "originalHeight": 1684,
+  "originalSha256": "6e26e66d004c946dcd0a1d0c6e926ac2a2bf6f35c0648fb6770bb44abbf33246",
+  "webSha256": "e6bd8fda669cd6aa199bdcf13f2daabe0f40661826e5f36f96c670bde9998df1",
+  "thumbnailSha256": "3299f595b29f028d61b8e45c5e3a407adc112596829a2881af44189996a86cfd",
+  "derivativesNote": "Full original PDF page rendered at 144 dpi; web and card derivatives are uncropped. Original publication remains available as an unchanged file."
+}

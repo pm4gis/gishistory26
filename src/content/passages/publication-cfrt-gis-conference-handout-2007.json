@@ -1,0 +1,46 @@
+{
+  "id": "passage:publication-cfrt-gis-conference-handout-2007",
+  "slug": "publication-cfrt-gis-conference-handout-2007",
+  "articleId": "article:chapter-7",
+  "title": "Treaty research and ArcFlax",
+  "order": 12,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "maori-gis"
+  ],
+  "recordIds": [
+    "entity:crown-forestry-rental-trust"
+  ],
+  "blocks": [
+    {
+      "id": "publication-cfrt-gis-conference-handout-2007-p1",
+      "type": "paragraph",
+      "text": "The Crown Forestry Rental Trust’s handout for the Rotorua Esri users conference on 7–9 November 2007 describes a mapping service organised around claimant research. The Trust contracted historical research and cartography on behalf of eligible groups, with mapping assignments commonly lasting two to fifteen weeks. It estimated that about one fifth of the time involved direct claimant contact. Its mapping facilitator maintained a geographic data warehouse in Esri ArcGIS formats, and distributed ArcReader projects under the name ArcFlax to contracted clients and specialists. This provided a way for people involved in a claim to work with assembled geographic evidence beyond the cartographer’s desktop.",
+      "markdown": "The Crown Forestry Rental Trust’s handout for the Rotorua Esri users conference on 7–9 November 2007 describes a mapping service organised around claimant research. The Trust contracted historical research and cartography on behalf of eligible groups, with mapping assignments commonly lasting two to fifteen weeks. It estimated that about one fifth of the time involved direct claimant contact. Its mapping facilitator maintained a geographic data warehouse in Esri ArcGIS formats, and distributed ArcReader projects under the name ArcFlax to contracted clients and specialists. This provided a way for people involved in a claim to work with assembled geographic evidence beyond the cartographer’s desktop.",
+      "sources": [
+        {
+          "label": "Crown Forestry Rental Trust: NZ Esri GIS Users Group Conference handout, PDF pp. 1–2",
+          "url": "/publications/cfrt-gis-conference-handout-2007/"
+        }
+      ]
+    },
+    {
+      "id": "publication-cfrt-gis-conference-handout-2007-p2",
+      "type": "paragraph",
+      "text": "The handout also records the limits placed on distribution. Claimant-specific maps were not generally released, while district-wide contemporary maps could be supplied digitally on request through the normal Tribunal process. A sequence illustrated Whanganui land alienation from 1840 to 2000, and a separate claimant example carried an explicit Ngāti Tamareheroto reproduction credit. The Trust sponsored interested claimants from Ngāti Tūwharetoa, Ngāi Te Rangi, Waikato-Tainui, Ngāti Porou and Hauraki to attend the 2007 conference, alongside a summer GIS internship. The dated handout is direct evidence of the Rotorua conference despite the gap for 2007 in the user group’s later online chronology.",
+      "markdown": "The handout also records the limits placed on distribution. Claimant-specific maps were not generally released, while district-wide contemporary maps could be supplied digitally on request through the normal Tribunal process. A sequence illustrated Whanganui land alienation from 1840 to 2000, and a separate claimant example carried an explicit Ngāti Tamareheroto reproduction credit. The Trust sponsored interested claimants from Ngāti Tūwharetoa, Ngāi Te Rangi, Waikato-Tainui, Ngāti Porou and Hauraki to attend the 2007 conference, alongside a summer GIS internship. The dated handout is direct evidence of the Rotorua conference despite the gap for 2007 in the user group’s later online chronology.",
+      "sources": [
+        {
+          "label": "Crown Forestry Rental Trust: NZ Esri GIS Users Group Conference handout, PDF pp. 1–2",
+          "url": "/publications/cfrt-gis-conference-handout-2007/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Crown Forestry Rental Trust: NZ Esri GIS Users Group Conference handout, PDF pp. 1–2",
+      "url": "/publications/cfrt-gis-conference-handout-2007/"
+    }
+  ]
+}

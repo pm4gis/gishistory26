@@ -17,6 +17,10 @@
     {
       "label": "Chapter 12 · Local channels",
       "url": "/stories/an-industry-and-community-form/"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 24",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -40,5 +44,19 @@
         "url": "/stories/an-industry-and-community-form/"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "Parker Jones’s PLACE19 biography records NZ GIS in Conservation supporting more than seventy conservation and iwi groups with over 140 skilled GIS volunteers by 2019. His presentation concerned software access, mentoring, training and conservation projects delivered at no cost to participating groups. These are the programme’s historical figures."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 24",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }

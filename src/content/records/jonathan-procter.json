@@ -12,6 +12,10 @@
     {
       "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
       "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 9",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [],
@@ -32,5 +36,19 @@
         "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "The PLACE19 programme identifies Jonathan (Jon) Procter of Massey University as presenting He Tatai Whenua in November 2019. His abstract describes developing a mātauranga Māori landscape classification, with protocols and test cases underway in the Manawatū catchment."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 9",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }

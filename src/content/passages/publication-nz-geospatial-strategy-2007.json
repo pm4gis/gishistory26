@@ -1,0 +1,48 @@
+{
+  "id": "passage:publication-nz-geospatial-strategy-2007",
+  "slug": "publication-nz-geospatial-strategy-2007",
+  "articleId": "article:chapter-24",
+  "title": "Coordinating government geospatial information",
+  "order": 9,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "open-practice"
+  ],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz",
+    "entity:new-zealand-fire-service",
+    "entity:new-zealand-police"
+  ],
+  "blocks": [
+    {
+      "id": "publication-nz-geospatial-strategy-2007-p1",
+      "type": "paragraph",
+      "text": "The January 2007 Geospatial Strategy gave coordination a defined organisational form. It proposed a Joint Ministerial Group, a Geospatial Executives Group initially chaired by the LINZ chief executive, and a Geospatial Advisory Committee of technical and policy specialists. A Geospatial Office would sit within LINZ while remaining accountable to the executives group for the sector-wide programme. The distinction was deliberate: agencies would continue to manage their own operations, while their representatives would carry collective decisions into agency work programmes. The strategy also proposed an industry forum and participation from local government, Crown research institutes and universities.",
+      "markdown": "The January 2007 Geospatial Strategy gave coordination a defined organisational form. It proposed a Joint Ministerial Group, a Geospatial Executives Group initially chaired by the LINZ chief executive, and a Geospatial Advisory Committee of technical and policy specialists. A Geospatial Office would sit within LINZ while remaining accountable to the executives group for the sector-wide programme. The distinction was deliberate: agencies would continue to manage their own operations, while their representatives would carry collective decisions into agency work programmes. The strategy also proposed an industry forum and participation from local government, Crown research institutes and universities.",
+      "sources": [
+        {
+          "label": "Understanding our geographic information landscape: A New Zealand Geospatial Strategy, PDF pp. 19–28 (printed pp. 17–26)",
+          "url": "/publications/nz-geospatial-strategy-2007/"
+        }
+      ]
+    },
+    {
+      "id": "publication-nz-geospatial-strategy-2007-p2",
+      "type": "paragraph",
+      "text": "The strategy connected that governance structure to practical work on data access. Agencies were to identify fundamental datasets, assign stewardship and custodianship, describe quality and maintenance requirements, and preserve historical information. Its access programme included standards-based metadata and discovery of both fundamental and other datasets. Interoperability work would operate under the government’s e-GIF framework, supported by technical advice and pilot projects. These were the published actions and proposed arrangements in 2007; their appearance in the strategy does not establish that every action had already been completed.",
+      "markdown": "The strategy connected that governance structure to practical work on data access. Agencies were to identify fundamental datasets, assign stewardship and custodianship, describe quality and maintenance requirements, and preserve historical information. Its access programme included standards-based metadata and discovery of both fundamental and other datasets. Interoperability work would operate under the government’s e-GIF framework, supported by technical advice and pilot projects. These were the published actions and proposed arrangements in 2007; their appearance in the strategy does not establish that every action had already been completed.",
+      "sources": [
+        {
+          "label": "Understanding our geographic information landscape: A New Zealand Geospatial Strategy, PDF pp. 19–28 (printed pp. 17–26)",
+          "url": "/publications/nz-geospatial-strategy-2007/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Understanding our geographic information landscape: A New Zealand Geospatial Strategy, PDF pp. 19–28 (printed pp. 17–26)",
+      "url": "/publications/nz-geospatial-strategy-2007/"
+    }
+  ]
+}

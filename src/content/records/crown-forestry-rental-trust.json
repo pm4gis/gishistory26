@@ -18,6 +18,10 @@
     {
       "label": "National Library of New Zealand, ArcFlax Edition 2.0 Whanganui 2006 catalogue",
       "url": "https://natlib.govt.nz/records/30673810"
+    },
+    {
+      "label": "Crown Forestry Rental Trust: NZ Esri GIS Users Group Conference handout, PDF pp. 1–2",
+      "url": "/publications/cfrt-gis-conference-handout-2007/"
     }
   ],
   "paragraphSources": [
@@ -50,5 +54,19 @@
       "url": "/systems/arcflax-whanganui-2006/"
     }
   ],
-  "status": "Source-backed historical activity"
+  "status": "Source-backed historical activity",
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2007",
+      "paragraphs": [
+        "The Trust’s November 2007 conference handout describes an ArcGIS data warehouse and ArcReader projects distributed as ArcFlax. It records contracted cartography for claimant research, sponsorship of claimant attendance at the Rotorua Esri users conference and a summer GIS internship."
+      ],
+      "sources": [
+        {
+          "label": "Crown Forestry Rental Trust: NZ Esri GIS Users Group Conference handout, PDF pp. 1–2",
+          "url": "/publications/cfrt-gis-conference-handout-2007/"
+        }
+      ]
+    }
+  ]
 }

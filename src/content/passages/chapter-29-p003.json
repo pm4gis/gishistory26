@@ -25,9 +25,14 @@
     },
     {
       "type": "paragraph",
-      "text": "The annual-conference chronology contains an unresolved gap in 2007. The group’s current history lists conferences from 1996 through 2006. The 2005 meeting was described as the annual conference’s tenth anniversary; the event on 31 October 2006 was its eleventh. The association history leaves 2007 blank and resumes in 2008. In 2012 an Esri publication described the domestic meeting as the sixteenth annual conference and the independent group as representing more than 300 organisations, a numbering that is compatible with the earlier sequence if 2007 was skipped.",
-      "markdown": "The annual-conference chronology contains an unresolved gap in 2007. The group’s current history lists conferences from 1996 through 2006. The 2005 meeting was described as the annual conference’s tenth anniversary; the event on 31 October 2006 was its eleventh. The association history leaves 2007 blank and resumes in 2008. In 2012 an Esri publication described the domestic meeting as the sixteenth annual conference and the independent group as representing more than 300 organisations, a numbering that is compatible with the earlier sequence if 2007 was skipped.",
-      "sources": [],
+      "text": "The user group’s later online conference history leaves 2007 blank between the eleventh annual conference in 2006 and the 2008 meeting. A contemporary Crown Forestry Rental Trust handout resolves that gap: it identifies the NZ Esri GIS Users Group Conference in Rotorua on 7–9 November 2007. The Trust attended as a bronze sponsor and supported claimant participation. The missing entry in the later web chronology therefore cannot be treated as evidence that no conference occurred. Esri’s description of the 2012 meeting as the sixteenth annual conference remains a separate numbering question.",
+      "markdown": "The user group’s later online conference history leaves 2007 blank between the eleventh annual conference in 2006 and the 2008 meeting. A contemporary Crown Forestry Rental Trust handout resolves that gap: it identifies the NZ Esri GIS Users Group Conference in Rotorua on 7–9 November 2007. The Trust attended as a bronze sponsor and supported claimant participation. The missing entry in the later web chronology therefore cannot be treated as evidence that no conference occurred. Esri’s description of the 2012 meeting as the sixteenth annual conference remains a separate numbering question.",
+      "sources": [
+        {
+          "label": "Crown Forestry Rental Trust conference handout, 7–9 November 2007, pp. 1–2",
+          "url": "/publications/cfrt-gis-conference-handout-2007/"
+        }
+      ],
       "id": "ch29-s03-p02"
     },
     {

@@ -21,6 +21,10 @@
     {
       "label": "Te Rūnanga o Ngāi Tahu, The Ngāi Tahu Atlas, cultural mapping project history",
       "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 23–24",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -50,5 +54,19 @@
         "url": "https://kahurumanu.co.nz/cultural-mapping-story/the-ngai-tahu-atlas"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "In the PLACE19 programme, Takerei Norton described Kā Huru Manu’s 2017 launch after more than ten years of research with Ngāi Tahu marae communities and kaumātua. His biography records management of the Ngāi Tahu Cultural Mapping Project since 2007 and involvement in organising the first Māori GIS conference in Christchurch in 2009."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 23–24",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }

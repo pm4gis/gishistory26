@@ -17,6 +17,10 @@
     {
       "label": "New Zealand Esri User Conference programme, 2018",
       "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 14–15",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -42,5 +46,19 @@
         "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/geospatial-schools"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "Andrew Ferrel’s PLACE19 session covered historical aerial imagery and the transition from contour-derived elevation to LiDAR. His programme biography identifies him as LINZ Manager Partnership Programmes, working on national imagery coordination and elevation-data improvement."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 14–15",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }

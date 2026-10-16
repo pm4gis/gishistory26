@@ -30,7 +30,7 @@ export const contributedPrimarySources = [
         "text": "It records government's October 2004 decision to consult and the November 2004 geospatial discussion document, distinguishing the consultation process from the January 2007 publication."
       }
     ],
-    "rights": "Crown publication. An open licence specifically authorising republication of this PDF has not been established.",
+    "rights": "Crown publication. The supplied copy is archived under contributor authorisation; no new open licence is asserted.",
     "sourceUrl": null,
     "related": [
       "LINZ",
@@ -38,6 +38,23 @@ export const contributedPrimarySources = [
       "national GIS coordination",
       "New Zealand Police",
       "New Zealand Fire Service"
+    ],
+    "assetPath": "/assets/historical/documents/nz-geospatial-strategy-2007.pdf",
+    "publicationUrl": "/publications/nz-geospatial-strategy-2007/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "open-practice"
+    ],
+    "viewerPath": "/assets/historical/documents/nz-geospatial-strategy-2007.pdf",
+    "viewerPages": 30,
+    "coverPath": "/assets/historical/publications/nz-geospatial-strategy-2007-cover.png",
+    "thumbnailPath": "/assets/historical/publications/nz-geospatial-strategy-2007-card.webp",
+    "passageId": "passage:publication-nz-geospatial-strategy-2007",
+    "recordIds": [
+      "entity:land-information-new-zealand-linz",
+      "entity:new-zealand-fire-service",
+      "entity:new-zealand-police"
     ]
   },
   {
@@ -71,13 +88,28 @@ export const contributedPrimarySources = [
         "text": "The handout illustrates a mapped series of Whanganui land alienation between 1840 and 2000 and identifies a 2007 claimant map reproduced with permission of Ngāti Tamareheroto. That 2007 permission must not be treated as blanket permission to republish the map."
       }
     ],
-    "rights": "The claimant map in the handout has a specific stated Ngāti Tamareheroto permission for the 2007 use. Rights for reproducing the whole handout and map have not been established.",
+    "rights": "The claimant map in the handout has a specific stated Ngāti Tamareheroto permission for the 2007 use. The original is preserved under contributor authorisation; that does not extend the map’s stated 2007 permission to separate reuse.",
     "sourceUrl": null,
     "related": [
       "Crown Forestry Rental Trust",
       "ArcFlax",
       "Waitangi Tribunal",
       "Māori land mapping"
+    ],
+    "assetPath": "/assets/historical/documents/cfrt-gis-conference-handout-2007.pdf",
+    "publicationUrl": "/publications/cfrt-gis-conference-handout-2007/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "maori-gis"
+    ],
+    "viewerPath": "/assets/historical/documents/cfrt-gis-conference-handout-2007.pdf",
+    "viewerPages": 2,
+    "coverPath": "/assets/historical/publications/cfrt-gis-conference-handout-2007-cover.png",
+    "thumbnailPath": "/assets/historical/publications/cfrt-gis-conference-handout-2007-card.webp",
+    "passageId": "passage:publication-cfrt-gis-conference-handout-2007",
+    "recordIds": [
+      "entity:crown-forestry-rental-trust"
     ]
   },
   {
@@ -111,14 +143,27 @@ export const contributedPrimarySources = [
         "text": "The report discusses gaps in fundamental datasets, formal custodianship, metadata creation, web service discovery and operational standards, alongside existing LINZ Data Service and geodata.govt.nz provision."
       }
     ],
-    "rights": "LINZ Crown report. No file-specific permission or open PDF reuse licence established from the supplied copy.",
+    "rights": "LINZ Crown report. No file-specific open reuse licence stated in the supplied copy.",
     "sourceUrl": null,
     "related": [
       "New Zealand Geospatial Office",
       "LINZ Data Service",
       "ANZLIC metadata",
       "NZSDI"
-    ]
+    ],
+    "assetPath": "/assets/historical/documents/nz-sdi-state-of-play-2012.pdf",
+    "publicationUrl": "/publications/nz-sdi-state-of-play-2012/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "open-practice"
+    ],
+    "viewerPath": "/assets/historical/documents/nz-sdi-state-of-play-2012.pdf",
+    "viewerPages": 26,
+    "coverPath": "/assets/historical/publications/nz-sdi-state-of-play-2012-cover.png",
+    "thumbnailPath": "/assets/historical/publications/nz-sdi-state-of-play-2012-card.webp",
+    "passageId": "passage:publication-nz-sdi-state-of-play-2012",
+    "recordIds": []
   },
   {
     "slug": "linz-geospatial-rd-priorities-2015",
@@ -151,7 +196,7 @@ export const contributedPrimarySources = [
         "text": "It recorded sector skill shortages and described LINZ partnership schemes, including the multi-university GIS Masters programme."
       }
     ],
-    "rights": "LINZ government report, December 2015. Specific PDF republication terms need confirmation.",
+    "rights": "LINZ government report, December 2015. The final page states Creative Commons Attribution 4.0 New Zealand, with Crown attribution and emblem restrictions.",
     "sourceUrl": null,
     "related": [
       "LINZ",
@@ -159,6 +204,21 @@ export const contributedPrimarySources = [
       "Forward Works Viewer",
       "Māori Maps",
       "GIS Masters"
+    ],
+    "assetPath": "/assets/historical/documents/linz-geospatial-rd-priorities-2015.pdf",
+    "publicationUrl": "/publications/linz-geospatial-rd-priorities-2015/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "profession"
+    ],
+    "viewerPath": "/assets/historical/documents/linz-geospatial-rd-priorities-2015.pdf",
+    "viewerPages": 24,
+    "coverPath": "/assets/historical/publications/linz-geospatial-rd-priorities-2015-cover.png",
+    "thumbnailPath": "/assets/historical/publications/linz-geospatial-rd-priorities-2015-card.webp",
+    "passageId": "passage:publication-linz-geospatial-rd-priorities-2015",
+    "recordIds": [
+      "entity:land-information-new-zealand-linz"
     ]
   },
   {
@@ -189,10 +249,10 @@ export const contributedPrimarySources = [
       },
       {
         "page": "slides 1–5",
-        "text": "The artwork uses Doctor Who-related language and imagery. Ownership and image reuse rights are not established; only historical facts and a bibliographic description may be published at present."
+        "text": "The supplied poster uses Doctor Who-related language and imagery. The original is preserved with the contributor’s publication authorisation; this does not assign ownership of third-party artwork."
       }
     ],
-    "rights": "Mixed artwork and potential third-party Doctor Who intellectual property. No public reuse permission established for the full poster or PowerPoint.",
+    "rights": "Mixed artwork and potential third-party Doctor Who intellectual property. Third-party artwork remains attributed to its rights holders; the contributor authorises preservation of this supplied original.",
     "sourceUrl": null,
     "related": [
       "GIS Day",
@@ -200,6 +260,22 @@ export const contributedPrimarySources = [
       "Map My Wāhi",
       "GIS in Schools",
       "New Zealand Cartographic Society"
+    ],
+    "assetPath": "/assets/historical/documents/gis-day-education-poster-2018.pptx",
+    "publicationUrl": "/publications/gis-day-education-poster-2018/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "profession"
+    ],
+    "viewerPath": "/assets/historical/documents/gis-day-education-poster-2018-viewing.pdf",
+    "viewingVersionNote": "PDF converted from the five-slide original for browser viewing on 17 October 2026; the unchanged PowerPoint remains the authoritative original.",
+    "viewerPages": 5,
+    "coverPath": "/assets/historical/publications/gis-day-education-poster-2018-cover.png",
+    "thumbnailPath": "/assets/historical/publications/gis-day-education-poster-2018-card.webp",
+    "passageId": "passage:publication-gis-day-education-poster-2018",
+    "recordIds": [
+      "entity:new-zealand-cartographic-society"
     ]
   },
   {
@@ -233,7 +309,7 @@ export const contributedPrimarySources = [
         "text": "Sessions cover the Indigenous Mapping Wānanga, mātauranga Māori landscape classification, Te Awa Tupua mapping, remote sensing and Google Earth Engine; the full programme contains further presenter abstracts."
       }
     ],
-    "rights": "Conference programme published by Te Kāhui Manu Hōkai. No general licence for redistributing the supplied PDF or imagery was found.",
+    "rights": "Conference programme published by Te Kāhui Manu Hōkai. No general open licence is stated in the supplied copy.",
     "sourceUrl": null,
     "related": [
       "Te Kāhui Manu Hōkai",
@@ -241,6 +317,42 @@ export const contributedPrimarySources = [
       "Massey University",
       "LINZ",
       "Māori GIS"
+    ],
+    "assetPath": "/assets/historical/documents/place19-maori-gis-programme-2019.pdf",
+    "publicationUrl": "/publications/place19-maori-gis-programme-2019/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "maori-gis"
+    ],
+    "viewerPath": "/assets/historical/documents/place19-maori-gis-programme-2019.pdf",
+    "viewerPages": 28,
+    "coverPath": "/assets/historical/publications/place19-maori-gis-programme-2019-cover.png",
+    "thumbnailPath": "/assets/historical/publications/place19-maori-gis-programme-2019-card.webp",
+    "passageId": "passage:publication-place19-maori-gis-programme-2019",
+    "recordIds": [
+      "entity:land-information-new-zealand-linz",
+      "entity:massey-university",
+      "entity:te-kahui-manu-hokai-maori-gis-association",
+      "person:aaria-dobson-waitere",
+      "person:andrew-ferrel",
+      "person:anna-meissner",
+      "person:dean-walker",
+      "person:gabor-kereszturi",
+      "person:jacob-robinson",
+      "person:jade-weideman",
+      "person:jonathan-procter",
+      "person:kasey-oomen",
+      "person:mark-palmer",
+      "person:millan-ruka",
+      "person:parker-jones",
+      "person:raleigh-seamster",
+      "person:sean-bragg",
+      "person:stuart-mead",
+      "person:suzanne-bergman",
+      "person:takerei-norton",
+      "person:ted-taylor",
+      "person:wendy-shaw"
     ]
   },
   {
@@ -274,13 +386,33 @@ export const contributedPrimarySources = [
         "text": "Its four objectives cover people and processes, ongoing user requirements, interoperable data and investment in geospatial technology."
       }
     ],
-    "rights": "Published by Taranaki CDEM Group. Publisher PDF is publicly accessible but file-specific republication or cover photograph permissions have not been verified.",
+    "rights": "Published by Taranaki CDEM Group. Cover photograph © Dave Young; other photographs © Unsplash contributors. Original archived under contributor authorisation; no separate photographic reuse licence is asserted.",
     "sourceUrl": "https://www.trc.govt.nz/assets/TEMO_GeospatialStrategy_V1.1_FINAL.pdf",
     "related": [
       "Taranaki CDEM",
       "Eagle Technology",
       "NZGIS4EM",
       "LINZ Key Datasets for Resilience"
+    ],
+    "assetPath": "/assets/historical/documents/taranaki-cdem-geospatial-strategy-2021.pdf",
+    "publicationUrl": "/publications/taranaki-cdem-geospatial-strategy-2021/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "open-practice"
+    ],
+    "viewerPath": "/assets/historical/documents/taranaki-cdem-geospatial-strategy-2021.pdf",
+    "viewerPages": 30,
+    "coverPath": "/assets/historical/publications/taranaki-cdem-geospatial-strategy-2021-cover.png",
+    "thumbnailPath": "/assets/historical/publications/taranaki-cdem-geospatial-strategy-2021-card.webp",
+    "passageId": "passage:publication-taranaki-cdem-geospatial-strategy-2021",
+    "recordIds": [
+      "entity:eagle-technology",
+      "entity:taranaki-civil-defence-and-emergency-management-group",
+      "person:ed-cook",
+      "person:jacob-hechter",
+      "person:melissa-brooks",
+      "person:teresa-gordon"
     ]
   },
   {
@@ -314,7 +446,7 @@ export const contributedPrimarySources = [
         "text": "The examples include cultural-health indicators, ArcGIS StoryMaps and a Google Earth Web proposed planting-area view of Lake Ōhinewai. A screenshot from the chapter must not be redated as a new historical capture."
       }
     ],
-    "rights": "Chapter copyright belongs to its publishers/rights holders. Official publisher download can be linked; republication of the supplied PDF and third-party interface figures is pending permission confirmation.",
+    "rights": "Chapter copyright belongs to its publishers/rights holders. Official publisher download can be linked; the contributor authorises republication of this supplied chapter; third-party interface and data credits are retained.",
     "sourceUrl": "https://www.landcareresearch.co.nz/assets/Publications/Te-reo-o-te-repo-vol-2/TRoTR_Kei-konei-tonu-au_Chapter-16.pdf",
     "related": [
       "Duane Wilkins",
@@ -322,6 +454,21 @@ export const contributedPrimarySources = [
       "Ōhinewai",
       "Retrolens",
       "ArcGIS StoryMaps"
+    ],
+    "assetPath": "/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
+    "publicationUrl": "/publications/gis-mapping-wetland-projects-2021/",
+    "archivedDate": "2026-10-17",
+    "provenance": "Original supplied by Duane Wilkins for historical preservation. Website publication expressly authorised by the contributor on 17 October 2026. Copyright and third-party credits remain with their stated holders. This authorisation is not a new open licence.",
+    "themeIds": [
+      "maori-gis"
+    ],
+    "viewerPath": "/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
+    "viewerPages": 14,
+    "coverPath": "/assets/historical/publications/gis-mapping-wetland-projects-2021-cover.png",
+    "thumbnailPath": "/assets/historical/publications/gis-mapping-wetland-projects-2021-card.webp",
+    "passageId": "passage:publication-gis-mapping-wetland-projects-2021",
+    "recordIds": [
+      "person:duane-wilkins"
     ]
   }
 ];

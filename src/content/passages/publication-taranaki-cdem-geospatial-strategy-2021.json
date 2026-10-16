@@ -1,0 +1,51 @@
+{
+  "id": "passage:publication-taranaki-cdem-geospatial-strategy-2021",
+  "slug": "publication-taranaki-cdem-geospatial-strategy-2021",
+  "articleId": "article:chapter-28",
+  "title": "A regional emergency mapping strategy",
+  "order": 13,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "open-practice"
+  ],
+  "recordIds": [
+    "entity:eagle-technology",
+    "entity:taranaki-civil-defence-and-emergency-management-group",
+    "person:ed-cook",
+    "person:jacob-hechter",
+    "person:melissa-brooks",
+    "person:teresa-gordon"
+  ],
+  "blocks": [
+    {
+      "id": "publication-taranaki-cdem-geospatial-strategy-2021-p1",
+      "type": "paragraph",
+      "text": "The Taranaki CDEM strategy adopted in May 2021 records the regional conditions behind its proposed programme. Teresa Gordon coordinated the project, and Ed Cook developed the strategy with Nathan Heazlewood’s support; Jacob Hechter and Melissa Brooks of New Plymouth District Council provided peer review. Its current-state inventory listed Esri systems at the emergency management office, regional council and New Plymouth District Council, and QGIS at Stratford and South Taranaki district councils. The strategy reported limited collaboration and few real-time stakeholder datasets. It also recorded reliance on local-government specialists and the absence of an allocated annual budget for continuing geospatial procurement and development.",
+      "markdown": "The Taranaki CDEM strategy adopted in May 2021 records the regional conditions behind its proposed programme. Teresa Gordon coordinated the project, and Ed Cook developed the strategy with Nathan Heazlewood’s support; Jacob Hechter and Melissa Brooks of New Plymouth District Council provided peer review. Its current-state inventory listed Esri systems at the emergency management office, regional council and New Plymouth District Council, and QGIS at Stratford and South Taranaki district councils. The strategy reported limited collaboration and few real-time stakeholder datasets. It also recorded reliance on local-government specialists and the absence of an allocated annual budget for continuing geospatial procurement and development.",
+      "sources": [
+        {
+          "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF pp. 2, 4–7, 10–25",
+          "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+        }
+      ]
+    },
+    {
+      "id": "publication-taranaki-cdem-geospatial-strategy-2021-p2",
+      "type": "paragraph",
+      "text": "The proposed response addressed these organisational and data constraints together. Four objectives covered people and governance, continuing user requirements, interoperable data and technology investment. Actions included an audit of systems and skills, an Innovation Working Group, a data improvement plan and agreed schemas, privacy policies and sharing standards. The future-state diagram proposed both integration between instances of the same platform and data feeds from other systems. NZGIS4EM and LINZ Key Datasets for Resilience provided the wider context. These measures belong to the strategy’s 2021 statement of intent; the roadmap alone does not establish when, or whether, each planned measure was delivered.",
+      "markdown": "The proposed response addressed these organisational and data constraints together. Four objectives covered people and governance, continuing user requirements, interoperable data and technology investment. Actions included an audit of systems and skills, an Innovation Working Group, a data improvement plan and agreed schemas, privacy policies and sharing standards. The future-state diagram proposed both integration between instances of the same platform and data feeds from other systems. NZGIS4EM and LINZ Key Datasets for Resilience provided the wider context. These measures belong to the strategy’s 2021 statement of intent; the roadmap alone does not establish when, or whether, each planned measure was delivered.",
+      "sources": [
+        {
+          "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF pp. 2, 4–7, 10–25",
+          "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF pp. 2, 4–7, 10–25",
+      "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+    }
+  ]
+}

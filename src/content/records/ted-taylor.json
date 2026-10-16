@@ -16,6 +16,10 @@
     {
       "label": "Eagle Technology, GIS in schools / Sustainable Coastlines case material",
       "url": "https://www.eagle.co.nz/node/317"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 18",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -35,5 +39,19 @@
         "url": "https://www.eagle.co.nz/node/317"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "The PLACE19 programme lists Ted Taylor of Eagle Technology for an ArcGIS Online session. His accompanying biography describes involvement in the spatial community and interests in cartography, earth science and technology; the programme provides no detailed abstract for the session."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 18",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }

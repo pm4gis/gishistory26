@@ -16,6 +16,10 @@
     {
       "label": "Ed Cook - Eagle Technology | LinkedIn · public profile",
       "url": "https://nz.linkedin.com/in/edcnz"
+    },
+    {
+      "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF p. 2",
+      "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
     }
   ],
   "aliases": [
@@ -31,5 +35,19 @@
         "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2021",
+      "paragraphs": [
+        "Developed the Taranaki CDEM Geospatial Strategy with Teresa Gordon, supported by Nathan Heazlewood. The May 2021 strategy joins governance and skills with user requirements, interoperable data and technology investment."
+      ],
+      "sources": [
+        {
+          "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF p. 2",
+          "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+        }
+      ]
+    }
   ]
 }

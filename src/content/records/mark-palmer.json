@@ -1,0 +1,21 @@
+{
+  "id": "person:mark-palmer",
+  "slug": "mark-palmer",
+  "name": "Mark Palmer",
+  "kind": "Person",
+  "url": "/people/mark-palmer/",
+  "description": "Mark Palmer of the University of Missouri contributed a PLACE19 session on Indigenous place names, stories and interpretive attributes in World Heritage maps. His abstract proposes a conceptual story-mapping model and distinguishes meaningful cultural representation from static labels.",
+  "story": [
+    "Mark Palmer of the University of Missouri contributed a PLACE19 session on Indigenous place names, stories and interpretive attributes in World Heritage maps. His abstract proposes a conceptual story-mapping model and distinguishes meaningful cultural representation from static labels."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 19",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "passage:publication-gis-mapping-wetland-projects-2021",
+  "slug": "publication-gis-mapping-wetland-projects-2021",
+  "articleId": "article:chapter-26",
+  "title": "Wetland mapping with whānau",
+  "order": 17,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "maori-gis"
+  ],
+  "recordIds": [
+    "person:duane-wilkins"
+  ],
+  "blocks": [
+    {
+      "id": "publication-gis-mapping-wetland-projects-2021-p1",
+      "type": "paragraph",
+      "text": "Duane Wilkins’s 2021 chapter in Te Reo o te Repo: Kei Konei Tonu Au set out a practical route into GIS for whānau-led wetland restoration. It began with a discussion of what the group wanted to restore and why, then linked those aims to mapped observations and small tests. Historical aerial photographs from Retrolens could show changes over decades, while Survey123 or KoBoToolbox forms could record locations, photographs, water quality and vegetation observations. Riparian planting and pest-control examples connected area calculations and monitoring with funding applications and reporting. Cultural Health Index observations were included alongside numerical environmental measures.",
+      "markdown": "Duane Wilkins’s 2021 chapter in Te Reo o te Repo: Kei Konei Tonu Au set out a practical route into GIS for whānau-led wetland restoration. It began with a discussion of what the group wanted to restore and why, then linked those aims to mapped observations and small tests. Historical aerial photographs from Retrolens could show changes over decades, while Survey123 or KoBoToolbox forms could record locations, photographs, water quality and vegetation observations. Riparian planting and pest-control examples connected area calculations and monitoring with funding applications and reporting. Cultural Health Index observations were included alongside numerical environmental measures.",
+      "sources": [
+        {
+          "label": "GIS mapping tools for wetland projects, Te Reo o te Repo: Kei Konei Tonu Au, Chapter 16, Printed pp. 201–214 (PDF pp. 1–14)",
+          "url": "/publications/gis-mapping-wetland-projects-2021/"
+        }
+      ]
+    },
+    {
+      "id": "publication-gis-mapping-wetland-projects-2021-p2",
+      "type": "paragraph",
+      "text": "The software guidance described a progression from Google MyMaps to Google Earth Pro and, for more advanced work, QGIS, with collaborative ArcGIS tools available through arrangements such as NZ GIS in Conservation. The chapter’s tables placed these tools beside specific public datasets from Manaaki Whenua, MfE, the Māori Land Court, DOC, NIWA and LINZ. A Kimihia wetland view and a proposed planting-area view at Lake Ōhinewai illustrated local mapping and three-dimensional visualisation, while StoryMaps and Google Earth tours provided ways to communicate findings. The proposed planting view is an illustration published in 2021, rather than evidence that the planting had occurred. The account brought data access, field observations and communication into a workflow that a community group could maintain.",
+      "markdown": "The software guidance described a progression from Google MyMaps to Google Earth Pro and, for more advanced work, QGIS, with collaborative ArcGIS tools available through arrangements such as NZ GIS in Conservation. The chapter’s tables placed these tools beside specific public datasets from Manaaki Whenua, MfE, the Māori Land Court, DOC, NIWA and LINZ. A Kimihia wetland view and a proposed planting-area view at Lake Ōhinewai illustrated local mapping and three-dimensional visualisation, while StoryMaps and Google Earth tours provided ways to communicate findings. The proposed planting view is an illustration published in 2021, rather than evidence that the planting had occurred. The account brought data access, field observations and communication into a workflow that a community group could maintain.",
+      "sources": [
+        {
+          "label": "GIS mapping tools for wetland projects, Te Reo o te Repo: Kei Konei Tonu Au, Chapter 16, Printed pp. 201–214 (PDF pp. 1–14)",
+          "url": "/publications/gis-mapping-wetland-projects-2021/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "GIS mapping tools for wetland projects, Te Reo o te Repo: Kei Konei Tonu Au, Chapter 16, Printed pp. 201–214 (PDF pp. 1–14)",
+      "url": "/publications/gis-mapping-wetland-projects-2021/"
+    }
+  ]
+}

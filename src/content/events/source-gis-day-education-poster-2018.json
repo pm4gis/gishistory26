@@ -7,12 +7,17 @@
   "label": "GIS Day 2018 poster promotes mapping activities for schools",
   "summary": "An educational poster for 14 November 2018 brought together LINZ–LEARNZ field trips, Map My Wāhi activities, Eagle Technology school resources and cartographic learning links.",
   "url": "/sources/documents/gis-day-education-poster-2018/",
-  "passageIds": [],
-  "recordIds": [
-    "entity:land-information-new-zealand-linz",
-    "entity:eagle-technology"
+  "passageIds": [
+    "passage:publication-gis-day-education-poster-2018"
   ],
-  "themeIds": [],
+  "recordIds": [
+    "entity:eagle-technology",
+    "entity:land-information-new-zealand-linz",
+    "entity:new-zealand-cartographic-society"
+  ],
+  "themeIds": [
+    "profession"
+  ],
   "categories": [
     "documentary source",
     "published historical evidence",

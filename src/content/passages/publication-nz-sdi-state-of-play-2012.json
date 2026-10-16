@@ -1,0 +1,44 @@
+{
+  "id": "passage:publication-nz-sdi-state-of-play-2012",
+  "slug": "publication-nz-sdi-state-of-play-2012",
+  "articleId": "article:chapter-21",
+  "title": "Measuring the infrastructure in 2012",
+  "order": 15,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "open-practice"
+  ],
+  "recordIds": [],
+  "blocks": [
+    {
+      "id": "publication-nz-sdi-state-of-play-2012-p1",
+      "type": "paragraph",
+      "text": "The December 2012 SDI State of Play report assessed a September baseline using 46 criteria adapted from European INSPIRE benchmarking. Its numerical summary counted 41 indicators: twelve in agreement, eleven in partial agreement, seventeen not in agreement and one unknown. Three organisational criteria described the kind of governance rather than its maturity, and two European multilingual criteria were excluded. The report therefore cannot be reduced to a single percentage of national GIS completion. Its indicator tables recorded the evidence behind each judgement and provided a benchmark for subsequent planning.",
+      "markdown": "The December 2012 SDI State of Play report assessed a September baseline using 46 criteria adapted from European INSPIRE benchmarking. Its numerical summary counted 41 indicators: twelve in agreement, eleven in partial agreement, seventeen not in agreement and one unknown. Three organisational criteria described the kind of governance rather than its maturity, and two European multilingual criteria were excluded. The report therefore cannot be reduced to a single percentage of national GIS completion. Its indicator tables recorded the evidence behind each judgement and provided a benchmark for subsequent planning.",
+      "sources": [
+        {
+          "label": "New Zealand SDI State of Play Report 2012, PDF pp. 3–14; Appendix A pp. 16–26",
+          "url": "/publications/nz-sdi-state-of-play-2012/"
+        }
+      ]
+    },
+    {
+      "id": "publication-nz-sdi-state-of-play-2012-p2",
+      "type": "paragraph",
+      "text": "The report found a stronger organisational and legal framework than operational consistency across datasets. Fundamental-data responsibilities were still being put into practice, long-term SDI funding was not dedicated, and end-user and third-sector participation in governance remained limited. ANZLIC’s ISO 19115 metadata profile and ISO 19139 exchange schema existed, while metadata creation and maintenance still depended on a relatively small group of specialists. LINZ Data Service and other portals provided viewing and downloads, but web services were harder to discover and no comprehensive service catalogue was recognised. The report described federation between geodata.govt.nz and data.govt.nz, showing how spatial discovery was beginning to join wider government open-data work.",
+      "markdown": "The report found a stronger organisational and legal framework than operational consistency across datasets. Fundamental-data responsibilities were still being put into practice, long-term SDI funding was not dedicated, and end-user and third-sector participation in governance remained limited. ANZLIC’s ISO 19115 metadata profile and ISO 19139 exchange schema existed, while metadata creation and maintenance still depended on a relatively small group of specialists. LINZ Data Service and other portals provided viewing and downloads, but web services were harder to discover and no comprehensive service catalogue was recognised. The report described federation between geodata.govt.nz and data.govt.nz, showing how spatial discovery was beginning to join wider government open-data work.",
+      "sources": [
+        {
+          "label": "New Zealand SDI State of Play Report 2012, PDF pp. 3–14; Appendix A pp. 16–26",
+          "url": "/publications/nz-sdi-state-of-play-2012/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "New Zealand SDI State of Play Report 2012, PDF pp. 3–14; Appendix A pp. 16–26",
+      "url": "/publications/nz-sdi-state-of-play-2012/"
+    }
+  ]
+}

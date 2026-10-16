@@ -22,6 +22,10 @@
     {
       "label": "New Zealand Journal of Ecology, The reconnection between mana whenua and urban freshwaters, 2019",
       "url": "https://newzealandecology.org/nzje/3390"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 24",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -32,5 +36,19 @@
   "status": "Account available",
   "coverageEnd": 2026,
   "paragraphSources": [],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "Aaria Dobson-Waitere’s PLACE19 presentation followed her participation in the Society for Conservation GIS Train-The-Trainer Summit in California. The programme describes three weeks of specialist training and two international conferences, connecting her conservation work at Zealandia with aspirations to support iwi GIS capability."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 24",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
+  ]
 }

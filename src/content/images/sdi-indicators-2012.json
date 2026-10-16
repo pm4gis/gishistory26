@@ -1,0 +1,32 @@
+{
+  "id": "image:sdi-indicators-2012",
+  "slug": "sdi-indicators-2012",
+  "title": "SDI benchmark indicator charts, 2012",
+  "assetPath": "/assets/historical/web/sdi-indicators-2012.webp",
+  "thumbnailPath": "/assets/historical/card/sdi-indicators-2012.webp",
+  "originalAssetPath": "/assets/historical/original/sdi-indicators-2012.png",
+  "sourceUrl": "https://history.pm4gis.nz/publications/nz-sdi-state-of-play-2012/",
+  "sourceName": "New Zealand SDI State of Play Report 2012, PDF p. 6",
+  "credit": "New Zealand Geospatial Office, Land Information New Zealand",
+  "licence": "Preserved with contributor publication authorisation; original third-party credits retained",
+  "licenceUrl": "https://history.pm4gis.nz/publications/nz-sdi-state-of-play-2012/",
+  "altText": "Combined and separate indicator assessments in the December 2012 State of Play report. PDF p. 6, printed p. 4. The assessment baseline is September 2012.",
+  "caption": "Combined and separate indicator assessments in the December 2012 State of Play report. PDF p. 6, printed p. 4. The assessment baseline is September 2012.",
+  "context": "Combined and separate indicator assessments in the December 2012 State of Play report. PDF p. 6, printed p. 4. The assessment baseline is September 2012.",
+  "themeIds": [
+    "open-practice"
+  ],
+  "dateDisplay": "December 2012 (publication date)",
+  "publicationSlug": "nz-sdi-state-of-play-2012",
+  "sourcePage": 6,
+  "articleSlug": "the-spatial-infrastructure-idea",
+  "passageId": "passage:publication-nz-sdi-state-of-play-2012",
+  "passageSlug": "publication-nz-sdi-state-of-play-2012",
+  "afterParagraphId": "publication-nz-sdi-state-of-play-2012-p2",
+  "originalWidth": 1191,
+  "originalHeight": 1685,
+  "originalSha256": "248f4bc3ff29f9ce3444887139e8b082fc1f48816878dc2cf3c0222076e2ae0f",
+  "webSha256": "9b21524e166e4e0ed8d0504bad95fe4b3f8fc74c0501aa732042fa9c0a5484c4",
+  "thumbnailSha256": "c787396b6682442e8306c0934a63c339f0904218cd7c4d6f553530dbd2e0ddb3",
+  "derivativesNote": "Full original PDF page rendered at 144 dpi; web and card derivatives are uncropped. Original publication remains available as an unchanged file."
+}

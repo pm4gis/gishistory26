@@ -1,0 +1,82 @@
+{
+  "base": "ead680f09d2c06247810a6aa6420f521e78dce45",
+  "checkedAt": "2026-10-17",
+  "checks": "Existing record fields and array prefixes preserved; original event identities, prose and dates preserved; documentary contributions and links appended. One exact source-backed paragraph correction resolves the misleading 2007 conference gap using the dated CFRT handout. All other passage fields and blocks are unchanged.",
+  "updates": [
+    {
+      "file": "src/content/records/aaria-dobson-waitere.json",
+      "before": "9fc1c1419bb35fcc63713d722e3393c856c2b44a79614d64534918af7bd26876",
+      "after": "335ac93643c3db52a3159ac92bd5bcf86f8c5a69218ce34b217b5f0c6c235720"
+    },
+    {
+      "file": "src/content/records/andrew-ferrel.json",
+      "before": "5a047f077e8e6700469fd2a07fdee3eb4230ddd5b8448c2155102e21761e81c4",
+      "after": "14cddcc791728eb846797ce303085bdcd548e7815792320c21f073bf70715dbd"
+    },
+    {
+      "file": "src/content/records/dean-walker.json",
+      "before": "172026295e73fa5ec39299d2c61d2cf043f260289f6ff69872768f85ebc9dd7d",
+      "after": "a6a5122afb5b4ab052e50171dc11cda79b63ffe0d0d7c86f66972593a78a758f"
+    },
+    {
+      "file": "src/content/records/ed-cook.json",
+      "before": "b967c7b59140855735bb3a3a708960e665ee76ddafe7d7b36fe429be611596ea",
+      "after": "7a9a7e267b1e4d98a07047640940175ff3cc265c210a86022b2ae2878b473f1e"
+    },
+    {
+      "file": "src/content/records/kasey-oomen.json",
+      "before": "c4ee8fffe8c82e926f3fa695a3837842e4979467d4124b798ef730e07877d069",
+      "after": "a4048cf984200dc6e0b8a403cc8c71781ef23eefddffe28a793e9b1ec8927c91"
+    },
+    {
+      "file": "src/content/records/massey-university.json",
+      "before": "54076d54c6f24e84fe961f4c2c85508343a93d4374e4ee63ac44fa8846b05309",
+      "after": "eb584ba381634ec34d03c8113d1d5db663a158f19837797717b37d0a0ce81b60"
+    },
+    {
+      "file": "src/content/records/parker-jones.json",
+      "before": "3abff93d8b068ea0789fbfa2fcf5c871e7c17f2b61012c39c241632d837e1f41",
+      "after": "785af7c01d2f463fa45af6c468a8cf8ae682e01a5b24c6c052e7f68a69753806"
+    },
+    {
+      "file": "src/content/records/sean-bragg.json",
+      "before": "f5af13f5b0909ee603c44e00656e75a6f83beb5e21a12c202726a325a53a415a",
+      "after": "43fed5d98316fd760e618eb76f3b94b2cb3bd75cd38a6cb3eef392e221577fa5"
+    },
+    {
+      "file": "src/content/records/takerei-norton.json",
+      "before": "795aee87842b9a83b7c5d38e6a5adb0ad31f38bc01c34e5df427558936f9fb8f",
+      "after": "cb4af8efcdcd4c52158612491947594c59a5e493b87667524620b6c17435deb3"
+    },
+    {
+      "file": "src/content/records/te-kahui-manu-hokai-maori-gis-association.json",
+      "before": "376df94efcc66798c21026bcf0b6323180aef466eb3ee458317be43ea0f612f3",
+      "after": "a53174850bf165dda1a839848b0b7f43d607a7a4b391002aa9c75b021a825a68"
+    },
+    {
+      "file": "src/content/records/ted-taylor.json",
+      "before": "ad59209a2f1b0489d1058075cef63a3a7dcc15f33f52682ebf9df6c7dfa737d8",
+      "after": "773ba0c5a0dde16d0f854574b6d37ddb2bca42df25b31f5155076f87a82ebee1"
+    },
+    {
+      "file": "src/content/records/crown-forestry-rental-trust.json",
+      "before": "7c4f354d7c72c5cfb2eb23340dc6e7d89e36fded510a513dd03d6d2f66999b07",
+      "after": "799835727fe38bdee2274f6d5b453fa6781c5c524f17a5440bfdd4e5a19d4768"
+    },
+    {
+      "file": "src/content/records/jonathan-procter.json",
+      "before": "3d7c692de01610aa636c090ccc680649f9363b2a96c3129c49c2ff7826db9e46",
+      "after": "b5f3dc497879f96ebbcc8dd390aaa2941706830b411fdda383da181697f1b036"
+    },
+    {
+      "file": "src/content/records/wendy-shaw.json",
+      "before": "e1f0687265dcc27105b5a244b394f04530a839669c332704e71afbc6c9adfbaf",
+      "after": "17d8267da4842e53d157540dfdf8389ee253c4131c3e2060bf60ebad366f909f"
+    },
+    {
+      "file": "src/content/passages/chapter-29-p003.json",
+      "before": "7caea75e4c12b893080093e4cc44be23f9f74e023f448a6fb6bf7a4cc33841f0",
+      "after": "88b8f71c122ff32fcbf69745023518852e4538e7cdc1ccfd73a5aefbc253f99e"
+    }
+  ]
+}
