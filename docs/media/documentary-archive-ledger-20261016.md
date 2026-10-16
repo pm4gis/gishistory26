@@ -56,6 +56,7 @@ Source: https://github.com/linz/linz-data-importer/tree/fff9011d63a921360dc0bcc6
 - linz-qgis-data-importer-settings-2018: original images/settings_example.png, 58,309 bytes, Git blob a4f9aff65a31f6f301d6dc1ec704c99f99cf3438. Image in repository by 13 November 2018. Visually inspected in source; displays the LINZ Data Importer Settings tab with placeholder API keys (not active private keys).
 - linz-qgis-data-importer-demo-2021: original images/import_example.gif, 1,384,073 bytes, Git blob 4324002b1f5415be12c41443de7530d30cdc8bd3. Commit on 21 June 2021 explicitly updated GIF for QGIS 3.16; the exact underlying recording date is unknown. Original animation preserved with first-frame display derivative.
 
-<!-- LINZ IMPORTER ACQUISITION PENDING -->
+- linz-qgis-data-importer-settings-2018: immutable pre-2025 original, WebP derivatives and explicit archive-only decision acquired, Git SHA verified.
+- linz-qgis-data-importer-demo-2021: immutable pre-2025 original, WebP derivatives and explicit archive-only decision acquired, Git SHA verified.
 
 Checks required: npm ci, npm test, npm run build, historical-original hash checks and browser QA. Then focused PR, GitHub checks, Cloudflare deployment and archive live pages. Rights-held or uncertain National Library, council, Archives NZ, GIS company and agency candidates remain pending until licence and first-publication date checked. Do not use or update the predecessor site.
