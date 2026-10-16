@@ -6,7 +6,7 @@ const params=new URLSearchParams({view:'cm',fs:'1',to:contributionRecipient,su:d
 const gmail='https://mail.google.com/mail/?'+params.toString();
 const outlook='https://outlook.live.com/mail/0/deeplink/compose?'+new URLSearchParams({to:contributionRecipient,subject:draft.subject,body:draft.body}).toString();
 ---
-<Layout title="Email a contribution · NZ GIS History" description="Open a pre-addressed email draft in your usual mail application or webmail to contribute corrections, documents and photographs.">
+<Layout title="Email a contribution · NZ GIS History" description="Open a pre-addressed email draft in your usual mail application or webmail to contribute corrections, documents and photographs." noindex>
  <div class="wrap narrative email-options-page">
   <p class="eyebrow">Contributions and corrections</p>
   <h1>Email a contribution</h1>

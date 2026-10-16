@@ -6,6 +6,7 @@ import WanangaVideos from '../../components/WanangaVideos.svelte';
 import {ngaPoutamaReadingLinks} from '../../lib/nga-poutama-videos.mjs';
 import {pickThemeImage,pickRecordImage} from '../../lib/subject-media.mjs';
 import {dataset,passageUrl} from '../../lib/data';
+import {themeSchema} from '../../lib/seo.mjs';
 import {decorFor} from '../../lib/decor';
 export async function getStaticPaths(){const d=await dataset();return d.themes.map((t:any)=>({params:{slug:t.slug},props:{id:t.id}}))}
 const d=await dataset();
@@ -17,8 +18,9 @@ const events=d.events.filter((e:any)=>e.themeIds.includes(t.id)).sort((a:any,b:a
 const artIndex=d.themes.findIndex((x:any)=>x.id===t.id);
 const featured=pickThemeImage(t.slug,d.images);
 const recordCards=records.map((r:any)=>({...r,subject:pickRecordImage(r,d.images)}));
+const structuredData=themeSchema(t,passages.map((p:any)=>({title:p.title,url:passageUrl(p,d.articles)})));
 ---
-<Layout title={t.title+' · NZ GIS History'}>
+<Layout title={t.title+' · NZ GIS History'} description={t.description} structuredData={structuredData}>
  <div class="wrap">
   <div class="visual-page-heading">
    <div><p class="eyebrow">Theme</p><h1>{t.title}</h1><p class="intro">{t.description}</p></div>

@@ -1,10 +1,13 @@
 ---
 import '../styles/site.css';
+import {pageSchema,safeJsonLd,conciseDescription} from '../lib/seo.mjs';
 import {getCollection} from 'astro:content';
 import {siteContributionPageUrl} from '../lib/passage-contributions.mjs';
 import {PALETTE_ORDER,PALETTE_NAMES,PALETTE_TOKENS} from '../lib/appearance.mjs';
-const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.'}=Astro.props;
+const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.',structuredData=[],noindex=false}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
+const metaDescription=conciseDescription(description);
+const jsonLd=safeJsonLd(pageSchema({url:canonical.href,title,description:metaDescription,entities:structuredData}));
 const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof PALETTE_NAMES],dark:PALETTE_TOKENS[id].dark,light:PALETTE_TOKENS[id].light}));
 const currentPath=Astro.url.pathname;
 const contributionHref=currentPath==='/contribute/'?'/contribute/':siteContributionPageUrl(title,canonical.href);
@@ -21,8 +24,10 @@ const menuDatasets=(await getCollection('records'))
 <html lang="en-NZ">
 <head>
  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
- <title>{title}</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/>
- <meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/>
+ <title>{title}</title><meta name="description" content={metaDescription}/><link rel="canonical" href={canonical}/>
+ {noindex&&<meta name="robots" content="noindex,follow"/>}
+ <script type="application/ld+json" set:html={jsonLd}></script>
+ <meta property="og:title" content={title}/><meta property="og:description" content={metaDescription}/><meta property="og:type" content="website"/>
  <meta property="og:url" content={canonical}/>
  <meta property="og:image" content="https://history.pm4gis.nz/assets/social/nzgis-selected-20261013.jpg"/>
  <meta property="og:image:secure_url" content="https://history.pm4gis.nz/assets/social/nzgis-selected-20261013.jpg"/>
@@ -30,7 +35,7 @@ const menuDatasets=(await getCollection('records'))
  <meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/>
  <meta property="og:image:alt" content="User-selected NZ GIS History artwork with a slate-blue background, topographic map, bathymetric chart, historical aerial photograph and GPS receiver"/>
  <meta name="twitter:card" content="summary_large_image"/>
- <meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/>
+ <meta name="twitter:title" content={title}/><meta name="twitter:description" content={metaDescription}/>
  <meta name="twitter:image" content="https://history.pm4gis.nz/assets/social/nzgis-selected-20261013.jpg"/>
  <meta name="twitter:image:alt" content="User-selected NZ GIS History artwork showing aerial photography, mapping, bathymetry and a GPS receiver"/>
  <script is:inline>

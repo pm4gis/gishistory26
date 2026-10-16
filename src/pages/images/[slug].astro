@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import {imageSchema} from "../../lib/seo.mjs";
 import { getCollection } from "astro:content";
 import {reviewedImagePassages,curatedImageParagraphs} from "../../lib/chapter-media.mjs";
 
@@ -22,7 +23,7 @@ const relatedChapter = linkedArticle ? (await getCollection("articles")).find((e
 const linkedAnchor = reviewed?.afterParagraphId || earlierAnchor || explicitPassageSlug;
 const illustratedPassageUrl = relatedChapter ? relatedChapter.url + (linkedAnchor ? '#'+linkedAnchor : '') : null;
 ---
-{image ? <Layout title={`${image.title} — Image details`} description={`${image.title}. ${image.credit}. Source and licence details.`}>
+{image ? <Layout title={`${image.title} — Image details`} description={`${image.title}. ${image.credit}. Source and licence details.`} structuredData={imageSchema(image)}>
   <article class="image-detail page-wrap">
     <p class="eyebrow">Image archive <span aria-hidden="true">/</span> Image details</p>
     <h1 class="page-title">{image.title}</h1>

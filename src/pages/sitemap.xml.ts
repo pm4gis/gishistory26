@@ -1,22 +1,31 @@
 import { dataset } from '../lib/data';
-
-const canonicalOrigin = 'https://history.pm4gis.nz';
+import { chapterDocuments } from '../lib/chapter-documents.mjs';
+import { ORIGIN } from '../lib/seo.mjs';
 
 export async function GET() {
   const d = await dataset();
-  const paths = [
+  const urls = new Map<string, string | undefined>();
+  function include(path: string, modified?: string) {
+    if (!/^\/[^?#]*$/.test(path)) return;
+    const lastmod = typeof modified === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(modified) ? modified : undefined;
+    // Only public, canonical HTML pages belong in the sitemap.
+    if (!urls.has(path) || (lastmod && !urls.get(path))) urls.set(path, lastmod);
+  }
+  [
     '/', '/read/', '/timeline/', '/browse/', '/datasets/', '/network/',
-    '/themes/', '/search/', '/images/', '/about/',
-    ...d.articles.map((a: any) => a.url),
-    ...d.records.filter((r: any) => r.kind !== 'Story').map((r: any) => r.url),
-    ...d.themes.map((t: any) => '/themes/' + t.slug + '/'),
-  ];
-  const locations = [...new Set(paths)]
-    .filter((path) => path.startsWith('/'))
-    .map((path) => '<url><loc>' + (canonicalOrigin + path).replace(/&/g, '&amp;') + '</loc></url>')
-    .join('');
+    '/themes/', '/images/', '/about/', '/sources/collections/',
+    '/nga-poutama-videos/'
+  ].forEach(path => include(path));
+  d.articles.filter((a: any) => a.status === 'published').forEach((a: any) => include(a.url, a.updatedAt));
+  d.records.filter((r: any) => r.kind !== 'Story').forEach((r: any) => include(r.url, r.updatedAt));
+  d.themes.forEach((t: any) => include('/themes/' + t.slug + '/', t.updatedAt));
+  d.images.forEach((i: any) => include('/images/' + i.slug + '/'));
+  chapterDocuments.forEach((doc: any) => include('/documents/' + doc.slug + '/'));
+  const esc = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const entries = [...urls.entries()].map(([path, lastmod]) =>
+    '<url><loc>' + esc(ORIGIN + path) + '</loc>' + (lastmod ? '<lastmod>' + lastmod + '</lastmod>' : '') + '</url>'
+  ).join('');
   const xml = '<?xml version="1.0" encoding="UTF-8"?>' +
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' +
-    locations + '</urlset>';
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + entries + '</urlset>';
   return new Response(xml, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
 }
