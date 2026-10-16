@@ -1,0 +1,31 @@
+{
+  "id": "2016-geoint-military-topographic-maps",
+  "dateDisplay": "2016",
+  "startDate": "2016",
+  "datePrecision": "year",
+  "year": 2016,
+  "label": "GEOINT New Zealand presents its military topographic map programme",
+  "summary": "At GeoCart 2016, William Mortimer described GNZ’s contribution to the Multinational Geospatial Co-Production Programme, including 1:50,000 data production for the South West Pacific and its refinement into military topographic maps.",
+  "url": "/stories/topography-goes-digital/",
+  "passageIds": [
+    "passage:chapter-15-c8b63f1bfc"
+  ],
+  "recordIds": [
+    "chapter:15",
+    "entity:geoint-new-zealand",
+    "entity:new-zealand-defence-force",
+    "person:william-mortimer"
+  ],
+  "themeIds": [],
+  "categories": [
+    "government",
+    "conference",
+    "research"
+  ],
+  "sources": [
+    {
+      "label": "William Mortimer, GEOINT New Zealand’s 1:50,000 Military Topographic Map Production, GeoCart 2016",
+      "url": "https://geocart.cartography.org.nz/2016/downloads/abstracts/2016-093_mortimer.pdf"
+    }
+  ]
+}
