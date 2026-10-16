@@ -53,7 +53,9 @@ jobs:
             public/assets/historical/original/linz-*-layer-2015.png \
             public/assets/historical/web/linz-*-layer-2015.webp \
             public/assets/historical/card/linz-*-layer-2015.webp \
-            docs/media/documentary-archive-ledger-20261016.md
+            docs/media/documentary-archive-ledger-20261016.md \
+            docs/media/chapter-image-alignment-wave2-20261011.csv
           if git diff --cached --quiet; then echo 'No new archive material'; exit 0; fi
           git commit -m 'Archive three source-verified LINZ 2015 TileMill map previews'
+          git pull --rebase origin media/linz-2015-tilemill-layers-20261016
           git push origin HEAD:media/linz-2015-tilemill-layers-20261016
