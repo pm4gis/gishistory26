@@ -8,12 +8,25 @@
   "website": null,
   "story": [
     "Shannon McColley is a Historical Imagery Specialist at Toitū Te Whenua LINZ. The New Zealand Cartographic Society records that she came to New Zealand in 2008 and has worked on digitising and curating historical maps and aerial photographs.",
-    "She has also served the New Zealand Cartographic Society as secretary and webmaster and as a director of GeoCart. Her work sits at the intersection of historical imagery, digital preservation, cartography and the wider GIS community."
+    "She has also served the New Zealand Cartographic Society as secretary and webmaster and as a director of GeoCart. Her work sits at the intersection of historical imagery, digital preservation, cartography and the wider GIS community.",
+    "The 2016 GeoCart programme identifies Shannon L. McColley as author of 'The GeoDataHub: A Digital Archive of New Zealand Government Mapping'. The project grew from the University of Auckland IMAGINZ pilot and a partnership with the National Library and LINZ/NZDF map archives, digitally capturing about 25,000 historic government map images through 2016. The 2018 GeoCart proceedings list McColley's follow-up 'Window into the past', and the conference organiser biography separately names her role with LINZ. Earlier records using the middle initial refer to the same person."
   ],
   "sources": [
     {
       "label": "New Zealand Cartographic Society, About NZCS",
       "url": "https://cartography.org.nz/about/nzcs"
+    },
+    {
+      "label": "Shannon L. McColley, The GeoDataHub, University of Auckland archival map digitisation conference account",
+      "url": "https://auckland.academia.edu/ShannonLMcColley"
+    },
+    {
+      "label": "National Library of New Zealand, GeoCart 2018 proceedings and exact paper authors, record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "New Zealand Cartographic Society, GeoCart 2018 conference organisers, review panel, programme and speakers",
+      "url": "https://cartography.org.nz/geocart2018"
     }
   ],
   "aliases": [
@@ -23,6 +36,21 @@
   "themeIds": [],
   "status": "Account available",
   "coverageEnd": 2026,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Shannon L. McColley, The GeoDataHub, University of Auckland archival map digitisation conference account",
+        "url": "https://auckland.academia.edu/ShannonLMcColley"
+      },
+      {
+        "label": "National Library of New Zealand, GeoCart 2018 proceedings and exact paper authors, record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      },
+      {
+        "label": "New Zealand Cartographic Society, GeoCart 2018 conference organisers, review panel, programme and speakers",
+        "url": "https://cartography.org.nz/geocart2018"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

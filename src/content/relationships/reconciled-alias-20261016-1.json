@@ -1,0 +1,17 @@
+{
+  "id": "relationship:alias-20261016-shannon-mccolley",
+  "a": "person:shannon-l-mccolley",
+  "b": "person:shannon-mccolley",
+  "label": "Same person: middle-initial name variant",
+  "basis": "Existing record aliases plus New Zealand Cartographic Society committee listing establish Shannon L. McColley and Shannon McColley as one person.",
+  "sources": [
+    {
+      "label": "New Zealand Cartographic Society, committee listing for Shannon L. McColley",
+      "url": "https://cartography.org.nz/about/nzcs"
+    },
+    {
+      "label": "New Zealand Cartographic Society, GeoCart 2018 conference organisers, review panel, programme and speakers",
+      "url": "https://cartography.org.nz/geocart2018"
+    }
+  ]
+}

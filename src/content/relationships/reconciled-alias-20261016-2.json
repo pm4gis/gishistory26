@@ -1,0 +1,17 @@
+{
+  "id": "relationship:alias-20261016-ivan-diaz-rainey",
+  "a": "person:ian-diaz-rainey",
+  "b": "person:ivan-diaz-rainey",
+  "label": "Same person: conference author-name variant",
+  "basis": "Otago STRAND documents Ivan Diaz-Rainey's research on the same 2022 NZGRC coastal-flooding and property study recorded under Ian Diaz-Rainey.",
+  "sources": [
+    {
+      "label": "University of Otago STRAND project presentations naming Ivan Diaz-Rainey (2022–2024)",
+      "url": "https://blogs.otago.ac.nz/strandproject/presentations/"
+    },
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, coastal-flooding and property-values paper",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ]
+}

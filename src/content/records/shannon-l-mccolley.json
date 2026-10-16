@@ -2,39 +2,37 @@
   "id": "person:shannon-l-mccolley",
   "slug": "shannon-l-mccolley",
   "name": "Shannon L. McColley",
-  "kind": "Person",
-  "category": "People",
+  "kind": "Alias",
+  "category": "Name variant",
   "url": "/people/shannon-l-mccolley/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "Alternative name entry for Shannon McColley; preserved historical URL.",
   "story": [
-    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Shannon L. McColley as an author of “The GeoDataHub: A digital archive of New Zealand government mapping”.",
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Shannon L. McColley as an author of “Window into the past”."
+    "The 2016 and 2018 conference contributions were attributed to Shannon L. McColley. The pre-existing Shannon McColley record already lists the middle-initial form as an alias. The conference authorship and associated links have been consolidated into that established biography."
   ],
   "sources": [
     {
-      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
-      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
-    },
-    {
-      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-      "url": "https://natlib.govt.nz/records/40158196"
+      "label": "New Zealand Cartographic Society, GeoCart 2018 conference organisers, review panel, programme and speakers",
+      "url": "https://cartography.org.nz/geocart2018"
     }
   ],
-  "aliases": [],
+  "aliases": [
+    "Shannon McColley"
+  ],
   "themeIds": [],
   "paragraphSources": [
     [
       {
-        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
-        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
-      }
-    ],
-    [
-      {
-        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-        "url": "https://natlib.govt.nz/records/40158196"
+        "label": "New Zealand Cartographic Society, GeoCart 2018 conference organisers, review panel, programme and speakers",
+        "url": "https://cartography.org.nz/geocart2018"
       }
     ]
   ],
-  "status": "Source-backed historical account"
+  "status": "Alias reconciled; retained route",
+  "listingStatus": "reference-only",
+  "contextLinks": [
+    {
+      "label": "Canonical biography: Shannon McColley",
+      "url": "/people/shannon-mccolley/"
+    }
+  ]
 }

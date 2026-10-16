@@ -7,21 +7,42 @@
   "url": "/people/ivan-diaz-rainey/",
   "description": "Named contributor in sourced geospatial conference and publication records.",
   "story": [
-    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Ivan Diaz-Rainey as an author of “Spatial data quality and veracity”."
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Ivan Diaz-Rainey as an author of “Spatial data quality and veracity”.",
+    "The GeoCart and New Zealand geospatial research material contains a variant spelling, 'Ian Diaz-Rainey', for the 2022 coastal flooding and residential-property study. University of Otago STRAND records name Professor Ivan Diaz-Rainey as a researcher in the same spatial-property project. These records support a single person; the 'Ian' variant is retained as a source-specific spelling rather than counted as a separate contributor."
   ],
   "sources": [
     {
       "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
       "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    },
+    {
+      "label": "University of Otago STRAND project presentations naming Ivan Diaz-Rainey (2022–2024)",
+      "url": "https://blogs.otago.ac.nz/strandproject/presentations/"
+    },
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, coastal-flooding and property-values paper",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
     }
   ],
-  "aliases": [],
+  "aliases": [
+    "Ian Diaz-Rainey"
+  ],
   "themeIds": [],
   "paragraphSources": [
     [
       {
         "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
         "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "University of Otago STRAND project presentations naming Ivan Diaz-Rainey (2022–2024)",
+        "url": "https://blogs.otago.ac.nz/strandproject/presentations/"
+      },
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, coastal-flooding and property-values paper",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
       }
     ]
   ],
