@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:rosie-wood",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:rosie-wood",
   "a": "person:rosie-wood",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Rosie Wood as an author of “Modelling ice retreat on Kilimanjaro using GIS”.",
   "passageIds": [],

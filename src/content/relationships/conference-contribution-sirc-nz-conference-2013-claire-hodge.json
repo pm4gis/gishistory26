@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:claire-hodge",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:claire-hodge",
   "a": "person:claire-hodge",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago lists Claire Hodge as an author of “Spatial aspects of a comparative study of active transport to school and motorized transport”.",
   "passageIds": [],

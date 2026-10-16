@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:ian-smith",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:ian-smith",
   "a": "person:ian-smith",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago lists Ian Smith as an author of “Predicting potential anchor ice formation sites in coastal Antarctic waters”.",
   "passageIds": [],

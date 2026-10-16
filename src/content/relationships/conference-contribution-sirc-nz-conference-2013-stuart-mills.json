@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:stuart-mills",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:stuart-mills",
   "a": "person:stuart-mills",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago lists Stuart Mills as an author of “Implementing automated photogrammetry for the New Zealand eScience Infrastructure facilities”.",
   "passageIds": [],

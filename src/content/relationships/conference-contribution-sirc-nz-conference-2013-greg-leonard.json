@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:greg-leonard",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:greg-leonard",
   "a": "person:greg-leonard",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago lists Greg Leonard as an author of “Predicting potential anchor ice formation sites in coastal Antarctic waters”.",
   "passageIds": [],

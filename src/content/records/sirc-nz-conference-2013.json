@@ -1,10 +1,10 @@
 {
-  "id": "entity:sirc-nz-2013",
-  "slug": "sirc-nz-2013",
+  "id": "entity:sirc-nz-conference-2013",
+  "slug": "sirc-nz-conference-2013",
   "name": "SIRC NZ 2013",
   "kind": "Conference",
   "category": "Research",
-  "url": "/entities/sirc-nz-2013/",
+  "url": "/entities/sirc-nz-conference-2013/",
   "description": "Proceedings and repository records for named GIS and remote sensing contributions at SIRC NZ 2013.",
   "story": [
     "Conference, repository and institutional publication records document named GIS, remote sensing, active transport and photogrammetry contributions associated with SIRC NZ 2013."

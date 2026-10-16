@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:markus-u-muller",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:markus-u-muller",
   "a": "person:markus-u-muller",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago lists Markus U. Müller as an author of “Current status and future directions of mobile GIS”.",
   "passageIds": [],

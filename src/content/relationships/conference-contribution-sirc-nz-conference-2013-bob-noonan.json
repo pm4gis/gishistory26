@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:bob-noonan",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:bob-noonan",
   "a": "person:bob-noonan",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Bob Noonan as an author of “Snowfall detection in Antarctica using MODIS infrared reflectance”.",
   "passageIds": [],

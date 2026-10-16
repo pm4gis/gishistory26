@@ -1,7 +1,7 @@
 {
-  "id": "relationship:conference-contribution:sirc-nz-2013:david-medyckyj-scott",
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:david-medyckyj-scott",
   "a": "person:david-medyckyj-scott",
-  "b": "entity:sirc-nz-2013",
+  "b": "entity:sirc-nz-conference-2013",
   "label": "Named author at SIRC NZ 2013",
   "basis": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago lists David Medyckyj-Scott as an author of “Current status and future directions of mobile GIS”.",
   "passageIds": [],
