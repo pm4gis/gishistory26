@@ -5,7 +5,7 @@
   "url": "/stories/drawing-maps-by-machine/",
   "summary": "By the late 1970s, the Department of Lands and Survey was using a computer-assisted system to convert cadastral mapping into digital form. A paper cadastral sheet was fixed to a large digitising table, control points were establis",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "readingOrder": 3,
   "themeIds": [
     "technology-stack",
@@ -28,6 +28,10 @@
     {
       "id": "ch03-note-04",
       "text": "4. The chapter's source-and-claims appendix remains the working authority for machine-assisted cartography, metric conversion and terrain-computation claims. Chapter 4 takes over where digital imagery and raster processing become the main subject."
+    },
+    {
+      "id": "ch03-note-05",
+      "text": "The Toitū Te Whenua Our Whakapapa panel dated 16 October 2026 places a separate Computer Mapping Unit in 1979. Colley’s contemporaneous thesis documents MAPPAK; the panel does not identify the unit as MAPPAK. The panel gives the first NZMS 260 sheet as 1978, while Te Ara identifies the first sheet, T12 Thames, as published in 1977; this chapter retains the independently supported 1977 date."
     }
   ]
 }

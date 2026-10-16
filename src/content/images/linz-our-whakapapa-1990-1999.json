@@ -1,0 +1,69 @@
+{
+  "id": "image:linz-our-whakapapa-1990-1999",
+  "slug": "linz-our-whakapapa-1990-1999",
+  "title": "Our Whakapapa: 1990–1999",
+  "assetPath": "/assets/historical/web/linz-our-whakapapa-1990-1999.webp",
+  "sourceUrl": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa",
+  "sourceName": "Toitū Te Whenua Land Information New Zealand (LINZ), Our Whakapapa exhibition",
+  "credit": "Photograph by Duane Wilkins, 16 October 2026. Exhibition source: Toitū Te Whenua Land Information New Zealand. LINZ content is licensed under CC BY 4.0 unless otherwise specified.",
+  "licence": "LINZ's default terms license its content under CC BY 4.0 unless otherwise specified. The photographer supplied this camera photograph for this site; no onward reuse licence is granted for it. Embedded historical photographs may have separate rights; their individual permissions have not been individually confirmed.",
+  "licenceUrl": "https://www.linz.govt.nz/copyright",
+  "altText": "Upright photograph of the Toitū Te Whenua Our Whakapapa exhibition panel headed 1990–1999, showing text and historical photographs.",
+  "caption": "Toitū Te Whenua’s Our Whakapapa panel on 1990s geospatial work, including the DOSLI–LINZ transition and NZGD2000, photographed on 16 October 2026. Historical dates are separate from the photograph date.",
+  "articleSlug": "rebuilding-the-coordinate-framework",
+  "chapterNumber": 19,
+  "dateDisplay": "Historical panel period: 1990–1999; photograph taken: 16 October 2026",
+  "context": "The 1990–1999 heading is the historical range described by the panel. Duane Wilkins photographed it on 16 October 2026. The existing record and timeline already document the DOSLI–LINZ split on 1 July 1996 and NZGD2000 implementation in 1998; the Landonline chapter covers its late-1990s planning and implementation. The panel also names Graeme Jupp in its topographic mapping account; his existing person record is retained. The panel photograph was taken on 16 October 2026; that is the capture date, not the date of the historical events described. The original JPEG is preserved unchanged; the full-size display and card variants apply EXIF orientation 6 without cropping.",
+  "originalAssetPath": "/assets/historical/original/20261016_134000.jpg",
+  "thumbnailPath": "/assets/historical/card/linz-our-whakapapa-1990-1999.webp",
+  "originalSha256": "1c60ae920f9a104890b43e9c5288f8e04cd065a840dd1ca0f0622438602dfee7",
+  "webSha256": "029fe7654d9f2aaaa856b443ff3b7f5fe3d9cf7b9d60b5327fbac1194c233614",
+  "thumbnailSha256": "d37b6b5e325ec37538469c6c6950ff521b098071c02d03080940cd2a1a3a4e55",
+  "originalWidth": 4000,
+  "originalHeight": 1638,
+  "displayWidth": 1638,
+  "displayHeight": 4000,
+  "thumbnailWidth": 696,
+  "thumbnailHeight": 1700,
+  "sourceFileTitle": "20261016_134000.jpg",
+  "headerCandidate": false,
+  "licenceEvidenceUrl": "https://www.linz.govt.nz/copyright",
+  "derivativesNote": "The supplied original JPEG bytes are retained unchanged under the source filename. Its EXIF Orientation 6 is applied to the full-resolution WebP and the card WebP; both keep the complete panel in frame without cropping. The original can be downloaded from this page.",
+  "relatedRecords": [
+    {
+      "name": "Department of Survey and Land Information (DOSLI)",
+      "url": "/entities/department-of-survey-and-land-information-dosli/",
+      "role": "Predecessor organisation up to 1 July 1996"
+    },
+    {
+      "name": "Land Information New Zealand (LINZ)",
+      "url": "/entities/land-information-new-zealand-linz/",
+      "role": "Organisation formed in 1996"
+    },
+    {
+      "name": "Landonline · Chapter 14",
+      "url": "/stories/landonline/",
+      "role": "Chapter on the digital title and survey system"
+    },
+    {
+      "name": "The digital cadastre · Chapter 13",
+      "url": "/stories/the-cadastre-becomes-data/",
+      "role": "Chapter on DCDB and the transition"
+    },
+    {
+      "name": "Rebuilding the coordinate framework · Chapter 19",
+      "url": "/stories/rebuilding-the-coordinate-framework/",
+      "role": "Chapter on NZGD2000"
+    },
+    {
+      "name": "Graeme Jupp",
+      "url": "/people/graeme-jupp/",
+      "role": "Named in the panel’s topographic mapping account"
+    },
+    {
+      "name": "The first web maps · Chapter 30",
+      "url": "/stories/the-first-web-maps/",
+      "role": "Chapter on early public web mapping"
+    }
+  ]
+}
