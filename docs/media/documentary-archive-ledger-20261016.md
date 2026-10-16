@@ -74,4 +74,7 @@ Rejected: 4819GeocodeLocations.PNG, a diagram titled “Examples of location of 
 
 Batch baseline: main 9154100596ddf94e5c697f1c7091ec0e9f97552d (PR #99 merged), branch media/linz-aims-plugin-2024-20261016. Target PR #100 after source ingestion passes. Acquisition process is a reusable manifest-driven script; future batches can reuse it with separately verified source rights and pre-2025 image dates. Need run npm ci, npm test, npm run build, source SHA/original asset and responsive browser QA; then merge after all checks, confirm Cloudflare production SHA and archive routes before further work.
 
-<!-- INGEST linz-aims-qgis-2024-20261016 -->
+Source originals acquired, hashes and licence verified by GitHub Actions:
+- linz-qgis-aims-address-edit-form-pre2025: 23026 bytes; SHA-256 1e088ab31c91e6e9fc8747b12b63a59c6b8a48ef400c7c6c57ed9209084d257b
+- linz-qgis-aims-select-address-pre2025: 8936 bytes; SHA-256 d7635fafd1c939714d610c9acfc1cbd4c0d1294b2dca5850b9d7d91133947e82
+- linz-qgis-aims-intramaps-search-pre2025: 7666 bytes; SHA-256 9efdbb8a71d7b2fe3643a939a0e586f286fe5194ac6bbaf4c06b84d60407eb77
