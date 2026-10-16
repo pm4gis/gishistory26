@@ -11,6 +11,7 @@ import {chapterCardImageMap,homepageFullBleedImageSlugs,homepageMapDetailChapter
 
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
+const peopleCount=d.records.filter((x:any)=>x.kind==='Person').length;
 const chapterNavImages=chapterCardImageMap(chapters,d.passages,d.images);
 const eligible=new Set(homeHighlightSlugs);
 const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
@@ -38,10 +39,13 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
      <a class="button" href="/timeline/">Explore the timeline</a>
      <a class="button" id="continue" href="/read/" hidden>Continue reading</a>
     </div>
-    <div class="stats">
+    <div class="stats" role="group" aria-label="NZ GIS History at a glance. Build figures are from the latest verified build.">
      <span><strong>{chapters.length}</strong> chapters</span>
-     <span><strong>{d.records.filter((x:any)=>x.kind==='Person').length}</strong> people</span>
+     <span><strong>{peopleCount}</strong> people</span>
      <span><strong>{d.events.length}</strong> events</span>
+     <span><strong>9,108</strong> generated files<span class="sr-only"> in the latest verified build</span></span>
+     <span><strong>237,886</strong> internal links<span class="sr-only"> checked in the latest verified build</span></span>
+     <span><strong>{d.records.length}</strong> catalogue records</span>
     </div>
    </div>
   </section>

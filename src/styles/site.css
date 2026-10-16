@@ -56,7 +56,7 @@
 .hero--visual .hero-copy{z-index:1;width:min(68%,700px);position:relative}
 .hero--visual h1{font-size:clamp(43px,5.5vw,77px);text-wrap:balance}
 .hero--visual .intro{max-width:45ch;color:var(--text)}
-.hero--visual .stats{margin-top:38px;max-width:630px}
+.hero--visual .stats{margin-top:38px;max-width:none;gap:12px;flex-wrap:nowrap;font-size:14px}
 .hero--visual .stats strong{font-size:20px}
 .home-layout .section-head{margin:55px 0 18px}
 .home-layout .section-head a{text-decoration:none}
@@ -84,12 +84,13 @@
  .hero--visual .decorative-landscape--hero{position:relative;inset:auto;height:210px;border-radius:12px;z-index:0;flex:none}
  .hero--visual h1{font-size:clamp(35px,8vw,54px)}
  .hero--visual .intro{font-size:18px}
- .hero--visual .stats{gap:12px 20px;margin-top:24px}
+ .hero--visual .stats{gap:12px 20px;margin-top:24px;flex-wrap:wrap}
  .visual-page-heading{grid-template-columns:1fr;gap:18px}
  .visual-page-heading .decorative-landscape--banner{height:195px}
  .reading-banner{height:110px}
  .home-layout .section-head{margin:38px 0 16px}
 }
+@media(min-width:851px) and (max-width:1100px){.hero--visual .stats{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.decorative-landscape img,.art-card{transition:none!important}.art-card:hover img,.art-card:focus-within img{transform:none}}
 
 /* Authenticated documentary images are separate from decorative aerial backgrounds. */
