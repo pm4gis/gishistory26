@@ -23,7 +23,10 @@ The original 2015 LINZ supporting-layer thumbnails are in the project repository
 
 Source snapshot and licence: https://github.com/linz/linz_basemaps/blob/6e1bb61b47d8e357def869c994e9c827ade0b13d/README.md#licensing . The batch archive script downloads each unchanged .thumb.png from the pinned commit and checks its Git blob SHA-1 before generating SHA-256, original dimensions and uncropped WebP display derivatives. It never upscales images and cannot overwrite accepted files. Each original is documented separately with title, source URL, credit, period, licence evidence, caption, alt text and original URL. Its archive-only status explicitly prevents accidental passage association.
 
-<!-- AUTO-ACQUISITION: PENDING -->
+Acquired in GitHub Actions, source files checked against pinned Git blobs:
+- linz-geodetic-marks-layer-2015 (LINZ 2015; original and two WebP derivatives; image metadata generated with checked SHA-1 and SHA-256)
+- linz-motorways-layer-2015 (LINZ 2015; original and two WebP derivatives; image metadata generated with checked SHA-1 and SHA-256)
+- linz-parcel-wireframe-layer-2015 (LINZ 2015; original and two WebP derivatives; image metadata generated with checked SHA-1 and SHA-256)
 
 ## Sources searched and decisions
 
