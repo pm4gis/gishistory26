@@ -1,0 +1,29 @@
+{
+  "id": "entity:geocart-2018",
+  "slug": "geocart-2018",
+  "name": "GeoCart 2018",
+  "kind": "Conference",
+  "category": "Research",
+  "url": "/entities/geocart-2018/",
+  "description": "Proceedings for named cartographic research contributions at GeoCart 2018.",
+  "story": [
+    "The National Library record describes Cartographies of change as the GeoCart 2018 proceedings."
+  ],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

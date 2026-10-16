@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2022:geoff-omalley",
+  "a": "person:geoff-omalley",
+  "b": "entity:geocart-2022",
+  "label": "Named author at GeoCart 2022",
+  "basis": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Geoff O'Malley as an author of “Ngā Poutama Matawhenua Māori GIS Wānanga”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    }
+  ]
+}

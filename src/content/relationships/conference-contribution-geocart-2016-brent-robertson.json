@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:brent-robertson",
+  "a": "person:brent-robertson",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Brent Robertson as an author of “Transformation of building representation on the NZTopo50 map”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

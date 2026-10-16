@@ -1,0 +1,29 @@
+{
+  "id": "person:andrew-pauling",
+  "slug": "andrew-pauling",
+  "name": "Andrew Pauling",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/andrew-pauling/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago lists Andrew Pauling as an author of “Predicting potential anchor ice formation sites in coastal Antarctic waters”."
+  ],
+  "sources": [
+    {
+      "label": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago",
+      "url": "https://www.otago.ac.nz/geography/our-people/academic-staff/dr-sarah-mager"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago",
+        "url": "https://www.otago.ac.nz/geography/our-people/academic-staff/dr-sarah-mager"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

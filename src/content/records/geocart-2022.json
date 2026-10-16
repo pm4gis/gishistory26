@@ -1,0 +1,29 @@
+{
+  "id": "entity:geocart-2022",
+  "slug": "geocart-2022",
+  "name": "GeoCart 2022",
+  "kind": "Conference",
+  "category": "Research",
+  "url": "/entities/geocart-2022/",
+  "description": "Archived programme source for named contributions to GeoCart 2022.",
+  "story": [
+    "The archived session 1 programme lists presentations and contributors for GeoCart 2022."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

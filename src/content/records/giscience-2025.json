@@ -1,0 +1,37 @@
+{
+  "id": "entity:giscience-2025",
+  "slug": "giscience-2025",
+  "name": "GIScience 2025",
+  "kind": "Conference",
+  "category": "Research",
+  "url": "/entities/giscience-2025/",
+  "description": "Official accepted abstracts and papers for GIScience 2025.",
+  "story": [
+    "The official conference programme lists accepted abstracts and papers for GIScience 2025."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    },
+    {
+      "label": "GIScience 2025 accepted papers, official conference programme",
+      "url": "https://giscience2025.org/papers.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      },
+      {
+        "label": "GIScience 2025 accepted papers, official conference programme",
+        "url": "https://giscience2025.org/papers.html"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

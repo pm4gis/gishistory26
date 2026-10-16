@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:wendy-shaw",
+  "a": "person:wendy-shaw",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Wendy Shaw as an author of “Māori place names on New Zealand's maps and charts”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

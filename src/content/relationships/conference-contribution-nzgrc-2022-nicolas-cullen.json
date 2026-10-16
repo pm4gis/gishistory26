@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:nzgrc-2022:nicolas-cullen",
+  "a": "person:nicolas-cullen",
+  "b": "entity:nzgrc-2022",
+  "label": "Named author at New Zealand Geospatial Research Conference 2022",
+  "basis": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Nicolas Cullen as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    }
+  ]
+}

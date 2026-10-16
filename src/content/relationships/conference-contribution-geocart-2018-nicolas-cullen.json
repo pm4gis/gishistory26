@@ -1,0 +1,22 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:nicolas-cullen",
+  "a": "person:nicolas-cullen",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Nicolas J. Cullen as an author of “Snow depth distribution from high-resolution RPAS photogrammetry”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "University of Otago, Nicolas Cullen profile",
+      "url": "https://www.otago.ac.nz/news/newsroom/otago-announces-39-new-professors"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

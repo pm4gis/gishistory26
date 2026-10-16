@@ -1,0 +1,29 @@
+{
+  "id": "person:christina-ergler",
+  "slug": "christina-ergler",
+  "name": "Christina Ergler",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/christina-ergler/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Christina Ergler as an author of “Geographically weighted logistic regression for active transport”."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "person:shannon-l-mccolley",
+  "slug": "shannon-l-mccolley",
+  "name": "Shannon L. McColley",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/shannon-l-mccolley/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Shannon L. McColley as an author of “The GeoDataHub: A digital archive of New Zealand government mapping”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Shannon L. McColley as an author of “Window into the past”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

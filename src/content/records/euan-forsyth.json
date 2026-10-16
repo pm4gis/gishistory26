@@ -1,0 +1,29 @@
+{
+  "id": "person:euan-forsyth",
+  "slug": "euan-forsyth",
+  "name": "Euan Forsyth",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/euan-forsyth/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Euan Forsyth as an author of “Bridging the Visualization Gap in Time Series Analysis through Spatialization”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:sandra-mandic",
+  "a": "person:sandra-mandic",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Sandra Mandic as an author of “Routes to Dunedin secondary schools and students' perceptions of safety”; “Visualisation of active transport data”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

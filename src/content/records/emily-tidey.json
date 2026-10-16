@@ -1,0 +1,29 @@
+{
+  "id": "person:emily-tidey",
+  "slug": "emily-tidey",
+  "name": "Emily Tidey",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/emily-tidey/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Emily Tidey as an author of “Banks Peninsula subtidal habitat mapping”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "person:geoff-aitken",
+  "slug": "geoff-aitken",
+  "name": "Geoff Aitken",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/geoff-aitken/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Geoff Aitken as an author of “The mapping of New Zealand's National Parks”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Geoff Aitken as an author of “Mapping the Southern Alps”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

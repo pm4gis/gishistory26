@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:robert-odolinski",
+  "a": "person:robert-odolinski",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Robert Odolinski as an author of “Dynamic datums in GIS through modern GNSS positioning”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

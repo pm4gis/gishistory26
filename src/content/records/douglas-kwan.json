@@ -1,0 +1,40 @@
+{
+  "id": "person:douglas-kwan",
+  "slug": "douglas-kwan",
+  "name": "Douglas Kwan",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/douglas-kwan/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Douglas Kwan as an author of “LINZ independent datasets programme”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Douglas Kwan as an author of “Topographic data improvement”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

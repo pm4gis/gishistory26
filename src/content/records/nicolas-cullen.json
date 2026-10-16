@@ -1,0 +1,106 @@
+{
+  "id": "person:nicolas-cullen",
+  "slug": "nicolas-cullen",
+  "name": "Nicolas Cullen",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/nicolas-cullen/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Nicolas Cullen as an author of “A multi-epoch triangulation of stereo ASTER images for Tasman Glacier elevation change”.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Nicholas Cullen as an author of “Seasonal snowpack mapping with drone photogrammetry”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Nicolas J. Cullen as an author of “Snow depth distribution from high-resolution RPAS photogrammetry”.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Nicolas Cullen as an author of “Southern Alps snow resources from satellite photogrammetry”.",
+    "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Nicolas Cullen as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”.",
+    "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Nicolas Cullen as an author of “Modelling ice retreat on Kilimanjaro using GIS”.",
+    "The University of Otago profile uses Nicolas Cullen; GeoCart sources also use Nicholas Cullen and Nicolas J. Cullen for glacier-mapping contributions."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    },
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    },
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    },
+    {
+      "label": "University of Otago, Nicolas Cullen profile",
+      "url": "https://www.otago.ac.nz/news/newsroom/otago-announces-39-new-professors"
+    }
+  ],
+  "aliases": [
+    "Nicholas Cullen",
+    "Nicolas J. Cullen"
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+      }
+    ],
+    [
+      {
+        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+      }
+    ],
+    [
+      {
+        "label": "University of Otago, Nicolas Cullen profile",
+        "url": "https://www.otago.ac.nz/news/newsroom/otago-announces-39-new-professors"
+      },
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      },
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

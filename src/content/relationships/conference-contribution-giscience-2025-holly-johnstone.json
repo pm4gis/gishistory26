@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:holly-johnstone",
+  "a": "person:holly-johnstone",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Holly Johnstone as an author of “Mapping the contribution of community and citizen science from global to local scales, including Aotearoa New Zealand”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ]
+}

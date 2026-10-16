@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:john-taylor",
+  "a": "person:john-taylor",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists John Taylor as an author of “New Zealand's national mine plan collection”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

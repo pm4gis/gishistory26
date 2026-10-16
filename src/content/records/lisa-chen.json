@@ -1,0 +1,29 @@
+{
+  "id": "person:lisa-chen",
+  "slug": "lisa-chen",
+  "name": "Lisa Chen",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/lisa-chen/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Lisa Chen as an author of “Geographically weighted logistic regression for active transport”."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

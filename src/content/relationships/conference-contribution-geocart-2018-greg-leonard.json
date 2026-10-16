@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:greg-leonard",
+  "a": "person:greg-leonard",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Greg Leonard as an author of “Dissecting the GPS track”; “A tangible interface for land development teaching”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

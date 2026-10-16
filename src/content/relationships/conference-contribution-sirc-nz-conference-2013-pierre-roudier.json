@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:pierre-roudier",
+  "a": "person:pierre-roudier",
+  "b": "entity:sirc-nz-conference-2013",
+  "label": "Named author at SIRC NZ 2013",
+  "basis": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago lists Pierre Roudier as an author of “Current status and future directions of mobile GIS”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4235"
+    }
+  ]
+}

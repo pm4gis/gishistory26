@@ -1,0 +1,29 @@
+{
+  "id": "entity:gis-childhood-environments-obesity",
+  "slug": "gis-childhood-environments-obesity",
+  "name": "Using GIS to assess the impact of childhood environments on obesity",
+  "kind": "Publication",
+  "category": "Research",
+  "url": "/entities/gis-childhood-environments-obesity/",
+  "description": "University of Canterbury research publication on childhood environments and obesity.",
+  "story": [
+    "The University of Canterbury repository record identifies the study and its named authors."
+  ],
+  "sources": [
+    {
+      "label": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury",
+      "url": "https://ir.canterbury.ac.nz/server/api/core/bitstreams/f0f2a487-040b-4419-a114-74b9ebdd672a/content"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury",
+        "url": "https://ir.canterbury.ac.nz/server/api/core/bitstreams/f0f2a487-040b-4419-a114-74b9ebdd672a/content"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

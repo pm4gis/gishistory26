@@ -1,0 +1,29 @@
+{
+  "id": "entity:geocart-2014",
+  "slug": "geocart-2014",
+  "name": "GeoCart 2014",
+  "kind": "Conference",
+  "category": "Research",
+  "url": "/entities/geocart-2014/",
+  "description": "Conference programme sources for named cartographic research contributions.",
+  "story": [
+    "The New Zealand Cartographic Society's accepted abstracts record named contributors and presentation titles for GeoCart 2014."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

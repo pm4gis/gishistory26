@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:mairead-de-roiste",
+  "a": "person:mairead-de-roiste",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Mairead de Roiste as an author of “Volunteered geographic information for disaster management”; “Developing young geospatial professionals in New Zealand”; “Gaining public transport passenger insights from crowdsourced information”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

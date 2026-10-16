@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:jake-rom-cadag",
+  "a": "person:jake-rom-cadag",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Jake Rom Cadag as an author of “Participatory mapping for disaster risk reduction: A review”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

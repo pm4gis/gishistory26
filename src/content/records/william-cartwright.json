@@ -1,0 +1,29 @@
+{
+  "id": "person:william-cartwright",
+  "slug": "william-cartwright",
+  "name": "William Cartwright",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/william-cartwright/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists William Cartwright as an author of “Representations of geography in New Zealand First World War cartoons”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

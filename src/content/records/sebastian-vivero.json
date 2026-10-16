@@ -1,0 +1,29 @@
+{
+  "id": "person:sebastian-vivero",
+  "slug": "sebastian-vivero",
+  "name": "Sebastian Vivero",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/sebastian-vivero/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Sebastian Vivero as an author of “Recent ice wastage on the Tasman Glacier from geodetic elevation changes”."
+  ],
+  "sources": [
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:stuart-easton",
+  "slug": "stuart-easton",
+  "name": "Stuart Easton",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/stuart-easton/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Stuart Easton as an author of “Irrigation and ecosystem services”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

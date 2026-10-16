@@ -1,0 +1,29 @@
+{
+  "id": "person:tim-kane",
+  "slug": "tim-kane",
+  "name": "Tim Kane",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/tim-kane/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Tim Kane as an author of “Distribution and extent of rocky reef habitats at Kaikōura”."
+  ],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

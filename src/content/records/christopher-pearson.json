@@ -1,0 +1,57 @@
+{
+  "id": "person:christopher-pearson",
+  "slug": "christopher-pearson",
+  "name": "Christopher Pearson",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/christopher-pearson/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Christopher Pearson as an author of “The national deformation model and New Zealand's plate boundary zone”.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Chris Pearson as an author of “Dynamic datums in GIS through modern GNSS positioning”.",
+    "The University of Otago profile identifies the geodesy researcher as Chris Pearson; the conference record uses Christopher Pearson for the dynamic-datum contribution."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "University of Otago School of Surveying, Chris Pearson profile",
+      "url": "https://www.otago.ac.nz/surveying/staff/dr-christopher-pearson"
+    }
+  ],
+  "aliases": [
+    "Chris Pearson"
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "University of Otago School of Surveying, Chris Pearson profile",
+        "url": "https://www.otago.ac.nz/surveying/staff/dr-christopher-pearson"
+      },
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:michelle-boodee",
+  "slug": "michelle-boodee",
+  "name": "Michelle Boodee",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/michelle-boodee/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Michelle Boodee as an author of “Assessing Spatial IQ: Heuristics for web maps”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

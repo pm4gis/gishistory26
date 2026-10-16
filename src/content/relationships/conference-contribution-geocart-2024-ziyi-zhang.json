@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2024:ziyi-zhang",
+  "a": "person:ziyi-zhang",
+  "b": "entity:geocart-2024",
+  "label": "Named author at GeoCart 2024",
+  "basis": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists Ziyi Zhang as an author of “Animation of New Zealand Tourism Data with Scaling and Triangulation”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+    }
+  ]
+}

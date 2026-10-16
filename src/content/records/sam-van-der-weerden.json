@@ -1,0 +1,40 @@
+{
+  "id": "person:sam-van-der-weerden",
+  "slug": "sam-van-der-weerden",
+  "name": "Sam van der Weerden",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/sam-van-der-weerden/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Sam van der Weerden as an author of “Visualising Landscapes of Deprivation 2.0”.",
+    "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists Sam van der Weerden as an author of “Communicating Streetscape Changes”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+    },
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

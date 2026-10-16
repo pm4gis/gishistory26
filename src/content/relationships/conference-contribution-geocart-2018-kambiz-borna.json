@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:kambiz-borna",
+  "a": "person:kambiz-borna",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Kambiz Borna as an author of “Extracting city objects with vector agents”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:chris-page",
+  "slug": "chris-page",
+  "name": "Chris Page",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/chris-page/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Chris Page as an author of “Underground laser scanning and the LiDARRAS project”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

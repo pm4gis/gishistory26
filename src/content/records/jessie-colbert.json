@@ -1,0 +1,51 @@
+{
+  "id": "person:jessie-colbert",
+  "slug": "jessie-colbert",
+  "name": "Jessie Colbert",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/jessie-colbert/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Jessie Colbert as an author of “Revealing uncertainty through the visualisation of geographically and thematically classified map collections”.",
+    "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists Jessie Colbert as an author of “Automating advocacy: developing a geospatial tool for creating local alcohol harm risk profiles”.",
+    "GIScience 2025 accepted abstracts, official conference programme lists Jessie Colbert as an author of “Developing a walking accessibility index in urban areas of New Zealand”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+    },
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+    },
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

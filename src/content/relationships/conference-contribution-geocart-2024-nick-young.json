@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2024:nick-young",
+  "a": "person:nick-young",
+  "b": "entity:geocart-2024",
+  "label": "Named author at GeoCart 2024",
+  "basis": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists Nick Young as an author of “Automating advocacy: developing a geospatial tool for creating local alcohol harm risk profiles”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+    }
+  ]
+}

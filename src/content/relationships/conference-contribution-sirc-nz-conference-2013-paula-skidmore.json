@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:paula-skidmore",
+  "a": "person:paula-skidmore",
+  "b": "entity:sirc-nz-conference-2013",
+  "label": "Named author at SIRC NZ 2013",
+  "basis": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago lists Paula Skidmore as an author of “Spatial aspects of a comparative study of active transport to school and motorized transport”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4245"
+    }
+  ]
+}

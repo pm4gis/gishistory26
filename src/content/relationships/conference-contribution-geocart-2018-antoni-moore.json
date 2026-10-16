@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:antoni-moore",
+  "a": "person:antoni-moore",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Antoni Moore as an author of “Extracting city objects with vector agents”; “Dissecting the GPS track”; “Local farm knowledge mapping for heritage and biological research”; “GIS analysis of active transport data in Dunedin”; “Spatial assessment of school neighbourhoods and adolescent travel in Dunedin”; “Spatial analysis and geovisualisation for active transport”; “A tangible interface for land development teaching”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

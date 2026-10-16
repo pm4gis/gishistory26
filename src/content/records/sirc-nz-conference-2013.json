@@ -1,0 +1,69 @@
+{
+  "id": "entity:sirc-nz-conference-2013",
+  "slug": "sirc-nz-conference-2013",
+  "name": "SIRC NZ 2013",
+  "kind": "Conference",
+  "category": "Research",
+  "url": "/entities/sirc-nz-conference-2013/",
+  "description": "Proceedings and repository records for named GIS and remote sensing contributions at SIRC NZ 2013.",
+  "story": [
+    "Conference, repository and institutional publication records document named GIS, remote sensing, active transport and photogrammetry contributions associated with SIRC NZ 2013."
+  ],
+  "sources": [
+    {
+      "label": "SIRC NZ 2013 proceedings and conference scope, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/news/seminars/-sirc-nz-2013-conference"
+    },
+    {
+      "label": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4235"
+    },
+    {
+      "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4245"
+    },
+    {
+      "label": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago",
+      "url": "https://www.otago.ac.nz/geography/our-people/academic-staff/dr-sarah-mager"
+    },
+    {
+      "label": "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago",
+      "url": "https://www.cs.otago.ac.nz/research/staffpublications2013.php"
+    },
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "SIRC NZ 2013 proceedings and conference scope, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/news/seminars/-sirc-nz-2013-conference"
+      },
+      {
+        "label": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago",
+        "url": "https://hdl.handle.net/10523/4235"
+      },
+      {
+        "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+        "url": "https://hdl.handle.net/10523/4245"
+      },
+      {
+        "label": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago",
+        "url": "https://www.otago.ac.nz/geography/our-people/academic-staff/dr-sarah-mager"
+      },
+      {
+        "label": "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago",
+        "url": "https://www.cs.otago.ac.nz/research/staffpublications2013.php"
+      },
+      {
+        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

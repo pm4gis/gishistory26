@@ -1,0 +1,29 @@
+{
+  "id": "person:ian-reese",
+  "slug": "ian-reese",
+  "name": "Ian Reese",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/ian-reese/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Ian Reese as an author of “Visualising New Zealand's spatial data”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

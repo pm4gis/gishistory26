@@ -1,0 +1,40 @@
+{
+  "id": "person:lewis-baker",
+  "slug": "lewis-baker",
+  "name": "Lewis Baker",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/lewis-baker/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Lewis Baker as an author of “An augmented-reality sand-based 3D terrain interface”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Lewis Baker as an author of “A tangible interface for land development teaching”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

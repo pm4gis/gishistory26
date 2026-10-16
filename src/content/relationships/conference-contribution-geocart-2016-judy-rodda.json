@@ -1,0 +1,18 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:judy-rodda",
+  "a": "person:judy-rodda",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Judith Rodda as an author of “Routes to Dunedin secondary schools and students' perceptions of safety”. GeoCart 2016 conference programme, New Zealand Cartographic Society lists Judy Rodda as an author of “Visualisation of active transport data”; “An augmented-reality sand-based 3D terrain interface”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Unfolding the map: GeoCart 2016 proceedings, National Library of New Zealand record 38216661",
+      "url": "https://natlib.govt.nz/records/38216661"
+    }
+  ]
+}

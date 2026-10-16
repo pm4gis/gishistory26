@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:conal-smith",
+  "a": "person:conal-smith",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Conal Smith as an author of “Developing a walking accessibility index in urban areas of New Zealand”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:gis-childhood-obesity:simon-kingham",
+  "a": "person:simon-kingham",
+  "b": "entity:gis-childhood-environments-obesity",
+  "label": "Named author in Using GIS to assess the impact of childhood environments on obesity",
+  "basis": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury lists Simon Kingham as an author of “Using GIS to assess the impact of childhood environments on obesity”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury",
+      "url": "https://ir.canterbury.ac.nz/server/api/core/bitstreams/f0f2a487-040b-4419-a114-74b9ebdd672a/content"
+    }
+  ]
+}

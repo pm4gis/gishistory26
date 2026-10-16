@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:kambiz-borna",
+  "a": "person:kambiz-borna",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Kambiz Borna as an author of “Geographical vector agents for supervised image classification”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

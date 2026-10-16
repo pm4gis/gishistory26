@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:nzgrc-2022:john-wieczorek",
+  "a": "person:john-wieczorek",
+  "b": "entity:nzgrc-2022",
+  "label": "Named author at New Zealand Geospatial Research Conference 2022",
+  "basis": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University lists John Wieczorek as an author of “BioWhere: Georeferencing New Zealand's biota from texts”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+    }
+  ]
+}

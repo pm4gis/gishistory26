@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:tessa-pocock",
+  "a": "person:tessa-pocock",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Tessa Pocock as an author of “Spatial assessment of school neighbourhoods and adolescent travel in Dunedin”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

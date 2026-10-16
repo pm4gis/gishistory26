@@ -1,0 +1,29 @@
+{
+  "id": "person:christina-magill",
+  "slug": "christina-magill",
+  "name": "Christina Magill",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/christina-magill/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Christina Magill as an author of “Crowdsourcing tsunami and sound observations in Aotearoa after the Hunga eruption”."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

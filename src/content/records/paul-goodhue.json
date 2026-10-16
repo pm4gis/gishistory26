@@ -1,0 +1,29 @@
+{
+  "id": "person:paul-goodhue",
+  "slug": "paul-goodhue",
+  "name": "Paul Goodhue",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/paul-goodhue/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Paul Goodhue as an author of “Assessing crowdsourced geographic data quality”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "relationship:conference-contribution:nzgrc-2022:todd-redpath",
+  "a": "person:todd-redpath",
+  "b": "entity:nzgrc-2022",
+  "label": "Named author at New Zealand Geospatial Research Conference 2022",
+  "basis": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Todd Redpath as an author of “UAV flight and capture parameters for radiata pine quality control”. Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Todd Redpath as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    },
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    }
+  ]
+}

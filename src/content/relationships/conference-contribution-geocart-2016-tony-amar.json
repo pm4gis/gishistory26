@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:tony-amar",
+  "a": "person:tony-amar",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Tony Amar as an author of “Tabular asset management and visualisation of detail”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

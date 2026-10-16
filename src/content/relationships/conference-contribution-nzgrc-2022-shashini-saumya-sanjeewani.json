@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:nzgrc-2022:shashini-saumya-sanjeewani",
+  "a": "person:shashini-saumya-sanjeewani",
+  "b": "entity:nzgrc-2022",
+  "label": "Named author at New Zealand Geospatial Research Conference 2022",
+  "basis": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Shashini Saumya Sanjeewani as an author of “Spatial-temporal road-user flood risk assessment using GIS and system dynamics”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ]
+}

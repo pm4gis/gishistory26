@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:david-eyers",
+  "a": "person:david-eyers",
+  "b": "entity:sirc-nz-conference-2013",
+  "label": "Named author at SIRC NZ 2013",
+  "basis": "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago lists David Eyers as an author of “Implementing automated photogrammetry for the New Zealand eScience Infrastructure facilities”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago",
+      "url": "https://www.cs.otago.ac.nz/research/staffpublications2013.php"
+    }
+  ]
+}

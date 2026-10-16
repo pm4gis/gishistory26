@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:kath-dickinson",
+  "a": "person:kath-dickinson",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Kath Dickinson as an author of “High-resolution tussock distribution modelling in the Pisa Range”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

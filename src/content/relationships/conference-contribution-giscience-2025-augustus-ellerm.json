@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:augustus-ellerm",
+  "a": "person:augustus-ellerm",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Augustus Ellerm as an author of “Reproducibility in GIScience: How we can leverage reproducibility to enliven research articles”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:brandon-whitehead",
+  "slug": "brandon-whitehead",
+  "name": "Brandon Whitehead",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/brandon-whitehead/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "BioWhere project outputs: NZGRC 2022 poster citation, Massey University lists Brandon Whitehead as an author of “BioWhere: Georeferencing New Zealand's biota from texts”."
+  ],
+  "sources": [
+    {
+      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+        "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

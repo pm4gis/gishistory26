@@ -1,0 +1,51 @@
+{
+  "id": "person:sandra-mandic",
+  "slug": "sandra-mandic",
+  "name": "Sandra Mandic",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/sandra-mandic/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Sandra Mandic as an author of “Routes to Dunedin secondary schools and students' perceptions of safety”; “Visualisation of active transport data”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Sandra Mandic as an author of “GIS analysis of active transport data in Dunedin”; “Spatial assessment of school neighbourhoods and adolescent travel in Dunedin”; “Spatial analysis and geovisualisation for active transport”.",
+    "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago lists Sandra Mandic as an author of “Spatial aspects of a comparative study of active transport to school and motorized transport”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4245"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+        "url": "https://hdl.handle.net/10523/4245"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:stuart-mills",
+  "slug": "stuart-mills",
+  "name": "Stuart Mills",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/stuart-mills/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago lists Stuart Mills as an author of “Implementing automated photogrammetry for the New Zealand eScience Infrastructure facilities”."
+  ],
+  "sources": [
+    {
+      "label": "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago",
+      "url": "https://www.cs.otago.ac.nz/research/staffpublications2013.php"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Automated photogrammetry for the New Zealand eScience Infrastructure, SIRC NZ 2013 publication list, University of Otago",
+        "url": "https://www.cs.otago.ac.nz/research/staffpublications2013.php"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

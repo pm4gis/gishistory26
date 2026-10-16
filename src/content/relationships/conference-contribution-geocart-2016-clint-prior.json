@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:clint-prior",
+  "a": "person:clint-prior",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Clint Prior as an author of “The Waikato Plan info-maps”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

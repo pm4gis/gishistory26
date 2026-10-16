@@ -1,0 +1,29 @@
+{
+  "id": "person:estie-kruger",
+  "slug": "estie-kruger",
+  "name": "Estie Kruger",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/estie-kruger/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GIScience 2025 accepted abstracts, official conference programme lists Estie Kruger as an author of “Advancing equity of health service accessibility through spatial analysis in Aotearoa New Zealand”."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

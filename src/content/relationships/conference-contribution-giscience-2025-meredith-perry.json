@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:meredith-perry",
+  "a": "person:meredith-perry",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Meredith Perry as an author of “Advancing equity of health service accessibility through spatial analysis in Aotearoa New Zealand”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ]
+}

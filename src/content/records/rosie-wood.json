@@ -1,0 +1,29 @@
+{
+  "id": "person:rosie-wood",
+  "slug": "rosie-wood",
+  "name": "Rosie Wood",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/rosie-wood/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Rosie Wood as an author of “Modelling ice retreat on Kilimanjaro using GIS”."
+  ],
+  "sources": [
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

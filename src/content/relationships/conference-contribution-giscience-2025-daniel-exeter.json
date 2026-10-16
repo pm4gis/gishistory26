@@ -1,0 +1,18 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:daniel-exeter",
+  "a": "person:daniel-exeter",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Daniel J Exeter as an author of “Developing a walking accessibility index in urban areas of New Zealand”; “Assessing spatial patterns and risk factors for preterm birth in New Zealand using GIS”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    },
+    {
+      "label": "New Zealand Geographer, Daniel J. Exeter et al., 2016",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/nzg.12112"
+    }
+  ]
+}

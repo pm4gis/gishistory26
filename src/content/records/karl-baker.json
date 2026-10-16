@@ -1,0 +1,29 @@
+{
+  "id": "person:karl-baker",
+  "slug": "karl-baker",
+  "name": "Karl Baker",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/karl-baker/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Karl Baker as an author of “Tāku haerenga”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

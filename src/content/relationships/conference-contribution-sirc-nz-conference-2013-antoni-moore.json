@@ -1,0 +1,18 @@
+{
+  "id": "relationship:conference-contribution:sirc-nz-conference-2013:antoni-moore",
+  "a": "person:antoni-moore",
+  "b": "entity:sirc-nz-conference-2013",
+  "label": "Named author at SIRC NZ 2013",
+  "basis": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago lists Antoni Moore as an author of “Spatial aspects of a comparative study of active transport to school and motorized transport”. SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Antoni Moore as an author of “Geographical vector agent modelling for image classification”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4245"
+    },
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    }
+  ]
+}

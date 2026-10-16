@@ -1,0 +1,29 @@
+{
+  "id": "person:aaron-wilton",
+  "slug": "aaron-wilton",
+  "name": "Aaron Wilton",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/aaron-wilton/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "BioWhere project outputs: NZGRC 2022 poster citation, Massey University lists Aaron Wilton as an author of “BioWhere: Georeferencing New Zealand's biota from texts”."
+  ],
+  "sources": [
+    {
+      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+        "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

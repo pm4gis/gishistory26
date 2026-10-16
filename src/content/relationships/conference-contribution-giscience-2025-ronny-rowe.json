@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:ronny-rowe",
+  "a": "person:ronny-rowe",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Ronny Rowe as an author of “A comparison of two steering laws for unconstrained immersive hybrid navigation”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ]
+}
