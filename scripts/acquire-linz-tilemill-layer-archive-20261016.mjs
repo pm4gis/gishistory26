@@ -67,6 +67,26 @@ for(const item of items){
  existing.add(item.slug);
  console.log(JSON.stringify({slug:item.slug,bytes:bytes.length,width:meta.width,height:meta.height,sha256:record.originalSha256,source:sourcePage}));
 }
+// The publication contract requires an explicit, separately reviewable chapter
+// decision for EVERY image, including an image deliberately kept in the archive.
+const csvPath='docs/media/chapter-image-alignment-wave2-20261011.csv';
+let csv=await readFile(csvPath,'utf8');
+const csvCell=v=>'"'+String(v??'').replaceAll('"','""')+'"';
+for(const item of items){
+ if(csv.includes('"'+item.slug+'",'))continue;
+ const row=[
+  item.slug,item.title,'linz-2015-tilemill-archive-20261016','',
+  'archive-only-for-chapters',
+  'Held: source-verified map preview, no chapter paragraph placement approved',
+  '','','',
+  'First recorded by '+item.firstCommitted+'; image capture date unknown',
+  'https://github.com/linz/linz_basemaps/blob/'+commit+'/'+item.path,
+  'CC BY 3.0 New Zealand',licenceEvidence,
+  'Authentic LINZ TileMill supporting-layer thumbnail preserved from an immutable pre-2025 source. No reviewed paragraph-level association exists. Archive page only; do not imply an earlier software launch or date the actual capture to the Git commit.'
+ ];
+ csv=csv.trimEnd()+'\r\n'+row.map(csvCell).join(',')+'\r\n';
+}
+await writeFile(csvPath,csv);
 const ledger='docs/media/documentary-archive-ledger-20261016.md';
 let note=await readFile(ledger,'utf8');
 if(note.includes('<!-- AUTO-ACQUISITION: PENDING -->')){
