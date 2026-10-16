@@ -5,14 +5,19 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/chris-fleet/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "Scottish historic-map curator and visiting GeoCart 2018 contributor.",
   "story": [
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Chris Fleet as an author of “Curating geospatial collections of the future”."
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Chris Fleet as an author of “Curating geospatial collections of the future”.",
+    "The GeoCart 2018 conference programme identifies Fleet as a map curator at the National Library of Scotland. He was invited to discuss curation of future geospatial collections and contribute expertise to a Wellington workshop on making historical maps available online. This is documented professional knowledge exchange with New Zealand map custodians, not evidence that Fleet worked for a New Zealand mapping agency."
   ],
   "sources": [
     {
       "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
       "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "New Zealand Cartographic Society, GeoCart 2018 archive and invited programme",
+      "url": "https://cartography.org.nz/geocart2018"
     }
   ],
   "aliases": [],
@@ -21,6 +26,16 @@
     [
       {
         "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Cartographic Society, GeoCart 2018 archive and invited programme",
+        "url": "https://cartography.org.nz/geocart2018"
+      },
+      {
+        "label": "National Library of New Zealand, GeoCart 2018 proceedings, specific paper titles and author lists, record 40158196",
         "url": "https://natlib.govt.nz/records/40158196"
       }
     ]

@@ -5,10 +5,11 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/geoff-aitken/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "NewTopo New Zealand cartographer, national parks and mountain mapping, 2014–18.",
   "story": [
     "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Geoff Aitken as an author of “The mapping of New Zealand's National Parks”.",
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Geoff Aitken as an author of “Mapping the Southern Alps”."
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Geoff Aitken as an author of “Mapping the Southern Alps”.",
+    "The 2014 GeoCart programme lists Aitken of NewTopo NZ Ltd presenting 'The mapping of New Zealand's National Parks'. The GeoCart 2018 proceedings include 'Mapping the mountain' under his name and 'Mapping the mountain (top)' co-authored with Andrew Steffert. These identify documented national-park and mountain-topography mapping contributions; the programme does not establish the commercial contract or individual drafting process for every map."
   ],
   "sources": [
     {
@@ -32,6 +33,16 @@
     [
       {
         "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "NZ Cartographic Society, GeoCart 2014 accepted abstracts with affiliations",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      },
+      {
+        "label": "National Library of New Zealand, GeoCart 2018 proceedings, specific paper titles and author lists, record 40158196",
         "url": "https://natlib.govt.nz/records/40158196"
       }
     ]

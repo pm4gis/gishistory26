@@ -5,10 +5,11 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/bjorn-johns/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "LINZ historic aerial-imagery archive and national elevation-data contributor, 2014–18.",
   "story": [
     "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Bjorn Johns as an author of “Access to the Digital New Zealand Crown Historic Aerial Photo Archive”.",
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Bjorn Johns as an author of “Precise national elevation data for better cartography”."
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Bjorn Johns as an author of “Precise national elevation data for better cartography”.",
+    "The GeoCart 2014 accepted abstract identifies Johns with Land Information New Zealand on access to the Digital New Zealand Crown Historic Aerial Photo Archive. The National Library's GeoCart 2018 proceedings later list Johns, Andrew Ferrel and Rose Phillips as co-authors of 'Precise national elevation data for better cartography'. These contemporary sources connect the public release of historical imagery with development of the country's elevation-data infrastructure; neither is evidence of sole individual technical responsibility."
   ],
   "sources": [
     {
@@ -32,6 +33,16 @@
     [
       {
         "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "NZ Cartographic Society, GeoCart 2014 accepted abstracts with affiliations",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      },
+      {
+        "label": "National Library of New Zealand, GeoCart 2018 proceedings, specific paper titles and author lists, record 40158196",
         "url": "https://natlib.govt.nz/records/40158196"
       }
     ]

@@ -5,9 +5,10 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/carolynne-hultquist/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "University of Canterbury GIScience 2025 organiser and citizen-generated spatial-data researcher.",
   "story": [
-    "GIScience 2025 accepted abstracts, official conference programme lists Carolynne Hultquist as an author of “Mapping the contribution of community and citizen science from global to local scales, including Aotearoa New Zealand”."
+    "GIScience 2025 accepted abstracts, official conference programme lists Carolynne Hultquist as an author of “Mapping the contribution of community and citizen science from global to local scales, including Aotearoa New Zealand”.",
+    "GIScience 2025 lists Hultquist as a University of Canterbury conference chair and as co-author with Shane Orchard and Holly Johnstone of 'Mapping the contribution of community and citizen science: from global to local scales'. A separate accepted abstract under her name discusses standards to allow citizen-generated data to support Sustainable Development Goals monitoring. These are research and convening contributions as recorded by the official conference, not evidence that every proposed service was operational."
   ],
   "sources": [
     {
@@ -21,6 +22,12 @@
     [
       {
         "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ],
+    [
+      {
+        "label": "GIScience 2025 official accepted papers and author abstracts",
         "url": "https://giscience2025.org/abstracts.html"
       }
     ]
