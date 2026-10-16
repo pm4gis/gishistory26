@@ -1,0 +1,61 @@
+name: Acquire verified 2015 LINZ GIS map previews
+on:
+  push:
+    branches: [media/linz-2015-tilemill-layers-20261016]
+    paths:
+      - '.github/workflows/acquire-linz-tilemill-layer-archive.yml'
+      - 'scripts/acquire-linz-tilemill-layer-archive-20261016.mjs'
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  archive:
+    if: github.ref == 'refs/heads/media/linz-2015-tilemill-layers-20261016'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Check immutable 2015 source files and preserve original and WebP derivatives
+        run: node scripts/acquire-linz-tilemill-layer-archive-20261016.mjs
+      - name: Validate archive and site
+        run: |
+          npm test
+          npm run build
+      - name: Browser prerequisites
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check image archive on desktop and mobile browsers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist >/tmp/gis-image-browser.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 30); do
+            if curl -fsS -o /dev/null http://127.0.0.1:4321/images/; then break; fi
+            sleep 1
+          done
+          node scripts/linz-tilemill-archive-browser-qa-20261016.mjs
+      - name: Commit successful archive-only acquisition to the feature branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/linz-*-layer-2015.json \
+            public/assets/historical/original/linz-*-layer-2015.png \
+            public/assets/historical/web/linz-*-layer-2015.webp \
+            public/assets/historical/card/linz-*-layer-2015.webp \
+            docs/media/documentary-archive-ledger-20261016.md \
+            docs/media/chapter-image-alignment-wave2-20261011.csv
+          if git diff --cached --quiet; then echo 'No new archive material'; exit 0; fi
+          git commit -m 'Archive three source-verified LINZ 2015 TileMill map previews'
+          # Only push when the branch has not advanced; avoid rebasing over build-generated untracked changes.
+          git push origin HEAD:media/linz-2015-tilemill-layers-20261016

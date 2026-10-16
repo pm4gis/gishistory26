@@ -19,6 +19,7 @@ for(const file of files){
    const checksum=sha(buffer);
    if(label==='original'&&item.originalSha256!==checksum)errors.push(base+' original checksum mismatch');
    if(label==='display'&&item.webSha256!==checksum)errors.push(base+' display checksum mismatch');
+   if(label==='card'&&item.thumbnailSha256&&item.thumbnailSha256!==checksum)errors.push(base+' card checksum mismatch');
    if(label==='original'){
     const meta=await sharp(buffer,{limitInputPixels:250000000}).metadata();
     if(meta.width!==item.originalWidth||meta.height!==item.originalHeight)errors.push(base+' original dimensions mismatch');
@@ -26,9 +27,10 @@ for(const file of files){
    }
   }catch(e){errors.push(base+' missing or invalid '+label+': '+String(e.message||e))}
  }
- for(const required of ['sourceUrl','licence','licenceUrl','credit','caption','context','articleSlug','dateDisplay']){
-  if(!item[required]||typeof item[required]!=='string')errors.push(base+' missing '+required);
- }
+ const required=['sourceUrl','licence','licenceUrl','credit','caption','context','dateDisplay'];
+ if(!item.archiveOnly)required.push('articleSlug');
+ if(item.archiveOnly&&item.afterParagraphId)errors.push(base+' archive-only image has story placement');
+ for(const field of required)if(!item[field]||typeof item[field]!=='string')errors.push(base+' missing '+field);
  if(!item.altText||!item.altText.trim())errors.push(base+' missing alt text');
 }
 console.log('Checked '+report.length+' original historical images against local binaries and metadata.');
