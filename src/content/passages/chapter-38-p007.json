@@ -4,7 +4,7 @@
   "articleId": "article:chapter-38",
   "title": "Wetlands from low altitude",
   "order": 6,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "themeIds": [],
   "recordIds": [
     "chapter:38",
@@ -17,6 +17,18 @@
       "markdown": "Environmental researchers also used these methods. In 2015 Grant Lawrence's Auckland University of Technology thesis used low-altitude unmanned aerial imagery at Whatipu Scientific Reserve as part of a project classifying coastal wetland vegetation and investigating change. The study combined high-resolution satellite imagery with UAS imagery whose ground detail was about six centimetres. The small aircraft supplied local observations that could complement rather than replace the broader satellite view.",
       "sources": [],
       "id": "ch38-s07-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Patrick Hipgrave’s 2020 thesis tested object-based image analysis on low-altitude photographs from a consumer-grade UAV to map vegetation in a recovering wetland. Imagery at 2–4 cm per pixel supported 28 distinct land-cover classes across the study. Adding digital surface models or multispectral imagery improved classification accuracy in almost all comparisons, and several classes, including two invasive species, reached 70 per cent or better accuracy. The study extended fine-scale vegetation mapping using consumer-grade UAV imagery and object-based classification tools.",
+      "markdown": "Patrick Hipgrave’s 2020 thesis tested object-based image analysis on low-altitude photographs from a consumer-grade UAV to map vegetation in a recovering wetland. Imagery at 2–4 cm per pixel supported 28 distinct land-cover classes across the study. Adding digital surface models or multispectral imagery improved classification accuracy in almost all comparisons, and several classes, including two invasive species, reached 70 per cent or better accuracy. The study extended fine-scale vegetation mapping using consumer-grade UAV imagery and object-based classification tools.",
+      "sources": [
+        {
+          "label": "Patrick Hipgrave, Using UAV imagery to perform fine-scale mapping of wetland vegetation (2020)",
+          "url": "https://openaccess.wgtn.ac.nz/articles/thesis/Using_UAV_imagery_to_perform_fine-scale_mapping_of_wetland_vegetation/17148110"
+        }
+      ],
+      "id": "ch38-hipgrave-wetland-vegetation-2020"
     },
     {
       "type": "paragraph",

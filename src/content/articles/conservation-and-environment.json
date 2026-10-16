@@ -5,7 +5,7 @@
   "url": "/stories/conservation-and-environment/",
   "summary": "In late 1985 Mary McEwen encountered GIS while ecological region and district boundaries were being digitised and DSIR’s Science Mapping Unit was beginning to use an Intergraph system. The work sat inside a longer conservation tra",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "readingOrder": 26,
   "themeIds": [],
   "featured": false,
@@ -49,6 +49,14 @@
     {
       "id": "ch26-note-species-records-1987-1993",
       "text": "Sources: DOC, Amphibian and Reptile Distribution Scheme: database development chronology (https://www.doc.govt.nz/our-work/reptiles-and-frogs-distribution/atlas/species-sightings-and-data-management/what-is-the-ard-scheme/)."
+    },
+    {
+      "id": "ch26-note-hamilton-restoration-2022",
+      "text": "Hannah Rogers’s 2022 University of Waikato thesis supports the estimated native-vegetation baseline of about 1.8 per cent, the minimum 10 per cent target by 2050, the estimated 886-hectare restoration requirement, and the prioritisation method assessing 873 gully and reserve sites against eight ecological criteria in five categories. These are mapped priorities, not completed restorations. The thesis cautions against using ecological representativeness as the sole criterion in a highly modified urban setting and identifies social, economic and cultural criteria as possible additions."
+    },
+    {
+      "id": "ch26-note-waiheke-marine-2022",
+      "text": "Levi Murdoch-Tighe’s 2022 AUT thesis uses GIS, multivariate analysis and Marxan simulated annealing to compare marine habitat representation around Waiheke Island and model complementary marine protected-area options. The four habitat groupings are summarised in the public paragraph. These are planning scenarios that could be considered alongside customary management and biodiversity, social, economic and cultural values; the thesis does not document an adopted network or iwi or community endorsement."
     }
   ]
 }
