@@ -8,10 +8,7 @@
   "website": null,
   "story": [
     "Katarzyna Sila-Nowicka is an associate professor in Geographic Information Science at the University of Auckland. Her research develops spatiotemporal analytics and modelling for human movement, urban systems, accessibility, environmental exposure and related questions.",
-    "Her work represents the expansion of New Zealand academic GIS into spatial data science and urban analytics. She has also supervised GIS research recognised through the New Zealand Esri Young Scholar programme.",
-    "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Katarzyna Sila-Nowicka as an author of “Revealing uncertainty through the visualisation of geographically and thematically classified map collections”.",
-    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Katarzyna Sila-Nowicka as an author of “Spatial and temporal segmentation for modelling cyclists' pollution exposure”.",
-    "GIScience 2025 accepted abstracts, official conference programme lists Katarzyna Sila-Nowicka as an author of “Using ridership profile clustering and geographically weighted regression to investigate shared e-scooter ridership in Christchurch”."
+    "Her work represents the expansion of New Zealand academic GIS into spatial data science and urban analytics. She has also supervised GIS research recognised through the New Zealand Esri Young Scholar programme."
   ],
   "sources": [
     {
@@ -21,18 +18,6 @@
     {
       "label": "Eagle Technology, Esri User Conference Experience 2023",
       "url": "https://www.eagle.co.nz/blog/esri-user-conference-experience-2023"
-    },
-    {
-      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
-      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
-    },
-    {
-      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
-      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
-    },
-    {
-      "label": "GIScience 2025 accepted abstracts, official conference programme",
-      "url": "https://giscience2025.org/abstracts.html"
     }
   ],
   "aliases": [
@@ -41,27 +26,6 @@
   "themeIds": [],
   "status": "Account available",
   "coverageEnd": 2026,
-  "paragraphSources": [
-    [],
-    [],
-    [
-      {
-        "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
-        "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
-      }
-    ],
-    [
-      {
-        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
-        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
-      }
-    ],
-    [
-      {
-        "label": "GIScience 2025 accepted abstracts, official conference programme",
-        "url": "https://giscience2025.org/abstracts.html"
-      }
-    ]
-  ],
+  "paragraphSources": [],
   "biographyParagraphSources": []
 }

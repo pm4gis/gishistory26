@@ -7,9 +7,7 @@
   "url": "/people/peter-whigham/",
   "story": [
     "The GeoHealth 2002 proceedings were edited by Jan Rigby, Chris Skelly and Peter Whigham and were issued alongside the 2002 Spatial Information Research Centre colloquium.",
-    "At the 1999 SIRC colloquium in Dunedin, Yuxiao Li, Peter Whigham, George Benwell and Nick Mulgan presented a paper on the design of a general-purpose three-dimensional spatial information system. The paper addressed the representation, storage and handling of three-dimensional objects. A photographically convincing scene and a spatial database capable of maintaining volumes, relationships and geometry are related problems, but they are not the same problem.",
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Peter A. Whigham as an author of “High-resolution tussock distribution modelling in the Pisa Range”.",
-    "The University of Otago profile gives the expanded form Peter A. Whigham for the contributor listed as Peter Whigham."
+    "At the 1999 SIRC colloquium in Dunedin, Yuxiao Li, Peter Whigham, George Benwell and Nick Mulgan presented a paper on the design of a general-purpose three-dimensional spatial information system. The paper addressed the representation, storage and handling of three-dimensional objects. A photographically convincing scene and a spatial database capable of maintaining volumes, relationships and geometry are related problems, but they are not the same problem."
   ],
   "sources": [
     {
@@ -23,42 +21,14 @@
     {
       "label": "Chapter 39 · Visualisation and modelling",
       "url": "/stories/from-flat-maps-to-3d/"
-    },
-    {
-      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-      "url": "https://natlib.govt.nz/records/40158196"
-    },
-    {
-      "label": "University of Otago Department of Information Science, Peter Whigham profile",
-      "url": "https://www.otago.ac.nz/school-of-computing/our-people/peter-whigham"
     }
   ],
   "aliases": [
-    "Peter Whigham",
-    "Peter A. Whigham"
+    "Peter Whigham"
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [
-    [],
-    [],
-    [
-      {
-        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-        "url": "https://natlib.govt.nz/records/40158196"
-      }
-    ],
-    [
-      {
-        "label": "University of Otago Department of Information Science, Peter Whigham profile",
-        "url": "https://www.otago.ac.nz/school-of-computing/our-people/peter-whigham"
-      },
-      {
-        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-        "url": "https://natlib.govt.nz/records/40158196"
-      }
-    ]
-  ],
+  "paragraphSources": [],
   "biographyParagraphSources": [
     [
       {

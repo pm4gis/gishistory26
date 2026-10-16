@@ -7,12 +7,7 @@
   "url": "/people/mairead-de-roiste/",
   "story": [
     "Mairéad de Róiste was a GIS lecturer and researcher at Victoria University of Wellington. Her 2014 paper, ‘Filling the gap: The geospatial skills shortage in New Zealand’, reported a survey of 157 organisations across the public, academic and private sectors. It documented shortages in experienced geospatial staff and difficulties attracting and developing new practitioners.",
-    "The study identified four practical pressures on New Zealand’s geospatial workforce: attracting students, helping graduates gain experience, upskilling people already in work, and improving awareness of geospatial skills. Published in New Zealand Geographer in December 2014, the research provides a dated account of the profession’s training and recruitment concerns.",
-    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Mairead de Roiste as an author of “Assessing Spatial IQ: Heuristics for web maps”; “Irrigation and ecosystem services”.",
-    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Mairead de Roiste as an author of “Volunteered geographic information for disaster management”; “Developing young geospatial professionals in New Zealand”; “Gaining public transport passenger insights from crowdsourced information”.",
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Mairéad de Róiste as an author of “Home parking and travel behaviour”.",
-    "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Mairéad de Róiste as an author of “Bridging the Visualization Gap in Time Series Analysis through Spatialization”; “Performance of Global High-Resolution Canopy Height Model Across Varied New Zealand Vegetation Types”; “Harnessing the Power of Deep Learning and Earth Observation for Flood Forecasting in Aotearoa”; “Exploring Virtual Reality for Spatial Learning”.",
-    "GIScience 2025 accepted abstracts, official conference programme lists Mairead de Roiste as an author of “Watching the wetlands: a visibility analysis of the Ruamahanga basin, Aotearoa New Zealand using human movement data”."
+    "The study identified four practical pressures on New Zealand’s geospatial workforce: attracting students, helping graduates gain experience, upskilling people already in work, and improving awareness of geospatial skills. Published in New Zealand Geographer in December 2014, the research provides a dated account of the profession’s training and recruitment concerns."
   ],
   "sources": [
     {
@@ -38,26 +33,6 @@
     {
       "label": "LINZ, Studying GIS",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/studying-gis"
-    },
-    {
-      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
-      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
-    },
-    {
-      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
-      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
-    },
-    {
-      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-      "url": "https://natlib.govt.nz/records/40158196"
-    },
-    {
-      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
-      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
-    },
-    {
-      "label": "GIScience 2025 accepted abstracts, official conference programme",
-      "url": "https://giscience2025.org/abstracts.html"
     }
   ],
   "aliases": [
@@ -67,40 +42,7 @@
     "women-in-gis"
   ],
   "status": "Account available",
-  "paragraphSources": [
-    [],
-    [],
-    [
-      {
-        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
-        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
-      }
-    ],
-    [
-      {
-        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
-        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
-      }
-    ],
-    [
-      {
-        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-        "url": "https://natlib.govt.nz/records/40158196"
-      }
-    ],
-    [
-      {
-        "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
-        "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
-      }
-    ],
-    [
-      {
-        "label": "GIScience 2025 accepted abstracts, official conference programme",
-        "url": "https://giscience2025.org/abstracts.html"
-      }
-    ]
-  ],
+  "paragraphSources": [],
   "biographyParagraphSources": [
     [
       {

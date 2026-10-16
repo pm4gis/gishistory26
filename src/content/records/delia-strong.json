@@ -7,8 +7,7 @@
   "url": "/people/delia-strong/",
   "story": [
     "Delia Strong is credited with digital capture for GNS Science’s 1:1 million Geological Map of New Zealand, alongside the map’s geological compilers and GIS cartographer.",
-    "Maureen Coomer, Aleksandra Lukovic, Belinda Smith Lyttle and Delia Strong are explicitly credited with digital capture in later national geology metadata. These credits refer to later national geology metadata; the contributors to the first QMAP sheets require separate identification.",
-    "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Delia Strong as an author of “Recent ice wastage on the Tasman Glacier from geodetic elevation changes”."
+    "Maureen Coomer, Aleksandra Lukovic, Belinda Smith Lyttle and Delia Strong are explicitly credited with digital capture in later national geology metadata. These credits refer to later national geology metadata; the contributors to the first QMAP sheets require separate identification."
   ],
   "sources": [
     {
@@ -18,10 +17,6 @@
     {
       "label": "Chapter 9 · Field geology into digital production",
       "url": "/stories/science-goes-spatial/"
-    },
-    {
-      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
-      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
     }
   ],
   "aliases": [
@@ -29,16 +24,7 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [
-    [],
-    [],
-    [
-      {
-        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
-        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
-      }
-    ]
-  ],
+  "paragraphSources": [],
   "biographyParagraphSources": [
     [
       {

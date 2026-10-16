@@ -7,9 +7,7 @@
   "url": "/people/christina-hulbe/",
   "description": "",
   "story": [
-    "Christina Hulbe is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019.",
-    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Christina Hulbe as an author of “Representations of geography in New Zealand First World War cartoons”.",
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Christina Hulbe as an author of “Ross Ice Shelf pinning-point mapping”."
+    "Christina Hulbe is named on the organising committee for GeoComputation 2019 in Antoni Moore’s contemporary conference call. The Queenstown event combined the international GeoComputation conference with the New Zealand Geospatial Research Conference in September 2019."
   ],
   "sources": [
     {
@@ -19,14 +17,6 @@
     {
       "label": "University of Otago, GeoComputation 2019 account and final keynotes",
       "url": "https://www.otago.ac.nz/geocomputation"
-    },
-    {
-      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
-      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
-    },
-    {
-      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-      "url": "https://natlib.govt.nz/records/40158196"
     }
   ],
   "paragraphSources": [
@@ -38,18 +28,6 @@
       {
         "label": "University of Otago, GeoComputation 2019 account and final keynotes",
         "url": "https://www.otago.ac.nz/geocomputation"
-      }
-    ],
-    [
-      {
-        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
-        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
-      }
-    ],
-    [
-      {
-        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-        "url": "https://natlib.govt.nz/records/40158196"
       }
     ]
   ],

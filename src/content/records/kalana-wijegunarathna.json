@@ -6,10 +6,7 @@
   "category": "People",
   "url": "/people/kalana-wijegunarathna/",
   "story": [
-    "Kalana Wijegunarathna and Kristin Stock of Massey University, with Christopher B. Jones of Cardiff University, examined whether large multimodal models could combine a written locality description with a map. Natural-history collections contain huge numbers of specimens whose recorded locations are written as ordinary descriptions rather than coordinates. A collector might have written that a specimen came from a certain distance along a road, near a river, south of a settlement or beside a reserve. Converting such descriptions into coordinates has long required both language interpretation and geographic reasoning.",
-    "BioWhere project outputs: NZGRC 2022 poster citation, Massey University lists Kalana Wijegunarathna as an author of “BioWhere: Georeferencing New Zealand's biota from texts”.",
-    "GIScience 2025 accepted abstracts, official conference programme lists Kalana Wijegunarathna as an author of “The BioWhere Gazetteer: A Culturally Enriched Place Name Knowledge Base for New Zealand”.",
-    "GIScience 2025 accepted papers, official conference programme lists Kalana Wijegunarathna as an author of “Large multi-modal model cartographic map comprehension for textual locality georeferencing”."
+    "Kalana Wijegunarathna and Kristin Stock of Massey University, with Christopher B. Jones of Cardiff University, examined whether large multimodal models could combine a written locality description with a map. Natural-history collections contain huge numbers of specimens whose recorded locations are written as ordinary descriptions rather than coordinates. A collector might have written that a specimen came from a certain distance along a road, near a river, south of a settlement or beside a reserve. Converting such descriptions into coordinates has long required both language interpretation and geographic reasoning."
   ],
   "sources": [
     {
@@ -19,18 +16,6 @@
     {
       "label": "Chapter 44 · A model reads the map",
       "url": "/stories/gis-at-the-end-of-2025/"
-    },
-    {
-      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
-      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
-    },
-    {
-      "label": "GIScience 2025 accepted abstracts, official conference programme",
-      "url": "https://giscience2025.org/abstracts.html"
-    },
-    {
-      "label": "GIScience 2025 accepted papers, official conference programme",
-      "url": "https://giscience2025.org/papers.html"
     }
   ],
   "aliases": [
@@ -38,27 +23,7 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [
-    [],
-    [
-      {
-        "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
-        "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
-      }
-    ],
-    [
-      {
-        "label": "GIScience 2025 accepted abstracts, official conference programme",
-        "url": "https://giscience2025.org/abstracts.html"
-      }
-    ],
-    [
-      {
-        "label": "GIScience 2025 accepted papers, official conference programme",
-        "url": "https://giscience2025.org/papers.html"
-      }
-    ]
-  ],
+  "paragraphSources": [],
   "biographyParagraphSources": [
     [
       {

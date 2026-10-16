@@ -9,10 +9,7 @@
     "Kristin Stock's background combines surveying, urban and regional planning, computing and a doctorate in semantic database integration at Queensland University of Technology. She worked in cadastral, engineering and mining surveying, government land information and consultancy before joining Massey in 2014 from Nottingham. As director of the Massey Geoinformatics Collaboratory, she has led research into geographic descriptions, biological collections, disaster information and Māori landscape classification.",
     "Kalana Wijegunarathna and Kristin Stock of Massey University, with Christopher B. Jones of Cardiff University, examined whether large multimodal models could combine a written locality description with a map. Natural-history collections contain huge numbers of specimens whose recorded locations are written as ordinary descriptions rather than coordinates. A collector might have written that a specimen came from a certain distance along a road, near a river, south of a settlement or beside a reserve. Converting such descriptions into coordinates has long required both language interpretation and geographic reasoning.",
     "A 2018 GIScience paper by Niloofar Aflaki, Shaun Russell and Kristin Stock examined the difficulties of creating annotated geospatial natural-language descriptions. In 2019 Stock and collaborators presented \"He Tatai Whenua\", work on automated extraction of landscape terms and meanings in New Zealand Māori. These projects predated the current large-language-model boom and treated language as data that needed careful annotation, interpretation and computational representation. Coordinates returned from natural-language queries required validation against the intended places.",
-    "LINZ’s tertiary GIS directory lists Kristin Stock for Massey University.",
-    "BioWhere project outputs: NZGRC 2022 poster citation, Massey University lists Kristin Stock as an author of “BioWhere: Georeferencing New Zealand's biota from texts”.",
-    "GIScience 2025 accepted abstracts, official conference programme lists Kristin Stock as an author of “The BioWhere Gazetteer: A Culturally Enriched Place Name Knowledge Base for New Zealand”.",
-    "GIScience 2025 accepted papers, official conference programme lists Kristin Stock as an author of “Large multi-modal model cartographic map comprehension for textual locality georeferencing”."
+    "LINZ’s tertiary GIS directory lists Kristin Stock for Massey University."
   ],
   "sources": [
     {
@@ -34,18 +31,6 @@
     {
       "label": "LINZ, Studying GIS",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/studying-gis"
-    },
-    {
-      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
-      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
-    },
-    {
-      "label": "GIScience 2025 accepted abstracts, official conference programme",
-      "url": "https://giscience2025.org/abstracts.html"
-    },
-    {
-      "label": "GIScience 2025 accepted papers, official conference programme",
-      "url": "https://giscience2025.org/papers.html"
     }
   ],
   "aliases": [
@@ -53,30 +38,7 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [
-    [],
-    [],
-    [],
-    [],
-    [
-      {
-        "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
-        "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
-      }
-    ],
-    [
-      {
-        "label": "GIScience 2025 accepted abstracts, official conference programme",
-        "url": "https://giscience2025.org/abstracts.html"
-      }
-    ],
-    [
-      {
-        "label": "GIScience 2025 accepted papers, official conference programme",
-        "url": "https://giscience2025.org/papers.html"
-      }
-    ]
-  ],
+  "paragraphSources": [],
   "biographyParagraphSources": [
     [
       {

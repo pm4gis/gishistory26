@@ -7,8 +7,7 @@
   "url": "/people/andrew-ferrel/",
   "story": [
     "Andrew Ferrel appears in LINZ’s imagery and elevation work. LINZ’s 2014 Geospatial for Schools archive names him as National Imagery Manager, and the 2018 New Zealand Esri User Conference programme records him presenting LINZ imagery and elevation material.",
-    "LINZ names Andrew Ferrel in its geospatial virtual field-trip record: National Imagery Manager, LINZ, 2014 VFT.",
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Andrew Ferrel as an author of “Precise national elevation data for better cartography”."
+    "LINZ names Andrew Ferrel in its geospatial virtual field-trip record: National Imagery Manager, LINZ, 2014 VFT."
   ],
   "sources": [
     {
@@ -18,10 +17,6 @@
     {
       "label": "New Zealand Esri User Conference programme, 2018",
       "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
-    },
-    {
-      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-      "url": "https://natlib.govt.nz/records/40158196"
     }
   ],
   "aliases": [
@@ -29,16 +24,7 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [
-    [],
-    [],
-    [
-      {
-        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
-        "url": "https://natlib.govt.nz/records/40158196"
-      }
-    ]
-  ],
+  "paragraphSources": [],
   "biographyParagraphSources": [
     [
       {
