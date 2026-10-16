@@ -1,0 +1,52 @@
+{
+  "batch": "linz-aims-qgis-2024-20261016",
+  "publisher": "Land Information New Zealand",
+  "repository": "linz/QGIS-AIMS-Plugin",
+  "commit": "361d03546b9f98ffd78a22a807239fc69dadd4d9",
+  "sourceDate": "2024-04-18",
+  "copyright": "Copyright (c) 2015, Land Information New Zealand",
+  "licence": "BSD 3-Clause",
+  "licenceUrl": "https://github.com/linz/QGIS-AIMS-Plugin/blob/361d03546b9f98ffd78a22a807239fc69dadd4d9/LICENSE.md",
+  "licenceLocal": "/assets/historical/licences/linz-aims-qgis-2024-20261016.txt",
+  "licenceSourceFile": "LICENSE.md",
+  "licenceGitBlobSha": "90816f7d22a711f87ecc26d354a9a607c46f84ed",
+  "licenceBytes": 1502,
+  "images": [
+    {
+      "slug": "linz-qgis-aims-address-edit-form-pre2025",
+      "sourceFile": "QGIS-AIMS-Plugin/doc/images/EditFeatureForm.png",
+      "gitBlobSha": "68ca7fe4e8e1214b9b5789cde0442b8af5067e10",
+      "bytes": 23026,
+      "format": "png",
+      "title": "LINZ QGIS AIMS address feature-editing form, documented in 2024",
+      "dateDisplay": "Original image available in LINZ repository by 18 April 2024; screenshot capture date unknown",
+      "caption": "A real LINZ QGIS AIMS plugin feature-editing form, showing address, road centreline and addressable-object fields in source documentation available by April 2024.",
+      "altText": "LINZ QGIS AIMS feature edit window with address number, unit, road name, road centreline and addressable-object data fields.",
+      "context": "Official LINZ QGIS AIMS plugin project screen used to document the editing of Address Information Management System data. This is a GIS workflow interface, not evidence of the original system launch date. The image was recorded in the repository before 2025; its exact capture date is not established."
+    },
+    {
+      "slug": "linz-qgis-aims-select-address-pre2025",
+      "sourceFile": "QGIS-AIMS-Plugin/doc/images/SelectFeaturetoUpdate.png",
+      "gitBlobSha": "b5ea44251126e4a86956a8ebc99fc82c78cd9703",
+      "bytes": 8936,
+      "format": "png",
+      "title": "LINZ QGIS AIMS select-address dialogue, documented in 2024",
+      "dateDisplay": "Original image available in LINZ repository by 18 April 2024; screenshot capture date unknown",
+      "caption": "LINZ QGIS AIMS feature selection screen showing two example addresses in Kelburn, Wellington, in documentation committed by April 2024.",
+      "altText": "AIMS Select feature to update dialogue showing two example Wellington address rows and address identifiers.",
+      "context": "A genuine address-feature selection dialogue in the LINZ QGIS AIMS plugin documentation. The visible addresses are part of the historic demonstration. Repository dates document the file, not the actual capture of this screen."
+    },
+    {
+      "slug": "linz-qgis-aims-intramaps-search-pre2025",
+      "sourceFile": "QGIS-AIMS-Plugin/doc/images/IntraMapsSearch.png",
+      "gitBlobSha": "4072093aa06f3577a53e1a7c17354aa817eecd37",
+      "bytes": 7666,
+      "format": "png",
+      "title": "IntraMaps search interface in LINZ QGIS AIMS documentation",
+      "dateDisplay": "Original image available in LINZ repository by 18 April 2024; screenshot capture date unknown",
+      "caption": "The IntraMaps Search interface documented with the LINZ QGIS AIMS plugin, offering address, meshblock, road, title and appellation search tabs.",
+      "altText": "IntraMaps Search window with tabs for address, meshblock, road, appellation, title and title-owner searches.",
+      "context": "Historic original interface documentation showing how a GIS search offered multiple types of New Zealand land and address information. The exact application version, hosting organisation and capture date are not specified by the preserved screenshot."
+    }
+  ]
+}

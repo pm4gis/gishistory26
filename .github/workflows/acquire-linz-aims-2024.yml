@@ -1,0 +1,60 @@
+name: Acquire original LINZ AIMS historical GIS interface images
+on:
+  push:
+    branches: [media/linz-aims-plugin-2024-20261016]
+    paths:
+      - '.github/workflows/acquire-linz-aims-2024.yml'
+      - 'scripts/acquire-documentary-gis-media.mjs'
+      - 'docs/media/linz-aims-qgis-2024-20261016.json'
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  archive:
+    if: github.ref == 'refs/heads/media/linz-aims-plugin-2024-20261016'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Acquire audited original source images and record chapter non-placement
+        run: node scripts/acquire-documentary-gis-media.mjs docs/media/linz-aims-qgis-2024-20261016.json
+      - name: Validate full image archive and build public site
+        run: |
+          npm test
+          npm run build
+      - name: Install Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check three archive pages and original downloads at desktop and mobile widths
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist >/tmp/nzgis-aims-qa.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 30); do
+            if curl -fsS -o /dev/null http://127.0.0.1:4321/images/; then break; fi
+            sleep 1
+          done
+          node scripts/linz-aims-archive-browser-qa-20261016.mjs
+      - name: Publish guarded original assets to this feature branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/linz-qgis-aims-*.json \
+            public/assets/historical/original/linz-qgis-aims-*.png \
+            public/assets/historical/web/linz-qgis-aims-*.webp \
+            public/assets/historical/card/linz-qgis-aims-*.webp \
+            docs/media/chapter-image-alignment-wave2-20261011.csv \
+            docs/media/documentary-archive-ledger-20261016.md
+          if git diff --cached --quiet; then echo 'No new originals'; exit 0; fi
+          git commit -m 'Archive original LINZ AIMS GIS interfaces from pre-2025 source'
+          git push origin HEAD:media/linz-aims-plugin-2024-20261016
