@@ -28,7 +28,7 @@
     ]
   ],
   "status": "Alias reconciled; retained route",
-  "listingStatus": "reference-only",
+  "listingStatus": "alias-only",
   "contextLinks": [
     {
       "label": "Canonical biography: Ivan Diaz-Rainey",

@@ -44,3 +44,14 @@ test('DOC images belong beside exact Great Walks and field-capture paragraphs',(
   assert.ok(placed.some(i=>i.slug===imageSlug),imageSlug);
  }
 });
+
+test('conference author aliases retain reference routes but are absent from catalogue',()=>{
+ const aliases=d.records.filter(r=>r.listingStatus==='alias-only');
+ assert.equal(aliases.length,2);
+ for(const r of aliases){assert.equal(r.kind,'Alias');assert.equal(isListedRecord(r),false);assert.ok(r.url.startsWith('/people/'));}
+ for(const [variant,canonical] of [['person:shannon-l-mccolley','person:shannon-mccolley'],['person:ian-diaz-rainey','person:ivan-diaz-rainey']]){
+  const alias=d.records.find(r=>r.id===variant);
+  assert.ok(alias);assert.ok(d.relationships.some(e=>e.a===variant&&e.b===canonical&&e.sources?.length));
+  assert.ok(d.records.find(r=>r.id===canonical).aliases?.includes(alias.name));
+ }
+});
