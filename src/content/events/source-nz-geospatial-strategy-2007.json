@@ -1,0 +1,26 @@
+{
+  "id": "source-nz-geospatial-strategy-2007",
+  "dateDisplay": "January 2007",
+  "startDate": "2007-01",
+  "datePrecision": "month",
+  "year": 2007,
+  "label": "New Zealand's national Geospatial Strategy published",
+  "summary": "LINZ published a national strategy with four priorities: governance, maintenance of fundamental data, discoverable access, and interoperability between agencies.",
+  "url": "/sources/documents/nz-geospatial-strategy-2007/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz"
+  ],
+  "themeIds": [],
+  "categories": [
+    "documentary source",
+    "published historical evidence",
+    "national-geospatial-coordination"
+  ],
+  "sources": [
+    {
+      "label": "Land Information New Zealand and contributing New Zealand public agencies, January 2007; supplied primary-source copy catalogued with SHA-256",
+      "url": "/sources/documents/nz-geospatial-strategy-2007/"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "source-linz-geospatial-rd-priorities-2015",
+  "dateDisplay": "December 2015",
+  "startDate": "2015-12",
+  "datePrecision": "month",
+  "year": 2015,
+  "label": "LINZ publishes national geospatial R&D priorities for 2016–2020",
+  "summary": "Following 14 workshops in 2014 involving more than 200 participants, LINZ published five overarching R&D priorities, 40 associated opportunities and 140 further specific opportunities.",
+  "url": "/sources/documents/linz-geospatial-rd-priorities-2015/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz"
+  ],
+  "themeIds": [],
+  "categories": [
+    "documentary source",
+    "published historical evidence",
+    "gis-research-skills-and-investment"
+  ],
+  "sources": [
+    {
+      "label": "Land Information New Zealand, December 2015; supplied primary-source copy catalogued with SHA-256",
+      "url": "/sources/documents/linz-geospatial-rd-priorities-2015/"
+    }
+  ]
+}
