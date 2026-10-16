@@ -24,13 +24,16 @@ try{
   await page.getByRole('searchbox').fill('Maori');
   assert.ok(await page.locator('[data-publication]:visible').count()>0);
   await page.getByRole('button',{name:'Clear filters'}).click();
+  assert.equal(await page.locator('[data-publication]:visible').count(),8,'Clear filters must restore every card');
   await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('2007');
   assert.equal(await page.locator('[data-publication]:visible').count(),2);
   await page.getByRole('button',{name:'Clear filters'}).click();
+  assert.equal(await page.locator('[data-publication]:visible').count(),8,'Clear filters must restore every card');
   await page.getByRole('combobox',{name:'Theme',exact:true}).selectOption('maori-gis');
   assert.equal(await page.locator('[data-publication]:visible').count(),3);
   await page.reload();assert.equal(await page.locator('[data-publication]:visible').count(),3);
   await page.getByRole('button',{name:'Clear filters'}).click();
+  assert.equal(await page.locator('[data-publication]:visible').count(),8,'Clear filters must restore every card');
   const input=page.getByRole('searchbox');await input.focus();await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(()=>document.activeElement.name),'decade');
   for(const p of publications){
