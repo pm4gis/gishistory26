@@ -43,7 +43,7 @@ const illustratedPassageUrl = relatedChapter ? relatedChapter.url + (linkedAncho
         {image.originalSha256 && <div><dt>Original SHA-256</dt><dd><code>{image.originalSha256}</code></dd></div>}
         <div><dt>Licence</dt><dd><a href={image.licenceUrl} target="_blank" rel="noopener noreferrer">{image.licence} <span aria-hidden="true">↗</span></a></dd></div>
         {image.licenceEvidenceUrl && <div><dt>Reuse conditions</dt><dd><a href={image.licenceEvidenceUrl} target="_blank" rel="noopener noreferrer">Publisher's licence statement <span aria-hidden="true">↗</span></a></dd></div>}
-        {image.licenceDocumentPath && <div><dt>Full licence and disclaimer</dt><dd><a href={image.licenceDocumentPath}>Read the retained original licence conditions</a></dd></div>}
+        {image.licenceDocumentPath && <div><dt>Full licence and disclaimer</dt><dd><a href={String(image.licenceDocumentPath)}>Read the retained original licence conditions</a></dd></div>}
         {image.derivativesNote && <div><dt>Display preparation</dt><dd>{image.derivativesNote}</dd></div>}
         <div><dt>Local copy</dt><dd>The reader displays a local copy so the image remains available if the original page changes.</dd></div>
       </dl>
