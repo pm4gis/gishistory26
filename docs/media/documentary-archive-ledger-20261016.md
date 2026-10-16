@@ -60,3 +60,18 @@ Source: https://github.com/linz/linz-data-importer/tree/fff9011d63a921360dc0bcc6
 - linz-qgis-data-importer-demo-2021: immutable pre-2025 original, WebP derivatives and explicit archive-only decision acquired, Git SHA verified.
 
 Checks required: npm ci, npm test, npm run build, historical-original hash checks and browser QA. Then focused PR, GitHub checks, Cloudflare deployment and archive live pages. Rights-held or uncertain National Library, council, Archives NZ, GIS company and agency candidates remain pending until licence and first-publication date checked. Do not use or update the predecessor site.
+
+
+## Batch 3: LINZ QGIS AIMS plugin, documentary interfaces
+
+GitHub source: https://github.com/linz/QGIS-AIMS-Plugin/tree/361d03546b9f98ffd78a22a807239fc69dadd4d9 . Date evidence: Git change 18 April 2024 incorporated the original plugin documentation screenshots and moved the source documentation to its modern directory layout. The repository began in 2015, but none of these images is identified as a 2015 capture. Original screenshot dates are unknown. Publisher: Land Information New Zealand; the root README explicitly says the project is BSD 3-Clause. Full LICENSE.md from the same 2024 source commit, copyright 2015 LINZ, is retained locally and linked for each screenshot.
+
+- linz-qgis-aims-address-edit-form-pre2025. Original EditFeatureForm.png, 23,026 bytes, blob 68ca7fe4e8e1214b9b5789cde0442b8af5067e10; visually reviewed authentic address data-editing form.
+- linz-qgis-aims-select-address-pre2025. Original SelectFeaturetoUpdate.png, 8,936 bytes, blob b5ea44251126e4a86956a8ebc99fc82c78cd9703; visually reviewed historic address selection interface, showing Wellington example addresses.
+- linz-qgis-aims-intramaps-search-pre2025. Original IntraMapsSearch.png, 7,666 bytes, blob 4072093aa06f3577a53e1a7c17354aa817eecd37; visually reviewed historic IntraMaps search control including road, address, meshblock, title and appellation tabs.
+
+Rejected: 4819GeocodeLocations.PNG, a diagram titled “Examples of location of geocode feature types”, has uncertain third-party diagram copyright. No reuse until ownership established. Reject miscellaneous toolbar and small icon images as unsuitable. Archive-only; no Person, story, chapter, dataset, or image card selection changes.
+
+Batch baseline: main 9154100596ddf94e5c697f1c7091ec0e9f97552d (PR #99 merged), branch media/linz-aims-plugin-2024-20261016. Target PR #100 after source ingestion passes. Acquisition process is a reusable manifest-driven script; future batches can reuse it with separately verified source rights and pre-2025 image dates. Need run npm ci, npm test, npm run build, source SHA/original asset and responsive browser QA; then merge after all checks, confirm Cloudflare production SHA and archive routes before further work.
+
+<!-- INGEST linz-aims-qgis-2024-20261016 -->
