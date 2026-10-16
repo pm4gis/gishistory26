@@ -1,0 +1,60 @@
+name: Acquire pre-2025 LINZ QGIS Data Importer screens
+# Run acquisition after Astro image licence-link typing corrections.
+on:
+  push:
+    branches: [media/linz-qgis-importer-2018-2021-20261016]
+    paths:
+      - '.github/workflows/acquire-linz-qgis-importer-20261016.yml'
+      - 'scripts/acquire-linz-qgis-importer-20261016.mjs'
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  archive:
+    if: github.ref == 'refs/heads/media/linz-qgis-importer-2018-2021-20261016'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Check source Git hashes, acquire the historical media and register archive-only decisions
+        run: node scripts/acquire-linz-qgis-importer-20261016.mjs
+      - name: Run all source, editorial, image and production build checks
+        run: |
+          npm test
+          npm run build
+      - name: Install desktop and mobile Chromium browser QA
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify archive cards, image pages and BSD licence links
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist >/tmp/nzgis-qgis-qa.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 30); do
+            if curl -fsS -o /dev/null http://127.0.0.1:4321/images/; then break; fi
+            sleep 1
+          done
+          node scripts/linz-qgis-importer-browser-qa-20261016.mjs
+      - name: Commit verified original files and metadata to feature branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/linz-qgis-data-importer-*.json \
+            public/assets/historical/original/linz-qgis-data-importer-* \
+            public/assets/historical/web/linz-qgis-data-importer-*.webp \
+            public/assets/historical/card/linz-qgis-data-importer-*.webp \
+            docs/media/chapter-image-alignment-wave2-20261011.csv \
+            docs/media/documentary-archive-ledger-20261016.md
+          if git diff --cached --quiet; then echo 'No new image originals'; exit 0; fi
+          git commit -m 'Preserve pre-2025 LINZ QGIS documentation screenshots'
+          git push origin HEAD:media/linz-qgis-importer-2018-2021-20261016
