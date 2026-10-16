@@ -5,7 +5,7 @@
   "url": "/stories/lidar-remakes-the-landscape/",
   "summary": "For four days in July 2003, an aircraft crossed Christchurch and part of the adjoining Waimakariri River corridor carrying a laser scanner. Christchurch City Council commissioned the survey, flown by AAM GeoScan from 6 to 9 July. ",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "readingOrder": 37,
   "themeIds": [
     "imagery"
@@ -43,6 +43,10 @@
     {
       "id": "ch37-note-08",
       "text": "8. LiDAR does not establish legal cadastral boundaries and ordinary topographic LiDAR does not automatically measure underwater terrain. Bathymetric LiDAR is a separate specialised acquisition. These controls prevent the visual precision of the data from being overstated."
+    },
+    {
+      "id": "ch37-note-zhao-landcover-2018",
+      "text": "Haotian Zhao’s 2018 University of Canterbury thesis supports the 2011/2015 aerial-imagery and LiDAR workflow, object-based image analysis, overall classification accuracies of 94.0 and 94.32 per cent, and reported road/tree-cover change and urban-growth findings. A sample-plot tree-crown detection evaluation had lower accuracy (overall 75.6 per cent), so the study does not provide a dependable citywide tree count. The thesis abstract says seven land-cover types but enumerates six; the public paragraph therefore omits a class count."
     }
   ]
 }

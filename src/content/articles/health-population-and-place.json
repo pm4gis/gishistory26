@@ -5,7 +5,7 @@
   "url": "/stories/health-population-and-place/",
   "summary": "A disease case can be put on a map as soon as it has a usable location, yet a case count alone is only a partial measure of disease. Ten cases in a suburb of 2,000 people mean something different from ten cases in a city of 100,00",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "readingOrder": 27,
   "themeIds": [],
   "featured": false,
@@ -45,6 +45,10 @@
     {
       "id": "ch27-note-09",
       "text": "9. The connected 2021 Hauora-Manaaki governance material supports its pro-equity vaccination-monitoring purpose and the controls around Māori Data Sovereignty, iwi-level data, confidentiality, aggregation/anonymisation, exclusion of personal identifiable information, two-factor authentication and ArcGIS Online hosting. Original internal material requires privacy and publication-rights review before reproduction."
+    },
+    {
+      "id": "ch27-note-schori-noise-2021",
+      "text": "Allan Schori’s 2021 Victoria University of Wellington thesis models road-traffic noise exposure at schools and early childhood centres in the Wellington Territorial Authority using the Common Noise Assessment Methods in Europe, volunteered geographic noise measurements and socio-demographic/land-use variables. The abstract reports 57.7 per cent of early childhood centres and 41.0 per cent of schools above the 53 dB value from the 2018 WHO environmental-noise guidance, with 81 per cent of modelled values within 15 dB of volunteered measurements. The 15 dB range is broad; results are modelled estimates, not direct site measurements."
     }
   ]
 }

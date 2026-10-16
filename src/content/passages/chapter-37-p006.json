@@ -4,7 +4,7 @@
   "articleId": "article:chapter-37",
   "title": "Measuring change in Canterbury",
   "order": 5,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "themeIds": [],
   "recordIds": [
     "chapter:37"
@@ -23,6 +23,18 @@
       "markdown": "The wider earthquake response involved emergency systems, recovery mapping, data sharing and organisational consequences beyond the LiDAR story. Earlier surveys provided measurements of the landscape before the earthquakes. The 2003 survey was commissioned years before the earthquakes, yet it became a baseline against which later ground movement could be assessed. Several services could use the same terrain data.",
       "sources": [],
       "id": "ch37-s06-p02"
+    },
+    {
+      "type": "paragraph",
+      "text": "Haotian Zhao’s 2018 University of Canterbury thesis combined 2011 and 2015 aerial imagery with LiDAR to monitor land-cover change in Christchurch. An object-based image-analysis workflow used multilevel segmentation and random-forest classification, reporting overall accuracies of 94.0 per cent for 2011 and 94.32 per cent for 2015. The comparison showed increases in road and tree cover, with post-earthquake redevelopment identified as the main driver of road-area growth; Halswell and Wigram were the fastest-developing suburbs in the study. A separate sample-plot test of individual tree-crown detection had lower accuracy, so the results do not provide a reliable citywide tree count.",
+      "markdown": "Haotian Zhao’s 2018 University of Canterbury thesis combined 2011 and 2015 aerial imagery with LiDAR to monitor land-cover change in Christchurch. An object-based image-analysis workflow used multilevel segmentation and random-forest classification, reporting overall accuracies of 94.0 per cent for 2011 and 94.32 per cent for 2015. The comparison showed increases in road and tree cover, with post-earthquake redevelopment identified as the main driver of road-area growth; Halswell and Wigram were the fastest-developing suburbs in the study. A separate sample-plot test of individual tree-crown detection had lower accuracy, so the results do not provide a reliable citywide tree count.",
+      "sources": [
+        {
+          "label": "Haotian Zhao, Monitoring land cover change with LiDAR and aerial imagery in Christchurch, New Zealand (2018)",
+          "url": "https://ir.canterbury.ac.nz/items/3dd08679-6b82-4ef3-b564-ff2fd22e9ebe"
+        }
+      ],
+      "id": "ch37-zhao-landcover-change-2018"
     },
     {
       "type": "paragraph",

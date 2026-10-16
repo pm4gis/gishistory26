@@ -5,7 +5,7 @@
   "url": "/stories/mapping-from-a-drone/",
   "summary": "The August 2012 Te Maari eruption left hundreds of ballistic impact craters across part of the Tongariro landscape. New Zealand Aerial Mapping flew LiDAR and aerial imagery over the area in November that year, producing a broad re",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "readingOrder": 38,
   "themeIds": [
     "imagery"
@@ -35,6 +35,10 @@
     {
       "id": "ch38-note-06",
       "text": "6. Disaster use may be mentioned as a technical application, but major emergency and recovery narratives remain in Chapter 42."
+    },
+    {
+      "id": "ch38-note-hipgrave-wetland-2020",
+      "text": "Patrick Hipgrave’s 2020 Victoria University of Wellington thesis, Using UAV imagery to perform fine-scale mapping of wetland vegetation (also catalogued as Wings over Wairio), supports the consumer-grade UAV, object-based analysis, 2–4 cm-per-pixel imagery, 28 classes across the study and the improvement in almost all comparisons when digital surface models or multispectral data were added. Several classes, including two invasive species, reached at least 70 per cent accuracy. The paragraph paraphrases findings and reproduces no thesis figures or wording."
     }
   ]
 }

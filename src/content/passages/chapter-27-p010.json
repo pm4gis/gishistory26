@@ -4,7 +4,7 @@
   "articleId": "article:chapter-27",
   "title": "A health-geoinformatics community",
   "order": 9,
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-16",
   "themeIds": [],
   "recordIds": [
     "chapter:27",
@@ -51,6 +51,18 @@
       "markdown": "The conference brought together practitioners working with systems already in use. EpiSurv, PHEW!, local analytical work, national accessibility modelling and the Public Health Observatory had created a body of practitioners who were dealing with the same technical and policy questions from different parts of the health system. The professional network grew around working infrastructure rather than preceding it.",
       "sources": [],
       "id": "ch27-s10-p03"
+    },
+    {
+      "type": "paragraph",
+      "text": "Allan Schori’s 2021 thesis applied the Common Noise Assessment Methods in Europe to estimate traffic-noise exposure at schools and early childhood centres in the Wellington Territorial Authority. The study checked modelled values against volunteered geographic noise measurements and examined demographic and land-use patterns. It estimated that 57.7 per cent of early childhood centres and 41.0 per cent of schools exceeded the 53 dB guideline value cited from the World Health Organization’s 2018 environmental-noise guidance; 81 per cent of modelled values were within 15 dB of a volunteered measurement. These are modelled exposure estimates, not direct measurements at every site.",
+      "markdown": "Allan Schori’s 2021 thesis applied the Common Noise Assessment Methods in Europe to estimate traffic-noise exposure at schools and early childhood centres in the Wellington Territorial Authority. The study checked modelled values against volunteered geographic noise measurements and examined demographic and land-use patterns. It estimated that 57.7 per cent of early childhood centres and 41.0 per cent of schools exceeded the 53 dB guideline value cited from the World Health Organization’s 2018 environmental-noise guidance; 81 per cent of modelled values were within 15 dB of a volunteered measurement. These are modelled exposure estimates, not direct measurements at every site.",
+      "sources": [
+        {
+          "label": "Allan Schori, Modelled exposure to motor vehicle generated noise at schools and early childhood centres (2021)",
+          "url": "https://openaccess.wgtn.ac.nz/articles/thesis/Modelled_exposure_to_motor_vehicle_generated_noise_at_schools_and_early_childhood_centres_/17030039"
+        }
+      ],
+      "id": "ch27-schori-noise-exposure-2021"
     }
   ],
   "sources": [],

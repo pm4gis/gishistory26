@@ -4,7 +4,7 @@
   "articleId": "article:chapter-26",
   "title": "Environmental information as infrastructure",
   "order": 14,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "themeIds": [],
   "recordIds": [
     "chapter:26"
@@ -37,6 +37,30 @@
       "markdown": "That record still depended on people. Field staff collected observations, land-management officers worked with landowners, scientists defined classifications, database and GIS staff maintained national layers, and local users reported corrections when the screen disagreed with the landscape. Enterprise architecture made the information easier to distribute, but it did not remove the labour required to keep it credible.",
       "sources": [],
       "id": "ch26-s13-p04"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hannah Rogers’s 2022 University of Waikato thesis used spatial analysis to assess ecological restoration options in Hamilton. It estimated that native vegetation covered about 1.8 per cent of the city and set out a pathway to a minimum 10 per cent by 2050, requiring restoration across about 886 hectares. A prioritisation tool assessed 873 gully and reserve sites against eight ecological criteria and grouped them into five categories to support staged work. The analysis mapped restoration priorities rather than recording completed work, and the thesis cautioned that ecological criteria alone do not capture all social, economic and cultural priorities.",
+      "markdown": "Hannah Rogers’s 2022 University of Waikato thesis used spatial analysis to assess ecological restoration options in Hamilton. It estimated that native vegetation covered about 1.8 per cent of the city and set out a pathway to a minimum 10 per cent by 2050, requiring restoration across about 886 hectares. A prioritisation tool assessed 873 gully and reserve sites against eight ecological criteria and grouped them into five categories to support staged work. The analysis mapped restoration priorities rather than recording completed work, and the thesis cautioned that ecological criteria alone do not capture all social, economic and cultural priorities.",
+      "sources": [
+        {
+          "label": "Hannah Rogers, Prioritising ecological restoration sites and strategies in Hamilton City, New Zealand (2022)",
+          "url": "https://researchcommons.waikato.ac.nz/entities/publication/d5ee1c8f-2432-4993-8081-153938d1099d"
+        }
+      ],
+      "id": "ch26-hamilton-restoration-2022"
+    },
+    {
+      "type": "paragraph",
+      "text": "Levi Murdoch-Tighe’s 2022 AUT thesis used GIS, multivariate analysis and Marxan modelling to compare coastal sections within one kilometre of Waiheke Island. It described four habitat groupings: intertidal and subtidal boulder and gravel; high-current channel habitats; seagrass, mangrove, saltmarsh and mudflat; and deeper gravel, mud and other habitats. The thesis modelled options for a complementary marine protected-area network that could be considered alongside customary management and social, economic and cultural values. These were planning scenarios, not an adopted network or evidence of iwi or wider community endorsement.",
+      "markdown": "Levi Murdoch-Tighe’s 2022 AUT thesis used GIS, multivariate analysis and Marxan modelling to compare coastal sections within one kilometre of Waiheke Island. It described four habitat groupings: intertidal and subtidal boulder and gravel; high-current channel habitats; seagrass, mangrove, saltmarsh and mudflat; and deeper gravel, mud and other habitats. The thesis modelled options for a complementary marine protected-area network that could be considered alongside customary management and social, economic and cultural values. These were planning scenarios, not an adopted network or evidence of iwi or wider community endorsement.",
+      "sources": [
+        {
+          "label": "Levi Murdoch-Tighe, Geospatial Analysis of Marine Habitat Representation for Marine Spatial Planning Around Waiheke Island Auckland New Zealand (2022)",
+          "url": "https://openrepository.aut.ac.nz/items/e7a98970-386c-42aa-8b07-5808af1086f2"
+        }
+      ],
+      "id": "ch26-waiheke-marine-planning-2022"
     },
     {
       "type": "paragraph",
