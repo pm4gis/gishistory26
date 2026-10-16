@@ -1,0 +1,26 @@
+{
+  "id": "source-cfrt-gis-conference-handout-2007",
+  "dateDisplay": "7–9 November 2007",
+  "startDate": "2007-11-07",
+  "datePrecision": "day",
+  "year": 2007,
+  "label": "Crown Forestry Rental Trust demonstrates ArcFlax and Treaty mapping",
+  "summary": "At the Rotorua Esri User Group conference, the Trust documented its GIS warehouse, contracted cartography and ArcReader 'ArcFlax' distribution for Treaty research.",
+  "url": "/sources/documents/cfrt-gis-conference-handout-2007/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:crown-forestry-rental-trust"
+  ],
+  "themeIds": [],
+  "categories": [
+    "documentary source",
+    "published historical evidence",
+    "treaty-settlement-gis-and-cartography"
+  ],
+  "sources": [
+    {
+      "label": "Crown Forestry Rental Trust, 7–9 November 2007; supplied primary-source copy catalogued with SHA-256",
+      "url": "/sources/documents/cfrt-gis-conference-handout-2007/"
+    }
+  ]
+}

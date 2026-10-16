@@ -49,6 +49,10 @@
     {
       "id": "ch26-note-species-records-1987-1993",
       "text": "Sources: DOC, Amphibian and Reptile Distribution Scheme: database development chronology (https://www.doc.govt.nz/our-work/reptiles-and-frogs-distribution/atlas/species-sightings-and-data-management/what-is-the-ard-scheme/)."
+    },
+    {
+      "id": "source-gis-mapping-wetland-projects-2021",
+      "text": "Duane Wilkins, 'GIS mapping tools for wetland projects', Te Reo o te Repo 2, ch. 16 (2021), pp. 201–214: Google Earth, Retrolens, Survey123, KoBoToolbox, StoryMaps and example wetlands at Kimihia and Ōhinewai. Publication date is not the capture date of each GIS screenshot."
     }
   ]
 }

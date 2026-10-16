@@ -1,0 +1,30 @@
+{
+  "id": "source-taranaki-cdem-geospatial-strategy-2021",
+  "dateDisplay": "May 2021",
+  "startDate": "2021-05",
+  "datePrecision": "month",
+  "year": 2021,
+  "label": "Taranaki CDEM adopts its five-year geospatial strategy",
+  "summary": "The May 2021 strategy established a regional emergency GIS development roadmap, common operating picture and priorities for people, requirements, interoperable data and technology.",
+  "url": "/sources/documents/taranaki-cdem-geospatial-strategy-2021/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:eagle-technology"
+  ],
+  "themeIds": [],
+  "categories": [
+    "documentary source",
+    "published historical evidence",
+    "regional-emergency-gis-and-information-sharing"
+  ],
+  "sources": [
+    {
+      "label": "Taranaki Civil Defence and Emergency Management Group; Teresa Gordon and Ed Cook, May 2021; supplied primary-source copy catalogued with SHA-256",
+      "url": "/sources/documents/taranaki-cdem-geospatial-strategy-2021/"
+    },
+    {
+      "label": "Public publisher source",
+      "url": "https://www.trc.govt.nz/assets/TEMO_GeospatialStrategy_V1.1_FINAL.pdf"
+    }
+  ]
+}

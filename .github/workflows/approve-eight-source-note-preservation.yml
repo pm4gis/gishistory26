@@ -1,0 +1,38 @@
+name: Update reviewed source-note preservation manifest
+on:
+  push:
+    branches: [research/eight-primary-sources-timeline-20261017]
+    paths:
+      - 'scripts/approve-eight-source-note-preservation.mjs'
+      - '.github/workflows/approve-eight-source-note-preservation.yml'
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  approve:
+    if: github.ref == 'refs/heads/research/eight-primary-sources-timeline-20261017'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0', cache: npm}
+      - run: npm ci
+      - name: Verify only eight additive source notes and update accepted full-file SHA-256 values
+        run: node scripts/approve-eight-source-note-preservation.mjs
+      - name: Validate site and original preservation
+        run: |
+          npm test
+          npm run build
+      - name: Commit checked preservation manifest to review branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/preservation-manifest.json docs/verification/eight-source-notes-preservation-20261017.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Record eight additive source notes in preservation baseline'
+          git push origin HEAD:research/eight-primary-sources-timeline-20261017

@@ -1,0 +1,25 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import {contributedPrimarySources} from '../../../lib/contributed-primary-sources.mjs';
+export function getStaticPaths(){return contributedPrimarySources.map(item=>({params:{slug:item.slug},props:{item}}));}
+const {item}=Astro.props;
+---
+<Layout title={item.title+' · Documentary source'} description={item.summary}>
+ <article class="page-wrap image-detail">
+  <p class="eyebrow">Primary-source catalogue · {item.date}</p>
+  <h1 class="page-title">{item.title}</h1>
+  <p>{item.creator} · {item.kind} · {item.pages} {item.format==='PDF'?'pages':'slides'}</p>
+  <p>{item.summary}</p>
+  <h2>Evidence from the original</h2>
+  <ul>{item.findings.map(f=><li><strong>{f.page}:</strong> {f.text}</li>)}</ul>
+  <h2>Relationships</h2>
+  <p>{item.related.join(' · ')}</p>
+  <p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter →</a></p>
+  <p><strong>Timeline event:</strong> {item.eventLabel}</p>
+  <p><a href={'/timeline/?event=source-'+item.slug}>Find this document on the timeline →</a></p>
+  <h2>Original and rights</h2>
+  <p>{item.rights}</p>
+  {item.sourceUrl?<p><a href={item.sourceUrl} rel="noopener noreferrer">Read the publisher-hosted source PDF ↗</a></p>:<p>The project holds a supplied research original. No verified public download URL is recorded, and no site-hosted binary is claimed.</p>}
+  <details><summary>Source file identification and checksum</summary><p>Supplied filename: <code>{item.filename}</code>; {item.bytes.toLocaleString('en-NZ')} bytes.</p><p style="overflow-wrap:anywhere">SHA-256: <code>{item.sha256}</code></p></details>
+ </article>
+</Layout>

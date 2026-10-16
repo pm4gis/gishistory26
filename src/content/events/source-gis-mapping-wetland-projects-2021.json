@@ -1,0 +1,31 @@
+{
+  "id": "source-gis-mapping-wetland-projects-2021",
+  "dateDisplay": "2021",
+  "startDate": "2021",
+  "datePrecision": "year",
+  "year": 2021,
+  "label": "GIS guidance for wetland restoration published in Te Reo o te Repo",
+  "summary": "Duane Wilkins's chapter described GIS for whānau-led wetland restoration, including historical aerial photography, 3D mapping, environmental monitoring, Google Earth and ArcGIS tools.",
+  "url": "/sources/documents/gis-mapping-wetland-projects-2021/",
+  "passageIds": [],
+  "recordIds": [
+    "person:duane-wilkins",
+    "entity:department-of-conservation"
+  ],
+  "themeIds": [],
+  "categories": [
+    "documentary source",
+    "published historical evidence",
+    "whnau-led-wetland-gis-and-conservation-mapping"
+  ],
+  "sources": [
+    {
+      "label": "Duane Wilkins; published by Manaaki Whenua – Landcare Research, 2021; supplied primary-source copy catalogued with SHA-256",
+      "url": "/sources/documents/gis-mapping-wetland-projects-2021/"
+    },
+    {
+      "label": "Public publisher source",
+      "url": "https://www.landcareresearch.co.nz/assets/Publications/Te-reo-o-te-repo-vol-2/TRoTR_Kei-konei-tonu-au_Chapter-16.pdf"
+    }
+  ]
+}

@@ -25,6 +25,10 @@
     {
       "id": "ch24-note-04",
       "text": "4. Crown Minerals spatial administration is supported by the 2007 minerals and petroleum regulations requiring permit areas to be described and mapped using coordinates, parcels, bearings/distances, geographic boundaries or other specified references, with projection/datum information where applicable. Later New Zealand Petroleum and Minerals material supports the endpoint of permit registers linked to GIS databases, public webmaps and spatial data/services. No exact first internal GIS date is claimed."
+    },
+    {
+      "id": "source-nz-geospatial-strategy-2007",
+      "text": "January 2007 national strategy, pp. 4–9: governance, fundamental datasets, access and interoperability; contemporary Police, Fire Service and Landcare Research GIS examples. Publication followed 2004 consultation."
     }
   ]
 }

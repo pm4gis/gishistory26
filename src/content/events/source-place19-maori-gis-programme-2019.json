@@ -1,0 +1,27 @@
+{
+  "id": "source-place19-maori-gis-programme-2019",
+  "dateDisplay": "13–15 November 2019",
+  "startDate": "2019-11-13",
+  "datePrecision": "day",
+  "year": 2019,
+  "label": "PLACE19 Māori GIS conference opens in Rotorua",
+  "summary": "Te Kāhui Manu Hōkai convened the PLACE19 conference in Rotorua, with over 100 delegates and sessions on people, landscapes, assets, communication and education.",
+  "url": "/sources/documents/place19-maori-gis-programme-2019/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz",
+    "entity:eagle-technology"
+  ],
+  "themeIds": [],
+  "categories": [
+    "documentary source",
+    "published historical evidence",
+    "mori-gis-indigenous-data-and-place"
+  ],
+  "sources": [
+    {
+      "label": "Te Kāhui Manu Hōkai, the Māori GIS Association, 13–15 November 2019; supplied primary-source copy catalogued with SHA-256",
+      "url": "/sources/documents/place19-maori-gis-programme-2019/"
+    }
+  ]
+}

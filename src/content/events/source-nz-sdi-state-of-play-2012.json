@@ -1,0 +1,26 @@
+{
+  "id": "source-nz-sdi-state-of-play-2012",
+  "dateDisplay": "December 2012",
+  "startDate": "2012-12",
+  "datePrecision": "month",
+  "year": 2012,
+  "label": "LINZ benchmarks New Zealand's spatial data infrastructure",
+  "summary": "The New Zealand Geospatial Office assessed national SDI maturity against 46 criteria, using September 2012 as its baseline.",
+  "url": "/sources/documents/nz-sdi-state-of-play-2012/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz"
+  ],
+  "themeIds": [],
+  "categories": [
+    "documentary source",
+    "published historical evidence",
+    "spatial-data-infrastructure-and-interoperability"
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Office, Land Information New Zealand, December 2012; supplied primary-source copy catalogued with SHA-256",
+      "url": "/sources/documents/nz-sdi-state-of-play-2012/"
+    }
+  ]
+}
