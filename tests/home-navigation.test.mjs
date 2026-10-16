@@ -56,7 +56,7 @@ test('desktop and mobile menus provide About, Contribute and Connections, with a
  assert.ok(layout.includes('<summary aria-label="Open navigation menu"'));
  assert.match(layout,/aria-label="Mobile navigation"/);
  assert.match(layout,/aria-label="Main navigation"/);
- assert.equal((layout.match(/href="\\/network\\/"/g)||[]).length,3);
+ assert.equal((layout.match(/href="\/network\/"/g)||[]).length,3);
  assert.equal((layout.match(/href="\/about\/"/g)||[]).length,3);
  assert.equal((layout.match(/href=\{contributionHref\}/g)||[]).length,3);
  assert.match(css,/@media\(max-width:1180px\)/);
