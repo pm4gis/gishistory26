@@ -28,3 +28,7 @@ Eight original uploads were opened and extracted: seven PDFs and one five-slide 
 ## Follow-up
 
 The eight source descriptions, historical claims, linked stories and timeline anchors should be tested on the site and published. Exact original files require an authorised binary transfer or a verified publisher-licensed copy; do not imply that a description page stores the supplied PDF/PPTX. Next, reconcile named PLACE19 speakers and Taranaki strategy contributors against the current People and Organisation records, avoiding duplicate identities and preserving limited biography and exclusion rules. Then add sourced passage-level additions where the source changes a chapter’s historical account.
+
+## Release verification
+
+Pull request: https://github.com/pm4gis/gishistory26/pull/102 . The exact eight-file additive-preservation workflow [38979762303](https://github.com/pm4gis/gishistory26/actions/runs/38979762303) succeeded: it compared baseline content, amended only eight approved SHA-256 manifest entries, ran npm ci, npm test and npm run build, then committed the validated manifest on the feature branch as `027af15903d924863f756d2768cbf0ae6eea497f`. Production publication and live-page verification remain pending until the separate PR checks and Cloudflare release succeed.
