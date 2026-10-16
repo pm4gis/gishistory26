@@ -5,7 +5,7 @@
   "url": "/stories/topography-goes-digital/",
   "summary": "A printed topographic map makes geography look as if it naturally belongs to a sheet. Roads end at a neat border, contours disappear into the margin, place names are positioned for the reader, and the whole landscape is arranged a",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "readingOrder": 15,
   "themeIds": [],
   "featured": false,
@@ -29,6 +29,10 @@
     {
       "id": "ch15-note-05",
       "text": "5. Datum, projection and Topo50. Period LINZ geodetic material documents adoption of NZTM2000 for national mapping in 2001. Official launch material and contemporary technical reporting document national release of Topo50 and Topo250 on 23 September 2009, including 451 Topo50 and 31 Topo250 sheets. The LINZ 2009/10 annual report documents the combined 482-map programme and contemporary sources for free TIFF/GeoTIFF availability. Keep datum history in Chapter 19 and production automation in Chapter 43."
+    },
+    {
+      "id": "ch15-note-06",
+      "text": "6. Military topographic maps. William Mortimer’s GeoCart 2016 paper documents GNZ’s 1:50,000 South West Pacific MGCP production, its use in Military Topographic Maps, and the team’s symbology, portrayal, quality-control and production workflow."
     }
   ]
 }

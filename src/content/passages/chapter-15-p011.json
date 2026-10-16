@@ -1,0 +1,43 @@
+{
+  "id": "passage:chapter-15-c8b63f1bfc",
+  "slug": "geoint-military-topographic-maps-c8b63f1bfc",
+  "articleId": "article:chapter-15",
+  "title": "GEOINT New Zealand’s military topographic maps",
+  "order": 10,
+  "updatedAt": "2026-10-16",
+  "themeIds": [],
+  "recordIds": [
+    "chapter:15",
+    "entity:geoint-new-zealand",
+    "entity:new-zealand-defence-force",
+    "person:william-mortimer"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Military topographic maps continued to be important products as the underlying data became digital. At GeoCart 2016, William Mortimer of GEOINT New Zealand described the Defence Force’s work in the Multinational Geospatial Co-Production Programme (MGCP). The 29-member programme produced standardised vector data from high-resolution imagery in one-degree cells. GNZ represented New Zealand and produced 1:50,000 data for the South West Pacific. Its data was stored and attributed in an ESRI geodatabase, converted for exchange and quality checked, including peer review by another participating nation, before being held in a shared global warehouse.",
+      "markdown": "Military topographic maps continued to be important products as the underlying data became digital. At GeoCart 2016, William Mortimer of GEOINT New Zealand described the Defence Force’s work in the Multinational Geospatial Co-Production Programme (MGCP). The 29-member programme produced standardised vector data from high-resolution imagery in one-degree cells. GNZ represented New Zealand and produced 1:50,000 data for the South West Pacific. Its data was stored and attributed in an ESRI geodatabase, converted for exchange and quality checked, including peer review by another participating nation, before being held in a shared global warehouse.",
+      "sources": [
+        {
+          "label": "William Mortimer, GEOINT New Zealand’s 1:50,000 Military Topographic Map Production, GeoCart 2016",
+          "url": "https://geocart.cartography.org.nz/2016/downloads/abstracts/2016-093_mortimer.pdf"
+        }
+      ],
+      "id": "ch15-s11-p01"
+    },
+    {
+      "type": "paragraph",
+      "text": "Those vectors provided a source for the 1:50,000 Military Topographic Map (MTM). The finished map required military symbology and portrayal rules, so the work joined GIS data production with cartographic design. Mortimer records changes in GNZ’s production environment from ArcInfo 9.3 on Windows XP around 2013 to ArcInfo 10.x in 2014, then ESRI 10.3 on Windows 7 by 2015/16, as the team expanded automation, documentation and quality control. The paper shows digital mapping as a combination of structured data, interoperability and skilled map finishing.",
+      "markdown": "Those vectors provided a source for the 1:50,000 Military Topographic Map (MTM). The finished map required military symbology and portrayal rules, so the work joined GIS data production with cartographic design. Mortimer records changes in GNZ’s production environment from ArcInfo 9.3 on Windows XP around 2013 to ArcInfo 10.x in 2014, then ESRI 10.3 on Windows 7 by 2015/16, as the team expanded automation, documentation and quality control. The paper shows digital mapping as a combination of structured data, interoperability and skilled map finishing.",
+      "sources": [
+        {
+          "label": "William Mortimer, GEOINT New Zealand’s 1:50,000 Military Topographic Map Production, GeoCart 2016",
+          "url": "https://geocart.cartography.org.nz/2016/downloads/abstracts/2016-093_mortimer.pdf"
+        }
+      ],
+      "id": "ch15-s11-p02"
+    }
+  ],
+  "sources": [],
+  "legacyAnchor": "geoint-military-topographic-maps"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "2023-nzdf-cyclone-gabrielle-imagery-assessments",
+  "dateDisplay": "2023",
+  "startDate": "2023",
+  "datePrecision": "year",
+  "year": 2023,
+  "label": "NZDF imagery guides Cyclone Gabrielle damage assessments",
+  "summary": "King Air and SH-2G(I) aircraft collected imagery across affected parts of the North Island. No. 230 Squadron analysed it and supplied rapid assessments of town and highway damage, slips and flooding to NEMA and other agencies so response planners could prioritise resources.",
+  "url": "/entities/new-zealand-defence-force/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:new-zealand-defence-force"
+  ],
+  "themeIds": [],
+  "categories": [
+    "government"
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Defence Force, “Taking in the damage”",
+      "url": "https://www.nzdf.mil.nz/media-centre/news/taking-in-the-damage/"
+    }
+  ]
+}

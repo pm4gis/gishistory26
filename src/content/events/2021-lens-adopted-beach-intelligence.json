@@ -1,0 +1,25 @@
+{
+  "id": "2021-lens-adopted-beach-intelligence",
+  "dateDisplay": "2021",
+  "startDate": "2021",
+  "datePrecision": "year",
+  "year": 2021,
+  "label": "Navy hydrographers adopt LENS for beach intelligence",
+  "summary": "Following trials with HMNZS Matataua in early 2021, Navy hydrographers adopted LENS as their primary method for collating, storing and sharing beach intelligence. The GNZ system standardises the data and feeds checked information into NZDF command systems.",
+  "url": "/entities/geoint-new-zealand/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:geoint-new-zealand",
+    "entity:new-zealand-defence-force"
+  ],
+  "themeIds": [],
+  "categories": [
+    "government"
+  ],
+  "sources": [
+    {
+      "label": "Navy Today, issue 256, “Beach Intelligence”",
+      "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+    }
+  ]
+}

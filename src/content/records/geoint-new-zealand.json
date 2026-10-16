@@ -10,7 +10,9 @@
   "story": [
     "The Department of the Prime Minister and Cabinet identifies GEOINT New Zealand (GNZ) as a sub-unit of New Zealand Defence Intelligence. It describes a largely civilian team with expertise in GIS, cartography, imagery analysis and data analytics. GNZ supplies maps, charts, imagery products, data services and specialist advice for Defence decisions and navigation safety, and supports other government agencies.",
     "The NZDF says data gathered by GNZ is available free through the GEOINT Data Service. Air Force careers guidance describes geospatial intelligence analysts using GIS to display and analyse spatial data and imagery, then create maps and graphics for intelligence reports.",
-    "Navy Today’s 2021 account documents GNZ’s work on the Littoral Environment Information System (LENS), a geospatial data system for collecting, storing and sharing beach intelligence."
+    "Navy Today’s 2021 account documents GNZ’s work on the Littoral Environment Information System (LENS), a geospatial data system for collecting, storing and sharing beach intelligence.",
+    "A 2016 GeoCart paper by William Mortimer documents GNZ’s role in the Multinational Geospatial Co-Production Programme, producing 1:50,000 data for the South West Pacific and refining it into Military Topographic Maps. The paper describes standard schemas, geodatabase production, quality checks and peer review, as well as the symbology and portrayal designed for the finished maps.",
+    "GNZ developed the Littoral Environment Information System (LENS) with the Australian Geospatial-Intelligence Organisation. Navy Today reports that HMNZS Matataua hydrographers use it to collect beach intelligence through surveys and Rapid Environmental Assessment. LENS applies NATO’s Additional Military Layer schema to make the data standardised and machine-readable. GNZ quality-checks the data before adding it to a master database and sharing it with NZDF command systems. Following trials with Matataua in early 2021, the Navy hydrographic trade adopted LENS as its primary method for collating, storing and sharing beach intelligence."
   ],
   "sources": [
     {
@@ -32,6 +34,10 @@
     {
       "label": "Navy Today, issue 256, “Beach Intelligence”",
       "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+    },
+    {
+      "label": "William Mortimer, GEOINT New Zealand’s 1:50,000 Military Topographic Map Production, GeoCart 2016",
+      "url": "https://geocart.cartography.org.nz/2016/downloads/abstracts/2016-093_mortimer.pdf"
     }
   ],
   "aliases": [
@@ -58,6 +64,18 @@
       {
         "label": "New Zealand Defence Careers, Intelligence Specialist: Geospatial Intelligence Analyst",
         "url": "https://www.defencecareers.mil.nz/air-force/careers/browse-roles/intelligence-specialist"
+      }
+    ],
+    [
+      {
+        "label": "Navy Today, issue 256, “Beach Intelligence”",
+        "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+      }
+    ],
+    [
+      {
+        "label": "William Mortimer, GEOINT New Zealand’s 1:50,000 Military Topographic Map Production, GeoCart 2016",
+        "url": "https://geocart.cartography.org.nz/2016/downloads/abstracts/2016-093_mortimer.pdf"
       }
     ],
     [

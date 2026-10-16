@@ -9,7 +9,8 @@
   "description": "New Zealand’s military organisation and a national user of geospatial intelligence.",
   "story": [
     "The NZDF describes geospatial intelligence as operational support for navigation safety, intelligence mission data, imagery analysis and GEOINT mission management. Its 2019/20 reporting records GEOINT support during the Whakaari/White Island eruption, Tropical Cyclone Harold in Vanuatu and the COVID-19 response, including damage assessment, identifying areas and people needing assistance, and spatial, statistical and predictive analysis through tailored apps and dashboards.",
-    "GEOINT New Zealand sits within Defence Intelligence. The NZDF’s public organisation page links to its free GEOINT Data Service."
+    "GEOINT New Zealand sits within Defence Intelligence. The NZDF’s public organisation page links to its free GEOINT Data Service.",
+    "NZDF reporting also documents geospatial support in later civil emergencies. After Cyclone Gabrielle, No. 230 Squadron analysed imagery collected by King Air and SH-2G(I) aircraft, supplying rapid damage assessments of towns, highways, slips and flooding to NEMA and other agencies. During the July 2025 Nelson/Tasman emergency, NZDF personnel used the local Emergency Operations Centre’s geospatial tools for geotagged task tracking, routing around road washouts and other hazards, and contributing to the Intelligence Common Operating Picture."
   ],
   "sources": [
     {
@@ -23,6 +24,14 @@
     {
       "label": "GEOINT New Zealand Data Service",
       "url": "https://geodata.nzdf.mil.nz/"
+    },
+    {
+      "label": "New Zealand Defence Force, “Taking in the damage”",
+      "url": "https://www.nzdf.mil.nz/media-centre/news/taking-in-the-damage/"
+    },
+    {
+      "label": "New Zealand Defence Force, “NZDF support to Nelson/Tasman region”",
+      "url": "https://www.nzdf.mil.nz/air-force/air-force-news/nzdf-support-to-nelsontasman-region/"
     }
   ],
   "aliases": [
@@ -45,6 +54,16 @@
       {
         "label": "GEOINT New Zealand Data Service",
         "url": "https://geodata.nzdf.mil.nz/"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Defence Force, “Taking in the damage”",
+        "url": "https://www.nzdf.mil.nz/media-centre/news/taking-in-the-damage/"
+      },
+      {
+        "label": "New Zealand Defence Force, “NZDF support to Nelson/Tasman region”",
+        "url": "https://www.nzdf.mil.nz/air-force/air-force-news/nzdf-support-to-nelsontasman-region/"
       }
     ]
   ],
