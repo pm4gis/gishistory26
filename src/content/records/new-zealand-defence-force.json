@@ -1,0 +1,59 @@
+{
+  "id": "entity:new-zealand-defence-force",
+  "slug": "new-zealand-defence-force",
+  "name": "New Zealand Defence Force",
+  "kind": "Agency",
+  "category": "Government",
+  "url": "/entities/new-zealand-defence-force/",
+  "website": "https://www.nzdf.mil.nz/",
+  "description": "New Zealand’s military organisation and a national user of geospatial intelligence.",
+  "story": [
+    "The NZDF describes geospatial intelligence as operational support for navigation safety, intelligence mission data, imagery analysis and GEOINT mission management. Its 2019/20 reporting records GEOINT support during the Whakaari/White Island eruption, Tropical Cyclone Harold in Vanuatu and the COVID-19 response, including damage assessment, identifying areas and people needing assistance, and spatial, statistical and predictive analysis through tailored apps and dashboards.",
+    "GEOINT New Zealand sits within Defence Intelligence. The NZDF’s public organisation page links to its free GEOINT Data Service."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Defence Force, Annual Report 2020, “Geospatial Intelligence”",
+      "url": "https://nzdf.mil.nz/assets/Uploads/DocumentLibrary/20-099-NZDF-Annual-Report-2020-FA-WEB-1.pdf"
+    },
+    {
+      "label": "New Zealand Defence Force, People, Structure & Leadership: GEOINT New Zealand",
+      "url": "https://www.nzdf.mil.nz/navy/who-we-are/people-structure-and-leadership/"
+    },
+    {
+      "label": "GEOINT New Zealand Data Service",
+      "url": "https://geodata.nzdf.mil.nz/"
+    }
+  ],
+  "aliases": [
+    "NZDF",
+    "NZ Defence Force"
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Defence Force, Annual Report 2020, “Geospatial Intelligence”",
+        "url": "https://nzdf.mil.nz/assets/Uploads/DocumentLibrary/20-099-NZDF-Annual-Report-2020-FA-WEB-1.pdf"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Defence Force, People, Structure & Leadership: GEOINT New Zealand",
+        "url": "https://www.nzdf.mil.nz/navy/who-we-are/people-structure-and-leadership/"
+      },
+      {
+        "label": "GEOINT New Zealand Data Service",
+        "url": "https://geodata.nzdf.mil.nz/"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [],
+  "contextLinks": [
+    {
+      "label": "GEOINT New Zealand Data Service",
+      "url": "https://geodata.nzdf.mil.nz/"
+    }
+  ],
+  "status": "Geospatial intelligence documented"
+}

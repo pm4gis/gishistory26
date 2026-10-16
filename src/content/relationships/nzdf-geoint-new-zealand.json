@@ -1,0 +1,18 @@
+{
+  "id": "relationship:nzdf-geoint-new-zealand",
+  "a": "entity:geoint-new-zealand",
+  "b": "entity:new-zealand-defence-force",
+  "label": "Unit of",
+  "basis": "The Department of the Prime Minister and Cabinet identifies GEOINT New Zealand as a sub-unit of New Zealand Defence Intelligence; the NZDF organisation page places it within Defence Intelligence.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Department of the Prime Minister and Cabinet, National Security and Intelligence: Role of Government Agencies, February 2023",
+      "url": "https://www.dpmc.govt.nz/sites/default/files/2023-04/National-Security-and-Intelligence-Role-of-Government-Agencies-updated-February-2023.pdf"
+    },
+    {
+      "label": "New Zealand Defence Force, People, Structure & Leadership: GEOINT New Zealand",
+      "url": "https://www.nzdf.mil.nz/navy/who-we-are/people-structure-and-leadership/"
+    }
+  ]
+}
