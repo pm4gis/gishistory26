@@ -1,4 +1,5 @@
 name: Acquire pre-2025 LINZ QGIS Data Importer screens
+# Run acquisition after Astro image licence-link typing corrections.
 on:
   push:
     branches: [media/linz-qgis-importer-2018-2021-20261016]
