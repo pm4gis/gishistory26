@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-linz-whakapapa-20261016-002",
+  "a": "entity:lands-survey-computer-mapping-unit-1979",
+  "b": "entity:department-of-lands-and-survey",
+  "label": "Departmental unit established in 1979",
+  "basis": "The “Our Whakapapa” 1960–1979 exhibition panel reports a Computer Mapping Unit established within Lands and Survey in 1979.",
+  "sources": [
+    {
+      "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+      "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+    }
+  ]
+}

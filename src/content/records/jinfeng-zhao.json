@@ -5,9 +5,10 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/jinfeng-zhao/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "Co-author of New Zealand spatial deprivation mapping, GeoCart 2018.",
   "story": [
-    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Jinfeng Zhao as an author of “Mapping drivers of area deprivation in New Zealand”."
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Jinfeng Zhao as an author of “Mapping drivers of area deprivation in New Zealand”.",
+    "The GeoCart 2018 proceedings credit Jinfeng Zhao, Daniel Exeter, Michael Browne, Bianca Haux, Arier Lee and Sue Crengle on 'Mapping out the drivers of area deprivation in New Zealand'. This establishes co-authorship of a national thematic mapping study about neighbourhood deprivation. The published conference contents do not assign individual statistical modelling or data preparation responsibilities."
   ],
   "sources": [
     {
@@ -21,6 +22,12 @@
     [
       {
         "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "National Library of New Zealand, GeoCart 2018 proceedings, specific paper titles and author lists, record 40158196",
         "url": "https://natlib.govt.nz/records/40158196"
       }
     ]

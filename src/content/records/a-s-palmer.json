@@ -1,0 +1,39 @@
+{
+  "id": "person:a-s-palmer",
+  "slug": "a-s-palmer",
+  "name": "A. S. Palmer",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/a-s-palmer/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 1993.",
+  "story": [
+    "A. S. Palmer was a co-author, with C. S. N. Priyono and M. P. Tuohy, of a 1993 New Zealand Soil News abstract on GIS-supported soil conservation planning. Their documented case examined a farm in the Āpiti district and the use of GIS to present information for land management decisions.",
+    "The source identifies Palmer as a contributor to this study. It does not specify an individual technical role or establish a wider GIS employment history, so the entry retains the published initials."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+    }
+  ],
+  "aliases": [
+    "A.S. Palmer",
+    "Palmer, A. S."
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+        "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}

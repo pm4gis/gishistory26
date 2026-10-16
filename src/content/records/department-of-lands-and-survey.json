@@ -8,7 +8,7 @@
   "website": null,
   "story": [
     "Lands and Survey maintained cadastral, geodetic, topographic and aerial-mapping records that became inputs to digital systems. Its staff worked across field survey, computation, draughting and map production. The transition to computer mapping inherited both that information and the need to keep it consistent as land and administrative records changed.",
-    "The department’s metric-conversion work supplied a concrete reason to automate mapping in the 1970s. M. S. Colley’s 1979 Canterbury thesis describes Lands and Survey’s responsibility for converting topographic and cadastral mapping from the earlier imperial grid to the metric grid introduced in 1973. The research addressed automated cadastral conversion, computer-produced cartography and structures that could store graphical features with descriptive information. Chapter 3 follows that work through MAPPAK.",
+    "The department’s metric-conversion work supplied a concrete reason to automate mapping in the 1970s. M. S. Colley’s 1979 Canterbury thesis describes Lands and Survey’s responsibility for converting topographic and cadastral mapping from the earlier imperial grid to the metric grid introduced in 1973. The research addressed automated cadastral conversion, computer-produced cartography and structures that could store graphical features with descriptive information. Chapter 3 follows that work through MAPPAK. The LINZ 1960–1979 panel separately dates a Computer Mapping Unit to 1979 and describes its cadastral-digitisation and topographic-mapping work. The exhibition does not identify this unit as MAPPAK or as the later national DCDB programme.",
     "The April 1987 reorganisation divided responsibilities as well as changing the national mapping organisation. DOSLI took government civil and military survey, mapping and land-information services, while land development and conservation management were assigned elsewhere. This division is important when tracing older datasets and staff accounts: a Lands and Survey origin does not imply that every function passed to DOSLI or, later, to LINZ.",
     "Before map geometry was digitised, the department’s office computers were people doing mathematical work on survey records. Russell Gladstone Dick’s 1966 account describes those staff alongside the electronic computers then entering demanding survey and mapping calculations. Chapter 2 follows that change in the work.",
     "L. P. Lee’s 1962 and 1963 transverse Mercator papers document the mathematical work behind coordinate conversion; his 1974 Pacific-projection paper gives his departmental title as Chief Computer. The 1977 Landsat report names Robert Child and Douglas McK Scott among the department’s contributors to satellite cartography and land-use mapping."
@@ -64,6 +64,10 @@
       {
         "label": "M. S. Colley, A computer system for a cadastral mapping application, MSc thesis, University of Canterbury, 1979",
         "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+      },
+      {
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
       }
     ],
     [
@@ -84,7 +88,12 @@
         "url": "/stories/coordinates-enter-the-computer/"
       }
     ],
-    [],
+    [
+      {
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+      }
+    ],
     [],
     [],
     [

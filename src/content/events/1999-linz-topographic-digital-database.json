@@ -1,0 +1,38 @@
+{
+  "id": "1999-linz-topographic-digital-database",
+  "dateDisplay": "May 1999",
+  "startDate": "1999-05",
+  "datePrecision": "month",
+  "year": 1999,
+  "label": "LINZ reports national topographic digital database completed",
+  "summary": "The May 1999 Landlink newsletter documented a four-year programme converting 330 published 1:50,000 map sheets into a seamless digital topographic database containing about 12 GB of data.",
+  "url": "/entities/land-information-new-zealand-linz/",
+  "passageIds": [],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz",
+    "entity:department-of-survey-and-land-information-dosli",
+    "entity:terralink",
+    "person:john-spittal",
+    "person:nathan-heazlewood",
+    "person:robin-pickering",
+    "person:dave-mole",
+    "person:rob-parkin",
+    "person:paul-lundberg",
+    "person:geoff-howard",
+    "person:joyce-baillie",
+    "person:fran-mcnamara",
+    "person:lorraine-crocker"
+  ],
+  "themeIds": [],
+  "categories": [
+    "topography",
+    "government",
+    "data"
+  ],
+  "sources": [
+    {
+      "label": "LINZ Landlink, issue 8, May 1999, p.1, 'LINZ first in mapping', digitised scan supplied by Nathan Heazlewood; public image copy not yet available",
+      "url": "/images/landlink-1999-topographic-database/"
+    }
+  ]
+}

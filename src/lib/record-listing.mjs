@@ -1,6 +1,6 @@
 /** Directory references retain their permanent routes and source records. */
 export function isListedRecord(record) {
-  return record.kind !== 'Story' && record.listingStatus !== 'reference-only';
+  return record.kind !== 'Story' && record.listingStatus !== 'reference-only' && record.listingStatus !== 'alias-only';
 }
 
 /** A person's profile must lead to an entry, event or reading passage. */

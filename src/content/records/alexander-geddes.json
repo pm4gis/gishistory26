@@ -5,9 +5,10 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/alexander-geddes/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "University of Otago remote-sensing co-author, Tasman Glacier, 2014.",
   "story": [
-    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Alexander Geddes as an author of “A multi-epoch triangulation of stereo ASTER images for Tasman Glacier elevation change”."
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Alexander Geddes as an author of “A multi-epoch triangulation of stereo ASTER images for Tasman Glacier elevation change”.",
+    "The original GeoCart 2014 accepted abstract identifies Geddes, Pascal Sirguey and Nicolas Cullen with the University of Otago. The study used multiple stereo ASTER satellite-image epochs to reconstruct elevation changes at Tasman Glacier. It provides a dated New Zealand example of photogrammetry and remote sensing for measuring glacier surface changes, without distinguishing the individual technical steps performed by each co-author."
   ],
   "sources": [
     {
@@ -21,6 +22,12 @@
     [
       {
         "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "NZ Cartographic Society, GeoCart 2014 accepted abstracts with affiliations",
         "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
       }
     ]

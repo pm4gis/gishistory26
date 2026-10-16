@@ -1,0 +1,36 @@
+{
+  "id": "person:chris-kinzett",
+  "slug": "chris-kinzett",
+  "name": "Chris Kinzett",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/chris-kinzett/",
+  "description": "Survey and mapping technician, former technical leader in topographic work; recollections from 1967 onward.",
+  "story": [
+    "LINZ's 'Our Whakapapa' exhibition quotes Chris Kinzett, identified as a former Technical Leader (Topographic), recalling his first day at the Department of Lands and Survey in 1967. His account describes early departmental mapping and survey practices and the introduction of digital technology.",
+    "The 1960–1979 exhibition panel describes Kinzett's later involvement in the cadastre and computer-assisted topographic mapping. It dates the establishment of a Computer Mapping Unit to 1979. The panel is retrospective evidence of the departmental technical transition; it does not establish that Kinzett personally founded the unit."
+  ],
+  "sources": [
+    {
+      "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+      "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+      }
+    ],
+    [
+      {
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+      }
+    ]
+  ],
+  "status": "Documentary exhibition evidence, 2026 retrospective relating to pre-2026 work"
+}

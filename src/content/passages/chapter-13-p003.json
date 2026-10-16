@@ -4,7 +4,7 @@
   "articleId": "article:chapter-13",
   "title": "A national conversion job",
   "order": 2,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "themeIds": [
     "cadastre"
   ],
@@ -39,6 +39,30 @@
       "markdown": "Surveyors and cadastral specialists interpreted source records. Digitising operators captured geometry. Cartographic and technical staff reconciled source sheets. Database technicians, systems staff, programmers, contractors and quality-control teams supported production. Their work maintained a national parcel database alongside the conversion of paper linework.",
       "sources": [],
       "id": "ch13-s03-p04"
+    },
+    {
+      "type": "paragraph",
+      "id": "ch13-s03-p05",
+      "text": "The 1980–1989 LINZ panel adds a district-office account: it says DOSLI teams digitised thousands of cadastral record sheets in each of the twelve district offices, while terminals and an electronic data system brought routine records into computer workflows. This is a retrospective description; LINZ’s historical database account independently dates cadastral-map digitisation from the mid-1980s, and Allan Wilson’s 1990 article documents the DCDB as an active national programme. The panel also dates New Zealand’s first GPS survey to Fiordland in March 1989. Chapter 18 records Te Ara’s earlier 1986 date as the earliest identified GPS survey, while noting that the original survey record remains unrecovered; no 1989 first-survey event is added.",
+      "markdown": "The 1980–1989 LINZ panel adds a district-office account: it says DOSLI teams digitised thousands of cadastral record sheets in each of the twelve district offices, while terminals and an electronic data system brought routine records into computer workflows. This is a retrospective description; LINZ’s historical database account independently dates cadastral-map digitisation from the mid-1980s, and Allan Wilson’s 1990 article documents the DCDB as an active national programme. The panel also dates New Zealand’s first GPS survey to Fiordland in March 1989. Chapter 18 records Te Ara’s earlier 1986 date as the earliest identified GPS survey, while noting that the original survey record remains unrecovered; no 1989 first-survey event is added.",
+      "sources": [
+        {
+          "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1980–1989” (photographed 16 October 2026)",
+          "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+        },
+        {
+          "label": "LINZ, Historic property databases: DCDB lineage and district maintenance cutovers",
+          "url": "https://www.linz.govt.nz/products-services/data/types-linz-data/property-ownership-and-boundary-data/historic-property-databases"
+        },
+        {
+          "label": "Allan Wilson, GIS Technology Used to Establish a Digital Cadastral Database, New Zealand Geographer 46(1), April 1990, pp.33–36",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1745-7939.1990.tb01945.x"
+        },
+        {
+          "label": "Te Ara Encyclopedia of New Zealand, Later developments: Global positioning system",
+          "url": "https://teara.govt.nz/en/modern-mapping-and-surveying/page-6"
+        }
+      ]
     }
   ],
   "sources": [],

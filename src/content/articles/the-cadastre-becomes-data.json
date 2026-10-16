@@ -5,7 +5,7 @@
   "url": "/stories/the-cadastre-becomes-data/",
   "summary": "A cadastral line on a computer screen can look wonderfully certain. It is thin, continuous and usually drawn with more geometric neatness than the paper map that preceded it. By the late 1980s New Zealand was building a national d",
   "status": "published",
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "readingOrder": 13,
   "themeIds": [
     "cadastre"
@@ -31,6 +31,10 @@
     {
       "id": "ch13-note-05",
       "text": "5. Survey Conversion and retirement of DCDB. LINZ accuracy guidance, contemporary cadastral automation papers and official Landonline historical records document Survey Conversion and the district-by-district cessation of DCDB maintenance from Otago on 30 March 2000 through North Auckland on 22 March 2002. This is the bridge to Chapter 14, not a second Landonline narrative."
+    },
+    {
+      "id": "ch13-note-06",
+      "text": "The 1980–1989 LINZ exhibition panel reports that teams in all twelve DOSLI district offices digitised cadastral record sheets and describes district-office computerisation. This is retrospective panel evidence. Official LINZ history independently dates DCDB map digitisation from the mid-1980s, and Allan Wilson’s April 1990 paper documents the programme in progress. The panel’s March 1989 first-GPS claim conflicts with Te Ara’s 1986 date; Chapter 18 retains 1986 as earliest identified and does not treat the original survey record as recovered."
     }
   ]
 }

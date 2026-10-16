@@ -1,0 +1,36 @@
+{
+  "id": "entity:lands-survey-computer-mapping-unit-1979",
+  "slug": "lands-survey-computer-mapping-unit-1979",
+  "name": "Lands and Survey Computer Mapping Unit, 1979",
+  "kind": "Operational centre",
+  "category": "Government",
+  "url": "/entities/lands-survey-computer-mapping-unit-1979/",
+  "description": "Computer-aided surveying and map digitisation unit established in 1979.",
+  "story": [
+    "The LINZ 'Our Whakapapa' exhibition identifies a Computer Mapping Unit established in the Department of Lands and Survey in 1979, concerned with digitisation of the cadastre and the move towards computer-assisted topographic production.",
+    "This was an institutional step in New Zealand's transition from conventional cartographic drafting and map sheets to stored geographic information. Its history must be distinguished from the later DOSLI Digital Cadastral Database and national digital topographic database conversion programmes."
+  ],
+  "sources": [
+    {
+      "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+      "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+      }
+    ],
+    [
+      {
+        "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+      }
+    ]
+  ],
+  "status": "Documentary exhibition evidence"
+}

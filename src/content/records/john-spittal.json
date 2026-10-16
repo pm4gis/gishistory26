@@ -1,0 +1,36 @@
+{
+  "id": "person:john-spittal",
+  "slug": "john-spittal",
+  "name": "John Spittal",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/john-spittal/",
+  "description": "LINZ Chief Topographer/Hydrographer at the 1999 digital topographic database milestone.",
+  "story": [
+    "Land Information New Zealand's internal newsletter Landlink named John Spittal as Chief Topographer/Hydrographer in May 1999 when it reported completion of the national topographic digital database. The programme had begun in 1995 under DOSLI, covered material published on 330 topographic sheets at 1:50,000 and produced a national dataset of about 12 GB.",
+    "Spittal described how the database could replace fixed paper-map production with one structured digital geographic record that could be queried for mapping and analysis. The newsletter establishes a senior technical spokesperson role at LINZ but does not name him as the individual programmer or data-capture operator."
+  ],
+  "sources": [
+    {
+      "label": "LINZ Landlink, issue 8, May 1999, p.1, 'LINZ first in mapping', digitised scan supplied by Nathan Heazlewood; public image copy not yet available",
+      "url": "/images/landlink-1999-topographic-database/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "LINZ Landlink, issue 8, May 1999, p.1, 'LINZ first in mapping', digitised scan supplied by Nathan Heazlewood; public image copy not yet available",
+        "url": "/images/landlink-1999-topographic-database/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Landlink, issue 8, May 1999, p.1, 'LINZ first in mapping', digitised scan supplied by Nathan Heazlewood; public image copy not yet available",
+        "url": "/images/landlink-1999-topographic-database/"
+      }
+    ]
+  ],
+  "status": "Historical evidence documented; original newsletter image awaiting public asset"
+}

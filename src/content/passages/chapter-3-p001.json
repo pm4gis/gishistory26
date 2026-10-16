@@ -4,13 +4,15 @@
   "articleId": "article:chapter-3",
   "title": "Digitising map sheets",
   "order": 0,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-16",
   "themeIds": [],
   "recordIds": [
     "chapter:3",
     "entity:department-of-lands-and-survey",
     "entity:university-of-canterbury",
-    "person:m-s-colley"
+    "person:m-s-colley",
+    "entity:lands-survey-computer-mapping-unit-1979",
+    "person:chris-kinzett"
   ],
   "blocks": [
     {
@@ -33,6 +35,22 @@
       "markdown": "Computers were already being used for survey adjustment, engineering calculation and coordinate transformation. Those applications could accept geographic measurements, calculate results and print an answer without retaining a reusable map database. MAPPAK retained the linework itself in digital form. Once a feature had been captured, the same geometry could be corrected, transformed and plotted again without returning to the original sheet.",
       "sources": [],
       "id": "ch03-s01-p03"
+    },
+    {
+      "type": "paragraph",
+      "id": "ch03-s01-p04",
+      "text": "The 1960–1979 LINZ panel identifies a separate Department of Lands and Survey Computer Mapping Unit established in 1979 for cadastral digitisation and computer-assisted topographic production, and names Chris Kinzett in its account of technical work. Colley’s contemporary thesis independently documents MAPPAK’s cadastral mapping functions. The evidence connects two strands of late-1970s computer mapping; it does not show that the unit and MAPPAK were the same system, or that Kinzett founded the unit.",
+      "markdown": "The 1960–1979 LINZ panel identifies a separate Department of Lands and Survey Computer Mapping Unit established in 1979 for cadastral digitisation and computer-assisted topographic production, and names Chris Kinzett in its account of technical work. Colley’s contemporary thesis independently documents MAPPAK’s cadastral mapping functions. The evidence connects two strands of late-1970s computer mapping; it does not show that the unit and MAPPAK were the same system, or that Kinzett founded the unit.",
+      "sources": [
+        {
+          "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+          "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+        },
+        {
+          "label": "M. S. Colley, A computer system for a cadastral mapping application, MSc thesis, University of Canterbury, 1979",
+          "url": "https://ir.canterbury.ac.nz/items/f2abb49d-e38f-4019-b8ba-38667aaba5bb"
+        }
+      ]
     }
   ],
   "sources": [],

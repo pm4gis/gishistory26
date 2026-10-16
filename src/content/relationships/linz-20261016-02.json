@@ -1,0 +1,13 @@
+{
+  "id": "relationship:linz-2025-aaron-jordan",
+  "a": "person:aaron-jordan",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Head of Location Information, April 2025",
+  "basis": "LINZ's April 2025 Basemaps release identifies Aaron Jordan as Head of Location Information and quotes his description of the national gridless topographic map layer.",
+  "sources": [
+    {
+      "label": "LINZ, NZ Topo maps now available on Basemaps, 9 April 2025",
+      "url": "https://www.linz.govt.nz/news/2025-04/nz-topo-maps-now-available-basemaps"
+    }
+  ]
+}

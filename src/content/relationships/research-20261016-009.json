@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-20261016-009",
+  "a": "person:cyprianus-nugroho-sulistyo-priyono",
+  "b": "entity:massey-university",
+  "label": "Postgraduate research, 1993",
+  "basis": "Priyono's 1993 Massey University thesis/dissertation establishes the institution and geospatial research contribution.",
+  "sources": [
+    {
+      "label": "C. N. S. Priyono, The use of a geographic information system (GIS) for farm soil conservation planning, Massey University thesis, 1993",
+      "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/4d3674a9-4ae5-4d00-ab08-7783ae12ab70/content"
+    }
+  ]
+}

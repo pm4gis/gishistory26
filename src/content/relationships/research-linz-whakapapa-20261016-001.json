@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-linz-whakapapa-20261016-001",
+  "a": "person:chris-kinzett",
+  "b": "entity:department-of-lands-and-survey",
+  "label": "Mapping and topographic work from 1967",
+  "basis": "LINZ's historical exhibition quotes Kinzett on joining Lands and Survey in 1967 and identifies him as a former technical leader in topographic work.",
+  "sources": [
+    {
+      "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+      "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+    }
+  ]
+}

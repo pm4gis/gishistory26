@@ -5,9 +5,10 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/femke-reitsma/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "University of Canterbury GIScience contributor to volunteered geographic information quality, 2014.",
   "story": [
-    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Femke Reitsma as an author of “Assessing crowdsourced geographic data quality”."
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Femke Reitsma as an author of “Assessing crowdsourced geographic data quality”.",
+    "A 2014 GeoCart abstract names Reitsma and Paul Goodhue of the University of Canterbury, with Mark Trotter of the University of New England and the CRC for Spatial Information, as authors of a study assessing crowdsourced geographic data quality from a known crowd. The affiliations establish a New Zealand university connection and an international research partnership, rather than a local production GIS deployment."
   ],
   "sources": [
     {
@@ -21,6 +22,12 @@
     [
       {
         "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "NZ Cartographic Society, GeoCart 2014 accepted abstracts with affiliations",
         "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
       }
     ]

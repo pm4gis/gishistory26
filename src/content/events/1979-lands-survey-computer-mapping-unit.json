@@ -1,0 +1,27 @@
+{
+  "id": "1979-lands-survey-computer-mapping-unit",
+  "dateDisplay": "1979",
+  "startDate": "1979",
+  "datePrecision": "year",
+  "year": 1979,
+  "label": "Computer Mapping Unit established in Lands and Survey",
+  "summary": "LINZ's retrospective historical exhibition dates the Department of Lands and Survey's Computer Mapping Unit to 1979.",
+  "url": "/entities/lands-survey-computer-mapping-unit-1979/",
+  "recordIds": [
+    "entity:department-of-lands-and-survey",
+    "entity:lands-survey-computer-mapping-unit-1979",
+    "person:chris-kinzett"
+  ],
+  "passageIds": [],
+  "themeIds": [],
+  "categories": [
+    "mapping",
+    "government"
+  ],
+  "sources": [
+    {
+      "label": "Toitū Te Whenua LINZ, Our Whakapapa exhibition panel “1960–1979” (photographed 16 October 2026)",
+      "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-20261016-010",
+  "a": "person:sumbangan-baja",
+  "b": "entity:massey-university",
+  "label": "Postgraduate research, 1995",
+  "basis": "Baja's 1995 Massey University thesis/dissertation establishes the institution and geospatial research contribution.",
+  "sources": [
+    {
+      "label": "Sumbangan Baja, Land use changes on the Hautere Plains, Massey University thesis, 1995",
+      "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/77c92511-10ca-40e2-8070-ec1d5a9a0f93/content"
+    }
+  ]
+}

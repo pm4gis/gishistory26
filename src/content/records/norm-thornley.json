@@ -6,15 +6,32 @@
   "category": "People",
   "url": "/people/norm-thornley/",
   "story": [
-    "Norm Thornley was geospatial services manager in the Department of Conservation's information systems and services function when he attended the 2012 Esri Asia Pacific User Conference in Auckland. Esri recorded his assessment of the event's practical and technical content, especially its relevance to community-based conservation."
+    "Norm Thornley was geospatial services manager in the Department of Conservation's information systems and services function when he attended the 2012 Esri Asia Pacific User Conference in Auckland. Esri recorded his assessment of the event's practical and technical content, especially its relevance to community-based conservation.",
+    "A 2002 Department of Conservation research publication on measuring conservation achievement in the Twizel Area names N. J. Thornley as a co-author based in Christchurch. Massey University's 2009 GIS thesis identifies Norman John Thornley as its author and concerns a Canterbury Department of Conservation assessment of the threat posed by didymo. The matching initials, surname, speciality and DOC/Canterbury context support identifying these records with Norm Thornley.",
+    "DOC's October 2014 staff profile records Norm Thornley leading its national geospatial services team, supporting spatial analysis for conservation including marine protection, avalanche prediction and wildfire modelling. The earlier conservation research and the later staff profile are retained as separate, dated contributions."
   ],
   "sources": [
     {
       "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe (Winter 2013)",
       "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+    },
+    {
+      "label": "Stephens, Brown and N. J. Thornley, Measuring Conservation Achievement, DOC Science for Conservation 200 (2002)",
+      "url": "https://www.doc.govt.nz/documents/science-and-technical/sfc200.pdf"
+    },
+    {
+      "label": "Norman John Thornley, Geospatial Threat Measurement, Massey University thesis (2009)",
+      "url": "https://mro.massey.ac.nz/items/97840cab-921e-43c3-a3af-74fb81acc7ac"
+    },
+    {
+      "label": "Department of Conservation, Jobs at DOC: Norm Thornley, Geospatial Services Manager (3 October 2014)",
+      "url": "https://blog.doc.govt.nz/2014/10/03/geospatial-job-norm-thornley/"
     }
   ],
-  "aliases": [],
+  "aliases": [
+    "Norman John Thornley",
+    "N. J. Thornley"
+  ],
   "themeIds": [
     "profession"
   ],
@@ -25,6 +42,22 @@
       {
         "label": "Esri, ArcNews, Esri Regional User Conferences Spread ArcGIS Know-How Around the Globe (Winter 2013)",
         "url": "https://www.esri.com/about/newsroom/arcnews/esri-regional-user-conferences-spread-arcgis-know-how-around-the-globe"
+      }
+    ],
+    [
+      {
+        "label": "Stephens, Brown and N. J. Thornley, Measuring Conservation Achievement, DOC Science for Conservation 200 (2002)",
+        "url": "https://www.doc.govt.nz/documents/science-and-technical/sfc200.pdf"
+      },
+      {
+        "label": "Norman John Thornley, Geospatial Threat Measurement, Massey University thesis (2009)",
+        "url": "https://mro.massey.ac.nz/items/97840cab-921e-43c3-a3af-74fb81acc7ac"
+      }
+    ],
+    [
+      {
+        "label": "Department of Conservation, Jobs at DOC: Norm Thornley, Geospatial Services Manager (3 October 2014)",
+        "url": "https://blog.doc.govt.nz/2014/10/03/geospatial-job-norm-thornley/"
       }
     ]
   ]

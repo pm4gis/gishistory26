@@ -2,28 +2,37 @@
   "id": "person:ian-diaz-rainey",
   "slug": "ian-diaz-rainey",
   "name": "Ian Diaz-Rainey",
-  "kind": "Person",
-  "category": "People",
+  "kind": "Alias",
+  "category": "Name variant",
   "url": "/people/ian-diaz-rainey/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "Alternative name entry for Ivan Diaz-Rainey; preserved historical URL.",
   "story": [
-    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Ian Diaz-Rainey as an author of “Modelling climate-related coastal flooding hazards and residential property values”."
+    "The 2022 NZGRC paper listed a form 'Ian Diaz-Rainey', while the University of Otago's STRAND project identifies Ivan Diaz-Rainey for the related research. This is retained as a name-variant reference with the contribution attached to the canonical Ivan record."
   ],
   "sources": [
     {
-      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
-      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      "label": "University of Otago STRAND project presentations naming Ivan Diaz-Rainey (2022–2024)",
+      "url": "https://blogs.otago.ac.nz/strandproject/presentations/"
     }
   ],
-  "aliases": [],
+  "aliases": [
+    "Ivan Diaz-Rainey"
+  ],
   "themeIds": [],
   "paragraphSources": [
     [
       {
-        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
-        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+        "label": "University of Otago STRAND project presentations naming Ivan Diaz-Rainey (2022–2024)",
+        "url": "https://blogs.otago.ac.nz/strandproject/presentations/"
       }
     ]
   ],
-  "status": "Source-backed historical account"
+  "status": "Alias reconciled; retained route",
+  "listingStatus": "alias-only",
+  "contextLinks": [
+    {
+      "label": "Canonical biography: Ivan Diaz-Rainey",
+      "url": "/people/ivan-diaz-rainey/"
+    }
+  ]
 }

@@ -13,12 +13,18 @@
   "recordIds": [
     "entity:department-of-survey-and-land-information-dosli",
     "entity:terralink",
-    "chapter:13"
+    "chapter:13",
+    "entity:land-information-new-zealand-linz"
   ],
   "themeIds": [],
   "categories": [
     "government",
     "industry"
   ],
-  "sources": []
+  "sources": [
+    {
+      "label": "LINZ, Our whakapapa: institutional history and 1987–2021 chronology",
+      "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+    }
+  ]
 }

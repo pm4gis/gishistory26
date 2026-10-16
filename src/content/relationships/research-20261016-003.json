@@ -1,0 +1,13 @@
+{
+  "id": "relationship:research-20261016-003",
+  "a": "person:a-s-palmer",
+  "b": "project:soil-conservation-gis-apiti-1993",
+  "label": "Co-author, 1993",
+  "basis": "Palmer is listed as a co-author in the 1993 New Zealand Soil News farm soil conservation GIS abstract.",
+  "sources": [
+    {
+      "label": "New Zealand Soil News, 1993, farm soil conservation GIS conference abstract by C. S. N. Priyono, M. P. Tuohy and A. S. Palmer",
+      "url": "https://cdm20022.contentdm.oclc.org/digital/api/collection/p20022coll30/id/833/download"
+    }
+  ]
+}

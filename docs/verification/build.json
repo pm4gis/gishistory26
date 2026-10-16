@@ -1,57 +1,49 @@
 {
-  "files": 7858,
+  "files": 9088,
   "largestAsset": 24883682,
   "javascript": [
     {
-      "path": "dist/_astro/Browse.BH7f11pe.js",
-      "gzip": 1772
+      "path": "dist/_astro/Browse.B2pVyGsl.js",
+      "gzip": 1712
     },
     {
-      "path": "dist/_astro/Layout.astro_astro_type_script_index_0_lang.CyPyqGmU.js",
-      "gzip": 1733
+      "path": "dist/_astro/Layout.astro_astro_type_script_index_0_lang.DAQYwHA-.js",
+      "gzip": 2016
     },
     {
-      "path": "dist/_astro/Reader.DCamtEZw.js",
-      "gzip": 14885
+      "path": "dist/_astro/Reader.B1Z1-LlB.js",
+      "gzip": 14969
     },
     {
-      "path": "dist/_astro/Timeline.8ud-ydc_.js",
-      "gzip": 14309
+      "path": "dist/_astro/Timeline.DETarwS9.js",
+      "gzip": 14737
     },
     {
-      "path": "dist/_astro/Timeline.B1TDQj0a.js",
+      "path": "dist/_astro/Timeline.Du5KD2_D.js",
       "gzip": 69
     },
     {
-      "path": "dist/_astro/WanangaVideos.CC_i1t8w.js",
-      "gzip": 2895
+      "path": "dist/_astro/WanangaVideos.BNXnW6k2.js",
+      "gzip": 2901
     },
     {
-      "path": "dist/_astro/client.BSqglUCA.js",
-      "gzip": 17360
+      "path": "dist/_astro/client.BsGZRQd-.js",
+      "gzip": 17414
     },
     {
-      "path": "dist/_astro/client.svelte.B0Vj-7Ap.js",
+      "path": "dist/_astro/client.svelte.D9hab89J.js",
       "gzip": 499
-    },
-    {
-      "path": "dist/_astro/events.mTVV8OWN.js",
-      "gzip": 2258
-    },
-    {
-      "path": "dist/_astro/graphology.B2WzTXYs.js",
-      "gzip": 11348
     },
     {
       "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.BbGKwPxG.js",
       "gzip": 827
     },
     {
-      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.Chrws1FS.js",
-      "gzip": 3090
+      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.CJuNmMKt.js",
+      "gzip": 2751
     },
     {
-      "path": "dist/_astro/legacy.CUihlcqZ.js",
+      "path": "dist/_astro/legacy.B-WJfZKd.js",
       "gzip": 125
     },
     {
@@ -61,10 +53,6 @@
     {
       "path": "dist/_astro/passage-contributions.BwdmXVhk.js",
       "gzip": 918
-    },
-    {
-      "path": "dist/_astro/sigma.esm.D9knFWKW.js",
-      "gzip": 94544
     }
   ]
 }

@@ -1,0 +1,39 @@
+{
+  "id": "person:a-g-gillingham",
+  "slug": "a-g-gillingham",
+  "name": "A. G. Gillingham",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/a-g-gillingham/",
+  "description": "Documented New Zealand GIS and spatial-information contribution, 1993–2000.",
+  "story": [
+    "A. G. Gillingham is named as a co-author of 'Precision Agriculture Applications in New Zealand' in the proceedings index for the 13th Annual Fertilizer and Lime Research Centre workshop held at Massey University in February 2000.",
+    "The publication records Gillingham's contribution to the discussion of precision agriculture in New Zealand. The index does not establish Gillingham's particular technical tasks or full given names."
+  ],
+  "sources": [
+    {
+      "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+      "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+    }
+  ],
+  "aliases": [
+    "A.G. Gillingham",
+    "Gillingham, A. G."
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ],
+    [
+      {
+        "label": "Fertilizer and Lime Research Centre, Massey University, 13th Annual Workshop, 2000: Precision Agriculture Applications in New Zealand",
+        "url": "https://flrc.massey.ac.nz/workshops/00/paperlist.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account; editorial review pending"
+}
