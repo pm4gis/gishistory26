@@ -11,7 +11,13 @@
     "passage:publication-gis-mapping-wetland-projects-2021"
   ],
   "recordIds": [
+    "dataset:lcdb",
+    "dataset:nz-primary-parcels",
+    "dataset:nz-property-titles",
     "entity:department-of-conservation",
+    "entity:gis-in-conservation-scgis-new-zealand-and-fiji",
+    "entity:land-information-new-zealand-linz",
+    "entity:manaaki-whenua-landcare-research",
     "person:duane-wilkins"
   ],
   "themeIds": [

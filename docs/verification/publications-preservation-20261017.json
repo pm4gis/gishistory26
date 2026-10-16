@@ -1,7 +1,7 @@
 {
   "base": "ead680f09d2c06247810a6aa6420f521e78dce45",
   "checkedAt": "2026-10-17",
-  "checks": "Existing record fields and array prefixes preserved; original event identities, prose and dates preserved; documentary contributions and links appended. One exact source-backed paragraph correction resolves the misleading 2007 conference gap using the dated CFRT handout. All other passage fields and blocks are unchanged.",
+  "checks": "Existing record fields and array prefixes preserved; original event identities, prose and dates preserved; documentary contributions and links appended. One exact source-backed paragraph correction resolves the misleading 2007 conference gap using the dated CFRT handout. The author-supplied explanation for the 2025 stopping point replaces one preface paragraph. All other passage fields and blocks are unchanged.",
   "updates": [
     {
       "file": "src/content/records/aaria-dobson-waitere.json",
@@ -77,6 +77,11 @@
       "file": "src/content/passages/chapter-29-p003.json",
       "before": "7caea75e4c12b893080093e4cc44be23f9f74e023f448a6fb6bf7a4cc33841f0",
       "after": "88b8f71c122ff32fcbf69745023518852e4538e7cdc1ccfd73a5aefbc253f99e"
+    },
+    {
+      "file": "src/content/passages/preface-p001.json",
+      "before": "42c050fd07285272c718af81f6f24a329b07f71307240e22a0862bc1b95f09a7",
+      "after": "b69730f02aed2981cc0616481f615ccc562040a14551c22282b58a686f9079a6"
     }
   ]
 }

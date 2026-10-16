@@ -37,7 +37,10 @@ export const contributedPrimarySources = [
       "New Zealand Geospatial Office",
       "national GIS coordination",
       "New Zealand Police",
-      "New Zealand Fire Service"
+      "New Zealand Fire Service",
+      "Manaaki Whenua Landcare Research",
+      "New Zealand Land Cover Database (LCDB)",
+      "Land Environments of New Zealand (LENZ), 2003"
     ],
     "assetPath": "/assets/historical/documents/nz-geospatial-strategy-2007.pdf",
     "publicationUrl": "/publications/nz-geospatial-strategy-2007/",
@@ -52,7 +55,10 @@ export const contributedPrimarySources = [
     "thumbnailPath": "/assets/historical/publications/nz-geospatial-strategy-2007-card.webp",
     "passageId": "passage:publication-nz-geospatial-strategy-2007",
     "recordIds": [
+      "dataset:land-environments-nz-2003",
+      "dataset:lcdb",
       "entity:land-information-new-zealand-linz",
+      "entity:manaaki-whenua-landcare-research",
       "entity:new-zealand-fire-service",
       "entity:new-zealand-police"
     ]
@@ -149,7 +155,9 @@ export const contributedPrimarySources = [
       "New Zealand Geospatial Office",
       "LINZ Data Service",
       "ANZLIC metadata",
-      "NZSDI"
+      "NZSDI",
+      "Land Information New Zealand (LINZ)",
+      "Manaaki Whenua Landcare Research"
     ],
     "assetPath": "/assets/historical/documents/nz-sdi-state-of-play-2012.pdf",
     "publicationUrl": "/publications/nz-sdi-state-of-play-2012/",
@@ -163,7 +171,10 @@ export const contributedPrimarySources = [
     "coverPath": "/assets/historical/publications/nz-sdi-state-of-play-2012-cover.png",
     "thumbnailPath": "/assets/historical/publications/nz-sdi-state-of-play-2012-card.webp",
     "passageId": "passage:publication-nz-sdi-state-of-play-2012",
-    "recordIds": []
+    "recordIds": [
+      "entity:land-information-new-zealand-linz",
+      "entity:manaaki-whenua-landcare-research"
+    ]
   },
   {
     "slug": "linz-geospatial-rd-priorities-2015",
@@ -203,7 +214,8 @@ export const contributedPrimarySources = [
       "geospatial research",
       "Forward Works Viewer",
       "Māori Maps",
-      "GIS Masters"
+      "GIS Masters",
+      "GeoNet geological hazard observations (from 2001)"
     ],
     "assetPath": "/assets/historical/documents/linz-geospatial-rd-priorities-2015.pdf",
     "publicationUrl": "/publications/linz-geospatial-rd-priorities-2015/",
@@ -218,6 +230,7 @@ export const contributedPrimarySources = [
     "thumbnailPath": "/assets/historical/publications/linz-geospatial-rd-priorities-2015-card.webp",
     "passageId": "passage:publication-linz-geospatial-rd-priorities-2015",
     "recordIds": [
+      "dataset:geonet-observations-2001",
       "entity:land-information-new-zealand-linz"
     ]
   },
@@ -259,7 +272,10 @@ export const contributedPrimarySources = [
       "LINZ–LEARNZ",
       "Map My Wāhi",
       "GIS in Schools",
-      "New Zealand Cartographic Society"
+      "New Zealand Cartographic Society",
+      "Land Information New Zealand (LINZ)",
+      "CORE Education / LEARNZ",
+      "Eagle Technology"
     ],
     "assetPath": "/assets/historical/documents/gis-day-education-poster-2018.pptx",
     "publicationUrl": "/publications/gis-day-education-poster-2018/",
@@ -275,6 +291,9 @@ export const contributedPrimarySources = [
     "thumbnailPath": "/assets/historical/publications/gis-day-education-poster-2018-card.webp",
     "passageId": "passage:publication-gis-day-education-poster-2018",
     "recordIds": [
+      "entity:core-education-learnz",
+      "entity:eagle-technology",
+      "entity:land-information-new-zealand-linz",
       "entity:new-zealand-cartographic-society"
     ]
   },
@@ -316,7 +335,12 @@ export const contributedPrimarySources = [
       "PLACE19",
       "Massey University",
       "LINZ",
-      "Māori GIS"
+      "Māori GIS",
+      "Duane Wilkins",
+      "Nathan Heazlewood",
+      "Graeme Henderson",
+      "Eagle Technology",
+      "GIS in Conservation / SCGIS New Zealand and Fiji"
     ],
     "assetPath": "/assets/historical/documents/place19-maori-gis-programme-2019.pdf",
     "publicationUrl": "/publications/place19-maori-gis-programme-2019/",
@@ -331,6 +355,8 @@ export const contributedPrimarySources = [
     "thumbnailPath": "/assets/historical/publications/place19-maori-gis-programme-2019-card.webp",
     "passageId": "passage:publication-place19-maori-gis-programme-2019",
     "recordIds": [
+      "entity:eagle-technology",
+      "entity:gis-in-conservation-scgis-new-zealand-and-fiji",
       "entity:land-information-new-zealand-linz",
       "entity:massey-university",
       "entity:te-kahui-manu-hokai-maori-gis-association",
@@ -338,13 +364,16 @@ export const contributedPrimarySources = [
       "person:andrew-ferrel",
       "person:anna-meissner",
       "person:dean-walker",
+      "person:duane-wilkins",
       "person:gabor-kereszturi",
+      "person:graeme-henderson",
       "person:jacob-robinson",
       "person:jade-weideman",
       "person:jonathan-procter",
       "person:kasey-oomen",
       "person:mark-palmer",
       "person:millan-ruka",
+      "person:nathan-heazlewood",
       "person:parker-jones",
       "person:raleigh-seamster",
       "person:sean-bragg",
@@ -392,7 +421,12 @@ export const contributedPrimarySources = [
       "Taranaki CDEM",
       "Eagle Technology",
       "NZGIS4EM",
-      "LINZ Key Datasets for Resilience"
+      "LINZ Key Datasets for Resilience",
+      "Nathan Heazlewood",
+      "New Plymouth District Council",
+      "Taranaki Regional Council",
+      "South Taranaki District Council",
+      "Stratford District Council"
     ],
     "assetPath": "/assets/historical/documents/taranaki-cdem-geospatial-strategy-2021.pdf",
     "publicationUrl": "/publications/taranaki-cdem-geospatial-strategy-2021/",
@@ -408,10 +442,15 @@ export const contributedPrimarySources = [
     "passageId": "passage:publication-taranaki-cdem-geospatial-strategy-2021",
     "recordIds": [
       "entity:eagle-technology",
+      "entity:new-plymouth-district-council",
+      "entity:south-taranaki-district-council",
+      "entity:stratford-district-council",
       "entity:taranaki-civil-defence-and-emergency-management-group",
+      "entity:taranaki-regional-council",
       "person:ed-cook",
       "person:jacob-hechter",
       "person:melissa-brooks",
+      "person:nathan-heazlewood",
       "person:teresa-gordon"
     ]
   },
@@ -453,7 +492,13 @@ export const contributedPrimarySources = [
       "Manaaki Whenua",
       "Ōhinewai",
       "Retrolens",
-      "ArcGIS StoryMaps"
+      "ArcGIS StoryMaps",
+      "Manaaki Whenua Landcare Research",
+      "Land Information New Zealand (LINZ)",
+      "GIS in Conservation / SCGIS New Zealand and Fiji",
+      "New Zealand Land Cover Database (LCDB)",
+      "NZ Primary Parcels",
+      "NZ Property Titles (spatial)"
     ],
     "assetPath": "/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
     "publicationUrl": "/publications/gis-mapping-wetland-projects-2021/",
@@ -468,6 +513,12 @@ export const contributedPrimarySources = [
     "thumbnailPath": "/assets/historical/publications/gis-mapping-wetland-projects-2021-card.webp",
     "passageId": "passage:publication-gis-mapping-wetland-projects-2021",
     "recordIds": [
+      "dataset:lcdb",
+      "dataset:nz-primary-parcels",
+      "dataset:nz-property-titles",
+      "entity:gis-in-conservation-scgis-new-zealand-and-fiji",
+      "entity:land-information-new-zealand-linz",
+      "entity:manaaki-whenua-landcare-research",
       "person:duane-wilkins"
     ]
   }

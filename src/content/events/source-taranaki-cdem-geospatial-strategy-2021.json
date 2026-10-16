@@ -12,10 +12,15 @@
   ],
   "recordIds": [
     "entity:eagle-technology",
+    "entity:new-plymouth-district-council",
+    "entity:south-taranaki-district-council",
+    "entity:stratford-district-council",
     "entity:taranaki-civil-defence-and-emergency-management-group",
+    "entity:taranaki-regional-council",
     "person:ed-cook",
     "person:jacob-hechter",
     "person:melissa-brooks",
+    "person:nathan-heazlewood",
     "person:teresa-gordon"
   ],
   "themeIds": [

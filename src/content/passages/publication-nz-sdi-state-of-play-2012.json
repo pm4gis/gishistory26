@@ -8,7 +8,10 @@
   "themeIds": [
     "open-practice"
   ],
-  "recordIds": [],
+  "recordIds": [
+    "entity:land-information-new-zealand-linz",
+    "entity:manaaki-whenua-landcare-research"
+  ],
   "blocks": [
     {
       "id": "publication-nz-sdi-state-of-play-2012-p1",

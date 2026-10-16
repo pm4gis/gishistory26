@@ -9,6 +9,12 @@
     "maori-gis"
   ],
   "recordIds": [
+    "dataset:lcdb",
+    "dataset:nz-primary-parcels",
+    "dataset:nz-property-titles",
+    "entity:gis-in-conservation-scgis-new-zealand-and-fiji",
+    "entity:land-information-new-zealand-linz",
+    "entity:manaaki-whenua-landcare-research",
     "person:duane-wilkins"
   ],
   "blocks": [

@@ -11,7 +11,8 @@
     "passage:publication-nz-sdi-state-of-play-2012"
   ],
   "recordIds": [
-    "entity:land-information-new-zealand-linz"
+    "entity:land-information-new-zealand-linz",
+    "entity:manaaki-whenua-landcare-research"
   ],
   "themeIds": [
     "open-practice"

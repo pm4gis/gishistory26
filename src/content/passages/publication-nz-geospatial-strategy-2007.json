@@ -9,7 +9,10 @@
     "open-practice"
   ],
   "recordIds": [
+    "dataset:land-environments-nz-2003",
+    "dataset:lcdb",
     "entity:land-information-new-zealand-linz",
+    "entity:manaaki-whenua-landcare-research",
     "entity:new-zealand-fire-service",
     "entity:new-zealand-police"
   ],

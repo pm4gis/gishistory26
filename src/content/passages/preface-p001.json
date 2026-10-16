@@ -70,8 +70,12 @@
     },
     {
       "type": "paragraph",
-      "text": "I chose the end of 2025 as the stopping point because history needed a boundary.",
-      "sources": []
+      "text": "I chose the end of 2025 as the stopping point because that summer changed how I understood my own work. I discovered I could ask ChatGPT to build an ArcGIS Online web map using data from LINZ, Stats NZ and NIWA, symbolise it, publish it and share it, with the whole workflow automated. These were tasks I would previously have carried out myself. For me, that marked the end of the GIS practitioner as I had known it. GIS had become something quite different from the work I’d known and taught for nearly three decades.",
+      "sources": [
+        {
+          "label": "Duane Wilkins, personal account supplied 17 October 2026"
+        }
+      ]
     },
     {
       "type": "paragraph",
