@@ -49,7 +49,7 @@ Acquired in GitHub Actions, source files checked against pinned Git blobs:
 
 ## Batch 2: LINZ QGIS Data Importer originals, 2018–2021
 
-Base main 50cc01f98847571fe7c271dbfa6fe7dfa3208c7d, working branch media/linz-qgis-importer-2018-2021-20261016. This is archive-only research, with no automatic story or chapter placement. The 2015 first batch is merged through pull request #98, and Cloudflare confirms production deployment; the public custom-domain HTTP probe remains unavailable.
+Base main 50cc01f98847571fe7c271dbfa6fe7dfa3208c7d, working branch media/linz-qgis-importer-2018-2021-20261016; pull request #99 https://github.com/pm4gis/gishistory26/pull/99 . Original acquisition run 38888225681 passed source hashes, npm ci, all 129 tests, npm run build and responsive Chromium archive/rights checks. Assets were committed to the branch as 7013d743d1832e8a5dd3e530a72551a647c9aaa9. PR verification, merge and production are pending. This is archive-only research, with no automatic story or chapter placement. The 2015 first batch is merged through pull request #98, and Cloudflare confirms production deployment; the public custom-domain HTTP probe remains unavailable.
 
 Source: https://github.com/linz/linz-data-importer/tree/fff9011d63a921360dc0bcc65d5015268a1c33e8 ; source README embeds both examples; root LICENCE of the same immutable 2021 commit explicitly gives BSD 3-Clause redistribution rights, attribution and disclaimer, copyright 2018–2021 Toitū Te Whenua/LINZ and New Zealand Government. Full original licence is retained in public/assets/historical/licences/linz-data-importer-bsd-3-clause.txt and linked from each image detail page.
 
