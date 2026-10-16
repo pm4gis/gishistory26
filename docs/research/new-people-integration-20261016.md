@@ -12,7 +12,7 @@ Base: `29b576bcda4196a5d5c451c89d883f5682f26303`. New work in draft branch: **8 
 
 ## Duplicate restrictions
 
-Norman John Thornley (2009 Massey didymo thesis) is very probably the existing Norm Thornley (2012 DOC geospatial-manager account). These sources support a strong identity lead but do not conclusively establish the equivalence. **No second Thornley person was created; do not attach the thesis to the existing profile without confirming identity.**
+Norman John Thornley (2009 Massey didymo thesis) is very probably the existing Norm Thornley (2012 DOC geospatial-manager account). The 2002 DOC co-author citation supplies the initials N. J. at Christchurch, the 2009 thesis names Norman John in the Canterbury DOC context, and DOC's 2014 staff profile identifies Norm as geospatial services manager. The sources support treating Norman John and Norm as the same person. **The existing `person:norm-thornley` record was updated with aliases and the dated evidence, and no duplicate person was created.**
 
 ## Historical limits and status
 
