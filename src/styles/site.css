@@ -649,12 +649,47 @@
   border-color:var(--accent);
   box-shadow:var(--shade),inset 0 1px 0 var(--glass-glint);
  }
+ /* Extend the same restrained glass finish to search and edit controls. */
+ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]),select,textarea{
+  background:linear-gradient(145deg,
+   color-mix(in srgb,var(--surface) 92%,transparent),
+   color-mix(in srgb,var(--raised) 82%,transparent));
+  border-color:var(--glass-edge);
+  box-shadow:inset 0 1px 0 var(--glass-glint);
+  -webkit-backdrop-filter:blur(12px) saturate(128%);
+  backdrop-filter:blur(12px) saturate(128%);
+  transition:background .16s ease,border-color .16s ease,box-shadow .16s ease;
+ }
+ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]):hover,select:hover,textarea:hover{
+  border-color:color-mix(in srgb,var(--accent) 56%,var(--line));
+ }
+ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]):focus-visible,select:focus-visible,textarea:focus-visible{
+  border-color:var(--accent);
+ }
+ /* Image pixels remain untouched; only documentary card shells gain the finish. */
+ .documentary-gallery .image-index-card,.wananga-video-card{
+  background:linear-gradient(145deg,
+   color-mix(in srgb,var(--surface) 88%,transparent),
+   var(--glass-panel));
+  border-color:var(--glass-edge);
+  box-shadow:var(--shade),inset 0 1px 0 var(--glass-glint);
+  -webkit-backdrop-filter:blur(16px) saturate(130%);
+  backdrop-filter:blur(16px) saturate(130%);
+ }
+ .documentary-gallery .image-index-card:hover,
+ .documentary-gallery .image-index-card:focus-visible,
+ .documentary-gallery .image-index-card:focus-within,
+ .wananga-video-card:hover,.wananga-video-card:focus-within{
+  border-color:var(--accent);
+ }
 }
 @media(prefers-reduced-transparency:reduce){
  body{background:var(--bg)}
  .topbar,.nav--mobile,.appearance-panel,.card,.page,.timeline-box,
  .image-source-card,.reader-popover,.contents.open,.related.open,
- .chapter-catalogue-card,.network-panel,.timeline-event:not(.timeline-event--photo):not([aria-pressed="true"]),
+ .chapter-catalogue-card,.network-panel,.documentary-gallery .image-index-card,.wananga-video-card,
+ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]),select,textarea,
+ .timeline-event:not(.timeline-event--photo):not([aria-pressed="true"]),
  .period-choice:not(.active),.chapter-index a,.chapter-page-nav>.chapter-page-link,
  .footer{
   background:var(--surface);
@@ -815,4 +850,8 @@
 @media(prefers-reduced-motion:reduce){
  .dataset-shortcuts a:hover,.dataset-card:hover .dataset-card-media img{transform:none}
  .dataset-shortcuts a,.dataset-card-media img{transition:none}
+}
+@media(prefers-reduced-transparency:reduce){
+ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]),select,textarea{box-shadow:none}
+ .documentary-gallery .image-index-card,.wananga-video-card{box-shadow:var(--shade)}
 }
