@@ -5,6 +5,8 @@ on:
       - 'src/content/events/source-*.json'
       - 'src/lib/contributed-primary-sources.mjs'
       - 'src/pages/sources/documents/**'
+      - 'src/pages/publications/**'
+      - 'scripts/publications-browser-qa.mjs'
       - 'src/content/articles/*.json'
       - 'tests/contributed-primary-sources.test.mjs'
       - '.github/workflows/verify-eight-contributed-sources.yml'
@@ -38,3 +40,4 @@ jobs:
             sleep 1
           done
           node scripts/contributed-primary-sources-browser-qa.mjs
+          node scripts/publications-browser-qa.mjs
