@@ -1,0 +1,33 @@
+name: Live SEO crawl acceptance
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/verify-live-seo.mjs'
+      - '.github/workflows/live-seo-acceptance.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/verify-live-seo.mjs'
+      - '.github/workflows/live-seo-acceptance.yml'
+permissions:
+  contents: read
+jobs:
+  public-crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+      - name: Check live robots, sitemap, AI guidance, canonical pages and structured data
+        run: node scripts/verify-live-seo.mjs
+      - name: Retain machine-readable acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-seo-acceptance
+          path: docs/verification/live-seo-acceptance.json
+          if-no-files-found: warn
+          retention-days: 30
