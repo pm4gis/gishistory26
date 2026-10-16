@@ -221,21 +221,30 @@ try{
    const themeHref=await page.locator('#themes article.art-card .title').first().getAttribute('href');
    assert.ok(themeHref.startsWith('/themes/'));
   });
-  await check(viewport.name+' direct email draft and no-form fallback',async()=>{
+  await check(viewport.name+' page-specific correction links and email fallbacks',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    const links=page.locator('.nav-contribute');
    assert.equal(await links.count(),2);
+   const correctionHref=await links.first().getAttribute('href');
+   const correctionUrl=new URL(correctionHref,base);
+   assert.equal(correctionUrl.pathname,'/contribute/');
+   assert.equal(correctionUrl.searchParams.get('page'),'A History of GIS in New Zealand');
+   assert.equal(new URL(correctionUrl.searchParams.get('pageUrl')).pathname,'/');
    for(const anchor of await links.all()){
-    const uri=new URL(await anchor.getAttribute('href'));
-    assert.equal(uri.protocol,'mailto:');
-    assert.equal(decodeURIComponent(uri.pathname),'pm4gis@gmail.com');
-    assert.ok((uri.searchParams.get('body')||'').includes('attach any photos'),'mail body '+JSON.stringify(await anchor.getAttribute('href')).slice(0,950));
+    assert.equal(new URL(await anchor.getAttribute('href'),base).pathname,'/contribute/');
     assert.equal(await anchor.getAttribute('target'),null);
    }
-   await page.goto(base+'/contribute/',{waitUntil:'domcontentloaded'});
+   await page.goto(correctionUrl.href,{waitUntil:'domcontentloaded'});
    assert.equal(await page.locator('h1').innerText(),'Email a contribution');
+   await page.waitForFunction(()=>document.getElementById('contribution-page-title')?.textContent?.includes('A History of GIS in New Zealand'));
+   assert.equal(await page.locator('#contribution-page-title').innerText(),'Page: A History of GIS in New Zealand');
    assert.equal(await page.locator('form').count(),0);
    assert.equal(await page.locator('input, textarea').count(),0);
+   const contextualDraft=new URL(await page.locator('#contribution-mailto').getAttribute('href'));
+   assert.equal(contextualDraft.protocol,'mailto:');
+   assert.ok(contextualDraft.searchParams.get('body').includes('Link to page: https://history.pm4gis.nz/'));
+   assert.ok(contextualDraft.searchParams.get('body').includes('reuse rights or licence'));
+   await page.goto(base+'/contribute/',{waitUntil:'domcontentloaded'});
    const alternative=new URL(await page.locator('#contribution-mailto').getAttribute('href'));
    assert.equal(alternative.protocol,'mailto:');
    assert.equal(decodeURIComponent(alternative.pathname),'pm4gis@gmail.com');

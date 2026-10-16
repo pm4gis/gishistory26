@@ -81,5 +81,9 @@ test('public network uses SVG without the broken WebGL rendering path', () => {
   assert.match(page,/id="graph"/);
   assert.match(page,/id="network-zoom-in"/);
   assert.match(page,/id="network-evidence-title"/);
+  assert.match(page,/id="focus-search"/);
+  assert.match(page,/data-network-focus/);
+  assert.match(page,/connections=none/);
+  assert.match(script,/focusSearch.addEventListener\('input'/);
   assert.match(styles,/var\(--surface\)/);
 });

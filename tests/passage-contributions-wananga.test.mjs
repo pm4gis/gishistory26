@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import fs from 'node:fs';
-import {passageContributionMailtoUrl,siteContributionMailtoUrl,passageContributionPageUrl,contributionDraft,contributionMailtoUrl,contributionText,contributionContextFromSearch,passagePermanentUrl,contributionRecipient} from '../src/lib/passage-contributions.mjs';
+import {passageContributionMailtoUrl,siteContributionMailtoUrl,siteContributionPageUrl,passageContributionPageUrl,contributionDraft,contributionMailtoUrl,contributionText,contributionContextFromSearch,passagePermanentUrl,contributionRecipient,productionOrigin} from '../src/lib/passage-contributions.mjs';
 import {ngaPoutamaVideos,ngaPoutamaPlaylist,ngaPoutamaThumbnail,ngaPoutamaForPassage,ngaPoutamaForEvent,ngaPoutamaRecordLinks} from '../src/lib/nga-poutama-videos.mjs';
 
 const article={title:'Coordinates enter the computer',url:'/stories/coordinates-enter-the-computer/'};
@@ -14,12 +14,26 @@ test('passage Contribute goes directly to a provider-neutral mailto draft',()=>{
  assert.equal(mail.protocol,'mailto:');
  assert.equal(decodeURIComponent(mail.pathname),contributionRecipient);
  assert.ok(mail.searchParams.get('subject').includes(passage.title));
- for(const phrase of ['Chapter: '+article.title,'Passage: '+passage.title,'Link to passage: '+url,'correct, add or clarify','sources, photographs','credited','attach any photos'])assert.ok(mail.searchParams.get('body').includes(phrase),phrase);
+ for(const phrase of ['Chapter: '+article.title,'Passage: '+passage.title,'Link to passage: '+url,'correct, add or clarify','sources, photographs','reuse rights or licence','credited','attach any photos'])assert.ok(mail.searchParams.get('body').includes(phrase),phrase);
  assert.equal(new URL(siteContributionMailtoUrl()).protocol,'mailto:');
  const fallback=new URL(passageContributionPageUrl(article,passage),'https://history.pm4gis.nz');
  assert.equal(fallback.pathname,'/contribute/');
  assert.equal(fallback.searchParams.get('ref'),url);
+ assert.equal(fallback.searchParams.get('page'),article.title);
+ assert.equal(fallback.searchParams.get('pageUrl'),url);
  assert.ok(contributionText(contributionDraft(contributionContextFromSearch(fallback.search))).includes(url));
+});
+test('page correction links carry the page title and safe first-party URL',()=>{
+ const pageUrl=productionOrigin+'/about/';
+ const target=new URL(siteContributionPageUrl('About the project',pageUrl),productionOrigin);
+ assert.equal(target.pathname,'/contribute/');
+ assert.equal(target.searchParams.get('page'),'About the project');
+ assert.equal(target.searchParams.get('pageUrl'),pageUrl);
+ const context=contributionContextFromSearch(target.search);
+ assert.equal(context.pageTitle,'About the project');
+ assert.equal(context.pageUrl,pageUrl);
+ assert.ok(contributionDraft(context).body.includes('Link to page: '+pageUrl));
+ assert.equal(contributionContextFromSearch('?page=Outside&pageUrl='+encodeURIComponent('https://evil.example/about/')).pageUrl,'');
 });
 test('separate passages have separate prefilled email drafts',()=>{
  const one=passageContributionMailtoUrl(article,passage);
@@ -70,10 +84,10 @@ test('reader, about and navigation open direct email with a no-form fallback',()
  assert.ok(reader.includes('Copy link</button><a class="button passage-contribute"'));
  assert.ok(reader.includes('passageContributionMailtoUrl(article,p)'));
  assert.ok(reader.includes('passageContributionPageUrl(article,p)'));
- assert.ok(readFileSync('src/layouts/Layout.astro','utf8').includes('siteContributionMailtoUrl()'));
- assert.ok(readFileSync('src/pages/about/index.astro','utf8').includes('siteContributionMailtoUrl()'));
+ assert.ok(readFileSync('src/layouts/Layout.astro','utf8').includes('siteContributionPageUrl(title,canonical.href)'));
+ assert.ok(readFileSync('src/pages/about/index.astro','utf8').includes('siteContributionPageUrl'));
  const page=readFileSync('src/pages/contribute/index.astro','utf8');
- for(const item of ['contributionContextFromSearch(window.location.search)','Gmail in browser','Outlook in browser','Copy prepared email','Open my email app','contributionMailtoUrl','contributionText(current)','id="contribution-reference"'])assert.ok(page.includes(item),item);
+ for(const item of ['contributionContextFromSearch(window.location.search)','Gmail in browser','Outlook in browser','Copy prepared email','Open my email app','contributionMailtoUrl','contributionText(current)','id="contribution-reference"','id="contribution-page-reference"'])assert.ok(page.includes(item),item);
  assert.ok(!/<form\b|<input\b|<textarea\b|window\.location\.replace/.test(page));
  const profile=readFileSync('src/pages/[...path].astro','utf8');
  assert.ok(profile.includes("r.kind==='Person'?null:pickRecordImage"));
