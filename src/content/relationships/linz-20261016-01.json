@@ -1,0 +1,13 @@
+{
+  "id": "relationship:linz-1999-john-spittal",
+  "a": "person:john-spittal",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Chief Topographer/Hydrographer, May 1999",
+  "basis": "LINZ Landlink issue 8 describes John Spittal as the Chief Topographer/Hydrographer quoted on national topographic digital database completion.",
+  "sources": [
+    {
+      "label": "LINZ Landlink, issue 8, May 1999, p.1, 'LINZ first in mapping', digitised scan supplied by Nathan Heazlewood; public image copy not yet available",
+      "url": "/images/landlink-1999-topographic-database/"
+    }
+  ]
+}

@@ -13,7 +13,11 @@
     "The change from DCDB to Landonline happened district by district. LINZ records the end of DCDB maintenance in Otago on 30 March 2000 and in North Auckland on 22 March 2002, with the other districts moving between those dates. Cadastral record maps had supplied much of the earlier digital geometry. LINZ retains the DCDB documentation because understanding that lineage remains necessary when using the records carried into Landonline.",
     "LINZ implemented NZGD2000 in 1998. Graeme Blick’s 2003 account explains its compatibility with GPS and its treatment of crustal movement: a deformation model relates observations to the reference epoch, and mark coordinates can be revised after new observations, earthquakes or local movement. Maintaining a national reference frame therefore required continuing geodetic work as well as publishing coordinates.",
     "The LINZ Data Service launched on 1 July 2011. An October 2012 government case study records delivery of property, topographic, hydrographic, geodetic and electoral-address information in common spatial formats and through web services using open standards. Most data used Creative Commons Attribution licensing, while ownership layers had additional protections. The same case study describes reuse in forestry carbon calculations, council viewers and BRANZ earthquake and corrosion-risk information.",
-    "Alongside its statutory land-information services, LINZ works to grow geospatial capability across New Zealand. Its committee connects public agencies, educators, industry and Māori representatives; programmes include school GIS resources, workforce-survey evidence and practical Māori mapping wānanga."
+    "Alongside its statutory land-information services, LINZ works to grow geospatial capability across New Zealand. Its committee connects public agencies, educators, industry and Māori representatives; programmes include school GIS resources, workforce-survey evidence and practical Māori mapping wānanga.",
+    "The official LINZ chronology records transfers of further statutory functions after the 1996 split. Technical management of New Zealand's legal continental shelf submission moved from the Ministry of Commerce in 1997. In 1998 the Valuer-General's regulatory functions moved to LINZ while operational valuation work went to Quotable Value. The Overseas Investment Office became part of LINZ in 2005. These are changes in institutional responsibility, not first-use dates for GIS.",
+    "LINZ's May 1999 internal newsletter Landlink reported completion of the national topographic digital database following four years of work begun under DOSLI in 1995. It described a seamless structured dataset drawn from 330 published 1:50,000 map sheets and containing about 12 GB of data. Terralink was contracted to complete digital conversion. Chief Topographer/Hydrographer John Spittal described its value as one authoritative computer-accessible representation, and the newsletter anticipated public vector-data availability in July 1999. It did not say every public access function was already complete.",
+    "LINZ decided in 2021 to lead with its te reo Māori name Toitū Te Whenua. Its later 2021–2025 Landonline modernisation introduced new web-based dealing, survey and search tools in stages. LINZ records 2025 as the year external customers completed migration to New Landonline and legacy access was switched off. The programme was distinct from the original Landonline rollout of 2000–02.",
+    "In April 2025 LINZ added 'NZ Topo Gridless Maps' to Basemaps, allowing the existing Topo50 and Topo250 sheets to display together as a continuous national layer with terrain viewing. LINZ Head of Location Information Aaron Jordan described dynamic changes in scale across approximately 500 map sheets. This was a later improvement in online access to a long-established national mapping programme."
   ],
   "sources": [
     {
@@ -43,11 +47,29 @@
     {
       "label": "LINZ, Geospatial capability",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability"
+    },
+    {
+      "label": "LINZ 2020 incoming minister briefing, Annex 1, p.15, institutional chronology",
+      "url": "https://www.linz.govt.nz/sites/default/files/linz_bim-2020_annex_1_-_welcome_to_linz-web.pdf"
+    },
+    {
+      "label": "LINZ Landlink, issue 8, May 1999, p.1, 'LINZ first in mapping', digitised scan supplied by Nathan Heazlewood; public image copy not yet available",
+      "url": "/images/landlink-1999-topographic-database/"
+    },
+    {
+      "label": "LINZ, Modernising Landonline, programme historical milestones to 2025",
+      "url": "https://www.linz.govt.nz/our-work/projects/modernising-landonline"
+    },
+    {
+      "label": "LINZ, NZ Topo maps now available on Basemaps, 9 April 2025",
+      "url": "https://www.linz.govt.nz/news/2025-04/nz-topo-maps-now-available-basemaps"
     }
   ],
   "aliases": [
     "Land Information New Zealand (LINZ)",
-    "LINZ"
+    "LINZ",
+    "Toitū Te Whenua",
+    "Toitū Te Whenua Land Information New Zealand"
   ],
   "themeIds": [],
   "status": "GIS account available",
@@ -99,7 +121,49 @@
         "label": "Open Government Case Study: Land Information New Zealand Data Service, 8 October 2012, pp.1–2",
         "url": "https://www.data.govt.nz/assets/OpenDataCaseStudies-printablePDFs/Visio-LINZ-Data-Service-case-study-October-2012-0.pdf"
       }
+    ],
+    [
+      {
+        "label": "LINZ, Our whakapapa: institutional history and 1987–2021 chronology",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+      },
+      {
+        "label": "LINZ 2020 incoming minister briefing, Annex 1, p.15, institutional chronology",
+        "url": "https://www.linz.govt.nz/sites/default/files/linz_bim-2020_annex_1_-_welcome_to_linz-web.pdf"
+      }
+    ],
+    [
+      {
+        "label": "LINZ Landlink, issue 8, May 1999, p.1, 'LINZ first in mapping', digitised scan supplied by Nathan Heazlewood; public image copy not yet available",
+        "url": "/images/landlink-1999-topographic-database/"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, Our whakapapa: institutional history and 1987–2021 chronology",
+        "url": "https://www.linz.govt.nz/about-us/our-organisation/our-whakapapa"
+      },
+      {
+        "label": "LINZ, Modernising Landonline, programme historical milestones to 2025",
+        "url": "https://www.linz.govt.nz/our-work/projects/modernising-landonline"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, NZ Topo maps now available on Basemaps, 9 April 2025",
+        "url": "https://www.linz.govt.nz/news/2025-04/nz-topo-maps-now-available-basemaps"
+      }
     ]
   ],
-  "biographyParagraphSources": []
+  "biographyParagraphSources": [],
+  "contextLinks": [
+    {
+      "label": "DOSLI institutional photographs, including 1995 Cartographic Directorate",
+      "url": "/entities/department-of-survey-and-land-information-dosli/"
+    },
+    {
+      "label": "Landlink newsletter May 1999 historical source, photograph not yet publicly available",
+      "url": "/images/landlink-1999-topographic-database/"
+    }
+  ]
 }

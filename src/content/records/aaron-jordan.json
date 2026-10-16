@@ -5,14 +5,19 @@
   "kind": "Person",
   "category": "People",
   "url": "/people/aaron-jordan/",
-  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "description": "LINZ topographic strategy contributor (2014) and Head of Location Information (2025).",
   "story": [
-    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Aaron Jordan as an author of “The New Zealand Topographic Strategy”."
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Aaron Jordan as an author of “The New Zealand Topographic Strategy”.",
+    "LINZ's April 2025 announcement provides a later dated role: Head of Location Information. Jordan described the 'NZ Topo Gridless Maps' layer on the free Basemaps viewer, with around 500 Topo50 and Topo250 map sheets combined in one continuous map and optionally draped on national terrain data. The report documents his role in explaining this national geospatial service; it does not attribute sole technical development to him."
   ],
   "sources": [
     {
       "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
       "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    },
+    {
+      "label": "LINZ, NZ Topo maps now available on Basemaps, 9 April 2025",
+      "url": "https://www.linz.govt.nz/news/2025-04/nz-topo-maps-now-available-basemaps"
     }
   ],
   "aliases": [],
@@ -22,6 +27,12 @@
       {
         "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
         "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "LINZ, NZ Topo maps now available on Basemaps, 9 April 2025",
+        "url": "https://www.linz.govt.nz/news/2025-04/nz-topo-maps-now-available-basemaps"
       }
     ]
   ],
