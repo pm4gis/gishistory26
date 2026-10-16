@@ -1,0 +1,40 @@
+name: Verify eight contributed primary sources
+on:
+  pull_request:
+    paths:
+      - 'src/content/events/source-*.json'
+      - 'src/lib/contributed-primary-sources.mjs'
+      - 'src/pages/sources/documents/**'
+      - 'src/content/articles/*.json'
+      - 'tests/contributed-primary-sources.test.mjs'
+      - '.github/workflows/verify-eight-contributed-sources.yml'
+      - 'docs/research/eight-contributed-sources-20261017.md'
+      - 'src/pages/sources/collections.astro'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0', cache: npm}
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Responsive source and timeline integration test
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4321 --directory dist --bind 127.0.0.1 >/tmp/primary-source-qa.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 30); do
+            if curl -fsS -o /dev/null http://127.0.0.1:4321/sources/documents/; then break; fi
+            sleep 1
+          done
+          node scripts/contributed-primary-sources-browser-qa.mjs
