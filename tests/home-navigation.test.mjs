@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {homeHighlightSlugs} from '../src/lib/home-highlights.mjs';
-import {siteContributionMailtoUrl,passageContributionMailtoUrl,passageContributionPageUrl,contributionRecipient,contributionDraft,contributionMailtoUrl,contributionContextFromSearch} from '../src/lib/passage-contributions.mjs';
+import {siteContributionMailtoUrl,siteContributionPageUrl,passageContributionMailtoUrl,passageContributionPageUrl,contributionRecipient,contributionDraft,contributionMailtoUrl,contributionContextFromSearch} from '../src/lib/passage-contributions.mjs';
 
 const home=readFileSync('src/pages/index.astro','utf8');
 const layout=readFileSync('src/layouts/Layout.astro','utf8');
@@ -51,28 +51,33 @@ test('homepage highlights use equal image frames and keep image credits on detai
  assert.match(imageDetail,/<dt>Licence<\/dt>/);
 });
 
-test('desktop and mobile menus provide About and Contribute, with accessible native disclosure',()=>{
+test('desktop and mobile menus provide About, Contribute and Connections, with accessible native disclosure',()=>{
  assert.match(layout,/<details class="mobile-menu">/);
  assert.ok(layout.includes('<summary aria-label="Open navigation menu"'));
  assert.match(layout,/aria-label="Mobile navigation"/);
  assert.match(layout,/aria-label="Main navigation"/);
+ assert.equal((layout.match(/href="\\/network\\/"/g)||[]).length,3);
  assert.equal((layout.match(/href="\/about\/"/g)||[]).length,3);
- assert.equal((layout.match(/href=\{contributionHref\}/g)||[]).length,2);
+ assert.equal((layout.match(/href=\{contributionHref\}/g)||[]).length,3);
  assert.match(css,/@media\(max-width:1180px\)/);
  assert.match(css,/\.nav--desktop\{display:none\}/);
  assert.match(css,/\.mobile-menu\{display:block\}/);
  assert.match(layout,/id="palette"/);
 });
 
-test('navigation opens an email draft with the chosen registered mail handler',()=>{
- const url=new URL(siteContributionMailtoUrl());
- assert.equal(url.protocol,'mailto:');
- assert.equal(decodeURIComponent(url.pathname),contributionRecipient);
- assert.equal(url.searchParams.get('subject'),'NZ GIS History Contributions and Corrections');
- assert.ok(url.searchParams.get('body').includes('attach any photos'));
- assert.ok(layout.includes('const contributionHref=siteContributionMailtoUrl()'));
- assert.ok(about.includes('const contributionHref=siteContributionMailtoUrl()'));
- assert.equal((layout.match(/href=\{contributionHref\}/g)||[]).length,2);
+test('navigation opens page-specific correction options without sending a message',()=>{
+ const mail=new URL(siteContributionMailtoUrl());
+ assert.equal(mail.protocol,'mailto:');
+ assert.equal(decodeURIComponent(mail.pathname),contributionRecipient);
+ assert.equal(mail.searchParams.get('subject'),'NZ GIS History Contributions and Corrections');
+ assert.ok(mail.searchParams.get('body').includes('attach any photos'));
+ const contextUrl=new URL(siteContributionPageUrl('About the project','https://history.pm4gis.nz/about/'),'https://history.pm4gis.nz');
+ assert.equal(contextUrl.pathname,'/contribute/');
+ assert.equal(contextUrl.searchParams.get('page'),'About the project');
+ assert.equal(contextUrl.searchParams.get('pageUrl'),'https://history.pm4gis.nz/about/');
+ assert.ok(layout.includes("siteContributionPageUrl(title,canonical.href)"));
+ assert.ok(about.includes("siteContributionPageUrl('About the project'"));
+ assert.equal((layout.match(/href=\{contributionHref\}/g)||[]).length,3);
  assert.ok(!layout.includes('mail.google.com'));
 });
 
