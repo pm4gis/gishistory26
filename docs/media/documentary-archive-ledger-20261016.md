@@ -45,3 +45,17 @@ Acquired in GitHub Actions, source files checked against pinned Git blobs:
 2. Open/review focused archive-only PR if not already open; merge only when new binaries are committed and all automated checks pass. Confirm Cloudflare production commit and live /images/ entries and original links. Report actual counts rather than the 500-image aspiration.
 3. Continue source-specific pre-2025 GIS interface search at LINZ/National Library 2016 talk first; recover original screenshots and historical capture/source dates and clear reuse licence. Repeat with archival council, university, Archives NZ and National Library sources. Record duplicates, blocked candidates and explicit rights decisions without publishing unverified ones.
 4. After the archive batches are fully published, create a separate reviewed PR for chapter/story placements based on exact paragraph and source relationships. Preserve all existing associations.
+
+
+## Batch 2: LINZ QGIS Data Importer originals, 2018–2021
+
+Base main 50cc01f98847571fe7c271dbfa6fe7dfa3208c7d, working branch media/linz-qgis-importer-2018-2021-20261016. This is archive-only research, with no automatic story or chapter placement. The 2015 first batch is merged through pull request #98, and Cloudflare confirms production deployment; the public custom-domain HTTP probe remains unavailable.
+
+Source: https://github.com/linz/linz-data-importer/tree/fff9011d63a921360dc0bcc65d5015268a1c33e8 ; source README embeds both examples; root LICENCE of the same immutable 2021 commit explicitly gives BSD 3-Clause redistribution rights, attribution and disclaimer, copyright 2018–2021 Toitū Te Whenua/LINZ and New Zealand Government. Full original licence is retained in public/assets/historical/licences/linz-data-importer-bsd-3-clause.txt and linked from each image detail page.
+
+- linz-qgis-data-importer-settings-2018: original images/settings_example.png, 58,309 bytes, Git blob a4f9aff65a31f6f301d6dc1ec704c99f99cf3438. Image in repository by 13 November 2018. Visually inspected in source; displays the LINZ Data Importer Settings tab with placeholder API keys (not active private keys).
+- linz-qgis-data-importer-demo-2021: original images/import_example.gif, 1,384,073 bytes, Git blob 4324002b1f5415be12c41443de7530d30cdc8bd3. Commit on 21 June 2021 explicitly updated GIF for QGIS 3.16; the exact underlying recording date is unknown. Original animation preserved with first-frame display derivative.
+
+<!-- LINZ IMPORTER ACQUISITION PENDING -->
+
+Checks required: npm ci, npm test, npm run build, historical-original hash checks and browser QA. Then focused PR, GitHub checks, Cloudflare deployment and archive live pages. Rights-held or uncertain National Library, council, Archives NZ, GIS company and agency candidates remain pending until licence and first-publication date checked. Do not use or update the predecessor site.
