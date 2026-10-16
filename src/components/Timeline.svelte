@@ -4,6 +4,7 @@
  import {onMount} from 'svelte';
  import {TIMELINE_LAST_YEAR,TIMELINE_LAST_DATE,isTimelineEventInPeriod} from '../lib/timeline-cutoff.mjs';
  import {timelineEventsForScope} from '../lib/timeline-page-scope.mjs';
+ import {siteContributionPageUrl,productionOrigin} from '../lib/passage-contributions.mjs';
  export let events:any[]=[];
  export let compact=false;
  export let currentPassageId:string|null=null;
@@ -19,6 +20,7 @@
  let activeDecade:number|null=null;
  let activeFiveYearStart:number|null=null;
  const maxZoom=12;
+ const contributeTimeline=siteContributionPageUrl('Timeline',productionOrigin+'/timeline/');
  const year=(event:any):number|null=>{
   if(event.datePrecision==='unknown')return null;
   const raw=event.year??(event.startDate?.match(/^\d{4}/)?Number(event.startDate.slice(0,4)):null);
@@ -54,7 +56,7 @@
   return inPeriod&&(!q||text.includes(q));
  }).sort((a,b)=>(year(a)??Infinity)-(year(b)??Infinity)||a.id.localeCompare(b.id));
  $: ticks=scale.ticks(7);
- $: periodGroups=[...new Set(dated.map(e=>Math.floor((year(e)??0)/10)*10))].sort((a,b)=>a-b).map(y=>({year:y,count:dated.filter(e=>Math.floor((year(e)??0)/10)*10===y).length}));
+ $: periodGroups=Array.from({length:Math.floor((max-1900)/10)+1},(_,i)=>{const decadeStart=1900+i*10;return {year:decadeStart,count:dated.filter(e=>Math.floor((year(e)??0)/10)*10===decadeStart).length};});
  $: densityMax=Math.max(1,...periodGroups.map(x=>x.count));
  $: fiveYearGroups=activeDecade===null?[]:[activeDecade,activeDecade+5].filter(start=>start<=max).map(start=>{const end=Math.min(start+4,max);const count=dated.filter(e=>{const y=year(e) as number;const finish=endYear(e)??y;return finish>=start&&y<=end;}).length;return {start,end,count};});
  $: fiveYearDensityMax=Math.max(1,...fiveYearGroups.map(x=>x.count));
@@ -75,7 +77,7 @@
  $: chartHeight=Math.max(92,chartAxisY+28);
  $: chartMarks=baseChartMarks.map(mark=>({...mark,y:chartAxisY-12-mark.lane*8}));
  $: hoveredEvent=chartMarks.find(mark=>mark.event.id===hoveredId)?.event||null;
- function updateURL(eventId?:any){
+ function updateURL(eventId?:string,commit=false){
   if(compact)return;
   const u=new URL(location.href);
   if(from)u.searchParams.set('from',from);else u.searchParams.delete('from');
@@ -84,39 +86,47 @@
   if(!includeUndated)u.searchParams.set('undated','0');else u.searchParams.delete('undated');
   if(zoom>1)u.searchParams.set('zoom',String(zoom));else u.searchParams.delete('zoom');
   if(typeof eventId==='string')u.searchParams.set('event',eventId);else u.searchParams.delete('event');
-  history.replaceState(null,'',u);
+  const nextURL=u.pathname+u.search+u.hash;
+  if(nextURL===location.pathname+location.search+location.hash)return;
+  if(commit)history.pushState(null,'',nextURL);else history.replaceState(null,'',nextURL);
  }
- function pick(e:any){selected=e;onSelect(e);if(!compact)updateURL(e.id)}
+ function pick(e:any){selected=e;onSelect(e);if(!compact)updateURL(e.id,true)}
  function historicalEventVideos(id:string){return ngaPoutamaForEvent(id).filter((video:any)=>video.publishedOn&&video.publishedOn<=TIMELINE_LAST_DATE)}
  function markerKeydown(event:KeyboardEvent,e:any){if(event.key==='Enter'||event.key===' '){event.preventDefault();pick(e)}}
  function clampYearInput(value:string){if(!value)return '';const n=Number(value);return Number.isFinite(n)?String(Math.min(TIMELINE_LAST_YEAR,Math.max(1000,Math.floor(n)))):''}
- function resetDateFilter(){from=clampYearInput(from);to=clampYearInput(to);activeDecade=null;activeFiveYearStart=null;selected=null;zoom=1;updateURL()}
- function zoomIn(){zoom=Math.min(maxZoom,Number((zoom+0.5).toFixed(2)));updateURL(selected?.id)}
- function zoomOut(){zoom=Math.max(1,Number((zoom-0.5).toFixed(2)));updateURL(selected?.id)}
- function resetZoom(){zoom=1;updateURL(selected?.id)}
- function chooseFiveYear(start:number){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start;from=String(start);to=String(Math.min(start+4,max));includeUndated=false;selected=null;zoom=1;updateURL()}
+ function resetDateFilter(){from=clampYearInput(from);to=clampYearInput(to);activeDecade=null;activeFiveYearStart=null;selected=null;onSelect(null);zoom=1;updateURL(undefined,true)}
+ function zoomIn(){zoom=Math.min(maxZoom,Number((zoom+0.5).toFixed(2)));updateURL(selected?.id,true)}
+ function zoomOut(){zoom=Math.max(1,Number((zoom-0.5).toFixed(2)));updateURL(selected?.id,true)}
+ function resetZoom(){zoom=1;updateURL(selected?.id,true)}
+ function chooseFiveYear(start:number){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start;from=String(start);to=String(Math.min(start+4,max));includeUndated=false;selected=null;onSelect(null);zoom=1;updateURL(undefined,true)}
  function countEventsInFiveYearPeriod(start:number){const finish=Math.min(start+4,max);return dated.filter(e=>{const y=year(e) as number;const eventFinish=endYear(e)??y;return eventFinish>=start&&y<=finish;}).length}
  function decade(y:number){const secondHalf=y+5;chooseFiveYear(secondHalf<=max&&countEventsInFiveYearPeriod(secondHalf)>countEventsInFiveYearPeriod(y)?secondHalf:y)}
- function clearFilters(){activeDecade=null;activeFiveYearStart=null;from='';to='';term='';includeUndated=true;selected=null;zoom=1;updateURL()}
+ function clearFilters(){activeDecade=null;activeFiveYearStart=null;from='';to='';term='';includeUndated=true;selected=null;onSelect(null);zoom=1;updateURL(undefined,true)}
+ function restoreURLState(){
+  const p=new URLSearchParams(location.search);
+  from=clampYearInput(p.get('from')||'');
+  to=clampYearInput(p.get('to')||'');
+  activeDecade=null;activeFiveYearStart=null;hoveredId='';
+  if(from&&to&&Number.isFinite(Number(from))&&Number.isFinite(Number(to))){const start=Number(from);const finish=Number(to);if(finish===start+4&&(start%10===0||start%10===5)){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start}else if(finish===start+9&&start%10===0){activeDecade=start}}
+  term=p.get('q')||'';
+  includeUndated=p.get('undated')!=='0';
+  const requestedZoom=Number(p.get('zoom'));
+  zoom=Number.isFinite(requestedZoom)?Math.min(maxZoom,Math.max(1,requestedZoom)):1;
+  selected=timelineEvents.find(e=>e.id===p.get('event'))||null;
+  onSelect(selected);
+ }
  function yearLabel(value:number){return String(Math.floor(value))}
  onMount(()=>{
-  if(!compact){
-   const p=new URLSearchParams(location.search);
-   from=clampYearInput(p.get('from')||'');
-   to=clampYearInput(p.get('to')||'');
-   if(from&&to&&Number.isFinite(Number(from))&&Number.isFinite(Number(to))){const start=Number(from);const finish=Number(to);if(finish===start+4&&(start%10===0||start%10===5)){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start}else if(finish===start+9&&start%10===0){activeDecade=start}}
-   term=p.get('q')||'';
-   includeUndated=p.get('undated')!=='0';
-   const requestedZoom=Number(p.get('zoom'));
-   zoom=Number.isFinite(requestedZoom)?Math.min(maxZoom,Math.max(1,requestedZoom)):1;
-   const e=timelineEvents.find(e=>e.id===p.get('event'));
-   if(e)selected=e;
-  }
+  if(compact)return;
+  restoreURLState();
+  const restore=()=>restoreURLState();
+  window.addEventListener('popstate',restore);
+  return()=>window.removeEventListener('popstate',restore);
  });
 </script>
 <section class="timeline-box" aria-label={compact && currentPassageId && !showChapterEvents ? 'Events linked to this passage' : compact ? 'Chapter timeline' : 'Explore the chronology'}><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?(currentPassageId && !showChapterEvents?'This page in time':'This chapter in time'):'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
  {#if compact && currentPassageId}<div class="timeline-scope-controls"><p aria-live="polite">{showChapterEvents?`Showing all ${timelineEvents.length} events in this chapter.`:`${pageEvents.length} ${pageEvents.length===1?'event':'events'} linked to this passage.`}</p>{#if pageEvents.length!==timelineEvents.length}<button type="button" aria-pressed={showChapterEvents} on:click={()=>{showChapterEvents=!showChapterEvents;selected=null;hoveredId=''}}>{showChapterEvents?'Show this page only':`Browse all ${timelineEvents.length} chapter events`}</button>{/if}</div>{/if}
- {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={updateURL}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
+ {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={()=>updateURL(selected?.id,true)}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;onSelect(null);zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
  <div class="period-head"><h2>{activeDecade===null?'Choose a decade':`Choose a five-year period in the ${activeDecade}s`}</h2><p>{activeDecade===null?'Move from left to right through the history. Select a decade to focus the events below.':'The timeline is focused on a five-year span. Choose the first or second half of this decade.'}</p></div>
  <nav class="period-nav" aria-label={activeDecade===null?'Timeline decades':'Five-year timeline periods'}>
  {#if activeDecade===null}
@@ -167,7 +177,7 @@
  </button>
  {/each}
  </div>{/if}
- {#if !filtered.length}<p class="empty">{#if compact && currentPassageId && !showChapterEvents}{#if timelineEvents.length}No timeline events are linked to this passage. Browse all {timelineEvents.length} events in this chapter, or open the full timeline.{:else}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{/if}{:else if compact}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{:else}No events in this period. Clear the filters to see all dates.{/if}</p>{/if}
+ {#if !filtered.length}<p class="empty">{#if compact && currentPassageId && !showChapterEvents}{#if timelineEvents.length}No timeline events are linked to this passage. Browse all {timelineEvents.length} events in this chapter, or open the full timeline.{:else}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{/if}{:else if compact}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{:else if activeFiveYearStart!==null&&!countEventsInFiveYearPeriod(activeFiveYearStart)}No sourced events are recorded for this period yet. <a href={contributeTimeline}>Suggest an event with a source</a>, or clear the filters to see all dates.{:else}No matching events. Clear the filters to see all dates.{/if}</p>{/if}
 
  {#if selected}
  <section class="event-summary" aria-live="polite">

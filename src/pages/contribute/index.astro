@@ -13,6 +13,8 @@ const outlook='https://outlook.live.com/mail/0/deeplink/compose?'+new URLSearchP
   <p>Choose your email service. A new email draft opens addressed to <strong>{contributionRecipient}</strong>, with the subject and questions already included. Attach photographs, maps, screenshots or documents using your email service's attachment button, then send it.</p>
 
   <div id="contribution-context" class="contribution-context" hidden>
+   <p id="contribution-page-title"></p>
+   <p><a id="contribution-page-reference" href="#"></a></p>
    <p id="contribution-chapter"></p>
    <p id="contribution-passage"></p>
    <p><a id="contribution-reference" href="#"></a></p>
@@ -50,9 +52,13 @@ const outlook='https://outlook.live.com/mail/0/deeplink/compose?'+new URLSearchP
   if(gmail)gmail.href='https://mail.google.com/mail/?'+new URLSearchParams({view:'cm',fs:'1',to:contributionRecipient,su:current.subject,body:current.body}).toString();
   if(outlook)outlook.href='https://outlook.live.com/mail/0/deeplink/compose?'+new URLSearchParams({to:contributionRecipient,subject:current.subject,body:current.body}).toString();
   if(preview)preview.textContent=contributionText(current);
-  if(context.chapter||context.passage||context.reference){
+  if(context.pageTitle||context.pageUrl||context.chapter||context.passage||context.reference){
    const box=document.getElementById('contribution-context');
    if(box)box.hidden=false;
+   const pageTitle=document.getElementById('contribution-page-title');
+   const pageRef=document.getElementById('contribution-page-reference') as HTMLAnchorElement|null;
+   if(pageTitle){pageTitle.textContent=context.pageTitle?'Page: '+context.pageTitle:'';pageTitle.hidden=!context.pageTitle;}
+   if(pageRef){pageRef.textContent=context.pageUrl?'Open the referenced page':'';pageRef.hidden=!context.pageUrl;if(context.pageUrl)pageRef.href=context.pageUrl;}
    const chapter=document.getElementById('contribution-chapter');
    const passage=document.getElementById('contribution-passage');
    const ref=document.getElementById('contribution-reference') as HTMLAnchorElement|null;

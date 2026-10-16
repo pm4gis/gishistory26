@@ -16,13 +16,16 @@ export function passagePermanentUrl(article,passage){
 }
 
 export function contributionDraft({
- chapter='',passage='',reference='',contribution='',whoWhen='',sources='',credit=''
+ pageTitle='',pageUrl='',chapter='',passage='',reference='',contribution='',whoWhen='',sources='',imageRights='',credit=''
 }={}){
- const subject='NZ GIS History Contributions and Corrections'+(passage?' — '+passage:'');
+ const contextTitle=String(passage||pageTitle||'').trim();
+ const subject='NZ GIS History Contributions and Corrections'+(contextTitle?' — '+contextTitle:'');
  const answer=(question,value)=>question+'\n'+String(value||'').trim();
  const body=[
   'Kia ora,',
   '',
+  ...(pageTitle&&pageTitle!==chapter?['Page: '+String(pageTitle).trim()]:[]),
+  ...(pageUrl&&pageUrl!==reference?['Link to page: '+String(pageUrl).trim()]:[]),
   ...(chapter?['Chapter: '+chapter]:[]),
   ...(passage?['Passage: '+passage]:[]),
   ...(reference?['Link to passage: '+reference]:[]),
@@ -32,6 +35,8 @@ export function contributionDraft({
   answer('Who or what is involved, and when did it happen?',whoWhen),
   '',
   answer('What sources, photographs, links or documents can you share?',sources),
+  '',
+  answer('For any image or document, who created it and what are the reuse rights or licence?',imageRights),
   '',
   answer('How would you like to be credited?',credit),
   '',
@@ -65,15 +70,22 @@ export function passageContributionMailtoUrl(article,passage){
  return contributionMailtoUrl(subject,body);
 }
 
-export function siteContributionPageUrl(){
- return contributionPagePath;
+export function siteContributionPageUrl(pageTitle='',pageUrl=''){
+ const params=new URLSearchParams();
+ if(pageTitle)params.set('page',String(pageTitle).slice(0,180));
+ if(pageUrl)params.set('pageUrl',String(pageUrl));
+ const search=params.toString();
+ return contributionPagePath+(search?'?'+search:'');
 }
 
 export function passageContributionPageUrl(article,passage){
+ const reference=passagePermanentUrl(article,passage);
  const params=new URLSearchParams({
+  page:String(article?.title||''),
+  pageUrl:reference,
   chapter:String(article?.title||''),
   passage:String(passage?.title||''),
-  ref:passagePermanentUrl(article,passage)
+  ref:reference
  });
  return contributionPagePath+'?'+params.toString();
 }
@@ -81,6 +93,13 @@ export function passageContributionPageUrl(article,passage){
 /** Retains deep links already issued to the /contribute/ route. */
 export function contributionContextFromSearch(search){
  const params=new URLSearchParams(search);
+ const pageTitle=String(params.get('page')||params.get('chapter')||'').slice(0,180);
+ const rawPageUrl=params.get('pageUrl')||'';
+ let pageUrl='';
+ try{
+  const link=new URL(rawPageUrl);
+  if(link.origin===productionOrigin&&link.pathname.startsWith('/')&&!link.pathname.startsWith('//')&&!link.pathname.startsWith('/contribute/'))pageUrl=link.href;
+ }catch{}
  const chapter=String(params.get('chapter')||'').slice(0,180);
  const passage=String(params.get('passage')||'').slice(0,180);
  const raw=params.get('ref')||'';
@@ -89,5 +108,5 @@ export function contributionContextFromSearch(search){
   const link=new URL(raw);
   if(link.origin===productionOrigin&&/^\/stories\/[a-z0-9-]+\/$/.test(link.pathname)&&/^#[a-z0-9-]+$/.test(link.hash))reference=link.href;
  }catch{}
- return {chapter,passage,reference};
+ return {pageTitle,pageUrl,chapter,passage,reference};
 }

@@ -9,6 +9,9 @@ test('public timeline has a permanent endpoint of 31 December 2025',()=>{
  assert.equal(TIMELINE_LAST_DATE,'2025-12-31');
  const component=readFileSync('src/components/Timeline.svelte','utf8');
  assert.match(component,/max=TIMELINE_LAST_YEAR/);
+ assert.match(component,/Array\.from\(\{length:Math\.floor\(\(max-1900\)\/10\)\+1\}/);
+ assert.match(component,/history\.pushState/);
+ assert.match(component,/addEventListener\('popstate'/);
  assert.doesNotMatch(component,/new Date\(\)\.getFullYear\(\)/);
 });
 

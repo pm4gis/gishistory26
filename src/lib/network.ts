@@ -21,6 +21,7 @@ export function initNetwork() {
   if (!window.__network) return;
   const {records, edges} = window.__network;
   const select = document.getElementById('focus') as HTMLSelectElement | null;
+  const focusSearch = document.getElementById('focus-search') as HTMLInputElement | null;
   const canvas = document.getElementById('graph');
   const list = document.getElementById('connections');
   const status = document.getElementById('network-status');
@@ -28,11 +29,32 @@ export function initNetwork() {
   const zoomOut = document.getElementById('network-zoom-out') as HTMLButtonElement | null;
   const reset = document.getElementById('network-reset') as HTMLButtonElement | null;
   const recordLink = document.getElementById('network-entry-link') as HTMLAnchorElement | null;
-  if (!select || !canvas || !list || !status || !zoomIn || !zoomOut || !reset || !recordLink) return;
+  if (!select || !focusSearch || !canvas || !list || !status || !zoomIn || !zoomOut || !reset || !recordLink) return;
 
   const recordsById = new Map(records.map(record => [record.id, record]));
   const search = new URL(location.href).searchParams.get('focus');
   if (search && recordsById.has(search)) select.value = search;
+  const options = Array.from(select.options);
+  function filterFocusOptions() {
+    const query = focusSearch!.value.trim().toLocaleLowerCase('en-NZ');
+    for (const option of options) {
+      const matches = !query || (option.textContent || '').toLocaleLowerCase('en-NZ').includes(query);
+      option.hidden = !matches && option.value !== select!.value;
+    }
+  }
+  function focusEntry(id: string) {
+    if (!recordsById.has(id)) return;
+    focusSearch!.value = '';
+    const option = options.find(item => item.value === id);
+    if (option) option.hidden = false;
+    select!.value = id;
+    select!.dispatchEvent(new Event('change', {bubbles: true}));
+  }
+  focusSearch.addEventListener('input', filterFocusOptions);
+  document.querySelectorAll<HTMLButtonElement>('[data-network-focus]').forEach(button => {
+    button.addEventListener('click', () => focusEntry(button.dataset.networkFocus || ''));
+  });
+  filterFocusOptions();
   let svg: SVGSVGElement | null = null;
   let width = 980;
   let height = 620;
@@ -64,6 +86,8 @@ export function initNetwork() {
 
   function updateFocus(id: string) {
     if (!recordsById.has(id)) return;
+    const option = options.find(item => item.value === id);
+    if (option) option.hidden = false;
     select!.value = id;
     const url = new URL(location.href);
     url.searchParams.set('focus', id);

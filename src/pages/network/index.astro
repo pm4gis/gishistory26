@@ -1,10 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import {dataset} from '../../lib/data';
+import {isListedRecord} from '../../lib/record-listing.mjs';
 import '../../styles/network.css';
 
 const d = await dataset();
 const entries = [...d.records].sort((a: any, b: any) => a.name.localeCompare(b.name, 'en-NZ'));
+const connectionCounts = new Map<string, number>();
+for (const entry of entries) connectionCounts.set(entry.id, 0);
+for (const edge of d.relationships as any[]) {
+  if (connectionCounts.has(edge.a)) connectionCounts.set(edge.a, (connectionCounts.get(edge.a) || 0) + 1);
+  if (connectionCounts.has(edge.b)) connectionCounts.set(edge.b, (connectionCounts.get(edge.b) || 0) + 1);
+}
+const starterEntries = d.records
+  .filter(isListedRecord)
+  .map((entry: any) => ({...entry, connectionCount: connectionCounts.get(entry.id) || 0}))
+  .filter((entry: any) => entry.connectionCount > 0)
+  .sort((a: any, b: any) => b.connectionCount - a.connectionCount || a.name.localeCompare(b.name, 'en-NZ'))
+  .slice(0, 4);
+const defaultFocus = starterEntries[0]?.id || entries[0]?.id || '';
+const unconnectedCount = entries.filter((entry: any) => !connectionCounts.get(entry.id)).length;
 ---
 <Layout title="Connections · NZ GIS History">
   <div class="wrap network-page">
@@ -12,11 +27,30 @@ const entries = [...d.records].sort((a: any, b: any) => a.name.localeCompare(b.n
     <h1>Explore connections</h1>
     <p class="intro">Choose a person, organisation, project or dataset to see its documented connections. Select another entry in the diagram to explore further.</p>
 
-    <label class="network-picker" for="focus">Choose an entry
-      <select id="focus">
-        {entries.map((entry: any) => <option value={entry.id}>{entry.name}</option>)}
-      </select>
-    </label>
+    <div class="network-picker-grid">
+      <label class="network-picker-search" for="focus-search">Search entries
+        <input id="focus-search" type="search" placeholder="Type a name to narrow the list" autocomplete="off" aria-describedby="focus-search-help"/>
+      </label>
+      <label class="network-picker" for="focus">Choose an entry
+        <select id="focus">
+          {entries.map((entry: any) => <option value={entry.id} selected={entry.id === defaultFocus}>{entry.name} · {entry.kind}</option>)}
+        </select>
+      </label>
+    </div>
+    <p id="focus-search-help" class="network-picker-help">Search by name, then choose an entry. You can also start with one of these entries with documented relationships.</p>
+
+    <section class="network-starters" aria-labelledby="network-starters-title">
+      <h2 id="network-starters-title">Start with documented connections</h2>
+      <div class="network-starter-list">
+        {starterEntries.map((entry: any) => <button type="button" data-network-focus={entry.id}>{entry.name}<small>{entry.connectionCount} {entry.connectionCount === 1 ? 'relationship' : 'relationships'}</small></button>)}
+      </div>
+    </section>
+
+    <details class="network-coverage">
+      <summary>Connection coverage</summary>
+      <p>{unconnectedCount} of {entries.length} selectable entries currently have no documented relationships. Their chapter mentions and sources may still be available.</p>
+      <a href="/browse/?connections=none">Browse entries without a documented relationship</a>
+    </details>
 
     <section class="network-panel" aria-label="Connection diagram">
       <div class="network-toolbar">
