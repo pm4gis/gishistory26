@@ -90,7 +90,7 @@ const menuDatasets=(await getCollection('records'))
      </div>
     </div>
    </details>
-   <a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+   <a href="/publications/" aria-current={currentPath.startsWith('/publications/')?'page':undefined}>Publications</a><a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
   </nav>
   <div class="topbar-tools">
    <div class="appearance-control">
@@ -137,7 +137,7 @@ const menuDatasets=(await getCollection('records'))
      </div>
     </div>
    </details>
-     <a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+     <a href="/publications/" aria-current={currentPath.startsWith('/publications/')?'page':undefined}>Publications</a><a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
     </nav>
    </details>
   </div>

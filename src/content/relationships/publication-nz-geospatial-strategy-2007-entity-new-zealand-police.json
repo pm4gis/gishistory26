@@ -1,0 +1,16 @@
+{
+  "id": "relationship:publication-nz-geospatial-strategy-2007-entity-new-zealand-police",
+  "a": "entity:new-zealand-police",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Documented together in January 2007",
+  "basis": "Both records are documented subjects or contributors in Understanding our geographic information landscape: A New Zealand Geospatial Strategy. This link records documentary association; it does not infer employment or collaboration.",
+  "passageIds": [
+    "passage:publication-nz-geospatial-strategy-2007"
+  ],
+  "sources": [
+    {
+      "label": "Understanding our geographic information landscape: A New Zealand Geospatial Strategy",
+      "url": "/publications/nz-geospatial-strategy-2007/"
+    }
+  ]
+}

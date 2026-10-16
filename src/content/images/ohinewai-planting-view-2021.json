@@ -1,0 +1,32 @@
+{
+  "id": "image:ohinewai-planting-view-2021",
+  "slug": "ohinewai-planting-view-2021",
+  "title": "Lake Ōhinewai proposed planting view published in 2021",
+  "assetPath": "/assets/historical/web/ohinewai-planting-view-2021.webp",
+  "thumbnailPath": "/assets/historical/card/ohinewai-planting-view-2021.webp",
+  "originalAssetPath": "/assets/historical/original/ohinewai-planting-view-2021.png",
+  "sourceUrl": "https://history.pm4gis.nz/publications/gis-mapping-wetland-projects-2021/",
+  "sourceName": "GIS mapping tools for wetland projects, Te Reo o te Repo: Kei Konei Tonu Au, Chapter 16, PDF p. 8",
+  "credit": "Duane Wilkins; published by Manaaki Whenua – Landcare Research; Google Earth and the imagery/data credits retained in the original screenshot",
+  "licence": "Preserved with contributor publication authorisation; original third-party credits retained",
+  "licenceUrl": "https://history.pm4gis.nz/publications/gis-mapping-wetland-projects-2021/",
+  "altText": "Google Earth Web view of a proposed planting area at Lake Ōhinewai. PDF p. 8, printed p. 208, published in 2021. The view illustrates a proposal, not completed planting.",
+  "caption": "Google Earth Web view of a proposed planting area at Lake Ōhinewai. PDF p. 8, printed p. 208, published in 2021. The view illustrates a proposal, not completed planting.",
+  "context": "Google Earth Web view of a proposed planting area at Lake Ōhinewai. PDF p. 8, printed p. 208, published in 2021. The view illustrates a proposal, not completed planting.",
+  "themeIds": [
+    "maori-gis"
+  ],
+  "dateDisplay": "2021 (publication date)",
+  "publicationSlug": "gis-mapping-wetland-projects-2021",
+  "sourcePage": 8,
+  "articleSlug": "conservation-and-environment",
+  "passageId": "passage:publication-gis-mapping-wetland-projects-2021",
+  "passageSlug": "publication-gis-mapping-wetland-projects-2021",
+  "afterParagraphId": "publication-gis-mapping-wetland-projects-2021-p2",
+  "originalWidth": 1191,
+  "originalHeight": 1684,
+  "originalSha256": "dd7b3994929452f388db8e5689ebac230737cea860c870975f7689a3025b41d5",
+  "webSha256": "f0414340a2bdfd44e2843d1b7139aa08db75d28449a87eeb2b1ea09a31837d3d",
+  "thumbnailSha256": "c26ea68e9d0021fb5d43b94a5b82b3476c7415b6a8c03e6a9c22b9bfd3db0ac2",
+  "derivativesNote": "Full original PDF page rendered at 144 dpi; web and card derivatives are uncropped. Original publication remains available as an unchanged file."
+}

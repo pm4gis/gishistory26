@@ -1,0 +1,21 @@
+{
+  "id": "person:stuart-mead",
+  "slug": "stuart-mead",
+  "name": "Stuart Mead",
+  "kind": "Person",
+  "url": "/people/stuart-mead/",
+  "description": "The PLACE19 programme lists Stuart Mead, a research officer at Massey University, jointly demonstrating satellite-data access and Google Earth Engine with Gabor Kereszturi. His biography connects computational earth science and volcanic hazard modelling with interactive spatial information.",
+  "story": [
+    "The PLACE19 programme lists Stuart Mead, a research officer at Massey University, jointly demonstrating satellite-data access and Google Earth Engine with Gabor Kereszturi. His biography connects computational earth science and volcanic hazard modelling with interactive spatial information."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 10–11",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

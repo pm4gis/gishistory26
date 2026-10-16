@@ -1,0 +1,21 @@
+{
+  "id": "person:gabor-kereszturi",
+  "slug": "gabor-kereszturi",
+  "name": "Gabor Kereszturi",
+  "kind": "Person",
+  "url": "/people/gabor-kereszturi/",
+  "description": "The PLACE19 programme lists Gabor Kereszturi of Massey University jointly demonstrating satellite-data access and Google Earth Engine with Stuart Mead. His biography records GIS and geomorphology study at Miskolc, a 2014 Massey doctorate and subsequent hyperspectral-imaging research.",
+  "story": [
+    "The PLACE19 programme lists Gabor Kereszturi of Massey University jointly demonstrating satellite-data access and Google Earth Engine with Stuart Mead. His biography records GIS and geomorphology study at Miskolc, a 2014 Massey doctorate and subsequent hyperspectral-imaging research."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 10–11",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

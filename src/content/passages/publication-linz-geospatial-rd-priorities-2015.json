@@ -1,0 +1,47 @@
+{
+  "id": "passage:publication-linz-geospatial-rd-priorities-2015",
+  "slug": "publication-linz-geospatial-rd-priorities-2015",
+  "articleId": "article:chapter-11",
+  "title": "Research directed towards end users",
+  "order": 15,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "profession"
+  ],
+  "recordIds": [
+    "dataset:geonet-observations-2001",
+    "entity:land-information-new-zealand-linz"
+  ],
+  "blocks": [
+    {
+      "id": "publication-linz-geospatial-rd-priorities-2015-p1",
+      "type": "paragraph",
+      "text": "LINZ’s December 2015 research priorities document grew from fourteen workshops held in 2014 with more than 200 participants. Phil Driver facilitated the workshops using an OpenStrategies method that linked projects and results to their use and resulting benefits. Section A set out five overarching priorities, forty associated opportunities and a further 140 specific opportunities in the supporting material. The priorities covered understanding value, improving usability, collecting and validating data, improving data availability and intensity, and increasing standardisation and interoperability. These were opportunities for future investigation, and the document explicitly warned that further checking was needed to establish what research had already been completed, was underway or was planned.",
+      "markdown": "LINZ’s December 2015 research priorities document grew from fourteen workshops held in 2014 with more than 200 participants. Phil Driver facilitated the workshops using an OpenStrategies method that linked projects and results to their use and resulting benefits. Section A set out five overarching priorities, forty associated opportunities and a further 140 specific opportunities in the supporting material. The priorities covered understanding value, improving usability, collecting and validating data, improving data availability and intensity, and increasing standardisation and interoperability. These were opportunities for future investigation, and the document explicitly warned that further checking was needed to establish what research had already been completed, was underway or was planned.",
+      "sources": [
+        {
+          "label": "New Zealand Geospatial Research and Development Priorities and Opportunities 2016–2020: Section A, PDF pp. 4–17 (printed pp. 2–15)",
+          "url": "/publications/linz-geospatial-rd-priorities-2015/"
+        }
+      ]
+    },
+    {
+      "id": "publication-linz-geospatial-rd-priorities-2015-p2",
+      "type": "paragraph",
+      "text": "The report connected research investment with the people able to carry it out. It cited the 2012 geospatial skills-shortage study and described LINZ partnerships including the multi-university GIS Masters programme. Its research framework joined fit-for-purpose collection, accessible and trusted data, seamless datasets and analysis that end users could understand. The Forward Works Viewer and Māori Maps supplied concrete examples of existing applications, while Sea Change was described as a marine spatial plan expected in 2016. Keeping those statuses separate preserves the difference between demonstrated use, an educational programme and an anticipated project outcome.",
+      "markdown": "The report connected research investment with the people able to carry it out. It cited the 2012 geospatial skills-shortage study and described LINZ partnerships including the multi-university GIS Masters programme. Its research framework joined fit-for-purpose collection, accessible and trusted data, seamless datasets and analysis that end users could understand. The Forward Works Viewer and Māori Maps supplied concrete examples of existing applications, while Sea Change was described as a marine spatial plan expected in 2016. Keeping those statuses separate preserves the difference between demonstrated use, an educational programme and an anticipated project outcome.",
+      "sources": [
+        {
+          "label": "New Zealand Geospatial Research and Development Priorities and Opportunities 2016–2020: Section A, PDF pp. 4–17 (printed pp. 2–15)",
+          "url": "/publications/linz-geospatial-rd-priorities-2015/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research and Development Priorities and Opportunities 2016–2020: Section A, PDF pp. 4–17 (printed pp. 2–15)",
+      "url": "/publications/linz-geospatial-rd-priorities-2015/"
+    }
+  ]
+}

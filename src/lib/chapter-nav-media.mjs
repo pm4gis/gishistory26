@@ -14,7 +14,7 @@ export function chapterNavImage(article,passages,images){
   .filter(b=>b.type==='figure'&&b.imageId)
   .map(b=>byId.get(b.imageId))
   .filter(Boolean));
- const eligible=[...placed,...embedded].filter(image=>image.assetPath&&image.slug&&image.altText);
+ const eligible=[...placed,...embedded].filter(image=>!image.publicationSlug&&image.assetPath&&image.slug&&image.altText);
  if(!eligible.length)return null;
  return eligible.find(image=>image.headerCandidate)||eligible[0];
 }

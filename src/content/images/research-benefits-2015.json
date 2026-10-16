@@ -1,0 +1,32 @@
+{
+  "id": "image:research-benefits-2015",
+  "slug": "research-benefits-2015",
+  "title": "Geospatial research and end-user benefits, 2015",
+  "assetPath": "/assets/historical/web/research-benefits-2015.webp",
+  "thumbnailPath": "/assets/historical/card/research-benefits-2015.webp",
+  "originalAssetPath": "/assets/historical/original/research-benefits-2015.png",
+  "sourceUrl": "https://history.pm4gis.nz/publications/linz-geospatial-rd-priorities-2015/",
+  "sourceName": "New Zealand Geospatial Research and Development Priorities and Opportunities 2016–2020: Section A, PDF p. 11",
+  "credit": "Land Information New Zealand",
+  "licence": "Preserved with contributor publication authorisation; original third-party credits retained",
+  "licenceUrl": "https://history.pm4gis.nz/publications/linz-geospatial-rd-priorities-2015/",
+  "altText": "LINZ’s framework joining fit-for-purpose data, trusted access, seamless datasets and analytics with end-user decisions. PDF p. 11, printed p. 9, December 2015.",
+  "caption": "LINZ’s framework joining fit-for-purpose data, trusted access, seamless datasets and analytics with end-user decisions. PDF p. 11, printed p. 9, December 2015.",
+  "context": "LINZ’s framework joining fit-for-purpose data, trusted access, seamless datasets and analytics with end-user decisions. PDF p. 11, printed p. 9, December 2015.",
+  "themeIds": [
+    "profession"
+  ],
+  "dateDisplay": "December 2015 (publication date)",
+  "publicationSlug": "linz-geospatial-rd-priorities-2015",
+  "sourcePage": 11,
+  "articleSlug": "universities-build-a-field",
+  "passageId": "passage:publication-linz-geospatial-rd-priorities-2015",
+  "passageSlug": "publication-linz-geospatial-rd-priorities-2015",
+  "afterParagraphId": "publication-linz-geospatial-rd-priorities-2015-p2",
+  "originalWidth": 1191,
+  "originalHeight": 1684,
+  "originalSha256": "c49ba9bdd17a9130eb50d9e7bd0fb6bf9565010e85c45f54aa83e725ac7cbb91",
+  "webSha256": "cc5eed4f2ae07b9a7f4adc96b69ccdb5cc42e6aa50f8e706bce3f287fd4a8b1c",
+  "thumbnailSha256": "8188c40c74db99f874208a9933f1513390db033c47afb60751cf95c02d017246",
+  "derivativesNote": "Full original PDF page rendered at 144 dpi; web and card derivatives are uncropped. Original publication remains available as an unchanged file."
+}

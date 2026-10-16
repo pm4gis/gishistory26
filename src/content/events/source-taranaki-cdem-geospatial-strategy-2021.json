@@ -7,11 +7,25 @@
   "label": "Taranaki CDEM adopts its five-year geospatial strategy",
   "summary": "The May 2021 strategy established a regional emergency GIS development roadmap, common operating picture and priorities for people, requirements, interoperable data and technology.",
   "url": "/sources/documents/taranaki-cdem-geospatial-strategy-2021/",
-  "passageIds": [],
-  "recordIds": [
-    "entity:eagle-technology"
+  "passageIds": [
+    "passage:publication-taranaki-cdem-geospatial-strategy-2021"
   ],
-  "themeIds": [],
+  "recordIds": [
+    "entity:eagle-technology",
+    "entity:new-plymouth-district-council",
+    "entity:south-taranaki-district-council",
+    "entity:stratford-district-council",
+    "entity:taranaki-civil-defence-and-emergency-management-group",
+    "entity:taranaki-regional-council",
+    "person:ed-cook",
+    "person:jacob-hechter",
+    "person:melissa-brooks",
+    "person:nathan-heazlewood",
+    "person:teresa-gordon"
+  ],
+  "themeIds": [
+    "open-practice"
+  ],
   "categories": [
     "documentary source",
     "published historical evidence",

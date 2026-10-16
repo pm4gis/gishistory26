@@ -1,0 +1,21 @@
+{
+  "id": "person:raleigh-seamster",
+  "slug": "raleigh-seamster",
+  "name": "Raleigh Seamster",
+  "kind": "Person",
+  "url": "/people/raleigh-seamster/",
+  "description": "Raleigh Seamster’s PLACE19 session concerned storytelling with Google Earth. The programme identifies her as a Google Earth Outreach senior programme manager supporting Indigenous communities and records training at Indigenous Mapping Workshops in Aotearoa, Canada and Australia.",
+  "story": [
+    "Raleigh Seamster’s PLACE19 session concerned storytelling with Google Earth. The programme identifies her as a Google Earth Outreach senior programme manager supporting Indigenous communities and records training at Indigenous Mapping Workshops in Aotearoa, Canada and Australia."
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF p. 16",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "maori-gis"
+  ]
+}

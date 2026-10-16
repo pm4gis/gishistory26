@@ -7,12 +7,41 @@
   "label": "PLACE19 Māori GIS conference opens in Rotorua",
   "summary": "Te Kāhui Manu Hōkai convened the PLACE19 conference in Rotorua, with over 100 delegates and sessions on people, landscapes, assets, communication and education.",
   "url": "/sources/documents/place19-maori-gis-programme-2019/",
-  "passageIds": [],
-  "recordIds": [
-    "entity:land-information-new-zealand-linz",
-    "entity:eagle-technology"
+  "passageIds": [
+    "passage:publication-place19-maori-gis-programme-2019"
   ],
-  "themeIds": [],
+  "recordIds": [
+    "entity:eagle-technology",
+    "entity:gis-in-conservation-scgis-new-zealand-and-fiji",
+    "entity:land-information-new-zealand-linz",
+    "entity:massey-university",
+    "entity:te-kahui-manu-hokai-maori-gis-association",
+    "person:aaria-dobson-waitere",
+    "person:andrew-ferrel",
+    "person:anna-meissner",
+    "person:dean-walker",
+    "person:duane-wilkins",
+    "person:gabor-kereszturi",
+    "person:graeme-henderson",
+    "person:jacob-robinson",
+    "person:jade-weideman",
+    "person:jonathan-procter",
+    "person:kasey-oomen",
+    "person:mark-palmer",
+    "person:millan-ruka",
+    "person:nathan-heazlewood",
+    "person:parker-jones",
+    "person:raleigh-seamster",
+    "person:sean-bragg",
+    "person:stuart-mead",
+    "person:suzanne-bergman",
+    "person:takerei-norton",
+    "person:ted-taylor",
+    "person:wendy-shaw"
+  ],
+  "themeIds": [
+    "maori-gis"
+  ],
   "categories": [
     "documentary source",
     "published historical evidence",

@@ -1,0 +1,21 @@
+{
+  "id": "person:melissa-brooks",
+  "slug": "melissa-brooks",
+  "name": "Melissa Brooks",
+  "kind": "Person",
+  "url": "/people/melissa-brooks/",
+  "description": "Provided peer review of the May 2021 Taranaki CDEM Geospatial Strategy while at New Plymouth District Council, including advice and support on objectives and overall delivery.",
+  "story": [
+    "Provided peer review of the May 2021 Taranaki CDEM Geospatial Strategy while at New Plymouth District Council, including advice and support on objectives and overall delivery."
+  ],
+  "sources": [
+    {
+      "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF p. 2",
+      "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "open-practice"
+  ]
+}

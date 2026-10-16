@@ -1,0 +1,49 @@
+{
+  "id": "passage:publication-gis-day-education-poster-2018",
+  "slug": "publication-gis-day-education-poster-2018",
+  "articleId": "article:chapter-29",
+  "title": "Classroom GIS in 2018",
+  "order": 11,
+  "updatedAt": "2026-10-17",
+  "themeIds": [
+    "profession"
+  ],
+  "recordIds": [
+    "entity:core-education-learnz",
+    "entity:eagle-technology",
+    "entity:land-information-new-zealand-linz",
+    "entity:new-zealand-cartographic-society"
+  ],
+  "blocks": [
+    {
+      "id": "publication-gis-day-education-poster-2018-p1",
+      "type": "paragraph",
+      "text": "The GIS Day poster dated Wednesday 14 November 2018 brought several classroom mapping initiatives into one teaching resource. It linked the LINZ and LEARNZ geospatial virtual field trips from 2013 through 2018, covering introductory geospatial work, skills and data, drones, land and sea, natural hazards, and land, sky and space. Map My Wāhi activities from 2017 and 2018 appeared alongside Eagle Technology lesson plans for NCEA Geography spatial-analysis standards. The poster also directed teachers to the New Zealand Cartographic Society’s 2016–2017 children’s map competition winners. Its combination of curriculum links and small activities documents the teaching material available at that date.",
+      "markdown": "The GIS Day poster dated Wednesday 14 November 2018 brought several classroom mapping initiatives into one teaching resource. It linked the LINZ and LEARNZ geospatial virtual field trips from 2013 through 2018, covering introductory geospatial work, skills and data, drones, land and sea, natural hazards, and land, sky and space. Map My Wāhi activities from 2017 and 2018 appeared alongside Eagle Technology lesson plans for NCEA Geography spatial-analysis standards. The poster also directed teachers to the New Zealand Cartographic Society’s 2016–2017 children’s map competition winners. Its combination of curriculum links and small activities documents the teaching material available at that date.",
+      "sources": [
+        {
+          "label": "GIS Day 2018 educational poster (Doctor Who-themed presentation), Slides 1–5",
+          "url": "/publications/gis-day-education-poster-2018/"
+        }
+      ]
+    },
+    {
+      "id": "publication-gis-day-education-poster-2018-p2",
+      "type": "paragraph",
+      "text": "The activities extended beyond a conventional desktop GIS lesson. Learners could explore virtual views of Great Walks, compare classrooms around the world, investigate lunar imagery or assemble a printed three-dimensional map cube. The supplied PowerPoint contains five versions of the poster, using the same GIS Day date and much of the same resource text. Those slides are preserved as a single educational publication, with a separate PDF viewing copy. Their historical value lies in showing how mapping was being introduced through familiar browsers, visual exploration and classroom exercises in 2018.",
+      "markdown": "The activities extended beyond a conventional desktop GIS lesson. Learners could explore virtual views of Great Walks, compare classrooms around the world, investigate lunar imagery or assemble a printed three-dimensional map cube. The supplied PowerPoint contains five versions of the poster, using the same GIS Day date and much of the same resource text. Those slides are preserved as a single educational publication, with a separate PDF viewing copy. Their historical value lies in showing how mapping was being introduced through familiar browsers, visual exploration and classroom exercises in 2018.",
+      "sources": [
+        {
+          "label": "GIS Day 2018 educational poster (Doctor Who-themed presentation), Slides 1–5",
+          "url": "/publications/gis-day-education-poster-2018/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "GIS Day 2018 educational poster (Doctor Who-themed presentation), Slides 1–5",
+      "url": "/publications/gis-day-education-poster-2018/"
+    }
+  ]
+}

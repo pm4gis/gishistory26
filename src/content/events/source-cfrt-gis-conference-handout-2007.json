@@ -7,11 +7,15 @@
   "label": "Crown Forestry Rental Trust demonstrates ArcFlax and Treaty mapping",
   "summary": "At the Rotorua Esri User Group conference, the Trust documented its GIS warehouse, contracted cartography and ArcReader 'ArcFlax' distribution for Treaty research.",
   "url": "/sources/documents/cfrt-gis-conference-handout-2007/",
-  "passageIds": [],
+  "passageIds": [
+    "passage:publication-cfrt-gis-conference-handout-2007"
+  ],
   "recordIds": [
     "entity:crown-forestry-rental-trust"
   ],
-  "themeIds": [],
+  "themeIds": [
+    "maori-gis"
+  ],
   "categories": [
     "documentary source",
     "published historical evidence",

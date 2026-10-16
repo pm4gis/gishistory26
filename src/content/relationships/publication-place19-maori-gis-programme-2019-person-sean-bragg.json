@@ -1,0 +1,16 @@
+{
+  "id": "relationship:publication-place19-maori-gis-programme-2019-person-sean-bragg",
+  "a": "person:sean-bragg",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Documented together in 13–15 November 2019",
+  "basis": "Both records are documented subjects or contributors in PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme. This link records documentary association; it does not infer employment or collaboration.",
+  "passageIds": [
+    "passage:publication-place19-maori-gis-programme-2019"
+  ],
+  "sources": [
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme",
+      "url": "/publications/place19-maori-gis-programme-2019/"
+    }
+  ]
+}

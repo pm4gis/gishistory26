@@ -1,5 +1,6 @@
 import { dataset } from '../lib/data';
 import { chapterDocuments } from '../lib/chapter-documents.mjs';
+import { contributedPrimarySources } from '../lib/contributed-primary-sources.mjs';
 import { ORIGIN } from '../lib/seo.mjs';
 
 export async function GET() {
@@ -12,7 +13,7 @@ export async function GET() {
     if (!urls.has(path) || (lastmod && !urls.get(path))) urls.set(path, lastmod);
   }
   [
-    '/', '/read/', '/timeline/', '/browse/', '/datasets/', '/network/',
+    '/', '/publications/', '/sources/documents/', '/read/', '/timeline/', '/browse/', '/datasets/', '/network/',
     '/themes/', '/images/', '/about/', '/sources/collections/',
     '/nga-poutama-videos/'
   ].forEach(path => include(path));
@@ -21,6 +22,7 @@ export async function GET() {
   d.themes.forEach((t: any) => include('/themes/' + t.slug + '/', t.updatedAt));
   d.images.forEach((i: any) => include('/images/' + i.slug + '/'));
   chapterDocuments.forEach((doc: any) => include('/documents/' + doc.slug + '/'));
+  contributedPrimarySources.forEach(doc => {include(doc.publicationUrl);include('/sources/documents/'+doc.slug+'/');});
   const esc = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const entries = [...urls.entries()].map(([path, lastmod]) =>
     '<url><loc>' + esc(ORIGIN + path) + '</loc>' + (lastmod ? '<lastmod>' + lastmod + '</lastmod>' : '') + '</url>'

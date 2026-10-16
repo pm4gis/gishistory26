@@ -1,0 +1,21 @@
+{
+  "id": "person:teresa-gordon",
+  "slug": "teresa-gordon",
+  "name": "Teresa Gordon",
+  "kind": "Person",
+  "url": "/people/teresa-gordon/",
+  "description": "Coordinated and led development of the Taranaki CDEM geospatial strategy adopted in May 2021. The strategy credits her work alongside Ed Cook and records consultation with regional stakeholders.",
+  "story": [
+    "Coordinated and led development of the Taranaki CDEM geospatial strategy adopted in May 2021. The strategy credits her work alongside Ed Cook and records consultation with regional stakeholders."
+  ],
+  "sources": [
+    {
+      "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version, PDF p. 2",
+      "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [
+    "open-practice"
+  ]
+}

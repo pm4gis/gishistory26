@@ -1,0 +1,32 @@
+{
+  "id": "image:kimihia-wetland-mapping-2021",
+  "slug": "kimihia-wetland-mapping-2021",
+  "title": "Kimihia wetland mapping example published in 2021",
+  "assetPath": "/assets/historical/web/kimihia-wetland-mapping-2021.webp",
+  "thumbnailPath": "/assets/historical/card/kimihia-wetland-mapping-2021.webp",
+  "originalAssetPath": "/assets/historical/original/kimihia-wetland-mapping-2021.png",
+  "sourceUrl": "https://history.pm4gis.nz/publications/gis-mapping-wetland-projects-2021/",
+  "sourceName": "GIS mapping tools for wetland projects, Te Reo o te Repo: Kei Konei Tonu Au, Chapter 16, PDF p. 4",
+  "credit": "Duane Wilkins; published by Manaaki Whenua – Landcare Research; Google Earth and the imagery/data credits retained in the original screenshot",
+  "licence": "Preserved with contributor publication authorisation; original third-party credits retained",
+  "licenceUrl": "https://history.pm4gis.nz/publications/gis-mapping-wetland-projects-2021/",
+  "altText": "A Google MyMaps wetland mapping example near Kimihia in Wilkins’s 2021 chapter. PDF p. 4, printed p. 204. The source caption identifies Google MyMaps; no independent screenshot capture date is established.",
+  "caption": "A Google MyMaps wetland mapping example near Kimihia in Wilkins’s 2021 chapter. PDF p. 4, printed p. 204. The source caption identifies Google MyMaps; no independent screenshot capture date is established.",
+  "context": "A Google MyMaps wetland mapping example near Kimihia in Wilkins’s 2021 chapter. PDF p. 4, printed p. 204. The source caption identifies Google MyMaps; no independent screenshot capture date is established.",
+  "themeIds": [
+    "maori-gis"
+  ],
+  "dateDisplay": "2021 (publication date)",
+  "publicationSlug": "gis-mapping-wetland-projects-2021",
+  "sourcePage": 4,
+  "articleSlug": "conservation-and-environment",
+  "passageId": "passage:publication-gis-mapping-wetland-projects-2021",
+  "passageSlug": "publication-gis-mapping-wetland-projects-2021",
+  "afterParagraphId": "publication-gis-mapping-wetland-projects-2021-p2",
+  "originalWidth": 1191,
+  "originalHeight": 1684,
+  "originalSha256": "fb15befeb6f3ad753a280dc91c97025336a856dcd2fd322c65f8228e0125f9f9",
+  "webSha256": "ab671491c8e23922ab8a81d0b2cacd11b3ca4f18cd78532f48b5ca15e34c3b41",
+  "thumbnailSha256": "e04b763707758ebb99973d248d4d615fc54d865be1f65c369c9dc496ee9d029b",
+  "derivativesNote": "Full original PDF page rendered at 144 dpi; web and card derivatives are uncropped. Original publication remains available as an unchanged file."
+}

@@ -7,9 +7,10 @@ import {contributedPrimarySources} from '../../../lib/contributed-primary-source
   <p class="eyebrow">Documentary evidence</p>
   <h1 class="page-title">Historical source documents</h1>
   <p>These primary-source records are drawn from eight original files supplied for the GIS History project. Dates describe their documented publication or event, not the date files were uploaded or digitised. Publication rights and the original file's hosting status are recorded separately.</p>
+  <p><a class="button" href="/publications/">Browse the Publications library</a></p>
   <ul class="list">
    {contributedPrimarySources.map(item=><li><a href={'/sources/documents/'+item.slug+'/'}>{item.title}</a><p>{item.date} · {item.creator}</p><p>{item.summary}</p></li>)}
   </ul>
-  <p>Original files supplied for research have been checked by SHA-256. Documents without confirmed republication rights are described and cited here, rather than represented as hosted PDF downloads.</p>
+  <p>The eight originals are preserved with contributor authorisation in the Publications library. Their SHA-256 checksums, attribution and specific third-party rights notes are recorded individually.</p>
  </article>
 </Layout>

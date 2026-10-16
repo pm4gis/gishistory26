@@ -21,6 +21,10 @@
     {
       "label": "Ngāi Tahu, Kā Huru Manu, Te Karaka issue 77, 2018",
       "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 17–18",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -46,5 +50,19 @@
         "url": "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/ka-huru-manu-tk77/"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "Sean Bragg’s PLACE19 presentation described GIS at Te Rūnanga o Ngāi Tahu, including customary protection areas and preparation for climate and emergency risks. His biography records a two-year internship followed by two years employed in iwi GIS by 2019."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 17–18",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "relationship:publication-taranaki-cdem-geospatial-strategy-2021-entity-taranaki-civil-defence-and-emergency-management-group",
+  "a": "entity:taranaki-civil-defence-and-emergency-management-group",
+  "b": "entity:eagle-technology",
+  "label": "Documented together in May 2021",
+  "basis": "Both records are documented subjects or contributors in Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version. This link records documentary association; it does not infer employment or collaboration.",
+  "passageIds": [
+    "passage:publication-taranaki-cdem-geospatial-strategy-2021"
+  ],
+  "sources": [
+    {
+      "label": "Taranaki CDEM Geospatial Strategy 2021–2026: stakeholder version",
+      "url": "/publications/taranaki-cdem-geospatial-strategy-2021/"
+    }
+  ]
+}

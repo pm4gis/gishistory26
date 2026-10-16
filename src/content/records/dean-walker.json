@@ -17,6 +17,10 @@
     {
       "label": "Chapter 23 · Tasman shares council GIS",
       "url": "/stories/councils-build-corporate-gis/"
+    },
+    {
+      "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 19–20",
+      "url": "/publications/place19-maori-gis-programme-2019/"
     }
   ],
   "aliases": [
@@ -38,5 +42,19 @@
         "url": "/stories/councils-build-corporate-gis/"
       }
     ]
+  ],
+  "contentSections": [
+    {
+      "title": "Documented contribution in 2019",
+      "paragraphs": [
+        "Dean Walker’s PLACE19 abstract describes a University of Canterbury Geospatial Research Institute project co-creating settlement-planning tools with communities at Ōhinemutu and Tuahiwi. The proposed tools would retain cultural narratives and support community-led participation in urban regeneration."
+      ],
+      "sources": [
+        {
+          "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 19–20",
+          "url": "/publications/place19-maori-gis-programme-2019/"
+        }
+      ]
+    }
   ]
 }
