@@ -15,6 +15,7 @@ const {item}=Astro.props;
   <h2>Relationships</h2>
   <p>{item.related.join(' · ')}</p>
   <p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter →</a></p>
+  <p><strong>Timeline event:</strong> {item.eventLabel}</p>
   <p><a href={'/timeline/?event=source-'+item.slug}>Find this document on the timeline →</a></p>
   <h2>Original and rights</h2>
   <p>{item.rights}</p>
