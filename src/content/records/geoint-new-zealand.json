@@ -1,0 +1,78 @@
+{
+  "id": "entity:geoint-new-zealand",
+  "slug": "geoint-new-zealand",
+  "name": "GEOINT New Zealand",
+  "kind": "Agency",
+  "category": "Government",
+  "url": "/entities/geoint-new-zealand/",
+  "website": "https://www.nzdf.mil.nz/navy/who-we-are/people-structure-and-leadership/",
+  "description": "The NZDF geospatial intelligence unit, covering GIS, cartography, imagery analysis and data services.",
+  "story": [
+    "The Department of the Prime Minister and Cabinet identifies GEOINT New Zealand (GNZ) as a sub-unit of New Zealand Defence Intelligence. It describes a largely civilian team with expertise in GIS, cartography, imagery analysis and data analytics. GNZ supplies maps, charts, imagery products, data services and specialist advice for Defence decisions and navigation safety, and supports other government agencies.",
+    "The NZDF says data gathered by GNZ is available free through the GEOINT Data Service. Air Force careers guidance describes geospatial intelligence analysts using GIS to display and analyse spatial data and imagery, then create maps and graphics for intelligence reports.",
+    "Navy Today’s 2021 account documents GNZ’s work on the Littoral Environment Information System (LENS), a geospatial data system for collecting, storing and sharing beach intelligence."
+  ],
+  "sources": [
+    {
+      "label": "Department of the Prime Minister and Cabinet, National Security and Intelligence: Role of Government Agencies, February 2023",
+      "url": "https://www.dpmc.govt.nz/sites/default/files/2023-04/National-Security-and-Intelligence-Role-of-Government-Agencies-updated-February-2023.pdf"
+    },
+    {
+      "label": "New Zealand Defence Force, People, Structure & Leadership: GEOINT New Zealand",
+      "url": "https://www.nzdf.mil.nz/navy/who-we-are/people-structure-and-leadership/"
+    },
+    {
+      "label": "GEOINT New Zealand Data Service",
+      "url": "https://geodata.nzdf.mil.nz/"
+    },
+    {
+      "label": "New Zealand Defence Careers, Intelligence Specialist: Geospatial Intelligence Analyst",
+      "url": "https://www.defencecareers.mil.nz/air-force/careers/browse-roles/intelligence-specialist"
+    },
+    {
+      "label": "Navy Today, issue 256, “Beach Intelligence”",
+      "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+    }
+  ],
+  "aliases": [
+    "Geospatial Intelligence New Zealand",
+    "GNZ"
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Department of the Prime Minister and Cabinet, National Security and Intelligence: Role of Government Agencies, February 2023",
+        "url": "https://www.dpmc.govt.nz/sites/default/files/2023-04/National-Security-and-Intelligence-Role-of-Government-Agencies-updated-February-2023.pdf"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Defence Force, People, Structure & Leadership: GEOINT New Zealand",
+        "url": "https://www.nzdf.mil.nz/navy/who-we-are/people-structure-and-leadership/"
+      },
+      {
+        "label": "GEOINT New Zealand Data Service",
+        "url": "https://geodata.nzdf.mil.nz/"
+      },
+      {
+        "label": "New Zealand Defence Careers, Intelligence Specialist: Geospatial Intelligence Analyst",
+        "url": "https://www.defencecareers.mil.nz/air-force/careers/browse-roles/intelligence-specialist"
+      }
+    ],
+    [
+      {
+        "label": "Navy Today, issue 256, “Beach Intelligence”",
+        "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [],
+  "contextLinks": [
+    {
+      "label": "GEOINT New Zealand Data Service",
+      "url": "https://geodata.nzdf.mil.nz/"
+    }
+  ],
+  "status": "Geospatial intelligence documented"
+}

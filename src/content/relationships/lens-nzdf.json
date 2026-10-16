@@ -1,0 +1,14 @@
+{
+  "id": "relationship:lens-nzdf",
+  "a": "project:littoral-environment-information-system",
+  "b": "entity:new-zealand-defence-force",
+  "label": "Used by NZDF hydrographers",
+  "basis": "Navy Today reports that NZDF hydrographers used LENS for beach intelligence and that the hydrographic trade adopted it after trials with HMNZS Matataua in early 2021.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Navy Today, issue 256, “Beach Intelligence”",
+      "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+    }
+  ]
+}

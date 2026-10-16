@@ -1,0 +1,40 @@
+{
+  "id": "project:littoral-environment-information-system",
+  "slug": "littoral-environment-information-system",
+  "name": "Littoral Environment Information System (LENS)",
+  "kind": "Project",
+  "category": "Defence technology",
+  "url": "/entities/littoral-environment-information-system/",
+  "description": "A geospatial data system for collecting and sharing beach intelligence.",
+  "story": [
+    "Navy Today reported that GEOINT New Zealand developed LENS with the Australian Geospatial-Intelligence Organisation to improve how littoral environmental information is collected, stored and distributed. NZDF hydrographers use it to record beach hazards and safe routes during surveys and Rapid Environmental Assessment.",
+    "LENS stores beach intelligence in a geospatial database using the NATO Additional Military Layer schema. Hydrographers can create visual products in the field; GEOINT New Zealand’s Hydrographic Shore Support Unit checks the data, adds it to the master database and can distribute it to NZDF Command and Control systems. After successful trials with HMNZS Matataua in early 2021, NZDF reported that the hydrographic trade adopted LENS as its primary method for collating, storing and sharing beach intelligence."
+  ],
+  "sources": [
+    {
+      "label": "Navy Today, issue 256, “Beach Intelligence”",
+      "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+    }
+  ],
+  "aliases": [
+    "LENS",
+    "Beach Intelligence"
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Navy Today, issue 256, “Beach Intelligence”",
+        "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+      }
+    ],
+    [
+      {
+        "label": "Navy Today, issue 256, “Beach Intelligence”",
+        "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+      }
+    ]
+  ],
+  "biographyParagraphSources": [],
+  "status": "Documented system"
+}

@@ -4374,6 +4374,10 @@
   "src/content/records/xiaotie-anthony-huang.json": "e941f83d3c0725e19c00c406b9e10eaa1734d219132894f6c69d3c7ef6c8ac05",
   "src/content/records/zane-egginton.json": "81fcd1b7a7625f5ff42d4c241db5d8b9e8b7061639c4a8d1f10c4a6ab424aa9d",
   "src/content/records/zhennan-shi.json": "200f7e1a71e0f80cef639cfe9f57de7d5315de047309420fd0f5868f40ecb97d",
+  "src/content/records/geoint-new-zealand.json": "941fcff62e684c7aa43ddd946da3b55e5446bf781c7c85953025481a6470ee7a",
+  "src/content/records/littoral-environment-information-system.json": "ae31f54ba32f4460a6b7ece6011c74df44ee77a6f48262236275abaf0cc48172",
+  "src/content/records/new-zealand-defence-force.json": "35a582fec5f2c21f11de42f3e9224b14c82f94356bb3ff4be54e2c36e914014f",
+  "src/content/records/william-mortimer.json": "0f17754d653897fa7faf0a74e460fc1a3afcfe9468aa60bcdbf80158c618c782",
   "src/content/events/1962-aerial-photo-coverage.json": "844954f4654d9202b7dcd3eefdf22f65edb54181935a1fafb22b5bda8d243d6c",
   "src/content/events/1962-soil-survey-method.json": "2bd4bd492524181b4f83e470b510588c3862698a924483870ddc6653cff8682b",
   "src/content/events/1964-luc-catchment-survey-teams.json": "973fcc7ba9328805767071a893529595c8c46fc296ba70a0d1f518248fc3055e",
@@ -4976,5 +4980,9 @@
   "src/content/relationships/research-20261015-morad-wilkins-keycad.json": "c8da14ed8e0247b465689e09762828ecdc36a8324d72f088210f216ac1fc6865",
   "src/content/relationships/research-20261015-pimblotts-founded-explorer.json": "e9cb1772887f2278b1397349cc8620b1f27b0b81970cad40e3b820f9d8234580",
   "src/content/relationships/research-20261015-reihana-ruka-wiss.json": "74add0dbf65a40b4676e4db53c8d7f468c4df5af8fe5aa483c27630f836c30d5",
-  "src/content/relationships/research-20261015-robertson-de-winton-fbis.json": "4eb5496b1cdb73939bdd6766f882e51827fb283aaadda03e0c1eb6cf84c3cd23"
+  "src/content/relationships/research-20261015-robertson-de-winton-fbis.json": "4eb5496b1cdb73939bdd6766f882e51827fb283aaadda03e0c1eb6cf84c3cd23",
+  "src/content/relationships/lens-geoint-new-zealand.json": "fdcd79f0f87fd9fdbd7499fa9672a17218e8261902b2804cb80b6f43a332c3ea",
+  "src/content/relationships/lens-nzdf.json": "711289eb5f934d44f739e332342d5a1dff115cfef3adec787423ce6f5faba914",
+  "src/content/relationships/nzdf-geoint-new-zealand.json": "89703b08287ab24481551af00d8272abb7692180fec24441c3b0d021bd488da1",
+  "src/content/relationships/william-mortimer-nzdf.json": "204e623b31b0cd8d4cb208fa5829320f0c229b117d6d4d591b42bfb647dcc092"
 }

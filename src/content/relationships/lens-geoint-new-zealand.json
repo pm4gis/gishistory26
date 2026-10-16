@@ -1,0 +1,14 @@
+{
+  "id": "relationship:lens-geoint-new-zealand",
+  "a": "project:littoral-environment-information-system",
+  "b": "entity:geoint-new-zealand",
+  "label": "Developed by",
+  "basis": "Navy Today reports that GEOINT New Zealand developed LENS with the Australian Geospatial-Intelligence Organisation and supplied the geospatial tools and data support.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Navy Today, issue 256, “Beach Intelligence”",
+      "url": "https://www.nzdf.mil.nz/assets/Uploads/DocumentLibrary/NavyToday_Issue256.pdf"
+    }
+  ]
+}
