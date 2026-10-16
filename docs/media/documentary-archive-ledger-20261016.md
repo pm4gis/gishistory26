@@ -8,7 +8,7 @@ Prepared 16 October 2026. Repository: pm4gis/gishistory26. This file is the dura
 - Working branch: media/linz-2015-tilemill-layers-20261016.
 - Archive entries before this batch: 189 JSON records (GitHub directory listing), with 174 original asset files in public/assets/historical/original.
 - Release stage: archive-only acquisition; chapter, record and catalogue image placements are expressly deferred.
-- PR: to be opened after the acquisition workflow is committed. Verify actual number and workflow results before changing this field.
+- PR: https://github.com/pm4gis/gishistory26/pull/98 . Acquisition GitHub Actions run 38886870835 succeeded after SHA/source checks, npm ci, npm test (128 tests), npm run build, and desktop/mobile Chromium browser QA. Automated asset commit on the feature branch is 5105152ca035d7fe369e8b750d4913bdae7799fa. Subsequent PR verification and Cloudflare production deployment remain pending; no live publication or chapter placement is claimed.
 - Latest accepted imagery and existing images preserved; no historical prose, paragraph relationships, image routes, event dates, chapter images or theme media intentionally edited.
 
 ## Batch 1: archived 2015 LINZ TileMill layer previews
@@ -17,9 +17,9 @@ The original 2015 LINZ supporting-layer thumbnails are in the project repository
 
 | Archive slug | Repository source path | Git blob SHA-1 | Documented Git history | Decision |
 | --- | --- | --- | --- | --- |
-| linz-geodetic-marks-layer-2015 | SupportingLayers/GeodeticMarks/.thumb.png | e87207f457e8bbd68bd99265e2f9f37d95b02968 | 25 May 2015 | Ingestion queued; original and derivatives must be verified |
-| linz-motorways-layer-2015 | SupportingLayers/Motorways/.thumb.png | 214d43f49bddfb186fdd885c8752bed6d1036356 | 30 January 2015 | Ingestion queued; original and derivatives must be verified |
-| linz-parcel-wireframe-layer-2015 | SupportingLayers/Parcel_WireFrame/.thumb.png | 19bf1984d8a47a122b69ca4981005848917db7c0 | 18 February 2015 | Ingestion queued; original and derivatives must be verified |
+| linz-geodetic-marks-layer-2015 | SupportingLayers/GeodeticMarks/.thumb.png | e87207f457e8bbd68bd99265e2f9f37d95b02968 | 25 May 2015 | Acquired and source-verified in run 38886870835; merge and production checks pending |
+| linz-motorways-layer-2015 | SupportingLayers/Motorways/.thumb.png | 214d43f49bddfb186fdd885c8752bed6d1036356 | 30 January 2015 | Acquired and source-verified in run 38886870835; merge and production checks pending |
+| linz-parcel-wireframe-layer-2015 | SupportingLayers/Parcel_WireFrame/.thumb.png | 19bf1984d8a47a122b69ca4981005848917db7c0 | 18 February 2015 | Acquired and source-verified in run 38886870835; merge and production checks pending |
 
 Source snapshot and licence: https://github.com/linz/linz_basemaps/blob/6e1bb61b47d8e357def869c994e9c827ade0b13d/README.md#licensing . The batch archive script downloads each unchanged .thumb.png from the pinned commit and checks its Git blob SHA-1 before generating SHA-256, original dimensions and uncropped WebP display derivatives. It never upscales images and cannot overwrite accepted files. Each original is documented separately with title, source URL, credit, period, licence evidence, caption, alt text and original URL. Its archive-only status explicitly prevents accidental passage association.
 
