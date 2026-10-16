@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:paul-lundberg",
+  "a": "person:paul-lundberg",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Paul Lundberg as an author of “Brief history of LINZ's NZTopo50 and NZTopo250 map series”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

@@ -8,7 +8,8 @@
   "website": null,
   "story": [
     "Robert Odolinski joined the University of Otago School of Surveying in 2015 and researches precise GNSS positioning, including low-cost receivers and smartphones. His work links geodesy and positioning with the wider spatial profession and the practical use of satellite navigation in New Zealand.",
-    "He received the 2018 New Zealand Spatial Excellence Award for Education and Professional Development and has served on New Zealand’s National Positioning Infrastructure Coordination Committee. He became an associate professor at Otago in 2024."
+    "He received the 2018 New Zealand Spatial Excellence Award for Education and Professional Development and has served on New Zealand’s National Positioning Infrastructure Coordination Committee. He became an associate professor at Otago in 2024.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Robert Odolinski as an author of “Dynamic datums in GIS through modern GNSS positioning”."
   ],
   "sources": [
     {
@@ -18,6 +19,10 @@
     {
       "label": "Beehive, Pest control system wins spatial excellence award, 17 October 2018",
       "url": "https://www.beehive.govt.nz/release/pest-control-system-wins-spatial-excellence-award"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
     }
   ],
   "aliases": [
@@ -26,6 +31,15 @@
   "themeIds": [],
   "status": "Account available",
   "coverageEnd": 2026,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
   "biographyParagraphSources": []
 }

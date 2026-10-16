@@ -1,0 +1,106 @@
+{
+  "id": "person:antoni-moore",
+  "slug": "antoni-moore",
+  "name": "Antoni Moore",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/antoni-moore/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Antoni Moore as an author of “Geographical vector agents for supervised image classification”; “Geovisual data mining of dolphin space-time trajectories”; “Hydrologically adaptive regular tessellations for urban drainage modelling”.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Antoni Moore as an author of “Routes to Dunedin secondary schools and students' perceptions of safety”; “Representations of geography in New Zealand First World War cartoons”; “Visualisation of active transport data”; “An augmented-reality sand-based 3D terrain interface”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Antoni Moore as an author of “Extracting city objects with vector agents”; “Dissecting the GPS track”; “Local farm knowledge mapping for heritage and biological research”; “GIS analysis of active transport data in Dunedin”; “Spatial assessment of school neighbourhoods and adolescent travel in Dunedin”; “Spatial analysis and geovisualisation for active transport”; “A tangible interface for land development teaching”.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Antoni Moore as an author of “Spatial data quality and veracity”.",
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Antoni Moore as an author of “Modelling climate-related coastal flooding hazards and residential property values”; “Geographically weighted logistic regression for active transport”.",
+    "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago lists Antoni Moore as an author of “Spatial aspects of a comparative study of active transport to school and motorized transport”.",
+    "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Antoni Moore as an author of “Geographical vector agent modelling for image classification”.",
+    "GIScience 2025 accepted abstracts, official conference programme lists Antoni Moore as an author of “A comparison of two steering laws for unconstrained immersive hybrid navigation”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    },
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    },
+    {
+      "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4245"
+    },
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    },
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ],
+    [
+      {
+        "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+        "url": "https://hdl.handle.net/10523/4245"
+      }
+    ],
+    [
+      {
+        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+      }
+    ],
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

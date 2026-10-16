@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2024:mairead-de-roiste",
+  "a": "person:mairead-de-roiste",
+  "b": "entity:geocart-2024",
+  "label": "Named author at GeoCart 2024",
+  "basis": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Mairéad de Róiste as an author of “Bridging the Visualization Gap in Time Series Analysis through Spatialization”; “Performance of Global High-Resolution Canopy Height Model Across Varied New Zealand Vegetation Types”; “Harnessing the Power of Deep Learning and Earth Observation for Flood Forecasting in Aotearoa”; “Exploring Virtual Reality for Spatial Learning”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "relationship:conference-contribution:nzgrc-2022:simon-cox",
+  "a": "person:simon-cox",
+  "b": "entity:nzgrc-2022",
+  "label": "Named author at New Zealand Geospatial Research Conference 2022",
+  "basis": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Simon Cox as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”. New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Simon Cox as an author of “Modelling climate-related coastal flooding hazards and residential property values”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    },
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ]
+}

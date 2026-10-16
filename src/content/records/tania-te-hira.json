@@ -6,12 +6,17 @@
   "category": "People",
   "url": "/people/tania-te-hira/",
   "story": [
-    "A LINZ geospatial student or graduate profile records Tania Te Hira: Geospatial Specialist, Haanuiorangi Te Whare Tapu o Ngāpuhi; formerly DOC Geospatial Information Analyst and Stats NZ."
+    "A LINZ geospatial student or graduate profile records Tania Te Hira: Geospatial Specialist, Haanuiorangi Te Whare Tapu o Ngāpuhi; formerly DOC Geospatial Information Analyst and Stats NZ.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Tania Te Hira as an author of “Ngā Poutama Matawhenua Māori GIS Wānanga”."
   ],
   "sources": [
     {
       "label": "LINZ, GIS student and graduate profiles",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/studying-gis/gis-student-and-graduate-profiles"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
     }
   ],
   "aliases": [
@@ -19,7 +24,15 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

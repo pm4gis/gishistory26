@@ -9,7 +9,10 @@
     "Roger Smith founded the Wellington map-design studio Geographx in 1998. His work combined cartographic design, physical-landform interpretation and digital spatial data in New Zealand and international print maps, digital basemaps and terrain visualisations. The studio produced the terrain and natural-colour mapping discussed separately in the dataset catalogue.",
     "At the 2012 Mountain Cartography Workshop in Taurewa, Smith presented a first-hand account of Geographx's recently completed national 4 m land-cover raster basemap. He described using LINZ Topo50 and Landcare Research LCDB3 inputs, hillshading from Geographx's own 8 m terrain model, Manifold System, Global Mapper and scripted Adobe Photoshop processing. The source paper describes 116 tiles and a roughly 420 GB working dataset.",
     "Geographx supplied the relief-cartography design for the 2013 EARTH Platinum World Atlas, on which Smith was chief cartographer and Craig MacAlpine was cartographic production manager. The 2015 ICA report records Geographx becoming New Zealand distributor for Skyline Systems in 2012, producing a Great Walks fieldmap series in 2014, and the 2013 Tongariro oblique map's third-place result in an international paper-map competition.",
-    "Smith curated the National Library's Unfolding the Map exhibition in 2015 and received a New Zealand Spatial Excellence Award for outstanding contribution in 2017. He served as president of the New Zealand Cartographic Society from 2018 to 2022. The available contemporary sources do not establish that he produced TV3 weather basemap imagery; MetService's 2019 annual report attributes the broadcast graphics platform to Weatherscape, without identifying each underlying terrain dataset."
+    "Smith curated the National Library's Unfolding the Map exhibition in 2015 and received a New Zealand Spatial Excellence Award for outstanding contribution in 2017. He served as president of the New Zealand Cartographic Society from 2018 to 2022. The available contemporary sources do not establish that he produced TV3 weather basemap imagery; MetService's 2019 annual report attributes the broadcast graphics platform to Weatherscape, without identifying each underlying terrain dataset.",
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Roger Smith as an author of “Mapping New Zealand's Great Walks”.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Roger Smith as an author of “Unfolding the map: The backstory”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Roger Smith as an author of “Mapping Westland Tai Poutini National Park”."
   ],
   "sources": [
     {
@@ -31,6 +34,18 @@
     {
       "label": "MetService, Annual Report 2019, p 19, New Zealand broadcaster use of Weatherscape",
       "url": "https://about.metservice.com/assets/downloads/annualreport/MetService-Annual-Report-2019-web.pdf"
+    },
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
     }
   ],
   "aliases": [
@@ -69,6 +84,24 @@
       {
         "label": "MetService, Annual Report 2019, p 19, New Zealand broadcaster use of Weatherscape",
         "url": "https://about.metservice.com/assets/downloads/annualreport/MetService-Annual-Report-2019-web.pdf"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
       }
     ]
   ],

@@ -1,0 +1,29 @@
+{
+  "id": "person:sardar-faisal-abbas",
+  "slug": "sardar-faisal-abbas",
+  "name": "Sardar Faisal Abbas",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/sardar-faisal-abbas/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Sardar Faisal Abbas as an author of “Real-time lightning strike notifications”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

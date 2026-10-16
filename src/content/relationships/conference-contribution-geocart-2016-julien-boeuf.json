@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:julien-boeuf",
+  "a": "person:julien-boeuf",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Julien Boeuf as an author of “Photogrammetric modelling in RPAS aerial surveys”; “Seasonal snowpack mapping with drone photogrammetry”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:shannon-l-mccolley",
+  "a": "person:shannon-l-mccolley",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Shannon L. McColley as an author of “The GeoDataHub: A digital archive of New Zealand government mapping”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

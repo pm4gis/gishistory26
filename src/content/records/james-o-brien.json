@@ -1,0 +1,29 @@
+{
+  "id": "person:james-o-brien",
+  "slug": "james-o-brien",
+  "name": "James O'Brien",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/james-o-brien/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists James O'Brien as an author of “New Zealand electronic navigation charts distribution service”."
+  ],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

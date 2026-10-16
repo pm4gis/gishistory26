@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:rere-no-a-rangi-pope",
+  "a": "person:rere-no-a-rangi-pope",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted papers, official conference programme lists Rere-No-A-Rangi Pope as an author of “Georeferencing historical maps at scale”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted papers, official conference programme",
+      "url": "https://giscience2025.org/papers.html"
+    }
+  ]
+}

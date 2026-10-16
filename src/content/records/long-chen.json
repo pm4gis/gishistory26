@@ -1,0 +1,29 @@
+{
+  "id": "person:long-chen",
+  "slug": "long-chen",
+  "name": "Long Chen",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/long-chen/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Long Chen as an author of “GIS analysis of active transport data in Dunedin”; “Spatial analysis and geovisualisation for active transport”."
+  ],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

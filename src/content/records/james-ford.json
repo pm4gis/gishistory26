@@ -1,0 +1,29 @@
+{
+  "id": "person:james-ford",
+  "slug": "james-ford",
+  "name": "James Ford",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/james-ford/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists James Ford as an author of “Mapping the State of Housing in Wellington City”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

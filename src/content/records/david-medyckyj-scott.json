@@ -8,7 +8,11 @@
   "story": [
     "David Medyckyj-Scott worked on geospatial information services in New Zealand and the United Kingdom. His early research covered metadata, human interaction with GIS and the organisational use of spatial information. A contemporary career record places him at the Midlands Regional Research Laboratory from 1989 to 1995, followed by a senior-scientist role at Landcare Research. There he co-developed GUILD-on-the-Web with Robert Gibb, bringing environmental spatial information to public web users in January 1996.",
     "In 1997 he joined the University of Edinburgh’s Data Library and led the Digimap project. The EDINA service launched in January 2000 with online Ordnance Survey maps and downloadable data for higher education. He identifies the earlier GUILD work as its conceptual background and recalls about 100,000 registered users by his departure in 2010. The scale and departure date are from his contributor account.",
-    "Back at Landcare Research, Medyckyj-Scott was Informatics Team Manager when S-map Online launched in August 2011. He co-authored accounts of the LRIS Portal and S-map Online, and later described the institute’s web-mapping work with Andrew Cowie at GeoCart 2016. His work helped make scientific data available through applications that people could query without desktop GIS software. His contribution to this history also identifies Gibb’s grid-systems work and Richard Murcott’s standards work."
+    "Back at Landcare Research, Medyckyj-Scott was Informatics Team Manager when S-map Online launched in August 2011. He co-authored accounts of the LRIS Portal and S-map Online, and later described the institute’s web-mapping work with Andrew Cowie at GeoCart 2016. His work helped make scientific data available through applications that people could query without desktop GIS software. His contribution to this history also identifies Gibb’s grid-systems work and Richard Murcott’s standards work.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists David Medyckyj-Scott as an author of “Web mapping and scientific data at Landcare Research”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists David Medyckyj-Scott as an author of “Spatio-temporal web mapping of scientific data”.",
+    "BioWhere project outputs: NZGRC 2022 poster citation, Massey University lists David Medyckyj-Scott as an author of “BioWhere: Georeferencing New Zealand's biota from texts”.",
+    "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago lists David Medyckyj-Scott as an author of “Current status and future directions of mobile GIS”."
   ],
   "sources": [
     {
@@ -38,6 +42,22 @@
     {
       "label": "David Medyckyj-Scott, LinkedIn profile supplied with his contribution",
       "url": "https://www.linkedin.com/in/ACoAAAMV6YMBAtj7SYyOyF2MoxFbuJqoe35FP7I"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+    },
+    {
+      "label": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4235"
     }
   ],
   "aliases": [
@@ -45,7 +65,35 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [],
+    [],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+        "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+      }
+    ],
+    [
+      {
+        "label": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago",
+        "url": "https://hdl.handle.net/10523/4235"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

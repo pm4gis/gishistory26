@@ -9,7 +9,8 @@
   "story": [
     "LINZ and the Geospatial Capability Committee included Andrew Douglas-Clifford in the Leaving School geospatial career-profile series: Cartographer & Geospatial Analyst, Tonkin + Taylor, October 2021.",
     "Andrew Douglas-Clifford is a New Zealand cartographer and geospatial professional who completed a Master’s in Geographic Information Science at the University of Canterbury. His Map Kiwi work grew from university mapping projects into a public portfolio of transport, topographic and experimental cartography.",
-    "His State Highway metro map received the New Zealand Cartographic Society People’s Choice Map Award and he received the society’s award at the 2018 New Zealand Spatial Excellence Awards. LINZ later profiled him as a cartographer and geospatial analyst at Tonkin + Taylor."
+    "His State Highway metro map received the New Zealand Cartographic Society People’s Choice Map Award and he received the society’s award at the 2018 New Zealand Spatial Excellence Awards. LINZ later profiled him as a cartographer and geospatial analyst at Tonkin + Taylor.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Andrew Douglas-Clifford as an author of “State highway metro maps”; “Gaining public transport passenger insights from crowdsourced information”."
   ],
   "sources": [
     {
@@ -27,6 +28,10 @@
     {
       "label": "Beehive, Pest control system wins spatial excellence award, 17 October 2018",
       "url": "https://www.beehive.govt.nz/release/pest-control-system-wins-spatial-excellence-award"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
     }
   ],
   "aliases": [
@@ -35,7 +40,17 @@
   "themeIds": [],
   "status": "Account available",
   "coverageEnd": 2026,
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [],
+    [],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

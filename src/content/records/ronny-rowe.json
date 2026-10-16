@@ -1,0 +1,29 @@
+{
+  "id": "person:ronny-rowe",
+  "slug": "ronny-rowe",
+  "name": "Ronny Rowe",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/ronny-rowe/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GIScience 2025 accepted abstracts, official conference programme lists Ronny Rowe as an author of “A comparison of two steering laws for unconstrained immersive hybrid navigation”."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

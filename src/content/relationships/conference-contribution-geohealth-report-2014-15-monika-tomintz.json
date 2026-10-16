@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geohealth-report-2014-15:monika-tomintz",
+  "a": "person:monika-tomintz",
+  "b": "entity:geohealth-laboratory-annual-report-2014-15",
+  "label": "Named author in GeoHealth Laboratory annual report 2014–15",
+  "basis": "GeoHealth Laboratory annual report 2014–15, University of Canterbury lists Monika Tomintz as an author of “Web GIS for local and regional health-care planning”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoHealth Laboratory annual report 2014–15, University of Canterbury",
+      "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/reports/geohealth-laboratory/GeoHealth-Laboratory-Annual-Report-2014-15.pdf"
+    }
+  ]
+}

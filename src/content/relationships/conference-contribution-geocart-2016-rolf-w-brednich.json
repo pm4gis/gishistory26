@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:rolf-w-brednich",
+  "a": "person:rolf-w-brednich",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Rolf W. Brednich as an author of “Augustus Koch: A forgotten New Zealand mapmaker”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

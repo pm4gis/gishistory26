@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:antoni-moore",
+  "a": "person:antoni-moore",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Antoni Moore as an author of “Geographical vector agents for supervised image classification”; “Geovisual data mining of dolphin space-time trajectories”; “Hydrologically adaptive regular tessellations for urban drainage modelling”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

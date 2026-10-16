@@ -1,0 +1,40 @@
+{
+  "id": "person:sean-fitzsimons",
+  "slug": "sean-fitzsimons",
+  "name": "Sean Fitzsimons",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/sean-fitzsimons/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Sean Fitzsimons as an author of “Seasonal snowpack mapping with drone photogrammetry”.",
+    "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Sean Fitzsimons as an author of “Recent ice wastage on the Tasman Glacier from geodetic elevation changes”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

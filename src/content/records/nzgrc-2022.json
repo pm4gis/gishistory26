@@ -1,0 +1,45 @@
+{
+  "id": "entity:nzgrc-2022",
+  "slug": "nzgrc-2022",
+  "name": "New Zealand Geospatial Research Conference 2022",
+  "kind": "Conference",
+  "category": "Research",
+  "url": "/entities/nzgrc-2022/",
+  "description": "Programme, project and institutional sources for named contributions to NZGRC 2022.",
+  "story": [
+    "The programme and related project and staff records cite named research presentations, posters and Matariki Project proceedings at the 2022 conference."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    },
+    {
+      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+    },
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      },
+      {
+        "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+        "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+      },
+      {
+        "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:elizabeth-carle",
+  "slug": "elizabeth-carle",
+  "name": "Elizabeth Carle",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/elizabeth-carle/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Elizabeth Carle as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”."
+  ],
+  "sources": [
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

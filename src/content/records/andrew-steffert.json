@@ -7,7 +7,8 @@
   "url": "/people/andrew-steffert/",
   "story": [
     "Andrew Steffert described Horizons’ floodplain mapping and LiDAR programme, including its development after the 2004 floods.",
-    "Andrew Steffert’s 2012 account explains the development of the Horizons Flood Plain Mapping Project following the February 2004 floods. The first LiDAR survey covered about 1,200 square kilometres in 2005, with later work extending the coverage."
+    "Andrew Steffert’s 2012 account explains the development of the Horizons Flood Plain Mapping Project following the February 2004 floods. The first LiDAR survey covered about 1,200 square kilometres in 2005, with later work extending the coverage.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Andrew Steffert as an author of “Mapping the Southern Alps”."
   ],
   "sources": [
     {
@@ -17,6 +18,10 @@
     {
       "label": "Chapter 37 · Christchurch, July 2003",
       "url": "/stories/lidar-remakes-the-landscape/"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
     }
   ],
   "aliases": [
@@ -24,7 +29,16 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [],
     [

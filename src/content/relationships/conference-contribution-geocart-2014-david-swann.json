@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:david-swann",
+  "a": "person:david-swann",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists David Swann as an author of “Assessing Spatial IQ: Heuristics for web maps”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

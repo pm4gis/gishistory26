@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:marcus-frean",
+  "a": "person:marcus-frean",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted papers, official conference programme lists Marcus Frean as an author of “Georeferencing historical maps at scale”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted papers, official conference programme",
+      "url": "https://giscience2025.org/papers.html"
+    }
+  ]
+}

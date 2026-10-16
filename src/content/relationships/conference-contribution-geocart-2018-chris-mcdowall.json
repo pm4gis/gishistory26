@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:chris-mcdowall",
+  "a": "person:chris-mcdowall",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Chris McDowall as an author of “Looking up from a map”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

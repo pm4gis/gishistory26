@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2022:greg-bodeker",
+  "a": "person:greg-bodeker",
+  "b": "entity:geocart-2022",
+  "label": "Named author at GeoCart 2022",
+  "basis": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Greg Bodeker as an author of “Spatial data quality and veracity”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    }
+  ]
+}

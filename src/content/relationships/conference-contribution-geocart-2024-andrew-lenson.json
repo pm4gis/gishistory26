@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2024:andrew-lenson",
+  "a": "person:andrew-lenson",
+  "b": "entity:geocart-2024",
+  "label": "Named author at GeoCart 2024",
+  "basis": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Andrew Lenson as an author of “Performance of Global High-Resolution Canopy Height Model Across Varied New Zealand Vegetation Types”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+    }
+  ]
+}

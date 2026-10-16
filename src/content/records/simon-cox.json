@@ -7,7 +7,10 @@
   "url": "/people/simon-cox/",
   "story": [
     "Simon Cox completed his geology doctorate at Otago in 1993. His research has covered geological mapping, structural geology, tectonics and groundwater, with work in the South Island and Antarctica. He received the McKay Hammer in 2010 and a ScienceNZ lifetime-achievement award in 2021. His work includes digital geological mapping and research into earthquake effects on groundwater and natural hazards.",
-    "Simon Cox and Mark Rattenbury documented gold-prospectivity analysis in 2006 using the QMAP dataset for modelling. Their work used GIS and weights-of-evidence methods to combine geological information with other indicators associated with mineralisation. The national geological dataset was therefore being treated as an analytical layer rather than only as a collection of finished sheets."
+    "Simon Cox and Mark Rattenbury documented gold-prospectivity analysis in 2006 using the QMAP dataset for modelling. Their work used GIS and weights-of-evidence methods to combine geological information with other indicators associated with mineralisation. The national geological dataset was therefore being treated as an analytical layer rather than only as a collection of finished sheets.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Simon Cox as an author of “Spatial data quality and veracity”.",
+    "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Simon Cox as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”.",
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Simon Cox as an author of “Modelling climate-related coastal flooding hazards and residential property values”."
   ],
   "sources": [
     {
@@ -17,6 +20,18 @@
     {
       "label": "Chapter 9 · A map that can be queried again",
       "url": "/stories/science-goes-spatial/"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    },
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    },
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
     }
   ],
   "aliases": [
@@ -24,7 +39,28 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:bjorn-johns",
+  "a": "person:bjorn-johns",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Bjorn Johns as an author of “Access to the Digital New Zealand Crown Historic Aerial Photo Archive”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

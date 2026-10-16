@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:judy-rodda",
+  "a": "person:judy-rodda",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Judy Rodda as an author of “Geovisual data mining of dolphin space-time trajectories”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

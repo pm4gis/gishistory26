@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:aaron-jordan",
+  "a": "person:aaron-jordan",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Aaron Jordan as an author of “The New Zealand Topographic Strategy”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

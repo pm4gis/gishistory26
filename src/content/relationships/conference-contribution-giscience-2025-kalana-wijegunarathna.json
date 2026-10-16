@@ -1,0 +1,18 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:kalana-wijegunarathna",
+  "a": "person:kalana-wijegunarathna",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Kalana Wijegunarathna as an author of “The BioWhere Gazetteer: A Culturally Enriched Place Name Knowledge Base for New Zealand”. GIScience 2025 accepted papers, official conference programme lists Kalana Wijegunarathna as an author of “Large multi-modal model cartographic map comprehension for textual locality georeferencing”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    },
+    {
+      "label": "GIScience 2025 accepted papers, official conference programme",
+      "url": "https://giscience2025.org/papers.html"
+    }
+  ]
+}

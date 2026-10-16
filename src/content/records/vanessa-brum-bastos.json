@@ -1,0 +1,29 @@
+{
+  "id": "person:vanessa-brum-bastos",
+  "slug": "vanessa-brum-bastos",
+  "name": "Vanessa Brum-Bastos",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/vanessa-brum-bastos/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GIScience 2025 accepted abstracts, official conference programme lists Vanessa Brum-Bastos as an author of “Using ridership profile clustering and geographically weighted regression to investigate shared e-scooter ridership in Christchurch”."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

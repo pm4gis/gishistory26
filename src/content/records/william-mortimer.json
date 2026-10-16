@@ -7,7 +7,8 @@
   "url": "/people/william-mortimer/",
   "description": "GeoCart 2016 lists Mortimer as the presenter of a paper on GEOINT New Zealand military topographic mapping.",
   "story": [
-    "The GeoCart 2016 programme lists William Mortimer as presenter of a paper on GEOINT New Zealand’s 1:50,000 Military Topographic Map Production and gives the New Zealand Defence Force as his affiliation. This records the named conference contribution and affiliation shown in that programme."
+    "The GeoCart 2016 programme lists William Mortimer as presenter of a paper on GEOINT New Zealand’s 1:50,000 Military Topographic Map Production and gives the New Zealand Defence Force as his affiliation. This records the named conference contribution and affiliation shown in that programme.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists William Mortimer as an author of “GEOINT New Zealand 1:50,000 military topographic map production”."
   ],
   "sources": [
     {
@@ -17,11 +18,23 @@
     {
       "label": "GeoCart 2016, William Mortimer, “GEOINT New Zealand’s 1:50,000 Military Topographic Map Production”",
       "url": "https://geocart.cartography.org.nz/2016/downloads/abstracts/2016-093_mortimer.pdf"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
     }
   ],
   "aliases": [],
   "themeIds": [],
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

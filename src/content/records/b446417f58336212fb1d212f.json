@@ -7,12 +7,26 @@
   "url": "/people/andrew-cowie/",
   "description": "",
   "story": [
-    "Andrew Cowie co-authored “Current status and future directions of mobile GIS” for SIRC NZ in 2013, with David Medyckyj-Scott and fellow contributors. Otago’s repository records the paper under mobile devices, location-based services and open-source GIS."
+    "Andrew Cowie co-authored “Current status and future directions of mobile GIS” for SIRC NZ in 2013, with David Medyckyj-Scott and fellow contributors. Otago’s repository records the paper under mobile devices, location-based services and open-source GIS.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Andrew Cowie as an author of “Web mapping and scientific data at Landcare Research”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Andrew Cowie as an author of “Spatio-temporal web mapping of scientific data”."
   ],
   "sources": [
     {
       "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
       "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "Current status and future directions of mobile GIS, SIRC NZ 2013 proceedings record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4235"
     }
   ],
   "paragraphSources": [
@@ -20,6 +34,18 @@
       {
         "label": "University of Otago, Current status and future directions of mobile GIS, SIRC NZ 2013 author record",
         "url": "https://ourarchive.otago.ac.nz/esploro/outputs/conferencePaper/Current-status-and-future-directions-of/9926478902001891"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
       }
     ]
   ],

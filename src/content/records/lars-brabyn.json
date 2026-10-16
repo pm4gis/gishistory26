@@ -8,7 +8,9 @@
   "story": [
     "Lars Brabyn conducted the GIS analysis for the 2002 study Modeling population access to New Zealand public hospitals, co-authored with Chris Skelly. The work was carried out at Waikato’s Department of Geography with Ministry of Health funding. Its contribution statement identifies Brabyn’s analytical role separately from Skelly’s collection of hospital information, documenting how university GIS research and public-health data work were combined.",
     "Lars Brabyn’s work on automatically classifying New Zealand landscapes used GIS to combine environmental variables and produce a national landscape classification. The method shifted some of the work from drawing regions manually toward applying explicit rules or procedures to digital data.",
-    "LINZ’s tertiary GIS directory lists Lars Brabyn for University of Waikato."
+    "LINZ’s tertiary GIS directory lists Lars Brabyn for University of Waikato.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Lars Brabyn as an author of “Human habitat modelling in New Zealand”; “Web mapping of demographic diversity”; “Cartography for Māori communities in a changing technological world”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Lars Brabyn as an author of “Modelling human habitat in New Zealand”; “Māori mapping, land concepts and spatial data”."
   ],
   "sources": [
     {
@@ -22,6 +24,14 @@
     {
       "label": "LINZ, Studying GIS",
       "url": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/studying-gis"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
     }
   ],
   "aliases": [
@@ -29,7 +39,23 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [],
+    [],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

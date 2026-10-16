@@ -1,0 +1,47 @@
+{
+  "id": "person:john-r-gibson",
+  "slug": "john-r-gibson",
+  "name": "John R. Gibson",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/john-r-gibson/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists John Gibson as an author of “Large-scale regional topographic mapping using LiDAR survey data”.",
+    "The GeoCart programme and proceedings use “John Gibson” and “John R. Gibson” for the same regional topographic LiDAR contribution."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Unfolding the map: GeoCart 2016 proceedings, National Library of New Zealand record 38216661",
+      "url": "https://natlib.govt.nz/records/38216661"
+    }
+  ],
+  "aliases": [
+    "John Gibson",
+    "John R Gibson"
+  ],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Unfolding the map: GeoCart 2016 proceedings, National Library of New Zealand record 38216661",
+        "url": "https://natlib.govt.nz/records/38216661"
+      },
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

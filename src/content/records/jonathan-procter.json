@@ -6,12 +6,22 @@
   "category": "Person",
   "url": "/people/jonathan-procter/",
   "story": [
-    "Massey University's research record names Jonathan Procter as a co-author of Towards developing and applying an Iwi/Hapū based GIS system, presented at the Māori GIS Conference in Christchurch in May 2009. Other credited authors include Garth Harmsworth and additional collaborators. The record establishes a research and conference contribution, but does not by itself allocate specific software development or conference organising roles to Procter."
+    "Massey University's research record names Jonathan Procter as a co-author of Towards developing and applying an Iwi/Hapū based GIS system, presented at the Māori GIS Conference in Christchurch in May 2009. Other credited authors include Garth Harmsworth and additional collaborators. The record establishes a research and conference contribution, but does not by itself allocate specific software development or conference organising roles to Procter.",
+    "BioWhere project outputs: NZGRC 2022 poster citation, Massey University lists Jonathan Procter as an author of “BioWhere: Georeferencing New Zealand's biota from texts”.",
+    "GIScience 2025 accepted abstracts, official conference programme lists Jonathan Procter as an author of “The BioWhere Gazetteer: A Culturally Enriched Place Name Knowledge Base for New Zealand”."
   ],
   "sources": [
     {
       "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
       "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+    },
+    {
+      "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+      "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+    },
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
     }
   ],
   "aliases": [],
@@ -22,6 +32,18 @@
       {
         "label": "Massey University, Towards developing and applying an Iwi/Hapū based GIS system, May 2009",
         "url": "https://www.academicstanding.massey.ac.nz/massey/expertise/profile.cfm?stref=818930"
+      }
+    ],
+    [
+      {
+        "label": "BioWhere project outputs: NZGRC 2022 poster citation, Massey University",
+        "url": "https://biowhere.massey.ac.nz/biowhere/project-outputs/"
+      }
+    ],
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
       }
     ]
   ],

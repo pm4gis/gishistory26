@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2014:joseph-wright",
+  "a": "person:joseph-wright",
+  "b": "entity:geocart-2014",
+  "label": "Named author at GeoCart 2014",
+  "basis": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Joseph Wright as an author of “Hydrologically adaptive regular tessellations for urban drainage modelling”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    }
+  ]
+}

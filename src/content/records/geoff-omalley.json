@@ -10,7 +10,10 @@
     "Geoff O’Malley’s public work spans national digital topographic mapping and geospatial capability. His technical papers on the national 1:250,000 topographic database appear in the historical record of DOSLI and early digital mapping. Later presentations show his work moving into national data coordination, policy and workforce development. LINZ lists him as chair of the Geospatial Capability Committee. A 2017 presentation records the committee’s goals across schools, tertiary education and industry, and its work on New Zealand geospatial research priorities. He also contributed to the committee’s analysis and the 2023 Geospatial Industry Profile Survey report.",
     "Conversion of national topographic information was under way by the later 1980s, and by the 1991 AURISA conference Geoff Howard, Geoff O'Malley and Robin Pickering could present a paper titled \"New Zealand's Topographic Database - Where To Next?\" The paper records a change in the organisation’s work: DOSLI was no longer dealing only with printed map editions. It was maintaining digital topographic information that could support later products and supply users outside the traditional cartographic production line.",
     "Geoff O’Malley received the Outstanding Contribution to Spatial award at the 2018 New Zealand Spatial Excellence Awards. The award sits within a career already documented across national topographic data, the New Zealand Geospatial Strategy and later geospatial capability work.",
-    "LINZ’s 2026 Geospatial Capability Committee material lists Geoff O’Malley in LINZ / GCC chair; Geospatial Capability Committee.."
+    "LINZ’s 2026 Geospatial Capability Committee material lists Geoff O’Malley in LINZ / GCC chair; Geospatial Capability Committee..",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Geoff O'Malley as an author of “New Zealand's geospatial capability and the role of maps”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Geoff O'Malley as an author of “Increasing use of geographic and property information and geospatial capability”.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Geoff O'Malley as an author of “Ngā Poutama Matawhenua Māori GIS Wānanga”."
   ],
   "sources": [
     {
@@ -48,6 +51,18 @@
     {
       "label": "Beehive, Pest control system wins spatial excellence award, 17 October 2018",
       "url": "https://www.beehive.govt.nz/release/pest-control-system-wins-spatial-excellence-award"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
     }
   ],
   "aliases": [
@@ -58,7 +73,31 @@
     "women-in-gis"
   ],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:nzgrc-2022:brad-scott",
+  "a": "person:brad-scott",
+  "b": "entity:nzgrc-2022",
+  "label": "Named author at New Zealand Geospatial Research Conference 2022",
+  "basis": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Brad Scott as an author of “Crowdsourcing tsunami and sound observations in Aotearoa after the Hunga eruption”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ]
+}

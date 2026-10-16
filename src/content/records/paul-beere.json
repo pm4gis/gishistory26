@@ -1,0 +1,29 @@
+{
+  "id": "person:paul-beere",
+  "slug": "paul-beere",
+  "name": "Paul Beere",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/paul-beere/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury lists Paul Beere as an author of “Using GIS to assess the impact of childhood environments on obesity”."
+  ],
+  "sources": [
+    {
+      "label": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury",
+      "url": "https://ir.canterbury.ac.nz/server/api/core/bitstreams/f0f2a487-040b-4419-a114-74b9ebdd672a/content"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury",
+        "url": "https://ir.canterbury.ac.nz/server/api/core/bitstreams/f0f2a487-040b-4419-a114-74b9ebdd672a/content"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

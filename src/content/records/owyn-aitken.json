@@ -1,0 +1,29 @@
+{
+  "id": "person:owyn-aitken",
+  "slug": "owyn-aitken",
+  "name": "Owyn Aitken",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/owyn-aitken/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Owyn Aitken as an author of “Spatial data quality and veracity”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:adam-campbell",
+  "slug": "adam-campbell",
+  "name": "Adam Campbell",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/adam-campbell/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Adam Campbell as an author of “Ross Ice Shelf pinning-point mapping”."
+  ],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:robin-skinner",
+  "slug": "robin-skinner",
+  "name": "Robin Skinner",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/robin-skinner/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Robin Skinner as an author of “Views of Pemberton's happy colony”."
+  ],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

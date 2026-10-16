@@ -6,7 +6,11 @@
   "category": "People",
   "url": "/people/aubrey-miller/",
   "story": [
-    "Aubrey Miller is a University of Otago geospatial educator and practitioner. Otago identifies him as a Senior Professional Practice Fellow teaching GIS, spatial analysis, programming and remote sensing, managing the Spatial Software Laboratory and convening GIS@Otago. The 2018 New Zealand Esri User Conference also records his presentation on moving BIM information into GIS for three-dimensional use."
+    "Aubrey Miller is a University of Otago geospatial educator and practitioner. Otago identifies him as a Senior Professional Practice Fellow teaching GIS, spatial analysis, programming and remote sensing, managing the Spatial Software Laboratory and convening GIS@Otago. The 2018 New Zealand Esri User Conference also records his presentation on moving BIM information into GIS for three-dimensional use.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Aubrey Miller as an author of “Dissecting the GPS track”; “Tracking the transformation of camping in New Zealand”; “Local farm knowledge mapping for heritage and biological research”.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Aubrey Miller as an author of “Banks Peninsula subtidal habitat mapping”.",
+    "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists Aubrey Miller as an author of “Digital Geomorphology: Repeat UAV Lidar Mapping of Aoraki/Mount Cook’s Changing Landscape”.",
+    "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Aubrey Miller as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”."
   ],
   "sources": [
     {
@@ -16,6 +20,18 @@
     {
       "label": "New Zealand Esri User Conference programme, 2018",
       "url": "https://www.eagle.co.nz/sites/default/files/NZEUC_2018_Final.pdf"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    },
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
     }
   ],
   "aliases": [
@@ -23,7 +39,33 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

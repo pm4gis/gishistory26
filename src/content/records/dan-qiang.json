@@ -1,0 +1,29 @@
+{
+  "id": "person:dan-qiang",
+  "slug": "dan-qiang",
+  "name": "Dan Qiang",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/dan-qiang/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GIScience 2025 accepted abstracts, official conference programme lists Dan Qiang as an author of “Recharging the 15-Minute City: How e-micromobility is expanding access”."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

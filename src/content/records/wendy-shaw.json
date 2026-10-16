@@ -6,7 +6,9 @@
   "category": "Person",
   "url": "/people/wendy-shaw/",
   "story": [
-    "Wendy Shaw was Secretary of the New Zealand Geographic Board Ngā Pou Taunaha o Aotearoa. She prepared the New Zealand national report, dated 23 June 2017, for the Eleventh United Nations Conference on the Standardization of Geographical Names. Her documented work belongs to geographic-names administration and the official naming framework. Available sources do not identify her as a developer of the Gazetteer software or an iwi mapping system."
+    "Wendy Shaw was Secretary of the New Zealand Geographic Board Ngā Pou Taunaha o Aotearoa. She prepared the New Zealand national report, dated 23 June 2017, for the Eleventh United Nations Conference on the Standardization of Geographical Names. Her documented work belongs to geographic-names administration and the official naming framework. Available sources do not identify her as a developer of the Gazetteer software or an iwi mapping system.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Wendy Shaw as an author of “Māori place names on New Zealand's maps and charts”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Wendy Shaw as an author of “Evolution of the New Zealand Gazetteer”."
   ],
   "sources": [
     {
@@ -16,6 +18,14 @@
     {
       "label": "LINZ, How to use the New Zealand Gazetteer",
       "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
     }
   ],
   "aliases": [],
@@ -30,6 +40,18 @@
       {
         "label": "LINZ, How to use the New Zealand Gazetteer",
         "url": "https://www.linz.govt.nz/guidance/place-naming/how-use-new-zealand-gazetteer"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
       }
     ]
   ],

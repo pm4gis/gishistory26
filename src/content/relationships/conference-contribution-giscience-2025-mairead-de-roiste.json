@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:mairead-de-roiste",
+  "a": "person:mairead-de-roiste",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Mairead de Roiste as an author of “Watching the wetlands: a visibility analysis of the Ruamahanga basin, Aotearoa New Zealand using human movement data”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ]
+}

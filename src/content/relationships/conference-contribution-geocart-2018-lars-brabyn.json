@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:lars-brabyn",
+  "a": "person:lars-brabyn",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Lars Brabyn as an author of “Modelling human habitat in New Zealand”; “Māori mapping, land concepts and spatial data”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

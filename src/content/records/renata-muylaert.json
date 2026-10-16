@@ -1,0 +1,29 @@
+{
+  "id": "person:renata-muylaert",
+  "slug": "renata-muylaert",
+  "name": "Renata Muylaert",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/renata-muylaert/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Renata Muylaert as an author of “Ecological niche modelling of bat hosts of SARS-like viruses”."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

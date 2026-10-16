@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:nzgrc-2022:aubrey-miller",
+  "a": "person:aubrey-miller",
+  "b": "entity:nzgrc-2022",
+  "label": "Named author at New Zealand Geospatial Research Conference 2022",
+  "basis": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Aubrey Miller as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "entity:geocart-2016",
+  "slug": "geocart-2016",
+  "name": "GeoCart 2016",
+  "kind": "Conference",
+  "category": "Research",
+  "url": "/entities/geocart-2016/",
+  "description": "Conference programme and proceedings sources for named cartographic research contributions.",
+  "story": [
+    "The GeoCart programme and National Library proceedings record document named cartographic contributions for the 2016 conference."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Unfolding the map: GeoCart 2016 proceedings, National Library of New Zealand record 38216661",
+      "url": "https://natlib.govt.nz/records/38216661"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      },
+      {
+        "label": "Unfolding the map: GeoCart 2016 proceedings, National Library of New Zealand record 38216661",
+        "url": "https://natlib.govt.nz/records/38216661"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:marvin-espino",
+  "slug": "marvin-espino",
+  "name": "Marvin Espino",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/marvin-espino/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Marvin Espino as an author of “New Zealand nautical e-navigation”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

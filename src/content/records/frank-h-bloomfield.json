@@ -1,0 +1,29 @@
+{
+  "id": "person:frank-h-bloomfield",
+  "slug": "frank-h-bloomfield",
+  "name": "Frank H. Bloomfield",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/frank-h-bloomfield/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GIScience 2025 accepted abstracts, official conference programme lists Frank H. Bloomfield as an author of “Assessing spatial patterns and risk factors for preterm birth in New Zealand using GIS”."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

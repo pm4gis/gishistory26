@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:geoff-omalley",
+  "a": "person:geoff-omalley",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Geoff O'Malley as an author of “New Zealand's geospatial capability and the role of maps”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    }
+  ]
+}

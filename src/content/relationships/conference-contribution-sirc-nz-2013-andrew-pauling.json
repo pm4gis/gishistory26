@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:sirc-nz-2013:andrew-pauling",
+  "a": "person:andrew-pauling",
+  "b": "entity:sirc-nz-2013",
+  "label": "Named author at SIRC NZ 2013",
+  "basis": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago lists Andrew Pauling as an author of “Predicting potential anchor ice formation sites in coastal Antarctic waters”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Predicting potential anchor ice formation sites in coastal Antarctic waters, SIRC NZ 2013 citation, University of Otago",
+      "url": "https://www.otago.ac.nz/geography/our-people/academic-staff/dr-sarah-mager"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "person:sophie-kolston",
+  "slug": "sophie-kolston",
+  "name": "Sophie Kolston",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/sophie-kolston/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Sophie Kolston as an author of “Spatial and temporal segmentation for modelling cyclists' pollution exposure”."
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

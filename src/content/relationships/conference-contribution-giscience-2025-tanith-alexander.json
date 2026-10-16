@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:giscience-2025:tanith-alexander",
+  "a": "person:tanith-alexander",
+  "b": "entity:giscience-2025",
+  "label": "Named author at GIScience 2025",
+  "basis": "GIScience 2025 accepted abstracts, official conference programme lists Tanith Alexander as an author of “Assessing spatial patterns and risk factors for preterm birth in New Zealand using GIS”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ]
+}

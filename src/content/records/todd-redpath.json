@@ -6,7 +6,13 @@
   "category": "People",
   "url": "/people/todd-redpath/",
   "story": [
-    "Todd Redpath’s University of Otago research used remote sensing to study Tasman Glacier flow fields and later seasonal snow distribution. He also worked with the Mountain Research Centre and co-convened the 2019 GIS@Otago Symposium with Aubrey Miller."
+    "Todd Redpath’s University of Otago research used remote sensing to study Tasman Glacier flow fields and later seasonal snow distribution. He also worked with the Mountain Research Centre and co-convened the 2019 GIS@Otago Symposium with Aubrey Miller.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Todd Redpath as an author of “Seasonal snowpack mapping with drone photogrammetry”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Todd Redpath as an author of “Snow depth distribution from high-resolution RPAS photogrammetry”; “RPAS topographic surveys”.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Todd Redpath as an author of “Southern Alps snow resources from satellite photogrammetry”.",
+    "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Todd Redpath as an author of “Watching the Wetlands”.",
+    "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory lists Todd Redpath as an author of “UAV flight and capture parameters for radiata pine quality control”.",
+    "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Todd Redpath as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”."
   ],
   "sources": [
     {
@@ -20,6 +26,30 @@
     {
       "label": "University of Otago Mountain Research Centre",
       "url": "https://www.otago.ac.nz/surveying/potree/pub/mrc/about"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    },
+    {
+      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+    },
+    {
+      "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+      "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+    },
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
     }
   ],
   "aliases": [
@@ -27,7 +57,45 @@
   ],
   "themeIds": [],
   "status": "Account available",
-  "paragraphSources": [],
+  "paragraphSources": [
+    [],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "New Zealand Geospatial Research Conference 2022 programme, Massey Geoinformatics Collaboratory",
+        "url": "https://researchbank.ac.nz/bitstreams/c5bd670d-3fd9-4022-8c62-00d30da1cdcf/download"
+      }
+    ],
+    [
+      {
+        "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+      }
+    ]
+  ],
   "biographyParagraphSources": [
     [
       {

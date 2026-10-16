@@ -1,0 +1,22 @@
+{
+  "id": "relationship:conference-contribution:geocart-2016:nicolas-cullen",
+  "a": "person:nicolas-cullen",
+  "b": "entity:geocart-2016",
+  "label": "Named author at GeoCart 2016",
+  "basis": "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Nicholas Cullen as an author of “Seasonal snowpack mapping with drone photogrammetry”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "University of Otago, Nicolas Cullen profile",
+      "url": "https://www.otago.ac.nz/news/newsroom/otago-announces-39-new-professors"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

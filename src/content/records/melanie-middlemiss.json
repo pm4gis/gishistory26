@@ -1,0 +1,29 @@
+{
+  "id": "person:melanie-middlemiss",
+  "slug": "melanie-middlemiss",
+  "name": "Melanie Middlemiss",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/melanie-middlemiss/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago lists Melanie Middlemiss as an author of “Spatial aspects of a comparative study of active transport to school and motorized transport”."
+  ],
+  "sources": [
+    {
+      "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+      "url": "https://hdl.handle.net/10523/4245"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Spatial aspects of a comparative study of active transport to school and motorized transport, SIRC NZ 2013 repository record, University of Otago",
+        "url": "https://hdl.handle.net/10523/4245"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

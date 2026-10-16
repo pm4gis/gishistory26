@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geohealth-report-2014-15:simon-kingham",
+  "a": "person:simon-kingham",
+  "b": "entity:geohealth-laboratory-annual-report-2014-15",
+  "label": "Named author in GeoHealth Laboratory annual report 2014–15",
+  "basis": "GeoHealth Laboratory annual report 2014–15, University of Canterbury lists Simon Kingham as an author of “Geospatial data science directions for health research in New Zealand”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "GeoHealth Laboratory annual report 2014–15, University of Canterbury",
+      "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/reports/geohealth-laboratory/GeoHealth-Laboratory-Annual-Report-2014-15.pdf"
+    }
+  ]
+}

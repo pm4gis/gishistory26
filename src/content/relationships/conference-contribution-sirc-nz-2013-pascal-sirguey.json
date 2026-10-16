@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:sirc-nz-2013:pascal-sirguey",
+  "a": "person:pascal-sirguey",
+  "b": "entity:sirc-nz-2013",
+  "label": "Named author at SIRC NZ 2013",
+  "basis": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Pascal Sirguey as an author of “Snowfall detection in Antarctica using MODIS infrared reflectance”; “Modelling ice retreat on Kilimanjaro using GIS”; “Recent ice wastage on the Tasman Glacier from geodetic elevation changes”; “Geographical vector agent modelling for image classification”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    }
+  ]
+}

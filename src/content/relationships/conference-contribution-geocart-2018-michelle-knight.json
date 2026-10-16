@@ -1,0 +1,14 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:michelle-knight",
+  "a": "person:michelle-knight",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Michelle Knight as an author of “New Zealand aeronautical information management and web maps for pilots”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    }
+  ]
+}

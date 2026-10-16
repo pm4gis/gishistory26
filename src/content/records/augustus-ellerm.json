@@ -1,0 +1,29 @@
+{
+  "id": "person:augustus-ellerm",
+  "slug": "augustus-ellerm",
+  "name": "Augustus Ellerm",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/augustus-ellerm/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GIScience 2025 accepted abstracts, official conference programme lists Augustus Ellerm as an author of “Reproducibility in GIScience: How we can leverage reproducibility to enliven research articles”."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

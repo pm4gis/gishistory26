@@ -1,0 +1,29 @@
+{
+  "id": "entity:geohealth-laboratory-annual-report-2014-15",
+  "slug": "geohealth-laboratory-annual-report-2014-15",
+  "name": "GeoHealth Laboratory annual report 2014–15",
+  "kind": "Publication",
+  "category": "Research",
+  "url": "/entities/geohealth-laboratory-annual-report-2014-15/",
+  "description": "University of Canterbury annual report for the GeoHealth Laboratory's 2014–15 research outputs.",
+  "story": [
+    "The University of Canterbury report documents GeoHealth Laboratory research outputs for 2014–15."
+  ],
+  "sources": [
+    {
+      "label": "GeoHealth Laboratory annual report 2014–15, University of Canterbury",
+      "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/reports/geohealth-laboratory/GeoHealth-Laboratory-Annual-Report-2014-15.pdf"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoHealth Laboratory annual report 2014–15, University of Canterbury",
+        "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/reports/geohealth-laboratory/GeoHealth-Laboratory-Annual-Report-2014-15.pdf"
+      }
+    ]
+  ],
+  "status": "Source-backed research record"
+}

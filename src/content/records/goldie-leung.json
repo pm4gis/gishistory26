@@ -1,0 +1,29 @@
+{
+  "id": "person:goldie-leung",
+  "slug": "goldie-leung",
+  "name": "Goldie Leung",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/goldie-leung/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GIScience 2025 accepted abstracts, official conference programme lists Goldie Leung as an author of “Using ridership profile clustering and geographically weighted regression to investigate shared e-scooter ridership in Christchurch”."
+  ],
+  "sources": [
+    {
+      "label": "GIScience 2025 accepted abstracts, official conference programme",
+      "url": "https://giscience2025.org/abstracts.html"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GIScience 2025 accepted abstracts, official conference programme",
+        "url": "https://giscience2025.org/abstracts.html"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

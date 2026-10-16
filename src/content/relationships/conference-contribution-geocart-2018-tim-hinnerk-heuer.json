@@ -1,0 +1,18 @@
+{
+  "id": "relationship:conference-contribution:geocart-2018:tim-hinnerk-heuer",
+  "a": "person:tim-hinnerk-heuer",
+  "b": "entity:geocart-2018",
+  "label": "Named author at GeoCart 2018",
+  "basis": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Tim Heuer as an author of “Spatio-temporal web mapping of scientific data”.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "OpenStreetMap Photon mailing list, Tim-Hinnerk Heuer post, April 2020",
+      "url": "https://lists.openstreetmap.org/pipermail/photon/2020-April/000152.html"
+    }
+  ]
+}

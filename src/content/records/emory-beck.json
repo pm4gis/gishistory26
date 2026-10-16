@@ -1,0 +1,29 @@
+{
+  "id": "person:emory-beck",
+  "slug": "emory-beck",
+  "name": "Emory Beck",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/emory-beck/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists Emory Beck as an author of “Wellington on a Plate”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

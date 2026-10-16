@@ -1,0 +1,40 @@
+{
+  "id": "person:simon-kingham",
+  "slug": "simon-kingham",
+  "name": "Simon Kingham",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/simon-kingham/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury lists Simon Kingham as an author of “Using GIS to assess the impact of childhood environments on obesity”.",
+    "GeoHealth Laboratory annual report 2014–15, University of Canterbury lists Simon Kingham as an author of “Geospatial data science directions for health research in New Zealand”."
+  ],
+  "sources": [
+    {
+      "label": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury",
+      "url": "https://ir.canterbury.ac.nz/server/api/core/bitstreams/f0f2a487-040b-4419-a114-74b9ebdd672a/content"
+    },
+    {
+      "label": "GeoHealth Laboratory annual report 2014–15, University of Canterbury",
+      "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/reports/geohealth-laboratory/GeoHealth-Laboratory-Annual-Report-2014-15.pdf"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "Using GIS to assess the impact of childhood environments on obesity, University of Canterbury",
+        "url": "https://ir.canterbury.ac.nz/server/api/core/bitstreams/f0f2a487-040b-4419-a114-74b9ebdd672a/content"
+      }
+    ],
+    [
+      {
+        "label": "GeoHealth Laboratory annual report 2014–15, University of Canterbury",
+        "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/reports/geohealth-laboratory/GeoHealth-Laboratory-Annual-Report-2014-15.pdf"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}

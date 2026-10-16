@@ -1,0 +1,106 @@
+{
+  "id": "person:pascal-sirguey",
+  "slug": "pascal-sirguey",
+  "name": "Pascal Sirguey",
+  "kind": "Person",
+  "category": "People",
+  "url": "/people/pascal-sirguey/",
+  "description": "Named contributor in sourced geospatial conference and publication records.",
+  "story": [
+    "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society lists Pascal Sirguey as an author of “Geographical vector agents for supervised image classification”; “A multi-epoch triangulation of stereo ASTER images for Tasman Glacier elevation change”.",
+    "GeoCart 2016 conference programme, New Zealand Cartographic Society lists Pascal Sirguey as an author of “Underground laser scanning and the LiDARRAS project”; “Photogrammetric modelling in RPAS aerial surveys”; “Seasonal snowpack mapping with drone photogrammetry”.",
+    "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196 lists Pascal Sirguey as an author of “Snow depth distribution from high-resolution RPAS photogrammetry”; “High-resolution tussock distribution modelling in the Pisa Range”; “RPAS topographic surveys”.",
+    "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page) lists Pascal Sirguey as an author of “Banks Peninsula subtidal habitat mapping”; “Southern Alps snow resources from satellite photogrammetry”.",
+    "GeoCart 2024 session 2 programme, New Zealand Cartographic Society lists Pascal Sirguey as an author of “Watching the Wetlands”.",
+    "GeoCart 2024 session 3 programme, New Zealand Cartographic Society lists Pascal Sirguey as an author of “Digital Geomorphology: Repeat UAV Lidar Mapping of Aoraki/Mount Cook’s Changing Landscape”.",
+    "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago lists Pascal Sirguey as an author of “The Matariki Project: 3-D change detection with satellite photogrammetric mapping”.",
+    "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago lists Pascal Sirguey as an author of “Snowfall detection in Antarctica using MODIS infrared reflectance”; “Modelling ice retreat on Kilimanjaro using GIS”; “Recent ice wastage on the Tasman Glacier from geodetic elevation changes”; “Geographical vector agent modelling for image classification”."
+  ],
+  "sources": [
+    {
+      "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+    },
+    {
+      "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+      "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+    },
+    {
+      "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+      "url": "https://natlib.govt.nz/records/40158196"
+    },
+    {
+      "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+      "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+    },
+    {
+      "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+    },
+    {
+      "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+      "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+    },
+    {
+      "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+    },
+    {
+      "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+      "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+    }
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "paragraphSources": [
+    [
+      {
+        "label": "GeoCart 2014 accepted abstracts, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2014/programme/abstracts.htm"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2016 conference programme, New Zealand Cartographic Society",
+        "url": "https://geocart.cartography.org.nz/2016/content/c-programme.html"
+      }
+    ],
+    [
+      {
+        "label": "Cartographies of change: GeoCart 2018 proceedings, National Library of New Zealand record 40158196",
+        "url": "https://natlib.govt.nz/records/40158196"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart session 1 programme, New Zealand Cartographic Society (archived programme page)",
+        "url": "https://cartography.org.nz/images/files/geocart/session1.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2024 session 2 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session2.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "GeoCart 2024 session 3 programme, New Zealand Cartographic Society",
+        "url": "https://cartography.org.nz/images/files/geocart/session3.html?ml=1"
+      }
+    ],
+    [
+      {
+        "label": "Aubrey Miller staff profile: NZGRC 2022 Matariki Project proceedings citation, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/mr-aubrey-miller"
+      }
+    ],
+    [
+      {
+        "label": "SIRC NZ 2013 GIS and remote sensing proceedings citations, University of Otago",
+        "url": "https://www.otago.ac.nz/surveying/staff/associate-professor-pascal-sirguey"
+      }
+    ]
+  ],
+  "status": "Source-backed historical account"
+}
