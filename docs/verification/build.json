@@ -1,70 +1,58 @@
 {
-  "files": 7858,
+  "files": 9071,
   "largestAsset": 24883682,
   "javascript": [
     {
-      "path": "dist/_astro/Browse.BH7f11pe.js",
-      "gzip": 1772
+      "path": "dist/_astro/Browse.DHqtzCLv.js",
+      "gzip": 2494
     },
     {
-      "path": "dist/_astro/Layout.astro_astro_type_script_index_0_lang.CyPyqGmU.js",
-      "gzip": 1733
+      "path": "dist/_astro/Layout.astro_astro_type_script_index_0_lang.DAQYwHA-.js",
+      "gzip": 2016
     },
     {
-      "path": "dist/_astro/Reader.DCamtEZw.js",
-      "gzip": 14885
+      "path": "dist/_astro/Reader.Bk2b4AFo.js",
+      "gzip": 14976
     },
     {
-      "path": "dist/_astro/Timeline.8ud-ydc_.js",
-      "gzip": 14309
-    },
-    {
-      "path": "dist/_astro/Timeline.B1TDQj0a.js",
+      "path": "dist/_astro/Timeline.BKBPopG3.js",
       "gzip": 69
     },
     {
-      "path": "dist/_astro/WanangaVideos.CC_i1t8w.js",
-      "gzip": 2895
+      "path": "dist/_astro/Timeline.ndhlQRo8.js",
+      "gzip": 15057
     },
     {
-      "path": "dist/_astro/client.BSqglUCA.js",
-      "gzip": 17360
+      "path": "dist/_astro/WanangaVideos.COJKh386.js",
+      "gzip": 2902
     },
     {
-      "path": "dist/_astro/client.svelte.B0Vj-7Ap.js",
-      "gzip": 499
+      "path": "dist/_astro/client.Bnw0vjuJ.js",
+      "gzip": 18039
     },
     {
-      "path": "dist/_astro/events.mTVV8OWN.js",
-      "gzip": 2258
+      "path": "dist/_astro/client.svelte.ChuomFn3.js",
+      "gzip": 498
     },
     {
-      "path": "dist/_astro/graphology.B2WzTXYs.js",
-      "gzip": 11348
+      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.BzshfRge.js",
+      "gzip": 918
     },
     {
-      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.BbGKwPxG.js",
-      "gzip": 827
+      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.CFGme_Ov.js",
+      "gzip": 2977
     },
     {
-      "path": "dist/_astro/index.astro_astro_type_script_index_0_lang.Chrws1FS.js",
-      "gzip": 3090
-    },
-    {
-      "path": "dist/_astro/legacy.CUihlcqZ.js",
-      "gzip": 125
+      "path": "dist/_astro/legacy.BuqcVLLV.js",
+      "gzip": 123
     },
     {
       "path": "dist/_astro/nga-poutama-videos.C12mrpUC.js",
       "gzip": 3530
     },
     {
-      "path": "dist/_astro/passage-contributions.BwdmXVhk.js",
-      "gzip": 918
-    },
-    {
-      "path": "dist/_astro/sigma.esm.D9knFWKW.js",
-      "gzip": 94544
+      "path": "dist/_astro/passage-contributions.ZaqD9URF.js",
+      "gzip": 1168
     }
   ]
 }
