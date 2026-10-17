@@ -1507,7 +1507,7 @@
   "src/content/records/tasman-district-council.json": "44c4fd18154a2a24a71a72ee330af1fbd2e7c94e13736fb62910e5d174554f9a",
   "src/content/records/taupo-district-council.json": "ec99dec7671e11acb14efc3c5d31e1028c2de2d6fe6bb53bfe4a11445d0be938",
   "src/content/records/tauranga-city-council.json": "497d66a390b9a1231571e7cfad6a101da25e8a4f58591f3ccf327ad8c03ebb0a",
-  "src/content/records/te-kahui-manu-hokai-maori-gis-association.json": "a53174850bf165dda1a839848b0b7f43d607a7a4b391002aa9c75b021a825a68",
+  "src/content/records/te-kahui-manu-hokai-maori-gis-association.json": "848d16c98a66c57ababf60ce7c4d3d02eda8947f431cf13fa347d1d32b9be6b2",
   "src/content/records/te-mana-raraunga.json": "a07155b8d4909ce881f6c0330b7d2d79a62249ff8ba4656fe4a6214fdccf11ca",
   "src/content/records/te-runanga-o-ngai-tahu-ngai-tahu-archive.json": "a0e0151357cd628a67a916a270d31707cc0fffe023059e7f01a2670272b4292a",
   "src/content/records/te-wharekorari.json": "0cb1302bb3c1ce53a3eb7ba0796719339aea558f90db526ad65851de5bef0596",
@@ -4188,7 +4188,7 @@
   "src/content/passages/masters-20261010-ch35.json": "72a0fd45832e0f45553c4e14316cf70406f7a9d05c1cff34447033aa875c85b6",
   "src/content/passages/research-20261010-ch11-masters-research-record-1979-2025.json": "648b191ebe279885f60365be0b61567b2ac31cd48d2c436e745c84887d8003ca",
   "src/content/passages/research-20261010-ch26-iwi-led-motueka-information-system.json": "72749efb91935c75fb266355c0b52a402c43649342c80317bf8eb196e9c3c10a",
-  "src/content/passages/research-20261010-ch29-maori-gis-practitioner-conferences.json": "50373c456214863778d887a9360e19acdfd73749d224a2e6f2d45548712b259b",
+  "src/content/passages/research-20261010-ch29-maori-gis-practitioner-conferences.json": "d748748892440d71afb18ddeb68bafcc32edd78459babb1abe3d54208d82c648",
   "src/content/passages/research-20261010-ch33-public-data-and-iwi-controlled-information.json": "cf7f7d82e04548dfe96c393d95be1b54c8c32da1c3b59d9c1acc9999bf9bc12e",
   "src/content/passages/research-20261010-ch35-ka-huru-manu-technical-history.json": "a3c4d0c3133b09b0f8d41bcf564d1b0d4230bf3ae9b6ed02bd4a1c4ec623e9da",
   "src/content/records/0036c273d1555669d6109a03.json": "8b207ebedb6ea00fd758a98be3969897b5807d63b526cba7a9bb75045551a18f",
@@ -5539,5 +5539,7 @@
   "src/content/events/2016-geoint-military-topographic-maps.json": "d752ec20696de9b7ff4077e844448a5424d3c53e35774bbacc37afc9bf41980f",
   "src/content/events/2021-lens-adopted-beach-intelligence.json": "d23b732cb8ed3024b021632d75c4530e091dce6836d3e5712c198af15ef894c6",
   "src/content/events/2023-nzdf-cyclone-gabrielle-imagery-assessments.json": "fbbf7490672e178c5cbd6831ee91fcf283950d4cb67274b30aaf1d2420d81943",
-  "src/content/events/2025-nzdf-nelson-tasman-geospatial-response.json": "a1780368b0bce4f337c5e1b46881d1cf0a0ba6a51b46d5741eaea41315a32866"
+  "src/content/events/2025-nzdf-nelson-tasman-geospatial-response.json": "a1780368b0bce4f337c5e1b46881d1cf0a0ba6a51b46d5741eaea41315a32866",
+  "src/content/events/2013-te-kahui-manu-hokai-incorporation.json": "74eb2cace0a58648de0b221ae1ec75e29d4e7b575068bd349202cbe557ccc51d",
+  "src/content/events/2018-te-kahui-manu-hokai-dissolution.json": "725317ee53db04e7965cda1d6486ec1a92cb03eebc8480cf0bf9eb6f420ce078"
 }

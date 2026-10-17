@@ -4,7 +4,7 @@
   "articleId": "article:chapter-29",
   "title": "Māori GIS practitioner conferences",
   "order": 10,
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-17",
   "themeIds": [],
   "recordIds": [
     "chapter:29",
@@ -29,8 +29,8 @@
     },
     {
       "type": "paragraph",
-      "text": "A further Māori GIS conference took place in Lower Hutt in October 2010. Archaeologist Simon Bickler's CV records his presentation on the New Zealand Archaeological Association's ArchSite GIS database, and a University of Otago planning document independently records student attendance at a Wellington-region Māori GIS conference in 2010. Te Kāhui Manu Hōkai subsequently provided an association for Māori GIS practitioners, although sources differ over its establishment and inaugural-meeting dates. By October 2020 it was working with LINZ and GIS Journey Limited on practical Ngā Poutama Matawhenua mapping wānanga. The dates, organisations and individual responsibilities should be kept distinct.",
-      "markdown": "A further Māori GIS conference took place in Lower Hutt in October 2010. Archaeologist Simon Bickler's CV records his presentation on the New Zealand Archaeological Association's ArchSite GIS database, and a University of Otago planning document independently records student attendance at a Wellington-region Māori GIS conference in 2010. Te Kāhui Manu Hōkai subsequently provided an association for Māori GIS practitioners, although sources differ over its establishment and inaugural-meeting dates. By October 2020 it was working with LINZ and GIS Journey Limited on practical Ngā Poutama Matawhenua mapping wānanga. The dates, organisations and individual responsibilities should be kept distinct.",
+      "text": "A further Māori GIS conference took place in Lower Hutt in October 2010. Archaeologist Simon Bickler's CV records his presentation on the New Zealand Archaeological Association's ArchSite GIS database, and a University of Otago planning document independently records student attendance at a Wellington-region Māori GIS conference in 2010. Te Kāhui Manu Hōkai subsequently developed as an association for Māori GIS practitioners. Its incorporated society was registered on 14 June 2013 and dissolved on 11 June 2018, according to the New Zealand Companies Office register (society number 2582124; NZBN 9429043247875). The association's name remained in use for the PLACE19 conference in 2019 and was associated with LINZ and GIS Journey Limited's Ngā Poutama Matawhenua mapping wānanga from October 2020. These later activities should not be taken as evidence that the dissolved incorporated society continued as a registered legal entity.",
+      "markdown": "A further Māori GIS conference took place in Lower Hutt in October 2010. Archaeologist Simon Bickler's CV records his presentation on the New Zealand Archaeological Association's ArchSite GIS database, and a University of Otago planning document independently records student attendance at a Wellington-region Māori GIS conference in 2010. Te Kāhui Manu Hōkai subsequently developed as an association for Māori GIS practitioners. Its incorporated society was registered on 14 June 2013 and dissolved on 11 June 2018, according to the New Zealand Companies Office register (society number 2582124; NZBN 9429043247875). The association's name remained in use for the PLACE19 conference in 2019 and was associated with LINZ and GIS Journey Limited's Ngā Poutama Matawhenua mapping wānanga from October 2020. These later activities should not be taken as evidence that the dissolved incorporated society continued as a registered legal entity.",
       "sources": [
         {
           "label": "Simon Bickler, archaeology CV documenting October 2010 Māori GIS conference presentation",
@@ -43,6 +43,10 @@
         {
           "label": "LINZ, Ngā Poutama Matawhenua and geospatial capability, annual report 2020/21",
           "url": "https://www.linz.govt.nz/sites/default/files/corp/toitu-te-whenua_annual-report-20-21-a11y-web_20211201.pdf"
+        },
+        {
+          "label": "New Zealand Companies Office, Incorporated Societies Register, Te Kahui Manu Hokai - Maori GIS Association Incorporated (2582124; NZBN 9429043247875), viewed 17 October 2026",
+          "url": "https://app.businessregisters.govt.nz/"
         }
       ]
     }
