@@ -66,5 +66,9 @@ test('the additional Internet publications respect the 2025 publication cutoff',
  const page=fs.readFileSync('src/pages/publications/index.astro','utf8');
  assert.ok(!page.includes('The linked PDFs remain with their publishers and repositories; check the source record for access and reuse terms. This selection contains material published by 31 December 2025'));
  assert.ok(page.includes('Research and reference PDFs'));
- assert.ok(page.includes('Open source copy'));
+ assert.ok(page.includes('publications/research/'));
+ assert.ok(page.includes('View publication'));
+ assert.ok(!page.includes('Download hosted PDF'));
+ assert.ok(!page.includes('Open source copy'));
+ assert.ok(!page.includes('download='));
 });

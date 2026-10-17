@@ -1,0 +1,14 @@
+{
+  "id": "relationship:oneroof-linz-property-title-data",
+  "a": "entity:oneroof",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Uses LINZ property-title information",
+  "basis": "OneRoof's disclaimer identifies LINZ as the source for property title numbers, title types, legal descriptions and estate descriptions. The same disclaimer identifies local authorities as sources for other property attributes, valuations and sale records.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "OneRoof, Disclaimer and disclosure",
+      "url": "https://www.oneroof.co.nz/disclaimer"
+    }
+  ]
+}

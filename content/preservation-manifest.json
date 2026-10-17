@@ -5541,5 +5541,9 @@
   "src/content/events/2023-nzdf-cyclone-gabrielle-imagery-assessments.json": "fbbf7490672e178c5cbd6831ee91fcf283950d4cb67274b30aaf1d2420d81943",
   "src/content/events/2025-nzdf-nelson-tasman-geospatial-response.json": "a1780368b0bce4f337c5e1b46881d1cf0a0ba6a51b46d5741eaea41315a32866",
   "src/content/events/2013-te-kahui-manu-hokai-incorporation.json": "74eb2cace0a58648de0b221ae1ec75e29d4e7b575068bd349202cbe557ccc51d",
-  "src/content/events/2018-te-kahui-manu-hokai-dissolution.json": "725317ee53db04e7965cda1d6486ec1a92cb03eebc8480cf0bf9eb6f420ce078"
+  "src/content/events/2018-te-kahui-manu-hokai-dissolution.json": "725317ee53db04e7965cda1d6486ec1a92cb03eebc8480cf0bf9eb6f420ce078",
+  "src/content/records/homes-co-nz.json": "a8ace3ae82ae3d353cb6242d7cf4d63cc0d3b18ad0c294b957d21c44b21d67f8",
+  "src/content/records/oneroof.json": "2bcaaec9a92bec1fd7c4bf966c61c3b5b688bd917f861a7822a7b40b88c4e2b0",
+  "src/content/relationships/relationship-homes-co-nz-linz-data-service.json": "b8b63a5cc4ae786abb6d283c5c1a91e0cf4902665d2c575deffdb75d9b287113",
+  "src/content/relationships/relationship-oneroof-linz-property-title-data.json": "024fdd0693301a47eadd51f60e10ce7a38ff1732d9eba5b9d52b8c234cf3c235"
 }

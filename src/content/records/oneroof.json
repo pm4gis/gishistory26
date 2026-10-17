@@ -1,0 +1,38 @@
+{
+  "id": "entity:oneroof",
+  "slug": "oneroof",
+  "name": "OneRoof",
+  "kind": "Organisation",
+  "category": "Real estate website",
+  "url": "/entities/oneroof/",
+  "website": "https://www.oneroof.co.nz/",
+  "description": "A New Zealand real-estate platform combining property, sales and community information.",
+  "story": [
+    "OneRoof's disclaimer names Land Information New Zealand as a source for property title numbers, title types, legal descriptions and estate descriptions. It separately identifies local-authority data for property attributes, valuations and sale history. OneRoof describes its service as a real-estate platform for buyers, sellers, tenants, agents and others interested in property."
+  ],
+  "sources": [
+    {
+      "label": "OneRoof, Disclaimer and disclosure",
+      "url": "https://www.oneroof.co.nz/disclaimer"
+    },
+    {
+      "label": "OneRoof, About OneRoof Real Estate",
+      "url": "https://www.oneroof.co.nz/real-estate"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "OneRoof, Disclaimer and disclosure",
+        "url": "https://www.oneroof.co.nz/disclaimer"
+      },
+      {
+        "label": "OneRoof, About OneRoof Real Estate",
+        "url": "https://www.oneroof.co.nz/real-estate"
+      }
+    ]
+  ],
+  "aliases": [],
+  "themeIds": [],
+  "status": "Source-backed organisation and website"
+}

@@ -30,7 +30,11 @@ test('publication navigation, accessible viewer and preserved source routes are 
  assert.equal((layout.match(/href="\/publications\/"/g)||[]).length,2);
  const detail=fs.readFileSync('src/pages/publications/[slug].astro','utf8');
  assert.ok(detail.includes('type="application/pdf"'));
- assert.ok(detail.includes('download>Download original'));
+ assert.ok(detail.includes('publication-reader-nav'));
+ assert.ok(detail.includes('aria-label="Browse PDF publications"'));
+ assert.ok(detail.includes('navigation.previous'));
+ assert.ok(detail.includes('navigation.next'));
+ assert.ok(!/<a[^>]+download(?:=|>)/i.test(detail));
  assert.ok(detail.includes('datePublished:item.startDate'));
  const old=fs.readFileSync('src/pages/sources/documents/[slug].astro','utf8');
  assert.ok(old.includes('item.publicationUrl'));

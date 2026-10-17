@@ -34,13 +34,17 @@ try{
   assert.ok(await page.locator('[data-publication]:visible').count()>0);
   await page.getByRole('button',{name:'Clear filters'}).click();
   assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
-  await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('2007');
-  assert.equal(await page.locator('[data-publication]:visible').count(),countForYear('2007'));
+  const availableYears=[...new Set([...publications.map(p=>p.startDate.slice(0,4)),...onlinePdfPublications.map(p=>p.year)])].sort();
+  assert.ok(availableYears.length>1,'The catalogue should expose more than one publication year');
+  const latestYear=availableYears.at(-1);
+  await page.getByRole('combobox',{name:'Year',exact:true}).selectOption(latestYear);
+  assert.equal(await page.locator('[data-publication]:visible').count(),countForYear(latestYear));
   await page.getByRole('button',{name:'Clear filters'}).click();
-  await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('1995');
-  assert.equal(await page.locator('[data-publication]:visible').count(),countForYear('1995'));
-  assert.equal(await groups.nth(0).isVisible(),publications.some(p=>p.startDate.slice(0,4)==='1995'),'The archive section visibility should match the year filter');
-  assert.equal(await groups.nth(1).isVisible(),onlinePdfPublications.some(p=>p.year==='1995'),'The hosted section visibility should match the year filter');
+  const earliestYear=availableYears[0];
+  await page.getByRole('combobox',{name:'Year',exact:true}).selectOption(earliestYear);
+  assert.equal(await page.locator('[data-publication]:visible').count(),countForYear(earliestYear));
+  assert.equal(await groups.nth(0).isVisible(),publications.some(p=>p.startDate.slice(0,4)===earliestYear),'The archive section visibility should match the year filter');
+  assert.equal(await groups.nth(1).isVisible(),onlinePdfPublications.some(p=>p.year===earliestYear),'The online reference section visibility should match the year filter');
   await page.getByRole('button',{name:'Clear filters'}).click();
   assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
   await page.getByRole('combobox',{name:'Theme',exact:true}).selectOption('maori-gis');
@@ -57,12 +61,14 @@ try{
    const card=onlineCards.nth(i);
    assert.equal(await card.getAttribute('data-year'),item.year);
    assert.ok(Number(item.year)<=2025,`${item.title} must be dated 2025 or earlier`);
-   const pdfLink=card.locator('.publication-download');
-   assert.equal(await pdfLink.getAttribute('href'),item.pdfPath);
-   assert.equal(await pdfLink.getAttribute('download'),item.hostedLocally?item.fileName:null);
-   assert.equal(await pdfLink.getAttribute('aria-label'),(item.hostedLocally?'Download hosted PDF: ':'Open source copy: ')+item.title);
-   assert.equal(await card.locator('h3 a').getAttribute('href'),item.pdfPath);
-   assert.equal(await card.locator('.publication-cover').getAttribute('href'),item.pdfPath);
+   const readerUrl='/publications/research/'+item.slug+'/';
+   const readLink=card.locator('.publication-read');
+   assert.equal(await readLink.getAttribute('href'),readerUrl);
+   assert.equal(await readLink.innerText(),'View publication');
+   assert.equal(await card.locator('h3 a').getAttribute('href'),readerUrl);
+   assert.equal(await card.locator('.publication-cover').getAttribute('href'),readerUrl);
+   assert.equal(await card.locator('.publication-download').count(),0);
+   assert.equal(await card.locator('a[download]').count(),0);
    const image=card.locator('.publication-cover img');
    assert.equal(await image.getAttribute('src'),item.thumbnailPath);
    await image.scrollIntoViewIfNeeded();
@@ -84,7 +90,9 @@ try{
   for(const p of publications){
    const response=await page.goto(base+p.publicationUrl);assert.equal(response.status(),200);
    assert.equal(await page.locator('object[type="application/pdf"]').getAttribute('data'),p.viewerPath);
-   assert.ok(await page.locator('a[download]').count());
+   assert.equal(await page.locator('a[download]').count(),0);
+   assert.equal(await page.locator('.publication-reader-nav').count(),2);
+   assert.ok(await page.locator('.publication-reader-nav a').count()>0,'The reader should link to another publication in the site');
    const img=page.locator('.publication-overview img');await img.scrollIntoViewIfNeeded();
    assert.ok(await img.evaluate(el=>el.complete&&el.naturalWidth>0));
    assert.ok((await page.locator('main').innerText()).includes('Original publication:'));
@@ -93,6 +101,23 @@ try{
    assert.equal(crypto.createHash('sha256').update(await original.body()).digest('hex'),p.sha256);
    const pdf=await page.request.get(base+p.viewerPath);assert.equal(pdf.status(),200);
    assert.ok((await pdf.body()).subarray(0,5).equals(Buffer.from('%PDF-')));
+   if(p===publications[0]){
+    const nextInSite=page.locator('.publication-reader-nav').first().locator('a').last();
+    const nextUrl=await nextInSite.getAttribute('href');
+    assert.ok(nextUrl.startsWith('/publications/'));
+    await nextInSite.click();
+    assert.equal(new URL(page.url()).pathname,nextUrl,'Next PDF navigation should stay inside the site');
+   }
+  }
+  for(const item of onlinePdfPublications){
+   const response=await page.goto(base+'/publications/research/'+item.slug+'/');
+   assert.equal(response.status(),200,item.slug);
+   assert.equal(await page.locator('a[download]').count(),0,item.slug);
+   assert.equal(await page.locator('.publication-reader-nav').count(),1,item.slug);
+   assert.ok(await page.locator('.publication-reader-nav a').count()>0,item.slug);
+   const pdfAvailable=String(item.pdfPath).toLowerCase().split('?')[0].split('#')[0].endsWith('.pdf');
+   if(pdfAvailable)assert.equal(await page.locator('object[type="application/pdf"]').getAttribute('data'),item.pdfPath,item.slug);
+   else assert.equal(await page.locator('.source-record-viewer a').getAttribute('href'),item.pdfPath,item.slug);
   }
   await page.goto(base+'/publications/');
   if(width===390)await page.locator('.mobile-menu > summary').click();
