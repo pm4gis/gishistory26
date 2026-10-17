@@ -15,19 +15,18 @@ try{
  for(const view of [{width:1440,height:900,name:'desktop'},{width:390,height:844,name:'mobile'}]){
   const page=await browser.newPage({viewport:{width:view.width,height:view.height},reducedMotion:'reduce'});
   const selector='section#'+target;
-  await check(view.name+' full chapter opens a direct email draft',async()=>{
+  await check(view.name+' full chapter uses one compact share-and-correct menu',async()=>{
    await page.goto(base+'/stories/coordinates-enter-the-computer/#'+target,{waitUntil:'domcontentloaded'});
-   const button=page.locator(selector+' .passage-contribute');
-   await button.waitFor({timeout:25000});
-   const draft=new URL(await button.getAttribute('href'));
-   assert.equal(draft.protocol,'mailto:');
-   assert.equal(decodeURIComponent(draft.pathname),'pm4gis@gmail.com');
-   assert.ok(draft.searchParams.get('subject').includes('Transforming one coordinate world into another'));
-   for(const phrase of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs','attach any photos'])assert.ok((draft.searchParams.get('body')||'').includes(phrase),phrase+' in draft '+JSON.stringify(await button.getAttribute('href')).slice(0,1000));
-   const help=page.locator(selector+' .contribution-help');
-   const fallback=new URL(await help.getAttribute('href'),base);
+   const tools=page.locator(selector+' .passage-tools');
+   await tools.waitFor({timeout:25000});
+   assert.equal(await tools.getAttribute('open'),null,'Passage tools should start collapsed');
+   await tools.locator('summary').click();
+   assert.ok(await tools.locator('button',{hasText:'Copy link'}).count()===1);
+   const button=tools.getByRole('link',{name:'Contribute'});
+   const fallback=new URL(await button.getAttribute('href'),base);
    assert.equal(fallback.pathname,'/contribute/');
    assert.equal(fallback.searchParams.get('ref'),link);
+   assert.equal(await page.locator(selector+' a.contribution-help').count(),0);
    await page.goto(fallback.href,{waitUntil:'domcontentloaded'});
    assert.equal(await page.locator('form').count(),0);
    assert.equal(await page.locator('#contribution-reference').getAttribute('href'),link);
@@ -35,14 +34,13 @@ try{
    for(const phrase of ['Link to passage: '+link,'Passage: Transforming one coordinate world into another','What sources, photographs'])assert.ok(message.includes(phrase),phrase);
    await noHorizontalOverflow(page,view.name+' contribution options');
   });
-  await check(view.name+' page-by-page contribution preserves passage in direct email',async()=>{
+  await check(view.name+' page-by-page contribution keeps its passage reference',async()=>{
    await page.goto(base+'/stories/coordinates-enter-the-computer/?mode=page#'+target,{waitUntil:'domcontentloaded'});
-   const button=page.locator(selector+' .passage-contribute');
-   await button.waitFor({timeout:25000});
-   const mail=new URL(await button.getAttribute('href'));
-   assert.equal(mail.protocol,'mailto:');
-   assert.equal(decodeURIComponent(mail.pathname),'pm4gis@gmail.com');
-   assert.ok(mail.searchParams.get('body').includes(link));
+   const tools=page.locator(selector+' .passage-tools');
+   await tools.waitFor({timeout:25000});
+   await tools.locator('summary').click();
+   const fallback=new URL(await tools.getByRole('link',{name:'Contribute'}).getAttribute('href'),base);
+   assert.equal(fallback.searchParams.get('ref'),link);
    await noHorizontalOverflow(page,view.name+' page mode');
   });
   await check(view.name+' inline video and wider reader',async()=>{
@@ -51,7 +49,7 @@ try{
    await clips.first().waitFor({timeout:25000});
    assert.ok((await clips.count())>=3,'expected three related inline video records');
    const region=page.locator('section#practical-maori-web-mapping-23fcc809db');
-   const sourceOrder=await region.evaluate(el=>[...el.querySelectorAll('.wananga-videos--inline,.passage-actions')].map(x=>x.classList.contains('wananga-videos--inline')?'video':'actions'));
+   const sourceOrder=await region.evaluate(el=>[...el.querySelectorAll('.wananga-videos--inline,.passage-tools')].map(x=>x.classList.contains('wananga-videos--inline')?'video':'actions'));
    assert.equal(sourceOrder[0],'video');assert.equal(sourceOrder.at(-1),'actions');
    await noHorizontalOverflow(page,view.name+' videos');
    if(view.name==='desktop'){const width=(await page.locator('.page').boundingBox())?.width;assert.ok(width&&width>760,'reading column should exceed legacy 760px at 1440px: '+width)}
