@@ -12,6 +12,7 @@ const choices=PALETTE_ORDER.map(id=>({id,label:PALETTE_NAMES[id as keyof typeof 
 const currentPath=Astro.url.pathname;
 const contributionHref=currentPath==='/contribute/'?'/contribute/':siteContributionPageUrl(title,canonical.href);
 const isThemesRoute=currentPath.startsWith('/themes/');
+const isPublicationReaderRoute=/^\/publications\/(?:research\/)?[^/]+\/$/.test(currentPath);
 const menuThemes=(await getCollection('themes'))
  .map(entry=>({slug:entry.data.slug,title:entry.data.title}))
  .sort((a,b)=>a.title.localeCompare(b.title,'en-NZ'));
@@ -67,8 +68,9 @@ const menuDatasets=(await getCollection('records'))
 </head>
 <body>
  <a class="skip" href="#main">Skip to content</a>
- <header class="topbar">
+ <header class:list={['topbar',isPublicationReaderRoute&&'topbar--reader']}>
   <a class="brand" href="/"><small>NEW ZEALAND</small>GIS History</a>
+  {isPublicationReaderRoute&&<a class="reader-header-link" href="/publications/">← All publications</a>}
   <nav class="nav nav--desktop" aria-label="Main navigation">
    <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a><a href="/network/" aria-current={currentPath==='/network/'?'page':undefined}>Connections</a>
    <details class="nav-dropdown nav-dropdown--datasets">

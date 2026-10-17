@@ -1,3 +1,4 @@
+import {nzGeospatialPdfAdditions} from './nz-geospatial-pdf-additions.mjs';
 const ccBy4 = 'Creative Commons Attribution 4.0 International (CC BY 4.0)';
 const ccBy4Url = 'https://creativecommons.org/licenses/by/4.0/';
 
@@ -429,4 +430,5 @@ export const onlinePdfPublications = [
     provenance: 'Copy supplied for this site and publication expressly authorised by the contributor on 17 October 2026.',
     themeIds: ['profession'], keywords: ['GIS', 'skills', 'upskilling', 'Surveying + Spatial', 'professional development']
   }),
-];
+  ...nzGeospatialPdfAdditions,
+].filter(item=>Number(item.year)<2025);

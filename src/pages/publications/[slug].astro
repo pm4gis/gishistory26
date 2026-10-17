@@ -12,27 +12,43 @@ const images=d.images.filter((i:any)=>i.publicationSlug===item.slug);
 const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+item.publicationUrl,title:item.title,name:item.title,...(item.format==='PowerPoint'?{}:item.slug==='gis-mapping-wetland-projects-2021'?{author:{'@type':'Person',name:'Duane Wilkins'},publisher:{'@type':'Organization',name:'Manaaki Whenua – Landcare Research'}}:item.slug==='taranaki-cdem-geospatial-strategy-2021'?{author:[{'@type':'Person',name:'Teresa Gordon'},{'@type':'Person',name:'Ed Cook'}],publisher:{'@type':'Organization',name:'Taranaki Civil Defence and Emergency Management Group'}}:{author:{'@type':'Organization',name:item.creator}}),datePublished:item.startDate,url:'https://history.pm4gis.nz'+item.publicationUrl,description:item.summary,encoding:{'@type':'MediaObject',contentUrl:'https://history.pm4gis.nz'+item.assetPath,encodingFormat:item.format==='PDF'?'application/pdf':'application/vnd.openxmlformats-officedocument.presentationml.presentation'}}];
 ---
 <Layout title={item.title+' · Publications'} description={item.summary} structuredData={structuredData}>
- <article class="page-wrap publication-detail" data-pagefind-body><span class="sr-only" data-pagefind-filter="type">Publication</span>{themes.map((t:any)=><span class="sr-only" data-pagefind-filter="theme">{t.title}</span>)}
-  <p><a href="/publications/">All publications</a></p><p class="eyebrow">{item.kind} · {item.date}</p><h1 class="page-title">{item.title}</h1>
-  <div class="publication-overview"><div class="publication-cover"><img src={item.thumbnailPath} alt={'Cover of '+item.title} width="720" height="960"/></div><div><p>{item.creator}</p><p>{item.format} · {item.pages} {item.format==='PDF'?'pages':'slides'} · {(item.bytes/1000000).toFixed(2)} MB</p><p>{item.summary}</p><p><a class="button" href="#read-document">Read this document</a></p><p class="muted">Original publication: {item.date}. Added to this document archive: 17 October 2026.</p>{item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}</div></div>
+ <article class="publication-detail reader-page" data-pagefind-body><span class="sr-only" data-pagefind-filter="type">Publication</span>{themes.map((t:any)=><span class="sr-only" data-pagefind-filter="theme">{t.title}</span>)}
+  <header class="reader-heading">
+   <p class="eyebrow">{item.kind} · {item.date}</p>
+   <h1 class="page-title">{item.title}</h1>
+   <div class="reader-byline"><span>{item.creator}</span><span>{item.format} · {item.pages} {item.format==='PDF'?'pages':'slides'} · {(item.bytes/1000000).toFixed(2)} MB</span></div>
+  </header>
   {navigation&&<nav class="publication-reader-nav" aria-label="Browse PDF publications">
-   {navigation.previous?<a href={navigation.previous.url}>← Previous PDF · {navigation.previous.title}</a>:<span>First PDF in this sequence</span>}
+   {navigation.previous?<a href={navigation.previous.url}>← Previous · {navigation.previous.title}</a>:<span>First PDF</span>}
    <span class="publication-position">{navigation.position} of {navigation.total}</span>
-   {navigation.next?<a href={navigation.next.url}>{navigation.next.title} · Next PDF →</a>:<span>Last PDF in this sequence</span>}
+   {navigation.next?<a href={navigation.next.url}>{navigation.next.title} · Next →</a>:<span>Last PDF</span>}
   </nav>}
-  <h2 id="read-document">Read the document</h2><p>Use the embedded PDF controls to zoom and move between pages. Source and reuse information appears below the reader.</p>
-  <object data={item.viewerPath} type="application/pdf" class="publication-viewer" aria-label={'PDF viewer: '+item.title}><p>Your browser could not display the PDF. See the source information below.</p></object>
-  {navigation&&<nav class="publication-reader-nav" aria-label="Continue browsing PDF publications">
-   {navigation.previous?<a href={navigation.previous.url}>← Previous PDF · {navigation.previous.title}</a>:<span>First PDF in this sequence</span>}
-   <span class="publication-position">{navigation.position} of {navigation.total}</span>
-   {navigation.next?<a href={navigation.next.url}>{navigation.next.title} · Next PDF →</a>:<span>Last PDF in this sequence</span>}
-  </nav>}
-  <h2>Historical evidence</h2><ul>{item.findings.map(f=><li>{f.page}: {f.text}</li>)}</ul>
-  <h2>Connected history</h2><p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter</a> · <a href={'/timeline/?event=source-'+item.slug}>View the publication event on the timeline</a></p>
-  <ul>{records.map((r:any)=><li><a href={r.url}>{r.name}</a></li>)}{themes.map((t:any)=><li><a href={'/themes/'+t.slug+'/'}>{t.title}</a></li>)}</ul>
-  {images.length>0&&<><h2>Illustrations from this publication</h2><ul>{images.map((i:any)=><li><a href={'/images/'+i.slug+'/'}>{i.title}</a></li>)}</ul></>}
-  <h2>Provenance and attribution</h2><p>{item.provenance}</p><p>{item.rights}</p>{item.sourceUrl&&<p><a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">Publisher source information</a></p>}
-  <details><summary>Original file and checksum</summary><p>{item.filename} · {item.bytes.toLocaleString('en-NZ')} bytes</p><p class="checksum">SHA-256: <code>{item.sha256}</code></p></details>
+  <object id="read-document" data={item.viewerPath} type="application/pdf" class="publication-viewer" aria-label={'PDF viewer: '+item.title}><p>Your browser could not display the PDF. <a href={item.sourceUrl||item.viewerPath} target="_blank" rel="noopener noreferrer">Open the source PDF in a new tab.</a></p></object>
+  <section class="reader-details">
+   <div class="publication-overview"><div class="publication-cover"><img src={item.thumbnailPath} alt={'Cover of '+item.title} width="720" height="960"/></div><div><h2>About this document</h2><p>{item.summary}</p><p class="muted">Original publication: {item.date}. Added to this document archive: 17 October 2026.</p>{item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}</div></div>
+   <h2>Historical evidence</h2><ul>{item.findings.map(f=><li>{f.page}: {f.text}</li>)}</ul>
+   <h2>Connected history</h2><p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter</a> · <a href={'/timeline/?event=source-'+item.slug}>View the publication event on the timeline</a></p>
+   <ul>{records.map((r:any)=><li><a href={r.url}>{r.name}</a></li>)}{themes.map((t:any)=><li><a href={'/themes/'+t.slug+'/'}>{t.title}</a></li>)}</ul>
+   {images.length>0&&<><h2>Illustrations from this publication</h2><ul>{images.map((i:any)=><li><a href={'/images/'+i.slug+'/'}>{i.title}</a></li>)}</ul></>}
+   <h2>Provenance and attribution</h2><p>{item.provenance}</p><p>{item.rights}</p>{item.sourceUrl&&<p><a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">Publisher source information</a></p>}
+   <details><summary>Original file and checksum</summary><p>{item.filename} · {item.bytes.toLocaleString('en-NZ')} bytes</p><p class="checksum">SHA-256: <code>{item.sha256}</code></p></details>
+  </section>
  </article>
 </Layout>
-<style>.publication-overview{display:grid;grid-template-columns:minmax(140px,230px) 1fr;gap:2rem;align-items:start}.publication-cover{min-width:0}.publication-overview img{width:100%;height:auto;max-height:330px;object-fit:contain}.publication-viewer{width:100%;height:80vh;min-height:400px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.publication-reader-nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin:1.25rem 0;padding:1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);flex-wrap:wrap}.publication-reader-nav a{max-width:42%;font-weight:600}.publication-position{white-space:nowrap;color:var(--muted)}.checksum{overflow-wrap:anywhere}@media(max-width:600px){.publication-overview{grid-template-columns:1fr}.publication-overview img{max-height:250px}.publication-viewer{height:65vh}.publication-reader-nav a{max-width:100%}}</style>
+<style>
+ .reader-page{width:100%;max-width:none;margin:0;padding:10px clamp(12px,2vw,32px) 42px}
+ .reader-heading{max-width:100%;margin:0 auto 8px}
+ .reader-heading .eyebrow{margin:0 0 3px}
+ .reader-heading .page-title{font-size:clamp(1.35rem,2vw,2rem);line-height:1.12;margin:0;max-width:72ch}
+ .reader-byline{display:flex;gap:14px;flex-wrap:wrap;margin-top:5px;color:var(--muted);font-size:.88rem}
+ .publication-reader-nav{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:12px;margin:8px 0;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:.88rem}
+ .publication-reader-nav a{font-weight:650;text-decoration:none;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .publication-reader-nav a:last-of-type{text-align:right}
+ .publication-position{white-space:nowrap;color:var(--muted);font-size:.82rem}
+ .publication-viewer{display:block;width:100%;height:calc(100dvh - 215px);min-height:620px;max-height:1100px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+ .reader-details{max-width:1000px;margin:34px auto 0}
+ .publication-overview{display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:1.5rem;align-items:start;margin-bottom:2rem}
+ .publication-cover{min-width:0}.publication-overview img{width:100%;height:auto;max-height:280px;object-fit:contain}
+ .checksum{overflow-wrap:anywhere}
+ @media(max-width:700px){.reader-page{padding:8px 10px 32px}.reader-heading .page-title{font-size:1.45rem}.publication-reader-nav{grid-template-columns:1fr auto;gap:6px}.publication-reader-nav a{white-space:normal}.publication-reader-nav a:first-of-type{grid-column:1}.publication-reader-nav a:last-of-type{grid-column:1}.publication-position{grid-column:2;grid-row:1/3}.publication-viewer{height:calc(100dvh - 245px);min-height:480px}.publication-overview{grid-template-columns:100px 1fr;gap:1rem}.publication-overview img{max-height:200px}}
+</style>

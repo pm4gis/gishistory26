@@ -15,6 +15,7 @@ const results=[];
 try{
  for(const width of [390,1366]){
   const page=await browser.newPage({viewport:{width,height:850}});
+  await page.route('**/*',route=>{const url=new URL(route.request().url());return url.origin!==new URL(base).origin&&route.request().resourceType()==='document'?route.abort():route.continue();});
   await page.goto(base+'/publications/');
   assert.equal(await page.locator('[data-publication]:visible').count(),totalCount);
   const groups=page.locator('[data-publication-group]');
@@ -52,7 +53,7 @@ try{
   await page.reload();assert.equal(await page.locator('[data-publication]:visible').count(),countForTheme('maori-gis'));
   await page.getByRole('button',{name:'Clear filters'}).click();
   assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
-  assert.equal(await page.locator('.publication-filters option[value="2026"]').count(),0,'No 2026 publication year should be offered');
+  assert.equal(await page.locator('.publication-filters option[value="2025"]').count(),0,'No 2025 publication year should be offered');
   assert.equal(await page.locator('.publication-card--source-linked').count(),onlinePdfPublications.filter(p=>!p.hostedLocally).length);
   const onlineCards=page.locator('.publication-card--hosted,.publication-card--source-linked');
   assert.equal(await onlineCards.count(),onlineCount);
@@ -60,7 +61,7 @@ try{
    const card=onlineCards.filter({has:page.getByRole('link',{name:item.title,exact:true})});
    assert.equal(await card.count(),1,item.slug);
    assert.equal(await card.getAttribute('data-year'),item.year);
-   assert.ok(Number(item.year)<=2025,`${item.title} must be dated 2025 or earlier`);
+   assert.ok(Number(item.year)<2025,`${item.title} must be dated before 2025`);
    const readerUrl='/publications/research/'+item.slug+'/';
    const readLink=card.locator('.publication-read');
    assert.equal(await readLink.getAttribute('href'),readerUrl);
@@ -91,7 +92,7 @@ try{
    const response=await page.goto(base+p.publicationUrl);assert.equal(response.status(),200);
    assert.equal(await page.locator('object[type="application/pdf"]').getAttribute('data'),p.viewerPath);
    assert.equal(await page.locator('a[download]').count(),0);
-   assert.equal(await page.locator('.publication-reader-nav').count(),2);
+   assert.equal(await page.locator('.publication-reader-nav').count(),1);
    assert.ok(await page.locator('.publication-reader-nav a').count()>0,'The reader should link to another publication in the site');
    const img=page.locator('.publication-overview img');await img.scrollIntoViewIfNeeded();
    assert.ok(await img.evaluate(el=>el.complete&&el.naturalWidth>0));
@@ -115,7 +116,7 @@ try{
    assert.equal(await page.locator('a[download]').count(),0,item.slug);
    assert.equal(await page.locator('.publication-reader-nav').count(),1,item.slug);
    assert.ok(await page.locator('.publication-reader-nav a').count()>0,item.slug);
-   const pdfAvailable=String(item.pdfPath).toLowerCase().split('?')[0].split('#')[0].endsWith('.pdf');
+   const pdfAvailable=Boolean(item.isPdf)||String(item.pdfPath).toLowerCase().split('?')[0].split('#')[0].endsWith('.pdf');
    if(pdfAvailable)assert.equal(await page.locator('object[type="application/pdf"]').getAttribute('data'),item.pdfPath,item.slug);
    else assert.equal(await page.locator('.source-record-viewer a').getAttribute('href'),item.pdfPath,item.slug);
   }

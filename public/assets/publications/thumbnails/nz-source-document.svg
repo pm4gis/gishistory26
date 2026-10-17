@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960" role="img" aria-labelledby="title desc">
+<title id="title">New Zealand geospatial research document</title>
+<desc id="desc">Abstract topographic contours and a coordinate grid in blue green and cream.</desc>
+<rect width="720" height="960" fill="#eaf0ed"/>
+<path d="M0 0H720V960H0z" fill="#eaf0ed"/>
+<g fill="none" stroke="#246778" stroke-width="2" opacity=".64">
+<path d="M-55 210c70-100 187-110 267-39s120 89 208 25 181-72 320 15"/>
+<path d="M-54 239c81-101 182-105 266-38s125 91 207 27 180-73 320 14"/>
+<path d="M-52 269c89-102 178-100 263-35s129 91 206 27 180-74 322 12"/>
+<path d="M-50 300c96-102 173-95 259-31s133 91 205 28 180-76 324 9"/>
+<path d="M-48 331c103-101 169-91 255-27s137 89 204 27 180-78 326 6"/>
+<path d="M-46 363c109-100 166-86 251-23s140 87 203 26 180-79 328 3"/>
+<path d="M-43 396c115-99 162-81 248-19s144 84 201 24 181-80 331 0"/>
+<path d="M-40 430c121-97 158-76 244-14s148 81 200 22 182-80 334-3"/>
+<path d="M-36 465c127-95 155-70 241-9s152 77 199 19 184-79 337-7"/>
+<path d="M-31 501c133-92 151-64 238-4s155 73 198 15 186-76 341-12"/>
+</g>
+<g fill="none" stroke="#c08a45" stroke-width="1.5" opacity=".6">
+<path d="M-20 660c110-76 199-37 278 25s134 103 232 51 158-114 258-59"/>
+<path d="M-20 691c115-74 199-34 274 26s137 100 233 50 159-112 259-58"/>
+<path d="M-20 722c121-70 197-31 270 28s141 96 233 49 160-110 259-56"/>
+<path d="M-20 754c128-67 195-27 266 30s144 92 234 47 162-108 260-54"/>
+<path d="M-20 787c134-64 192-23 261 31s148 89 235 45 164-105 260-52"/>
+</g>
+<g stroke="#6f8790" stroke-width="1" opacity=".23">
+<path d="M72 0v960M180 0v960M288 0v960M396 0v960M504 0v960M612 0v960"/>
+<path d="M0 96h720M0 204h720M0 312h720M0 420h720M0 528h720M0 636h720M0 744h720M0 852h720"/>
+</g>
+<rect x="56" y="66" width="608" height="150" rx="14" fill="#173b4a"/>
+<text x="88" y="121" fill="#b8d9d5" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">NEW ZEALAND · SOURCE PDF</text>
+<text x="88" y="174" fill="#fffaf1" font-family="Arial, sans-serif" font-size="36" font-weight="700">Geospatial research</text>
+<rect x="56" y="872" width="608" height="2" fill="#173b4a" opacity=".5"/>
+<text x="56" y="912" fill="#173b4a" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">GIS · MAPPING · REMOTE SENSING · SPATIAL DATA</text>
+</svg>
