@@ -20,18 +20,22 @@ const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+
    <p class="creator">{item.creator}</p>
    <p>{item.summary}</p>
    <p class="muted">PDF · {item.viewerPages} pages. Original publication: {item.date}.</p>
-   {item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}
+   <details class="publication-extra"><summary>Historical evidence and connections</summary>
+    {item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}
    <h2>Historical evidence</h2>
    <ul>{item.findings.map(f=><li>{f.page}: {f.text}</li>)}</ul>
    <h2>Connected history</h2>
    <p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter</a> · <a href={'/timeline/?event=source-'+item.slug}>View the publication event on the timeline</a></p>
    <ul>{records.map((r:any)=><li><a href={r.url}>{r.name}</a></li>)}{themes.map((t:any)=><li><a href={'/themes/'+t.slug+'/'}>{t.title}</a></li>)}</ul>
    {images.length>0&&<><h2>Illustrations from this publication</h2><ul>{images.map((i:any)=><li><a href={'/images/'+i.slug+'/'}>{i.title}</a></li>)}</ul></>}
-   <h2>Provenance and attribution</h2>
-   <p>{item.provenance}</p>
-   <p>{item.rights}</p>
-   {item.sourceUrl&&<p><a href={item.sourceUrl}>Publisher source record</a></p>}
-   <details><summary>Original file and checksum</summary><p>{item.filename} · {item.bytes.toLocaleString('en-NZ')} bytes</p><p class="checksum">SHA-256: <code>{item.sha256}</code></p></details>
+   </details>
+   <details class="publication-extra"><summary>Source information</summary>
+    <p>Added to this archive: {item.archivedDate}.</p>
+    <p>{item.provenance}</p>
+    {item.sourceUrl&&<p><a href={item.sourceUrl}>Publisher source record</a></p>}
+    <p>{item.filename} · {item.bytes.toLocaleString('en-NZ')} bytes</p>
+    <p class="checksum">SHA-256: <code>{item.sha256}</code></p>
+   </details>
   </div>
  </PublicationReader>
 </Layout>
