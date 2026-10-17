@@ -7,9 +7,9 @@
   "url": "/entities/te-kahui-manu-hokai-maori-gis-association/",
   "website": "https://www.linz.govt.nz/our-work/location-information/geospatial-capability/new-zealand-gis-and-geospatial-groups-and-networks",
   "story": [
-    "Te Kāhui Manu Hōkai is the Māori GIS Association, a professional and community network supporting Māori participation in geographic information work. LINZ identifies it among New Zealand’s geospatial communities and records its collaboration on practical mapping wānanga.",
-    "From October 2020, Te Kāhui Manu Hōkai worked with LINZ on Ngā Poutama Matawhenua sessions, with support from GIS Journey Limited. The programme links practical GIS learning to iwi, Māori trusts and environmental groups.",
-    "The association’s collaboration brought Māori-led expertise into a programme supported by LINZ and GIS Journey, with regular wānanga shaped around the mapping needs of participating groups."
+    "Te Kāhui Manu Hōkai, also known as the Māori GIS Association, was a Māori GIS practitioner association promoting Māori participation in geographic information work. The incorporated society was registered on 14 June 2013 under the Incorporated Societies Act 1908 and dissolved on 11 June 2018. Its incorporation number was 2582124 and its NZBN was 9429043247875.",
+    "The Te Kāhui Manu Hōkai name continued to be used in Māori GIS activities after the incorporated society was dissolved. The PLACE19 programme documents a conference in Rotorua in November 2019. LINZ later described work involving Te Kāhui Manu Hōkai, GIS Journey Limited and Ngā Poutama Matawhenua practical mapping wānanga from October 2020. These later activities do not establish that the dissolved incorporated society was restored.",
+    "Work under the Te Kāhui Manu Hōkai name supported practical GIS learning for iwi, Māori trusts and environmental groups, including mapping wānanga shaped around the needs of participating communities."
   ],
   "sources": [
     {
@@ -23,6 +23,10 @@
     {
       "label": "PLACE19: Te Kāhui Manu Hōkai Māori GIS Association conference programme, PDF pp. 3–7",
       "url": "/publications/place19-maori-gis-programme-2019/"
+    },
+    {
+      "label": "New Zealand Companies Office, Incorporated Societies Register, Te Kahui Manu Hokai - Maori GIS Association Incorporated (society 2582124; NZBN 9429043247875), registration history viewed 17 October 2026",
+      "url": "https://app.businessregisters.govt.nz/"
     }
   ],
   "aliases": [
@@ -38,9 +42,22 @@
   "biographyParagraphSources": [],
   "contentSections": [
     {
+      "title": "Incorporation and dissolution",
+      "paragraphs": [
+        "The New Zealand Companies Office register records the legal name as TE KAHUI MANU HOKAI - MAORI GIS ASSOCIATION INCORPORATED. It was incorporated on 14 June 2013 under the Incorporated Societies Act 1908 and dissolved on 11 June 2018. The society's incorporation number is 2582124; its New Zealand Business Number (NZBN) is 9429043247875.",
+        "Dissolution ended the registered society's legal status. Subsequent conferences and mapping activities documented under the association's name should be understood separately from the former incorporated society's legal registration."
+      ],
+      "sources": [
+        {
+          "label": "New Zealand Companies Office, Incorporated Societies Register, Te Kahui Manu Hokai - Maori GIS Association Incorporated (society 2582124; NZBN 9429043247875), registration history viewed 17 October 2026",
+          "url": "https://app.businessregisters.govt.nz/"
+        }
+      ]
+    },
+    {
       "title": "Documented contribution in 2019",
       "paragraphs": [
-        "The association’s PLACE19 programme records more than 100 delegates in Rotorua in November 2019. Its five streams covered people, landscapes, assets, communication and education, with programme support from LINZ and sponsorship from Massey University and other spatial organisations."
+        "The PLACE19 programme, issued under the Te Kāhui Manu Hōkai name after the incorporated society's 2018 dissolution, records more than 100 delegates in Rotorua in November 2019. Its five streams covered people, landscapes, assets, communication and education, with programme support from LINZ and sponsorship from Massey University and other spatial organisations."
       ],
       "sources": [
         {
