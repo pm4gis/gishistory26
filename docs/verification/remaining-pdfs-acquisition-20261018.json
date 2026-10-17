@@ -1,0 +1,39 @@
+{
+  "verifiedOn": "2026-10-18",
+  "publicationCutoff": "2025-12-31",
+  "candidates": [
+    "gis-careers-brochure-2021",
+    "linz-annual-report-2010-11",
+    "spatial-information-economy-2009"
+  ],
+  "acquired": [
+    {
+      "slug": "gis-careers-brochure-2021",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/gis_brochure_20210723-v2.pdf",
+      "size": 1239664,
+      "sha256": "73f1e77773b2ff990480087360a23d188f5fbafd76b502b8a68a879ecacaef41",
+      "thumbnailBytes": 139785,
+      "attribution": "Toitū Te Whenua Land Information New Zealand; original source as listed",
+      "copyrightReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-annual-report-2010-11",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/corp/annual-report-2010-11.pdf",
+      "size": 1262278,
+      "sha256": "498eabbc536dc9bbb089f94be70a1322f9e2144af735a63fef33a6621d517cb9",
+      "thumbnailBytes": 37126,
+      "attribution": "Toitū Te Whenua Land Information New Zealand; original source as listed",
+      "copyrightReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "spatial-information-economy-2009",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/spatial-information-in-the-new-zealand-economy-2009.pdf",
+      "size": 1542288,
+      "sha256": "ec103b86042d61bd882643f3797363a34dfa39a0aeebcfa4cb2fae775e1bb213",
+      "thumbnailBytes": 40242,
+      "attribution": "Toitū Te Whenua Land Information New Zealand; original source as listed",
+      "copyrightReference": "https://www.linz.govt.nz/copyright"
+    }
+  ],
+  "skipped": []
+}

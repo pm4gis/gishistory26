@@ -1,0 +1,104 @@
+{
+  "checkedOn": "2026-10-18",
+  "records": [
+    {
+      "slug": "auckland-landslide-susceptibility-2025",
+      "claimedPdfUrl": "https://www.aucklandcouncil.govt.nz/UnitaryPlanDocuments/mir-document-landslide-susceptibility-assessment-25092025.pdf",
+      "sourceUrl": "https://knowledgeauckland.org.nz/publications/auckland-region-landslide-susceptibility-assessment-may-2025/",
+      "status": 406,
+      "finalUrl": "https://www.aucklandcouncil.govt.nz/UnitaryPlanDocuments/mir-document-landslide-susceptibility-assessment-25092025.pdf",
+      "contentType": null,
+      "contentLength": "293",
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    },
+    {
+      "slug": "basic-gis-manual-2020",
+      "claimedPdfUrl": "https://www.landcareresearch.co.nz/assets/Tools-And-Resources/Data/data-visualisation/Basic-GIS-manual.pdf",
+      "sourceUrl": "https://www.landcareresearch.co.nz/assets/Tools-And-Resources/Data/data-visualisation/Basic-GIS-manual.pdf",
+      "status": 202,
+      "finalUrl": "https://www.landcareresearch.co.nz/assets/Tools-And-Resources/Data/data-visualisation/Basic-GIS-manual.pdf",
+      "contentType": "text/html; charset=UTF-8",
+      "contentLength": "0",
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    },
+    {
+      "slug": "christchurch-lidar-report-2025",
+      "claimedPdfUrl": "https://data.linz.govt.nz/layer/123194-canterbury-christchurch-lidar-1m-dsm-2024-2025/",
+      "sourceUrl": "https://data.linz.govt.nz/layer/123194-canterbury-christchurch-lidar-1m-dsm-2024-2025/",
+      "status": 200,
+      "finalUrl": "https://data.linz.govt.nz/layer/123194-canterbury-christchurch-lidar-1m-dsm-2024-2025/",
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": null,
+      "xFrameOptions": "DENY",
+      "appearsToBePdf": false
+    },
+    {
+      "slug": "gisborne-priority-area-lidar-2023",
+      "claimedPdfUrl": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/NZ23_Gisborne_metadata.pdf",
+      "sourceUrl": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/NZ23_Gisborne_metadata.pdf",
+      "status": 200,
+      "finalUrl": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/NZ23_Gisborne_metadata.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "1497327",
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    },
+    {
+      "slug": "marlborough-pgf-lidar-2022",
+      "claimedPdfUrl": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/NZ20_Marlbo_metadata.pdf",
+      "sourceUrl": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/NZ20_Marlbo_metadata.pdf",
+      "status": 200,
+      "finalUrl": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/NZ20_Marlbo_metadata.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "4834956",
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    },
+    {
+      "slug": "spatial-information-economy-2009",
+      "claimedPdfUrl": "https://www.linz.govt.nz/sites/default/files/spatial-information-in-the-new-zealand-economy-2009.pdf",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/spatial-information-in-the-new-zealand-economy-2009.pdf",
+      "status": 200,
+      "finalUrl": "https://www.linz.govt.nz/sites/default/files/spatial-information-in-the-new-zealand-economy-2009.pdf",
+      "contentType": "application/pdf",
+      "contentLength": null,
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    },
+    {
+      "slug": "linz-annual-report-2010-11",
+      "claimedPdfUrl": "https://www.linz.govt.nz/sites/default/files/corp/annual-report-2010-11.pdf",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/corp/annual-report-2010-11.pdf",
+      "status": 200,
+      "finalUrl": "https://www.linz.govt.nz/sites/default/files/corp/annual-report-2010-11.pdf",
+      "contentType": "application/pdf",
+      "contentLength": null,
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    },
+    {
+      "slug": "motueka-iwi-gis-2005",
+      "claimedPdfUrl": "https://icm.landcareresearch.co.nz/knowledgebase/publications/public/ICMMaoriGISreport.pdf",
+      "sourceUrl": "https://icm.landcareresearch.co.nz/knowledgebase/publications/public/ICMMaoriGISreport.pdf",
+      "status": 200,
+      "finalUrl": "https://icm.landcareresearch.co.nz/knowledgebase/publications/public/ICMMaoriGISreport.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "481957",
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    },
+    {
+      "slug": "gis-careers-brochure-2021",
+      "claimedPdfUrl": "https://www.linz.govt.nz/sites/default/files/gis_brochure_20210723-v2.pdf",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/gis_brochure_20210723-v2.pdf",
+      "status": 200,
+      "finalUrl": "https://www.linz.govt.nz/sites/default/files/gis_brochure_20210723-v2.pdf",
+      "contentType": "application/pdf",
+      "contentLength": null,
+      "xFrameOptions": null,
+      "appearsToBePdf": true
+    }
+  ]
+}
