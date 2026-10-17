@@ -1,4 +1,5 @@
 name: Preserve historical LINZ PDF originals
+# Acquire after the reference-card TypeScript fix.
 on:
   push:
     branches: [content/publications-geodesy-20261018]
