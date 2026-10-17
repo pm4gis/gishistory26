@@ -1,0 +1,29 @@
+{
+  "id": "2013-te-kahui-manu-hokai-incorporation",
+  "dateDisplay": "14 June 2013",
+  "startDate": "2013-06-14",
+  "datePrecision": "day",
+  "year": 2013,
+  "label": "Te Kāhui Manu Hōkai becomes an incorporated society",
+  "summary": "Te Kahui Manu Hokai - Maori GIS Association Incorporated was registered under the Incorporated Societies Act 1908 (society number 2582124; NZBN 9429043247875).",
+  "url": "/entities/te-kahui-manu-hokai-maori-gis-association/",
+  "passageIds": [
+    "passage:research-20261010-ch29-maori-gis-practitioner-conferences"
+  ],
+  "recordIds": [
+    "entity:te-kahui-manu-hokai-maori-gis-association"
+  ],
+  "themeIds": [
+    "maori-gis"
+  ],
+  "categories": [
+    "organisation",
+    "Māori GIS"
+  ],
+  "sources": [
+    {
+      "label": "New Zealand Companies Office, Incorporated Societies Register, Te Kahui Manu Hokai - Maori GIS Association Incorporated (2582124; NZBN 9429043247875), viewed 17 October 2026",
+      "url": "https://app.businessregisters.govt.nz/"
+    }
+  ]
+}
