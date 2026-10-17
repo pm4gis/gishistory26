@@ -1,0 +1,46 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import {onlinePdfPublications} from '../../../lib/online-pdf-publications.mjs';
+export function getStaticPaths(){
+ const items=[...onlinePdfPublications].sort((a,b)=>b.year.localeCompare(a.year)||a.title.localeCompare(b.title));
+ return items.map((item,i)=>({params:{slug:item.slug},props:{item,previous:items[i-1]||null,next:items[i+1]||null,position:i+1,total:items.length}}));
+}
+const {item,previous,next,position,total}=Astro.props;
+const here='https://history.pm4gis.nz/publications/pdf/'+item.slug+'/';
+const structuredData=[{'@type':'CreativeWork',name:item.title,datePublished:item.year,author:{'@type':'Organization',name:item.creator},url:here,description:item.summary,encoding:{'@type':'MediaObject',contentUrl:item.hostedLocally?'https://history.pm4gis.nz'+item.pdfPath:item.pdfPath,encodingFormat:'application/pdf'}}];
+---
+<Layout title={item.title+' · PDF publication · NZ GIS History'} description={item.summary} structuredData={structuredData}>
+ <article class="wrap pdf-reader" data-pagefind-body>
+  <div class="pdf-reader-top">
+   <a href="/publications/">← All publications</a><span aria-live="polite">PDF {position} of {total}</span>
+  </div>
+  <p class="eyebrow">{item.date} · {item.kind}</p>
+  <h1>{item.title}</h1>
+  <p>{item.creator}</p>
+  <p class="intro">{item.summary}</p>
+  <nav class="pdf-reader-nav" aria-label="Browse PDF publications">
+    {previous?<a class="button" href={'/publications/pdf/'+previous.slug+'/'} rel="prev">← Previous PDF</a>:<span></span>}
+    {next?<a class="button" href={'/publications/pdf/'+next.slug+'/'} rel="next">Next PDF →</a>:<span></span>}
+  </nav>
+  <div class="pdf-embed">
+   <object data={item.pdfPath+'#view=FitH'} type="application/pdf" aria-label={'PDF document: '+item.title}>
+     <p>Your browser cannot display this PDF here. <a href={item.pdfPath} target="_blank" rel="noopener noreferrer">Open the PDF at its source</a>.</p>
+   </object>
+  </div>
+  <p class="muted">Source: {item.sourceName}. {item.hostedLocally?'Archived PDF copy on this site.':'The viewer uses the publisher’s PDF and may be restricted by that website.'}</p>
+  <p class="muted">Attribution: {item.attribution}</p>
+  <p class="muted">Reuse: {item.license}</p>
+  {item.sourceUrl&&<p><a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">Publisher or repository source</a></p>}
+  <nav class="pdf-reader-nav" aria-label="Continue browsing PDF publications">
+    {previous?<a class="button" href={'/publications/pdf/'+previous.slug+'/'}>← Previous PDF</a>:<span></span>}
+    {next?<a class="button" href={'/publications/pdf/'+next.slug+'/'}>Next PDF →</a>:<span></span>}
+  </nav>
+ </article>
+</Layout>
+<style>
+ .pdf-reader{padding-block:2rem 4rem}.pdf-reader-top{display:flex;gap:1rem;justify-content:space-between;align-items:center;color:var(--muted);margin-bottom:1rem}
+ .pdf-reader h1{max-width:31ch}.pdf-reader .intro{max-width:75ch}.pdf-reader-nav{display:flex;justify-content:space-between;gap:1rem;margin:1.2rem 0}
+ .pdf-embed{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface);height:min(85vh,1100px);min-height:420px}
+ .pdf-embed object{display:block;width:100%;height:100%}
+ @media(max-width:600px){.pdf-embed{min-height:500px;height:72vh}.pdf-reader-nav .button{font-size:.88rem}}
+</style>

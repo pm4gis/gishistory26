@@ -1,0 +1,171 @@
+{
+  "publishedBefore": "2026-01-01",
+  "checkedAt": "2026-10-18",
+  "sources": "Official LINZ PDF URLs",
+  "licence": "https://www.linz.govt.nz/copyright",
+  "acquired": [
+    {
+      "slug": "nz-map-grid-1973",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/nz-map-definition.pdf",
+      "bytes": 235872,
+      "sha256": "69cf9226e3a887215df57afbdc9f799afdce6571abcfcc760987ae15a728b3c4",
+      "thumbnailPath": "/assets/publications/thumbnails/nz-map-grid-1973.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "geodetic-datum-proposal-1998",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/static/tr02-geodetic-datum-development-1998.pdf",
+      "bytes": 198470,
+      "sha256": "75de3238a9c51efd6af0b2cdb3ffe979ff88f6ec81fe526cfdd3f7cc2dfa5815",
+      "thumbnailPath": "/assets/publications/thumbnails/geodetic-datum-proposal-1998.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "geodetic-operations-1995-98",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/nzgeodetic-operations.pdf",
+      "bytes": 453038,
+      "sha256": "1e5c78eae7e209647a7e393f1515d4d16ac13b42813151d8a0720c34ac44d106",
+      "thumbnailPath": "/assets/publications/thumbnails/geodetic-operations-1995-98.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "nzgd2000-realisation-2000",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/tr05-realisation-of-nzgd2000-2000.pdf",
+      "bytes": 285905,
+      "sha256": "2bf674b3a948ec6491b5178fb70b92682a3361d1498c3fdedecf50919f710617",
+      "thumbnailPath": "/assets/publications/thumbnails/nzgd2000-realisation-2000.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "nzgd2000-implementation-2003",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/blick-nzgd2000.pdf",
+      "bytes": 368492,
+      "sha256": "5641f31cf919091a613e53938b314a67d14bdd39571097f4f5426775f8a9066c",
+      "thumbnailPath": "/assets/publications/thumbnails/nzgd2000-implementation-2003.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "geodesy-national-report-2003-2006",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/iugg-nat-report-2003-2006.pdf",
+      "bytes": 1227479,
+      "sha256": "4f9c7251c9882b4f2542b3169fca8cef7596ac8dc4a70b161a54c1ea2271cfc2",
+      "thumbnailPath": "/assets/publications/thumbnails/geodesy-national-report-2003-2006.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "where-in-the-world-2007",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/witwaw.pdf",
+      "bytes": 1199628,
+      "sha256": "2f39513594159da40701f7468e0e0202b08d04baea3abbad8759e15dea1eddde",
+      "thumbnailPath": "/assets/publications/thumbnails/where-in-the-world-2007.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "nzgd2000-standard-2007",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/25000-LINZS25000%2520Standard%2520for%2520New%2520Zealand%2520Geodetic%2520Datum%25202000%2520_4.pdf",
+      "bytes": 255567,
+      "sha256": "8cb818725387525457b511110a7ce7ad0145784941c6eb339a74488421d724fe",
+      "thumbnailPath": "/assets/publications/thumbnails/nzgd2000-standard-2007.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "nzgd2000-projections-standard-2008",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/25002-LINZS25002%2520Standard%2520for%2520New%2520Zealand%2520Geodetic%2520Datum%25202000%2520Projections-%2520version%25202_4.pdf",
+      "bytes": 278154,
+      "sha256": "0f5f770ee9b8858b679c6fb96999d70ba46cc8a35d3ef8182296c4f691de3856",
+      "thumbnailPath": "/assets/publications/thumbnails/nzgd2000-projections-standard-2008.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "geodetic-system-part1-2009",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/sq-introduction-sept-09.pdf",
+      "bytes": 1185574,
+      "sha256": "17b885afd816e62753995a4ca588c33cd575935159b8ada1f440c49d7a4f7d30",
+      "thumbnailPath": "/assets/publications/thumbnails/geodetic-system-part1-2009.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "geodetic-system-part2-2009",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/sq-control-system-december-2009.pdf",
+      "bytes": 356377,
+      "sha256": "8fc874b090b31bfed909ee7ab02cdd240f1a1099f923aeacad11531098e1d8b4",
+      "thumbnailPath": "/assets/publications/thumbnails/geodetic-system-part2-2009.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "geodetic-system-part3-2010",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/sq-geodetic-article-june-2010.pdf",
+      "bytes": 297035,
+      "sha256": "144dff356bae9236813aee76a08c986acc714394f2f632e6158a74879f07851f",
+      "thumbnailPath": "/assets/publications/thumbnails/geodetic-system-part3-2010.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "geodetic-system-part4-2010",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/sq-part-4-september-2010.pdf",
+      "bytes": 463755,
+      "sha256": "c6c5706a5eb9e1f7dc5fc16ab04202e021ef0ce858d00e53a16e47eb61f5f7f5",
+      "thumbnailPath": "/assets/publications/thumbnails/geodetic-system-part4-2010.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "nzgd2000-deformation-format-2013",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/nzgd2000deformationmodelformat.pdf",
+      "bytes": 500072,
+      "sha256": "91d4d6960a5b82c6985224b0806d146d477aa7a935794195a0c873c86c3c4a39",
+      "thumbnailPath": "/assets/publications/thumbnails/nzgd2000-deformation-format-2013.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "nz-positioning-strategy-2014",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/nz_positioning_strategy.pdf",
+      "bytes": 2030930,
+      "sha256": "d2992819f17e4e6b51d599a3e53fc72d5c020cb569781bbc610b667475b05dfc",
+      "thumbnailPath": "/assets/publications/thumbnails/nz-positioning-strategy-2014.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "cadastre-2034-strategy-2014",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cadastre_strategy_web4.pdf",
+      "bytes": 6465480,
+      "sha256": "f472b202edfb96f1a042f267240d537e87977f76e908511657423ca5080fb43e",
+      "thumbnailPath": "/assets/publications/thumbnails/cadastre-2034-strategy-2014.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-four-year-plan-2016",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/linz_four-year-plan_2016.pdf",
+      "bytes": 16250634,
+      "sha256": "496697f2434efcc09398b6418b27eff677c533dee15c76fe1dbb4cfae2bdd53f",
+      "thumbnailPath": "/assets/publications/thumbnails/linz-four-year-plan-2016.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "nzgo-status-oia-2024",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/2024-09/DOIA%2025-004%20Response%20Letter.pdf",
+      "bytes": 787159,
+      "sha256": "2b72d5865479b5723e30e2b5ad0aa3c8f05d83019d16e23cd00024448677f02e",
+      "thumbnailPath": "/assets/publications/thumbnails/nzgo-status-oia-2024.jpg",
+      "licence": "LINZ CC BY 4.0 default website content terms",
+      "licenceEvidence": "https://www.linz.govt.nz/copyright"
+    }
+  ],
+  "skipped": []
+}
