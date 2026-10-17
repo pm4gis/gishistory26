@@ -55,7 +55,7 @@ try{
    assert.deepEqual(numbers.map(x=>Number(x.trim().replace('Chapter ',''))),Array.from({length:44},(_,i)=>i+1));
    await dimensions(page,viewport.name+' homepage');
   });
-  await check(viewport.name+' topographic title crop and readable heading',async()=>{
+  await check(viewport.name+' documentary hero image and readable heading',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    const hero=page.locator('.hero--topo');
    assert.equal(await hero.count(),1);
@@ -64,7 +64,7 @@ try{
    const active=hero.locator('.topo-slide.is-active');
    assert.equal(await active.count(),1);
    const src=await active.getAttribute('src')||'';
-   assert.match(src,/^\/assets\/home-topo\/topo-\d{2}\.webp$/);
+   assert.match(src,/^\/assets\/historical\/web\/(christchurch-response-orthophoto-2011|nasa-landsat4-tasman-1990)\.webp$/);
    const observed=await active.evaluate(async img=>{
     await img.decode();
     const frame=img.getBoundingClientRect();
@@ -74,12 +74,12 @@ try{
     return {naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight,fit:style.objectFit,
       imgLeft:frame.left,imgRight:frame.right,heroLeft:outer.left,heroRight:outer.right,titleVisible:!!title&&title.getBoundingClientRect().height>0};
    });
-   assert.equal(observed.naturalWidth,1400);
-   assert.equal(observed.naturalHeight,788);
+   assert.ok(observed.naturalWidth>=1400,'documentary hero image should load at a useful resolution');
+   assert.ok(observed.naturalHeight>=788,'documentary hero image should load at a useful resolution');
    assert.equal(observed.fit,'cover');
-   assert.ok(observed.imgLeft>=observed.heroLeft-2&&observed.imgRight<=observed.heroRight+2,'map image must stay inside the hero');
+   assert.ok(observed.imgLeft>=observed.heroLeft-2&&observed.imgRight<=observed.heroRight+2,'documentary image must stay inside the hero');
    assert.equal(observed.titleVisible,true);
-   await dimensions(page,viewport.name+' topographic hero');
+   await dimensions(page,viewport.name+' documentary hero');
   });
   await check(viewport.name+' 44 chapter thumbnails present and correctly framed',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});

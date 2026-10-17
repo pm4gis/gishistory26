@@ -1,4 +1,4 @@
-import {mkdir,readFile,writeFile} from 'node:fs/promises';
+import {access,mkdir,readFile,writeFile} from 'node:fs/promises';
 import {join} from 'node:path';
 import sharp from 'sharp';
 import {homeTopoMaps} from '../src/lib/home-topo-maps.mjs';
@@ -34,6 +34,18 @@ async function fetchThumbnail(map){
   }
  }
  throw new Error('Cannot retrieve '+map.sourceTitle+' from public Google Drive thumbnail: '+String(last?.message||last));
+}
+// Documentary hero images are already committed under public/assets and must
+// not be replaced with generated crops. Verify those files and leave them intact.
+if(!homeTopoMaps.every(map=>map.driveId&&map.sourceTitle)){
+ for(const map of homeTopoMaps){
+  const file=join('public',map.src.slice(1));
+  await access(file);
+  const meta=await sharp(file).metadata();
+  if(meta.format!=='webp'||!meta.width||!meta.height)throw new Error('Invalid documentary hero image: '+file);
+ }
+ console.log('Verified '+homeTopoMaps.length+' existing documentary homepage hero images.');
+ process.exit(0);
 }
 async function processMap(map){
  const file=join(folder,map.id+'.webp');
