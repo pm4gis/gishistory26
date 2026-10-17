@@ -8,12 +8,13 @@ const {document}=Astro.props;
  <article class="page-wrap image-detail">
   <p class="eyebrow">Original source document</p><h1 class="page-title">{document.title}</h1>
   <p>{document.creator} · {document.date}</p>
+  <p><a class="button" href={'/publications/'+document.slug+'/'}>View in Publications</a></p>
   <p><a class="button" href={document.assetPath} download>Download original PDF ({(document.bytes/1000000).toFixed(1)} MB)</a></p>
   <p>{document.limitations}</p>
   <p>{document.rights}</p>
   <p><a href={document.catalogueUrl}>Institutional source record</a> · <a href={document.sourceUrl}>Source PDF</a></p>
   <p>Unchanged source download, {document.pdfPages} PDF pages, {document.bytes.toLocaleString('en-NZ')} bytes.</p>
   <details><summary>File checksum (SHA-256)</summary><p style="overflow-wrap:anywhere"><code>{document.sha256}</code></p></details>
-  <p><a href={'/stories/'+document.articleSlug+'/#'+document.afterParagraphId}>Read the related Chapter 5 paragraph →</a></p>
+  <p><a href={'/stories/'+document.articleSlug+'/#'+document.afterParagraphId}>Read the related historical passage →</a></p>
  </article>
 </Layout>

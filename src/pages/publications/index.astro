@@ -1,27 +1,28 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {contributedPrimarySources as publications} from '../../lib/contributed-primary-sources.mjs';
+import {publications} from '../../lib/publications.mjs';
 import {dataset} from '../../lib/data';
 const d=await dataset();
-const years=[...new Set(publications.map(p=>p.startDate.slice(0,4)))].sort();
+const years=[...new Set(publications.filter(p=>p.startDate).map(p=>p.startDate!.slice(0,4)))].sort();
+const decades=[...new Set(years.map(y=>y.slice(0,3)))].sort();
 const creators=[...new Set(publications.map(p=>p.creator))].sort();
 const themes=d.themes.filter((t:any)=>publications.some(p=>p.themeIds.includes(t.id)));
 ---
-<Layout title="Publications · NZ GIS History" description="Read original New Zealand GIS strategies, conference programmes, education material and community mapping guidance from 2007 to 2021.">
+<Layout title="Publications · NZ GIS History" description="Read original New Zealand GIS strategies, conference programmes, education material and community mapping guidance, with original publications from 1979 onward and undated archival reference material.">
  <div class="wrap publication-library" data-pagefind-body>
   <p class="eyebrow">Original documentary evidence</p><h1>Publications</h1>
   <p class="intro">Read the original strategies, conference programmes and practical guidance behind this history. Each publication connects to its historical chapter and documented subjects. Dates below describe the original publication; archive dates appear separately on each detail page.</p>
   <form class="publication-filters card" role="search" aria-label="Filter publications" onsubmit="return false">
    <label>Search publications<input type="search" name="q" placeholder="Title, author or subject" /></label>
-   <label>Decade<select name="decade"><option value="">All decades</option><option value="200">2000–2009</option><option value="201">2010–2019</option><option value="202">2020–2025</option></select></label>
-   <label>Year<select name="year"><option value="">All years</option>{years.map(y=><option value={y}>{y}</option>)}</select></label>
+   <label>Decade<select name="decade"><option value="">All decades</option>{decades.map(d=><option value={d}>{d+'0'}–{Math.min(Number(d+'9'),2025)}</option>)}<option value="undated">Undated</option></select></label>
+   <label>Year<select name="year"><option value="">All years</option>{years.map(y=><option value={y}>{y}</option>)}<option value="undated">Undated</option></select></label>
    <label>Publishing organisation or creator<select name="creator"><option value="">All organisations and creators</option>{creators.map(c=><option value={c}>{c}</option>)}</select></label>
    <label>Theme<select name="theme"><option value="">All themes</option>{themes.map((t:any)=><option value={t.id}>{t.title}</option>)}</select></label>
    <button type="reset" class="button">Clear filters</button>
   </form>
   <p id="publication-count" role="status" aria-live="polite">{publications.length} publications</p>
   <div class="cards publication-grid">
-   {publications.map(p=><article class="card publication-card" data-publication data-year={p.startDate.slice(0,4)} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-search={[p.title,p.creator,p.summary,p.topic,...p.related].join(' ')}>
+   {publications.map(p=><article class="card publication-card" data-publication data-year={p.startDate?.slice(0,4)||'undated'} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-search={[p.title,p.creator,p.summary,p.topic,...p.related].join(' ')}>
     <a href={p.publicationUrl} class="publication-cover" tabindex="-1" aria-hidden="true"><img src={p.thumbnailPath} alt="" width="720" height="960" loading="lazy"/></a>
     <div class="publication-copy"><p class="eyebrow">{p.date} · {p.kind}</p><h2><a class="title" href={p.publicationUrl}>{p.title}</a></h2><p>{p.creator}</p><p>{p.summary}</p><p class="muted">{p.format} · {p.pages} {p.format==='PDF'?'pages':'slides'}</p></div>
    </article>)}

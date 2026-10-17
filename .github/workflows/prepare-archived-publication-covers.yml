@@ -1,0 +1,32 @@
+name: Prepare archived publication covers
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/prepare-archived-publication-covers.yml'
+      - 'scripts/prepare-archived-publication-covers.mjs'
+permissions:
+  contents: write
+jobs:
+  covers:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0', cache: npm}
+      - run: npm ci
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: node scripts/prepare-source-documents.mjs
+      - run: node scripts/prepare-archived-publication-covers.mjs
+      - name: Commit documentary cover derivatives
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/historical/publications/*-cover.png public/assets/historical/publications/*-card.webp docs/verification/archived-publication-covers-20261017.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Render four archived publication covers from unchanged originals"
+            git push
+          fi
