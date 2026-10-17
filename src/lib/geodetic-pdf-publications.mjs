@@ -1,3 +1,5 @@
+import {mirroredPdfSlugs} from './geodetic-pdfs-mirrored.mjs';
+const mirrored = new Set(mirroredPdfSlugs);
 // Additional historical New Zealand GIS PDFs verified against publisher/repository records
 // on 18 October 2026. Publication dates are distinct from the date of web discovery.
 // These are source-linked copies. They are not asserted to have a mirroring licence.
@@ -279,10 +281,11 @@ export const geodeticPdfPublications = source.map(([slug,title,creator,year,date
   sourceName: url.includes('landcareresearch.co.nz') ? 'Manaaki Whenua – Landcare Research' : 'Toitū Te Whenua – Land Information New Zealand',
   sourceUrl: url,
   sourceLabel: 'Publisher PDF',
-  externalPdfUrl: url,
-  license: 'Publisher or contributor copyright applies. A general PDF redistribution licence has not been verified.',
+  externalPdfUrl: mirrored.has(slug) ? undefined : url,
+  license: mirrored.has(slug) ? 'Creative Commons Attribution 4.0 International (CC BY 4.0) under the LINZ website copyright terms.' : 'Publisher or contributor copyright applies. A general PDF redistribution licence has not been verified.',
+  licenseUrl: mirrored.has(slug) ? 'https://www.linz.govt.nz/copyright' : undefined,
   attribution: creator+' ('+year+'), '+title+'. Source: '+url,
   themeIds: [theme],
   keywords: tags.split(',').map(t=>t.trim()),
-  generatedCover: true
+  generatedCover: !mirrored.has(slug)
 }));
