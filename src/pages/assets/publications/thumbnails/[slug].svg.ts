@@ -1,13 +1,16 @@
+import type {APIRoute} from 'astro';
 import {geodeticPdfPublications} from '../../../../lib/geodetic-pdf-publications.mjs';
+type Cover = {slug:string; title:string; creator:string; year:string};
+const covers = geodeticPdfPublications as Cover[];
 
 // Plain catalogue cards for publisher-hosted PDFs. These are metadata cards,
 // not invented reproductions of the documents' original covers.
 export function getStaticPaths() {
-  return geodeticPdfPublications.map(item => ({params: {slug:item.slug},props:{item}}));
+  return covers.map(item => ({params: {slug:item.slug},props:{item}}));
 }
 
-const escapeXml = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[char]));
-function wrap(str, limit=29) {
+const escapeXml = (value:string) => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[char]));
+function wrap(str:string, limit=29) {
  const words=String(str).split(/\s+/), lines=[];let line='';
  for(const word of words) {
   if(line && (line+' '+word).length>limit){lines.push(line);line=word;} else line=line?line+' '+word:word;
@@ -15,8 +18,8 @@ function wrap(str, limit=29) {
  if(line)lines.push(line);
  return lines.slice(0,7);
 }
-export const GET = ({props}) => {
- const {item}=props;
+export const GET: APIRoute = ({props}) => {
+ const item = props.item as Cover;
  const lines=wrap(item.title);
  const title=lines.map((line,i)=>`<text x="58" y="${244+i*61}" font-size="43" font-weight="700" fill="#f8fafc">${escapeXml(line)}</text>`).join('');
  const year=escapeXml(item.year), organisation=escapeXml(item.creator);
