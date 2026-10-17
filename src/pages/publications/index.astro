@@ -10,7 +10,7 @@ const research=new Map(onlinePdfPublications.map(p=>[p.slug,p]));
 const library=publicationReadingOrder.map(item=>{
  const p=item.kind==='archive'?archive.get(item.slug):research.get(item.slug);
  if(!p)throw new Error('Missing publication '+item.slug);
- return {url:item.url,title:item.title,year:item.year,date:p.date,creator:p.creator,summary:p.summary,thumbnailPath:p.thumbnailPath,kind:p.kind,format:item.kind==='archive'?p.format:'PDF',pages:item.kind==='archive'?p.pages:null,themeIds:p.themeIds||[],type:item.kind};
+ return {url:item.url,title:item.title,year:item.year,creator:p.creator,summary:p.summary,thumbnailPath:p.thumbnailPath,themeIds:p.themeIds||[],type:item.kind};
 });
 const decadeValues=[...new Set(library.map(p=>Math.floor(Number(p.year)/10)*10))].sort((a,b)=>a-b);
 const creatorValues=[...new Set(library.map(p=>p.creator))].sort((a,b)=>a.localeCompare(b,'en-NZ'));
@@ -55,11 +55,10 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
      {library.map(p=><article class="publication-card card" data-publication data-year={p.year} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-kind={p.type}>
       <a class="publication-cover" href={p.url} tabindex="-1" aria-hidden="true"><img src={p.thumbnailPath} width="720" height="960" alt="" loading="lazy"/></a>
       <div class="publication-copy">
-       <p class="eyebrow">{p.date} · {p.kind}</p>
+       <p class="eyebrow"><time datetime={p.year}>{p.year}</time></p>
        <h3><a href={p.url} class="title" aria-label={'Read PDF: '+p.title}>{p.title}</a></h3>
        <p class="publication-creator">{p.creator}</p>
        <p class="publication-summary">{p.summary}</p>
-       <p class="publication-format">{p.format}{p.pages?' · '+p.pages+' pages':''}</p>
       </div>
      </article>)}
     </div>
@@ -136,7 +135,6 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  .publication-copy h3 .title::after{content:'';position:absolute;inset:0}
  .publication-creator{font-size:12px;color:var(--muted);line-height:1.4}
  .publication-summary{font-size:13px;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
- .publication-format{margin-top:auto!important;padding-top:6px;font-size:12px;color:var(--muted)}
  .publication-footer{margin:25px 0 0}.publication-results-toolbar>span{white-space:nowrap}
  @media(max-width:900px){.publication-library-layout{grid-template-columns:195px minmax(0,1fr);gap:14px}.publication-filter-menu{padding:10px}.publication-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,195px),1fr))}}
  @media(max-width:650px){.publication-library{padding:18px 12px 38px}.publication-library-layout{display:block}.publication-sidebar{position:static;max-height:none;margin-bottom:16px}.publication-filter-menu{padding:12px}.publication-filter-menu section{display:inline-block;vertical-align:top;width:49%;padding:0 7px 0 0}.publication-filter-options button{font-size:12px}.publication-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.publication-cover{height:142px}.publication-copy{padding:9px;gap:5px}.publication-copy h3{font-size:13px}.publication-copy .eyebrow{font-size:9px}.publication-creator{font-size:11px}.publication-summary{font-size:12px;-webkit-line-clamp:2;line-clamp:2}.publication-org-filters .publication-filter-options{max-height:230px}}
