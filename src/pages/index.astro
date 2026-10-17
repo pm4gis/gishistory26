@@ -113,7 +113,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    try{
     const maps=JSON.parse(topoMedia.dataset.topoSources||'[]');
     const frames=Array.from(topoMedia.querySelectorAll<HTMLImageElement>('.topo-slide'));
-    if(maps.length===20&&frames.length===2){
+    if(maps.length>=2&&frames.length===2){
      let index=Math.floor(Math.random()*maps.length);
      let front=0;
      let switching=false;
