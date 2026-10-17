@@ -9,7 +9,7 @@ export function getStaticPaths() {
   return covers.map(item => ({params: {slug:item.slug},props:{item}}));
 }
 
-const escapeXml = (value:string) => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[char]));
+const escapeXml = (value:string) => String(value).replace(/[&<>"']/g, char => (({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'} as Record<string,string>)[char] ?? char));
 function wrap(str:string, limit=29) {
  const words=String(str).split(/\s+/), lines=[];let line='';
  for(const word of words) {
