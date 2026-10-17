@@ -5,16 +5,16 @@ import {onlinePdfPublications} from '../../lib/online-pdf-publications.mjs';
 import {dataset} from '../../lib/data';
 const d=await dataset();
 const years=[...new Set([...publications.map(p=>p.startDate.slice(0,4)),...onlinePdfPublications.map(p=>p.year)])].sort();
+const hostedPublications=[...onlinePdfPublications].sort((a,b)=>b.year.localeCompare(a.year)||a.title.localeCompare(b.title));
 const creators=[...new Set([...publications.map(p=>p.creator),...onlinePdfPublications.map(p=>p.creator)])].sort();
 const allThemeIds=[...publications.flatMap(p=>p.themeIds),...onlinePdfPublications.flatMap(p=>p.themeIds)];
 const themes=d.themes.filter((t:any)=>allThemeIds.includes(t.id));
 const allPublicationCount=publications.length+onlinePdfPublications.length;
 ---
-<Layout title="Publications · NZ GIS History" description="Original New Zealand GIS documents, plus selected online PDFs and research from 1995 to 2025.">
+<Layout title="Publications · NZ GIS History" description="Original New Zealand GIS documents and selected hosted reports, standards and research published through 2025.">
  <div class="wrap publication-library" data-pagefind-body>
   <p class="eyebrow">Documentary evidence and research</p><h1>Publications</h1>
-  <p class="intro">Read original strategies, programmes and practical guidance connected to this history, alongside selected reports, theses and research articles available online. The dates describe each work’s original publication; the archive date appears separately on locally preserved documents.</p>
-  <p class="external-library-note">The linked PDFs remain with their publishers and repositories; check the source record for access and reuse terms. This selection contains material published by 31 December 2025.</p>
+  <p class="intro">Read original strategies, programmes and practical guidance connected to this history, alongside hosted council reports, standards and open research. Each PDF has a thumbnail, its source and the reuse terms that apply to that copy.</p>
   <form class="publication-filters card" role="search" aria-label="Filter publications" onsubmit="return false">
    <label>Search publications<input type="search" name="q" placeholder="Title, author or subject" /></label>
    <label>Decade<select name="decade"><option value="">All decades</option><option value="199">1990–1999</option><option value="200">2000–2009</option><option value="201">2010–2019</option><option value="202">2020–2025</option></select></label>
@@ -34,19 +34,26 @@ const allPublicationCount=publications.length+onlinePdfPublications.length;
    </div>
   </section>
   <section class="publication-section" data-publication-group aria-labelledby="online-publications-heading">
-   <h2 id="online-publications-heading">More PDFs and research available online</h2>
-   <p>These sources span early GIS practice, national spatial infrastructure, survey and land systems, planning standards, environmental mapping and the geospatial workforce.</p>
+   <h2 id="online-publications-heading">Research and reference PDFs</h2>
+   <p>Explore regional LiDAR surveys, national geographic standards, council mapping, land-use research, open geospatial methods and Māori GIS history. Where reuse terms permit, PDFs are hosted here; other source copies open at their publisher or repository.</p>
    <div class="cards publication-grid">
-    {onlinePdfPublications.map(p=><article class="card publication-card publication-card--external" data-publication data-year={p.year} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-search={[p.title,p.creator,p.summary,p.kind,p.topic,p.sourceName,...p.keywords].join(' ')}>
+    {hostedPublications.map(p=><article class={'card publication-card '+(p.hostedLocally?'publication-card--hosted':'publication-card--source-linked')} data-publication data-year={p.year} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-search={[p.title,p.creator,p.summary,p.kind,p.topic,p.sourceName,p.license,p.attribution,...p.keywords].join(' ')}>
+     <a href={p.pdfPath} class="publication-cover" tabindex="-1" aria-hidden="true" target={p.hostedLocally?undefined:'_blank'} rel={p.hostedLocally?undefined:'noopener noreferrer'}><img src={p.thumbnailPath} alt="" width="720" height="960" loading="lazy"/></a>
      <div class="publication-copy">
       <p class="eyebrow">{p.date} · {p.kind}</p>
-      <h3>{p.title}</h3>
+      <h3><a class="title" href={p.pdfPath}>{p.title}</a></h3>
       <p>{p.creator}</p>
       <p>{p.summary}</p>
-      <p class="muted">{p.sourceName} · PDF</p>
+      <p class="muted">Source: {p.sourceName}</p>
+      {!p.hostedLocally&&<p class="muted">Publisher or repository copy</p>}
+      <p class="muted publication-licence">Reuse: {p.license}{p.licenseUrl&&<> · <a href={p.licenseUrl} target="_blank" rel="noopener noreferrer">Licence details</a></>}</p>
+      <p class="muted publication-attribution">Attribution: {p.attribution}</p>
+      {p.provenance&&<p class="muted">{p.provenance}</p>}
       <div class="publication-actions">
-       <a class="button" href={p.pdfUrl} target="_blank" rel="noopener noreferrer" aria-label={p.pdfLabel+': '+p.title}>{p.pdfLabel}</a>
-       {p.sourceUrl&&<a class="publication-source-link" href={p.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={(p.sourceLabel||'Publisher details')+' for '+p.title}>{p.sourceLabel||'Publisher details'}</a>}
+       {p.hostedLocally
+        ? <a class="button publication-download" href={p.pdfPath} download={p.fileName} aria-label={'Download hosted PDF: '+p.title}>Download hosted PDF</a>
+        : <a class="button publication-download" href={p.pdfPath} target="_blank" rel="noopener noreferrer" aria-label={'Open source copy: '+p.title}>Open source copy</a>}
+       {p.sourceUrl&&p.sourceUrl!==p.externalPdfUrl&&<a class="publication-source-link" href={p.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={(p.sourceLabel||'Source record')+' for '+p.title}>{p.sourceLabel||'Source record'}</a>}
       </div>
      </div>
     </article>)}
@@ -71,5 +78,5 @@ const allPublicationCount=publications.length+onlinePdfPublications.length;
  form.addEventListener('input',apply);form.addEventListener('change',apply);form.addEventListener('reset',event=>{event.preventDefault();for(const field of form.querySelectorAll('input,select')){if(field instanceof HTMLInputElement)field.value='';else if(field instanceof HTMLSelectElement)field.selectedIndex=0;}apply();});apply();}
 </script>
 <style>
- .publication-library{padding-block:2rem 4rem}.publication-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;padding:1.3rem;align-items:end}.publication-filters label{display:grid;gap:.4rem;font-size:.9rem;min-width:0}.publication-filters input,.publication-filters select{width:100%;min-height:44px;min-width:0;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:.6rem;font:inherit}.publication-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}.publication-card{padding:0;overflow:hidden;position:relative}.publication-card[hidden],.publication-section[hidden]{display:none}.publication-cover{display:block;background:var(--surface);height:290px;padding:1rem}.publication-cover img{width:100%;height:100%;object-fit:contain}.publication-copy{padding:1.3rem}.publication-copy h3{font-size:1.2rem;line-height:1.4}.publication-copy .title::after{content:'';position:absolute;inset:0}.publication-card:focus-within{outline:2px solid var(--accent);outline-offset:4px}.publication-section{margin-block:2.5rem}.publication-section>h2{margin-bottom:.6rem}.publication-card--external .publication-copy{height:100%;display:flex;flex-direction:column;align-items:flex-start}.publication-card--external .publication-copy>p{max-width:68ch}.publication-actions{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:1rem}.publication-source-link{position:relative;z-index:1}.external-library-note{padding:.8rem 1rem;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 10px 10px 0}.publication-empty{margin-block:1rem}
+ .publication-library{padding-block:2rem 4rem}.publication-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;padding:1.3rem;align-items:end}.publication-filters label{display:grid;gap:.4rem;font-size:.9rem;min-width:0}.publication-filters input,.publication-filters select{width:100%;min-height:44px;min-width:0;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:.6rem;font:inherit}.publication-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}.publication-card{padding:0;overflow:hidden;position:relative}.publication-card[hidden],.publication-section[hidden]{display:none}.publication-cover{display:block;background:var(--surface);height:290px;padding:1rem}.publication-cover img{width:100%;height:100%;object-fit:contain}.publication-copy{padding:1.3rem}.publication-copy h3{font-size:1.2rem;line-height:1.4}.publication-copy .title::after{content:'';position:absolute;inset:0}.publication-card:focus-within{outline:2px solid var(--accent);outline-offset:4px}.publication-section{margin-block:2.5rem}.publication-section>h2{margin-bottom:.6rem}.publication-card--hosted .publication-copy,.publication-card--source-linked .publication-copy{height:calc(100% - 290px);display:flex;flex-direction:column;align-items:flex-start}.publication-card--hosted .publication-copy>p,.publication-card--source-linked .publication-copy>p{max-width:68ch}.publication-actions{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:1rem}.publication-actions a{position:relative;z-index:1}.publication-licence a{position:relative;z-index:1}.publication-source-link{position:relative;z-index:1}.publication-empty{margin-block:1rem}
 </style>

@@ -39,8 +39,8 @@ try{
   await page.getByRole('button',{name:'Clear filters'}).click();
   await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('1995');
   assert.equal(await page.locator('[data-publication]:visible').count(),countForYear('1995'));
-  assert.equal(await groups.nth(0).isVisible(),false,'The archive section should hide when no archived item matches');
-  assert.equal(await groups.nth(1).isVisible(),true,'The online section should remain for matching theses');
+  assert.equal(await groups.nth(0).isVisible(),publications.some(p=>p.startDate.slice(0,4)==='1995'),'The archive section visibility should match the year filter');
+  assert.equal(await groups.nth(1).isVisible(),onlinePdfPublications.some(p=>p.year==='1995'),'The hosted section visibility should match the year filter');
   await page.getByRole('button',{name:'Clear filters'}).click();
   assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
   await page.getByRole('combobox',{name:'Theme',exact:true}).selectOption('maori-gis');
@@ -48,21 +48,35 @@ try{
   await page.reload();assert.equal(await page.locator('[data-publication]:visible').count(),countForTheme('maori-gis'));
   await page.getByRole('button',{name:'Clear filters'}).click();
   assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
-  const onlineCards=page.locator('.publication-card--external');
+  assert.equal(await page.locator('.publication-filters option[value="2026"]').count(),0,'No 2026 publication year should be offered');
+  assert.equal(await page.locator('.publication-card--source-linked').count(),onlinePdfPublications.filter(p=>!p.hostedLocally).length);
+  const onlineCards=page.locator('.publication-card--hosted,.publication-card--source-linked');
   assert.equal(await onlineCards.count(),onlineCount);
   for(let i=0;i<onlineCount;i++){
    const item=onlinePdfPublications[i];
    const card=onlineCards.nth(i);
-   const pdfLink=card.locator('.publication-actions a').first();
-   assert.equal(await pdfLink.getAttribute('href'),item.pdfUrl);
-   assert.equal(await pdfLink.getAttribute('aria-label'),item.pdfLabel+': '+item.title);
-   assert.equal(await pdfLink.getAttribute('target'),'_blank');
-   assert.ok((await pdfLink.getAttribute('rel')).includes('noopener'));
+   assert.equal(await card.getAttribute('data-year'),item.year);
+   assert.ok(Number(item.year)<=2025,`${item.title} must be dated 2025 or earlier`);
+   const pdfLink=card.locator('.publication-download');
+   assert.equal(await pdfLink.getAttribute('href'),item.pdfPath);
+   assert.equal(await pdfLink.getAttribute('download'),item.hostedLocally?item.fileName:null);
+   assert.equal(await pdfLink.getAttribute('aria-label'),(item.hostedLocally?'Download hosted PDF: ':'Open source copy: ')+item.title);
+   assert.equal(await card.locator('h3 a').getAttribute('href'),item.pdfPath);
+   assert.equal(await card.locator('.publication-cover').getAttribute('href'),item.pdfPath);
+   const image=card.locator('.publication-cover img');
+   assert.equal(await image.getAttribute('src'),item.thumbnailPath);
+   await image.scrollIntoViewIfNeeded();
+   assert.ok(await image.evaluate(el=>el.complete&&el.naturalWidth>0),`${item.title} thumbnail should load`);
+   assert.ok((await card.locator('.publication-licence').innerText()).includes(item.license));
+   assert.ok((await card.locator('.publication-attribution').innerText()).includes(item.attribution));
    const sourceLink=card.locator('.publication-source-link');
-   assert.equal(await sourceLink.count(),item.sourceUrl?1:0);
-   if(item.sourceUrl){
+   const hasSeparateSource=item.sourceUrl&&item.sourceUrl!==item.externalPdfUrl;
+   assert.equal(await sourceLink.count(),hasSeparateSource?1:0);
+   if(hasSeparateSource){
     assert.equal(await sourceLink.getAttribute('href'),item.sourceUrl);
-    assert.equal(await sourceLink.getAttribute('aria-label'),(item.sourceLabel||'Publisher details')+' for '+item.title);
+    assert.equal(await sourceLink.getAttribute('aria-label'),(item.sourceLabel||'Source record')+' for '+item.title);
+   }else{
+    assert.ok(item.provenance,`${item.title} must explain its contributor-supplied provenance`);
    }
   }
   const input=page.getByRole('searchbox');await input.focus();await page.keyboard.press('Tab');
@@ -83,9 +97,9 @@ try{
   await page.goto(base+'/publications/');
   if(width===390)await page.locator('.mobile-menu > summary').click();
   assert.ok(await page.locator(width===390?'.nav--mobile a[href="/publications/"]':'.nav--desktop a[href="/publications/"]').isVisible());
-  results.push({width,archivePublications:archiveCount,onlinePublications:onlineCount,totalPublications:totalCount,palettes:5,modes:2,filters:'passed',externalLinks:'passed',keyboard:'passed',originalChecksums:'passed',viewerResponses:'passed',navigation:'passed'});
+  results.push({width,archivePublications:archiveCount,hostedPublications:onlineCount,totalPublications:totalCount,palettes:5,modes:2,filters:'passed',hostedPdfsAndThumbnails:'passed',sourceAndRights:'passed',keyboard:'passed',originalChecksums:'passed',viewerResponses:'passed',navigation:'passed'});
   await page.close();
  }
  fs.mkdirSync('docs/verification',{recursive:true});fs.writeFileSync('docs/verification/publications-browser-qa.json',JSON.stringify({base,results},null,2)+'\n');
- console.log('Publications browser QA passed: archive and online items, responsive layouts, palettes, filters, links, keyboard order and original PDFs.');
+ console.log('Publications browser QA passed: archive and hosted PDFs, thumbnails, sources and rights, responsive layouts, palettes, filters, keyboard order and original PDFs.');
 }finally{await browser.close();}
