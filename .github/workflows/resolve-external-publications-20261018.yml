@@ -1,0 +1,47 @@
+name: Resolve externally hosted publications
+on:
+  push:
+    branches: [fix/resolve-external-publications-20261018]
+    paths:
+      - '.github/workflows/resolve-external-publications-20261018.yml'
+      - 'scripts/acquire-remaining-linz-pdfs-20261018.mjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22.19.0', cache: npm}
+      - name: Install PDF tools
+        run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - run: npm ci
+      - name: Audit publisher links and embedding restrictions
+        run: node scripts/audit-external-pdf-sources-20261018.mjs
+      - name: Acquire verified LINZ originals
+        run: node scripts/acquire-remaining-linz-pdfs-20261018.mjs
+      - name: Verify complete static site and content
+        run: |
+          npm test
+          npm run build
+          node scripts/assert-editorial-exclusions.mjs
+      - name: Commit verified original PDFs, thumbnails and source audit
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/lib/geodetic-pdfs-mirrored.mjs docs/verification/external-pdf-http-audit-20261018.json docs/verification/remaining-pdfs-acquisition-20261018.json public/assets/publications/pdfs/ public/assets/publications/thumbnails/
+          if git diff --cached --quiet; then
+            echo 'No archival changes required'
+            exit 0
+          fi
+          git commit -m 'Archive additional verified LINZ PDFs and record remaining source access'
+          # The build writes tracked editorial/generated files which are not part of the archive commit.
+          git restore --worktree .
+          git fetch origin fix/resolve-external-publications-20261018
+          git rebase origin/fix/resolve-external-publications-20261018
+          git push origin HEAD:fix/resolve-external-publications-20261018

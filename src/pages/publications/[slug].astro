@@ -15,11 +15,11 @@ const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+
 <Layout title={item.title+' · Publications'} description={item.summary} structuredData={structuredData}>
  <PublicationReader title={item.title} pdfPath={item.viewerPath} previous={reading.previous} next={reading.next} position={reading.position} total={reading.total}>
   <div class="archive-publication-details">
-   <p class="eyebrow">{item.kind} · {item.date}</p>
+   <p class="eyebrow"><time datetime={item.startDate}>{item.startDate.slice(0,4)}</time></p>
    <h2>About this publication</h2>
    <p class="creator">{item.creator}</p>
    <p>{item.summary}</p>
-   <p class="muted">PDF · {item.viewerPages} pages. Original publication: {item.date}.</p>
+   <p class="muted">{item.viewerPages} pages</p>
    <details class="publication-extra"><summary>Historical evidence and connections</summary>
     {item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}
    <h2>Historical evidence</h2>

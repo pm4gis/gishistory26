@@ -89,7 +89,8 @@ test('the October 2026 additional geodetic PDFs are historically dated, traceabl
  const reader=fs.readFileSync('src/pages/publications/pdf/[slug].astro','utf8');
  assert.ok(reader.includes('<PublicationReader'));
  const readerComponent=fs.readFileSync('src/components/PublicationReader.astro','utf8');
- assert.ok(readerComponent.includes('Previous PDF')&&readerComponent.includes('Next PDF'));
+ assert.ok(readerComponent.includes('rel="prev"')&&readerComponent.includes('rel="next"'));
+ assert.ok(!readerComponent.includes('Previous PDF')&&!readerComponent.includes('Next PDF'));
  assert.ok(readerComponent.includes('publication-reader-frame'));
  const page=fs.readFileSync('src/pages/publications/index.astro','utf8');
  assert.ok(page.includes('publicationReadingOrder'));

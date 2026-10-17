@@ -1,5 +1,5 @@
 ---
-const {title,pdfPath,previous=null,next=null,position,total}=Astro.props;
+const {title,pdfPath,previous=null,next=null,position,total,sourceOnly=false,sourceUrl=null,thumbnailPath=null}=Astro.props;
 const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
 ---
 <article class="publication-reader" data-pagefind-body>
@@ -14,19 +14,30 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
     {previous?<a href={previous.url} rel="prev" aria-label={'Previous PDF: '+previous.title}>← Previous</a>:<span class="inactive" aria-hidden="true">← Previous</span>}
     {next?<a href={next.url} rel="next" aria-label={'Next PDF: '+next.title}>Next →</a>:<span class="inactive" aria-hidden="true">Next →</span>}
    </nav>
-   <button class="publication-reader-expand" type="button" data-pdf-expand aria-label="Read PDF full screen">Full screen</button>
+   {!sourceOnly&&<button class="publication-reader-expand" type="button" data-pdf-expand aria-label="Read PDF full screen">Full screen</button>}
   </div>
  </header>
- <section class="publication-reader-frame" id="publication-pdf" aria-label={'Reading '+title}>
-  <object data={pdfUrl} type="application/pdf" aria-label={'Read PDF: '+title} class="publication-reader-object">
-   <p class="publication-reader-fallback">Your browser could not display this PDF here. <a href={pdfPath} target="_blank" rel="noopener noreferrer">Open the PDF source</a>.</p>
-  </object>
- </section>
+ {sourceOnly?(
+  <section class="publication-reader-source-only" aria-label={'Publisher record for '+title}>
+   {thumbnailPath&&<img src={thumbnailPath} alt="" loading="eager" width="240" height="320"/>}
+   <div>
+    <h2>Report held in the publisher catalogue</h2>
+    <p>The report is attached to the publisher’s catalogue entry. Open that entry and select the report under <strong>Attachments</strong>.</p>
+    <p><a class="button" href={sourceUrl||pdfPath} target="_blank" rel="noopener noreferrer">View publisher record ↗</a></p>
+   </div>
+  </section>
+ ):(
+  <section class="publication-reader-frame" id="publication-pdf" aria-label={'Reading '+title}>
+   <object data={pdfUrl} type="application/pdf" aria-label={'Read PDF: '+title} class="publication-reader-object">
+    <p class="publication-reader-fallback">Your browser could not display this PDF here. <a href={pdfPath} target="_blank" rel="noopener noreferrer">Open the PDF at its publisher</a>.</p>
+   </object>
+  </section>
+ )}
  <div class="publication-reader-below">
   <nav class="publication-reader-bottom-nav" aria-label="Continue reading publications">
-   {previous?<a href={previous.url} rel="prev">← Previous PDF</a>:<span></span>}
+   {previous?<a href={previous.url} rel="prev">← Previous</a>:<span></span>}
    <a href="/publications/">All publications</a>
-   {next?<a href={next.url} rel="next">Next PDF →</a>:<span></span>}
+   {next?<a href={next.url} rel="next">Next →</a>:<span></span>}
   </nav>
   <section class="publication-reader-details" aria-label="About this publication">
    <slot />
@@ -59,10 +70,15 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
  .publication-reader-frame{width:100%;height:calc(100dvh - 153px);min-height:680px;max-height:none;overflow:hidden;border:1px solid var(--line);border-radius:7px;background:#e5e5e5}
  .publication-reader-object{display:block;width:100%;height:100%;border:0;background:#eee;color:#111}
  .publication-reader-fallback{color:#111;padding:24px}
+ .publication-reader-source-only{min-height:380px;display:flex;align-items:center;justify-content:center;gap:32px;padding:36px 20px;border:1px solid var(--line);border-radius:7px;background:var(--surface)}
+ .publication-reader-source-only img{display:block;width:min(240px,30vw);height:auto;max-height:320px;object-fit:contain;flex:none}
+ .publication-reader-source-only>div{max-width:58ch}
+ .publication-reader-source-only h2{font-size:clamp(21px,2.4vw,32px);margin:0 0 9px}
+ .publication-reader-source-only p{color:var(--muted)}
  .publication-reader-frame:fullscreen{width:100vw;height:100dvh;min-height:0;border:0;border-radius:0;padding:0}
  .publication-reader-below{max-width:980px;margin:0 auto;padding:24px 12px 0}
  .publication-reader-bottom-nav{display:flex;gap:16px;justify-content:space-between;align-items:center;padding:8px 0 22px;border-bottom:1px solid var(--line);font-size:15px}
  .publication-reader-details{padding-top:12px;overflow-wrap:anywhere}
  @media(max-width:1050px){.publication-reader-bar{align-items:flex-start;flex-direction:column;gap:10px}.publication-reader-controls{width:100%;justify-content:flex-end}.publication-reader-frame{height:calc(100dvh - 212px);min-height:620px}}
- @media(max-width:600px){.publication-reader{padding:8px 6px 38px}.publication-reader-bar{padding:2px 8px 12px;gap:8px}.publication-reader-heading{display:block}.publication-reader-heading h1{margin:6px 0 0;font-size:19px}.publication-reader-controls{justify-content:space-between;gap:6px;flex-wrap:wrap}.publication-reader-nav a,.publication-reader-expand{font-size:12px;padding:8px 9px;min-height:36px}.publication-reader-count{font-size:12px}.publication-reader-frame{height:calc(100dvh - 205px);min-height:480px;border-radius:3px}.publication-reader-below{padding:14px 12px 0}.publication-reader-bottom-nav{gap:8px;font-size:13px;flex-wrap:wrap}}
+ @media(max-width:600px){.publication-reader-source-only{flex-direction:column;min-height:0;padding:24px 18px;gap:12px}.publication-reader-source-only img{width:140px;max-height:185px}.publication-reader{padding:8px 6px 38px}.publication-reader-bar{padding:2px 8px 12px;gap:8px}.publication-reader-heading{display:block}.publication-reader-heading h1{margin:6px 0 0;font-size:19px}.publication-reader-controls{justify-content:space-between;gap:6px;flex-wrap:wrap}.publication-reader-nav a,.publication-reader-expand{font-size:12px;padding:8px 9px;min-height:36px}.publication-reader-count{font-size:12px}.publication-reader-frame{height:calc(100dvh - 205px);min-height:480px;border-radius:3px}.publication-reader-below{padding:14px 12px 0}.publication-reader-bottom-nav{gap:8px;font-size:13px;flex-wrap:wrap}}
 </style>
