@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {onlinePdfPublications} from '../src/lib/online-pdf-publications.mjs';
+import {mirroredPdfSlugs} from '../src/lib/geodetic-pdfs-mirrored.mjs';
 
 const pdfDirectory='public/assets/publications/pdfs';
 const thumbnailDirectory='public/assets/publications/thumbnails';
@@ -11,8 +12,8 @@ test('hosted PDF records have local files, thumbnails, source details and reuse 
  assert.equal(onlinePdfPublications.length,67);
  const hostedRecords=onlinePdfPublications.filter(p=>p.hostedLocally);
  const sourceLinkedRecords=onlinePdfPublications.filter(p=>!p.hostedLocally);
- assert.equal(hostedRecords.length,40);
- assert.equal(sourceLinkedRecords.length,27);
+ assert.equal(hostedRecords.length,40+mirroredPdfSlugs.length);
+ assert.equal(sourceLinkedRecords.length,27-mirroredPdfSlugs.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.slug)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.fileName)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.pdfPath)).size,onlinePdfPublications.length);
@@ -78,7 +79,8 @@ test('the additional Internet publications respect the 2025 publication cutoff',
 test('the October 2026 additional geodetic PDFs are historically dated, traceable and browsable',()=>{
  const entries=onlinePdfPublications.filter(p=>p.is20261018Addition);
  assert.equal(entries.length,22);
- assert.ok(entries.every(p=>Number(p.year)<=2025 && p.sourceUrl===p.externalPdfUrl && !p.hostedLocally));
+ assert.ok(entries.every(p=>Number(p.year)<=2025 && p.sourceUrl && (p.hostedLocally ? mirroredPdfSlugs.includes(p.slug) : p.pdfPath===p.sourceUrl)));
+ assert.ok(mirroredPdfSlugs.every(slug=>entries.some(p=>p.slug===slug)));
  assert.ok(entries.some(p=>p.year==='1973'));
  assert.ok(entries.some(p=>p.themeIds.includes('maori-gis')));
  const endpoint=fs.readFileSync('src/pages/assets/publications/thumbnails/[slug].svg.ts','utf8');
