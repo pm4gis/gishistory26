@@ -1,27 +1,44 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PublicationReader from '../../components/PublicationReader.astro';
 import {contributedPrimarySources} from '../../lib/contributed-primary-sources.mjs';
+import {publicationReadingContext} from '../../lib/publication-reading-order.mjs';
 import {dataset} from '../../lib/data';
-export function getStaticPaths(){return contributedPrimarySources.map(item=>({params:{slug:item.slug},props:{item}}));}
-const {item}=Astro.props;
+export function getStaticPaths(){return contributedPrimarySources.map(item=>({params:{slug:item.slug},props:{item,reading:publicationReadingContext(item.publicationUrl)}}));}
+const {item,reading}=Astro.props;
 const d=await dataset();
 const records=d.records.filter((r:any)=>(item.recordIds||[]).includes(r.id));
 const themes=d.themes.filter((t:any)=>item.themeIds.includes(t.id));
 const images=d.images.filter((i:any)=>i.publicationSlug===item.slug);
-const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+item.publicationUrl,title:item.title,name:item.title,...(item.format==='PowerPoint'?{}:item.slug==='gis-mapping-wetland-projects-2021'?{author:{'@type':'Person',name:'Duane Wilkins'},publisher:{'@type':'Organization',name:'Manaaki Whenua – Landcare Research'}}:item.slug==='taranaki-cdem-geospatial-strategy-2021'?{author:[{'@type':'Person',name:'Teresa Gordon'},{'@type':'Person',name:'Ed Cook'}],publisher:{'@type':'Organization',name:'Taranaki Civil Defence and Emergency Management Group'}}:{author:{'@type':'Organization',name:item.creator}}),datePublished:item.startDate,url:'https://history.pm4gis.nz'+item.publicationUrl,description:item.summary,encoding:{'@type':'MediaObject',contentUrl:'https://history.pm4gis.nz'+item.assetPath,encodingFormat:item.format==='PDF'?'application/pdf':'application/vnd.openxmlformats-officedocument.presentationml.presentation'}}];
+const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+item.publicationUrl,title:item.title,name:item.title,...(item.format==='PowerPoint'?{}:item.slug==='gis-mapping-wetland-projects-2021'?{author:{'@type':'Person',name:'Duane Wilkins'},publisher:{'@type':'Organization',name:'Manaaki Whenua – Landcare Research'}}:item.slug==='taranaki-cdem-geospatial-strategy-2021'?{author:[{'@type':'Person',name:'Teresa Gordon'},{'@type':'Person',name:'Ed Cook'}],publisher:{'@type':'Organization',name:'Taranaki Civil Defence and Emergency Management Group'}}:{author:{'@type':'Organization',name:item.creator}}),datePublished:item.startDate,url:'https://history.pm4gis.nz'+item.publicationUrl,description:item.summary,encoding:{'@type':'MediaObject',contentUrl:'https://history.pm4gis.nz'+item.viewerPath,encodingFormat:'application/pdf'}}];
 ---
 <Layout title={item.title+' · Publications'} description={item.summary} structuredData={structuredData}>
- <article class="page-wrap publication-detail" data-pagefind-body><span class="sr-only" data-pagefind-filter="type">Publication</span>{themes.map((t:any)=><span class="sr-only" data-pagefind-filter="theme">{t.title}</span>)}
-  <p><a href="/publications/">All publications</a></p><p class="eyebrow">{item.kind} · {item.date}</p><h1 class="page-title">{item.title}</h1>
-  <div class="publication-overview"><a href={item.viewerPath}><img src={item.thumbnailPath} alt={'Cover of '+item.title} width="720" height="960"/></a><div><p>{item.creator}</p><p>{item.format} · {item.pages} {item.format==='PDF'?'pages':'slides'} · {(item.bytes/1000000).toFixed(2)} MB</p><p>{item.summary}</p><p><a class="button" href={item.assetPath} download>Download original {item.format}</a> <a class="button" href={item.viewerPath}>Open PDF viewer</a></p><p class="muted">Original publication: {item.date}. Added to this document archive: 17 October 2026.</p>{item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}</div></div>
-  <h2>Read the document</h2><p>Use the PDF controls to zoom and move between pages. If your browser does not display PDFs, <a href={item.viewerPath}>open or download the PDF</a>.</p>
-  <object data={item.viewerPath} type="application/pdf" class="publication-viewer" aria-label={'PDF viewer: '+item.title}><p><a href={item.viewerPath}>Read the PDF version of {item.title}</a></p></object>
-  <h2>Historical evidence</h2><ul>{item.findings.map(f=><li>{f.page}: {f.text}</li>)}</ul>
-  <h2>Connected history</h2><p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter</a> · <a href={'/timeline/?event=source-'+item.slug}>View the publication event on the timeline</a></p>
-  <ul>{records.map((r:any)=><li><a href={r.url}>{r.name}</a></li>)}{themes.map((t:any)=><li><a href={'/themes/'+t.slug+'/'}>{t.title}</a></li>)}</ul>
-  {images.length>0&&<><h2>Illustrations from this publication</h2><ul>{images.map((i:any)=><li><a href={'/images/'+i.slug+'/'}>{i.title}</a></li>)}</ul></>}
-  <h2>Provenance and attribution</h2><p>{item.provenance}</p><p>{item.rights}</p>{item.sourceUrl&&<p><a href={item.sourceUrl}>Publisher-hosted original</a></p>}
-  <details><summary>Original file and checksum</summary><p>{item.filename} · {item.bytes.toLocaleString('en-NZ')} bytes</p><p class="checksum">SHA-256: <code>{item.sha256}</code></p></details>
- </article>
+ <PublicationReader title={item.title} pdfPath={item.viewerPath} previous={reading.previous} next={reading.next} position={reading.position} total={reading.total}>
+  <div class="archive-publication-details">
+   <p class="eyebrow">{item.kind} · {item.date}</p>
+   <h2>About this publication</h2>
+   <p class="creator">{item.creator}</p>
+   <p>{item.summary}</p>
+   <p class="muted">PDF · {item.viewerPages} pages. Original publication: {item.date}.</p>
+   {item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}
+   <h2>Historical evidence</h2>
+   <ul>{item.findings.map(f=><li>{f.page}: {f.text}</li>)}</ul>
+   <h2>Connected history</h2>
+   <p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter</a> · <a href={'/timeline/?event=source-'+item.slug}>View the publication event on the timeline</a></p>
+   <ul>{records.map((r:any)=><li><a href={r.url}>{r.name}</a></li>)}{themes.map((t:any)=><li><a href={'/themes/'+t.slug+'/'}>{t.title}</a></li>)}</ul>
+   {images.length>0&&<><h2>Illustrations from this publication</h2><ul>{images.map((i:any)=><li><a href={'/images/'+i.slug+'/'}>{i.title}</a></li>)}</ul></>}
+   <h2>Provenance and attribution</h2>
+   <p>{item.provenance}</p>
+   <p>{item.rights}</p>
+   {item.sourceUrl&&<p><a href={item.sourceUrl}>Publisher source record</a></p>}
+   <details><summary>Original file and checksum</summary><p>{item.filename} · {item.bytes.toLocaleString('en-NZ')} bytes</p><p class="checksum">SHA-256: <code>{item.sha256}</code></p></details>
+  </div>
+ </PublicationReader>
 </Layout>
-<style>.publication-overview{display:grid;grid-template-columns:minmax(140px,230px) 1fr;gap:2rem;align-items:start}.publication-overview img{width:100%;height:auto;max-height:330px;object-fit:contain}.publication-viewer{width:100%;height:80vh;min-height:400px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.checksum{overflow-wrap:anywhere}@media(max-width:600px){.publication-overview{grid-template-columns:1fr}.publication-overview img{max-height:250px}.publication-viewer{height:65vh}}</style>
+<style>
+ .archive-publication-details{max-width:75ch}
+ .archive-publication-details h2{font-size:clamp(21px,2.3vw,28px);margin:1.5em 0 .45em}
+ .archive-publication-details .creator{font-weight:600}
+ .archive-publication-details li{margin:.65rem 0;line-height:1.6}
+ .checksum{overflow-wrap:anywhere}
+</style>
