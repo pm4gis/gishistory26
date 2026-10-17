@@ -17,6 +17,9 @@ try{
   const cards=page.locator('[data-publication]');
   assert.equal(await cards.count(),publicationReadingOrder.length);
   const years=await cards.evaluateAll(els=>els.map(el=>Number(el.getAttribute('data-year'))));
+  const displayedYears=await cards.locator('.eyebrow').allTextContents();
+  assert.deepEqual(displayedYears,years.map(String),'Cards must show only the year, not a repeat of the title or document category');
+  assert.equal(await page.locator('.publication-format').count(),0,'No redundant PDF or format labels should be shown');
   assert.deepEqual(years,[...years].sort((a,b)=>a-b),'Publication cards must be chronological');
   assert.ok(await page.locator('input[type="search"]').count()===0,'No search bar in the catalogue');
   assert.ok(await page.locator('.publication-sidebar').count()===1);
@@ -76,6 +79,36 @@ try{
   results.push({width,publicationCount:publicationReadingOrder.length,chronology:'passed',sidebarFilters:'passed',pdfViewer:'passed',publicationNavigation:'passed',chapterSidebar:'passed',passageActions:'passed'});
   await page.close();
  }
+ // Verify every one of the 75 published reader routes, including the expanded 61-file reference archive.
+ const routeContext=await browser.newContext();
+ let checkedReaders=0,checkedHostFiles=0,externalReferences=0;
+ for(let i=0;i<publicationReadingOrder.length;i++){
+  const item=publicationReadingOrder[i];
+  const response=await routeContext.request.get(base+item.url);
+  assert.equal(response.status(),200,item.url+' must resolve on site');
+  const html=await response.text();
+  assert.ok(html.includes('publication-reader'),item.url+' missing reader');
+  assert.ok(html.includes('publication-reader-details'),item.url+' missing details beneath reader');
+  if(i>0)assert.ok(html.includes('rel="prev"'),item.url+' missing previous navigation');
+  if(i<publicationReadingOrder.length-1)assert.ok(html.includes('rel="next"'),item.url+' missing next navigation');
+  const record=item.kind==='archive'?contributedPrimarySources.find(p=>p.slug===item.slug):onlinePdfPublications.find(p=>p.slug===item.slug);
+  assert.ok(record,'missing catalogue record '+item.slug);
+  if(item.kind==='archive'||record.hostedLocally){
+   const file=item.kind==='archive'?record.viewerPath:record.pdfPath;
+   const check=await routeContext.request.head(base+file);
+   assert.equal(check.status(),200,'Hosted PDF missing: '+file);
+   assert.ok(check.headers()['content-type']?.includes('pdf'),'Hosted asset is not a PDF: '+file);
+   checkedHostFiles++;
+  }else{
+   assert.ok(record.sourceUrl?.startsWith('https://'),'External PDF needs a source URL '+item.slug);
+   externalReferences++;
+  }
+  checkedReaders++;
+ }
+ await routeContext.close();
+ assert.equal(checkedReaders,75);
+ assert.equal(checkedHostFiles+externalReferences,75);
+ console.log('Checked '+checkedReaders+' publication readers, '+checkedHostFiles+' hosted PDF headers and '+externalReferences+' external source records.');
  fs.mkdirSync('docs/verification',{recursive:true});
  fs.writeFileSync('docs/verification/publications-browser-qa.json',JSON.stringify({base,results},null,2)+'\n');
  console.log('Publications browser QA passed: chronological catalogue, left filters, wide on-site PDF reader, previous/next and compact chapter controls.');

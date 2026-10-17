@@ -12,6 +12,7 @@ test('PDF reading pages show the document ahead of supporting information',()=>{
  assert.ok(shared.includes('height:calc(100dvh - 153px)'));
  assert.ok(shared.indexOf('publication-reader-frame')<shared.indexOf('publication-reader-details'));
  assert.ok(shared.includes('Read PDF full screen'));
+ assert.ok(!shared.includes('Previous PDF')&&!shared.includes('Next PDF'));
  assert.ok(archive.includes('<PublicationReader')&&reference.includes('<PublicationReader'));
  for(const content of [archive,reference]){
   assert.ok(content.indexOf('<PublicationReader') < content.indexOf('About this publication'));
@@ -57,4 +58,22 @@ test('library is a single chronological grid with a left filter sidebar',()=>{
  assert.ok(chapter.includes('sidebar={true}'));
  assert.ok(chapter.indexOf('sidebar={true}')<chapter.indexOf('Related entries</h3>'));
  assert.ok(chapter.includes('<details class="passage-tools">'));
+});
+
+test('Publication cards and reader metadata show year once, without repetitive PDF/type labels',()=>{
+ const list=readFileSync('src/pages/publications/index.astro','utf8');
+ const archive=readFileSync('src/pages/publications/[slug].astro','utf8');
+ const research=readFileSync('src/pages/publications/pdf/[slug].astro','utf8');
+ assert.ok(list.includes('<time datetime={p.year}>{p.year}</time>'));
+ assert.ok(!list.includes('p.kind'));
+ assert.ok(!list.includes('p.format'));
+ assert.ok(!list.includes('publication-format'));
+ assert.ok(!list.includes('{p.date}'));
+ assert.ok(research.includes('<time datetime={item.year}>{item.year}</time>'));
+ assert.ok(!research.includes('{item.kind}'));
+ assert.ok(!research.includes('{item.date}'));
+ assert.ok(!research.includes('PDF publication ·'));
+ assert.ok(archive.includes('<time datetime={item.startDate}>{item.startDate.slice(0,4)}</time>'));
+ assert.ok(!archive.includes('{item.kind}'));
+ assert.ok(!archive.includes('PDF ·'));
 });

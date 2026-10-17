@@ -1,4 +1,4 @@
-// Verified unchanged LINZ PDFs and their documentary first-page thumbnails.
+// Verified unchanged LINZ PDFs and their first-page thumbnails.
 export const mirroredPdfSlugs = [
   "cadastre-2034-strategy-2014",
   "geodesy-national-report-2003-2006",
@@ -8,6 +8,8 @@ export const mirroredPdfSlugs = [
   "geodetic-system-part2-2009",
   "geodetic-system-part3-2010",
   "geodetic-system-part4-2010",
+  "gis-careers-brochure-2021",
+  "linz-annual-report-2010-11",
   "linz-four-year-plan-2016",
   "nz-map-grid-1973",
   "nz-positioning-strategy-2014",
@@ -17,5 +19,6 @@ export const mirroredPdfSlugs = [
   "nzgd2000-realisation-2000",
   "nzgd2000-standard-2007",
   "nzgo-status-oia-2024",
+  "spatial-information-economy-2009",
   "where-in-the-world-2007"
 ];

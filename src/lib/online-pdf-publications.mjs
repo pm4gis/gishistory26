@@ -61,7 +61,7 @@ export const onlinePdfPublications = [
     themeIds: ['profession'], keywords: ['QGIS', 'GIS manual', 'kiwi', 'conservation', 'community mapping', 'spatial data']
   }),
   hosted({
-    slug: 'christchurch-lidar-report-2025', fileName: 'christchurch-lidar-survey-report-2024-2025.pdf', externalPdfUrl: 'https://data.linz.govt.nz/layer/123194-canterbury-christchurch-lidar-1m-dsm-2024-2025/', isNewAddition: true,
+    slug: 'christchurch-lidar-report-2025', fileName: 'christchurch-lidar-survey-report-2024-2025.pdf', externalPdfUrl: 'https://data.linz.govt.nz/layer/123194-canterbury-christchurch-lidar-1m-dsm-2024-2025/', sourceOnly: true, isNewAddition: true,
     title: 'Christchurch 2024/25 CAI LiDAR survey: metadata report', creator: 'Aerial Surveys Ltd for Environment Canterbury', year: '2025', date: '2025 · Christchurch and Lyttelton Harbour capture in 2024–2025',
     kind: 'LiDAR survey report', topic: 'Christchurch elevation capture, processing and deliverables',
     summary: 'Metadata for the Christchurch and Lyttelton Harbour LiDAR survey, with acquisition, processing and delivery details on the LINZ source record.',

@@ -8,12 +8,12 @@ export function getStaticPaths(){
 }
 const {item,reading}=Astro.props;
 const here='https://history.pm4gis.nz/publications/pdf/'+item.slug+'/';
-const structuredData=[{'@type':'CreativeWork',name:item.title,datePublished:item.year,author:{'@type':'Organization',name:item.creator},url:here,description:item.summary,encoding:{'@type':'MediaObject',contentUrl:item.hostedLocally?'https://history.pm4gis.nz'+item.pdfPath:item.pdfPath,encodingFormat:'application/pdf'}}];
+const structuredData=[{'@type':'CreativeWork',name:item.title,datePublished:item.year,author:{'@type':'Organization',name:item.creator},url:here,description:item.summary,...(item.sourceOnly?{}:{encoding:{'@type':'MediaObject',contentUrl:item.hostedLocally?'https://history.pm4gis.nz'+item.pdfPath:item.pdfPath,encodingFormat:'application/pdf'}})}];
 ---
-<Layout title={item.title+' · PDF publication · NZ GIS History'} description={item.summary} structuredData={structuredData}>
- <PublicationReader title={item.title} pdfPath={item.pdfPath} previous={reading.previous} next={reading.next} position={reading.position} total={reading.total}>
+<Layout title={item.title+' · NZ GIS History'} description={item.summary} structuredData={structuredData}>
+ <PublicationReader title={item.title} pdfPath={item.pdfPath} previous={reading.previous} next={reading.next} position={reading.position} total={reading.total} sourceOnly={item.sourceOnly} sourceUrl={item.sourceUrl} thumbnailPath={item.thumbnailPath}>
   <div class="reference-publication-details">
-   <p class="eyebrow">{item.date} · {item.kind}</p>
+   <p class="eyebrow"><time datetime={item.year}>{item.year}</time></p>
    <h2>About this publication</h2>
    <p class="creator">{item.creator}</p>
    <p>{item.summary}</p>
