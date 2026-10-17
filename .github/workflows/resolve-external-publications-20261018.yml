@@ -5,6 +5,9 @@ on:
     paths:
       - '.github/workflows/resolve-external-publications-20261018.yml'
       - 'scripts/acquire-remaining-linz-pdfs-20261018.mjs'
+      - 'src/pages/publications/**'
+      - 'src/components/PublicationReader.astro'
+      - 'tests/publication-reader-layout.test.mjs'
   workflow_dispatch:
 permissions:
   contents: write
