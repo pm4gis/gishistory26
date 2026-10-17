@@ -1,80 +1,144 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {contributedPrimarySources as publications} from '../../lib/contributed-primary-sources.mjs';
+import {contributedPrimarySources} from '../../lib/contributed-primary-sources.mjs';
 import {onlinePdfPublications} from '../../lib/online-pdf-publications.mjs';
+import {publicationReadingOrder} from '../../lib/publication-reading-order.mjs';
 import {dataset} from '../../lib/data';
 const d=await dataset();
-const years=[...new Set([...publications.map(p=>p.startDate.slice(0,4)),...onlinePdfPublications.map(p=>p.year)])].sort();
-const hostedPublications=[...onlinePdfPublications].sort((a,b)=>b.year.localeCompare(a.year)||a.title.localeCompare(b.title));
-const creators=[...new Set([...publications.map(p=>p.creator),...onlinePdfPublications.map(p=>p.creator)])].sort();
-const allThemeIds=[...publications.flatMap(p=>p.themeIds),...onlinePdfPublications.flatMap(p=>p.themeIds)];
-const themes=d.themes.filter((t:any)=>allThemeIds.includes(t.id));
-const allPublicationCount=publications.length+onlinePdfPublications.length;
+const archive=new Map(contributedPrimarySources.map(p=>[p.slug,p]));
+const research=new Map(onlinePdfPublications.map(p=>[p.slug,p]));
+const library=publicationReadingOrder.map(item=>{
+ const p=item.kind==='archive'?archive.get(item.slug):research.get(item.slug);
+ if(!p)throw new Error('Missing publication '+item.slug);
+ return {url:item.url,title:item.title,year:item.year,date:p.date,creator:p.creator,summary:p.summary,thumbnailPath:p.thumbnailPath,kind:p.kind,format:item.kind==='archive'?p.format:'PDF',pages:item.kind==='archive'?p.pages:null,themeIds:p.themeIds||[],type:item.kind};
+});
+const decadeValues=[...new Set(library.map(p=>Math.floor(Number(p.year)/10)*10))].sort((a,b)=>a-b);
+const creatorValues=[...new Set(library.map(p=>p.creator))].sort((a,b)=>a.localeCompare(b,'en-NZ'));
+const themeIds=new Set(library.flatMap(p=>p.themeIds));
+const themes=d.themes.filter((t:any)=>themeIds.has(t.id)).sort((a:any,b:any)=>a.title.localeCompare(b.title,'en-NZ'));
+const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?p.year.startsWith(value.slice(0,3)):key==='theme'?p.themeIds.includes(value):p.creator===value).length;
 ---
-<Layout title="Publications · NZ GIS History" description="Original New Zealand GIS documents, geodetic and cadastral reports, standards and research published through 2025.">
- <div class="wrap publication-library" data-pagefind-body>
-  <p class="eyebrow">Documentary evidence and research</p><h1>Publications</h1>
-  <p class="intro">Read original strategies, programmes and practical guidance connected to this history, alongside hosted council reports, standards and open research. Each publication has a cover or catalogue card, its source and the applicable reuse information.</p>
-  <form class="publication-filters card" role="search" aria-label="Filter publications" onsubmit="return false">
-   <label>Search publications<input type="search" name="q" placeholder="Title, author or subject" /></label>
-   <label>Decade<select name="decade"><option value="">All decades</option><option value="199">1990–1999</option><option value="200">2000–2009</option><option value="201">2010–2019</option><option value="202">2020–2025</option></select></label>
-   <label>Year<select name="year"><option value="">All years</option>{years.map(y=><option value={y}>{y}</option>)}</select></label>
-   <label>Publishing organisation or creator<select name="creator"><option value="">All organisations and creators</option>{creators.map(c=><option value={c}>{c}</option>)}</select></label>
-   <label>Theme<select name="theme"><option value="">All themes</option>{themes.map((t:any)=><option value={t.id}>{t.title}</option>)}</select></label>
-   <button type="reset" class="button">Clear filters</button>
-  </form>
-  <p id="publication-count" role="status" aria-live="polite">{allPublicationCount} publications</p>
-  <section class="publication-section" data-publication-group aria-labelledby="archive-publications-heading">
-   <h2 id="archive-publications-heading">Documents in this archive</h2>
-   <div class="cards publication-grid">
-    {publications.map(p=><article class="card publication-card" data-publication data-year={p.startDate.slice(0,4)} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-search={[p.title,p.creator,p.summary,p.topic,...p.related].join(' ')}>
-     <a href={p.publicationUrl} class="publication-cover" tabindex="-1" aria-hidden="true"><img src={p.thumbnailPath} alt="" width="720" height="960" loading="lazy"/></a>
-     <div class="publication-copy"><p class="eyebrow">{p.date} · {p.kind}</p><h3><a class="title" href={p.publicationUrl}>{p.title}</a></h3><p>{p.creator}</p><p>{p.summary}</p><p class="muted">{p.format} · {p.pages} {p.format==='PDF'?'pages':'slides'}</p></div>
-    </article>)}
-   </div>
-  </section>
-  <section class="publication-section" data-publication-group aria-labelledby="online-publications-heading">
-   <h2 id="online-publications-heading">Research and reference PDFs</h2>
-   <p>Explore regional LiDAR surveys, national geographic standards, council mapping, land-use research, open geospatial methods and Māori GIS history. Read PDFs on this site and use Previous and Next to browse the collection. Some publisher copies may prevent embedded viewing.</p>
-   <div class="cards publication-grid">
-    {hostedPublications.map(p=><article class={'card publication-card '+(p.hostedLocally?'publication-card--hosted':'publication-card--source-linked')} data-publication data-year={p.year} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-search={[p.title,p.creator,p.summary,p.kind,p.topic,p.sourceName,p.license,p.attribution,...p.keywords].join(' ')}>
-     <a href={'/publications/pdf/'+p.slug+'/'} class="publication-cover" tabindex="-1" aria-hidden="true"><img src={p.thumbnailPath} alt="" width="720" height="960" loading="lazy"/></a>
-     <div class="publication-copy">
-      <p class="eyebrow">{p.date} · {p.kind}</p>
-      <h3><a class="title" href={'/publications/pdf/'+p.slug+'/'}>{p.title}</a></h3>
-      <p>{p.creator}</p>
-      <p>{p.summary}</p>
-      <p class="muted">Source: {p.sourceName}</p>
-      {!p.hostedLocally&&<p class="muted">Publisher or repository copy</p>}
-      <p class="muted publication-licence">Reuse: {p.license}{p.licenseUrl&&<> · <a href={p.licenseUrl} target="_blank" rel="noopener noreferrer">Licence details</a></>}</p>
-      <p class="muted publication-attribution">Attribution: {p.attribution}</p>
-      {p.provenance&&<p class="muted">{p.provenance}</p>}
-      <div class="publication-actions">
-       <a class="button publication-read" href={'/publications/pdf/'+p.slug+'/'} aria-label={'Read PDF: '+p.title}>Read PDF</a>
-       {p.sourceUrl&&p.sourceUrl!==p.externalPdfUrl&&<a class="publication-source-link" href={p.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={(p.sourceLabel||'Source record')+' for '+p.title}>{p.sourceLabel||'Source record'}</a>}
+<Layout title="Publications · NZ GIS History" description="Browse and read New Zealand GIS, mapping, geodetic and cadastral publications from the historical record to 2025.">
+ <div class="publication-library" data-pagefind-body>
+  <header class="publication-heading"><p class="eyebrow">Documentary archive</p><h1>Publications</h1><p>Browse the collection chronologically. Select a decade, theme or organisation to narrow the list; select a document to read it here.</p></header>
+  <div class="publication-library-layout">
+   <aside class="publication-sidebar" aria-label="Publication filters">
+    <nav class="publication-filter-menu" aria-label="Filter publications">
+     <div class="publication-sidebar-heading"><h2>Filter</h2><button type="button" data-filter-kind="all" data-filter-value="" aria-pressed="true">All publications <span>{library.length}</span></button></div>
+     <section aria-labelledby="decade-filter-title">
+      <h3 id="decade-filter-title">Decade</h3>
+      <div class="publication-filter-options">
+       {decadeValues.map(decade=><button type="button" data-filter-kind="decade" data-filter-value={String(decade)} aria-pressed="false">{decade}s <span>{countBy('decade',String(decade))}</span></button>)}
       </div>
-     </div>
-    </article>)}
+     </section>
+     <section aria-labelledby="theme-filter-title">
+      <h3 id="theme-filter-title">Theme</h3>
+      <div class="publication-filter-options">
+       {themes.map((theme:any)=><button type="button" data-filter-kind="theme" data-filter-value={theme.id} aria-pressed="false">{theme.title} <span>{countBy('theme',theme.id)}</span></button>)}
+      </div>
+     </section>
+     <details class="publication-org-filters">
+      <summary>Organisation <span>{creatorValues.length}</span></summary>
+      <div class="publication-filter-options">
+       {creatorValues.map(creator=><button type="button" data-filter-kind="creator" data-filter-value={creator} aria-pressed="false">{creator} <span>{countBy('creator',creator)}</span></button>)}
+      </div>
+     </details>
+    </nav>
+   </aside>
+   <div class="publication-results">
+    <div class="publication-results-toolbar">
+     <p id="publication-count" role="status" aria-live="polite">{library.length} publications · 1973–2025</p>
+     <span>Oldest first</span>
+    </div>
+    <h2 class="sr-only">Research and reference PDFs and documents from the archive</h2>
+    <div class="publication-grid">
+     {library.map(p=><article class="publication-card card" data-publication data-year={p.year} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-kind={p.type}>
+      <a class="publication-cover" href={p.url} tabindex="-1" aria-hidden="true"><img src={p.thumbnailPath} width="720" height="960" alt="" loading="lazy"/></a>
+      <div class="publication-copy">
+       <p class="eyebrow">{p.date} · {p.kind}</p>
+       <h3><a href={p.url} class="title" aria-label={'Read PDF: '+p.title}>{p.title}</a></h3>
+       <p class="publication-creator">{p.creator}</p>
+       <p class="publication-summary">{p.summary}</p>
+       <p class="publication-format">{p.format}{p.pages?' · '+p.pages+' pages':''}</p>
+      </div>
+     </article>)}
+    </div>
+    <p id="publication-empty" hidden>No publications match this filter. Select All publications to see the complete collection.</p>
+    <p class="publication-footer"><a href="/sources/documents/">Source evidence catalogue</a> · <a href="/sources/collections/">Other archival collections</a></p>
    </div>
-  </section>
-  <p id="publication-empty" hidden>No publications match these filters. Try another search or clear the filters.</p>
-  <p><a href="/sources/documents/">Source evidence catalogue</a> · <a href="/sources/collections/">Other archival collections</a></p>
+  </div>
  </div>
 </Layout>
 <script>
- const form=document.querySelector<HTMLFormElement>('.publication-filters');
+ type Kind='all'|'decade'|'theme'|'creator';
+ const filters=[...document.querySelectorAll<HTMLButtonElement>('[data-filter-kind]')];
  const cards=[...document.querySelectorAll<HTMLElement>('[data-publication]')];
- const groups=[...document.querySelectorAll<HTMLElement>('[data-publication-group]')];
- const normalise=(text:string)=>text.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLocaleLowerCase('en-NZ');
- function apply(){if(!form)return;const f=new FormData(form);const q=normalise(String(f.get('q')||'')).trim().split(/\s+/).filter(Boolean);let count=0;
-  cards.forEach(card=>{const a=card.dataset;card.hidden=!(q.every(word=>normalise(a.search||'').includes(word))&&(!f.get('year')||a.year===f.get('year'))&&(!f.get('decade')||a.year?.startsWith(String(f.get('decade'))))&&(!f.get('creator')||a.creator===f.get('creator'))&&(!f.get('theme')||a.themes?.split(' ').includes(String(f.get('theme')))));if(!card.hidden)count++;});
-  groups.forEach(group=>{group.hidden=!group.querySelector('[data-publication]:not([hidden])');});
-  document.getElementById('publication-count')!.textContent=count+' '+(count===1?'publication':'publications');document.getElementById('publication-empty')!.hidden=count>0;
-  const params=new URLSearchParams();for(const [k,v] of f)if(v)params.set(k,String(v));history.replaceState(null,'',location.pathname+(params.size?'?'+params:''));
+ const counter=document.getElementById('publication-count');
+ const empty=document.getElementById('publication-empty');
+ const validKinds=new Set(['all','decade','theme','creator']);
+ let kind:Kind='all',value='';
+ const params=new URLSearchParams(location.search);
+ const requestedKind=params.get('filter')||'all';
+ const requestedValue=params.get('value')||'';
+ if(validKinds.has(requestedKind)&&filters.some(button=>button.dataset.filterKind===requestedKind&&button.dataset.filterValue===requestedValue)){
+  kind=requestedKind as Kind;value=requestedValue;
  }
- if(form){const p=new URLSearchParams(location.search);for(const [k,v]of p){const field=form.elements.namedItem(k);if(field instanceof HTMLInputElement||field instanceof HTMLSelectElement)field.value=v;}
- form.addEventListener('input',apply);form.addEventListener('change',apply);form.addEventListener('reset',event=>{event.preventDefault();for(const field of form.querySelectorAll('input,select')){if(field instanceof HTMLInputElement)field.value='';else if(field instanceof HTMLSelectElement)field.selectedIndex=0;}apply();});apply();}
+ function apply(updateURL:boolean){
+  let count=0;
+  for(const card of cards){
+   const data=card.dataset;
+   const matches=kind==='all'||kind==='decade'&&data.year?.startsWith(value.slice(0,3))||kind==='theme'&&data.themes?.split(' ').includes(value)||kind==='creator'&&data.creator===value;
+   card.hidden=!matches;
+   if(matches)count++;
+  }
+  filters.forEach(button=>{
+   const active=button.dataset.filterKind===kind&&button.dataset.filterValue===value;
+   button.setAttribute('aria-pressed',String(active));
+  });
+  if(counter)counter.textContent=count+' '+(count===1?'publication':'publications')+' · oldest first';
+  if(empty)empty.hidden=count>0;
+  if(kind==='creator')document.querySelector<HTMLDetailsElement>('.publication-org-filters')?.setAttribute('open','');
+  if(updateURL){
+   const u=new URL(location.href);
+   u.searchParams.delete('filter');u.searchParams.delete('value');
+   if(kind!=='all'){u.searchParams.set('filter',kind);u.searchParams.set('value',value);}
+   history.replaceState(null,'',u.pathname+u.search+u.hash);
+  }
+ }
+ filters.forEach(button=>button.addEventListener('click',()=>{kind=button.dataset.filterKind as Kind;value=button.dataset.filterValue||'';apply(true);}));
+ window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);const k=p.get('filter')||'all',v=p.get('value')||'';kind=validKinds.has(k)&&filters.some(b=>b.dataset.filterKind===k&&b.dataset.filterValue===v)?k as Kind:'all';value=kind==='all'?'':v;apply(false);});
+ apply(false);
 </script>
 <style>
- .publication-library{padding-block:2rem 4rem}.publication-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;padding:1.3rem;align-items:end}.publication-filters label{display:grid;gap:.4rem;font-size:.9rem;min-width:0}.publication-filters input,.publication-filters select{width:100%;min-height:44px;min-width:0;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:.6rem;font:inherit}.publication-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}.publication-card{padding:0;overflow:hidden;position:relative}.publication-card[hidden],.publication-section[hidden]{display:none}.publication-cover{display:block;background:var(--surface);height:290px;padding:1rem}.publication-cover img{width:100%;height:100%;object-fit:contain}.publication-copy{padding:1.3rem}.publication-copy h3{font-size:1.2rem;line-height:1.4}.publication-copy .title::after{content:'';position:absolute;inset:0}.publication-card:focus-within{outline:2px solid var(--accent);outline-offset:4px}.publication-section{margin-block:2.5rem}.publication-section>h2{margin-bottom:.6rem}.publication-card--hosted .publication-copy,.publication-card--source-linked .publication-copy{height:calc(100% - 290px);display:flex;flex-direction:column;align-items:flex-start}.publication-card--hosted .publication-copy>p,.publication-card--source-linked .publication-copy>p{max-width:68ch}.publication-actions{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:1rem}.publication-actions a{position:relative;z-index:1}.publication-licence a{position:relative;z-index:1}.publication-source-link{position:relative;z-index:1}.publication-empty{margin-block:1rem}
+ .publication-library{width:100%;max-width:none;padding:30px clamp(12px,2vw,36px) 60px;margin:0}
+ .publication-heading{margin:0 0 22px}.publication-heading h1{font-size:clamp(32px,3.6vw,52px);margin:6px 0 10px}.publication-heading>p:last-child{max-width:90ch;color:var(--muted);margin:0}
+ .publication-library-layout{display:grid;grid-template-columns:clamp(205px,17vw,285px) minmax(0,1fr);gap:clamp(16px,2vw,34px);align-items:start}
+ .publication-sidebar{min-width:0;align-self:start;position:sticky;top:16px;max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain}
+ .publication-filter-menu{padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+ .publication-filter-menu h2{font-size:20px;margin:0 0 12px}.publication-filter-menu h3{font-size:14px;color:var(--muted);margin:16px 0 7px}
+ .publication-sidebar-heading>button,.publication-filter-options button{display:flex;justify-content:space-between;gap:8px;align-items:center;width:100%;min-height:37px;text-align:left;padding:8px 10px;font-size:13px;line-height:1.3;background:transparent;border:1px solid transparent;box-shadow:none;color:var(--text);border-radius:7px}
+ .publication-filter-menu button span,.publication-org-filters summary span{color:var(--muted);font-size:12px;flex:none}
+ .publication-filter-menu button:hover{background:var(--raised)}.publication-filter-menu button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--text)}
+ .publication-filter-options{display:grid;gap:2px}
+ .publication-org-filters{margin-top:12px;border-top:1px solid var(--line);padding-top:8px}
+ .publication-org-filters summary{color:var(--text);font-weight:650;display:flex;justify-content:space-between;align-items:center;font-size:14px}
+ .publication-org-filters .publication-filter-options{max-height:40vh;overflow:auto}
+ .publication-results{min-width:0}.publication-results-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px;border-bottom:1px solid var(--line);padding:9px 2px;font-size:13px;color:var(--muted)}
+ .publication-results-toolbar p{margin:0}.publication-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,245px),1fr));gap:14px}
+ .publication-card{position:relative;overflow:hidden;padding:0;display:flex;flex-direction:column;min-width:0}
+ .publication-card[hidden]{display:none}.publication-card:focus-within{outline:2px solid var(--accent);outline-offset:3px}
+ .publication-cover{display:flex;align-items:center;justify-content:center;background:var(--raised);height:195px;padding:9px}
+ .publication-cover img{width:100%;height:100%;object-fit:contain}
+ .publication-copy{display:flex;flex-direction:column;gap:5px;padding:14px 15px 16px;flex:1}
+ .publication-copy p,.publication-copy h3{margin:0}.publication-copy .eyebrow{font-size:10px;line-height:1.4}
+ .publication-copy h3{font-size:16px;line-height:1.35}
+ .publication-copy h3 .title{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;text-decoration:none;color:var(--text)}
+ .publication-copy h3 .title::after{content:'';position:absolute;inset:0}
+ .publication-creator{font-size:12px;color:var(--muted);line-height:1.4}
+ .publication-summary{font-size:13px;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+ .publication-format{margin-top:auto!important;padding-top:6px;font-size:12px;color:var(--muted)}
+ .publication-footer{margin:25px 0 0}.publication-results-toolbar>span{white-space:nowrap}
+ @media(max-width:900px){.publication-library-layout{grid-template-columns:195px minmax(0,1fr);gap:14px}.publication-filter-menu{padding:10px}.publication-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,195px),1fr))}}
+ @media(max-width:650px){.publication-library{padding:18px 12px 38px}.publication-library-layout{display:block}.publication-sidebar{position:static;max-height:none;margin-bottom:16px}.publication-filter-menu{padding:12px}.publication-filter-menu section{display:inline-block;vertical-align:top;width:49%;padding:0 7px 0 0}.publication-filter-options button{font-size:12px}.publication-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.publication-cover{height:142px}.publication-copy{padding:9px;gap:5px}.publication-copy h3{font-size:13px}.publication-copy .eyebrow{font-size:9px}.publication-creator{font-size:11px}.publication-summary{font-size:12px;-webkit-line-clamp:2;line-clamp:2}.publication-org-filters .publication-filter-options{max-height:230px}}
+ @media(max-width:370px){.publication-grid{grid-template-columns:1fr}.publication-cover{height:185px}}
 </style>
