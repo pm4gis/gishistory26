@@ -40,4 +40,6 @@ jobs:
             exit 0
           fi
           git commit -m 'Archive additional verified LINZ PDFs and record remaining source access'
+          git fetch origin fix/resolve-external-publications-20261018
+          git rebase origin/fix/resolve-external-publications-20261018
           git push origin HEAD:fix/resolve-external-publications-20261018
