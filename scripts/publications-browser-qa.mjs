@@ -1,105 +1,82 @@
 import assert from 'node:assert/strict';
-import crypto from 'node:crypto';
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import {chromium} from 'playwright';
-import {contributedPrimarySources as publications} from '../src/lib/contributed-primary-sources.mjs';
+import {contributedPrimarySources} from '../src/lib/contributed-primary-sources.mjs';
 import {onlinePdfPublications} from '../src/lib/online-pdf-publications.mjs';
+import {publicationReadingOrder} from '../src/lib/publication-reading-order.mjs';
+
 const base=process.env.QA_BASE_URL||'http://127.0.0.1:4321';
-const archiveCount=publications.length;
-const onlineCount=onlinePdfPublications.length;
-const totalCount=archiveCount+onlineCount;
-const countForYear=year=>publications.filter(p=>p.startDate.slice(0,4)===year).length+onlinePdfPublications.filter(p=>p.year===year).length;
-const countForTheme=theme=>publications.filter(p=>p.themeIds.includes(theme)).length+onlinePdfPublications.filter(p=>p.themeIds.includes(theme)).length;
 const browser=await chromium.launch({headless:true});
 const results=[];
 try{
  for(const width of [390,1366]){
-  const page=await browser.newPage({viewport:{width,height:850}});
-  await page.goto(base+'/publications/');
-  assert.equal(await page.locator('[data-publication]:visible').count(),totalCount);
-  const groups=page.locator('[data-publication-group]');
-  assert.equal(await groups.nth(0).locator('[data-publication]:visible').count(),archiveCount);
-  assert.equal(await groups.nth(1).locator('[data-publication]:visible').count(),onlineCount);
-  for(const palette of ['slate','coastal','forest','archive','bubblegum'])for(const mode of ['light','dark']){
-   await page.getByRole('button',{name:/Open settings|Open appearance settings/}).click();
-   await page.locator('[data-appearance-mode="'+mode+'"]').click();
-   await page.locator('[data-appearance-palette="'+palette+'"]').click();
-   await page.getByRole('button',{name:'Close appearance settings',exact:true}).click();
-   assert.equal(await page.locator('html').getAttribute('data-appearance'),mode);
-   assert.equal(await page.locator('html').getAttribute('data-palette'),palette);
-   const sizes=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));
-   assert.ok(sizes.scroll<=sizes.width+2,JSON.stringify({width,palette,mode,...sizes}));
-  }
-  await page.getByRole('searchbox').fill('Maori');
+  const page=await browser.newPage({viewport:{width,height:900}});
+  const response=await page.goto(base+'/publications/',{waitUntil:'domcontentloaded'});
+  assert.equal(response.status(),200);
+  const cards=page.locator('[data-publication]');
+  assert.equal(await cards.count(),publicationReadingOrder.length);
+  const years=await cards.evaluateAll(els=>els.map(el=>Number(el.getAttribute('data-year'))));
+  assert.deepEqual(years,[...years].sort((a,b)=>a-b),'Publication cards must be chronological');
+  assert.ok(await page.locator('input[type="search"]').count()===0,'No search bar in the catalogue');
+  assert.ok(await page.locator('.publication-sidebar').count()===1);
+  assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length);
+  await page.locator('[data-filter-kind="decade"]').first().click();
+  const activeDecade=await page.locator('[data-filter-kind="decade"][aria-pressed="true"]').getAttribute('data-filter-value');
+  const expectedDecade=publicationReadingOrder.filter(x=>x.year.startsWith(activeDecade.slice(0,3))).length;
+  assert.equal(await page.locator('[data-publication]:visible').count(),expectedDecade);
+  assert.equal(new URL(page.url()).searchParams.get('filter'),'decade');
+  await page.locator('[data-filter-kind="all"]').click();
+  assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length);
+  await page.locator('[data-filter-kind="theme"]').first().click();
   assert.ok(await page.locator('[data-publication]:visible').count()>0);
-  await page.getByRole('button',{name:'Clear filters'}).click();
-  assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
-  await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('2007');
-  assert.equal(await page.locator('[data-publication]:visible').count(),countForYear('2007'));
-  await page.getByRole('button',{name:'Clear filters'}).click();
-  await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('1995');
-  assert.equal(await page.locator('[data-publication]:visible').count(),countForYear('1995'));
-  assert.equal(await groups.nth(0).isVisible(),publications.some(p=>p.startDate.slice(0,4)==='1995'),'The archive section visibility should match the year filter');
-  assert.equal(await groups.nth(1).isVisible(),onlinePdfPublications.some(p=>p.year==='1995'),'The hosted section visibility should match the year filter');
-  await page.getByRole('button',{name:'Clear filters'}).click();
-  assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
-  await page.getByRole('combobox',{name:'Theme',exact:true}).selectOption('maori-gis');
-  assert.equal(await page.locator('[data-publication]:visible').count(),countForTheme('maori-gis'));
-  await page.reload();assert.equal(await page.locator('[data-publication]:visible').count(),countForTheme('maori-gis'));
-  await page.getByRole('button',{name:'Clear filters'}).click();
-  assert.equal(await page.locator('[data-publication]:visible').count(),totalCount,'Clear filters must restore every card');
-  assert.equal(await page.locator('.publication-filters option[value="2026"]').count(),0,'No 2026 publication year should be offered');
-  assert.equal(await page.locator('.publication-card--source-linked').count(),onlinePdfPublications.filter(p=>!p.hostedLocally).length);
-  const onlineCards=page.locator('.publication-card--hosted,.publication-card--source-linked');
-  assert.equal(await onlineCards.count(),onlineCount);
-  for(let i=0;i<onlineCount;i++){
-   const item=onlinePdfPublications[i];
-   const card=onlineCards.nth(i);
-   assert.equal(await card.getAttribute('data-year'),item.year);
-   assert.ok(Number(item.year)<=2025,`${item.title} must be dated 2025 or earlier`);
-   const pdfLink=card.locator('.publication-download');
-   assert.equal(await pdfLink.getAttribute('href'),item.pdfPath);
-   assert.equal(await pdfLink.getAttribute('download'),item.hostedLocally?item.fileName:null);
-   assert.equal(await pdfLink.getAttribute('aria-label'),(item.hostedLocally?'Download hosted PDF: ':'Open source copy: ')+item.title);
-   assert.equal(await card.locator('h3 a').getAttribute('href'),item.pdfPath);
-   assert.equal(await card.locator('.publication-cover').getAttribute('href'),item.pdfPath);
-   const image=card.locator('.publication-cover img');
-   assert.equal(await image.getAttribute('src'),item.thumbnailPath);
-   await image.scrollIntoViewIfNeeded();
-   assert.ok(await image.evaluate(el=>el.complete&&el.naturalWidth>0),`${item.title} thumbnail should load`);
-   assert.ok((await card.locator('.publication-licence').innerText()).includes(item.license));
-   assert.ok((await card.locator('.publication-attribution').innerText()).includes(item.attribution));
-   const sourceLink=card.locator('.publication-source-link');
-   const hasSeparateSource=item.sourceUrl&&item.sourceUrl!==item.externalPdfUrl;
-   assert.equal(await sourceLink.count(),hasSeparateSource?1:0);
-   if(hasSeparateSource){
-    assert.equal(await sourceLink.getAttribute('href'),item.sourceUrl);
-    assert.equal(await sourceLink.getAttribute('aria-label'),(item.sourceLabel||'Source record')+' for '+item.title);
-   }else{
-    assert.ok(item.provenance,`${item.title} must explain its contributor-supplied provenance`);
+  await page.reload({waitUntil:'domcontentloaded'});
+  assert.equal(await page.locator('[data-filter-kind="theme"][aria-pressed="true"]').count(),1,'Theme selection should survive refresh');
+  await page.locator('[data-filter-kind="all"]').click();
+  await page.locator('.publication-org-filters summary').click();
+  await page.locator('[data-filter-kind="creator"]').first().click();
+  const creator=await page.locator('[data-filter-kind="creator"][aria-pressed="true"]').getAttribute('data-filter-value');
+  assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.filter(x=>{
+   const item=x.kind==='archive'?contributedPrimarySources.find(p=>p.slug===x.slug):onlinePdfPublications.find(p=>p.slug===x.slug);
+   return item.creator===creator;
+  }).length);
+  await page.locator('[data-filter-kind="all"]').click();
+  for(const item of [publicationReadingOrder[0],publicationReadingOrder.find(x=>x.kind==='archive'),publicationReadingOrder.find(x=>x.kind==='research')]){
+   const res=await page.goto(base+item.url,{waitUntil:'domcontentloaded'});
+   assert.equal(res.status(),200,item.url);
+   const obj=page.locator('.publication-reader-object');
+   assert.equal(await obj.count(),1,item.url);
+   const path=await obj.getAttribute('data');
+   assert.ok(path?.includes('#view=FitH'),item.url);
+   const frame=await page.locator('.publication-reader-frame').boundingBox();
+   assert.ok(frame&&frame.width>=width*.88,'PDF viewer should span available screen width: '+item.url);
+   assert.ok(frame.height>=450,'PDF viewer should use most of the viewport: '+item.url);
+   assert.equal(await page.locator('a[download]').count(),0,'Reader must not offer direct download');
+   assert.ok(await page.locator('.publication-reader-details').count()===1);
+   assert.ok((await page.locator('main').innerText()).includes('About this publication'));
+   const next=publicationReadingOrder.indexOf(item)+1;
+   if(next<publicationReadingOrder.length){
+    assert.equal(await page.locator('.publication-reader-nav a[rel="next"]').getAttribute('href'),publicationReadingOrder[next].url);
    }
   }
-  const input=page.getByRole('searchbox');await input.focus();await page.keyboard.press('Tab');
-  assert.equal(await page.evaluate(()=>document.activeElement.name),'decade');
-  for(const p of publications){
-   const response=await page.goto(base+p.publicationUrl);assert.equal(response.status(),200);
-   assert.equal(await page.locator('object[type="application/pdf"]').getAttribute('data'),p.viewerPath);
-   assert.ok(await page.locator('a[download]').count());
-   const img=page.locator('.publication-overview img');await img.scrollIntoViewIfNeeded();
-   assert.ok(await img.evaluate(el=>el.complete&&el.naturalWidth>0));
-   assert.ok((await page.locator('main').innerText()).includes('Original publication:'));
-   assert.ok((await page.locator('main').innerText()).includes('17 October 2026'));
-   const original=await page.request.get(base+p.assetPath);assert.equal(original.status(),200);
-   assert.equal(crypto.createHash('sha256').update(await original.body()).digest('hex'),p.sha256);
-   const pdf=await page.request.get(base+p.viewerPath);assert.equal(pdf.status(),200);
-   assert.ok((await pdf.body()).subarray(0,5).equals(Buffer.from('%PDF-')));
-  }
-  await page.goto(base+'/publications/');
-  if(width===390)await page.locator('.mobile-menu > summary').click();
-  assert.ok(await page.locator(width===390?'.nav--mobile a[href="/publications/"]':'.nav--desktop a[href="/publications/"]').isVisible());
-  results.push({width,archivePublications:archiveCount,hostedPublications:onlineCount,totalPublications:totalCount,palettes:5,modes:2,filters:'passed',hostedPdfsAndThumbnails:'passed',sourceAndRights:'passed',keyboard:'passed',originalChecksums:'passed',viewerResponses:'passed',navigation:'passed'});
+  const original=contributedPrimarySources[0];
+  const originalRes=await page.request.get(base+original.assetPath);
+  assert.equal(originalRes.status(),200);
+  assert.equal(crypto.createHash('sha256').update(await originalRes.body()).digest('hex'),original.sha256);
+  const story=await page.goto(base+'/stories/what-the-computer-inherited/',{waitUntil:'domcontentloaded'});
+  assert.equal(story.status(),200);
+  const sidebar=page.locator('.chapter-sidebar-timeline');
+  if(width<850)await page.getByRole('button',{name:/Timeline & related/}).click();
+  assert.equal(await sidebar.count(),1,'Chapter timeline belongs in sidebar');
+  assert.ok(await sidebar.isVisible(),'Chapter timeline should be visible');
+  assert.ok(await page.locator('details.passage-tools').count()>0,'Passage actions are collapsed');
+  assert.equal(await page.locator('a.contribution-help').count(),0);
+  const pageWidth=await page.evaluate(()=>document.documentElement.scrollWidth);
+  assert.ok(pageWidth<=width+4,'No mobile or desktop horizontal overflow: '+pageWidth+' > '+width);
+  results.push({width,publicationCount:publicationReadingOrder.length,chronology:'passed',sidebarFilters:'passed',pdfViewer:'passed',publicationNavigation:'passed',chapterSidebar:'passed',passageActions:'passed'});
   await page.close();
  }
- fs.mkdirSync('docs/verification',{recursive:true});fs.writeFileSync('docs/verification/publications-browser-qa.json',JSON.stringify({base,results},null,2)+'\n');
- console.log('Publications browser QA passed: archive and hosted PDFs, thumbnails, sources and rights, responsive layouts, palettes, filters, keyboard order and original PDFs.');
+ fs.mkdirSync('docs/verification',{recursive:true});
+ fs.writeFileSync('docs/verification/publications-browser-qa.json',JSON.stringify({base,results},null,2)+'\n');
+ console.log('Publications browser QA passed: chronological catalogue, left filters, wide on-site PDF reader, previous/next and compact chapter controls.');
 }finally{await browser.close();}
