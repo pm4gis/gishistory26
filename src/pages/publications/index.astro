@@ -45,8 +45,8 @@ const allPublicationCount=publications.length+onlinePdfPublications.length;
       <p>{p.summary}</p>
       <p class="muted">{p.sourceName} · PDF</p>
       <div class="publication-actions">
-       <a class="button" href={p.pdfUrl} target="_blank" rel="noopener noreferrer">{p.pdfLabel}</a>
-       {p.sourceUrl&&<a class="publication-source-link" href={p.sourceUrl} target="_blank" rel="noopener noreferrer">{p.sourceLabel||'Publisher details'}</a>}
+       <a class="button" href={p.pdfUrl} target="_blank" rel="noopener noreferrer" aria-label={p.pdfLabel+': '+p.title}>{p.pdfLabel}</a>
+       {p.sourceUrl&&<a class="publication-source-link" href={p.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={(p.sourceLabel||'Publisher details')+' for '+p.title}>{p.sourceLabel||'Publisher details'}</a>}
       </div>
      </div>
     </article>)}
