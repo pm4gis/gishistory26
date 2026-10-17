@@ -21,8 +21,8 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
   <section class="publication-reader-source-only" aria-label={'Publisher record for '+title}>
    {thumbnailPath&&<img src={thumbnailPath} alt="" loading="eager" width="240" height="320"/>}
    <div>
-    <h2>PDF in the source catalogue</h2>
-    <p>The publisher provides this report as an attachment to its catalogue record, rather than at a direct PDF address. Open the record and select its PDF under <strong>Attachments</strong>.</p>
+    <h2>Report held in the publisher catalogue</h2>
+    <p>The report is attached to the publisher’s catalogue entry. Open that entry and select the report under <strong>Attachments</strong>.</p>
     <p><a class="button" href={sourceUrl||pdfPath} target="_blank" rel="noopener noreferrer">View publisher record ↗</a></p>
    </div>
   </section>
@@ -35,9 +35,9 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
  )}
  <div class="publication-reader-below">
   <nav class="publication-reader-bottom-nav" aria-label="Continue reading publications">
-   {previous?<a href={previous.url} rel="prev">← Previous PDF</a>:<span></span>}
+   {previous?<a href={previous.url} rel="prev">← Previous</a>:<span></span>}
    <a href="/publications/">All publications</a>
-   {next?<a href={next.url} rel="next">Next PDF →</a>:<span></span>}
+   {next?<a href={next.url} rel="next">Next →</a>:<span></span>}
   </nav>
   <section class="publication-reader-details" aria-label="About this publication">
    <slot />
