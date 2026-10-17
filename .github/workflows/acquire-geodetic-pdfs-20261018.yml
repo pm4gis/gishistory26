@@ -1,0 +1,45 @@
+name: Preserve historical LINZ PDF originals
+on:
+  push:
+    branches: [content/publications-geodesy-20261018]
+    paths:
+      - '.github/workflows/acquire-geodetic-pdfs-20261018.yml'
+      - 'scripts/acquire-geodetic-pdfs-20261018.mjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/content/publications-geodesy-20261018'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - name: Install PDF inspection and rendering tools
+        run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - run: npm ci
+      - name: Preserve available LINZ originals under documented CC BY terms
+        run: node scripts/acquire-geodetic-pdfs-20261018.mjs
+      - name: Run content tests and static site build
+        run: |
+          npm test
+          npm run build
+          node scripts/assert-editorial-exclusions.mjs
+      - name: Commit verified originals, covers and checksums to feature branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/assets/publications/pdfs/ public/assets/publications/thumbnails/ src/lib/geodetic-pdfs-mirrored.mjs docs/verification/geodetic-pdf-acquisition-20261018.json
+          if git diff --cached --quiet; then
+            echo 'No new archival originals'
+            exit 0
+          fi
+          git commit -m 'Preserve verified historical LINZ PDFs and original first-page covers'
+          git push origin HEAD:content/publications-geodesy-20261018
