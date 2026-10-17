@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "ladeda-plotting-handbook-1982",
+    "originalAssetPath": "/assets/historical/documents/LADEDA_Plotting_Handbook_RD_Williams_May_1982.pdf",
+    "originalSha256": "1a8ebe35e862012cff6229eea8979dc0e87d547fe4e156cb0723e943c61920bd",
+    "pages": 58,
+    "coverPath": "/assets/historical/publications/ladeda-plotting-handbook-1982-cover.png",
+    "thumbnailPath": "/assets/historical/publications/ladeda-plotting-handbook-1982-card.webp",
+    "coverSha256": "8aea9203f57ae77bec14e777d2dd93a0042e0d0097d90f3fd90e7bd1c0b7a6e7",
+    "thumbnailSha256": "37a1a7b69b155e05fd74cddae9b43151b18f0f1e98479cdf2d3d47f95845d4f0",
+    "width": 1415,
+    "height": 2000,
+    "method": "Original first page rendered uncropped with Poppler at up to 2000 pixels; WebP card derived at up to 720×960 pixels."
+  },
+  {
+    "slug": "our-land-resources-1979",
+    "originalAssetPath": "/assets/historical/documents/Our_Land_Resources_1979.pdf",
+    "originalSha256": "a122de72cae9f33cf5806175ccc2187f7f62907dca5d5f14c9ff80e950069a81",
+    "pages": 79,
+    "coverPath": "/assets/historical/publications/our-land-resources-1979-cover.png",
+    "thumbnailPath": "/assets/historical/publications/our-land-resources-1979-card.webp",
+    "coverSha256": "b0f17773a334c90cb13797418ac2dcc5c144822d96ccd6ca7dad5c9fc05f8c90",
+    "thumbnailSha256": "4b65634786fc64ad5f0f3ce0534dca1c7c6be0244ce4a71c7219ce52310cfcd6",
+    "width": 2000,
+    "height": 1415,
+    "method": "Original first page rendered uncropped with Poppler at up to 2000 pixels; WebP card derived at up to 720×960 pixels."
+  },
+  {
+    "slug": "hocken-maps-and-plans-guide",
+    "originalAssetPath": "/assets/historical/documents/Hocken_Maps_and_Plans_Guide.pdf",
+    "originalSha256": "e0b009c5e53577caa1e72d05f9553446e4c18252353dd867267b35ce5517d1b1",
+    "pages": 32,
+    "coverPath": "/assets/historical/publications/hocken-maps-and-plans-guide-cover.png",
+    "thumbnailPath": "/assets/historical/publications/hocken-maps-and-plans-guide-card.webp",
+    "coverSha256": "d608819d5260346377d48890a30f683ee15dae863fa8424b9c33b69e48b6257f",
+    "thumbnailSha256": "302e921bd3f5bcd8054a14f33cf34abb28d1ddb0ade873160428802c515eac5d",
+    "width": 1546,
+    "height": 2000,
+    "method": "Original first page rendered uncropped with Poppler at up to 2000 pixels; WebP card derived at up to 720×960 pixels."
+  },
+  {
+    "slug": "geodatahub-drecki-2019",
+    "originalAssetPath": "/assets/historical/documents/GeoDataHub_Drecki_2019.pdf",
+    "originalSha256": "b4f031ec006c28049ab54fbd541f205d8faab2f119c3c2284444af7a79c29193",
+    "pages": 1,
+    "coverPath": "/assets/historical/publications/geodatahub-drecki-2019-cover.png",
+    "thumbnailPath": "/assets/historical/publications/geodatahub-drecki-2019-card.webp",
+    "coverSha256": "726d685f433d6a8a34b21a3edda835f1f373d738f014346c7ba3a89a4f36b96e",
+    "thumbnailSha256": "24732aebdfb279ff1bd1e0349865334467a69968077a527334c76682f25a3f5b",
+    "width": 1419,
+    "height": 2000,
+    "method": "Original first page rendered uncropped with Poppler at up to 2000 pixels; WebP card derived at up to 720×960 pixels."
+  }
+]
