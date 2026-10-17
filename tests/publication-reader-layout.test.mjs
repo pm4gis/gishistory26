@@ -34,6 +34,27 @@ test('Previous and Next links stay on the website across all 75 PDF publications
   assert.equal(context.previous?.url,publicationReadingOrder[i-1]?.url);
   assert.equal(context.next?.url,publicationReadingOrder[i+1]?.url);
  }
+ assert.deepEqual(publicationReadingOrder.map(x=>x.year),[...publicationReadingOrder.map(x=>x.year)].sort());
  assert.ok(publicationReadingOrder.some(x=>x.kind==='archive'));
  assert.ok(publicationReadingOrder.some(x=>x.kind==='research'));
+});
+
+test('library is a single chronological grid with a left filter sidebar',()=>{
+ const page=readFileSync('src/pages/publications/index.astro','utf8');
+ assert.ok(page.includes('publication-library-layout'));
+ assert.ok(page.includes('publication-sidebar'));
+ assert.ok(page.includes('publicationReadingOrder.map'));
+ assert.ok(page.includes('publication-filter-options'));
+ assert.ok(page.includes('data-filter-kind="decade"'));
+ assert.ok(page.includes('data-filter-kind="theme"'));
+ assert.ok(page.includes('data-filter-kind="creator"'));
+ assert.ok(!page.includes('type="search"'));
+ assert.ok(!page.includes('Reuse:'));
+ const styles=readFileSync('src/styles/site.css','utf8');
+ assert.ok(styles.includes('.wrap{max-width:none'));
+ assert.ok(styles.includes('.reading-shell{width:100%;max-width:none'));
+ const chapter=readFileSync('src/components/Reader.svelte','utf8');
+ assert.ok(chapter.includes('sidebar={true}'));
+ assert.ok(chapter.indexOf('sidebar={true}')<chapter.indexOf('Related entries</h3>'));
+ assert.ok(chapter.includes('<details class="passage-tools">'));
 });
