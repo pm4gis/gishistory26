@@ -8,11 +8,11 @@ const pdfDirectory='public/assets/publications/pdfs';
 const thumbnailDirectory='public/assets/publications/thumbnails';
 
 test('hosted PDF records have local files, thumbnails, source details and reuse terms',()=>{
- assert.equal(onlinePdfPublications.length,45);
+ assert.equal(onlinePdfPublications.length,67);
  const hostedRecords=onlinePdfPublications.filter(p=>p.hostedLocally);
  const sourceLinkedRecords=onlinePdfPublications.filter(p=>!p.hostedLocally);
  assert.equal(hostedRecords.length,40);
- assert.equal(sourceLinkedRecords.length,5);
+ assert.equal(sourceLinkedRecords.length,27);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.slug)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.fileName)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.pdfPath)).size,onlinePdfPublications.length);
@@ -24,7 +24,7 @@ test('hosted PDF records have local files, thumbnails, source details and reuse 
   assert.ok(p.sourceName,p.slug+' source name');
   assert.ok(p.sourceUrl||p.provenance,p.slug+' source record or contributor provenance');
   assert.ok(p.license&&p.attribution,p.slug+' reuse terms and attribution');
-  assert.ok(p.thumbnailPath===`/assets/publications/thumbnails/${p.slug}.jpg`,p.slug+' local thumbnail path');
+  assert.ok(p.thumbnailPath===`/assets/publications/thumbnails/${p.slug}.${p.generatedCover?'svg':'jpg'}`,p.slug+' thumbnail path');
 
   if(p.hostedLocally){
    assert.ok(p.pdfPath===`/assets/publications/pdfs/${p.fileName}`,p.slug+' local PDF path');
@@ -41,17 +41,22 @@ test('hosted PDF records have local files, thumbnails, source details and reuse 
    assert.ok(!fs.existsSync(path.join(pdfDirectory,p.fileName)),p.slug+' restricted source copy must not be mirrored');
   }
 
-  const thumbnailPath=path.join(thumbnailDirectory,`${p.slug}.jpg`);
-  const thumbnail=fs.readFileSync(thumbnailPath);
-  assert.ok(thumbnail.length>1000,p.slug+' thumbnail size');
-  assert.deepEqual([...thumbnail.subarray(0,3)],[0xff,0xd8,0xff],p.slug+' JPEG signature');
+  if(p.generatedCover){
+   assert.ok(p.is20261018Addition,'Only this release uses generated reference covers');
+   assert.ok(p.thumbnailPath.endsWith('.svg'),'Generated reference covers use SVG');
+  }else{
+   const thumbnailPath=path.join(thumbnailDirectory,`${p.slug}.jpg`);
+   const thumbnail=fs.readFileSync(thumbnailPath);
+   assert.ok(thumbnail.length>1000,p.slug+' thumbnail size');
+   assert.deepEqual([...thumbnail.subarray(0,3)],[0xff,0xd8,0xff],p.slug+' JPEG signature');
+  }
  }
 
  const diskPdfs=fs.readdirSync(pdfDirectory).filter(file=>file.endsWith('.pdf')).sort();
  const listedPdfs=hostedRecords.map(p=>p.fileName).sort();
  assert.deepEqual(diskPdfs,listedPdfs,'Every PDF stored in the collection must have a publication record');
  const diskThumbnails=fs.readdirSync(thumbnailDirectory).filter(file=>file.endsWith('.jpg')).sort();
- const listedThumbnails=onlinePdfPublications.map(p=>`${p.slug}.jpg`).sort();
+ const listedThumbnails=onlinePdfPublications.filter(p=>!p.generatedCover).map(p=>`${p.slug}.jpg`).sort();
  assert.deepEqual(diskThumbnails,listedThumbnails,'Every PDF must have one thumbnail, with no orphan thumbnails');
 });
 
@@ -66,5 +71,22 @@ test('the additional Internet publications respect the 2025 publication cutoff',
  const page=fs.readFileSync('src/pages/publications/index.astro','utf8');
  assert.ok(!page.includes('The linked PDFs remain with their publishers and repositories; check the source record for access and reuse terms. This selection contains material published by 31 December 2025'));
  assert.ok(page.includes('Research and reference PDFs'));
- assert.ok(page.includes('Open source copy'));
+ assert.ok(page.includes('Read PDF'));
+});
+
+
+test('the October 2026 additional geodetic PDFs are historically dated, traceable and browsable',()=>{
+ const entries=onlinePdfPublications.filter(p=>p.is20261018Addition);
+ assert.equal(entries.length,22);
+ assert.ok(entries.every(p=>Number(p.year)<=2025 && p.sourceUrl===p.externalPdfUrl && !p.hostedLocally));
+ assert.ok(entries.some(p=>p.year==='1973'));
+ assert.ok(entries.some(p=>p.themeIds.includes('maori-gis')));
+ const endpoint=fs.readFileSync('src/pages/assets/publications/thumbnails/[slug].svg.ts','utf8');
+ assert.ok(endpoint.includes('getStaticPaths'));
+ assert.ok(endpoint.includes('geodeticPdfPublications'));
+ const reader=fs.readFileSync('src/pages/publications/pdf/[slug].astro','utf8');
+ assert.ok(reader.includes('Previous PDF')&&reader.includes('Next PDF'));
+ const page=fs.readFileSync('src/pages/publications/index.astro','utf8');
+ assert.ok(page.includes('/publications/pdf/'));
+ assert.ok(!page.includes('Download hosted PDF'));
 });
