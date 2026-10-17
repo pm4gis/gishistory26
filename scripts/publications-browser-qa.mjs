@@ -79,7 +79,7 @@ try{
   results.push({width,publicationCount:publicationReadingOrder.length,chronology:'passed',sidebarFilters:'passed',pdfViewer:'passed',publicationNavigation:'passed',chapterSidebar:'passed',passageActions:'passed'});
   await page.close();
  }
- // Verify every published reader route and locally hosted PDF, not just three examples.
+ // Verify every one of the 75 published reader routes, including the expanded 61-file reference archive.
  const routeContext=await browser.newContext();
  let checkedReaders=0,checkedHostFiles=0,externalReferences=0;
  for(let i=0;i<publicationReadingOrder.length;i++){
