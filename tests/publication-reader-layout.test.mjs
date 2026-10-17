@@ -12,6 +12,7 @@ test('PDF reading pages show the document ahead of supporting information',()=>{
  assert.ok(shared.includes('height:calc(100dvh - 153px)'));
  assert.ok(shared.indexOf('publication-reader-frame')<shared.indexOf('publication-reader-details'));
  assert.ok(shared.includes('Read PDF full screen'));
+ assert.ok(!shared.includes('Previous PDF')&&!shared.includes('Next PDF'));
  assert.ok(archive.includes('<PublicationReader')&&reference.includes('<PublicationReader'));
  for(const content of [archive,reference]){
   assert.ok(content.indexOf('<PublicationReader') < content.indexOf('About this publication'));
