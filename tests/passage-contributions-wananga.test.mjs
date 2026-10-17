@@ -81,8 +81,12 @@ test('Ngā Poutama recordings are verified direct video links with external thum
 
 test('reader, about and navigation open direct email with a no-form fallback',()=>{
  const reader=readFileSync('src/components/Reader.svelte','utf8');
- assert.ok(reader.includes('Copy link</button><a class="button passage-contribute"'));
- assert.ok(reader.includes('passageContributionMailtoUrl(article,p)'));
+ assert.ok(reader.includes('<details class="passage-tools">'));
+ assert.ok(reader.includes('Share or correct this passage'));
+ assert.ok(reader.includes('Copy link</button>'));
+ assert.ok(!reader.includes('Email options</a>'));
+ assert.ok(!reader.includes('Link to passage</a>'));
+ assert.ok(!reader.includes('passageContributionMailtoUrl(article,p)'));
  assert.ok(reader.includes('passageContributionPageUrl(article,p)'));
  assert.ok(readFileSync('src/layouts/Layout.astro','utf8').includes('siteContributionPageUrl(title,canonical.href)'));
  assert.ok(readFileSync('src/pages/about/index.astro','utf8').includes('siteContributionPageUrl'));
