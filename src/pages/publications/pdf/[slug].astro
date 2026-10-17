@@ -1,7 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import {onlinePdfPublications} from '../../../lib/online-pdf-publications.mjs';
-const ordered=[...onlinePdfPublications].sort((a,b)=>b.year.localeCompare(a.year)||a.title.localeCompare(b.title));
 export function getStaticPaths(){
  const items=[...onlinePdfPublications].sort((a,b)=>b.year.localeCompare(a.year)||a.title.localeCompare(b.title));
  return items.map((item,i)=>({params:{slug:item.slug},props:{item,previous:items[i-1]||null,next:items[i+1]||null,position:i+1,total:items.length}}));
