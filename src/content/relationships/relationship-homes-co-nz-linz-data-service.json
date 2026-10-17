@@ -1,0 +1,14 @@
+{
+  "id": "relationship:homes-co-nz-linz-data-service",
+  "a": "entity:homes-co-nz",
+  "b": "entity:land-information-new-zealand-linz",
+  "label": "Uses LINZ Data Service address and property-boundary data",
+  "basis": "The New Zealand Government's data.govt.nz showcase says Homes.co.nz combines property data obtained from local councils with open data that includes address and property-boundary information from the LINZ Data Service.",
+  "passageIds": [],
+  "sources": [
+    {
+      "label": "data.govt.nz, Homes.co.nz: helping Kiwis make smart property decisions",
+      "url": "https://data.govt.nz/catalogue-guide/showcase/homes-co-nz"
+    }
+  ]
+}

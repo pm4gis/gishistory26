@@ -1,0 +1,40 @@
+{
+  "id": "entity:homes-co-nz",
+  "slug": "homes-co-nz",
+  "name": "Homes.co.nz",
+  "kind": "Organisation",
+  "category": "Real estate website",
+  "url": "/entities/homes-co-nz/",
+  "website": "https://homes.co.nz/",
+  "description": "A New Zealand property information website using council records and selected open data.",
+  "story": [
+    "Homes.co.nz combines property data obtained from local councils with open data. A New Zealand Government showcase identifies address and property-boundary data from the LINZ Data Service, alongside school-enrolment-zone data from the Ministry of Education. The site therefore draws on LINZ data as one part of a wider property-information service."
+  ],
+  "sources": [
+    {
+      "label": "data.govt.nz, Homes.co.nz: helping Kiwis make smart property decisions",
+      "url": "https://data.govt.nz/catalogue-guide/showcase/homes-co-nz"
+    },
+    {
+      "label": "Homes.co.nz, HomesEstimate FAQs",
+      "url": "https://homes.co.nz/homesestimate"
+    }
+  ],
+  "paragraphSources": [
+    [
+      {
+        "label": "data.govt.nz, Homes.co.nz: helping Kiwis make smart property decisions",
+        "url": "https://data.govt.nz/catalogue-guide/showcase/homes-co-nz"
+      },
+      {
+        "label": "Homes.co.nz, HomesEstimate FAQs",
+        "url": "https://homes.co.nz/homesestimate"
+      }
+    ]
+  ],
+  "aliases": [
+    "Homes"
+  ],
+  "themeIds": [],
+  "status": "Source-backed organisation and website"
+}

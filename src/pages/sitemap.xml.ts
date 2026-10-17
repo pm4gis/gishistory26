@@ -1,6 +1,7 @@
 import { dataset } from '../lib/data';
 import { chapterDocuments } from '../lib/chapter-documents.mjs';
 import { contributedPrimarySources } from '../lib/contributed-primary-sources.mjs';
+import { onlinePdfPublications } from '../lib/online-pdf-publications.mjs';
 import { ORIGIN } from '../lib/seo.mjs';
 
 export async function GET() {
@@ -23,6 +24,7 @@ export async function GET() {
   d.images.forEach((i: any) => include('/images/' + i.slug + '/'));
   chapterDocuments.forEach((doc: any) => include('/documents/' + doc.slug + '/'));
   contributedPrimarySources.forEach(doc => {include(doc.publicationUrl);include('/sources/documents/'+doc.slug+'/');});
+  onlinePdfPublications.forEach(doc => include('/publications/research/'+doc.slug+'/'));
   const esc = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const entries = [...urls.entries()].map(([path, lastmod]) =>
     '<url><loc>' + esc(ORIGIN + path) + '</loc>' + (lastmod ? '<lastmod>' + lastmod + '</lastmod>' : '') + '</url>'

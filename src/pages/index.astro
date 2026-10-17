@@ -8,10 +8,13 @@ import {homeTopoMaps} from '../lib/home-topo-maps.mjs';
 import {decorFor} from '../lib/decor';
 import {dataset} from '../lib/data';
 import {chapterCardImageMap,homepageFullBleedImageSlugs,homepageMapDetailChapterSlugs} from '../lib/home-chapter-thumbnails.mjs';
+import {contributedPrimarySources} from '../lib/contributed-primary-sources.mjs';
+import {onlinePdfPublications} from '../lib/online-pdf-publications.mjs';
 
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
 const peopleCount=d.records.filter((x:any)=>x.kind==='Person').length;
+const publicationCount=contributedPrimarySources.length+onlinePdfPublications.length;
 const chapterNavImages=chapterCardImageMap(chapters,d.passages,d.images);
 const eligible=new Set(homeHighlightSlugs);
 const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
@@ -43,6 +46,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
      <span><strong>{chapters.length}</strong> chapters</span>
      <span><strong>{peopleCount}</strong> people</span>
      <span><strong>{d.events.length}</strong> events</span>
+     <span><strong>{publicationCount}</strong> publications</span>
      <span><strong>9,071</strong> files<span class="sr-only"> generated in the latest verified build</span></span>
      <span><strong>240,990</strong> internal links<span class="sr-only"> checked in the latest verified build</span></span>
     </div>

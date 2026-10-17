@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {homeHighlightSlugs} from '../src/lib/home-highlights.mjs';
+import {contributedPrimarySources} from '../src/lib/contributed-primary-sources.mjs';
+import {onlinePdfPublications} from '../src/lib/online-pdf-publications.mjs';
 import {siteContributionMailtoUrl,siteContributionPageUrl,passageContributionMailtoUrl,passageContributionPageUrl,contributionRecipient,contributionDraft,contributionMailtoUrl,contributionContextFromSearch} from '../src/lib/passage-contributions.mjs';
 
 const home=readFileSync('src/pages/index.astro','utf8');
@@ -11,6 +13,13 @@ const about=readFileSync('src/pages/about/index.astro','utf8');
 const css=readFileSync('src/styles/site.css','utf8');
 const subjectImage=readFileSync('src/components/SubjectImage.astro','utf8');
 const imageDetail=readFileSync('src/pages/images/[slug].astro','utf8');
+
+test('homepage shows the publication count and omits the publication revision footer link',()=>{
+ const publicationCount=contributedPrimarySources.length+onlinePdfPublications.length;
+ assert.equal(publicationCount,53);
+ assert.ok(home.includes('<strong>{publicationCount}</strong> publications'));
+ assert.ok(!layout.includes('Publication revision'));
+});
 
 test('every published chapter remains eligible for both the homepage and chapter catalogue',()=>{
  const articles=readdirSync('src/content/articles').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/articles/'+n,'utf8')));
