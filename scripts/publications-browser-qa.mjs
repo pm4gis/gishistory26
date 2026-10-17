@@ -56,9 +56,9 @@ try{
   assert.equal(await page.locator('.publication-card--source-linked').count(),onlinePdfPublications.filter(p=>!p.hostedLocally).length);
   const onlineCards=page.locator('.publication-card--hosted,.publication-card--source-linked');
   assert.equal(await onlineCards.count(),onlineCount);
-  for(let i=0;i<onlineCount;i++){
-   const item=onlinePdfPublications[i];
-   const card=onlineCards.nth(i);
+  for(const item of onlinePdfPublications){
+   const card=onlineCards.filter({has:page.getByRole('link',{name:item.title,exact:true})});
+   assert.equal(await card.count(),1,item.slug);
    assert.equal(await card.getAttribute('data-year'),item.year);
    assert.ok(Number(item.year)<=2025,`${item.title} must be dated 2025 or earlier`);
    const readerUrl='/publications/research/'+item.slug+'/';
