@@ -6,7 +6,7 @@ import {onlinePdfPublications} from './online-pdf-publications.mjs';
 export const publicationReadingOrder = [
  ...contributedPrimarySources.map(p=>({slug:p.slug,title:p.title,year:p.startDate.slice(0,4),url:p.publicationUrl,kind:'archive'})),
  ...onlinePdfPublications.map(p=>({slug:p.slug,title:p.title,year:p.year,url:'/publications/pdf/'+p.slug+'/',kind:'research'}))
-].sort((a,b)=>b.year.localeCompare(a.year)||a.title.localeCompare(b.title,'en-NZ'));
+].sort((a,b)=>a.year.localeCompare(b.year)||a.title.localeCompare(b.title,'en-NZ'));
 
 export function publicationReadingContext(url){
  const position=publicationReadingOrder.findIndex(item=>item.url===url);
