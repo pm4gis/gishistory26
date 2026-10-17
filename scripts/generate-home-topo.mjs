@@ -39,7 +39,7 @@ async function fetchThumbnail(map){
 // not be replaced with generated crops. Verify those files and leave them intact.
 if(!homeTopoMaps.every(map=>map.driveId&&map.sourceTitle)){
  for(const map of homeTopoMaps){
-  const file=join('public',map.src.replace(/^\\//,''));
+  const file=join('public',map.src.slice(1));
   await access(file);
   const meta=await sharp(file).metadata();
   if(meta.format!=='webp'||!meta.width||!meta.height)throw new Error('Invalid documentary hero image: '+file);
