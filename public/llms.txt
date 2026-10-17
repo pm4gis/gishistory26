@@ -6,6 +6,7 @@ https://history.pm4gis.nz/
 This public historical publication describes geographic information systems (GIS), mapping, spatial data, people, organisations, projects and technology in New Zealand. The historical timeline ends on 31 December 2025. Publication and editorial dates may be later.
 
 ## Main reading routes
+- [Short history overview](https://history.pm4gis.nz/history/)
 - [Chapters and complete historical text](https://history.pm4gis.nz/read/)
 - [Historical timeline and event evidence](https://history.pm4gis.nz/timeline/)
 - [People, organisations and other records](https://history.pm4gis.nz/browse/)

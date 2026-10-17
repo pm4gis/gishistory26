@@ -14,7 +14,7 @@ export async function GET() {
     if (!urls.has(path) || (lastmod && !urls.get(path))) urls.set(path, lastmod);
   }
   [
-    '/', '/publications/', '/sources/documents/', '/read/', '/timeline/', '/browse/', '/datasets/', '/network/',
+    '/', '/history/', '/publications/', '/sources/documents/', '/read/', '/timeline/', '/browse/', '/datasets/', '/network/',
     '/themes/', '/images/', '/about/', '/sources/collections/',
     '/nga-poutama-videos/'
   ].forEach(path => include(path));

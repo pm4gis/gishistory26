@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const path = new URL('/history/', Astro.site).href;
+const heading = 'A short history of GIS in New Zealand';
+const description = 'An overview of New Zealand GIS history, from Māori knowledge of place and surveying to digital mapping, satellite data, iwi GIS and the web, through 2025.';
+const structuredData = {
+  '@type': 'Article',
+  '@id': path + '#article',
+  url: path,
+  headline: heading,
+  description,
+  inLanguage: 'en-NZ',
+  author: { '@type': 'Person', name: 'Duane Wilkins' },
+  isPartOf: { '@type': 'WebSite', '@id': new URL('/#website', Astro.site).href }
+};
+const sections = [
+  {id:'before-computers',title:'Before computers'},
+  {id:'first-digital-maps',title:'First digital maps'},
+  {id:'gis-expands',title:'GIS expands'},
+  {id:'national-foundations',title:'National foundations'},
+  {id:'maori-gis',title:'Māori GIS'},
+  {id:'web-and-open-data',title:'Web and open data'},
+  {id:'by-2025',title:'By 2025'}
+];
+---
+<Layout title="A Short History of GIS in New Zealand | NZ GIS History" description={description} structuredData={structuredData}>
+ <div class="wrap overview-layout">
+  <header class="overview-heading">
+   <p class="eyebrow">History at a glance · to 31 December 2025</p>
+   <h1>{heading}</h1>
+   <p class="intro">Geographic information systems (GIS) brought maps, coordinates and records together so that people could analyse places and relationships, rather than simply view a map. New Zealand's GIS history grew out of surveying, environmental science, land administration, remote sensing and computing. It is also a history of the people and organisations who made spatial information useful.</p>
+  </header>
+  <div class="overview-grid">
+   <aside class="card overview-jump" aria-label="On this page">
+    <p class="eyebrow">On this page</p>
+    <nav aria-label="History sections">
+     {sections.map(section=><a href={'#'+section.id}>{section.title}</a>)}
+    </nav>
+    <a class="overview-full-link" href="/read/">Read all the chapters →</a>
+   </aside>
+   <article class="narrative overview-prose" data-pagefind-body>
+    <section id="before-computers">
+     <h2>Before computers</h2>
+     <p>Long before digital mapping, Māori described, named and understood whenua, waterways and routes through generations of observation, travel and knowledge held by whānau, hapū and iwi. These traditions have their own purposes and authority. From the nineteenth century, surveyors also produced cadastral plans, trig networks, topographic sheets and other records for land administration and navigation. Aerial photography and thematic mapping later added new ways to document land cover, soils and natural resources. The accumulated material became a foundation for computer-based mapping. <a href="/stories/what-the-computer-inherited/">Read Maps before computers.</a></p>
+    </section>
+    <section id="first-digital-maps">
+     <h2>First digital maps</h2>
+     <p>Computers initially helped surveyors and engineers calculate positions, distances and networks, while finished maps remained largely on paper. During the 1970s, digital processing of satellite imagery opened another route into spatial analysis. New Zealand's documented Landsat investigations included a 1975 programme at the Department of Scientific and Industrial Research. Data capture, digitising and computer graphics gradually made it possible to reuse the same coordinates for different questions. <a href="/stories/coordinates-enter-the-computer/">Read Survey calculations</a> and <a href="/stories/turning-the-landscape-into-numbers/">Early remote sensing.</a></p>
+    </section>
+    <section id="gis-expands">
+     <h2>GIS expands</h2>
+     <p>During the 1980s and 1990s, GIS became a recognisable field in New Zealand government, forestry, universities, utilities and local authorities. Specialists combined mapped features with databases to investigate land use, infrastructure, hazards and services. Government restructuring and the 1989 local-government reforms also changed who maintained and used geographic records. As desktop GIS software became more accessible, a growing community of practitioners shared methods, training and local experience. <a href="/stories/when-gis-became-gis/">Read Early GIS systems</a> and <a href="/stories/councils-build-corporate-gis/">Council GIS.</a></p>
+    </section>
+    <section id="national-foundations">
+     <h2>National foundations</h2>
+     <p>Reliable shared coordinates and land records made it easier to combine information from different organisations. New Zealand introduced the New Zealand Geodetic Datum 2000 (NZGD2000) in 1998, replacing NZGD1949. Digital cadastral and topographic programmes continued to change how survey, property and map information was maintained, while Landonline brought important land transactions and survey processes into an electronic system. These changes supported wider reuse of consistent spatial data. <a href="/stories/rebuilding-the-coordinate-framework/">Read The national coordinate system</a> and <a href="/stories/landonline/">Landonline.</a></p>
+    </section>
+    <section id="maori-gis">
+     <h2>Māori GIS</h2>
+     <p>Iwi, hapū and Māori organisations have used GIS to support whenua management, environmental work, historical research and the recording of culturally important places. Projects developed through different communities and institutions, rather than following one national start date. The Ngāi Tahu cultural mapping project Kā Huru Manu, for example, brings traditional place names and associated knowledge into a digital atlas managed by Ngāi Tahu. Such work also raises questions about who controls, interprets and shares geographic information. <a href="/themes/maori-gis/">Explore Māori GIS history.</a></p>
+    </section>
+    <section id="web-and-open-data">
+     <h2>Web and open data</h2>
+     <p>From the 2000s, web maps allowed people to explore geographic information without specialist desktop software. Government agencies, councils and research organisations published map viewers, data services and downloadable datasets. Open-source software, satellite imagery, GPS, LiDAR and later cloud platforms expanded what could be mapped and analysed. Services such as the LINZ Data Service also made national spatial datasets easier to find and use in other applications. <a href="/stories/the-first-web-maps/">Read The first web maps</a> and <a href="/stories/open-data-changes-access/">Open spatial data.</a></p>
+    </section>
+    <section id="by-2025">
+     <h2>By 2025</h2>
+     <p>By the end of 2025, mapping was part of everyday websites, mobile applications, infrastructure systems and scientific workflows. GIS work increasingly involved APIs, cloud services, 3D data and automated analysis, alongside traditional survey and mapping expertise. Artificial intelligence was beginning to change how some GIS tasks could be carried out. This history ends on <strong>31 December 2025</strong>, while the website continues to publish research and corrections about earlier events. <a href="/stories/gis-at-the-end-of-2025/">Read GIS and AI in 2025.</a></p>
+    </section>
+    <section id="read-more">
+     <h2>Continue reading</h2>
+     <p>This is a short introduction to a much larger account. Read the <a href="/read/">full chapters</a>, follow the <a href="/timeline/">timeline</a>, browse <a href="/browse/">people and organisations</a>, or explore the <a href="/themes/">themes</a>. The <a href="/about/">About page</a> describes the project's scope and approach to evidence.</p>
+     <p class="overview-reference">Selected original sources: <a href="https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000">LINZ, NZGD2000</a>; <a href="https://ngaitahu.iwi.nz/te-runanga-o-ngai-tahu/our-work-pou/culture/cultural-mapping/">Te Rūnanga o Ngāi Tahu, Kā Huru Manu</a>. Each linked chapter provides its own historical references.</p>
+    </section>
+   </article>
+  </div>
+ </div>
+</Layout>
+<style>
+ .overview-layout{padding-block:clamp(28px,3vw,48px) 68px}
+ .overview-heading{max-width:100ch;margin:0 0 34px}
+ .overview-heading h1{margin:8px 0 16px}
+ .overview-heading .intro{max-width:93ch}
+ .overview-grid{display:grid;grid-template-columns:clamp(190px,19vw,260px) minmax(0,96ch);align-items:start;gap:clamp(22px,3vw,62px)}
+ .overview-jump{position:sticky;top:92px;padding:21px;display:grid;gap:12px}
+ .overview-jump nav{display:grid;gap:12px}
+ .overview-jump nav a{font-size:14px}
+ .overview-full-link{margin-top:12px;font-weight:650;font-size:14px}
+ .overview-prose{min-width:0;max-width:96ch}
+ .overview-prose section{scroll-margin-top:92px;margin-bottom:34px}
+ .overview-prose section h2{margin:0 0 11px}
+ .overview-reference{color:var(--muted);font-size:14px}
+ @media(max-width:800px){.overview-grid{display:block}.overview-jump{position:static;margin-bottom:28px}.overview-jump nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 18px}}
+ @media(max-width:450px){.overview-jump nav{grid-template-columns:1fr}}
+</style>
