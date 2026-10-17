@@ -1,3 +1,4 @@
+import {geodeticPdfPublications} from './geodetic-pdf-publications.mjs';
 const ccBy4 = 'Creative Commons Attribution 4.0 International (CC BY 4.0)';
 const ccBy4Url = 'https://creativecommons.org/licenses/by/4.0/';
 
@@ -5,7 +6,7 @@ const hosted = item => ({
   ...item,
   hostedLocally: !item.externalPdfUrl,
   pdfPath: item.externalPdfUrl || `/assets/publications/pdfs/${item.fileName}`,
-  thumbnailPath: `/assets/publications/thumbnails/${item.slug}.jpg`,
+  thumbnailPath: `/assets/publications/thumbnails/${item.slug}.${item.generatedCover ? 'svg' : 'jpg'}`,
 });
 
 // Curated Internet publications and contributor-supplied archival copies.
@@ -429,4 +430,4 @@ export const onlinePdfPublications = [
     provenance: 'Copy supplied for this site and publication expressly authorised by the contributor on 17 October 2026.',
     themeIds: ['profession'], keywords: ['GIS', 'skills', 'upskilling', 'Surveying + Spatial', 'professional development']
   }),
-];
+].concat(geodeticPdfPublications.map(hosted));
