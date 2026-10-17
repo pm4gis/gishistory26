@@ -23,7 +23,7 @@ const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
 if(highlights.length<10)throw new Error('Too few curated published highlighted stories');
 const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images)}));
 ---
-<Layout>
+<Layout description="A history of GIS and digital mapping in New Zealand, from early survey computers to Māori GIS, national spatial datasets, web maps and AI in 2025.">
  <div class="wrap home-layout">
   <section class="hero hero--visual hero--topo">
    <div class="hero-documentary-media" data-topo-sources={JSON.stringify(homeTopoMaps.map(({src,alt})=>({src,alt})))} aria-hidden="true">
@@ -47,6 +47,12 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
      <span><strong>240,990</strong> internal links<span class="sr-only"> checked in the latest verified build</span></span>
     </div>
    </div>
+  </section>
+
+  <section class="card home-summary" aria-labelledby="summary-heading">
+   <div><p class="eyebrow">The history in brief</p><h2 id="summary-heading">New Zealand GIS at a glance</h2>
+    <p>From surveying, aerial photography and early computing to national datasets, iwi mapping, web maps and 3D GIS. Read the short history, then explore the chapters and evidence behind it.</p></div>
+   <a class="button" href="/history/">Read the short history →</a>
   </section>
 
   <section id="highlighted-stories" aria-labelledby="highlights-heading">
@@ -169,3 +175,11 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
   }
  </script>
 </Layout>
+
+<style>
+ .home-summary{display:flex;align-items:center;justify-content:space-between;gap:18px 32px;margin:30px 0 42px;padding:24px 30px}
+ .home-summary h2{margin:3px 0 10px}
+ .home-summary p:not(.eyebrow){margin:0;max-width:90ch}
+ .home-summary .button{flex-shrink:0}
+ @media(max-width:800px){.home-summary{display:block;padding:21px}.home-summary .button{margin-top:15px}}
+</style>
