@@ -23,21 +23,21 @@ if(bytes[0]!==0xff||bytes[1]!==0xd8||bytes[bytes.length-2]!==0xff||bytes[bytes.l
  throw Error('Invalid selected image: expected complete JPEG');
 const meta=await (await import('sharp')).default(share).metadata();
 if(meta.width!==1200||meta.height!==630||meta.format!=='jpeg')throw Error('Selected social JPEG has incorrect size');
-// Home title assets are derived from twenty individually identified Drive sheets.
+// Home title assets are either existing documentary images or verified local crops.
 const topo=(await import('../src/lib/home-topo-maps.mjs')).homeTopoMaps;
-if(topo.length!==20)throw Error('Expected twenty topographic title originals');
 for(const map of topo){
  const file='dist'+map.src;
- if(!fs.existsSync(file))throw Error('Missing locally hosted topographic title crop '+map.id);
+ if(!fs.existsSync(file))throw Error('Missing locally hosted homepage title image '+map.id);
  const bytes=fs.statSync(file).size;
- if(bytes<1000||bytes>450*1024)throw Error('Invalid title image size: '+map.id+' '+bytes);
+ if(bytes<1000||bytes>5*1024*1024)throw Error('Invalid title image size: '+map.id+' '+bytes);
  const meta=await (await import('sharp')).default(file).metadata();
- if(meta.format!=='webp'||meta.width!==1400||meta.height!==788)throw Error('Wrong topographic title crop dimensions: '+map.id);
+ if(meta.format!=='webp'||!meta.width||!meta.height)throw Error('Invalid homepage title image: '+map.id);
+ if(map.driveId&&(meta.width!==1400||meta.height!==788))throw Error('Wrong topographic title crop dimensions: '+map.id);
 }
-console.log('Verified twenty authentic-source, optimised homepage title crops');
+console.log('Verified '+topo.length+' locally hosted homepage title images');
 
 const homeHtml=fs.readFileSync('dist/index.html','utf8');
-if(!homeHtml.includes('data-topo-sources=')||!homeHtml.includes('hero--topo')||homeHtml.includes('A different selection appears each time you visit.'))throw Error('Homepage topographic rotation or discreet highlights missing');
+if(!homeHtml.includes('data-topo-sources=')||!homeHtml.includes('hero--topo')||homeHtml.includes('A different selection appears each time you visit.'))throw Error('Homepage image rotation or discreet highlights missing');
 if(!homeHtml.includes('property="og:image"')||!homeHtml.includes('/assets/social/nzgis-selected-20261013.jpg')||!homeHtml.includes('name="twitter:card"')||!homeHtml.includes('image/jpeg'))
  throw Error('Approved social artwork metadata missing from generated homepage');
 console.log('Selected social card verified: 1200 x 630, JPEG, Open Graph and X metadata');
