@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import {chromium} from 'playwright';
-import {contributedPrimarySources as publications} from '../src/lib/contributed-primary-sources.mjs';
+import {publications} from '../src/lib/publications.mjs';
 const base=process.env.QA_BASE_URL||'http://127.0.0.1:4321';
 const browser=await chromium.launch({headless:true});
 const results=[];
@@ -10,7 +10,7 @@ try{
  for(const width of [390,1366]){
   const page=await browser.newPage({viewport:{width,height:850}});
   await page.goto(base+'/publications/');
-  assert.equal(await page.locator('[data-publication]:visible').count(),8);
+  assert.equal(await page.locator('[data-publication]:visible').count(),publications.length);
   for(const palette of ['slate','coastal','forest','archive','bubblegum'])for(const mode of ['light','dark']){
    await page.getByRole('button',{name:/Open settings|Open appearance settings/}).click();
    await page.locator('[data-appearance-mode="'+mode+'"]').click();
@@ -24,16 +24,23 @@ try{
   await page.getByRole('searchbox').fill('Maori');
   assert.ok(await page.locator('[data-publication]:visible').count()>0);
   await page.getByRole('button',{name:'Clear filters'}).click();
-  assert.equal(await page.locator('[data-publication]:visible').count(),8,'Clear filters must restore every card');
+  assert.equal(await page.locator('[data-publication]:visible').count(),publications.length,'Clear filters must restore every card');
   await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('2007');
   assert.equal(await page.locator('[data-publication]:visible').count(),2);
   await page.getByRole('button',{name:'Clear filters'}).click();
-  assert.equal(await page.locator('[data-publication]:visible').count(),8,'Clear filters must restore every card');
+  assert.equal(await page.locator('[data-publication]:visible').count(),publications.length,'Clear filters must restore every card');
   await page.getByRole('combobox',{name:'Theme',exact:true}).selectOption('maori-gis');
   assert.equal(await page.locator('[data-publication]:visible').count(),3);
   await page.reload();assert.equal(await page.locator('[data-publication]:visible').count(),3);
   await page.getByRole('button',{name:'Clear filters'}).click();
-  assert.equal(await page.locator('[data-publication]:visible').count(),8,'Clear filters must restore every card');
+  assert.equal(await page.locator('[data-publication]:visible').count(),publications.length,'Clear filters must restore every card');
+  await page.getByRole('combobox',{name:'Decade',exact:true}).selectOption('197');
+  assert.equal(await page.locator('[data-publication]:visible').count(),1);
+  await page.getByRole('button',{name:'Clear filters'}).click();
+  await page.getByRole('combobox',{name:'Year',exact:true}).selectOption('undated');
+  assert.equal(await page.locator('[data-publication]:visible').count(),1);
+  assert.ok((await page.locator('[data-publication]:visible').innerText()).includes('Hocken'));
+  await page.getByRole('button',{name:'Clear filters'}).click();
   const input=page.getByRole('searchbox');await input.focus();await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(()=>document.activeElement.name),'decade');
   for(const p of publications){
@@ -43,7 +50,9 @@ try{
    const img=page.locator('.publication-overview img');await img.scrollIntoViewIfNeeded();
    assert.ok(await img.evaluate(el=>el.complete&&el.naturalWidth>0));
    assert.ok((await page.locator('main').innerText()).includes('Original publication:'));
-   assert.ok((await page.locator('main').innerText()).includes('17 October 2026'));
+   assert.ok((await page.locator('main').innerText()).includes(p.archivedDate==='2026-10-11'?'11 October 2026':'17 October 2026'));
+   if(!p.startDate){assert.equal(await page.locator('a[href^="/timeline/?event="]').count(),0);assert.ok(!(await page.locator('script[type="application/ld+json"]').textContent()).includes('datePublished'));}
+   if(p.legacyDocumentUrl){const legacy=await page.request.get(base+p.legacyDocumentUrl);assert.equal(legacy.status(),200);}
    const original=await page.request.get(base+p.assetPath);assert.equal(original.status(),200);
    assert.equal(crypto.createHash('sha256').update(await original.body()).digest('hex'),p.sha256);
    const pdf=await page.request.get(base+p.viewerPath);assert.equal(pdf.status(),200);
@@ -52,9 +61,9 @@ try{
   await page.goto(base+'/publications/');
   if(width===390)await page.locator('.mobile-menu > summary').click();
   assert.ok(await page.locator(width===390?'.nav--mobile a[href="/publications/"]':'.nav--desktop a[href="/publications/"]').isVisible());
-  results.push({width,publications:8,palettes:5,modes:2,filters:'passed',keyboard:'passed',originalChecksums:'passed',viewerResponses:'passed',navigation:'passed'});
+  results.push({width,publications:publications.length,palettes:5,modes:2,filters:'passed',keyboard:'passed',originalChecksums:'passed',viewerResponses:'passed',navigation:'passed'});
   await page.close();
  }
  fs.mkdirSync('docs/verification',{recursive:true});fs.writeFileSync('docs/verification/publications-browser-qa.json',JSON.stringify({base,results},null,2)+'\n');
- console.log('Publications browser QA passed: mobile/desktop, all palettes and modes, filters, keyboard order, eight original checksums and PDF viewing responses.');
+ console.log('Publications browser QA passed: mobile/desktop, all palettes and modes, filters, keyboard order, all publication original checksums and PDF viewing responses.');
 }finally{await browser.close();}

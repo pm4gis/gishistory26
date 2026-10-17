@@ -1,23 +1,28 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {contributedPrimarySources} from '../../lib/contributed-primary-sources.mjs';
+import {publications} from '../../lib/publications.mjs';
 import {dataset} from '../../lib/data';
-export function getStaticPaths(){return contributedPrimarySources.map(item=>({params:{slug:item.slug},props:{item}}));}
+export function getStaticPaths(){return publications.map(item=>({params:{slug:item.slug},props:{item}}));}
 const {item}=Astro.props;
 const d=await dataset();
-const records=d.records.filter((r:any)=>(item.recordIds||[]).includes(r.id));
+const linkedPassage=item.afterParagraphId?d.passages.find((p:any)=>p.blocks?.some((b:any)=>b.id===item.afterParagraphId)):null;
+const linkedRecords=new Set([...(item.recordIds||[]),...(linkedPassage?.recordIds||[])]);
+const records=d.records.filter((r:any)=>linkedRecords.has(r.id));
+const archiveDate=new Intl.DateTimeFormat('en-NZ',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(item.archivedDate+'T12:00:00Z'));
 const themes=d.themes.filter((t:any)=>item.themeIds.includes(t.id));
 const images=d.images.filter((i:any)=>i.publicationSlug===item.slug);
-const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+item.publicationUrl,title:item.title,name:item.title,...(item.format==='PowerPoint'?{}:item.slug==='gis-mapping-wetland-projects-2021'?{author:{'@type':'Person',name:'Duane Wilkins'},publisher:{'@type':'Organization',name:'Manaaki Whenua – Landcare Research'}}:item.slug==='taranaki-cdem-geospatial-strategy-2021'?{author:[{'@type':'Person',name:'Teresa Gordon'},{'@type':'Person',name:'Ed Cook'}],publisher:{'@type':'Organization',name:'Taranaki Civil Defence and Emergency Management Group'}}:{author:{'@type':'Organization',name:item.creator}}),datePublished:item.startDate,url:'https://history.pm4gis.nz'+item.publicationUrl,description:item.summary,encoding:{'@type':'MediaObject',contentUrl:'https://history.pm4gis.nz'+item.assetPath,encodingFormat:item.format==='PDF'?'application/pdf':'application/vnd.openxmlformats-officedocument.presentationml.presentation'}}];
+const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+item.publicationUrl,title:item.title,name:item.title,...(item.format==='PowerPoint'?{}:item.slug==='gis-mapping-wetland-projects-2021'?{author:{'@type':'Person',name:'Duane Wilkins'},publisher:{'@type':'Organization',name:'Manaaki Whenua – Landcare Research'}}:item.slug==='taranaki-cdem-geospatial-strategy-2021'?{author:[{'@type':'Person',name:'Teresa Gordon'},{'@type':'Person',name:'Ed Cook'}],publisher:{'@type':'Organization',name:'Taranaki Civil Defence and Emergency Management Group'}}:{author:{'@type':item.creatorType||'Organization',name:item.creator}}),...(item.startDate?{datePublished:item.startDate}:{}),url:'https://history.pm4gis.nz'+item.publicationUrl,description:item.summary,encoding:{'@type':'MediaObject',contentUrl:'https://history.pm4gis.nz'+item.assetPath,encodingFormat:item.format==='PDF'?'application/pdf':'application/vnd.openxmlformats-officedocument.presentationml.presentation'}}];
 ---
 <Layout title={item.title+' · Publications'} description={item.summary} structuredData={structuredData}>
  <article class="page-wrap publication-detail" data-pagefind-body><span class="sr-only" data-pagefind-filter="type">Publication</span>{themes.map((t:any)=><span class="sr-only" data-pagefind-filter="theme">{t.title}</span>)}
   <p><a href="/publications/">All publications</a></p><p class="eyebrow">{item.kind} · {item.date}</p><h1 class="page-title">{item.title}</h1>
-  <div class="publication-overview"><a href={item.viewerPath}><img src={item.thumbnailPath} alt={'Cover of '+item.title} width="720" height="960"/></a><div><p>{item.creator}</p><p>{item.format} · {item.pages} {item.format==='PDF'?'pages':'slides'} · {(item.bytes/1000000).toFixed(2)} MB</p><p>{item.summary}</p><p><a class="button" href={item.assetPath} download>Download original {item.format}</a> <a class="button" href={item.viewerPath}>Open PDF viewer</a></p><p class="muted">Original publication: {item.date}. Added to this document archive: 17 October 2026.</p>{item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}</div></div>
+  <div class="publication-overview"><a href={item.viewerPath}><img src={item.thumbnailPath} alt={'Cover of '+item.title} width="720" height="960"/></a><div><p>{item.creator}</p><p>{item.format} · {item.pages} {item.format==='PDF'?'pages':'slides'} · {(item.bytes/1000000).toFixed(2)} MB</p><p>{item.summary}</p><p><a class="button" href={item.assetPath} download>Download original {item.format}</a> <a class="button" href={item.viewerPath}>Open PDF viewer</a></p><p class="muted">Original publication: {item.date}. Added to this document archive: {archiveDate}.</p>{item.viewingVersionNote&&<p>{item.viewingVersionNote}</p>}</div></div>
   <h2>Read the document</h2><p>Use the PDF controls to zoom and move between pages. If your browser does not display PDFs, <a href={item.viewerPath}>open or download the PDF</a>.</p>
   <object data={item.viewerPath} type="application/pdf" class="publication-viewer" aria-label={'PDF viewer: '+item.title}><p><a href={item.viewerPath}>Read the PDF version of {item.title}</a></p></object>
   <h2>Historical evidence</h2><ul>{item.findings.map(f=><li>{f.page}: {f.text}</li>)}</ul>
-  <h2>Connected history</h2><p><a href={'/stories/'+item.article+'/'}>Read the related historical chapter</a> · <a href={'/timeline/?event=source-'+item.slug}>View the publication event on the timeline</a></p>
+  <h2>Connected history</h2><p><a href={item.chapterUrl}>Read the related historical chapter</a>{item.eventId&&<> · <a href={'/timeline/?event='+item.eventId}>View the publication event on the timeline</a></>}</p>
+  {item.legacyDocumentUrl&&<p><a href={item.legacyDocumentUrl}>Existing document source page</a></p>}
+  {!item.startDate&&<p>The publication date is not established. This reference guide is kept outside the dated historical timeline.</p>}
   <ul>{records.map((r:any)=><li><a href={r.url}>{r.name}</a></li>)}{themes.map((t:any)=><li><a href={'/themes/'+t.slug+'/'}>{t.title}</a></li>)}</ul>
   {images.length>0&&<><h2>Illustrations from this publication</h2><ul>{images.map((i:any)=><li><a href={'/images/'+i.slug+'/'}>{i.title}</a></li>)}</ul></>}
   <h2>Provenance and attribution</h2><p>{item.provenance}</p><p>{item.rights}</p>{item.sourceUrl&&<p><a href={item.sourceUrl}>Publisher-hosted original</a></p>}

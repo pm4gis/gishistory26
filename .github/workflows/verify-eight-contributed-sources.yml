@@ -4,6 +4,8 @@ on:
     paths:
       - 'src/content/events/source-*.json'
       - 'src/lib/contributed-primary-sources.mjs'
+      - 'src/lib/publications.mjs'
+      - 'tests/publications-catalogue.test.mjs'
       - 'src/pages/sources/documents/**'
       - 'src/pages/publications/**'
       - 'scripts/publications-browser-qa.mjs'
