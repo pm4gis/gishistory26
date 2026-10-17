@@ -5,7 +5,7 @@
  import {chapterDocuments} from '../lib/chapter-documents.mjs';
  import {chapterCollectionSources} from '../lib/chapter-collection-sources.mjs';
  import WanangaVideos from './WanangaVideos.svelte';
- import {passageContributionMailtoUrl,passageContributionPageUrl} from '../lib/passage-contributions.mjs';
+ import {passageContributionPageUrl} from '../lib/passage-contributions.mjs';
  import {ngaPoutamaForPassage} from '../lib/nga-poutama-videos.mjs';
  import {placeChapterImages} from '../lib/chapter-media.mjs';
  export let article:any;export let passages:any[]=[];export let records:any[]=[];export let events:any[]=[];export let relationships:any[]=[];export let images:any[]=[];export let themes:any[]=[];export let previous:any;export let next:any;export let decorSrc:string='';export let chapterNavImages:Record<string,any>={};
@@ -54,8 +54,7 @@
 <svelte:window on:keydown={(e)=>{if(e.key==='Escape'&&selected){e.preventDefault();close(true)}}}/>
 <div class="reading-shell" style={`--reading-size:${size}px`}>
  <header class="reading-heading"><a class="breadcrumb" href="/read/">Chapter contents / {article.slug==='preface'?'Preface':'Chapter '+article.readingOrder}</a><h1>{article.title}</h1><p class="intro">{article.summary}</p><div class="chips">{#each currentThemes as t}<a class="button" href={'/themes/'+t.slug+'/'}>{t.title}</a>{/each}</div></header>
- {#key complete?'chapter':current?.id||'page'}<Timeline {events} compact={true} currentPassageId={complete?null:current?.id||null} onSelect={selectEvent}/>{/key}
- <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Related entries · {relevant.length}</button></div>
+ <div class="mobile-controls"><button aria-expanded={contentsOpen} on:click={()=>contentsOpen=!contentsOpen}>Contents</button><button aria-expanded={relatedOpen} on:click={()=>relatedOpen=!relatedOpen}>Timeline & related · {relevant.length}</button></div>
  <div class="reading-grid"><aside class:open={contentsOpen} class="contents" aria-label="Chapter contents"><p class="eyebrow">In this chapter</p>{#each passages as p,i}<a href={article.url+'?mode=page#'+p.slug} class:active={page===i} on:click={(e)=>{e.preventDefault();go(i);contentsOpen=false}}>{p.title}</a>{/each}<a href="/read/">All chapters →</a></aside>
  <article class="page" aria-label="Chapter text" data-pagefind-body ><span class="sr-only" data-pagefind-filter="type">Chapter</span>
  <div class="toolbar"><div class="actions"><button aria-pressed={!complete} on:click={()=>go(page)}>Page by page</button><button aria-pressed={complete} on:click={chapter}>Complete chapter</button></div><div class="actions"><button aria-label="Decrease text size" on:click={()=>textSize(-1)}>A−</button><button aria-label="Increase text size" on:click={()=>textSize(1)}>A+</button><button on:click={()=>{save();status='Reading position saved on this device.'}}>Bookmark</button></div></div>
@@ -92,7 +91,7 @@
    <WanangaVideos inline={true} compact={true} videos={ngaPoutamaForPassage(p.id)}/>
  {/if}
  {/each}
- <div class="actions passage-actions"><a href={article.url+'#'+p.slug}>Link to passage</a><button on:click={()=>copy(p)}>Copy link</button><a class="button passage-contribute" aria-label={"Contribute information about "+p.title} href={passageContributionMailtoUrl(article,p)}>Contribute</a><a class="contribution-help" aria-label={"Alternative email options for "+p.title} href={passageContributionPageUrl(article,p)}>Email options</a></div>
+ <details class="passage-tools"><summary>Share or correct this passage</summary><div class="passage-tools-inner"><button type="button" on:click={()=>copy(p)}>Copy link</button><a href={passageContributionPageUrl(article,p)} aria-label={'Contribute information about '+p.title}>Contribute</a></div></details>
  {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(s.url)}<a href={s.url}>{s.label}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
  </section>{/each}
  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
@@ -121,7 +120,9 @@
   {:else}<a href="/read/">Back to contents</a>{/if}
  </nav>
  </article>
- <aside class:open={relatedOpen} class="related" aria-label="Related material"><p class="eyebrow">Follow a connection</p><h3>Related entries</h3><div class="related-filters" role="group" aria-label="Related entry types"><button aria-pressed={relatedKind==='All'} on:click={()=>{relatedKind='All';relatedAll=false}}>All</button>{#each relatedKinds as kind}<button aria-pressed={relatedKind===kind} on:click={()=>{relatedKind=kind;relatedAll=false}}>{kind}</button>{/each}</div><div class="related-list">{#each (relatedAll?filteredRelated:filteredRelated.slice(0,8)) as r}<a class="related-item" href={recordLink(r)} on:click={relatedClick}>{r.name}<span>{r.kind} · indexed with {complete?'this chapter':'this passage'}</span></a>{/each}</div>{#if filteredRelated.length>8}<button aria-expanded={relatedAll} on:click={()=>relatedAll=!relatedAll}>{relatedAll?'Show fewer entries':`View all ${filteredRelated.length} entries`}</button>{/if}{#if !filteredRelated.length}<p class="muted">No matching entries. Select All to see the entries indexed for this {complete?'chapter':'passage'}.</p>{/if}
+ <aside class:open={relatedOpen} class="related" aria-label="Timeline and related material">
+ {#key complete?'chapter':current?.id||'page'}<Timeline {events} compact={true} sidebar={true} currentPassageId={complete?null:current?.id||null} onSelect={selectEvent}/>{/key}
+ <p class="eyebrow">Follow a connection</p><h3>Related entries</h3><div class="related-filters" role="group" aria-label="Related entry types"><button aria-pressed={relatedKind==='All'} on:click={()=>{relatedKind='All';relatedAll=false}}>All</button>{#each relatedKinds as kind}<button aria-pressed={relatedKind===kind} on:click={()=>{relatedKind=kind;relatedAll=false}}>{kind}</button>{/each}</div><div class="related-list">{#each (relatedAll?filteredRelated:filteredRelated.slice(0,8)) as r}<a class="related-item" href={recordLink(r)} on:click={relatedClick}>{r.name}<span>{r.kind} · indexed with {complete?'this chapter':'this passage'}</span></a>{/each}</div>{#if filteredRelated.length>8}<button aria-expanded={relatedAll} on:click={()=>relatedAll=!relatedAll}>{relatedAll?'Show fewer entries':`View all ${filteredRelated.length} entries`}</button>{/if}{#if !filteredRelated.length}<p class="muted">No matching entries. Select All to see the entries indexed for this {complete?'chapter':'passage'}.</p>{/if}
  {#if currentEvents.length}<details><summary>Linked events · {currentEvents.length}</summary>{#each currentEvents as e}<button on:click={()=>selectEvent(e)}>{e.dateDisplay} · {e.label}</button>{/each}</details>{/if}
  {#if relationships.length}<details><summary>Relationship evidence</summary>{#each relationships as edge}<p><a href={records.find(r=>r.id===edge.a)?.url||'/browse/'}>{records.find(r=>r.id===edge.a)?.name||edge.a}</a> · {edge.label} · <a href={records.find(r=>r.id===edge.b)?.url||'/browse/'}>{records.find(r=>r.id===edge.b)?.name||edge.b}</a></p><p class="muted">{edge.basis}</p>{#each edge.sources||[] as s}{#if safe(s.url)}<a href={s.url}>{s.label}</a>{/if}{/each}{/each}</details>{/if}<p><a href={'/network/?focus='+encodeURIComponent(relevant[0]?.id||article.id)}>Optional network view →</a></p></aside></div>
 </div>

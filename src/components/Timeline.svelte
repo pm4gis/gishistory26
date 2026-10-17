@@ -7,6 +7,7 @@
  import {siteContributionPageUrl,productionOrigin} from '../lib/passage-contributions.mjs';
  export let events:any[]=[];
  export let compact=false;
+ export let sidebar=false;
  export let currentPassageId:string|null=null;
  export let onSelect:(e:any)=>void=()=>{};
  let from='';
@@ -124,6 +125,25 @@
   return()=>window.removeEventListener('popstate',restore);
  });
 </script>
+{#if sidebar}
+<section class="chapter-sidebar-timeline" aria-label="Chapter timeline">
+ <p class="eyebrow">Chronology</p>
+ <h3>{currentPassageId?'This passage in time':'Chapter timeline'}</h3>
+ {#if filtered.length}
+  <ol class="sidebar-timeline-list">
+   {#each filtered.slice(0,5) as event (event.id)}
+    <li><button type="button" on:click={()=>pick(event)}><time>{event.dateDisplay}</time><span>{event.label}</span></button></li>
+   {/each}
+  </ol>
+  {#if filtered.length>5}<details><summary>Show {filtered.length-5} more events</summary><ol class="sidebar-timeline-list">
+   {#each filtered.slice(5) as event (event.id)}<li><button type="button" on:click={()=>pick(event)}><time>{event.dateDisplay}</time><span>{event.label}</span></button></li>{/each}
+  </ol></details>{/if}
+ {:else}
+  <p class="muted">No events linked to this {currentPassageId?'passage':'chapter'}.</p>
+ {/if}
+ <p class="sidebar-timeline-footer"><a href="/timeline/">Explore the full timeline →</a></p>
+</section>
+{:else}
 <section class="timeline-box" aria-label={compact && currentPassageId && !showChapterEvents ? 'Events linked to this passage' : compact ? 'Chapter timeline' : 'Explore the chronology'}><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?(currentPassageId && !showChapterEvents?'This page in time':'This chapter in time'):'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
  {#if compact && currentPassageId}<div class="timeline-scope-controls"><p aria-live="polite">{showChapterEvents?`Showing all ${timelineEvents.length} events in this chapter.`:`${pageEvents.length} ${pageEvents.length===1?'event':'events'} linked to this passage.`}</p>{#if pageEvents.length!==timelineEvents.length}<button type="button" aria-pressed={showChapterEvents} on:click={()=>{showChapterEvents=!showChapterEvents;selected=null;hoveredId=''}}>{showChapterEvents?'Show this page only':`Browse all ${timelineEvents.length} chapter events`}</button>{/if}</div>{/if}
  {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={()=>updateURL(selected?.id,true)}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;onSelect(null);zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
@@ -226,6 +246,7 @@
  </section>
  {/if}
 </section>
+{/if}
 <style>
 .timeline-scope-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0;padding:9px 12px;color:var(--muted);font-size:13px;background:var(--glass);border:1px solid var(--line);border-radius:12px;box-shadow:inset 0 1px 0 color-mix(in srgb,var(--surface) 68%,transparent)}
 .timeline-scope-controls p{margin:0}

@@ -1,0 +1,68 @@
+---
+const {title,pdfPath,previous=null,next=null,position,total}=Astro.props;
+const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
+---
+<article class="publication-reader" data-pagefind-body>
+ <header class="publication-reader-bar">
+  <div class="publication-reader-heading">
+   <a class="publication-reader-back" href="/publications/">← Publications</a>
+   <h1>{title}</h1>
+  </div>
+  <div class="publication-reader-controls">
+   <span class="publication-reader-count">{position} of {total}</span>
+   <nav class="publication-reader-nav" aria-label="Browse publications">
+    {previous?<a href={previous.url} rel="prev" aria-label={'Previous PDF: '+previous.title}>← Previous</a>:<span class="inactive" aria-hidden="true">← Previous</span>}
+    {next?<a href={next.url} rel="next" aria-label={'Next PDF: '+next.title}>Next →</a>:<span class="inactive" aria-hidden="true">Next →</span>}
+   </nav>
+   <button class="publication-reader-expand" type="button" data-pdf-expand aria-label="Read PDF full screen">Full screen</button>
+  </div>
+ </header>
+ <section class="publication-reader-frame" id="publication-pdf" aria-label={'Reading '+title}>
+  <object data={pdfUrl} type="application/pdf" aria-label={'Read PDF: '+title} class="publication-reader-object">
+   <p class="publication-reader-fallback">Your browser could not display this PDF here. <a href={pdfPath} target="_blank" rel="noopener noreferrer">Open the PDF source</a>.</p>
+  </object>
+ </section>
+ <div class="publication-reader-below">
+  <nav class="publication-reader-bottom-nav" aria-label="Continue reading publications">
+   {previous?<a href={previous.url} rel="prev">← Previous PDF</a>:<span></span>}
+   <a href="/publications/">All publications</a>
+   {next?<a href={next.url} rel="next">Next PDF →</a>:<span></span>}
+  </nav>
+  <section class="publication-reader-details" aria-label="About this publication">
+   <slot />
+  </section>
+ </div>
+</article>
+<script>
+ const expand=document.querySelector<HTMLButtonElement>('[data-pdf-expand]');
+ const frame=document.getElementById('publication-pdf');
+ if(expand && frame){
+  if(typeof frame.requestFullscreen!=='function') expand.hidden=true;
+  else expand.addEventListener('click',()=>{
+   if(document.fullscreenElement) {void document.exitFullscreen();}
+   else {void frame.requestFullscreen();}
+  });
+ }
+</script>
+<style>
+ .publication-reader{width:100%;max-width:none;margin:0 auto;padding:12px clamp(8px,1.15vw,22px) 54px}
+ .publication-reader-bar{min-height:62px;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:0 2px 10px}
+ .publication-reader-heading{min-width:0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+ .publication-reader-back{white-space:nowrap;font-size:13px}
+ .publication-reader-heading h1{font-size:clamp(18px,1.45vw,24px);line-height:1.3;letter-spacing:normal;margin:0;font-weight:650;max-width:70ch}
+ .publication-reader-controls{display:flex;align-items:center;gap:12px;flex-shrink:0}
+ .publication-reader-count{font-size:13px;color:var(--muted);white-space:nowrap}
+ .publication-reader-nav{display:flex;gap:5px}
+ .publication-reader-nav a,.publication-reader-expand{font-size:13px;white-space:nowrap;border:1px solid var(--line);border-radius:8px;min-height:38px;padding:8px 12px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:var(--text);background:var(--surface)}
+ .publication-reader-nav a:hover,.publication-reader-expand:hover{border-color:var(--accent);background:var(--raised)}
+ .publication-reader-nav .inactive{display:none}
+ .publication-reader-frame{width:100%;height:calc(100dvh - 153px);min-height:680px;max-height:none;overflow:hidden;border:1px solid var(--line);border-radius:7px;background:#e5e5e5}
+ .publication-reader-object{display:block;width:100%;height:100%;border:0;background:#eee;color:#111}
+ .publication-reader-fallback{color:#111;padding:24px}
+ .publication-reader-frame:fullscreen{width:100vw;height:100dvh;min-height:0;border:0;border-radius:0;padding:0}
+ .publication-reader-below{max-width:980px;margin:0 auto;padding:24px 12px 0}
+ .publication-reader-bottom-nav{display:flex;gap:16px;justify-content:space-between;align-items:center;padding:8px 0 22px;border-bottom:1px solid var(--line);font-size:15px}
+ .publication-reader-details{padding-top:12px;overflow-wrap:anywhere}
+ @media(max-width:1050px){.publication-reader-bar{align-items:flex-start;flex-direction:column;gap:10px}.publication-reader-controls{width:100%;justify-content:flex-end}.publication-reader-frame{height:calc(100dvh - 212px);min-height:620px}}
+ @media(max-width:600px){.publication-reader{padding:8px 6px 38px}.publication-reader-bar{padding:2px 8px 12px;gap:8px}.publication-reader-heading{display:block}.publication-reader-heading h1{margin:6px 0 0;font-size:19px}.publication-reader-controls{justify-content:space-between;gap:6px;flex-wrap:wrap}.publication-reader-nav a,.publication-reader-expand{font-size:12px;padding:8px 9px;min-height:36px}.publication-reader-count{font-size:12px}.publication-reader-frame{height:calc(100dvh - 205px);min-height:480px;border-radius:3px}.publication-reader-below{padding:14px 12px 0}.publication-reader-bottom-nav{gap:8px;font-size:13px;flex-wrap:wrap}}
+</style>
