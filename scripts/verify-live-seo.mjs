@@ -163,7 +163,7 @@ for (const path of ['/robots.txt', '/sitemap.xml', '/', '/history/', '/stories/l
     assert(!/captcha|challenge-platform|just a moment/i.test(body.slice(0,2500)),
       path + ': simulated Googlebot received a challenge response');
     if (path.endsWith('/')) {
-      assert(/<title>[\\s\\S]*?<\\/title>/i.test(body), path + ': bot did not receive rendered page title');
+      assert(body.includes('<title>') && body.includes('</title>'), path + ': bot did not receive rendered page title');
       assert(body.includes('rel="canonical"'), path + ': bot did not receive canonical HTML');
       assert(!/name="robots"[^>]+noindex/i.test(body), path + ': bot received noindex');
     }
