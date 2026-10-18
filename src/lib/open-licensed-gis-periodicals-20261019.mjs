@@ -67,17 +67,17 @@ export const openLicensedGisPeriodicals = [
   {
     "slug": "osgeo-journal-canterbury-media-mapping-2011",
     "fileName": "osgeo-journal-canterbury-media-mapping-2011.pdf",
-    "title": "OSGeo Journal, volume 8: Media Mapping by Phil Bartie and Simon Kingham",
-    "creator": "OSGeo Journal; Phil Bartie and Simon Kingham, University of Canterbury",
+    "title": "Media Mapping: Using Georeferenced Images and Audio to Support Environmental Sensor Analysis",
+    "creator": "Phil Bartie and Simon Kingham",
     "year": "2011",
     "date": "February 2011",
-    "kind": "Geospatial professional research journal",
+    "kind": "OSGeo Journal 8, pp. 23–30",
     "topic": "Christchurch mobile GIS with georeferenced photos and audio for environmental sensor data",
-    "summary": "Original OSGeo Journal volume 8 (2011), containing Canterbury researchers Phil Bartie and Simon Kingham's first-hand account of mobile georeferenced audio and imagery for analysing urban air-quality monitoring data, pp. 23–30.",
+    "summary": "Original eight-page 2011 OSGeo Journal article by University of Canterbury researchers Phil Bartie and Simon Kingham on georeferenced mobile photographs and audio paired with urban air-quality sensor measurements.",
     "sourceName": "OSGeo Journal",
-    "sourceUrl": "https://citeseerx.ist.psu.edu/document?doi=ae2a4f473aae10d14840e25331095651f11ede91&repid=rep1&type=pdf",
+    "sourceUrl": "https://journal.osgeo.org/index.php/journal/article/download/175/150",
     "license": "Creative Commons Attribution-NoDerivatives 3.0, OSGeo Journal original publication licence. Preserve original unchanged.",
-    "attribution": "Bartie, P. and Kingham, S. (2011), Media Mapping, OSGeo Journal 8, pp. 23–30. Original volume published February 2011, CC BY-ND 3.0.",
+    "attribution": "Bartie, P. and Kingham, S. (2011), Media Mapping: Using Georeferenced Images and Audio to Provide Supporting Information for the Analysis of Environmental Sensor Datasets, OSGeo Journal 8, pp. 23–30. CC BY-ND 3.0.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -92,9 +92,9 @@ export const openLicensedGisPeriodicals = [
     ],
     "checkTerms": [
       "media mapping",
-      "kingham",
-      "journal"
-    ]
+      "kingham"
+    ],
+    "expectedPages": 8
   }
 ];
 export const openLicensedPeriodicalChapterLinks = {
