@@ -23,14 +23,14 @@ try{
   await overflow(page,width+' homepage');
   if(width<=1180){
    const mobile=page.locator('.mobile-menu');
-   assert.ok(await mobile.locator('summary').isVisible(),width+' menu toggle missing');
-   await mobile.locator('summary').click();
+   assert.ok(await mobile.locator(':scope > summary').isVisible(),width+' menu toggle missing');
+   await mobile.locator(':scope > summary').click();
    const nav=page.locator('.nav--mobile');
    assert.ok(await nav.isVisible(),'menu did not open');
    const b=await nav.boundingBox();assert.ok(b&&b.x>=-1&&b.x+b.width<=width+1,'mobile menu falls outside viewport');
    assert.ok(await nav.locator('a[href="/publications/"]').isVisible());
    await screenshot(page,'menu-'+width);
-   await mobile.locator('summary').click();
+   await mobile.locator(':scope > summary').click();
   }
   response=await page.goto(base+'/publications/',{waitUntil:'domcontentloaded'});
   assert.equal(response.status(),200,'publication library must load');
