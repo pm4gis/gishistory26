@@ -5,18 +5,6 @@ import {mirroredPre2000PdfSlugs} from './pre2000-pdfs-mirrored.mjs';
 const mirrored=new Set(mirroredPre2000PdfSlugs);
 const source=[
   [
-    "first-order-triangulation-1978",
-    "First-order geodetic triangulation of New Zealand, 1909–49; 1973–74",
-    "L. P. Lee · Department of Lands and Survey",
-    "1978",
-    "1978 · Technical Series No. 1",
-    "Historical geodetic survey",
-    "Foundational account of triangulation and the reference network underpinning NZGD1949; includes the later 1973–74 observations.",
-    "https://www.linz.govt.nz/system/files_force/media/file-attachments/first-order-triangulation.pdf",
-    "New Zealand datum, triangulation, geodetic survey",
-    "profession"
-  ],
-  [
     "nzgd49-wgs84-transformation-1997",
     "Recommended transformation parameters from WGS84 to NZGD49",
     "Merrin Pearse and Chris Crook · LINZ",
