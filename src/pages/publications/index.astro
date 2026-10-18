@@ -23,7 +23,8 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
   <header class="publication-heading"><p class="eyebrow">Documentary archive</p><h1>Publications</h1><p>Browse the collection chronologically. Select a decade, theme or organisation to narrow the list; select a document to read it here.</p></header>
   <div class="publication-library-layout">
    <aside class="publication-sidebar" aria-label="Publication filters">
-    <nav class="publication-filter-menu" aria-label="Filter publications">
+    <button class="publication-mobile-filter-toggle" type="button" aria-expanded="false" aria-controls="publication-filters" data-publication-filter-toggle>Filter publications <span aria-hidden="true">▾</span></button>
+    <nav id="publication-filters" class="publication-filter-menu" aria-label="Filter publications">
      <div class="publication-sidebar-heading"><h2>Filter</h2><button type="button" data-filter-kind="all" data-filter-value="" aria-pressed="true">All publications <span>{library.length}</span></button></div>
      <section aria-labelledby="decade-filter-title">
       <h3 id="decade-filter-title">Decade</h3>
@@ -73,6 +74,10 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  const filters=[...document.querySelectorAll<HTMLButtonElement>('[data-filter-kind]')];
  const cards=[...document.querySelectorAll<HTMLElement>('[data-publication]')];
  const counter=document.getElementById('publication-count');
+ const mobileFilterToggle=document.querySelector<HTMLButtonElement>('[data-publication-filter-toggle]');
+ const sidebar=document.querySelector<HTMLElement>('.publication-sidebar');
+ function closeMobileFilters(){sidebar?.classList.remove('is-open');mobileFilterToggle?.setAttribute('aria-expanded','false');}
+ mobileFilterToggle?.addEventListener('click',()=>{const open=sidebar?.classList.toggle('is-open');mobileFilterToggle.setAttribute('aria-expanded',String(!!open));});
  const empty=document.getElementById('publication-empty');
  const validKinds=new Set(['all','decade','theme','creator']);
  let kind:Kind='all',value='';
@@ -94,6 +99,7 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
    const active=button.dataset.filterKind===kind&&button.dataset.filterValue===value;
    button.setAttribute('aria-pressed',String(active));
   });
+  if(mobileFilterToggle)mobileFilterToggle.firstChild!.textContent=kind==='all'?'Filter publications ':'Filter: '+(filters.find(b=>b.dataset.filterKind===kind&&b.dataset.filterValue===value)?.textContent?.trim()||'Selected')+' ';
   if(counter)counter.textContent=count+' '+(count===1?'publication':'publications')+' · oldest first';
   if(empty)empty.hidden=count>0;
   if(kind==='creator')document.querySelector<HTMLDetailsElement>('.publication-org-filters')?.setAttribute('open','');
@@ -104,11 +110,12 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
    history.replaceState(null,'',u.pathname+u.search+u.hash);
   }
  }
- filters.forEach(button=>button.addEventListener('click',()=>{kind=button.dataset.filterKind as Kind;value=button.dataset.filterValue||'';apply(true);}));
+ filters.forEach(button=>button.addEventListener('click',()=>{kind=button.dataset.filterKind as Kind;value=button.dataset.filterValue||'';apply(true);if(window.matchMedia('(max-width:650px)').matches)closeMobileFilters();}));
  window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);const k=p.get('filter')||'all',v=p.get('value')||'';kind=validKinds.has(k)&&filters.some(b=>b.dataset.filterKind===k&&b.dataset.filterValue===v)?k as Kind:'all';value=kind==='all'?'':v;apply(false);});
  apply(false);
 </script>
 <style>
+ .publication-mobile-filter-toggle{display:none}
  .publication-library{width:100%;max-width:none;padding:30px clamp(12px,2vw,36px) 60px;margin:0}
  .publication-heading{margin:0 0 22px}.publication-heading h1{font-size:clamp(32px,3.6vw,52px);margin:6px 0 10px}.publication-heading>p:last-child{max-width:90ch;color:var(--muted);margin:0}
  .publication-library-layout{display:grid;grid-template-columns:clamp(205px,17vw,285px) minmax(0,1fr);gap:clamp(16px,2vw,34px);align-items:start}
@@ -140,3 +147,4 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  @media(max-width:650px){.publication-library{padding:18px 12px 38px}.publication-library-layout{display:block}.publication-sidebar{position:static;max-height:none;margin-bottom:16px}.publication-filter-menu{padding:12px}.publication-filter-menu section{display:inline-block;vertical-align:top;width:49%;padding:0 7px 0 0}.publication-filter-options button{font-size:12px}.publication-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.publication-cover{height:142px}.publication-copy{padding:9px;gap:5px}.publication-copy h3{font-size:13px}.publication-copy .eyebrow{font-size:9px}.publication-creator{font-size:11px}.publication-summary{font-size:12px;-webkit-line-clamp:2;line-clamp:2}.publication-org-filters .publication-filter-options{max-height:230px}}
  @media(max-width:370px){.publication-grid{grid-template-columns:1fr}.publication-cover{height:185px}}
 </style>
+
