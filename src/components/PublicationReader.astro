@@ -9,11 +9,11 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
    <h1>{title}</h1>
   </div>
   <div class="publication-reader-controls">
-   <span class="publication-reader-count">{position} of {total}</span>
-   <nav class="publication-reader-nav" aria-label="Browse publications">
+   {position!=null&&total!=null&&<span class="publication-reader-count">{position} of {total}</span>}
+   {(previous||next)&&<nav class="publication-reader-nav" aria-label="Browse publications">
     {previous?<a href={previous.url} rel="prev" aria-label={'Previous publication: '+previous.title}>← Previous</a>:<span class="inactive" aria-hidden="true">← Previous</span>}
     {next?<a href={next.url} rel="next" aria-label={'Next publication: '+next.title}>Next →</a>:<span class="inactive" aria-hidden="true">Next →</span>}
-   </nav>
+   </nav>}
    {!sourceOnly&&<><a class="publication-reader-open" href={pdfPath} target="_blank" rel="noopener noreferrer">Open document ↗</a><button class="publication-reader-expand" type="button" data-pdf-expand aria-label="Read PDF full screen">Full screen</button></>}
   </div>
  </header>
