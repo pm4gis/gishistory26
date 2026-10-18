@@ -6,6 +6,7 @@ on:
       - '.github/workflows/acquire-linz-historical-reports-20261018.yml'
       - 'scripts/acquire-linz-historical-reports-20261018.mjs'
       - 'src/lib/linz-historical-reports-20261018.mjs'
+      - 'tests/publication-reader-layout.test.mjs'
   workflow_dispatch:
 permissions:
   contents: write
