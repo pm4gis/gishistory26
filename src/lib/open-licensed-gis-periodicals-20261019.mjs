@@ -30,8 +30,7 @@ export const openLicensedGisPeriodicals = [
     ],
     "checkTerms": [
       "new zealand",
-      "niwa",
-      "geonetwork"
+      "niwa"
     ]
   },
   {
@@ -60,9 +59,8 @@ export const openLicensedGisPeriodicals = [
       "open source"
     ],
     "checkTerms": [
-      "australia/new zealand",
-      "gis",
-      "journal"
+      "australia",
+      "new zealand"
     ]
   }
 ];
