@@ -1,4 +1,5 @@
 import {nzGeospatialPdfAdditions} from './nz-geospatial-pdf-additions.mjs';
+import {nzHistoricGeospatialPdfAdditions} from './nz-historic-geospatial-pdf-additions.mjs';
 const ccBy4 = 'Creative Commons Attribution 4.0 International (CC BY 4.0)';
 const ccBy4Url = 'https://creativecommons.org/licenses/by/4.0/';
 
@@ -13,8 +14,7 @@ const hosted = item => ({
 // Hosted copies and source-linked references include reuse terms, attribution,
 // a source link, and a first-page thumbnail.
 export const onlinePdfPublications = [
-  // 33 additional Internet publications dated 2025 or earlier. Five source
-  // records link to the publisher because the report copy has no reuse grant.
+  // Curated pre-2025 publisher publications and contributor-supplied copies.
   hosted({
     slug: 'auckland-coastal-hazard-guidance-2022', fileName: 'auckland-coastal-hazard-assessment-guidance-2022.pdf', isNewAddition: true,
     title: 'Coastal hazard assessment in the Auckland region', creator: 'Natasha Carpenter · Auckland Council', year: '2022', date: 'July 2022 · Auckland Council Guideline GD2021/010',
@@ -431,4 +431,5 @@ export const onlinePdfPublications = [
     themeIds: ['profession'], keywords: ['GIS', 'skills', 'upskilling', 'Surveying + Spatial', 'professional development']
   }),
   ...nzGeospatialPdfAdditions,
+  ...nzHistoricGeospatialPdfAdditions.map(hosted),
 ].filter(item=>Number(item.year)<2025);

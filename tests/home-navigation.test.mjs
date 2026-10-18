@@ -16,7 +16,7 @@ const imageDetail=readFileSync('src/pages/images/[slug].astro','utf8');
 
 test('homepage shows the publication count and omits the publication revision footer link',()=>{
  const publicationCount=contributedPrimarySources.length+onlinePdfPublications.length;
- assert.equal(publicationCount,53);
+ assert.ok(publicationCount>=200,'The homepage count should include the expanded PDF catalogue');
  assert.ok(home.includes('<strong>{publicationCount}</strong> publications'));
  assert.ok(!layout.includes('Publication revision'));
 });

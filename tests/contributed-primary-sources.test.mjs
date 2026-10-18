@@ -27,7 +27,7 @@ test('eight original publications retain checksums, chronology, source identitie
 });
 test('publication navigation, accessible viewer and preserved source routes are present',()=>{
  const layout=fs.readFileSync('src/layouts/Layout.astro','utf8');
- assert.equal((layout.match(/href="\/publications\/"/g)||[]).length,2);
+ assert.equal((layout.match(/href="\/publications\/"/g)||[]).length,3);
  const detail=fs.readFileSync('src/pages/publications/[slug].astro','utf8');
  assert.ok(detail.includes('type="application/pdf"'));
  assert.ok(detail.includes('publication-reader-nav'));

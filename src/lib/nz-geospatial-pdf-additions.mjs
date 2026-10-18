@@ -308,21 +308,6 @@ const entries=[
     ]
   },
   {
-    "slug": "mpi-bottom-contact-fishing-footprint-2021",
-    "title": "The extent of bottom-contact fishing in New Zealand waters",
-    "year": "2021",
-    "publisher": "Ministry for Primary Industries",
-    "id": "45028",
-    "series": "AEBR 260",
-    "summary": "Estimates the geographic footprint of bottom-contact fishing and its overlap with New Zealand marine environments.",
-    "tags": [
-      "fishing footprint",
-      "spatial analysis",
-      "seabed",
-      "marine"
-    ]
-  },
-  {
     "slug": "mpi-shark-turtle-spatial-distribution-models-2023",
     "title": "Development and testing of spatial distribution models for selected shark and turtle species",
     "year": "2023",
@@ -2058,7 +2043,7 @@ const entries=[
   },
   {
     "slug": "mpi-trawl-dredge-contact-mapping-2018-2019",
-    "title": "The extent of bottom contact by trawl and dredging fisheries, 1989–90 to 2018–19",
+    "title": "Extent of bottom contact by commercial trawling and dredging in New Zealand waters, 1989–90 to 2018–19",
     "year": 2021,
     "publisher": "Ministry for Primary Industries",
     "id": "45028",
@@ -2547,6 +2532,27 @@ const entries=[
       "GIS",
       "coastal mapping",
       "Purangi"
+    ]
+  },
+  {
+    "slug": "doc-gis-conservation-1990",
+    "title": "Geographical information systems (GIS) and the Department of Conservation",
+    "year": 1990,
+    "publisher": "Department of Conservation",
+    "creator": "Mary McEwen",
+    "series": "Science & Research Internal Report 80",
+    "pdfUrl": "https://www.doc.govt.nz/documents/science-and-technical/SRIR80.pdf",
+    "sourceUrl": "https://www.doc.govt.nz/about-us/science-publications/series/older-series/sandr-internal-reports-archive/",
+    "sourceLabel": "DOC archive record and PDF",
+    "license": "The PDF requires permission from the Director (Science & Research), DOC, to use its contents. This catalogue links to DOC’s copy and does not rehost it.",
+    "attribution": "McEwen (1990), Science & Research Internal Report 80, Department of Conservation.",
+    "summary": "A 1990 departmental report on proposed GIS uses in conservation, including ecological inventories, protected natural areas, heritage registers, management and a plan for introducing GIS at DOC.",
+    "tags": [
+      "GIS",
+      "conservation",
+      "departmental GIS",
+      "ecological inventories",
+      "1990s"
     ]
   }
 ];
