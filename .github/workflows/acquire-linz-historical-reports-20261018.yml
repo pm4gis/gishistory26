@@ -1,0 +1,49 @@
+name: Archive early LINZ geospatial PDFs
+on:
+  push:
+    branches: [content/linz-historical-pdfs-20261018]
+    paths:
+      - '.github/workflows/acquire-linz-historical-reports-20261018.yml'
+      - 'scripts/acquire-linz-historical-reports-20261018.mjs'
+      - 'src/lib/linz-historical-reports-20261018.mjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  archive:
+    if: github.ref == 'refs/heads/content/linz-historical-pdfs-20261018'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - name: Install PDF utilities
+        run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - run: npm ci
+      - name: Download, inspect and archive official original PDFs
+        run: node scripts/acquire-linz-historical-reports-20261018.mjs
+      - name: Test and build the complete publication
+        run: |
+          npm test
+          npm run build
+          node scripts/assert-editorial-exclusions.mjs
+      - name: Commit verified original PDFs, thumbnails and audit
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/lib/linz-historical-reports-mirrored.mjs docs/verification/linz-historical-reports-20261018.json public/assets/publications/pdfs/ public/assets/publications/thumbnails/
+          if git diff --cached --quiet; then
+            echo 'No new files were acquired'
+            exit 0
+          fi
+          git commit -m 'Rehost checked LINZ reports with original first-page thumbnails'
+          git restore --worktree .
+          git fetch origin content/linz-historical-pdfs-20261018
+          git rebase origin/content/linz-historical-pdfs-20261018
+          git push origin HEAD:content/linz-historical-pdfs-20261018
