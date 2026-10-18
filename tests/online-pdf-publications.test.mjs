@@ -4,16 +4,18 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {onlinePdfPublications} from '../src/lib/online-pdf-publications.mjs';
 import {mirroredPdfSlugs} from '../src/lib/geodetic-pdfs-mirrored.mjs';
+import {linzHistoricalReports} from '../src/lib/linz-historical-reports-20261018.mjs';
+import {mirroredLinzReportSlugs} from '../src/lib/linz-historical-reports-mirrored.mjs';
 
 const pdfDirectory='public/assets/publications/pdfs';
 const thumbnailDirectory='public/assets/publications/thumbnails';
 
 test('hosted PDF records have local files, thumbnails, source details and reuse terms',()=>{
- assert.equal(onlinePdfPublications.length,67);
+ assert.equal(onlinePdfPublications.length,67+linzHistoricalReports.length);
  const hostedRecords=onlinePdfPublications.filter(p=>p.hostedLocally);
  const sourceLinkedRecords=onlinePdfPublications.filter(p=>!p.hostedLocally);
- assert.equal(hostedRecords.length,40+mirroredPdfSlugs.length);
- assert.equal(sourceLinkedRecords.length,27-mirroredPdfSlugs.length);
+ assert.equal(hostedRecords.length,40+mirroredPdfSlugs.length+mirroredLinzReportSlugs.length);
+ assert.equal(sourceLinkedRecords.length,27-mirroredPdfSlugs.length+linzHistoricalReports.length-mirroredLinzReportSlugs.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.slug)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.fileName)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.pdfPath)).size,onlinePdfPublications.length);
@@ -43,7 +45,7 @@ test('hosted PDF records have local files, thumbnails, source details and reuse 
   }
 
   if(p.generatedCover){
-   assert.ok(p.is20261018Addition,'Only this release uses generated reference covers');
+   assert.ok(p.is20261018Addition||p.isLinzArchiveAddition,'Only verified source-linked records use generated reference covers');
    assert.ok(p.thumbnailPath.endsWith('.svg'),'Generated reference covers use SVG');
   }else{
    const thumbnailPath=path.join(thumbnailDirectory,`${p.slug}.jpg`);
