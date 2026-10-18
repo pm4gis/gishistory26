@@ -1147,5 +1147,253 @@ export const magazinePdfPublications = [
     "sha256": "24eb4bb177baf59f0351f5b75da4b57634a770f28f4d4ed5482845d42b7d8dd1",
     "generatedCover": false,
     "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-2-1993",
+    "fileName": "doc-conservation-science-newsletter-2-1993.pdf",
+    "title": "Conservation Science Newsletter, issue 2",
+    "creator": "Department of Conservation",
+    "year": "1993",
+    "date": "June 1993",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's June 1993 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-2-june-1993.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (1993), Conservation Science Newsletter 2, June. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "1993"
+    ],
+    "pages": 16,
+    "bytes": 5845922,
+    "sha256": "ef9626bdc15e12196c345f3e744ccd7b1d3b7a771d8b8b672710e4974c3d6d9c",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-3-1993",
+    "fileName": "doc-conservation-science-newsletter-3-1993.pdf",
+    "title": "Conservation Science Newsletter, issue 3",
+    "creator": "Department of Conservation",
+    "year": "1993",
+    "date": "August 1993",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's August 1993 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-3-august-1993.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (1993), Conservation Science Newsletter 3, August. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "1993"
+    ],
+    "pages": 16,
+    "bytes": 5132267,
+    "sha256": "9d9f12d243f80262f0d4e8711e5ba254de351398d7af1eb65e5466da8aefd8c5",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-6-1994",
+    "fileName": "doc-conservation-science-newsletter-6-1994.pdf",
+    "title": "Conservation Science Newsletter, issue 6",
+    "creator": "Department of Conservation",
+    "year": "1994",
+    "date": "February 1994",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's February 1994 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-6-february-1994.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (1994), Conservation Science Newsletter 6, February. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "1994"
+    ],
+    "pages": 12,
+    "bytes": 4461418,
+    "sha256": "4fd153f685aee9d44dbc28b3fcd74f9a93db62cfb2b4564bfe67e90afb4c667b",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-9-1994",
+    "fileName": "doc-conservation-science-newsletter-9-1994.pdf",
+    "title": "Conservation Science Newsletter, issue 9",
+    "creator": "Department of Conservation",
+    "year": "1994",
+    "date": "August 1994",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's August 1994 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-9-august-1994.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (1994), Conservation Science Newsletter 9, August. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "1994"
+    ],
+    "pages": 16,
+    "bytes": 5642401,
+    "sha256": "1d7b4e33012039180654d7b0a183f9cee6fd17f3cf639d1f284fd82d1bc8a686",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-20-1996",
+    "fileName": "doc-conservation-science-newsletter-20-1996.pdf",
+    "title": "Conservation Science Newsletter, issue 20",
+    "creator": "Department of Conservation",
+    "year": "1996",
+    "date": "June 1996",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's June 1996 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-20-june-1996.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (1996), Conservation Science Newsletter 20, June. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "1996"
+    ],
+    "pages": 12,
+    "bytes": 5625066,
+    "sha256": "9bd1efc9a237569b2fd53d622cb39fefdbf9b2d06fe763f3e56a693c6735100c",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-26-1997",
+    "fileName": "doc-conservation-science-newsletter-26-1997.pdf",
+    "title": "Conservation Science Newsletter, issue 26",
+    "creator": "Department of Conservation",
+    "year": "1997",
+    "date": "November 1997",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's November 1997 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-26-november-1997.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (1997), Conservation Science Newsletter 26, November. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "1997"
+    ],
+    "pages": 12,
+    "bytes": 5333332,
+    "sha256": "2389fdfae8e8b02b251ace3be3655bfdc125095ec444d1a6e4a0381619a2b63f",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-33-1999",
+    "fileName": "doc-conservation-science-newsletter-33-1999.pdf",
+    "title": "Conservation Science Newsletter, issue 33",
+    "creator": "Department of Conservation",
+    "year": "1999",
+    "date": "August 1999",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's August 1999 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-33-august-1999.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (1999), Conservation Science Newsletter 33, August. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "1999"
+    ],
+    "pages": 16,
+    "bytes": 4176863,
+    "sha256": "ba90c57c3766fbf52e960d669b3abb0eb097dcfe90aa2c3900fcc0998f7c0ea4",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-38-2000",
+    "fileName": "doc-conservation-science-newsletter-38-2000.pdf",
+    "title": "Conservation Science Newsletter, issue 38",
+    "creator": "Department of Conservation",
+    "year": "2000",
+    "date": "September 2000",
+    "kind": "Conservation science periodical",
+    "topic": "Contemporary conservation information systems, mapping and ecological spatial analysis",
+    "summary": "Department of Conservation's September 2000 science bulletin; mapping, digital spatial information or GIS references are identified in its source text before inclusion.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-38-september-2000.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default website terms, subject to original issue exceptions.",
+    "attribution": "Department of Conservation (2000), Conservation Science Newsletter 38, September. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Conservation Science Newsletter",
+      "GIS history",
+      "DOC",
+      "spatial information",
+      "2000"
+    ],
+    "pages": 16,
+    "bytes": 7765381,
+    "sha256": "05c7f8549523b6604e902495d0f69845537fd9858f440062bf917a6fdad2949a",
+    "generatedCover": false,
+    "hostedLocally": true
   }
 ];
