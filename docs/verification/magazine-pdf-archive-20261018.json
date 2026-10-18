@@ -560,7 +560,12 @@
     {
       "slug": "osgeo-journal-niwa-new-zealand-2014",
       "sourceUrl": "https://kartoweb.itc.nl/kobben/publications/2014/OSGeoJournal_vol13_Kobben.pdf",
-      "reason": "Error: Unexpected source content; review required"
+      "reason": "Error: Unexpected source content; keywords not found: niwa"
+    },
+    {
+      "slug": "osgeo-journal-australia-nz-2014",
+      "sourceUrl": "https://trac.osgeo.org/osgeo/export/11991/journal/volume_12/master_pdf/Master.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 403\n"
     },
     {
       "slug": "doc-rare-bits-35-1999",
