@@ -10,6 +10,7 @@ on:
       - 'src/lib/historical-gis-new-candidates-20261018.mjs'
       - 'src/lib/doc-science-newsletter-candidates-20261018.mjs'
       - 'src/lib/doc-rare-bits-candidates-20261018.mjs'
+      - 'src/lib/open-licensed-gis-periodicals-20261019.mjs'
   pull_request:
     branches: [main]
   workflow_dispatch:
