@@ -1,0 +1,48 @@
+name: Archive NZ GIS periodical originals
+on:
+  push:
+    branches: [feature/hosted-only-magazine-pdfs-20261018]
+    paths:
+      - '.github/workflows/archive-gis-periodicals-20261018.yml'
+      - 'scripts/archive-magazine-gis-pdfs-20261018.mjs'
+      - 'src/lib/magazine-pdf-candidates-20261018.mjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  archive:
+    if: github.ref == 'refs/heads/feature/hosted-only-magazine-pdfs-20261018'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - name: Install PDF verification utilities
+        run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - run: npm ci
+      - name: Acquire source PDFs and generate covers
+        run: node scripts/archive-magazine-gis-pdfs-20261018.mjs
+      - name: Validate publication and build
+        run: |
+          npm test
+          npm run build
+          node scripts/assert-editorial-exclusions.mjs
+      - name: Commit unchanged PDFs and source-derived covers to the review branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/assets/publications/pdfs/ public/assets/publications/thumbnails/ src/lib/magazine-pdf-publications-20261018.mjs docs/verification/magazine-pdf-archive-20261018.json
+          if git diff --cached --quiet; then
+            echo 'No eligible files acquired'
+            exit 0
+          fi
+          git commit -m 'Archive original NZ GIS historical periodical PDFs'
+          git fetch origin feature/hosted-only-magazine-pdfs-20261018
+          git rebase origin/feature/hosted-only-magazine-pdfs-20261018
+          git push origin HEAD:feature/hosted-only-magazine-pdfs-20261018
