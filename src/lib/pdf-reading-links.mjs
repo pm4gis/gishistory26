@@ -25,7 +25,7 @@ for(const publication of contributedPrimarySources){
  register(publication.assetPath,publication.publicationUrl);
  if(pdfLike(publication.sourceUrl))register(publication.sourceUrl,publication.publicationUrl);
 }
-for(const publication of onlinePdfPublications){
+for(const publication of onlinePdfPublications.filter(p=>p.hostedLocally)){
  const reader='/publications/pdf/'+publication.slug+'/';
  register(publication.pdfPath,reader);
  if(pdfLike(publication.externalPdfUrl))register(publication.externalPdfUrl,reader);
@@ -33,9 +33,9 @@ for(const publication of onlinePdfPublications){
 }
 export function pdfReadingUrl(url){
  if(typeof url!=='string')return url;
- return pdfPages.get(normalise(url))||url;
+ return pdfPages.get(normalise(url)) || (pdfLike(url) ? null : url);
 }
 export function pdfReadingLabel(label,url){
  if(typeof label!=='string')return label;
- return pdfReadingUrl(url)!==url?label.replace(/\bdownload\b/gi,'View'):label;
+ return pdfReadingUrl(url)&&pdfReadingUrl(url)!==url?label.replace(/\bdownload\b/gi,'View'):label;
 }

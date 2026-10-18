@@ -1,11 +1,13 @@
 import {contributedPrimarySources} from './contributed-primary-sources.mjs';
 import {onlinePdfPublications} from './online-pdf-publications.mjs';
+// Catalogue entries without locally hosted PDF bytes remain in the research register.
+export const readableOnlinePdfPublications = onlinePdfPublications.filter(item=>item.hostedLocally);
 
 // Keep a single browsing order across the original archive and reference PDFs.
 // The historical publication year is used, never the 2026 archive date.
 export const publicationReadingOrder = [
  ...contributedPrimarySources.map(p=>({slug:p.slug,title:p.title,year:p.startDate.slice(0,4),url:p.publicationUrl,kind:'archive'})),
- ...onlinePdfPublications.map(p=>({slug:p.slug,title:p.title,year:p.year,url:'/publications/pdf/'+p.slug+'/',kind:'research'}))
+ ...readableOnlinePdfPublications.map(p=>({slug:p.slug,title:p.title,year:p.year,url:'/publications/pdf/'+p.slug+'/',kind:'research'}))
 ].sort((a,b)=>a.year.localeCompare(b.year)||a.title.localeCompare(b.title,'en-NZ'));
 
 export function publicationReadingContext(url){
