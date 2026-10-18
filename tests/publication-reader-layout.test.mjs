@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {publicationReadingOrder,publicationReadingContext} from '../src/lib/publication-reading-order.mjs';
-import {pre2000PdfPublications} from '../src/lib/pre2000-pdf-publications-20261018.mjs';
+import {contributedPrimarySources} from '../src/lib/contributed-primary-sources.mjs';
+import {onlinePdfPublications} from '../src/lib/online-pdf-publications.mjs';
 
 test('PDF reading pages show the document ahead of supporting information',()=>{
  const shared=readFileSync('src/components/PublicationReader.astro','utf8');
@@ -24,7 +25,7 @@ test('PDF reading pages show the document ahead of supporting information',()=>{
 });
 
 test('Previous and Next links stay on the website across the complete PDF library',()=>{
- assert.equal(publicationReadingOrder.length,8+67+13+pre2000PdfPublications.length);
+ assert.equal(publicationReadingOrder.length,contributedPrimarySources.length+onlinePdfPublications.length);
  assert.equal(new Set(publicationReadingOrder.map(x=>x.url)).size,publicationReadingOrder.length);
  assert.ok(publicationReadingOrder.every(x=>x.url.startsWith('/publications/')));
  assert.ok(publicationReadingOrder.every(x=>Number(x.year)<=2025));
