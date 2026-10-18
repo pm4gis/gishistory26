@@ -27,7 +27,7 @@ export async function GET() {
   d.images.forEach((i: any) => include('/images/' + i.slug + '/'));
   chapterDocuments.forEach((doc: any) => include('/documents/' + doc.slug + '/'));
   contributedPrimarySources.forEach(doc => {include(doc.publicationUrl);include('/sources/documents/'+doc.slug+'/');});
-  onlinePdfPublications.forEach(doc => include('/publications/pdf/'+doc.slug+'/'));
+  onlinePdfPublications.filter(doc => doc.hostedLocally).forEach(doc => include('/publications/pdf/'+doc.slug+'/'));
   const esc = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const entries = [...urls.entries()].map(([path, lastmod]) =>
     '<url><loc>' + esc(ORIGIN + path) + '</loc>' + (lastmod ? '<lastmod>' + lastmod + '</lastmod>' : '') + '</url>'
