@@ -2,6 +2,7 @@ import {magazinePdfPublications} from './magazine-pdf-publications-20261018.mjs'
 import {historicalGisNewChapterLinks} from './historical-gis-new-candidates-20261018.mjs';
 import {docScienceNewsletterCandidates,docScienceNewsletterChapters} from './doc-science-newsletter-candidates-20261018.mjs';
 import {docRareBitsCandidates,docRareBitsChapters} from './doc-rare-bits-candidates-20261018.mjs';
+import {openLicensedPeriodicalChapterLinks} from './open-licensed-gis-periodicals-20261019.mjs';
 const rareBitsSlugs=new Set(docRareBitsCandidates.map(x=>x.slug));
 const scienceNewsletterSlugs=new Set(docScienceNewsletterCandidates.map(x=>x.slug));
 // Reviewed chapter associations. Show a publication only when its original file was archived.
@@ -119,7 +120,7 @@ export const regionalGisChapterMap = {
 };
 export function regionalGisChapterPublications(articleSlug){
  return magazinePdfPublications
-  .filter(p=>p.hostedLocally&&(regionalGisChapterMap[p.slug]||historicalGisNewChapterLinks[p.slug]||(scienceNewsletterSlugs.has(p.slug)?docScienceNewsletterChapters:(rareBitsSlugs.has(p.slug)?docRareBitsChapters:null)))?.includes(articleSlug))
+  .filter(p=>p.hostedLocally&&(regionalGisChapterMap[p.slug]||historicalGisNewChapterLinks[p.slug]||openLicensedPeriodicalChapterLinks[p.slug]||(scienceNewsletterSlugs.has(p.slug)?docScienceNewsletterChapters:(rareBitsSlugs.has(p.slug)?docRareBitsChapters:null)))?.includes(articleSlug))
   .sort((a,b)=>a.year.localeCompare(b.year)||a.title.localeCompare(b.title,'en-NZ'))
   .map(p=>({slug:p.slug,title:p.title,year:p.year,url:'/publications/pdf/'+p.slug+'/'}));
 }
