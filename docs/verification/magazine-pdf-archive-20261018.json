@@ -464,6 +464,14 @@
       "pages": 19,
       "bytes": 102192,
       "sha256": "fd62d26e81a7bba82232c578ff43e332180ef5ce8a51465424c27cd91fa2cd7f"
+    },
+    {
+      "slug": "osgeo-journal-niwa-new-zealand-2014",
+      "sourceUrl": "https://kartoweb.itc.nl/kobben/publications/2014/OSGeoJournal_vol13_Kobben.pdf",
+      "year": "2014",
+      "pages": 2,
+      "bytes": 569893,
+      "sha256": "d1c142cd3c99d09399f1a9f7d88feb57a47d51bfd1e2bfb4813e94f93ee3b79f"
     }
   ],
   "unavailable": [
@@ -556,11 +564,6 @@
       "slug": "doc-nz-biodiversity-strategy-review-2006",
       "sourceUrl": "https://www.doc.govt.nz/documents/conservation/nz-biodiversity-strategy-themes.pdf",
       "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 404\n"
-    },
-    {
-      "slug": "osgeo-journal-niwa-new-zealand-2014",
-      "sourceUrl": "https://kartoweb.itc.nl/kobben/publications/2014/OSGeoJournal_vol13_Kobben.pdf",
-      "reason": "Error: Unexpected source content; keywords not found: niwa"
     },
     {
       "slug": "osgeo-journal-australia-nz-2014",
