@@ -1,4 +1,4 @@
-// Acquire 1978–1999 LINZ originals; retain DOC originals as publisher-hosted
+// Acquire 1997–1999 LINZ originals; retain DOC originals as publisher-hosted
 // because their reports contain document-specific permission statements.
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -79,5 +79,5 @@ await fs.writeFile('docs/verification/pre2000-pdf-acquisition-20261018.json',JSO
   licenceReference:'https://www.linz.govt.nz/copyright',
   acquired,sourceLinked
 },null,2)+'\n');
-if(acquired.length+sourceLinked.length+mirroredPre2000PdfSlugs.length!==pre2000PdfPublications.length)throw Error('Not all records were accounted for');
+if(acquired.length+sourceLinked.length!==pre2000PdfPublications.length)throw Error('Not all records were accounted for');
 console.log('RESULT '+acquired.length+' original PDFs archived, '+sourceLinked.length+' publication URLs retained');
