@@ -713,5 +713,439 @@ export const magazinePdfPublications = [
     "sha256": "91e5b8709d82597436003aa816ced8774ea0150071957df475a7cceef594f697",
     "generatedCover": false,
     "hostedLocally": true
+  },
+  {
+    "slug": "doc-hurunui-forest-gis-2005",
+    "fileName": "doc-hurunui-forest-gis-2005.pdf",
+    "title": "Mapping Hurunui forest community distribution, using computer models",
+    "creator": "C. L. Newell and J. R. Leathwick",
+    "year": "2005",
+    "date": "2005",
+    "kind": "Science for Conservation 251",
+    "topic": "Mapping Hurunui forest community distribution using computer models",
+    "summary": "Historical account of mapping hurunui forest community distribution using computer models.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc251.pdf",
+    "license": "Crown source publication, subject to specific exceptions; verified in source record.",
+    "attribution": "C. L. Newell and J. R. Leathwick (2005). Mapping Hurunui forest community distribution, using computer models. Science for Conservation 251.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "spatial",
+      "Science for Conservation 251"
+    ],
+    "pages": 42,
+    "bytes": 441145,
+    "sha256": "1864e7502b0f81f86e07a8c09ac9c7b3645ea42aa0e620a2a9d7940b20afbcfa",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-galaxiid-trout-arcgis-2012",
+    "fileName": "doc-galaxiid-trout-arcgis-2012.pdf",
+    "title": "Effects of introduced trout predation on non-diadromous galaxiid fish populations across invaded riverscapes",
+    "creator": "Darragh J. Woodford and Angus R. McIntosh",
+    "year": "2013",
+    "date": "March 2013",
+    "kind": "Science for Conservation 320",
+    "topic": "Riverscape modelling of native galaxiids and introduced trout",
+    "summary": "Historical account of riverscape modelling of native galaxiids and introduced trout.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc320entire_print_quality.pdf",
+    "license": "Crown source publication, subject to specific exceptions; verified in source record.",
+    "attribution": "Woodford and McIntosh (2013), Science for Conservation 320",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "spatial",
+      "Science for Conservation 320"
+    ],
+    "pages": 27,
+    "bytes": 10907797,
+    "sha256": "85356b9c7b4d032de963486f4d3eac26298e438bb88d922f83faccaba0545a12",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-koura-taieri-gis-2000",
+    "fileName": "doc-koura-taieri-gis-2000.pdf",
+    "title": "Ecology and distribution of the freshwater crayfish Paranephrops zealandicus in Otago: implications for conservation",
+    "creator": "N. Whitmore, A. D. Huryn, C. J. Arbuckle and F. Jansma",
+    "year": "2000",
+    "date": "2000",
+    "kind": "Science for Conservation 148",
+    "topic": "Ecology and distribution of kōura in the Taieri River catchment",
+    "summary": "Historical account of ecology and distribution of kōura in the taieri river catchment.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc148.pdf",
+    "license": "Crown source publication, subject to specific exceptions; verified in source record.",
+    "attribution": "N. Whitmore, A. D. Huryn, C. J. Arbuckle and F. Jansma (2000). Ecology and distribution of the freshwater crayfish Paranephrops zealandicus in Otago: implications for conservation. Science for Conservation 148.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "spatial",
+      "Science for Conservation 148"
+    ],
+    "pages": 42,
+    "bytes": 977629,
+    "sha256": "aae26644613d2a880b103e52b357059b4226b0560b2e0c6b49042882b1668bd1",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-lowland-wetland-gis-2010",
+    "fileName": "doc-lowland-wetland-gis-2010.pdf",
+    "title": "Aquatic invertebrate communities of lowland wetlands in New Zealand: characterising spatial, temporal and geographic distribution patterns",
+    "creator": "A. Suren and B. Sorrell",
+    "year": "2010",
+    "date": "2010",
+    "kind": "Science for Conservation 305",
+    "topic": "Aquatic invertebrate communities of lowland wetlands in New Zealand",
+    "summary": "Historical account of aquatic invertebrate communities of lowland wetlands in new zealand.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc305entire.pdf",
+    "license": "Crown source publication, subject to specific exceptions; verified in source record.",
+    "attribution": "A. Suren and B. Sorrell (2010). Aquatic invertebrate communities of lowland wetlands in New Zealand: characterising spatial, temporal and geographic distribution patterns. Science for Conservation 305.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "spatial",
+      "Science for Conservation 305"
+    ],
+    "pages": 68,
+    "bytes": 1128124,
+    "sha256": "0c8e9f39b34d521e79aaef8a520e9aadfc5920dd650c311063da97573c0b4cd8",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-southland-forest-fragmentation-2006",
+    "fileName": "doc-southland-forest-fragmentation-2006.pdf",
+    "title": "Consequences to threatened plants and insects of fragmentation of Southland floodplain forests, Part 1",
+    "creator": "S. Walker, G. M. Rogers, W. G. Lee, B. Rance and colleagues",
+    "year": "2006",
+    "date": "2006",
+    "kind": "Science for Conservation 265, Part 1",
+    "topic": "Consequences to threatened plants and insects of fragmentation of Southland floodplain forests",
+    "summary": "Historical account of consequences to threatened plants and insects of fragmentation of southland floodplain forests.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc265.pdf",
+    "license": "Crown source publication, subject to specific exceptions; verified in source record.",
+    "attribution": "S. Walker, G. M. Rogers, W. G. Lee, B. Rance and colleagues (2006). Consequences to threatened plants and insects of fragmentation of Southland floodplain forests, Part 1. Science for Conservation 265, Part 1.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "spatial",
+      "Science for Conservation 265"
+    ],
+    "pages": 29,
+    "bytes": 315682,
+    "sha256": "d092b9db2f58011653c01c26498fe1265f2c3525efe05d3fe099da4d0ec38512",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-remaining-indigenous-cover-2008",
+    "fileName": "doc-remaining-indigenous-cover-2008.pdf",
+    "title": "New Zealand's remaining indigenous cover: recent changes and biodiversity protection needs",
+    "creator": "Susan Walker, Robbie Price and Daniel Rutledge",
+    "year": "2008",
+    "date": "2008",
+    "kind": "Science for Conservation 284",
+    "topic": "New Zealand's remaining indigenous cover",
+    "summary": "Historical account of new zealand's remaining indigenous cover.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc284entire.pdf",
+    "license": "Crown source publication, subject to specific exceptions; verified in source record.",
+    "attribution": "Department of Conservation (2008), New Zealand's remaining indigenous cover.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "spatial",
+      "Science for Conservation 284"
+    ],
+    "pages": 84,
+    "bytes": 2767809,
+    "sha256": "3ce344f881cdee5030132d2185facf4d1c3fc086c3c60cf23d17c1df13fb5abb",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-seagrass-mapping-2006",
+    "fileName": "doc-seagrass-mapping-2006.pdf",
+    "title": "Management and conservation of seagrass in New Zealand: an introduction",
+    "creator": "S. J. Turner and A. Schwarz",
+    "year": "2006",
+    "date": "2006",
+    "kind": "Science for Conservation 264",
+    "topic": "Management and conservation of seagrass in New Zealand",
+    "summary": "Historical account of management and conservation of seagrass in new zealand.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc264.pdf",
+    "license": "Crown source publication, subject to specific exceptions; verified in source record.",
+    "attribution": "S. J. Turner and A. Schwarz (2006). Management and conservation of seagrass in New Zealand: an introduction. Science for Conservation 264.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "spatial",
+      "Science for Conservation 264"
+    ],
+    "pages": 90,
+    "bytes": 405367,
+    "sha256": "4f52d04ab80d4353b48b79aa31a5e5f40186820bb61a5ebaaa56e7041fa732f0",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-sfc279-freshwater-2007",
+    "fileName": "doc-sfc279-freshwater-2007.pdf",
+    "title": "Mudfish (Neochanna: Galaxiidae) literature review, Part 3",
+    "creator": "L. K. O'Brien and N. R. Dunn",
+    "year": "2007",
+    "date": "2007",
+    "kind": "Science for Conservation 277, Part 3",
+    "topic": "Conservation research on freshwater environments and spatial datasets",
+    "summary": "Historical GIS evidence concerning conservation research on freshwater environments and spatial datasets.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc277c.pdf",
+    "license": "DOC Crown publication, subject to original restrictions",
+    "attribution": "L. K. O'Brien and N. R. Dunn (2007). Mudfish (Neochanna: Galaxiidae) literature review, Part 3. Science for Conservation 277, Part 3.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "geospatial"
+    ],
+    "pages": 29,
+    "bytes": 339034,
+    "sha256": "b1ff9b76a3ef1662ae5ea8ae563bc3373f3178db40f306a58e807cb208fe2d6b",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-whangamarino-arcinfo-2003",
+    "fileName": "doc-whangamarino-arcinfo-2003.pdf",
+    "title": "Whangamarino Wetland vegetation map methodology",
+    "creator": "P. Reeves and R. Haskew",
+    "year": "2003",
+    "date": "2003",
+    "kind": "DOC Science Internal Series 152",
+    "topic": "Whangamarino Wetland vegetation map methodology",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in whangamarino wetland vegetation map methodology.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/dsis152.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "P. Reeves and R. Haskew (2003), Whangamarino Wetland vegetation map methodology.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 14,
+    "bytes": 294480,
+    "sha256": "56ec6d2634ce280e26754550c35059b6c49bf97ee0a5beca9cea837bd8eddd51",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-otago-kokopu-arcview-2003",
+    "fileName": "doc-otago-kokopu-arcview-2003.pdf",
+    "title": "Conservation, management and research directions for giant kōkopu in Otago",
+    "creator": "Department of Conservation",
+    "year": "2003",
+    "date": "2003",
+    "kind": "DOC Science Internal Series 112",
+    "topic": "Conservation, management and research directions for giant kōkopu in Otago",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in conservation, management and research directions for giant kōkopu in otago.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/DSIS112.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2003), Conservation, management and research directions for giant kōkopu in Otago.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 26,
+    "bytes": 303158,
+    "sha256": "62e355d92048037dab1a7a9aea38180ea94cda0409fab96044b83a20856e961d",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-rakiura-cats-arcview-2004",
+    "fileName": "doc-rakiura-cats-arcview-2004.pdf",
+    "title": "Feral cats on Stewart Island/Rakiura: population regulation, home range size and habitat use",
+    "creator": "Department of Conservation",
+    "year": "2004",
+    "date": "2004",
+    "kind": "DOC Science Internal Series 174",
+    "topic": "Feral cats on Stewart Island/Rakiura: population regulation, home range size and habitat use",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in feral cats on stewart island/rakiura: population regulation, home range size and habitat use.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/dsis174.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2004), Feral cats on Stewart Island/Rakiura: population regulation, home range size and habitat use.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 35,
+    "bytes": 369377,
+    "sha256": "50e7d2f6fc7e2b83f1fa93f13dce7f57f514428bd81ddd6e9b82a578fb4df621",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-whangarei-coastal-archaeology-gis-2013",
+    "fileName": "doc-whangarei-coastal-archaeology-gis-2013.pdf",
+    "title": "The impact of climate change on the archaeology of New Zealand's coastline: Whangarei District",
+    "creator": "Department of Conservation",
+    "year": "2013",
+    "date": "2013",
+    "kind": "Science for Conservation 322",
+    "topic": "The impact of climate change on the archaeology of New Zealand's coastline: Whangarei District",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in the impact of climate change on the archaeology of new zealand's coastline: whangarei district.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc322high_res.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2013), The impact of climate change on the archaeology of New Zealand's coastline: Whangarei District.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 58,
+    "bytes": 14599068,
+    "sha256": "1c131809bfe262dd954a0edd45c97fab1b9898aa4bf6179293622fdb67367e0f",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-intertidal-arcview-mapping-2005",
+    "fileName": "doc-intertidal-arcview-mapping-2005.pdf",
+    "title": "Intertidal and subtidal habitats of Mimiwhangata Marine Park and adjacent shelf",
+    "creator": "Vince Kerr and Roger Grace",
+    "year": "2005",
+    "date": "2005",
+    "kind": "DOC Research and Development Series 201",
+    "topic": "Intertidal and subtidal habitats: mapping with aerial photography and GIS",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in intertidal and subtidal habitats: mapping with aerial photography and gis.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/drds201.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Kerr and Grace (2005), DOC Research and Development Series 201",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 55,
+    "bytes": 556897,
+    "sha256": "bea091433009ef098359e437e2c52b86263cb913e3da03dab8ea97ea4cce60c0",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-otago-postpastoral-arcview-2003",
+    "fileName": "doc-otago-postpastoral-arcview-2003.pdf",
+    "title": "Post-pastoral succession in intermontane basins and valleys of eastern South Island, New Zealand, Part 1",
+    "creator": "S. Walker, W. G. Lee and G. M. Rogers",
+    "year": "2003",
+    "date": "2003",
+    "kind": "Science for Conservation 227, Part 1",
+    "topic": "Post-pastoral succession in intermontane basins and valleys of eastern South Island",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in post-pastoral succession in intermontane basins and valleys of eastern south island.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/sfc227.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "S. Walker, W. G. Lee and G. M. Rogers (2003). Post-pastoral succession in intermontane basins and valleys of eastern South Island, New Zealand, Part 1. Science for Conservation 227, Part 1.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 22,
+    "bytes": 397460,
+    "sha256": "b4771f219ba55e0f2d5d6a6210eac9ddefc5220637319cba28b6506b954cf135",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-freshwater-eel-arcview-2003",
+    "fileName": "doc-freshwater-eel-arcview-2003.pdf",
+    "title": "Habitat for female longfinned eels in the West Coast and Southland, New Zealand",
+    "creator": "E. Graynoth and K. Niven",
+    "year": "2004",
+    "date": "2004",
+    "kind": "Science for Conservation 238",
+    "topic": "Freshwater eel fisheries: analysis of catch and conservation using spatial datasets",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in freshwater eel fisheries: analysis of catch and conservation using spatial datasets.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/SfC238.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "E. Graynoth and K. Niven (2004). Habitat for female longfinned eels in the West Coast and Southland, New Zealand. Science for Conservation 238.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 33,
+    "bytes": 491713,
+    "sha256": "24eb4bb177baf59f0351f5b75da4b57634a770f28f4d4ed5482845d42b7d8dd1",
+    "generatedCover": false,
+    "hostedLocally": true
   }
 ];

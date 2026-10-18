@@ -1,12 +1,13 @@
 name: Archive NZ GIS periodical originals
 on:
   push:
-    branches: [main, feature/20261018-regional-gis-pdf-expansion]
+    branches: [main, feature/20261018-mfe-magazines-originals]
     paths:
       - '.github/workflows/archive-gis-periodicals-20261018.yml'
       - 'scripts/archive-magazine-gis-pdfs-20261018.mjs'
       - 'src/lib/magazine-pdf-candidates-20261018.mjs'
       - 'src/lib/regional-gis-pdf-candidates-20261018.mjs'
+      - 'src/lib/historical-gis-new-candidates-20261018.mjs'
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -14,7 +15,7 @@ permissions:
   contents: write
 jobs:
   archive:
-    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/20261018-regional-gis-pdf-expansion'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/20261018-mfe-magazines-originals'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
@@ -54,6 +55,7 @@ jobs:
             public/assets/publications/pdfs/mfe-*.pdf
             public/assets/publications/pdfs/gw-*.pdf
             public/assets/publications/pdfs/boprc-*.pdf
+            public/assets/publications/pdfs/mfe-*.pdf
           if-no-files-found: warn
       - name: Commit verified PDFs and source-derived covers
         if: github.event_name == 'push'

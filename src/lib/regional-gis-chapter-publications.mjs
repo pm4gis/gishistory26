@@ -1,4 +1,5 @@
 import {magazinePdfPublications} from './magazine-pdf-publications-20261018.mjs';
+import {historicalGisNewChapterLinks} from './historical-gis-new-candidates-20261018.mjs';
 // Reviewed chapter associations. Show a publication only when its original file was archived.
 export const regionalGisChapterMap = {
   "doc-gis-wildlife-penguins-2008": [
@@ -114,7 +115,7 @@ export const regionalGisChapterMap = {
 };
 export function regionalGisChapterPublications(articleSlug){
  return magazinePdfPublications
-  .filter(p=>p.hostedLocally&&regionalGisChapterMap[p.slug]?.includes(articleSlug))
+  .filter(p=>p.hostedLocally&&(regionalGisChapterMap[p.slug]||historicalGisNewChapterLinks[p.slug])?.includes(articleSlug))
   .sort((a,b)=>a.year.localeCompare(b.year)||a.title.localeCompare(b.title,'en-NZ'))
   .map(p=>({slug:p.slug,title:p.title,year:p.year,url:'/publications/pdf/'+p.slug+'/'}));
 }
