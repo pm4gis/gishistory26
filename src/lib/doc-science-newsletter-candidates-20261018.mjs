@@ -422,6 +422,64 @@ export const docScienceNewsletterCandidates = [
     ]
   },
   {
+    "slug": "doc-conservation-science-newsletter-15-16-1995",
+    "fileName": "doc-conservation-science-newsletter-15-16-1995.pdf",
+    "title": "Conservation Science Newsletter, issues 15 and 16",
+    "creator": "Department of Conservation",
+    "year": "1995",
+    "date": "October 1995",
+    "kind": "Conservation science periodical",
+    "topic": "Conservation science information, GIS and early spatial-data discussions",
+    "summary": "An original 1995 DOC science bulletin. A concrete spatial-information passage must be verified before publication.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-15--16-october-1995.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default terms subject to original-issue exceptions",
+    "attribution": "Department of Conservation (1995), Conservation Science Newsletter issues 15-16. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "DOC",
+      "GIS history",
+      "science newsletter",
+      "1995"
+    ],
+    "checkTerms": [
+      "conservation",
+      "newsletter"
+    ]
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-17-18-1996",
+    "fileName": "doc-conservation-science-newsletter-17-18-1996.pdf",
+    "title": "Conservation Science Newsletter, issues 17 and 18",
+    "creator": "Department of Conservation",
+    "year": "1996",
+    "date": "February 1996",
+    "kind": "Conservation science periodical",
+    "topic": "Conservation science information, GIS and early spatial-data discussions",
+    "summary": "An original 1996 DOC science bulletin. A concrete spatial-information passage must be verified before publication.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-17--18-february-1996.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default terms subject to original-issue exceptions",
+    "attribution": "Department of Conservation (1996), Conservation Science Newsletter issues 17-18. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "DOC",
+      "GIS history",
+      "science newsletter",
+      "1996"
+    ],
+    "checkTerms": [
+      "conservation",
+      "newsletter"
+    ]
+  },
+  {
     "slug": "doc-conservation-science-newsletter-19-1996",
     "fileName": "doc-conservation-science-newsletter-19-1996.pdf",
     "title": "Conservation Science Newsletter, issue 19",
@@ -474,6 +532,35 @@ export const docScienceNewsletterCandidates = [
       "GIS history",
       "DOC",
       "spatial information",
+      "1996"
+    ],
+    "checkTerms": [
+      "conservation",
+      "newsletter"
+    ]
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-21-22-1996",
+    "fileName": "doc-conservation-science-newsletter-21-22-1996.pdf",
+    "title": "Conservation Science Newsletter, issues 21 and 22",
+    "creator": "Department of Conservation",
+    "year": "1996",
+    "date": "August–October 1996",
+    "kind": "Conservation science periodical",
+    "topic": "Conservation science information, GIS and early spatial-data discussions",
+    "summary": "An original 1996 DOC science bulletin. A concrete spatial-information passage must be verified before publication.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-21--22-august--october-1996.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default terms subject to original-issue exceptions",
+    "attribution": "Department of Conservation (1996), Conservation Science Newsletter issues 21-22. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "DOC",
+      "GIS history",
+      "science newsletter",
       "1996"
     ],
     "checkTerms": [
@@ -835,6 +922,35 @@ export const docScienceNewsletterCandidates = [
       "DOC",
       "spatial information",
       "2000"
+    ],
+    "checkTerms": [
+      "conservation",
+      "newsletter"
+    ]
+  },
+  {
+    "slug": "doc-conservation-science-newsletter-40-41-2001",
+    "fileName": "doc-conservation-science-newsletter-40-41-2001.pdf",
+    "title": "Conservation Science Newsletter, issues 40 and 41",
+    "creator": "Department of Conservation",
+    "year": "2001",
+    "date": "July 2001",
+    "kind": "Conservation science periodical",
+    "topic": "Conservation science information, GIS and early spatial-data discussions",
+    "summary": "An original 2001 DOC science bulletin. A concrete spatial-information passage must be verified before publication.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-40--41-july-2001.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 default terms subject to original-issue exceptions",
+    "attribution": "Department of Conservation (2001), Conservation Science Newsletter issues 40-41. ISSN 1172-2606.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "DOC",
+      "GIS history",
+      "science newsletter",
+      "2001"
     ],
     "checkTerms": [
       "conservation",
