@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {chromium} from 'playwright';
+import {publicationReadingOrder} from '../src/lib/publication-reading-order.mjs';
 const base=process.env.QA_BASE_URL||'http://127.0.0.1:4321';
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const widths=[320,390,650,768,1024,1440];
@@ -35,7 +36,7 @@ try{
   response=await page.goto(base+'/publications/',{waitUntil:'domcontentloaded'});
   assert.equal(response.status(),200,'publication library must load');
   const cards=page.locator('[data-publication]');
-  assert.ok(await cards.count()>=100,'catalogue has unexpected record loss');
+  assert.equal(await cards.count(),publicationReadingOrder.length,'Catalogue must list all locally hosted publications');
   await overflow(page,width+' publications');
   if(width<=650){
    const toggle=page.locator('[data-publication-filter-toggle]');
@@ -59,7 +60,9 @@ try{
   }
   await overflow(page,width+' publications with filters');
   await screenshot(page,'publications-'+width);
-  response=await page.goto(base+'/publications/pdf/doc-gis-1990/',{waitUntil:'domcontentloaded'});
+  const hostedPdf=publicationReadingOrder.find(item=>item.kind==='research');
+  assert.ok(hostedPdf,'At least one locally hosted research PDF must be available');
+  response=await page.goto(base+hostedPdf.url,{waitUntil:'domcontentloaded'});
   assert.equal(response.status(),200,'historic DOC publication page missing');
   assert.ok(await page.locator('.publication-reader-nav a').count()>0,'PDF sequence links missing');
   if(width<=650)assert.ok(await page.locator('.publication-reader-open').isVisible(),'mobile source PDF needs accessible open action');
