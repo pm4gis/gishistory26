@@ -569,8 +569,8 @@
     },
     {
       "slug": "osgeo-journal-canterbury-media-mapping-2011",
-      "sourceUrl": "https://citeseerx.ist.psu.edu/document?doi=ae2a4f473aae10d14840e25331095651f11ede91&repid=rep1&type=pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (28) Connection timed out after 35001 milliseconds\n"
+      "sourceUrl": "https://journal.osgeo.org/index.php/journal/article/download/175/150",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 404\n"
     },
     {
       "slug": "doc-rare-bits-35-1999",
