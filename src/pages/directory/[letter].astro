@@ -6,7 +6,8 @@ export async function getStaticPaths(){
  const d=await dataset();
  return directoryGroups(d.records).map(group=>({params:{letter:group.slug},props:{group}}));
 }
-const {group}=Astro.props;
+type Entry = {name:string;kind:string;url:string};
+const {group}=Astro.props as {group:{letter:string;entries:Entry[]}};
 ---
 <Layout title={'GIS history A–Z: '+group.letter+' · NZ GIS History'} description={'Browse '+group.entries.length+' New Zealand GIS history people, organisations, councils, technology and datasets beginning with '+group.letter+'.'}>
  <div class="wrap directory-content">
