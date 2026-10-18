@@ -21,6 +21,12 @@ on:
       - 'src/lib/passage-contributions.mjs'
       - 'src/styles/site.css'
       - 'scripts/home-browser-qa.mjs'
+      - 'scripts/first-visit-browser-qa.mjs'
+      - 'src/pages/history/**'
+      - 'src/pages/timeline/**'
+      - 'src/pages/network/**'
+      - 'src/pages/publications/**'
+      - 'src/components/PublicationReader.astro'
       - 'scripts/glass-navigation-browser-qa.mjs'
       - '.github/workflows/home-browser-qa.yml'
   push:
@@ -40,6 +46,12 @@ on:
       - 'src/layouts/Layout.astro'
       - 'src/styles/site.css'
       - 'scripts/home-browser-qa.mjs'
+      - 'scripts/first-visit-browser-qa.mjs'
+      - 'src/pages/history/**'
+      - 'src/pages/timeline/**'
+      - 'src/pages/network/**'
+      - 'src/pages/publications/**'
+      - 'src/components/PublicationReader.astro'
       - '.github/workflows/home-browser-qa.yml'
   workflow_dispatch:
 permissions:
@@ -56,7 +68,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: npm install --no-save --ignore-scripts playwright@1.56.1
+      - run: npm install --no-save --ignore-scripts playwright@1.56.1 @axe-core/playwright@4.14.0
       - run: npx playwright install --with-deps chromium
       - name: Test homepage and contribution journeys in Chromium
         shell: bash
@@ -70,6 +82,7 @@ jobs:
             sleep 1
           done
           if ! curl -fsS -o /dev/null http://127.0.0.1:4321/; then cat /tmp/nzgis-home-preview.log; echo 'Preview failed to start'; exit 1; fi
+          node scripts/first-visit-browser-qa.mjs
           node scripts/home-browser-qa.mjs
           node scripts/glass-navigation-browser-qa.mjs
           node scripts/tile-browser-qa.mjs
@@ -79,6 +92,7 @@ jobs:
         with:
           name: glass-navigation-qa
           path: |
+            docs/verification/first-visit/
             docs/verification/glass-nav-qa/
             docs/verification/tile-navigation-qa/
           if-no-files-found: ignore

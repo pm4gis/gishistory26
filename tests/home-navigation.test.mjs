@@ -12,11 +12,11 @@ const css=readFileSync('src/styles/site.css','utf8');
 const subjectImage=readFileSync('src/components/SubjectImage.astro','utf8');
 const imageDetail=readFileSync('src/pages/images/[slug].astro','utf8');
 
-test('every published chapter remains eligible for both the homepage and chapter catalogue',()=>{
+test('compact homepage preview retains the complete chapter catalogue',()=>{
  const articles=readdirSync('src/content/articles').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/articles/'+n,'utf8')));
  const chapters=articles.filter(a=>a.status==='published'&&a.slug!=='preface');
  assert.equal(chapters.length,44);
- assert.match(home,/chapters\.map\(/);
+ assert.match(home,/chapterPreview\.map\(/);
  assert.doesNotMatch(home,/chapters\.slice\(/);
  assert.match(home,/id=\{'chapter-'\+a\.readingOrder\}/);
  assert.match(reader,/chapters\.map\(/);
@@ -27,7 +27,7 @@ test('every published chapter remains eligible for both the homepage and chapter
 test('highlight pool contains unique, published stories with real passages',()=>{
  const articles=readdirSync('src/content/articles').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/articles/'+n,'utf8')));
  const passages=new Set(readdirSync('src/content/passages').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/passages/'+n,'utf8')).articleId));
- assert.ok(homeHighlightSlugs.length>=20);
+ assert.ok(homeHighlightSlugs.length===5);
  assert.equal(new Set(homeHighlightSlugs).size,homeHighlightSlugs.length);
  for(const slug of homeHighlightSlugs){
   const a=articles.find(a=>a.slug===slug);
@@ -36,8 +36,8 @@ test('highlight pool contains unique, published stories with real passages',()=>
   assert.ok(passages.has(a.id),slug+' has no passage');
  }
  assert.match(home,/passage\.slug/);
- assert.match(home,/sessionStorage\.setItem\('nzgis-last-highlights'/);
- assert.match(home,/choices\.slice\(0,5\)/);
+ assert.match(home,/data-story-next/);
+ assert.match(home,/prefers-reduced-motion/);
  assert.match(home,/hidden=\{i>=5\}/);
  assert.match(home,/img\.articleSlug===a\.slug/);
 });
@@ -124,21 +124,9 @@ test('topographic homepage hero preserves the original Landsat media record',()=
  assert.match(css,/\.hero--topo \.topo-slide\{object-fit:cover;object-position:center\}/);
 });
 
-test('desktop and mobile Themes menus are generated from published theme records',()=>{
- const themes=readdirSync('src/content/themes').filter(n=>n.endsWith('.json'))
-  .map(n=>JSON.parse(readFileSync('src/content/themes/'+n,'utf8')));
- assert.equal(themes.length,8);
- assert.equal(new Set(themes.map(t=>t.slug)).size,themes.length);
- assert.match(layout,/getCollection\('themes'\)/);
- assert.equal((layout.match(/menuThemes\.map\(/g)||[]).length,2);
- assert.equal((layout.match(/class="nav-dropdown nav-dropdown--themes"/g)||[]).length,2);
- assert.equal((layout.match(/href="\/themes\/" aria-current=/g)||[]).length,2);
+test('desktop and mobile discovery menus keep the same five destination links',()=>{
+ for(const route of ['browse','network','themes','datasets','about'])assert.equal((layout.match(new RegExp('href="/'+route+'/"','g'))||[]).length,route==='network'||route==='about'?3:2);
  assert.match(layout,/event\.key==='ArrowDown'/);
  assert.match(layout,/event\.key==='Escape'&&menu\.open/);
- assert.match(css,/\.nav-dropdown\[open\]>\.nav-dropdown-panel\{animation:glass-menu-enter/);
- assert.match(css,/@media\(prefers-reduced-motion:reduce\)\{/);
- assert.match(css,/@media\(prefers-reduced-transparency:reduce\)\{/);
- for(const theme of themes){
-  assert.ok(theme.title&&theme.slug&&theme.id,'every menu entry needs a source title, slug and identifier');
- }
+ assert.doesNotMatch(layout,/menuDatasets\.map|menuThemes\.map/);
 });

@@ -22,7 +22,7 @@ test('homepage contains an unobtrusive slide loop and the curated story selectio
  assert.match(page,/setInterval\(advance,9000\)/);
  assert.match(page,/Math\.random\(\)\*maps\.length/);
  assert.match(page,/prefers-reduced-motion|\.topo-slide/);
- assert.match(page,/nzgis-last-highlights/);
+ assert.match(page,/data-story-play/);
  assert.doesNotMatch(page,/A different selection appears each time you visit/);
 });
 

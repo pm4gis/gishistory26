@@ -15,7 +15,7 @@ const viewports=[
 ];
 const catalogues=[
  {route:'/',selector:'#highlighted-stories .highlight-card:visible',exact:5},
- {route:'/',selector:'#chapters .chapter-card',exact:44},
+ {route:'/',selector:'#chapters .chapter-card',exact:6},
  {route:'/',selector:'#themes article.art-card',exact:8},
  {route:'/read/',selector:'.chapter-catalogue-card',exact:44},
  {route:'/themes/',selector:'.art-card',exact:8},

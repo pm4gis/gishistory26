@@ -5,6 +5,7 @@ import Timeline from '../../components/Timeline.svelte';
 import {dataset} from '../../lib/data';
 import {decorateTimelineEvents} from '../../lib/timeline-media.mjs';
 const d=await dataset();
+const starterEvents=[1975,1998,2011].map(year=>d.events.find((e:any)=>e.year===year)).filter(Boolean);
 const timelineEvents=decorateTimelineEvents(d.events,d.passages,d.records,d.images);
 ---
 <Layout title="Timeline · NZ GIS History">
@@ -13,6 +14,7 @@ const timelineEvents=decorateTimelineEvents(d.events,d.passages,d.records,d.imag
    <div><p class="eyebrow">Chronology</p><h1>Explore the timeline.</h1><p class="intro">Select a period, marker or event card, then follow its account and sources. Zoom the overview to inspect dense years. Approximate dates and ranges retain their original precision.</p></div>
    <DecorativeLandscape id="north2024-atene1" variant="banner" priority/>
   </div>
+  <section class="card timeline-starters" aria-labelledby="timeline-start-title"><h2 id="timeline-start-title">Try a starting point</h2><p>Choose a documented event below to open its summary, then follow its linked account. Use the decade buttons to narrow the period, or search for an event by name.</p><div class="actions">{starterEvents.map((e:any)=><a class="button" href={'/timeline/?event='+encodeURIComponent(e.id)}>{e.dateDisplay} · {e.label}</a>)}</div></section>
   <Timeline client:load events={timelineEvents}/>
   <details><summary>All events as a chronological list</summary><ol class="list">{[...d.events].sort((a:any,b:any)=>(a.year??9999)-(b.year??9999)).map((e:any)=><li id={e.id}><a href={e.url||'/timeline/?event='+encodeURIComponent(e.id)}>{e.dateDisplay} · {e.label}</a><p>{e.summary}</p><small>{e.datePrecision} precision</small></li>)}</ol></details>
  </div>

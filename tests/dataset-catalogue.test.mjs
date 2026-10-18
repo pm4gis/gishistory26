@@ -52,11 +52,8 @@ test('image-led cards use archived, attributed media and never mislabel illustra
  assert.match(catalogue,/dataset-shortcuts/);
  assert.match(catalogue,/loading="lazy"/);
 });
-test('both menu disclosures are populated from source collections',()=>{
- assert.match(layout,/getCollection\('records'\)/);
- assert.match(layout,/entry\.data\.kind==='Dataset'/);
- assert.equal((layout.match(/menuDatasets\.map\(/g)||[]).length,2);
- assert.equal((layout.match(/class="nav-dropdown nav-dropdown--datasets"/g)||[]).length,2);
+test('both discovery menus link to the complete dataset catalogue',()=>{
+ assert.equal((layout.match(/href="\/datasets\/"/g)||[]).length,2);
  assert.match(layout,/for\(const menu of navMenus\)/);
  assert.match(layout,/navMenus\.forEach\(other/);
  assert.match(homeImageMap,/forestry-finds-gis/);

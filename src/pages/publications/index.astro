@@ -20,7 +20,7 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
 ---
 <Layout title="Publications · NZ GIS History" description="Browse and read New Zealand GIS, mapping, geodetic and cadastral publications from the historical record to 2025.">
  <div class="publication-library" data-pagefind-body>
-  <header class="publication-heading"><p class="eyebrow">Documentary archive</p><h1>Publications</h1><p>Browse the collection chronologically. Select a decade, theme or organisation to narrow the list; select a document to read it here.</p></header>
+  <header class="publication-heading"><p class="eyebrow">Documentary archive</p><h1>Publications</h1><p>Browse the collection chronologically. Select a decade, theme or author / organisation to narrow the list; select a document to read it here.</p></header>
   <div class="publication-library-layout">
    <aside class="publication-sidebar" aria-label="Publication filters">
     <button class="publication-mobile-filter-toggle" type="button" aria-expanded="false" aria-controls="publication-filters" data-publication-filter-toggle>Filter publications <span aria-hidden="true">▾</span></button>
@@ -39,7 +39,7 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
       </div>
      </section>
      <details class="publication-org-filters">
-      <summary>Organisation <span>{creatorValues.length}</span></summary>
+      <summary>Author / organisation <span>{creatorValues.length}</span></summary>
       <div class="publication-filter-options">
        {creatorValues.map(creator=><button type="button" data-filter-kind="creator" data-filter-value={creator} aria-pressed="false">{creator} <span>{countBy('creator',creator)}</span></button>)}
       </div>
