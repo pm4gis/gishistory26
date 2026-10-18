@@ -84,7 +84,7 @@
  {#each chapterCollectionSources.filter(source => source.articleSlug === article.slug && source.afterParagraphId === b.id) as source}
  <details class="sources collection-source" data-source-note={source.id}>
   <summary>Source collection: {source.title}</summary><p>{source.text}</p>
-  <ul>{#each source.links as link}<li><a href={pdfReadingUrl(link.url)}>{pdfReadingLabel(link.label,link.url)}</a></li>{/each}</ul>
+  <ul>{#each source.links as link}<li>{#if safe(pdfReadingUrl(link.url))}<a href={pdfReadingUrl(link.url)}>{pdfReadingLabel(link.label,link.url)}</a>{:else}{link.label}{/if}</li>{/each}</ul>
   <p class="muted">{source.limitations}</p><a href="/sources/collections/">Explore related collections →</a>
  </details>
  {/each}
@@ -93,7 +93,7 @@
  {/if}
  {/each}
  <details class="passage-tools"><summary>Share or correct this passage</summary><div class="passage-tools-inner"><button type="button" on:click={()=>copy(p)}>Copy link</button><a href={passageContributionPageUrl(article,p)} aria-label={'Contribute information about '+p.title}>Contribute</a></div></details>
- {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(s.url)}<a href={pdfReadingUrl(s.url)}>{pdfReadingLabel(s.label,s.url)}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
+ {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(pdfReadingUrl(s.url))}<a href={pdfReadingUrl(s.url)}>{pdfReadingLabel(s.label,s.url)}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
  </section>{/each}
  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
  </div>
@@ -125,6 +125,6 @@
  {#key complete?'chapter':current?.id||'page'}<Timeline {events} compact={true} sidebar={true} currentPassageId={complete?null:current?.id||null} onSelect={selectEvent}/>{/key}
  <p class="eyebrow">Follow a connection</p><h3>Related entries</h3><div class="related-filters" role="group" aria-label="Related entry types"><button aria-pressed={relatedKind==='All'} on:click={()=>{relatedKind='All';relatedAll=false}}>All</button>{#each relatedKinds as kind}<button aria-pressed={relatedKind===kind} on:click={()=>{relatedKind=kind;relatedAll=false}}>{kind}</button>{/each}</div><div class="related-list">{#each (relatedAll?filteredRelated:filteredRelated.slice(0,8)) as r}<a class="related-item" href={recordLink(r)} on:click={relatedClick}>{r.name}<span>{r.kind} · indexed with {complete?'this chapter':'this passage'}</span></a>{/each}</div>{#if filteredRelated.length>8}<button aria-expanded={relatedAll} on:click={()=>relatedAll=!relatedAll}>{relatedAll?'Show fewer entries':`View all ${filteredRelated.length} entries`}</button>{/if}{#if !filteredRelated.length}<p class="muted">No matching entries. Select All to see the entries indexed for this {complete?'chapter':'passage'}.</p>{/if}
  {#if currentEvents.length}<details><summary>Linked events · {currentEvents.length}</summary>{#each currentEvents as e}<button on:click={()=>selectEvent(e)}>{e.dateDisplay} · {e.label}</button>{/each}</details>{/if}
- {#if relationships.length}<details><summary>Relationship evidence</summary>{#each relationships as edge}<p><a href={records.find(r=>r.id===edge.a)?.url||'/browse/'}>{records.find(r=>r.id===edge.a)?.name||edge.a}</a> · {edge.label} · <a href={records.find(r=>r.id===edge.b)?.url||'/browse/'}>{records.find(r=>r.id===edge.b)?.name||edge.b}</a></p><p class="muted">{edge.basis}</p>{#each edge.sources||[] as s}{#if safe(s.url)}<a href={s.url}>{s.label}</a>{/if}{/each}{/each}</details>{/if}<p><a href={'/network/?focus='+encodeURIComponent(relevant[0]?.id||article.id)}>Optional network view →</a></p></aside></div>
+ {#if relationships.length}<details><summary>Relationship evidence</summary>{#each relationships as edge}<p><a href={records.find(r=>r.id===edge.a)?.url||'/browse/'}>{records.find(r=>r.id===edge.a)?.name||edge.a}</a> · {edge.label} · <a href={records.find(r=>r.id===edge.b)?.url||'/browse/'}>{records.find(r=>r.id===edge.b)?.name||edge.b}</a></p><p class="muted">{edge.basis}</p>{#each edge.sources||[] as s}{#if safe(pdfReadingUrl(s.url))}<a href={pdfReadingUrl(s.url)}>{pdfReadingLabel(s.label,s.url)}</a>{/if}{/each}{/each}</details>{/if}<p><a href={'/network/?focus='+encodeURIComponent(relevant[0]?.id||article.id)}>Optional network view →</a></p></aside></div>
 </div>
 {#if selected}<aside role="dialog" aria-modal="false" on:mouseenter={cancelPreview} on:mouseleave={leavePreview} class="reader-popover" aria-label={'Preview of '+selected.name} transition:fade={{duration:motion?180:0}}><h3>{selected.name}</h3><small>{selected.kind}</small><p>{selected.description||selected.story?.[0]||'Open the complete entry for the available account and sources.'}</p><div class="actions"><a class="button primary" href={recordLink(selected)} on:click={relatedClick}>Open full entry →</a><button on:click={()=>close(true)}>Close</button></div></aside>{/if}
