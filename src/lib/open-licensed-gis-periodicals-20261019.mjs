@@ -9,9 +9,9 @@ export const openLicensedGisPeriodicals = [
     "date": "February 2014",
     "kind": "Open-source geospatial research journal",
     "topic": "First-hand NIWA GeoNetwork, PostGIS, MapServer and OpenLayers systems in New Zealand",
-    "summary": "Original OSGeo Journal FOSS4G 2013 proceedings, including a New Zealand study of NIWA's open geospatial platforms, the Bay of Islands Ocean Survey 20/20 viewer and marine biosecurity services.",
+    "summary": "Full 114-page original February 2014 OSGeo Journal volume 13, including Brent Alexander Wood's New Zealand open geospatial infrastructure case study, pp. 2–12. Preserve the complete journal; do not substitute a short extract or editorial PDF.",
     "sourceName": "OSGeo Journal",
-    "sourceUrl": "https://kartoweb.itc.nl/kobben/publications/2014/OSGeoJournal_vol13_Kobben.pdf",
+    "sourceUrl": "https://svn.osgeo.org/osgeo/journal/volume_13/pdf/OSGeoJournal_vol13.pdf",
     "license": "Creative Commons Attribution-NoDerivatives 3.0, OSGeo Journal official publishing licence: https://wiki.osgeo.org/wiki/Journal_License_and_Guidelines; original PDF is hosted without modification.",
     "attribution": "Wood, B. A. (2014). A New Zealand case study: Open Source, Open Standards, Open Data. OSGeo Journal 13, 2–12. Editor Barend Köbben. CC BY-ND 3.0.",
     "themeIds": [
@@ -29,9 +29,10 @@ export const openLicensedGisPeriodicals = [
       "New Zealand"
     ],
     "checkTerms": [
-      "new zealand",
-      "osgeo"
-    ]
+      "a new zealand case study",
+      "osgeo journal"
+    ],
+    "expectedPages": 114
   },
   {
     "slug": "osgeo-journal-australia-nz-2014",
