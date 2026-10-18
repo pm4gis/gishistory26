@@ -514,5 +514,248 @@ export const regionalGisPdfCandidates = [
       "gis",
       "bay of plenty"
     ]
+  },
+  {
+    "slug": "doc-coastal-flood-risk-gis-2019",
+    "fileName": "doc-coastal-flood-risk-gis-2019.pdf",
+    "title": "Risk-exposure assessment of DOC coastal locations to flooding from the sea",
+    "creator": "Department of Conservation",
+    "year": "2019",
+    "date": "2019",
+    "kind": "DOC Science for Conservation 332",
+    "topic": "National DEM-based GIS risk screening of coastal conservation assets",
+    "summary": "National DEM-based GIS risk screening of coastal conservation assets.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc332entire.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2019). Risk-exposure assessment of DOC coastal locations to flooding from the sea.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "coastal",
+      "inundation"
+    ],
+    "checkTerms": [
+      "coastal",
+      "inundation"
+    ]
+  },
+  {
+    "slug": "doc-wellington-wetlands-lcdb2-2013",
+    "fileName": "doc-wellington-wetlands-lcdb2-2013.pdf",
+    "title": "How well does LCDB2 map wetlands in the Wellington region?",
+    "creator": "Department of Conservation",
+    "year": "2013",
+    "date": "2013",
+    "kind": "DOC Research and Development Series 341",
+    "topic": "Comparative satellite land-cover GIS accuracy for Wellington wetlands",
+    "summary": "Comparative satellite land-cover GIS accuracy for Wellington wetlands.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/drds341entire.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2013). How well does LCDB2 map wetlands in the Wellington region?.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "lcdb2",
+      "wetlands"
+    ],
+    "checkTerms": [
+      "lcdb2",
+      "wetlands"
+    ]
+  },
+  {
+    "slug": "doc-maui-dolphin-distribution-2010",
+    "fileName": "doc-maui-dolphin-distribution-2010.pdf",
+    "title": "Distribution of Maui's dolphin: 2000–2009",
+    "creator": "Department of Conservation",
+    "year": "2010",
+    "date": "2010",
+    "kind": "DOC Research and Development Series 322",
+    "topic": "GIS sightings maps and marine protection in western North Island waters",
+    "summary": "GIS sightings maps and marine protection in western North Island waters.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds322.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2010). Distribution of Maui's dolphin: 2000–2009.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "maui",
+      "dolphin"
+    ],
+    "checkTerms": [
+      "maui",
+      "dolphin"
+    ]
+  },
+  {
+    "slug": "doc-marine-ecosystem-gis-2014",
+    "fileName": "doc-marine-ecosystem-gis-2014.pdf",
+    "title": "Ecosystem goods and services in marine protected areas",
+    "creator": "Department of Conservation",
+    "year": "2014",
+    "date": "2014",
+    "kind": "DOC Science for Conservation 326",
+    "topic": "GIS modelling and valuation of marine biomes and reserves",
+    "summary": "GIS modelling and valuation of marine biomes and reserves.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc326entire.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2014). Ecosystem goods and services in marine protected areas.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "ecosystem",
+      "marine"
+    ],
+    "checkTerms": [
+      "ecosystem",
+      "marine"
+    ]
+  },
+  {
+    "slug": "doc-marine-areas-gis-statistic-2021",
+    "fileName": "doc-marine-areas-gis-statistic-2021.pdf",
+    "title": "Marine protected areas: Tier 1 statistic, 2021",
+    "creator": "Department of Conservation",
+    "year": "2021",
+    "date": "2021",
+    "kind": "Marine protected areas technical statistics",
+    "topic": "Using NZTM spatial projections to calculate marine protection area statistics",
+    "summary": "Using NZTM spatial projections to calculate marine protection area statistics.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/conservation/marine-and-coastal/marine-protected-areas/tier-1-statistic/marine-protected-areas-tier-1-statistic-2021.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2021). Marine protected areas: Tier 1 statistic, 2021.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "protected",
+      "gis"
+    ],
+    "checkTerms": [
+      "protected",
+      "gis"
+    ]
+  },
+  {
+    "slug": "doc-southeast-marine-spatial-2018",
+    "fileName": "doc-southeast-marine-spatial-2018.pdf",
+    "title": "South-East Marine Protection Forum: Recommendations to Ministers",
+    "creator": "Department of Conservation",
+    "year": "2018",
+    "date": "2018",
+    "kind": "South-East Marine Protection Forum",
+    "topic": "ArcGIS Benthic Terrain Modeller, Otago council marine habitats, marine spatial planning",
+    "summary": "ArcGIS Benthic Terrain Modeller, Otago council marine habitats, marine spatial planning.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/conservation/marine-and-coastal/semp/sempf-recommendations-report.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2018). South-East Marine Protection Forum: Recommendations to Ministers.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "marine",
+      "habitat"
+    ],
+    "checkTerms": [
+      "marine",
+      "habitat"
+    ]
+  },
+  {
+    "slug": "doc-whanganui-fish-barriers-2021",
+    "fileName": "doc-whanganui-fish-barriers-2021.pdf",
+    "title": "Whanganui River fisheries and aquatic biodiversity review",
+    "creator": "Department of Conservation",
+    "year": "2021",
+    "date": "2021",
+    "kind": "Whanganui River restoration technical report",
+    "topic": "Proposed GIS layers for fish passage barriers in Manawatū-Whanganui",
+    "summary": "Proposed GIS layers for fish passage barriers in Manawatū-Whanganui.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/our-work/nga-awa-river-restoration/whanganui-river-restoration/fisheries-aquatic-biodiversity-whanganui-review-2021.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2021). Whanganui River fisheries and aquatic biodiversity review.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "fish",
+      "whanganui"
+    ],
+    "checkTerms": [
+      "fish",
+      "whanganui"
+    ]
+  },
+  {
+    "slug": "doc-coastal-vehicle-spatial-survey-2022",
+    "fileName": "doc-coastal-vehicle-spatial-survey-2022.pdf",
+    "title": "Vehicles on New Zealand beaches: annotated ecological research bibliography",
+    "creator": "Department of Conservation",
+    "year": "2022",
+    "date": "2022",
+    "kind": "DOC coastal ecology annotated bibliography",
+    "topic": "Historical coastal mapping by drone and spatial analysis",
+    "summary": "Historical coastal mapping by drone and spatial analysis.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/vehicles-on-new-zealand-beaches-g-la-cock.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2022). Vehicles on New Zealand beaches: annotated ecological research bibliography.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "gis",
+      "beaches"
+    ],
+    "checkTerms": [
+      "gis",
+      "beaches"
+    ]
+  },
+  {
+    "slug": "doc-visitor-conservation-bibliography-2011",
+    "fileName": "doc-visitor-conservation-bibliography-2011.pdf",
+    "title": "A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010",
+    "creator": "Department of Conservation",
+    "year": "2011",
+    "date": "2011",
+    "kind": "DOC Science for Conservation 253",
+    "topic": "Bibliographic records of GIS uses in conservation visitor research",
+    "summary": "Bibliographic records of GIS uses in conservation visitor research.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap253.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2011). A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "gis",
+      "visitor"
+    ],
+    "checkTerms": [
+      "gis",
+      "visitor"
+    ]
   }
 ];
