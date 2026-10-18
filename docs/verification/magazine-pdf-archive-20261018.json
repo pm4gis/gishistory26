@@ -464,14 +464,6 @@
       "pages": 19,
       "bytes": 102192,
       "sha256": "fd62d26e81a7bba82232c578ff43e332180ef5ce8a51465424c27cd91fa2cd7f"
-    },
-    {
-      "slug": "osgeo-journal-niwa-new-zealand-2014",
-      "sourceUrl": "https://kartoweb.itc.nl/kobben/publications/2014/OSGeoJournal_vol13_Kobben.pdf",
-      "year": "2014",
-      "pages": 2,
-      "bytes": 569893,
-      "sha256": "d1c142cd3c99d09399f1a9f7d88feb57a47d51bfd1e2bfb4813e94f93ee3b79f"
     }
   ],
   "unavailable": [
@@ -566,9 +558,19 @@
       "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 404\n"
     },
     {
+      "slug": "osgeo-journal-niwa-new-zealand-2014",
+      "sourceUrl": "https://svn.osgeo.org/osgeo/journal/volume_13/pdf/OSGeoJournal_vol13.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: Error: File too large for static host"
+    },
+    {
       "slug": "osgeo-journal-australia-nz-2014",
       "sourceUrl": "https://trac.osgeo.org/osgeo/export/11991/journal/volume_12/master_pdf/Master.pdf",
       "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 403\n"
+    },
+    {
+      "slug": "osgeo-journal-canterbury-media-mapping-2011",
+      "sourceUrl": "https://citeseerx.ist.psu.edu/document?doi=ae2a4f473aae10d14840e25331095651f11ede91&repid=rep1&type=pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (28) Connection timed out after 35001 milliseconds\n"
     },
     {
       "slug": "doc-rare-bits-35-1999",

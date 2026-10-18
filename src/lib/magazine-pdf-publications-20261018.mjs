@@ -1705,39 +1705,5 @@ export const magazinePdfPublications = [
     "sha256": "fd62d26e81a7bba82232c578ff43e332180ef5ce8a51465424c27cd91fa2cd7f",
     "generatedCover": false,
     "hostedLocally": true
-  },
-  {
-    "slug": "osgeo-journal-niwa-new-zealand-2014",
-    "fileName": "osgeo-journal-niwa-new-zealand-2014.pdf",
-    "title": "OSGeo Journal, volume 13: Open Source, Open Standards, Open Data, a New Zealand case study",
-    "creator": "Brent Alexander Wood, NIWA; OSGeo Journal edited by Barend Köbben",
-    "year": "2014",
-    "date": "February 2014",
-    "kind": "Open-source geospatial research journal",
-    "topic": "First-hand NIWA GeoNetwork, PostGIS, MapServer and OpenLayers systems in New Zealand",
-    "summary": "Original OSGeo Journal FOSS4G 2013 proceedings, including a New Zealand study of NIWA's open geospatial platforms, the Bay of Islands Ocean Survey 20/20 viewer and marine biosecurity services.",
-    "sourceName": "OSGeo Journal",
-    "sourceUrl": "https://kartoweb.itc.nl/kobben/publications/2014/OSGeoJournal_vol13_Kobben.pdf",
-    "license": "Creative Commons Attribution-NoDerivatives 3.0, OSGeo Journal official publishing licence: https://wiki.osgeo.org/wiki/Journal_License_and_Guidelines; original PDF is hosted without modification.",
-    "attribution": "Wood, B. A. (2014). A New Zealand case study: Open Source, Open Standards, Open Data. OSGeo Journal 13, 2–12. Editor Barend Köbben. CC BY-ND 3.0.",
-    "themeIds": [
-      "profession",
-      "open-practice"
-    ],
-    "keywords": [
-      "NIWA",
-      "FOSS4G",
-      "GeoNetwork",
-      "PostGIS",
-      "OpenLayers",
-      "MapServer",
-      "OSGeo",
-      "New Zealand"
-    ],
-    "pages": 2,
-    "bytes": 569893,
-    "sha256": "d1c142cd3c99d09399f1a9f7d88feb57a47d51bfd1e2bfb4813e94f93ee3b79f",
-    "generatedCover": false,
-    "hostedLocally": true
   }
 ];
