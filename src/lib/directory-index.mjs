@@ -13,5 +13,5 @@ export function directoryGroups(records=[]) {
     groups.get(letter).push({name:item.name,kind:item.kind,url:item.url,id:item.id});
   }
   return [...groups].sort((a,b)=>collator.compare(a[0],b[0]))
-    .map(([letter,entries])=>({letter,slug:letter.toLowerCase(),entries:entries.sort((a,b)=>collator.compare(a.name,b.name)||collator.compare(a.url,b.url))}));
+    .map(([letter,entries])=>({letter,slug:letter==='#'?'other':letter.toLowerCase(),entries:entries.sort((a,b)=>collator.compare(a.name,b.name)||collator.compare(a.url,b.url))}));
 }
