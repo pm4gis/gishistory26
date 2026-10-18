@@ -5,13 +5,14 @@ import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {magazinePdfCandidates} from '../src/lib/magazine-pdf-candidates-20261018.mjs';
 import {magazinePdfPublications} from '../src/lib/magazine-pdf-publications-20261018.mjs';
+import {regionalGisPdfCandidates} from '../src/lib/regional-gis-pdf-candidates-20261018.mjs';
 
 const pdfDir='public/assets/publications/pdfs';
 const thumbDir='public/assets/publications/thumbnails';
 await fs.mkdir(pdfDir,{recursive:true});
 await fs.mkdir(thumbDir,{recursive:true});
 const published=[...magazinePdfPublications],unavailable=[];
-for(const p of magazinePdfCandidates){
+for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates]){
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
  if(published.some(item=>item.slug===p.slug)){
   const prior=published.find(item=>item.slug===p.slug);
@@ -23,7 +24,7 @@ for(const p of magazinePdfCandidates){
  }
  try{
   const host=new URL(p.sourceUrl).hostname;
-  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz'].includes(host))throw Error('Unexpected source host '+host);
+  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz'].includes(host))throw Error('Unexpected source host '+host);
   const response=await fetch(p.sourceUrl,{headers:{'User-Agent':'NZGISHistoryHistoricalArchive/1.0','Accept':'application/pdf,*/*'},signal:AbortSignal.timeout(65000)});
   if(!response.ok)throw Error('HTTP '+response.status);
   if(Number(response.headers.get('content-length')||0)>24*1024*1024)throw Error('File too large for static host');
@@ -37,8 +38,10 @@ for(const p of magazinePdfCandidates){
   const extracted=spawnSync('pdftotext',['-f','1','-l',String(Math.min(pages,35)),pdf,'-'],{encoding:'utf8',timeout:45000,maxBuffer:7_000_000});
   if(extracted.status!==0)throw Error('Unable to inspect source text');
   const txt=extracted.stdout.toLowerCase();
-  if(!p.checkTerms.every(word=>txt.includes(word)))throw Error('Unexpected source content; review required');
-  if(/all rights reserved|permission to use (?:any|all) of its contents must be obtained|no part of this (?:report|publication|work) may be reproduced|must not be reproduced/i.test(txt.slice(0,7000)))throw Error('Source-specific reproduction restriction');
+  if(!p.checkTerms.every(word=>txt.includes(word.toLowerCase())))throw Error('Unexpected source content; review required');
+  if(!Number.isInteger(Number(p.year))||Number(p.year)>2025)throw Error('Publication outside accepted history cutoff');
+  if(!/department of conservation|ministry for the environment/i.test(p.sourceName)&&!/(creative commons|cc by|cc-by|attribution 4\.0)/i.test(txt.slice(0,16000)))throw Error('No document-level council republication licence identified');
+  if(/all rights reserved|permission to use (?:any|all) of its contents must be obtained|no part of this (?:report|publication|work) may be reproduced|must not be reproduced|may not be reproduced or copied|copyright extends to all forms of copying|shall not be reproduced|reproduction prohibited/i.test(txt.slice(0,16000)))throw Error('Source-specific reproduction restriction');
   const jpg=spawnSync('pdftoppm',['-f','1','-l','1','-singlefile','-scale-to','960','-jpeg','-jpegopt','quality=82',pdf,thumbDir+'/'+p.slug],{encoding:'utf8',timeout:60000,maxBuffer:1_000_000});
   if(jpg.status!==0)throw Error('Could not render publication cover');
   const cover=await fs.readFile(image);
