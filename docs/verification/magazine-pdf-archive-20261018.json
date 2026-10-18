@@ -40,7 +40,218 @@
       "pages": 124,
       "bytes": 6409499,
       "sha256": "a72e061a9000132168bf996802522d9ebabbdd9e5eb9a2e2650f511570e30bcd"
+    },
+    {
+      "slug": "doc-gis-wildlife-penguins-2008",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds303entire.pdf",
+      "year": "2008",
+      "pages": 35,
+      "bytes": 862601,
+      "sha256": "6ef072f1eb858c4da70a622c82d89c781fb8384f86818edf647a0690217fc04a"
+    },
+    {
+      "slug": "doc-stoat-rat-modelling-2008",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds305entire.pdf",
+      "year": "2008",
+      "pages": 28,
+      "bytes": 498855,
+      "sha256": "6de182c9ddade7c8ef2797fe35711a28666b42a8ac7903c2d70fb90687163f3f"
+    },
+    {
+      "slug": "doc-archaeological-prediction-2004",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/dsis180.pdf",
+      "year": "2004",
+      "pages": 24,
+      "bytes": 384439,
+      "sha256": "6543ec0441263983fd522232b0da4c8345101065dbf2313f509fe13e643a3a2c"
+    },
+    {
+      "slug": "doc-mapping-biodiversity-heritage-2016",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap260.pdf",
+      "year": "2016",
+      "pages": 139,
+      "bytes": 4543639,
+      "sha256": "fff2e96a9e565d8ace79efd36c3155a665c4377e5bbaec6a27f842029f45361f"
+    },
+    {
+      "slug": "doc-sand-dune-drone-2019",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/doc-research-and-development-series/drds359entire.pdf",
+      "year": "2019",
+      "pages": 29,
+      "bytes": 14036013,
+      "sha256": "4f9ab9d2980691d9116ed7165bca30671faaaf84dd88c6582b41b2b0a6b851cb"
+    },
+    {
+      "slug": "doc-wilding-conifer-remote-sensing-2020",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds364entire.pdf",
+      "year": "2020",
+      "pages": 33,
+      "bytes": 21852997,
+      "sha256": "b038a21fad27980ff5d8bb59dc31c689a8cc657cc25a69ca4fdb4be14c559abc"
+    },
+    {
+      "slug": "doc-benthic-terrain-modeller-2022",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds367entire.pdf",
+      "year": "2022",
+      "pages": 25,
+      "bytes": 9369728,
+      "sha256": "65c7576043a5dc80dd341d0599a6d64b6a33c474c4086dd0ecb99437c9f6ac26"
+    },
+    {
+      "slug": "gw-wellington-landscape-atlas-2009",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/6426igl2009052626s12521.pdf",
+      "year": "2009",
+      "pages": 93,
+      "bytes": 6011507,
+      "sha256": "96bfe455cd04c0acc22f335e9a1ad5dde64983e12eabad72152786cefca54d84"
+    },
+    {
+      "slug": "gw-hutt-landscape-study-2012",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/Hutt-Landscape-Study-2012.pdf",
+      "year": "2012",
+      "pages": 89,
+      "bytes": 23714684,
+      "sha256": "9698ace47e4a475312d86ba3ccff0a6ab7819a6bee759d3508d6c43f9d11a6ab"
+    },
+    {
+      "slug": "gw-kapiti-whaitua-gis-2024",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2024/09/GWC0137_Kapiti-Whaitua-Booklet_FA-2_WEB-spreads_lo-res.pdf",
+      "year": "2024",
+      "pages": 113,
+      "bytes": 15710540,
+      "sha256": "40fc4f8091a7dd518b1a8f064f7874e21d85aab48959f9b7bafd2c14ec1b4fa9"
+    },
+    {
+      "slug": "doc-coastal-flood-risk-gis-2019",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc332entire.pdf",
+      "year": "2019",
+      "pages": 40,
+      "bytes": 5967690,
+      "sha256": "28998978bd780dbc9041ab308c135501f3fe8e1e5401686ec017302019b5b7b7"
+    },
+    {
+      "slug": "doc-wellington-wetlands-lcdb2-2013",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/drds341entire.pdf",
+      "year": "2013",
+      "pages": 25,
+      "bytes": 2522132,
+      "sha256": "e7b13fe2d61b272444e7e23c1db6b394b554aea978f7351e806c8136ff9e81b5"
+    },
+    {
+      "slug": "doc-maui-dolphin-distribution-2010",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds322.pdf",
+      "year": "2010",
+      "pages": 27,
+      "bytes": 2630507,
+      "sha256": "02e448846aac4c950e35a27f31a53b502df06e5ad28f7a642283dacb3de953fa"
+    },
+    {
+      "slug": "doc-marine-ecosystem-gis-2014",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc326entire.pdf",
+      "year": "2014",
+      "pages": 100,
+      "bytes": 2139293,
+      "sha256": "94e9063280fc55f90c10f9c4297d19ccdd27b02c3d124f03fab6356ce5c7a861"
+    },
+    {
+      "slug": "doc-marine-areas-gis-statistic-2021",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/conservation/marine-and-coastal/marine-protected-areas/tier-1-statistic/marine-protected-areas-tier-1-statistic-2021.pdf",
+      "year": "2021",
+      "pages": 8,
+      "bytes": 978965,
+      "sha256": "f96614f10a262ad2001f9ac550655784eb7321fb8aa59e9ccbc11cfa762eec4e"
+    },
+    {
+      "slug": "doc-southeast-marine-spatial-2018",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/conservation/marine-and-coastal/semp/sempf-recommendations-report.pdf",
+      "year": "2018",
+      "pages": 314,
+      "bytes": 18307083,
+      "sha256": "f029e37e222797b8abf847796e24751ab93b771945617e4f856a7f48ea563f9f"
+    },
+    {
+      "slug": "doc-coastal-vehicle-spatial-survey-2022",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/vehicles-on-new-zealand-beaches-g-la-cock.pdf",
+      "year": "2022",
+      "pages": 21,
+      "bytes": 1143075,
+      "sha256": "31dd9a57435f8af43702f3933a1605865fd0dabaf3e1f737a4bceb1aef8cee59"
+    },
+    {
+      "slug": "doc-visitor-conservation-bibliography-2011",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap253.pdf",
+      "year": "2011",
+      "pages": 89,
+      "bytes": 648304,
+      "sha256": "66d2a405ef672100d42e10569fc580cc5653ee43e6501a5cbf9849332067e6c7"
+    },
+    {
+      "slug": "doc-conservation-carbon-spatial-models-2012",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc317.pdf",
+      "year": "2012",
+      "pages": 44,
+      "bytes": 1573044,
+      "sha256": "8cfc4d0d6019f38b499595e9ccf1dac1d3646760c34f0950e2c255d59d7a7bbf"
+    },
+    {
+      "slug": "doc-ecological-significance-gis-2016",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc327entire.pdf",
+      "year": "2016",
+      "pages": 77,
+      "bytes": 1368720,
+      "sha256": "91e5b8709d82597436003aa816ced8774ea0150071957df475a7cceef594f697"
     }
   ],
-  "unavailable": []
+  "unavailable": [
+    {
+      "slug": "mfe-plan-mapping-standards-2017",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Discussion-Paper-F-Mapping-Standards.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-electronic-planning-maps-2018",
+      "sourceUrl": "https://environment.govt.nz/assets/publications/RMA/Part-2E-Electronic-functionality-and-accessibility-and-mapping.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-maori-catchment-geospatial-2019",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/at-risk-catchment-geospatial-implementation-information.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-landuse-high-risk-gis-2019",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/identification-of-high-risk-agricultural-activities-on-hill-country-land.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-mahinga-kai-spatial-2022",
+      "sourceUrl": "https://environment.govt.nz/assets/publications/Implementing-mahinga-kai-as-a-Maori-freshwater-value.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-sheep-beef-emissions-gis-2021",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Net-emissions-and-removals-from-vegetation-and-soils-on-sheep-and-beef-farmland.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-national-productive-land-2022",
+      "sourceUrl": "https://environment.govt.nz/assets/publications/Recommendations-and-decisions-report-on-NPS-highly-productive-land.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-national-gis-landuse-2016",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Landuse-Capacity-report-2016-Final-14-October-2016.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "boprc-gis-annual-report-2015",
+      "sourceUrl": "https://www.boprc.govt.nz/media/470885/reduced-final-for-web-2015-annual-report-adopted-version-15-oct-21-10-15-2.pdf",
+      "reason": "Error: No document-level council republication licence identified"
+    },
+    {
+      "slug": "doc-whanganui-fish-barriers-2021",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/our-work/nga-awa-river-restoration/whanganui-river-restoration/fisheries-aquatic-biodiversity-whanganui-review-2021.pdf",
+      "reason": "Error: Source-specific reproduction restriction"
+    }
+  ]
 }
