@@ -19,7 +19,7 @@ const {item}=Astro.props;
   <p><a href={'/timeline/?event=source-'+item.slug}>Find this document on the timeline →</a></p>
   <h2>Original and rights</h2>
   <p>{item.rights}</p>
-  <p><a class="button" href={item.publicationUrl}>Read and download this publication</a></p>
+  <p><a class="button" href={item.publicationUrl}>Read this publication</a></p>
   <details><summary>Source file identification and checksum</summary><p>Supplied filename: <code>{item.filename}</code>; {item.bytes.toLocaleString('en-NZ')} bytes.</p><p style="overflow-wrap:anywhere">SHA-256: <code>{item.sha256}</code></p></details>
  </article>
 </Layout>
