@@ -65,7 +65,8 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   const extracted=spawnSync('pdftotext',['-f','1','-l',String(Math.min(pages,35)),pdf,'-'],{encoding:'utf8',timeout:45000,maxBuffer:7_000_000});
   if(extracted.status!==0)throw Error('Unable to inspect source text');
   const txt=extracted.stdout.toLowerCase();
-  if(!p.checkTerms.every(word=>txt.includes(word.toLowerCase())))throw Error('Unexpected source content; review required');
+  const missingTerms=p.checkTerms.filter(word=>!txt.includes(word.toLowerCase()));
+  if(missingTerms.length)throw Error('Unexpected source content; keywords not found: '+missingTerms.join(', '));
   const spatialHits=isPeriodical?[...extracted.stdout.matchAll(spatialMention)]:[];
   if(isPeriodical&&spatialHits.length===0)throw Error('No unambiguous GIS/spatial information reference found in issue source text');
   if(isPeriodical&&spatialHits.every(hit=>hit.index<250)&&spatialHits.length<2)throw Error('Only a contents-heading spatial reference; insufficient historical evidence');
