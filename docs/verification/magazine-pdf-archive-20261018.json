@@ -1,0 +1,46 @@
+{
+  "checkedOn": "2026-10-18",
+  "published": [
+    {
+      "slug": "doc-conservation-science-newsletter-28-29-1998",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-28--29-december-1998.pdf",
+      "year": "1998",
+      "pages": 20,
+      "bytes": 7753418,
+      "sha256": "26ccb0caf3169a644e2210dcaed460cd4b6f9c7ae630a09b09b7974f57b8c85a"
+    },
+    {
+      "slug": "nz-geospatial-industry-profile-survey-2023",
+      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/doc/GISS%20Report%202023.pdf",
+      "year": "2023",
+      "pages": 34,
+      "bytes": 1572507,
+      "sha256": "f3f4ba774bb22fe2f6df370f6b06e2acb1d3e8e2bc1619163d207f73570d9a9f"
+    },
+    {
+      "slug": "auckland-liquefaction-mapping-2021",
+      "sourceUrl": "https://knowledgeauckland.org.nz/media/hcgdrqni/tr2021-19-auckland-liquefaction-assessment-and-liquefaction-vulnerability-maps.pdf",
+      "year": "2021",
+      "pages": 136,
+      "bytes": 15835302,
+      "sha256": "3eeeabef6ec3a4fc1e17ccfa90b025e66e9c3314a3bd94516b98d75205b9fb21"
+    },
+    {
+      "slug": "auckland-water-quality-data-explorer-2025",
+      "sourceUrl": "https://knowledgeauckland.org.nz/media/gy3jf2fq/water-quality-river-ecology-data-explorer-user-guide-methodology-supplementary-report-eemu-dec-2025.pdf",
+      "year": "2025",
+      "pages": 54,
+      "bytes": 1219859,
+      "sha256": "7d0df7c39a025aba9fd9605575d240b809e6a8dbf56d6f7fe2a927f64b0c867a"
+    },
+    {
+      "slug": "auckland-watercourse-methodology-2016",
+      "sourceUrl": "https://www.knowledgeauckland.org.nz/media/1267/tr2016-002-watercourse-assessment-methodology-infrastructure-and-ecology-v2.pdf",
+      "year": "2016",
+      "pages": 124,
+      "bytes": 6409499,
+      "sha256": "a72e061a9000132168bf996802522d9ebabbdd9e5eb9a2e2650f511570e30bcd"
+    }
+  ],
+  "unavailable": []
+}
