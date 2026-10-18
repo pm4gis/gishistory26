@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {dataset} from '../../lib/data';
+import {directoryGroups} from '../../lib/directory-index.mjs';
+const d=await dataset();
+const groups=directoryGroups(d.records);
+const total=groups.reduce((n,g)=>n+g.entries.length,0);
+---
+<Layout title="A–Z index of GIS people and organisations · NZ GIS History" description="Browse the complete alphabetical index of published New Zealand GIS history entries: people, organisations, councils, technology and datasets.">
+  <div class="wrap">
+    <p class="eyebrow">Browse historical entries</p>
+    <h1>Alphabetical index</h1>
+    <p class="intro">Find people, organisations, councils, technology and datasets named in the history. The {total.toLocaleString('en-NZ')} listed entries are arranged alphabetically and link to their individual records.</p>
+    <p><a href="/browse/">Return to the interactive people and organisations browser →</a></p>
+    <nav class="directory-letters" aria-label="Index letters">
+      {groups.map(group=><a class="card directory-letter" href={'/directory/'+group.slug+'/'}><strong>{group.letter}</strong><span>{group.entries.length.toLocaleString('en-NZ')} entries</span></a>)}
+    </nav>
+  </div>
+</Layout>
+<style>
+  .directory-letters{display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:12px;margin:30px 0 64px}
+  .directory-letter{padding:14px 12px;min-height:78px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;text-decoration:none}
+  .directory-letter strong{font-size:1.3rem}
+  .directory-letter span{font-size:0.8rem;color:var(--muted);text-align:center}
+</style>
