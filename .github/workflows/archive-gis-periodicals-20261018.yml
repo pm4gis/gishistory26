@@ -1,17 +1,19 @@
 name: Archive NZ GIS periodical originals
 on:
   push:
-    branches: [main, feature/hosted-only-magazine-pdfs-20261018]
+    branches: [main, fix/verify-gis-pdf-acquisition-20261018]
     paths:
       - '.github/workflows/archive-gis-periodicals-20261018.yml'
       - 'scripts/archive-magazine-gis-pdfs-20261018.mjs'
       - 'src/lib/magazine-pdf-candidates-20261018.mjs'
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
   archive:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/hosted-only-magazine-pdfs-20261018'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/fix/verify-gis-pdf-acquisition-20261018'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
@@ -32,7 +34,19 @@ jobs:
           npm test
           npm run build
           node scripts/assert-editorial-exclusions.mjs
-      - name: Commit unchanged PDFs and source-derived covers to the review branch
+      - name: Retain acquisition report and PDF files for troubleshooting
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nz-gis-pdf-acquisition
+          path: |
+            docs/verification/magazine-pdf-archive-20261018.json
+            public/assets/publications/pdfs/auckland-*.pdf
+            public/assets/publications/pdfs/doc-conservation-science-newsletter-28-29-1998.pdf
+            public/assets/publications/pdfs/nz-geospatial-industry-profile-survey-2023.pdf
+          if-no-files-found: warn
+      - name: Commit verified PDFs and source-derived covers
+        if: github.event_name == 'push'
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
