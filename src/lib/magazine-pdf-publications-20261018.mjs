@@ -944,5 +944,208 @@ export const magazinePdfPublications = [
     "sha256": "b1ff9b76a3ef1662ae5ea8ae563bc3373f3178db40f306a58e807cb208fe2d6b",
     "generatedCover": false,
     "hostedLocally": true
+  },
+  {
+    "slug": "doc-whangamarino-arcinfo-2003",
+    "fileName": "doc-whangamarino-arcinfo-2003.pdf",
+    "title": "Whangamarino Wetland vegetation map methodology",
+    "creator": "P. Reeves and R. Haskew",
+    "year": "2003",
+    "date": "2003",
+    "kind": "DOC Science Internal Series 152",
+    "topic": "Whangamarino Wetland vegetation map methodology",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in whangamarino wetland vegetation map methodology.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/dsis152.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "P. Reeves and R. Haskew (2003), Whangamarino Wetland vegetation map methodology.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 14,
+    "bytes": 294480,
+    "sha256": "56ec6d2634ce280e26754550c35059b6c49bf97ee0a5beca9cea837bd8eddd51",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-otago-kokopu-arcview-2003",
+    "fileName": "doc-otago-kokopu-arcview-2003.pdf",
+    "title": "Conservation, management and research directions for giant kōkopu in Otago",
+    "creator": "Department of Conservation",
+    "year": "2003",
+    "date": "2003",
+    "kind": "DOC Science Internal Series 112",
+    "topic": "Conservation, management and research directions for giant kōkopu in Otago",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in conservation, management and research directions for giant kōkopu in otago.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/DSIS112.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2003), Conservation, management and research directions for giant kōkopu in Otago.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 26,
+    "bytes": 303158,
+    "sha256": "62e355d92048037dab1a7a9aea38180ea94cda0409fab96044b83a20856e961d",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-rakiura-cats-arcview-2004",
+    "fileName": "doc-rakiura-cats-arcview-2004.pdf",
+    "title": "Feral cats on Stewart Island/Rakiura: population regulation, home range size and habitat use",
+    "creator": "Department of Conservation",
+    "year": "2004",
+    "date": "2004",
+    "kind": "DOC Science Internal Series 174",
+    "topic": "Feral cats on Stewart Island/Rakiura: population regulation, home range size and habitat use",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in feral cats on stewart island/rakiura: population regulation, home range size and habitat use.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/dsis174.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2004), Feral cats on Stewart Island/Rakiura: population regulation, home range size and habitat use.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 35,
+    "bytes": 369377,
+    "sha256": "50e7d2f6fc7e2b83f1fa93f13dce7f57f514428bd81ddd6e9b82a578fb4df621",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-whangarei-coastal-archaeology-gis-2013",
+    "fileName": "doc-whangarei-coastal-archaeology-gis-2013.pdf",
+    "title": "The impact of climate change on the archaeology of New Zealand's coastline: Whangarei District",
+    "creator": "Department of Conservation",
+    "year": "2013",
+    "date": "2013",
+    "kind": "Science for Conservation 322",
+    "topic": "The impact of climate change on the archaeology of New Zealand's coastline: Whangarei District",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in the impact of climate change on the archaeology of new zealand's coastline: whangarei district.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc322high_res.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2013), The impact of climate change on the archaeology of New Zealand's coastline: Whangarei District.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 58,
+    "bytes": 14599068,
+    "sha256": "1c131809bfe262dd954a0edd45c97fab1b9898aa4bf6179293622fdb67367e0f",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-intertidal-arcview-mapping-2005",
+    "fileName": "doc-intertidal-arcview-mapping-2005.pdf",
+    "title": "Intertidal and subtidal habitats: mapping with aerial photography and GIS",
+    "creator": "Department of Conservation",
+    "year": "2005",
+    "date": "2005",
+    "kind": "DOC Research and Development Series 201",
+    "topic": "Intertidal and subtidal habitats: mapping with aerial photography and GIS",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in intertidal and subtidal habitats: mapping with aerial photography and gis.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/drds201.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2005), Intertidal and subtidal habitats: mapping with aerial photography and GIS.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 55,
+    "bytes": 556897,
+    "sha256": "bea091433009ef098359e437e2c52b86263cb913e3da03dab8ea97ea4cce60c0",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-otago-postpastoral-arcview-2003",
+    "fileName": "doc-otago-postpastoral-arcview-2003.pdf",
+    "title": "Post-pastoral succession in intermontane basins and valleys of eastern South Island",
+    "creator": "S. Walker, W.G. Lee and G.M. Rogers",
+    "year": "2003",
+    "date": "2003",
+    "kind": "Science for Conservation 227",
+    "topic": "Post-pastoral succession in intermontane basins and valleys of eastern South Island",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in post-pastoral succession in intermontane basins and valleys of eastern south island.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/sfc227.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "S. Walker, W.G. Lee and G.M. Rogers (2003), Post-pastoral succession in intermontane basins and valleys of eastern South Island.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 22,
+    "bytes": 397460,
+    "sha256": "b4771f219ba55e0f2d5d6a6210eac9ddefc5220637319cba28b6506b954cf135",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-freshwater-eel-arcview-2003",
+    "fileName": "doc-freshwater-eel-arcview-2003.pdf",
+    "title": "Freshwater eel fisheries: analysis of catch and conservation using spatial datasets",
+    "creator": "Department of Conservation",
+    "year": "2003",
+    "date": "2003",
+    "kind": "Science for Conservation 238",
+    "topic": "Freshwater eel fisheries: analysis of catch and conservation using spatial datasets",
+    "summary": "Contemporary evidence of spatial analysis and GIS use in freshwater eel fisheries: analysis of catch and conservation using spatial datasets.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/SfC238.pdf",
+    "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
+    "attribution": "Department of Conservation (2003), Freshwater eel fisheries: analysis of catch and conservation using spatial datasets.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "mapping",
+      "historical"
+    ],
+    "pages": 33,
+    "bytes": 491713,
+    "sha256": "24eb4bb177baf59f0351f5b75da4b57634a770f28f4d4ed5482845d42b7d8dd1",
+    "generatedCover": false,
+    "hostedLocally": true
   }
 ];

@@ -264,6 +264,62 @@
       "pages": 29,
       "bytes": 339034,
       "sha256": "b1ff9b76a3ef1662ae5ea8ae563bc3373f3178db40f306a58e807cb208fe2d6b"
+    },
+    {
+      "slug": "doc-whangamarino-arcinfo-2003",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/dsis152.pdf",
+      "year": "2003",
+      "pages": 14,
+      "bytes": 294480,
+      "sha256": "56ec6d2634ce280e26754550c35059b6c49bf97ee0a5beca9cea837bd8eddd51"
+    },
+    {
+      "slug": "doc-otago-kokopu-arcview-2003",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/DSIS112.pdf",
+      "year": "2003",
+      "pages": 26,
+      "bytes": 303158,
+      "sha256": "62e355d92048037dab1a7a9aea38180ea94cda0409fab96044b83a20856e961d"
+    },
+    {
+      "slug": "doc-rakiura-cats-arcview-2004",
+      "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/dsis174.pdf",
+      "year": "2004",
+      "pages": 35,
+      "bytes": 369377,
+      "sha256": "50e7d2f6fc7e2b83f1fa93f13dce7f57f514428bd81ddd6e9b82a578fb4df621"
+    },
+    {
+      "slug": "doc-whangarei-coastal-archaeology-gis-2013",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc322high_res.pdf",
+      "year": "2013",
+      "pages": 58,
+      "bytes": 14599068,
+      "sha256": "1c131809bfe262dd954a0edd45c97fab1b9898aa4bf6179293622fdb67367e0f"
+    },
+    {
+      "slug": "doc-intertidal-arcview-mapping-2005",
+      "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/drds201.pdf",
+      "year": "2005",
+      "pages": 55,
+      "bytes": 556897,
+      "sha256": "bea091433009ef098359e437e2c52b86263cb913e3da03dab8ea97ea4cce60c0"
+    },
+    {
+      "slug": "doc-otago-postpastoral-arcview-2003",
+      "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/sfc227.pdf",
+      "year": "2003",
+      "pages": 22,
+      "bytes": 397460,
+      "sha256": "b4771f219ba55e0f2d5d6a6210eac9ddefc5220637319cba28b6506b954cf135"
+    },
+    {
+      "slug": "doc-freshwater-eel-arcview-2003",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/SfC238.pdf",
+      "year": "2003",
+      "pages": 33,
+      "bytes": 491713,
+      "sha256": "24eb4bb177baf59f0351f5b75da4b57634a770f28f4d4ed5482845d42b7d8dd1"
     }
   ],
   "unavailable": [
