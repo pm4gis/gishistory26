@@ -1,0 +1,152 @@
+{
+  "checkedOn": "2026-10-18",
+  "historicalCutoff": "2025-12-31",
+  "source": "Official LINZ original PDFs",
+  "licenceReference": "https://www.linz.govt.nz/copyright",
+  "acquired": [
+    {
+      "slug": "linz-annual-report-2001",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/annual-report.pdf",
+      "published": "2001",
+      "pages": 85,
+      "size": 376829,
+      "sha256": "8fd6c5f19fab908665183ce351214a304921d7035701aba1178218f2913e3547",
+      "thumbnailBytes": 33446,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-annual-report-2004",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/linz-annual-report-2004.pdf",
+      "published": "2004",
+      "pages": 66,
+      "size": 1584174,
+      "sha256": "14475ff9236b440f3fabb0463850a750d0a8a30b04edf98c93198da2f834f330",
+      "thumbnailBytes": 57514,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-annual-report-2005",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/linz-annual-report-2005.pdf",
+      "published": "2005",
+      "pages": 64,
+      "size": 373872,
+      "sha256": "328de553d1fa546fc59025374f1d4a9a7c822096e4315fc2cd27fb901d8ce579",
+      "thumbnailBytes": 102471,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-annual-report-2006",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/linz-annual-report-2006.pdf",
+      "published": "2006",
+      "pages": 79,
+      "size": 10221365,
+      "sha256": "515948ffaa1d626531ced3af93905856029b4d58c7b4694265eb2775bffea625",
+      "thumbnailBytes": 72468,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-annual-report-2007",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/linz-annual-report-2007.pdf",
+      "published": "2007",
+      "pages": 84,
+      "size": 1767274,
+      "sha256": "54b46b7a63fa551bc3c20103761cf54dd726b449bd9f19bf17a2f95e91fdf1f2",
+      "thumbnailBytes": 78625,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-annual-report-2009",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/annual_report_2008-2009.pdf",
+      "published": "2009",
+      "pages": 92,
+      "size": 892675,
+      "sha256": "2aff1fe1ea14b6b42da0b9abcf1180a07aaeac47dc4989881c4710a805690837",
+      "thumbnailBytes": 76995,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-annual-report-2010",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/linz-annual-report-2009-2010.pdf",
+      "published": "2010",
+      "pages": 100,
+      "size": 628667,
+      "sha256": "3accc4a32fbbffa0aa6c6dacd0aba2137a63718b0b4656b88cbe0d1cf719d575",
+      "thumbnailBytes": 32395,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-statement-of-intent-2005",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/soi-2005.pdf",
+      "published": "2005",
+      "pages": 66,
+      "size": 5501668,
+      "sha256": "1630ff44e84531dd5b21894b07985f96c7fe3fcc4f6cba16ceb44ec505f8f1e4",
+      "thumbnailBytes": 99524,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-statement-of-intent-2007",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/soi-2007.pdf",
+      "published": "2007",
+      "pages": 64,
+      "size": 1995050,
+      "sha256": "57a631ea6635241c0fdbe5ad1c8c2cb3847464d1d5a3c7ecd61e4df317bab2a2",
+      "thumbnailBytes": 68684,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-statement-of-intent-2008",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/statement-intent-0809.pdf",
+      "published": "2008",
+      "pages": 48,
+      "size": 584829,
+      "sha256": "76b81231c431d3eca83a3d287a1574e51a1479e9313c80f195dd76e0f59c78df",
+      "thumbnailBytes": 72510,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-statement-of-intent-2009",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/statement-intent-2009-2012.pdf",
+      "published": "2009",
+      "pages": 32,
+      "size": 259086,
+      "sha256": "7d46a0b4abda2ff213dcac98bb7bd40df92e220d7bb73bd61100a5dbf1c53bc0",
+      "thumbnailBytes": 33854,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-statement-of-intent-2010",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/statement-intent-2010-2013.pdf",
+      "published": "2010",
+      "pages": 44,
+      "size": 2607335,
+      "sha256": "a372cde4406e1541a50d3612f1b3ac6b3ab8b2fc3c702187ac833f5511dc4f2e",
+      "thumbnailBytes": 37432,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    },
+    {
+      "slug": "linz-statement-of-intent-2011",
+      "publisherUrl": "https://www.linz.govt.nz/sites/default/files/corp/statement-intent-2011-2014.pdf",
+      "published": "2011",
+      "pages": 45,
+      "size": 467345,
+      "sha256": "ffeb0688a73f6f46f3293f568166c353e57bbdb5df0ff125f5b887d58ea64a2c",
+      "thumbnailBytes": 36825,
+      "attribution": "Toitū Te Whenua Land Information New Zealand",
+      "licenceReference": "https://www.linz.govt.nz/copyright"
+    }
+  ],
+  "skipped": []
+}
