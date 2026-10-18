@@ -49,7 +49,7 @@ for (const route of noindexRoutes) {
   requireTrue(/<meta\b[^>]*name="robots"[^>]*content="noindex,follow"/i.test(html),
     'Utility page is not marked noindex: ' + route);
 }
-for(const route of ['/history/','/read/','/timeline/','/browse/','/publications/','/about/']){
+for(const route of ['/history/','/read/','/timeline/','/browse/','/directory/','/publications/','/about/']){
   requireTrue(urls.includes(origin + route), 'Core search route missing from sitemap: ' + route);
 }
 const report={source:'generated static build, not Google Search Console',canonicalOrigin:origin,sitemapEntries:urls.length,groups:grouped,errors};

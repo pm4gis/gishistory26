@@ -3,6 +3,8 @@ import { chapterDocuments } from '../lib/chapter-documents.mjs';
 import { contributedPrimarySources } from '../lib/contributed-primary-sources.mjs';
 import { onlinePdfPublications } from '../lib/online-pdf-publications.mjs';
 import { ORIGIN } from '../lib/seo.mjs';
+import { directoryGroups } from '../lib/directory-index.mjs';
+import { isListedRecord } from '../lib/record-listing.mjs';
 
 export async function GET() {
   const d = await dataset();
@@ -15,11 +17,12 @@ export async function GET() {
   }
   [
     '/', '/history/', '/publications/', '/sources/documents/', '/read/', '/timeline/', '/browse/', '/datasets/', '/network/',
-    '/themes/', '/images/', '/about/', '/sources/collections/',
+    '/themes/', '/images/', '/about/', '/directory/', '/sources/collections/',
     '/nga-poutama-videos/'
   ].forEach(path => include(path));
   d.articles.filter((a: any) => a.status === 'published').forEach((a: any) => include(a.url, a.updatedAt));
-  d.records.filter((r: any) => r.kind !== 'Story').forEach((r: any) => include(r.url, r.updatedAt));
+  d.records.filter(isListedRecord).forEach((r: any) => include(r.url, r.updatedAt));
+  directoryGroups(d.records).forEach(group => include('/directory/'+group.slug+'/'));
   d.themes.forEach((t: any) => include('/themes/' + t.slug + '/', t.updatedAt));
   d.images.forEach((i: any) => include('/images/' + i.slug + '/'));
   chapterDocuments.forEach((doc: any) => include('/documents/' + doc.slug + '/'));
