@@ -16,7 +16,21 @@ for(const path of (await fs.readdir(pdfDir)).filter(x=>x.endsWith('.pdf'))){
   existing.add(createHash('sha256').update(bytes).digest('hex'));
 }
 for(const p of pre2000PdfPublications){
-  if(mirroredPre2000PdfSlugs.includes(p.slug))continue;
+  if(mirroredPre2000PdfSlugs.includes(p.slug)){
+    const original=await fs.readFile(pdfDir+'/'+p.fileName);
+    const sha256=createHash('sha256').update(original).digest('hex');
+    if(original.subarray(0,5).toString('ascii')!=='%PDF-')throw Error('Corrupt previously hosted PDF '+p.slug);
+    const info=spawnSync('pdfinfo',[pdfDir+'/'+p.fileName],{encoding:'utf8',timeout:55000,maxBuffer:1000000});
+    if(info.status!==0)throw Error('Invalid previously hosted PDF '+p.slug);
+    const jpeg=await fs.readFile(thumbDir+'/'+p.slug+'.jpg');
+    if(jpeg.subarray(0,3).toString('hex')!=='ffd8ff')throw Error('Invalid stored thumbnail '+p.slug);
+    acquired.push({slug:p.slug,publicationYear:p.year,sourceUrl:p.sourceUrl,
+      pages:Number((info.stdout.match(/^Pages:\s*(\d+)/m)||[])[1]||0),
+      size:original.length,sha256,thumbnailBytes:jpeg.length,attribution:p.creator,
+      previouslyArchived:true});
+    console.log('VERIFIED EXISTING '+p.slug+' sha256='+sha256);
+    continue;
+  }
   const hostname=new URL(p.sourceUrl).hostname;
   if(hostname!=='www.linz.govt.nz'&&hostname!=='linz.govt.nz'){
     sourceLinked.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Publisher PDF retained: document-specific DOC permissions require separate authorisation'});
