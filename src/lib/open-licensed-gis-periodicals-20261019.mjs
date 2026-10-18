@@ -30,7 +30,7 @@ export const openLicensedGisPeriodicals = [
     ],
     "checkTerms": [
       "new zealand",
-      "niwa"
+      "osgeo"
     ]
   },
   {
