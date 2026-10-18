@@ -4,84 +4,8 @@
   "documentarySources": "Official LINZ and Department of Conservation historical PDF addresses",
   "rehostingBasis": "LINZ website CC BY 4.0 default terms, subject to document-specific restrictions",
   "licenceReference": "https://www.linz.govt.nz/copyright",
-  "acquired": [
-    {
-      "slug": "nzgd49-wgs84-transformation-1997",
-      "publicationYear": "1997",
-      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/static/tr1997-11-transformation-parameters-wgs84-nzgd2000.pdf",
-      "pages": 15,
-      "size": 170649,
-      "sha256": "460d84916f763d54c00b40766c43a87eb4a97d41c32dc6c9c622543a21e4f8e8",
-      "thumbnailBytes": 101042,
-      "attribution": "Merrin Pearse and Chris Crook · LINZ"
-    },
-    {
-      "slug": "geodetic-strategic-business-plan-1998",
-      "publicationYear": "1998",
-      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/static/tr03-new-zealand-geodetic-strategic-business-plan-1998.pdf",
-      "pages": 53,
-      "size": 233874,
-      "sha256": "cdc32597ab8ea2c7a26c940977478e604a16db02fe1b555c5f6ec5fab5c93218",
-      "thumbnailBytes": 32578,
-      "attribution": "Office of the Surveyor-General · LINZ"
-    },
-    {
-      "slug": "continuous-spatial-access-1999",
-      "publicationYear": "1999",
-      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/tr06-proposal-for-continuous-access-to-nz-spatial-infrastructure-1999.pdf",
-      "pages": 34,
-      "size": 207932,
-      "sha256": "44811cef824716acbf7dc887a4482fab650cc744db6514aca646a1f6be6ed0c9",
-      "thumbnailBytes": 40818,
-      "attribution": "Office of the Surveyor-General · LINZ"
-    },
-    {
-      "slug": "ross-dependency-geodesy-1999",
-      "publicationYear": "1999",
-      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/tr07-ross-dependency-current-and-future-activities-1999.pdf",
-      "pages": 21,
-      "size": 240213,
-      "sha256": "aee4723ab71f20e41f26642990859a65d7c0378a633de343efe09b01954039f2",
-      "thumbnailBytes": 43857,
-      "attribution": "Office of the Surveyor-General · LINZ"
-    },
-    {
-      "slug": "nzgd2000-meridional-circuits-1999",
-      "publicationYear": "1999",
-      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/tr08-proposal-for-nzgd2000-meridional-circuits-1999.pdf",
-      "pages": 25,
-      "size": 84966,
-      "sha256": "955c803e27723ed53bf00c6e460cc334108133f70cd933365760c3122c281f82",
-      "thumbnailBytes": 33044,
-      "attribution": "Office of the Surveyor-General · LINZ"
-    },
-    {
-      "slug": "seabed-cadastre-principles-1999",
-      "publicationYear": "1999",
-      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/tr09-principles-for-seabed-cadastre-1999.pdf",
-      "pages": 9,
-      "size": 37593,
-      "sha256": "d97827af8dd03ae714317be7c16b1143869b9260a272b16b913277fb922a5d34",
-      "thumbnailBytes": 32242,
-      "attribution": "Office of the Surveyor-General · LINZ"
-    },
-    {
-      "slug": "cadastre-reforms-1999",
-      "publicationYear": "1999",
-      "sourceUrl": "https://www.linz.govt.nz/sites/default/files/cust/cadastre2014reformsinnz.pdf",
-      "pages": 13,
-      "size": 54280,
-      "sha256": "10a40517b8a566481c631c61d08cf66b49f476a16311ec05aa9f1f99af93c306",
-      "thumbnailBytes": 107170,
-      "attribution": "Tony Bevin · LINZ"
-    }
-  ],
+  "acquired": [],
   "sourceLinked": [
-    {
-      "slug": "first-order-triangulation-1978",
-      "sourceUrl": "https://www.linz.govt.nz/system/files_force/media/file-attachments/first-order-triangulation.pdf",
-      "reason": "Error: Source HTTP 404"
-    },
     {
       "slug": "doc-gis-1990",
       "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/srir80.pdf",
