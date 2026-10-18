@@ -1,27 +1,38 @@
 name: Archive NZ GIS periodical originals
 on:
   push:
-    branches: [main, feature/20261018-mfe-magazines-originals]
+    branches: [main, feature/doc-science-newsletter-archive-20261018]
     paths:
       - '.github/workflows/archive-gis-periodicals-20261018.yml'
       - 'scripts/archive-magazine-gis-pdfs-20261018.mjs'
       - 'src/lib/magazine-pdf-candidates-20261018.mjs'
       - 'src/lib/regional-gis-pdf-candidates-20261018.mjs'
       - 'src/lib/historical-gis-new-candidates-20261018.mjs'
+      - 'src/lib/doc-science-newsletter-candidates-20261018.mjs'
+      - 'src/lib/doc-rare-bits-candidates-20261018.mjs'
   pull_request:
     branches: [main]
   workflow_dispatch:
+concurrency:
+  group: nzgis-periodical-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
   archive:
-    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/20261018-mfe-magazines-originals'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/doc-science-newsletter-archive-20261018'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+      - name: Update checkout to latest branch before acquiring originals
+        if: github.event_name == 'push'
+        run: |
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          git fetch origin "$BRANCH"
+          git checkout -B "$BRANCH" "origin/$BRANCH"
       - uses: actions/setup-node@v4
         with:
           node-version: '22.19.0'
@@ -47,6 +58,9 @@ jobs:
           name: nz-gis-pdf-acquisition
           path: |
             docs/verification/magazine-pdf-archive-20261018.json
+            docs/verification/doc-science-newsletter-gis-evidence-20261018.json
+            public/assets/publications/pdfs/doc-conservation-science-newsletter-*.pdf
+            public/assets/publications/pdfs/doc-rare-bits-*.pdf
             docs/verification/gis-pdf-chapter-preservation-20261018.json
             public/assets/publications/pdfs/auckland-*.pdf
             public/assets/publications/pdfs/doc-conservation-science-newsletter-28-29-1998.pdf
@@ -63,7 +77,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/assets/publications/pdfs/ public/assets/publications/thumbnails/ src/lib/magazine-pdf-publications-20261018.mjs docs/verification/magazine-pdf-archive-20261018.json content/preservation-manifest.json docs/verification/gis-pdf-chapter-preservation-20261018.json
+          git add public/assets/publications/pdfs/ public/assets/publications/thumbnails/ src/lib/magazine-pdf-publications-20261018.mjs docs/verification/magazine-pdf-archive-20261018.json docs/verification/doc-science-newsletter-gis-evidence-20261018.json content/preservation-manifest.json docs/verification/gis-pdf-chapter-preservation-20261018.json
           if git diff --cached --quiet; then
             echo 'No eligible files acquired'
             exit 0

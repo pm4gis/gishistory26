@@ -1,0 +1,94 @@
+{
+  "sourceCommit": "39d30022",
+  "description": "Immutable first-pass original PDF text evidence; used when overlapping acquisition runs replace a later audit report",
+  "evidence": [
+    {
+      "slug": "doc-conservation-science-newsletter-2-1993",
+      "issue": "Conservation Science Newsletter, issue 2",
+      "year": "1993",
+      "term": "Remote sensing",
+      "context": "s SCIENCE FACTION FICTION CONTENTS EDITORIAL EDITORIAL 1 This issue has a number of interesting reports on research in progress, including that of Margaret O'Brien on REPORTING BACK 2 Remote sensing 2 the women in 1)0('. In addition to all the Reintroduction biology 3 interesting information about the NOTES AND NEWS 5 women in DoC, Margaret gives us a picture of how a social scientist works. Women - Environment and development 5 1080 possum po",
+      "hitCount": 7,
+      "pages": 16,
+      "sha256": "ef9626bdc15e12196c345f3e744ccd7b1d3b7a771d8b8b672710e4974c3d6d9c",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-2-june-1993.pdf"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-3-1993",
+      "issue": "Conservation Science Newsletter, issue 3",
+      "year": "1993",
+      "term": "Biosite",
+      "context": "that it does not present a fair view of the contents then we will consider changing 7 it. Paper wasps 9 The new Departmental Identity REVIEWS 10 Programme will require the redesigning Biosite 10 of all our publications, so as to better show the new logo and wordmark. 11 Change could be made at that time, if Microsoft ACCESS NEW S&R PUBLICATIONS 14 enough readers want it. In the last two months as I have been moving around the Conservancies I have",
+      "hitCount": 14,
+      "pages": 16,
+      "sha256": "9d9f12d243f80262f0d4e8711e5ba254de351398d7af1eb65e5466da8aefd8c5",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-3-august-1993.pdf"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-6-1994",
+      "issue": "Conservation Science Newsletter, issue 6",
+      "year": "1994",
+      "term": "Biosite",
+      "context": "E newsletter 5 RESEARCH IN PROGRESS Amphibian and Reptile Distribution Scheme One of the many species distribution be completely rewritten in Oracle, so that it can link directly into Biosite. Research is the Amohibians and Some of the information already databases managed by Science and Reptiles database CARDS), which records reptile and amphibian sightings trom New Zealand. At the moment it contains just under 4000 records, including many from",
+      "hitCount": 5,
+      "pages": 12,
+      "sha256": "4fd153f685aee9d44dbc28b3fcd74f9a93db62cfb2b4564bfe67e90afb4c667b",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-6-february-1994.pdf"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-9-1994",
+      "issue": "Conservation Science Newsletter, issue 9",
+      "year": "1994",
+      "term": "Biosite",
+      "context": "the database. Nine fields of data for all 10725 records are held by DOC. These are: the card and catchment number, the location, date, and fishing method, CONservation SCIENCE newsletter Biosite and Index. Hopefully these applications will result in greater use of the New Zealand Wetlands Inventory and the NIWA Freshwater Fish Database, and the ease of use of the applications will encourage more users to access the information in their respective area",
+      "hitCount": 1,
+      "pages": 16,
+      "sha256": "1d7b4e33012039180654d7b0a183f9cee6fd17f3cf639d1f284fd82d1bc8a686",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-9-august-1994.pdf"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-20-1996",
+      "issue": "Conservation Science Newsletter, issue 20",
+      "year": "1996",
+      "term": "remote sensing",
+      "context": "e fur seal ($1.50), and the on plant biogeography, on the impacts bottlenose dolphin ($1.80). of possums on vulnerable forests, and The stamps are designed by Sea Sky on the utility of remote sensing for map- Design of Paraparaumu and printed ping forest vegetation and health. He by Southern Colour Print in Dunedin thought Dunedin was off the beaten by Lithography. Consen,ation Science Newsletter No. 20, June 1996. the attention of visitors",
+      "hitCount": 1,
+      "pages": 12,
+      "sha256": "9bd1efc9a237569b2fd53d622cb39fefdbf9b2d06fe763f3e56a693c6735100c",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-20-june-1996.pdf"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-26-1997",
+      "issue": "Conservation Science Newsletter, issue 26",
+      "year": "1997",
+      "term": "Gis",
+      "context": "and Research Division PUBLICATIONS Dugdale, J.; Illitcheson, J. 1997. Inverte- SCIENCE FOR CONSERVATION 1997. Spurr, E.B; Powlesland, R.G. Im- brate values of kanuka (*unzea stands, Gis-borne Re- pacts of aerial application of 1080 ericoides) on non-target native fauna: Review gion. Science for Conservation: 55. and priorities for research. Science for Conservation: 62. M p $12.50 30 p. $12.50 (incl. G.S.T.) Records increasingly coniplex co",
+      "hitCount": 1,
+      "pages": 12,
+      "sha256": "2389fdfae8e8b02b251ace3be3655bfdc125095ec444d1a6e4a0381619a2b63f",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-26-november-1997.pdf"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-33-1999",
+      "issue": "Conservation Science Newsletter, issue 33",
+      "year": "1999",
+      "term": "remote sensing",
+      "context": "0 incl. GST. logical assessment of two islands Trotter, C.M.; Brown, L.J 1999. Senecio in west Otago lakes for potential buff Monitoring forest canopy condi- re-introduction tion by remote sensing. Depart- (Gallirallus australis bectori). ment of Conserration Tecbmical Se- Science for Conservation 111. 25 p ries 14. 44 p (including 2 colour pages) 514.50 (includes 8 colour of weka pages) $30.00 ind. GST. incl. GST. Williams, A. 1999 Thre",
+      "hitCount": 1,
+      "pages": 16,
+      "sha256": "ba90c57c3766fbf52e960d669b3abb0eb097dcfe90aa2c3900fcc0998f7c0ea4",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-33-august-1999.pdf"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-38-2000",
+      "issue": "Conservation Science Newsletter, issue 38",
+      "year": "2000",
+      "term": "gis",
+      "context": "land area wetter again will elimi- whether complete restoration to the nate sonic exotic plant species, but pre-impacted state is desirable. At Bul- that others tolerate flooding almost gis lock Creek, some of the drains now well as the desirable wetland species support and remain. The ability of desired aquatic plants anci invertebrates, and wetland communities to 'self-assem- large numbers of eels. Closure of all ble'iii response to relativel",
+      "hitCount": 1,
+      "pages": 16,
+      "sha256": "05c7f8549523b6604e902495d0f69845537fd9858f440062bf917a6fdad2949a",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-38-september-2000.pdf"
+    }
+  ]
+}

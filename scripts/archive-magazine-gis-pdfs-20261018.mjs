@@ -8,13 +8,26 @@ import {magazinePdfCandidates} from '../src/lib/magazine-pdf-candidates-20261018
 import {magazinePdfPublications} from '../src/lib/magazine-pdf-publications-20261018.mjs';
 import {regionalGisPdfCandidates} from '../src/lib/regional-gis-pdf-candidates-20261018.mjs';
 import {historicalGisNewCandidates} from '../src/lib/historical-gis-new-candidates-20261018.mjs';
+import {docScienceNewsletterCandidates} from '../src/lib/doc-science-newsletter-candidates-20261018.mjs';
+import {docRareBitsCandidates} from '../src/lib/doc-rare-bits-candidates-20261018.mjs';
+const periodicalCandidates=[...docScienceNewsletterCandidates,...docRareBitsCandidates];
 
 const pdfDir='public/assets/publications/pdfs';
 const thumbDir='public/assets/publications/thumbnails';
 await fs.mkdir(pdfDir,{recursive:true});
 await fs.mkdir(thumbDir,{recursive:true});
 const published=[...magazinePdfPublications],unavailable=[];
-for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates]){
+const periodicalEvidencePath='docs/verification/doc-science-newsletter-gis-evidence-20261018.json';
+let magazineEvidence=[];
+try{magazineEvidence=JSON.parse(await fs.readFile(periodicalEvidencePath,'utf8')).evidence||[]}catch{}
+try{const seed=JSON.parse(await fs.readFile('docs/verification/doc-science-newsletter-first-pass-evidence-20261018.json','utf8'));for(const hit of seed.evidence||[])if(!magazineEvidence.some(x=>x.slug===hit.slug))magazineEvidence.push(hit);}catch{}
+let newlyArchivedPeriodicals=0;
+const priorPeriodicalCount=published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length;
+const maxNewPeriodicals=15;
+const spatialMention=/(?:\bGIS\b|\bArcView\b|\bARC\s*\/\s*INFO\b|geograph(?:ical|ic) information systems?|\bBiosite\b|\bGPS\b|\bspatial (?:database|information|analysis|data|mapping)\b|\bremote sensing\b|\bmap(?:ping)? database\b|\bdigital mapping\b|\bcomputer(?:ised|ized)? mapping\b)/gi;
+for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...docScienceNewsletterCandidates,...docRareBitsCandidates]){
+ const isPeriodical=periodicalCandidates.some(issue=>issue.slug===p.slug);
+ if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 15 original magazine PDFs already archived in this release'});continue;}
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
  if(published.some(item=>item.slug===p.slug)){
   const prior=published.find(item=>item.slug===p.slug);
@@ -52,6 +65,8 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   if(extracted.status!==0)throw Error('Unable to inspect source text');
   const txt=extracted.stdout.toLowerCase();
   if(!p.checkTerms.every(word=>txt.includes(word.toLowerCase())))throw Error('Unexpected source content; review required');
+  const spatialHits=isPeriodical?[...extracted.stdout.matchAll(spatialMention)]:[];
+  if(isPeriodical&&spatialHits.length===0)throw Error('No unambiguous GIS/spatial information reference found in issue OCR text');
   if(!Number.isInteger(Number(p.year))||Number(p.year)>2025)throw Error('Publication outside accepted history cutoff');
   if(!/department of conservation|ministry for the environment|greater wellington regional council/i.test(p.sourceName)&&!/(creative commons|cc by|cc-by|attribution 4\.0)/i.test(txt.slice(0,16000)))throw Error('No document-level council republication licence identified');
   if(/all rights reserved|permission to use (?:any|all) of its contents must be obtained|no part of this (?:report|publication|work) may be reproduced|must not be reproduced|may not be reproduced or copied|copyright extends to all forms of copying|shall not be reproduced|reproduction prohibited/i.test(txt.slice(0,16000)))throw Error('Source-specific reproduction restriction');
@@ -61,6 +76,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   if(cover.length<1000||cover.subarray(0,3).toString('hex')!=='ffd8ff')throw Error('Invalid JPEG');
   const sha256=createHash('sha256').update(bytes).digest('hex');
   published.push({...p,pages,bytes:bytes.length,sha256,checkTerms:undefined,generatedCover:false,hostedLocally:true});
+  if(isPeriodical){const hit=spatialHits[0],start=Math.max(0,hit.index-190);magazineEvidence=magazineEvidence.filter(item=>item.slug!==p.slug);magazineEvidence.push({slug:p.slug,issue:p.title,year:p.year,term:hit[0],context:extracted.stdout.slice(start,Math.min(extracted.stdout.length,hit.index+270)).replace(/\s+/g,' ').trim(),hitCount:spatialHits.length,pages,sha256,sourceUrl:p.sourceUrl});newlyArchivedPeriodicals++;}
   console.log('ARCHIVED '+p.slug+' '+pages+' pages '+bytes.length+' bytes '+sha256);
  }catch(e){
   await fs.rm(pdf,{force:true});await fs.rm(image,{force:true});
@@ -72,4 +88,6 @@ const lines = published.map(({checkTerms,...p})=>p);
 await fs.writeFile('src/lib/magazine-pdf-publications-20261018.mjs','// Actual PDF originals validated and hosted on this site.\nexport const magazinePdfPublications = '+JSON.stringify(lines,null,2)+';\n');
 await fs.mkdir('docs/verification',{recursive:true});
 await fs.writeFile('docs/verification/magazine-pdf-archive-20261018.json',JSON.stringify({checkedOn:'2026-10-18',published:published.map(p=>({slug:p.slug,sourceUrl:p.sourceUrl,year:p.year,pages:p.pages,bytes:p.bytes,sha256:p.sha256})),unavailable},null,2)+'\n');
+await fs.writeFile('docs/verification/doc-science-newsletter-gis-evidence-20261018.json',JSON.stringify({checkedOn:'2026-10-18',maxNewPeriodicals,archivedCount:published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length,evidence:magazineEvidence.filter(x=>published.some(p=>p.slug===x.slug)),unavailable:unavailable.filter(x=>periodicalCandidates.some(p=>p.slug===x.slug))},null,2)+'\n');
+console.log('SCIENCE_PERIODICAL_BATCH '+newlyArchivedPeriodicals+' new originals; '+(priorPeriodicalCount+newlyArchivedPeriodicals)+' total original issues');
 if(published.length===0)console.warn('No original files could be acquired; inspect archive report before retrying.');

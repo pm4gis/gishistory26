@@ -1,0 +1,30 @@
+# DOC science magazine GIS evidence and professional magazine source gap
+
+Research date 18 October 2026. Archive provenance and editorial evidence only, not public reuse messaging. Historical timeline cutoff 31 December 2025.
+
+## Source discoveries
+
+- Department of Conservation (1993–2005), *Conservation Science Newsletter*, ISSN 1172-2606. DOC lists original files issue by issue (some numbers are combined or no original is held): https://www.doc.govt.nz/about-us/science-publications/series/older-series/conservation-science-newsletter/ . Each locally preserved PDF must pass original file checks, a geospatial text hit and first-page verification. The source-text passages and checksums are retained in `docs/verification/doc-science-newsletter-gis-evidence-20261018.json`.
+- Issue 3, August 1993, contains the review 'Biosite: A species information management tool'. It describes dBASE species distribution records, the earlier INDEX spatial retrieval system, and a proposed Oracle-based Biosite database recording observations, coordinates, dates and sources. Establishes a design/pilot, NOT completed national adoption. Original: https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-3-august-1993.pdf
+- Issues 28–29, December 1998, were already hosted in the prior release. The Fire Ecology recommendations propose a national wildfire risk analysis and GIS database of fire-sensitive vegetation; do not duplicate. Original https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-28--29-december-1998.pdf
+- Issue 35, December 1999, describes DOC Science Publications on DOC's intranet as an indexed catalogue with full internal PDF previews, while public web access at that time supplied the catalogue but not yet the full PDF files. Source https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-35-december-1999.pdf . Distinguish intranet document publishing from externally accessible downloads.
+- Manaaki Whenua Landcare Research, *Information in Formation* (Remote Sensing/GIS newsletter), issue 6, April 1996, included Garth Harmsworth's 'Māori values for land-use planning', with GIS layers. Primary bibliography on https://icm.landcareresearch.co.nz/about/people/garth_harmsworth.asp . The original PDF was not located.
+- *Information in Formation*, issue 8, April 1997, contained 'Banks Peninsula District Plan', describing Landcare Research using ARC/INFO to create 59 maps for Banks Peninsula District Council and the council's in-house GIS. The National Library has an article-level catalogue: https://natlib.govt.nz/records/30170693 . Original PDF was not located; preserve author/issue details for archive enquiry.
+- *Information in Formation*, issue 10, 2000, contained 'Defining ecosystems for biodiversity and environmental management' by J. Leathwick, J. Overton, G. Barker, B. Clarkson and R. Stephens, pages 1–4; periodical citation in: https://rsnz.onlinelibrary.wiley.com/doi/10.1080/03014223.2003.9518346 . Original PDF not located.
+- NIWA's *Water & Atmosphere*, issue 5, August 2012, documents 'Here be dragons' (marine mapping) and 'Climate-proofing our towns and cities', relating to historic regional hazard software. Article-level source https://niwa.co.nz/about-niwa/water-atmosphere/water-atmosphere-5-august-2012 . Issue 26, August 2021, documents drone mapping, 'Supercharging the view from above': https://niwa.co.nz/about-niwa/water-atmosphere/water-atmosphere-26-august-2021 . Historic 2002 issue copies carry permission-to-reprint notices. NIWA's general site CC BY 4.0 excludes identified third-party content. Review actual full issues before any copying. Source https://niwa.co.nz/about-niwa/terms .
+- NZ Surveying + Spatial: issues 79–119 in National Library periodical record https://natlib.govt.nz/records/35103931 ; New Zealand Surveyor older series https://natlib.govt.nz/records/44023637 . Several complete original issues are not available via documented licenced copies; do not create placeholder publication pages.
+
+## MfE publisher-hosting access
+
+The following official MfE documents can be located as publisher PDF references and search-indexed original text, but direct GitHub Actions fetch and curl followed repeated redirects and neither unversioned nor cache-versioned URLs yielded copyable PDF bytes:
+- 2017 Plan mapping standards, https://environment.govt.nz/publications/plan-mapping-standards/
+- 2018 Electronic functionality, accessibility and mapping evaluation, https://environment.govt.nz/publications/proposed-nps-evaluation-report-2018-part-2e-electronic-functionality-and-accessibility-and-mapping/
+- 2018 Future spatial framework for wetland mapping, https://environment.govt.nz/publications/considering-a-future-spatial-framework-for-wetland-mapping-and-monitoring-in-new-zealand/
+
+Do not claim those official PDFs have been archived. A verified alternative-authority PDF host could be added after checking exact title, year, source rights and file checksums. The archive script now avoids repeated unproductive MfE loops unless explicitly asked to retry.
+
+Copyright note retained privately: DOC's default Crown material is CC BY 4.0, excluding identified third-party material, emblems and design elements. https://www.doc.govt.nz/footer-links/copyright . Historical issue-specific restrictions take priority. The public interface must not acquire new rights/reuse paragraphs.
+
+## Project integration
+
+The source-indexed *Conservation Science Newsletter* issues link into the existing conservation and early GIS chapters through `regionalGisChapterPublications` only after their original PDFs have been copied and validated. Source excerpts in the verification register are for the editor to assess, not to be added automatically as factual claims to chapter prose. Existing manuscript text and the 31 December 2025 limit are preserved.
