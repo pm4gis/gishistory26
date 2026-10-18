@@ -54,6 +54,18 @@
       "sources": [],
       "id": "web-abley-people-2026",
       "markdown": "Steve Abley’s 1996 pedestrian-crossing mapping project for Christchurch City Council is part of Abley’s business history, described in Chapter 12."
+    },
+    {
+      "type": "paragraph",
+      "id": "archive-pdf-auckland-liquefaction-mapping-2021",
+      "text": "Auckland Council’s 2021 liquefaction assessment provides a later example of spatial data prepared for local-government planning. It published regional maps of liquefaction vulnerability alongside the technical assessment. This documented application of GIS-based hazard information does not establish that other councils used the same approach.",
+      "markdown": "Auckland Council’s 2021 liquefaction assessment provides a later example of spatial data prepared for local-government planning. It published regional maps of liquefaction vulnerability alongside the technical assessment. This documented application of GIS-based hazard information does not establish that other councils used the same approach.",
+      "sources": [
+        {
+          "label": "Auckland Council liquefaction assessment, 2021",
+          "url": "/publications/pdf/auckland-liquefaction-mapping-2021/"
+        }
+      ]
     }
   ],
   "sources": [],
