@@ -37,5 +37,63 @@ export const magazinePdfCandidates = [
   themeIds:['profession','open-practice'],keywords:['Auckland Council','GIS','spatial modelling','natural hazards','liquefaction','planning'],
   checkTerms:['liquefaction','auckland','2021']
  }
-
+,
+ {
+  "slug": "auckland-water-quality-data-explorer-2025",
+  "fileName": "auckland-water-quality-data-explorer-2025.pdf",
+  "title": "Water quality and river ecology data explorer: user guide and methodology",
+  "creator": "J. Atoa, L. Buckthought, N. Dikareva, J. Kamke, R. Ingley and G. Surrey",
+  "year": "2025",
+  "date": "December 2025",
+  "kind": "Council geospatial data explorer guide",
+  "topic": "Freshwater interactive geospatial data explorer",
+  "summary": "Auckland Council guide to a web-based water quality and river ecology data explorer for regional monitoring data.",
+  "sourceName": "Auckland Council",
+  "sourceUrl": "https://knowledgeauckland.org.nz/media/gy3jf2fq/water-quality-river-ecology-data-explorer-user-guide-methodology-supplementary-report-eemu-dec-2025.pdf",
+  "license": "Creative Commons Attribution 4.0 International",
+  "attribution": "Atoa et al. (2025), Auckland Council.",
+  "themeIds": [
+    "open-practice",
+    "profession"
+  ],
+  "keywords": [
+    "GIS",
+    "interactive map",
+    "water quality"
+  ],
+  "checkTerms": [
+    "water quality",
+    "data explorer"
+  ]
+},
+ {
+  "slug": "auckland-watercourse-methodology-2016",
+  "fileName": "auckland-watercourse-methodology-2016.pdf",
+  "title": "Watercourse assessment methodology: infrastructure and ecology (version 2.0)",
+  "creator": "M. Lowe, R. Ingley and D. Young for Auckland Council",
+  "year": "2016",
+  "date": "January 2016",
+  "kind": "Council technical methodology",
+  "topic": "Mobile GIS, geodatabases and watercourse mapping",
+  "summary": "Auckland Council technical report TR2016/002 records ArcGIS Online field assessment, geodatabase data collection and mapped watercourse survey outputs.",
+  "sourceName": "Auckland Council",
+  "sourceUrl": "https://www.knowledgeauckland.org.nz/media/1267/tr2016-002-watercourse-assessment-methodology-infrastructure-and-ecology-v2.pdf",
+  "license": "Original permits accurate non-commercial educational and public-service reproduction with source and author attribution.",
+  "attribution": "Lowe, M., Ingley, R. and Young, D. (2016). Auckland Council technical report TR2016/002.",
+  "themeIds": [
+    "profession",
+    "open-practice"
+  ],
+  "keywords": [
+    "GIS",
+    "ArcGIS Online",
+    "survey",
+    "watercourse"
+  ],
+  "checkTerms": [
+    "watercourse",
+    "assessment",
+    "auckland"
+  ]
+}
 ];
