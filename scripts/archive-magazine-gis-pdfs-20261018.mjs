@@ -10,6 +10,7 @@ import {regionalGisPdfCandidates} from '../src/lib/regional-gis-pdf-candidates-2
 import {historicalGisNewCandidates} from '../src/lib/historical-gis-new-candidates-20261018.mjs';
 import {docScienceNewsletterCandidates} from '../src/lib/doc-science-newsletter-candidates-20261018.mjs';
 import {docRareBitsCandidates} from '../src/lib/doc-rare-bits-candidates-20261018.mjs';
+import {openLicensedGisPeriodicals} from '../src/lib/open-licensed-gis-periodicals-20261019.mjs';
 const periodicalCandidates=[...docScienceNewsletterCandidates,...docRareBitsCandidates];
 
 const pdfDir='public/assets/publications/pdfs';
@@ -25,7 +26,7 @@ let newlyArchivedPeriodicals=0;
 const priorPeriodicalCount=published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length;
 const maxNewPeriodicals=30;
 const spatialMention=/(?:\bGIS\b|\bArcView\b|\bARC\s*\/\s*INFO\b|geograph(?:ical|ic) information systems?|\bBiosite\b|\bGPS\b|\bspatial (?:database|information|analysis|data|mapping)\b|\bremote sensing\b|\bmap(?:ping)? database\b|\bdigital mapping\b|\bcomputer(?:ised|ized)? mapping\b)/gi;
-for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...docRareBitsCandidates,...docScienceNewsletterCandidates]){
+for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...openLicensedGisPeriodicals,...docRareBitsCandidates,...docScienceNewsletterCandidates]){
  const isPeriodical=periodicalCandidates.some(issue=>issue.slug===p.slug);
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
  if(published.some(item=>item.slug===p.slug)){
@@ -39,7 +40,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
  if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 30 verified original magazine PDFs already archived across both releases'});continue;}
  try{
   const host=new URL(p.sourceUrl).hostname;
-  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz'].includes(host))throw Error('Unexpected source host '+host);
+  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz','kartoweb.itc.nl'].includes(host))throw Error('Unexpected source host '+host);
   // MfE historical asset URLs repeatedly redirect back to themselves; avoid pointless retries
   // unless an operator explicitly requests another verification attempt.
   if(host==='environment.govt.nz' && process.env.RETRY_MFE_UNVERIFIED_URLS!=='1') throw Error('Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry');
@@ -69,7 +70,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   if(isPeriodical&&spatialHits.length===0)throw Error('No unambiguous GIS/spatial information reference found in issue source text');
   if(isPeriodical&&spatialHits.every(hit=>hit.index<250)&&spatialHits.length<2)throw Error('Only a contents-heading spatial reference; insufficient historical evidence');
   if(!Number.isInteger(Number(p.year))||Number(p.year)>2025)throw Error('Publication outside accepted history cutoff');
-  if(!/department of conservation|ministry for the environment|greater wellington regional council/i.test(p.sourceName)&&!/(creative commons|cc by|cc-by|attribution 4\.0)/i.test(txt.slice(0,16000)))throw Error('No document-level council republication licence identified');
+  if(!/department of conservation|ministry for the environment|greater wellington regional council|^OSGeo Journal$/i.test(p.sourceName)&&!/(creative commons|cc by|cc-by|attribution 4\.0)/i.test(txt.slice(0,16000)))throw Error('No document-level council republication licence identified');
   if(/all rights reserved|permission to use (?:any|all) of its contents must be obtained|no part of this (?:report|publication|work) may be reproduced|must not be reproduced|may not be reproduced or copied|copyright extends to all forms of copying|shall not be reproduced|reproduction prohibited/i.test(txt.slice(0,16000)))throw Error('Source-specific reproduction restriction');
   const jpg=spawnSync('pdftoppm',['-f','1','-l','1','-singlefile','-scale-to','960','-jpeg','-jpegopt','quality=82',pdf,thumbDir+'/'+p.slug],{encoding:'utf8',timeout:60000,maxBuffer:1_000_000});
   if(jpg.status!==0)throw Error('Could not render publication cover');
