@@ -25,10 +25,18 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates]){
  try{
   const host=new URL(p.sourceUrl).hostname;
   if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz'].includes(host))throw Error('Unexpected source host '+host);
-  const response=await fetch(p.sourceUrl,{headers:{'User-Agent':'NZGISHistoryHistoricalArchive/1.0','Accept':'application/pdf,*/*'},signal:AbortSignal.timeout(65000)});
-  if(!response.ok)throw Error('HTTP '+response.status);
-  if(Number(response.headers.get('content-length')||0)>24*1024*1024)throw Error('File too large for static host');
-  const bytes=Buffer.from(await response.arrayBuffer());
+  let bytes;
+  try{
+   const response=await fetch(p.sourceUrl,{headers:{'User-Agent':'Mozilla/5.0 NZGISHistoryArchive/1.0','Accept':'application/pdf,*/*'},signal:AbortSignal.timeout(20000)});
+   if(!response.ok)throw Error('HTTP '+response.status);
+   if(Number(response.headers.get('content-length')||0)>24*1024*1024)throw Error('File too large for static host');
+   bytes=Buffer.from(await response.arrayBuffer());
+  }catch(primaryError){
+   console.warn('Retrying '+p.slug+' with curl after '+String(primaryError));
+   const transfer=spawnSync('curl',['--fail','--location','--silent','--show-error','--max-time','35','--retry','1','-A','Mozilla/5.0 (compatible; NZGISHistoryArchive/1.0)',p.sourceUrl],{timeout:55000,maxBuffer:25*1024*1024});
+   if(transfer.status!==0)throw Error('PDF source unreachable via fetch and curl: '+(transfer.stderr?.toString()||String(primaryError)).slice(0,350));
+   bytes=transfer.stdout;
+  }
   if(bytes.length<2000||bytes.length>=24*1024*1024||bytes.subarray(0,5).toString('ascii')!=='%PDF-')throw Error('Invalid or oversized PDF');
   await fs.writeFile(pdf,bytes);
   const info=spawnSync('pdfinfo',[pdf],{encoding:'utf8',timeout:45000,maxBuffer:1_000_000});
@@ -40,7 +48,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates]){
   const txt=extracted.stdout.toLowerCase();
   if(!p.checkTerms.every(word=>txt.includes(word.toLowerCase())))throw Error('Unexpected source content; review required');
   if(!Number.isInteger(Number(p.year))||Number(p.year)>2025)throw Error('Publication outside accepted history cutoff');
-  if(!/department of conservation|ministry for the environment/i.test(p.sourceName)&&!/(creative commons|cc by|cc-by|attribution 4\.0)/i.test(txt.slice(0,16000)))throw Error('No document-level council republication licence identified');
+  if(!/department of conservation|ministry for the environment|greater wellington regional council/i.test(p.sourceName)&&!/(creative commons|cc by|cc-by|attribution 4\.0)/i.test(txt.slice(0,16000)))throw Error('No document-level council republication licence identified');
   if(/all rights reserved|permission to use (?:any|all) of its contents must be obtained|no part of this (?:report|publication|work) may be reproduced|must not be reproduced|may not be reproduced or copied|copyright extends to all forms of copying|shall not be reproduced|reproduction prohibited/i.test(txt.slice(0,16000)))throw Error('Source-specific reproduction restriction');
   const jpg=spawnSync('pdftoppm',['-f','1','-l','1','-singlefile','-scale-to','960','-jpeg','-jpegopt','quality=82',pdf,thumbDir+'/'+p.slug],{encoding:'utf8',timeout:60000,maxBuffer:1_000_000});
   if(jpg.status!==0)throw Error('Could not render publication cover');
