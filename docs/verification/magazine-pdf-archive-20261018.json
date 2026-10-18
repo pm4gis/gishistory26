@@ -316,7 +316,7 @@
     {
       "slug": "doc-freshwater-eel-arcview-2003",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/SfC238.pdf",
-      "year": "2003",
+      "year": "2004",
       "pages": 33,
       "bytes": 491713,
       "sha256": "24eb4bb177baf59f0351f5b75da4b57634a770f28f4d4ed5482845d42b7d8dd1"
@@ -326,42 +326,42 @@
     {
       "slug": "mfe-plan-mapping-standards-2017",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Discussion-Paper-F-Mapping-Standards.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-electronic-planning-maps-2018",
       "sourceUrl": "https://environment.govt.nz/assets/publications/RMA/Part-2E-Electronic-functionality-and-accessibility-and-mapping.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-maori-catchment-geospatial-2019",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/at-risk-catchment-geospatial-implementation-information.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-landuse-high-risk-gis-2019",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/identification-of-high-risk-agricultural-activities-on-hill-country-land.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-mahinga-kai-spatial-2022",
       "sourceUrl": "https://environment.govt.nz/assets/publications/Implementing-mahinga-kai-as-a-Maori-freshwater-value.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-sheep-beef-emissions-gis-2021",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Net-emissions-and-removals-from-vegetation-and-soils-on-sheep-and-beef-farmland.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-national-productive-land-2022",
       "sourceUrl": "https://environment.govt.nz/assets/publications/Recommendations-and-decisions-report-on-NPS-highly-productive-land.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-national-gis-landuse-2016",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Landuse-Capacity-report-2016-Final-14-October-2016.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "boprc-gis-annual-report-2015",
@@ -381,32 +381,32 @@
     {
       "slug": "mfe-plan-mapping-standards-new-2017",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Discussion-Paper-F-Mapping-Standards.pdf?v=3b59d7c9a4bf180ab8396f11478c063acd7fc73d",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-spatial-wetlands-2018",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Considering-a-future-spatial-framework-for-wetland-mapping-and-monitoring-in-New-Zealand.pdf?v=1306f62bbf4a0cfeb2c4b7099918616dff945efd",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-national-planning-draft-2018",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/FINAL-Draft-National-Planning-Standards-Combined.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-national-planning-2019",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/national-planning-standards-final.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-zones-and-overlays-2017",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Final-Discussion-Paper-C-Zones-and-overlays.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "mfe-mapping-submissions-2019",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/2L-Mapping-Standard.pdf",
-      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+      "reason": "Error: Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry"
     },
     {
       "slug": "doc-nz-biodiversity-strategy-review-2006",
