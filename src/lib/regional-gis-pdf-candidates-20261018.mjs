@@ -757,5 +757,59 @@ export const regionalGisPdfCandidates = [
       "gis",
       "visitor"
     ]
+  },
+  {
+    "slug": "doc-conservation-carbon-spatial-models-2012",
+    "fileName": "doc-conservation-carbon-spatial-models-2012.pdf",
+    "title": "Estimation of current and potential carbon stocks and Kyoto-compliant carbon gain on conservation land",
+    "creator": "Department of Conservation",
+    "year": "2012",
+    "date": "2012",
+    "kind": "DOC Science for Conservation 317",
+    "topic": "Spatial modelling of 100-metre LENZ, LCDB2 and LUCAS grids for carbon stock estimates",
+    "summary": "Spatial modelling of 100-metre LENZ, LCDB2 and LUCAS grids for carbon stock estimates.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc317.pdf",
+    "license": "Crown copyright CC BY 4.0 default DOC website terms, excluding third-party material.",
+    "attribution": "Department of Conservation (2012). Estimation of current and potential carbon stocks and Kyoto-compliant carbon gain on conservation land.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "carbon",
+      "spatial"
+    ],
+    "checkTerms": [
+      "carbon",
+      "spatial"
+    ]
+  },
+  {
+    "slug": "doc-ecological-significance-gis-2016",
+    "fileName": "doc-ecological-significance-gis-2016.pdf",
+    "title": "Department of Conservation guidelines for assessing significant ecological values",
+    "creator": "Department of Conservation",
+    "year": "2016",
+    "date": "2016",
+    "kind": "DOC Science for Conservation 327",
+    "topic": "Ecological Districts, LENZ and FENZ geodatabase frameworks for significance assessment",
+    "summary": "Ecological Districts, LENZ and FENZ geodatabase frameworks for significance assessment.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc327entire.pdf",
+    "license": "Crown copyright CC BY 4.0 default DOC website terms, excluding third-party material.",
+    "attribution": "Department of Conservation (2016). Department of Conservation guidelines for assessing significant ecological values.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "ecological",
+      "geodatabase"
+    ],
+    "checkTerms": [
+      "ecological",
+      "geodatabase"
+    ]
   }
 ];
