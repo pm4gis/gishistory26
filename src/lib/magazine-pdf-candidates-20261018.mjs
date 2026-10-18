@@ -24,5 +24,18 @@ export const magazinePdfCandidates = [
   attribution:'Geospatial Industry Profile Survey Committee (2023), Geospatial Industry Profile Survey Results 2023. Hosted by LINZ.',
   themeIds:['profession'],keywords:['GIS','geospatial profession','survey','women in spatial','NZ Esri Users Group','2023'],
   checkTerms:['geospatial','survey','2023']
+ },
+  {
+  slug:'auckland-liquefaction-mapping-2021',
+  fileName:'auckland-liquefaction-mapping-2021.pdf',
+  title:'Auckland Liquefaction Assessment', creator:'C. Brightman and R. Roberts · Auckland Council',year:'2021',date:'November 2021',
+  kind:'Council technical report',topic:'Regional liquefaction susceptibility and spatial hazard mapping',
+  summary:'Auckland Council technical report TR2021/19, documenting mapped liquefaction vulnerability across the Auckland region for planning and natural-hazard decisions.',
+  sourceName:'Auckland Council',sourceUrl:'https://knowledgeauckland.org.nz/media/hcgdrqni/tr2021-19-auckland-liquefaction-assessment-and-liquefaction-vulnerability-maps.pdf',
+  license:'Creative Commons Attribution 4.0 International, stated in the original report.',
+  attribution:'Brightman, C. and R. Roberts (2021). Auckland liquefaction assessment. Auckland Council TR2021/19.',
+  themeIds:['profession','open-practice'],keywords:['Auckland Council','GIS','spatial modelling','natural hazards','liquefaction','planning'],
+  checkTerms:['liquefaction','auckland','2021']
  }
+
 ];
