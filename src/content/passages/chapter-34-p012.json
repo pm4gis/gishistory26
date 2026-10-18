@@ -26,6 +26,18 @@
     },
     {
       "type": "paragraph",
+      "id": "archive-pdf-auckland-watercourse-methodology-2016",
+      "text": "Auckland Council’s 2016 watercourse assessment methodology documented how ArcGIS Online, geodatabase records and mapped outputs could be combined in environmental field assessment. It specified a way to capture and organise observations for subsequent use in the council’s spatial records. The report establishes the method described in 2016, without showing how widely it was adopted elsewhere.",
+      "markdown": "Auckland Council’s 2016 watercourse assessment methodology documented how ArcGIS Online, geodatabase records and mapped outputs could be combined in environmental field assessment. It specified a way to capture and organise observations for subsequent use in the council’s spatial records. The report establishes the method described in 2016, without showing how widely it was adopted elsewhere.",
+      "sources": [
+        {
+          "label": "Auckland Council watercourse assessment methodology, 2016",
+          "url": "/publications/pdf/auckland-watercourse-methodology-2016/"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
       "text": "The same logic extended beyond formal organisational work. In April 2023 NIWA described electronic Survey123 forms developed for community-based freshwater monitoring groups. The forms could run on mobile phones, tablets or computers and were part of a national quality-assurance framework covering more than 25 variables relating to water quality, aquatic life, habitat and hydrology. The aim was to make community observations more consistent, capture the information needed to interpret them and document their quality, while retaining the governance around monitoring.",
       "markdown": "The same logic extended beyond formal organisational work. In April 2023 NIWA described electronic Survey123 forms developed for community-based freshwater monitoring groups. The forms could run on mobile phones, tablets or computers and were part of a national quality-assurance framework covering more than 25 variables relating to water quality, aquatic life, habitat and hydrology. The aim was to make community observations more consistent, capture the information needed to interpret them and document their quality, while retaining the governance around monitoring.",
       "sources": [],

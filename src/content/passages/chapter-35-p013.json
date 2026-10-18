@@ -37,6 +37,18 @@
       "markdown": "Applications changed how users accessed geographic expertise. Earlier GIS put the specialist and the software in the foreground. Later applications can put the user's task in the foreground and push the geographic machinery behind it. The technology remains spatial, but the experience no longer needs to announce itself as GIS.",
       "sources": [],
       "id": "ch35-s12-p04"
+    },
+    {
+      "type": "paragraph",
+      "id": "archive-pdf-auckland-water-quality-data-explorer-2025",
+      "text": "Auckland Council’s December 2025 guide to its water quality and river ecology data explorer documents a purpose-built interface for working with freshwater monitoring information. Users could work through a defined environmental dataset using an application designed for that task. The guide records the functionality and intended use described at the end of 2025.",
+      "markdown": "Auckland Council’s December 2025 guide to its water quality and river ecology data explorer documents a purpose-built interface for working with freshwater monitoring information. Users could work through a defined environmental dataset using an application designed for that task. The guide records the functionality and intended use described at the end of 2025.",
+      "sources": [
+        {
+          "label": "Auckland Council water quality and river ecology data explorer guide, 2025",
+          "url": "/publications/pdf/auckland-water-quality-data-explorer-2025/"
+        }
+      ]
     }
   ],
   "sources": [],

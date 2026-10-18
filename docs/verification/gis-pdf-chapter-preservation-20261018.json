@@ -1,0 +1,41 @@
+{
+  "base": "a9a06735f4306bd130abfbf287f806fada3d01b5",
+  "reviewType": "One new source-backed paragraph per designated passage; all existing blocks, metadata and historical relationships unchanged",
+  "rows": [
+    {
+      "file": "src/content/passages/chapter-26-p003.json",
+      "status": "approved-additive",
+      "sourceSlug": "doc-conservation-science-newsletter-28-29-1998",
+      "oldSha256": "fe84027979c40417f5621bb4771e44ff389a8bb641df5f16de574c677c9ed992",
+      "newSha256": "2ce02539777b0ef4b917e6b74b92541a8984da322d8d44806cc56e0cc2d30dad"
+    },
+    {
+      "file": "src/content/passages/chapter-23-p017.json",
+      "status": "approved-additive",
+      "sourceSlug": "auckland-liquefaction-mapping-2021",
+      "oldSha256": "9a2dabecd0563374776f33f3af3d868d90d90e6b4e1b0a196b21272348f0207e",
+      "newSha256": "3f8b2367635b4ca3114db66e3a9f9f7d0e331d0007129d6f58d25f53a4d58880"
+    },
+    {
+      "file": "src/content/passages/chapter-34-p012.json",
+      "status": "approved-additive",
+      "sourceSlug": "auckland-watercourse-methodology-2016",
+      "oldSha256": "4f67def3d07b299dd6939d2afc281b073adac69cb0e9701d3bed5692f3798086",
+      "newSha256": "34716533ec8641d5d351ce85acbc2761f435f61a0f6a968d9c87325afb9e1b31"
+    },
+    {
+      "file": "src/content/passages/chapter-29-p011.json",
+      "status": "approved-additive",
+      "sourceSlug": "nz-geospatial-industry-profile-survey-2023",
+      "oldSha256": "752eea215cbdc187905af2f0d85d2baa60de9f56224786fba1278a20bc0a62c2",
+      "newSha256": "060745f4bddb39cf780b5b2c9272deef5146571194698b204d5e3d106ccb8eca"
+    },
+    {
+      "file": "src/content/passages/chapter-35-p013.json",
+      "status": "approved-additive",
+      "sourceSlug": "auckland-water-quality-data-explorer-2025",
+      "oldSha256": "8d14075a81316782145438857d6fead456214c17c19fac2a77c416948de88311",
+      "newSha256": "7657abb46b922b56f2f1fcd184880e69f5740599768b0418d2f84e31c15ed58d"
+    }
+  ]
+}

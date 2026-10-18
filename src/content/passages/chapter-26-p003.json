@@ -30,6 +30,18 @@
       "markdown": "By the late 1990s and early 2000s the problem was no longer whether conservation work could use GIS. Local capability already existed. The harder problem was how to provide consistent access across a large organisation while keeping national data current and allowing regional staff to contribute information. That led first to the Biodiversity Information Platform and then to a wider National Enterprise GIS.",
       "sources": [],
       "id": "ch26-s02-p03"
+    },
+    {
+      "type": "paragraph",
+      "id": "archive-pdf-doc-conservation-science-newsletter-28-29-1998",
+      "text": "The Department of Conservation’s December 1998 Conservation Science Newsletter discussed a proposed GIS database for information on fire-related vegetation and habitats, including wetlands, tussock grasslands and shrublands. It shows that specialist conservation teams were identifying potential spatial datasets while the department’s broader information systems were still developing. The newsletter describes a proposal, rather than evidence that a complete national fire-ecology database had already been implemented.",
+      "markdown": "The Department of Conservation’s December 1998 Conservation Science Newsletter discussed a proposed GIS database for information on fire-related vegetation and habitats, including wetlands, tussock grasslands and shrublands. It shows that specialist conservation teams were identifying potential spatial datasets while the department’s broader information systems were still developing. The newsletter describes a proposal, rather than evidence that a complete national fire-ecology database had already been implemented.",
+      "sources": [
+        {
+          "label": "DOC Conservation Science Newsletter, December 1998",
+          "url": "/publications/pdf/doc-conservation-science-newsletter-28-29-1998/"
+        }
+      ]
     }
   ],
   "sources": [],
