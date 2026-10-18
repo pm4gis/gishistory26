@@ -31,17 +31,17 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-galaxiid-trout-arcgis-2012",
     "fileName": "doc-galaxiid-trout-arcgis-2012.pdf",
-    "title": "Riverscape modelling of native galaxiids and introduced trout",
-    "creator": "Department of Conservation",
-    "year": "2012",
-    "date": "2012",
+    "title": "Effects of introduced trout predation on non-diadromous galaxiid fish populations across invaded riverscapes",
+    "creator": "Darragh J. Woodford and Angus R. McIntosh",
+    "year": "2013",
+    "date": "March 2013",
     "kind": "Science for Conservation 320",
     "topic": "Riverscape modelling of native galaxiids and introduced trout",
     "summary": "Historical account of riverscape modelling of native galaxiids and introduced trout.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc320entire_print_quality.pdf",
     "license": "Crown source publication, subject to specific exceptions; verified in source record.",
-    "attribution": "Department of Conservation (2012), Riverscape modelling of native galaxiids and introduced trout.",
+    "attribution": "Woodford and McIntosh (2013), Science for Conservation 320",
     "themeIds": [
       "profession",
       "open-practice"
@@ -143,8 +143,8 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-remaining-indigenous-cover-2008",
     "fileName": "doc-remaining-indigenous-cover-2008.pdf",
-    "title": "New Zealand's remaining indigenous cover",
-    "creator": "Department of Conservation",
+    "title": "New Zealand's remaining indigenous cover: recent changes and biodiversity protection needs",
+    "creator": "Susan Walker, Robbie Price and Daniel Rutledge",
     "year": "2008",
     "date": "2008",
     "kind": "Science for Conservation 284",
@@ -561,8 +561,8 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-intertidal-arcview-mapping-2005",
     "fileName": "doc-intertidal-arcview-mapping-2005.pdf",
-    "title": "Intertidal and subtidal habitats: mapping with aerial photography and GIS",
-    "creator": "Department of Conservation",
+    "title": "Intertidal and subtidal habitats of Mimiwhangata Marine Park and adjacent shelf",
+    "creator": "Vince Kerr and Roger Grace",
     "year": "2005",
     "date": "2005",
     "kind": "DOC Research and Development Series 201",
@@ -571,7 +571,7 @@ export const historicalGisNewCandidates = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/drds201.pdf",
     "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
-    "attribution": "Department of Conservation (2005), Intertidal and subtidal habitats: mapping with aerial photography and GIS.",
+    "attribution": "Kerr and Grace (2005), DOC Research and Development Series 201",
     "themeIds": [
       "profession",
       "open-practice"
@@ -617,17 +617,17 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-freshwater-eel-arcview-2003",
     "fileName": "doc-freshwater-eel-arcview-2003.pdf",
-    "title": "Freshwater eel fisheries: analysis of catch and conservation using spatial datasets",
-    "creator": "Department of Conservation",
-    "year": "2003",
-    "date": "2003",
+    "title": "Habitat for female longfinned eels in the West Coast and Southland, New Zealand",
+    "creator": "E. Graynoth and K. Niven",
+    "year": "2004",
+    "date": "2004",
     "kind": "Science for Conservation 238",
     "topic": "Freshwater eel fisheries: analysis of catch and conservation using spatial datasets",
     "summary": "Contemporary evidence of spatial analysis and GIS use in freshwater eel fisheries: analysis of catch and conservation using spatial datasets.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/SfC238.pdf",
     "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
-    "attribution": "Department of Conservation (2003), Freshwater eel fisheries: analysis of catch and conservation using spatial datasets.",
+    "attribution": "Graynoth and Niven (2004), Science for Conservation 238",
     "themeIds": [
       "profession",
       "open-practice"
