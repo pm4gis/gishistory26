@@ -1064,8 +1064,8 @@ export const magazinePdfPublications = [
   {
     "slug": "doc-intertidal-arcview-mapping-2005",
     "fileName": "doc-intertidal-arcview-mapping-2005.pdf",
-    "title": "Intertidal and subtidal habitats: mapping with aerial photography and GIS",
-    "creator": "Department of Conservation",
+    "title": "Intertidal and subtidal habitats of Mimiwhangata Marine Park and adjacent shelf",
+    "creator": "Vince Kerr and Roger Grace",
     "year": "2005",
     "date": "2005",
     "kind": "DOC Research and Development Series 201",
@@ -1074,7 +1074,7 @@ export const magazinePdfPublications = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/drds201.pdf",
     "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
-    "attribution": "Department of Conservation (2005), Intertidal and subtidal habitats: mapping with aerial photography and GIS.",
+    "attribution": "Kerr and Grace (2005), DOC Research and Development Series 201",
     "themeIds": [
       "profession",
       "open-practice"
