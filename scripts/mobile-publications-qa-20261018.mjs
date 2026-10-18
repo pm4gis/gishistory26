@@ -50,10 +50,10 @@ try{
    assert.ok(await page.locator('#publication-filters').isVisible());
    await page.locator('button[data-filter-kind="decade"][data-filter-value="1980"]').click();
    assert.equal(await toggle.getAttribute('aria-expanded'),'false');
-   assert.ok(await cards.filter({visible:true}).count()>0);
+   assert.ok(await page.locator('[data-publication]:visible').count()>0);
    await toggle.click();
    await page.locator('button[data-filter-kind="all"]').click();
-   assert.equal(await cards.filter({visible:true}).count(),await cards.count());
+   assert.equal(await page.locator('[data-publication]:visible').count(),await cards.count());
   }else{
    assert.ok(await page.locator('#publication-filters').isVisible(),'desktop/tablet filters missing');
   }
