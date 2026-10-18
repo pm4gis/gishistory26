@@ -5,6 +5,7 @@
  import {chapterDocuments} from '../lib/chapter-documents.mjs';
  import {pdfReadingUrl,pdfReadingLabel} from '../lib/pdf-reading-links.mjs';
  import {chapterCollectionSources} from '../lib/chapter-collection-sources.mjs';
+ import {regionalGisChapterPublications} from '../lib/regional-gis-chapter-publications.mjs';
  import WanangaVideos from './WanangaVideos.svelte';
  import {passageContributionPageUrl} from '../lib/passage-contributions.mjs';
  import {ngaPoutamaForPassage} from '../lib/nga-poutama-videos.mjs';
@@ -95,6 +96,7 @@
  <details class="passage-tools"><summary>Share or correct this passage</summary><div class="passage-tools-inner"><button type="button" on:click={()=>copy(p)}>Copy link</button><a href={passageContributionPageUrl(article,p)} aria-label={'Contribute information about '+p.title}>Contribute</a></div></details>
  {#if sources(p).length}<details class="sources"><summary>Sources · {sources(p).length}</summary><ol>{#each sources(p) as s}<li>{#if safe(pdfReadingUrl(s.url))}<a href={pdfReadingUrl(s.url)}>{pdfReadingLabel(s.label,s.url)}</a>{:else}{s.label}{/if}</li>{/each}</ol></details>{/if}
  </section>{/each}
+ {#if regionalGisChapterPublications(article.slug).length}<details class="sources regional-gis-publications"><summary>Related historical publications · {regionalGisChapterPublications(article.slug).length}</summary><ol>{#each regionalGisChapterPublications(article.slug) as publication (publication.slug)}<li><a href={publication.url}>{publication.title}</a> · {publication.year}</li>{/each}</ol></details>{/if}
  {#if complete&&article.sourceNotes?.length}<details class="sources"><summary>Chapter source notes</summary>{#each article.sourceNotes as n}<p>{n.text}</p>{/each}</details>{/if}
  </div>
  <nav class="page-nav chapter-page-nav" aria-label="Reading navigation">
