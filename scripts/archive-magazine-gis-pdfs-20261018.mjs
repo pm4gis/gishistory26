@@ -23,11 +23,10 @@ try{magazineEvidence=JSON.parse(await fs.readFile(periodicalEvidencePath,'utf8')
 try{const seed=JSON.parse(await fs.readFile('docs/verification/doc-science-newsletter-first-pass-evidence-20261018.json','utf8'));for(const hit of seed.evidence||[])if(!magazineEvidence.some(x=>x.slug===hit.slug))magazineEvidence.push(hit);}catch{}
 let newlyArchivedPeriodicals=0;
 const priorPeriodicalCount=published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length;
-const maxNewPeriodicals=15;
+const maxNewPeriodicals=30;
 const spatialMention=/(?:\bGIS\b|\bArcView\b|\bARC\s*\/\s*INFO\b|geograph(?:ical|ic) information systems?|\bBiosite\b|\bGPS\b|\bspatial (?:database|information|analysis|data|mapping)\b|\bremote sensing\b|\bmap(?:ping)? database\b|\bdigital mapping\b|\bcomputer(?:ised|ized)? mapping\b)/gi;
-for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...docScienceNewsletterCandidates,...docRareBitsCandidates]){
+for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...docRareBitsCandidates,...docScienceNewsletterCandidates]){
  const isPeriodical=periodicalCandidates.some(issue=>issue.slug===p.slug);
- if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 15 original magazine PDFs already archived in this release'});continue;}
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
  if(published.some(item=>item.slug===p.slug)){
   const prior=published.find(item=>item.slug===p.slug);
@@ -37,6 +36,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   console.log('PRESERVED '+p.slug);
   continue;
  }
+ if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 30 verified original magazine PDFs already archived across both releases'});continue;}
  try{
   const host=new URL(p.sourceUrl).hostname;
   if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz'].includes(host))throw Error('Unexpected source host '+host);
@@ -66,7 +66,8 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   const txt=extracted.stdout.toLowerCase();
   if(!p.checkTerms.every(word=>txt.includes(word.toLowerCase())))throw Error('Unexpected source content; review required');
   const spatialHits=isPeriodical?[...extracted.stdout.matchAll(spatialMention)]:[];
-  if(isPeriodical&&spatialHits.length===0)throw Error('No unambiguous GIS/spatial information reference found in issue OCR text');
+  if(isPeriodical&&spatialHits.length===0)throw Error('No unambiguous GIS/spatial information reference found in issue source text');
+  if(isPeriodical&&spatialHits.every(hit=>hit.index<250)&&spatialHits.length<2)throw Error('Only a contents-heading spatial reference; insufficient historical evidence');
   if(!Number.isInteger(Number(p.year))||Number(p.year)>2025)throw Error('Publication outside accepted history cutoff');
   if(!/department of conservation|ministry for the environment|greater wellington regional council/i.test(p.sourceName)&&!/(creative commons|cc by|cc-by|attribution 4\.0)/i.test(txt.slice(0,16000)))throw Error('No document-level council republication licence identified');
   if(/all rights reserved|permission to use (?:any|all) of its contents must be obtained|no part of this (?:report|publication|work) may be reproduced|must not be reproduced|may not be reproduced or copied|copyright extends to all forms of copying|shall not be reproduced|reproduction prohibited/i.test(txt.slice(0,16000)))throw Error('Source-specific reproduction restriction');
