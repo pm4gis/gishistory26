@@ -40,7 +40,124 @@
       "pages": 124,
       "bytes": 6409499,
       "sha256": "a72e061a9000132168bf996802522d9ebabbdd9e5eb9a2e2650f511570e30bcd"
+    },
+    {
+      "slug": "doc-gis-wildlife-penguins-2008",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds303entire.pdf",
+      "year": "2008",
+      "pages": 35,
+      "bytes": 862601,
+      "sha256": "6ef072f1eb858c4da70a622c82d89c781fb8384f86818edf647a0690217fc04a"
+    },
+    {
+      "slug": "doc-stoat-rat-modelling-2008",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds305entire.pdf",
+      "year": "2008",
+      "pages": 28,
+      "bytes": 498855,
+      "sha256": "6de182c9ddade7c8ef2797fe35711a28666b42a8ac7903c2d70fb90687163f3f"
+    },
+    {
+      "slug": "doc-archaeological-prediction-2004",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/dsis180.pdf",
+      "year": "2004",
+      "pages": 24,
+      "bytes": 384439,
+      "sha256": "6543ec0441263983fd522232b0da4c8345101065dbf2313f509fe13e643a3a2c"
+    },
+    {
+      "slug": "doc-mapping-biodiversity-heritage-2016",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap260.pdf",
+      "year": "2016",
+      "pages": 139,
+      "bytes": 4543639,
+      "sha256": "fff2e96a9e565d8ace79efd36c3155a665c4377e5bbaec6a27f842029f45361f"
+    },
+    {
+      "slug": "doc-sand-dune-drone-2019",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/doc-research-and-development-series/drds359entire.pdf",
+      "year": "2019",
+      "pages": 29,
+      "bytes": 14036013,
+      "sha256": "4f9ab9d2980691d9116ed7165bca30671faaaf84dd88c6582b41b2b0a6b851cb"
+    },
+    {
+      "slug": "doc-wilding-conifer-remote-sensing-2020",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds364entire.pdf",
+      "year": "2020",
+      "pages": 33,
+      "bytes": 21852997,
+      "sha256": "b038a21fad27980ff5d8bb59dc31c689a8cc657cc25a69ca4fdb4be14c559abc"
+    },
+    {
+      "slug": "doc-benthic-terrain-modeller-2022",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds367entire.pdf",
+      "year": "2022",
+      "pages": 25,
+      "bytes": 9369728,
+      "sha256": "65c7576043a5dc80dd341d0599a6d64b6a33c474c4086dd0ecb99437c9f6ac26"
     }
   ],
-  "unavailable": []
+  "unavailable": [
+    {
+      "slug": "mfe-plan-mapping-standards-2017",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Discussion-Paper-F-Mapping-Standards.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "mfe-electronic-planning-maps-2018",
+      "sourceUrl": "https://environment.govt.nz/assets/publications/RMA/Part-2E-Electronic-functionality-and-accessibility-and-mapping.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "mfe-maori-catchment-geospatial-2019",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/at-risk-catchment-geospatial-implementation-information.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "mfe-landuse-high-risk-gis-2019",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/identification-of-high-risk-agricultural-activities-on-hill-country-land.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "mfe-mahinga-kai-spatial-2022",
+      "sourceUrl": "https://environment.govt.nz/assets/publications/Implementing-mahinga-kai-as-a-Maori-freshwater-value.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "mfe-sheep-beef-emissions-gis-2021",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Net-emissions-and-removals-from-vegetation-and-soils-on-sheep-and-beef-farmland.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "mfe-national-productive-land-2022",
+      "sourceUrl": "https://environment.govt.nz/assets/publications/Recommendations-and-decisions-report-on-NPS-highly-productive-land.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "mfe-national-gis-landuse-2016",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Landuse-Capacity-report-2016-Final-14-October-2016.pdf",
+      "reason": "TypeError: fetch failed"
+    },
+    {
+      "slug": "gw-wellington-landscape-atlas-2009",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/6426igl2009052626s12521.pdf",
+      "reason": "Error: No document-level council republication licence identified"
+    },
+    {
+      "slug": "gw-hutt-landscape-study-2012",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/Hutt-Landscape-Study-2012.pdf",
+      "reason": "Error: No document-level council republication licence identified"
+    },
+    {
+      "slug": "gw-kapiti-whaitua-gis-2024",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2024/09/GWC0137_Kapiti-Whaitua-Booklet_FA-2_WEB-spreads_lo-res.pdf",
+      "reason": "Error: No document-level council republication licence identified"
+    },
+    {
+      "slug": "boprc-gis-annual-report-2015",
+      "sourceUrl": "https://www.boprc.govt.nz/media/470885/reduced-final-for-web-2015-annual-report-adopted-version-15-oct-21-10-15-2.pdf",
+      "reason": "Error: No document-level council republication licence identified"
+    }
+  ]
 }

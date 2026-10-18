@@ -153,5 +153,201 @@ export const magazinePdfPublications = [
     "sha256": "a72e061a9000132168bf996802522d9ebabbdd9e5eb9a2e2650f511570e30bcd",
     "generatedCover": false,
     "hostedLocally": true
+  },
+  {
+    "slug": "doc-gis-wildlife-penguins-2008",
+    "fileName": "doc-gis-wildlife-penguins-2008.pdf",
+    "title": "Geographic Information Systems in wildlife management: yellow-eyed penguin nest sites",
+    "creator": "Department of Conservation",
+    "year": "2008",
+    "date": "2008",
+    "kind": "DOC Research and Development Series 303",
+    "topic": "GIS in wildlife management and yellow-eyed penguin habitat analysis",
+    "summary": "GIS in wildlife management and yellow-eyed penguin habitat analysis.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds303entire.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Department of Conservation (2008), Geographic Information Systems in wildlife management: yellow-eyed penguin nest sites.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "gis",
+      "penguin"
+    ],
+    "pages": 35,
+    "bytes": 862601,
+    "sha256": "6ef072f1eb858c4da70a622c82d89c781fb8384f86818edf647a0690217fc04a",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-stoat-rat-modelling-2008",
+    "fileName": "doc-stoat-rat-modelling-2008.pdf",
+    "title": "Environmental predictors of stoat and ship rat capture success",
+    "creator": "Department of Conservation",
+    "year": "2008",
+    "date": "2008",
+    "kind": "DOC Research and Development Series 305",
+    "topic": "Spatial modelling for mammalian pest control",
+    "summary": "Spatial modelling for mammalian pest control.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds305entire.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Department of Conservation (2008), Environmental predictors of stoat and ship rat capture success.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "stoat",
+      "rat"
+    ],
+    "pages": 28,
+    "bytes": 498855,
+    "sha256": "6de182c9ddade7c8ef2797fe35711a28666b42a8ac7903c2d70fb90687163f3f",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-archaeological-prediction-2004",
+    "fileName": "doc-archaeological-prediction-2004.pdf",
+    "title": "Predicting archaeological sites in New Zealand",
+    "creator": "Department of Conservation",
+    "year": "2004",
+    "date": "2004",
+    "kind": "DOC Science Internal Series 180",
+    "topic": "Predictive GIS modelling for archaeological site distributions",
+    "summary": "Predictive GIS modelling for archaeological site distributions.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/dsis180.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Department of Conservation (2004), Predicting archaeological sites in New Zealand.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "archaeological",
+      "gis"
+    ],
+    "pages": 24,
+    "bytes": 384439,
+    "sha256": "6543ec0441263983fd522232b0da4c8345101065dbf2313f509fe13e643a3a2c",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-mapping-biodiversity-heritage-2016",
+    "fileName": "doc-mapping-biodiversity-heritage-2016.pdf",
+    "title": "Mapping services and benefits of indigenous biodiversity and historic heritage",
+    "creator": "Department of Conservation",
+    "year": "2016",
+    "date": "2016",
+    "kind": "DOC Science for Conservation 260",
+    "topic": "Catalogue of New Zealand spatial datasets and GIS mapping tools",
+    "summary": "Catalogue of New Zealand spatial datasets and GIS mapping tools.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap260.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Department of Conservation (2016), Mapping services and benefits of indigenous biodiversity and historic heritage.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "spatial",
+      "gis"
+    ],
+    "pages": 139,
+    "bytes": 4543639,
+    "sha256": "fff2e96a9e565d8ace79efd36c3155a665c4377e5bbaec6a27f842029f45361f",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-sand-dune-drone-2019",
+    "fileName": "doc-sand-dune-drone-2019.pdf",
+    "title": "UAV data for characterising sand-dune vegetation at Kaitorete Spit",
+    "creator": "Department of Conservation",
+    "year": "2019",
+    "date": "2019",
+    "kind": "DOC Research and Development Series 359",
+    "topic": "Drone imaging and GIS-derived sand-dune vegetation mapping in Canterbury",
+    "summary": "Drone imaging and GIS-derived sand-dune vegetation mapping in Canterbury.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/doc-research-and-development-series/drds359entire.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Department of Conservation (2019), UAV data for characterising sand-dune vegetation at Kaitorete Spit.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "vegetation",
+      "uav"
+    ],
+    "pages": 29,
+    "bytes": 14036013,
+    "sha256": "4f9ab9d2980691d9116ed7165bca30671faaaf84dd88c6582b41b2b0a6b851cb",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-wilding-conifer-remote-sensing-2020",
+    "fileName": "doc-wilding-conifer-remote-sensing-2020.pdf",
+    "title": "Aerial remote sensing of pre-coning wilding conifers",
+    "creator": "Department of Conservation",
+    "year": "2020",
+    "date": "2020",
+    "kind": "DOC Research and Development Series 364",
+    "topic": "Remote sensing and classification for conservation weed management",
+    "summary": "Remote sensing and classification for conservation weed management.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds364entire.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Department of Conservation (2020), Aerial remote sensing of pre-coning wilding conifers.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "wilding",
+      "remote sensing"
+    ],
+    "pages": 33,
+    "bytes": 21852997,
+    "sha256": "b038a21fad27980ff5d8bb59dc31c689a8cc657cc25a69ca4fdb4be14c559abc",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-benthic-terrain-modeller-2022",
+    "fileName": "doc-benthic-terrain-modeller-2022.pdf",
+    "title": "Using Benthic Terrain Modeller to characterise New Zealand seafloor geomorphology",
+    "creator": "Department of Conservation",
+    "year": "2022",
+    "date": "2022",
+    "kind": "DOC Research and Development Series 367",
+    "topic": "ArcGIS benthic terrain modelling of multibeam bathymetry",
+    "summary": "ArcGIS benthic terrain modelling of multibeam bathymetry.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds367entire.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Department of Conservation (2022), Using Benthic Terrain Modeller to characterise New Zealand seafloor geomorphology.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "benthic",
+      "terrain"
+    ],
+    "pages": 25,
+    "bytes": 9369728,
+    "sha256": "65c7576043a5dc80dd341d0599a6d64b6a33c474c4086dd0ecb99437c9f6ac26",
+    "generatedCover": false,
+    "hostedLocally": true
   }
 ];
