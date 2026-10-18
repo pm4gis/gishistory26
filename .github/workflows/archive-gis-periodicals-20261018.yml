@@ -1,7 +1,7 @@
 name: Archive NZ GIS periodical originals
 on:
   push:
-    branches: [main, feature/doc-science-newsletter-archive-20261018]
+    branches: [main, feature/periodicals-second-tranche-20261019]
     paths:
       - '.github/workflows/archive-gis-periodicals-20261018.yml'
       - 'scripts/archive-magazine-gis-pdfs-20261018.mjs'
@@ -20,7 +20,7 @@ permissions:
   contents: write
 jobs:
   archive:
-    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/doc-science-newsletter-archive-20261018'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/periodicals-second-tranche-20261019'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
