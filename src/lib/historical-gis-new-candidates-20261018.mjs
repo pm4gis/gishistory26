@@ -3,8 +3,8 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-hurunui-forest-gis-2005",
     "fileName": "doc-hurunui-forest-gis-2005.pdf",
-    "title": "Mapping Hurunui forest community distribution using computer models",
-    "creator": "Claire L. Newell and John R. Leathwick",
+    "title": "Mapping Hurunui forest community distribution, using computer models",
+    "creator": "C. L. Newell and J. R. Leathwick",
     "year": "2005",
     "date": "2005",
     "kind": "Science for Conservation 251",
@@ -13,7 +13,7 @@ export const historicalGisNewCandidates = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc251.pdf",
     "license": "Crown source publication, subject to specific exceptions; verified in source record.",
-    "attribution": "Claire L. Newell and John R. Leathwick (2005), Mapping Hurunui forest community distribution using computer models.",
+    "attribution": "C. L. Newell and J. R. Leathwick (2005). Mapping Hurunui forest community distribution, using computer models. Science for Conservation 251.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -59,8 +59,8 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-koura-taieri-gis-2000",
     "fileName": "doc-koura-taieri-gis-2000.pdf",
-    "title": "Ecology and distribution of kōura in the Taieri River catchment",
-    "creator": "Department of Conservation",
+    "title": "Ecology and distribution of the freshwater crayfish Paranephrops zealandicus in Otago: implications for conservation",
+    "creator": "N. Whitmore, A. D. Huryn, C. J. Arbuckle and F. Jansma",
     "year": "2000",
     "date": "2000",
     "kind": "Science for Conservation 148",
@@ -69,7 +69,7 @@ export const historicalGisNewCandidates = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc148.pdf",
     "license": "Crown source publication, subject to specific exceptions; verified in source record.",
-    "attribution": "Department of Conservation (2000), Ecology and distribution of kōura in the Taieri River catchment.",
+    "attribution": "N. Whitmore, A. D. Huryn, C. J. Arbuckle and F. Jansma (2000). Ecology and distribution of the freshwater crayfish Paranephrops zealandicus in Otago: implications for conservation. Science for Conservation 148.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -87,8 +87,8 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-lowland-wetland-gis-2010",
     "fileName": "doc-lowland-wetland-gis-2010.pdf",
-    "title": "Aquatic invertebrate communities of lowland wetlands in New Zealand",
-    "creator": "Alastair Suren and Brian Sorrell",
+    "title": "Aquatic invertebrate communities of lowland wetlands in New Zealand: characterising spatial, temporal and geographic distribution patterns",
+    "creator": "A. Suren and B. Sorrell",
     "year": "2010",
     "date": "2010",
     "kind": "Science for Conservation 305",
@@ -97,7 +97,7 @@ export const historicalGisNewCandidates = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc305entire.pdf",
     "license": "Crown source publication, subject to specific exceptions; verified in source record.",
-    "attribution": "Alastair Suren and Brian Sorrell (2010), Aquatic invertebrate communities of lowland wetlands in New Zealand.",
+    "attribution": "A. Suren and B. Sorrell (2010). Aquatic invertebrate communities of lowland wetlands in New Zealand: characterising spatial, temporal and geographic distribution patterns. Science for Conservation 305.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -115,17 +115,17 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-southland-forest-fragmentation-2006",
     "fileName": "doc-southland-forest-fragmentation-2006.pdf",
-    "title": "Consequences to threatened plants and insects of fragmentation of Southland floodplain forests",
-    "creator": "Department of Conservation",
+    "title": "Consequences to threatened plants and insects of fragmentation of Southland floodplain forests, Part 1",
+    "creator": "S. Walker, G. M. Rogers, W. G. Lee, B. Rance and colleagues",
     "year": "2006",
     "date": "2006",
-    "kind": "Science for Conservation 265",
+    "kind": "Science for Conservation 265, Part 1",
     "topic": "Consequences to threatened plants and insects of fragmentation of Southland floodplain forests",
     "summary": "Historical account of consequences to threatened plants and insects of fragmentation of southland floodplain forests.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc265.pdf",
     "license": "Crown source publication, subject to specific exceptions; verified in source record.",
-    "attribution": "Department of Conservation (2006), Consequences to threatened plants and insects of fragmentation of Southland floodplain forests.",
+    "attribution": "S. Walker, G. M. Rogers, W. G. Lee, B. Rance and colleagues (2006). Consequences to threatened plants and insects of fragmentation of Southland floodplain forests, Part 1. Science for Conservation 265, Part 1.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -171,8 +171,8 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-seagrass-mapping-2006",
     "fileName": "doc-seagrass-mapping-2006.pdf",
-    "title": "Management and conservation of seagrass in New Zealand",
-    "creator": "Stephanie Turner and Anne-Maree Schwarz",
+    "title": "Management and conservation of seagrass in New Zealand: an introduction",
+    "creator": "S. J. Turner and A. Schwarz",
     "year": "2006",
     "date": "2006",
     "kind": "Science for Conservation 264",
@@ -181,7 +181,7 @@ export const historicalGisNewCandidates = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc264.pdf",
     "license": "Crown source publication, subject to specific exceptions; verified in source record.",
-    "attribution": "Stephanie Turner and Anne-Maree Schwarz (2006), Management and conservation of seagrass in New Zealand.",
+    "attribution": "S. J. Turner and A. Schwarz (2006). Management and conservation of seagrass in New Zealand: an introduction. Science for Conservation 264.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -422,17 +422,17 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-sfc279-freshwater-2007",
     "fileName": "doc-sfc279-freshwater-2007.pdf",
-    "title": "Conservation research on freshwater environments and spatial datasets",
-    "creator": "Department of Conservation",
+    "title": "Mudfish (Neochanna: Galaxiidae) literature review, Part 3",
+    "creator": "L. K. O'Brien and N. R. Dunn",
     "year": "2007",
     "date": "2007",
-    "kind": "DOC Science for Conservation 277",
+    "kind": "Science for Conservation 277, Part 3",
     "topic": "Conservation research on freshwater environments and spatial datasets",
     "summary": "Historical GIS evidence concerning conservation research on freshwater environments and spatial datasets.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc277c.pdf",
     "license": "DOC Crown publication, subject to original restrictions",
-    "attribution": "Department of Conservation (2007), Conservation research on freshwater environments and spatial datasets.",
+    "attribution": "L. K. O'Brien and N. R. Dunn (2007). Mudfish (Neochanna: Galaxiidae) literature review, Part 3. Science for Conservation 277, Part 3.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -589,17 +589,17 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-otago-postpastoral-arcview-2003",
     "fileName": "doc-otago-postpastoral-arcview-2003.pdf",
-    "title": "Post-pastoral succession in intermontane basins and valleys of eastern South Island",
-    "creator": "S. Walker, W.G. Lee and G.M. Rogers",
+    "title": "Post-pastoral succession in intermontane basins and valleys of eastern South Island, New Zealand, Part 1",
+    "creator": "S. Walker, W. G. Lee and G. M. Rogers",
     "year": "2003",
     "date": "2003",
-    "kind": "Science for Conservation 227",
+    "kind": "Science for Conservation 227, Part 1",
     "topic": "Post-pastoral succession in intermontane basins and valleys of eastern South Island",
     "summary": "Contemporary evidence of spatial analysis and GIS use in post-pastoral succession in intermontane basins and valleys of eastern south island.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/Documents/science-and-technical/sfc227.pdf",
     "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
-    "attribution": "S. Walker, W.G. Lee and G.M. Rogers (2003), Post-pastoral succession in intermontane basins and valleys of eastern South Island.",
+    "attribution": "S. Walker, W. G. Lee and G. M. Rogers (2003). Post-pastoral succession in intermontane basins and valleys of eastern South Island, New Zealand, Part 1. Science for Conservation 227, Part 1.",
     "themeIds": [
       "profession",
       "open-practice"
@@ -627,7 +627,7 @@ export const historicalGisNewCandidates = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/SfC238.pdf",
     "license": "DOC Crown material CC BY 4.0 default, subject to document-specific exceptions.",
-    "attribution": "Graynoth and Niven (2004), Science for Conservation 238",
+    "attribution": "E. Graynoth and K. Niven (2004). Habitat for female longfinned eels in the West Coast and Southland, New Zealand. Science for Conservation 238.",
     "themeIds": [
       "profession",
       "open-practice"
