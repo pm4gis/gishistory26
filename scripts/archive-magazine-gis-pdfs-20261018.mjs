@@ -20,6 +20,7 @@ const published=[...magazinePdfPublications],unavailable=[];
 const periodicalEvidencePath='docs/verification/doc-science-newsletter-gis-evidence-20261018.json';
 let magazineEvidence=[];
 try{magazineEvidence=JSON.parse(await fs.readFile(periodicalEvidencePath,'utf8')).evidence||[]}catch{}
+try{const seed=JSON.parse(await fs.readFile('docs/verification/doc-science-newsletter-first-pass-evidence-20261018.json','utf8'));for(const hit of seed.evidence||[])if(!magazineEvidence.some(x=>x.slug===hit.slug))magazineEvidence.push(hit);}catch{}
 let newlyArchivedPeriodicals=0;
 const priorPeriodicalCount=published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length;
 const maxNewPeriodicals=15;
@@ -75,7 +76,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   if(cover.length<1000||cover.subarray(0,3).toString('hex')!=='ffd8ff')throw Error('Invalid JPEG');
   const sha256=createHash('sha256').update(bytes).digest('hex');
   published.push({...p,pages,bytes:bytes.length,sha256,checkTerms:undefined,generatedCover:false,hostedLocally:true});
-  if(isPeriodical){const hit=spatialHits[0],start=Math.max(0,hit.index-190);magazineEvidence.push({slug:p.slug,issue:p.title,year:p.year,term:hit[0],context:extracted.stdout.slice(start,Math.min(extracted.stdout.length,hit.index+270)).replace(/\s+/g,' ').trim(),hitCount:spatialHits.length,pages,sha256,sourceUrl:p.sourceUrl});newlyArchivedPeriodicals++;}
+  if(isPeriodical){const hit=spatialHits[0],start=Math.max(0,hit.index-190);magazineEvidence=magazineEvidence.filter(item=>item.slug!==p.slug);magazineEvidence.push({slug:p.slug,issue:p.title,year:p.year,term:hit[0],context:extracted.stdout.slice(start,Math.min(extracted.stdout.length,hit.index+270)).replace(/\s+/g,' ').trim(),hitCount:spatialHits.length,pages,sha256,sourceUrl:p.sourceUrl});newlyArchivedPeriodicals++;}
   console.log('ARCHIVED '+p.slug+' '+pages+' pages '+bytes.length+' bytes '+sha256);
  }catch(e){
   await fs.rm(pdf,{force:true});await fs.rm(image,{force:true});
@@ -87,6 +88,6 @@ const lines = published.map(({checkTerms,...p})=>p);
 await fs.writeFile('src/lib/magazine-pdf-publications-20261018.mjs','// Actual PDF originals validated and hosted on this site.\nexport const magazinePdfPublications = '+JSON.stringify(lines,null,2)+';\n');
 await fs.mkdir('docs/verification',{recursive:true});
 await fs.writeFile('docs/verification/magazine-pdf-archive-20261018.json',JSON.stringify({checkedOn:'2026-10-18',published:published.map(p=>({slug:p.slug,sourceUrl:p.sourceUrl,year:p.year,pages:p.pages,bytes:p.bytes,sha256:p.sha256})),unavailable},null,2)+'\n');
-await fs.writeFile('docs/verification/doc-science-newsletter-gis-evidence-20261018.json',JSON.stringify({checkedOn:'2026-10-18',maxNewPeriodicals,archivedCount:priorPeriodicalCount+newlyArchivedPeriodicals,evidence:magazineEvidence,unavailable:unavailable.filter(x=>periodicalCandidates.some(p=>p.slug===x.slug))},null,2)+'\n');
+await fs.writeFile('docs/verification/doc-science-newsletter-gis-evidence-20261018.json',JSON.stringify({checkedOn:'2026-10-18',maxNewPeriodicals,archivedCount:published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length,evidence:magazineEvidence.filter(x=>published.some(p=>p.slug===x.slug)),unavailable:unavailable.filter(x=>periodicalCandidates.some(p=>p.slug===x.slug))},null,2)+'\n');
 console.log('SCIENCE_PERIODICAL_BATCH '+newlyArchivedPeriodicals+' new originals; '+(priorPeriodicalCount+newlyArchivedPeriodicals)+' total original issues');
 if(published.length===0)console.warn('No original files could be acquired; inspect archive report before retrying.');
