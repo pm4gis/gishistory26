@@ -22,16 +22,16 @@ test('PDF reading pages show the document ahead of supporting information',()=>{
  assert.ok(!shared.includes('download>')&&!shared.includes('Download original'));
 });
 
-test('Previous and Next links stay on the website across all 75 PDF publications',()=>{
- assert.equal(publicationReadingOrder.length,75);
- assert.equal(new Set(publicationReadingOrder.map(x=>x.url)).size,75);
+test('Previous and Next links stay on the website across the complete PDF library',()=>{
+ assert.equal(publicationReadingOrder.length,88);
+ assert.equal(new Set(publicationReadingOrder.map(x=>x.url)).size,publicationReadingOrder.length);
  assert.ok(publicationReadingOrder.every(x=>x.url.startsWith('/publications/')));
  assert.ok(publicationReadingOrder.every(x=>Number(x.year)<=2025));
  for(let i=0;i<publicationReadingOrder.length;i++){
   const item=publicationReadingOrder[i];
   const context=publicationReadingContext(item.url);
   assert.equal(context.position,i+1);
-  assert.equal(context.total,75);
+  assert.equal(context.total,publicationReadingOrder.length);
   assert.equal(context.previous?.url,publicationReadingOrder[i-1]?.url);
   assert.equal(context.next?.url,publicationReadingOrder[i+1]?.url);
  }
