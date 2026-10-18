@@ -43,3 +43,4 @@ if(!homeHtml.includes('property="og:image"')||!homeHtml.includes('/assets/social
 console.log('Selected social card verified: 1200 x 630, JPEG, Open Graph and X metadata');
 
 await import('./check-links.mjs');
+await import('./verify-indexable-build.mjs');
