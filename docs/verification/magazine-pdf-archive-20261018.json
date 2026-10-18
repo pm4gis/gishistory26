@@ -200,6 +200,70 @@
       "pages": 77,
       "bytes": 1368720,
       "sha256": "91e5b8709d82597436003aa816ced8774ea0150071957df475a7cceef594f697"
+    },
+    {
+      "slug": "doc-hurunui-forest-gis-2005",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc251.pdf",
+      "year": "2005",
+      "pages": 42,
+      "bytes": 441145,
+      "sha256": "1864e7502b0f81f86e07a8c09ac9c7b3645ea42aa0e620a2a9d7940b20afbcfa"
+    },
+    {
+      "slug": "doc-galaxiid-trout-arcgis-2012",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc320entire_print_quality.pdf",
+      "year": "2012",
+      "pages": 27,
+      "bytes": 10907797,
+      "sha256": "85356b9c7b4d032de963486f4d3eac26298e438bb88d922f83faccaba0545a12"
+    },
+    {
+      "slug": "doc-koura-taieri-gis-2000",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc148.pdf",
+      "year": "2000",
+      "pages": 42,
+      "bytes": 977629,
+      "sha256": "aae26644613d2a880b103e52b357059b4226b0560b2e0c6b49042882b1668bd1"
+    },
+    {
+      "slug": "doc-lowland-wetland-gis-2010",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc305entire.pdf",
+      "year": "2010",
+      "pages": 68,
+      "bytes": 1128124,
+      "sha256": "0c8e9f39b34d521e79aaef8a520e9aadfc5920dd650c311063da97573c0b4cd8"
+    },
+    {
+      "slug": "doc-southland-forest-fragmentation-2006",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc265.pdf",
+      "year": "2006",
+      "pages": 29,
+      "bytes": 315682,
+      "sha256": "d092b9db2f58011653c01c26498fe1265f2c3525efe05d3fe099da4d0ec38512"
+    },
+    {
+      "slug": "doc-remaining-indigenous-cover-2008",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc284entire.pdf",
+      "year": "2008",
+      "pages": 84,
+      "bytes": 2767809,
+      "sha256": "3ce344f881cdee5030132d2185facf4d1c3fc086c3c60cf23d17c1df13fb5abb"
+    },
+    {
+      "slug": "doc-seagrass-mapping-2006",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc264.pdf",
+      "year": "2006",
+      "pages": 90,
+      "bytes": 405367,
+      "sha256": "4f52d04ab80d4353b48b79aa31a5e5f40186820bb61a5ebaaa56e7041fa732f0"
+    },
+    {
+      "slug": "doc-sfc279-freshwater-2007",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc277c.pdf",
+      "year": "2007",
+      "pages": 29,
+      "bytes": 339034,
+      "sha256": "b1ff9b76a3ef1662ae5ea8ae563bc3373f3178db40f306a58e807cb208fe2d6b"
     }
   ],
   "unavailable": [
@@ -252,6 +316,46 @@
       "slug": "doc-whanganui-fish-barriers-2021",
       "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/our-work/nga-awa-river-restoration/whanganui-river-restoration/fisheries-aquatic-biodiversity-whanganui-review-2021.pdf",
       "reason": "Error: Source-specific reproduction restriction"
+    },
+    {
+      "slug": "doc-wetland-vegetation-mapping-2007",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/getting-involved/funding/biodiversity-funds/protecting-our-places-priorities-detail.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 404\n"
+    },
+    {
+      "slug": "mfe-plan-mapping-standards-new-2017",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Discussion-Paper-F-Mapping-Standards.pdf?v=3b59d7c9a4bf180ab8396f11478c063acd7fc73d",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-spatial-wetlands-2018",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Considering-a-future-spatial-framework-for-wetland-mapping-and-monitoring-in-New-Zealand.pdf?v=1306f62bbf4a0cfeb2c4b7099918616dff945efd",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-national-planning-draft-2018",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/FINAL-Draft-National-Planning-Standards-Combined.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-national-planning-2019",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/national-planning-standards-final.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-zones-and-overlays-2017",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Final-Discussion-Paper-C-Zones-and-overlays.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "mfe-mapping-submissions-2019",
+      "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/2L-Mapping-Standard.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
+    },
+    {
+      "slug": "doc-nz-biodiversity-strategy-review-2006",
+      "sourceUrl": "https://www.doc.govt.nz/documents/conservation/nz-biodiversity-strategy-themes.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 404\n"
     }
   ]
 }
