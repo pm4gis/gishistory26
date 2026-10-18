@@ -24,18 +24,26 @@ try{
   assert.ok(await page.locator('input[type="search"]').count()===0,'No search bar in the catalogue');
   assert.ok(await page.locator('.publication-sidebar').count()===1);
   assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length);
+  const selectMobileFilters=async()=>{
+   if(width<=650&&await page.locator('[data-publication-filter-toggle]').getAttribute('aria-expanded')==='false')
+    await page.locator('[data-publication-filter-toggle]').click();
+  };
+  await selectMobileFilters();
   await page.locator('[data-filter-kind="decade"]').first().click();
   const activeDecade=await page.locator('[data-filter-kind="decade"][aria-pressed="true"]').getAttribute('data-filter-value');
   const expectedDecade=publicationReadingOrder.filter(x=>x.year.startsWith(activeDecade.slice(0,3))).length;
   assert.equal(await page.locator('[data-publication]:visible').count(),expectedDecade);
   assert.equal(new URL(page.url()).searchParams.get('filter'),'decade');
+  await selectMobileFilters();
   await page.locator('[data-filter-kind="all"]').click();
   assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length);
+  await selectMobileFilters();
   await page.locator('[data-filter-kind="theme"]').first().click();
   assert.ok(await page.locator('[data-publication]:visible').count()>0);
   await page.reload({waitUntil:'domcontentloaded'});
   assert.equal(await page.locator('[data-filter-kind="theme"][aria-pressed="true"]').count(),1,'Theme selection should survive refresh');
   await page.locator('[data-filter-kind="all"]').click();
+  await selectMobileFilters();
   await page.locator('.publication-org-filters summary').click();
   await page.locator('[data-filter-kind="creator"]').first().click();
   const creator=await page.locator('[data-filter-kind="creator"][aria-pressed="true"]').getAttribute('data-filter-value');
@@ -79,7 +87,7 @@ try{
   results.push({width,publicationCount:publicationReadingOrder.length,chronology:'passed',sidebarFilters:'passed',pdfViewer:'passed',publicationNavigation:'passed',chapterSidebar:'passed',passageActions:'passed'});
   await page.close();
  }
- // Verify every one of the 75 published reader routes, including the expanded 61-file reference archive.
+ // Verify every published reader route without depending on a fixed collection size.
  const routeContext=await browser.newContext();
  let checkedReaders=0,checkedHostFiles=0,externalReferences=0;
  for(let i=0;i<publicationReadingOrder.length;i++){
@@ -106,8 +114,8 @@ try{
   checkedReaders++;
  }
  await routeContext.close();
- assert.equal(checkedReaders,75);
- assert.equal(checkedHostFiles+externalReferences,75);
+ assert.equal(checkedReaders,publicationReadingOrder.length);
+ assert.equal(checkedHostFiles+externalReferences,publicationReadingOrder.length);
  console.log('Checked '+checkedReaders+' publication readers, '+checkedHostFiles+' hosted PDF headers and '+externalReferences+' external source records.');
  fs.mkdirSync('docs/verification',{recursive:true});
  fs.writeFileSync('docs/verification/publications-browser-qa.json',JSON.stringify({base,results},null,2)+'\n');
