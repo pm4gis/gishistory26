@@ -7,16 +7,17 @@ import {mirroredPdfSlugs} from '../src/lib/geodetic-pdfs-mirrored.mjs';
 import {linzHistoricalReports} from '../src/lib/linz-historical-reports-20261018.mjs';
 import {mirroredLinzReportSlugs} from '../src/lib/linz-historical-reports-mirrored.mjs';
 import {pre2000PdfPublications} from '../src/lib/pre2000-pdf-publications-20261018.mjs';
+import {magazinePdfPublications} from '../src/lib/magazine-pdf-publications-20261018.mjs';
 import {mirroredPre2000PdfSlugs} from '../src/lib/pre2000-pdfs-mirrored.mjs';
 
 const pdfDirectory='public/assets/publications/pdfs';
 const thumbnailDirectory='public/assets/publications/thumbnails';
 
 test('hosted PDF records have local files, thumbnails, source details and reuse terms',()=>{
- assert.equal(onlinePdfPublications.length,67+linzHistoricalReports.length+pre2000PdfPublications.length);
+ assert.equal(onlinePdfPublications.length,67+linzHistoricalReports.length+pre2000PdfPublications.length+magazinePdfPublications.length);
  const hostedRecords=onlinePdfPublications.filter(p=>p.hostedLocally);
  const sourceLinkedRecords=onlinePdfPublications.filter(p=>!p.hostedLocally);
- assert.equal(hostedRecords.length,40+mirroredPdfSlugs.length+mirroredLinzReportSlugs.length+mirroredPre2000PdfSlugs.length);
+ assert.equal(hostedRecords.length,40+mirroredPdfSlugs.length+mirroredLinzReportSlugs.length+mirroredPre2000PdfSlugs.length+magazinePdfPublications.length);
  assert.equal(sourceLinkedRecords.length,27-mirroredPdfSlugs.length+linzHistoricalReports.length-mirroredLinzReportSlugs.length+pre2000PdfPublications.length-mirroredPre2000PdfSlugs.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.slug)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.fileName)).size,onlinePdfPublications.length);
