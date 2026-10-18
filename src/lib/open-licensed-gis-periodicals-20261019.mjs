@@ -62,6 +62,38 @@ export const openLicensedGisPeriodicals = [
       "australia",
       "new zealand"
     ]
+  },
+  {
+    "slug": "osgeo-journal-canterbury-media-mapping-2011",
+    "fileName": "osgeo-journal-canterbury-media-mapping-2011.pdf",
+    "title": "OSGeo Journal, volume 8: Media Mapping by Phil Bartie and Simon Kingham",
+    "creator": "OSGeo Journal; Phil Bartie and Simon Kingham, University of Canterbury",
+    "year": "2011",
+    "date": "February 2011",
+    "kind": "Geospatial professional research journal",
+    "topic": "Christchurch mobile GIS with georeferenced photos and audio for environmental sensor data",
+    "summary": "Original OSGeo Journal volume 8 (2011), containing Canterbury researchers Phil Bartie and Simon Kingham's first-hand account of mobile georeferenced audio and imagery for analysing urban air-quality monitoring data, pp. 23–30.",
+    "sourceName": "OSGeo Journal",
+    "sourceUrl": "https://citeseerx.ist.psu.edu/document?doi=ae2a4f473aae10d14840e25331095651f11ede91&repid=rep1&type=pdf",
+    "license": "Creative Commons Attribution-NoDerivatives 3.0, OSGeo Journal original publication licence. Preserve original unchanged.",
+    "attribution": "Bartie, P. and Kingham, S. (2011), Media Mapping, OSGeo Journal 8, pp. 23–30. Original volume published February 2011, CC BY-ND 3.0.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "University of Canterbury",
+      "mobile GIS",
+      "georeferenced media",
+      "OSGeo",
+      "FOSS4G 2009",
+      "air quality"
+    ],
+    "checkTerms": [
+      "media mapping",
+      "kingham",
+      "journal"
+    ]
   }
 ];
 export const openLicensedPeriodicalChapterLinks = {
@@ -73,5 +105,10 @@ export const openLicensedPeriodicalChapterLinks = {
   "osgeo-journal-australia-nz-2014": [
     "the-map-becomes-an-application",
     "science-goes-spatial"
+  ],
+  "osgeo-journal-canterbury-media-mapping-2011": [
+    "science-goes-spatial",
+    "mapping-leaves-the-office",
+    "the-map-becomes-an-application"
   ]
 };
