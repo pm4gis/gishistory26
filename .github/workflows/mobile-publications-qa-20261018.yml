@@ -1,7 +1,7 @@
 name: Mobile site and Publications browser QA
 on:
   push:
-    branches: [feature/pre2000-pdfs-mobile-20261018, main]
+    branches: [feature/20261018-mfe-magazines-originals, main]
     paths:
       - 'src/styles/site.css'
       - 'src/pages/publications/**'
@@ -9,6 +9,9 @@ on:
       - 'src/layouts/Layout.astro'
       - 'src/lib/pre2000-pdf-publications-20261018.mjs'
       - 'src/lib/pre2000-pdfs-mirrored.mjs'
+      - 'src/lib/historical-gis-new-candidates-20261018.mjs'
+      - 'src/lib/magazine-pdf-publications-20261018.mjs'
+      - 'src/lib/regional-gis-chapter-publications.mjs'
       - 'scripts/mobile-publications-qa-20261018.mjs'
       - '.github/workflows/mobile-publications-qa-20261018.yml'
   pull_request:
@@ -17,6 +20,9 @@ on:
       - 'src/pages/publications/**'
       - 'src/components/PublicationReader.astro'
       - 'src/lib/pre2000-pdf-publications-20261018.mjs'
+      - 'src/lib/historical-gis-new-candidates-20261018.mjs'
+      - 'src/lib/magazine-pdf-publications-20261018.mjs'
+      - 'src/lib/regional-gis-chapter-publications.mjs'
       - 'scripts/mobile-publications-qa-20261018.mjs'
   workflow_dispatch:
 permissions:
