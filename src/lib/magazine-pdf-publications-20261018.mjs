@@ -1612,5 +1612,98 @@ export const magazinePdfPublications = [
     "sha256": "ccbdfcf6ad030e777bb11eda8c7834244d60746dee7f0817ce2a701dda0af392",
     "generatedCover": false,
     "hostedLocally": true
+  },
+  {
+    "slug": "doc-rare-bits-41-2001",
+    "fileName": "doc-rare-bits-41-2001.pdf",
+    "title": "Rare Bits, issue 41",
+    "creator": "Department of Conservation",
+    "year": "2001",
+    "date": "June 2001",
+    "kind": "Threatened species research newsletter",
+    "topic": "DOC regional threatened species mapping, GIS and field spatial-information practice",
+    "summary": "DOC's original June 2001 regional threatened-species field newsletter, admitted only following original-content geospatial verification.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits41.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 by default, subject to individual publication and third-party exceptions",
+    "attribution": "Department of Conservation (2001), Rare Bits 41, June.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Rare Bits",
+      "DOC",
+      "GIS",
+      "threatened species",
+      "2001"
+    ],
+    "pages": 13,
+    "bytes": 327390,
+    "sha256": "3b7d260d5ab2322e5dc0aab5fb9d83bbc818639995e300818735058cc8f8af75",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-rare-bits-44-2002",
+    "fileName": "doc-rare-bits-44-2002.pdf",
+    "title": "Rare Bits, issue 44",
+    "creator": "Department of Conservation",
+    "year": "2002",
+    "date": "April 2002",
+    "kind": "Threatened species research newsletter",
+    "topic": "DOC regional threatened species mapping, GIS and field spatial-information practice",
+    "summary": "DOC's original April 2002 regional threatened-species field newsletter, admitted only following original-content geospatial verification.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits44.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 by default, subject to individual publication and third-party exceptions",
+    "attribution": "Department of Conservation (2002), Rare Bits 44, April.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Rare Bits",
+      "DOC",
+      "GIS",
+      "threatened species",
+      "2002"
+    ],
+    "pages": 25,
+    "bytes": 120705,
+    "sha256": "9bafe977eef7fc778e96ea4e4ee6b5649967375f39180ad1aaf31d4de31f4fcd",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-rare-bits-47-2002",
+    "fileName": "doc-rare-bits-47-2002.pdf",
+    "title": "Rare Bits, issue 47",
+    "creator": "Department of Conservation",
+    "year": "2002",
+    "date": "December 2002",
+    "kind": "Threatened species research newsletter",
+    "topic": "DOC regional threatened species mapping, GIS and field spatial-information practice",
+    "summary": "DOC's original December 2002 regional threatened-species field newsletter, admitted only following original-content geospatial verification.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits47.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 by default, subject to individual publication and third-party exceptions",
+    "attribution": "Department of Conservation (2002), Rare Bits 47, December.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Rare Bits",
+      "DOC",
+      "GIS",
+      "threatened species",
+      "2002"
+    ],
+    "pages": 19,
+    "bytes": 102192,
+    "sha256": "fd62d26e81a7bba82232c578ff43e332180ef5ce8a51465424c27cd91fa2cd7f",
+    "generatedCover": false,
+    "hostedLocally": true
   }
 ];
