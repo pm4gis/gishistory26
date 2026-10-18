@@ -391,6 +391,60 @@ export const historicalGisNewCandidates = [
       "mapping",
       "standard"
     ]
+  },
+  {
+    "slug": "doc-nz-biodiversity-strategy-review-2006",
+    "fileName": "doc-nz-biodiversity-strategy-review-2006.pdf",
+    "title": "Review of the New Zealand Biodiversity Strategy themes",
+    "creator": "Department of Conservation",
+    "year": "2006",
+    "date": "2006",
+    "kind": "NZ Biodiversity Strategy review",
+    "topic": "Review of the New Zealand Biodiversity Strategy themes",
+    "summary": "Historical GIS evidence concerning review of the new zealand biodiversity strategy themes.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/conservation/nz-biodiversity-strategy-themes.pdf",
+    "license": "DOC Crown publication, subject to original restrictions",
+    "attribution": "Department of Conservation (2006), Review of the New Zealand Biodiversity Strategy themes.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "geospatial"
+    ],
+    "checkTerms": [
+      "fwenza",
+      "biodiversity"
+    ]
+  },
+  {
+    "slug": "doc-sfc279-freshwater-2007",
+    "fileName": "doc-sfc279-freshwater-2007.pdf",
+    "title": "Conservation research on freshwater environments and spatial datasets",
+    "creator": "Department of Conservation",
+    "year": "2007",
+    "date": "2007",
+    "kind": "DOC Science for Conservation 277",
+    "topic": "Conservation research on freshwater environments and spatial datasets",
+    "summary": "Historical GIS evidence concerning conservation research on freshwater environments and spatial datasets.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc277c.pdf",
+    "license": "DOC Crown publication, subject to original restrictions",
+    "attribution": "Department of Conservation (2007), Conservation research on freshwater environments and spatial datasets.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "geospatial"
+    ],
+    "checkTerms": [
+      "neochanna",
+      "gis"
+    ]
   }
 ];
 export const historicalGisNewChapterLinks = {
@@ -447,5 +501,12 @@ export const historicalGisNewChapterLinks = {
   "mfe-mapping-submissions-2019": [
     "councils-build-corporate-gis",
     "the-map-becomes-an-application"
+  ],
+  "doc-nz-biodiversity-strategy-review-2006": [
+    "conservation-and-environment",
+    "science-goes-spatial"
+  ],
+  "doc-sfc279-freshwater-2007": [
+    "conservation-and-environment"
   ]
 };
