@@ -103,6 +103,13 @@ export const regionalGisChapterMap = {
   "doc-visitor-conservation-bibliography-2011": [
     "conservation-and-environment",
     "science-goes-spatial"
+  ],
+  "doc-conservation-carbon-spatial-models-2012": [
+    "conservation-and-environment",
+    "science-goes-spatial"
+  ],
+  "doc-ecological-significance-gis-2016": [
+    "conservation-and-environment"
   ]
 };
 export function regionalGisChapterPublications(articleSlug){
