@@ -1,4 +1,5 @@
 import {geodeticPdfPublications} from './geodetic-pdf-publications.mjs';
+import {linzHistoricalReports} from './linz-historical-reports-20261018.mjs';
 const ccBy4 = 'Creative Commons Attribution 4.0 International (CC BY 4.0)';
 const ccBy4Url = 'https://creativecommons.org/licenses/by/4.0/';
 
@@ -430,4 +431,4 @@ export const onlinePdfPublications = [
     provenance: 'Copy supplied for this site and publication expressly authorised by the contributor on 17 October 2026.',
     themeIds: ['profession'], keywords: ['GIS', 'skills', 'upskilling', 'Surveying + Spatial', 'professional development']
   }),
-].concat(geodeticPdfPublications.map(hosted));
+].concat(geodeticPdfPublications.map(hosted),linzHistoricalReports.map(hosted));
