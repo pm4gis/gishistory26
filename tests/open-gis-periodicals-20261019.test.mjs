@@ -12,7 +12,7 @@ test('original OSGeo journal candidates have dated licences, unique URLs and cha
  assert.equal(new Set(openLicensedGisPeriodicals.map(p=>p.sourceUrl)).size,openLicensedGisPeriodicals.length);
  for(const p of openLicensedGisPeriodicals){
   assert.ok(Number(p.year)<=2025);
-  assert.match(p.license,/BY-ND/);
+  assert.match(p.license,/(?:BY-ND|Attribution-NoDerivatives)/);
   assert.ok(openLicensedPeriodicalChapterLinks[p.slug]?.length);
  }
 });
