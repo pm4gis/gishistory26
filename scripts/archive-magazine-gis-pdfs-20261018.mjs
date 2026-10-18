@@ -7,13 +7,14 @@ import {spawnSync} from 'node:child_process';
 import {magazinePdfCandidates} from '../src/lib/magazine-pdf-candidates-20261018.mjs';
 import {magazinePdfPublications} from '../src/lib/magazine-pdf-publications-20261018.mjs';
 import {regionalGisPdfCandidates} from '../src/lib/regional-gis-pdf-candidates-20261018.mjs';
+import {historicalGisNewCandidates} from '../src/lib/historical-gis-new-candidates-20261018.mjs';
 
 const pdfDir='public/assets/publications/pdfs';
 const thumbDir='public/assets/publications/thumbnails';
 await fs.mkdir(pdfDir,{recursive:true});
 await fs.mkdir(thumbDir,{recursive:true});
 const published=[...magazinePdfPublications],unavailable=[];
-for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates]){
+for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates]){
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
  if(published.some(item=>item.slug===p.slug)){
   const prior=published.find(item=>item.slug===p.slug);
