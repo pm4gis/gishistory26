@@ -42,6 +42,7 @@ try{
   assert.ok(await page.locator('[data-publication]:visible').count()>0);
   await page.reload({waitUntil:'domcontentloaded'});
   assert.equal(await page.locator('[data-filter-kind="theme"][aria-pressed="true"]').count(),1,'Theme selection should survive refresh');
+  await selectMobileFilters();
   await page.locator('[data-filter-kind="all"]').click();
   await selectMobileFilters();
   await page.locator('.publication-org-filters summary').click();
@@ -51,6 +52,7 @@ try{
    const item=x.kind==='archive'?contributedPrimarySources.find(p=>p.slug===x.slug):onlinePdfPublications.find(p=>p.slug===x.slug);
    return item.creator===creator;
   }).length);
+  await selectMobileFilters();
   await page.locator('[data-filter-kind="all"]').click();
   for(const item of [publicationReadingOrder[0],publicationReadingOrder.find(x=>x.kind==='archive'),publicationReadingOrder.find(x=>x.kind==='research')]){
    const res=await page.goto(base+item.url,{waitUntil:'domcontentloaded'});
