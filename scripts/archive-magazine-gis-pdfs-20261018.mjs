@@ -14,7 +14,7 @@ for(const p of magazinePdfCandidates){
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
  try{
   const host=new URL(p.sourceUrl).hostname;
-  if(!['www.doc.govt.nz','www.linz.govt.nz'].includes(host))throw Error('Unexpected source host '+host);
+  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz'].includes(host))throw Error('Unexpected source host '+host);
   const response=await fetch(p.sourceUrl,{headers:{'User-Agent':'NZGISHistoryHistoricalArchive/1.0','Accept':'application/pdf,*/*'},signal:AbortSignal.timeout(65000)});
   if(!response.ok)throw Error('HTTP '+response.status);
   if(Number(response.headers.get('content-length')||0)>24*1024*1024)throw Error('File too large for static host');
