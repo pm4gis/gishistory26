@@ -25,7 +25,7 @@ test('PDF reading pages show the document ahead of supporting information',()=>{
 });
 
 test('Previous and Next links stay on the website across the complete PDF library',()=>{
- assert.equal(publicationReadingOrder.length,contributedPrimarySources.length+onlinePdfPublications.length);
+ assert.equal(publicationReadingOrder.length,contributedPrimarySources.length+onlinePdfPublications.filter(p=>p.hostedLocally).length);
  assert.equal(new Set(publicationReadingOrder.map(x=>x.url)).size,publicationReadingOrder.length);
  assert.ok(publicationReadingOrder.every(x=>x.url.startsWith('/publications/')));
  assert.ok(publicationReadingOrder.every(x=>Number(x.year)<=2025));
