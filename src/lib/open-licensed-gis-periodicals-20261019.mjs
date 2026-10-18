@@ -33,6 +33,37 @@ export const openLicensedGisPeriodicals = [
       "niwa",
       "geonetwork"
     ]
+  },
+  {
+    "slug": "osgeo-journal-australia-nz-2014",
+    "fileName": "osgeo-journal-australia-nz-2014.pdf",
+    "title": "OSGeo Journal, volume 11: 2011 Annual Report, including Australia/New Zealand chapter",
+    "creator": "OSGeo Journal, edited by Landon Blake; Australia/New Zealand chapter contributors",
+    "year": "2014",
+    "date": "October 2014",
+    "kind": "Open-source geospatial association journal",
+    "topic": "Australia/New Zealand OSGeo chapter and FOSS4G community activity",
+    "summary": "Unmodified original OSGeo annual-report journal containing the Australia/New Zealand local chapter report, contemporary open GIS projects, organisations and community activity.",
+    "sourceName": "OSGeo Journal",
+    "sourceUrl": "https://trac.osgeo.org/osgeo/export/11991/journal/volume_12/master_pdf/Master.pdf",
+    "license": "Creative Commons Attribution-NoDerivatives 3.0, OSGeo Journal policy: https://wiki.osgeo.org/wiki/Journal_License_and_Guidelines. Original unchanged.",
+    "attribution": "OSGeo Journal volume 11 (2011 annual report), October 2014, edited by Landon Blake; chapter authors credited in the original, CC BY-ND 3.0.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "OSGeo",
+      "Australia",
+      "New Zealand",
+      "QGIS",
+      "open source"
+    ],
+    "checkTerms": [
+      "australia/new zealand",
+      "gis",
+      "journal"
+    ]
   }
 ];
 export const openLicensedPeriodicalChapterLinks = {
@@ -40,5 +71,9 @@ export const openLicensedPeriodicalChapterLinks = {
     "science-goes-spatial",
     "the-map-becomes-an-application",
     "gis-inside-government"
+  ],
+  "osgeo-journal-australia-nz-2014": [
+    "the-map-becomes-an-application",
+    "science-goes-spatial"
   ]
 };
