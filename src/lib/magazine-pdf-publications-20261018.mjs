@@ -746,17 +746,17 @@ export const magazinePdfPublications = [
   {
     "slug": "doc-galaxiid-trout-arcgis-2012",
     "fileName": "doc-galaxiid-trout-arcgis-2012.pdf",
-    "title": "Riverscape modelling of native galaxiids and introduced trout",
-    "creator": "Department of Conservation",
-    "year": "2012",
-    "date": "2012",
+    "title": "Effects of introduced trout predation on non-diadromous galaxiid fish populations across invaded riverscapes",
+    "creator": "Darragh J. Woodford and Angus R. McIntosh",
+    "year": "2013",
+    "date": "March 2013",
     "kind": "Science for Conservation 320",
     "topic": "Riverscape modelling of native galaxiids and introduced trout",
     "summary": "Historical account of riverscape modelling of native galaxiids and introduced trout.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc320entire_print_quality.pdf",
     "license": "Crown source publication, subject to specific exceptions; verified in source record.",
-    "attribution": "Department of Conservation (2012), Riverscape modelling of native galaxiids and introduced trout.",
+    "attribution": "Woodford and McIntosh (2013), Science for Conservation 320",
     "themeIds": [
       "profession",
       "open-practice"
@@ -862,8 +862,8 @@ export const magazinePdfPublications = [
   {
     "slug": "doc-remaining-indigenous-cover-2008",
     "fileName": "doc-remaining-indigenous-cover-2008.pdf",
-    "title": "New Zealand's remaining indigenous cover",
-    "creator": "Department of Conservation",
+    "title": "New Zealand's remaining indigenous cover: recent changes and biodiversity protection needs",
+    "creator": "Susan Walker, Robbie Price and Daniel Rutledge",
     "year": "2008",
     "date": "2008",
     "kind": "Science for Conservation 284",
