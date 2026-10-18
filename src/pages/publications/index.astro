@@ -146,5 +146,25 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  @media(max-width:900px){.publication-library-layout{grid-template-columns:195px minmax(0,1fr);gap:14px}.publication-filter-menu{padding:10px}.publication-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,195px),1fr))}}
  @media(max-width:650px){.publication-library{padding:18px 12px 38px}.publication-library-layout{display:block}.publication-sidebar{position:static;max-height:none;margin-bottom:16px}.publication-filter-menu{padding:12px}.publication-filter-menu section{display:inline-block;vertical-align:top;width:49%;padding:0 7px 0 0}.publication-filter-options button{font-size:12px}.publication-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.publication-cover{height:142px}.publication-copy{padding:9px;gap:5px}.publication-copy h3{font-size:13px}.publication-copy .eyebrow{font-size:9px}.publication-creator{font-size:11px}.publication-summary{font-size:12px;-webkit-line-clamp:2;line-clamp:2}.publication-org-filters .publication-filter-options{max-height:230px}}
  @media(max-width:370px){.publication-grid{grid-template-columns:1fr}.publication-cover{height:185px}}
+
+ @media(max-width:650px){
+  .publication-mobile-filter-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:48px;border:1px solid var(--line);border-radius:9px;padding:10px 14px;background:var(--surface);color:var(--text);text-align:left;font-size:14px;font-weight:650}
+  .publication-mobile-filter-toggle span{margin-left:auto}
+  .publication-sidebar .publication-filter-menu{display:none}
+  .publication-sidebar.is-open .publication-filter-menu{display:block;margin-top:8px;max-height:58dvh;overflow-y:auto}
+  .publication-sidebar{overflow:visible}
+  .publication-filter-menu section{display:block;width:100%;padding:0}
+  .publication-filter-menu button{min-height:44px}
+  .publication-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  .publication-card{display:grid;grid-template-columns:96px minmax(0,1fr);min-height:118px}
+  .publication-cover{height:100%;min-height:118px;max-height:145px;padding:8px}
+  .publication-cover img{width:100%;height:100%;object-fit:contain}
+  .publication-copy{min-width:0;padding:11px 12px;gap:5px}
+  .publication-copy h3{font-size:15px;line-height:1.33}
+  .publication-copy .eyebrow{font-size:11px}
+  .publication-summary{font-size:12px;-webkit-line-clamp:2;line-clamp:2}
+  .publication-results-toolbar{align-items:baseline;gap:8px}
+ }
+ @media(max-width:370px){.publication-card{grid-template-columns:85px minmax(0,1fr)}}
 </style>
 
