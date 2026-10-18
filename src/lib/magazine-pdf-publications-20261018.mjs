@@ -433,5 +433,285 @@ export const magazinePdfPublications = [
     "sha256": "40fc4f8091a7dd518b1a8f064f7874e21d85aab48959f9b7bafd2c14ec1b4fa9",
     "generatedCover": false,
     "hostedLocally": true
+  },
+  {
+    "slug": "doc-coastal-flood-risk-gis-2019",
+    "fileName": "doc-coastal-flood-risk-gis-2019.pdf",
+    "title": "Risk-exposure assessment of DOC coastal locations to flooding from the sea",
+    "creator": "Department of Conservation",
+    "year": "2019",
+    "date": "2019",
+    "kind": "DOC Science for Conservation 332",
+    "topic": "National DEM-based GIS risk screening of coastal conservation assets",
+    "summary": "National DEM-based GIS risk screening of coastal conservation assets.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc332entire.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2019). Risk-exposure assessment of DOC coastal locations to flooding from the sea.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "coastal",
+      "inundation"
+    ],
+    "pages": 40,
+    "bytes": 5967690,
+    "sha256": "28998978bd780dbc9041ab308c135501f3fe8e1e5401686ec017302019b5b7b7",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-wellington-wetlands-lcdb2-2013",
+    "fileName": "doc-wellington-wetlands-lcdb2-2013.pdf",
+    "title": "How well does LCDB2 map wetlands in the Wellington region?",
+    "creator": "Department of Conservation",
+    "year": "2013",
+    "date": "2013",
+    "kind": "DOC Research and Development Series 341",
+    "topic": "Comparative satellite land-cover GIS accuracy for Wellington wetlands",
+    "summary": "Comparative satellite land-cover GIS accuracy for Wellington wetlands.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/drds341entire.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2013). How well does LCDB2 map wetlands in the Wellington region?.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "lcdb2",
+      "wetlands"
+    ],
+    "pages": 25,
+    "bytes": 2522132,
+    "sha256": "e7b13fe2d61b272444e7e23c1db6b394b554aea978f7351e806c8136ff9e81b5",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-maui-dolphin-distribution-2010",
+    "fileName": "doc-maui-dolphin-distribution-2010.pdf",
+    "title": "Distribution of Maui's dolphin: 2000–2009",
+    "creator": "Department of Conservation",
+    "year": "2010",
+    "date": "2010",
+    "kind": "DOC Research and Development Series 322",
+    "topic": "GIS sightings maps and marine protection in western North Island waters",
+    "summary": "GIS sightings maps and marine protection in western North Island waters.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds322.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2010). Distribution of Maui's dolphin: 2000–2009.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "maui",
+      "dolphin"
+    ],
+    "pages": 27,
+    "bytes": 2630507,
+    "sha256": "02e448846aac4c950e35a27f31a53b502df06e5ad28f7a642283dacb3de953fa",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-marine-ecosystem-gis-2014",
+    "fileName": "doc-marine-ecosystem-gis-2014.pdf",
+    "title": "Ecosystem goods and services in marine protected areas",
+    "creator": "Department of Conservation",
+    "year": "2014",
+    "date": "2014",
+    "kind": "DOC Science for Conservation 326",
+    "topic": "GIS modelling and valuation of marine biomes and reserves",
+    "summary": "GIS modelling and valuation of marine biomes and reserves.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/sfc326entire.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2014). Ecosystem goods and services in marine protected areas.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "ecosystem",
+      "marine"
+    ],
+    "pages": 100,
+    "bytes": 2139293,
+    "sha256": "94e9063280fc55f90c10f9c4297d19ccdd27b02c3d124f03fab6356ce5c7a861",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-marine-areas-gis-statistic-2021",
+    "fileName": "doc-marine-areas-gis-statistic-2021.pdf",
+    "title": "Marine protected areas: Tier 1 statistic, 2021",
+    "creator": "Department of Conservation",
+    "year": "2021",
+    "date": "2021",
+    "kind": "Marine protected areas technical statistics",
+    "topic": "Using NZTM spatial projections to calculate marine protection area statistics",
+    "summary": "Using NZTM spatial projections to calculate marine protection area statistics.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/conservation/marine-and-coastal/marine-protected-areas/tier-1-statistic/marine-protected-areas-tier-1-statistic-2021.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2021). Marine protected areas: Tier 1 statistic, 2021.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "protected",
+      "gis"
+    ],
+    "pages": 8,
+    "bytes": 978965,
+    "sha256": "f96614f10a262ad2001f9ac550655784eb7321fb8aa59e9ccbc11cfa762eec4e",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-southeast-marine-spatial-2018",
+    "fileName": "doc-southeast-marine-spatial-2018.pdf",
+    "title": "South-East Marine Protection Forum: Recommendations to Ministers",
+    "creator": "Department of Conservation",
+    "year": "2018",
+    "date": "2018",
+    "kind": "South-East Marine Protection Forum",
+    "topic": "ArcGIS Benthic Terrain Modeller, Otago council marine habitats, marine spatial planning",
+    "summary": "ArcGIS Benthic Terrain Modeller, Otago council marine habitats, marine spatial planning.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/conservation/marine-and-coastal/semp/sempf-recommendations-report.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2018). South-East Marine Protection Forum: Recommendations to Ministers.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "marine",
+      "habitat"
+    ],
+    "pages": 314,
+    "bytes": 18307083,
+    "sha256": "f029e37e222797b8abf847796e24751ab93b771945617e4f856a7f48ea563f9f",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-coastal-vehicle-spatial-survey-2022",
+    "fileName": "doc-coastal-vehicle-spatial-survey-2022.pdf",
+    "title": "Vehicles on New Zealand beaches: annotated ecological research bibliography",
+    "creator": "Department of Conservation",
+    "year": "2022",
+    "date": "2022",
+    "kind": "DOC coastal ecology annotated bibliography",
+    "topic": "Historical coastal mapping by drone and spatial analysis",
+    "summary": "Historical coastal mapping by drone and spatial analysis.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/vehicles-on-new-zealand-beaches-g-la-cock.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2022). Vehicles on New Zealand beaches: annotated ecological research bibliography.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "gis",
+      "beaches"
+    ],
+    "pages": 21,
+    "bytes": 1143075,
+    "sha256": "31dd9a57435f8af43702f3933a1605865fd0dabaf3e1f737a4bceb1aef8cee59",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-visitor-conservation-bibliography-2011",
+    "fileName": "doc-visitor-conservation-bibliography-2011.pdf",
+    "title": "A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010",
+    "creator": "Department of Conservation",
+    "year": "2011",
+    "date": "2011",
+    "kind": "DOC Science for Conservation 253",
+    "topic": "Bibliographic records of GIS uses in conservation visitor research",
+    "summary": "Bibliographic records of GIS uses in conservation visitor research.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap253.pdf",
+    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
+    "attribution": "Department of Conservation (2011). A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "gis",
+      "visitor"
+    ],
+    "pages": 89,
+    "bytes": 648304,
+    "sha256": "66d2a405ef672100d42e10569fc580cc5653ee43e6501a5cbf9849332067e6c7",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-conservation-carbon-spatial-models-2012",
+    "fileName": "doc-conservation-carbon-spatial-models-2012.pdf",
+    "title": "Estimation of current and potential carbon stocks and Kyoto-compliant carbon gain on conservation land",
+    "creator": "Department of Conservation",
+    "year": "2012",
+    "date": "2012",
+    "kind": "DOC Science for Conservation 317",
+    "topic": "Spatial modelling of 100-metre LENZ, LCDB2 and LUCAS grids for carbon stock estimates",
+    "summary": "Spatial modelling of 100-metre LENZ, LCDB2 and LUCAS grids for carbon stock estimates.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc317.pdf",
+    "license": "Crown copyright CC BY 4.0 default DOC website terms, excluding third-party material.",
+    "attribution": "Department of Conservation (2012). Estimation of current and potential carbon stocks and Kyoto-compliant carbon gain on conservation land.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "carbon",
+      "spatial"
+    ],
+    "pages": 44,
+    "bytes": 1573044,
+    "sha256": "8cfc4d0d6019f38b499595e9ccf1dac1d3646760c34f0950e2c255d59d7a7bbf",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-ecological-significance-gis-2016",
+    "fileName": "doc-ecological-significance-gis-2016.pdf",
+    "title": "Department of Conservation guidelines for assessing significant ecological values",
+    "creator": "Department of Conservation",
+    "year": "2016",
+    "date": "2016",
+    "kind": "DOC Science for Conservation 327",
+    "topic": "Ecological Districts, LENZ and FENZ geodatabase frameworks for significance assessment",
+    "summary": "Ecological Districts, LENZ and FENZ geodatabase frameworks for significance assessment.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc327entire.pdf",
+    "license": "Crown copyright CC BY 4.0 default DOC website terms, excluding third-party material.",
+    "attribution": "Department of Conservation (2016). Department of Conservation guidelines for assessing significant ecological values.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "ecological",
+      "geodatabase"
+    ],
+    "pages": 77,
+    "bytes": 1368720,
+    "sha256": "91e5b8709d82597436003aa816ced8774ea0150071957df475a7cceef594f697",
+    "generatedCover": false,
+    "hostedLocally": true
   }
 ];
