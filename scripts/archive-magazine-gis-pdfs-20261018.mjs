@@ -29,18 +29,26 @@ const spatialMention=/(?:\bGIS\b|\bArcView\b|\bARC\s*\/\s*INFO\b|geograph(?:ical
 for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...openLicensedGisPeriodicals,...docRareBitsCandidates,...docScienceNewsletterCandidates]){
  const isPeriodical=periodicalCandidates.some(issue=>issue.slug===p.slug);
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
- if(published.some(item=>item.slug===p.slug)){
-  const prior=published.find(item=>item.slug===p.slug);
-  const bytes=await fs.readFile(pdf);
-  const cover=await fs.readFile(image);
-  if(bytes.subarray(0,5).toString()!=='%PDF-'||createHash('sha256').update(bytes).digest('hex')!==prior.sha256||cover.subarray(0,3).toString('hex')!=='ffd8ff') throw Error('Previously archived original changed: '+p.slug);
-  console.log('PRESERVED '+p.slug);
-  continue;
+ const oldIndex=published.findIndex(item=>item.slug===p.slug);
+ if(oldIndex>=0){
+  const prior=published[oldIndex];
+  if(prior.sourceUrl!==p.sourceUrl||(p.expectedPages&&prior.pages!==p.expectedPages)){
+   published.splice(oldIndex,1);
+   await fs.rm(pdf,{force:true});
+   await fs.rm(image,{force:true});
+   console.warn('RECHECK '+p.slug+': earlier source does not match the complete verified original');
+  }else{
+   const bytes=await fs.readFile(pdf);
+   const cover=await fs.readFile(image);
+   if(bytes.subarray(0,5).toString()!=='%PDF-'||createHash('sha256').update(bytes).digest('hex')!==prior.sha256||cover.subarray(0,3).toString('hex')!=='ffd8ff') throw Error('Previously archived original changed: '+p.slug);
+   console.log('PRESERVED '+p.slug);
+   continue;
+  }
  }
  if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 30 verified original magazine PDFs already archived across both releases'});continue;}
  try{
   const host=new URL(p.sourceUrl).hostname;
-  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz','kartoweb.itc.nl','trac.osgeo.org','citeseerx.ist.psu.edu'].includes(host))throw Error('Unexpected source host '+host);
+  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz','kartoweb.itc.nl','trac.osgeo.org','citeseerx.ist.psu.edu','svn.osgeo.org'].includes(host))throw Error('Unexpected source host '+host);
   // MfE historical asset URLs repeatedly redirect back to themselves; avoid pointless retries
   // unless an operator explicitly requests another verification attempt.
   if(host==='environment.govt.nz' && process.env.RETRY_MFE_UNVERIFIED_URLS!=='1') throw Error('Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry');
@@ -62,6 +70,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
   if(info.status!==0)throw Error('Invalid PDF structure');
   const pages=Number((info.stdout.match(/^Pages:\s*(\d+)/m)||[])[1]);
   if(!pages)throw Error('Unverified PDF page count');
+  if(p.expectedPages&&pages!==p.expectedPages)throw Error('Original PDF requires exactly '+p.expectedPages+' pages; received '+pages);
   const extracted=spawnSync('pdftotext',['-f','1','-l',String(Math.min(pages,35)),pdf,'-'],{encoding:'utf8',timeout:45000,maxBuffer:7_000_000});
   if(extracted.status!==0)throw Error('Unable to inspect source text');
   const txt=extracted.stdout.toLowerCase();
