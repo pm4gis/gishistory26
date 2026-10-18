@@ -1,0 +1,28 @@
+// Selected New Zealand GIS-related periodical and profession documents.
+// These records are not exposed until original PDF bytes have been archived.
+export const magazinePdfCandidates = [
+ {
+  slug:'doc-conservation-science-newsletter-28-29-1998',
+  fileName:'doc-conservation-science-newsletter-28-29-1998.pdf',
+  title:'Conservation Science Newsletter, issues 28 and 29',creator:'Department of Conservation',year:'1998',date:'18 December 1998',
+  kind:'Conservation science newsletter',topic:'Geographical information systems in conservation fire planning',
+  summary:'The December 1998 issue records a proposal for a GIS database of fire-induced vegetation, wetlands, tussock grasslands and shrublands as part of conservation fire research.',
+  sourceName:'Department of Conservation',sourceUrl:'https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-28--29-december-1998.pdf',
+  license:'Department of Conservation Crown material, CC BY 4.0 default website terms, subject to the original document and third-party material.',
+  attribution:'Department of Conservation (1998), Conservation Science Newsletter, issues 28 and 29, 18 December 1998.',
+  themeIds:['profession','open-practice'],keywords:['GIS','conservation','fire management','1998','vegetation','DOC'],
+  checkTerms:['conservation','fire','gis']
+ },
+ {
+  slug:'nz-geospatial-industry-profile-survey-2023',
+  fileName:'nz-geospatial-industry-profile-survey-2023.pdf',
+  title:'New Zealand Geospatial Industry Profile Survey Results 2023',creator:'Geospatial Industry Profile Survey Committee',year:'2023',date:'2023',
+  kind:'Geospatial profession survey',topic:'GIS practitioners, skills and employment in New Zealand',
+  summary:'A profile of the New Zealand geospatial workforce based on 523 survey responses collected between March and May 2023, covering employment, qualifications, skills and professional groups.',
+  sourceName:'Land Information New Zealand',sourceUrl:'https://www.linz.govt.nz/sites/default/files/doc/GISS%20Report%202023.pdf',
+  license:'LINZ website Crown content, CC BY 4.0 default terms, subject to original attribution and content.',
+  attribution:'Geospatial Industry Profile Survey Committee (2023), Geospatial Industry Profile Survey Results 2023. Hosted by LINZ.',
+  themeIds:['profession'],keywords:['GIS','geospatial profession','survey','women in spatial','NZ Esri Users Group','2023'],
+  checkTerms:['geospatial','survey','2023']
+ }
+];
