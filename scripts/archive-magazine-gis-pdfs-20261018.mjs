@@ -15,12 +15,16 @@ const thumbDir='public/assets/publications/thumbnails';
 await fs.mkdir(pdfDir,{recursive:true});
 await fs.mkdir(thumbDir,{recursive:true});
 const published=[...magazinePdfPublications],unavailable=[];
-const magazineEvidence=[];let newlyArchivedPeriodicals=0;
+const periodicalEvidencePath='docs/verification/doc-science-newsletter-gis-evidence-20261018.json';
+let magazineEvidence=[];
+try{magazineEvidence=JSON.parse(await fs.readFile(periodicalEvidencePath,'utf8')).evidence||[]}catch{}
+let newlyArchivedPeriodicals=0;
+const priorPeriodicalCount=published.filter(p=>docScienceNewsletterCandidates.some(x=>x.slug===p.slug)).length;
 const maxNewPeriodicals=15;
 const spatialMention=/(?:\bGIS\b|\bArcView\b|\bARC\s*\/\s*INFO\b|geograph(?:ical|ic) information systems?|\bBiosite\b|\bspatial (?:database|information|analysis|data|mapping)\b|\bremote sensing\b|\bmap(?:ping)? database\b|\bdigital mapping\b|\bcomputer(?:ised|ized)? mapping\b)/gi;
 for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...docScienceNewsletterCandidates]){
  const isPeriodical=docScienceNewsletterCandidates.some(issue=>issue.slug===p.slug);
- if(isPeriodical&&newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 15 original magazine PDFs already archived in this release'});continue;}
+ if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 15 original magazine PDFs already archived in this release'});continue;}
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
  if(published.some(item=>item.slug===p.slug)){
   const prior=published.find(item=>item.slug===p.slug);
@@ -81,6 +85,6 @@ const lines = published.map(({checkTerms,...p})=>p);
 await fs.writeFile('src/lib/magazine-pdf-publications-20261018.mjs','// Actual PDF originals validated and hosted on this site.\nexport const magazinePdfPublications = '+JSON.stringify(lines,null,2)+';\n');
 await fs.mkdir('docs/verification',{recursive:true});
 await fs.writeFile('docs/verification/magazine-pdf-archive-20261018.json',JSON.stringify({checkedOn:'2026-10-18',published:published.map(p=>({slug:p.slug,sourceUrl:p.sourceUrl,year:p.year,pages:p.pages,bytes:p.bytes,sha256:p.sha256})),unavailable},null,2)+'\n');
-await fs.writeFile('docs/verification/doc-science-newsletter-gis-evidence-20261018.json',JSON.stringify({checkedOn:'2026-10-18',maxNewPeriodicals,archivedCount:newlyArchivedPeriodicals,evidence:magazineEvidence,unavailable:unavailable.filter(x=>docScienceNewsletterCandidates.some(p=>p.slug===x.slug))},null,2)+'\n');
-console.log('SCIENCE_PERIODICAL_BATCH '+newlyArchivedPeriodicals+' new original issues');
+await fs.writeFile('docs/verification/doc-science-newsletter-gis-evidence-20261018.json',JSON.stringify({checkedOn:'2026-10-18',maxNewPeriodicals,archivedCount:priorPeriodicalCount+newlyArchivedPeriodicals,evidence:magazineEvidence,unavailable:unavailable.filter(x=>docScienceNewsletterCandidates.some(p=>p.slug===x.slug))},null,2)+'\n');
+console.log('SCIENCE_PERIODICAL_BATCH '+newlyArchivedPeriodicals+' new originals; '+(priorPeriodicalCount+newlyArchivedPeriodicals)+' total original issues');
 if(published.length===0)console.warn('No original files could be acquired; inspect archive report before retrying.');
