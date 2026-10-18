@@ -1,19 +1,30 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PublicationReader from '../../components/PublicationReader.astro';
+import {pdfReadingUrl} from '../../lib/pdf-reading-links.mjs';
 import {chapterDocuments} from '../../lib/chapter-documents.mjs';
 export function getStaticPaths(){return chapterDocuments.map(document=>({params:{slug:document.slug},props:{document}}));}
 const {document}=Astro.props;
 ---
-<Layout title={document.title+' — Original document'} description={document.limitations}>
- <article class="page-wrap image-detail">
-  <p class="eyebrow">Original source document</p><h1 class="page-title">{document.title}</h1>
-  <p>{document.creator} · {document.date}</p>
-  <p><a class="button" href={document.assetPath} download>Download original PDF ({(document.bytes/1000000).toFixed(1)} MB)</a></p>
-  <p>{document.limitations}</p>
-  <p>{document.rights}</p>
-  <p><a href={document.catalogueUrl}>Institutional source record</a> · <a href={document.sourceUrl}>Source PDF</a></p>
-  <p>Unchanged source download, {document.pdfPages} PDF pages, {document.bytes.toLocaleString('en-NZ')} bytes.</p>
-  <details><summary>File checksum (SHA-256)</summary><p style="overflow-wrap:anywhere"><code>{document.sha256}</code></p></details>
-  <p><a href={'/stories/'+document.articleSlug+'/#'+document.afterParagraphId}>Read the related Chapter 5 paragraph →</a></p>
- </article>
+<Layout title={document.title+' · Original document'} description={document.limitations}>
+ <PublicationReader title={document.title} pdfPath={document.assetPath}>
+  <div class="archive-document-details">
+   <p class="eyebrow">{document.date}</p>
+   <h2>About this document</h2>
+   <p>{document.creator}</p>
+   <p>{document.limitations}</p>
+   <details class="publication-extra"><summary>Source information</summary>
+    <p>{document.rights}</p>
+    <p>{document.pdfPages} pages · {document.bytes.toLocaleString('en-NZ')} bytes</p>
+    {document.catalogueUrl&&<p><a href={pdfReadingUrl(document.catalogueUrl)}>Institutional source record</a></p>}
+    <p>SHA-256: <code>{document.sha256}</code></p>
+   </details>
+   <p><a href={'/stories/'+document.articleSlug+'/#'+document.afterParagraphId}>Read the related historical chapter →</a></p>
+  </div>
+ </PublicationReader>
 </Layout>
+<style>
+ .archive-document-details{max-width:75ch}
+ .archive-document-details h2{font-size:clamp(21px,2.3vw,28px);margin:1.5em 0 .45em}
+ .archive-document-details code{overflow-wrap:anywhere}
+</style>
