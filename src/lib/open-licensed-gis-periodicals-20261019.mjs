@@ -36,17 +36,17 @@ export const openLicensedGisPeriodicals = [
   {
     "slug": "osgeo-journal-australia-nz-2014",
     "fileName": "osgeo-journal-australia-nz-2014.pdf",
-    "title": "OSGeo Journal, volume 11: 2011 Annual Report, including Australia/New Zealand chapter",
+    "title": "OSGeo Journal, volume 12: 2012 Annual Report, including Australia/New Zealand chapter",
     "creator": "OSGeo Journal, edited by Landon Blake; Australia/New Zealand chapter contributors",
     "year": "2014",
     "date": "October 2014",
     "kind": "Open-source geospatial association journal",
-    "topic": "Australia/New Zealand OSGeo chapter and FOSS4G community activity",
-    "summary": "Unmodified original OSGeo annual-report journal containing the Australia/New Zealand local chapter report, contemporary open GIS projects, organisations and community activity.",
+    "topic": "2012 Australia/New Zealand OSGeo chapter and FOSS4G-AU unconference activity",
+    "summary": "Original OSGeo Journal volume 12 (2012 annual report, published October 2014), recording FOSS4G-AU 2012, Quantum GIS and uDig community meetups and Australia/New Zealand local chapter activity.",
     "sourceName": "OSGeo Journal",
     "sourceUrl": "https://trac.osgeo.org/osgeo/export/11991/journal/volume_12/master_pdf/Master.pdf",
     "license": "Creative Commons Attribution-NoDerivatives 3.0, OSGeo Journal policy: https://wiki.osgeo.org/wiki/Journal_License_and_Guidelines. Original unchanged.",
-    "attribution": "OSGeo Journal volume 11 (2011 annual report), October 2014, edited by Landon Blake; chapter authors credited in the original, CC BY-ND 3.0.",
+    "attribution": "OSGeo Journal volume 12 (2012 annual report), October 2014, including Australia/New Zealand Chapter Annual Report, p. 13. CC BY-ND 3.0.",
     "themeIds": [
       "profession",
       "open-practice"
