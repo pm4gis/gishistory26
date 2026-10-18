@@ -96,63 +96,72 @@
       "pages": 25,
       "bytes": 9369728,
       "sha256": "65c7576043a5dc80dd341d0599a6d64b6a33c474c4086dd0ecb99437c9f6ac26"
+    },
+    {
+      "slug": "gw-wellington-landscape-atlas-2009",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/6426igl2009052626s12521.pdf",
+      "year": "2009",
+      "pages": 93,
+      "bytes": 6011507,
+      "sha256": "96bfe455cd04c0acc22f335e9a1ad5dde64983e12eabad72152786cefca54d84"
+    },
+    {
+      "slug": "gw-hutt-landscape-study-2012",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/Hutt-Landscape-Study-2012.pdf",
+      "year": "2012",
+      "pages": 89,
+      "bytes": 23714684,
+      "sha256": "9698ace47e4a475312d86ba3ccff0a6ab7819a6bee759d3508d6c43f9d11a6ab"
+    },
+    {
+      "slug": "gw-kapiti-whaitua-gis-2024",
+      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2024/09/GWC0137_Kapiti-Whaitua-Booklet_FA-2_WEB-spreads_lo-res.pdf",
+      "year": "2024",
+      "pages": 113,
+      "bytes": 15710540,
+      "sha256": "40fc4f8091a7dd518b1a8f064f7874e21d85aab48959f9b7bafd2c14ec1b4fa9"
     }
   ],
   "unavailable": [
     {
       "slug": "mfe-plan-mapping-standards-2017",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Discussion-Paper-F-Mapping-Standards.pdf",
-      "reason": "TypeError: fetch failed"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "mfe-electronic-planning-maps-2018",
       "sourceUrl": "https://environment.govt.nz/assets/publications/RMA/Part-2E-Electronic-functionality-and-accessibility-and-mapping.pdf",
-      "reason": "TypeError: fetch failed"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "mfe-maori-catchment-geospatial-2019",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/at-risk-catchment-geospatial-implementation-information.pdf",
-      "reason": "TypeError: fetch failed"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "mfe-landuse-high-risk-gis-2019",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/identification-of-high-risk-agricultural-activities-on-hill-country-land.pdf",
-      "reason": "TypeError: fetch failed"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "mfe-mahinga-kai-spatial-2022",
       "sourceUrl": "https://environment.govt.nz/assets/publications/Implementing-mahinga-kai-as-a-Maori-freshwater-value.pdf",
-      "reason": "TypeError: fetch failed"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "mfe-sheep-beef-emissions-gis-2021",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Net-emissions-and-removals-from-vegetation-and-soils-on-sheep-and-beef-farmland.pdf",
-      "reason": "TypeError: fetch failed"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "mfe-national-productive-land-2022",
       "sourceUrl": "https://environment.govt.nz/assets/publications/Recommendations-and-decisions-report-on-NPS-highly-productive-land.pdf",
-      "reason": "TypeError: fetch failed"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "mfe-national-gis-landuse-2016",
       "sourceUrl": "https://environment.govt.nz/assets/Publications/Files/Landuse-Capacity-report-2016-Final-14-October-2016.pdf",
-      "reason": "TypeError: fetch failed"
-    },
-    {
-      "slug": "gw-wellington-landscape-atlas-2009",
-      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/6426igl2009052626s12521.pdf",
-      "reason": "Error: No document-level council republication licence identified"
-    },
-    {
-      "slug": "gw-hutt-landscape-study-2012",
-      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/Hutt-Landscape-Study-2012.pdf",
-      "reason": "Error: No document-level council republication licence identified"
-    },
-    {
-      "slug": "gw-kapiti-whaitua-gis-2024",
-      "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2024/09/GWC0137_Kapiti-Whaitua-Booklet_FA-2_WEB-spreads_lo-res.pdf",
-      "reason": "Error: No document-level council republication licence identified"
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (47) Maximum (50) redirects followed\n"
     },
     {
       "slug": "boprc-gis-annual-report-2015",

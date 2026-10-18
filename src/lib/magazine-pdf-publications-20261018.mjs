@@ -349,5 +349,89 @@ export const magazinePdfPublications = [
     "sha256": "65c7576043a5dc80dd341d0599a6d64b6a33c474c4086dd0ecb99437c9f6ac26",
     "generatedCover": false,
     "hostedLocally": true
+  },
+  {
+    "slug": "gw-wellington-landscape-atlas-2009",
+    "fileName": "gw-wellington-landscape-atlas-2009.pdf",
+    "title": "Identifying and managing landscape values in the Wellington region",
+    "creator": "Greater Wellington Regional Council",
+    "year": "2009",
+    "date": "2009",
+    "kind": "Regional landscape GIS atlas",
+    "topic": "Multi-council landscape classification and spatial modelling",
+    "summary": "Multi-council landscape classification and spatial modelling.",
+    "sourceName": "Greater Wellington Regional Council",
+    "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/6426igl2009052626s12521.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Greater Wellington Regional Council (2009), Identifying and managing landscape values in the Wellington region.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "landscape",
+      "gis"
+    ],
+    "pages": 93,
+    "bytes": 6011507,
+    "sha256": "96bfe455cd04c0acc22f335e9a1ad5dde64983e12eabad72152786cefca54d84",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "gw-hutt-landscape-study-2012",
+    "fileName": "gw-hutt-landscape-study-2012.pdf",
+    "title": "Hutt landscape study",
+    "creator": "Greater Wellington Regional Council",
+    "year": "2012",
+    "date": "2012",
+    "kind": "Hutt City landscape assessment 2012",
+    "topic": "Landscape and geographic information for Hutt planning",
+    "summary": "Landscape and geographic information for Hutt planning.",
+    "sourceName": "Greater Wellington Regional Council",
+    "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2022/03/Hutt-Landscape-Study-2012.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Greater Wellington Regional Council (2012), Hutt landscape study.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "landscape",
+      "hutt"
+    ],
+    "pages": 89,
+    "bytes": 23714684,
+    "sha256": "9698ace47e4a475312d86ba3ccff0a6ab7819a6bee759d3508d6c43f9d11a6ab",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "gw-kapiti-whaitua-gis-2024",
+    "fileName": "gw-kapiti-whaitua-gis-2024.pdf",
+    "title": "Kāpiti Whaitua Implementation Programme",
+    "creator": "Greater Wellington Regional Council",
+    "year": "2024",
+    "date": "2024",
+    "kind": "Regional freshwater maps and GIS datasets",
+    "topic": "Freshwater data services, GIS inputs and mapping",
+    "summary": "Freshwater data services, GIS inputs and mapping.",
+    "sourceName": "Greater Wellington Regional Council",
+    "sourceUrl": "https://www.gw.govt.nz/assets/Documents/2024/09/GWC0137_Kapiti-Whaitua-Booklet_FA-2_WEB-spreads_lo-res.pdf",
+    "license": "Source Crown or council reuse terms; any individual restrictions take precedence.",
+    "attribution": "Greater Wellington Regional Council (2024), Kāpiti Whaitua Implementation Programme.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "kapiti",
+      "gis"
+    ],
+    "pages": 113,
+    "bytes": 15710540,
+    "sha256": "40fc4f8091a7dd518b1a8f064f7874e21d85aab48959f9b7bafd2c14ec1b4fa9",
+    "generatedCover": false,
+    "hostedLocally": true
   }
 ];
