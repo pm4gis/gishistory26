@@ -48,7 +48,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
  if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 30 verified original magazine PDFs already archived across both releases'});continue;}
  try{
   const host=new URL(p.sourceUrl).hostname;
-  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz','kartoweb.itc.nl','trac.osgeo.org','citeseerx.ist.psu.edu','svn.osgeo.org'].includes(host))throw Error('Unexpected source host '+host);
+  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz','kartoweb.itc.nl','trac.osgeo.org','citeseerx.ist.psu.edu','svn.osgeo.org','journal.osgeo.org'].includes(host))throw Error('Unexpected source host '+host);
   // MfE historical asset URLs repeatedly redirect back to themselves; avoid pointless retries
   // unless an operator explicitly requests another verification attempt.
   if(host==='environment.govt.nz' && process.env.RETRY_MFE_UNVERIFIED_URLS!=='1') throw Error('Official source URL redirects repeatedly; set RETRY_MFE_UNVERIFIED_URLS=1 to retry');
