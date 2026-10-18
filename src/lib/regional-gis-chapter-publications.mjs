@@ -68,6 +68,41 @@ export const regionalGisChapterMap = {
   ],
   "boprc-gis-annual-report-2015": [
     "councils-build-corporate-gis"
+  ],
+  "doc-coastal-flood-risk-gis-2019": [
+    "conservation-and-environment",
+    "from-flat-maps-to-3d"
+  ],
+  "doc-wellington-wetlands-lcdb2-2013": [
+    "conservation-and-environment",
+    "earth-observation-becomes-routine"
+  ],
+  "doc-maui-dolphin-distribution-2010": [
+    "conservation-and-environment"
+  ],
+  "doc-marine-ecosystem-gis-2014": [
+    "conservation-and-environment",
+    "science-goes-spatial"
+  ],
+  "doc-marine-areas-gis-statistic-2021": [
+    "conservation-and-environment",
+    "rebuilding-the-coordinate-framework"
+  ],
+  "doc-southeast-marine-spatial-2018": [
+    "conservation-and-environment",
+    "from-flat-maps-to-3d"
+  ],
+  "doc-whanganui-fish-barriers-2021": [
+    "conservation-and-environment",
+    "mapping-leaves-the-office"
+  ],
+  "doc-coastal-vehicle-spatial-survey-2022": [
+    "conservation-and-environment",
+    "mapping-from-a-drone"
+  ],
+  "doc-visitor-conservation-bibliography-2011": [
+    "conservation-and-environment",
+    "science-goes-spatial"
   ]
 };
 export function regionalGisChapterPublications(articleSlug){
