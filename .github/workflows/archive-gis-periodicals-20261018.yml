@@ -9,6 +9,7 @@ on:
       - 'src/lib/regional-gis-pdf-candidates-20261018.mjs'
       - 'src/lib/historical-gis-new-candidates-20261018.mjs'
       - 'src/lib/doc-science-newsletter-candidates-20261018.mjs'
+      - 'src/lib/doc-rare-bits-candidates-20261018.mjs'
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -50,6 +51,7 @@ jobs:
             docs/verification/magazine-pdf-archive-20261018.json
             docs/verification/doc-science-newsletter-gis-evidence-20261018.json
             public/assets/publications/pdfs/doc-conservation-science-newsletter-*.pdf
+            public/assets/publications/pdfs/doc-rare-bits-*.pdf
             docs/verification/gis-pdf-chapter-preservation-20261018.json
             public/assets/publications/pdfs/auckland-*.pdf
             public/assets/publications/pdfs/doc-conservation-science-newsletter-28-29-1998.pdf
