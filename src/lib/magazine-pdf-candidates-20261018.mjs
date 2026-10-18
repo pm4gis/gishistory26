@@ -37,5 +37,33 @@ export const magazinePdfCandidates = [
   themeIds:['profession','open-practice'],keywords:['Auckland Council','GIS','spatial modelling','natural hazards','liquefaction','planning'],
   checkTerms:['liquefaction','auckland','2021']
  }
-
+,
+ {
+  "slug": "auckland-water-quality-data-explorer-2025",
+  "fileName": "auckland-water-quality-data-explorer-2025.pdf",
+  "title": "Water quality and river ecology data explorer: user guide and methodology",
+  "creator": "J. Atoa, L. Buckthought, N. Dikareva, J. Kamke, R. Ingley and G. Surrey",
+  "year": "2025",
+  "date": "December 2025",
+  "kind": "Council geospatial data explorer guide",
+  "topic": "Freshwater interactive geospatial data explorer",
+  "summary": "Auckland Council guide to a web-based water quality and river ecology data explorer for regional monitoring data.",
+  "sourceName": "Auckland Council",
+  "sourceUrl": "https://knowledgeauckland.org.nz/media/gy3jf2fq/water-quality-river-ecology-data-explorer-user-guide-methodology-supplementary-report-eemu-dec-2025.pdf",
+  "license": "Creative Commons Attribution 4.0 International",
+  "attribution": "Atoa et al. (2025), Auckland Council.",
+  "themeIds": [
+    "open-practice",
+    "profession"
+  ],
+  "keywords": [
+    "GIS",
+    "interactive map",
+    "water quality"
+  ],
+  "checkTerms": [
+    "water quality",
+    "data explorer"
+  ]
+}
 ];
