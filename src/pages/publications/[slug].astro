@@ -30,9 +30,6 @@ const structuredData=[{'@type':'CreativeWork','@id':'https://history.pm4gis.nz'+
    {images.length>0&&<><h2>Illustrations from this publication</h2><ul>{images.map((i:any)=><li><a href={'/images/'+i.slug+'/'}>{i.title}</a></li>)}</ul></>}
    </details>
    <details class="publication-extra"><summary>Source information</summary>
-    <p>Added to this archive: {item.archivedDate}.</p>
-    <p>{item.provenance}</p>
-    {item.sourceUrl&&<p><a href={item.sourceUrl}>Publisher source record</a></p>}
     <p>{item.filename} · {item.bytes.toLocaleString('en-NZ')} bytes</p>
     <p class="checksum">SHA-256: <code>{item.sha256}</code></p>
    </details>
