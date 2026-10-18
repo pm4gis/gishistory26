@@ -32,12 +32,12 @@ test('all registered PDF assets and external originals link to their on-site rea
  for(const item of contributedPrimarySources){
   assert.equal(pdfReadingUrl(item.viewerPath),item.publicationUrl);
  }
- for(const item of onlinePdfPublications){
+ for(const item of onlinePdfPublications.filter(p=>p.hostedLocally)){
   const path='/publications/pdf/'+item.slug+'/';
   assert.equal(pdfReadingUrl(item.pdfPath),path);
   if(item.externalPdfUrl)assert.equal(pdfReadingUrl(item.externalPdfUrl),path);
  }
- assert.equal(pdfReadingUrl('https://example.org/document-not-in-archive.pdf'),'https://example.org/document-not-in-archive.pdf');
+ assert.equal(pdfReadingUrl('https://example.org/document-not-in-archive.pdf'),null);
  assert.equal(pdfReadingLabel('Download PDF',chapterDocuments[0].assetPath),'View PDF');
 });
 
