@@ -1,0 +1,58 @@
+name: Mobile site and Publications browser QA
+on:
+  push:
+    branches: [feature/pre2000-pdfs-mobile-20261018, main]
+    paths:
+      - 'src/styles/site.css'
+      - 'src/pages/publications/**'
+      - 'src/components/PublicationReader.astro'
+      - 'src/layouts/Layout.astro'
+      - 'src/lib/pre2000-pdf-publications-20261018.mjs'
+      - 'src/lib/pre2000-pdfs-mirrored.mjs'
+      - 'scripts/mobile-publications-qa-20261018.mjs'
+      - '.github/workflows/mobile-publications-qa-20261018.yml'
+  pull_request:
+    paths:
+      - 'src/styles/site.css'
+      - 'src/pages/publications/**'
+      - 'src/components/PublicationReader.astro'
+      - 'src/lib/pre2000-pdf-publications-20261018.mjs'
+      - 'scripts/mobile-publications-qa-20261018.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm install --no-save --ignore-scripts playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - name: Test all principal mobile reading and navigation layouts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4321 --bind 127.0.0.1 --directory dist >/tmp/nzgis-mobile-preview.log 2>&1 &
+          PREVIEW_PID=$!
+          trap 'kill "$PREVIEW_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 40); do
+            if curl -fsS -o /dev/null http://127.0.0.1:4321/; then break; fi
+            sleep 1
+          done
+          curl -fsS -o /dev/null http://127.0.0.1:4321/
+          node scripts/mobile-publications-qa-20261018.mjs
+      - name: Retain mobile screenshots and viewport findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: responsive-mobile-publications
+          path: docs/verification/mobile-publications-20261018/
+          retention-days: 30
+          if-no-files-found: ignore

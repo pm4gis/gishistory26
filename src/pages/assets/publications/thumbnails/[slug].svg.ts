@@ -1,8 +1,9 @@
 import type {APIRoute} from 'astro';
 import {geodeticPdfPublications} from '../../../../lib/geodetic-pdf-publications.mjs';
 import {linzHistoricalReports} from '../../../../lib/linz-historical-reports-20261018.mjs';
+import {pre2000PdfPublications} from '../../../../lib/pre2000-pdf-publications-20261018.mjs';
 type Cover = {slug:string; title:string; creator:string; year:string};
-const covers = [...geodeticPdfPublications,...linzHistoricalReports] as Cover[];
+const covers = [...geodeticPdfPublications,...linzHistoricalReports,...pre2000PdfPublications] as Cover[];
 
 // Plain catalogue cards for publisher-hosted PDFs. These are metadata cards,
 // not invented reproductions of the documents' original covers.
@@ -28,7 +29,7 @@ export const GET: APIRoute = ({props}) => {
  <rect width="720" height="960" fill="#102637"/>
  <rect x="0" y="0" width="720" height="18" fill="#81d6d0"/>
  <text x="58" y="97" font-family="Arial, sans-serif" font-size="24" letter-spacing="3" fill="#9de3db">NZ GIS HISTORY</text>
- <text x="58" y="157" font-family="Arial, sans-serif" font-size="25" fill="#c2ccd2">HISTORICAL PUBLICATION · ${year}</text>
+ <text x="58" y="157" font-family="Arial, sans-serif" font-size="25" fill="#c2ccd2">HISTORICAL DOCUMENT · ${year}</text>
  <g font-family="Arial, sans-serif">${title}</g>
  <line x1="58" x2="662" y1="785" y2="785" stroke="#558394"/>
  <text x="58" y="826" font-family="Arial, sans-serif" font-size="22" fill="#c2ccd2">Publisher or repository copy</text>
