@@ -76,6 +76,10 @@ if (sitemap) {
 
 const samples = [
   ['/', null],
+  ['/history/', 'Article'],
+  ['/read/', null],
+  ['/browse/', null],
+  ['/publications/', null],
   ['/timeline/', null],
   ['/people/a-c-shailes/', 'Person'],
   ['/organisations/agresearch/', 'Organization'],
@@ -140,12 +144,61 @@ for (let start = 0; start < samples.length; start += 3) {
   summaries.push(...checked.filter(Boolean));
 }
 
+// These requests impersonate only the Googlebot user-agent string. They do not
+// establish a verified Google crawler identity or prove Search Console indexing.
+const simulatedGooglebot = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)';
+const botProbes = [];
+for (const path of ['/robots.txt', '/sitemap.xml', '/', '/history/', '/stories/landonline/']) {
+  const target = origin + path;
+  try {
+    const response = await fetch(target, {redirect: 'manual', signal: AbortSignal.timeout(20000),
+      headers: {'user-agent': simulatedGooglebot, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}});
+    const body = await response.text();
+    const item = {path, status:response.status, contentType:response.headers.get('content-type') || '',
+      xRobotsTag:response.headers.get('x-robots-tag') || '',
+      xRouting:response.headers.get('x-nzgis-history-routing') || '',
+      server:response.headers.get('server') || '',bytes:Buffer.byteLength(body)};
+    item.spoofedUserAgentRejected = response.status === 403;
+    botProbes.push(item);
+    // Cloudflare may correctly identify the synthetic user-agent as an
+    // impersonator because this runner is not on a genuine Googlebot IP.
+    // A challenge or 403 here is NOT evidence that verified Googlebot is blocked.
+    assert([200,403].includes(response.status),
+      path + ': unexpected response to simulated Googlebot HTTP ' + response.status);
+    if (response.status === 200 && path.endsWith('/')) {
+      assert(body.includes('<title>') && body.includes('</title>'), path + ': bot received no rendered page title');
+      assert(body.includes('rel="canonical"'), path + ': bot received no canonical HTML');
+      assert(!/name="robots"[^>]+noindex/i.test(body), path + ': bot received noindex');
+    }
+  } catch(error) {
+    errors.push('simulated Googlebot '+path+': '+String(error));
+    botProbes.push({path,error:String(error)});
+  }
+}
+// The old public hostname should never produce a second indexable copy.
+const redirectProbes = [];
+for(const url of ['https://gishistory.pm4gis.nz/', 'https://gishistory.pm4gis.nz/history/']) {
+  try {
+    const response = await fetch(url, {redirect:'manual',signal:AbortSignal.timeout(20000)});
+    const location = response.headers.get('location') || '';
+    redirectProbes.push({url,status:response.status,location});
+    assert([301,308].includes(response.status), 'Legacy host not permanently redirected: '+url+' ('+response.status+')');
+    assert(location === url.replace('gishistory.pm4gis.nz','history.pm4gis.nz'), 'Legacy redirect target differs: '+url+' => '+location);
+  } catch(error) {
+    errors.push('Legacy hostname '+url+': '+String(error));
+    redirectProbes.push({url,error:String(error)});
+  }
+}
+
 const report = {
   auditedAt: new Date().toISOString(),
   site: origin,
   sitemapUrlCount: urls.length,
   checked: observations,
   pageSummaries: summaries,
+  simulatedGooglebotUserAgentProbes: botProbes,
+  simulatedGooglebotCaveat: 'These requests are NOT from Google IP addresses. A 403 may correctly reject impersonation. Verify real Googlebot in Search Console.',
+  legacyHostnameRedirectProbes: redirectProbes,
   errors
 };
 writeFileSync('docs/verification/live-seo-acceptance.json', JSON.stringify(report, null, 2) + '\n');
