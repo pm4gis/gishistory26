@@ -44,3 +44,4 @@ console.log('Selected social card verified: 1200 x 630, JPEG, Open Graph and X m
 
 await import('./check-links.mjs');
 await import('./verify-indexable-build.mjs');
+await import('./audit-seo-internal-discovery.mjs');
