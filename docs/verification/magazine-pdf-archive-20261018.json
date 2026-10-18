@@ -528,9 +528,24 @@
       "reason": "Error: No unambiguous GIS/spatial information reference found in issue OCR text"
     },
     {
+      "slug": "doc-conservation-science-newsletter-15-16-1995",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-15--16-october-1995.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue OCR text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-17-18-1996",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-17--18-february-1996.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue OCR text"
+    },
+    {
       "slug": "doc-conservation-science-newsletter-19-1996",
       "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-19-april-1996.pdf",
       "reason": "Error: No unambiguous GIS/spatial information reference found in issue OCR text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-21-22-1996",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-21--22-august--october-1996.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 404\n"
     },
     {
       "slug": "doc-conservation-science-newsletter-23-1996",
@@ -575,6 +590,11 @@
     {
       "slug": "doc-conservation-science-newsletter-39-2000",
       "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-39-december-2000.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue OCR text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-40-41-2001",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-40--41-july-2001.pdf",
       "reason": "Error: No unambiguous GIS/spatial information reference found in issue OCR text"
     },
     {
