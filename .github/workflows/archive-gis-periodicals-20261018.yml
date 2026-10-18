@@ -1,7 +1,7 @@
 name: Archive NZ GIS periodical originals
 on:
   push:
-    branches: [feature/hosted-only-magazine-pdfs-20261018]
+    branches: [main, feature/hosted-only-magazine-pdfs-20261018]
     paths:
       - '.github/workflows/archive-gis-periodicals-20261018.yml'
       - 'scripts/archive-magazine-gis-pdfs-20261018.mjs'
@@ -11,7 +11,7 @@ permissions:
   contents: write
 jobs:
   archive:
-    if: github.ref == 'refs/heads/feature/hosted-only-magazine-pdfs-20261018'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/hosted-only-magazine-pdfs-20261018'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
@@ -43,6 +43,6 @@ jobs:
             exit 0
           fi
           git commit -m 'Archive original NZ GIS historical periodical PDFs'
-          git fetch origin feature/hosted-only-magazine-pdfs-20261018
-          git rebase origin/feature/hosted-only-magazine-pdfs-20261018
-          git push origin HEAD:feature/hosted-only-magazine-pdfs-20261018
+          git fetch origin "${GITHUB_REF#refs/heads/}"
+          git rebase "origin/${GITHUB_REF#refs/heads/}"
+          git push origin "HEAD:${GITHUB_REF#refs/heads/}"
