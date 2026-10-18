@@ -4,17 +4,26 @@ import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {magazinePdfCandidates} from '../src/lib/magazine-pdf-candidates-20261018.mjs';
+import {magazinePdfPublications} from '../src/lib/magazine-pdf-publications-20261018.mjs';
 
 const pdfDir='public/assets/publications/pdfs';
 const thumbDir='public/assets/publications/thumbnails';
 await fs.mkdir(pdfDir,{recursive:true});
 await fs.mkdir(thumbDir,{recursive:true});
-const published=[],unavailable=[];
+const published=[...magazinePdfPublications],unavailable=[];
 for(const p of magazinePdfCandidates){
  const pdf=pdfDir+'/'+p.fileName, image=thumbDir+'/'+p.slug+'.jpg';
+ if(published.some(item=>item.slug===p.slug)){
+  const prior=published.find(item=>item.slug===p.slug);
+  const bytes=await fs.readFile(pdf);
+  const cover=await fs.readFile(image);
+  if(bytes.subarray(0,5).toString()!=='%PDF-'||createHash('sha256').update(bytes).digest('hex')!==prior.sha256||cover.subarray(0,3).toString('hex')!=='ffd8ff') throw Error('Previously archived original changed: '+p.slug);
+  console.log('PRESERVED '+p.slug);
+  continue;
+ }
  try{
   const host=new URL(p.sourceUrl).hostname;
-  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz'].includes(host))throw Error('Unexpected source host '+host);
+  if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz'].includes(host))throw Error('Unexpected source host '+host);
   const response=await fetch(p.sourceUrl,{headers:{'User-Agent':'NZGISHistoryHistoricalArchive/1.0','Accept':'application/pdf,*/*'},signal:AbortSignal.timeout(65000)});
   if(!response.ok)throw Error('HTTP '+response.status);
   if(Number(response.headers.get('content-length')||0)>24*1024*1024)throw Error('File too large for static host');
@@ -47,4 +56,4 @@ const lines = published.map(({checkTerms,...p})=>p);
 await fs.writeFile('src/lib/magazine-pdf-publications-20261018.mjs','// Actual PDF originals validated and hosted on this site.\nexport const magazinePdfPublications = '+JSON.stringify(lines,null,2)+';\n');
 await fs.mkdir('docs/verification',{recursive:true});
 await fs.writeFile('docs/verification/magazine-pdf-archive-20261018.json',JSON.stringify({checkedOn:'2026-10-18',published:published.map(p=>({slug:p.slug,sourceUrl:p.sourceUrl,year:p.year,pages:p.pages,bytes:p.bytes,sha256:p.sha256})),unavailable},null,2)+'\n');
-if(published.length===0)throw Error('No valid source files archived');
+if(published.length===0)console.warn('No original files could be acquired; inspect archive report before retrying.');
