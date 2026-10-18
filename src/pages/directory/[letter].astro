@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {dataset} from '../../lib/data';
+import {directoryGroups} from '../../lib/directory-index.mjs';
+export async function getStaticPaths(){
+ const d=await dataset();
+ return directoryGroups(d.records).map(group=>({params:{letter:group.slug},props:{group}}));
+}
+const {group}=Astro.props;
+---
+<Layout title={'GIS history A–Z: '+group.letter+' · NZ GIS History'} description={'Browse '+group.entries.length+' New Zealand GIS history people, organisations, councils, technology and datasets beginning with '+group.letter+'.'}>
+ <div class="wrap directory-content">
+   <nav aria-label="Directory"><a href="/directory/">← Complete alphabetical index</a></nav>
+   <p class="eyebrow">Historical people and organisations</p>
+   <h1>Index {group.letter}</h1>
+   <p class="intro">{group.entries.length.toLocaleString('en-NZ')} named entries, with links to the original records and supporting references.</p>
+   <ul class="directory-list" data-pagefind-body>
+      {group.entries.map(entry=><li><a href={entry.url}>{entry.name}</a><small>{entry.kind}</small></li>)}
+   </ul>
+   <p><a href="/directory/">All letters →</a></p>
+ </div>
+</Layout>
+<style>
+ .directory-content{padding-bottom:56px}
+ .directory-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:8px 24px;margin:28px 0}
+ .directory-list li{padding:11px 0;border-bottom:1px solid var(--line,rgba(127,127,127,.25));min-width:0}
+ .directory-list a{display:block;overflow-wrap:anywhere}
+ .directory-list small{display:block;color:var(--muted);margin-top:3px}
+</style>
