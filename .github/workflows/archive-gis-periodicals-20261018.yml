@@ -57,6 +57,7 @@ jobs:
             exit 0
           fi
           git commit -m 'Archive original NZ GIS historical periodical PDFs'
+          git restore --worktree .
           git fetch origin "${GITHUB_REF#refs/heads/}"
           git rebase "origin/${GITHUB_REF#refs/heads/}"
           git push origin "HEAD:${GITHUB_REF#refs/heads/}"
