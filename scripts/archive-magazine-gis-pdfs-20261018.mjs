@@ -1,5 +1,6 @@
 // Acquire independently verified public-sector originals in GitHub Actions.
 // Records enter the public catalogue only after PDF and cover validation.
+// Run after the full candidate and chapter mapping set has been checked.
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
