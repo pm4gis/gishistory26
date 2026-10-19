@@ -36,7 +36,7 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
  <div class="publication-reader-below">
   <nav class="publication-reader-bottom-nav" aria-label="Continue reading publications">
    {previous?<a href={previous.url} rel="prev">← Previous</a>:<span></span>}
-   <a href="/publications/">All publications</a>
+   <a href="/publications/" data-publication-library-return>All publications</a>
    {next?<a href={next.url} rel="next">Next →</a>:<span></span>}
   </nav>
   <section class="publication-reader-details" aria-label="About this publication">
@@ -45,6 +45,8 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
  </div>
 </article>
 <script>
+ import {initPublicationReaderReturn} from '../lib/publication-return.mjs';
+ initPublicationReaderReturn();
  const expand=document.querySelector<HTMLButtonElement>('[data-pdf-expand]');
  const frame=document.getElementById('publication-pdf');
  if(expand && frame){

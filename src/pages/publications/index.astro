@@ -10,7 +10,7 @@ const research=new Map(onlinePdfPublications.map(p=>[p.slug,p]));
 const library=publicationReadingOrder.map(item=>{
  const p=item.kind==='archive'?archive.get(item.slug):research.get(item.slug);
  if(!p)throw new Error('Missing publication '+item.slug);
- return {url:item.url,title:item.title,year:item.year,creator:p.creator,summary:p.summary,thumbnailPath:p.thumbnailPath,themeIds:p.themeIds||[],type:item.kind};
+ return {cardId:`publication-${item.kind}-${item.slug}`,url:item.url,title:item.title,year:item.year,creator:p.creator,summary:p.summary,thumbnailPath:p.thumbnailPath,themeIds:p.themeIds||[],type:item.kind};
 });
 const decadeValues=[...new Set(library.map(p=>Math.floor(Number(p.year)/10)*10))].sort((a,b)=>a-b);
 const creatorValues=[...new Set(library.map(p=>p.creator))].sort((a,b)=>a.localeCompare(b,'en-NZ'));
@@ -53,7 +53,7 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
     </div>
     <h2 class="sr-only">Research and reference PDFs and documents from the archive</h2>
     <div class="publication-grid">
-     {library.map(p=><article class="publication-card card" data-publication data-year={p.year} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-kind={p.type}>
+     {library.map(p=><article class="publication-card card" id={p.cardId} data-publication data-year={p.year} data-creator={p.creator} data-themes={p.themeIds.join(' ')} data-kind={p.type}>
       <a class="publication-cover" href={p.url} tabindex="-1" aria-hidden="true"><img src={p.thumbnailPath} width="720" height="960" alt="" loading="lazy"/></a>
       <div class="publication-copy">
        <p class="eyebrow"><time datetime={p.year}>{p.year}</time></p>
@@ -70,6 +70,8 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  </div>
 </Layout>
 <script>
+ import {initPublicationLibraryReturn} from '../../lib/publication-return.mjs';
+ let refreshReturnLinks:undefined|(()=>void);
  type Kind='all'|'decade'|'theme'|'creator';
  const filters=[...document.querySelectorAll<HTMLButtonElement>('[data-filter-kind]')];
  const cards=[...document.querySelectorAll<HTMLElement>('[data-publication]')];
@@ -107,12 +109,15 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
    const u=new URL(location.href);
    u.searchParams.delete('filter');u.searchParams.delete('value');
    if(kind!=='all'){u.searchParams.set('filter',kind);u.searchParams.set('value',value);}
-   history.replaceState(null,'',u.pathname+u.search+u.hash);
+   u.hash='';
+   history.replaceState(null,'',u.pathname+u.search);
   }
+  refreshReturnLinks?.();
  }
  filters.forEach(button=>button.addEventListener('click',()=>{kind=button.dataset.filterKind as Kind;value=button.dataset.filterValue||'';apply(true);if(window.matchMedia('(max-width:650px)').matches)closeMobileFilters();}));
  window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);const k=p.get('filter')||'all',v=p.get('value')||'';kind=validKinds.has(k)&&filters.some(b=>b.dataset.filterKind===k&&b.dataset.filterValue===v)?k as Kind:'all';value=kind==='all'?'':v;apply(false);});
  apply(false);
+ refreshReturnLinks=initPublicationLibraryReturn();
 </script>
 <style>
  .publication-mobile-filter-toggle{display:none}

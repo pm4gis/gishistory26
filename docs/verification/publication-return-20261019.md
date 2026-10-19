@@ -1,0 +1,9 @@
+# Returning to the publication library
+
+Baseline: production commit 34f6ed7c3a42ff1ee125b5342a5692956b477986. Historical content collections, local PDF paths, archive routes, source metadata, imagery and the 31 December 2025 cutoff are unchanged.
+
+The publication library prepares reader links with the current filter and a stable publication-card anchor. Opening a card records the current list position in that history entry and tab-local session storage. Reader Publications links, including the shared navigation, return to that filtered list. Previous/Next reader links carry the same library context. Returning restores focus to the original publication title without moving the viewport, then restores its saved scroll position. A fresh catalogue visit starts with all publications. Selecting another filter clears the previous card anchor and return state.
+
+The return destination is restricted to the local /publications/ catalogue, recognised filter parameters and generated publication-card anchors. Original document routes and canonical addresses remain unchanged. With JavaScript unavailable, ordinary links remain intact. When session storage is unavailable, the filter and selected-card anchor still work through the URL; an explicit return link cannot recover the exact previous pixel position. Browser Back can still use the saved history entry.
+
+Verification is automated through npm test and npm run build, preservation checks and internal-link checks. The publication-return Chromium suite tests decade, theme and author / organisation filters at desktop, tablet and mobile widths, exact scroll/focus restoration, previous/next navigation, top and bottom return links, browser Back/Forward, fresh visits, blocked session storage and invalid destinations. The existing first-visit and publication browser suites remain enabled in GitHub Actions. Screenshots and structured results are retained as workflow artifacts.
