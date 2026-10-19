@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import DecorativeLandscape from '../components/DecorativeLandscape.astro';
 import SubjectImage from '../components/SubjectImage.astro';
 import {pickThemeImage} from '../lib/subject-media.mjs';
-import {homeHighlightSlugs} from '../lib/home-highlights.mjs';
+import {homeStories} from '../lib/home-stories.mjs';
 import {homeTopoMaps} from '../lib/home-topo-maps.mjs';
 import {decorFor} from '../lib/decor';
 import {dataset} from '../lib/data';
@@ -13,15 +13,15 @@ const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
 const peopleCount=d.records.filter((x:any)=>x.kind==='Person').length;
 const chapterNavImages=chapterCardImageMap(chapters,d.passages,d.images);
-const eligible=new Set(homeHighlightSlugs);
 const chapterPreview=chapters.filter((a:any)=>[1,8,16,24,32,44].includes(a.readingOrder));
-const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
-  const passage=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order)[0];
-  const images=d.images.filter((img:any)=>img.articleSlug===a.slug&&img.assetPath);
-  const image=images.find((img:any)=>img.headerCandidate)||images[0]||null;
-  return {...a, passageTitle:passage?.title||a.title, storyUrl:passage?a.url+'#'+encodeURIComponent(passage.slug):a.url, image};
+const highlights=homeStories.map(story=>{
+ const a=chapters.find((a:any)=>a.slug===story.slug);
+ const passage=d.passages.find((p:any)=>p.articleId===a?.id&&p.slug===story.passageSlug);
+ if(!a||!passage)throw new Error('Missing published homepage story '+story.slug);
+ const images=d.images.filter((img:any)=>img.articleSlug===a.slug&&img.assetPath);
+ const image=(story.imageSlug?d.images.find((img:any)=>img.slug===story.imageSlug&&img.assetPath):null)||images.find((img:any)=>img.headerCandidate)||images[0]||null;
+ return {...a,...story,passageTitle:story.title,storyUrl:a.url+'#'+encodeURIComponent(passage.slug),image};
 });
-if(highlights.length<5)throw new Error('Too few curated published highlighted stories');
 const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images)}));
 ---
 <Layout description="A history of GIS and digital mapping in New Zealand, from early survey computers to Māori GIS, national spatial datasets, web maps and AI in 2025.">
@@ -31,14 +31,14 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
     <img class="topo-slide is-active" src={homeTopoMaps[0].src} alt="" width="1400" height="788" loading="eager" fetchpriority="high" decoding="async"/>
     <img class="topo-slide" src={homeTopoMaps[1].src} alt="" width="1400" height="788" loading="eager" decoding="async"/>
    </div>
+   <button class="hero-motion" type="button" data-hero-motion aria-label="Pause background" title="Pause background" hidden>Ⅱ</button>
    <div class="hero-copy">
-    <p class="eyebrow">Maps · people · technology</p>
+    <p class="eyebrow">Through to 31 December 2025</p>
     <h1>A history of GIS<br/>in New Zealand.</h1>
-    <p class="intro">Explore New Zealand’s move from paper maps to connected spatial data. Start with the short history, then follow the chapters, people and original publications behind it.</p>
+    <p class="intro">Geographic information systems (GIS) combine maps and records to analyse places. Follow New Zealand’s mapping work from paper survey records to web maps and AI.</p>
     <div class="actions">
-     <a class="button primary" href="/history/">Read the short history →</a>
+     <a class="button primary" href="/history/">Read the short history →</a><span class="reading-time">About 5 minutes</span>
      <a class="button" href="/read/">Browse chapters</a>
-     <button type="button" data-hero-motion hidden>Pause background</button>
      <a class="button" id="continue" href="/read/" hidden>Continue reading</a>
     </div>
     <div class="stats" role="group" aria-label="NZ GIS History at a glance. Build figures are measured during this build.">
@@ -51,24 +51,21 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    </div>
   </section>
 
-  <section class="card home-summary" aria-label="Other ways to explore">
-   <p>Explore dates, people and original documents.</p><div class="actions"><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a><a href="/publications/">Publications</a><a href="/search/">Search</a></div>
-  </section>
-
   <section id="highlighted-stories" aria-labelledby="highlights-heading">
-   <div class="section-head"><div><p class="eyebrow">Discover something different</p><h2 id="highlights-heading">Highlighted stories</h2></div><a href="/read/">Read the history →</a></div>
-   <p class="section-intro">Five starting points, from paper maps to open spatial data. Use Previous and Next, or swipe through the stories.</p>
-   <div class="actions story-controls" hidden><button type="button" data-story-prev aria-label="Previous story">← Previous</button><button type="button" data-story-next aria-label="Next story">Next →</button><button type="button" data-story-play aria-pressed="false">Play slideshow</button><span data-story-status role="status" aria-live="polite"></span></div>
+   <div class="section-head"><div><p class="eyebrow">From the historical record</p><h2 id="highlights-heading">Stories from the history</h2></div><a href="/read/">Read the history →</a></div>
+
+   <div class="actions story-controls" hidden><button type="button" data-story-prev aria-label="Previous story">←</button><span data-story-status role="status" aria-live="polite"></span><button type="button" data-story-next aria-label="Next story">→</button><button type="button" data-story-play aria-pressed="false">Play</button></div>
    <div class="cards highlight-grid" tabindex="0" aria-label="Historical stories">
     {highlights.map((a:any,i:number)=><article class="card art-card highlight-card" data-highlight={a.slug} hidden={i>=5}>
      {a.image?
       <SubjectImage image={a.image} relation={'Documentary image associated with '+a.title} variant="card" showCaption={false} destination={a.storyUrl}/>:
       <a class="tile-media-link" href={a.storyUrl} aria-label={"Read "+a.passageTitle}><DecorativeLandscape id={decorFor(i+9)} variant="card"/></a>}
      <div class="art-card-body">
-      <span class="eyebrow">Chapter {a.readingOrder} · {a.title}</span>
+      <p class="story-period">{a.dateDisplay}</p>
       <a class="title" href={a.storyUrl}>{a.passageTitle}</a>
-      <p>{a.summary}</p>
+      <p class="story-teaser">{a.summary}</p>
       <a class="read-link" href={a.storyUrl}>Read story →</a>
+      {a.image&&<small class="story-image-note">Image: {a.image.dateDisplay} · {a.image.title}</small>}
      </div>
     </article>)}
    </div>
@@ -76,7 +73,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
 
   <section id="chapters" aria-labelledby="chapters-heading">
    <div class="section-head"><div><p class="eyebrow">Read the history</p><h2 id="chapters-heading">Explore the chapters</h2></div><a href="/read/">Chapter contents →</a></div>
-   <p class="section-intro">A selection from {chapters.length} published chapters. Open the chapter catalogue for the complete chronological history.</p>
+   <p class="section-intro">Six starting points from the {chapters.length} published chapters.</p>
    <div class="cards chapter-grid">
     {chapterPreview.map((a:any)=><article class="card chapter-card" id={'chapter-'+a.readingOrder}>
      <a class:list={['chapter-card-media',(chapterNavImages[a.slug]?.homeCardKind==='photo'||homepageFullBleedImageSlugs.has(chapterNavImages[a.slug]?.slug))&&'chapter-card-media--photo',homepageMapDetailChapterSlugs.has(a.slug)&&'chapter-card-media--detail']} href={a.url} aria-label={'Read Chapter '+a.readingOrder+' · '+a.title}>
@@ -86,7 +83,6 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
      </a>
      <span class="eyebrow">Chapter {a.readingOrder}</span>
      <h3><a href={a.url}>{a.title}</a></h3>
-     <p>{a.summary}</p>
      <a class="read-link" href={a.url}>Read chapter →</a>
     </article>)}
    </div>
@@ -100,7 +96,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    <div class="cards cards--visual">
     {themes.map((t:any,i:number)=><article class="card art-card">
      {t.subject?<SubjectImage image={t.subject.image} relation={t.subject.relation} variant="card" showCaption={false} destination={"/themes/"+t.slug+"/"}/>:<a class="tile-media-link" href={"/themes/"+t.slug+"/"} aria-label={"Explore "+t.title}><DecorativeLandscape id={decorFor(i+2)} variant="card"/></a>}
-     <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a><p>{t.description}</p></div>
+     <div class="art-card-body"><a class="title" href={'/themes/'+t.slug+'/'}>{t.title}</a></div>
     </article>)}
    </div>
   </section>
@@ -151,7 +147,11 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
      }
      let timer=matchMedia('(prefers-reduced-motion: reduce)').matches?undefined:window.setInterval(advance,9000);
      const motion=document.querySelector<HTMLButtonElement>('[data-hero-motion]');
-     if(motion){motion.hidden=false;motion.textContent=timer?'Pause background':'Play background';motion.addEventListener('click',()=>{if(timer){clearInterval(timer);timer=undefined;}else timer=window.setInterval(advance,9000);motion.textContent=timer?'Pause background':'Play background';});}
+     if(motion){
+      function syncMotion(){if(!motion)return;motion.textContent=timer?'Ⅱ':'▶';motion.setAttribute('aria-label',timer?'Pause background':'Play background');motion.title=timer?'Pause background':'Play background';}
+      motion.hidden=false;syncMotion();
+      motion.addEventListener('click',()=>{if(timer){clearInterval(timer);timer=undefined;}else timer=window.setInterval(advance,9000);syncMotion();});
+     }
      window.addEventListener('pagehide',()=>window.clearInterval(timer),{once:true});
     }
    }catch{
@@ -173,12 +173,12 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
     index=(index+step+cards.length)%cards.length;
     grid!.scrollTo({left:cards[index].offsetLeft,behavior:reduced.matches?'instant':'smooth'});
    }
-   function stop(){clearInterval(timer);timer=undefined;if(play){play.textContent='Play slideshow';play.setAttribute('aria-pressed','false');}}
+   function stop(){clearInterval(timer);timer=undefined;if(play){play.textContent='Play';play.setAttribute('aria-pressed','false');}}
    document.querySelector('[data-story-prev]')?.addEventListener('click',()=>{stop();move(-1)});
    document.querySelector('[data-story-next]')?.addEventListener('click',()=>{stop();move(1)});
    play?.addEventListener('click',()=>{
     if(timer){stop();return;}
-    play.textContent='Pause slideshow';play.setAttribute('aria-pressed','true');
+    play.textContent='Pause';play.setAttribute('aria-pressed','true');
     timer=window.setInterval(()=>move(1),7000);
    });
    grid.addEventListener('scroll',()=>{
@@ -195,12 +195,89 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
 </Layout>
 
 <style>
- #chapters .chapter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}#themes .art-card-body p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}@media(max-width:900px){#chapters .chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){#chapters .chapter-grid{grid-template-columns:1fr}}
+ .home-layout{padding-top:28px;padding-bottom:40px}
+ .hero.hero--visual{min-height:0;padding:30px 38px;margin:0 0 28px;border-radius:20px;display:block}
+ .hero.hero--visual h1{font-size:clamp(35px,4.1vw,56px);margin:12px 0 18px;line-height:1.06}
+ .hero .hero-copy{width:min(65%,690px);padding:0}
+ .hero .intro{font-size:18px;line-height:1.55;max-width:51ch;margin:0 0 22px}
+ .hero .eyebrow{margin:0;font-size:11px}
+ .hero .actions{gap:9px}.reading-time{color:var(--muted);font-size:12px;margin-right:8px}
+ .hero .stats{display:flex;flex-wrap:wrap;gap:9px 18px;margin-top:23px;font-size:12px}
+ .hero .stats>span{background:none;border:0;border-radius:0;padding:0;line-height:1.5}
+ .hero .stats strong{display:inline;font-size:15px}
+ .hero-motion{position:absolute;z-index:3;top:12px;right:12px;width:40px;height:40px;min-height:40px;padding:0;border-radius:50%;background:var(--surface);font-size:16px}
+ .home-layout .section-head{margin:30px 0 15px;align-items:center;flex-direction:row}
+ .home-layout .section-head h2{font-size:clamp(24px,2.4vw,30px)}
+ .home-layout .section-head>a{font-size:13px}
+ .story-controls{justify-content:flex-end;gap:8px;margin:-4px 0 12px}
+ .story-controls button{min-height:40px;padding:6px 12px;font-size:14px}
+ .story-controls [data-story-status]{min-width:40px;text-align:center;font-size:12px;color:var(--muted)}
+ .story-slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding:2px 0;position:relative;scrollbar-width:none}
+ .story-slider::-webkit-scrollbar{display:none}
+ .story-slider .highlight-card{flex:0 0 100%;scroll-snap-align:start;display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 var(--glass-glint,transparent)}
+ .highlight-card>.subject-media--card,.highlight-card>.decorative-landscape--card{width:100%;height:100%;aspect-ratio:auto;min-height:280px;margin:0;border:0;border-right:1px solid var(--line)}
+ .highlight-card :global(.subject-media-link){height:100%;aspect-ratio:auto}
+ .highlight-card :global(.subject-media--card img){object-fit:contain;transform:none;background:var(--raised)}
+ .highlight-card .art-card-body{padding:26px 30px;display:flex;flex-direction:column;justify-content:center}
+ .highlight-card .art-card-body .title{font-size:clamp(24px,2.5vw,32px);line-height:1.2;margin:9px 0 12px}
+ .highlight-card .art-card-body p{display:block;-webkit-line-clamp:unset;margin:0 0 15px;font-size:16px;line-height:1.6;color:var(--muted)}
+ .highlight-card .art-card-body .story-period{color:var(--accent);font-size:12px;font-weight:650;line-height:1.4;margin:0}
+ .highlight-card .read-link{padding-top:0;margin:0;font-size:14px}
+ .story-image-note{font-size:11px;line-height:1.45;margin-top:18px;color:var(--muted)}
+ #chapters .chapter-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+ #chapters .chapter-card{display:grid;grid-template-columns:94px minmax(0,1fr);column-gap:14px;row-gap:4px;padding:14px;border-radius:12px;align-content:start}
+ #chapters .chapter-card-media{grid-column:1;grid-row:1/4;width:94px;aspect-ratio:16/9;align-self:center;margin:0;overflow:hidden;border-radius:6px}
+ #chapters .chapter-card>.eyebrow{grid-column:2;margin:0;font-size:10px}
+ #chapters .chapter-card h3{grid-column:2;font-size:15px;line-height:1.35;margin:0}
+ #chapters .chapter-card .read-link{grid-column:2;margin:3px 0 0;padding:0;font-size:12px}
  .chapter-preview-contents{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px;padding:16px 0}
- .story-controls{margin:15px 0}.story-slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding:4px 4px 20px;position:relative}.story-slider .highlight-card{flex:0 0 min(72vw,370px);scroll-snap-align:start;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(12px)}
- .home-summary{display:flex;align-items:center;justify-content:space-between;gap:18px 32px;margin:30px 0 42px;padding:24px 30px}
- .home-summary h2{margin:3px 0 10px}
- .home-summary p:not(.eyebrow){margin:0;max-width:90ch}
- .home-summary .button{flex-shrink:0}
- @media(max-width:800px){.home-summary{display:block;padding:21px}.home-summary .button{margin-top:15px}}
+ .preface-link{margin:10px 0 0;font-size:13px}
+ #themes .cards--visual{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+ #themes .art-card{display:grid;grid-template-columns:70px minmax(0,1fr);align-items:center;min-height:84px;border-radius:10px}
+ #themes .art-card>:first-child{width:70px;aspect-ratio:16/9;height:auto;margin:0;border:0;border-radius:0}
+ #themes .art-card :global(.subject-media-link){height:auto;aspect-ratio:16/9}
+ #themes .art-card-body{padding:10px 12px;min-width:0}
+ #themes .art-card-body .title{font-size:14px;line-height:1.4;margin:0}
+ #themes{padding-bottom:0}
+ @media(max-width:1000px){#chapters .chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#themes .cards--visual{grid-template-columns:repeat(2,minmax(0,1fr))}.hero .hero-copy{width:75%}}
+ @media(max-width:850px){
+  .hero.hero--visual{display:block;padding:24px;isolation:isolate}
+  .hero .hero-copy{width:100%;padding:0}
+  .hero--topo .hero-documentary-media{position:absolute;inset:0;width:100%;height:100%;z-index:-1;border-radius:0}
+  .hero--topo::before{display:block;background:color-mix(in srgb,var(--surface) 94%,transparent)}
+  .hero .intro{font-size:17px;max-width:56ch}.hero .actions{max-width:100%}
+  .story-slider .highlight-card{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+  .highlight-card .art-card-body{padding:20px}
+  .highlight-card .art-card-body p{font-size:15px}
+ }
+ @media(max-width:600px){
+  .home-layout{padding-top:16px}
+  .hero.hero--visual{padding:22px 18px;margin-bottom:22px}
+  .hero.hero--visual h1{font-size:35px;line-height:1.08;margin:12px 0 15px}
+  .hero .intro{font-size:16px;line-height:1.5;margin-bottom:18px}
+  .hero .actions{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;align-items:center}
+  .hero .actions>.button{font-size:13px;padding:9px 11px;justify-content:center}
+  .hero .actions>.button:not(.primary){grid-column:1}
+  .hero .reading-time{font-size:11px;margin:0}
+  .hero .stats{display:flex;flex-wrap:wrap;gap:5px 14px;margin-top:17px;font-size:12px}
+  .hero .stats>span:last-child{grid-column:auto}.hero .stats strong{font-size:13px}
+  .home-layout .section-head{align-items:flex-start;gap:10px;margin-top:26px}
+  .home-layout .section-head>a{max-width:110px;text-align:right;font-size:12px}
+  .home-layout .section-head .eyebrow{font-size:10px}
+  .story-controls{justify-content:flex-start}
+  .story-slider .highlight-card{display:flex;flex-direction:column}
+  .highlight-card>.subject-media--card,.highlight-card>.decorative-landscape--card{height:auto;min-height:0;aspect-ratio:16/9;border-right:0;border-bottom:1px solid var(--line)}
+  .highlight-card :global(.subject-media-link){height:auto;aspect-ratio:16/9}
+  .highlight-card .art-card-body{padding:18px 20px}
+  .highlight-card .art-card-body .title{font-size:25px}
+  .highlight-card .art-card-body p{font-size:15px}
+  .story-image-note{margin-top:14px}
+  #chapters .chapter-grid{grid-template-columns:minmax(0,1fr)}
+  #themes .art-card{grid-template-columns:52px minmax(0,1fr);min-height:82px}
+  #themes .art-card>:first-child{width:52px}
+  #themes .art-card-body{padding:9px}
+  #themes .art-card-body .title{font-size:14px}
+ }
+ @media(prefers-reduced-motion:reduce){.story-slider{scroll-behavior:auto}}
+ @media(prefers-reduced-transparency:reduce){.story-slider .highlight-card{background:var(--surface);backdrop-filter:none}}
 </style>
