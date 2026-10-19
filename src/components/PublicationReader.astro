@@ -29,7 +29,7 @@ const pdfUrl=pdfPath+'#view=FitH&navpanes=0';
  ):(
   <section class="publication-reader-frame" id="publication-pdf" aria-label={'Reading '+title}>
    <object data={pdfUrl} type="application/pdf" aria-label={'Read PDF: '+title} class="publication-reader-object">
-    <p class="publication-reader-fallback">Your browser could not display this PDF here. <a href={pdfPath} target="_blank" rel="noopener noreferrer">Open the PDF at its publisher</a>.</p>
+    <p class="publication-reader-fallback">Your browser could not display this PDF here. <a href={pdfPath} target="_blank" rel="noopener noreferrer">Open this locally hosted PDF in a new tab</a>.</p>
    </object>
   </section>
  )}

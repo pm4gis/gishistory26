@@ -14,13 +14,14 @@ const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='pref
 const peopleCount=d.records.filter((x:any)=>x.kind==='Person').length;
 const chapterNavImages=chapterCardImageMap(chapters,d.passages,d.images);
 const eligible=new Set(homeHighlightSlugs);
+const chapterPreview=chapters.filter((a:any)=>[1,8,16,24,32,44].includes(a.readingOrder));
 const highlights=chapters.filter((a:any)=>eligible.has(a.slug)).map((a:any)=>{
   const passage=d.passages.filter((p:any)=>p.articleId===a.id).sort((x:any,y:any)=>x.order-y.order)[0];
   const images=d.images.filter((img:any)=>img.articleSlug===a.slug&&img.assetPath);
   const image=images.find((img:any)=>img.headerCandidate)||images[0]||null;
   return {...a, passageTitle:passage?.title||a.title, storyUrl:passage?a.url+'#'+encodeURIComponent(passage.slug):a.url, image};
 });
-if(highlights.length<10)throw new Error('Too few curated published highlighted stories');
+if(highlights.length<5)throw new Error('Too few curated published highlighted stories');
 const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images)}));
 ---
 <Layout description="A history of GIS and digital mapping in New Zealand, from early survey computers to Māori GIS, national spatial datasets, web maps and AI in 2025.">
@@ -33,32 +34,32 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
    <div class="hero-copy">
     <p class="eyebrow">Maps · people · technology</p>
     <h1>A history of GIS<br/>in New Zealand.</h1>
-    <p class="intro">Read the chapters in sequence, explore a period, or follow the people and organisations behind the work.</p>
+    <p class="intro">Explore New Zealand’s move from paper maps to connected spatial data. Start with the short history, then follow the chapters, people and original publications behind it.</p>
     <div class="actions">
-     <a class="button primary" href={chapters[0]?.url||'/read/'}>Start reading →</a>
-     <a class="button" href="/timeline/">Explore the timeline</a>
+     <a class="button primary" href="/history/">Read the short history →</a>
+     <a class="button" href="/read/">Browse chapters</a>
+     <button type="button" data-hero-motion hidden>Pause background</button>
      <a class="button" id="continue" href="/read/" hidden>Continue reading</a>
     </div>
-    <div class="stats" role="group" aria-label="NZ GIS History at a glance. Build figures are from the latest verified build.">
+    <div class="stats" role="group" aria-label="NZ GIS History at a glance. Build figures are measured during this build.">
      <span><strong>{chapters.length}</strong> chapters</span>
      <span><strong>{peopleCount}</strong> people</span>
      <span><strong>{d.events.length}</strong> events</span>
-     <span><strong>9,071</strong> files<span class="sr-only"> generated in the latest verified build</span></span>
-     <span><strong>240,990</strong> internal links<span class="sr-only"> checked in the latest verified build</span></span>
+     <span><strong data-build-stat="files">…</strong> files<span class="sr-only"> generated in the verified build</span></span>
+     <span><strong data-build-stat="links">…</strong> internal links<span class="sr-only"> checked in the verified build</span></span>
     </div>
    </div>
   </section>
 
-  <section class="card home-summary" aria-labelledby="summary-heading">
-   <div><p class="eyebrow">The history in brief</p><h2 id="summary-heading">New Zealand GIS at a glance</h2>
-    <p>From surveying, aerial photography and early computing to national datasets, iwi mapping, web maps and 3D GIS. Read the short history, then explore the chapters and evidence behind it.</p></div>
-   <a class="button" href="/history/">Read the short history →</a>
+  <section class="card home-summary" aria-label="Other ways to explore">
+   <p>Explore dates, people and original documents.</p><div class="actions"><a href="/timeline/">Timeline</a><a href="/browse/">People &amp; organisations</a><a href="/publications/">Publications</a><a href="/search/">Search</a></div>
   </section>
 
   <section id="highlighted-stories" aria-labelledby="highlights-heading">
    <div class="section-head"><div><p class="eyebrow">Discover something different</p><h2 id="highlights-heading">Highlighted stories</h2></div><a href="/read/">Read the history →</a></div>
-   <p class="section-intro">Five selections from across New Zealand's GIS history.</p>
-   <div class="cards highlight-grid">
+   <p class="section-intro">Five starting points, from paper maps to open spatial data. Use Previous and Next, or swipe through the stories.</p>
+   <div class="actions story-controls" hidden><button type="button" data-story-prev aria-label="Previous story">← Previous</button><button type="button" data-story-next aria-label="Next story">Next →</button><button type="button" data-story-play aria-pressed="false">Play slideshow</button><span data-story-status role="status" aria-live="polite"></span></div>
+   <div class="cards highlight-grid" tabindex="0" aria-label="Historical stories">
     {highlights.map((a:any,i:number)=><article class="card art-card highlight-card" data-highlight={a.slug} hidden={i>=5}>
      {a.image?
       <SubjectImage image={a.image} relation={'Documentary image associated with '+a.title} variant="card" showCaption={false} destination={a.storyUrl}/>:
@@ -75,12 +76,9 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
 
   <section id="chapters" aria-labelledby="chapters-heading">
    <div class="section-head"><div><p class="eyebrow">Read the history</p><h2 id="chapters-heading">Explore the chapters</h2></div><a href="/read/">Chapter contents →</a></div>
-   <p class="section-intro">All {chapters.length} published chapters, in reading order. Choose a chapter or jump straight to its number.</p>
-   <nav class="chapter-index" aria-label="Jump to a chapter">
-    {chapters.map((a:any)=><a href={'#chapter-'+a.readingOrder} aria-label={'Jump to chapter '+a.readingOrder}>{a.readingOrder}</a>)}
-   </nav>
+   <p class="section-intro">A selection from {chapters.length} published chapters. Open the chapter catalogue for the complete chronological history.</p>
    <div class="cards chapter-grid">
-    {chapters.map((a:any)=><article class="card chapter-card" id={'chapter-'+a.readingOrder}>
+    {chapterPreview.map((a:any)=><article class="card chapter-card" id={'chapter-'+a.readingOrder}>
      <a class:list={['chapter-card-media',(chapterNavImages[a.slug]?.homeCardKind==='photo'||homepageFullBleedImageSlugs.has(chapterNavImages[a.slug]?.slug))&&'chapter-card-media--photo',homepageMapDetailChapterSlugs.has(a.slug)&&'chapter-card-media--detail']} href={a.url} aria-label={'Read Chapter '+a.readingOrder+' · '+a.title}>
       {chapterNavImages[a.slug]?
        <img src={chapterNavImages[a.slug].thumbnailPath||chapterNavImages[a.slug].assetPath} alt={chapterNavImages[a.slug].altText} loading="lazy" decoding="async"/>:
@@ -92,6 +90,7 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
      <a class="read-link" href={a.url}>Read chapter →</a>
     </article>)}
    </div>
+   <details><summary>All chapter titles</summary><nav class="chapter-preview-contents" aria-label="All chapters">{chapters.map((a:any)=><a id={chapterPreview.includes(a)?undefined:'chapter-'+a.readingOrder} href={a.url}>{a.readingOrder} · {a.title}</a>)}</nav></details>
    <p class="preface-link"><a href="/stories/preface/">Read the author's preface →</a></p>
   </section>
 
@@ -150,7 +149,9 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
       incoming.src=maps[next].src;
       if(incoming.complete&&incoming.naturalWidth>0)finish(true);
      }
-     const timer=window.setInterval(advance,9000);
+     let timer=matchMedia('(prefers-reduced-motion: reduce)').matches?undefined:window.setInterval(advance,9000);
+     const motion=document.querySelector<HTMLButtonElement>('[data-hero-motion]');
+     if(motion){motion.hidden=false;motion.textContent=timer?'Pause background':'Play background';motion.addEventListener('click',()=>{if(timer){clearInterval(timer);timer=undefined;}else timer=window.setInterval(advance,9000);motion.textContent=timer?'Pause background':'Play background';});}
      window.addEventListener('pagehide',()=>window.clearInterval(timer),{once:true});
     }
    }catch{
@@ -160,23 +161,43 @@ const themes=d.themes.map((t:any)=>({...t,subject:pickThemeImage(t.slug,d.images
   const grid=document.querySelector<HTMLElement>('#highlighted-stories .highlight-grid');
   if(grid){
    const cards=Array.from(grid.querySelectorAll<HTMLElement>('.highlight-card'));
-   try{
-    const previous=JSON.parse(sessionStorage.getItem('nzgis-last-highlights')||'[]');
-    const unused=cards.filter(card=>!Array.isArray(previous)||!previous.includes(card.dataset.highlight));
-    const choices=unused.length>=5?unused:[...cards];
-    for(let i=choices.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[choices[i],choices[j]]=[choices[j],choices[i]];}
-    const selected=choices.slice(0,5);
-    cards.forEach(card=>card.hidden=!selected.includes(card));
-    selected.forEach(card=>grid.appendChild(card));
-    sessionStorage.setItem('nzgis-last-highlights',JSON.stringify(selected.map(card=>card.dataset.highlight)));
-   }catch{
-    // The first five server-rendered stories remain visible when storage is unavailable.
+   const controls=document.querySelector<HTMLElement>('.story-controls');
+   const play=document.querySelector<HTMLButtonElement>('[data-story-play]');
+   const status=document.querySelector<HTMLElement>('[data-story-status]');
+   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+   let index=0,timer:number|undefined;
+   grid.classList.add('story-slider');
+   cards.forEach(card=>card.hidden=false);
+   if(controls)controls.hidden=false;
+   function move(step:number){
+    index=(index+step+cards.length)%cards.length;
+    grid!.scrollTo({left:cards[index].offsetLeft,behavior:reduced.matches?'instant':'smooth'});
    }
+   function stop(){clearInterval(timer);timer=undefined;if(play){play.textContent='Play slideshow';play.setAttribute('aria-pressed','false');}}
+   document.querySelector('[data-story-prev]')?.addEventListener('click',()=>{stop();move(-1)});
+   document.querySelector('[data-story-next]')?.addEventListener('click',()=>{stop();move(1)});
+   play?.addEventListener('click',()=>{
+    if(timer){stop();return;}
+    play.textContent='Pause slideshow';play.setAttribute('aria-pressed','true');
+    timer=window.setInterval(()=>move(1),7000);
+   });
+   grid.addEventListener('scroll',()=>{
+    index=cards.reduce((best,card,i)=>Math.abs(card.offsetLeft-grid!.scrollLeft)<Math.abs(cards[best].offsetLeft-grid!.scrollLeft)?i:best,0);
+    if(status)status.textContent=(index+1)+' of '+cards.length;
+   },{passive:true});
+   grid.addEventListener('keydown',event=>{if(event.target===grid&&(event.key==='ArrowRight'||event.key==='ArrowLeft')){event.preventDefault();stop();move(event.key==='ArrowRight'?1:-1)}});
+   grid.addEventListener('focusin',stop);grid.addEventListener('pointerenter',stop);
+   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
+   window.addEventListener('pagehide',stop,{once:true});
+   if(status)status.textContent='1 of '+cards.length;
   }
  </script>
 </Layout>
 
 <style>
+ #chapters .chapter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}#themes .art-card-body p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}@media(max-width:900px){#chapters .chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){#chapters .chapter-grid{grid-template-columns:1fr}}
+ .chapter-preview-contents{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px;padding:16px 0}
+ .story-controls{margin:15px 0}.story-slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding:4px 4px 20px;position:relative}.story-slider .highlight-card{flex:0 0 min(72vw,370px);scroll-snap-align:start;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(12px)}
  .home-summary{display:flex;align-items:center;justify-content:space-between;gap:18px 32px;margin:30px 0 42px;padding:24px 30px}
  .home-summary h2{margin:3px 0 10px}
  .home-summary p:not(.eyebrow){margin:0;max-width:90ch}

@@ -18,6 +18,11 @@ const starterEntries = d.records
   .filter((entry: any) => entry.connectionCount > 0)
   .sort((a: any, b: any) => b.connectionCount - a.connectionCount || a.name.localeCompare(b.name, 'en-NZ'))
   .slice(0, 4);
+const examples=starterEntries.map((entry:any)=>{
+ const edge=d.relationships.find((edge:any)=>(edge.a===entry.id||edge.b===entry.id)&&edge.sources?.length);
+ const other=edge&&d.records.find((r:any)=>r.id===(edge.a===entry.id?edge.b:edge.a));
+ return {entry,edge,other};
+}).filter((example:any)=>example.other&&example.edge);
 const defaultFocus = starterEntries[0]?.id || entries[0]?.id || '';
 const unconnectedCount = entries.filter((entry: any) => !connectionCounts.get(entry.id)).length;
 ---
@@ -41,6 +46,8 @@ const unconnectedCount = entries.filter((entry: any) => !connectionCounts.get(en
 
     <section class="network-starters" aria-labelledby="network-starters-title">
       <h2 id="network-starters-title">Start with documented connections</h2>
+      <p>Start with an entry, select a connected node, then read the relationship evidence below the diagram. A line represents a recorded relationship; it does not establish every possible connection between the two entries.</p>
+      <ul class="list">{examples.slice(0,2).map(({entry,edge,other}:any)=><li><a href={'/network/?focus='+encodeURIComponent(entry.id)}>{entry.name}</a> · {edge.label} · <a href={other.url}>{other.name}</a><p>{edge.basis}</p></li>)}</ul>
       <div class="network-starter-list">
         {starterEntries.map((entry: any) => <button type="button" data-network-focus={entry.id}>{entry.name}<small>{entry.connectionCount} {entry.connectionCount === 1 ? 'relationship' : 'relationships'}</small></button>)}
       </div>
