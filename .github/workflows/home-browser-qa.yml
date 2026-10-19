@@ -22,6 +22,8 @@ on:
       - 'src/styles/site.css'
       - 'scripts/home-browser-qa.mjs'
       - 'scripts/first-visit-browser-qa.mjs'
+      - 'scripts/landing-editorial-browser-qa.mjs'
+      - 'src/lib/home-stories.mjs'
       - 'scripts/publication-return-browser-qa.mjs'
       - 'src/lib/publication-return.mjs'
       - 'src/pages/history/**'
@@ -49,6 +51,8 @@ on:
       - 'src/styles/site.css'
       - 'scripts/home-browser-qa.mjs'
       - 'scripts/first-visit-browser-qa.mjs'
+      - 'scripts/landing-editorial-browser-qa.mjs'
+      - 'src/lib/home-stories.mjs'
       - 'scripts/publication-return-browser-qa.mjs'
       - 'src/lib/publication-return.mjs'
       - 'src/pages/history/**'
@@ -87,6 +91,7 @@ jobs:
           done
           if ! curl -fsS -o /dev/null http://127.0.0.1:4321/; then cat /tmp/nzgis-home-preview.log; echo 'Preview failed to start'; exit 1; fi
           node scripts/publication-return-browser-qa.mjs
+          node scripts/landing-editorial-browser-qa.mjs
           node scripts/first-visit-browser-qa.mjs
           node scripts/home-browser-qa.mjs
           node scripts/glass-navigation-browser-qa.mjs
@@ -98,6 +103,7 @@ jobs:
           name: glass-navigation-qa
           path: |
             docs/verification/publication-return/
+            docs/verification/landing-editorial/
             docs/verification/first-visit/
             docs/verification/glass-nav-qa/
             docs/verification/tile-navigation-qa/
