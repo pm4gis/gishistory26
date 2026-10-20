@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import {dataset} from '../lib/data';
+import {decorUrl} from '../lib/decor';
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
 const chapterPreview=chapters.filter((a:any)=>[1,8,16,24,32,44].includes(a.readingOrder));
@@ -15,7 +16,9 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
 <Layout homepage description="A history of GIS and digital mapping in New Zealand, from survey records and early computers to national spatial datasets, web maps and AI in 2025.">
  <div class="home-layout">
   <section class="landing-hero" aria-labelledby="landing-title">
-   <div class="landing-image" aria-hidden="true"><img src={satellite.assetPath} alt="" width="1600" height="1600" loading="eager" fetchpriority="high" decoding="async"/></div>
+   <div class="landing-image landing-image--first" aria-hidden="true"><img src={satellite.assetPath} alt="" width="1600" height="1600" loading="eager" fetchpriority="high" decoding="async"/></div>
+   <div class="landing-image landing-image--second" aria-hidden="true"><img src={decorUrl('north2024-raglan1')} alt="" width="1600" height="900" loading="eager" decoding="async"/></div>
+   <div class="landing-image landing-image--third" aria-hidden="true"><img src={decorUrl('north2024-taranaki1')} alt="" width="1600" height="900" loading="eager" decoding="async"/></div>
    <div class="landing-copy">
     <h1 id="landing-title">A history of GIS<br/>in New Zealand</h1>
     <p class="landing-intro">The maps, machines and people behind<br class="wide-break"/> New Zealand’s geographic information systems.</p>
@@ -27,7 +30,11 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
      <span><strong data-build-stat="files">…</strong> files<span class="sr-only"> generated in the verified build</span></span>
      <span><strong data-build-stat="links">…</strong> internal links<span class="sr-only"> checked in the verified build</span></span>
     </div>
-    <a class="landing-credit" href={'/images/'+satellite.slug+'/'}>Tasman Glacier, Landsat, 1990 · NASA</a>
+    <div class="landing-credits" aria-label="Image credits">
+     <a class="landing-credit landing-credit--first" href={'/images/'+satellite.slug+'/'}>Tasman Glacier · Landsat · NASA, 1990</a>
+     <span class="landing-credit landing-credit--second">Raglan · supplied aerial landscape imagery, 2024</span>
+     <span class="landing-credit landing-credit--third">Taranaki · supplied aerial landscape imagery, 2024</span>
+    </div>
    </div>
   </section>
 
@@ -44,12 +51,33 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
    </article>
   </section>
 
+  <section class="landscape-interlude" aria-labelledby="landscape-heading">
+   <div class="landscape-photo" aria-hidden="true"><img src={decorUrl('north2024-atene1')} alt="" width="1600" height="900" loading="lazy" decoding="async"/></div>
+   <div class="landscape-glass">
+    <p class="eyebrow">Seeing the land differently</p>
+    <h2 id="landscape-heading">From the air,<br/>a different map</h2>
+    <p>Aerial surveys, satellite imagery and later LiDAR changed how New Zealand's landscapes could be recorded and analysed. Follow the changing techniques, and the people who put them to work.</p>
+    <a href="/themes/imagery/">Explore aerial photography and imagery <span aria-hidden="true">↗</span></a>
+   </div>
+   <p class="landscape-caption">Atene · supplied North Island landscape imagery, 2024</p>
+  </section>
+
   <section id="chapters" class="landing-chapters" aria-labelledby="chapters-heading">
    <h2 class="eyebrow" id="chapters-heading">Read the history</h2>
    <nav class="chapter-preview" aria-label="Selected chapters">{chapterPreview.map((a:any)=><a id={'chapter-'+a.readingOrder} href={a.url}><span class="chapter-number">{String(a.readingOrder).padStart(2,'0')}</span><span>{a.title}</span></a>)}</nav>
    <div class="chapter-options"><a class="feature-link" href="/read/">All {chapters.length} chapters →</a><a href="/stories/preface/">Author’s preface →</a></div>
    <details class="all-chapters"><summary>All chapter titles</summary><nav class="chapter-preview-contents" aria-label="All chapters">{chapters.map((a:any)=><a id={chapterPreview.includes(a)?undefined:'chapter-'+a.readingOrder} href={a.url}>{a.readingOrder} · {a.title}</a>)}</nav></details>
   </section>
+  <section class="people-editorial" aria-labelledby="people-editorial-heading">
+   <div class="people-editorial-image" aria-hidden="true"><img src={decorUrl('north2024-rangitoto1')} alt="" width="1600" height="900" loading="lazy" decoding="async"/></div>
+   <div class="people-editorial-copy">
+    <p class="eyebrow">Behind the maps</p>
+    <h2 id="people-editorial-heading">People made<br/>these systems</h2>
+    <p>Surveyors, programmers, cartographers, researchers and communities helped shape GIS in New Zealand. Explore their work through the organisations, projects and historical accounts that connect them.</p>
+    <nav aria-label="Explore the people and organisations"><a href="/browse/?kind=Person">People <span aria-hidden="true">↗</span></a><a href="/browse/?kind=Organisation&amp;kind=Agency&amp;kind=Business&amp;kind=Council&amp;kind=Community">Organisations <span aria-hidden="true">↗</span></a></nav>
+   </div>
+  </section>
+
   <section id="themes" class="landing-themes" aria-labelledby="themes-heading"><h2 class="eyebrow" id="themes-heading">Follow a subject</h2><nav aria-label="Historical themes">{d.themes.map((t:any)=><a href={'/themes/'+t.slug+'/'}>{t.title} <span aria-hidden="true">↗</span></a>)}</nav></section>
   <p class="history-endpoint">History through 31 December 2025</p>
  </div>
@@ -64,7 +92,17 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
 <style>
  .home-layout{--home-gutter:clamp(24px,4.6vw,76px);max-width:1800px;margin:0 auto;overflow:clip;background:var(--bg)}
  .landing-hero{--hero-end:#081725;position:relative;isolation:isolate;min-height:640px;background:var(--hero-end);color:#f5f5ed;display:flex;flex-direction:column;justify-content:space-between;padding:84px var(--home-gutter) 36px;overflow:hidden}
- .landing-image{position:absolute;inset:0;z-index:-2}
+ .landing-image{position:absolute;inset:0;z-index:-2;opacity:0;will-change:opacity}
+ .landing-image--first,.landing-credit--first{animation:hero-first 27s linear infinite}
+ .landing-image--second,.landing-credit--second{animation:hero-second 27s linear infinite}
+ .landing-image--third,.landing-credit--third{animation:hero-third 27s linear infinite}
+ @keyframes hero-first{0%,29%{opacity:1}34%,96%{opacity:0}100%{opacity:1}}
+ @keyframes hero-second{0%,29%{opacity:0}34%,62%{opacity:1}67%,100%{opacity:0}}
+ @keyframes hero-third{0%,62%{opacity:0}67%,96%{opacity:1}100%{opacity:0}}
+ .landing-credits{position:relative;min-height:36px;min-width:min(280px,100%);text-align:right}
+ .landing-credits .landing-credit{display:block;position:absolute;inset:0 0 auto auto;opacity:0;text-align:right}
+ .landing-hero{background:#081725}
+
  .landing-image img{width:100%;height:100%;object-fit:cover;object-position:center 44%;display:block}
  .landing-hero::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#081725 0%,#081725d9 24%,#0817256b 51%,#08172500 77%),linear-gradient(0deg,var(--hero-end) 0%,color-mix(in srgb,var(--hero-end) 90%,transparent) 3%,#08172500 40%)}
  .landing-copy{position:relative;max-width:870px}
@@ -80,6 +118,27 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
  .landing-stats strong{font-size:clamp(24px,2.2vw,32px);line-height:1.2;font-weight:650;color:#f5f5ed;margin-bottom:4px}
  .landing-credit{max-width:250px;font-size:12px;color:#f5f5ed;line-height:1.5;text-decoration:none;text-align:right;text-shadow:0 1px 4px #000}
  .landing-credit:hover{text-decoration:underline}
+ .landscape-interlude{position:relative;min-height:clamp(530px,48vw,740px);isolation:isolate;color:#fff;display:flex;align-items:center;padding:clamp(34px,5vw,90px) var(--home-gutter);overflow:hidden}
+ .landscape-photo{position:absolute;inset:0;z-index:-2}
+ .landscape-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+ .landscape-interlude::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#071522a8 0%,#07152252 48%,transparent 85%),linear-gradient(0deg,#07152275,transparent 44%)}
+ .landscape-glass{max-width:600px;padding:clamp(26px,3vw,46px);border:1px solid #ffffff59;background:#0b1c2e8f;box-shadow:0 22px 75px #0005,inset 0 1px #ffffff30;border-radius:22px;backdrop-filter:blur(17px);-webkit-backdrop-filter:blur(17px)}
+ .landscape-glass .eyebrow{color:#c1e8fe;margin:0 0 14px}
+ .landscape-glass h2{font-size:clamp(41px,5vw,72px);line-height:1.07;font-weight:640;letter-spacing:-.045em;margin:0 0 24px;color:#fff}
+ .landscape-glass p:not(.eyebrow){font-size:clamp(17px,1.5vw,20px);line-height:1.6;margin:0 0 26px}
+ .landscape-glass a{display:inline-flex;gap:14px;align-items:center;color:#cef2ff;text-decoration:none;font-size:16px;font-weight:650;min-height:44px}
+ .landscape-glass a:hover{text-decoration:underline}
+ .landscape-caption{position:absolute;right:var(--home-gutter);bottom:18px;font-size:12px;line-height:1.5;color:#fff;opacity:.88;text-shadow:0 2px 8px #000}
+ .people-editorial{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:0;margin:44px 0 36px;min-height:510px}
+ .people-editorial-image{height:100%;min-height:510px;overflow:hidden}
+ .people-editorial-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+ .people-editorial-copy{position:relative;margin-left:clamp(-100px,-6vw,-45px);margin-right:var(--home-gutter);padding:clamp(30px,4vw,62px);background:color-mix(in srgb,var(--surface) 83%,transparent);border:1px solid color-mix(in srgb,var(--line) 54%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:22px;box-shadow:0 22px 70px #0003,inset 0 1px #fff2}
+ .people-editorial-copy h2{font-size:clamp(36px,4vw,60px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 20px}
+ .people-editorial-copy p:not(.eyebrow){font-size:18px;line-height:1.6;color:var(--muted)}
+ .people-editorial-copy nav{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:24px}
+ .people-editorial-copy nav a{display:inline-flex;gap:9px;align-items:center;text-decoration:none;font-weight:650;font-size:16px;min-height:44px}
+ .people-editorial-copy nav a:hover{text-decoration:underline}
+
  .history-features{padding:28px var(--home-gutter) 20px;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-rows:auto auto 1fr;column-gap:clamp(38px,5vw,96px);position:relative}
  .feature-introduction{grid-column:2;grid-row:1;padding-top:16px}
  .feature-introduction .eyebrow{margin:0 0 12px}
@@ -121,14 +180,18 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
   .landing-image img{object-position:62% center}.landing-hero::before{background:linear-gradient(90deg,#081725d9,#08172566),linear-gradient(0deg,var(--hero-end) 0%,color-mix(in srgb,var(--hero-end) 85%,transparent) 16%,#08172500 68%)}
   .landing-copy h1{font-size:clamp(38px,9.8vw,58px);line-height:1.07;margin-bottom:22px}.landing-intro{font-size:18px;line-height:1.5;max-width:29ch}.wide-break{display:none}
   .landing-actions{gap:10px 22px}.landing-actions a{font-size:15px}.landing-actions .landing-primary{padding:10px 18px}
-  .landing-bottom{margin-top:62px;gap:20px}.landing-stats{column-gap:26px;row-gap:16px}.landing-stats>span{font-size:12px}.landing-stats strong{font-size:25px}.landing-credit{font-size:11px}
+  .landing-bottom{margin-top:62px;gap:20px}.landing-credits{min-width:100%;text-align:left}.landing-credits .landing-credit{inset:0 auto auto 0;text-align:left}.landing-stats{column-gap:26px;row-gap:16px}.landing-stats>span{font-size:12px}.landing-stats strong{font-size:25px}.landing-credit{font-size:11px}
   .history-features{display:flex;flex-direction:column;padding-top:38px;padding-bottom:0;gap:0}
   .feature-introduction{order:0;padding:0}.feature-introduction h2{font-size:clamp(34px,9vw,46px);margin-bottom:28px}
   .map-artefact{order:1;width:68%;max-width:340px;margin:4px 0 20px 6px;transform:rotate(-4deg)}
   .map-feature{order:2;align-self:flex-end;width:90%;margin:0 0 30px}.history-features h3{font-size:25px}
   .computer-feature{order:3;margin:0}.computer-feature figure{margin:0 0 12px 7%;width:93%}.computer-copy{max-width:34ch}
+  .landscape-interlude{min-height:600px;align-items:end;padding-bottom:64px}.landscape-glass{padding:25px 24px;border-radius:16px}.landscape-caption{left:var(--home-gutter);right:auto;bottom:10px}
+  .people-editorial{display:block;min-height:0;margin:36px 0 24px}.people-editorial-image{min-height:0;height:330px}.people-editorial-copy{margin:-65px var(--home-gutter) 0;padding:26px 24px;border-radius:16px}.people-editorial-copy p:not(.eyebrow){font-size:16px}
   .landing-chapters{padding-top:40px}.chapter-preview{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}.chapter-preview a{font-size:16px;padding-bottom:14px;min-height:82px}
   .chapter-options{align-items:flex-start;flex-direction:column;gap:3px}.landing-themes{padding-top:22px}.landing-themes nav{display:block}.landing-themes nav a{display:flex;justify-content:space-between;font-size:15px}.history-endpoint{padding-top:24px;padding-bottom:12px}
  }
+ @media(prefers-reduced-motion:reduce){.landing-image,.landing-credits .landing-credit{animation:none!important}.landing-image--first,.landing-credit--first{opacity:1}.landing-image--second,.landing-image--third,.landing-credit--second,.landing-credit--third{opacity:0}}
+ @media(prefers-reduced-transparency:reduce){.landscape-glass{background:#0b1c2eea;backdrop-filter:none}.people-editorial-copy{background:var(--surface);backdrop-filter:none}} 
  @media(prefers-reduced-transparency:reduce){.landing-hero::before{background:linear-gradient(90deg,#081725 0%,#081725db 55%,#08172580 100%)}.computer-feature img{mask-image:none;-webkit-mask-image:none}}
 </style>
