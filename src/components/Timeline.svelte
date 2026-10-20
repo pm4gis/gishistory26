@@ -1,7 +1,7 @@
 <script lang="ts">
  import {scaleLinear} from 'd3-scale';
  import {ngaPoutamaForEvent} from '../lib/nga-poutama-videos.mjs';
- import {onMount} from 'svelte';
+ import {onMount,tick} from 'svelte';
  import {TIMELINE_LAST_YEAR,TIMELINE_LAST_DATE,isTimelineEventInPeriod} from '../lib/timeline-cutoff.mjs';
  import {timelineEventsForScope} from '../lib/timeline-page-scope.mjs';
  import {siteContributionPageUrl,productionOrigin} from '../lib/passage-contributions.mjs';
@@ -18,6 +18,7 @@
  let includeUndated=true;
  let zoom=1;
  let hoveredId='';
+ let eventSummaryElement:HTMLElement|null=null;
  let activeDecade:number|null=null;
  let activeFiveYearStart:number|null=null;
  const maxZoom=12;
@@ -91,7 +92,7 @@
   if(nextURL===location.pathname+location.search+location.hash)return;
   if(commit)history.pushState(null,'',nextURL);else history.replaceState(null,'',nextURL);
  }
- function pick(e:any){selected=e;onSelect(e);if(!compact)updateURL(e.id,true)}
+ function pick(e:any){selected=e;onSelect(e);if(!compact){updateURL(e.id,true);void tick().then(()=>{eventSummaryElement?.scrollIntoView({block:'start',behavior:'smooth'});eventSummaryElement?.focus({preventScroll:true})})}}
  function historicalEventVideos(id:string){return ngaPoutamaForEvent(id).filter((video:any)=>video.publishedOn&&video.publishedOn<=TIMELINE_LAST_DATE)}
  function markerKeydown(event:KeyboardEvent,e:any){if(event.key==='Enter'||event.key===' '){event.preventDefault();pick(e)}}
  function clampYearInput(value:string){if(!value)return '';const n=Number(value);return Number.isFinite(n)?String(Math.min(TIMELINE_LAST_YEAR,Math.max(1000,Math.floor(n)))):''}
@@ -101,7 +102,7 @@
  function resetZoom(){zoom=1;updateURL(selected?.id,true)}
  function chooseFiveYear(start:number){activeDecade=Math.floor(start/10)*10;activeFiveYearStart=start;from=String(start);to=String(Math.min(start+4,max));includeUndated=false;selected=null;onSelect(null);zoom=1;updateURL(undefined,true)}
  function countEventsInFiveYearPeriod(start:number){const finish=Math.min(start+4,max);return dated.filter(e=>{const y=year(e) as number;const eventFinish=endYear(e)??y;return eventFinish>=start&&y<=finish;}).length}
- function decade(y:number){const secondHalf=y+5;chooseFiveYear(secondHalf<=max&&countEventsInFiveYearPeriod(secondHalf)>countEventsInFiveYearPeriod(y)?secondHalf:y)}
+ function decade(y:number){activeDecade=y;activeFiveYearStart=null;from=String(y);to=String(Math.min(y+9,max));includeUndated=false;selected=null;onSelect(null);zoom=1;updateURL(undefined,true)}
  function clearFilters(){activeDecade=null;activeFiveYearStart=null;from='';to='';term='';includeUndated=true;selected=null;onSelect(null);zoom=1;updateURL(undefined,true)}
  function restoreURLState(){
   const p=new URLSearchParams(location.search);
@@ -147,7 +148,7 @@
 <section class="timeline-box" aria-label={compact && currentPassageId && !showChapterEvents ? 'Events linked to this passage' : compact ? 'Chapter timeline' : 'Explore the chronology'}><div class="section-head" style="margin-top:0"><p class="eyebrow">{compact?(currentPassageId && !showChapterEvents?'This page in time':'This chapter in time'):'Explore the chronology'}</p>{#if compact}<a href="/timeline/">Full timeline →</a>{/if}</div>
  {#if compact && currentPassageId}<div class="timeline-scope-controls"><p aria-live="polite">{showChapterEvents?`Showing all ${timelineEvents.length} events in this chapter.`:`${pageEvents.length} ${pageEvents.length===1?'event':'events'} linked to this passage.`}</p>{#if pageEvents.length!==timelineEvents.length}<button type="button" aria-pressed={showChapterEvents} on:click={()=>{showChapterEvents=!showChapterEvents;selected=null;hoveredId=''}}>{showChapterEvents?'Show this page only':`Browse all ${timelineEvents.length} chapter events`}</button>{/if}</div>{/if}
  {#if !compact}<div class="timeline-controls"><label>From year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={from} on:change={resetDateFilter}/></label><label>To year<input type="number" min="1000" max={TIMELINE_LAST_YEAR} bind:value={to} on:change={resetDateFilter}/></label><label><span>Undated</span><input type="checkbox" bind:checked={includeUndated} on:change={()=>updateURL(selected?.id,true)}/></label><label class="timeline-search">Find an event<input type="search" placeholder="Search dates and accounts" bind:value={term} on:input={()=>{selected=null;onSelect(null);zoom=1;updateURL()}}/></label><button on:click={clearFilters}>Clear filters</button></div>
- <div class="period-head"><h2>{activeDecade===null?'Choose a decade':`Choose a five-year period in the ${activeDecade}s`}</h2><p>{activeDecade===null?'Move from left to right through the history. Select a decade to focus the events below.':'The timeline is focused on a five-year span. Choose the first or second half of this decade.'}</p></div>
+ <div class="period-head"><h2>{activeDecade===null?'Choose a decade':`Choose a five-year period in the ${activeDecade}s`}</h2><p>{activeDecade===null?'Move from left to right through the history. Select a decade to focus the events below.':'The timeline is focused on a five-year span. All ten years are selected. You can narrow to either five-year period.'}</p></div>
  <nav class="period-nav" aria-label={activeDecade===null?'Timeline decades':'Five-year timeline periods'}>
  {#if activeDecade===null}
  <button class="period-choice" class:active={!from&&!to} aria-pressed={!from&&!to} on:click={clearFilters}><strong>All years</strong><span>{dated.length} dated events</span></button>
@@ -156,6 +157,7 @@
  {/each}
  {:else}
  <button class="period-choice" on:click={clearFilters}><strong>All years</strong><span>Back to decade selection</span></button>
+ <button class="period-choice" class:active={activeFiveYearStart===null} aria-pressed={activeFiveYearStart===null} on:click={()=>decade(Number(activeDecade))}><strong>Full {activeDecade}s</strong><span>All ten years</span></button>
  {#each fiveYearGroups as group}
  <button class="period-choice" class:active={activeFiveYearStart===group.start} aria-pressed={activeFiveYearStart===group.start} on:click={()=>chooseFiveYear(group.start)}><strong>{group.start}–{group.end}</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/fiveYearDensityMax*100)+'%'}></i></button>
  {/each}
@@ -181,7 +183,7 @@
     on:click={()=>pick(mark.event)} on:keydown={(event)=>markerKeydown(event,mark.event)} on:mouseenter={()=>hoveredId=mark.event.id} on:mouseleave={()=>hoveredId=''} on:focus={()=>hoveredId=mark.event.id} on:blur={()=>hoveredId=''}>
     <title>{mark.event.dateDisplay}: {mark.event.label} — select to view details</title>
     {#if mark.x2>mark.x1}<line class="timeline-span" x1={mark.x1} y1={mark.y} x2={mark.x2} y2={mark.y}/>{/if}
-    <circle cx={mark.x1} cy={mark.y} r="4"/>
+    <circle cx={mark.x1} cy={mark.y} r="12" class="timeline-hit-area"/><circle cx={mark.x1} cy={mark.y} r="4"/>
    </g>
   {/each}
  </svg>
@@ -200,7 +202,7 @@
  {#if !filtered.length}<p class="empty">{#if compact && currentPassageId && !showChapterEvents}{#if timelineEvents.length}No timeline events are linked to this passage. Browse all {timelineEvents.length} events in this chapter, or open the full timeline.{:else}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{/if}{:else if compact}No timeline events are linked to this chapter yet. Open the full timeline to explore events across the collection.{:else if activeFiveYearStart!==null&&!countEventsInFiveYearPeriod(activeFiveYearStart)}No sourced events are recorded for this period yet. <a href={contributeTimeline}>Suggest an event with a source</a>, or clear the filters to see all dates.{:else}No matching events. Clear the filters to see all dates.{/if}</p>{/if}
 
  {#if selected}
- <section class="event-summary" aria-live="polite">
+ <section class="event-summary" aria-live="polite" tabindex="-1" bind:this={eventSummaryElement}>
   <div class={'event-summary-grid'+(selected.featuredImage?' event-summary-grid--with-image':'')}>
    <div class="event-summary-copy">
     <p class="eyebrow">Selected event · {selected.dateDisplay}</p>
@@ -248,6 +250,16 @@
 </section>
 {/if}
 <style>
+ .timeline-hit-area{fill:transparent!important;stroke:none!important;pointer-events:all}
+ .event-summary:focus{outline:none}
+ @media(max-width:650px){
+  .timeline-rail{display:grid;grid-template-columns:1fr;overflow:visible;gap:8px;padding:10px 0}
+  .timeline-rail .timeline-event{min-width:0;max-width:none;width:100%;min-height:0;display:grid;grid-template-columns:96px 1fr;align-items:center;text-align:left;padding:0;overflow:hidden}
+  .timeline-rail .timeline-event:not(.timeline-event--photo){display:block;padding:16px 18px}
+  .timeline-event--photo .timeline-event-photo{width:96px;height:100%;min-height:95px;object-fit:cover}
+  .timeline-event .timeline-event-body{min-height:0;display:block;padding:12px 14px}
+  .timeline-event .timeline-event-teaser{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;font-size:13px;line-height:1.4}
+ }
 .timeline-scope-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0;padding:9px 12px;color:var(--muted);font-size:13px;background:var(--glass);border:1px solid var(--line);border-radius:12px;box-shadow:inset 0 1px 0 color-mix(in srgb,var(--surface) 68%,transparent)}
 .timeline-scope-controls p{margin:0}
 .timeline-scope-controls button{flex:0 0 auto}

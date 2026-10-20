@@ -12,6 +12,18 @@ const css=readFileSync('src/styles/site.css','utf8');
 const subjectImage=readFileSync('src/components/SubjectImage.astro','utf8');
 const imageDetail=readFileSync('src/pages/images/[slug].astro','utf8');
 
+test('2026 editorial homepage retains supplied landscape images, a reduced-motion fallback and full-bleed subpage headers',()=>{
+ assert.match(home,/north2024-raglan1/);
+ assert.match(home,/north2024-taranaki1/);
+ assert.match(home,/north2024-atene1/);
+ assert.match(home,/north2024-rangitoto1/);
+ assert.match(home,/hero-first 27s linear infinite/);
+ assert.match(home,/prefers-reduced-motion:reduce/);
+ assert.match(home,/class="landscape-interlude"/);
+ assert.match(home,/class="people-editorial"/);
+ assert.match(css,/\.visual-page-heading\{background:#081725;--heading-gutter:/);
+ assert.match(css,/backdrop-filter:blur\(16px\)/);
+});
 test('compact homepage preview retains the complete chapter catalogue',()=>{
  const articles=readdirSync('src/content/articles').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/articles/'+n,'utf8')));
  const chapters=articles.filter(a=>a.status==='published'&&a.slug!=='preface');
