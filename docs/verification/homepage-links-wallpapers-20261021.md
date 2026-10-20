@@ -11,3 +11,5 @@ Regression coverage extends the existing seven-width Chromium suite to keyboard 
 No historical chapter prose, source metadata, image binary, publication structure or timeline content changes. The historical cutoff remains 31 December 2025.
 
 The release workflow also runs a separate production smoke check after a main-branch push. It waits for the new heading links and wallpaper frame to reach the public homepage, then checks the heading destinations and the actual WebP responses. This runs independently of the local browser build and provides public-deployment evidence through the retained GitHub job log.
+
+The initial raw-HTTP production probe received HTTP 403 from GitHub's runner. The production check therefore uses standard Chromium navigation and native heading activation, with the same browser installation as the existing QA suite. No custom user agent, authentication bypass or Cloudflare security change is applied. A non-200 page response is reported with its visible error text rather than retried as a deployment delay. The actual outcome is retained in the production workflow log and live-homepage evidence artifact.
