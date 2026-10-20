@@ -30,7 +30,7 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
      <span><strong data-build-stat="files">…</strong> files<span class="sr-only"> generated in the verified build</span></span>
      <span><strong data-build-stat="links">…</strong> internal links<span class="sr-only"> checked in the verified build</span></span>
     </div>
-    <div class="landing-credits" aria-label="Image credits">
+    <div class="landing-credits">
      <a class="landing-credit landing-credit--first" href={'/images/'+satellite.slug+'/'}>Tasman Glacier · Landsat · NASA, 1990</a>
      <span class="landing-credit landing-credit--second">Raglan · supplied aerial landscape imagery, 2024</span>
      <span class="landing-credit landing-credit--third">Taranaki · supplied aerial landscape imagery, 2024</span>
@@ -118,7 +118,7 @@ if(!maps||!computers||!satellite?.assetPath||!map?.assetPath||!workstation?.asse
  .landing-stats strong{font-size:clamp(24px,2.2vw,32px);line-height:1.2;font-weight:650;color:#f5f5ed;margin-bottom:4px}
  .landing-credit{max-width:250px;font-size:12px;color:#f5f5ed;line-height:1.5;text-decoration:none;text-align:right;text-shadow:0 1px 4px #000}
  .landing-credit:hover{text-decoration:underline}
- .landscape-interlude{position:relative;min-height:clamp(530px,48vw,740px);isolation:isolate;color:#fff;display:flex;align-items:center;padding:clamp(34px,5vw,90px) var(--home-gutter);overflow:hidden}
+ .landscape-interlude{background:#081725;position:relative;min-height:clamp(530px,48vw,740px);isolation:isolate;color:#fff;display:flex;align-items:center;padding:clamp(34px,5vw,90px) var(--home-gutter);overflow:hidden}
  .landscape-photo{position:absolute;inset:0;z-index:-2}
  .landscape-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
  .landscape-interlude::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#071522a8 0%,#07152252 48%,transparent 85%),linear-gradient(0deg,#07152275,transparent 44%)}
