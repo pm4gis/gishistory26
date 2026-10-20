@@ -41,7 +41,7 @@ test('homepage features link accepted chapters and preserve image detail access'
   const article=JSON.parse(readFileSync('src/content/articles/'+slug+'.json','utf8'));
   assert.equal(article.status,'published');assert.ok(home.includes(slug));
  }
- for(const slug of ['tuki-map-1793-1798','intergraph-clix-workstation','nasa-landsat4-tasman-1990']){
+ for(const slug of ['tuki-map-1793-1798','intergraph-clix-workstation']){
   const image=readdirSync('src/content/images').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/images/'+n,'utf8'))).find(i=>i.slug===slug);
   assert.ok(image.assetPath&&image.altText&&image.credit&&image.sourceUrl);assert.ok(home.includes(slug));
  }
@@ -101,11 +101,11 @@ test('passage-specific email drafts include the link and the alternative page ha
 });
 
 
-test('homepage uses the unchanged documented Landsat media record',()=>{
+test('wallpaper header preserves the historical Landsat archive record',()=>{
  const image=JSON.parse(readFileSync('src/content/images/nasa-landsat4-tasman-1990.json','utf8'));
  assert.equal(image.assetPath,'/assets/historical/web/nasa-landsat4-tasman-1990.webp');
  assert.equal(image.dateDisplay,'1990-12-30');assert.ok(image.originalSha256&&image.webSha256);
- assert.match(home,/fetchpriority="high"/);assert.match(home,/landing-image/);
+ assert.match(home,/fetchpriority="high"/);assert.match(home,/north2024-karikari2/);assert.doesNotMatch(home,/satellite.assetPath|Tasman Glacier · Landsat/);
 });
 
 test('desktop and mobile menus expose the same direct destinations',()=>{
