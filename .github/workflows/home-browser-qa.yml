@@ -96,8 +96,7 @@ jobs:
           node scripts/home-browser-qa.mjs
           node scripts/glass-navigation-browser-qa.mjs
           node scripts/tile-browser-qa.mjs
-      - name: Verify public homepage in Chromium after Cloudflare deployment
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      - name: Verify the currently published homepage in Chromium
         run: node scripts/verify-live-homepage-links.mjs
       - name: Retain responsive glass navigation evidence
         if: always()
