@@ -21,7 +21,7 @@ test('2026 editorial homepage retains supplied landscape images, a reduced-motio
  assert.match(home,/prefers-reduced-motion:reduce/);
  assert.match(home,/class="landscape-interlude"/);
  assert.match(home,/class="people-editorial"/);
- assert.match(css,/\.visual-page-heading\{--heading-gutter:/);
+ assert.match(css,/\.visual-page-heading\{background:#081725;--heading-gutter:/);
  assert.match(css,/backdrop-filter:blur\(16px\)/);
 });
 test('compact homepage preview retains the complete chapter catalogue',()=>{
