@@ -13,8 +13,8 @@ const home = readFileSync('src/pages/index.astro', 'utf8');
 const catalogue = readFileSync('src/pages/read/index.astro', 'utf8');
 const css = readFileSync('src/styles/site.css', 'utf8');
 
-test('both public chapter indexes use one authoritative thumbnail selector', () => {
-  for (const page of [home, catalogue]) {
+test('full chapter catalogue uses the authoritative thumbnail selector', () => {
+  for (const page of [catalogue]) {
     assert.match(page, /chapterCardImageMap\(chapters,d.passages,d.images\)/);
     assert.match(page, /\.thumbnailPath\|\|[^}]*\.assetPath/);
     assert.match(page, /alt=\{/);
@@ -43,12 +43,11 @@ test('every chapter has the same verified image and image source on both pages',
   assert.equal(mismatches.length, 26, 'the 24 previously blank catalogue cards and two different choices must now share the approved selection');
 });
 
-test('both indexes apply the same reviewed photo and map crops', () => {
+test('chapter catalogue keeps its reviewed photo and map crops', () => {
   assert.match(catalogue, /id=\{'chapter-'\+a.readingOrder\}/);
   assert.match(catalogue, /chapter-card-media--photo/);
   assert.match(catalogue, /chapter-card-media--detail/);
-  assert.ok(home.includes('chapter-card-media--photo'));
-  assert.ok(home.includes('chapter-card-media--detail'));
+  assert.match(home, /class="chapter-preview"/);
   assert.ok(homepageFullBleedImageSlugs.size > 8);
   assert.ok(homepageMapDetailChapterSlugs.size > 8);
   assert.match(css, /:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--photo img/);

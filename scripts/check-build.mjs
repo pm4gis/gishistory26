@@ -37,7 +37,7 @@ for(const map of topo){
 console.log('Verified '+topo.length+' locally hosted homepage title images');
 
 const homeHtml=fs.readFileSync('dist/index.html','utf8');
-if(!homeHtml.includes('data-topo-sources=')||!homeHtml.includes('hero--topo')||homeHtml.includes('A different selection appears each time you visit.'))throw Error('Homepage image rotation or discreet highlights missing');
+if(!homeHtml.includes('landing-hero')||!homeHtml.includes('/assets/historical/web/nasa-landsat4-tasman-1990.webp')||homeHtml.includes('data-story-play')||homeHtml.includes('data-hero-motion'))throw Error('Approved static homepage or image missing');
 if(!homeHtml.includes('property="og:image"')||!homeHtml.includes('/assets/social/nzgis-selected-20261013.jpg')||!homeHtml.includes('name="twitter:card"')||!homeHtml.includes('image/jpeg'))
  throw Error('Approved social artwork metadata missing from generated homepage');
 console.log('Selected social card verified: 1200 x 630, JPEG, Open Graph and X metadata');

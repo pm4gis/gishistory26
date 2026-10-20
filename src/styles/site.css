@@ -950,3 +950,21 @@
  .footer{padding:21px 14px;gap:12px}
 }
 @media(max-width:370px){.mobile-controls button{font-size:12px}}
+
+/* Direct site navigation. The same destinations appear on desktop and mobile. */
+@media(min-width:1181px){
+ .topbar{gap:16px;padding:16px clamp(24px,3.3vw,60px);min-height:88px}
+ .topbar .brand{font-size:19px;flex-shrink:0}
+ .nav--desktop{gap:clamp(1px,.25vw,5px)}
+ .nav--desktop a{font-size:clamp(12px,1vw,15px)}
+ .nav--desktop a:not(.nav-contribute){padding:10px clamp(3px,.35vw,7px);border-radius:0;background:none;box-shadow:none}
+ .nav .nav-contribute{padding:9px 12px;font-size:13px;border-radius:5px}
+ .topbar-tools #palette{width:44px;min-width:44px;padding:8px;font-size:18px}
+ .topbar-tools #palette span{display:none}
+ .is-home .topbar{background:color-mix(in srgb,#081725 73%,transparent);border-color:#ffffff26;box-shadow:none;backdrop-filter:blur(16px)}
+ .is-home .topbar .brand,.is-home .nav--desktop>a:not(.nav-contribute){color:#f5f5ed}
+}
+.nav--mobile{max-height:calc(100dvh - 100px);overflow-y:auto;overscroll-behavior:contain}
+.nav--mobile a{min-height:44px}
+.is-home .footer{margin-top:24px;background:transparent;box-shadow:none}
+@media(prefers-reduced-transparency:reduce){.is-home .topbar{background:#081725;backdrop-filter:none}}

@@ -11,13 +11,12 @@ try{
   const mobile=width<=1180;
   const nav=page.locator(mobile?'.nav--mobile':'.nav--desktop');
   if(mobile){await page.locator('.mobile-menu > summary').focus();await page.keyboard.press('Enter');}
-  for(const route of ['history','read','timeline','publications','search'])assert.equal(await nav.locator('a[href="/'+route+'/"]').isVisible(),true);
+  for(const route of ['read','timeline','themes','datasets','network','about','publications','search'])assert.equal(await nav.locator('a[href="/'+route+'/"]').isVisible(),true);
   assert.equal(await nav.locator('.nav-contribute').isVisible(),true);
-  const summary=nav.locator('.nav-dropdown > summary');await summary.focus();await page.keyboard.press('Enter');
-  assert.equal(await nav.locator('.nav-dropdown-panel a').count(),5);
-  for(const route of ['browse','network','themes','datasets','about'])assert.equal(await nav.locator('a[href="/'+route+'/"]').isVisible(),true);
-  await page.keyboard.press('ArrowDown');assert.equal(await nav.locator('.nav-dropdown-panel a').first().evaluate(el=>el===document.activeElement),true);
-  await page.keyboard.press('Escape');assert.equal(await nav.locator('.nav-dropdown').evaluate(el=>el.open),false);
+  assert.equal(await nav.getByRole('link',{name:'People',exact:true}).isVisible(),true);
+  assert.equal(await nav.getByRole('link',{name:'Organisations',exact:true}).isVisible(),true);
+  assert.equal(await nav.locator('.nav-dropdown').count(),0);
+  const links=await nav.locator('a').all();for(const a of links){await a.focus();assert.equal(await a.evaluate(el=>el===document.activeElement),true);}
   if(mobile){await page.keyboard.press('Escape');assert.equal(await page.locator('.mobile-menu').evaluate(el=>el.open),false);}
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));
   for(const palette of ['slate','coastal','forest','archive','bubblegum']){
@@ -31,6 +30,6 @@ try{
    }
    await page.keyboard.press('Escape');
   }
-  await page.screenshot({path:folder+'/'+width+'.png'});results.push({width,passed:true});await context.close();console.log('PASS grouped navigation, keyboard, palettes '+width);
+  await page.screenshot({path:folder+'/'+width+'.png'});results.push({width,passed:true});await context.close();console.log('PASS direct navigation, keyboard, palettes '+width);
  }
 }finally{await browser.close();writeFileSync(folder+'/results.json',JSON.stringify(results,null,2)+'\n');}

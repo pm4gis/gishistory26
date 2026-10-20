@@ -24,45 +24,26 @@ test('compact homepage preview retains the complete chapter catalogue',()=>{
  assert.ok(home.indexOf('id="chapters"')<home.indexOf('id="themes"'));
 });
 
-test('highlight pool contains unique, published stories with real passages',()=>{
- const articles=readdirSync('src/content/articles').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/articles/'+n,'utf8')));
- const passages=new Set(readdirSync('src/content/passages').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/passages/'+n,'utf8')).articleId));
- assert.ok(homeHighlightSlugs.length===5);
- assert.equal(new Set(homeHighlightSlugs).size,homeHighlightSlugs.length);
- for(const slug of homeHighlightSlugs){
-  const a=articles.find(a=>a.slug===slug);
-  assert.ok(a,slug+' missing');
-  assert.equal(a.status,'published');
-  assert.ok(passages.has(a.id),slug+' has no passage');
+test('homepage features link accepted chapters and preserve image detail access',()=>{
+ for(const slug of ['what-the-computer-inherited','when-gis-became-gis']){
+  const article=JSON.parse(readFileSync('src/content/articles/'+slug+'.json','utf8'));
+  assert.equal(article.status,'published');assert.ok(home.includes(slug));
  }
- assert.match(home,/passage\.slug/);
- assert.match(home,/data-story-next/);
- assert.match(home,/prefers-reduced-motion/);
- assert.match(home,/hidden=\{i>=5\}/);
- assert.match(home,/img\.articleSlug===a\.slug/);
+ for(const slug of ['tuki-map-1793-1798','intergraph-clix-workstation','nasa-landsat4-tasman-1990']){
+  const image=readdirSync('src/content/images').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/images/'+n,'utf8'))).find(i=>i.slug===slug);
+  assert.ok(image.assetPath&&image.altText&&image.credit&&image.sourceUrl);assert.ok(home.includes(slug));
+ }
+ assert.doesNotMatch(home,/data-story-play|setInterval|Math.random/);
 });
 
-test('homepage highlights use equal image frames and keep image credits on detail pages',()=>{
- assert.match(home,/variant="card" showCaption=\{false\}/);
- assert.match(subjectImage,/showCaption\?:boolean/);
- assert.match(subjectImage,/\{showCaption&&<figcaption>/);
- assert.match(css,/\.highlight-card > \.subject-media--card,[\s\S]*?aspect-ratio:16\/9/);
- assert.match(imageDetail,/Credit: \{image\.credit\}/);
- assert.match(imageDetail,/<dt>Licence<\/dt>/);
-});
-
-test('desktop and mobile menus provide About, Contribute and Connections, with accessible native disclosure',()=>{
+test('desktop and mobile menus expose individual destinations and contribution context',()=>{
  assert.match(layout,/<details class="mobile-menu">/);
- assert.ok(layout.includes('<summary aria-label="Open navigation menu"'));
- assert.match(layout,/aria-label="Mobile navigation"/);
- assert.match(layout,/aria-label="Main navigation"/);
+ assert.match(layout,/aria-label="Mobile navigation"/);assert.match(layout,/aria-label="Main navigation"/);
  assert.equal((layout.match(/href="\/network\/"/g)||[]).length,3);
  assert.equal((layout.match(/href="\/about\/"/g)||[]).length,3);
  assert.equal((layout.match(/href=\{contributionHref\}/g)||[]).length,3);
- assert.match(css,/@media\(max-width:1180px\)/);
- assert.match(css,/\.nav--desktop\{display:none\}/);
- assert.match(css,/\.mobile-menu\{display:block\}/);
- assert.match(layout,/id="palette"/);
+ assert.match(css,/@media\(max-width:1180px\)/);assert.match(layout,/id="palette"/);
+ assert.doesNotMatch(layout,/<details class="nav-dropdown"|>Short history</);
 });
 
 test('navigation opens page-specific correction options without sending a message',()=>{
@@ -108,25 +89,16 @@ test('passage-specific email drafts include the link and the alternative page ha
 });
 
 
-test('topographic homepage hero preserves the original Landsat media record',()=>{
+test('homepage uses the unchanged documented Landsat media record',()=>{
  const image=JSON.parse(readFileSync('src/content/images/nasa-landsat4-tasman-1990.json','utf8'));
  assert.equal(image.assetPath,'/assets/historical/web/nasa-landsat4-tasman-1990.webp');
- assert.equal(image.dateDisplay,'1990-12-30');
- assert.ok(image.sourceUrl.startsWith('https://science.nasa.gov/'));
- assert.ok(image.originalSha256&&image.webSha256,'documentary source checksums must be retained');
- assert.match(home,/hero--topo/);
- assert.match(home,/data-topo-sources=/);
- assert.match(home,/fetchpriority="high"/);
- assert.doesNotMatch(home,/north2024-raglan1/);
- assert.match(css,/\.hero--topo \.topo-slide\{[^}]*object-fit:cover/);
- assert.match(css,/\.hero--topo::before\{background:linear-gradient\(90deg,var\(--surface\)/);
- assert.match(css,/@media\(max-width:850px\)\{\s*\.hero--topo/);
- assert.match(css,/\.hero--topo \.topo-slide\{object-fit:cover;object-position:center\}/);
+ assert.equal(image.dateDisplay,'1990-12-30');assert.ok(image.originalSha256&&image.webSha256);
+ assert.match(home,/fetchpriority="high"/);assert.match(home,/landing-image/);
 });
 
-test('desktop and mobile discovery menus keep the same five destination links',()=>{
- for(const route of ['browse','network','themes','datasets','about'])assert.equal((layout.match(new RegExp('href="/'+route+'/"','g'))||[]).length,route==='network'||route==='about'?3:2);
- assert.match(layout,/event\.key==='ArrowDown'/);
- assert.match(layout,/event\.key==='Escape'&&menu\.open/);
- assert.doesNotMatch(layout,/menuDatasets\.map|menuThemes\.map/);
+test('desktop and mobile menus expose the same direct destinations',()=>{
+ for(const route of ['read','timeline','themes','datasets','publications','search'])assert.equal((layout.match(new RegExp('href="/'+route+'/"','g'))||[]).length,2);
+ assert.equal((layout.match(/href="\/browse\/\?kind=Person"/g)||[]).length,2);
+ assert.equal((layout.match(/>Organisations<\/a>/g)||[]).length,2);
+ assert.match(layout,/event.key==='Escape'/);assert.doesNotMatch(layout,/navMenus|nav-dropdown/);
 });

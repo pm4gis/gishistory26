@@ -17,15 +17,16 @@ test('catalogue images open the corresponding content',()=>{
  assert.match(image,/destination\?:string/);
  assert.match(image,/const tileUrl=destination\|\|url/);
  assert.match(image,/href=\{tileUrl\}/);
- assert.match(home,/variant="card" showCaption=\{false\} destination=\{a.storyUrl\}/);
- assert.match(home,/variant="card" showCaption=\{false\} destination=\{"\/themes\/"\+t.slug\+"\/"\}/);
+ assert.match(home,/href=\{maps.url\}/);
+ assert.match(home,/href=\{computers.url\}/);
+ assert.match(home,/href=\{'\/themes\/'\+t.slug\+'\/'\}/);
  assert.match(themes,/variant="card" showCaption=\{false\} destination=\{"\/themes\/"\+t.slug\+"\/"\}/);
  assert.match(theme,/variant="card" showCaption=\{false\} destination=\{r.url\}/);
  assert.match(datasets,/href=\{r.url\} aria-label=\{'Read about '\+r.name\}/);
 });
 
 test('every listing can show a linked image, including unillustrated records',()=>{
- for(const listing of [home,themes,theme,datasets]){
+ for(const listing of [themes,theme,datasets]){
   assert.match(listing,/class="tile-media-link[^"]*" href=\{/);
   assert.match(listing,/<DecorativeLandscape/);
  }

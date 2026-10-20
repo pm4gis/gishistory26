@@ -24,92 +24,8 @@ try{
   await context.grantPermissions(['clipboard-read','clipboard-write'],{origin:base});
   const page=await context.newPage();
   page.setDefaultTimeout(12000);
-  await check(viewport.name+' homepage complete and correctly ordered',async()=>{
-   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
-   await page.locator('#highlighted-stories .highlight-card:visible').first().waitFor();
-   assert.equal(await page.locator('#chapters .chapter-card').count(),6);
-   assert.equal(await page.locator('#chapters .chapter-card-media img').count(),6,'every chapter should have a documentary thumbnail');
-   assert.equal(await page.locator('#chapters .chapter-image-fallback').count(),0,'no generic chapter placeholder should remain');
-   const imageAlt=await page.locator('#chapters .chapter-card-media img').evaluateAll(images=>images.map(img=>img.getAttribute('alt')));
-   assert.equal(imageAlt.length,6);
-   assert.ok(imageAlt.every(alt=>alt&&alt.length>=12),'every chapter thumbnail requires documentary alt text');
-   for(const chapter of [1,8,16,24,32,44]){
-    const cover=page.locator('#chapter-'+chapter+' .chapter-card-media img');
-    await cover.scrollIntoViewIfNeeded();
-    const info=await cover.evaluate(async img=>{
-     await img.decode();
-     const style=getComputedStyle(img);
-     return {width:img.naturalWidth,height:img.naturalHeight,fit:style.objectFit};
-    });
-    assert.ok(info.width>=100&&info.height>=100,'chapter '+chapter+' thumbnail failed to decode');
-    assert.ok(['contain','cover'].includes(info.fit),'chapter '+chapter+' unexpected image fit '+info.fit);
-   }
-
-   assert.equal(await page.locator('#chapters .chapter-preview-contents a').count(),44);
-   assert.equal(await page.locator('#themes article.art-card').count(),8);
-   assert.equal(await page.locator('#highlighted-stories .highlight-card:visible').count(),5);
-   assert.equal(await page.locator('#highlighted-stories .highlight-card .read-link[href*="/stories/"]').count(),5);
-   const order=await page.evaluate(()=>['highlighted-stories','chapters','themes'].map(id=>document.getElementById(id)?.getBoundingClientRect().top+window.scrollY));
-   assert.ok(order[0]<order[1]&&order[1]<order[2],'homepage sections out of order');
-   const numbers=await page.locator('#chapters .chapter-card .eyebrow').allTextContents();
-   assert.deepEqual(numbers.map(x=>Number(x.trim().replace('Chapter ',''))),[1,8,16,24,32,44]);
-   await dimensions(page,viewport.name+' homepage');
-  });
-  await check(viewport.name+' documentary hero image and readable heading',async()=>{
-   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
-   const hero=page.locator('.hero--topo');
-   assert.equal(await hero.count(),1);
-   const images=hero.locator('.hero-documentary-media .topo-slide');
-   assert.equal(await images.count(),2);
-   const active=hero.locator('.topo-slide.is-active');
-   assert.equal(await active.count(),1);
-   const src=await active.getAttribute('src')||'';
-   assert.match(src,/^\/assets\/historical\/web\/(christchurch-response-orthophoto-2011|nasa-landsat4-tasman-1990)\.webp$/);
-   const observed=await active.evaluate(async img=>{
-    await img.decode();
-    const frame=img.getBoundingClientRect();
-    const outer=img.closest('.hero--topo').getBoundingClientRect();
-    const title=img.closest('.hero--topo').querySelector('h1');
-    const style=getComputedStyle(img);
-    return {naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight,fit:style.objectFit,
-      imgLeft:frame.left,imgRight:frame.right,heroLeft:outer.left,heroRight:outer.right,titleVisible:!!title&&title.getBoundingClientRect().height>0};
-   });
-   assert.ok(observed.naturalWidth>=1400,'documentary hero image should load at a useful resolution');
-   assert.ok(observed.naturalHeight>=788,'documentary hero image should load at a useful resolution');
-   assert.equal(observed.fit,'cover');
-   assert.ok(observed.imgLeft>=observed.heroLeft-2&&observed.imgRight<=observed.heroRight+2,'documentary image must stay inside the hero');
-   assert.equal(observed.titleVisible,true);
-   await dimensions(page,viewport.name+' documentary hero');
-  });
-  await check(viewport.name+' six preview thumbnails present and correctly framed',async()=>{
-   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
-   const images=page.locator('#chapters .chapter-card img');
-   assert.equal(await images.count(),6);
-   if(['wide desktop','mobile'].includes(viewport.name)){
-    await images.evaluateAll(list=>list.forEach(img=>{img.loading='eager';}));
-    await images.evaluateAll(list=>Promise.all(list.map(img=>img.decode())));
-   }
-   const cards=await page.locator('#chapters .chapter-card').evaluateAll(list=>list.map(card=>{
-    const frame=card.querySelector('.chapter-card-media');
-    const img=frame?.querySelector('img');
-    const box=frame?.getBoundingClientRect();
-    const style=img?getComputedStyle(img):null;
-    return {number:card.id,width:box?.width,height:box?.height,source:img?.getAttribute('src'),
-     fit:style?.objectFit,loaded:!!(img?.complete&&img?.naturalWidth),alt:img?.alt,
-     photo:frame?.classList.contains('chapter-card-media--photo'),detail:frame?.classList.contains('chapter-card-media--detail')};
-   }));
-   assert.equal(cards.length,6);
-   for(const c of cards){
-    assert.ok(c.source?.startsWith('/assets/'),c.number+' must show project image');
-    assert.ok((c.alt||'').length>12,c.number+' must retain source alt text');
-    assert.ok(Math.abs(c.width/c.height-16/9)<.02,c.number+' image frame distorted');
-    if(['wide desktop','mobile'].includes(viewport.name))assert.ok(c.loaded,c.number+' original must load');
-    if(c.photo||c.detail)assert.equal(c.fit,'cover',c.number+' editorial image framing');
-    else assert.equal(c.fit,'contain',c.number+' must preserve full map/diagram');
-   }
-   await dimensions(page,viewport.name+' documentary thumbnail grid');
-  });
   await check(viewport.name+' navigation, contribution action and menu',async()=>{
+   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
    const desktop=page.locator('.nav--desktop');
    const summary=page.locator('.mobile-menu > summary');
    const mobileMenu=page.locator('.mobile-menu');
@@ -136,46 +52,6 @@ try{
     assert.equal(await desktop.locator('.nav-contribute').count(),1);
    }
    await dimensions(page,viewport.name+' header');
-  });
-  await check(viewport.name+' story rotation, linked thumbnails and separate image-page attribution',async()=>{
-   const selections=async()=>await page.locator('#highlighted-stories .highlight-card:visible').evaluateAll(els=>els.map(el=>el.dataset.highlight));
-   const first=await selections();
-   assert.equal(new Set(first).size,5);
-   await page.reload({waitUntil:'domcontentloaded'});
-   const second=await selections();
-   assert.equal(second.length,5);
-   assert.deepEqual(second,first,'curated starting stories remain stable across visits');
-   const ratios=await page.locator('#highlighted-stories .highlight-card:visible').evaluateAll(cards=>cards.map(card=>{
-    const media=card.querySelector('.subject-media--card,.decorative-landscape--card');
-    if(!media)return null;
-    const rect=media.getBoundingClientRect();
-    return rect.height?rect.width/rect.height:null;
-   }));
-   assert.equal(ratios.length,5);
-   for(const ratio of ratios)assert.ok(ratio!==null&&ratio>0.3&&ratio<3,'feature image frame must be usable: '+ratio);
-   const linked=page.locator('#highlighted-stories .highlight-card:visible .subject-media');
-   for(let j=0;j<await linked.count();j++){
-    const image=linked.nth(j);
-    assert.ok((await image.locator('img').getAttribute('alt'))?.length>10);
-    assert.equal(await image.locator('figcaption').count(),0,'highlight cards should not show image attribution');
-    const href=await image.locator('a.subject-media-link').getAttribute('href');
-    const storyHref=await image.locator('..').locator('a.title').getAttribute('href');
-    assert.equal(href,storyHref,'highlight image must open its story, not the image-information page');
-    assert.ok(href?.startsWith('/stories/'),'highlight must open a published story');
-    // Source and licence remain available separately through the image archive.
-    const imageSrc=await image.locator('img').getAttribute('src');
-    const imageSlug=(imageSrc||'').split('/').at(-1).replace(/\.webp$/,'');
-    assert.ok(imageSlug,'documentary image missing its identifiable source image');
-    const detailPage=await context.newPage();
-    await detailPage.goto(new URL('/images/'+encodeURIComponent(imageSlug)+'/',base).href,{waitUntil:'domcontentloaded'});
-    const attribution=detailPage.locator('.image-source-card');
-    await attribution.waitFor();
-    const details=await attribution.innerText();
-    assert.match(details,/Credit/);
-    assert.match(details,/Licence/);
-    await detailPage.close();
-   }
-   await dimensions(page,viewport.name+' rotated highlights');
   });
   await check(viewport.name+' five palettes, modes, persistence and page consistency',async()=>{
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
@@ -215,7 +91,7 @@ try{
     await dimensions(page,viewport.name+' '+route);
    }
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
-   const themeHref=await page.locator('#themes article.art-card .title').first().getAttribute('href');
+   const themeHref=await page.locator('#themes nav a').first().getAttribute('href');
    assert.ok(themeHref.startsWith('/themes/'));
   });
   await check(viewport.name+' page-specific correction links and email fallbacks',async()=>{

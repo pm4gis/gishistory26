@@ -54,7 +54,6 @@ test('image-led cards use archived, attributed media and never mislabel illustra
 });
 test('both discovery menus link to the complete dataset catalogue',()=>{
  assert.equal((layout.match(/href="\/datasets\/"/g)||[]).length,2);
- assert.match(layout,/for\(const menu of navMenus\)/);
- assert.match(layout,/navMenus\.forEach\(other/);
+ assert.doesNotMatch(layout,/<details class="nav-dropdown"/);
  assert.match(homeImageMap,/forestry-finds-gis/);
 });

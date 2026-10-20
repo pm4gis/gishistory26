@@ -21,10 +21,10 @@ test('short history is a server-rendered, indexable standalone page', () => {
  assert.doesNotMatch(overview, /2026|google\.com\/goto|noindex/);
 });
 
-test('entry points and discovery resources link directly to the overview', () => {
- assert.match(home, /href="\/history\/"/);
+test('overview remains available through sources and discovery resources', () => {
+ assert.doesNotMatch(home, /href="\/history\/"/);
  assert.match(about, /href="\/history\/"/);
- assert.match(layout, /href="\/history\/"/);
+ assert.doesNotMatch(layout, /href="\/history\/"/);
  assert.match(sitemap, /'\/history\/'/);
  assert.match(llms, /https:\/\/history\.pm4gis\.nz\/history\//);
 });
