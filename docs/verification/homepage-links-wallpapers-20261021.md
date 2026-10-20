@@ -9,3 +9,5 @@ All three header frames now use existing self-hosted derivatives from the owner'
 Regression coverage extends the existing seven-width Chromium suite to keyboard activation of each linked heading, pointer activation of both linked landscape features, exact statistic destinations and all three local wallpaper assets. Existing content-preservation, image-integrity, internal-link, sitemap, accessibility, reader and publication checks remain in the GitHub workflows. Execution and production builds run in GitHub CI because the local execution environment is unavailable in this session; local checks are not claimed.
 
 No historical chapter prose, source metadata, image binary, publication structure or timeline content changes. The historical cutoff remains 31 December 2025.
+
+The release workflow also runs a separate production smoke check after a main-branch push. It waits for the new heading links and wallpaper frame to reach the public homepage, then checks the heading destinations and the actual WebP responses. This runs independently of the local browser build and provides public-deployment evidence through the retained GitHub job log.
