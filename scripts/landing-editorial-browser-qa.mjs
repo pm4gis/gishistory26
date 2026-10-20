@@ -13,7 +13,12 @@ try{
   assert.equal(await page.locator('main [href="/history/"]').count(),0);
   assert.equal(await page.locator('[data-story-play],[data-story-next],[data-hero-motion],.story-slider,.home-summary').count(),0);
   assert.equal(await page.locator('main .card,main .art-card').count(),0);
-  const hero=page.locator('.landing-image img');assert.match(await hero.getAttribute('src'),/nasa-landsat4-tasman-1990/);
+  assert.equal(await page.locator('.landing-image img').count(),3);
+  assert.equal(await page.locator('.landscape-interlude').count(),1);
+  assert.equal(await page.locator('.people-editorial').count(),1);
+  assert.equal(await page.locator('.landscape-interlude img').count(),1);
+  assert.equal(await page.locator('.people-editorial img').count(),1);
+  const hero=page.locator('.landing-image--first img');assert.match(await hero.getAttribute('src'),/nasa-landsat4-tasman-1990/);
   assert.ok(await hero.evaluate(img=>img.naturalWidth>=1400&&getComputedStyle(img).objectFit==='cover'));
   assert.equal(await page.locator('.landing-stats>span').count(),5);assert.match(await page.locator('[data-build-stat="files"]').innerText(),/\d/);assert.match(await page.locator('[data-build-stat="links"]').innerText(),/\d/);
   assert.match(await page.locator('.history-endpoint').innerText(),/31 December 2025/);
@@ -34,6 +39,6 @@ try{
  await page.goto(base+'/browse/?kind=Organisation&kind=Agency&kind=Business&kind=Council&kind=Community');await page.waitForFunction(()=>document.querySelector('[aria-pressed="true"]'));
  assert.ok(await page.locator('.subject-browse-card').count()>0);assert.ok((await page.locator('.subject-browse-card>small').allTextContents()).every(t=>['Organisation','Agency','Business','Council','Community'].includes(t)));
  await page.goto(base+'/');await page.evaluate(()=>document.documentElement.style.fontSize='200%');assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));await context.close();
- const noJS=await browser.newContext({viewport:{width:1280,height:900},javaScriptEnabled:false});const plain=await noJS.newPage();await plain.goto(base+'/');assert.equal(await plain.locator('.chapter-preview a').count(),6);assert.equal(await plain.locator('.landing-image img').count(),1);await noJS.close();
+ const noJS=await browser.newContext({viewport:{width:1280,height:900},javaScriptEnabled:false});const plain=await noJS.newPage();await plain.goto(base+'/');assert.equal(await plain.locator('.chapter-preview a').count(),6);assert.equal(await plain.locator('.landing-image img').count(),3);await noJS.close();
  results.push({case:'filtered navigation destinations, text resize and no-JavaScript reading',passed:true});
 }finally{await browser.close();writeFileSync(dir+'/results.json',JSON.stringify(results,null,2)+'\n');}
