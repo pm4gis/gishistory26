@@ -51,21 +51,11 @@ test('contextual image approval is specific to chapter and cannot silently becom
  assert.match(curatedHomepageChapterImages['safety-policing-and-emergency-gis'].reason,/distinct from police/);
 });
 
-test('homepage uses checked project image records and deliberately framed documentary thumbnail excerpts',()=>{
- const home=readFileSync('src/pages/index.astro','utf8');
- const css=readFileSync('src/styles/site.css','utf8');
- assert.match(home,/chapterCardImageMap\(chapters,d.passages,d.images\)/);
- assert.match(home,/homeCardKind==='photo'/);
- assert.match(home,/homepageFullBleedImageSlugs\.has/);
- assert.match(home,/homepageMapDetailChapterSlugs\.has/);
- assert.match(home,/src=\{chapterNavImages\[a.slug\].thumbnailPath\|\|chapterNavImages\[a.slug\].assetPath\}/);
- assert.match(home,/alt=\{chapterNavImages\[a.slug\].altText\}/);
- assert.match(home,/loading="lazy"/);
- assert.match(css,/:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--photo img\{object-fit:cover;object-position:center\}/);
- assert.match(css,/:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--detail img\{object-fit:cover;/);
- assert.match(css,/:is\(#chapters,\.chapter-catalogue\) #chapter-9 \.chapter-card-media--detail img\{object-position:33% 50%;transform:scale\(1\.25\);transform-origin:31% 50%\}/);
- assert.match(css,/\.chapter-card-media img,\.chapter-image-slot img\{width:100%;height:100%;object-fit:contain/);
- assert.doesNotMatch(home,/decorFor\(a\.readingOrder/);
+test('full catalogue preserves checked image records and crop approvals',()=>{
+ const catalogue=readFileSync('src/pages/read/index.astro','utf8');
+ assert.match(catalogue,/chapterCardImageMap\(chapters,d.passages,d.images\)/);
+ assert.match(catalogue,/homepageFullBleedImageSlugs.has/);assert.match(catalogue,/homepageMapDetailChapterSlugs.has/);
+ assert.match(catalogue,/alt=\{navImages\[a.slug\].altText\}/);
 });
 
 test('two narrowly approved homepage overrides keep in-story documentary placement unchanged',()=>{
@@ -103,5 +93,5 @@ test('thumbnail crop approvals are specific, verified, and affect only homepage 
  assert.match(css,/:is\(#chapters,\.chapter-catalogue\) \.chapter-card-media--photo img\{object-fit:cover;/);
  assert.match(readFileSync('src/pages/read/index.astro','utf8'),/homepageMapDetailChapterSlugs/);
  assert.doesNotMatch(readFileSync('src/components/Reader.svelte','utf8'),/homepageMapDetailChapterSlugs/);
- assert.ok(home.includes('chapter-card-media--detail'));
+ assert.match(home,/class="chapter-preview"/);
 });

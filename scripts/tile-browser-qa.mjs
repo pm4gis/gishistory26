@@ -14,9 +14,6 @@ const viewports=[
  {name:'narrow-mobile',width:320,height:720,mobile:true}
 ];
 const catalogues=[
- {route:'/',selector:'#highlighted-stories .highlight-card:visible',exact:5},
- {route:'/',selector:'#chapters .chapter-card',exact:6},
- {route:'/',selector:'#themes article.art-card',exact:8},
  {route:'/read/',selector:'.chapter-catalogue-card',exact:44},
  {route:'/themes/',selector:'.art-card',exact:8},
  {route:'/datasets/',selector:'.dataset-card',min:20},
@@ -124,7 +121,7 @@ async function paletteChecks(page,viewport){
     return .2126*v[0]+.7152*v[1]+.0722*v[2];
    };
    const ratio=(a,b)=>{const l=[lum(a),lum(b)].sort((a,b)=>b-a);return (l[0]+.05)/(l[1]+.05);};
-   const tile=document.querySelector('#chapters .chapter-card');
+   const tile=document.querySelector('.chapter-catalogue-card')||document.body;
    const a=tile?.querySelector('.chapter-card-media');
    const style=a&&getComputedStyle(a);
    return {text:ratio(hex('text'),hex('surface')),link:ratio(hex('link'),hex('surface')),
@@ -165,8 +162,7 @@ try{
   }
   await check(viewport.name+' chapter / story / theme / dataset / organisation clicks',async()=>{
    const targets=[
-    {route:'/',selector:'#chapters .chapter-card',keyboard:true},
-    {route:'/',selector:'#highlighted-stories .highlight-card:visible',keyboard:false},
+    {route:'/read/',selector:'.chapter-catalogue-card',keyboard:true},
     {route:'/themes/',selector:'.art-card',keyboard:false},
     {route:'/datasets/',selector:'.dataset-card',keyboard:false},
     {route:'/browse/',selector:'.subject-browse-card',keyboard:false}

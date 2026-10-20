@@ -3,7 +3,7 @@ import '../styles/site.css';
 import {pageSchema,safeJsonLd,conciseDescription} from '../lib/seo.mjs';
 import {siteContributionPageUrl} from '../lib/passage-contributions.mjs';
 import {PALETTE_ORDER,PALETTE_NAMES,PALETTE_TOKENS} from '../lib/appearance.mjs';
-const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.',structuredData=[],noindex=false}=Astro.props;
+const {title='A History of GIS in New Zealand',description='Read the history of GIS in New Zealand. Explore connected people, organisations, events and themes.',structuredData=[],noindex=false,homepage=false}=Astro.props;
 const canonical=new URL(Astro.url.pathname,Astro.site);
 const metaDescription=conciseDescription(description);
 const jsonLd=safeJsonLd(pageSchema({url:canonical.href,title,description:metaDescription,entities:structuredData}));
@@ -56,21 +56,15 @@ const contributionHref=currentPath==='/contribute/'?'/contribute/':siteContribut
   }
  </script>
 </head>
-<body>
+<body class:list={[homepage&&'is-home']}>
  <a class="skip" href="#main">Skip to content</a>
  <header class="topbar">
   <a class="brand" href="/"><small>NEW ZEALAND</small>GIS History</a>
   <nav class="nav nav--desktop" aria-label="Main navigation">
-   <a href="/history/" aria-current={currentPath==='/history/'?'page':undefined}>Short history</a>
    <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a>
-   <details class="nav-dropdown">
-    <summary>Explore <span class="nav-chevron" aria-hidden="true"></span></summary>
-    <div class="nav-dropdown-panel" role="group" aria-label="Explore the history">
-     <a href="/browse/">People &amp; organisations</a><a href="/network/">Connections</a>
-     <a href="/themes/">Themes</a><a href="/datasets/">Datasets</a><a href="/about/">About &amp; sources</a>
-    </div>
-   </details>
-   <a href="/publications/" aria-current={currentPath.startsWith('/publications/')?'page':undefined}>Publications</a><a href="/search/">Search</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+   <a href="/browse/?kind=Person">People</a><a href="/browse/?kind=Organisation&amp;kind=Agency&amp;kind=Business&amp;kind=Council&amp;kind=Community">Organisations</a>
+   <a href="/themes/">Themes</a><a href="/datasets/">Datasets</a><a href="/network/">Connections</a>
+   <a href="/publications/" aria-current={currentPath.startsWith('/publications/')?'page':undefined}>Publications</a><a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
   </nav>
   <div class="topbar-tools">
    <div class="appearance-control">
@@ -97,22 +91,16 @@ const contributionHref=currentPath==='/contribute/'?'/contribute/':siteContribut
    <details class="mobile-menu">
     <summary aria-label="Open navigation menu"><span class="hamburger-icon" aria-hidden="true">☰</span><span>Menu</span></summary>
     <nav class="nav nav--mobile" aria-label="Mobile navigation">
-   <a href="/history/" aria-current={currentPath==='/history/'?'page':undefined}>Short history</a>
    <a href="/read/">Chapters</a><a href="/timeline/">Timeline</a>
-   <details class="nav-dropdown">
-    <summary>Explore <span class="nav-chevron" aria-hidden="true"></span></summary>
-    <div class="nav-dropdown-panel" role="group" aria-label="Explore the history">
-     <a href="/browse/">People &amp; organisations</a><a href="/network/">Connections</a>
-     <a href="/themes/">Themes</a><a href="/datasets/">Datasets</a><a href="/about/">About &amp; sources</a>
-    </div>
-   </details>
-   <a href="/publications/" aria-current={currentPath.startsWith('/publications/')?'page':undefined}>Publications</a><a href="/search/">Search</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
+   <a href="/browse/?kind=Person">People</a><a href="/browse/?kind=Organisation&amp;kind=Agency&amp;kind=Business&amp;kind=Council&amp;kind=Community">Organisations</a>
+   <a href="/themes/">Themes</a><a href="/datasets/">Datasets</a><a href="/network/">Connections</a>
+   <a href="/publications/" aria-current={currentPath.startsWith('/publications/')?'page':undefined}>Publications</a><a href="/search/">Search</a><a href="/about/">About</a><a class="button nav-contribute" href={contributionHref}>Contribute</a>
     </nav>
    </details>
   </div>
  </header>
  <main id="main"><slot/></main>
- <footer class="footer"><span>A History of GIS in New Zealand</span><div class="actions"><a href="/history/">Short history</a><a href="/about/">About &amp; sources</a><a href={contributionHref}>Contribute</a><a href="/network/">Connections</a></div></footer>
+ <footer class="footer"><span>A History of GIS in New Zealand</span><div class="actions"><a href="/about/">About &amp; sources</a><a href={contributionHref}>Contribute</a><a href="/network/">Connections</a></div></footer>
  <script>
   import {PALETTE_NAMES,PALETTE_TOKENS,readAppearance,resolveAppearance,saveAppearance} from '../lib/appearance.mjs';
   const root=document.documentElement;
@@ -128,7 +116,6 @@ const contributionHref=currentPath==='/contribute/'?'/contribute/':siteContribut
    panel.hidden=!open;
    toggle.setAttribute('aria-expanded',String(open));
    if(open){
-    document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown').forEach(menu=>{menu.open=false;});
     mobileMenu?.removeAttribute('open');
     panel.querySelector<HTMLButtonElement>('button[data-appearance-mode]')?.focus();
    }
@@ -173,38 +160,7 @@ const contributionHref=currentPath==='/contribute/'?'/contribute/':siteContribut
   mobileMenu?.addEventListener('keydown',(event)=>{if(event.key==='Escape'){mobileMenu.open=false;mobileMenu.querySelector('summary')?.focus();}});
   mobileMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.open=false;}));
   document.addEventListener('pointerdown',(event)=>{if(mobileMenu?.open&&!mobileMenu.contains(event.target as Node))mobileMenu.open=false;});
-  const navMenus=Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown'));
-  for(const menu of navMenus){
-   const summary=menu.querySelector<HTMLElement>('summary');
-   const links=Array.from(menu.querySelectorAll<HTMLAnchorElement>('.nav-dropdown-panel a'));
-   menu.addEventListener('toggle',()=>{
-    if(!menu.open)return;
-    navMenus.forEach(other=>{if(other!==menu)other.open=false;});
-    if(panel&&!panel.hidden){panel.hidden=true;toggle?.setAttribute('aria-expanded','false');}
-   });
-   menu.addEventListener('keydown',(event)=>{
-    if(event.key==='Escape'&&menu.open){
-     event.preventDefault();
-     event.stopPropagation();
-     menu.open=false;
-     summary?.focus();
-    }else if(event.key==='ArrowDown'||event.key==='ArrowUp'){
-     event.preventDefault();
-     if(!menu.open)menu.open=true;
-     const index=links.indexOf(document.activeElement as HTMLAnchorElement);
-     const offset=event.key==='ArrowDown'?1:-1;
-     links[index<0?(offset>0?0:links.length-1):(index+offset+links.length)%links.length]?.focus();
-    }
-   });
-  }
-  mobileMenu?.addEventListener('toggle',()=>{
-   if(!mobileMenu.open)mobileMenu.querySelectorAll<HTMLDetailsElement>('.nav-dropdown').forEach(menu=>{menu.open=false;});
-  });
-  document.addEventListener('pointerdown',(event)=>{
-   for(const menu of navMenus){
-    if(menu.open&&!menu.contains(event.target as Node))menu.open=false;
-   }
-  });
+
  </script>
 </body>
 </html>

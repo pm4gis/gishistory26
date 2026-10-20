@@ -22,8 +22,8 @@ test('chapter listing and previous-next reader links use images with alt text',(
  const catalogue=read('src/pages/read/index.astro');
  const reader=read('src/components/Reader.svelte');
  const stories=read('src/pages/stories/[slug].astro');
- assert.match(home,/chapterCardImageMap/);
- assert.match(home,/chapter-card-media/);
+ assert.match(home,/chapterPreview.map/);
+ assert.match(home,/href=\{a.url\}/);
  assert.match(catalogue,/chapterCardImageMap/);
  assert.match(catalogue,/chapter-catalogue-card/);
  assert.match(reader,/chapterNavImages\[previous.slug\].altText/);

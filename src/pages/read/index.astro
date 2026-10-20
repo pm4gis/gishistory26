@@ -13,7 +13,6 @@ const navImages=chapterCardImageMap(chapters,d.passages,d.images);
    <div><p class="eyebrow">Read the history</p><h1>Explore the chapters.</h1><p class="intro">Read in sequence or start with a topic. Each chapter connects to the people, organisations and events described.</p></div>
    <DecorativeLandscape id="otago-8" variant="banner" priority/>
   </div>
-  <p>New to the subject? <a href="/history/">Read the short history first</a>, or choose any chapter below.</p>
   <p><a href="/stories/preface/">Read the author's preface →</a></p>
   <div class="chapter-catalogue" aria-label="Chapter catalogue">
    {chapters.map((a:any)=><a class="chapter-catalogue-card" id={'chapter-'+a.readingOrder} href={a.url}>

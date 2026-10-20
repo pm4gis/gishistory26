@@ -16,9 +16,8 @@ try{
    results.push({width,route,violations:audit.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}))});
    assert.equal(audit.violations.length,0,width+' '+route+' accessibility '+JSON.stringify(audit.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))));
   }
-  await page.goto(base+'/');assert.equal(await page.locator('.hero .primary').getAttribute('href'),'/history/');
-  await page.locator('.hero .primary').click();await page.locator('#first-digital-maps').waitFor();
-  await page.goto(base+'/read/');assert.equal(await page.locator('.chapter-catalogue-card').count(),44);await page.locator('.chapter-catalogue-card').first().click();await page.locator('h1').waitFor();
+  await page.goto(base+'/');assert.equal(await page.locator('.landing-primary').getAttribute('href'),'/read/');
+  await page.locator('.landing-primary').click();await page.locator('.chapter-catalogue-card').first().waitFor();assert.equal(await page.locator('.chapter-catalogue-card').count(),44);await page.locator('.chapter-catalogue-card').first().click();await page.locator('h1').waitFor();
   await page.goto(base+'/search/?q=Landonline');await page.locator('.pagefind-ui__result').first().waitFor();assert.ok((await page.locator('.pagefind-ui__results').innerText()).includes('Landonline'));
   await page.goto(base+'/timeline/');const example=page.locator('.timeline-starters a').first();const label=await example.textContent();await example.click();await page.locator('.event-summary').waitFor();assert.ok((await page.locator('.event-summary').innerText()).includes(label.split(' · ').slice(1).join(' · ')));
   await page.locator('.period-choice').nth(1).click();await page.locator('.timeline-controls button').filter({hasText:'Clear filters'}).click();
@@ -27,7 +26,7 @@ try{
   await page.locator('[data-filter-kind="decade"]').first().click();const visible=page.locator('[data-publication]:visible');assert.ok(await visible.count()>0);const decade=await page.locator('[data-filter-kind="decade"]').first().getAttribute('data-filter-value');assert.ok((await visible.evaluateAll(nodes=>nodes.map(n=>n.dataset.year))).every(y=>y.startsWith(decade.slice(0,3))));
   if(width<=650)await page.locator('[data-publication-filter-toggle]').click();await page.locator('.publication-org-filters summary').click();await page.locator('[data-filter-kind="creator"]').first().click();assert.ok(await visible.count()>0);
   await visible.first().locator('h3 a').click();const pdf=await page.locator('object[type="application/pdf"]').getAttribute('data');assert.ok(pdf.startsWith('/assets/'),pdf);const response=await page.request.get(new URL(pdf,base).href);assert.equal(response.status(),200);assert.equal((await response.body()).subarray(0,5).toString(),'%PDF-');
-  await page.goto(base+'/');await page.locator('[data-story-next]').click();await page.waitForFunction(()=>document.querySelector('.story-slider').scrollLeft>0);await page.locator('[data-story-play]').click();assert.equal(await page.locator('[data-story-play]').getAttribute('aria-pressed'),'true');await page.locator('[data-story-play]').click();
+  await page.goto(base+'/');assert.equal(await page.locator('[data-story-play],[data-hero-motion]').count(),0);
   const contribute=page.locator('.footer a').filter({hasText:'Contribute'});await contribute.click();assert.ok((await page.locator('#contribution-mailto').getAttribute('href')).startsWith('mailto:'));assert.ok((await page.locator('#contribution-page-reference').getAttribute('href')).includes(base)|| (await page.locator('#contribution-page-reference').getAttribute('href')).includes('history.pm4gis.nz'));
   assert.deepEqual(errors,[]);await page.goto(base+'/');await page.locator('main img').evaluateAll(nodes=>Promise.all(nodes.map(img=>{img.loading='eager';return img.decode().catch(()=>{})})));await page.screenshot({path:dir+'/home-'+width+'.png',fullPage:true});
   console.log('PASS first-visit journey and accessibility '+width);await context.close();
