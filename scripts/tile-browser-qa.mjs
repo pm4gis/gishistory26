@@ -47,6 +47,7 @@ async function cards(page,selector,{min,exact}={}){
   const titleHref=title?.getAttribute('href');
   const imageRect=image?.getBoundingClientRect();
   return {
+   textOnlyPerson:card.matches('.subject-browse-card--person'),
    title:card.querySelector('h3, .title')?.textContent?.trim()?.slice(0,120),
    titleHref,imageHref,imageSource:image?.getAttribute('src'),
    alt:image?.getAttribute('alt'),
@@ -60,6 +61,8 @@ async function cards(page,selector,{min,exact}={}){
  if(exact!==undefined)assert.equal(result.length,exact,selector+' changed card count');
  for(let i=0;i<result.length;i++){
   const card=result[i];
+  // Person records intentionally use text-first cards rather than unrelated scenic photographs.
+  if(card.textOnlyPerson){assert.ok(card.titleHref?.startsWith('/'),selector+' #'+i+' has no readable destination');assert.ok(!card.imageSource,'Person card should not suggest an unrelated portrait');continue;}
   assert.ok(card.imageSource,selector+' #'+i+' has no image');
   const file=new URL(card.imageSource,base).pathname;
   assert.ok(existsSync('dist'+file),selector+' #'+i+' image asset missing from production build: '+file);
@@ -82,9 +85,9 @@ async function imageSample(page,selector){
  });
  assert.ok(info.width>80&&info.height>70,selector+' first image did not decode');
 }
-async function openImageLink(page,selector,mobile,keyboard=false){
+async function openImageLink(page,selector,mobile,keyboard=false,useTitle=false){
  const card=page.locator(selector).first();
- const imageLink=card.locator('img').first().locator('xpath=ancestor::a[1]');
+ const imageLink=useTitle?card.locator('a.title').first():card.locator('img').first().locator('xpath=ancestor::a[1]');
  const href=await imageLink.getAttribute('href');
  assert.ok(href&&href.startsWith('/'),'expected local destination: '+href);
  if(keyboard){
@@ -154,7 +157,7 @@ try{
     if(route==='/browse/')await page.locator('.subject-browse-card').first().waitFor();
     const result=[];
     for(const item of items)result.push({selector:item.selector,count:(await cards(page,item.selector,item)).length});
-    await imageSample(page,items[0].selector);
+    if(route!=='/browse/')await imageSample(page,items[0].selector);
     const dim=await horizontalOverflow(page);
     assert.ok(dim.scroll<=dim.width+2,route+' horizontal overflow '+JSON.stringify(dim));
     return {catalogues:result};
@@ -171,7 +174,7 @@ try{
    for(const t of targets){
     await page.goto(base+t.route,{waitUntil:'domcontentloaded'});
     if(t.route==='/browse/')await page.locator('.subject-browse-card').first().waitFor();
-    opened.push(await openImageLink(page,t.selector,viewport.mobile,t.keyboard));
+    opened.push(await openImageLink(page,t.selector,viewport.mobile,t.keyboard,t.route==='/browse/'));
    }
    return {opened};
   });
