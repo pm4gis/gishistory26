@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {publicationReturnPath} from '../src/lib/publication-return.mjs';
 test('return paths retain encoded catalogue filters and stable publication anchors',()=>{
  for(const filter of ['decade','theme','creator']){
@@ -13,4 +14,14 @@ test('return paths retain encoded catalogue filters and stable publication ancho
 });
 test('return links reject external, unrelated and malformed destinations',()=>{
  for(const path of [null,'','https://example.com/publications/','//example.com/publications/','/publications/../search/','/publications/not-a-library/','/publications/#other','/publications/#publication-research-%22onclick','/publications/'+ 'x'.repeat(3000)])assert.equal(publicationReturnPath(path),null,path);
+});
+
+
+test('publication filters preserve Back and Forward and avoid duplicate state',()=>{
+ const page=readFileSync('src/pages/publications/index.astro','utf8');
+ assert.match(page,/history\.pushState\(null,'',u\.pathname\+u\.search\)/);
+ assert.doesNotMatch(page,/history\.replaceState\(null,'',u\.pathname\+u\.search\)/);
+ assert.match(page,/const changed=nextKind!==kind\|\|nextValue!==value/);
+ assert.match(page,/apply\(changed\)/);
+ assert.match(page,/window\.addEventListener\('popstate'/);
 });
