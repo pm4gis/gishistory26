@@ -37,6 +37,17 @@ try{
   await selectMobileFilters();
   await page.locator('[data-filter-kind="all"]').click();
   assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length);
+  // The user's filter choices are real navigable history states.
+  await page.goBack();
+  await page.waitForFunction(decade=>document.querySelector('[data-filter-kind="decade"][aria-pressed="true"]')?.getAttribute('data-filter-value')===decade,activeDecade);
+  assert.equal(await page.locator('[data-publication]:visible').count(),expectedDecade,'Back must restore the selected decade and visible cards');
+  await page.goForward();
+  await page.waitForFunction(()=>document.querySelector('[data-filter-kind="all"][aria-pressed="true"]')!==null);
+  assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length,'Forward must restore all publications');
+  await selectMobileFilters();
+  const historyLength=await page.evaluate(()=>history.length);
+  await page.locator('[data-filter-kind="all"]').click();
+  assert.equal(await page.evaluate(()=>history.length),historyLength,'Selecting the active filter must not create duplicate history');
   await selectMobileFilters();
   await page.locator('[data-filter-kind="theme"]').first().click();
   assert.ok(await page.locator('[data-publication]:visible').count()>0);
