@@ -13,10 +13,31 @@ test('all documentary images have an explicit chapter publication decision',()=>
  const file=fs.readFileSync('docs/media/chapter-image-alignment-wave2-20261011.csv','utf8').trim().split(/\r?\n/);
  const held=file.slice(1).filter(row=>/"(?:ladeda|nzlri)-review-held"/.test(row));
  const registered=file.slice(1).filter(row=>!held.includes(row));
- assert.equal(registered.length,images.length,'one decision per registered image required');
+ // This CSV is the signed-off 2026-10-11 baseline. Later GIS screenshots
+ // have a separately reviewed source + exact passage manifest, not a retroactive
+ // change to the original 201 image decisions.
+ const gisBatch=JSON.parse(fs.readFileSync('docs/media/gis-software-screens-batch1-20261023.json','utf8'));
+ const newReviewed=new Map(gisBatch.items.map(item=>[item.slug,item]));
+ const earlier=images.filter(image=>!image.gisScreenBatch);
+ const newlyAcquired=images.filter(image=>image.gisScreenBatch);
+ assert.equal(registered.length,earlier.length,'one original decision per previously registered image required');
  const registry=new Set(registered.map(row=>row.match(/^"([^"]+)"/)?.[1]));
- assert.equal(registry.size,images.length,'all records have one unique decision');
- for(const image of images)assert.ok(registry.has(image.slug),'Unreviewed source image: '+image.slug);
+ assert.equal(registry.size,earlier.length,'all original records have one unique decision');
+ for(const image of earlier)assert.ok(registry.has(image.slug),'Unreviewed legacy image: '+image.slug);
+ for(const image of newlyAcquired){
+  const decision=newReviewed.get(image.slug);
+  assert.ok(decision,'New GIS image lacks a research inventory decision: '+image.slug);
+  assert.equal(image.gisScreenBatch,gisBatch.batch);
+  assert.equal(image.articleSlug,decision.articleSlug);
+  assert.equal(image.afterParagraphId,decision.afterParagraphId);
+  assert.ok(image.sourceUrl&&image.sourceOriginalUrl&&image.credit&&image.licence);
+  const article=articles.find(a=>a.slug===decision.articleSlug);
+  assert.ok(article,'Unknown chapter for '+image.slug);
+  const relevant=passages.filter(p=>p.articleId===article.id);
+  assert.ok(relevant.some(p=>p.blocks?.some(b=>b.type==='paragraph'&&b.id===decision.afterParagraphId)),'No documented paragraph '+image.slug);
+  const placements=Object.values(placeChapterImages(article,relevant,images)).flat().filter(i=>i.slug===image.slug);
+  assert.equal(placements.length,1,'New GIS screen must be placed exactly once: '+image.slug);
+ }
  const review=JSON.parse(fs.readFileSync('docs/media/ladeda-handbook-review-20261011.json','utf8'));
  const acquisition=JSON.parse(fs.readFileSync('docs/media/luc-original-acquisition-20261011.json','utf8'));
  const candidates=[...review.plots,...acquisition.items.filter(item=>item.id.startsWith('held-nzlri-'))];
