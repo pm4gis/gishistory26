@@ -1,7 +1,7 @@
 {
   "checkedOn": "2026-10-18",
-  "maxNewPeriodicals": 15,
-  "archivedCount": 15,
+  "maxTotalPeriodicals": 30,
+  "archivedCount": 17,
   "evidence": [
     {
       "slug": "doc-conservation-science-newsletter-2-1993",
@@ -167,313 +167,245 @@
       "pages": 23,
       "sha256": "ccbdfcf6ad030e777bb11eda8c7834244d60746dee7f0817ce2a701dda0af392",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits39.pdf"
+    },
+    {
+      "slug": "doc-rare-bits-41-2001",
+      "issue": "Rare Bits, issue 41",
+      "year": "2001",
+      "term": "GIS",
+      "context": "An interesting part of the project is the use of GIS printouts to identify where on the headland we are being successful with trap effort.",
+      "hitCount": 1,
+      "pages": 13,
+      "sha256": "3b7d260d5ab2322e5dc0aab5fb9d83bbc818639995e300818735058cc8f8af75",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits41.pdf"
+    },
+    {
+      "slug": "doc-rare-bits-44-2002",
+      "issue": "Rare Bits, issue 44",
+      "year": "2002",
+      "term": "GPS",
+      "context": "The boundaries of the Hutton’s Shearwater colonies in the Kowhai Valley have now been recorded by GPS in an attempt to detect future changes in the colony extent.",
+      "hitCount": 1,
+      "pages": 25,
+      "sha256": "9bafe977eef7fc778e96ea4e4ee6b5649967375f39180ad1aaf31d4de31f4fcd",
+      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits44.pdf"
     }
   ],
   "unavailable": [
     {
-      "slug": "doc-conservation-science-newsletter-1-1993",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-1-april-1993.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-2-1993",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-2-june-1993.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-3-1993",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-3-august-1993.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-4-1993",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-4-october-1993.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-5-1993",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-5-december-1993.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-6-1994",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-6-february-1994.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-7-1994",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-7-april-1994.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-8-1994",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-8-june-1994.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-9-1994",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-9-august-1994.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-10-1994",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-10-november-1994.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-11-1994",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-11-december-1994.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-12-1995",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-12-march-1995.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-13-1995",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-13-april-1995.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-14-1995",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-14-june-1995.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-15-16-1995",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-15--16-october-1995.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-17-18-1996",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-17--18-february-1996.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-19-1996",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-19-april-1996.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-20-1996",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-20-june-1996.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-21-22-1996",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-21--22-august--october-1996.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-23-1996",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-23-december-1996.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-24-1997",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-24-march-1997.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-25-1997",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-25-june-1997.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-26-1997",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-26-november-1997.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-27-1998",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-27-march-1998.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-33-1999",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-33-august-1999.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-34-1999",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-34-october-1999.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-35-1999",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-35-december-1999.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-36-2000",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-36-february-2000.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-37-2000",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-37-june-2000.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-38-2000",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-38-september-2000.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-39-2000",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-39-december-2000.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-40-41-2001",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-40--41-july-2001.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-43-2002",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-43-february-2002.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-44-2002",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-44-june-2002.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-45-2002",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-45-november-2002.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-46-2003",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-46-february-2003.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-47-2003",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-47-may-2003.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-48-2003",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-48-october-2003.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-49-2004",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-49-april-2004.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-conservation-science-newsletter-50-2005",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-50-february-2005.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
       "slug": "doc-rare-bits-35-1999",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits35.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-36-2000",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits36.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-rare-bits-37-2000",
-      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits37.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-38-2000",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits38.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-rare-bits-39-2000",
-      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits39.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-40-2001",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits40.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-rare-bits-41-2001",
-      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits41.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-42-2001",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits42.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-43-2001",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits43.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-rare-bits-44-2002",
-      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits44.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-45-2002",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits45.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-46-2002",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits46.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
-    },
-    {
-      "slug": "doc-rare-bits-47-2002",
-      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits47.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-48-2003",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits48.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-49-2003",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits49.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-50-2003",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits50.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-51-2003",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits51.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-52-2004",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits52.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-53-2004",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits53.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-54-2004",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits54.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     },
     {
       "slug": "doc-rare-bits-55-2004",
       "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits55.pdf",
-      "reason": "Deferred: 15 original magazine PDFs already archived in this release"
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-1-1993",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-1-april-1993.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-5-1993",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-5-december-1993.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-7-1994",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-7-april-1994.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-8-1994",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-8-june-1994.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-10-1994",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-10-november-1994.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-11-1994",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-11-december-1994.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-13-1995",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-13-april-1995.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-14-1995",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-14-june-1995.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-15-16-1995",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-15--16-october-1995.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-17-18-1996",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-17--18-february-1996.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-19-1996",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-19-april-1996.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-21-22-1996",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-21--22-august--october-1996.pdf",
+      "reason": "Error: PDF source unreachable via fetch and curl: curl: (22) The requested URL returned error: 404\n"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-23-1996",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-23-december-1996.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-25-1997",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-25-june-1997.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-27-1998",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-27-march-1998.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-34-1999",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-34-october-1999.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-35-1999",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-35-december-1999.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-36-2000",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-36-february-2000.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-37-2000",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-37-june-2000.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-40-41-2001",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-40--41-july-2001.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-43-2002",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-43-february-2002.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-44-2002",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-44-june-2002.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-45-2002",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-45-november-2002.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-46-2003",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-46-february-2003.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-47-2003",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-47-may-2003.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-48-2003",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-48-october-2003.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
+    },
+    {
+      "slug": "doc-conservation-science-newsletter-50-2005",
+      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-50-february-2005.pdf",
+      "reason": "Error: No unambiguous GIS/spatial information reference found in issue source text"
     }
   ]
 }

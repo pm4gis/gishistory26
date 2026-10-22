@@ -38,10 +38,11 @@ test('at least fifteen additional originals are stored, accurately described and
  }
 });
 
-test('corrected DOC bibliographic years and parts stay accurate',()=>{
+test('corrected DOC bibliographic years, source titles and series parts stay accurate',()=>{
  const bySlug=Object.fromEntries(magazinePdfPublications.map(p=>[p.slug,p]));
  assert.equal(bySlug['doc-galaxiid-trout-arcgis-2012'].year,'2013');
  assert.equal(bySlug['doc-freshwater-eel-arcview-2003'].year,'2004');
- assert.match(bySlug['doc-sfc279-freshwater-2007'].title,/Mudfish.*Part 3/);
+ assert.equal(bySlug['doc-sfc279-freshwater-2007'].title,'Mudfish (Neochanna: Galaxiidae) literature review');
+ assert.match(bySlug['doc-sfc279-freshwater-2007'].kind,/Science for Conservation 277, Part 3/);
  assert.match(bySlug['doc-southland-forest-fragmentation-2006'].title,/Part 1/);
 });

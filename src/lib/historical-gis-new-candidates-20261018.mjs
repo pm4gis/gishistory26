@@ -422,7 +422,7 @@ export const historicalGisNewCandidates = [
   {
     "slug": "doc-sfc279-freshwater-2007",
     "fileName": "doc-sfc279-freshwater-2007.pdf",
-    "title": "Mudfish (Neochanna: Galaxiidae) literature review, Part 3",
+    "title": "Mudfish (Neochanna: Galaxiidae) literature review",
     "creator": "L. K. O'Brien and N. R. Dunn",
     "year": "2007",
     "date": "2007",
@@ -432,7 +432,7 @@ export const historicalGisNewCandidates = [
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc277c.pdf",
     "license": "DOC Crown publication, subject to original restrictions",
-    "attribution": "L. K. O'Brien and N. R. Dunn (2007). Mudfish (Neochanna: Galaxiidae) literature review, Part 3. Science for Conservation 277, Part 3.",
+    "attribution": "L. K. O'Brien and N. R. Dunn (2007). Mudfish (Neochanna: Galaxiidae) literature review. Science for Conservation 277, Part 3.",
     "themeIds": [
       "profession",
       "open-practice"

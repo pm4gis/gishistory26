@@ -362,36 +362,6 @@ export const docRareBitsCandidates = [
     ]
   },
   {
-    "slug": "doc-rare-bits-47-2002",
-    "fileName": "doc-rare-bits-47-2002.pdf",
-    "title": "Rare Bits, issue 47",
-    "creator": "Department of Conservation",
-    "year": "2002",
-    "date": "December 2002",
-    "kind": "Threatened species research newsletter",
-    "topic": "DOC regional threatened species mapping, GIS and field spatial-information practice",
-    "summary": "DOC's original December 2002 regional threatened-species field newsletter, admitted only following original-content geospatial verification.",
-    "sourceName": "Department of Conservation",
-    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits47.pdf",
-    "license": "DOC Crown publications, CC BY 4.0 by default, subject to individual publication and third-party exceptions",
-    "attribution": "Department of Conservation (2002), Rare Bits 47, December.",
-    "themeIds": [
-      "profession",
-      "open-practice"
-    ],
-    "keywords": [
-      "Rare Bits",
-      "DOC",
-      "GIS",
-      "threatened species",
-      "2002"
-    ],
-    "checkTerms": [
-      "rare bits",
-      "newsletter"
-    ]
-  },
-  {
     "slug": "doc-rare-bits-48-2003",
     "fileName": "doc-rare-bits-48-2003.pdf",
     "title": "Rare Bits, issue 48",

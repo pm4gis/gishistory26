@@ -605,13 +605,13 @@ export const magazinePdfPublications = [
   {
     "slug": "doc-coastal-vehicle-spatial-survey-2022",
     "fileName": "doc-coastal-vehicle-spatial-survey-2022.pdf",
-    "title": "Vehicles on New Zealand beaches: annotated ecological research bibliography",
+    "title": "Vehicles on New Zealand beaches: an annotated bibliography of research on physical and ecological impacts",
     "creator": "Department of Conservation",
     "year": "2022",
     "date": "2022",
     "kind": "DOC coastal ecology annotated bibliography",
-    "topic": "Historical coastal mapping by drone and spatial analysis",
-    "summary": "Historical coastal mapping by drone and spatial analysis.",
+    "topic": "Drone imagery, GIS spatial analysis and remote sensing in beach-impact research",
+    "summary": "DOC’s annotated bibliography notes recent beach-impact studies using drone imagery, GIS spatial analysis and remote sensing, including measurement of off-road vehicle damage.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/vehicles-on-new-zealand-beaches-g-la-cock.pdf",
     "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
@@ -627,34 +627,6 @@ export const magazinePdfPublications = [
     "pages": 21,
     "bytes": 1143075,
     "sha256": "31dd9a57435f8af43702f3933a1605865fd0dabaf3e1f737a4bceb1aef8cee59",
-    "generatedCover": false,
-    "hostedLocally": true
-  },
-  {
-    "slug": "doc-visitor-conservation-bibliography-2011",
-    "fileName": "doc-visitor-conservation-bibliography-2011.pdf",
-    "title": "A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010",
-    "creator": "Department of Conservation",
-    "year": "2011",
-    "date": "2011",
-    "kind": "DOC Science for Conservation 253",
-    "topic": "Bibliographic records of GIS uses in conservation visitor research",
-    "summary": "Bibliographic records of GIS uses in conservation visitor research.",
-    "sourceName": "Department of Conservation",
-    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap253.pdf",
-    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
-    "attribution": "Department of Conservation (2011). A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010.",
-    "themeIds": [
-      "profession",
-      "open-practice"
-    ],
-    "keywords": [
-      "gis",
-      "visitor"
-    ],
-    "pages": 89,
-    "bytes": 648304,
-    "sha256": "66d2a405ef672100d42e10569fc580cc5653ee43e6501a5cbf9849332067e6c7",
     "generatedCover": false,
     "hostedLocally": true
   },
@@ -920,13 +892,13 @@ export const magazinePdfPublications = [
   {
     "slug": "doc-sfc279-freshwater-2007",
     "fileName": "doc-sfc279-freshwater-2007.pdf",
-    "title": "Mudfish (Neochanna: Galaxiidae) literature review, Part 3",
+    "title": "Mudfish (Neochanna: Galaxiidae) literature review",
     "creator": "L. K. O'Brien and N. R. Dunn",
     "year": "2007",
     "date": "2007",
     "kind": "Science for Conservation 277, Part 3",
-    "topic": "Conservation research on freshwater environments and spatial datasets",
-    "summary": "Historical GIS evidence concerning conservation research on freshwater environments and spatial datasets.",
+    "topic": "Geographic mapping of freshwater fish distributions for conservation management",
+    "summary": "This mudfish literature review identifies mapping small-scale distributions in wetlands and agricultural drains for incorporation into GIS databases as a conservation need.",
     "sourceName": "Department of Conservation",
     "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc277c.pdf",
     "license": "DOC Crown publication, subject to original restrictions",
@@ -1610,6 +1582,68 @@ export const magazinePdfPublications = [
     "pages": 23,
     "bytes": 365363,
     "sha256": "ccbdfcf6ad030e777bb11eda8c7834244d60746dee7f0817ce2a701dda0af392",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-rare-bits-41-2001",
+    "fileName": "doc-rare-bits-41-2001.pdf",
+    "title": "Rare Bits, issue 41",
+    "creator": "Department of Conservation",
+    "year": "2001",
+    "date": "June 2001",
+    "kind": "Threatened species research newsletter",
+    "topic": "DOC regional threatened species mapping, GIS and field spatial-information practice",
+    "summary": "DOC's original June 2001 regional threatened-species field newsletter, admitted only following original-content geospatial verification.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits41.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 by default, subject to individual publication and third-party exceptions",
+    "attribution": "Department of Conservation (2001), Rare Bits 41, June.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Rare Bits",
+      "DOC",
+      "GIS",
+      "threatened species",
+      "2001"
+    ],
+    "pages": 13,
+    "bytes": 327390,
+    "sha256": "3b7d260d5ab2322e5dc0aab5fb9d83bbc818639995e300818735058cc8f8af75",
+    "generatedCover": false,
+    "hostedLocally": true
+  },
+  {
+    "slug": "doc-rare-bits-44-2002",
+    "fileName": "doc-rare-bits-44-2002.pdf",
+    "title": "Rare Bits, issue 44",
+    "creator": "Department of Conservation",
+    "year": "2002",
+    "date": "April 2002",
+    "kind": "Threatened species research newsletter",
+    "topic": "DOC regional threatened species mapping, GIS and field spatial-information practice",
+    "summary": "DOC's original April 2002 regional threatened-species field newsletter, admitted only following original-content geospatial verification.",
+    "sourceName": "Department of Conservation",
+    "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits44.pdf",
+    "license": "DOC Crown publications, CC BY 4.0 by default, subject to individual publication and third-party exceptions",
+    "attribution": "Department of Conservation (2002), Rare Bits 44, April.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "Rare Bits",
+      "DOC",
+      "GIS",
+      "threatened species",
+      "2002"
+    ],
+    "pages": 25,
+    "bytes": 120705,
+    "sha256": "9bafe977eef7fc778e96ea4e4ee6b5649967375f39180ad1aaf31d4de31f4fcd",
     "generatedCover": false,
     "hostedLocally": true
   }
