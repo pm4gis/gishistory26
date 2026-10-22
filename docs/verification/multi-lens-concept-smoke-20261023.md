@@ -22,7 +22,7 @@ Rendered the standalone prototype's complete HTML with local headless Chromium, 
 - Reduced the mobile hero heading size to avoid unnecessary word wrapping.
 
 ## External source confirmation
-Browser Rendering successfully read the initial Cloudflare Pages preview of this concept at `https://ff85d3f9.gishistory26.pages.dev/design-concepts/review-20261023/` (HTTP 200), including the three layout headings and the design-study banner. This was the **earlier** version, before the navigation fix. The later deployment for SHA `408b4c2c24d71c23269dafcdd413ab4ce08077a9` must be checked separately before claiming the final preview passed.
+Browser Rendering successfully read the initial Cloudflare Pages preview of this concept at `https://ff85d3f9.gishistory26.pages.dev/design-concepts/review-20261023/` (HTTP 200), including the three layout headings and the design-study banner. This was the **earlier** version, before the navigation fix. The corrected concept at SHA `408b4c2c24d71c23269dafcdd413ab4ce08077a9` was deployed successfully on Cloudflare Pages as `https://60acf4fa.gishistory26.pages.dev/design-concepts/review-20261023/`. A subsequent independent Browser Rendering request returned **HTTP 200**, with the actual concept title, mobile Menu markup, Homepage, Chapter reader and Publications content. This establishes remote preview rendering, but not that every remote background image decoded or that on-device interactions passed in the deployed version.
 
 ## Unverified
 - Full original image loading on real devices, live CSS screenshots with actual owner-supplied imagery and all keyboard/assistive technology paths.
