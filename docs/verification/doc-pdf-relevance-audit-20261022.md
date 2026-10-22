@@ -9,6 +9,6 @@ Of the 32 standalone DOC PDFs, 31 have a substantive geospatial connection in th
 - The beach-vehicle bibliography says recent studies used drone imagery, GIS spatial analysis and remote sensing; it includes a study measuring the area and intensity of vehicle damage with GIS. The public title and description now reflect that scope.
 - The mudfish review recommends mapping small-scale wetland and agricultural-drain distributions in a format suitable for GIS databases. Its description now presents this as a recommendation, not as completed GIS work.
 
-The visitor-research bibliography was excluded. Its stated purpose is to catalogue visitor and recreation research; GIS appears only within individual cited studies, so the document itself is outside the geospatial scope. Its catalogue entry, locally hosted PDF, cover image and resulting public chapter reader links were removed.
+The visitor-research bibliography was excluded. Its stated purpose is to catalogue visitor and recreation research; GIS appears only within individual cited studies, so the document itself is outside the geospatial scope. Its catalogue entry, regional acquisition candidate, locally hosted PDF, cover image and resulting public chapter reader links were removed, preventing CI from reacquiring the out-of-scope document.
 
 The remaining 50 DOC PDFs are therefore in scope: 19 periodicals and 31 standalone works.

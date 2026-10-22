@@ -732,33 +732,6 @@ export const regionalGisPdfCandidates = [
     ]
   },
   {
-    "slug": "doc-visitor-conservation-bibliography-2011",
-    "fileName": "doc-visitor-conservation-bibliography-2011.pdf",
-    "title": "A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010",
-    "creator": "Department of Conservation",
-    "year": "2011",
-    "date": "2011",
-    "kind": "DOC Science for Conservation 253",
-    "topic": "Bibliographic records of GIS uses in conservation visitor research",
-    "summary": "Bibliographic records of GIS uses in conservation visitor research.",
-    "sourceName": "Department of Conservation",
-    "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap253.pdf",
-    "license": "Department of Conservation Crown copyright CC BY 4.0 default terms, subject to any publication-specific exception.",
-    "attribution": "Department of Conservation (2011). A bibliography of research on visitors to public conservation areas in New Zealand 1995–2010.",
-    "themeIds": [
-      "profession",
-      "open-practice"
-    ],
-    "keywords": [
-      "gis",
-      "visitor"
-    ],
-    "checkTerms": [
-      "gis",
-      "visitor"
-    ]
-  },
-  {
     "slug": "doc-conservation-carbon-spatial-models-2012",
     "fileName": "doc-conservation-carbon-spatial-models-2012.pdf",
     "title": "Estimation of current and potential carbon stocks and Kyoto-compliant carbon gain on conservation land",

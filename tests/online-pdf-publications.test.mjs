@@ -8,6 +8,7 @@ import {linzHistoricalReports} from '../src/lib/linz-historical-reports-20261018
 import {mirroredLinzReportSlugs} from '../src/lib/linz-historical-reports-mirrored.mjs';
 import {pre2000PdfPublications} from '../src/lib/pre2000-pdf-publications-20261018.mjs';
 import {magazinePdfPublications} from '../src/lib/magazine-pdf-publications-20261018.mjs';
+import {regionalGisPdfCandidates} from '../src/lib/regional-gis-pdf-candidates-20261018.mjs';
 import {mirroredPre2000PdfSlugs} from '../src/lib/pre2000-pdfs-mirrored.mjs';
 
 const pdfDirectory='public/assets/publications/pdfs';
@@ -16,6 +17,7 @@ const thumbnailDirectory='public/assets/publications/thumbnails';
 test('off-topic DOC visitor research bibliography stays out of the public PDF library',()=>{
  const slug='doc-visitor-conservation-bibliography-2011';
  assert.ok(!magazinePdfPublications.some(p=>p.slug===slug));
+ assert.ok(!regionalGisPdfCandidates.some(c=>c.slug===slug),'Excluded document must not be reacquired from the regional candidate list');
  assert.ok(!onlinePdfPublications.some(p=>p.slug===slug));
  assert.equal(fs.existsSync(path.join(pdfDirectory,slug+'.pdf')),false);
  assert.equal(fs.existsSync(path.join(thumbnailDirectory,slug+'.jpg')),false);
