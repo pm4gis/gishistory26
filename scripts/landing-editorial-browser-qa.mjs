@@ -20,7 +20,7 @@ try{
   assert.equal(await page.locator('.people-editorial img').count(),1);
   const hero=page.locator('.landing-image--first img');assert.match(await hero.getAttribute('src'),/north2024-karikari2-background/);
   assert.ok(await hero.evaluate(img=>img.naturalWidth>=1400&&getComputedStyle(img).objectFit==='cover'));
-  assert.equal(await page.locator('.landing-stats>:is(a,span)').count(),5);assert.match(await page.locator('[data-build-stat="files"]').innerText(),/\d/);assert.match(await page.locator('[data-build-stat="links"]').innerText(),/\d/);
+  assert.equal(await page.locator('.landing-stats>a').count(),4);assert.equal(await page.locator('[data-build-stat]').count(),0);assert.equal(await page.locator('.editorial-paths-links>a').count(),3);
   assert.match(await page.locator('.history-endpoint').innerText(),/31 December 2025/);
   assert.equal(await page.locator('.chapter-preview a').count(),6);assert.equal(await page.locator('#themes nav a').count(),8);
   await page.locator('.all-chapters summary').click();for(let n=1;n<=44;n++)assert.equal(await page.locator('#chapter-'+n).count(),1);
@@ -40,7 +40,8 @@ try{
   const wallpapers=await page.locator('.landing-image img').evaluateAll(nodes=>nodes.map(img=>img.getAttribute('src')));
   assert.deepEqual(wallpapers,['/decor/north2024-karikari2-background.webp','/decor/north2024-raglan1-background.webp','/decor/north2024-taranaki1-background.webp']);
   const statistics=await page.locator('.landing-stats>a').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')));
-  assert.deepEqual(statistics,['/read/','/browse/?kind=Person','/timeline/']);
+  assert.deepEqual(statistics,['/read/','/browse/?kind=Person','/timeline/','/publications/']);
+  assert.deepEqual(await page.locator('.editorial-paths-links>a').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href'))),['/stories/what-the-computer-inherited/','/timeline/','/publications/']);
 
   const noOverflow=await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2);assert.ok(noOverflow,width+' page overflow');
   const audit=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.deepEqual(audit.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[],width+' accessibility');
