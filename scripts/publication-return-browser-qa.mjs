@@ -39,6 +39,26 @@ try{
    await page.locator('[data-publication-library-return]').click();assert.equal(new URL(page.url()).hash,'#'+id);
    await page.screenshot({path:dir+'/'+width+'-'+filter+'.png'});results.push({width,filter,passed:true});console.log('PASS return, sequence and Back/Forward '+width+' '+filter);
   }
+  // Selecting distinct filters creates browsable states and restores both the cards and the current filter.
+  await page.goto(base+'/publications/');
+  const openFilters=async()=>{if(width<=650&&await page.locator('[data-publication-filter-toggle]').getAttribute('aria-expanded')==='false')await page.locator('[data-publication-filter-toggle]').click();};
+  const decades=await page.locator('[data-filter-kind="decade"]').evaluateAll(buttons=>buttons.map(b=>b.dataset.filterValue));
+  assert.ok(decades.length>=2,'Need two catalogue decades for history traversal');
+  await openFilters();await page.locator('[data-filter-kind="decade"]').nth(0).click();
+  const firstCount=await page.locator('[data-publication]:visible').count();
+  await openFilters();await page.locator('[data-filter-kind="decade"]').nth(1).click();
+  const secondCount=await page.locator('[data-publication]:visible').count();
+  await page.goBack();
+  await page.waitForFunction(value=>document.querySelector('[data-filter-kind="decade"][aria-pressed="true"]')?.getAttribute('data-filter-value')===value,decades[0]);
+  assert.equal(await page.locator('[data-publication]:visible').count(),firstCount,'Back must restore first decade');
+  await page.goForward();
+  await page.waitForFunction(value=>document.querySelector('[data-filter-kind="decade"][aria-pressed="true"]')?.getAttribute('data-filter-value')===value,decades[1]);
+  assert.equal(await page.locator('[data-publication]:visible').count(),secondCount,'Forward must restore second decade');
+  await openFilters();
+  const historyLength=await page.evaluate(()=>history.length);
+  await page.locator('[data-filter-kind="decade"]').nth(1).click();
+  assert.equal(await page.evaluate(()=>history.length),historyLength,'Active filter must not create a duplicate history entry');
+  results.push({width,case:'filter Back/Forward and no duplicate entries',passed:true});
   // A normal library visit must not revive an unrelated previous filter.
   await page.goto(base+'/publications/');assert.equal(new URL(page.url()).search,'');assert.equal(await page.locator('[data-filter-kind="all"]').getAttribute('aria-pressed'),'true');
   assert.deepEqual(errors,[]);await context.close();
