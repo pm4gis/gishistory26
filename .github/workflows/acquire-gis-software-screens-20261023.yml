@@ -40,6 +40,9 @@ jobs:
           git add src/content/images/ public/assets/historical/original/ public/assets/historical/web/ public/assets/historical/card/ docs/media/gis-software-screens-batch1-results.json
           if ! git diff --cached --quiet; then
             git commit -m 'Archive genuine New Zealand GIS screenshots with exact chapter links'
+            # npm build produces unstaged verification reports; these are not part of
+            # the media commit. Discard their changes before rebasing on latest branch.
+            git reset --hard HEAD
             git pull --rebase origin media/gis-software-screens-batch1-20261023
             git push origin HEAD:media/gis-software-screens-batch1-20261023
           fi
