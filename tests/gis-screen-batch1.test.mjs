@@ -32,6 +32,7 @@ test('acquired images match the original review catalogue and image metadata con
   if(!images.has(i.slug))continue; // Source acquisition workflow may not have finished on initial branch push.
   const record=JSON.parse(fs.readFileSync('src/content/images/'+i.slug+'.json','utf8'));
   assert.equal(record.id,'image:'+i.slug);
+  assert.equal(record.gisScreenBatch,manifest.batch);
   assert.equal(record.sourceUrl,i.sourceUrl);
   assert.equal(record.sourceOriginalUrl,i.sourceOriginalUrl);
   assert.equal(record.afterParagraphId,i.afterParagraphId);
