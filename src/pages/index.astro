@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import {dataset} from '../lib/data';
 import {decorUrl} from '../lib/decor';
+import {publicationReadingOrder} from '../lib/publication-reading-order.mjs';
 const d=await dataset();
 const chapters=d.articles.filter((a:any)=>a.status==='published'&&a.slug!=='preface');
 const chapterPreview=chapters.filter((a:any)=>[1,8,16,24,32,44].includes(a.readingOrder));
@@ -26,8 +27,7 @@ if(!maps||!computers||!map?.assetPath||!workstation?.assetPath)throw new Error('
    <div class="landing-bottom">
     <div class="landing-stats" role="group" aria-label="NZ GIS History at a glance. Build figures are measured during this build.">
      <a href="/read/"><strong>{chapters.length}</strong> chapters</a><a href="/browse/?kind=Person"><strong>{peopleCount}</strong> people</a><a href="/timeline/"><strong>{d.events.length}</strong> events</a>
-     <span><strong data-build-stat="files">…</strong> files<span class="sr-only"> generated in the verified build</span></span>
-     <span><strong data-build-stat="links">…</strong> internal links<span class="sr-only"> checked in the verified build</span></span>
+     <a href="/publications/"><strong>{publicationReadingOrder.length}</strong> publications</a>
     </div>
     <div class="landing-credits">
      <span class="landing-credit landing-credit--first">Karikari · supplied 4K wallpaper series</span>
@@ -48,6 +48,15 @@ if(!maps||!computers||!map?.assetPath||!workstation?.assetPath)throw new Error('
     <figure><a href={computers.url} aria-label="Read When GIS became GIS"><img src={workstation.assetPath} alt={workstation.altText} width="495" height="363" loading="lazy" decoding="async"/></a><figcaption><a href={'/images/'+workstation.slug+'/'}>Intergraph workstation · Image details</a></figcaption></figure>
     <div class="computer-copy"><h3><a href={computers.url}>When GIS became GIS</a></h3><p>The equipment, software and growing community that brought geographic information onto the computer.</p><a class="feature-link" href={computers.url}>Read chapter <span aria-hidden="true">→</span></a></div>
    </article>
+  </section>
+
+  <section class="editorial-paths" aria-labelledby="editorial-paths-heading">
+   <div class="editorial-paths-heading"><p class="eyebrow">Where to begin</p><h2 id="editorial-paths-heading">Follow the story<br/>your way.</h2><p>Read the history from the beginning, follow a decade of change or examine the original publications.</p></div>
+   <nav class="editorial-paths-links" aria-label="Choose a way into the history">
+    <a href="/stories/what-the-computer-inherited/"><span class="editorial-path-number">01 / Read</span><strong>Start at the beginning</strong><span>From paper records to digital maps <span aria-hidden="true">↗</span></span></a>
+    <a href="/timeline/"><span class="editorial-path-number">02 / Explore</span><strong>Follow the timeline</strong><span>Surveying, software and spatial change <span aria-hidden="true">↗</span></span></a>
+    <a href="/publications/"><span class="editorial-path-number">03 / Research</span><strong>See the original sources</strong><span>Historical papers, reports and periodicals <span aria-hidden="true">↗</span></span></a>
+   </nav>
   </section>
 
   <section class="landscape-interlude" aria-labelledby="landscape-heading">
@@ -115,6 +124,17 @@ if(!maps||!computers||!map?.assetPath||!workstation?.assetPath)throw new Error('
  .landing-stats{display:flex;flex-wrap:wrap;gap:16px clamp(22px,3.1vw,52px);font-size:14px;color:#bed7e5}
  .landing-stats>:is(a,span){display:flex;flex-direction:column;line-height:1.5}
  .landing-stats strong{font-size:clamp(24px,2.2vw,32px);line-height:1.2;font-weight:650;color:#f5f5ed;margin-bottom:4px}
+ .editorial-paths{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:clamp(36px,5vw,95px);padding:clamp(42px,6vw,86px) var(--home-gutter);border-top:1px solid var(--line);align-items:start}
+ .editorial-paths-heading h2{font-size:clamp(34px,4vw,58px);line-height:1.08;letter-spacing:-.035em;margin:8px 0 18px}
+ .editorial-paths-heading p:last-child{max-width:45ch;color:var(--muted);font-size:17px;line-height:1.65}
+ .editorial-paths-links{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
+ .editorial-paths-links>a{display:grid;grid-template-columns:1fr;gap:5px;padding:19px 2px 22px;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none;min-height:118px}
+ .editorial-path-number{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+ .editorial-paths-links strong{font-size:clamp(20px,2.2vw,28px);line-height:1.2;font-weight:650}
+ .editorial-paths-links>a>span:last-child{font-size:14px;color:var(--muted)}
+ .editorial-paths-links>a:hover strong,.editorial-paths-links>a:focus-visible strong{color:var(--link)}
+ .editorial-paths-links>a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+ @media(max-width:780px){.editorial-paths{display:block;padding-block:36px 45px}.editorial-paths-heading{margin-bottom:26px}.editorial-paths-links>a{min-height:104px}}
  .landing-credit{max-width:250px;font-size:12px;color:#f5f5ed;line-height:1.5;text-decoration:none;text-align:right;text-shadow:0 1px 4px #000}
  .landing-credit:hover{text-decoration:underline}
  .landscape-interlude{background:#081725;position:relative;min-height:clamp(530px,48vw,740px);isolation:isolate;color:#fff;display:flex;align-items:center;padding:clamp(34px,5vw,90px) var(--home-gutter);overflow:hidden}
