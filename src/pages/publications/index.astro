@@ -110,11 +110,11 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
    u.searchParams.delete('filter');u.searchParams.delete('value');
    if(kind!=='all'){u.searchParams.set('filter',kind);u.searchParams.set('value',value);}
    u.hash='';
-   history.replaceState(null,'',u.pathname+u.search);
+   history.pushState(null,'',u.pathname+u.search);
   }
   refreshReturnLinks?.();
  }
- filters.forEach(button=>button.addEventListener('click',()=>{kind=button.dataset.filterKind as Kind;value=button.dataset.filterValue||'';apply(true);if(window.matchMedia('(max-width:650px)').matches)closeMobileFilters();}));
+ filters.forEach(button=>button.addEventListener('click',()=>{const nextKind=button.dataset.filterKind as Kind;const nextValue=button.dataset.filterValue||'';const changed=nextKind!==kind||nextValue!==value;kind=nextKind;value=nextValue;apply(changed);if(window.matchMedia('(max-width:650px)').matches)closeMobileFilters();}));
  window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);const k=p.get('filter')||'all',v=p.get('value')||'';kind=validKinds.has(k)&&filters.some(b=>b.dataset.filterKind===k&&b.dataset.filterValue===v)?k as Kind:'all';value=kind==='all'?'':v;apply(false);});
  apply(false);
  refreshReturnLinks=initPublicationLibraryReturn();
