@@ -59,6 +59,15 @@ try{
   await page.locator('[data-filter-kind="decade"]').nth(1).click();
   assert.equal(await page.evaluate(()=>history.length),historyLength,'Active filter must not create a duplicate history entry');
   results.push({width,case:'filter Back/Forward and no duplicate entries',passed:true});
+  // List view stays selected when the reader returns to the filtered catalogue.
+  await page.goto(base+'/publications/?filter=decade&value=1990&view=list');
+  assert.equal(await page.locator('[data-publication-view="list"]').getAttribute('aria-pressed'),'true');
+  const listLink=page.locator('[data-publication]:visible h3 a').first();
+  const expectedReturn=new URL(await listLink.getAttribute('href'),base).searchParams.get('library');
+  assert.ok(expectedReturn.includes('view=list'));
+  await listLink.click();await page.locator('.publication-reader-back').click();
+  assert.equal(new URL(page.url()).searchParams.get('view'),'list');
+  assert.ok(await page.locator('.publication-grid').evaluate(e=>e.classList.contains('is-list-view')));
   // A normal library visit must not revive an unrelated previous filter.
   await page.goto(base+'/publications/');assert.equal(new URL(page.url()).search,'');assert.equal(await page.locator('[data-filter-kind="all"]').getAttribute('aria-pressed'),'true');
   assert.deepEqual(errors,[]);await context.close();
