@@ -1,6 +1,6 @@
 {
   "checkedOn": "2026-10-18",
-  "maxNewPeriodicals": 30,
+  "maxTotalPeriodicals": 30,
   "archivedCount": 18,
   "evidence": [
     {
@@ -173,7 +173,7 @@
       "issue": "Rare Bits, issue 41",
       "year": "2001",
       "term": "GIS",
-      "context": "numbers. Taiaroa Head trapping effort analysis For Bruce McKinlay, analysing 9 years of trap data from Taiaroa Head is very time consuming. An interesting part of the project is the use of GIS printouts to identify where on the headland we are being successful with trap effort. 11 Mohua distribution Graeme Loh has also been analysing past field efforts with respect to mohua distribution in the Catlins. He has been able to look at changes in 1000 m2 occ",
+      "context": "An interesting part of the project is the use of GIS printouts to identify where on the headland we are being successful with trap effort.",
       "hitCount": 1,
       "pages": 13,
       "sha256": "3b7d260d5ab2322e5dc0aab5fb9d83bbc818639995e300818735058cc8f8af75",
@@ -184,7 +184,7 @@
       "issue": "Rare Bits, issue 44",
       "year": "2002",
       "term": "GPS",
-      "context": "apourewa Island, they have been found drowned in stock water troughs. Hutton’s shearwater The boundaries of the Hutton’s Shearwater colonies in the Ko whai Valley have now been recorded by GPS in an attempt to detect future changes in the colony extent. Limestone wheatgrass Limestone wheatgrass has been remonitored in the Leatham Valley including a recent transplant site. So far, the results are not out standing with only one seedhead found in the new si",
+      "context": "The boundaries of the Hutton’s Shearwater colonies in the Kowhai Valley have now been recorded by GPS in an attempt to detect future changes in the colony extent.",
       "hitCount": 1,
       "pages": 25,
       "sha256": "9bafe977eef7fc778e96ea4e4ee6b5649967375f39180ad1aaf31d4de31f4fcd",
@@ -195,7 +195,7 @@
       "issue": "Rare Bits, issue 47",
       "year": "2002",
       "term": "GPS",
-      "context": "two others have yet to be tracked and one was killed on the road near Lake Hawea a walk of about 10 km in a straight line but a bit longer as the weka walks in two days. are logged onto a GPS and it is planned that a return visit to the Just last week we had a formal sites in the future will give a better indication of population trends. OTAGO From Bruce McKinlay and John Barkla Buff weka celebration of the return of the weka to the South Island whi",
+      "context": "However, all sites are logged onto a GPS and it is planned that a return visit to the sites in the future will give a better indication of population trends.",
       "hitCount": 1,
       "pages": 19,
       "sha256": "fd62d26e81a7bba82232c578ff43e332180ef5ce8a51465424c27cd91fa2cd7f",

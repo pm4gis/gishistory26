@@ -37,6 +37,8 @@ test('between 15 and 30 verified original GIS magazine PDFs have genuine PDFs, c
 
 test('all original 1993-2005 periodical GIS evidence is retained without duplicate or invented snippets',()=>{
  const audit=JSON.parse(fs.readFileSync('docs/verification/doc-science-newsletter-gis-evidence-20261018.json','utf8'));
+ assert.equal(audit.maxTotalPeriodicals,30,'Periodical cap applies across both releases');
+ assert.ok(audit.archivedCount<=audit.maxTotalPeriodicals,'Combined archive exceeds its issue cap');
  assert.equal(audit.archivedCount,periodicals.length,'Archive audit must equal original magazine count');
  assert.equal(audit.evidence.length,periodicals.length,'Exactly one source-text excerpt for each original');
  assert.equal(new Set(audit.evidence.map(x=>x.slug)).size,periodicals.length);
@@ -47,6 +49,7 @@ test('all original 1993-2005 periodical GIS evidence is retained without duplica
   assert.equal(hit.pages,p.pages);
   assert.equal(hit.sourceUrl,p.sourceUrl);
   assert.ok(hit.term&&hit.context&&hit.hitCount>=1,'GIS evidence missing for '+hit.slug);
+  assert.ok(hit.context.toLowerCase().includes(hit.term.toLowerCase()),'Evidence excerpt omits its matched source term for '+hit.slug);
  }
  const old=JSON.parse(fs.readFileSync('docs/verification/doc-science-newsletter-first-pass-evidence-20261018.json','utf8'));
  assert.equal(old.evidence.length,8);

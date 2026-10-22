@@ -24,7 +24,7 @@ try{magazineEvidence=JSON.parse(await fs.readFile(periodicalEvidencePath,'utf8')
 try{const seed=JSON.parse(await fs.readFile('docs/verification/doc-science-newsletter-first-pass-evidence-20261018.json','utf8'));for(const hit of seed.evidence||[])if(!magazineEvidence.some(x=>x.slug===hit.slug))magazineEvidence.push(hit);}catch{}
 let newlyArchivedPeriodicals=0;
 const priorPeriodicalCount=published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length;
-const maxNewPeriodicals=30;
+const maxTotalPeriodicals=30;
 const spatialMention=/(?:\bGIS\b|\bArcView\b|\bARC\s*\/\s*INFO\b|geograph(?:ical|ic) information systems?|\bBiosite\b|\bGPS\b|\bspatial (?:database|information|analysis|data|mapping)\b|\bremote sensing\b|\bmap(?:ping)? database\b|\bdigital mapping\b|\bcomputer(?:ised|ized)? mapping\b)/gi;
 for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historicalGisNewCandidates,...openLicensedGisPeriodicals,...docRareBitsCandidates,...docScienceNewsletterCandidates]){
  const isPeriodical=periodicalCandidates.some(issue=>issue.slug===p.slug);
@@ -45,7 +45,7 @@ for(const p of [...magazinePdfCandidates,...regionalGisPdfCandidates,...historic
    continue;
   }
  }
- if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxNewPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 30 verified original magazine PDFs already archived across both releases'});continue;}
+ if(isPeriodical&&priorPeriodicalCount+newlyArchivedPeriodicals>=maxTotalPeriodicals){unavailable.push({slug:p.slug,sourceUrl:p.sourceUrl,reason:'Deferred: 30 verified original magazine PDFs already archived across both releases'});continue;}
  try{
   const host=new URL(p.sourceUrl).hostname;
   if(!['www.doc.govt.nz','www.linz.govt.nz','knowledgeauckland.org.nz','www.knowledgeauckland.org.nz','environment.govt.nz','www.gw.govt.nz','gw.govt.nz','www.boprc.govt.nz','kartoweb.itc.nl','trac.osgeo.org','citeseerx.ist.psu.edu','svn.osgeo.org','journal.osgeo.org'].includes(host))throw Error('Unexpected source host '+host);
@@ -100,6 +100,6 @@ const lines = published.map(({checkTerms,...p})=>p);
 await fs.writeFile('src/lib/magazine-pdf-publications-20261018.mjs','// Actual PDF originals validated and hosted on this site.\nexport const magazinePdfPublications = '+JSON.stringify(lines,null,2)+';\n');
 await fs.mkdir('docs/verification',{recursive:true});
 await fs.writeFile('docs/verification/magazine-pdf-archive-20261018.json',JSON.stringify({checkedOn:'2026-10-18',published:published.map(p=>({slug:p.slug,sourceUrl:p.sourceUrl,year:p.year,pages:p.pages,bytes:p.bytes,sha256:p.sha256})),unavailable},null,2)+'\n');
-await fs.writeFile('docs/verification/doc-science-newsletter-gis-evidence-20261018.json',JSON.stringify({checkedOn:'2026-10-18',maxNewPeriodicals,archivedCount:published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length,evidence:magazineEvidence.filter(x=>published.some(p=>p.slug===x.slug)),unavailable:unavailable.filter(x=>periodicalCandidates.some(p=>p.slug===x.slug))},null,2)+'\n');
+await fs.writeFile('docs/verification/doc-science-newsletter-gis-evidence-20261018.json',JSON.stringify({checkedOn:'2026-10-18',maxTotalPeriodicals,archivedCount:published.filter(p=>periodicalCandidates.some(x=>x.slug===p.slug)).length,evidence:magazineEvidence.filter(x=>published.some(p=>p.slug===x.slug)),unavailable:unavailable.filter(x=>periodicalCandidates.some(p=>p.slug===x.slug))},null,2)+'\n');
 console.log('SCIENCE_PERIODICAL_BATCH '+newlyArchivedPeriodicals+' new originals; '+(priorPeriodicalCount+newlyArchivedPeriodicals)+' total original issues');
 if(published.length===0)console.warn('No original files could be acquired; inspect archive report before retrying.');
