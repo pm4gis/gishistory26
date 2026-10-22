@@ -106,6 +106,10 @@ export const regionalGisChapterMap = {
     "conservation-and-environment",
     "mapping-from-a-drone"
   ],
+  "doc-visitor-conservation-bibliography-2011": [
+    "conservation-and-environment",
+    "science-goes-spatial"
+  ],
   "doc-conservation-carbon-spatial-models-2012": [
     "conservation-and-environment",
     "science-goes-spatial"
