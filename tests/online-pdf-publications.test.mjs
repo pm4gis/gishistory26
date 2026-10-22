@@ -13,6 +13,14 @@ import {mirroredPre2000PdfSlugs} from '../src/lib/pre2000-pdfs-mirrored.mjs';
 const pdfDirectory='public/assets/publications/pdfs';
 const thumbnailDirectory='public/assets/publications/thumbnails';
 
+test('off-topic DOC visitor research bibliography stays out of the public PDF library',()=>{
+ const slug='doc-visitor-conservation-bibliography-2011';
+ assert.ok(!magazinePdfPublications.some(p=>p.slug===slug));
+ assert.ok(!onlinePdfPublications.some(p=>p.slug===slug));
+ assert.equal(fs.existsSync(path.join(pdfDirectory,slug+'.pdf')),false);
+ assert.equal(fs.existsSync(path.join(thumbnailDirectory,slug+'.jpg')),false);
+});
+
 test('hosted PDF records have local files, thumbnails, source details and reuse terms',()=>{
  assert.equal(onlinePdfPublications.length,67+linzHistoricalReports.length+pre2000PdfPublications.length+magazinePdfPublications.length);
  const hostedRecords=onlinePdfPublications.filter(p=>p.hostedLocally);
