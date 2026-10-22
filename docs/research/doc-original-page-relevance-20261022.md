@@ -30,9 +30,20 @@ Primary original PDFs:
 
 All seven checked passages were inspected against the original PDF page images on 22 October 2026. No SHA-256 or local-file verification is claimed from this page review; the PR's existing automated tests cover binary checks.
 
+## Three additional original-page checks
+
+- **Conservation Science Newsletter 20 (June 1996), PDF page 8, printed p. 8:** the only registered remote-sensing match is in a *More New Staff* profile listing Geoff Rogers' previous publications. The issue does not document a GIS method in that passage. **Recommend exclude**, subject to checking the remainder of the issue.
+- **Conservation Science Newsletter 24 (March 1997), PDF pages 4–5, printed pp. 4–5:** “GPS for DoC users” is a substantial technical article on differential GPS, positional accuracy, WGS84, New Zealand Geodetic Datum 1949, and the discrepancy between GPS coordinates and 1:50,000 maps. **Retain**, with a specific page-linked summary. The original-page evidence is stronger than the present issue-contents snippet.
+- **Conservation Science Newsletter 49 (April 2004), PDF page 12, printed p. 12:** GPS and helicopters appear as a passing general statement in an article on offshore-island rat removal and future computer modelling; the passage offers no described GPS dataset or spatial method. **Recommend exclude**, subject to checking the remainder of the issue.
+
+Originals checked against rendered page images:
+- https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-20-june-1996.pdf
+- https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-24-march-1997.pdf
+- https://www.doc.govt.nz/globalassets/documents/science-and-technical/conservation-science-newsletter/conservation-science-newsletter-49-april-2004.pdf
+
 ## Remaining first- and second-tranche evidence rows
 
-The table below is **triage based on the existing GitHub evidence register**, not a claim of page-level independent verification. See `docs/verification/doc-science-newsletter-gis-evidence-20261018.json` on PR #125. Every row still requires an original-page check before editorial sign-off.
+The table below is a **mixed triage register**. Entries 20, 24 and 49 were subsequently checked against original pages as described above; other entries still rely on the existing GitHub evidence register. See `docs/verification/doc-science-newsletter-gis-evidence-20261018.json` on PR #125. Every row still requires an original-page check before editorial sign-off.
 
 | Issue | Existing registered match | Research priority |
 | --- | --- | --- |
@@ -41,10 +52,10 @@ The table below is **triage based on the existing GitHub evidence register**, no
 | Conservation Science Newsletter 6 (Feb 1994) | Reptile sightings data transferred into Biosite/Oracle | Likely relevant; verify geographic component. |
 | Conservation Science Newsletter 9 (Aug 1994) | Wetlands/fish records with catchment numbers and Biosite | Likely relevant; check context and precise page. |
 | Conservation Science Newsletter 12 (Mar 1995) | Geo-Surveyor GPS used for coastal/dune fieldwork | Likely relevant; verify actual mapping use. |
-| Conservation Science Newsletter 20 (Jun 1996) | Remote sensing mentioned in passing at a meeting | **Potentially incidental**; seek a substantive article or exclude. |
-| Conservation Science Newsletter 24 (Mar 1997) | “GPS for DoC users” | Likely relevant; verify equipment/workflow article. |
+| Conservation Science Newsletter 20 (Jun 1996) | Mention in a staff member's research biography | **Original page checked**: exclude pending full-issue confirmation. |
+| Conservation Science Newsletter 24 (Mar 1997) | Substantial GPS/WGS84/NZGD49 technical article | **Original page checked**: retain; cite pp. 4–5. |
 | Conservation Science Newsletter 39 (Dec 2000) | GPS coordinates and flight lines in monitoring | Likely relevant; verify page. |
-| Conservation Science Newsletter 49 (Apr 2004) | Passing phrase about helicopters and GPS | **Potentially incidental**; seek more evidence or exclude. |
+| Conservation Science Newsletter 49 (Apr 2004) | Passing GPS/helicopter phrase in rat eradication report | **Original page checked**: exclude pending full-issue confirmation. |
 | Rare Bits 37 (Jun 2000) | Differential GPS in aerial bait coverage | Likely relevant operational application; verify page. |
 | Rare Bits 39 (Dec 2000) | Differential GPS monitors aerial bait spread | Likely relevant operational application; verify page. |
 
