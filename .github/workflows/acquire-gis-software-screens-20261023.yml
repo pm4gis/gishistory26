@@ -1,0 +1,54 @@
+name: Acquire authentic GIS screens batch 1
+on:
+  push:
+    branches: [media/gis-software-screens-batch1-20261023]
+    paths:
+      - docs/media/gis-software-screens-batch1-20261023.json
+      - scripts/acquire-gis-screens-batch1-20261023.mjs
+      - .github/workflows/acquire-gis-software-screens-20261023.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: gis-screenshot-originals-batch1
+  cancel-in-progress: true
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/media/gis-software-screens-batch1-20261023'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media/gis-software-screens-batch1-20261023
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Retrieve original publisher GIS screenshots, generate source-credited records and local derivatives
+        run: node scripts/acquire-gis-screens-batch1-20261023.mjs
+      - name: Verify all chapter links and original file checksums
+        run: |
+          npm test
+          npm run build
+      - name: Commit locally hosted GIS screenshots, thumbnails and source records
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/ public/assets/historical/original/ public/assets/historical/web/ public/assets/historical/card/ docs/media/gis-software-screens-batch1-results.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive genuine New Zealand GIS screenshots with exact chapter links'
+            git pull --rebase origin media/gis-software-screens-batch1-20261023
+            git push origin HEAD:media/gis-software-screens-batch1-20261023
+          fi
+      - name: Require meaningful acquired media rather than placeholders
+        run: |
+          node -e "const r=require('./docs/media/gis-software-screens-batch1-results.json');if(r.success+r.alreadyPresent<4)throw Error('Too few verified screenshot originals: '+JSON.stringify(r))"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gis-software-screens-batch1-verification
+          path: docs/media/gis-software-screens-batch1-results.json
+          retention-days: 30
