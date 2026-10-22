@@ -24,6 +24,14 @@ try{
   assert.ok(await page.locator('input[type="search"]').count()===0,'No search bar in the catalogue');
   assert.ok(await page.locator('.publication-sidebar').count()===1);
   assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length);
+  // Both display modes retain all records and preserve their shareable view state.
+  await page.locator('[data-publication-view="list"]').click();
+  assert.equal(new URL(page.url()).searchParams.get('view'),'list');
+  assert.ok(await page.locator('.publication-grid').evaluate(el=>el.classList.contains('is-list-view')));
+  assert.equal(await page.locator('[data-publication]:visible').count(),publicationReadingOrder.length);
+  await page.locator('[data-publication-view="grid"]').click();
+  assert.equal(new URL(page.url()).searchParams.get('view'),null);
+  assert.ok(!await page.locator('.publication-grid').evaluate(el=>el.classList.contains('is-list-view')));
   const selectMobileFilters=async()=>{
    if(width<=650&&await page.locator('[data-publication-filter-toggle]').getAttribute('aria-expanded')==='false')
     await page.locator('[data-publication-filter-toggle]').click();
