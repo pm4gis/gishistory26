@@ -1,0 +1,93 @@
+{
+  "batch": "gis-software-screens-20261023-a",
+  "attempted": 7,
+  "success": 6,
+  "alreadyPresent": 0,
+  "failed": 1,
+  "items": [
+    {
+      "slug": "manaaki-arcmap-wms-layout",
+      "status": "archived",
+      "sourceFinalUrl": "https://maps.scinfo.org.nz/images/5aa673149fb4422a98265a0763c09dac.jpg",
+      "originalBytes": 438554,
+      "originalSize": [
+        990,
+        620
+      ],
+      "sourceSha256": "655ae1ae8cafc68834e8f4292a465a10a4921facddef32cfb7ef5fd7caf12f3c",
+      "chapter": 21,
+      "afterParagraphId": "ch21-s05-p02"
+    },
+    {
+      "slug": "manaaki-qgis-wms-legend",
+      "status": "archived",
+      "sourceFinalUrl": "https://maps.scinfo.org.nz/images/ece9506a806f717bb6d13125fd2da012.jpg",
+      "originalBytes": 761753,
+      "originalSize": [
+        2124,
+        1456
+      ],
+      "sourceSha256": "44068ff3cf6b713f460e0ba39be1126001af2ade20335f7c2927256683a22a69",
+      "chapter": 32,
+      "afterParagraphId": "ch32-s04-p01"
+    },
+    {
+      "slug": "canterburymaps-aurecon-arcgis-desktop",
+      "status": "archived",
+      "sourceFinalUrl": "https://canterburymaps.govt.nz/media/1073/aurecon_fig2.png?width=850",
+      "originalBytes": 459070,
+      "originalSize": [
+        850,
+        466
+      ],
+      "sourceSha256": "bdd99d54b14f01b561259f217e39e29720dbb4660bf929ebba2019845483b347",
+      "chapter": 23,
+      "afterParagraphId": "ch23-s04-p01"
+    },
+    {
+      "slug": "canterburymaps-aurecon-webgis",
+      "status": "archived",
+      "sourceFinalUrl": "https://canterburymaps.govt.nz/media/1072/aurecon_fig1.png?width=850",
+      "originalBytes": 412151,
+      "originalSize": [
+        850,
+        452
+      ],
+      "sourceSha256": "3c36085e0c9532d782e227aa7df8a7edb100c0387f2ceba3d5b145ebadbde05b",
+      "chapter": 33,
+      "afterParagraphId": "ch33-s01-p01"
+    },
+    {
+      "slug": "linz-data-service-2016-portal",
+      "status": "archived",
+      "sourceFinalUrl": "https://images.ctfassets.net/pwv49hug9jad/4EJrHPCjLiU8eqwqggqgis/91a4e81659e4fd6b09b5f2cc1e007317/blog_futureofmaps_dataservice.png?fm=webp",
+      "originalBytes": 287480,
+      "originalSize": [
+        664,
+        392
+      ],
+      "sourceSha256": "3e03c99221ebefa53ffa95d9f99abe551fae6f7257c0274b578cc56a3a77b913",
+      "chapter": 33,
+      "afterParagraphId": "ch33-s05-p02"
+    },
+    {
+      "slug": "rnz-linz-digital-topo-2016",
+      "status": "archived",
+      "sourceFinalUrl": "https://media.rnztools.nz/rnz/image/upload/s--uOxpQ2iX--/c_scale%2Cf_auto%2Cq_auto%2Cw_1050/v1643477862/4OXZJCT_copyright_image_65327?_a=BACCd2AD",
+      "originalBytes": 168045,
+      "originalSize": [
+        1050,
+        633
+      ],
+      "sourceSha256": "a2ea6179ac4445c7270e9580e0748022a2bf28842d6e8f1dd9c4ec56f5e9ebba",
+      "chapter": 15,
+      "afterParagraphId": "ch15-s04-p02"
+    },
+    {
+      "slug": "esri-arcview-32-survey-2002",
+      "status": "held",
+      "reason": "Input buffer has corrupt header: glib: XML parse error: Error domain 1 code 76 on line 1345 column 8 of data: Opening and ending tag mismatch: html line 2 and body"
+    }
+  ],
+  "retrievedAt": "2026-10-22T23:40:16.747Z"
+}
