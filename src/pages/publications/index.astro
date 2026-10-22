@@ -14,6 +14,9 @@ const library=publicationReadingOrder.map(item=>{
 });
 const decadeValues=[...new Set(library.map(p=>Math.floor(Number(p.year)/10)*10))].sort((a,b)=>a-b);
 const creatorValues=[...new Set(library.map(p=>p.creator))].sort((a,b)=>a.localeCompare(b,'en-NZ'));
+const publicationYears=library.map(p=>Number(p.year)).filter(Number.isFinite);
+const earliestYear=Math.min(...publicationYears);
+const latestYear=Math.max(...publicationYears);
 const themeIds=new Set(library.flatMap(p=>p.themeIds));
 const themes=d.themes.filter((t:any)=>themeIds.has(t.id)).sort((a:any,b:any)=>a.title.localeCompare(b.title,'en-NZ'));
 const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?p.year.startsWith(value.slice(0,3)):key==='theme'?p.themeIds.includes(value):p.creator===value).length;
@@ -48,8 +51,8 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
    </aside>
    <div class="publication-results">
     <div class="publication-results-toolbar">
-     <p id="publication-count" role="status" aria-live="polite">{library.length} publications · 1973–2025</p>
-     <span>Oldest first</span>
+     <p id="publication-count" role="status" aria-live="polite">{library.length} publications · {earliestYear}–{latestYear}</p>
+     <div class="publication-toolbar-actions"><span>Oldest first</span><div class="publication-view-choice" role="group" aria-label="Publication display"><button type="button" data-publication-view="grid" aria-pressed="true">Covers</button><button type="button" data-publication-view="list" aria-pressed="false">List</button></div></div>
     </div>
     <h2 class="sr-only">Research and reference PDFs and documents from the archive</h2>
     <div class="publication-grid">
@@ -57,7 +60,7 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
       <a class="publication-cover" href={p.url} tabindex="-1" aria-hidden="true"><img src={p.thumbnailPath} width="720" height="960" alt="" loading="lazy"/></a>
       <div class="publication-copy">
        <p class="eyebrow"><time datetime={p.year}>{p.year}</time></p>
-       <h3><a href={p.url} class="title" aria-label={'Read PDF: '+p.title}>{p.title}</a></h3>
+       <h3><a href={p.url} class="title" aria-label={'Read publication: '+p.title}>{p.title}</a></h3>
        <p class="publication-creator">{p.creator}</p>
        <p class="publication-summary">{p.summary}</p>
       </div>
@@ -76,6 +79,11 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  const filters=[...document.querySelectorAll<HTMLButtonElement>('[data-filter-kind]')];
  const cards=[...document.querySelectorAll<HTMLElement>('[data-publication]')];
  const counter=document.getElementById('publication-count');
+ const grid=document.querySelector<HTMLElement>('.publication-grid');
+ const viewButtons=[...document.querySelectorAll<HTMLButtonElement>('[data-publication-view]')];
+ let viewMode: 'grid'|'list' = new URLSearchParams(location.search).get('view')==='list'?'list':'grid';
+ function renderView(){grid?.classList.toggle('is-list-view',viewMode==='list');viewButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.publicationView===viewMode)));}
+ viewButtons.forEach(b=>b.addEventListener('click',()=>{const next=b.dataset.publicationView==='list'?'list':'grid';if(next===viewMode)return;viewMode=next;const u=new URL(location.href);if(viewMode==='list')u.searchParams.set('view','list');else u.searchParams.delete('view');history.pushState(null,'',u.pathname+u.search+u.hash);renderView();refreshReturnLinks?.();}));
  const mobileFilterToggle=document.querySelector<HTMLButtonElement>('[data-publication-filter-toggle]');
  const sidebar=document.querySelector<HTMLElement>('.publication-sidebar');
  function closeMobileFilters(){sidebar?.classList.remove('is-open');mobileFilterToggle?.setAttribute('aria-expanded','false');}
@@ -91,18 +99,19 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  }
  function apply(updateURL:boolean){
   let count=0;
+  const matchedYears:number[]=[];
   for(const card of cards){
    const data=card.dataset;
    const matches=kind==='all'||kind==='decade'&&data.year?.startsWith(value.slice(0,3))||kind==='theme'&&data.themes?.split(' ').includes(value)||kind==='creator'&&data.creator===value;
    card.hidden=!matches;
-   if(matches)count++;
+   if(matches){count++;matchedYears.push(Number(data.year));}
   }
   filters.forEach(button=>{
    const active=button.dataset.filterKind===kind&&button.dataset.filterValue===value;
    button.setAttribute('aria-pressed',String(active));
   });
   if(mobileFilterToggle)mobileFilterToggle.firstChild!.textContent=kind==='all'?'Filter publications ':'Filter: '+(filters.find(b=>b.dataset.filterKind===kind&&b.dataset.filterValue===value)?.textContent?.trim()||'Selected')+' ';
-  if(counter)counter.textContent=count+' '+(count===1?'publication':'publications')+' · oldest first';
+  if(counter){const span=matchedYears.length?' · '+Math.min(...matchedYears)+(Math.min(...matchedYears)===Math.max(...matchedYears)?'':'–'+Math.max(...matchedYears)):'';counter.textContent=count+' '+(count===1?'publication':'publications')+span;}
   if(empty)empty.hidden=count>0;
   if(kind==='creator')document.querySelector<HTMLDetailsElement>('.publication-org-filters')?.setAttribute('open','');
   if(updateURL){
@@ -115,8 +124,9 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
   refreshReturnLinks?.();
  }
  filters.forEach(button=>button.addEventListener('click',()=>{const nextKind=button.dataset.filterKind as Kind;const nextValue=button.dataset.filterValue||'';const changed=nextKind!==kind||nextValue!==value;kind=nextKind;value=nextValue;apply(changed);if(window.matchMedia('(max-width:650px)').matches)closeMobileFilters();}));
- window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);const k=p.get('filter')||'all',v=p.get('value')||'';kind=validKinds.has(k)&&filters.some(b=>b.dataset.filterKind===k&&b.dataset.filterValue===v)?k as Kind:'all';value=kind==='all'?'':v;apply(false);});
+ window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);viewMode=p.get('view')==='list'?'list':'grid';renderView();const k=p.get('filter')||'all',v=p.get('value')||'';kind=validKinds.has(k)&&filters.some(b=>b.dataset.filterKind===k&&b.dataset.filterValue===v)?k as Kind:'all';value=kind==='all'?'':v;apply(false);});
  apply(false);
+ renderView();
  refreshReturnLinks=initPublicationLibraryReturn();
 </script>
 <style>
@@ -135,7 +145,7 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  .publication-org-filters summary{color:var(--text);font-weight:650;display:flex;justify-content:space-between;align-items:center;font-size:14px}
  .publication-org-filters .publication-filter-options{max-height:40vh;overflow:auto}
  .publication-results{min-width:0}.publication-results-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px;border-bottom:1px solid var(--line);padding:9px 2px;font-size:13px;color:var(--muted)}
- .publication-results-toolbar p{margin:0}.publication-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,245px),1fr));gap:14px}
+ .publication-results-toolbar p{margin:0}.publication-toolbar-actions{display:flex;align-items:center;gap:14px}.publication-view-choice{display:flex;gap:3px;border:1px solid var(--line);padding:3px;border-radius:9px;background:var(--surface)}.publication-view-choice button{border:0;background:transparent;color:var(--muted);padding:7px 11px;min-height:36px;font-size:13px;border-radius:6px;cursor:pointer}.publication-view-choice button[aria-pressed="true"]{background:var(--raised);color:var(--text);font-weight:700}.publication-view-choice button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}.publication-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,245px),1fr));gap:14px}
  .publication-card{position:relative;overflow:hidden;padding:0;display:flex;flex-direction:column;min-width:0}
  .publication-card[hidden]{display:none}.publication-card:focus-within{outline:2px solid var(--accent);outline-offset:3px}
  .publication-cover{display:flex;align-items:center;justify-content:center;background:var(--raised);height:195px;padding:9px}
@@ -147,7 +157,14 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
  .publication-copy h3 .title::after{content:'';position:absolute;inset:0}
  .publication-creator{font-size:12px;color:var(--muted);line-height:1.4}
  .publication-summary{font-size:13px;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
- .publication-footer{margin:25px 0 0}.publication-results-toolbar>span{white-space:nowrap}
+ .publication-footer{margin:25px 0 0}.publication-toolbar-actions>span{white-space:nowrap}
+ .publication-grid.is-list-view{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}
+ .publication-grid.is-list-view .publication-card{display:grid;grid-template-columns:94px minmax(0,1fr);min-height:116px}
+ .publication-grid.is-list-view .publication-cover{height:100%;min-height:116px;max-height:152px;padding:8px}
+ .publication-grid.is-list-view .publication-copy{padding:13px 17px;gap:4px}
+ .publication-grid.is-list-view .publication-copy h3{font-size:16px}
+ .publication-grid.is-list-view .publication-summary{-webkit-line-clamp:1;line-clamp:1}
+ .publication-grid.is-list-view .publication-cover img{height:100%;width:100%;object-fit:contain}
  @media(max-width:900px){.publication-library-layout{grid-template-columns:195px minmax(0,1fr);gap:14px}.publication-filter-menu{padding:10px}.publication-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,195px),1fr))}}
  @media(max-width:650px){.publication-library{padding:18px 12px 38px}.publication-library-layout{display:block}.publication-sidebar{position:static;max-height:none;margin-bottom:16px}.publication-filter-menu{padding:12px}.publication-filter-menu section{display:inline-block;vertical-align:top;width:49%;padding:0 7px 0 0}.publication-filter-options button{font-size:12px}.publication-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.publication-cover{height:142px}.publication-copy{padding:9px;gap:5px}.publication-copy h3{font-size:13px}.publication-copy .eyebrow{font-size:9px}.publication-creator{font-size:11px}.publication-summary{font-size:12px;-webkit-line-clamp:2;line-clamp:2}.publication-org-filters .publication-filter-options{max-height:230px}}
  @media(max-width:370px){.publication-grid{grid-template-columns:1fr}.publication-cover{height:185px}}
@@ -168,7 +185,12 @@ const countBy=(key:string,value:string)=>library.filter((p:any)=>key==='decade'?
   .publication-copy h3{font-size:15px;line-height:1.33}
   .publication-copy .eyebrow{font-size:11px}
   .publication-summary{font-size:12px;-webkit-line-clamp:2;line-clamp:2}
-  .publication-results-toolbar{align-items:baseline;gap:8px}
+  .publication-results-toolbar{align-items:flex-start;gap:8px;flex-wrap:wrap}
+  .publication-toolbar-actions{gap:9px;flex-wrap:wrap}
+  .publication-grid.is-list-view .publication-card{grid-template-columns:78px minmax(0,1fr)}
+  .publication-grid.is-list-view .publication-cover{min-height:110px;max-height:136px}
+  .publication-grid.is-list-view .publication-copy{padding:10px 12px}
+  .publication-grid.is-list-view .publication-copy h3{font-size:14px}
  }
  @media(max-width:370px){.publication-card{grid-template-columns:85px minmax(0,1fr)}}
 </style>

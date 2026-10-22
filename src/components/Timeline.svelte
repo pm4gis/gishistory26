@@ -17,6 +17,7 @@
  let showChapterEvents=false;
  let includeUndated=true;
  let zoom=1;
+ let listView=false;
  let hoveredId='';
  let eventSummaryElement:HTMLElement|null=null;
  let activeDecade:number|null=null;
@@ -153,13 +154,13 @@
  {#if activeDecade===null}
  <button class="period-choice" class:active={!from&&!to} aria-pressed={!from&&!to} on:click={clearFilters}><strong>All years</strong><span>{dated.length} dated events</span></button>
  {#each periodGroups as group}
- <button class="period-choice" class:active={selectedPeriod===group.year} aria-pressed={selectedPeriod===group.year} on:click={()=>decade(group.year)}><strong>{group.year}s</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/densityMax*100)+'%'}></i></button>
+ <button class="period-choice" class:active={selectedPeriod===group.year} aria-pressed={selectedPeriod===group.year} disabled={group.count===0} title={group.count===0?'No documented events in this decade':undefined} on:click={()=>decade(group.year)}><strong>{group.year}s</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/densityMax*100)+'%'}></i></button>
  {/each}
  {:else}
  <button class="period-choice" on:click={clearFilters}><strong>All years</strong><span>Back to decade selection</span></button>
  <button class="period-choice" class:active={activeFiveYearStart===null} aria-pressed={activeFiveYearStart===null} on:click={()=>decade(Number(activeDecade))}><strong>Full {activeDecade}s</strong><span>All ten years</span></button>
  {#each fiveYearGroups as group}
- <button class="period-choice" class:active={activeFiveYearStart===group.start} aria-pressed={activeFiveYearStart===group.start} on:click={()=>chooseFiveYear(group.start)}><strong>{group.start}–{group.end}</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/fiveYearDensityMax*100)+'%'}></i></button>
+ <button class="period-choice" class:active={activeFiveYearStart===group.start} aria-pressed={activeFiveYearStart===group.start} disabled={group.count===0} title={group.count===0?'No documented events in these five years':undefined} on:click={()=>chooseFiveYear(group.start)}><strong>{group.start}–{group.end}</strong><span>{group.count} {group.count===1?'event':'events'}</span><i class="period-density" aria-hidden="true" style={'--density:'+Math.round(group.count/fiveYearDensityMax*100)+'%'}></i></button>
  {/each}
  {/if}</nav>{/if}
  {#if !compact || scopedEvents.length}
@@ -191,7 +192,9 @@
  <div class="timeline-result-count" aria-live="polite">{filtered.length} of {scopedEvents.length} events {#if !compact}· {chartMarks.length} markers in the overview · Select an event for its summary, sources and related account{/if}</div>
  {/if}
 
- {#if filtered.length}<div class="timeline-rail" tabindex="0" aria-label="Chronological event buttons">
+ {#if filtered.length}
+ {#if !compact}<div class="timeline-list-switch" role="group" aria-label="Event display"><span>Browse events</span><button type="button" aria-pressed={!listView} on:click={()=>listView=false}>Cards</button><button type="button" aria-pressed={listView} on:click={()=>listView=true}>List</button></div>{/if}
+ <div class="timeline-rail" class:is-list-view={listView&&!compact} tabindex="0" aria-label="Chronological event buttons">
  {#each filtered as e (e.id)}
  <button class={'timeline-event'+(e.featuredImage?' timeline-event--photo':'')} aria-pressed={selected?.id===e.id} aria-label={e.dateDisplay+': '+e.label} on:click={()=>pick(e)}>
  {#if e.featuredImage}<img class="timeline-event-photo" src={e.featuredImage.cardPath} alt="" loading="lazy" decoding="async"/>{/if}
@@ -282,4 +285,15 @@
 @keyframes timeline-marker-in{from{opacity:.45;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:700px){.timeline-scope-controls{align-items:flex-start;flex-direction:column}.timeline-overview-toolbar{align-items:flex-start;flex-direction:column}.timeline-zoom-controls{width:100%}.timeline-zoom-level{flex:1}.timeline-zoom-level input{width:min(40vw,150px)}}
 @media(prefers-reduced-motion:reduce){.timeline-mark,.timeline-mark circle,.timeline-mark .timeline-span{animation:none!important;transition:none!important}}
+ .timeline-list-switch{display:flex;align-items:center;justify-content:flex-end;gap:7px;margin:10px 0 7px;font-size:13px;color:var(--muted)}
+ .timeline-list-switch button{min-height:38px;padding:7px 14px;border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--text)}
+ .timeline-list-switch button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);font-weight:700}
+ .timeline-list-switch button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+ .timeline-rail.is-list-view{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:9px;overflow:visible;scroll-snap-type:none}
+ .timeline-rail.is-list-view .timeline-event{min-width:0;max-width:none;width:100%;display:grid;grid-template-columns:100px minmax(0,1fr);text-align:left;align-items:center;padding:0;min-height:112px;overflow:hidden}
+ .timeline-rail.is-list-view .timeline-event:not(.timeline-event--photo){display:block;padding:14px 18px}
+ .timeline-rail.is-list-view .timeline-event-photo{width:100px;height:100%;min-height:105px;object-fit:cover}
+ .timeline-rail.is-list-view .timeline-event-body{display:block;min-width:0;padding:12px 14px}
+ .timeline-rail.is-list-view .timeline-event-teaser{display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ @media(max-width:700px){.timeline-rail.is-list-view{grid-template-columns:minmax(0,1fr)}.timeline-list-switch{justify-content:flex-start}}
 </style>

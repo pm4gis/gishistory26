@@ -20,6 +20,13 @@ try{
   await page.locator('.landing-primary').click();await page.locator('.chapter-catalogue-card').first().waitFor();assert.equal(await page.locator('.chapter-catalogue-card').count(),44);await page.locator('.chapter-catalogue-card').first().click();await page.locator('h1').waitFor();
   await page.goto(base+'/search/?q=Landonline');await page.locator('.pagefind-ui__result').first().waitFor();assert.ok((await page.locator('.pagefind-ui__results').innerText()).includes('Landonline'));
   await page.goto(base+'/timeline/');const example=page.locator('.timeline-starters a').first();const label=await example.textContent();await example.click();await page.locator('.event-summary').waitFor();assert.ok((await page.locator('.event-summary').innerText()).includes(label.split(' · ').slice(1).join(' · ')));
+  // Empty historical periods remain visible, but cannot be selected as results.
+  assert.ok(await page.locator('.period-choice:disabled').count()>0);
+  await page.locator('.timeline-list-switch button').filter({hasText:'List'}).click();
+  assert.ok(await page.locator('.timeline-rail.is-list-view').count()>0);
+  assert.ok(await page.locator('.timeline-event').count()>0);
+  await page.locator('.timeline-list-switch button').filter({hasText:'Cards'}).click();
+  assert.equal(await page.locator('.timeline-rail.is-list-view').count(),0);
   await page.locator('.period-choice').nth(1).click();await page.locator('.timeline-controls button').filter({hasText:'Clear filters'}).click();
   await page.goto(base+'/network/');await page.locator('.network-starter-list button').nth(1).click();await page.waitForFunction(()=>document.querySelectorAll('#connections li').length>0);assert.ok(await page.locator('#connections a').count()>0);
   await page.goto(base+'/publications/');if(width<=650)await page.locator('[data-publication-filter-toggle]').click();

@@ -25,3 +25,9 @@ test('publication filters preserve Back and Forward and avoid duplicate state',(
  assert.match(page,/apply\(changed\)/);
  assert.match(page,/window\.addEventListener\('popstate'/);
 });
+
+test('publication reader return retains a selected compact list view',()=>{
+ assert.equal(publicationReturnPath('/publications/?view=list'),'/publications/?view=list');
+ assert.equal(publicationReturnPath('/publications/?filter=decade&value=1990&view=list#publication-research-nz-map-grid-1973'),'/publications/?filter=decade&value=1990&view=list#publication-research-nz-map-grid-1973');
+ assert.equal(publicationReturnPath('/publications/?view=not-a-view'),'/publications/');
+});

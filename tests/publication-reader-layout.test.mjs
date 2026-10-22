@@ -52,6 +52,11 @@ test('library is a single chronological grid with a left filter sidebar',()=>{
  assert.ok(page.includes('data-filter-kind="theme"'));
  assert.ok(page.includes('data-filter-kind="creator"'));
  assert.ok(!page.includes('type="search"'));
+ assert.match(page,/publicationYears=library\.map/);
+ assert.match(page,/data-publication-view="list"/);
+ assert.match(page,/is-list-view/);
+ assert.doesNotMatch(page,/1973–2025/);
+ assert.match(page,/Read publication:/);
  assert.ok(!page.includes('Reuse:'));
  const styles=readFileSync('src/styles/site.css','utf8');
  assert.ok(styles.includes('.wrap{max-width:none'));
