@@ -21,7 +21,7 @@ try{
   throw Error('Public homepage HTTP '+response.status()+': '+details);
  }
  for(const [selector,path] of headings)assert.equal(await page.locator(selector).getAttribute('href'),path,selector);
- assert.deepEqual(await page.locator('.landing-stats>a').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href'))),['/read/','/browse/?kind=Person','/timeline/']);
+ assert.deepEqual(await page.locator('.landing-stats>a').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href'))),['/read/','/browse/?kind=Person','/timeline/','/publications/']);
  assert.deepEqual(await page.locator('.landing-image img').evaluateAll(nodes=>nodes.map(img=>img.getAttribute('src'))),wallpapers);
  const loaded=await page.locator('.landing-image img').evaluateAll(nodes=>Promise.all(nodes.map(async img=>{await img.decode();return {src:img.getAttribute('src'),width:img.naturalWidth,height:img.naturalHeight};})));
  assert.ok(loaded.every(img=>img.width>=1400&&img.height>=788));
