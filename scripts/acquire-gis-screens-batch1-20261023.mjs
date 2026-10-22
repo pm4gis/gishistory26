@@ -51,7 +51,7 @@ for(const item of spec.items){
   const display=await sharp(bytes).rotate().resize({width:1600,withoutEnlargement:true}).webp({quality:84,effort:5}).toBuffer();
   const thumbnail=await sharp(bytes).rotate().resize({width:700,withoutEnlargement:true}).webp({quality:78,effort:5}).toBuffer();
   const metadata={
-   id:'image:'+slug,slug,title:item.title,
+   id:'image:'+slug,slug,title:item.title,gisScreenBatch:spec.batch,
    assetPath:'/assets/historical/web/'+slug+'.webp',
    originalAssetPath:'/assets/historical/original/'+slug+'.'+ext,
    thumbnailPath:'/assets/historical/card/'+slug+'.webp',
@@ -74,6 +74,7 @@ for(const item of spec.items){
    originalSize:[meta.width,meta.height],sourceSha256:metadata.originalSha256,chapter:item.chapterNumber,afterParagraphId:item.afterParagraphId});
  }catch(error){
   result.failed++;result.items.push({slug:item.slug,status:'held',reason:String(error.message||error)});
+  console.warn('HELD GIS screenshot '+item.slug+': '+String(error.message||error));
  }
 }
 await fs.writeFile(RESULT,JSON.stringify(result,null,2)+'\n');
