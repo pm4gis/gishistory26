@@ -7,6 +7,7 @@ export function publicationReturnPath(value){
  const params=new URLSearchParams();
  const kind=url.searchParams.get('filter'),filterValue=url.searchParams.get('value');
  if(kind&&['decade','theme','creator'].includes(kind)&&filterValue){params.set('filter',kind);params.set('value',filterValue);}
+ if(url.searchParams.get('view')==='list')params.set('view','list');
  return '/publications/'+(params.size?'?'+params.toString():'')+url.hash;
 }
 const storagePrefix='nzgis-publication-return-v1:';
