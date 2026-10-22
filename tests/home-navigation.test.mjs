@@ -24,6 +24,13 @@ test('2026 editorial homepage retains supplied landscape images, a reduced-motio
  assert.match(css,/\.visual-page-heading\{background:#081725;--heading-gutter:/);
  assert.match(css,/backdrop-filter:blur\(16px\)/);
 });
+test('homepage promotes useful collection journeys rather than build-only telemetry',()=>{
+ assert.match(home,/class="editorial-paths"/);
+ assert.match(home,/publicationReadingOrder\.length/);
+ assert.doesNotMatch(home,/data-build-stat=|files generated in the verified build|internal links checked in the verified build/);
+ assert.match(css,/\.reading-shell \.page\{[\s\S]*?backdrop-filter:none/);
+});
+
 test('compact homepage preview retains the complete chapter catalogue',()=>{
  const articles=readdirSync('src/content/articles').filter(n=>n.endsWith('.json')).map(n=>JSON.parse(readFileSync('src/content/articles/'+n,'utf8')));
  const chapters=articles.filter(a=>a.status==='published'&&a.slug!=='preface');

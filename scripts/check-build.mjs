@@ -46,16 +46,8 @@ await import('./check-links.mjs');
 await import('./verify-indexable-build.mjs');
 await import('./audit-seo-internal-discovery.mjs');
 
-// Measure the final generated archive and checked internal links, then stamp the
-// homepage. Changing numeric text adds neither a file nor an internal link.
+// Preserve build diagnostics for release QA without exposing them as homepage content.
 const linkReport=JSON.parse(fs.readFileSync('docs/verification/links.json','utf8'));
 const measured={files:walk('dist').length,links:linkReport.checked};
-let measuredHome=fs.readFileSync('dist/index.html','utf8');
-for(const [name,value] of Object.entries(measured)){
- const pattern=new RegExp('(<strong data-build-stat="'+name+'"[^>]*>)[^<]*(</strong>)');
- if(!pattern.test(measuredHome))throw Error('Missing homepage build statistic '+name);
- measuredHome=measuredHome.replace(pattern,(_,open,close)=>open+value.toLocaleString('en-NZ')+close);
-}
-fs.writeFileSync('dist/index.html',measuredHome);
 fs.writeFileSync('docs/verification/home-build-stats.json',JSON.stringify(measured,null,2)+'\n');
-console.log('Homepage statistics measured:',measured);
+console.log('Build diagnostics recorded for release QA:',measured);
