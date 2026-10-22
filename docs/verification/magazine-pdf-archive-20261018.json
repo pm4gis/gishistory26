@@ -448,14 +448,6 @@
       "pages": 25,
       "bytes": 120705,
       "sha256": "9bafe977eef7fc778e96ea4e4ee6b5649967375f39180ad1aaf31d4de31f4fcd"
-    },
-    {
-      "slug": "doc-rare-bits-47-2002",
-      "sourceUrl": "https://www.doc.govt.nz/documents/science-and-technical/RareBits47.pdf",
-      "year": "2002",
-      "pages": 19,
-      "bytes": 102192,
-      "sha256": "fd62d26e81a7bba82232c578ff43e332180ef5ce8a51465424c27cd91fa2cd7f"
     }
   ],
   "unavailable": [
