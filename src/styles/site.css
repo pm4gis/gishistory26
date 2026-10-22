@@ -29,6 +29,8 @@
 .period-choice strong{font-size:19px;font-weight:700}
 .period-choice span{font-size:12px;line-height:1.4}
 .period-choice.active{border-color:var(--accent);background:var(--accent);color:var(--accent-on)}
+.period-choice:disabled{opacity:.52;cursor:default;border-style:dashed;background:transparent;color:var(--muted)}
+.period-choice:disabled .period-density{visibility:hidden}
 .period-density{display:block;width:var(--density);height:4px;max-width:100%;border-radius:2px;background:var(--accent)}
 .period-choice.active .period-density{background:var(--accent-on)}
 .timeline-search{flex:1 1 240px;min-width:min(100%,240px)}
