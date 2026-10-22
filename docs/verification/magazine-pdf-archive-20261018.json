@@ -178,14 +178,6 @@
       "sha256": "31dd9a57435f8af43702f3933a1605865fd0dabaf3e1f737a4bceb1aef8cee59"
     },
     {
-      "slug": "doc-visitor-conservation-bibliography-2011",
-      "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sap253.pdf",
-      "year": "2011",
-      "pages": 89,
-      "bytes": 648304,
-      "sha256": "66d2a405ef672100d42e10569fc580cc5653ee43e6501a5cbf9849332067e6c7"
-    },
-    {
       "slug": "doc-conservation-carbon-spatial-models-2012",
       "sourceUrl": "https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc317.pdf",
       "year": "2012",
