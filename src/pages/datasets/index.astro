@@ -2,56 +2,147 @@
 import Layout from '../../layouts/Layout.astro';
 import {dataset} from '../../lib/data';
 import {datasetCardImageMap} from '../../lib/dataset-card-media.mjs';
-import DecorativeLandscape from '../../components/DecorativeLandscape.astro';
-import {decorFor} from '../../lib/decor';
+import {datasetSourceCatalogue,datasetSourceAgencies} from '../../lib/dataset-source-catalogue.mjs';
+
 const d=await dataset();
 const records=d.records.filter((r:any)=>r.kind==='Dataset').sort((a:any,b:any)=>a.name.localeCompare(b.name,'en-NZ'));
 const visual=datasetCardImageMap(records,d.images);
 const groups=[...new Set(records.map((r:any)=>r.category||'Other datasets'))].sort((a:any,b:any)=>a.localeCompare(b,'en-NZ'));
+const sourceGroups=datasetSourceAgencies.map(agency=>({...agency,items:datasetSourceCatalogue.filter(item=>item.agency===agency.id)}));
+const datasetTotal=records.length+datasetSourceCatalogue.length;
 const popularSlugs=['nz-primary-parcels','nz-property-titles','nz-property-boundaries','nz-building-outlines','nzlri','national-luc-2021','lcdb','lucas-land-use-map','nz-8m-dem-geographx-2012','nztopo50-vector'];
 const popular=popularSlugs.map(slug=>records.find((r:any)=>r.slug===slug)).filter(Boolean);
-const photographic=new Set(['nasa-terra-modis-nz-2002','linz-otago','southland-aerial-verdon-1988','doc-aerial-c24a085218be4824','victoria-square-aerial-1955','wrights-hill-1945','pukeora-commercial-pine-plantation-2018']);
+const actionLabel=(kind:string)=>kind==='Map service'?'Open data service':kind==='Interactive map'?'Open map':kind==='Data portal'?'Open data portal':'Open dataset';
 ---
-<Layout title="Datasets · NZ GIS History" description="Explore national and historical New Zealand spatial datasets, with documentary imagery, sources and linked organisations.">
+<Layout title="Datasets · NZ GIS History" description="Explore 100 New Zealand spatial datasets and data tools, with direct official agency links and documented historical records.">
  <div class="wrap dataset-layout">
-  <p class="eyebrow">Explore the evidence</p>
-  <h1>New Zealand GIS datasets</h1>
-  <p class="intro">Follow the datasets behind New Zealand GIS, from national cadastral and land-resource surveys to open elevation, imagery and environmental data. The illustrations come from documented project image sources; captions distinguish original dataset imagery from related historical examples.</p>
-  <div class="actions">
-   <a class="button" href="/browse/?kind=Dataset">Find dataset records</a>
-   <a class="button" href="/network/">Explore their connections</a>
+  <p class="eyebrow">Official data and its history</p>
+  <h1>100 New Zealand GIS datasets and map tools</h1>
+  <p class="intro">Start with an official data layer or map service, then follow its story through the documented history. This catalogue brings together {records.length} historical dataset records and {datasetSourceCatalogue.length} direct agency listings from LINZ, MfE, Stats NZ, MPI, MBIE, TPK and NIWA. The site’s historical account ends on 31 December 2025; agency catalogues and live services can update independently.</p>
+  <div class="dataset-total-strip" aria-label={`${datasetTotal} data resources in total`}>
+   <div><strong>{datasetTotal}</strong><span>datasets and map tools</span></div>
+   <div><strong>{records.length}</strong><span>documented dataset histories</span></div>
+   <div><strong>{datasetSourceCatalogue.length}</strong><span>direct agency listings</span></div>
   </div>
+  <div class="actions">
+   <a class="button" href="#agency-datasets">Browse agency datasets</a>
+   <a class="button" href="#documented-histories">Read dataset histories</a>
+   <a class="button" href="/network/">See relationships</a>
+  </div>
+
+  <section class="dataset-agency-catalogue" id="agency-datasets" aria-labelledby="agency-datasets-heading" data-dataset-source-catalogue>
+   <div class="dataset-section-intro">
+    <p class="eyebrow">Open the source</p>
+    <h2 id="agency-datasets-heading">Agency data collections</h2>
+    <p>Each card links to the agency’s own dataset record, data service or map explorer. Items that open an interactive map or service are labelled.</p>
+   </div>
+   <div class="dataset-source-filters">
+    <div class="dataset-source-control">
+     <label for="dataset-source-search">Search datasets</label>
+     <input id="dataset-source-search" type="search" placeholder="Try rivers, parcels, climate…" autocomplete="off" aria-describedby="dataset-source-count"/>
+    </div>
+    <div class="dataset-source-control">
+     <label for="dataset-agency-filter">Filter by agency</label>
+     <select id="dataset-agency-filter">
+      <option value="all">All agencies</option>
+      {datasetSourceAgencies.map(agency=><option value={agency.id}>{agency.label}</option>)}
+     </select>
+    </div>
+    <p id="dataset-source-count" class="dataset-source-count" role="status" aria-live="polite">Showing {datasetSourceCatalogue.length} of {datasetSourceCatalogue.length} agency datasets and tools.</p>
+   </div>
+   <p class="dataset-empty-state" data-source-empty hidden>No agency data sources match those filters. Try a different search or select all agencies.</p>
+   {sourceGroups.map(group=><section class="dataset-group dataset-source-group" aria-label={group.label} data-source-group data-agency-group={group.id}>
+    <div class="dataset-group-heading"><h3>{group.label}</h3><span class="muted">{group.items.length} {group.items.length===1?'listing':'listings'}</span></div>
+    <div class="cards dataset-grid">
+     {group.items.map(source=><article class="card dataset-card dataset-source-card" data-source-card data-agency={source.agency} data-search={source.searchText}>
+      <figure class="dataset-card-media dataset-source-card-media">
+       <a href={source.url} aria-label={`Open ${source.name} at ${source.agencyLabel}`}>
+        <img src={source.imageUrl} alt={source.imageAlt} loading="lazy" decoding="async"/>
+       </a>
+       <figcaption>{source.imageCredit} · <a href={source.imageSourceUrl}>Preview source</a></figcaption>
+      </figure>
+      <div class="dataset-card-copy">
+       <small class="eyebrow">{source.agencyLabel} · {source.kind}</small>
+       <a class="title" href={source.url}>{source.name}</a>
+       <p>{source.description}</p>
+       <div class="dataset-card-links">
+        <a href={source.url}>{actionLabel(source.kind)} →</a>
+        {source.mapUrl&&<a href={source.mapUrl}>Open interactive map →</a>}
+       </div>
+      </div>
+     </article>)}
+    </div>
+   </section>)}
+  </section>
+
   <section class="dataset-popular" aria-labelledby="dataset-popular-heading">
-   <div class="section-head"><div><p class="eyebrow">National reference layers</p><h2 id="dataset-popular-heading">Popular starting points</h2></div><span class="muted">{records.length} dataset histories</span></div>
-   <nav class="dataset-shortcuts" aria-label="Jump to a dataset">
+   <div class="section-head"><div><p class="eyebrow">Begin with well-known records</p><h2 id="dataset-popular-heading">Popular dataset histories</h2></div><span class="muted">{records.length} documented histories</span></div>
+   <nav class="dataset-shortcuts" aria-label="Jump to a dataset history">
     {popular.map((r:any)=><a href={'#dataset-'+r.slug}>{r.name}</a>)}
    </nav>
   </section>
-  {groups.map((group:any)=><section class="dataset-group" aria-label={group}>
-   <h2>{group}</h2>
-   <div class="cards dataset-grid">
-    {records.filter((r:any)=>(r.category||'Other datasets')===group).map((r:any,i:number)=>{
-     const image=visual[r.slug];
-     return <article class="card dataset-card" id={'dataset-'+r.slug}>
-      {image&&<figure class:list={['dataset-card-media',photographic.has(image.slug)&&'dataset-card-media--photo']}>
-       <a href={r.url} aria-label={'Read about '+r.name}>
-        <img src={image.thumbnailPath||image.assetPath} alt={image.altText} loading="lazy" decoding="async"/>
-       </a>
-       <figcaption>{image.sourceNote} <a href={'/images/'+image.slug+'/'}>Image source and credit</a></figcaption>
-      </figure>}
-      {!image&&<a class="tile-media-link dataset-media-fallback" href={r.url} aria-label={"Read about "+r.name}><DecorativeLandscape id={decorFor(i+groups.indexOf(group)*3)} variant="card"/></a>}
-      <div class="dataset-card-copy">
-       <small class="eyebrow">Dataset</small>
-       <a class="title" href={r.url}>{r.name}</a>
-       <p>{r.description||r.story?.[0]}</p>
-       <div class="dataset-card-links">
-        <a href={r.url}>Dataset history →</a>
-        <a href={'/network/?focus='+encodeURIComponent(r.id)}>Relationships →</a>
-       </div>
-      </div>
-     </article>;
-    })}
+
+  <section id="documented-histories" aria-labelledby="documented-histories-heading">
+   <div class="dataset-section-intro">
+    <p class="eyebrow">Documented through 31 December 2025</p>
+    <h2 id="documented-histories-heading">Dataset histories</h2>
+    <p>These detailed records remain grouped by subject. Their illustrations retain their original credits and source notes.</p>
    </div>
-  </section>)}
+   {groups.map((group:any)=><section class="dataset-group" aria-label={group}>
+    <h3>{group}</h3>
+    <div class="cards dataset-grid">
+     {records.filter((r:any)=>(r.category||'Other datasets')===group).map((r:any)=>{
+      const image=visual[r.slug];
+      return <article class="card dataset-card" id={'dataset-'+r.slug}>
+       <figure class="dataset-card-media">
+        <a href={r.url} aria-label={'Read about '+r.name}>
+         <img src={image.thumbnailPath||image.assetPath} alt={image.altText} loading="lazy" decoding="async"/>
+        </a>
+        <figcaption>{image.sourceNote} <a href={'/images/'+image.slug+'/'}>Image source and credit</a></figcaption>
+       </figure>
+       <div class="dataset-card-copy">
+        <small class="eyebrow">Dataset history</small>
+        <a class="title" href={r.url}>{r.name}</a>
+        <p>{r.description||r.story?.[0]}</p>
+        <div class="dataset-card-links">
+         <a href={r.url}>Read the history →</a>
+         <a href={'/network/?focus='+encodeURIComponent(r.id)}>Relationships →</a>
+        </div>
+       </div>
+      </article>;
+     })}
+    </div>
+   </section>)}
+  </section>
  </div>
 </Layout>
+
+<script>
+ const sourceCatalogue=document.querySelector<HTMLElement>('[data-dataset-source-catalogue]');
+ if(sourceCatalogue){
+  const searchInput=sourceCatalogue.querySelector<HTMLInputElement>('#dataset-source-search');
+  const agencyFilter=sourceCatalogue.querySelector<HTMLSelectElement>('#dataset-agency-filter');
+  const resultCount=sourceCatalogue.querySelector<HTMLElement>('#dataset-source-count');
+  const emptyMessage=sourceCatalogue.querySelector<HTMLElement>('[data-source-empty]');
+  const cards=Array.from(sourceCatalogue.querySelectorAll<HTMLElement>('[data-source-card]'));
+  const groups=Array.from(sourceCatalogue.querySelectorAll<HTMLElement>('[data-source-group]'));
+  if(searchInput&&agencyFilter&&resultCount&&emptyMessage){
+   const normalise=(value:string)=>value.toLocaleLowerCase('en-NZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+   const updateCatalogue=()=>{
+    const query=normalise(searchInput.value.trim());
+    const agency=agencyFilter.value;
+    let visible=0;
+    for(const card of cards){
+     const matches=(agency==='all'||card.dataset.agency===agency)&&normalise(card.dataset.search||'').includes(query);
+     card.hidden=!matches;
+     if(matches)visible++;
+    }
+    for(const group of groups)group.hidden=!group.querySelector('[data-source-card]:not([hidden])');
+    resultCount.textContent=`Showing ${visible} of ${cards.length} agency datasets and tools.`;
+    emptyMessage.hidden=visible!==0;
+   };
+   searchInput.addEventListener('input',updateCatalogue);
+   agencyFilter.addEventListener('change',updateCatalogue);
+  }
+ }
+</script>

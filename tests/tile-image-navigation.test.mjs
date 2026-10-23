@@ -25,12 +25,14 @@ test('catalogue images open the corresponding content',()=>{
  assert.match(datasets,/href=\{r.url\} aria-label=\{'Read about '\+r.name\}/);
 });
 
-test('every listing can show a linked image, including unillustrated records',()=>{
- for(const listing of [themes,theme,datasets]){
+test('subject and theme listings retain linked decorative fallbacks',()=>{
+ for(const listing of [themes,theme]){
   assert.match(listing,/class="tile-media-link[^"]*" href=\{/);
   assert.match(listing,/<DecorativeLandscape/);
  }
- assert.match(datasets,/!image&&<a class="tile-media-link dataset-media-fallback"/);
+ assert.doesNotMatch(datasets,/DecorativeLandscape|dataset-media-fallback|decorFor/);
+ assert.match(datasets,/class="dataset-card-media"/);
+ assert.match(datasets,/href=\{r\.url\} aria-label=\{'Read about '\+r\.name\}/);
  assert.match(browse,/class:decorative=\{!r.featuredImage\}/);
  assert.match(browse,/<a href=\{r.url\} aria-label=\{"Read "\+r.name\}>/);
  assert.doesNotMatch(browse,/href=\{r.featuredImage.sourceUrl\}/);

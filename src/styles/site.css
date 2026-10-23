@@ -804,9 +804,39 @@
  .nav--desktop>a:not(.nav-contribute):hover,.nav-dropdown-panel a:hover,.nav-dropdown-panel a:focus-visible,.nav .nav-contribute:hover{transform:none}
 }
 
-/* Dataset cards reuse the source-credited documentary images used across chapters. */
+/* Dataset listings use one consistent image frame for live products and histories. */
 .dataset-layout .section-head{margin:38px 0 15px}
-.dataset-popular{margin-bottom:36px}
+.dataset-total-strip{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:26px 0 24px;
+ border:1px solid var(--glass-edge,var(--line));border-radius:20px;overflow:hidden;
+ background:color-mix(in srgb,var(--surface) 88%,var(--accent-soft));
+ box-shadow:inset 0 1px 0 var(--glass-glint,transparent),var(--shade)
+}
+.dataset-total-strip>div{display:flex;align-items:center;gap:12px;padding:17px 20px;min-width:0}
+.dataset-total-strip>div+div{border-left:1px solid var(--glass-edge,var(--line))}
+.dataset-total-strip strong{font-size:25px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.dataset-total-strip span{font-size:13px;line-height:1.35;color:var(--muted)}
+.dataset-section-intro{margin:40px 0 20px;max-width:760px}
+.dataset-section-intro h2{margin:0 0 9px}
+.dataset-section-intro>p:last-child{margin:0;color:var(--muted);line-height:1.6}
+.dataset-source-filters{
+ display:grid;grid-template-columns:minmax(0,1.4fr) minmax(230px,.8fr);gap:12px 18px;
+ align-items:end;margin:22px 0 12px;padding:17px;
+ border:1px solid var(--glass-edge,var(--line));border-radius:18px;
+ background:color-mix(in srgb,var(--surface) 91%,var(--accent-soft));
+ box-shadow:inset 0 1px 0 var(--glass-glint,transparent)
+}
+.dataset-source-control{display:grid;gap:7px;min-width:0}
+.dataset-source-control label{font-size:13px;font-weight:650;color:var(--text)}
+.dataset-source-control input,.dataset-source-control select{width:100%;min-height:44px}
+.dataset-source-count{grid-column:1/-1;margin:0;color:var(--muted);font-size:13px}
+.dataset-empty-state{margin:10px 0 28px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;color:var(--muted)}
+.dataset-source-card[hidden],.dataset-source-group[hidden],.dataset-empty-state[hidden]{display:none!important}
+.dataset-group-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 14px}
+.dataset-group-heading h3{margin:0;font-size:20px}
+.dataset-source-group{margin:30px 0 39px}
+.dataset-agency-catalogue{scroll-margin-top:22px}
+.dataset-popular{margin:39px 0 48px}
 .dataset-shortcuts{display:flex;gap:9px;flex-wrap:wrap}
 .dataset-shortcuts a{
  display:inline-flex;align-items:center;min-height:40px;padding:8px 12px;
@@ -824,9 +854,8 @@
 .dataset-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:19px}
 .dataset-card{min-width:0;display:flex;flex-direction:column;padding:0;overflow:hidden;scroll-margin-top:24px}
 .dataset-card-media{margin:0;background:var(--document-bg);border-bottom:1px solid var(--glass-edge,var(--line))}
-.dataset-card-media>a{display:block;aspect-ratio:16/9;overflow:hidden}
-.dataset-card-media img{display:block;width:100%;height:100%;object-fit:contain;border-radius:0;transition:transform .3s ease}
-.dataset-card-media--photo img{object-fit:cover}
+.dataset-card-media>a{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--document-bg)}
+.dataset-card-media img{display:block;width:100%;height:100%;object-fit:cover;border-radius:0;transition:transform .3s ease}
 .dataset-card:hover .dataset-card-media img{transform:scale(1.025)}
 .dataset-card-media figcaption{
  display:block;padding:10px 15px;min-height:60px;
@@ -851,6 +880,14 @@
 @media(prefers-reduced-motion:reduce){
  .dataset-shortcuts a:hover,.dataset-card:hover .dataset-card-media img{transform:none}
  .dataset-shortcuts a,.dataset-card-media img{transition:none}
+}
+@media(max-width:700px){
+ .dataset-total-strip{grid-template-columns:1fr;}
+ .dataset-total-strip>div{padding:13px 16px}
+ .dataset-total-strip>div+div{border-left:0;border-top:1px solid var(--glass-edge,var(--line))}
+ .dataset-source-filters{grid-template-columns:minmax(0,1fr);padding:14px}
+ .dataset-source-count{grid-column:1}
+ .dataset-group-heading h3{font-size:18px}
 }
 @media(prefers-reduced-transparency:reduce){
  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]),select,textarea{box-shadow:none}

@@ -5,6 +5,24 @@
  * Image credits and licences remain available on the existing image detail pages.
  */
 export const datasetCardSelections=Object.freeze({
+ 'agribase-2000-snapshot':{imageSlug:'nz-agricultural-landuse-capability-2022',note:'A later agricultural land-use analysis that used AgriBase inputs; it illustrates a subsequent use, not the 2000 snapshot itself.'},
+ 'agribase-2003-snapshot':{imageSlug:'nz-agricultural-landuse-capability-2022',note:'A later agricultural land-use analysis incorporating AgriBase; it is context for the 2003 input, not the source snapshot.'},
+ 'chatham-challenger-multibeam-2006':{imageSlug:'doc-geology-5c715d45011ba9cf',note:'A map of Zealandia topography and bathymetry provides regional seafloor context; it is not a rendering of the 2006 multibeam survey.'},
+ 'geological-250k-1959-1973':{imageSlug:'qmap-christchurch-2008',note:'A later 1:250,000 QMAP geological sheet illustrates the scale and subject of this earlier national map series.'},
+ 'historic-nzms1':{imageSlug:'levin-topographic-map-1973',note:'An original 1973 NZMS1 topographic map sheet, directly representative of the one-inch series.'},
+ 'meshblock-1991':{imageSlug:'nz-census-density-2023',note:'A later 2023 census-density map illustrates statistical area mapping; it is not the 1991 meshblock boundary file.'},
+ 'national-digital-topo250-1989':{imageSlug:'rnz-linz-digital-topo-2016',note:'A later LINZ digital topographic-map production view shows the digital mapping context; it is not a screenshot of the 1980s database.'},
+ 'national-vegetation-survey-databank':{imageSlug:'nz-wetlands-ml-national-2025',note:'A later national wetland-prediction map illustrates ecological spatial analysis; it is not a map of NVS plots.'},
+ 'niwa-freshwater-biodata-2004':{imageSlug:'doc-aerial-c24a085218be4824',note:'A documented Waitaki River and Benmore Dam aerial photograph shows freshwater habitat context; it is not a species-record map.'},
+ 'niwa-river-water-quality-network':{imageSlug:'doc-aerial-c24a085218be4824',note:'A documented Waitaki River aerial photograph gives river-network context; the current NIWA monitoring-site map is linked in the source catalogue.'},
+ 'nztopo250-names':{imageSlug:'ongaonga-linz-topo50-2020',note:'A LINZ Topo50 sheet shows the place labels used in national topographic mapping; it is not a Topo250 names-layer extract.'},
+ 'nztopo250-raster':{imageSlug:'rnz-linz-digital-topo-2016',note:'A later LINZ digital topographic-map view illustrates georeferenced raster mapping; it is not a scanned Topo250 sheet.'},
+ 'nztopo250-rivers':{imageSlug:'doc-aerial-c24a085218be4824',note:'A documented Waitaki River aerial photograph illustrates the river geography represented by the line layer; it is not a data-layer screenshot.'},
+ 'nztopo50-coastlines-islands':{imageSlug:'doc-historic-map-17bed2d97b6abec1',note:'An original 1856 New Zealand Admiralty chart provides coastal-cartography context; it is not the modern Topo50 coastline layer.'},
+ 'qmap-regional-gis-1994':{imageSlug:'qmap-christchurch-2008',note:'An authentic 2008 QMAP sheet shows regional geological GIS output from the later national programme.'},
+ 'rec':{imageSlug:'doc-aerial-c24a085218be4824',note:'A documented aerial view of the Waitaki River illustrates river and catchment geography; it is not a rendering of REC classes.'},
+ 'soil-bureau-legacy-maps':{imageSlug:'gisborne-east-coast-luc-map-1967',note:'A genuine 1967 land-resource capability map illustrates the regional soil and land-survey cartography associated with the Soil Bureau.'},
+ 'stats-geographies':{imageSlug:'nz-census-density-2023',note:'A map of population density by 2023 Statistical Area 2 illustrates a later statistical geography; it is not a boundary dataset.'},
  'nzlri':{imageSlug:'gisborne-east-coast-luc-map-1967',note:'Historic LUC map, a predecessor to the later national inventory.'},
  'national-luc-2021':{imageSlug:'nz-agricultural-landuse-capability-2022',note:'Related 2022 land-use capability analysis; not a screenshot of the 2021 layer.'},
  'lcdb':{imageSlug:'nasa-terra-modis-nz-2002',note:'Satellite observation used here to illustrate remotely sensed land cover, not an LCDB classification.'},
@@ -49,6 +67,7 @@ export function datasetCardImageMap(records,images){
  const bySlug=new Map((images||[]).map(image=>[image.slug,image]));
  return Object.fromEntries((records||[]).map(record=>{
   const chosen=datasetCardSelections[record.slug];
+  if(!chosen)throw new Error('Missing curated dataset card illustration: '+record.slug);
   const image=chosen?bySlug.get(chosen.imageSlug):null;
   if(chosen&&(!image?.assetPath||!image?.altText||!image?.credit||!image?.licence||!image?.sourceUrl)){
    throw new Error('Missing sourced dataset card illustration: '+record.slug+' ('+chosen.imageSlug+')');
