@@ -70,6 +70,8 @@ test('the public catalogue has 100 traceable records and uniform source previews
   assert.ok(/^https:\/\//.test(item.url),'not an HTTPS source link: '+item.id);
   assert.ok(/^https:\/\//.test(item.imageUrl),'not an official image: '+item.id);
   assert.ok(/^https:\/\//.test(item.imageSourceUrl),'missing image source: '+item.id);
+  if(item.imageUrl.includes('tiles-cdn.koordinates.com'))
+   assert.match(item.imageUrl,/thumbnail\/layer=\d+\.\d+,style=auto\//,'Koordinates thumbnail path must retain its documented separators: '+item.id);
   assert.ok(item.imageAlt?.length>35,'missing descriptive image text: '+item.id);
   assert.ok(item.imageCredit?.length>15,'missing image credit: '+item.id);
   assert.ok(item.description?.length>45,'missing dataset description: '+item.id);

@@ -4,7 +4,7 @@
  * are from that product or its official guide, never generic placeholders.
  */
 const koordinatesPreview=(layer,style,size='600x400')=>
- `https://tiles-cdn.koordinates.com/services/tiles/v4/thumbnail/layer%3D${layer}.${style}%2Cstyle%3Dauto/${size}.png`;
+ `https://tiles-cdn.koordinates.com/services/tiles/v4/thumbnail/layer=${layer}.${style},style=auto/${size}.png`;
 
 const catalogueItem=(item)=>Object.freeze({
  ...item,
