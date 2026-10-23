@@ -1,0 +1,1874 @@
+{
+  "batch": "gis-pdf-figures-wave3-20261023",
+  "aim": "Extract computer-generated GIS maps, LiDAR analysis, software screenshots and geographic modelling graphics from locally hosted GIS PDFs. No pre-computer paper map fillers.",
+  "items": [
+    {
+      "slug": "gis-wetland-layer-overlays-2021",
+      "title": "Wetland environmental GIS map made by overlaying different spatial datasets",
+      "sourcePdf": "/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
+      "pdfPath": "public/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
+      "sourceName": "Wetland environmental GIS project guide",
+      "sourceUrl": "https://history.pm4gis.nz/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf#page=3",
+      "originalPdfPage": 3,
+      "documentYear": 2021,
+      "dateDisplay": "2021 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 1. Overlaying different types of data to create a map."
+      ],
+      "sourceEvidence": "Original figure on page 3 of gis-mapping-wetland-projects-2021.pdf. Figure 1. Overlaying different types of data to create a map.",
+      "credit": "Wetland environmental GIS project guide; original published figure, page 3; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
+      "altText": "Wetland environmental GIS map made by overlaying different spatial datasets",
+      "caption": "Wetland environmental GIS map made by overlaying different spatial datasets. Source: gis-mapping-wetland-projects-2021.pdf, page 3.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 26,
+      "afterParagraphId": "ch26-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 10,
+          "rect": [
+            43.2,
+            624.9,
+            274.7,
+            792.6
+          ],
+          "displayArea": 38849,
+          "pixelSize": [
+            464,
+            336
+          ]
+        },
+        {
+          "xref": 12,
+          "rect": [
+            43.2,
+            622.6,
+            274.7,
+            729.5
+          ],
+          "displayArea": 24743,
+          "pixelSize": [
+            464,
+            214
+          ]
+        },
+        {
+          "xref": 18,
+          "rect": [
+            53.3,
+            396.1,
+            264.3,
+            499.9
+          ],
+          "displayArea": 21898,
+          "pixelSize": [
+            422,
+            208
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "auckland-2021-urban-forest-lidar-cloud",
+      "title": "Auckland Stockade Hill LiDAR point cloud coloured by height and classified features",
+      "sourcePdf": "/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "pdfPath": "public/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "sourceName": "Auckland Council canopy-cover LiDAR assessment",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf#page=14",
+      "originalPdfPage": 14,
+      "documentYear": 2021,
+      "dateDisplay": "2021 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 1. LiDAR point cloud (colour coded by height above sea level), Stockade Hill,",
+        "Figure 2. Classified LiDAR point cloud (greens: vegetation classes, yellow: buildings,"
+      ],
+      "sourceEvidence": "Original figure on page 14 of auckland-urban-forest-canopy-cover-2021.pdf. Figure 1. LiDAR point cloud (colour coded by height above sea level), Stockade Hill, / Figure 2. Classified LiDAR point cloud (greens: vegetation classes, yellow: buildings,",
+      "credit": "Auckland Council canopy-cover LiDAR assessment; original published figure, page 14; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "altText": "Auckland Stockade Hill LiDAR point cloud coloured by height and classified features",
+      "caption": "Auckland Stockade Hill LiDAR point cloud coloured by height and classified features. Source: auckland-urban-forest-canopy-cover-2021.pdf, page 14.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-p-83c0907d7819",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 41,
+          "rect": [
+            70.9,
+            70.9,
+            493.5,
+            326
+          ],
+          "displayArea": 107818,
+          "pixelSize": [
+            1284,
+            775
+          ]
+        },
+        {
+          "xref": 42,
+          "rect": [
+            70.9,
+            370,
+            493.5,
+            625.1
+          ],
+          "displayArea": 107818,
+          "pixelSize": [
+            1284,
+            775
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "auckland-urban-canopy-height-model-2021",
+      "title": "GIS canopy-height model generated from Auckland airborne LiDAR surveys",
+      "sourcePdf": "/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "pdfPath": "public/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "sourceName": "Auckland Council canopy-cover LiDAR assessment",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf#page=20",
+      "originalPdfPage": 20,
+      "documentYear": 2021,
+      "dateDisplay": "2021 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 4. Canopy cover height model developed from 2016/18 LiDAR for 16 urban local"
+      ],
+      "sourceEvidence": "Original figure on page 20 of auckland-urban-forest-canopy-cover-2021.pdf. Figure 4. Canopy cover height model developed from 2016/18 LiDAR for 16 urban local",
+      "credit": "Auckland Council canopy-cover LiDAR assessment; original published figure, page 20; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "altText": "GIS canopy-height model generated from Auckland airborne LiDAR surveys",
+      "caption": "GIS canopy-height model generated from Auckland airborne LiDAR surveys. Source: auckland-urban-forest-canopy-cover-2021.pdf, page 20.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-s01-p03",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 58,
+          "rect": [
+            70.9,
+            70.9,
+            524.4,
+            685.7
+          ],
+          "displayArea": 278865,
+          "pixelSize": [
+            1386,
+            1879
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "banks-peninsula-2023-lidar-survey-map",
+      "title": "Digital map of the Banks Peninsula LiDAR survey coverage area",
+      "sourcePdf": "/assets/publications/pdfs/banks-peninsula-lidar-survey-report-2023.pdf",
+      "pdfPath": "public/assets/publications/pdfs/banks-peninsula-lidar-survey-report-2023.pdf",
+      "sourceName": "Banks Peninsula aerial LiDAR survey report",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/banks-peninsula-lidar-survey-report-2023.pdf#page=2",
+      "originalPdfPage": 2,
+      "documentYear": 2023,
+      "dateDisplay": "2023 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 1. Area of interest surveyed as part of the Banks Peninsula LiDAR project captured for"
+      ],
+      "sourceEvidence": "Original figure on page 2 of banks-peninsula-lidar-survey-report-2023.pdf. Figure 1. Area of interest surveyed as part of the Banks Peninsula LiDAR project captured for",
+      "credit": "Banks Peninsula aerial LiDAR survey report; original published figure, page 2; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/banks-peninsula-lidar-survey-report-2023.pdf",
+      "altText": "Digital map of the Banks Peninsula LiDAR survey coverage area",
+      "caption": "Digital map of the Banks Peninsula LiDAR survey coverage area. Source: banks-peninsula-lidar-survey-report-2023.pdf, page 2.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-p-8f90e9782465",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 29,
+          "rect": [
+            136.2,
+            483,
+            503.7,
+            693.4
+          ],
+          "displayArea": 77304,
+          "pixelSize": [
+            1316,
+            769
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-benthic-terrain-raster-classification-2022",
+      "title": "Marine GIS benthic terrain classification examples and raster analysis outputs",
+      "sourcePdf": "/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "sourceName": "Department of Conservation marine GIS modelling",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf#page=13",
+      "originalPdfPage": 13,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 4. Flowchart of geomorphological classification of seafloor utilising BTM and raster functions and examples of the",
+        "Figure 5. Typical 10 m resolution terrain classification output from the analysis for western Marlborough Sounds area"
+      ],
+      "sourceEvidence": "Original figure on page 13 of doc-benthic-terrain-modeller-2022.pdf. Figure 4. Flowchart of geomorphological classification of seafloor utilising BTM and raster functions and examples of the / Figure 5. Typical 10 m resolution terrain classification output from the analysis for western Marlborough Sounds area",
+      "credit": "Department of Conservation marine GIS modelling; original published figure, page 13; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "altText": "Marine GIS benthic terrain classification examples and raster analysis outputs",
+      "caption": "Marine GIS benthic terrain classification examples and raster analysis outputs. Source: doc-benthic-terrain-modeller-2022.pdf, page 13.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 39,
+      "afterParagraphId": "ch39-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 50,
+          "rect": [
+            56.7,
+            412,
+            466.8,
+            735
+          ],
+          "displayArea": 132470,
+          "pixelSize": [
+            883,
+            696
+          ]
+        },
+        {
+          "xref": 48,
+          "rect": [
+            214.5,
+            225.6,
+            286.4,
+            279.2
+          ],
+          "displayArea": 3849,
+          "pixelSize": [
+            155,
+            116
+          ]
+        },
+        {
+          "xref": 54,
+          "rect": [
+            126.5,
+            225.6,
+            198.3,
+            279.2
+          ],
+          "displayArea": 3842,
+          "pixelSize": [
+            155,
+            116
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-benthic-terrain-marlborough-sounds-2022",
+      "title": "Marine GIS terrain-classification result from the Marlborough Sounds",
+      "sourcePdf": "/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "sourceName": "Department of Conservation marine GIS modelling",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf#page=14",
+      "originalPdfPage": 14,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 6. Terrain classification image showing examples of:"
+      ],
+      "sourceEvidence": "Original figure on page 14 of doc-benthic-terrain-modeller-2022.pdf. Figure 6. Terrain classification image showing examples of:",
+      "credit": "Department of Conservation marine GIS modelling; original published figure, page 14; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "altText": "Marine GIS terrain-classification result from the Marlborough Sounds",
+      "caption": "Marine GIS terrain-classification result from the Marlborough Sounds. Source: doc-benthic-terrain-modeller-2022.pdf, page 14.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 39,
+      "afterParagraphId": "ch39-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 63,
+          "rect": [
+            126.6,
+            220,
+            393,
+            422.6
+          ],
+          "displayArea": 53973,
+          "pixelSize": [
+            555,
+            422
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-coastal-flood-inundation-gis-map-2019",
+      "title": "GIS modelled coastal inundation extent and flood risk zone",
+      "sourcePdf": "/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "sourceName": "Department of Conservation coastal flood GIS analysis",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf#page=12",
+      "originalPdfPage": 12,
+      "documentYear": 2019,
+      "dateDisplay": "2019 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 3. Example map of the extent of the potential coastal inundation risk zone"
+      ],
+      "sourceEvidence": "Original figure on page 12 of doc-coastal-flood-risk-gis-2019.pdf. Figure 3. Example map of the extent of the potential coastal inundation risk zone",
+      "credit": "Department of Conservation coastal flood GIS analysis; original published figure, page 12; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "altText": "GIS modelled coastal inundation extent and flood risk zone",
+      "caption": "GIS modelled coastal inundation extent and flood risk zone. Source: doc-coastal-flood-risk-gis-2019.pdf, page 12.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 42,
+      "afterParagraphId": "ch42-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 31,
+          "rect": [
+            125,
+            224.9,
+            435.9,
+            672
+          ],
+          "displayArea": 138981,
+          "pixelSize": [
+            648,
+            932
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-coastal-flood-detailed-gis-map-2019",
+      "title": "Additional GIS flood extent map showing modelled coastal hazard exposure",
+      "sourcePdf": "/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "sourceName": "Department of Conservation coastal flood GIS analysis",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf#page=13",
+      "originalPdfPage": 13,
+      "documentYear": 2019,
+      "dateDisplay": "2019 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 4. Example map of the extent of the potential coastal inundation risk zone which"
+      ],
+      "sourceEvidence": "Original figure on page 13 of doc-coastal-flood-risk-gis-2019.pdf. Figure 4. Example map of the extent of the potential coastal inundation risk zone which",
+      "credit": "Department of Conservation coastal flood GIS analysis; original published figure, page 13; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "altText": "Additional GIS flood extent map showing modelled coastal hazard exposure",
+      "caption": "Additional GIS flood extent map showing modelled coastal hazard exposure. Source: doc-coastal-flood-risk-gis-2019.pdf, page 13.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 42,
+      "afterParagraphId": "ch42-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 34,
+          "rect": [
+            124.1,
+            54.9,
+            437.5,
+            500.6
+          ],
+          "displayArea": 139697,
+          "pixelSize": [
+            653,
+            929
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-yellow-eyed-penguin-gis-habitat-2008",
+      "title": "Computer-generated habitat distribution map in a yellow-eyed penguin GIS study",
+      "sourcePdf": "/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "sourceName": "Department of Conservation research",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf#page=15",
+      "originalPdfPage": 15,
+      "documentYear": 2008,
+      "dateDisplay": "2008 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 4. A habitat map of"
+      ],
+      "sourceEvidence": "Original figure on page 15 of doc-gis-wildlife-penguins-2008.pdf. Figure 4. A habitat map of",
+      "credit": "Department of Conservation research; original published figure, page 15; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "altText": "Computer-generated habitat distribution map in a yellow-eyed penguin GIS study",
+      "caption": "Computer-generated habitat distribution map in a yellow-eyed penguin GIS study. Source: doc-gis-wildlife-penguins-2008.pdf, page 15.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 26,
+      "afterParagraphId": "ch26-s01-p03",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 43,
+          "rect": [
+            178.6,
+            56.7,
+            538.6,
+            250.1
+          ],
+          "displayArea": 69638,
+          "pixelSize": [
+            500,
+            269
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-yellow-eyed-penguin-gis-data-entry-2008",
+      "title": "2008 desktop GIS data-entry interface used for yellow-eyed penguin nest site shapefiles",
+      "sourcePdf": "/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "sourceName": "Department of Conservation research",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf#page=18",
+      "originalPdfPage": 18,
+      "documentYear": 2008,
+      "dateDisplay": "2008 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 7. Figure 7. The graphical interface form for entering new data into the nest site shapefile in the yellow-eyed penguin"
+      ],
+      "sourceEvidence": "Original figure on page 18 of doc-gis-wildlife-penguins-2008.pdf. Fig. 7. Figure 7. The graphical interface form for entering new data into the nest site shapefile in the yellow-eyed penguin",
+      "credit": "Department of Conservation research; original published figure, page 18; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "altText": "2008 desktop GIS data-entry interface used for yellow-eyed penguin nest site shapefiles",
+      "caption": "2008 desktop GIS data-entry interface used for yellow-eyed penguin nest site shapefiles. Source: doc-gis-wildlife-penguins-2008.pdf, page 18.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 26,
+      "afterParagraphId": "ch26-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 57,
+          "rect": [
+            55.4,
+            173.2,
+            538.6,
+            658.6
+          ],
+          "displayArea": 234508,
+          "pixelSize": [
+            1498,
+            1505
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hurunui-forest-gis-elevation-and-stands-2005",
+      "title": "North Hurunui forest digital elevation and computer-generated vegetation community maps",
+      "sourcePdf": "/assets/publications/pdfs/doc-hurunui-forest-gis-2005.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-hurunui-forest-gis-2005.pdf",
+      "sourceName": "Department of Conservation forestry GIS report",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-hurunui-forest-gis-2005.pdf#page=18",
+      "originalPdfPage": 18,
+      "documentYear": 2005,
+      "dateDisplay": "2005 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 3. Digital elevation model showing location of permanent forest plots (20 × 20 m) in the North (red dots) and",
+        "Figure 4. Computer-generated map showing the distribution of forest communities in the North Hurunui catchment. The"
+      ],
+      "sourceEvidence": "Original figure on page 18 of doc-hurunui-forest-gis-2005.pdf. Figure 3. Digital elevation model showing location of permanent forest plots (20 × 20 m) in the North (red dots) and / Figure 4. Computer-generated map showing the distribution of forest communities in the North Hurunui catchment. The",
+      "credit": "Department of Conservation forestry GIS report; original published figure, page 18; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-hurunui-forest-gis-2005.pdf",
+      "altText": "North Hurunui forest digital elevation and computer-generated vegetation community maps",
+      "caption": "North Hurunui forest digital elevation and computer-generated vegetation community maps. Source: doc-hurunui-forest-gis-2005.pdf, page 18.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 8,
+      "afterParagraphId": "ch08-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 35,
+          "rect": [
+            85.1,
+            417.6,
+            504.8,
+            723.3
+          ],
+          "displayArea": 128335,
+          "pixelSize": [
+            583,
+            425
+          ]
+        },
+        {
+          "xref": 36,
+          "rect": [
+            85.1,
+            56.7,
+            504.8,
+            362.4
+          ],
+          "displayArea": 128335,
+          "pixelSize": [
+            583,
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-terrestrial-marine-biodiversity-gis-2016",
+      "title": "Digital biodiversity mapping examples from four environmental biomes",
+      "sourcePdf": "/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "sourceName": "Department of Conservation biodiversity geospatial review",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf#page=25",
+      "originalPdfPage": 25,
+      "documentYear": 2016,
+      "dateDisplay": "2016 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 3. Examples of spatial data for each of the four biomes: A. Terrestrial—Land Environments of New Zealand (LENZ), an ecological"
+      ],
+      "sourceEvidence": "Original figure on page 25 of doc-mapping-biodiversity-heritage-2016.pdf. Figure 3. Examples of spatial data for each of the four biomes: A. Terrestrial—Land Environments of New Zealand (LENZ), an ecological",
+      "credit": "Department of Conservation biodiversity geospatial review; original published figure, page 25; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "altText": "Digital biodiversity mapping examples from four environmental biomes",
+      "caption": "Digital biodiversity mapping examples from four environmental biomes. Source: doc-mapping-biodiversity-heritage-2016.pdf, page 25.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 26,
+      "afterParagraphId": "ch26-s01-p03",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 223,
+          "rect": [
+            48,
+            51.2,
+            516.9,
+            712.1
+          ],
+          "displayArea": 309906,
+          "pixelSize": [
+            652,
+            919
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-mapped-biodiversity-north-island-2016",
+      "title": "North Island GIS-produced map illustrating biodiversity conservation information",
+      "sourcePdf": "/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "sourceName": "Department of Conservation biodiversity geospatial review",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf#page=45",
+      "originalPdfPage": 45,
+      "documentYear": 2016,
+      "dateDisplay": "2016 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Map 1 of 2 - North Island"
+      ],
+      "sourceEvidence": "Original figure on page 45 of doc-mapping-biodiversity-heritage-2016.pdf. Map 1 of 2 - North Island",
+      "credit": "Department of Conservation biodiversity geospatial review; original published figure, page 45; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "altText": "North Island GIS-produced map illustrating biodiversity conservation information",
+      "caption": "North Island GIS-produced map illustrating biodiversity conservation information. Source: doc-mapping-biodiversity-heritage-2016.pdf, page 45.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 26,
+      "afterParagraphId": "ch26-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 269,
+          "rect": [
+            142.3,
+            70.5,
+            525.8,
+            618.9
+          ],
+          "displayArea": 210368,
+          "pixelSize": [
+            488,
+            698
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doc-mapped-biodiversity-south-island-2016",
+      "title": "South Island GIS-produced map illustrating biodiversity conservation information",
+      "sourcePdf": "/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "sourceName": "Department of Conservation biodiversity geospatial review",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf#page=46",
+      "originalPdfPage": 46,
+      "documentYear": 2016,
+      "dateDisplay": "2016 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Map 2 of 2 - South Island Whanga"
+      ],
+      "sourceEvidence": "Original figure on page 46 of doc-mapping-biodiversity-heritage-2016.pdf. Map 2 of 2 - South Island Whanga",
+      "credit": "Department of Conservation biodiversity geospatial review; original published figure, page 46; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "altText": "South Island GIS-produced map illustrating biodiversity conservation information",
+      "caption": "South Island GIS-produced map illustrating biodiversity conservation information. Source: doc-mapping-biodiversity-heritage-2016.pdf, page 46.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 26,
+      "afterParagraphId": "ch26-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 274,
+          "rect": [
+            140.7,
+            69.9,
+            524,
+            618
+          ],
+          "displayArea": 210073,
+          "pixelSize": [
+            488,
+            698
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whangarei-coastal-erosion-gis-2013",
+      "title": "Whangārei District GIS coastal erosion hazard zone map",
+      "sourcePdf": "/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "sourceName": "Department of Conservation coastal archaeology GIS",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf#page=23",
+      "originalPdfPage": 23,
+      "documentYear": 2013,
+      "dateDisplay": "2013 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 5. Coastal erosion hazard zones in the Whangarei District. Data source: WDC GIS"
+      ],
+      "sourceEvidence": "Original figure on page 23 of doc-whangarei-coastal-archaeology-gis-2013.pdf. Figure 5. Coastal erosion hazard zones in the Whangarei District. Data source: WDC GIS",
+      "credit": "Department of Conservation coastal archaeology GIS; original published figure, page 23; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "altText": "Whangārei District GIS coastal erosion hazard zone map",
+      "caption": "Whangārei District GIS coastal erosion hazard zone map. Source: doc-whangarei-coastal-archaeology-gis-2013.pdf, page 23.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 23,
+      "afterParagraphId": "ch23-s03-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 63,
+          "rect": [
+            127.6,
+            449.5,
+            456.8,
+            747
+          ],
+          "displayArea": 97954,
+          "pixelSize": [
+            1372,
+            1240
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whangarei-flood-hazard-gis-2013",
+      "title": "Whangārei District GIS flood hazard analysis map",
+      "sourcePdf": "/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "sourceName": "Department of Conservation coastal archaeology GIS",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf#page=24",
+      "originalPdfPage": 24,
+      "documentYear": 2013,
+      "dateDisplay": "2013 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 6. Flood hazard (shaded areas) in the Whangarei District. Data source: WDC GIS Department."
+      ],
+      "sourceEvidence": "Original figure on page 24 of doc-whangarei-coastal-archaeology-gis-2013.pdf. Figure 6. Flood hazard (shaded areas) in the Whangarei District. Data source: WDC GIS Department.",
+      "credit": "Department of Conservation coastal archaeology GIS; original published figure, page 24; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "altText": "Whangārei District GIS flood hazard analysis map",
+      "caption": "Whangārei District GIS flood hazard analysis map. Source: doc-whangarei-coastal-archaeology-gis-2013.pdf, page 24.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 42,
+      "afterParagraphId": "ch42-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 66,
+          "rect": [
+            127.7,
+            398.8,
+            458.4,
+            695.6
+          ],
+          "displayArea": 98184,
+          "pixelSize": [
+            1378,
+            1237
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "whangarei-archaeology-flood-zone-gis-2013",
+      "title": "GIS analysis of archaeological sites within mapped coastal flooding zones",
+      "sourcePdf": "/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "pdfPath": "public/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "sourceName": "Department of Conservation coastal archaeology GIS",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf#page=38",
+      "originalPdfPage": 38,
+      "documentYear": 2013,
+      "dateDisplay": "2013 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 18. Archaeological sites in flood zones (black circles) and nearby sites (white circles) at One Tree"
+      ],
+      "sourceEvidence": "Original figure on page 38 of doc-whangarei-coastal-archaeology-gis-2013.pdf. Figure 18. Archaeological sites in flood zones (black circles) and nearby sites (white circles) at One Tree",
+      "credit": "Department of Conservation coastal archaeology GIS; original published figure, page 38; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "altText": "GIS analysis of archaeological sites within mapped coastal flooding zones",
+      "caption": "GIS analysis of archaeological sites within mapped coastal flooding zones. Source: doc-whangarei-coastal-archaeology-gis-2013.pdf, page 38.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 26,
+      "afterParagraphId": "ch26-s01-p03",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 114,
+          "rect": [
+            127.6,
+            56.7,
+            484.4,
+            353
+          ],
+          "displayArea": 105736,
+          "pixelSize": [
+            1487,
+            1235
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nz-landuse-classification-map-2025",
+      "title": "Computer-generated national land-use classification map from the 2025 pilot",
+      "sourcePdf": "/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "pdfPath": "public/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf#page=24",
+      "originalPdfPage": 24,
+      "documentYear": 2025,
+      "dateDisplay": "2025 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 4. Map of assigned land-use classes in the NZLUM classification system v0.3."
+      ],
+      "sourceEvidence": "Original figure on page 24 of nzlum-pilot-land-use-map-methodology-2025.pdf. Figure 4. Map of assigned land-use classes in the NZLUM classification system v0.3.",
+      "credit": "Original NZ research authors; original published figure, page 24; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "altText": "Computer-generated national land-use classification map from the 2025 pilot",
+      "caption": "Computer-generated national land-use classification map from the 2025 pilot. Source: nzlum-pilot-land-use-map-methodology-2025.pdf, page 24.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 7,
+      "afterParagraphId": "ch07-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 189,
+          "rect": [
+            63.7,
+            61.5,
+            531.4,
+            722.6
+          ],
+          "displayArea": 309220,
+          "pixelSize": [
+            1432,
+            2025
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nz-landuse-confidence-map-2025",
+      "title": "GIS confidence map for pilot New Zealand land-use classes",
+      "sourcePdf": "/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "pdfPath": "public/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf#page=25",
+      "originalPdfPage": 25,
+      "documentYear": 2025,
+      "dateDisplay": "2025 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 5. Map of the assigned confidence value corresponding to the classes in Figure 4. Areas with no"
+      ],
+      "sourceEvidence": "Original figure on page 25 of nzlum-pilot-land-use-map-methodology-2025.pdf. Figure 5. Map of the assigned confidence value corresponding to the classes in Figure 4. Areas with no",
+      "credit": "Original NZ research authors; original published figure, page 25; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "altText": "GIS confidence map for pilot New Zealand land-use classes",
+      "caption": "GIS confidence map for pilot New Zealand land-use classes. Source: nzlum-pilot-land-use-map-methodology-2025.pdf, page 25.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 7,
+      "afterParagraphId": "ch07-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 192,
+          "rect": [
+            69.7,
+            61.5,
+            525.1,
+            705.3
+          ],
+          "displayArea": 293205,
+          "pixelSize": [
+            1264,
+            1788
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nz-drinking-water-geospatial-quality-2024",
+      "title": "National map of water-distribution spatial data access and quality scores",
+      "sourcePdf": "/assets/publications/pdfs/paper-geospatial-drinking-water-data-2024.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-geospatial-drinking-water-data-2024.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-geospatial-drinking-water-data-2024.pdf#page=6",
+      "originalPdfPage": 6,
+      "documentYear": 2024,
+      "dateDisplay": "2024 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 1 National map of data access and quality scores for spatial data related to drinking water distribu-"
+      ],
+      "sourceEvidence": "Original figure on page 6 of paper-geospatial-drinking-water-data-2024.pdf. Fig. 1 National map of data access and quality scores for spatial data related to drinking water distribu-",
+      "credit": "Original NZ research authors; original published figure, page 6; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-geospatial-drinking-water-data-2024.pdf",
+      "altText": "National map of water-distribution spatial data access and quality scores",
+      "caption": "National map of water-distribution spatial data access and quality scores. Source: paper-geospatial-drinking-water-data-2024.pdf, page 6.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 25,
+      "afterParagraphId": "ch25-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 65,
+          "rect": [
+            53.8,
+            58.1,
+            385.5,
+            528.8
+          ],
+          "displayArea": 156102,
+          "pixelSize": [
+            1382,
+            1961
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-insar-landslide-site-gis-2022",
+      "title": "Remote-sensing and GIS map of Gisborne landslide study area",
+      "sourcePdf": "/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf#page=3",
+      "originalPdfPage": 3,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 2 a Map of the Richardson"
+      ],
+      "sourceEvidence": "Original figure on page 3 of paper-gis-insar-urban-landslide-gisborne-2022.pdf. Fig. 2 a Map of the Richardson",
+      "credit": "Original NZ research authors; original published figure, page 3; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "altText": "Remote-sensing and GIS map of Gisborne landslide study area",
+      "caption": "Remote-sensing and GIS map of Gisborne landslide study area. Source: paper-gis-insar-urban-landslide-gisborne-2022.pdf, page 3.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 36,
+      "afterParagraphId": "ch36-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 173,
+          "rect": [
+            187.1,
+            159.8,
+            547.1,
+            714.3
+          ],
+          "displayArea": 199627,
+          "pixelSize": [
+            1500,
+            2311
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-insar-descending-velocity-map-2022",
+      "title": "GIS overlay of InSAR line-of-sight landslide velocity and Gisborne digital elevation",
+      "sourcePdf": "/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf#page=11",
+      "originalPdfPage": 11,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 8 a Descending LOS velocity map overlying the 2019 DEM. The inside the landslide (D1 and D2) and two stable points from outside"
+      ],
+      "sourceEvidence": "Original figure on page 11 of paper-gis-insar-urban-landslide-gisborne-2022.pdf. Fig. 8 a Descending LOS velocity map overlying the 2019 DEM. The inside the landslide (D1 and D2) and two stable points from outside",
+      "credit": "Original NZ research authors; original published figure, page 11; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "altText": "GIS overlay of InSAR line-of-sight landslide velocity and Gisborne digital elevation",
+      "caption": "GIS overlay of InSAR line-of-sight landslide velocity and Gisborne digital elevation. Source: paper-gis-insar-urban-landslide-gisborne-2022.pdf, page 11.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-s01-p03",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 512,
+          "rect": [
+            84.2,
+            51,
+            511.1,
+            634.9
+          ],
+          "displayArea": 249311,
+          "pixelSize": [
+            1779,
+            2433
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-insar-ascending-velocity-map-2022",
+      "title": "GIS overlay of ascending satellite InSAR landslide velocity and digital elevation",
+      "sourcePdf": "/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf#page=12",
+      "originalPdfPage": 12,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 9 a Ascending LOS velocity map overlying the 2019 DEM. The inside the landslide (A1 and A2) and two stable points from outside"
+      ],
+      "sourceEvidence": "Original figure on page 12 of paper-gis-insar-urban-landslide-gisborne-2022.pdf. Fig. 9 a Ascending LOS velocity map overlying the 2019 DEM. The inside the landslide (A1 and A2) and two stable points from outside",
+      "credit": "Original NZ research authors; original published figure, page 12; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "altText": "GIS overlay of ascending satellite InSAR landslide velocity and digital elevation",
+      "caption": "GIS overlay of ascending satellite InSAR landslide velocity and digital elevation. Source: paper-gis-insar-urban-landslide-gisborne-2022.pdf, page 12.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-p-83c0907d7819",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 519,
+          "rect": [
+            85,
+            51,
+            510.3,
+            634.9
+          ],
+          "displayArea": 248330,
+          "pixelSize": [
+            1772,
+            2433
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wetland-drainage-lidar-model-1-2023",
+      "title": "LiDAR-derived map comparing mapped streams and wetland-drainage risks",
+      "sourcePdf": "/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf#page=5",
+      "originalPdfPage": 5,
+      "documentYear": 2023,
+      "dateDisplay": "2023 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 3. Example 1: (a) LiDAR image, which is the base image in all other panels; (b) LINZ drain coverage, clearly showing many"
+      ],
+      "sourceEvidence": "Original figure on page 5 of paper-lidar-wetland-drainage-risks-2023.pdf. Figure 3. Example 1: (a) LiDAR image, which is the base image in all other panels; (b) LINZ drain coverage, clearly showing many",
+      "credit": "Original NZ research authors; original published figure, page 5; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "altText": "LiDAR-derived map comparing mapped streams and wetland-drainage risks",
+      "caption": "LiDAR-derived map comparing mapped streams and wetland-drainage risks. Source: paper-lidar-wetland-drainage-risks-2023.pdf, page 5.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-s01-p03",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 82,
+          "rect": [
+            41.5,
+            485.1,
+            553.8,
+            743.7
+          ],
+          "displayArea": 132450,
+          "pixelSize": [
+            2139,
+            1080
+          ]
+        },
+        {
+          "xref": 81,
+          "rect": [
+            41.5,
+            98,
+            351.9,
+            431.5
+          ],
+          "displayArea": 103531,
+          "pixelSize": [
+            1293,
+            1389
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wetland-drainage-lidar-model-2-2023",
+      "title": "GIS overlays of LiDAR terrain and drainage networks affecting wetlands",
+      "sourcePdf": "/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf#page=6",
+      "originalPdfPage": 6,
+      "documentYear": 2023,
+      "dateDisplay": "2023 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 4. Example 2: (a) LiDAR image, which is the base image in all other panels; b) LINZ drain coverage, clearly showing many drains"
+      ],
+      "sourceEvidence": "Original figure on page 6 of paper-lidar-wetland-drainage-risks-2023.pdf. Figure 4. Example 2: (a) LiDAR image, which is the base image in all other panels; b) LINZ drain coverage, clearly showing many drains",
+      "credit": "Original NZ research authors; original published figure, page 6; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "altText": "GIS overlays of LiDAR terrain and drainage networks affecting wetlands",
+      "caption": "GIS overlays of LiDAR terrain and drainage networks affecting wetlands. Source: paper-lidar-wetland-drainage-risks-2023.pdf, page 6.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 9,
+      "afterParagraphId": "ch09-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 92,
+          "rect": [
+            77.9,
+            444.9,
+            517.6,
+            754.4
+          ],
+          "displayArea": 136044,
+          "pixelSize": [
+            1929,
+            1357
+          ]
+        },
+        {
+          "xref": 90,
+          "rect": [
+            41.5,
+            98,
+            553.3,
+            354.2
+          ],
+          "displayArea": 131088,
+          "pixelSize": [
+            2137,
+            1069
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "colac-bay-georeferenced-imagery-2024",
+      "title": "Digitally georeferenced and mosaicked historic aerial imagery over Colac Bay",
+      "sourcePdf": "/assets/publications/pdfs/paper-national-coastal-change-dataset-2024.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-national-coastal-change-dataset-2024.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-national-coastal-change-dataset-2024.pdf#page=6",
+      "originalPdfPage": 6,
+      "documentYear": 2024,
+      "dateDisplay": "2024 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 2. a) Georeferenced and b) mosaiced historic aerial images over high-resolution satellite imagery of Colac Bay,"
+      ],
+      "sourceEvidence": "Original figure on page 6 of paper-national-coastal-change-dataset-2024.pdf. Fig. 2. a) Georeferenced and b) mosaiced historic aerial images over high-resolution satellite imagery of Colac Bay,",
+      "credit": "Original NZ research authors; original published figure, page 6; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-national-coastal-change-dataset-2024.pdf",
+      "altText": "Digitally georeferenced and mosaicked historic aerial imagery over Colac Bay",
+      "caption": "Digitally georeferenced and mosaicked historic aerial imagery over Colac Bay. Source: paper-national-coastal-change-dataset-2024.pdf, page 6.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 20,
+      "afterParagraphId": "ch20-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 52,
+          "rect": [
+            26.6,
+            38.7,
+            386.6,
+            311.1
+          ],
+          "displayArea": 98081,
+          "pixelSize": [
+            1500,
+            1136
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "qgis-blender-nz-landcover-2024",
+      "title": "QGIS and Blender workflow visualising New Zealand land-cover classifications",
+      "sourcePdf": "/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf#page=2",
+      "originalPdfPage": 2,
+      "documentYear": 2024,
+      "dateDisplay": "2024 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 3. Manaaki Whenua Landcare Research’s Land Cover Database contains over 30 classes of land cover. These can be"
+      ],
+      "sourceEvidence": "Original figure on page 2 of paper-qgis-blender-nz-open-data-2024.pdf. Figure 3. Manaaki Whenua Landcare Research’s Land Cover Database contains over 30 classes of land cover. These can be",
+      "credit": "Original NZ research authors; original published figure, page 2; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "altText": "QGIS and Blender workflow visualising New Zealand land-cover classifications",
+      "caption": "QGIS and Blender workflow visualising New Zealand land-cover classifications. Source: paper-qgis-blender-nz-open-data-2024.pdf, page 2.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 32,
+      "afterParagraphId": "ch32-s04-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 63,
+          "rect": [
+            56.7,
+            473.6,
+            538.3,
+            732.9
+          ],
+          "displayArea": 124887,
+          "pixelSize": [
+            1472,
+            791
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "qgis-blender-3d-terrain-raster-2024",
+      "title": "Terrain visualisation rasters and 3D mapping examples created using QGIS and Blender",
+      "sourcePdf": "/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf#page=3",
+      "originalPdfPage": 3,
+      "documentYear": 2024,
+      "dateDisplay": "2024 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 4. Several terrain visualisation rasters can be"
+      ],
+      "sourceEvidence": "Original figure on page 3 of paper-qgis-blender-nz-open-data-2024.pdf. Figure 4. Several terrain visualisation rasters can be",
+      "credit": "Original NZ research authors; original published figure, page 3; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "altText": "Terrain visualisation rasters and 3D mapping examples created using QGIS and Blender",
+      "caption": "Terrain visualisation rasters and 3D mapping examples created using QGIS and Blender. Source: paper-qgis-blender-nz-open-data-2024.pdf, page 3.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 39,
+      "afterParagraphId": "ch39-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 105,
+          "rect": [
+            305.6,
+            50.3,
+            538.1,
+            360.4
+          ],
+          "displayArea": 72088,
+          "pixelSize": [
+            709,
+            948
+          ]
+        },
+        {
+          "xref": 106,
+          "rect": [
+            305.6,
+            294.2,
+            538.2,
+            526.6
+          ],
+          "displayArea": 54036,
+          "pixelSize": [
+            680,
+            680
+          ]
+        },
+        {
+          "xref": 107,
+          "rect": [
+            305.6,
+            539.7,
+            538.2,
+            713.8
+          ],
+          "displayArea": 40472,
+          "pixelSize": [
+            908,
+            680
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "qgis-blender-arthurs-pass-scene-2024",
+      "title": "Three-dimensional digital GIS terrain scene of Arthur's Pass National Park",
+      "sourcePdf": "/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf#page=4",
+      "originalPdfPage": 4,
+      "documentYear": 2024,
+      "dateDisplay": "2024 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 6. Arthur’s Park National Park. The natural basemap provides a pseudo-realistic image of the land cover and terrain."
+      ],
+      "sourceEvidence": "Original figure on page 4 of paper-qgis-blender-nz-open-data-2024.pdf. Figure 6. Arthur’s Park National Park. The natural basemap provides a pseudo-realistic image of the land cover and terrain.",
+      "credit": "Original NZ research authors; original published figure, page 4; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "altText": "Three-dimensional digital GIS terrain scene of Arthur's Pass National Park",
+      "caption": "Three-dimensional digital GIS terrain scene of Arthur's Pass National Park. Source: paper-qgis-blender-nz-open-data-2024.pdf, page 4.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 39,
+      "afterParagraphId": "ch39-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 125,
+          "rect": [
+            56.6,
+            77.5,
+            538.2,
+            430.2
+          ],
+          "displayArea": 169922,
+          "pixelSize": [
+            1472,
+            1078
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "qgis-blender-terrain-material-render-2024",
+      "title": "GIS-derived terrain and hydrography rendered with Blender material layers",
+      "sourcePdf": "/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf#page=6",
+      "originalPdfPage": 6,
+      "documentYear": 2024,
+      "dateDisplay": "2024 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 10. Colour can be included in the map with the",
+        "Figure 9. Water outlines can be rendered separately and addition of some extra nodes in the terrain material"
+      ],
+      "sourceEvidence": "Original figure on page 6 of paper-qgis-blender-nz-open-data-2024.pdf. Figure 10. Colour can be included in the map with the / Figure 9. Water outlines can be rendered separately and addition of some extra nodes in the terrain material",
+      "credit": "Original NZ research authors; original published figure, page 6; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "altText": "GIS-derived terrain and hydrography rendered with Blender material layers",
+      "caption": "GIS-derived terrain and hydrography rendered with Blender material layers. Source: paper-qgis-blender-nz-open-data-2024.pdf, page 6.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 39,
+      "afterParagraphId": "ch39-s01-p03",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 169,
+          "rect": [
+            56.7,
+            223.3,
+            289.2,
+            401
+          ],
+          "displayArea": 41301,
+          "pixelSize": [
+            711,
+            543
+          ]
+        },
+        {
+          "xref": 171,
+          "rect": [
+            56.7,
+            520.5,
+            289.2,
+            685.8
+          ],
+          "displayArea": 38431,
+          "pixelSize": [
+            968,
+            689
+          ]
+        },
+        {
+          "xref": 175,
+          "rect": [
+            305.6,
+            530,
+            538.2,
+            671.6
+          ],
+          "displayArea": 32937,
+          "pixelSize": [
+            1047,
+            638
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-landslide-insar-velocity-2022",
+      "title": "Satellite InSAR GIS velocity maps and aerial imagery for Gisborne landslides",
+      "sourcePdf": "/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf#page=7",
+      "originalPdfPage": 7,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 4 a The VLOS map; b VSLOPE map; c VSLOPE map ﬁltered to only the hillshade and aerial imagery; d average VSLOPE of the polygons; e"
+      ],
+      "sourceEvidence": "Original figure on page 7 of paper-slow-moving-shallow-landslides-gisborne-2022.pdf. Fig. 4 a The VLOS map; b VSLOPE map; c VSLOPE map ﬁltered to only the hillshade and aerial imagery; d average VSLOPE of the polygons; e",
+      "credit": "Original NZ research authors; original published figure, page 7; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "altText": "Satellite InSAR GIS velocity maps and aerial imagery for Gisborne landslides",
+      "caption": "Satellite InSAR GIS velocity maps and aerial imagery for Gisborne landslides. Source: paper-slow-moving-shallow-landslides-gisborne-2022.pdf, page 7.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 36,
+      "afterParagraphId": "ch36-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 434,
+          "rect": [
+            63.8,
+            270.6,
+            531.5,
+            670
+          ],
+          "displayArea": 186805,
+          "pixelSize": [
+            974,
+            832
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-insar-velocity-detail-2022",
+      "title": "Digital terrain GIS map of satellite-measured slope displacement in Gisborne",
+      "sourcePdf": "/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf#page=8",
+      "originalPdfPage": 8,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 5 a Map of the mean velocity in the direction of the line of sight satellite, and positive values (blue) represent movement towards the"
+      ],
+      "sourceEvidence": "Original figure on page 8 of paper-slow-moving-shallow-landslides-gisborne-2022.pdf. Fig. 5 a Map of the mean velocity in the direction of the line of sight satellite, and positive values (blue) represent movement towards the",
+      "credit": "Original NZ research authors; original published figure, page 8; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "altText": "Digital terrain GIS map of satellite-measured slope displacement in Gisborne",
+      "caption": "Digital terrain GIS map of satellite-measured slope displacement in Gisborne. Source: paper-slow-moving-shallow-landslides-gisborne-2022.pdf, page 8.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 42,
+      "afterParagraphId": "ch42-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 456,
+          "rect": [
+            63.8,
+            51,
+            531.5,
+            586.1
+          ],
+          "displayArea": 250289,
+          "pixelSize": [
+            974,
+            1115
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-insar-vertical-horizontal-2022",
+      "title": "Mapped vertical and horizontal land movement from satellite InSAR analysis",
+      "sourcePdf": "/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf#page=10",
+      "originalPdfPage": 10,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 7 a Velocity map projected in the vertical direction over Gis- in the horizontal (E-W) direction over Gisborne City by combining"
+      ],
+      "sourceEvidence": "Original figure on page 10 of paper-slow-moving-shallow-landslides-gisborne-2022.pdf. Fig. 7 a Velocity map projected in the vertical direction over Gis- in the horizontal (E-W) direction over Gisborne City by combining",
+      "credit": "Original NZ research authors; original published figure, page 10; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "altText": "Mapped vertical and horizontal land movement from satellite InSAR analysis",
+      "caption": "Mapped vertical and horizontal land movement from satellite InSAR analysis. Source: paper-slow-moving-shallow-landslides-gisborne-2022.pdf, page 10.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 42,
+      "afterParagraphId": "ch42-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 480,
+          "rect": [
+            63.8,
+            125.2,
+            531.5,
+            660.2
+          ],
+          "displayArea": 250289,
+          "pixelSize": [
+            974,
+            1115
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-unstable-slopes-gis-2022",
+      "title": "GIS map of unstable slopes calculated from InSAR and terrain datasets",
+      "sourcePdf": "/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf#page=12",
+      "originalPdfPage": 12,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 8 a Map of the unstable slopes identiﬁed using the results from Negative values (red) indicate movement downslope, and positive"
+      ],
+      "sourceEvidence": "Original figure on page 12 of paper-slow-moving-shallow-landslides-gisborne-2022.pdf. Fig. 8 a Map of the unstable slopes identiﬁed using the results from Negative values (red) indicate movement downslope, and positive",
+      "credit": "Original NZ research authors; original published figure, page 12; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "altText": "GIS map of unstable slopes calculated from InSAR and terrain datasets",
+      "caption": "GIS map of unstable slopes calculated from InSAR and terrain datasets. Source: paper-slow-moving-shallow-landslides-gisborne-2022.pdf, page 12.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 39,
+      "afterParagraphId": "ch39-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 571,
+          "rect": [
+            63.8,
+            51,
+            531.5,
+            586.6
+          ],
+          "displayArea": 250514,
+          "pixelSize": [
+            974,
+            1116
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisborne-landslide-hillshade-and-aerial-2022",
+      "title": "GIS map combining landslide displacement, LiDAR hillshade and aerial imagery",
+      "sourcePdf": "/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf#page=13",
+      "originalPdfPage": 13,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 9 a Map showing the unstable slopes identiﬁed in zone 1 have been removed; b high-resolution aerial imagery from 2017"
+      ],
+      "sourceEvidence": "Original figure on page 13 of paper-slow-moving-shallow-landslides-gisborne-2022.pdf. Fig. 9 a Map showing the unstable slopes identiﬁed in zone 1 have been removed; b high-resolution aerial imagery from 2017",
+      "credit": "Original NZ research authors; original published figure, page 13; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "altText": "GIS map combining landslide displacement, LiDAR hillshade and aerial imagery",
+      "caption": "GIS map combining landslide displacement, LiDAR hillshade and aerial imagery. Source: paper-slow-moving-shallow-landslides-gisborne-2022.pdf, page 13.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-p-8f90e9782465",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 593,
+          "rect": [
+            63.8,
+            255.9,
+            531.5,
+            670.6
+          ],
+          "displayArea": 193989,
+          "pixelSize": [
+            974,
+            864
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nz-police-spatial-information-interface-2009",
+      "title": "Documentary 2009 illustration of New Zealand Police's GIS and spatial information use",
+      "sourcePdf": "/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "pdfPath": "public/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "sourceName": "2009 Spatial Information in the New Zealand Economy research",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf#page=14",
+      "originalPdfPage": 14,
+      "documentYear": 2009,
+      "dateDisplay": "2009 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 2 NZ Police – modern spatial information technology in action"
+      ],
+      "sourceEvidence": "Original figure on page 14 of spatial-information-economy-2009.pdf. Figure 2 NZ Police – modern spatial information technology in action",
+      "credit": "2009 Spatial Information in the New Zealand Economy research; original published figure, page 14; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "altText": "Documentary 2009 illustration of New Zealand Police's GIS and spatial information use",
+      "caption": "Documentary 2009 illustration of New Zealand Police's GIS and spatial information use. Source: spatial-information-economy-2009.pdf, page 14.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 28,
+      "afterParagraphId": "ch28-s01-p02",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 42,
+          "rect": [
+            185.5,
+            421.3,
+            553.9,
+            666.4
+          ],
+          "displayArea": 90302,
+          "pixelSize": [
+            510,
+            340
+          ]
+        },
+        {
+          "xref": 527,
+          "rect": [
+            84.8,
+            39.8,
+            170.5,
+            110.6
+          ],
+          "displayArea": 6064,
+          "pixelSize": [
+            119,
+            99
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nzta-spatial-viewer-2009",
+      "title": "2009 NZTA Spatial Viewer interface with Wellington GIS transportation layers",
+      "sourcePdf": "/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "pdfPath": "public/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "sourceName": "2009 Spatial Information in the New Zealand Economy research",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf#page=37",
+      "originalPdfPage": 37,
+      "documentYear": 2009,
+      "dateDisplay": "2009 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 8 NZTA Spatial Viewer and some of its layers over Wellington area"
+      ],
+      "sourceEvidence": "Original figure on page 37 of spatial-information-economy-2009.pdf. Figure 8 NZTA Spatial Viewer and some of its layers over Wellington area",
+      "credit": "2009 Spatial Information in the New Zealand Economy research; original published figure, page 37; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "altText": "2009 NZTA Spatial Viewer interface with Wellington GIS transportation layers",
+      "caption": "2009 NZTA Spatial Viewer interface with Wellington GIS transportation layers. Source: spatial-information-economy-2009.pdf, page 37.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 25,
+      "afterParagraphId": "ch25-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 122,
+          "rect": [
+            185,
+            324.9,
+            487.3,
+            553.4
+          ],
+          "displayArea": 69071,
+          "pixelSize": [
+            420,
+            318
+          ]
+        },
+        {
+          "xref": 527,
+          "rect": [
+            84.8,
+            39.8,
+            170.5,
+            110.6
+          ],
+          "displayArea": 6064,
+          "pixelSize": [
+            119,
+            99
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nzta-integrated-gis-video-viewer-2009",
+      "title": "2009 NZTA GIS integrated with a road video viewer",
+      "sourcePdf": "/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "pdfPath": "public/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "sourceName": "2009 Spatial Information in the New Zealand Economy research",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf#page=39",
+      "originalPdfPage": 39,
+      "documentYear": 2009,
+      "dateDisplay": "2009 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 9 NZTA integrated GIS with video viewer"
+      ],
+      "sourceEvidence": "Original figure on page 39 of spatial-information-economy-2009.pdf. Figure 9 NZTA integrated GIS with video viewer",
+      "credit": "2009 Spatial Information in the New Zealand Economy research; original published figure, page 39; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "altText": "2009 NZTA GIS integrated with a road video viewer",
+      "caption": "2009 NZTA GIS integrated with a road video viewer. Source: spatial-information-economy-2009.pdf, page 39.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 35,
+      "afterParagraphId": "ch35-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 130,
+          "rect": [
+            185.5,
+            133.6,
+            474.1,
+            341.6
+          ],
+          "displayArea": 60028,
+          "pixelSize": [
+            481,
+            347
+          ]
+        },
+        {
+          "xref": 527,
+          "rect": [
+            84.8,
+            39.8,
+            170.5,
+            110.6
+          ],
+          "displayArea": 6064,
+          "pixelSize": [
+            119,
+            99
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nzta-lidar-road-planning-2009",
+      "title": "2009 LiDAR elevation data visualisation used for transport planning",
+      "sourcePdf": "/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "pdfPath": "public/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "sourceName": "2009 Spatial Information in the New Zealand Economy research",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf#page=40",
+      "originalPdfPage": 40,
+      "documentYear": 2009,
+      "dateDisplay": "2009 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Figure 10 LiDAR in the context of road planning and design"
+      ],
+      "sourceEvidence": "Original figure on page 40 of spatial-information-economy-2009.pdf. Figure 10 LiDAR in the context of road planning and design",
+      "credit": "2009 Spatial Information in the New Zealand Economy research; original published figure, page 40; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "altText": "2009 LiDAR elevation data visualisation used for transport planning",
+      "caption": "2009 LiDAR elevation data visualisation used for transport planning. Source: spatial-information-economy-2009.pdf, page 40.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 37,
+      "afterParagraphId": "ch37-p-8f90e9782465",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 134,
+          "rect": [
+            185.5,
+            133.6,
+            537.4,
+            430.7
+          ],
+          "displayArea": 104543,
+          "pixelSize": [
+            489,
+            413
+          ]
+        },
+        {
+          "xref": 527,
+          "rect": [
+            84.8,
+            39.8,
+            170.5,
+            110.6
+          ],
+          "displayArea": 6064,
+          "pixelSize": [
+            119,
+            99
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kaikoura-arcgis-landslide-density-2022",
+      "title": "GIS map of Kaikōura earthquake landslide density computed in ArcGIS",
+      "sourcePdf": "/assets/publications/pdfs/paper-kaikoura-landslide-dataset-2022.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-kaikoura-landslide-dataset-2022.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-kaikoura-landslide-dataset-2022.pdf#page=4",
+      "originalPdfPage": 4,
+      "documentYear": 2022,
+      "dateDisplay": "2022 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 1 respect to rupture zone, RP). We made this calculation in the same density, by using the ArcGIS kernel density function. Specifically,"
+      ],
+      "sourceEvidence": "Original figure on page 4 of paper-kaikoura-landslide-dataset-2022.pdf. Fig. 1 respect to rupture zone, RP). We made this calculation in the same density, by using the ArcGIS kernel density function. Specifically,",
+      "credit": "Original NZ research authors; original published figure, page 4; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-kaikoura-landslide-dataset-2022.pdf",
+      "altText": "GIS map of Kaikōura earthquake landslide density computed in ArcGIS",
+      "caption": "GIS map of Kaikōura earthquake landslide density computed in ArcGIS. Source: paper-kaikoura-landslide-dataset-2022.pdf, page 4.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 42,
+      "afterParagraphId": "ch42-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 59,
+          "rect": [
+            63.8,
+            51,
+            531.5,
+            461.3
+          ],
+          "displayArea": 191913,
+          "pixelSize": [
+            1949,
+            1710
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nz-rural-landuse-district-gis-2025",
+      "title": "GIS maps of Far North, Tararua and Masterton rural land-use transitions",
+      "sourcePdf": "/assets/publications/pdfs/paper-rural-land-use-transitions-north-island-2025.pdf",
+      "pdfPath": "public/assets/publications/pdfs/paper-rural-land-use-transitions-north-island-2025.pdf",
+      "sourceName": "NZ geospatial research publication",
+      "sourceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-rural-land-use-transitions-north-island-2025.pdf#page=2",
+      "originalPdfPage": 2,
+      "documentYear": 2025,
+      "dateDisplay": "2025 (source publication; figure may depict earlier data)",
+      "sourceFigureCaptions": [
+        "Fig. 1 Location and maps of the three case study districts: a Map of New Zealand; b Far North; c Tararua; and d Masterton."
+      ],
+      "sourceEvidence": "Original figure on page 2 of paper-rural-land-use-transitions-north-island-2025.pdf. Fig. 1 Location and maps of the three case study districts: a Map of New Zealand; b Far North; c Tararua; and d Masterton.",
+      "credit": "Original NZ research authors; original published figure, page 2; source PDF preserved locally",
+      "licence": "Original publisher credited; see source publication for reuse terms",
+      "licenceUrl": "https://history.pm4gis.nz/assets/publications/pdfs/paper-rural-land-use-transitions-north-island-2025.pdf",
+      "altText": "GIS maps of Far North, Tararua and Masterton rural land-use transitions",
+      "caption": "GIS maps of Far North, Tararua and Masterton rural land-use transitions. Source: paper-rural-land-use-transitions-north-island-2025.pdf, page 2.",
+      "context": "An authentic computer-produced GIS map, spatial-analysis figure, or software interface from a New Zealand research publication through 2025. Historical source PDF is hosted locally and cited by page.",
+      "chapterNumber": 7,
+      "afterParagraphId": "ch07-s01-p01",
+      "kind": "gis-figure",
+      "imageCandidates": [
+        {
+          "xref": 17,
+          "rect": [
+            49.7,
+            422.4,
+            497.4,
+            633.5
+          ],
+          "displayArea": 94505,
+          "pixelSize": [
+            1866,
+            880
+          ]
+        }
+      ]
+    }
+  ]
+}
