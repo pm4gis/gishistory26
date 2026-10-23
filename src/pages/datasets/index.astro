@@ -14,66 +14,21 @@ const popularSlugs=['nz-primary-parcels','nz-property-titles','nz-property-bound
 const popular=popularSlugs.map(slug=>records.find((r:any)=>r.slug===slug)).filter(Boolean);
 const actionLabel=(kind:string)=>kind==='Map service'?'Open data service':kind==='Interactive map'?'Open map':kind==='Data portal'?'Open data portal':'Open dataset';
 ---
-<Layout title="Datasets · NZ GIS History" description="Explore 100 New Zealand spatial datasets and data tools, with direct official agency links and documented historical records.">
+<Layout title="Datasets · NZ GIS History" description="Historical records of New Zealand GIS datasets through 31 December 2025, with linked agency sources, illustrations and documented relationships.">
  <div class="wrap dataset-layout">
-  <p class="eyebrow">Official data and its history</p>
-  <h1>100 New Zealand GIS datasets and map tools</h1>
-  <p class="intro">Start with an official data layer or map service, then follow its story through the documented history. This catalogue brings together {records.length} historical dataset records and {datasetSourceCatalogue.length} direct agency listings from LINZ, MfE, Stats NZ, MPI, MBIE, TPK and NIWA. The site’s historical account ends on 31 December 2025; agency catalogues and live services can update independently.</p>
-  <div class="dataset-total-strip" aria-label={`${datasetTotal} data resources in total`}>
-   <div><strong>{datasetTotal}</strong><span>datasets and map tools</span></div>
+  <p class="eyebrow">Historical catalogue</p>
+  <h1>New Zealand GIS dataset histories</h1>
+  <p class="intro">Follow New Zealand GIS datasets, map series and tools through 31 December 2025. The catalogue contains {records.length} documented dataset histories and {datasetSourceCatalogue.length} agency source references from LINZ, MfE, Stats NZ, MPI, MBIE, TPK and NIWA. Read the historical records first; the linked agency pages provide source references for further checking.</p>
+  <div class="dataset-total-strip" aria-label={`${datasetTotal} catalogue entries: ${records.length} dataset histories and ${datasetSourceCatalogue.length} agency source references`}>
+   <div><strong>{datasetTotal}</strong><span>catalogue entries</span></div>
    <div><strong>{records.length}</strong><span>documented dataset histories</span></div>
-   <div><strong>{datasetSourceCatalogue.length}</strong><span>direct agency listings</span></div>
+   <div><strong>{datasetSourceCatalogue.length}</strong><span>agency source references</span></div>
   </div>
   <div class="actions">
-   <a class="button" href="#agency-datasets">Browse agency datasets</a>
-   <a class="button" href="#documented-histories">Read dataset histories</a>
-   <a class="button" href="/network/">See relationships</a>
+   <a class="button" href="#documented-histories">Browse dataset histories</a>
+   <a class="button" href="#agency-sources">Find agency sources</a>
+   <a class="button" href="/network/">See dataset relationships</a>
   </div>
-
-  <section class="dataset-agency-catalogue" id="agency-datasets" aria-labelledby="agency-datasets-heading" data-dataset-source-catalogue>
-   <div class="dataset-section-intro">
-    <p class="eyebrow">Open the source</p>
-    <h2 id="agency-datasets-heading">Agency data collections</h2>
-    <p>Each card links to the agency’s own dataset record, data service or map explorer. Items that open an interactive map or service are labelled.</p>
-   </div>
-   <div class="dataset-source-filters">
-    <div class="dataset-source-control">
-     <label for="dataset-source-search">Search datasets</label>
-     <input id="dataset-source-search" type="search" placeholder="Try rivers, parcels, climate…" autocomplete="off" aria-describedby="dataset-source-count"/>
-    </div>
-    <div class="dataset-source-control">
-     <label for="dataset-agency-filter">Filter by agency</label>
-     <select id="dataset-agency-filter">
-      <option value="all">All agencies</option>
-      {datasetSourceAgencies.map(agency=><option value={agency.id}>{agency.label}</option>)}
-     </select>
-    </div>
-    <p id="dataset-source-count" class="dataset-source-count" role="status" aria-live="polite">Showing {datasetSourceCatalogue.length} of {datasetSourceCatalogue.length} agency datasets and tools.</p>
-   </div>
-   <p class="dataset-empty-state" data-source-empty hidden>No agency data sources match those filters. Try a different search or select all agencies.</p>
-   {sourceGroups.map(group=><section class="dataset-group dataset-source-group" aria-label={group.label} data-source-group data-agency-group={group.id}>
-    <div class="dataset-group-heading"><h3>{group.label}</h3><span class="muted">{group.items.length} {group.items.length===1?'listing':'listings'}</span></div>
-    <div class="cards dataset-grid">
-     {group.items.map(source=><article class="card dataset-card dataset-source-card" data-source-card data-agency={source.agency} data-search={source.searchText}>
-      <figure class="dataset-card-media dataset-source-card-media">
-       <a href={source.url} aria-label={`Open ${source.name} at ${source.agencyLabel}`}>
-        <img src={source.imageUrl} alt={source.imageAlt} loading="lazy" decoding="async"/>
-       </a>
-       <figcaption>{source.imageCredit} · <a href={source.imageSourceUrl}>Preview source</a></figcaption>
-      </figure>
-      <div class="dataset-card-copy">
-       <small class="eyebrow">{source.agencyLabel} · {source.kind}</small>
-       <a class="title" href={source.url}>{source.name}</a>
-       <p>{source.description}</p>
-       <div class="dataset-card-links">
-        <a href={source.url}>{actionLabel(source.kind)} →</a>
-        {source.mapUrl&&<a href={source.mapUrl}>Open interactive map →</a>}
-       </div>
-      </div>
-     </article>)}
-    </div>
-   </section>)}
-  </section>
 
   <section class="dataset-popular" aria-labelledby="dataset-popular-heading">
    <div class="section-head"><div><p class="eyebrow">Begin with well-known records</p><h2 id="dataset-popular-heading">Popular dataset histories</h2></div><span class="muted">{records.length} documented histories</span></div>
@@ -113,7 +68,52 @@ const actionLabel=(kind:string)=>kind==='Map service'?'Open data service':kind==
      })}
     </div>
    </section>)}
+  </section>  <section class="dataset-agency-catalogue" id="agency-sources" aria-labelledby="agency-sources-heading" data-dataset-source-catalogue>
+   <div class="dataset-section-intro">
+    <p class="eyebrow">Historical source references</p>
+    <h2 id="agency-sources-heading">Official agency source pages</h2>
+    <p>These official pages identify data layers, map services and portals connected to the histories above. Use the records above for their documented role through 31 December 2025; agency pages may have been updated since then.</p>
+   </div>
+   <div class="dataset-source-filters">
+    <div class="dataset-source-control">
+     <label for="dataset-source-search">Search agency sources</label>
+     <input id="dataset-source-search" type="search" placeholder="Try parcels, rivers, climate…" autocomplete="off" aria-describedby="dataset-source-count"/>
+    </div>
+    <div class="dataset-source-control">
+     <label for="dataset-agency-filter">Filter by agency</label>
+     <select id="dataset-agency-filter">
+      <option value="all">All agencies</option>
+      {datasetSourceAgencies.map(agency=><option value={agency.id}>{agency.label}</option>)}
+     </select>
+    </div>
+    <p id="dataset-source-count" class="dataset-source-count" role="status" aria-live="polite">Showing {datasetSourceCatalogue.length} of {datasetSourceCatalogue.length} agency source references.</p>
+   </div>
+   <p class="dataset-empty-state" data-source-empty hidden>No agency source references match those filters. Try a different search or select all agencies.</p>
+   {sourceGroups.map(group=><section class="dataset-group dataset-source-group" aria-label={group.label} data-source-group data-agency-group={group.id}>
+    <div class="dataset-group-heading"><h3>{group.label}</h3><span class="muted">{group.items.length} {group.items.length===1?'listing':'listings'}</span></div>
+    <div class="cards dataset-grid">
+     {group.items.map(source=><article class="card dataset-card dataset-source-card" data-source-card data-agency={source.agency} data-search={source.searchText}>
+      <figure class="dataset-card-media dataset-source-card-media">
+       <a href={source.url} aria-label={`Open ${source.name} at ${source.agencyLabel}`}>
+        <img src={source.imageUrl} alt={source.imageAlt} loading="lazy" decoding="async"/>
+       </a>
+       <figcaption>{source.imageCredit} · <a href={source.imageSourceUrl}>Preview source</a></figcaption>
+      </figure>
+      <div class="dataset-card-copy">
+       <small class="eyebrow">{source.agencyLabel} · {source.kind}</small>
+       <a class="title" href={source.url}>{source.name}</a>
+       <p>{source.description}</p>
+       <div class="dataset-card-links">
+        <a href={source.url}>{actionLabel(source.kind)} →</a>
+        {source.mapUrl&&<a href={source.mapUrl}>Open interactive map →</a>}
+       </div>
+      </div>
+     </article>)}
+    </div>
+   </section>)}
   </section>
+
+
  </div>
 </Layout>
 
@@ -138,7 +138,7 @@ const actionLabel=(kind:string)=>kind==='Map service'?'Open data service':kind==
      if(matches)visible++;
     }
     for(const group of groups)group.hidden=!group.querySelector('[data-source-card]:not([hidden])');
-    resultCount.textContent=`Showing ${visible} of ${cards.length} agency datasets and tools.`;
+    resultCount.textContent=`Showing ${visible} of ${cards.length} agency source references.`;
     emptyMessage.hidden=visible!==0;
    };
    searchInput.addEventListener('input',updateCatalogue);
