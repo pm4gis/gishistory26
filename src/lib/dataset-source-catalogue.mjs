@@ -1,7 +1,8 @@
 /**
- * Direct agency catalogues and data tools that extend the documented history.
- * Product links point to the source record, service, or explorer; preview images
- * are from that product or its official guide, never generic placeholders.
+ * Official agency source pages retained as provenance for the historical dataset catalogue.
+ * Product links point to publisher records, services or map tools; public historical
+ * coverage remains anchored at 31 December 2025. Preview images come from the product
+ * or its official guide, never generic placeholders.
  */
 const koordinatesPreview=(layer,style,size='600x400')=>
  `https://tiles-cdn.koordinates.com/services/tiles/v4/thumbnail/layer=${layer}.${style},style=auto/${size}.png`;
@@ -38,7 +39,7 @@ const stats=(slug,name,description,layer,style,imageAlt)=>catalogueItem({
 });
 
 export const datasetSourceCatalogue=Object.freeze([
- // LINZ: current source pages are grouped beside their closely related historic records.
+ // LINZ source records are grouped with related cadastral and map-series histories.
  linz('50772-nz-primary-parcels','NZ Primary Parcels','National primary parcel polygons with legal descriptions, purpose, area and title references.',50772,452980,'LINZ map preview of New Zealand primary parcel polygons.',{keywords:['cadastre','land parcels']}),
  linz('50804-nz-property-titles','NZ Property Titles','Spatial title polygons linked to one or more primary parcels; ownership details are excluded from this public layer.',50804,452981,'LINZ map preview of property title polygons.',{keywords:['cadastre','titles','property']}),
  linz('122657-nz-property-boundaries','NZ Property Boundaries','A combined representation of property boundaries using rating units, titles and parcels.',122657,453156,'LINZ map preview of nationwide property boundaries.',{keywords:['cadastre','property']}),
@@ -89,7 +90,7 @@ export const datasetSourceCatalogue=Object.freeze([
   url:'https://data-mpi.opendata.arcgis.com/datasets/MPI::shellfish-growing-areas-classified-for-harvest-for-human-consumption',description:'Classified shellfish-growing areas relevant to harvesting shellfish for human consumption.',kind:'Dataset',
   imageUrl:'https://www.arcgis.com/sharing/rest/content/items/e781d10f912846cca6f8b8db53fbb229/info/thumbnail/thumbnail1607980797421.png?w=500',imageAlt:'MPI map preview showing classified shellfish-growing areas along New Zealand’s coast.',imageCredit:'Ministry for Primary Industries Open Data Site',imageSourceUrl:'https://data-mpi.opendata.arcgis.com/datasets/MPI::shellfish-growing-areas-classified-for-harvest-for-human-consumption',keywords:['aquaculture','shellfish','marine']}),
 
- // MBIE / NZP&M map services are direct data services; the second link opens the map UI.
+ // MBIE / NZP&M source pages identify map services; the second link opens the map UI.
  catalogueItem({id:'mbie-minerals-permits',agency:'mbie',agencyLabel:'MBIE · New Zealand Petroleum & Minerals',name:'Minerals Permit Layers',
   url:'https://gis.nzpam.govt.nz/server/rest/services/Public/Permits_Minerals_Layers/MapServer',mapUrl:'https://gis.nzpam.govt.nz/permitwebmaps/?commodity=minerals',description:'Official map service for mineral permit applications, active permits, extensions, contest rounds and reserved areas.',kind:'Map service',
   imageUrl:'https://www.nzpam.govt.nz/assets/Uploads/maps-geoscience/Permit-webmaps-user-guide/permit-map-minerals__ScaleMaxWidthWzE3MDBd.png',imageAlt:'NZP&M Minerals Permit Webmap showing permit areas across New Zealand.',imageCredit:'New Zealand Petroleum & Minerals, Permit Webmaps User Guide',imageSourceUrl:'https://www.nzpam.govt.nz/maps-geoscience/permit-webmaps-user-guide',keywords:['minerals','permits','mining','MBIE']}),
@@ -102,7 +103,7 @@ export const datasetSourceCatalogue=Object.freeze([
   url:'https://tepunikokiri.github.io/climate_data_tool/',description:'Regional and SA2 maps exploring climate hazards and socio-economic conditions affecting Māori households.',kind:'Interactive map',
   imageUrl:'https://www.tpk.govt.nz/media/image/MediaImages-16387-A/768x1024%2C1/aspect',imageAlt:'Te Puni Kōkiri presenting the Climate Resilience Web App at the 2024 Climate Change and Business Conference; a regional risk map is visible on the screen.',imageCredit:'Te Puni Kōkiri, Climate Change and Business Conference 2024',imageSourceUrl:'https://www.tpk.govt.nz/en/mo-te-puni-kokiri/our-stories-and-media/new-web-app-enhances-climate-resilience-for-hapor4',keywords:['climate','hazards','Māori','resilience']}),
 
- // NIWA/Earth Sciences NZ: live freshwater data services with specific product imagery.
+ // NIWA / Earth Sciences NZ freshwater sources use imagery specific to each product.
  catalogueItem({id:'niwa-nrwqn-data',agency:'niwa',agencyLabel:'NIWA / Earth Sciences New Zealand',name:'National River Water Quality Network (NRWQN) Data',
   url:'https://hydrowebportal.niwa.co.nz/',description:'Free water-quality data from the national river monitoring network, including long-running physical, chemical and biological measurements.',kind:'Data portal',
   imageUrl:'https://niwa.co.nz/sites/default/files/sites/default/files/images/0012/110208/NRWQN-monitoring-sites_0.jpg',imageAlt:'NIWA map of National River Water Quality Network monitoring sites.',imageCredit:'NIWA, National River Water Quality Network monitoring-sites map',imageSourceUrl:'https://niwa.co.nz/freshwater/water-quality-monitoring-capabilities',keywords:['freshwater','rivers','water quality','monitoring']}),

@@ -101,3 +101,14 @@ test('both discovery menus link to the complete dataset catalogue',()=>{
  assert.doesNotMatch(layout,/<details class="nav-dropdown"/);
  assert.match(homeImageMap,/forestry-finds-gis/);
 });
+
+test('dataset histories lead and agency pages sit in a supporting source section',()=>{
+ const historicalSection=catalogue.indexOf('<section id="documented-histories"');
+ const sourceSection=catalogue.indexOf('<section class="dataset-agency-catalogue" id="agency-sources"');
+ assert.ok(historicalSection>=0&&sourceSection>historicalSection,'historical records should appear before agency source references');
+ assert.match(catalogue,/<h1>New Zealand GIS dataset histories<\/h1>/);
+ assert.match(catalogue,/The catalogue contains \{records\.length\} documented dataset histories and \{datasetSourceCatalogue\.length\} agency source references/);
+ assert.match(catalogue,/Historical source references/);
+ assert.match(catalogue,/through 31 December 2025/);
+ assert.doesNotMatch(catalogue,/live services can update independently|direct agency listings/);
+});
