@@ -9,7 +9,7 @@ try{
  for(const width of [1440,1280,768,390,320]){
   const context=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const page=await context.newPage();page.setDefaultTimeout(20000);
   const errors=[];page.on('pageerror',e=>errors.push(String(e)));
-  for(const route of ['/','/history/','/read/','/browse/','/timeline/','/network/','/publications/','/search/','/contribute/']){
+  for(const route of ['/','/history/','/read/','/browse/','/timeline/','/network/','/publications/','/search/','/datasets/','/contribute/']){
    await page.goto(base+route);await page.waitForTimeout(150);
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),width+' '+route+' overflow');
    const audit=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
@@ -18,7 +18,18 @@ try{
   }
   await page.goto(base+'/');assert.equal(await page.locator('.landing-primary').getAttribute('href'),'/read/');
   await page.locator('.landing-primary').click();await page.locator('.chapter-catalogue-card').first().waitFor();assert.equal(await page.locator('.chapter-catalogue-card').count(),44);await page.locator('.chapter-catalogue-card').first().click();await page.locator('h1').waitFor();
-  await page.goto(base+'/search/?q=Landonline');await page.locator('.pagefind-ui__result').first().waitFor();assert.ok((await page.locator('.pagefind-ui__results').innerText()).includes('Landonline'));
+  await page.goto(base+'/search/?q=Landonline');await page.waitForFunction(()=>document.querySelector('.pagefind-ui__results')?.innerText.includes('Landonline'));
+  await page.goto(base+'/datasets/');assert.equal(await page.locator('.dataset-source-card').count(),45);
+  const datasetSearch=page.getByLabel('Search datasets');await datasetSearch.fill('climate');
+  await page.waitForFunction(()=>document.querySelector('#dataset-source-count')?.textContent?.includes('Showing 1 of 45'));
+  assert.equal(await page.locator('.dataset-source-card:not([hidden])').count(),1);
+  await page.getByLabel('Filter by agency').selectOption('mpi');
+  await page.waitForFunction(()=>document.querySelector('#dataset-source-count')?.textContent?.includes('Showing 0 of 45'));
+  assert.equal(await page.locator('[data-source-empty]').isVisible(),true);
+  await datasetSearch.fill('');
+  await page.waitForFunction(()=>document.querySelector('#dataset-source-count')?.textContent?.includes('Showing 2 of 45'));
+  assert.equal(await page.locator('.dataset-source-card:not([hidden])').count(),2);
+  assert.ok((await page.locator('.dataset-source-card:not([hidden]) .title').evaluateAll(nodes=>nodes.map(a=>a.href))).every(href=>href.startsWith('https://data-mpi.opendata.arcgis.com/datasets/')));
   await page.goto(base+'/timeline/');const example=page.locator('.timeline-starters a').first();const label=await example.textContent();await example.click();await page.locator('.event-summary').waitFor();assert.ok((await page.locator('.event-summary').innerText()).includes(label.split(' · ').slice(1).join(' · ')));
   // Empty historical periods remain visible, but cannot be selected as results.
   assert.ok(await page.locator('.period-choice:disabled').count()>0);

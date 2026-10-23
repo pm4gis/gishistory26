@@ -16,7 +16,8 @@ const viewports=[
 const catalogues=[
  {route:'/read/',selector:'.chapter-catalogue-card',exact:44},
  {route:'/themes/',selector:'.art-card',exact:8},
- {route:'/datasets/',selector:'.dataset-card',min:20},
+ {route:'/datasets/',selector:'.dataset-source-card',exact:45,ratio:16/9},
+ {route:'/datasets/',selector:'.dataset-card:not(.dataset-source-card)',exact:55,ratio:16/9},
  {route:'/browse/',selector:'.subject-browse-card',min:60},
  {route:'/themes/cadastre/',selector:'.subject-entry-card',min:1},
  {route:'/themes/local-government/',selector:'.subject-entry-card',min:1},
@@ -36,7 +37,7 @@ async function check(label,fn){
  try{const result=await fn();outcomes.push({label,pass:true,...(result||{})});console.log('PASS '+label);}
  catch(e){outcomes.push({label,pass:false,error:String(e)});console.error('FAIL '+label+': '+e);process.exitCode=1;}
 }
-async function cards(page,selector,{min,exact}={}){
+async function cards(page,selector,{min,exact,ratio}={}){
  const locator=page.locator(selector);
  await locator.first().waitFor({state:'attached'});
  const result=await locator.evaluateAll(elements=>elements.map(card=>{
@@ -50,6 +51,7 @@ async function cards(page,selector,{min,exact}={}){
    textOnlyPerson:card.matches('.subject-browse-card--person'),
    title:card.querySelector('h3, .title')?.textContent?.trim()?.slice(0,120),
    titleHref,imageHref,imageSource:image?.getAttribute('src'),
+   sourceHref:card.querySelector('.dataset-source-card-media figcaption a')?.getAttribute('href'),
    alt:image?.getAttribute('alt'),
    accessibleName:imageLink?.getAttribute('aria-label')||image?.getAttribute('alt')||imageLink?.textContent?.trim(),
    width:imageRect?.width||0,height:imageRect?.height||0,
@@ -64,13 +66,21 @@ async function cards(page,selector,{min,exact}={}){
   // Person records intentionally use text-first cards rather than unrelated scenic photographs.
   if(card.textOnlyPerson){assert.ok(card.titleHref?.startsWith('/'),selector+' #'+i+' has no readable destination');assert.ok(!card.imageSource,'Person card should not suggest an unrelated portrait');continue;}
   assert.ok(card.imageSource,selector+' #'+i+' has no image');
-  const file=new URL(card.imageSource,base).pathname;
-  assert.ok(existsSync('dist'+file),selector+' #'+i+' image asset missing from production build: '+file);
+  const imageUrl=new URL(card.imageSource,base);
+  if(imageUrl.origin===new URL(base).origin){
+   assert.ok(existsSync('dist'+imageUrl.pathname),selector+' #'+i+' image asset missing from production build: '+imageUrl.pathname);
+  }else{
+   const allowedPreviewHosts=['tiles-cdn.koordinates.com','www.arcgis.com','www.nzpam.govt.nz','www.tpk.govt.nz','niwa.co.nz'];
+   assert.ok(allowedPreviewHosts.some(host=>imageUrl.hostname===host||imageUrl.hostname.endsWith('.'+host)),selector+' #'+i+' has an unreviewed external image host: '+imageUrl.hostname);
+   assert.ok(card.sourceHref?.startsWith('https://'),selector+' #'+i+' external preview has no source link');
+   assert.ok(card.imageHref?.startsWith('https://'),selector+' #'+i+' external preview does not link directly to the dataset');
+  }
   assert.ok(card.imageHref,selector+' #'+i+' image has no link');
   assert.ok(card.titleHref,selector+' #'+i+' title has no link');
   assert.equal(card.imageHref,card.titleHref,selector+' #'+i+' image opens different destination: '+card.imageHref);
   assert.doesNotMatch(card.imageHref,/^\/images\//,selector+' #'+i+' opens image archive instead of entry');
   assert.ok(card.width>25&&card.height>25,selector+' #'+i+' image has no visible frame');
+  if(ratio!==undefined)assert.ok(Math.abs(card.width/card.height-ratio)<.03,selector+' #'+i+' thumbnail frame is not '+ratio+': '+card.width+'x'+card.height);
   assert.ok(card.accessibleName,selector+' #'+i+' image link has no accessible name');
  }
  return result;
@@ -167,7 +177,7 @@ try{
    const targets=[
     {route:'/read/',selector:'.chapter-catalogue-card',keyboard:true},
     {route:'/themes/',selector:'.art-card',keyboard:false},
-    {route:'/datasets/',selector:'.dataset-card',keyboard:false},
+    {route:'/datasets/',selector:'.dataset-card:not(.dataset-source-card)',keyboard:false},
     {route:'/browse/',selector:'.subject-browse-card',keyboard:false}
    ];
    const opened=[];
