@@ -1,0 +1,1627 @@
+{
+  "collectedAt": "2026-10-23T00:59:35.629Z",
+  "sourcePages": [
+    {
+      "label": "Manaaki Whenua WMS in QGIS, ArcGIS and uDig",
+      "url": "https://maps.scinfo.org.nz/using.html",
+      "chapter": "open-source-changes-the-tools",
+      "images": [
+        {
+          "url": "https://maps.scinfo.org.nz/images/4e027fc4fbf0afa23d337445311e96f9.png",
+          "alt": "LCR Logo"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/226511ab9c13c00ad30fb15fdb2f2110.jpg",
+          "alt": "QGIS Add WMS/WMTS Layer"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/1142dfc5ccda4704f9c98ab84814da63.jpg",
+          "alt": "QGIS Data Source Manager"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/a5f685543ceae7b7d57336eac1175a76.jpg",
+          "alt": "QGIS Create New Connection"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/e2f51068e668acf0398d90f4a241bfc2.jpg",
+          "alt": "Data Source Manager Window - connected"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/ece9506a806f717bb6d13125fd2da012.jpg",
+          "alt": "QGIS WMS Legend"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/61d196dff750952c50f59dd1f9ff78d3.jpg",
+          "alt": "QGIS Tilesets"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/aff6b2537de897431e8353dbf6ee28db.jpg",
+          "alt": "QGIS Copyright Dialog"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/f486532bcd16b9500b4c983731a1751d.jpg",
+          "alt": "Scale Dropdown"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/9e9fdc17a5c6ac671d1d3d57339589eb.jpg",
+          "alt": "ArcGIS Add WMS Window"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/a61386d334b8f3c063527819ad707540.jpg",
+          "alt": "ArcGIS Add WMS Layers"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/3985fd8ab6efc39af63430e3f12e6826.jpg",
+          "alt": "ArcGIS Add WMS Legend"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/9f6857e21150c20d13073a4f515967f5.jpg",
+          "alt": "ArcGIS Multiple layers"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/5aa673149fb4422a98265a0763c09dac.jpg",
+          "alt": "ArcGIS layout view, using WMS legend"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/5dec58a2785f86014ce4bfae30a3d4ca.jpg",
+          "alt": "uDig Add Data Window"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/e0fc6ef437e4d8d50b6a29e0fcaaa9d9.jpg",
+          "alt": "uDig Add Data Window"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/712a24eba841b6338dd286f473866b56.jpg",
+          "alt": "uDig Add Resource"
+        },
+        {
+          "url": "https://maps.scinfo.org.nz/images/d0c087a330f878f911eb4eed6c365ad9.jpg",
+          "alt": "uDig Map View with layers"
+        }
+      ],
+      "count": 18
+    },
+    {
+      "label": "LINZ WMTS in QGIS",
+      "url": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/map-tile-services/using-lds-wmts-qgis",
+      "chapter": "the-spatial-infrastructure-idea",
+      "images": [
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-1.png?itok=_PV7phiq",
+          "alt": "Screenshot showing how to add a WMTS Layer in QGIS."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-2.png?itok=jh-6oM8x",
+          "alt": "Screenshot showing WMTS window."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-3.png?itok=F2_DT_-z",
+          "alt": "Screenshot showing the ‘Create a New WMTS Connection’ window."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-4.png?itok=KNuC2BXT",
+          "alt": "Screenshot showing WMTS window with connect button highlighted."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-5.png?itok=7PP1ho8b",
+          "alt": "Screenshot showing the WMTS connection."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-6.png?itok=XLpf9M55",
+          "alt": "Screenshot showing Network window and settings."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-7.png?itok=RPvsheiP",
+          "alt": "Screenshot showing the tileset options for the dataset."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-8.png?itok=pE6WfIK9",
+          "alt": "Screenshot showing dataset from WMTS connection in QGIS."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-9.png?itok=_yu2f3_E",
+          "alt": "Screenshot showing multiple tiled datasets in QGIS."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-10.png?itok=N49XWbwi",
+          "alt": "Screenshot showing feature information for a dataset."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-11.png?itok=3_9EM5qv",
+          "alt": "Screenshot showing how to add a downloaded scale set."
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/lds_wmts-qgis_screenshot-12.png?itok=FAoIjJnH",
+          "alt": "Screenshot showing zoom levels from downloaded scale set."
+        }
+      ],
+      "count": 12
+    },
+    {
+      "label": "LINZ Esri file geodatabase relationships",
+      "url": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/data-and-schemas/building-relationships-esri-file-geodatabase",
+      "chapter": "enterprise-gis",
+      "images": [
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_medium/public/lds_aspatial-spatial-relationships_20160810.png?itok=RLmG9jZc",
+          "alt": "Diagram of software relationships"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_large/public/lds_aspatial-spatial-relationships_20160810.png?itok=pzneX2JP",
+          "alt": "Diagram of software relationships"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/File-directory-lds.png?itok=dQxYdCBq",
+          "alt": "File Directory IDs image"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/ArcCatalog-browser-screenshot.png?itok=Mqf0gzT9",
+          "alt": "ArcCatalog browser screenshot"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/Merge-data-lds-arccatelog.png?itok=JVGSMGt8",
+          "alt": "ArcCatalog merging datasets screenshot"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/ArcCatelog-relationship-builder.png?itok=ChzKE51g",
+          "alt": "ArcCatelog relationship builder image"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/owner_and_stat_action.png?itok=jYAa8QwT",
+          "alt": "ArcMap Feature Identify Tool screenshot"
+        }
+      ],
+      "count": 7
+    },
+    {
+      "label": "LINZ basemap ArcGIS Online",
+      "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/",
+      "chapter": "cloud-services-and-apis",
+      "images": [
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-1-agol-map-viewer.png",
+          "alt": "ArcGIS Online Map Viewer"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-2-layers-panel.png",
+          "alt": "Layers panel"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-3-browse-layers-option.png",
+          "alt": "Browse layers option"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-4-agol-option.png",
+          "alt": "ArcGIS Online option"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-5-search-box.png",
+          "alt": "Search box"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-6-desired-layer-on-map.png",
+          "alt": "Desired layer on map"
+        }
+      ],
+      "count": 6
+    },
+    {
+      "label": "LINZ ArcGIS desktop basemap",
+      "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/",
+      "chapter": "gis-comes-to-the-desktop",
+      "images": [
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/static/basemaps-menu-button.png",
+          "alt": "Basemaps Menu Button"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/static/layer-selector.png",
+          "alt": "Basemaps Layer Selector"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/static/layer-search.png",
+          "alt": "Basemaps Layer Search"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/static/copy-url-apikey.png",
+          "alt": "Copy the API URL and API key"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/static/move-apikey-info.png",
+          "alt": "Move API Key from URL to custom parameter"
+        },
+        {
+          "url": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-individual-linz-basemaps-layers-to-arcgis/static/custom-parameters.png",
+          "alt": "Add format to custom parameter"
+        }
+      ],
+      "count": 6
+    },
+    {
+      "label": "LINZ API use with QGIS",
+      "url": "https://www.linz.govt.nz/guidance/data-service/linz-basemaps-guide/how-use-linz-basemaps-apis",
+      "chapter": "open-data-changes-access",
+      "images": [
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/ss_basemaps_browser_20211130.png?itok=nY2DbBfp",
+          "alt": ""
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/ss_basemaps_vector-tiles-connection_20211130.png?itok=9CWGbyIp",
+          "alt": ""
+        }
+      ],
+      "count": 2
+    },
+    {
+      "label": "LINZ survey georeferencing",
+      "url": "https://www.linz.govt.nz/guidance/landonline-support/survey-support/irregular-lines-and-right-lines/irregular-lines/import-georef-image",
+      "chapter": "landonline",
+      "images": [
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/img/nls_irregular_lines_workflow_icon_image_202303%20%281%29.png?itok=SzyT_sWA",
+          "alt": "Screenshot of Toolbar with"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/2023-03/nls_irregular_lines_panel_georef_image_202303.png?itok=GmL8MNGx",
+          "alt": "Irregular lines panel with"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/img/nls_irregular_lines_add_image_panel_image_202303.png?itok=TVfIGCNL",
+          "alt": "Screenshot of Add image panel"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/2023-03/nls_irregular_lines_split_screen_import_image_202303.png?itok=lj0TcHJQ",
+          "alt": "Georef image alongside spatial view"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/img/nls_irregular_lines_georef_control_pts_message_image_202303.png?itok=vG8r1OdK",
+          "alt": "ScreenMessage says"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/2023-03/nls_irregular_lines_add_control_points_image_202303.png?itok=lwGVFp4u",
+          "alt": "Control points panel over georef image, and image opacity scroller"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/img/nls_irregular_lines_control_panel_complete_button_image_202303.png?itok=YSfijBE6",
+          "alt": "Screenshot of Control points panel with"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/2023-03/nls_irregular_line_georef_image_complete_image_202303.png?itok=RNvYMxyq",
+          "alt": "Georef image with map overlay"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/img/nls_irregular_lines_layers_panel_georef_open_image_202303.png?itok=a7XWvr33",
+          "alt": "Layers panel with"
+        },
+        {
+          "url": "https://www.linz.govt.nz/sites/default/files/styles/sector_small/public/2023-03/nls_irregular%20boundaries_delete_georeference_image_202303.png?itok=9FDlHO4b",
+          "alt": "Delete georeferenced image message box with"
+        }
+      ],
+      "count": 10
+    },
+    {
+      "label": "Canterbury Maps use case Aurecon",
+      "url": "https://canterburymaps.govt.nz/about/user-stories/aurecon/",
+      "chapter": "councils-build-corporate-gis",
+      "images": [
+        {
+          "url": "https://canterburymaps.govt.nz/media/1057/aurecon.png",
+          "alt": "Aurecon"
+        },
+        {
+          "url": "https://canterburymaps.govt.nz/media/1072/aurecon_fig1.png?width=850",
+          "alt": ""
+        },
+        {
+          "url": "https://canterburymaps.govt.nz/media/1073/aurecon_fig2.png?width=850",
+          "alt": ""
+        }
+      ],
+      "count": 3
+    },
+    {
+      "label": "LEARNZ GIS predator control mapping",
+      "url": "https://www.learnz.org.nz/hokonui222/discover/GIS",
+      "chapter": "conservation-and-environment",
+      "error": "HTTP 404",
+      "images": [],
+      "count": 0
+    },
+    {
+      "label": "LEARNZ GIS outdoor tracks",
+      "url": "https://learnz.org.nz/getoutdoors204/discover/adding-information-maps-gis",
+      "chapter": "mapping-leaves-the-office",
+      "error": "HTTP 404",
+      "images": [],
+      "count": 0
+    },
+    {
+      "label": "Eco-index land cover GIS",
+      "url": "https://eco-index.nz/understand",
+      "chapter": "science-goes-spatial",
+      "images": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/9a8e7004-69df-442b-bcd2-9e6eef055c4c/Eco-index_Rev_White_nobackground_small_left_margin.png?format=1500w",
+          "alt": "Eco-index"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/181c1ada-2a07-4646-ac7c-65424342f844/iStock-1824057388.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/c1f16940-ab3e-4df9-a38e-6fd5ad454584/Land+Cover+Snapshot+-+Sep+2024-e.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/4e641e3c-7625-497b-992d-4ed906481a7e/Ecosystem+Projector+-+Sep+2024.png",
+          "alt": ""
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/6483f1d0-42d1-4124-b4c6-e92662a85297/Screenshot+2024-09-30+190342.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/341cb12c-b14a-49ae-b36b-04a7781abba3/43381240320_4c0fff0ff2_k.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/d02b7459-4aa5-43bc-8e16-6f454c899076/Screenshot+2025-01-10+163939.png",
+          "alt": ""
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/03fbe881-f7df-4893-bcc4-156f8222d271/Eco-index_Pos_Poumanu_RGB.jpg",
+          "alt": ""
+        }
+      ],
+      "count": 8
+    },
+    {
+      "label": "National Library future of maps 2016",
+      "url": "https://natlib.govt.nz/blog/posts/the-future-of-maps",
+      "chapter": "open-data-changes-access",
+      "images": [],
+      "count": 0
+    },
+    {
+      "label": "RNZ LINZ cartography 2016",
+      "url": "https://www.rnz.co.nz/national/programmes/ourchangingworld/audio/201797240/points-lines-and-polygons-the-art-of-making-maps",
+      "chapter": "topography-goes-digital",
+      "images": [
+        {
+          "url": "https://www.rnz.co.nz/x/app-ad/app-ad-prog-device-one-d5ab2d385ac389ce0b434e302d961666cfc556f25fab25a93d870d6dda8e842f.png",
+          "alt": ""
+        },
+        {
+          "url": "https://www.rnz.co.nz/x/app-ad/app-ad-prog-device-two-a17bcb0fa84c50734c6f0e0bff262519bf6a55a3f062b928062d485a26ad5a5a.png",
+          "alt": ""
+        }
+      ],
+      "count": 2
+    },
+    {
+      "label": "Geospatial LiDAR Whanganui 2025",
+      "url": "https://www.teaonews.co.nz/2025/02/14/how-whanganui-river-maori-helped-fill-gaps-in-critical-data/",
+      "chapter": "lidar-remakes-the-landscape",
+      "images": [
+        {
+          "url": "https://www.teaonews.co.nz/pf/resources/images/koru.png?d=90",
+          "alt": "App Icon"
+        },
+        {
+          "url": "https://whakaatamaori-teaomaori-prod.web.arc-cdn.net/resizer/v2/TD4Y7667PVD7BMT257BY62KWQU.png?auth=e82cc92dcd2bdf5d39a6203fba87e960bb1d2f5f8254335ea2f4866a22f4f452&width=1440",
+          "alt": ""
+        },
+        {
+          "url": "https://whakaatamaori-teaomaori-prod.web.arc-cdn.net/resizer/v2/SX3FK6BMYJGQZJ3XDHCC2THKPQ.jpg?auth=08fad4604e885dc752a5830a5d43c9afb557a21fafe3d9c794b89c527cf6e8e5",
+          "alt": "Local Democracy Reporting"
+        },
+        {
+          "url": "https://dwhdxdxsrms8q.cloudfront.net/te-ao-news/fallbackImage.jpg",
+          "alt": "Te Ao Māori News"
+        },
+        {
+          "url": "https://d3c209wvktxnxh.cloudfront.net/10-22-2026/t_e8a667f83a6d4a8e847e4700cb33847c_name_TMT_TAKARO_PANGO_YT_TN.jpg",
+          "alt": "Tākaro Pango receives international recognition at the 2026 Australian Good Design Awards"
+        },
+        {
+          "url": "https://d3c209wvktxnxh.cloudfront.net/10-21-2026/t_189472ac45e24199882ca72353caf09e_name_LT_TERTIARYPROTEST_TN.jpg",
+          "alt": "Māori university staff call for job security and fair pay at historic tertiary strike"
+        },
+        {
+          "url": "https://d3c209wvktxnxh.cloudfront.net/10-21-2026/t_eb88b373403e4e96b414bb0e87ca50b9_name_TMO_HARRY_TAM_YT_TN.jpg",
+          "alt": "Harry Tam defends gang pad visit as political backlash continues"
+        }
+      ],
+      "count": 7
+    },
+    {
+      "label": "LINZ QGIS data importer",
+      "url": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/linz-data-service-in-qgis",
+      "chapter": "the-spatial-infrastructure-idea",
+      "error": "HTTP 404",
+      "images": [],
+      "count": 0
+    },
+    {
+      "label": "ArcGIS Pro NZ Golden Bay worked example",
+      "url": "https://community.esri.com/t5/arcgis-pro-questions/how-to-create-a-mmpk-file/td-p/1019378",
+      "chapter": "gis-comes-to-the-desktop",
+      "images": [
+        {
+          "url": "https://us.v-cdn.net/6038851/uploads/images/4422iFC69C066738DF7E7/Download%20basemap.png",
+          "alt": "Download basemap.png"
+        },
+        {
+          "url": "https://us.v-cdn.net/6038851/uploads/images/4431i0943268FC442CF80/Screenshot%20%2868%29.png",
+          "alt": "Screenshot (68).png"
+        },
+        {
+          "url": "https://us.v-cdn.net/6038851/uploads/images/4425i71AAB62DC578B1B3/Screenshot%20%2867%29.png",
+          "alt": "Screenshot (67).png"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "label": "QGIS New Zealand vector tile issue",
+      "url": "https://github.com/qgis/QGIS/issues/47941",
+      "chapter": "open-source-changes-the-tools",
+      "images": [
+        {
+          "url": "https://user-images.githubusercontent.com/8991188/159837317-3987f1ef-211b-43e1-822e-778c22e51868.png",
+          "alt": "image"
+        },
+        {
+          "url": "https://user-images.githubusercontent.com/8991188/159837660-eea9795a-a9c1-49ba-b538-716997cb828d.png",
+          "alt": "image"
+        }
+      ],
+      "count": 2
+    },
+    {
+      "label": "LINZ geographic web service ArcGIS map",
+      "url": "https://www.linz.govt.nz/guidance/data-service/linz-data-service-guide/map-tile-services/using-lds-wmts-arcgis-desktop",
+      "chapter": "the-spatial-infrastructure-idea",
+      "error": "HTTP 404",
+      "images": [],
+      "count": 0
+    }
+  ],
+  "commonsSearches": [
+    {
+      "query": "\"ArcView\" GIS screenshot New Zealand",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "\"MapInfo\" GIS map",
+      "files": [
+        {
+          "title": "File:Aafrika.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Aafrika.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Aafrika.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 842,
+          "height": 887,
+          "uploaded": "2013-10-01T14:19:01Z",
+          "date": "2004-09-04",
+          "description": "Selgitan, mida tähendab omatehtud. Minu lisatud on riikide piirid, seda tegin GIS programmiga MapInfo. Reljeefimudel on USGS kodulehelt tükkhaaval tõmmatud ning Photoshopiga ühtseks pildiks kokku kleebitud. Loodan, et sellele kaardile on antud piisavalt lisaväärtust ja keegi ei saa öelda, et see on autoriõiguse rikkumine. Igaljuhul täpselt sellist kaarti mujal netis ei ole. Kaart on ruutlaba, LAT/LON projektsioonis.",
+          "author": "Siim",
+          "licence": "Public domain",
+          "licenceUrl": "",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aafrika.jpg"
+        },
+        {
+          "title": "File:Map of districts of the Republic of Bashkortostan in the Bashkir language.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Map_of_districts_of_the_Republic_of_Bashkortostan_in_the_Bashkir_language.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Map_of_districts_of_the_Republic_of_Bashkortostan_in_the_Bashkir_language.png/960px-Map_of_districts_of_the_Republic_of_Bashkortostan_in_the_Bashkir_language.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5189,
+          "height": 5244,
+          "uploaded": "2026-08-01T12:41:43Z",
+          "date": "2026-07-15",
+          "description": "Map of districts of the Republic of Bashkortostan in the Bashkir language. Created in GIS MapInfo based on OpenStreetMap data.",
+          "author": "Shirshikay",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_districts_of_the_Republic_of_Bashkortostan_in_the_Bashkir_language.png"
+        }
+      ],
+      "count": 2
+    },
+    {
+      "query": "\"ArcGIS Pro\" New Zealand map",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "\"QGIS\" New Zealand GIS screenshot",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "\"QGIS\" New Zealand population density",
+      "files": [
+        {
+          "title": "File:2023 NZ Census Population Density - Marlborough Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/2023_NZ_Census_Population_Density_-_Marlborough_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/2023_NZ_Census_Population_Density_-_Marlborough_Region.png/960px-2023_NZ_Census_Population_Density_-_Marlborough_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1325,
+          "height": 1747,
+          "uploaded": "2024-10-20T01:48:50Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Marlborough_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Nelson Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2023_NZ_Census_Population_Density_-_Nelson_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2023_NZ_Census_Population_Density_-_Nelson_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 491,
+          "height": 456,
+          "uploaded": "2024-10-20T01:48:52Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Nelson_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Otago Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2023_NZ_Census_Population_Density_-_Otago_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/2023_NZ_Census_Population_Density_-_Otago_Region.png/960px-2023_NZ_Census_Population_Density_-_Otago_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2125,
+          "height": 2541,
+          "uploaded": "2024-10-20T01:48:54Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Otago_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Southland Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/2023_NZ_Census_Population_Density_-_Southland_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/2023_NZ_Census_Population_Density_-_Southland_Region.png/960px-2023_NZ_Census_Population_Density_-_Southland_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2059,
+          "height": 2813,
+          "uploaded": "2024-10-20T01:48:55Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Southland_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Taranaki Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/2023_NZ_Census_Population_Density_-_Taranaki_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/2023_NZ_Census_Population_Density_-_Taranaki_Region.png/960px-2023_NZ_Census_Population_Density_-_Taranaki_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1113,
+          "height": 1244,
+          "uploaded": "2024-10-20T01:48:56Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Taranaki_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Tasman Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/2023_NZ_Census_Population_Density_-_Tasman_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2023_NZ_Census_Population_Density_-_Tasman_Region.png/960px-2023_NZ_Census_Population_Density_-_Tasman_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1025,
+          "height": 1719,
+          "uploaded": "2024-10-20T01:48:57Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Tasman_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Buller District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/2023_NZ_Census_Population_Density_-_Buller_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/2023_NZ_Census_Population_Density_-_Buller_District.png/960px-2023_NZ_Census_Population_Density_-_Buller_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2353,
+          "height": 3434,
+          "uploaded": "2024-10-20T02:00:42Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Buller_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Ashburton District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023_NZ_Census_Population_Density_-_Ashburton_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_NZ_Census_Population_Density_-_Ashburton_District.png/960px-2023_NZ_Census_Population_Density_-_Ashburton_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2534,
+          "height": 2313,
+          "uploaded": "2024-10-20T02:00:43Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Ashburton_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Christchurch City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/2023_NZ_Census_Population_Density_-_Christchurch_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/2023_NZ_Census_Population_Density_-_Christchurch_City.png/960px-2023_NZ_Census_Population_Density_-_Christchurch_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2234,
+          "height": 2138,
+          "uploaded": "2024-10-20T02:00:49Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Christchurch_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Clutha District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/2023_NZ_Census_Population_Density_-_Clutha_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/2023_NZ_Census_Population_Density_-_Clutha_District.png/960px-2023_NZ_Census_Population_Density_-_Clutha_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1984,
+          "height": 2594,
+          "uploaded": "2024-10-20T02:00:50Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Clutha_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Dunedin City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/2023_NZ_Census_Population_Density_-_Dunedin_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/2023_NZ_Census_Population_Density_-_Dunedin_City.png/960px-2023_NZ_Census_Population_Density_-_Dunedin_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3118,
+          "height": 3392,
+          "uploaded": "2024-10-20T02:00:50Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Dunedin_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Gisborne District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/2023_NZ_Census_Population_Density_-_Gisborne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/2023_NZ_Census_Population_Density_-_Gisborne_District.png/960px-2023_NZ_Census_Population_Density_-_Gisborne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2438,
+          "height": 2809,
+          "uploaded": "2024-10-20T02:00:53Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Gisborne_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Gore District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/2023_NZ_Census_Population_Density_-_Gore_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/2023_NZ_Census_Population_Density_-_Gore_District.png/960px-2023_NZ_Census_Population_Density_-_Gore_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1084,
+          "height": 1266,
+          "uploaded": "2024-10-20T02:00:53Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Gore_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Hauraki District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/2023_NZ_Census_Population_Density_-_Hauraki_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/2023_NZ_Census_Population_Density_-_Hauraki_District.png/960px-2023_NZ_Census_Population_Density_-_Hauraki_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1313,
+          "height": 1328,
+          "uploaded": "2024-10-20T02:01:00Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Hauraki_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Horowhenua District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/2023_NZ_Census_Population_Density_-_Horowhenua_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/2023_NZ_Census_Population_Density_-_Horowhenua_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 941,
+          "height": 966,
+          "uploaded": "2024-10-20T02:01:00Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Horowhenua_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Invercargill City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/2023_NZ_Census_Population_Density_-_Invercargill_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/2023_NZ_Census_Population_Density_-_Invercargill_City.png/960px-2023_NZ_Census_Population_Density_-_Invercargill_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1278,
+          "height": 1497,
+          "uploaded": "2024-10-20T02:01:03Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Invercargill_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Kawerau District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/2023_NZ_Census_Population_Density_-_Kawerau_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/2023_NZ_Census_Population_Density_-_Kawerau_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 500,
+          "height": 416,
+          "uploaded": "2024-10-20T02:01:17Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Kawerau_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Mackenzie District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/2023_NZ_Census_Population_Density_-_Mackenzie_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2023_NZ_Census_Population_Density_-_Mackenzie_District.png/960px-2023_NZ_Census_Population_Density_-_Mackenzie_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2234,
+          "height": 2288,
+          "uploaded": "2024-10-20T02:01:20Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Mackenzie_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Manawatū District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/2023_NZ_Census_Population_Density_-_Manawat%C5%AB_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/2023_NZ_Census_Population_Density_-_Manawat%C5%AB_District.png/960px-2023_NZ_Census_Population_Density_-_Manawat%C5%AB_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1619,
+          "height": 1481,
+          "uploaded": "2024-10-20T02:01:20Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Manawat%C5%AB_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Marlborough District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/2023_NZ_Census_Population_Density_-_Marlborough_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/2023_NZ_Census_Population_Density_-_Marlborough_District.png/960px-2023_NZ_Census_Population_Density_-_Marlborough_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2644,
+          "height": 3575,
+          "uploaded": "2024-10-20T02:01:21Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Marlborough_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - New Plymouth District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/2023_NZ_Census_Population_Density_-_New_Plymouth_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/2023_NZ_Census_Population_Density_-_New_Plymouth_District.png/960px-2023_NZ_Census_Population_Density_-_New_Plymouth_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1794,
+          "height": 1322,
+          "uploaded": "2024-10-20T02:15:05Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_New_Plymouth_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Ōpōtiki District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/2023_NZ_Census_Population_Density_-_%C5%8Cp%C5%8Dtiki_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/2023_NZ_Census_Population_Density_-_%C5%8Cp%C5%8Dtiki_District.png/960px-2023_NZ_Census_Population_Density_-_%C5%8Cp%C5%8Dtiki_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1766,
+          "height": 2019,
+          "uploaded": "2024-10-20T02:15:05Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_%C5%8Cp%C5%8Dtiki_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Nelson City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/2023_NZ_Census_Population_Density_-_Nelson_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2023_NZ_Census_Population_Density_-_Nelson_City.png/960px-2023_NZ_Census_Population_Density_-_Nelson_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1403,
+          "height": 1491,
+          "uploaded": "2024-10-20T02:15:06Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Nelson_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Porirua City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/2023_NZ_Census_Population_Density_-_Porirua_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/2023_NZ_Census_Population_Density_-_Porirua_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 841,
+          "height": 797,
+          "uploaded": "2024-10-20T02:15:12Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Porirua_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Rangitikei District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/2023_NZ_Census_Population_Density_-_Rangitikei_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/2023_NZ_Census_Population_Density_-_Rangitikei_District.png/960px-2023_NZ_Census_Population_Density_-_Rangitikei_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2119,
+          "height": 2394,
+          "uploaded": "2024-10-20T02:15:14Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Rangitikei_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Ruapehu District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/2023_NZ_Census_Population_Density_-_Ruapehu_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/2023_NZ_Census_Population_Density_-_Ruapehu_District.png/960px-2023_NZ_Census_Population_Density_-_Ruapehu_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1972,
+          "height": 2163,
+          "uploaded": "2024-10-20T02:15:17Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Ruapehu_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Southland District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/2023_NZ_Census_Population_Density_-_Southland_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/2023_NZ_Census_Population_Density_-_Southland_District.png/960px-2023_NZ_Census_Population_Density_-_Southland_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4167,
+          "height": 5923,
+          "uploaded": "2024-10-20T02:15:20Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Southland_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Stratford District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/2023_NZ_Census_Population_Density_-_Stratford_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/2023_NZ_Census_Population_Density_-_Stratford_District.png/960px-2023_NZ_Census_Population_Density_-_Stratford_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1653,
+          "height": 1206,
+          "uploaded": "2024-10-20T02:15:22Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Stratford_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Taupō District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png/960px-2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1931,
+          "height": 2163,
+          "uploaded": "2024-10-20T02:15:25Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Waimate District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/2023_NZ_Census_Population_Density_-_Waimate_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/2023_NZ_Census_Population_Density_-_Waimate_District.png/960px-2023_NZ_Census_Population_Density_-_Waimate_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1613,
+          "height": 1453,
+          "uploaded": "2024-10-20T02:15:33Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Waimate_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Waipa District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/2023_NZ_Census_Population_Density_-_Waipa_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/2023_NZ_Census_Population_Density_-_Waipa_District.png/960px-2023_NZ_Census_Population_Density_-_Waipa_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1234,
+          "height": 1100,
+          "uploaded": "2024-10-20T02:15:33Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Waipa_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Wairoa District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/2023_NZ_Census_Population_Density_-_Wairoa_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/2023_NZ_Census_Population_Density_-_Wairoa_District.png/960px-2023_NZ_Census_Population_Density_-_Wairoa_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2147,
+          "height": 1584,
+          "uploaded": "2024-10-20T02:15:35Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Wairoa_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Wellington City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/2023_NZ_Census_Population_Density_-_Wellington_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2023_NZ_Census_Population_Density_-_Wellington_City.png/960px-2023_NZ_Census_Population_Density_-_Wellington_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1000,
+          "height": 941,
+          "uploaded": "2024-10-20T02:15:38Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Wellington_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Westland District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/2023_NZ_Census_Population_Density_-_Westland_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/2023_NZ_Census_Population_Density_-_Westland_District.png/960px-2023_NZ_Census_Population_Density_-_Westland_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5343,
+          "height": 3978,
+          "uploaded": "2024-10-20T02:15:40Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Westland_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Whakatāne District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png/960px-2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1350,
+          "height": 2125,
+          "uploaded": "2024-10-20T02:15:42Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png"
+        }
+      ],
+      "count": 35
+    },
+    {
+      "query": "\"2023 NZ Census Population Density",
+      "files": [
+        {
+          "title": "File:2023 NZ Census Population Density - Bay of Plenty Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/2023_NZ_Census_Population_Density_-_Bay_of_Plenty_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/2023_NZ_Census_Population_Density_-_Bay_of_Plenty_Region.png/960px-2023_NZ_Census_Population_Density_-_Bay_of_Plenty_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1759,
+          "height": 1672,
+          "uploaded": "2024-10-20T01:48:46Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Bay_of_Plenty_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Hawkes Bay Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/2023_NZ_Census_Population_Density_-_Hawkes_Bay_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/2023_NZ_Census_Population_Density_-_Hawkes_Bay_Region.png/960px-2023_NZ_Census_Population_Density_-_Hawkes_Bay_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1494,
+          "height": 1753,
+          "uploaded": "2024-10-20T01:48:50Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Hawkes_Bay_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Otago Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2023_NZ_Census_Population_Density_-_Otago_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/2023_NZ_Census_Population_Density_-_Otago_Region.png/960px-2023_NZ_Census_Population_Density_-_Otago_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2125,
+          "height": 2541,
+          "uploaded": "2024-10-20T01:48:54Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Otago_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Wellington Region.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/2023_NZ_Census_Population_Density_-_Wellington_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/2023_NZ_Census_Population_Density_-_Wellington_Region.png/960px-2023_NZ_Census_Population_Density_-_Wellington_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1288,
+          "height": 938,
+          "uploaded": "2024-10-20T01:49:16Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population as per the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and above 1000 people per square",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Wellington_Region.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Ashburton District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2023_NZ_Census_Population_Density_-_Ashburton_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_NZ_Census_Population_Density_-_Ashburton_District.png/960px-2023_NZ_Census_Population_Density_-_Ashburton_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2534,
+          "height": 2313,
+          "uploaded": "2024-10-20T02:00:43Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Ashburton_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Christchurch City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/2023_NZ_Census_Population_Density_-_Christchurch_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/2023_NZ_Census_Population_Density_-_Christchurch_City.png/960px-2023_NZ_Census_Population_Density_-_Christchurch_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2234,
+          "height": 2138,
+          "uploaded": "2024-10-20T02:00:49Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Christchurch_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Far North District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/2023_NZ_Census_Population_Density_-_Far_North_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/2023_NZ_Census_Population_Density_-_Far_North_District.png/960px-2023_NZ_Census_Population_Density_-_Far_North_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2738,
+          "height": 2503,
+          "uploaded": "2024-10-20T02:00:53Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Far_North_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Hastings District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/2023_NZ_Census_Population_Density_-_Hastings_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2023_NZ_Census_Population_Density_-_Hastings_District.png/960px-2023_NZ_Census_Population_Density_-_Hastings_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1725,
+          "height": 2266,
+          "uploaded": "2024-10-20T02:00:57Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Hastings_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Hurunui District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/2023_NZ_Census_Population_Density_-_Hurunui_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/2023_NZ_Census_Population_Density_-_Hurunui_District.png/960px-2023_NZ_Census_Population_Density_-_Hurunui_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2588,
+          "height": 2513,
+          "uploaded": "2024-10-20T02:01:00Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Hurunui_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Kaipara District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/2023_NZ_Census_Population_Density_-_Kaipara_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/2023_NZ_Census_Population_Density_-_Kaipara_District.png/960px-2023_NZ_Census_Population_Density_-_Kaipara_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1950,
+          "height": 1678,
+          "uploaded": "2024-10-20T02:01:12Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Kaipara_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Mackenzie District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/2023_NZ_Census_Population_Density_-_Mackenzie_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/2023_NZ_Census_Population_Density_-_Mackenzie_District.png/960px-2023_NZ_Census_Population_Density_-_Mackenzie_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2234,
+          "height": 2288,
+          "uploaded": "2024-10-20T02:01:20Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Mackenzie_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Marlborough District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/2023_NZ_Census_Population_Density_-_Marlborough_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/2023_NZ_Census_Population_Density_-_Marlborough_District.png/960px-2023_NZ_Census_Population_Density_-_Marlborough_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2644,
+          "height": 3575,
+          "uploaded": "2024-10-20T02:01:21Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Marlborough_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Masterton District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/2023_NZ_Census_Population_Density_-_Masterton_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2023_NZ_Census_Population_Density_-_Masterton_District.png/960px-2023_NZ_Census_Population_Density_-_Masterton_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1409,
+          "height": 1241,
+          "uploaded": "2024-10-20T02:01:24Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Masterton_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - New Plymouth District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/2023_NZ_Census_Population_Density_-_New_Plymouth_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/2023_NZ_Census_Population_Density_-_New_Plymouth_District.png/960px-2023_NZ_Census_Population_Density_-_New_Plymouth_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1794,
+          "height": 1322,
+          "uploaded": "2024-10-20T02:15:05Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_New_Plymouth_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Palmerston North City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/2023_NZ_Census_Population_Density_-_Palmerston_North_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2023_NZ_Census_Population_Density_-_Palmerston_North_City.png/960px-2023_NZ_Census_Population_Density_-_Palmerston_North_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1172,
+          "height": 1216,
+          "uploaded": "2024-10-20T02:15:10Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Palmerston_North_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Rangitikei District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/2023_NZ_Census_Population_Density_-_Rangitikei_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/2023_NZ_Census_Population_Density_-_Rangitikei_District.png/960px-2023_NZ_Census_Population_Density_-_Rangitikei_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2119,
+          "height": 2394,
+          "uploaded": "2024-10-20T02:15:14Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Rangitikei_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Queenstown-Lakes District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/2023_NZ_Census_Population_Density_-_Queenstown-Lakes_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/2023_NZ_Census_Population_Density_-_Queenstown-Lakes_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 763,
+          "height": 963,
+          "uploaded": "2024-10-20T02:15:14Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Queenstown-Lakes_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Selwyn District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/2023_NZ_Census_Population_Density_-_Selwyn_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/2023_NZ_Census_Population_Density_-_Selwyn_District.png/960px-2023_NZ_Census_Population_Density_-_Selwyn_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2397,
+          "height": 2391,
+          "uploaded": "2024-10-20T02:15:17Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Selwyn_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Tasman District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/2023_NZ_Census_Population_Density_-_Tasman_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_NZ_Census_Population_Density_-_Tasman_District.png/960px-2023_NZ_Census_Population_Density_-_Tasman_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2091,
+          "height": 3509,
+          "uploaded": "2024-10-20T02:15:24Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Tasman_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Tararua District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/2023_NZ_Census_Population_Density_-_Tararua_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/2023_NZ_Census_Population_Density_-_Tararua_District.png/960px-2023_NZ_Census_Population_Density_-_Tararua_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1953,
+          "height": 1763,
+          "uploaded": "2024-10-20T02:15:24Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Tararua_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Taupō District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png/960px-2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1931,
+          "height": 2163,
+          "uploaded": "2024-10-20T02:15:25Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Taup%C5%8D_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Thames-Coromandel District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/2023_NZ_Census_Population_Density_-_Thames-Coromandel_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/2023_NZ_Census_Population_Density_-_Thames-Coromandel_District.png/960px-2023_NZ_Census_Population_Density_-_Thames-Coromandel_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1425,
+          "height": 1766,
+          "uploaded": "2024-10-20T02:15:27Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Thames-Coromandel_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Timaru District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/2023_NZ_Census_Population_Density_-_Timaru_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2023_NZ_Census_Population_Density_-_Timaru_District.png/960px-2023_NZ_Census_Population_Density_-_Timaru_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1631,
+          "height": 2253,
+          "uploaded": "2024-10-20T02:15:28Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Timaru_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Upper Hutt City.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/2023_NZ_Census_Population_Density_-_Upper_Hutt_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2023_NZ_Census_Population_Density_-_Upper_Hutt_City.png/960px-2023_NZ_Census_Population_Density_-_Upper_Hutt_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1238,
+          "height": 1225,
+          "uploaded": "2024-10-20T02:15:30Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Upper_Hutt_City.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Wairoa District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/2023_NZ_Census_Population_Density_-_Wairoa_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/2023_NZ_Census_Population_Density_-_Wairoa_District.png/960px-2023_NZ_Census_Population_Density_-_Wairoa_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2147,
+          "height": 1584,
+          "uploaded": "2024-10-20T02:15:35Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Wairoa_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Waitomo District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2023_NZ_Census_Population_Density_-_Waitomo_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/2023_NZ_Census_Population_Density_-_Waitomo_District.png/960px-2023_NZ_Census_Population_Density_-_Waitomo_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1772,
+          "height": 1569,
+          "uploaded": "2024-10-20T02:15:37Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Waitomo_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Western Bay of Plenty District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/2023_NZ_Census_Population_Density_-_Western_Bay_of_Plenty_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/2023_NZ_Census_Population_Density_-_Western_Bay_of_Plenty_District.png/960px-2023_NZ_Census_Population_Density_-_Western_Bay_of_Plenty_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1434,
+          "height": 1506,
+          "uploaded": "2024-10-20T02:15:40Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Western_Bay_of_Plenty_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Whakatāne District.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png/960px-2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1350,
+          "height": 2125,
+          "uploaded": "2024-10-20T02:15:42Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Whakat%C4%81ne_District.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Albert-Eden-Puketāpapa Ward.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/2023_NZ_Census_Population_Density_-_Albert-Eden-Puket%C4%81papa_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/2023_NZ_Census_Population_Density_-_Albert-Eden-Puket%C4%81papa_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 447,
+          "height": 466,
+          "uploaded": "2024-10-20T02:22:02Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Albert-Eden-Puket%C4%81papa_Ward.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Manukau Ward.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/2023_NZ_Census_Population_Density_-_Manukau_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/2023_NZ_Census_Population_Density_-_Manukau_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 659,
+          "height": 478,
+          "uploaded": "2024-10-20T02:22:27Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Manukau_Ward.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Manurewa-Papakura Ward.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/2023_NZ_Census_Population_Density_-_Manurewa-Papakura_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/2023_NZ_Census_Population_Density_-_Manurewa-Papakura_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 638,
+          "height": 644,
+          "uploaded": "2024-10-20T02:22:28Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Manurewa-Papakura_Ward.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Maungakiekie-Tāmaki Ward.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/2023_NZ_Census_Population_Density_-_Maungakiekie-T%C4%81maki_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/2023_NZ_Census_Population_Density_-_Maungakiekie-T%C4%81maki_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 481,
+          "height": 384,
+          "uploaded": "2024-10-20T02:22:51Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Maungakiekie-T%C4%81maki_Ward.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - North Shore Ward.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/2023_NZ_Census_Population_Density_-_North_Shore_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/2023_NZ_Census_Population_Density_-_North_Shore_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 566,
+          "height": 488,
+          "uploaded": "2024-10-20T02:22:51Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_North_Shore_Ward.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density - Rodney Ward.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/2023_NZ_Census_Population_Density_-_Rodney_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/2023_NZ_Census_Population_Density_-_Rodney_Ward.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 794,
+          "height": 958,
+          "uploaded": "2024-10-20T02:23:05Z",
+          "date": "2024-10-20",
+          "description": "Density of usually resident population per Statistical Area 3 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density_-_Rodney_Ward.png"
+        },
+        {
+          "title": "File:2023 NZ Census Population Density.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/2023_NZ_Census_Population_Density.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/2023_NZ_Census_Population_Density.png/960px-2023_NZ_Census_Population_Density.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5870,
+          "height": 8400,
+          "uploaded": "2024-10-21T21:08:43Z",
+          "date": "2024-10-22",
+          "description": "Density of usually resident population per Statistical Area 2 according to the 2023 New Zealand Census; made using Stats NZ data/shapefiles and QGIS. Less than 1 person per square km 1 person per square km and above 5 people per square km and above 10 people per square km and above 50 people per square km and above 100 people per square km and above 250 people per square km and above 500 people per square km and above 750 people per square km and",
+          "author": "Vardion",
+          "licence": "CC BY 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_NZ_Census_Population_Density.png"
+        }
+      ],
+      "count": 35
+    },
+    {
+      "query": "New Zealand land cover GIS map",
+      "files": [
+        {
+          "title": "File:Ngāi Tahu Takiwa.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Ng%C4%81i_Tahu_Takiwa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Ng%C4%81i_Tahu_Takiwa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 599,
+          "height": 807,
+          "uploaded": "2012-09-19T02:23:44Z",
+          "date": "2010-02-15",
+          "description": "This file is an image showing the land recognised as Ngāi Tahu's under the NTCSA 1998",
+          "author": "Igover",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ng%C4%81i_Tahu_Takiwa.jpg"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "query": "New Zealand earthquake hazard map GIS",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand LiDAR hillshade DEM",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand bathymetry map GIS",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand geology GIS map",
+      "files": [
+        {
+          "title": "File:Distribution of mangroves and carbonate sediments around South-East Asia and the South Pacific.webp",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/Distribution_of_mangroves_and_carbonate_sediments_around_South-East_Asia_and_the_South_Pacific.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "previewUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Distribution_of_mangroves_and_carbonate_sediments_around_South-East_Asia_and_the_South_Pacific.webp/960px-Distribution_of_mangroves_and_carbonate_sediments_around_South-East_Asia_and_the_South_Pacific.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2007,
+          "height": 2096,
+          "uploaded": "2021-09-28T08:41:23Z",
+          "date": "2020-09-04",
+          "description": "Distribution of mangroves and carbonate sediments around South-East Asia and the South Pacific Distribution of deltaic, estuarine, lagoonal and open coast mangrove types, and approximate extent of carbonate sedimentary settings in (ai) the South Asia, (aii) Southeast Asia and (aiii) East Asia regions and (bi) the Australia and New Zealand and (bii) Pacific Islands regions. Bar charts represent the percentage change in area of the different types ",
+          "author": "Thomas A. Worthington, Philine S. E. zu Ermgassen, Daniel A. Friess, Ken W. Krauss, Catherine E. Lovelock, Julia Thorley, Rick Tingey, Colin D. Woodroffe, Pete Bunting, Nicole Cormier, David Lagomasino, Richard Lucas, Nicholas J. Murray, William J. Sutherland &amp; Mark Spalding",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Distribution_of_mangroves_and_carbonate_sediments_around_South-East_Asia_and_the_South_Pacific.webp"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "query": "New Zealand sea level inundation map GIS",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand catchment river GIS map",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand forest cover map GIS",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand land use capability GIS map",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand wildlife conservation GIS map",
+      "files": [],
+      "count": 0
+    },
+    {
+      "query": "New Zealand topographic digital GIS map",
+      "files": [],
+      "count": 0
+    }
+  ],
+  "summary": {
+    "htmlSources": 18,
+    "htmlCandidates": 86,
+    "commonsQueries": 17,
+    "commonsCandidates": 74,
+    "failures": 4
+  }
+}

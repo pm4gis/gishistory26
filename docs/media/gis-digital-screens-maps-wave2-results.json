@@ -1,0 +1,303 @@
+{
+  "batch": "gis-digital-screens-maps-wave2-20261023",
+  "attempted": 25,
+  "success": 21,
+  "alreadyPresent": 0,
+  "failed": 4,
+  "items": [
+    {
+      "slug": "manaaki-udig-wms-map-layers",
+      "status": "archived",
+      "sourceFinalUrl": "https://maps.scinfo.org.nz/images/d0c087a330f878f911eb4eed6c365ad9.jpg",
+      "originalBytes": 376310,
+      "originalSize": [
+        1024,
+        625
+      ],
+      "sourceSha256": "481e420a81b77e4ef710b2a5493b29f4d830d8fe890c18f5fd20697489f7ffb7",
+      "chapter": 32,
+      "afterParagraphId": "ch32-p-d458ab7e82c6"
+    },
+    {
+      "slug": "manaaki-arcgis-wms-environmental-legend",
+      "status": "archived",
+      "sourceFinalUrl": "https://maps.scinfo.org.nz/images/3985fd8ab6efc39af63430e3f12e6826.jpg",
+      "originalBytes": 446684,
+      "originalSize": [
+        2399,
+        1417
+      ],
+      "sourceSha256": "7e262288d597467791720eceab6cf08d82381c45c18957ccf10ac8d57937f474",
+      "chapter": 21,
+      "afterParagraphId": "ch21-s06-p01"
+    },
+    {
+      "slug": "manaaki-arcgis-wms-multiple-layers",
+      "status": "archived",
+      "sourceFinalUrl": "https://maps.scinfo.org.nz/images/a61386d334b8f3c063527819ad707540.jpg",
+      "originalBytes": 26195,
+      "originalSize": [
+        497,
+        327
+      ],
+      "sourceSha256": "738345e52e3a54739b3fce9ab8381d19126d0164577cfcd17ae17e1a9f65d5aa",
+      "chapter": 40,
+      "afterParagraphId": "ch40-p-f6bb5c1149ab"
+    },
+    {
+      "slug": "linz-qgis-wmts-data-map",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-8.png",
+      "originalBytes": 1025573,
+      "originalSize": [
+        1335,
+        1039
+      ],
+      "sourceSha256": "c6a34e9cf2493ed2a0afe96c8aa50dc0d70d9f444aeaf042b66bd0c30973ca2b",
+      "chapter": 33,
+      "afterParagraphId": "ch33-s05-p02"
+    },
+    {
+      "slug": "linz-qgis-wmts-overlapping-datasets",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-9.png",
+      "originalBytes": 537946,
+      "originalSize": [
+        1127,
+        1041
+      ],
+      "sourceSha256": "a704d6f860236e554d59973c9cd20dc9de15203e09cbc7fa94a03b7f1e881884",
+      "chapter": 41,
+      "afterParagraphId": "ch41-p-128e2ebe8926"
+    },
+    {
+      "slug": "linz-qgis-wmts-feature-information",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/lds_wmts-qgis_screenshot-10.png",
+      "originalBytes": 366282,
+      "originalSize": [
+        1242,
+        1158
+      ],
+      "sourceSha256": "73902b2967ab7321615ad0772065ce45e7a5f3f09c27f5e1cfe79f1be8cdcf7e",
+      "chapter": 17,
+      "afterParagraphId": "ch17-s01-p01"
+    },
+    {
+      "slug": "linz-arccatalog-file-geodatabase-2016",
+      "status": "held",
+      "reason": "Too small to serve as an illustrative GIS screen"
+    },
+    {
+      "slug": "linz-arccatalog-merge-data",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/Merge-data-lds-arccatelog.png",
+      "originalBytes": 48196,
+      "originalSize": [
+        433,
+        284
+      ],
+      "sourceSha256": "281b8f2a438391661b77a836294f6dd26640730c51d4ae03ff2fb651f92c521c",
+      "chapter": 40,
+      "afterParagraphId": "ch40-s01-p02"
+    },
+    {
+      "slug": "linz-arccatalog-table-relationships",
+      "status": "held",
+      "reason": "Too small to serve as an illustrative GIS screen"
+    },
+    {
+      "slug": "linz-arcgis-online-basemap-viewer",
+      "status": "archived",
+      "sourceFinalUrl": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-1-agol-map-viewer.png",
+      "originalBytes": 657050,
+      "originalSize": [
+        2048,
+        1536
+      ],
+      "sourceSha256": "d7b4aba686b6a4b6dbaab4bdb6a60795f63aa7e8f3db11392a94a2a67879edff",
+      "chapter": 41,
+      "afterParagraphId": "ch41-s01-p01"
+    },
+    {
+      "slug": "linz-arcgis-online-aerial-wmts-map",
+      "status": "archived",
+      "sourceFinalUrl": "https://basemaps.linz.govt.nz/docs/user-guide/use-in-esri-software/how-to-add-linz-aerial-imagery-basemaps-to-arcgis-online/static/step-6-desired-layer-on-map.png",
+      "originalBytes": 1120915,
+      "originalSize": [
+        2048,
+        1536
+      ],
+      "sourceSha256": "f1b1634f8b7ce9cbb39c8b9bfd5274a983dc580c15c260092b71b8565bb6f169",
+      "chapter": 35,
+      "afterParagraphId": "ch35-s01-p01"
+    },
+    {
+      "slug": "linz-qgis-vector-tiles-2021",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/ss_basemaps_vector-tiles-connection_20211130.png",
+      "originalBytes": 75284,
+      "originalSize": [
+        480,
+        392
+      ],
+      "sourceSha256": "600e513be96a0e4fd441fec785cf7cb891b290b60cfa3d1fad6119b92afda28f",
+      "chapter": 32,
+      "afterParagraphId": "ch32-s04-p02"
+    },
+    {
+      "slug": "landonline-2023-georef-image-and-spatial-view",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/2023-03/nls_irregular_lines_split_screen_import_image_202303.png",
+      "originalBytes": 2102487,
+      "originalSize": [
+        2224,
+        1060
+      ],
+      "sourceSha256": "1cbfe54c88b372096a754b03358ce10efeb7b3490ff4028d0c24f321ba55d873",
+      "chapter": 14,
+      "afterParagraphId": "ch14-s01-p03"
+    },
+    {
+      "slug": "landonline-2023-georeferencing-control-points",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/2023-03/nls_irregular_lines_add_control_points_image_202303.png",
+      "originalBytes": 1323358,
+      "originalSize": [
+        2127,
+        641
+      ],
+      "sourceSha256": "31e591fe673ae3d8711e184a7b6e3bc4e0342b69a899db5bc664de13099cab16",
+      "chapter": 14,
+      "afterParagraphId": "ch14-s01-p02"
+    },
+    {
+      "slug": "landonline-2023-georef-complete",
+      "status": "archived",
+      "sourceFinalUrl": "https://www.linz.govt.nz/sites/default/files/2023-03/nls_irregular_line_georef_image_complete_image_202303.png",
+      "originalBytes": 644532,
+      "originalSize": [
+        1047,
+        644
+      ],
+      "sourceSha256": "ac2baa1df54c366fc241570057ba232232f0bf8f2cf4f5ee19c84f2e1cc1e0a1",
+      "chapter": 20,
+      "afterParagraphId": "ch20-s01-p01"
+    },
+    {
+      "slug": "eco-index-qgis-land-cover-snapshot-2024",
+      "status": "archived",
+      "sourceFinalUrl": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/c1f16940-ab3e-4df9-a38e-6fd5ad454584/Land+Cover+Snapshot+-+Sep+2024-e.jpg",
+      "originalBytes": 215038,
+      "originalSize": [
+        1763,
+        996
+      ],
+      "sourceSha256": "e6f8178d05d58d1c825dc8bac3805916cd789aac7f864747e97247b310e3a6e9",
+      "chapter": 7,
+      "afterParagraphId": "ch07-s01-p01"
+    },
+    {
+      "slug": "eco-index-qgis-ecosystem-projector-2024",
+      "status": "archived",
+      "sourceFinalUrl": "https://images.squarespace-cdn.com/content/v1/615b84b611f5da2a28a03126/4e641e3c-7625-497b-992d-4ed906481a7e/Ecosystem+Projector+-+Sep+2024.png",
+      "originalBytes": 714362,
+      "originalSize": [
+        1920,
+        993
+      ],
+      "sourceSha256": "43e200c4e1061aac06dcc00731b834e7dbcbf4a93a676fa20937a6d2573e2685",
+      "chapter": 9,
+      "afterParagraphId": "ch09-s01-p02"
+    },
+    {
+      "slug": "esri-arcgis-pro-golden-bay-nz",
+      "status": "archived",
+      "sourceFinalUrl": "https://us.v-cdn.net/6038851/uploads/images/4431i0943268FC442CF80/Screenshot%20%2868%29.png",
+      "originalBytes": 1971295,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "sourceSha256": "384fe6662224d081dc3766fc7ae101c2a7b36d3e0fd384961eae5695187f5acf",
+      "chapter": 22,
+      "afterParagraphId": "ch22-s02-p02"
+    },
+    {
+      "slug": "qgis-linz-vector-tile-editing-2022",
+      "status": "archived",
+      "sourceFinalUrl": "https://user-images.githubusercontent.com/8991188/159837660-eea9795a-a9c1-49ba-b538-716997cb828d.png",
+      "originalBytes": 309409,
+      "originalSize": [
+        1090,
+        859
+      ],
+      "sourceSha256": "c81689889639fa8be690c99cf1cbba7b835b106f4c825ab6899ef8fd3c9bf487",
+      "chapter": 32,
+      "afterParagraphId": "ch32-s04-p01"
+    },
+    {
+      "slug": "whanganui-2025-lidar-3d-terrain-comparison",
+      "status": "held",
+      "reason": "Unsupported image format: heif"
+    },
+    {
+      "slug": "learnz-predator-control-gis-2022",
+      "status": "held",
+      "reason": "HTTP 404 from www.learnz.org.nz"
+    },
+    {
+      "slug": "qgis-2023-census-density-otago-2024",
+      "status": "archived",
+      "sourceFinalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2023_NZ_Census_Population_Density_-_Otago_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalBytes": 513944,
+      "originalSize": [
+        2125,
+        2541
+      ],
+      "sourceSha256": "f6d38ff52ae512c8afa83d7a839af0637d8d3a79dc9adb5ae05a0b8092ebdd3e",
+      "chapter": 16,
+      "afterParagraphId": "ch16-s01-p01"
+    },
+    {
+      "slug": "qgis-2023-census-density-wellington-2024",
+      "status": "archived",
+      "sourceFinalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/2023_NZ_Census_Population_Density_-_Wellington_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalBytes": 169558,
+      "originalSize": [
+        1288,
+        938
+      ],
+      "sourceSha256": "08d61cbf154c80ff8bf1c5b73ced4940363c707e4e366abdc08490f172ec3826",
+      "chapter": 24,
+      "afterParagraphId": "ch24-p-89d5f0d5176c"
+    },
+    {
+      "slug": "qgis-2023-census-density-christchurch-2024",
+      "status": "archived",
+      "sourceFinalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/2023_NZ_Census_Population_Density_-_Christchurch_City.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalBytes": 894029,
+      "originalSize": [
+        2234,
+        2138
+      ],
+      "sourceSha256": "48cbc93a2d8a6fb6cc053b9e3268859375d33ba2456c8ce62f777e1edc0bb424",
+      "chapter": 23,
+      "afterParagraphId": "ch23-s02-p01"
+    },
+    {
+      "slug": "qgis-2023-census-density-bop-2024",
+      "status": "archived",
+      "sourceFinalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/2023_NZ_Census_Population_Density_-_Bay_of_Plenty_Region.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalBytes": 346804,
+      "originalSize": [
+        1759,
+        1672
+      ],
+      "sourceSha256": "c5c5eff28a2ac4fac306f7ad7683bc45addbb2362b3db1665fa044ed82e887f2",
+      "chapter": 16,
+      "afterParagraphId": "ch16-s01-p02"
+    }
+  ],
+  "retrievedAt": "2026-10-23T01:09:22.072Z"
+}

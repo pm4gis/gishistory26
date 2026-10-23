@@ -1,0 +1,54 @@
+name: Acquire GIS software screens and digital maps wave 2
+on:
+  push:
+    branches: [media/gis-digital-screens-maps-wave2-20261023]
+    paths:
+      - 'docs/media/gis-digital-screens-maps-wave2-20261023.json'
+      - 'scripts/acquire-digital-gis-images-wave2-20261023.mjs'
+      - '.github/workflows/acquire-digital-gis-images-wave2-20261023.yml'
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: authentic-gis-screens-wave2
+  cancel-in-progress: false
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media/gis-digital-screens-maps-wave2-20261023
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Acquire original GIS maps/screens and uncropped display variants
+        run: node scripts/acquire-digital-gis-images-wave2-20261023.mjs
+      - name: Test links, source integrity, historic preservation and build
+        run: |
+          npm test
+          npm run build
+      - name: Commit checked originals, derivatives, metadata and result report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/images/ public/assets/historical/ docs/media/gis-digital-screens-maps-wave2-results.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive verified GIS screen originals, spatial analysis maps and reader placements'
+            git reset --hard HEAD
+            git fetch origin media/gis-digital-screens-maps-wave2-20261023
+            git rebase origin/media/gis-digital-screens-maps-wave2-20261023
+            git push origin HEAD:media/gis-digital-screens-maps-wave2-20261023
+          fi
+      - name: Fail rather than claim a collection without actual images
+        run: |
+          node -e "const r=require('./docs/media/gis-digital-screens-maps-wave2-results.json');console.log(JSON.stringify({acquired:r.success,held:r.failed,already:r.alreadyPresent}));if(r.success+r.alreadyPresent<12)throw Error('Fewer than 12 actual historical GIS images acquired')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: historic-digital-gis-screens-wave2
+          path: docs/media/gis-digital-screens-maps-wave2-results.json
+          retention-days: 30
