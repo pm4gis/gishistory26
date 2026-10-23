@@ -1,0 +1,2407 @@
+{
+  "generatedAt": "2026-10-23T01:13:22.150761+00:00",
+  "summary": {
+    "filesAttempted": 84,
+    "filesWithFigures": 29,
+    "candidatePages": 76,
+    "pagesScanned": 2729,
+    "errors": 0
+  },
+  "documents": [
+    {
+      "pdfPath": "public/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
+      "sourcePdf": "/assets/historical/documents/gis-mapping-wetland-projects-2021.pdf",
+      "file": "gis-mapping-wetland-projects-2021.pdf",
+      "documentPages": 14,
+      "pages": [
+        {
+          "page": 3,
+          "captions": [
+            "Figure 1. Overlaying different types of data to create a map."
+          ],
+          "images": [
+            {
+              "xref": 10,
+              "rect": [
+                43.2,
+                624.9,
+                274.7,
+                792.6
+              ],
+              "displayArea": 38849,
+              "pixelSize": [
+                464,
+                336
+              ]
+            },
+            {
+              "xref": 12,
+              "rect": [
+                43.2,
+                622.6,
+                274.7,
+                729.5
+              ],
+              "displayArea": 24743,
+              "pixelSize": [
+                464,
+                214
+              ]
+            },
+            {
+              "xref": 18,
+              "rect": [
+                53.3,
+                396.1,
+                264.3,
+                499.9
+              ],
+              "displayArea": 21898,
+              "pixelSize": [
+                422,
+                208
+              ]
+            },
+            {
+              "xref": 16,
+              "rect": [
+                53.2,
+                474.4,
+                264.0,
+                578.2
+              ],
+              "displayArea": 21883,
+              "pixelSize": [
+                422,
+                208
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "TE REO O TE REPO – KEI KONEI TONU AU GIS MAPPING TOOLS FOR WETLAND PROJECTS 203 The same single data source can be transformed Geospatial tools can be used to support all types of into 3D (three dimensional) scenes with flythrough wetland projects. Mapping applications can be used to: capabilities and can be used to tell a story – like a • monitor and report on ecological restorations overjourney with photos, video, and audio using Google timeEar"
+        },
+        {
+          "page": 9,
+          "captions": [
+            "Figure 5. An iterative step-by-step approach to using GIS for environmental projects."
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "TE REO O TE REPO – KEI KONEI TONU AU GIS MAPPING TOOLS FOR WETLAND PROJECTS 209 Research and investigate • Are there others you can draw from? • How have others done this? What are you trying to achieve? • What will success look like? Evaluate and adjust • Who will help and support you? • Does it look like success, better, worse or just different? • Share your learnings with others Plan what you want or need to do • Ask others for support • Can y"
+        }
+      ],
+      "candidateCount": 2
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "sourcePdf": "/assets/publications/pdfs/auckland-urban-forest-canopy-cover-2021.pdf",
+      "file": "auckland-urban-forest-canopy-cover-2021.pdf",
+      "documentPages": 48,
+      "pages": [
+        {
+          "page": 9,
+          "captions": [
+            "Figure 1. LiDAR point cloud (colour coded by height above sea level), Stockade Hill,",
+            "Figure 2. Classified LiDAR point cloud (greens: vegetation classes, yellow: buildings,",
+            "Figure 4. Canopy cover height model developed from 2016/18 LiDAR for 16 urban local",
+            "Figure 10. Proportion of land cover class area across the 16 local boards ....................... 18",
+            "Figure 11. Tree canopy cover (2016/18) of land cover classes across 16 local boards ..... 18"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "List of figures Figure 1. LiDAR point cloud (colour coded by height above sea level), Stockade Hill, Howick ................................................................................................................................. 4 Figure 2. Classified LiDAR point cloud (greens: vegetation classes, yellow: buildings, orange: ground), Stockade Hill, Howick ............................................................................... 4 Fi"
+        },
+        {
+          "page": 14,
+          "captions": [
+            "Figure 1. LiDAR point cloud (colour coded by height above sea level), Stockade Hill,",
+            "Figure 2. Classified LiDAR point cloud (greens: vegetation classes, yellow: buildings,"
+          ],
+          "images": [
+            {
+              "xref": 41,
+              "rect": [
+                70.9,
+                70.9,
+                493.5,
+                326.0
+              ],
+              "displayArea": 107818,
+              "pixelSize": [
+                1284,
+                775
+              ]
+            },
+            {
+              "xref": 42,
+              "rect": [
+                70.9,
+                370.0,
+                493.5,
+                625.1
+              ],
+              "displayArea": 107818,
+              "pixelSize": [
+                1284,
+                775
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 1. LiDAR point cloud (colour coded by height above sea level), Stockade Hill, Howick Figure 2. Classified LiDAR point cloud (greens: vegetation classes, yellow: buildings, orange: ground), Stockade Hill, Howick In a previous project (Bishop and Lawrence 2017), an “urban forest tree canopy cover” dataset was developed from LiDAR source data captured between 17th July and 23rd November 2013. It is a raster with a 1-m cell resolution containi"
+        },
+        {
+          "page": 20,
+          "captions": [
+            "Figure 4. Canopy cover height model developed from 2016/18 LiDAR for 16 urban local"
+          ],
+          "images": [
+            {
+              "xref": 58,
+              "rect": [
+                70.9,
+                70.9,
+                524.4,
+                685.7
+              ],
+              "displayArea": 278865,
+              "pixelSize": [
+                1386,
+                1879
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 4. Canopy cover height model developed from 2016/18 LiDAR for 16 urban local boards Auckland’s urban forest canopy cover: state and change (2013-2016/2018). Revised April 2021 10"
+        },
+        {
+          "page": 28,
+          "captions": [
+            "Figure 10. Proportion of land cover class area across the 16 local boards (Source:",
+            "Figure 11. Tree canopy cover (2016/18) of land cover classes across the 16 local"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "1% 2% 2% 2% 1% 2% Built-up Area (settlement) High Producing Exotic Grassland 4% Urban Parkland/Open Space 10% Indigenous Forest Minor Classes Exotic Forest 15% 60% Broadleaved Indigenous Hardwoods Manuka and/or Kanuka Transport Infrastructure Short-rotation Cropland Figure 10. Proportion of land cover class area across the 16 local boards (Source: LCDB v5) 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% Indigenous Forest 79% Manuka and/or Kanuka 67% Broad"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/banks-peninsula-lidar-survey-report-2023.pdf",
+      "sourcePdf": "/assets/publications/pdfs/banks-peninsula-lidar-survey-report-2023.pdf",
+      "file": "banks-peninsula-lidar-survey-report-2023.pdf",
+      "documentPages": 6,
+      "pages": [
+        {
+          "page": 2,
+          "captions": [
+            "Figure 1. Area of interest surveyed as part of the Banks Peninsula LiDAR project captured for"
+          ],
+          "images": [
+            {
+              "xref": 29,
+              "rect": [
+                136.2,
+                483.0,
+                503.7,
+                693.4
+              ],
+              "displayArea": 77304,
+              "pixelSize": [
+                1316,
+                769
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Project Banks Peninsula LiDAR Client Environment Canterbury Regional Council Landpro started data capture including LiDAR of the requested area on 18/02/2023 and completed the capture on 15/08/2023 The data has been processed into a variety of digital map and data products. The supplied dataset includes the following items: Summary of data Acquisition of LiDAR data of the Banks Peninsula area • LiDAR point cloud classified to full LINZ spesificat"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-benthic-terrain-modeller-2022.pdf",
+      "file": "doc-benthic-terrain-modeller-2022.pdf",
+      "documentPages": 25,
+      "pages": [
+        {
+          "page": 13,
+          "captions": [
+            "Figure 4. Flowchart of geomorphological classification of seafloor utilising BTM and raster functions and examples of the",
+            "Figure 5. Typical 10 m resolution terrain classification output from the analysis for western Marlborough Sounds area"
+          ],
+          "images": [
+            {
+              "xref": 50,
+              "rect": [
+                56.7,
+                412.0,
+                466.8,
+                735.0
+              ],
+              "displayArea": 132470,
+              "pixelSize": [
+                883,
+                696
+              ]
+            },
+            {
+              "xref": 48,
+              "rect": [
+                214.5,
+                225.6,
+                286.4,
+                279.2
+              ],
+              "displayArea": 3849,
+              "pixelSize": [
+                155,
+                116
+              ]
+            },
+            {
+              "xref": 54,
+              "rect": [
+                126.5,
+                225.6,
+                198.3,
+                279.2
+              ],
+              "displayArea": 3842,
+              "pixelSize": [
+                155,
+                116
+              ]
+            },
+            {
+              "xref": 47,
+              "rect": [
+                301.0,
+                225.6,
+                372.6,
+                279.2
+              ],
+              "displayArea": 3837,
+              "pixelSize": [
+                155,
+                116
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "3. Results The analysis and BTM classification produced 10 outputs (Figure 4) between 3 m above MSL to 2083 m below MSL, that cover 23.1% of the Aotearoa New Zealand territorial sea and 0.3% of the exclusive economic zone (Figure 1). Bathymetry Broad BPI Fine BPI Slope Aspect Classification table Terrain classification Mean depth Depth variance Standard deviation Rugosity Hillshade Figure 4. Flowchart of geomorphological classification of seafloo"
+        },
+        {
+          "page": 14,
+          "captions": [
+            "Figure 6. Terrain classification image showing examples of:"
+          ],
+          "images": [
+            {
+              "xref": 63,
+              "rect": [
+                126.6,
+                220.0,
+                393.0,
+                422.6
+              ],
+              "displayArea": 53973,
+              "pixelSize": [
+                555,
+                422
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Some obvious processing artefacts were present in the project outputs, including edge effects in output pixels along the edge of a raster or beside pixels without a value, resulting from a reduction in the data available in surrounding pixels. For example, because of the mosaicking procedure we used, the edge of one survey sets only utilised input data from pixels within that survey set, and adjacent survey sets only used their own input pixels, "
+        },
+        {
+          "page": 15,
+          "captions": [
+            "Figure 1 for their spatial distribution) this may"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "4. Discussion This is the first time in Aotearoa New Zealand that multibeam surveys have been analysed consistently at a national scale. The development of this set of BTM outputs, including a benthic terrain classification for much of Aotearoa New Zealand’s coastal marine environment, provides valuable information to support management, research, and monitoring activities. All 10 outputs can be freely downloaded from the DOC Marine Data Portal: "
+        }
+      ],
+      "candidateCount": 3
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-coastal-flood-risk-gis-2019.pdf",
+      "file": "doc-coastal-flood-risk-gis-2019.pdf",
+      "documentPages": 40,
+      "pages": [
+        {
+          "page": 12,
+          "captions": [
+            "Figure 3. Example map of the extent of the potential coastal inundation risk zone"
+          ],
+          "images": [
+            {
+              "xref": 31,
+              "rect": [
+                125.0,
+                224.9,
+                435.9,
+                672.0
+              ],
+              "displayArea": 138981,
+              "pixelSize": [
+                648,
+                932
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "3. Methodology The national elevation contour shapefile was made available by NIWA to DOC for use in this study12. This layer was clipped to the coastline13 and overlaid on LINZ Topo50 map GeoTIFF14 data, using the GIS package ArcMap 10.3.1, and the lowest-elevation band was filled with a solid colour (see Figs 3 and 4 for example maps). It should be noted that the limited accuracy of both the national enhanced DEM and the Topo50 coastline shape "
+        },
+        {
+          "page": 13,
+          "captions": [
+            "Figure 4. Example map of the extent of the potential coastal inundation risk zone which"
+          ],
+          "images": [
+            {
+              "xref": 34,
+              "rect": [
+                124.1,
+                54.9,
+                437.5,
+                500.6
+              ],
+              "displayArea": 139697,
+              "pixelSize": [
+                653,
+                929
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 4. Example map of the extent of the potential coastal inundation risk zone which extends 10 km inland on the Hauraki Plains. Note: The plains are currently protected by a stopbank along the southern shoreline of the Firth of Thames – but there remains a residual risk of flooding including increased impacts from elevated groundwater levels. The low-lying elevation band (nominally 0–3 m above mean sea level, but likely to be closer to 0–1.5 "
+        }
+      ],
+      "candidateCount": 2
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-conservation-carbon-spatial-models-2012.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-conservation-carbon-spatial-models-2012.pdf",
+      "file": "doc-conservation-carbon-spatial-models-2012.pdf",
+      "documentPages": 44,
+      "pages": [
+        {
+          "page": 19,
+          "captions": [
+            "Figure 4 lists the predictor variables included in the final model and shows the fitted relationship"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "3. Results 3.1 Current carbon stocks on conservation land Total current carbon stocks (TCC) on conservation land were estimated to contain 2578 Mt of carbon or 9461 Mt CO2e (CO2 equivalents—the weight of carbon converted to an equivalent weight of CO2) in live and dead vegetation and soil (Fig. 1). Below, we provide some summary statistics on carbon stocks and land cover-classification errors in LCDB1, as well as an outline of the results of GRAS"
+        },
+        {
+          "page": 22,
+          "captions": [
+            "Figure 4. The GAM model of total current carbon, based only on variables available as GIS layers. The vertical axis shows the additive partial",
+            "Figure 5. Relative importance of spatial predictor variables for explaining total current carbon. The independent contribution of a predictor variable"
+          ],
+          "images": [
+            {
+              "xref": 119,
+              "rect": [
+                70.1,
+                56.7,
+                538.2,
+                132.8
+              ],
+              "displayArea": 35648,
+              "pixelSize": [
+                976,
+                159
+              ]
+            },
+            {
+              "xref": 121,
+              "rect": [
+                70.1,
+                143.9,
+                538.2,
+                217.0
+              ],
+              "displayArea": 34200,
+              "pixelSize": [
+                976,
+                153
+              ]
+            },
+            {
+              "xref": 123,
+              "rect": [
+                70.2,
+                227.9,
+                538.3,
+                300.4
+              ],
+              "displayArea": 33929,
+              "pixelSize": [
+                976,
+                151
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "MAT T Seas MAS Rainfall:PET VPD contribution) (partial October Wind Drainage Slope NativeCover300 NativeCover1000Carbon Total Protected300 NstemNothofagus Distance to Coast LCDB2 EcoSat Woody 25m Figure 4. The GAM model of total current carbon, based only on variables available as GIS layers. The vertical axis shows the additive partial contribution of each variable to the overall model (see methods for a full explanation). For MAT, T Seas and Oc"
+        },
+        {
+          "page": 23,
+          "captions": [
+            "Figure 6. A. Validation and B. cross-validation of the total current carbon (TCC) model, using only GIS variables. Five-",
+            "Figure 10 lists the variables included in the final model of potential (disturbance-adjusted) total"
+          ],
+          "images": [
+            {
+              "xref": 129,
+              "rect": [
+                140.6,
+                67.3,
+                521.4,
+                182.0
+              ],
+              "displayArea": 43677,
+              "pixelSize": [
+                794,
+                239
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "A Validation B Cross-validation TCC TCC Predicted Cross-Predicted Observed TCC Observed TCC Figure 6. A. Validation and B. cross-validation of the total current carbon (TCC) model, using only GIS variables. Five- fold cross-validation was used, whereby the data were divided into five even-sized groups and total carbon for plots in each group was predicted by models constructed using plots in the other four groups. 3.2 Potential carbon stocks on c"
+        }
+      ],
+      "candidateCount": 3
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-gis-wildlife-penguins-2008.pdf",
+      "file": "doc-gis-wildlife-penguins-2008.pdf",
+      "documentPages": 35,
+      "pages": [
+        {
+          "page": 14,
+          "captions": [
+            "Figure 4 displays the habitat map for the"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "2.2.3 Habitat data The next step in the construction of the yellow-eyed penguin GIS was the extraction of land cover data from the orthorectified image of Boulder Beach to create a habitat map data layer. This data layer was required to analyse the effects of habitat type on yellow-eyed penguin nest site selection and density at Boulder Beach. The creation of the habitat map consisted of the following two steps: defining a set of land cover class"
+        },
+        {
+          "page": 15,
+          "captions": [
+            "Figure 4. A habitat map of"
+          ],
+          "images": [
+            {
+              "xref": 43,
+              "rect": [
+                178.6,
+                56.7,
+                538.6,
+                250.1
+              ],
+              "displayArea": 69638,
+              "pixelSize": [
+                500,
+                269
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 4. A habitat map of the Midsection and Double Bay yellow-eyed penguin (Megadyptes antipodes) nesting areas at Boulder Beach. Four of the five broad classes of the habitat map are overlaid on the orthorectified 1997 imagery of Boulder Beach from which the map was derived (as described in section Habitat class 2.3.3); water is excluded. Dense scrub Sparse scrub Tree Metres N 0 125 250 500 Bare ground/grassland Coordinate system: NZ Transvers"
+        },
+        {
+          "page": 18,
+          "captions": [
+            "Fig. 7. Figure 7. The graphical interface form for entering new data into the nest site shapefile in the yellow-eyed penguin"
+          ],
+          "images": [
+            {
+              "xref": 57,
+              "rect": [
+                55.4,
+                173.2,
+                538.6,
+                658.6
+              ],
+              "displayArea": 234508,
+              "pixelSize": [
+                1498,
+                1505
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "for some fields of the interface to provide guided input when entering data. For example, the choices for nest site vegetation cover were presented in a drop-down pick-list to ensure that spelling mistakes and inconsistencies were minimised. In addition, as a form of quality control, some data restriction (e.g. date format, and a maximum number of eggs and chicks) and validation are allowed before updating the nest site shapefile. The final inter"
+        }
+      ],
+      "candidateCount": 3
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-hurunui-forest-gis-2005.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-hurunui-forest-gis-2005.pdf",
+      "file": "doc-hurunui-forest-gis-2005.pdf",
+      "documentPages": 42,
+      "pages": [
+        {
+          "page": 18,
+          "captions": [
+            "Figure 3. Digital elevation model showing location of permanent forest plots (20 × 20 m) in the North (red dots) and",
+            "Figure 4. Computer-generated map showing the distribution of forest communities in the North Hurunui catchment. The"
+          ],
+          "images": [
+            {
+              "xref": 35,
+              "rect": [
+                85.1,
+                417.6,
+                504.8,
+                723.3
+              ],
+              "displayArea": 128335,
+              "pixelSize": [
+                583,
+                425
+              ]
+            },
+            {
+              "xref": 36,
+              "rect": [
+                85.1,
+                56.7,
+                504.8,
+                362.4
+              ],
+              "displayArea": 128335,
+              "pixelSize": [
+                583,
+                425
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 3. Digital elevation model showing location of permanent forest plots (20 × 20 m) in the North (red dots) and South (pink dots) Hurunui River catchments. Lake Sumner (520 m a.s.l.) is on the right side of the map. The black line represents the boundary between the North and South Hurunui catchments. Spot heights are shown in metres. Figure 4. Computer-generated map showing the distribution of forest communities in the North Hurunui catchme"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-mapping-biodiversity-heritage-2016.pdf",
+      "file": "doc-mapping-biodiversity-heritage-2016.pdf",
+      "documentPages": 139,
+      "pages": [
+        {
+          "page": 16,
+          "captions": [
+            "Figure 1. The Department of Conservation’s (DOC’s) outcomes model."
+          ],
+          "images": [
+            {
+              "xref": 186,
+              "rect": [
+                126.3,
+                55.3,
+                540.9,
+                321.0
+              ],
+              "displayArea": 110180,
+              "pixelSize": [
+                638,
+                409
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 1. The Department of Conservation’s (DOC’s) outcomes model. 1.3 Objectives In this project, we explored the availability of data and its potential use for mapping, analysing and quantifying the services and benefits provided by natural and historic heritage administered by DOC. Specifically, we aimed to: •• Identify and, where possible, gather spatial datasets that could be used to map these services •• Identify knowledge and data gaps •• "
+        },
+        {
+          "page": 21,
+          "captions": [
+            "Fig. 3 for mapped examples for each biome). Such data can be used to predict and map the spatial"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "(see Data Supplement 28). In general, the sharing of marine spatial data has lagged behind that of terrestrial spatial data (Strain et al. 2006), although this is being addressed with the emergence of specialist marine data-sharing facilities such as Ocean Biogeographic Information System (OBIS) and the United Nation Environment Programme World Conservation Monitoring Centre’s (UNEP- WCMC’s) Ocean Data Viewer. 4. Stocktake of spatial datasets The"
+        },
+        {
+          "page": 25,
+          "captions": [
+            "Figure 3. Examples of spatial data for each of the four biomes: A. Terrestrial—Land Environments of New Zealand (LENZ), an ecological"
+          ],
+          "images": [
+            {
+              "xref": 223,
+              "rect": [
+                48.0,
+                51.2,
+                516.9,
+                712.1
+              ],
+              "displayArea": 309906,
+              "pixelSize": [
+                652,
+                919
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 3. Examples of spatial data for each of the four biomes: A. Terrestrial—Land Environments of New Zealand (LENZ), an ecological classification system based on various climate, landform and soil variables of relevance to biological distributions, mapped using 20 classes (Leathwick et al. 2002); B. Freshwater—Freshwater Environments of New Zealand Version 1 (FENZv1) River and Stream Classification, which groups together river segments with si"
+        },
+        {
+          "page": 45,
+          "captions": [
+            "Map 1 of 2 - North Island"
+          ],
+          "images": [
+            {
+              "xref": 269,
+              "rect": [
+                142.3,
+                70.5,
+                525.8,
+                618.9
+              ],
+              "displayArea": 210368,
+              "pixelSize": [
+                488,
+                698
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "2500000 3000000 Water Bodies of Significant National Value for Recreation Map 1 of 2 - North Island Kaimaumau Block 0 25 50 100 km Hikurangi 1:3,500,000 Legend Water-related locations of significant national value for recreation Rivers of significant national value for recreation Lakes of significant national value for recreation Kaiiwi lakes NOTE: Water bodies are marked as significant where they have been identified by the Ministry for the Envi"
+        },
+        {
+          "page": 46,
+          "captions": [
+            "Map 2 of 2 - South Island Whanga"
+          ],
+          "images": [
+            {
+              "xref": 274,
+              "rect": [
+                140.7,
+                69.9,
+                524.0,
+                618.0
+              ],
+              "displayArea": 210073,
+              "pixelSize": [
+                488,
+                698
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "2000000 2500000 Water Bodies of Significant National Manganu Value for Recreation Map 2 of 2 - South Island Whanga 0 25 50 100 km Whanganui Inlet 1:3,500,000 Aorere River Legend Delaware Bay Water-related locations of significant national value for recreation Rivers of significant national value for recreation Motueka River Lakes of significant national value for recreation Karamea River NOTE: Water bodies are marked as significant where they hav"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-marine-ecosystem-gis-2014.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-marine-ecosystem-gis-2014.pdf",
+      "file": "doc-marine-ecosystem-gis-2014.pdf",
+      "documentPages": 100,
+      "pages": [
+        {
+          "page": 30,
+          "captions": [
+            "Figure 7 was constructed from the Gaps Marine Biological Habitat GIS layer for the North Island"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "mapping study by NIWA of marine habitats either side of and including the Reserve (see Funnell et al. 2005) and the other consisting of Blackhead GIS map layers. Unfortunately, however, the resolution of the Blackhead mapping was not as high as that provided in the Gaps Marine Biological Habitat layers, so the Blackhead study and associated spatial datasets were not used. Figure 7 was constructed from the Gaps Marine Biological Habitat GIS layer "
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "file": "doc-whangarei-coastal-archaeology-gis-2013.pdf",
+      "documentPages": 58,
+      "pages": [
+        {
+          "page": 20,
+          "captions": [
+            "Figure 3 shows the spatial density"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "3. Results 3.1 GIS information Geographic Information Systems (GIS) provide a useful way of presenting complex hazard and risk information in relation to information about heritage landscapes (see also Cassar 2005: 44). The use of GIS in this context needs to be understood as a way of modelling the relationships, and it must be recognised that the models created are subject to ongoing refinement. The following database layers were made available "
+        },
+        {
+          "page": 23,
+          "captions": [
+            "Figure 5. Coastal erosion hazard zones in the Whangarei District. Data source: WDC GIS"
+          ],
+          "images": [
+            {
+              "xref": 63,
+              "rect": [
+                127.6,
+                449.5,
+                456.8,
+                747.0
+              ],
+              "displayArea": 97954,
+              "pixelSize": [
+                1372,
+                1240
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "3.2.3 Current mainland hazards As set out in section 3.1, based on the GIS layers developed by WDC, three types of hazards were used to assess the vulnerability of mainland sites to climate change: •• Coastal erosion (referred to in the WDC GIS as ‘coastal hazard’) •• Flooding •• Ground instability Each of these layers was added to the GIS database and all sites identified within these areas were flagged as being in the hazard area. Coastal erosi"
+        },
+        {
+          "page": 24,
+          "captions": [
+            "Figure 6. Flood hazard (shaded areas) in the Whangarei District. Data source: WDC GIS Department."
+          ],
+          "images": [
+            {
+              "xref": 66,
+              "rect": [
+                127.7,
+                398.8,
+                458.4,
+                695.6
+              ],
+              "displayArea": 98184,
+              "pixelSize": [
+                1378,
+                1237
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Flooding The flood hazard overlay (Fig. 6) identifies ‘land which, on the information currently available, is susceptible to flooding; either due to rivers or streams overflowing their banks, inundation from the sea during high tides or storm surges, or to water ponding during extended periods of wet weather’ (WDC 2007: chapter 56, p. 1). Not all of the flood hazard zones, therefore, relate to coastal hazard. No buffer zone was added to the line "
+        },
+        {
+          "page": 32,
+          "captions": [
+            "Figure 14. Number of archaeological sites in the Whangarei District vulnerable to coastal erosion according to Model 1 (10 m",
+            "Fig. 15. A 10 m expansion of the flood zone resulted in quite a dramatic"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Increase in coastal erosion To model an increase in the size of current coastal erosion hazards (and, therefore, not including new coastal erosion zones), the current coastal erosion zone was expanded from having the original 10-m-wide buffer (Model 1) to having a 50-m buffer. The increase in the number of sites affected was then examined. The results show that expansion of the buffer zone increases the number of sites that are in the buffered co"
+        },
+        {
+          "page": 33,
+          "captions": [
+            "Figure 15. Number of archaeological sites, by type, in the Whangarei District that would be flooded as the flood buffer is"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "325 300 275 250 225 All others 200 Burials and cemeteries sites of 175 Artefacts Maori horticulture 150 PaNumber Pits and/or Terraces 125 Middens and Ovens 100 75 50 25 0 Flood hazard Flood hazard 10 m Flood hazard 25 m Flood hazard 50 m Figure 15. Number of archaeological sites, by type, in the Whangarei District that would be flooded as the flood buffer is increased from 0 to 50 m. Coastline changes A rise in sea level would change Whangarei’s "
+        },
+        {
+          "page": 38,
+          "captions": [
+            "Figure 18. Archaeological sites in flood zones (black circles) and nearby sites (white circles) at One Tree"
+          ],
+          "images": [
+            {
+              "xref": 114,
+              "rect": [
+                127.6,
+                56.7,
+                484.4,
+                353.0
+              ],
+              "displayArea": 105736,
+              "pixelSize": [
+                1487,
+                1235
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 18. Archaeological sites in flood zones (black circles) and nearby sites (white circles) at One Tree Point. Shaded areas are the flood hazard zones. Data source: WDC. The changing number of midden deposits reflects the complex situation relating to what has happened to the site since it was first recorded in 1981. Erosion at the base of the cliff occurs due to wave action, which undermines the top of the cliff where the midden components a"
+        }
+      ],
+      "candidateCount": 6
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/doc-wilding-conifer-remote-sensing-2020.pdf",
+      "sourcePdf": "/assets/publications/pdfs/doc-wilding-conifer-remote-sensing-2020.pdf",
+      "file": "doc-wilding-conifer-remote-sensing-2020.pdf",
+      "documentPages": 33,
+      "pages": [
+        {
+          "page": 15,
+          "captions": [
+            "Figure 7. Generalised methodological workflow for image classification using support vector machine (SVM) models."
+          ],
+          "images": [
+            {
+              "xref": 59,
+              "rect": [
+                155.9,
+                153.8,
+                507.6,
+                755.3
+              ],
+              "displayArea": 211547,
+              "pixelSize": [
+                1194,
+                2042
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "in this analysis, alongside data on the tree sizes and locations collected from the nineteen 20 × 20 m plots (see above). These data were imported into ArcGIS and the imagery for each plot was then clipped from the full-site imagery, resulting in 19 TIF files of plots for each of the RGB and multispectral datasets. In addition, the locations of all marked trees within each plot were mapped. Sets of identified tree pixels and non-tree pixels were "
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/nz-geospatial-industry-profile-survey-2023.pdf",
+      "sourcePdf": "/assets/publications/pdfs/nz-geospatial-industry-profile-survey-2023.pdf",
+      "file": "nz-geospatial-industry-profile-survey-2023.pdf",
+      "documentPages": 34,
+      "pages": [
+        {
+          "page": 14,
+          "captions": [
+            "Figure 8.1 displays the results. The most common geospatial qualifications are Bachelor’s",
+            "Figure 8.1 Highest geospatial qualification responses."
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "8. HIGHEST GEOSPATIAL QUALIFICATION Question: What is your highest geospatial qualification? Question Type: Single Choice Options: • No qualification • High School Courses (i.e. NCEA) • Tertiary Courses (i.e. Intro to GIS, Spatial Analysis..) • Diploma/Certificate • Bachelor’s Degree • Post-Graduate/Honours Degree • Master’s Degree • Doctorate Degree • Other… (free text) HIGHEST GEOSPATIAL QUALIFICATION RESULTS Figure 8.1 displays the results. Th"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/nzlum-land-use-classification-interoperability-2023.pdf",
+      "sourcePdf": "/assets/publications/pdfs/nzlum-land-use-classification-interoperability-2023.pdf",
+      "file": "nzlum-land-use-classification-interoperability-2023.pdf",
+      "documentPages": 39,
+      "pages": [
+        {
+          "page": 25,
+          "captions": [
+            "Figure 1. Model code snippet, as an example of developing the controlled vocabulary."
+          ],
+          "images": [
+            {
+              "xref": 122,
+              "rect": [
+                85.1,
+                209.7,
+                524.5,
+                608.9
+              ],
+              "displayArea": 175389,
+              "pixelSize": [
+                974,
+                885
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "6 Model development The development of the semantic model proceeded in a stepwise fashion. Once the land- use categories, definitions, and attributes were confirmed (i.e. Tables 2-4), that information was encoded into a vocabulary using constructs from the Web Ontology Language (OWL) as well as annotation properties from the Simple Knowledge Organization System (SKOS), (see Figure 1). The semantic model was created with a focus on terms, definiti"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/nzlum-land-use-classification-soil-quality-2022.pdf",
+      "sourcePdf": "/assets/publications/pdfs/nzlum-land-use-classification-soil-quality-2022.pdf",
+      "file": "nzlum-land-use-classification-soil-quality-2022.pdf",
+      "documentPages": 58,
+      "pages": [
+        {
+          "page": 25,
+          "captions": [
+            "Figure 1. Conceptual model of the national land-use database. Source: Price et al. 2010"
+          ],
+          "images": [
+            {
+              "xref": 145,
+              "rect": [
+                85.1,
+                278.7,
+                524.5,
+                577.6
+              ],
+              "displayArea": 131317,
+              "pixelSize": [
+                854,
+                581
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "• Land Use and Carbon Analysis System (LUCAS) Price et al. 2010). The agreed land-use classification is shown in Appendix 2. However, beyond the descriptions provided in that table it is unclear how and what information specifically was used to delineate the different land-use classes. However, the focus on the project was not so much to develop a national classification as to focus on the process of land-use classification and enable flexible la"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/nzlum-land-use-information-system-framework-2024.pdf",
+      "sourcePdf": "/assets/publications/pdfs/nzlum-land-use-information-system-framework-2024.pdf",
+      "file": "nzlum-land-use-information-system-framework-2024.pdf",
+      "documentPages": 111,
+      "pages": [
+        {
+          "page": 27,
+          "captions": [
+            "Figure 1. Conceptual model of the national Land Use Database. (Source: Price et al. 2010)"
+          ],
+          "images": [
+            {
+              "xref": 50,
+              "rect": [
+                85.1,
+                61.5,
+                524.5,
+                360.6
+              ],
+              "displayArea": 131427,
+              "pixelSize": [
+                915,
+                623
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 1. Conceptual model of the national Land Use Database. (Source: Price et al. 2010) 7.3.2 Innovative Data Analysis (IDA) programme Following the LUDB work, the Innovative Data Analysis (IDA) programme was funded by the Ministry of Business, Innovation and Employment over 2014–2018. This programme aimed to ‘research and develop processes to integrate and harmonise high priority heterogeneous land resource and biodiversity datasets to support"
+        },
+        {
+          "page": 54,
+          "captions": [
+            "Figure 2. Overview of the New Zealand Land Use Management classification system."
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Conservation and minimal use of natural 1 2 Production agriculture and plantations 3 Built environment environments 1.1.0 Biodiversity protection 2.1.0 Plantation forests 3.1.0 Residential 1.1.1 High degree of biodiversity protection 2.1.1 Exotic plantation forestry 3.1.1 High-density residential 1.1.2 Moderately high degree of biodiversity protection 2.1.2 Indigenous plantation forestry 3.1.2 Medium-density residential 1.1.3 Moderate degree of b"
+        }
+      ],
+      "candidateCount": 2
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "sourcePdf": "/assets/publications/pdfs/nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "file": "nzlum-pilot-land-use-map-methodology-2025.pdf",
+      "documentPages": 70,
+      "pages": [
+        {
+          "page": 8,
+          "captions": [
+            "Figure 1. Selected land-use classes (from NZLUM v0.3) included in the pilot land-use map. The aim of"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "organise and maintain the land-use classification system, at which point it may be sensible to produce a revised map that implements the agreed classification at the tertiary level. Conservation and minimal use of Production agriculture 1 2 3 Built environment natural environments and plantations 1.1.0 Nature Conservation 2.1.0 Plantation forests 3.1.0 Residential 1.1.1 Strict nature reserve Grazing modified pasture Public recreation and 1.1.2 Wi"
+        },
+        {
+          "page": 22,
+          "captions": [
+            "Figure 4. It is a spatial data set with H3 DGGS cell boundaries"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Level 1 Level 1 Name Level 2 Level 2 name Level 3 Level 3 name 2.6.0 Intensive animal production 2.7.0 Water and wastewater 2.8.0 Land in transition 3 Built 3.1.0 Residential environment 3.2.0 Public recreation and services 3.3.0 Commercial 3.4.0 Manufacturing and industrial 3.5.0 Utilities 3.6.0 Transport and communication 3.7.0 Mining 3.8.0 Waste treatment and disposal 3.9.0 Vacant and transitioning land With respect to the data structure of NZ"
+        },
+        {
+          "page": 24,
+          "captions": [
+            "Figure 4. Map of assigned land-use classes in the NZLUM classification system v0.3."
+          ],
+          "images": [
+            {
+              "xref": 189,
+              "rect": [
+                63.7,
+                61.5,
+                531.4,
+                722.6
+              ],
+              "displayArea": 309220,
+              "pixelSize": [
+                1432,
+                2025
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 4. Map of assigned land-use classes in the NZLUM classification system v0.3. -18-"
+        },
+        {
+          "page": 25,
+          "captions": [
+            "Figure 5. Map of the assigned confidence value corresponding to the classes in Figure 4. Areas with no"
+          ],
+          "images": [
+            {
+              "xref": 192,
+              "rect": [
+                69.7,
+                61.5,
+                525.1,
+                705.3
+              ],
+              "displayArea": 293205,
+              "pixelSize": [
+                1264,
+                1788
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Figure 5. Map of the assigned confidence value corresponding to the classes in Figure 4. Areas with no assigned land-use class have a null confidence. Note that values in a range 1–12 are mapped to a 1–4 range using the formula ⌈x/3⌉. -19-"
+        },
+        {
+          "page": 33,
+          "captions": [
+            "Figure 9. Class-wise validation results. This figure shows the number of features in the land-use map that were validated per class, divided into “yes”"
+          ],
+          "images": [
+            {
+              "xref": 209,
+              "rect": [
+                59.5,
+                61.5,
+                782.3,
+                420.1
+              ],
+              "displayArea": 259225,
+              "pixelSize": [
+                1713,
+                849
+              ]
+            }
+          ],
+          "pageSize": [
+            842,
+            595
+          ],
+          "pageExcerpt": "Figure 9. Class-wise validation results. This figure shows the number of features in the land-use map that were validated per class, divided into “yes” (green), “maybe” (yellow), and “no” (red) according to the validator’s opinion regarding the consistency of the class assignment with aerial imagery. The group on the left corresponds to the “null” class assignment. The total sample size was approximately 2,700 features. Note: the y axis shows the"
+        },
+        {
+          "page": 45,
+          "captions": [
+            "Map 2020 CC BY https://data.mfe.govt.nz/services;key={key}/wfs"
+          ],
+          "images": [],
+          "pageSize": [
+            842,
+            595
+          ],
+          "pageExcerpt": "id description license attribution host topo50_snow_polygons LINZ Topo 1:50k Snow Polygons CC BY Sourced from the LINZ Data Service and https://data.linz.govt.nz/services;key={key}/wfs licensed for reuse under CC BY 4.0 topo50_moraine_polygons LINZ Topo 1:50k Moraine CC BY Sourced from the LINZ Data Service and https://data.linz.govt.nz/services;key={key}/wfs Polygons licensed for reuse under CC BY 4.0 topo50_moraine_wall_polygons LINZ Topo 1:50k"
+        }
+      ],
+      "candidateCount": 6
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-conservation-framework-spatial-data-2023.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-conservation-framework-spatial-data-2023.pdf",
+      "file": "paper-conservation-framework-spatial-data-2023.pdf",
+      "documentPages": 14,
+      "pages": [
+        {
+          "page": 4,
+          "captions": [
+            "Figure 2. Analysis schematic. Spatial data layers are represented by grey-filled parallelograms, and analysis steps by un-filled rectangles."
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "4 New Zealand Journal of Ecology, Vol. 47, No. 1, 2023 Published examples of previous uses of Zonation include: (Appendices S1, S2 in Supplementary Material) categorised evaluation of the conservation benefits of fishing industry- according to the national ecosystem classification of Singers and proposed Benthic Protection Areas in New Zealand’s Exclusive Rogers (2014), which includes both widespread and naturally Economic Zone (Leathwick et al. "
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-east-coast-river-stories-2023.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-east-coast-river-stories-2023.pdf",
+      "file": "paper-east-coast-river-stories-2023.pdf",
+      "documentPages": 21,
+      "pages": [
+        {
+          "page": 20,
+          "captions": [
+            "map 6 (Lower Hutt, NZ:"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Fuller et al. 10.3389/fenvs.2023.1162099 Leenman, A., and Tunnicliffe, J. (2020). Tributary-junction fans as buffers in the Page, M., Marden, M., Kasai, M., Gomez, B., Peacock, D., Betts, H., et al. (2007). sediment cascade: A multi-decadal study. Earth Surf. Process. Landforms 45, 265–279. Changes in basin-scale sediment supply and transfer in a rapidly transformed doi:10.1002/esp.4717 New Zealand landscape. Dev. Earth Surf. Process. 11, 337–356"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-geospatial-drinking-water-data-2024.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-geospatial-drinking-water-data-2024.pdf",
+      "file": "paper-geospatial-drinking-water-data-2024.pdf",
+      "documentPages": 12,
+      "pages": [
+        {
+          "page": 6,
+          "captions": [
+            "Fig. 1 National map of data access and quality scores for spatial data related to drinking water distribu-"
+          ],
+          "images": [
+            {
+              "xref": 65,
+              "rect": [
+                53.8,
+                58.1,
+                385.5,
+                528.8
+              ],
+              "displayArea": 156102,
+              "pixelSize": [
+                1382,
+                1961
+              ]
+            }
+          ],
+          "pageSize": [
+            439,
+            666
+          ],
+          "pageExcerpt": "956 M. Hobbs et al. Fig. 1 National map of data access and quality scores for spatial data related to drinking water distribu- tion zones population (except from Fig. 2 where population is the variable in the y-axis). Fig- ures 2, 3, 4 and 5 also include a colour gradient that shows the proportion of the population that resides in a rural area (except from Fig. 3 where that is the variable 1 3"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "file": "paper-gis-insar-urban-landslide-gisborne-2022.pdf",
+      "documentPages": 15,
+      "pages": [
+        {
+          "page": 3,
+          "captions": [
+            "Fig. 2 a Map of the Richardson"
+          ],
+          "images": [
+            {
+              "xref": 173,
+              "rect": [
+                187.1,
+                159.8,
+                547.1,
+                714.3
+              ],
+              "displayArea": 199627,
+              "pixelSize": [
+                1500,
+                2311
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "using a hillshade raster overlain by a digital elevation model “stepped” morphology of the slope, partly inﬂuenced by anthro- (DEM) from a 2019 LiDAR survey. The landslide occupies three pogenic modiﬁcations such as the dirt track below the headscarp different land parcels, commencing just below the ridgeline north and the ridgeline on the western side of the landslide (Fig. 2a). The of 35 Richardson Avenue, and terminating 150 m downslope near g"
+        },
+        {
+          "page": 11,
+          "captions": [
+            "Fig. 8 a Descending LOS velocity map overlying the 2019 DEM. The inside the landslide (D1 and D2) and two stable points from outside"
+          ],
+          "images": [
+            {
+              "xref": 512,
+              "rect": [
+                84.2,
+                51.0,
+                511.1,
+                634.9
+              ],
+              "displayArea": 249311,
+              "pixelSize": [
+                1779,
+                2433
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Fig. 8 a Descending LOS velocity map overlying the 2019 DEM. The inside the landslide (D1 and D2) and two stable points from outside yellow star represents the reference point location. Negative values the deformation area (D3 and D4). The annual cumulative precipita- (red) indicate movement away from the sensor, and positive values tion is also plotted from January 2016 to January 2022 (blue). The are the movement towards the sensor (blue). The "
+        },
+        {
+          "page": 12,
+          "captions": [
+            "Fig. 9 a Ascending LOS velocity map overlying the 2019 DEM. The inside the landslide (A1 and A2) and two stable points from outside"
+          ],
+          "images": [
+            {
+              "xref": 519,
+              "rect": [
+                85.0,
+                51.0,
+                510.3,
+                634.9
+              ],
+              "displayArea": 248330,
+              "pixelSize": [
+                1772,
+                2433
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Recent Landslides Fig. 9 a Ascending LOS velocity map overlying the 2019 DEM. The inside the landslide (A1 and A2) and two stable points from outside yellow star represents the reference point location. Negative values the deformation area (A3 and A4). The annual cumulative precipita- (red) indicate movement away from the sensor, and positive values tion is also plotted from January 2016 to January 2022 (blue). The are the movement towards the se"
+        }
+      ],
+      "candidateCount": 3
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-kaikoura-landslide-dataset-2022.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-kaikoura-landslide-dataset-2022.pdf",
+      "file": "paper-kaikoura-landslide-dataset-2022.pdf",
+      "documentPages": 16,
+      "pages": [
+        {
+          "page": 4,
+          "captions": [
+            "Fig. 1 respect to rupture zone, RP). We made this calculation in the same density, by using the ArcGIS kernel density function. Specifically,"
+          ],
+          "images": [
+            {
+              "xref": 59,
+              "rect": [
+                63.8,
+                51.0,
+                531.5,
+                461.3
+              ],
+              "displayArea": 191913,
+              "pixelSize": [
+                1949,
+                1710
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Recent Landslides Fig. 2 Overview of the landslide mapping procedure. The first column (a, d) reports the pre-Kaikōura situations, followed by the second col- umn (b, e) depicting the same area after the Kaikōura earthquake. The third column (c, f) shows a sample of the mapped landslides. The two different rows simply report a detail captured from two different areas also indicated in Fig. 1 respect to rupture zone, RP). We made this calculation "
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-lidar-wetland-drainage-risks-2023.pdf",
+      "file": "paper-lidar-wetland-drainage-risks-2023.pdf",
+      "documentPages": 9,
+      "pages": [
+        {
+          "page": 4,
+          "captions": [
+            "Figure 1. Area of wetlands (all substrates) within 100 m of a drain, 5.17 ha was included by the model but not by the manually"
+          ],
+          "images": [
+            {
+              "xref": 72,
+              "rect": [
+                63.8,
+                211.2,
+                262.2,
+                544.5
+              ],
+              "displayArea": 66123,
+              "pixelSize": [
+                826,
+                1388
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "4 New Zealand Journal of Ecology, Vol. 47, No. 1, 2023 Area of wetlands within 100 m of a drain: specifically, peat This is 8% of the total area mapped as peat swamp by FENZ. substrates Combined, there are 4387 ha of peat wetland within 100 m Once we restrict our results to wetlands on peat substrate, of a drain in New Zealand. using only the FENZ national-level dataset, the area of peat bog (bog on peat substrate) within 100 m of a current drain"
+        },
+        {
+          "page": 5,
+          "captions": [
+            "Figure 3. Example 1: (a) LiDAR image, which is the base image in all other panels; (b) LINZ drain coverage, clearly showing many"
+          ],
+          "images": [
+            {
+              "xref": 82,
+              "rect": [
+                41.5,
+                485.1,
+                553.8,
+                743.7
+              ],
+              "displayArea": 132450,
+              "pixelSize": [
+                2139,
+                1080
+              ]
+            },
+            {
+              "xref": 81,
+              "rect": [
+                41.5,
+                98.0,
+                351.9,
+                431.5
+              ],
+              "displayArea": 103531,
+              "pixelSize": [
+                1293,
+                1389
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Burge et al.: Drains near New Zealand wetlands 5 Figure 2. Extent of drains in the national scale layer (LINZ drains) and the LiDAR dataset derived for our Waituna case study (LiDAR drains). Note some overlap in (b) with likely river features in the north of the image, and some smaller polygons within the south-west of the image that are likely areas near small natural ponds. Figure 3. Example 1: (a) LiDAR image, which is the base image in all ot"
+        },
+        {
+          "page": 6,
+          "captions": [
+            "Figure 4. Example 2: (a) LiDAR image, which is the base image in all other panels; b) LINZ drain coverage, clearly showing many drains"
+          ],
+          "images": [
+            {
+              "xref": 92,
+              "rect": [
+                77.9,
+                444.9,
+                517.6,
+                754.4
+              ],
+              "displayArea": 136044,
+              "pixelSize": [
+                1929,
+                1357
+              ]
+            },
+            {
+              "xref": 90,
+              "rect": [
+                41.5,
+                98.0,
+                553.3,
+                354.2
+              ],
+              "displayArea": 131088,
+              "pixelSize": [
+                2137,
+                1069
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "6 New Zealand Journal of Ecology, Vol. 47, No. 1, 2023 Figure 4. Example 2: (a) LiDAR image, which is the base image in all other panels; b) LINZ drain coverage, clearly showing many drains missing; (c) LiDAR drain coverage with some drains missing, but also a river channel mapped as a drain; (d) LINZ drain coverage buffered by 100 m, showing a small overlap between drains and wetlands; (e) LiDAR drain coverage buffered by 100 m, showing substant"
+        }
+      ],
+      "candidateCount": 3
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-national-coastal-change-dataset-2024.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-national-coastal-change-dataset-2024.pdf",
+      "file": "paper-national-coastal-change-dataset-2024.pdf",
+      "documentPages": 11,
+      "pages": [
+        {
+          "page": 6,
+          "captions": [
+            "Fig. 2. a) Georeferenced and b) mosaiced historic aerial images over high-resolution satellite imagery of Colac Bay,"
+          ],
+          "images": [
+            {
+              "xref": 52,
+              "rect": [
+                26.6,
+                38.7,
+                386.6,
+                311.1
+              ],
+              "displayArea": 98081,
+              "pixelSize": [
+                1500,
+                1136
+              ]
+            }
+          ],
+          "pageSize": [
+            423,
+            639
+          ],
+          "pageExcerpt": "6 M. Tuck, M. Dickson and E. Ryan et al. / Data in Brief 57 (2024) 111104 Fig. 2. a) Georeferenced and b) mosaiced historic aerial images over high-resolution satellite imagery of Colac Bay, Southland, New Zealand. coastline (77 %) and was mapped for all sandy beaches backed by a dune, while the gravel ridge (often corresponding to the storm ridge) was used to represent the coastline for gravel beaches (7 %). Either the cliff top (7 %) or cliff t"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-new-zealand-national-landslide-database-2017.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-new-zealand-national-landslide-database-2017.pdf",
+      "file": "paper-new-zealand-national-landslide-database-2017.pdf",
+      "documentPages": 11,
+      "pages": [
+        {
+          "page": 7,
+          "captions": [
+            "Fig. 4 Database model. Each landslide is represented by a single record in the Landslide table and can be related to a number of records in the Landslide_Feature"
+          ],
+          "images": [
+            {
+              "xref": 90,
+              "rect": [
+                127.3,
+                45.8,
+                468.0,
+                265.2
+              ],
+              "displayArea": 74743,
+              "pixelSize": [
+                1420,
+                915
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Fig. 4 Database model. Each landslide is represented by a single record in the Landslide table and can be related to a number of records in the Landslide_Feature table. Landslide records are related to a single record in the Trigger, Debris_Type, Movement_Type, Material_Type, Aspect and Activity tables, respectively, but can have multiple Cause records. Each Landslide record is associated with a single metadata record. The model shown here has be"
+        },
+        {
+          "page": 11,
+          "captions": [
+            "Map 7. 77 p. + 1"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Massey CI, McSaveney MJ, Taig T, Richards L, Litchfield NJ, Rhoades DA, McVerry GH, Lukovic Rosser BJ, Townsend, D, McSaveney E, Ries W (2014) Landslides and ground damage associated B, Heron DW, Ries W, Van Dissen RJ (2014) Determining rockfall risk in Christchurch using with the M6.2 Eketahuna earthquake, 20 January 2014, GNS Science Report 2014/51, p 34 rockfalls triggered by the 2010-2011 Canterbury earthquake sequence, New Zealand. Tatard L,"
+        }
+      ],
+      "candidateCount": 2
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-qgis-blender-nz-open-data-2024.pdf",
+      "file": "paper-qgis-blender-nz-open-data-2024.pdf",
+      "documentPages": 7,
+      "pages": [
+        {
+          "page": 2,
+          "captions": [
+            "Figure 3. Manaaki Whenua Landcare Research’s Land Cover Database contains over 30 classes of land cover. These can be"
+          ],
+          "images": [
+            {
+              "xref": 63,
+              "rect": [
+                56.7,
+                473.6,
+                538.3,
+                732.9
+              ],
+              "displayArea": 124887,
+              "pixelSize": [
+                1472,
+                791
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "2 of 7 non-spatial formats. cover-database-version-50-mainland-new-zealand); a The LDS is hosted online via the Koordinates platform seamless polygon dataset dividing the land into over 30 (koordinates.com). Other government organisations use classes. Each class can be given an appropriate simple the same platform to host their own data such as Stats NZ colour fill in QGIS, resulting in a colourised 2D map of Tatauranga Aotearoa (datafinder.stats"
+        },
+        {
+          "page": 3,
+          "captions": [
+            "Figure 4. Several terrain visualisation rasters can be"
+          ],
+          "images": [
+            {
+              "xref": 105,
+              "rect": [
+                305.6,
+                50.3,
+                538.1,
+                360.4
+              ],
+              "displayArea": 72088,
+              "pixelSize": [
+                709,
+                948
+              ]
+            },
+            {
+              "xref": 106,
+              "rect": [
+                305.6,
+                294.2,
+                538.2,
+                526.6
+              ],
+              "displayArea": 54036,
+              "pixelSize": [
+                680,
+                680
+              ]
+            },
+            {
+              "xref": 107,
+              "rect": [
+                305.6,
+                539.7,
+                538.2,
+                713.8
+              ],
+              "displayArea": 40472,
+              "pixelSize": [
+                908,
+                680
+              ]
+            },
+            {
+              "xref": 101,
+              "rect": [
+                56.7,
+                70.9,
+                289.2,
+                209.8
+              ],
+              "displayArea": 32312,
+              "pixelSize": [
+                711,
+                425
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "3 of 7 Figure 4. Several terrain visualisation rasters can be created from the DEM to enhance certain features of the landscape. Top: Anisotropic Sky-View Factor created using the Relief Visualization Toolbox plugin for QGIS. Bottom: texture shading created using Leland Brown’s algorithm. layer blending modes in QGIS. This results in a colourful map that appears 3D, given the depth of shadows and highlights. However, the actual land itself can st"
+        },
+        {
+          "page": 4,
+          "captions": [
+            "Figure 6. Arthur’s Park National Park. The natural basemap provides a pseudo-realistic image of the land cover and terrain."
+          ],
+          "images": [
+            {
+              "xref": 125,
+              "rect": [
+                56.6,
+                77.5,
+                538.2,
+                430.2
+              ],
+              "displayArea": 169922,
+              "pixelSize": [
+                1472,
+                1078
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "4 of 7 Figure 6. Arthur’s Park National Park. The natural basemap provides a pseudo-realistic image of the land cover and terrain. Further elements such as road and track networks, icons and labels, and marginalia can be added within QGIS, or using separate graphics software. can be grouped into fewer broad texture categories with shapeburst or buffered gradient fill in QGIS, with a each category given a raster fill using an appropriate colour ra"
+        },
+        {
+          "page": 6,
+          "captions": [
+            "Figure 10. Colour can be included in the map with the",
+            "Figure 9. Water outlines can be rendered separately and addition of some extra nodes in the terrain material"
+          ],
+          "images": [
+            {
+              "xref": 169,
+              "rect": [
+                56.7,
+                223.3,
+                289.2,
+                401.0
+              ],
+              "displayArea": 41301,
+              "pixelSize": [
+                711,
+                543
+              ]
+            },
+            {
+              "xref": 171,
+              "rect": [
+                56.7,
+                520.5,
+                289.2,
+                685.8
+              ],
+              "displayArea": 38431,
+              "pixelSize": [
+                968,
+                689
+              ]
+            },
+            {
+              "xref": 175,
+              "rect": [
+                305.6,
+                530.0,
+                538.2,
+                671.6
+              ],
+              "displayArea": 32937,
+              "pixelSize": [
+                1047,
+                638
+              ]
+            },
+            {
+              "xref": 174,
+              "rect": [
+                305.6,
+                385.3,
+                538.2,
+                510.4
+              ],
+              "displayArea": 29074,
+              "pixelSize": [
+                710,
+                382
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "6 of 7 image that depicts the main features of the terrain. shader ensures that there are no shadows in this image. Since Freestyle is only considering the physical shape of This can then be combined with the Freestyle linework the terrain model, it is likely that the image produced either via the Blender compositor, or in external graphics does not include the edges of rivers and lakes, causing software. valleys to seem empty. To add these featu"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-rural-land-use-transitions-north-island-2025.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-rural-land-use-transitions-north-island-2025.pdf",
+      "file": "paper-rural-land-use-transitions-north-island-2025.pdf",
+      "documentPages": 17,
+      "pages": [
+        {
+          "page": 2,
+          "captions": [
+            "Fig. 1 Location and maps of the three case study districts: a Map of New Zealand; b Far North; c Tararua; and d Masterton."
+          ],
+          "images": [
+            {
+              "xref": 17,
+              "rect": [
+                49.7,
+                422.4,
+                497.4,
+                633.5
+              ],
+              "displayArea": 94505,
+              "pixelSize": [
+                1866,
+                880
+              ]
+            }
+          ],
+          "pageSize": [
+            547,
+            737
+          ],
+          "pageExcerpt": "76 Page 2 of 17 GeoJournal (2025) 90:76 as national-level changes for particular environmental New Zealand. These districts were identified by the effects (Kerr et al., 2007). Local-scale landscape Forest Flows MBIE research programme (Meason pattern changes directly affect ecosystem service et al., 2020) as having concerns about planted forests functions, and analysing them can provide a valuable and its impact on water availability and quality "
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "sourcePdf": "/assets/publications/pdfs/paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "file": "paper-slow-moving-shallow-landslides-gisborne-2022.pdf",
+      "documentPages": 20,
+      "pages": [
+        {
+          "page": 7,
+          "captions": [
+            "Fig. 4 a The VLOS map; b VSLOPE map; c VSLOPE map ﬁltered to only the hillshade and aerial imagery; d average VSLOPE of the polygons; e"
+          ],
+          "images": [
+            {
+              "xref": 434,
+              "rect": [
+                63.8,
+                270.6,
+                531.5,
+                670.0
+              ],
+              "displayArea": 186805,
+              "pixelSize": [
+                974,
+                832
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "2010). The InSAR deformation results were overlaid on a LiDAR values (blue). Values of the VLOS range between − 20 mm/year and hillshade acquired in 2019 and aerial imagery to deﬁne polygons 20 mm/year, and the majority of the deformation in both viewing representing the extent of deforming areas and identify deforma- geometries is away from the sensor (Fig. 5). As expected, the point tional structures (Fig. 4d and e). Also, areas of deformation "
+        },
+        {
+          "page": 8,
+          "captions": [
+            "Fig. 5 a Map of the mean velocity in the direction of the line of sight satellite, and positive values (blue) represent movement towards the"
+          ],
+          "images": [
+            {
+              "xref": 456,
+              "rect": [
+                63.8,
+                51.0,
+                531.5,
+                586.1
+              ],
+              "displayArea": 250289,
+              "pixelSize": [
+                974,
+                1115
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Technical Note Fig. 5 a Map of the mean velocity in the direction of the line of sight satellite, and positive values (blue) represent movement towards the (observation period 2016–2021) from the descending orbit track 175 satellite; b mean LOS velocity map from the ascending orbit track 8 over Gisborne City. The yellow star represents the stable reference (Observation period 2016–2021) point, and negative values (red) indicate movement away from"
+        },
+        {
+          "page": 10,
+          "captions": [
+            "Fig. 7 a Velocity map projected in the vertical direction over Gis- in the horizontal (E-W) direction over Gisborne City by combining"
+          ],
+          "images": [
+            {
+              "xref": 480,
+              "rect": [
+                63.8,
+                125.2,
+                531.5,
+                660.2
+              ],
+              "displayArea": 250289,
+              "pixelSize": [
+                974,
+                1115
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Technical Note Areas of deformation and displacement time series the average VSLOPE velocity of all points within the polygon. The average VSLOPE velocity of the deforming slopes is 20 mm/year in In total, 132 sites showed evidence of deformation during the obser- the downslope direction. Comparing the data set with the E-W and vation period; these are displayed in Fig. 8, with characteristics of vertical components, the slopes displayed deformat"
+        },
+        {
+          "page": 11,
+          "captions": [
+            "Fig. 8b. Zone 1 contains the southeast-facing slopes LiDAR data set, high-resolution aerial imagery and site photos, the"
+          ],
+          "images": [],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "is in accordance with the ascending and descending VLOS values deformation in the LOS time series shows that since 2016 there has (Fig. 5). The majority of unstable areas were identiﬁed with VSLOPE been a continuous movement away from the sensor downslope, points from the ascending data set (106) and are on slopes with an with deformation rates accelerating in 2017 to − 20 mm/year. In average orientation of 151° (SSE) and a slope angle of 23°. Fr"
+        },
+        {
+          "page": 12,
+          "captions": [
+            "Fig. 8 a Map of the unstable slopes identiﬁed using the results from Negative values (red) indicate movement downslope, and positive"
+          ],
+          "images": [
+            {
+              "xref": 571,
+              "rect": [
+                63.8,
+                51.0,
+                531.5,
+                586.6
+              ],
+              "displayArea": 250514,
+              "pixelSize": [
+                974,
+                1116
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Technical Note Fig. 8 a Map of the unstable slopes identiﬁed using the results from Negative values (red) indicate movement downslope, and positive the VSLOPE analysis from the descending orbit track. Polygon values values, representing movement uphill, have been removed; b unsta- represent the average VSLOPE of all the points within the polygon. ble slopes identiﬁed from the ascending data set Although InSAR is an effective instrument for landsl"
+        },
+        {
+          "page": 13,
+          "captions": [
+            "Fig. 9 a Map showing the unstable slopes identiﬁed in zone 1 have been removed; b high-resolution aerial imagery from 2017"
+          ],
+          "images": [
+            {
+              "xref": 593,
+              "rect": [
+                63.8,
+                255.9,
+                531.5,
+                670.6
+              ],
+              "displayArea": 193989,
+              "pixelSize": [
+                974,
+                864
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            791
+          ],
+          "pageExcerpt": "Table 2 VSLOPE, slope and Orbit geometry No. of Min VSLOPE Max VSLOPE Average VSLOPE Average Average aspect values of the unstable polygons (mm/yr) (mm/yr) (mm/yr) aspect (°) slope (°) slopes in Fig. 8 for each data set Descending 38 − 63.5 − 10 − 19 200 23 Ascending 106 − 75.4 − 10 − 20 151 23 et al. 2017; Zhou et al. 2020). Indeed, in Gisborne, inconsistencies ﬁeld investigation. For this data set, the pixel size is approximately were observed "
+        }
+      ],
+      "candidateCount": 6
+    },
+    {
+      "pdfPath": "public/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "sourcePdf": "/assets/publications/pdfs/spatial-information-economy-2009.pdf",
+      "file": "spatial-information-economy-2009.pdf",
+      "documentPages": 153,
+      "pages": [
+        {
+          "page": 6,
+          "captions": [
+            "Figure 1 Economic indicators with and without spatial information 2",
+            "Figure 2 NZ Police – modern spatial information technology in action 5",
+            "Figure 4 Surveying – capturing spatial information 8",
+            "Figure 5 Spatial information & the NZ economy’s productive capacity 10",
+            "Figure 8 NZTA Spatial Viewer and some of its layers over Wellington area 28"
+          ],
+          "images": [
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy List of boxes Box 1 Spatial prediction of NZ wildfire hazard 6 Box 2 What are ‘GPS’ and ‘GIS’? 9 Box 3 Ambulances – an example of complementary technologies 11 Box 4 Market failure and natural monopoly arguments 14 Box 5 KiwImage – NZDF and government collaboration 25 Box 6 Introduction to Landonline (LINZ) 27 Box 7 Barriers in the retail sector 105 Box 8 Spatial Data Infrastructure: the OGC referenc"
+        },
+        {
+          "page": 14,
+          "captions": [
+            "Figure 2 NZ Police – modern spatial information technology in action"
+          ],
+          "images": [
+            {
+              "xref": 42,
+              "rect": [
+                185.5,
+                421.3,
+                553.9,
+                666.4
+              ],
+              "displayArea": 90302,
+              "pixelSize": [
+                510,
+                340
+              ]
+            },
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy 1.2 What is spatial information and why is it valuable? The NZ Geospatial Strategy defines geospatial information as: … information relating to the location and names of features beneath, on, or above the surface of the earth. (New Zealand Geospatial Office, 2007, p. 4) As emphasized in the Geospatial Strategy, on some level or another all human activity depends on spatial information – on knowing wh"
+        },
+        {
+          "page": 17,
+          "captions": [
+            "Figure 4 Surveying – capturing spatial information"
+          ],
+          "images": [
+            {
+              "xref": 53,
+              "rect": [
+                185.5,
+                280.5,
+                553.1,
+                514.4
+              ],
+              "displayArea": 86008,
+              "pixelSize": [
+                503,
+                320
+              ]
+            },
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy possible to access vast volumes of spatial information at short notice and low cost.1 The means by which images and spatial data are obtained have also evolved rapidly, and these range from the above-mentioned use of satellites (i.e., global navigation satellite systems or ‘GNSS’ 2) to the use of unmanned aircraft and seafloor camera trawling. The cost of data capture is dropping whilst analytical ca"
+        },
+        {
+          "page": 37,
+          "captions": [
+            "Figure 8 NZTA Spatial Viewer and some of its layers over Wellington area"
+          ],
+          "images": [
+            {
+              "xref": 122,
+              "rect": [
+                185.0,
+                324.9,
+                487.3,
+                553.4
+              ],
+              "displayArea": 69071,
+              "pixelSize": [
+                420,
+                318
+              ]
+            },
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy important to achieving NZTA’s objectives, and spatially enabled RAMM software is the asset and planning tool for state highways.6 To put the importance of NZTA in context, it should be noted that the transport system plays a central role in the performance of the economy. Road transport is particularly important to regional New Zealand and the export industries which drive these local economies. Seve"
+        },
+        {
+          "page": 39,
+          "captions": [
+            "Figure 9 NZTA integrated GIS with video viewer"
+          ],
+          "images": [
+            {
+              "xref": 130,
+              "rect": [
+                185.5,
+                133.6,
+                474.1,
+                341.6
+              ],
+              "displayArea": 60028,
+              "pixelSize": [
+                481,
+                347
+              ]
+            },
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy Figure 9 NZTA integrated GIS with video viewer Source: SKM case study The video link has been used by approximately 218 internal and 150 external users (total of 368) and this is expected to increase to 500 within the first year of implementation. The internal productivity improvement value was estimated around $436,280/year for the internal users (1,700 productive hours) and $353,588/year for the ex"
+        },
+        {
+          "page": 40,
+          "captions": [
+            "Figure 10 LiDAR in the context of road planning and design"
+          ],
+          "images": [
+            {
+              "xref": 134,
+              "rect": [
+                185.5,
+                133.6,
+                537.4,
+                430.7
+              ],
+              "displayArea": 104543,
+              "pixelSize": [
+                489,
+                413
+              ]
+            },
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy Figure 10 LiDAR in the context of road planning and design Source: SKM case study Summary of benefit to NZTA The above discussion indicates that NZTA and its predecessors have benefitted from adopting and integrating various modern spatial information technologies (and data), and this will flow through to the NZ road system and ultimately benefit road users. An important benefit is the availability o"
+        },
+        {
+          "page": 43,
+          "captions": [
+            "Figure 12. Recent progress with spatial technology has also enabled the mapping of"
+          ],
+          "images": [
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy 2.1.4 MFish – Vessel Monitoring Systems (VMS) GPS is also used by MFish as part of the Vessel Monitoring System (VMS) to monitor fishing activities in the New Zealand fishing zone.VMS was introduced in NZ in 1994 and New Zealand currently operates a VMS involving up to 200 fishing vessels. VMS systems use electronic transmitters called Automatic Location Communicators (ALC) that are placed on fishing"
+        },
+        {
+          "page": 53,
+          "captions": [
+            "Figure 15 Movement control areas managed in GIS"
+          ],
+          "images": [
+            {
+              "xref": 182,
+              "rect": [
+                185.5,
+                133.6,
+                376.0,
+                267.8
+              ],
+              "displayArea": 25573,
+              "pixelSize": [
+                264,
+                187
+              ]
+            },
+            {
+              "xref": 183,
+              "rect": [
+                369.6,
+                133.6,
+                554.0,
+                266.2
+              ],
+              "displayArea": 24453,
+              "pixelSize": [
+                256,
+                185
+              ]
+            },
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy Figure 15 Movement control areas managed in GIS Change to MCA in 2007 MCA Change drawn and presented as recommendation Source: Ecological Associates case study 2.1.7 Land Use and Carbon Analysis System – LUCAS LUCAS is being implemented to meet New Zealand’s reporting requirements under the Kyoto Protocol. The data and information required to determine New Zealand’s carbon stock changes will be store"
+        },
+        {
+          "page": 71,
+          "captions": [
+            "Figure 17 Fertiliser application map customer viewer"
+          ],
+          "images": [
+            {
+              "xref": 239,
+              "rect": [
+                205.9,
+                135.3,
+                531.7,
+                578.3
+              ],
+              "displayArea": 144343,
+              "pixelSize": [
+                454,
+                615
+              ]
+            },
+            {
+              "xref": 527,
+              "rect": [
+                84.8,
+                39.8,
+                170.5,
+                110.6
+              ],
+              "displayArea": 6064,
+              "pixelSize": [
+                119,
+                99
+              ]
+            }
+          ],
+          "pageSize": [
+            595,
+            842
+          ],
+          "pageExcerpt": "Spatial information in the New Zealand economy Figure 17 Fertiliser application map customer viewer Source: SKM case study The efficiency gain from using modern spatial information technology in the delivery of fertiliser application services was estimated at 30 per cent – in terms of time and fuel saved and the wider spread, which is only achievable with any degree of confidence with real time GPS track/guidance. Less fertiliser is used due to t"
+        }
+      ],
+      "candidateCount": 9
+    }
+  ],
+  "errors": []
+}
