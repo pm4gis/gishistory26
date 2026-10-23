@@ -20,7 +20,7 @@ try{
   await page.locator('.landing-primary').click();await page.locator('.chapter-catalogue-card').first().waitFor();assert.equal(await page.locator('.chapter-catalogue-card').count(),44);await page.locator('.chapter-catalogue-card').first().click();await page.locator('h1').waitFor();
   await page.goto(base+'/search/?q=Landonline');await page.waitForFunction(()=>document.querySelector('.pagefind-ui__results')?.innerText.includes('Landonline'));
   await page.goto(base+'/datasets/');assert.equal(await page.locator('.dataset-source-card').count(),45);
-  const datasetSearch=page.getByLabel('Search datasets');await datasetSearch.fill('climate');
+  const datasetSearch=page.getByLabel('Search agency sources');await datasetSearch.fill('climate');
   await page.waitForFunction(()=>document.querySelector('#dataset-source-count')?.textContent?.includes('Showing 1 of 45'));
   assert.equal(await page.locator('.dataset-source-card:not([hidden])').count(),1);
   await page.getByLabel('Filter by agency').selectOption('mpi');
