@@ -16,8 +16,11 @@ test('all documentary images have an explicit chapter publication decision',()=>
  // This CSV is the signed-off 2026-10-11 baseline. Later GIS screenshots
  // have a separately reviewed source + exact passage manifest, not a retroactive
  // change to the original 201 image decisions.
- const gisBatch=JSON.parse(fs.readFileSync('docs/media/gis-software-screens-batch1-20261023.json','utf8'));
- const newReviewed=new Map(gisBatch.items.map(item=>[item.slug,item]));
+ const gisBatches=[
+  JSON.parse(fs.readFileSync('docs/media/gis-software-screens-batch1-20261023.json','utf8')),
+  JSON.parse(fs.readFileSync('docs/media/gis-digital-screens-maps-wave2-20261023.json','utf8'))
+ ];
+ const newReviewed=new Map(gisBatches.flatMap(batch=>batch.items.map(item=>[item.slug,{...item,batch:batch.batch}])));
  const earlier=images.filter(image=>!image.gisScreenBatch);
  const newlyAcquired=images.filter(image=>image.gisScreenBatch);
  assert.equal(registered.length,earlier.length,'one original decision per previously registered image required');
@@ -27,7 +30,7 @@ test('all documentary images have an explicit chapter publication decision',()=>
  for(const image of newlyAcquired){
   const decision=newReviewed.get(image.slug);
   assert.ok(decision,'New GIS image lacks a research inventory decision: '+image.slug);
-  assert.equal(image.gisScreenBatch,gisBatch.batch);
+  assert.equal(image.gisScreenBatch,decision.batch);
   assert.equal(image.articleSlug,decision.articleSlug);
   assert.equal(image.afterParagraphId,decision.afterParagraphId);
   assert.ok(image.sourceUrl&&image.sourceOriginalUrl&&image.credit&&image.licence);
