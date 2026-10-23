@@ -66,6 +66,15 @@ test('the public catalogue has 100 traceable records and uniform source previews
  assert.match(tpk.imageUrl,/MediaImages-16387-A/,'TPK uses the official climate-app launch image');
  assert.match(tpk.imageSourceUrl,/new-web-app-enhances-climate-resilience/,'TPK image credit links to its official story');
  assert.match(tpk.imageAlt,/regional risk map is visible/,'TPK image is described as the specific app, not a generic climate image');
+ const mpiDeepwater=datasetSourceCatalogue.find(x=>x.id==='mpi-deepwater-restrictions');
+ assert.match(mpiDeepwater.imageUrl,/23535ed3d52a4096b3e3ccee0d694a26\/info\/thumbnail/,'MPI thumbnail uses the canonical source item ID');
+ const mpiShellfish=datasetSourceCatalogue.find(x=>x.id==='mpi-shellfish-growing-areas');
+ assert.match(mpiShellfish.imageUrl,/e781d10f912846cca6f8b8db53fbb229\/info\/thumbnail/,'MPI thumbnail uses the canonical source item ID');
+ const nzffd=datasetSourceCatalogue.find(x=>x.id==='niwa-nzffd');
+ assert.equal(nzffd.url,'https://nzffdms.niwa.co.nz/','NIWA links to the live NZFFD download portal');
+ assert.match(nzffd.imageUrl,/Alpine%20galaxias\.jpeg/,'NIWA uses the dataset’s specific species distribution map');
+ assert.match(nzffd.imageSourceUrl,/niwa-atlas-nz-freshwater-fishes\/alpine-galaxias/);
+ assert.doesNotMatch(datasetSourceCatalogue.map(x=>x.id).join(' '),/niwa-fbis/,'the retired FBIS portal is retained only in the historical records');
  for(const item of datasetSourceCatalogue){
   assert.ok(/^https:\/\//.test(item.url),'not an HTTPS source link: '+item.id);
   assert.ok(/^https:\/\//.test(item.imageUrl),'not an official image: '+item.id);
