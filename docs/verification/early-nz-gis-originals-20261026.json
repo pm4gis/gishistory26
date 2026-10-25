@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T22:12:26.433Z",
+  "checkedAt": "2026-10-25T22:14:23.323Z",
   "results": [
     {
       "slug": "pyrocart-cass-basin-map-1996",
@@ -40,19 +40,19 @@
     {
       "slug": "nzlri-dem-slope-1997",
       "status": "unavailable",
-      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (60) SSL certificate problem: certificate has expired\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish ",
+      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n",
       "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/barringer.pdf"
     },
     {
       "slug": "epiman-tb-spatial-gis-1997",
       "status": "unavailable",
-      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (60) SSL certificate problem: certificate has expired\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish ",
+      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n",
       "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/mckenzie.pdf"
     },
     {
       "slug": "otago-interoperable-gis-1997",
       "status": "unavailable",
-      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (60) SSL certificate problem: certificate has expired\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish ",
+      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n",
       "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/marr.pdf"
     }
   ]
