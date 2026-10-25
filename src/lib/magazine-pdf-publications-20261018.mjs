@@ -1,4 +1,4 @@
-// Actual PDF originals validated and hosted on this site.
+// Validated original NZ GIS publication PDFs, hosted locally.
 export const magazinePdfPublications = [
   {
     "slug": "doc-conservation-science-newsletter-28-29-1998",
