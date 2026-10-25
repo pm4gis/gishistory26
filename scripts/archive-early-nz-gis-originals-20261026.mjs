@@ -262,7 +262,7 @@ for (const p of candidates){
   await fs.writeFile(dest,buf);
   const info=spawnSync('pdfinfo',[dest],{encoding:'utf8',timeout:20000});
   if(info.status!==0)throw Error('pdfinfo failed');
-  const pages=Number((info.stdout.match(/^Pages:\\s*(\\d+)/m)||[])[1]);
+  const pages=Number((info.stdout.match(/^Pages:\s*(\d+)/m)||[])[1]);
   if(!Number.isInteger(pages)||pages<1)throw Error('Invalid page count');
   const extracted=spawnSync('pdftotext',['-f','1','-l',String(Math.min(pages,50)),dest,'-'],{encoding:'utf8',timeout:25000,maxBuffer:12000000});
   if(extracted.status!==0)throw Error('pdftotext failed');
@@ -276,6 +276,6 @@ for (const p of candidates){
   results.push({slug:p.slug,status:'archived',pages,bytes:buf.length,sha256,sourceUrl:p.sourceUrl});
  }catch(error){await fs.rm(dest,{force:true});await fs.rm(jpg,{force:true});results.push({slug:p.slug,status:'unavailable',reason:String(error),sourceUrl:p.sourceUrl});}
 }
-await fs.writeFile('src/lib/magazine-pdf-publications-20261018.mjs','// Validated original NZ GIS publication PDFs, hosted locally.\\nexport const magazinePdfPublications = '+JSON.stringify(published,null,2)+';\\n');
-await fs.writeFile('docs/verification/early-nz-gis-originals-20261026.json',JSON.stringify({checkedAt:new Date().toISOString(),results},null,2)+'\\n');
+await fs.writeFile('src/lib/magazine-pdf-publications-20261018.mjs','// Validated original NZ GIS publication PDFs, hosted locally.\nexport const magazinePdfPublications = '+JSON.stringify(published,null,2)+';\n');
+await fs.writeFile('docs/verification/early-nz-gis-originals-20261026.json',JSON.stringify({checkedAt:new Date().toISOString(),results},null,2)+'\n');
 console.log(JSON.stringify(results,null,2));
