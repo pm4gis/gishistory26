@@ -261,7 +261,7 @@ for (const p of candidates){
    if(!response.ok)throw Error('HTTP '+response.status);
    buf=Buffer.from(await response.arrayBuffer());
   } catch(fetchError) {
-   const curl=spawnSync('curl',['--fail','--location','--silent','--show-error','--retry','2','--max-time','35','--http1.1','-A','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36',p.sourceUrl],{timeout:50000,maxBuffer:26*1024*1024});
+   const curl=spawnSync('curl',['--fail',...(new URL(p.sourceUrl).hostname==='www.geog.leeds.ac.uk'?['--insecure']:[]),'--location','--silent','--show-error','--retry','2','--max-time','35','--http1.1','-A','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36',p.sourceUrl],{timeout:50000,maxBuffer:26*1024*1024});
    if(curl.status!==0)throw Error('Fetch and curl unsuccessful: '+String(fetchError)+'; '+curl.stderr.toString().slice(0,200));
    buf=curl.stdout;
   }
