@@ -1,0 +1,53 @@
+name: Acquire early NZ GIS primary sources
+on:
+  push:
+    branches: [feature/archive-early-nz-gis-originals-20261026]
+    paths:
+      - '.github/workflows/archive-early-nz-gis-originals-20261026.yml'
+      - 'scripts/archive-early-nz-gis-originals-20261026.mjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: PDF verification tools
+        run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - run: npm ci
+      - name: Download and verify historical GIS originals
+        run: node scripts/archive-early-nz-gis-originals-20261026.mjs
+      - name: Validate website and historical boundaries
+        run: |
+          npm test
+          npm run build
+          node scripts/assert-editorial-exclusions.mjs
+      - name: Preserve acquisition outcome
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: early-nz-gis-acquisition-20261026
+          path: docs/verification/early-nz-gis-originals-20261026.json
+          if-no-files-found: warn
+      - name: Commit verified PDF originals and covers
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/lib/magazine-pdf-publications-20261018.mjs docs/verification/early-nz-gis-originals-20261026.json public/assets/publications/pdfs/ public/assets/publications/thumbnails/
+          if git diff --cached --quiet; then
+            echo 'No original PDF changes'
+            exit 0
+          fi
+          git commit -m 'Archive and catalogue validated early NZ GIS PDF originals'
+          git fetch origin "${GITHUB_REF#refs/heads/}"
+          git rebase "origin/${GITHUB_REF#refs/heads/}"
+          git push origin "HEAD:${GITHUB_REF#refs/heads/}"
