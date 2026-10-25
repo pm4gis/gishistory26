@@ -255,9 +255,16 @@ for (const p of candidates){
  if(published.some(x=>x.slug===p.slug)){results.push({slug:p.slug,status:'previously archived'});continue;}
  const dest=pdfDir+'/'+p.fileName, jpg=covers+'/'+p.slug+'.jpg';
  try{
-  const response=await fetch(p.sourceUrl,{headers:{'User-Agent':'Mozilla/5.0','Accept':'application/pdf,*/*'},signal:AbortSignal.timeout(30000)});
-  if(!response.ok)throw Error('HTTP '+response.status);
-  const buf=Buffer.from(await response.arrayBuffer());
+  let buf;
+  try {
+   const response=await fetch(p.sourceUrl,{headers:{'User-Agent':'Mozilla/5.0 (compatible; NZGISHistoryArchive/1.0)','Accept':'application/pdf,*/*'},signal:AbortSignal.timeout(22000)});
+   if(!response.ok)throw Error('HTTP '+response.status);
+   buf=Buffer.from(await response.arrayBuffer());
+  } catch(fetchError) {
+   const curl=spawnSync('curl',['--fail','--location','--silent','--show-error','--retry','2','--max-time','35','--http1.1','-A','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36',p.sourceUrl],{timeout:50000,maxBuffer:26*1024*1024});
+   if(curl.status!==0)throw Error('Fetch and curl unsuccessful: '+String(fetchError)+'; '+curl.stderr.toString().slice(0,200));
+   buf=curl.stdout;
+  }
   if(buf.length<2000||buf.length>=24*1024*1024||buf.subarray(0,5).toString()!=='%PDF-')throw Error('Invalid PDF signature or unacceptable size');
   await fs.writeFile(dest,buf);
   const info=spawnSync('pdfinfo',[dest],{encoding:'utf8',timeout:20000});
