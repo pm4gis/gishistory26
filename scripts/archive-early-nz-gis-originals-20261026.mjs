@@ -248,6 +248,93 @@ const candidates=[
     ]
   }
 ];
+candidates.push(...[
+  {
+    "slug": "doc-walkway-arcinfo-1997",
+    "fileName": "doc-walkway-arcinfo-1997.pdf",
+    "title": "A GIS Based Walkway Management System",
+    "creator": "Mary Avery, Ryan Clements, Marty Thompson, Glen Harrison and Ken Hughey",
+    "year": "1997",
+    "date": "1997",
+    "kind": "NZ GIS conference primary source",
+    "topic": "DOC and Lincoln University ARC/INFO walkway maintenance GIS",
+    "summary": "A contemporary original paper on GIS-based walkway maintenance and prioritisation with DOC field data.",
+    "sourceName": "GeoComputation 1997",
+    "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/clements.pdf",
+    "license": "Original conference publication; source attribution retained.",
+    "attribution": "Avery et al. (1997), GeoComputation '97, Otago.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "DOC",
+      "ARC/INFO",
+      "1997"
+    ],
+    "checkTerms": [
+      "walkway"
+    ]
+  },
+  {
+    "slug": "nz-forestry-smartforest-1997",
+    "fileName": "nz-forestry-smartforest-1997.pdf",
+    "title": "Data Visualisation for New Zealand Forestry",
+    "creator": "Alan J. Thorn, Terry C. Daniel and Brian Orland",
+    "year": "1997",
+    "date": "1997",
+    "kind": "NZ GIS conference primary source",
+    "topic": "SmartForest II digital terrain modelling and forest stand visualisation",
+    "summary": "Early GIS landscape and forestry data visualisation using digital terrain models and New Zealand forest stands.",
+    "sourceName": "GeoComputation 1997",
+    "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/thorn.pdf",
+    "license": "Original conference publication; source attribution retained.",
+    "attribution": "Thorn, Daniel and Orland (1997), GeoComputation '97, Otago.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "GIS",
+      "forestry",
+      "SmartForest",
+      "1997"
+    ],
+    "checkTerms": [
+      "forest"
+    ]
+  },
+  {
+    "slug": "nz-land-tenure-digital-survey-1997",
+    "fileName": "nz-land-tenure-digital-survey-1997.pdf",
+    "title": "New Zealand Land Tenure Beyond 2000: Full Integration and Automation of the New Zealand Survey and Title Systems",
+    "creator": "Don Grant, Tadeusz Dawidowski and Ralph Winmill",
+    "year": "1997",
+    "date": "1997",
+    "kind": "NZ GIS conference primary source",
+    "topic": "Digitisation and integration of survey and title systems in New Zealand",
+    "summary": "Contemporary account of integration and automation of New Zealand survey, cadastral and title information systems.",
+    "sourceName": "GeoComputation 1997",
+    "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/grant.pdf",
+    "license": "Original conference publication; source attribution retained.",
+    "attribution": "Grant, Dawidowski and Winmill (1997), GeoComputation '97, Otago.",
+    "themeIds": [
+      "profession",
+      "open-practice"
+    ],
+    "keywords": [
+      "NZ",
+      "survey",
+      "titles",
+      "cadastre",
+      "1997"
+    ],
+    "checkTerms": [
+      "land"
+    ]
+  }
+]);
 const pdfDir='public/assets/publications/pdfs', covers='public/assets/publications/thumbnails';
 await fs.mkdir(pdfDir,{recursive:true});await fs.mkdir(covers,{recursive:true});await fs.mkdir('docs/verification',{recursive:true});
 const published=[...magazinePdfPublications], results=[];
