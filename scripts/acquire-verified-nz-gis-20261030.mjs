@@ -68,7 +68,7 @@ try{
   const pages=Number((info.match(/^Pages:\s*(\d+)/m)||[])[1]);
   if(pages!==26)throw Error('Expected 26 pages; found '+pages);
   const text=run('pdftotext',['-layout',tempPdf,'-']);
-  for(const term of ['Internal Mobility','GIS Variables','meshblocks','2001']){
+  for(const term of ['Internal Mobility','GIS Variables','meshblocks','01/04']){
     if(!text.toLowerCase().includes(term.toLowerCase()))throw Error('Expected original text absent: '+term);
   }
   if(!/20\s?km/i.test(text))throw Error('20 km GIS neighbourhood method absent');
