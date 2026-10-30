@@ -1,4 +1,4 @@
-name: Verify and archive licensed 2001 NZ GIS original
+name: Verify and archive licensed historical NZ GIS originals
 
 on:
   push:
@@ -30,6 +30,8 @@ jobs:
         run: npm ci
       - name: Acquire only the item-level CC BY 4.0 Treasury original
         run: node scripts/acquire-verified-nz-gis-20261030.mjs
+      - name: Acquire and validate the January 2007 original NZ Geospatial Strategy
+        run: node scripts/acquire-nz-geospatial-strategy-2007.mjs
       - name: Test publication and historical content
         run: npm test
       - name: Build and validate full site
@@ -39,12 +41,12 @@ jobs:
         run: |
           set -euo pipefail
           git diff --check
-          git add src/lib/online-pdf-publications.mjs src/lib/verified-nz-gis-publications-20261030.mjs public/assets/publications/pdfs/treasury-internal-mobility-gis-2001.pdf public/assets/publications/thumbnails/treasury-internal-mobility-gis-2001.jpg
+          git add src/lib/online-pdf-publications.mjs src/lib/verified-nz-gis-publications-20261030.mjs src/lib/verified-nz-geospatial-strategy-2007.mjs tests/online-pdf-publications.test.mjs public/assets/publications/pdfs/treasury-internal-mobility-gis-2001.pdf public/assets/publications/thumbnails/treasury-internal-mobility-gis-2001.jpg public/assets/publications/pdfs/nz-geospatial-strategy-original-2007.pdf public/assets/publications/thumbnails/nz-geospatial-strategy-original-2007.jpg
           if git diff --cached --quiet; then
             echo 'No new original to commit'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Archive validated CC BY 4.0 Treasury 2001 GIS original and cover'
+          git commit -m 'Archive validated historical NZ GIS originals and authentic covers'
           git push origin HEAD:research/archive-verified-nz-gis-20261030
