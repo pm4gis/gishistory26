@@ -69,10 +69,10 @@ try{
  const sha256=createHash('sha256').update(bytes).digest('hex');
  const record={...item,pages,bytes:bytes.length,sha256};
  const marker="import {magazinePdfPublications} from './magazine-pdf-publications-20261018.mjs';";
- const end="magazinePdfPublications.map(hosted));";
+ const end="verifiedNzGis20261030.map(hosted));";
  if(!source.includes(marker)||!source.includes(end))throw Error('Catalogue structure changed');
  const updated=source.replace(marker,marker+"\nimport {verifiedNzGeospatialStrategy2007} from './verified-nz-geospatial-strategy-2007.mjs';")
-   .replace(end,"magazinePdfPublications.map(hosted),verifiedNzGeospatialStrategy2007.map(hosted));");
+   .replace(end,"verifiedNzGis20261030.map(hosted),verifiedNzGeospatialStrategy2007.map(hosted));");
  const tests=await fs.readFile(testsPath,'utf8');
  // PR #151 already added one independently validated 2001 Treasury original.
  if(!tests.includes('68+linzHistoricalReports.length')||!tests.includes('41+mirroredPdfSlugs.length')||!tests.includes('assert.equal(additions.length,34)'))throw Error('Publication tests changed; reconcile counts manually');
