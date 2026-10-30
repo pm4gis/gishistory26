@@ -24,10 +24,10 @@ test('off-topic DOC visitor research bibliography stays out of the public PDF li
 });
 
 test('hosted PDF records have local files, thumbnails, source details and reuse terms',()=>{
- assert.equal(onlinePdfPublications.length,68+linzHistoricalReports.length+pre2000PdfPublications.length+magazinePdfPublications.length);
+ assert.equal(onlinePdfPublications.length,69+linzHistoricalReports.length+pre2000PdfPublications.length+magazinePdfPublications.length);
  const hostedRecords=onlinePdfPublications.filter(p=>p.hostedLocally);
  const sourceLinkedRecords=onlinePdfPublications.filter(p=>!p.hostedLocally);
- assert.equal(hostedRecords.length,41+mirroredPdfSlugs.length+mirroredLinzReportSlugs.length+mirroredPre2000PdfSlugs.length+magazinePdfPublications.length);
+ assert.equal(hostedRecords.length,42+mirroredPdfSlugs.length+mirroredLinzReportSlugs.length+mirroredPre2000PdfSlugs.length+magazinePdfPublications.length);
  assert.equal(sourceLinkedRecords.length,27-mirroredPdfSlugs.length+linzHistoricalReports.length-mirroredLinzReportSlugs.length+pre2000PdfPublications.length-mirroredPre2000PdfSlugs.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.slug)).size,onlinePdfPublications.length);
  assert.equal(new Set(onlinePdfPublications.map(p=>p.fileName)).size,onlinePdfPublications.length);
@@ -78,7 +78,7 @@ test('hosted PDF records have local files, thumbnails, source details and reuse 
 
 test('the additional Internet publications respect the 2025 publication cutoff',()=>{
  const additions=onlinePdfPublications.filter(p=>p.isNewAddition);
- assert.equal(additions.length,34);
+ assert.equal(additions.length,35);
  assert.ok(additions.length>=25&&additions.length<=50);
  assert.ok(additions.every(p=>Number(p.year)<=2025));
  assert.ok(onlinePdfPublications.filter(p=>!p.hostedLocally).every(p=>p.license&&p.attribution&&p.sourceUrl));
