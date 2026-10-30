@@ -58,7 +58,7 @@ try{
  const info=run('pdfinfo',[tempPdf]);
  const pages=Number((info.match(/^Pages:\s*(\d+)/m)||[])[1]);
  if(pages!==30)throw Error('Unexpected original page count: '+pages);
- const pdfText=run('pdftotext',['-layout',tempPdf,'']);
+ const pdfText=run('pdftotext',['-layout',tempPdf,'-']);
  const lower=pdfText.toLowerCase();
  for(const term of ['geospatial strategy','january 2007','landcare research','new zealand police','fire service','interoperability','ministry of fisheries']){
   if(!lower.includes(term))throw Error('Expected original GIS text missing: '+term);
