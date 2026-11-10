@@ -20,7 +20,8 @@ test('approved homepage is static and provides direct chapter and timeline acces
  const page=readFileSync('src/pages/index.astro','utf8');
  assert.match(page,/class="landing-primary" href="\/read\/"/);
  assert.match(page,/href="\/timeline\/"/);
- assert.doesNotMatch(page,/setInterval|data-story-play|data-hero-motion|href="\/history\/"/);
+ assert.doesNotMatch(page,/setInterval|data-story-play|data-hero-motion/);
+ assert.match(page,/href="\/history\/">A short history of GIS in New Zealand<\/a>/);
  assert.match(page,/object-fit:cover/);
  assert.match(page,/@media\(max-width:650px\)/);
 });

@@ -10,7 +10,8 @@ try{
   const errors=[];page.on('pageerror',e=>errors.push(String(e)));
   await page.goto(base+'/');await page.locator('main img').evaluateAll(nodes=>Promise.all(nodes.map(img=>{img.loading='eager';return img.decode()})));
   assert.match(await page.locator('h1').innerText(),/A history of GIS\s+in New Zealand/);
-  assert.equal(await page.locator('main [href="/history/"]').count(),0);
+  assert.equal(await page.locator('main [href="/history/"]').count(),1);
+  assert.equal(await page.locator('main [href="/history/"]').innerText(),'A short history of GIS in New Zealand');
   assert.equal(await page.locator('[data-story-play],[data-story-next],[data-hero-motion],.story-slider,.home-summary').count(),0);
   assert.equal(await page.locator('main .card,main .art-card').count(),0);
   assert.equal(await page.locator('.landing-image img').count(),3);
