@@ -21,8 +21,9 @@ test('short history is a server-rendered, indexable standalone page', () => {
  assert.doesNotMatch(overview, /2026|google\.com\/goto|noindex/);
 });
 
-test('overview remains available through sources and discovery resources', () => {
- assert.doesNotMatch(home, /href="\/history\/"/);
+test('overview is linked from the homepage, about page and discovery resources', () => {
+  assert.equal([...home.matchAll(/href="\/history\/"/g)].length,1);
+  assert.match(home, /href="\/history\/">A short history of GIS in New Zealand<\/a>/);
  assert.match(about, /href="\/history\/"/);
  assert.doesNotMatch(layout, /href="\/history\/"/);
  assert.match(sitemap, /'\/history\/'/);
