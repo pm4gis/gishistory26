@@ -1,0 +1,35 @@
+name: Stage verified subject photographs — held media batch
+on:
+  pull_request:
+    paths:
+      - 'docs/media/staging/wave3/**'
+      - 'scripts/prepare-subject-wave3.mjs'
+      - '.github/workflows/stage-subject-wave3.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    if: ${{ github.head_ref == 'media/next-batch-subject-acquisition-20261010' || github.ref_name == 'media/next-batch-subject-acquisition-20261010' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Retrieve originals and build WebP derivatives
+        run: node scripts/prepare-subject-wave3.mjs
+      - name: Archive research package with originals, derivatives, proposed image JSON and checksums
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nzgis-subject-images-wave3-20261010
+          path: |
+            docs/media/staging/wave3/source-manifest.json
+            docs/media/staging/wave3/acquired/
+          compression-level: 4
+          retention-days: 60
+          if-no-files-found: error
