@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-25T22:14:23.323Z",
+  "results": [
+    {
+      "slug": "pyrocart-cass-basin-map-1996",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: Error: HTTP 403; curl: (22) The requested URL returned error: 403\n",
+      "sourceUrl": "https://ir.canterbury.ac.nz/bitstreams/68858560-1117-41b2-9caa-5de240787e34/download"
+    },
+    {
+      "slug": "otago-gis-soil-reasoning-1996",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: Error: HTTP 403; curl: (22) The requested URL returned error: 403\n",
+      "sourceUrl": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/raw/a23799f12c18ce1f432453814e2b36ed79122857/Papers/1996/96-25/dp1996-25c.pdf"
+    },
+    {
+      "slug": "otago-gis-expert-systems-1996",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: Error: HTTP 403; curl: (22) The requested URL returned error: 403\n",
+      "sourceUrl": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/raw/a23799f12c18ce1f432453814e2b36ed79122857/Papers/1996/96-25/dp1996-25d.pdf"
+    },
+    {
+      "slug": "otago-environmental-spatial-process-1996",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: Error: HTTP 403; curl: (22) The requested URL returned error: 403\n",
+      "sourceUrl": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/raw/master/Papers/1996/96-25/dp1996-25e.pdf"
+    },
+    {
+      "slug": "otago-gis-maturity-nz-councils-1996",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: Error: HTTP 403; curl: (22) The requested URL returned error: 403\n",
+      "sourceUrl": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/raw/7298a9eb6fc3167538973ebc435dec7fd3bdac0b/Papers/1996/96-25/dp1996-25f.pdf"
+    },
+    {
+      "slug": "otago-albatross-gis-1996",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: Error: HTTP 403; curl: (22) The requested URL returned error: 403\n",
+      "sourceUrl": "https://isgb.otago.ac.nz/infosci/nigel.stanger/Discussion_Papers/raw/f1daa34989fbf63d10bbe4f252b1e17686a6b24c/Papers/1996/96-25/dp1996-25g.pdf"
+    },
+    {
+      "slug": "nzlri-dem-slope-1997",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n",
+      "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/barringer.pdf"
+    },
+    {
+      "slug": "epiman-tb-spatial-gis-1997",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n",
+      "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/mckenzie.pdf"
+    },
+    {
+      "slug": "otago-interoperable-gis-1997",
+      "status": "unavailable",
+      "reason": "Error: Fetch and curl unsuccessful: TypeError: fetch failed; curl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n",
+      "sourceUrl": "https://www.geog.leeds.ac.uk/groups/geocomp/1997/papers/marr.pdf"
+    }
+  ]
+}
