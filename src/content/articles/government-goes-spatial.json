@@ -12,7 +12,7 @@
   "sourceNotes": [
     {
       "id": "ch24-note-01",
-      "text": "1. Treasury Working Paper 00/11 by Suzi Kerr and Jason Timmins supports the 2000 regional socioeconomic analysis, ArcView/Census96 supply by Critchlow Associates and the statistical-geography levels used. It is a securely documented mainstream policy-analysis example, not a claim of Treasury’s first GIS use."
+      "text": "1. Treasury Working Paper 00/11 (June 2000) by Suzi Kerr and Jason Timmins, Section 3, printed p. 11, explicitly credits Critchlow Associates with supplying Census96 data and ArcView software (https://www.treasury.govt.nz/sites/default/files/2007-10/twp00-11.pdf). This preserves the authors' wording, not an independent finding that Critchlow distributed ArcView. Statistics New Zealand's early-2000s census mapping information identifies Critchlow's packaged census products as MapInfo-based (https://statsnz.contentdm.oclc.org/digital/api/collection/p20045coll19/id/437/download), while Eagle Technology dates its Esri distributorship to 1985 (https://www.eagle.co.nz/our-history/). The historical account separates documented census data provision from the unresolved ArcView supply arrangement. The paper is a documented GIS policy-analysis example, not a claim of Treasury's first GIS use."
     },
     {
       "id": "ch24-note-02",
